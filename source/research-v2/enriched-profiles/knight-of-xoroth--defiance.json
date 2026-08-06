@@ -1,0 +1,2219 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "knight-of-xoroth/defiance",
+    "class": "Knight of Xoroth",
+    "name": "Defiance",
+    "roles": [
+      "Tank"
+    ],
+    "range": [
+      "Melee"
+    ]
+  },
+  "identity": {
+    "fantasy": "A block-and-retaliation fire tank whose imps, Abyssal and attackers feed Rage into shields, rebukes and unusually strong self-healing.",
+    "one_line": "Pull with ranged fire and summons, let blocks and hits generate the engine, then spend Rage on mitigation or repeatable healing while commanding pets and keeping threat spread.",
+    "primary_family": "commanders",
+    "also_fits": [
+      "strategists"
+    ],
+    "claim_ids": [
+      "talent:knight-of-xoroth/defiance:17-47-2-4",
+      "talent:knight-of-xoroth/defiance:17-47-10-0",
+      "talent:knight-of-xoroth/defiance:17-47-2-9",
+      "talent:knight-of-xoroth/defiance:17-47-8-4",
+      "observed:knight-of-xoroth/defiance:self-sustain-kit",
+      "observed:knight-of-xoroth/defiance:priority-feel",
+      "inference:knight-of-xoroth/defiance:playstyle-identity"
+    ],
+    "playstyle_tags": [
+      "summon-retaliation-tank",
+      "block-tank",
+      "fire-tank"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "Establish imp and Abyssal pressure, use block-triggered retaliation for threat, and convert Rage into the heal, shield or mitigation needed for the next damage event.",
+    "resources": [
+      "Rage"
+    ],
+    "builders": [
+      {
+        "name": "Call: Hellfire Imp",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-4-1"
+        ]
+      },
+      {
+        "name": "Demonfire Retaliation",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-0-4"
+        ]
+      },
+      {
+        "name": "Infernal Bulwark",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-7-5"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "A Gift from Hell",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-2"
+        ]
+      },
+      {
+        "name": "Impcaller",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-4-2b"
+        ]
+      },
+      {
+        "name": "Demonfire Command",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-4-5"
+        ]
+      },
+      {
+        "name": "Black Skull Shield",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-4-7b"
+        ]
+      },
+      {
+        "name": "Call: Hellfire Abyssal",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-9"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Sacrificial Circle",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-7-3"
+        ]
+      },
+      {
+        "name": "Soul Furnace",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-8-4"
+        ]
+      },
+      {
+        "name": "Curse of Xoroth",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-4-8"
+        ]
+      },
+      {
+        "name": "Call: Hellfire Abyssal",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-9"
+        ]
+      },
+      {
+        "name": "Legion's Presence",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-6-9"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Shieldgore",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-4-0"
+        ],
+        "structural_description": "Transform: s your Infernal Strike into Shieldgore.ShieldgoreGenerates 2 DemonfireGore the target with your spiked shield, causing 21 + 35% AP High Threat Fire Damage, scaling with your block value."
+      },
+      {
+        "name": "Impcaller",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-4-2b"
+        ],
+        "structural_description": "Transform: s your Call: Hellfire Imp into Impcaller.Impcaller (Aura)Your Infernal Strike now summons a Hellfire Imp to aid you in combat for 10 seconds, but its Rage cost is increased by 10.In addition, the maximum health of your imps is increased by 30%."
+      },
+      {
+        "name": "Hellfire Bellows",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-4-7a"
+        ],
+        "structural_description": "Transform: s your Flames of Xoroth into Hellfire Bellows.Hellfire BellowsBellow fire on all enemies in a 6 yd cone in front of and behind you, dealing 252 + 17.63% AP + 40% fire SP Fire damage and reducing the cooldown of Chains of Xoroth by -4 sec per enemy hit.Cooldown is reduced by -3 sec for each Demonfire consumed."
+      }
+    ],
+    "single_target": "Single-target threat is reported strong; keep the no-cooldown heal and major cooldowns available rather than over-spending Rage.",
+    "aoe": "Many attackers generate abundant Rage, enabling repeated healing and easy fire threat once the pack is gathered.",
+    "movement_and_target_switching": "Mounted Combat and ranged pet or fire actions give better pickup than a purely stationary block tank.",
+    "defense_and_control": "Players report a persistent HoT, a minute heal, a large shield, damage reduction and a nearby-enemy heal that can refill health on large pulls.",
+    "group_utility": "Imps, Abyssal, grips, rebukes and group mitigation make the tank more than a passive shield wall.",
+    "failure_modes": [
+      {
+        "text": "Dumping Rage into damage before a spike removes the resource needed for mitigation or healing.",
+        "claim_ids": [
+          "inference:knight-of-xoroth/defiance:failure-cost",
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9"
+        ]
+      },
+      {
+        "text": "Pet pathing or premature summons can complicate a pull.",
+        "claim_ids": [
+          "inference:knight-of-xoroth/defiance:failure-cost",
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9"
+        ]
+      },
+      {
+        "text": "Small-target encounters generate less attacker-fed Rage than mass pulls.",
+        "claim_ids": [
+          "inference:knight-of-xoroth/defiance:failure-cost",
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9"
+        ]
+      }
+    ],
+    "claim_ids": [
+      "talent:knight-of-xoroth/defiance:17-47-2-4",
+      "talent:knight-of-xoroth/defiance:17-47-10-0",
+      "talent:knight-of-xoroth/defiance:17-47-2-9",
+      "talent:knight-of-xoroth/defiance:17-47-8-4",
+      "talent:knight-of-xoroth/defiance:17-47-4-0",
+      "observed:knight-of-xoroth/defiance:self-sustain-kit",
+      "observed:knight-of-xoroth/defiance:priority-feel",
+      "observed:knight-of-xoroth/defiance:pack-resource-loop",
+      "observed:knight-of-xoroth/defiance:build-practice",
+      "inference:knight-of-xoroth/defiance:playstyle-identity"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Shieldgore",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-4-0"
+          ]
+        },
+        {
+          "name": "Brimstone Buckler",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-10-0"
+          ]
+        },
+        {
+          "name": "Call: Hellfire Imp",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-4-1"
+          ]
+        }
+      ],
+      "observed_loop": "The block shell appears before its full pet-healing network.",
+      "observed_changes": [
+        "Incomplete sustain",
+        "Pet setup"
+      ],
+      "claim_ids": [
+        "talent:knight-of-xoroth/defiance:17-47-4-0",
+        "talent:knight-of-xoroth/defiance:17-47-10-0",
+        "talent:knight-of-xoroth/defiance:17-47-4-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "A Gift from Hell",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-2"
+          ]
+        },
+        {
+          "name": "Imp Gang Boss",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-4-2a"
+          ]
+        },
+        {
+          "name": "Impcaller",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-4-2b"
+          ]
+        },
+        {
+          "name": "Hellsmelted Armor",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-6-2"
+          ]
+        },
+        {
+          "name": "Imp Guards",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-10-2"
+          ]
+        },
+        {
+          "name": "Bulwark of Xoroth",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-1-3"
+          ]
+        },
+        {
+          "name": "Warden of Hellfire",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-3"
+          ]
+        },
+        {
+          "name": "Hellfire Forgemaster",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-6-3"
+          ]
+        },
+        {
+          "name": "Sacrificial Circle",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-7-3"
+          ]
+        }
+      ],
+      "observed_loop": "The block shell appears before its full pet-healing network.",
+      "observed_changes": [
+        "Incomplete sustain",
+        "Pet setup"
+      ],
+      "claim_ids": [
+        "talent:knight-of-xoroth/defiance:17-47-2-2",
+        "talent:knight-of-xoroth/defiance:17-47-4-2a",
+        "talent:knight-of-xoroth/defiance:17-47-4-2b",
+        "talent:knight-of-xoroth/defiance:17-47-6-2",
+        "talent:knight-of-xoroth/defiance:17-47-10-2",
+        "talent:knight-of-xoroth/defiance:17-47-1-3",
+        "talent:knight-of-xoroth/defiance:17-47-2-3",
+        "talent:knight-of-xoroth/defiance:17-47-6-3",
+        "talent:knight-of-xoroth/defiance:17-47-7-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Demonfire Retaliation",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-0-4"
+          ]
+        },
+        {
+          "name": "Hellish Rebuke",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4"
+          ]
+        },
+        {
+          "name": "Implosion",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-4-4"
+          ]
+        },
+        {
+          "name": "Hellfire Reprimand",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-6-4"
+          ]
+        },
+        {
+          "name": "Soul Furnace",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-8-4"
+          ]
+        },
+        {
+          "name": "Hellfire Resolve",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-10-4"
+          ]
+        },
+        {
+          "name": "Demon's Breath",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-1-5"
+          ]
+        },
+        {
+          "name": "Demonfire Command",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-4-5"
+          ]
+        },
+        {
+          "name": "Infernal Bulwark",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-7-5"
+          ]
+        }
+      ],
+      "observed_loop": "More attackers begin to feel like fuel rather than only danger.",
+      "observed_changes": [
+        "Resource varies by attackers",
+        "More buttons"
+      ],
+      "claim_ids": [
+        "talent:knight-of-xoroth/defiance:17-47-0-4",
+        "talent:knight-of-xoroth/defiance:17-47-2-4",
+        "talent:knight-of-xoroth/defiance:17-47-4-4",
+        "talent:knight-of-xoroth/defiance:17-47-6-4",
+        "talent:knight-of-xoroth/defiance:17-47-8-4",
+        "talent:knight-of-xoroth/defiance:17-47-10-4",
+        "talent:knight-of-xoroth/defiance:17-47-1-5",
+        "talent:knight-of-xoroth/defiance:17-47-4-5",
+        "talent:knight-of-xoroth/defiance:17-47-7-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Stoke the Flames",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-0-6"
+          ]
+        },
+        {
+          "name": "Brimstone Knight",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-6a"
+          ]
+        },
+        {
+          "name": "Speed Demon",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-6b"
+          ]
+        },
+        {
+          "name": "Chains of Xoroth",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-4-6"
+          ]
+        },
+        {
+          "name": "Pestilent Retaliation",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-6-6"
+          ]
+        },
+        {
+          "name": "Forgefiend's Bulwark",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-8-6"
+          ]
+        },
+        {
+          "name": "Imp Aura",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-10-6"
+          ]
+        },
+        {
+          "name": "Hellfire Sieger",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-0-7a"
+          ]
+        },
+        {
+          "name": "Brimstone Striker",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-0-7b"
+          ]
+        },
+        {
+          "name": "Demolisher",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-7"
+          ]
+        },
+        {
+          "name": "Hellfire Bellows",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-4-7a"
+          ]
+        },
+        {
+          "name": "Black Skull Shield",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-4-7b"
+          ]
+        },
+        {
+          "name": "Demonic Grit",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-6-7"
+          ]
+        },
+        {
+          "name": "Fiend of Forges",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-8-7"
+          ]
+        }
+      ],
+      "observed_loop": "More attackers begin to feel like fuel rather than only danger.",
+      "observed_changes": [
+        "Resource varies by attackers",
+        "More buttons"
+      ],
+      "claim_ids": [
+        "talent:knight-of-xoroth/defiance:17-47-0-6",
+        "talent:knight-of-xoroth/defiance:17-47-2-6a",
+        "talent:knight-of-xoroth/defiance:17-47-2-6b",
+        "talent:knight-of-xoroth/defiance:17-47-4-6",
+        "talent:knight-of-xoroth/defiance:17-47-6-6",
+        "talent:knight-of-xoroth/defiance:17-47-8-6",
+        "talent:knight-of-xoroth/defiance:17-47-10-6",
+        "talent:knight-of-xoroth/defiance:17-47-0-7a",
+        "talent:knight-of-xoroth/defiance:17-47-0-7b",
+        "talent:knight-of-xoroth/defiance:17-47-2-7",
+        "talent:knight-of-xoroth/defiance:17-47-4-7a",
+        "talent:knight-of-xoroth/defiance:17-47-4-7b",
+        "talent:knight-of-xoroth/defiance:17-47-6-7",
+        "talent:knight-of-xoroth/defiance:17-47-8-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Hellwrath",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-8"
+          ]
+        },
+        {
+          "name": "Curse of Xoroth",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-4-8"
+          ]
+        },
+        {
+          "name": "Fiery Retribution",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-6-8"
+          ]
+        },
+        {
+          "name": "Demonic Bulwark",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-10-8"
+          ]
+        },
+        {
+          "name": "Call: Hellfire Abyssal",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-9"
+          ]
+        },
+        {
+          "name": "A Curse from Hell",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-4-9"
+          ]
+        },
+        {
+          "name": "Legion's Presence",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-6-9"
+          ]
+        }
+      ],
+      "observed_loop": "Late Defiance becomes a nuanced priority tank with several viable talent packages.",
+      "observed_changes": [
+        "Above-average priority load",
+        "Sparse neutral evidence"
+      ],
+      "claim_ids": [
+        "talent:knight-of-xoroth/defiance:17-47-2-8",
+        "talent:knight-of-xoroth/defiance:17-47-4-8",
+        "talent:knight-of-xoroth/defiance:17-47-6-8",
+        "talent:knight-of-xoroth/defiance:17-47-10-8",
+        "talent:knight-of-xoroth/defiance:17-47-2-9",
+        "talent:knight-of-xoroth/defiance:17-47-4-9",
+        "talent:knight-of-xoroth/defiance:17-47-6-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "The block shell appears before its full pet-healing network.",
+      "strengths": [
+        "Readable block tank",
+        "Ranged pull tools"
+      ],
+      "cautions": [
+        "Incomplete sustain",
+        "Pet setup"
+      ],
+      "claim_ids": [
+        "talent:knight-of-xoroth/defiance:17-47-2-4",
+        "talent:knight-of-xoroth/defiance:17-47-10-0",
+        "talent:knight-of-xoroth/defiance:17-47-2-9",
+        "talent:knight-of-xoroth/defiance:17-47-8-4",
+        "observed:knight-of-xoroth/defiance:self-sustain-kit",
+        "observed:knight-of-xoroth/defiance:priority-feel",
+        "observed:knight-of-xoroth/defiance:pack-resource-loop",
+        "inference:knight-of-xoroth/defiance:playstyle-identity"
+      ]
+    },
+    "leveling_30_49": {
+      "feel": "More attackers begin to feel like fuel rather than only danger.",
+      "strengths": [
+        "Strong large-pull healing",
+        "Easy AoE threat"
+      ],
+      "cautions": [
+        "Resource varies by attackers",
+        "More buttons"
+      ],
+      "claim_ids": [
+        "talent:knight-of-xoroth/defiance:17-47-2-4",
+        "talent:knight-of-xoroth/defiance:17-47-10-0",
+        "talent:knight-of-xoroth/defiance:17-47-2-9",
+        "talent:knight-of-xoroth/defiance:17-47-8-4",
+        "observed:knight-of-xoroth/defiance:self-sustain-kit",
+        "observed:knight-of-xoroth/defiance:priority-feel",
+        "observed:knight-of-xoroth/defiance:pack-resource-loop",
+        "inference:knight-of-xoroth/defiance:playstyle-identity"
+      ]
+    },
+    "level_50_60": {
+      "feel": "Late Defiance becomes a nuanced priority tank with several viable talent packages.",
+      "strengths": [
+        "Exceptional sustain reports",
+        "Flexible talents"
+      ],
+      "cautions": [
+        "Above-average priority load",
+        "Sparse neutral evidence"
+      ],
+      "claim_ids": [
+        "talent:knight-of-xoroth/defiance:17-47-2-4",
+        "talent:knight-of-xoroth/defiance:17-47-10-0",
+        "talent:knight-of-xoroth/defiance:17-47-2-9",
+        "talent:knight-of-xoroth/defiance:17-47-8-4",
+        "observed:knight-of-xoroth/defiance:self-sustain-kit",
+        "observed:knight-of-xoroth/defiance:priority-feel",
+        "observed:knight-of-xoroth/defiance:pack-resource-loop",
+        "inference:knight-of-xoroth/defiance:playstyle-identity"
+      ]
+    },
+    "boss": {
+      "feel": "On bosses, Single-target threat is reported strong; keep the no-cooldown heal and major cooldowns available rather than over-spending Rage.",
+      "strengths": [
+        "Strong single-target threat",
+        "Layered cooldowns"
+      ],
+      "cautions": [
+        "Less Rage from one attacker",
+        "Cooldown timing"
+      ],
+      "claim_ids": [
+        "talent:knight-of-xoroth/defiance:17-47-2-4",
+        "talent:knight-of-xoroth/defiance:17-47-10-0",
+        "talent:knight-of-xoroth/defiance:17-47-2-9",
+        "talent:knight-of-xoroth/defiance:17-47-8-4",
+        "observed:knight-of-xoroth/defiance:self-sustain-kit",
+        "observed:knight-of-xoroth/defiance:priority-feel",
+        "observed:knight-of-xoroth/defiance:pack-resource-loop",
+        "inference:knight-of-xoroth/defiance:playstyle-identity"
+      ]
+    },
+    "dungeon_aoe": {
+      "feel": "In dungeons, Many attackers generate abundant Rage, enabling repeated healing and easy fire threat once the pack is gathered.",
+      "strengths": [
+        "Attackers fuel healing",
+        "Broad AoE"
+      ],
+      "cautions": [
+        "Overpulls still punish late shields",
+        "Pet placement"
+      ],
+      "claim_ids": [
+        "talent:knight-of-xoroth/defiance:17-47-2-4",
+        "talent:knight-of-xoroth/defiance:17-47-10-0",
+        "talent:knight-of-xoroth/defiance:17-47-2-9",
+        "talent:knight-of-xoroth/defiance:17-47-8-4",
+        "observed:knight-of-xoroth/defiance:self-sustain-kit",
+        "observed:knight-of-xoroth/defiance:priority-feel",
+        "observed:knight-of-xoroth/defiance:pack-resource-loop",
+        "inference:knight-of-xoroth/defiance:playstyle-identity"
+      ]
+    },
+    "pvp": {
+      "feel": "In PvP, Mounted Combat and ranged pet or fire actions give better pickup than a purely stationary block tank. Players report a persistent HoT, a minute heal, a large shield, damage reduction and a nearby-enemy heal that can refill health on large pulls.",
+      "strengths": [
+        "Good mobility",
+        "Repeatable sustain"
+      ],
+      "cautions": [
+        "Control can disrupt pets",
+        "Resource denial matters"
+      ],
+      "claim_ids": [
+        "talent:knight-of-xoroth/defiance:17-47-2-4",
+        "talent:knight-of-xoroth/defiance:17-47-10-0",
+        "talent:knight-of-xoroth/defiance:17-47-2-9",
+        "talent:knight-of-xoroth/defiance:17-47-8-4",
+        "observed:knight-of-xoroth/defiance:self-sustain-kit",
+        "observed:knight-of-xoroth/defiance:priority-feel",
+        "observed:knight-of-xoroth/defiance:pack-resource-loop",
+        "inference:knight-of-xoroth/defiance:playstyle-identity"
+      ]
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "moderate-high",
+        "reason": "Defiance combines threat attacks, pet commands, Rage heals, a HoT, shields, damage reduction, Mounted Combat and control. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "high",
+        "reason": "Defiance combines threat attacks, pet commands, Rage heals, a HoT, shields, damage reduction, Mounted Combat and control. The middle talent rows make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "Defiance combines threat attacks, pet commands, Rage heals, a HoT, shields, damage reduction, Mounted Combat and control. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "high",
+        "reason": "Defiance combines threat attacks, pet commands, Rage heals, a HoT, shields, damage reduction, Mounted Combat and control. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "Defiance combines threat attacks, pet commands, Rage heals, a HoT, shields, damage reduction, Mounted Combat and control. Changing pack size and lifetime add another constraint.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "Defiance combines threat attacks, pet commands, Rage heals, a HoT, shields, damage reduction, Mounted Combat and control. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "moderate-high",
+        "reason": "Rage, block triggers, pet state, HoT, shield and mitigation timers overlap. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "high",
+        "reason": "Rage, block triggers, pet state, HoT, shield and mitigation timers overlap. The middle talent rows make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "Rage, block triggers, pet state, HoT, shield and mitigation timers overlap. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "high",
+        "reason": "Rage, block triggers, pet state, HoT, shield and mitigation timers overlap. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "Rage, block triggers, pet state, HoT, shield and mitigation timers overlap. Changing pack size and lifetime add another constraint.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "Rage, block triggers, pet state, HoT, shield and mitigation timers overlap. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "moderate-high",
+        "reason": "Rage can become damage, healing or mitigation depending on attacker count and health. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "high",
+        "reason": "Rage can become damage, healing or mitigation depending on attacker count and health. The middle talent rows make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "Rage can become damage, healing or mitigation depending on attacker count and health. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "high",
+        "reason": "Rage can become damage, healing or mitigation depending on attacker count and health. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "Rage can become damage, healing or mitigation depending on attacker count and health. Changing pack size and lifetime add another constraint.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "Rage can become damage, healing or mitigation depending on attacker count and health. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "moderate-high",
+        "reason": "The priority is smooth but requires timely defensive spending and pet-aware positioning. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "high",
+        "reason": "The priority is smooth but requires timely defensive spending and pet-aware positioning. The middle talent rows make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "The priority is smooth but requires timely defensive spending and pet-aware positioning. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "high",
+        "reason": "The priority is smooth but requires timely defensive spending and pet-aware positioning. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "The priority is smooth but requires timely defensive spending and pet-aware positioning. Changing pack size and lifetime add another constraint.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "The priority is smooth but requires timely defensive spending and pet-aware positioning. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "moderate-high",
+        "reason": "Over-spending Rage can remove several recovery options at once. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "high",
+        "reason": "Over-spending Rage can remove several recovery options at once. The middle talent rows make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "Over-spending Rage can remove several recovery options at once. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "high",
+        "reason": "Over-spending Rage can remove several recovery options at once. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "Over-spending Rage can remove several recovery options at once. Changing pack size and lifetime add another constraint.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "Over-spending Rage can remove several recovery options at once. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      }
+    },
+    "setup_burden": {
+      "leveling_10_29": {
+        "value": "moderate-high",
+        "reason": "Summons and the defensive layer should be established before the pull peaks. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "high",
+        "reason": "Summons and the defensive layer should be established before the pull peaks. The middle talent rows make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "Summons and the defensive layer should be established before the pull peaks. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "high",
+        "reason": "Summons and the defensive layer should be established before the pull peaks. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "Summons and the defensive layer should be established before the pull peaks. Changing pack size and lifetime add another constraint.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "Summons and the defensive layer should be established before the pull peaks. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [
+      {
+        "text": "You want active self-healing and pets inside a shield-tank loop.",
+        "claim_ids": [
+          "inference:knight-of-xoroth/defiance:playstyle-identity",
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0"
+        ]
+      },
+      {
+        "text": "You enjoy attackers becoming a resource source.",
+        "claim_ids": [
+          "inference:knight-of-xoroth/defiance:playstyle-identity",
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0"
+        ]
+      }
+    ],
+    "avoid_if": [
+      {
+        "text": "You want a pet-free or passive tank.",
+        "claim_ids": [
+          "inference:knight-of-xoroth/defiance:failure-cost",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit"
+        ]
+      },
+      {
+        "text": "You dislike choosing between threat and survival spenders.",
+        "claim_ids": [
+          "inference:knight-of-xoroth/defiance:failure-cost",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit"
+        ]
+      }
+    ]
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [
+    "observed:knight-of-xoroth/defiance:performance-context"
+  ],
+  "sentiment": {
+    "praise": [
+      {
+        "theme": "Recent players are unusually enthusiastic about its smooth priority, sustain and talent flexibility.",
+        "claim_ids": [
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "observed:knight-of-xoroth/defiance:build-practice"
+        ]
+      }
+    ],
+    "frustrations": [
+      {
+        "theme": "Pet management and a larger active bar remain genuine costs.",
+        "claim_ids": [
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:failure-cost"
+        ]
+      }
+    ],
+    "contested": [
+      {
+        "theme": "The strong August sustain reports conflict with older comparisons calling Defiance inferior, plausibly because of level and familiarity.",
+        "claim_ids": [
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "observed:knight-of-xoroth/defiance:performance-context"
+        ]
+      }
+    ]
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 2,
+    "latest_update": "2026-07-23T12:29:10.753+00:00",
+    "top_title": "Kox Defiance Tank (based on top logs 22/7/2026)",
+    "top_url": "https://coabuildhub.com/build/ac11d4c7-9a36-481a-96aa-93b8a7dabb3c",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:ac11d4c7-9a36-481a-96aa-93b8a7dabb3c"
+    ]
+  },
+  "coverage": {
+    "mechanical": "manual_talent_and_build_interpretation",
+    "community": "manual_recent_source_review",
+    "performance": "limited_uncontrolled",
+    "video": "searched_none_verified",
+    "overall_confidence": "medium",
+    "gaps": [
+      "No controlled mitigation logs.",
+      "Pet behavior and Rage flow need boss-specific verification."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-4-0",
+      "kind": "structural",
+      "text": "Shieldgore: Transform: s your Infernal Strike into Shieldgore.ShieldgoreGenerates 2 DemonfireGore the target with your spiked shield, causing 21 + 35% AP High Threat Fire Damage, scaling with your block value.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-10-0",
+      "kind": "structural",
+      "text": "Brimstone Buckler: Level 10 PassiveSuccessful blocks now have a 30% chance to summon 1 Hellfire Imp to aid you in battle for 12 seconds. Can only occur once every 3 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-4-1",
+      "kind": "structural",
+      "text": "Call: Hellfire Imp: Generates 2 DemonfireBeckon 1 Hellfire Imp to aid you in battle for 12 seconds and generate 20 Rage.Threat generated by Hellfire Imps is transferred to you.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-2-2",
+      "kind": "structural",
+      "text": "A Gift from Hell: Reduces the Rage cost of Infernal Strike, Meatsaw, and Melt by -10.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-4-2a",
+      "kind": "structural",
+      "text": "Imp Gang Boss: Your Call: Hellfire Imp now summons 2 additional imps.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-4-2b",
+      "kind": "structural",
+      "text": "Impcaller: Transform: s your Call: Hellfire Imp into Impcaller.Impcaller (Aura)Your Infernal Strike now summons a Hellfire Imp to aid you in combat for 10 seconds, but its Rage cost is increased by 10.In addition, the maximum health of your imps is increased by 30%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-6-2",
+      "kind": "structural",
+      "text": "Hellsmelted Armor: Each Hellfire Imp active now increases your chance to block by 1%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-10-2",
+      "kind": "structural",
+      "text": "Imp Guards: Level 20 PassiveEach Hellfire Imp now reduces your Physical damage taken by 1%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-1-3",
+      "kind": "structural",
+      "text": "Bulwark of Xoroth: Damage dealt by Shieldgore will now apply Torn Flesh, causing the target to bleed for 105 over 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-2-3",
+      "kind": "structural",
+      "text": "Warden of Hellfire: Increases the damage dealt by Skulltaker and Flames of Xoroth by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-6-3",
+      "kind": "structural",
+      "text": "Hellfire Forgemaster: Increases your block value by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-7-3",
+      "kind": "structural",
+      "text": "Sacrificial Circle: Sacrifice your Hellfire Imps within 15 yds, healing you 15% of your maximum health, plus an additional amount equal to 25% of each of your Hellfire Imp's maximum health.Hellfire Imps sacrificed in this way leave behind corpses.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-0-4",
+      "kind": "structural",
+      "text": "Demonfire Retaliation: Grants you a 30% chance to generate a stack of Demonfire when attacked.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-2-4",
+      "kind": "structural",
+      "text": "Hellish Rebuke: Generating a stack of Demon's Blood now has a 15% chance to trigger a fiery explosion on up to 5 nearby enemies, dealing 96 Fire damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-4-4",
+      "kind": "structural",
+      "text": "Implosion: Explode with hellish fire, dealing 51 + 25% Strength + 50% fire SP + 10% AP Fire damage to nearby enemies, beckoning Hellfire Imps to aid you in battle for 12 seconds, and generating 30 Rage.Deals increased damage and increases the amount of imps summoned by 1 for each Demonfire consumed.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-6-4",
+      "kind": "structural",
+      "text": "Hellfire Reprimand: Your Hellfire Imps now have a 20% chance on hit to launch a firebolt dealing 40% Strength Fire damage and reducing enemy attack power by 190 for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-8-4",
+      "kind": "structural",
+      "text": "Soul Furnace: Sacrificial Circle now grants you a damage absorption shield equal to 15% of the total health of each destroyed imp for 10 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-10-4",
+      "kind": "structural",
+      "text": "Hellfire Resolve: Level 30 PassiveIncreases your block rating by 15% of your Strength and increases your hit rating by 5% of your Strength.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-1-5",
+      "kind": "structural",
+      "text": "Demon's Breath: Critical strikes with Shieldgore now unleash an eruption of hellfire, causing 111 + 20% AP Fire damage and generating 1 additional Demonfire.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-4-5",
+      "kind": "structural",
+      "text": "Demonfire Command: Reduces the cooldown of Implosion by -10 sec and its Rage cost by -5.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-7-5",
+      "kind": "structural",
+      "text": "Infernal Bulwark: Casting Unleash Pestilence now generates 4 stacks of Demonfire and grants Infernal Bulwark.Infernal Bulwark (Proc)Increases block value by 20% for 18 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-0-6",
+      "kind": "structural",
+      "text": "Stoke the Flames: Your Skulltaker and Melt used with 6 Demonfire now refund 2 Demonfire.Skulltaker used with 6 Demonfire now deals an additional 30% Fire damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-2-6a",
+      "kind": "structural",
+      "text": "Brimstone Knight: Increases your Fire damage dealt by 3% and dealing Fire damage increases the enemy spell damage taken by 10% for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-2-6b",
+      "kind": "structural",
+      "text": "Speed Demon: Your Suffuse now increases your movement speed by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-4-6",
+      "kind": "structural",
+      "text": "Chains of Xoroth: Create demonic chains at target location that slow enemies inside by -80% for 5 seconds. At the end of the duration, it pulls all affected enemies to it.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-6-6",
+      "kind": "structural",
+      "text": "Pestilent Retaliation: When you block an attack you now have a 5% chance to unleash your active Pestilence at half of its effectiveness.Can only occur once every 5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-8-6",
+      "kind": "structural",
+      "text": "Forgefiend's Bulwark: Successful blocks, parries and dodges now have a 30% chance to Enrage you, increasing your damage dealt by 10% for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-10-6",
+      "kind": "structural",
+      "text": "Imp Aura: Level 40 PassiveEach Hellfire Imp now reduces your Magic damage taken by 1%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-0-7a",
+      "kind": "structural",
+      "text": "Hellfire Sieger: Doubles the absorption of Black Shield while below 35% health.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-0-7b",
+      "kind": "structural",
+      "text": "Brimstone Striker: Damage dealt by Stoke the Flames now reduces the cooldown of Sever and Juggernaut by -4 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-2-7",
+      "kind": "structural",
+      "text": "Demolisher: Casting Flesh Hook or Chainwhip now taunts the target for 2 seconds and reduces your Physical damage taken by -5% for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-4-7a",
+      "kind": "structural",
+      "text": "Hellfire Bellows: Transform: s your Flames of Xoroth into Hellfire Bellows.Hellfire BellowsBellow fire on all enemies in a 6 yd cone in front of and behind you, dealing 252 + 17.63% AP + 40% fire SP Fire damage and reducing the cooldown of Chains of Xoroth by -4 sec per enemy hit.Cooldown is reduced by -3 sec for each Demonfire consumed.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-4-7b",
+      "kind": "structural",
+      "text": "Black Skull Shield: Reduces the Rage cost of Shieldgore by -5 and increases its damage by 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-6-7",
+      "kind": "structural",
+      "text": "Demonic Grit: Grant your summons demonic grit, increasing their total health by 15% and reducing their damage taken by by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-8-7",
+      "kind": "structural",
+      "text": "Fiend of Forges: Forgefiend's Bulwark now also increases your critical strike chance by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-2-8",
+      "kind": "structural",
+      "text": "Hellwrath: Your Demon's Blood can now stack 5 additional times and each stack now increases the absorption amount of Black Shield by 1%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-4-8",
+      "kind": "structural",
+      "text": "Curse of Xoroth: Curse an enemy for 15 seconds, dealing 1575 + 100% AP Shadowflame Damage over 15 seconds.Your next Shieldgore within 12 seconds grants you Black Shield, absorbing 860 + 200% Stamina damage for 30 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-6-8",
+      "kind": "structural",
+      "text": "Fiery Retribution: Each time a Hellfire Imp dies, you reduce the cooldown of Sacrificial Circle by -2 sec and Implosion by -1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-10-8",
+      "kind": "structural",
+      "text": "Demonic Bulwark: Level 50 PassiveYour successful blocks now have a 30% chance to critically block for twice the normal amount.Chance to trigger is increased by 2% for each Hellfire Imp you have active.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-2-9",
+      "kind": "structural",
+      "text": "Call: Hellfire Abyssal: Call down a Hellfire Abyssal from the sky to crash down upon the targeted 8 yd area, dealing 1500 + 100% SP + 100% AP Fire damage.The abyssal remains to aid you in battle for 15 seconds and emits an aura that reduces the damage taken by party and raid members within 40 yds by -5%.Costs -15 less Rage for each active Hellfire Imp.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-4-9",
+      "kind": "structural",
+      "text": "A Curse from Hell: Periodic damage dealt now has a 15% chance to reduce the cooldown of Curse of Xoroth by -3 sec.Chance to trigger is increased by 2% for each stack of Demonfire active.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/defiance:17-47-6-9",
+      "kind": "structural",
+      "text": "Legion's Presence: Emanate an aura to all party and raid members within 25 yds for 15 seconds, increasing their damage dealt by 10%.Fire damage dealt by Hellfire Imps is increased by 150% and total health increased by 50% while this effect is active on them.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "observed:knight-of-xoroth/defiance:self-sustain-kit",
+      "kind": "observed",
+      "text": "A current level-57 player reports no dungeon or solo deaths and another lists a persistent HoT, instant heal, shield, reduction cooldown and a heal scaling with nearby enemies.",
+      "source_ids": [
+        "reddit:kox-defiance-2026-08-04",
+        "reddit:tank-weapons-2026-08-01"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:knight-of-xoroth/defiance:priority-feel",
+      "kind": "observed",
+      "text": "A recent tank comparison calls Defiance's priority slightly above average rather than extreme, praising smooth imp interactions and meaningful talent options.",
+      "source_ids": [
+        "reddit:kox-defiance-2026-08-04",
+        "reddit:tank-weapons-2026-08-01"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:knight-of-xoroth/defiance:pack-resource-loop",
+      "kind": "observed",
+      "text": "Current accounts say being hit by many enemies supplies enough Rage for repeated healing, explaining why its large-pull sustain can feel stronger than its single-target resource flow.",
+      "source_ids": [
+        "reddit:kox-defiance-2026-08-04",
+        "reddit:tank-weapons-2026-08-01"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:knight-of-xoroth/defiance:build-practice",
+      "kind": "observed",
+      "text": "The captured top-logs-based Defiance build documents one current tank setup, but its title is not independent proof that it is optimal.",
+      "source_ids": [
+        "buildhub-builds-2026-08-05",
+        "buildhub:ac11d4c7-9a36-481a-96aa-93b8a7dabb3c"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "community_build_snapshot"
+        ],
+        "build_or_mode": [
+          "documented_build"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The guide documents one current way to play; it is not treated as proof of optimality."
+    },
+    {
+      "id": "observed:knight-of-xoroth/defiance:performance-context",
+      "kind": "observed",
+      "text": "The 1,704 off-role DPS and 70 Mythic records do not measure tank survivability.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "uncontrolled_performance_signals"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "low",
+      "conflicts_with": [],
+      "notes": "Do not convert this into a tier ranking."
+    },
+    {
+      "id": "inference:knight-of-xoroth/defiance:playstyle-identity",
+      "kind": "inference",
+      "text": "A block-and-retaliation fire tank whose imps, Abyssal and attackers feed Rage into shields, rebukes and unusually strong self-healing.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:knight-of-xoroth/defiance:17-47-2-4",
+        "talent:knight-of-xoroth/defiance:17-47-10-0",
+        "talent:knight-of-xoroth/defiance:17-47-2-9",
+        "talent:knight-of-xoroth/defiance:17-47-8-4",
+        "observed:knight-of-xoroth/defiance:self-sustain-kit",
+        "observed:knight-of-xoroth/defiance:priority-feel"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Descriptive playstyle classification, not an official label."
+    },
+    {
+      "id": "inference:knight-of-xoroth/defiance:failure-cost",
+      "kind": "inference",
+      "text": "Dumping Rage into damage before a spike removes the resource needed for mitigation or healing.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:knight-of-xoroth/defiance:17-47-2-4",
+        "talent:knight-of-xoroth/defiance:17-47-10-0",
+        "talent:knight-of-xoroth/defiance:17-47-2-9",
+        "talent:knight-of-xoroth/defiance:17-47-8-4",
+        "talent:knight-of-xoroth/defiance:17-47-4-0",
+        "observed:knight-of-xoroth/defiance:self-sustain-kit",
+        "observed:knight-of-xoroth/defiance:priority-feel",
+        "observed:knight-of-xoroth/defiance:pack-resource-loop"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Direction is supported; exact throughput cost is not measured."
+    }
+  ]
+}

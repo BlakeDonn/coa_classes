@@ -1,0 +1,1456 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "pyromancer/incineration",
+    "class": "Pyromancer",
+    "name": "Incineration",
+    "roles": [
+      "Damage"
+    ],
+    "range": [
+      "Ranged"
+    ]
+  },
+  "identity": {
+    "fantasy": "",
+    "one_line": "An Ignite and Burn specialist that layers periodic effects, builds Heat, and uses Pyroclasm to consume or duplicate stored damage. Recent players call out substantial top-end optimization because detonation timing can change Pyroclasm by a large amount. It has excellent DoT pressure and payoff, but punishes premature consumption.",
+    "primary_family": "",
+    "also_fits": [],
+    "claim_ids": [
+      "talent:pyromancer/incineration:24-62-4-0",
+      "talent:pyromancer/incineration:24-62-10-0",
+      "talent:pyromancer/incineration:24-62-4-1",
+      "talent:pyromancer/incineration:24-62-3-2a",
+      "talent:pyromancer/incineration:24-62-3-2b",
+      "talent:pyromancer/incineration:24-62-5-2",
+      "talent:pyromancer/incineration:24-62-10-2",
+      "talent:pyromancer/incineration:24-62-2-3",
+      "talent:pyromancer/incineration:24-62-4-3",
+      "talent:pyromancer/incineration:24-62-6-3",
+      "talent:pyromancer/incineration:24-62-0-4",
+      "talent:pyromancer/incineration:24-62-2-4",
+      "talent:pyromancer/incineration:24-62-4-4",
+      "talent:pyromancer/incineration:24-62-6-4",
+      "talent:pyromancer/incineration:24-62-8-4",
+      "talent:pyromancer/incineration:24-62-10-4",
+      "talent:pyromancer/incineration:24-62-2-5",
+      "talent:pyromancer/incineration:24-62-3-5",
+      "talent:pyromancer/incineration:24-62-5-5",
+      "talent:pyromancer/incineration:24-62-6-5",
+      "talent:pyromancer/incineration:24-62-1-6",
+      "talent:pyromancer/incineration:24-62-3-6",
+      "talent:pyromancer/incineration:24-62-5-6",
+      "talent:pyromancer/incineration:24-62-7-6",
+      "talent:pyromancer/incineration:24-62-10-6",
+      "talent:pyromancer/incineration:24-62-0-7",
+      "talent:pyromancer/incineration:24-62-2-7",
+      "talent:pyromancer/incineration:24-62-4-7",
+      "talent:pyromancer/incineration:24-62-6-7",
+      "talent:pyromancer/incineration:24-62-8-7a",
+      "talent:pyromancer/incineration:24-62-8-7b",
+      "talent:pyromancer/incineration:24-62-2-8",
+      "talent:pyromancer/incineration:24-62-4-8",
+      "talent:pyromancer/incineration:24-62-6-8",
+      "talent:pyromancer/incineration:24-62-10-8",
+      "talent:pyromancer/incineration:24-62-2-9",
+      "talent:pyromancer/incineration:24-62-4-9",
+      "talent:pyromancer/incineration:24-62-6-9"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "An Ignite and Burn specialist that layers periodic effects, builds Heat, and uses Pyroclasm to consume or duplicate stored damage. Recent players call out substantial top-end optimization because detonation timing can change Pyroclasm by a large amount. It has excellent DoT pressure and payoff, but punishes premature consumption.",
+    "resources": [],
+    "builders": [
+      {
+        "name": "Ignite",
+        "claim_ids": [
+          "talent:pyromancer/incineration:24-62-4-0"
+        ]
+      },
+      {
+        "name": "Pillar of Flame",
+        "claim_ids": [
+          "talent:pyromancer/incineration:24-62-2-4"
+        ]
+      },
+      {
+        "name": "To Ashes",
+        "claim_ids": [
+          "talent:pyromancer/incineration:24-62-5-5"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Fired Up!",
+        "claim_ids": [
+          "talent:pyromancer/incineration:24-62-6-3"
+        ]
+      },
+      {
+        "name": "Magmatic",
+        "claim_ids": [
+          "talent:pyromancer/incineration:24-62-2-5"
+        ]
+      },
+      {
+        "name": "Pyroclasm",
+        "claim_ids": [
+          "talent:pyromancer/incineration:24-62-6-8"
+        ]
+      },
+      {
+        "name": "Legacy of Ragnaros",
+        "claim_ids": [
+          "talent:pyromancer/incineration:24-62-6-9"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Flames of the Firelord",
+        "claim_ids": [
+          "talent:pyromancer/incineration:24-62-2-9"
+        ]
+      },
+      {
+        "name": "Legacy of Ragnaros",
+        "claim_ids": [
+          "talent:pyromancer/incineration:24-62-6-9"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Pyroclasm",
+        "claim_ids": [
+          "talent:pyromancer/incineration:24-62-6-8"
+        ],
+        "structural_description": "Consumes 1 EmberCreate a pyroclasm instantly consuming your Burning effects on a target to deal the two times total periodic damage plus an additional 2100 to 2220 over 10 seconds, piercing absorption effects and resistances."
+      }
+    ],
+    "single_target": "",
+    "aoe": "",
+    "movement_and_target_switching": "",
+    "defense_and_control": "",
+    "group_utility": "",
+    "failure_modes": [],
+    "claim_ids": [
+      "talent:pyromancer/incineration:24-62-4-0",
+      "talent:pyromancer/incineration:24-62-10-0",
+      "talent:pyromancer/incineration:24-62-4-1",
+      "talent:pyromancer/incineration:24-62-3-2a",
+      "talent:pyromancer/incineration:24-62-3-2b",
+      "talent:pyromancer/incineration:24-62-5-2",
+      "talent:pyromancer/incineration:24-62-10-2",
+      "talent:pyromancer/incineration:24-62-2-3",
+      "talent:pyromancer/incineration:24-62-4-3",
+      "talent:pyromancer/incineration:24-62-6-3",
+      "talent:pyromancer/incineration:24-62-0-4",
+      "talent:pyromancer/incineration:24-62-2-4",
+      "talent:pyromancer/incineration:24-62-4-4",
+      "talent:pyromancer/incineration:24-62-6-4",
+      "talent:pyromancer/incineration:24-62-8-4",
+      "talent:pyromancer/incineration:24-62-10-4",
+      "talent:pyromancer/incineration:24-62-2-5",
+      "talent:pyromancer/incineration:24-62-3-5",
+      "talent:pyromancer/incineration:24-62-5-5",
+      "talent:pyromancer/incineration:24-62-6-5",
+      "talent:pyromancer/incineration:24-62-1-6",
+      "talent:pyromancer/incineration:24-62-3-6",
+      "talent:pyromancer/incineration:24-62-5-6",
+      "talent:pyromancer/incineration:24-62-7-6",
+      "talent:pyromancer/incineration:24-62-10-6",
+      "talent:pyromancer/incineration:24-62-0-7",
+      "talent:pyromancer/incineration:24-62-2-7",
+      "talent:pyromancer/incineration:24-62-4-7",
+      "talent:pyromancer/incineration:24-62-6-7",
+      "talent:pyromancer/incineration:24-62-8-7a",
+      "talent:pyromancer/incineration:24-62-8-7b",
+      "talent:pyromancer/incineration:24-62-2-8",
+      "talent:pyromancer/incineration:24-62-4-8",
+      "talent:pyromancer/incineration:24-62-6-8",
+      "talent:pyromancer/incineration:24-62-10-8",
+      "talent:pyromancer/incineration:24-62-2-9",
+      "talent:pyromancer/incineration:24-62-4-9",
+      "talent:pyromancer/incineration:24-62-6-9"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Ignite",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0"
+          ]
+        },
+        {
+          "name": "Infernus",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-10-0"
+          ]
+        },
+        {
+          "name": "Combustion",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-1"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:pyromancer/incineration:24-62-4-0",
+        "talent:pyromancer/incineration:24-62-10-0",
+        "talent:pyromancer/incineration:24-62-4-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Residual Power",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-3-2a"
+          ]
+        },
+        {
+          "name": "Arsonist",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-3-2b"
+          ]
+        },
+        {
+          "name": "Magnitude 10",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-5-2"
+          ]
+        },
+        {
+          "name": "Scorched",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-10-2"
+          ]
+        },
+        {
+          "name": "Cataclysmic Power",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-2-3"
+          ]
+        },
+        {
+          "name": "Embrace the Fire",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-3"
+          ]
+        },
+        {
+          "name": "Fired Up!",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-6-3"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:pyromancer/incineration:24-62-3-2a",
+        "talent:pyromancer/incineration:24-62-3-2b",
+        "talent:pyromancer/incineration:24-62-5-2",
+        "talent:pyromancer/incineration:24-62-10-2",
+        "talent:pyromancer/incineration:24-62-2-3",
+        "talent:pyromancer/incineration:24-62-4-3",
+        "talent:pyromancer/incineration:24-62-6-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Searing Power",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-0-4"
+          ]
+        },
+        {
+          "name": "Pillar of Flame",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-2-4"
+          ]
+        },
+        {
+          "name": "Wreath of Flames",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-4"
+          ]
+        },
+        {
+          "name": "Flamespiller",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-6-4"
+          ]
+        },
+        {
+          "name": "Melting Point",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-8-4"
+          ]
+        },
+        {
+          "name": "Lighting the Fuse",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-10-4"
+          ]
+        },
+        {
+          "name": "Magmatic",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-2-5"
+          ]
+        },
+        {
+          "name": "Molten Storm",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-3-5"
+          ]
+        },
+        {
+          "name": "To Ashes",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-5-5"
+          ]
+        },
+        {
+          "name": "Roasted Alive",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-6-5"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:pyromancer/incineration:24-62-0-4",
+        "talent:pyromancer/incineration:24-62-2-4",
+        "talent:pyromancer/incineration:24-62-4-4",
+        "talent:pyromancer/incineration:24-62-6-4",
+        "talent:pyromancer/incineration:24-62-8-4",
+        "talent:pyromancer/incineration:24-62-10-4",
+        "talent:pyromancer/incineration:24-62-2-5",
+        "talent:pyromancer/incineration:24-62-3-5",
+        "talent:pyromancer/incineration:24-62-5-5",
+        "talent:pyromancer/incineration:24-62-6-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Pyromantic Accelerants",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-1-6"
+          ]
+        },
+        {
+          "name": "Explosive",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-3-6"
+          ]
+        },
+        {
+          "name": "Sizzle",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-5-6"
+          ]
+        },
+        {
+          "name": "Fiery Passion",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-7-6"
+          ]
+        },
+        {
+          "name": "Incinerator",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-10-6"
+          ]
+        },
+        {
+          "name": "Rapid Incineration",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-0-7"
+          ]
+        },
+        {
+          "name": "Pyromaniac",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-2-7"
+          ]
+        },
+        {
+          "name": "Flames of Focus",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-7"
+          ]
+        },
+        {
+          "name": "Stoke",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-6-7"
+          ]
+        },
+        {
+          "name": "Dark Iron Legacy",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-8-7a"
+          ]
+        },
+        {
+          "name": "Destroyer's Legacy",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-8-7b"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:pyromancer/incineration:24-62-1-6",
+        "talent:pyromancer/incineration:24-62-3-6",
+        "talent:pyromancer/incineration:24-62-5-6",
+        "talent:pyromancer/incineration:24-62-7-6",
+        "talent:pyromancer/incineration:24-62-10-6",
+        "talent:pyromancer/incineration:24-62-0-7",
+        "talent:pyromancer/incineration:24-62-2-7",
+        "talent:pyromancer/incineration:24-62-4-7",
+        "talent:pyromancer/incineration:24-62-6-7",
+        "talent:pyromancer/incineration:24-62-8-7a",
+        "talent:pyromancer/incineration:24-62-8-7b"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Pyroclastic Flow",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-2-8"
+          ]
+        },
+        {
+          "name": "Heat Wave",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-8"
+          ]
+        },
+        {
+          "name": "Pyroclasm",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-6-8"
+          ]
+        },
+        {
+          "name": "Burned",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-10-8"
+          ]
+        },
+        {
+          "name": "Flames of the Firelord",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-2-9"
+          ]
+        },
+        {
+          "name": "Sulfuron Harbinger",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-9"
+          ]
+        },
+        {
+          "name": "Legacy of Ragnaros",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-6-9"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:pyromancer/incineration:24-62-2-8",
+        "talent:pyromancer/incineration:24-62-4-8",
+        "talent:pyromancer/incineration:24-62-6-8",
+        "talent:pyromancer/incineration:24-62-10-8",
+        "talent:pyromancer/incineration:24-62-2-9",
+        "talent:pyromancer/incineration:24-62-4-9",
+        "talent:pyromancer/incineration:24-62-6-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "leveling_30_49": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "level_50_60": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "boss": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "dungeon_aoe": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "pvp": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [],
+    "avoid_if": []
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [],
+  "sentiment": {
+    "praise": [],
+    "frustrations": [],
+    "contested": []
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 2,
+    "latest_update": "2026-08-03T10:14:31.908+00:00",
+    "top_title": "Incineration - Explode ST build",
+    "top_url": "https://coabuildhub.com/build/ccf0c5cd-363d-4f24-9812-3d23f23fbc65",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:ccf0c5cd-363d-4f24-9812-3d23f23fbc65"
+    ]
+  },
+  "coverage": {
+    "mechanical": "structural_baseline",
+    "community": "indexed",
+    "performance": "missing",
+    "video": "missing",
+    "overall_confidence": "low",
+    "gaps": [
+      "Effective core loop needs recent guide or player cross-check.",
+      "Contextual complexity values are not yet researched.",
+      "Recent performance, sentiment, issues, and video evidence are not yet reconciled."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:pyromancer/incineration:24-62-4-0",
+      "kind": "structural",
+      "text": "Ignite: Generates 10 Heat Per TickBurn an enemy, inflicting 119 Fire damage over 21 seconds. If Ignite is dispelled it will cause 816 + 150% fire SP Fire damage to the dispeller.Castable while moving.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-10-0",
+      "kind": "structural",
+      "text": "Infernus: Damage dealt by Lava Shard now applies Infernus, causing enemies to Burn, dealing an additional 1122 + 72% SP Fire damage over 18 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-4-1",
+      "kind": "structural",
+      "text": "Combustion: Damage dealt by Explode is now increased by 15% for each of your Pyromancer periodic effects on the target.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-3-2a",
+      "kind": "structural",
+      "text": "Residual Power: Each active Ember now reduces the cast time of Explode by -8%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-3-2b",
+      "kind": "structural",
+      "text": "Arsonist: Increases the critical damage of your Ember spenders by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-5-2",
+      "kind": "structural",
+      "text": "Magnitude 10: Increases the critical strike chance of Flare Bolt by 5%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-10-2",
+      "kind": "structural",
+      "text": "Scorched: Level 20 PassiveDirect critical strikes with Ember spenders now Scorch the target, Burning them for an additional 30% of the damage dealt over 3 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-2-3",
+      "kind": "structural",
+      "text": "Cataclysmic Power: Increases the damage of Flare Bolt by 3% for each periodic effect you have on the target.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-4-3",
+      "kind": "structural",
+      "text": "Embrace the Fire: Increases the damage of Blaze and Ignite by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-6-3",
+      "kind": "structural",
+      "text": "Fired Up!: Your Ember spenders are now instant and have a 30% chance to refund their cost and increases your chance to critically strike by 20% for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-0-4",
+      "kind": "structural",
+      "text": "Searing Power: Increases the spell power scaling of Flare Bolt by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-2-4",
+      "kind": "structural",
+      "text": "Pillar of Flame: Generates 20 Heat Per TargetCreate a pillar of lava beneath an enemy, dealing 36 + 31.24% fire SP Fire damage.Deals an additional 92 + 34.36% fire SP Fire damage to enemies near the primary target.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-4-4",
+      "kind": "structural",
+      "text": "Wreath of Flames: Periodic Fire damage now has a 10% chance to grant a stack of Flamecasting, or 2 stacks if they critically strike.FlamecastingIncreases your spell haste by 5% for 15 seconds. Stacks 5 times.Additional applications do not refresh duration.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-6-4",
+      "kind": "structural",
+      "text": "Flamespiller: Critical strikes with Explode or Flames of Neltharion now extend the duration of Fired Up by 0.5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-8-4",
+      "kind": "structural",
+      "text": "Melting Point: Critical strikes with Fire spells now increases the chance for the enemy to by critically hit with spells by 3% for 12 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-10-4",
+      "kind": "structural",
+      "text": "Lighting the Fuse: Level 30 PassiveAllows your periodic effects to critically strike and increases your spell critical strike chance by 15% of your Intellect.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-2-5",
+      "kind": "structural",
+      "text": "Magmatic: After casting Pillar of Flame, all periodic damage dealt now gives you a 10% chance to cast Pillar of Flame on the target free of cost for 5 seconds.Pillar of FlameGenerates 20 Heat Per TargetCreate a pillar of lava beneath an enemy, dealing 36 + 31.24% fire SP Fire damage.Deals an additional 92 + 34.36% fire SP Fire damage to enemies near the primary target.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-3-5",
+      "kind": "structural",
+      "text": "Molten Storm: Increases the critical strike chance and damage of Lava Shard by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-5-5",
+      "kind": "structural",
+      "text": "To Ashes: Damaging critical strikes now generate 10 Heat and restore 3% of your base mana.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-6-5",
+      "kind": "structural",
+      "text": "Roasted Alive: Increases the chance to trigger Fired Up by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-1-6",
+      "kind": "structural",
+      "text": "Pyromantic Accelerants: Your Flames of Neltharion and Explode now deal 15% increased damage to Burning targets.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-3-6",
+      "kind": "structural",
+      "text": "Explosive: Increases the tick rate of Blaze and Ignite by -10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-5-6",
+      "kind": "structural",
+      "text": "Sizzle: When Flamecasting expires your active Pyromancer periodic effects flare up to 12 nearby enemies, instantly striking them with Flare Bolts.Flare BoltGenerates 20 HeatInvoke flames upon an enemy, dealing 19 + 57.1% fire SP Fire damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-7-6",
+      "kind": "structural",
+      "text": "Fiery Passion: Increases the spell haste of all party and raid members by 3%. Does not stack with similar effects.In addition, your spell haste is increased by 3%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-10-6",
+      "kind": "structural",
+      "text": "Incinerator: Level 40 PassiveIncreases your spell penetration by 30, scaling with your level.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-0-7",
+      "kind": "structural",
+      "text": "Rapid Incineration: Consuming Embers now reduces the cooldown of Lava Shard and Pillar of Flame by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-2-7",
+      "kind": "structural",
+      "text": "Pyromaniac: Increases the critical strike chance of Ember spenders by 5%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-4-7",
+      "kind": "structural",
+      "text": "Flames of Focus: Adds 1 additional stack to Flamecasting and increases its duration by 5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-6-7",
+      "kind": "structural",
+      "text": "Stoke: Critical strikes with Ignite and Infernus now extend their own duration on the target by 3 sec, up to a maximum of 12 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-8-7a",
+      "kind": "structural",
+      "text": "Dark Iron Legacy: Targets affected by the disorient from Meteor take an additional 40% increased damage from the next Explode or Lava Shard.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-8-7b",
+      "kind": "structural",
+      "text": "Destroyer's Legacy: Damage dealt by Lava Shard on enemies affected by Blaze now blasts nearby enemies for 20% of the damage dealt as Fire damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-2-8",
+      "kind": "structural",
+      "text": "Pyroclastic Flow: Flare Bolt now increases the damage of subsequent Flare Bolts by 3% for 10 seconds, stacking 5 times.Flames of Neltharion and Explode now increase the damage of subsequent Explodes or Flames of Neltharion by 3% for 5 seconds, stacking 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-4-8",
+      "kind": "structural",
+      "text": "Heat Wave: Flamecasting stacks now also increase the damage of Explode and Flames of Neltharion by 4% per stack.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-6-8",
+      "kind": "structural",
+      "text": "Pyroclasm: Consumes 1 EmberCreate a pyroclasm instantly consuming your Burning effects on a target to deal the two times total periodic damage plus an additional 2100 to 2220 over 10 seconds, piercing absorption effects and resistances.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-10-8",
+      "kind": "structural",
+      "text": "Burned: Level 50 PassiveDirect Fire damage dealt now applies Burned to the target for 15 seconds.Burned (Proc)Increases the targets damage taken from your periodic effects by 3% stacking 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-2-9",
+      "kind": "structural",
+      "text": "Flames of the Firelord: Your periodic damage dealt now has a 5% chance to grant you Eruption for 5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-4-9",
+      "kind": "structural",
+      "text": "Sulfuron Harbinger: Increases the critical strike chance of Blaze and Ignite by 5% and increases their tick rate by -20% and reduces their durations by -25%.Periodic critical strikes apply Sulfur Fumes.Sulfur Fumes (Proc)Flare Bolt, Explode, or Flames of Neltharion will detonate the Sulfur Fumes to cause a Sulfuron Blast, dealing 263 Fire Damage to the target and extending the duration of Blaze on them by 1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:pyromancer/incineration:24-62-6-9",
+      "kind": "structural",
+      "text": "Legacy of Ragnaros: Pyroclasm now causes your next 3 Lava Shards within 12 seconds to trigger no cooldown and be free of cost.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    }
+  ]
+}

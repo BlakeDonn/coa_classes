@@ -1,0 +1,970 @@
+{
+  "baseline": "sun-cleric--valkyrie.json",
+  "set": {
+    "identity": {
+      "fantasy": "A solar weapon fighter who builds Radiant Marks, leaps and grips through packs, and turns Glorious Execution and Sunslam procs into Holy burst.",
+      "one_line": "Generate Radiant Marks, align Dawn and Judgment, then spend on Glorious Execution and Sunslam while attacks restore mana.",
+      "primary_family": "duelists",
+      "also_fits": [
+        "sequencers"
+      ],
+      "playstyle_tags": [
+        "solar-proc-warrior",
+        "dual-wield-melee",
+        "execution-window-melee"
+      ],
+      "claim_ids": [
+        "talent:sun-cleric/valkyrie:27-90-4-0",
+        "talent:sun-cleric/valkyrie:27-90-10-0",
+        "talent:sun-cleric/valkyrie:27-90-4-1",
+        "talent:sun-cleric/valkyrie:27-90-2-2",
+        "observed:sun-cleric/valkyrie:relative-simplicity",
+        "observed:sun-cleric/valkyrie:aoe-breakpoint",
+        "inference:sun-cleric/valkyrie:playstyle-identity"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "A dual-wield or heavy-weapon solar fighter using Radiant Marks, Glorious Execution, Sunslam, leaps, grips, and judgment windows. It mixes mana regeneration through attacks with proc-driven Holy burst. Current PvE builds are detailed and popular, but at least one was already labeled old after rapid changes.",
+      "single_target": "On durable targets, the structural path grows from Glorious Execution, Valkyr's Grip, Odyn's Vanguard toward Light's Blessing, Knight of Dawn, Divine Retribution. A precise priority remains limited to the captured build and community evidence.",
+      "aoe": "For multiple targets, Generate Radiant Marks, align Dawn and Judgment, then spend on Glorious Execution and Sunslam while attacks restore mana. The current evidence particularly constrains this through: A player identifies roughly 30 and the AoE aura as the pack-clearing breakpoint.",
+      "movement_and_target_switching": "Leaps, grips, and pursuit tools make it a mobile melee spec with active target control.",
+      "defense_and_control": "Its structural defensive package includes Odyn's Vanguard, Light of the Sun, Gift of the Sun, Arbiter of Light, March of the Valkyr.",
+      "group_utility": "Group or control tools include Sunslam, March of the Valkyr.",
+      "failure_modes": [
+        {
+          "text": "Missing a Radiant Mark or Glorious Execution window can strand mana and proc value until the next setup.",
+          "claim_ids": [
+            "inference:sun-cleric/valkyrie:failure-cost",
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1"
+          ]
+        },
+        {
+          "text": "Losing setup before payoff forces another recovery cycle.",
+          "claim_ids": [
+            "inference:sun-cleric/valkyrie:failure-cost",
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1"
+          ]
+        },
+        {
+          "text": "Losing setup before payoff forces another recovery cycle.",
+          "claim_ids": [
+            "inference:sun-cleric/valkyrie:failure-cost",
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "talent:sun-cleric/valkyrie:27-90-4-0",
+        "talent:sun-cleric/valkyrie:27-90-10-0",
+        "talent:sun-cleric/valkyrie:27-90-4-1",
+        "talent:sun-cleric/valkyrie:27-90-2-2",
+        "talent:sun-cleric/valkyrie:27-90-6-2",
+        "talent:sun-cleric/valkyrie:27-90-10-2",
+        "observed:sun-cleric/valkyrie:relative-simplicity",
+        "observed:sun-cleric/valkyrie:aoe-breakpoint",
+        "observed:sun-cleric/valkyrie:tracking-tool",
+        "observed:sun-cleric/valkyrie:build-practice",
+        "inference:sun-cleric/valkyrie:playstyle-identity"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "Early heavy attacks have conflicting reports.",
+        "strengths": [
+          "Core identity",
+          "Readable payoff"
+        ],
+        "cautions": [
+          "Incomplete kit",
+          "Sparse guidance"
+        ],
+        "claim_ids": [
+          "talent:sun-cleric/valkyrie:27-90-4-0",
+          "talent:sun-cleric/valkyrie:27-90-10-0",
+          "talent:sun-cleric/valkyrie:27-90-4-1",
+          "talent:sun-cleric/valkyrie:27-90-2-2",
+          "observed:sun-cleric/valkyrie:relative-simplicity",
+          "observed:sun-cleric/valkyrie:aoe-breakpoint",
+          "observed:sun-cleric/valkyrie:tracking-tool",
+          "inference:sun-cleric/valkyrie:playstyle-identity"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "The level-30 aura creates pack momentum.",
+        "strengths": [
+          "Complete engine",
+          "Better coverage"
+        ],
+        "cautions": [
+          "More states",
+          "Unlock dependent"
+        ],
+        "claim_ids": [
+          "talent:sun-cleric/valkyrie:27-90-4-0",
+          "talent:sun-cleric/valkyrie:27-90-10-0",
+          "talent:sun-cleric/valkyrie:27-90-4-1",
+          "talent:sun-cleric/valkyrie:27-90-2-2",
+          "observed:sun-cleric/valkyrie:relative-simplicity",
+          "observed:sun-cleric/valkyrie:aoe-breakpoint",
+          "observed:sun-cleric/valkyrie:tracking-tool",
+          "inference:sun-cleric/valkyrie:playstyle-identity"
+        ]
+      },
+      "level_50_60": {
+        "feel": "Late Judgment windows deepen the direct melee core.",
+        "strengths": [
+          "Late package",
+          "Higher ceiling"
+        ],
+        "cautions": [
+          "Unsettled priority",
+          "Tracking"
+        ],
+        "claim_ids": [
+          "talent:sun-cleric/valkyrie:27-90-4-0",
+          "talent:sun-cleric/valkyrie:27-90-10-0",
+          "talent:sun-cleric/valkyrie:27-90-4-1",
+          "talent:sun-cleric/valkyrie:27-90-2-2",
+          "observed:sun-cleric/valkyrie:relative-simplicity",
+          "observed:sun-cleric/valkyrie:aoe-breakpoint",
+          "observed:sun-cleric/valkyrie:tracking-tool",
+          "inference:sun-cleric/valkyrie:playstyle-identity"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, On durable targets, the structural path grows from Glorious Execution, Valkyr's Grip, Odyn's Vanguard toward Light's Blessing, Knight of Dawn, Divine Retribution. A precise priority remains limited to the captured build and community evidence.",
+        "strengths": [
+          "Durable payoff",
+          "Repeatable loop"
+        ],
+        "cautions": [
+          "Movement",
+          "Repeated errors"
+        ],
+        "claim_ids": [
+          "talent:sun-cleric/valkyrie:27-90-4-0",
+          "talent:sun-cleric/valkyrie:27-90-10-0",
+          "talent:sun-cleric/valkyrie:27-90-4-1",
+          "talent:sun-cleric/valkyrie:27-90-2-2",
+          "observed:sun-cleric/valkyrie:relative-simplicity",
+          "observed:sun-cleric/valkyrie:aoe-breakpoint",
+          "observed:sun-cleric/valkyrie:tracking-tool",
+          "inference:sun-cleric/valkyrie:playstyle-identity"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, For multiple targets, Generate Radiant Marks, align Dawn and Judgment, then spend on Glorious Execution and Sunslam while attacks restore mana. The current evidence particularly constrains this through: A player identifies roughly 30 and the AoE aura as the pack-clearing breakpoint.",
+        "strengths": [
+          "Pack tools",
+          "Utility"
+        ],
+        "cautions": [
+          "Short packs",
+          "Position"
+        ],
+        "claim_ids": [
+          "talent:sun-cleric/valkyrie:27-90-4-0",
+          "talent:sun-cleric/valkyrie:27-90-10-0",
+          "talent:sun-cleric/valkyrie:27-90-4-1",
+          "talent:sun-cleric/valkyrie:27-90-2-2",
+          "observed:sun-cleric/valkyrie:relative-simplicity",
+          "observed:sun-cleric/valkyrie:aoe-breakpoint",
+          "observed:sun-cleric/valkyrie:tracking-tool",
+          "inference:sun-cleric/valkyrie:playstyle-identity"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, Leaps, grips, and pursuit tools make it a mobile melee spec with active target control. Its structural defensive package includes Odyn's Vanguard, Light of the Sun, Gift of the Sun, Arbiter of Light, March of the Valkyr.",
+        "strengths": [
+          "Control",
+          "Pressure"
+        ],
+        "cautions": [
+          "Disruption",
+          "Defense"
+        ],
+        "claim_ids": [
+          "talent:sun-cleric/valkyrie:27-90-4-0",
+          "talent:sun-cleric/valkyrie:27-90-10-0",
+          "talent:sun-cleric/valkyrie:27-90-4-1",
+          "talent:sun-cleric/valkyrie:27-90-2-2",
+          "observed:sun-cleric/valkyrie:relative-simplicity",
+          "observed:sun-cleric/valkyrie:aoe-breakpoint",
+          "observed:sun-cleric/valkyrie:tracking-tool",
+          "inference:sun-cleric/valkyrie:playstyle-identity"
+        ]
+      }
+    },
+    "complexity": {
+      "core_actions": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "The active bar follows this loop: A dual-wield or heavy-weapon solar fighter using Radiant Marks, Glorious Execution, Sunslam, leaps, grips, and judgment windows. It mixes mana regeneration through attacks with proc-driven Holy burst. Current PvE builds are detailed and popular, but at least one was already labeled old after rapid changes. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "The active bar follows this loop: A dual-wield or heavy-weapon solar fighter using Radiant Marks, Glorious Execution, Sunslam, leaps, grips, and judgment windows. It mixes mana regeneration through attacks with proc-driven Holy burst. Current PvE builds are detailed and popular, but at least one was already labeled old after rapid changes. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "The active bar follows this loop: A dual-wield or heavy-weapon solar fighter using Radiant Marks, Glorious Execution, Sunslam, leaps, grips, and judgment windows. It mixes mana regeneration through attacks with proc-driven Holy burst. Current PvE builds are detailed and popular, but at least one was already labeled old after rapid changes. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "The active bar follows this loop: A dual-wield or heavy-weapon solar fighter using Radiant Marks, Glorious Execution, Sunslam, leaps, grips, and judgment windows. It mixes mana regeneration through attacks with proc-driven Holy burst. Current PvE builds are detailed and popular, but at least one was already labeled old after rapid changes. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "The active bar follows this loop: A dual-wield or heavy-weapon solar fighter using Radiant Marks, Glorious Execution, Sunslam, leaps, grips, and judgment windows. It mixes mana regeneration through attacks with proc-driven Holy burst. Current PvE builds are detailed and popular, but at least one was already labeled old after rapid changes. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "The active bar follows this loop: A dual-wield or heavy-weapon solar fighter using Radiant Marks, Glorious Execution, Sunslam, leaps, grips, and judgment windows. It mixes mana regeneration through attacks with proc-driven Holy burst. Current PvE builds are detailed and popular, but at least one was already labeled old after rapid changes. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        }
+      },
+      "state_tracking": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Glorious Execution, Valkyr's Grip, Odyn's Vanguard toward Light's Blessing, Knight of Dawn, Divine Retribution. A precise priority remains limited to the captured build and community evidence. must be tracked. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Glorious Execution, Valkyr's Grip, Odyn's Vanguard toward Light's Blessing, Knight of Dawn, Divine Retribution. A precise priority remains limited to the captured build and community evidence. must be tracked. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Glorious Execution, Valkyr's Grip, Odyn's Vanguard toward Light's Blessing, Knight of Dawn, Divine Retribution. A precise priority remains limited to the captured build and community evidence. must be tracked. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Glorious Execution, Valkyr's Grip, Odyn's Vanguard toward Light's Blessing, Knight of Dawn, Divine Retribution. A precise priority remains limited to the captured build and community evidence. must be tracked. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Glorious Execution, Valkyr's Grip, Odyn's Vanguard toward Light's Blessing, Knight of Dawn, Divine Retribution. A precise priority remains limited to the captured build and community evidence. must be tracked. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Glorious Execution, Valkyr's Grip, Odyn's Vanguard toward Light's Blessing, Knight of Dawn, Divine Retribution. A precise priority remains limited to the captured build and community evidence. must be tracked. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Generate Radiant Marks, align Dawn and Judgment, then spend on Glorious Execution and Sunslam while attacks restore mana. The current evidence particularly constrains this through: A player identifies roughly 30 and the AoE aura as the pack-clearing breakpoint. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Generate Radiant Marks, align Dawn and Judgment, then spend on Glorious Execution and Sunslam while attacks restore mana. The current evidence particularly constrains this through: A player identifies roughly 30 and the AoE aura as the pack-clearing breakpoint. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Generate Radiant Marks, align Dawn and Judgment, then spend on Glorious Execution and Sunslam while attacks restore mana. The current evidence particularly constrains this through: A player identifies roughly 30 and the AoE aura as the pack-clearing breakpoint. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Generate Radiant Marks, align Dawn and Judgment, then spend on Glorious Execution and Sunslam while attacks restore mana. The current evidence particularly constrains this through: A player identifies roughly 30 and the AoE aura as the pack-clearing breakpoint. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Generate Radiant Marks, align Dawn and Judgment, then spend on Glorious Execution and Sunslam while attacks restore mana. The current evidence particularly constrains this through: A player identifies roughly 30 and the AoE aura as the pack-clearing breakpoint. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Generate Radiant Marks, align Dawn and Judgment, then spend on Glorious Execution and Sunslam while attacks restore mana. The current evidence particularly constrains this through: A player identifies roughly 30 and the AoE aura as the pack-clearing breakpoint. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Target count, movement and pressure alter the next action. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Target count, movement and pressure alter the next action. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Target count, movement and pressure alter the next action. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Target count, movement and pressure alter the next action. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Target count, movement and pressure alter the next action. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Target count, movement and pressure alter the next action. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Execution depends on Leaps, grips, and pursuit tools make it a mobile melee spec with active target control. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Execution depends on Leaps, grips, and pursuit tools make it a mobile melee spec with active target control. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Execution depends on Leaps, grips, and pursuit tools make it a mobile melee spec with active target control. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Execution depends on Leaps, grips, and pursuit tools make it a mobile melee spec with active target control. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Execution depends on Leaps, grips, and pursuit tools make it a mobile melee spec with active target control. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Execution depends on Leaps, grips, and pursuit tools make it a mobile melee spec with active target control. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        }
+      },
+      "failure_cost": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Missing a Radiant Mark or Glorious Execution window can strand mana and proc value until the next setup. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Missing a Radiant Mark or Glorious Execution window can strand mana and proc value until the next setup. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Missing a Radiant Mark or Glorious Execution window can strand mana and proc value until the next setup. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Missing a Radiant Mark or Glorious Execution window can strand mana and proc value until the next setup. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Missing a Radiant Mark or Glorious Execution window can strand mana and proc value until the next setup. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Missing a Radiant Mark or Glorious Execution window can strand mana and proc value until the next setup. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0",
+            "talent:sun-cleric/valkyrie:27-90-4-1",
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You want this exact fantasy and decision loop.",
+          "claim_ids": [
+            "inference:sun-cleric/valkyrie:playstyle-identity",
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0"
+          ]
+        },
+        {
+          "text": "You enjoy a cadence that changes with late talents.",
+          "claim_ids": [
+            "inference:sun-cleric/valkyrie:playstyle-identity",
+            "talent:sun-cleric/valkyrie:27-90-4-0",
+            "talent:sun-cleric/valkyrie:27-90-10-0"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You want the complete rotation immediately.",
+          "claim_ids": [
+            "inference:sun-cleric/valkyrie:failure-cost",
+            "observed:sun-cleric/valkyrie:relative-simplicity"
+          ]
+        },
+        {
+          "text": "You dislike setup loss to movement.",
+          "claim_ids": [
+            "inference:sun-cleric/valkyrie:failure-cost",
+            "observed:sun-cleric/valkyrie:relative-simplicity"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Sunslam impact and paladin fantasy are praised.",
+          "claim_ids": [
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "observed:sun-cleric/valkyrie:build-practice"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Rapid patches stale guides and missed Marks hurt.",
+          "claim_ids": [
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "inference:sun-cleric/valkyrie:failure-cost"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "Power anecdotes, popularity and subjective fun remain separate evidence.",
+          "claim_ids": [
+            "observed:sun-cleric/valkyrie:relative-simplicity",
+            "observed:sun-cleric/valkyrie:aoe-breakpoint",
+            "observed:sun-cleric/valkyrie:tracking-tool",
+            "observed:sun-cleric/valkyrie:performance-context"
+          ]
+        }
+      ]
+    },
+    "performance_signal_ids": [
+      "observed:sun-cleric/valkyrie:performance-context"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "manual_recent_source_review",
+      "performance": "limited_uncontrolled",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium",
+      "gaps": [
+        "No verified current full-rotation video.",
+        "Priority breakpoints remain unverified."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "Early heavy attacks have conflicting reports.",
+      "observed_changes": [
+        "Incomplete kit",
+        "Sparse guidance"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "Early heavy attacks have conflicting reports.",
+      "observed_changes": [
+        "Incomplete kit",
+        "Sparse guidance"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "The level-30 aura creates pack momentum.",
+      "observed_changes": [
+        "More states",
+        "Unlock dependent"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "The level-30 aura creates pack momentum.",
+      "observed_changes": [
+        "More states",
+        "Unlock dependent"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "Late Judgment windows deepen the direct melee core.",
+      "observed_changes": [
+        "Unsettled priority",
+        "Tracking"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:sun-cleric/valkyrie:relative-simplicity",
+      "kind": "observed",
+      "text": "Players call Valkyrie simpler than Piety while still combining cooldowns for peak damage.",
+      "source_ids": [
+        "reddit:sun-cleric-questions-2026-07-18",
+        "reddit:sun-cleric-complexity-2026-08-01"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:sun-cleric/valkyrie:aoe-breakpoint",
+      "kind": "observed",
+      "text": "A player identifies roughly 30 and the AoE aura as the pack-clearing breakpoint.",
+      "source_ids": [
+        "reddit:sun-cleric-questions-2026-07-18",
+        "reddit:sun-cleric-complexity-2026-08-01"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:sun-cleric/valkyrie:tracking-tool",
+      "kind": "observed",
+      "text": "A level-36 WeakAura tracks Marks, Dawn, Sunslam and major cooldowns.",
+      "source_ids": [
+        "reddit:sun-cleric-questions-2026-07-18",
+        "reddit:sun-cleric-complexity-2026-08-01"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:sun-cleric/valkyrie:build-practice",
+      "kind": "observed",
+      "text": "The M+ build includes a guide but was labeled old after changes.",
+      "source_ids": [
+        "buildhub-builds-2026-08-05",
+        "buildhub:01175a7b-9331-48b6-98a0-fc2ce22ce560"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "community_build_snapshot"
+        ],
+        "build_or_mode": [
+          "documented_build"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The guide documents one current way to play; it is not treated as proof of optimality."
+    },
+    {
+      "id": "observed:sun-cleric/valkyrie:performance-context",
+      "kind": "observed",
+      "text": "3,804 DPS and 187 records are uncontrolled.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "uncontrolled_performance_signals"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "low",
+      "conflicts_with": [],
+      "notes": "Do not convert this into a tier ranking."
+    },
+    {
+      "id": "inference:sun-cleric/valkyrie:playstyle-identity",
+      "kind": "inference",
+      "text": "A solar weapon fighter who builds Radiant Marks, leaps and grips through packs, and turns Glorious Execution and Sunslam procs into Holy burst.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:sun-cleric/valkyrie:27-90-4-0",
+        "talent:sun-cleric/valkyrie:27-90-10-0",
+        "talent:sun-cleric/valkyrie:27-90-4-1",
+        "talent:sun-cleric/valkyrie:27-90-2-2",
+        "observed:sun-cleric/valkyrie:relative-simplicity",
+        "observed:sun-cleric/valkyrie:aoe-breakpoint"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Descriptive playstyle classification, not an official label."
+    },
+    {
+      "id": "inference:sun-cleric/valkyrie:failure-cost",
+      "kind": "inference",
+      "text": "Missing a Radiant Mark or Glorious Execution window can strand mana and proc value until the next setup.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:sun-cleric/valkyrie:27-90-4-0",
+        "talent:sun-cleric/valkyrie:27-90-10-0",
+        "talent:sun-cleric/valkyrie:27-90-4-1",
+        "talent:sun-cleric/valkyrie:27-90-2-2",
+        "talent:sun-cleric/valkyrie:27-90-6-2",
+        "observed:sun-cleric/valkyrie:relative-simplicity",
+        "observed:sun-cleric/valkyrie:aoe-breakpoint",
+        "observed:sun-cleric/valkyrie:tracking-tool"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Direction is supported; exact throughput cost is not measured."
+    }
+  ]
+}

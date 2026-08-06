@@ -1,0 +1,958 @@
+{
+  "baseline": "necromancer--animation.json",
+  "set": {
+    "identity": {
+      "fantasy": "A battlefield corpse general who spends Life Force on a configurable undead army, then directs it with commands, frenzy, artillery, and marching dead.",
+      "primary_family": "commanders",
+      "also_fits": [
+        "strategists"
+      ],
+      "playstyle_tags": [
+        "army-commander",
+        "pet-priority",
+        "summon-roster"
+      ],
+      "one_line": "The dedicated army tree. It spends Life Force on archers, abominations, constructs, and named undead, then uses Command spells and March of the Dead to direct them. Recent discussion reports very high output from simple current builds, which may make the realized rotation easier than the intended summon roster suggests.",
+      "claim_ids": [
+        "observed:necromancer/animation:leveling-loop",
+        "observed:necromancer/animation:pet-ai",
+        "inference:necromancer/animation:army-cost",
+        "observed:necromancer/animation:performance",
+        "talent:necromancer/animation:23-61-2-8",
+        "talent:necromancer/animation:23-61-6-9",
+        "inference:necromancer/animation:realized-complexity",
+        "talent:necromancer/animation:23-61-4-0"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "Choose an army composition, spend Life Force on archers, ghouls, an abomination, or later constructs, apply Blight and Crypt Swarm, use Command: Undead as the active pet payoff, fire instant Lichfrost when Bone King procs, and align skeletal archers, Unholy Frenzy, or March of the Dead with larger pulls and bosses.",
+      "single_target": "Current leveling guidance uses an abomination plus ghouls for safe solo play, Blight and Crypt Swarm to open, Command on cooldown, instant Lichfrost procs, skeletal archers on cooldown, and Unholy Frenzy for bosses.",
+      "aoe": "Multiple ghouls, skeletal artillery, March of the Dead, corpse effects, and later construct options scale the army into packs.",
+      "movement_and_target_switching": "Minions preserve damage while the player moves, but current reports repeatedly warn that pet pathing, unwanted aggro, and target selection can work against the player.",
+      "defense_and_control": "Fetid Ward, ghoul healing, sacrifice tools, Anti-Magic Shell, and Flesh Symbiosis give strong self-sustain when the army behaves correctly.",
+      "group_utility": "Corpse Wagon supplies a non-stacking damage aura; undead bodies, slows, and pet control add indirect group value.",
+      "failure_modes": [
+        {
+          "text": "A poor army composition or failed pet path can consume Life Force and pull enemies without delivering the intended damage or protection.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost"
+          ]
+        },
+        {
+          "text": "Movement or a target swap can interrupt the intended payoff: minions preserve damage while the player moves, but current reports repeatedly warn that pet pathing, unwanted aggro, and target selection can work against the player.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8"
+          ]
+        },
+        {
+          "text": "Spending recovery or control too early leaves less protection for the next pressure event: fetid ward, ghoul healing, sacrifice tools, anti-magic shell, and flesh symbiosis give strong self-sustain when the army behaves correctly.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "observed:necromancer/animation:leveling-loop",
+        "observed:necromancer/animation:pet-ai",
+        "inference:necromancer/animation:army-cost",
+        "observed:necromancer/animation:performance",
+        "talent:necromancer/animation:23-61-2-8",
+        "talent:necromancer/animation:23-61-6-9",
+        "inference:necromancer/animation:realized-complexity",
+        "talent:necromancer/animation:23-61-4-0"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "A pet-protected leveling spec that becomes much safer once the first abomination, ghouls, and command loop are established.",
+        "strengths": [
+          "Pets absorb pressure",
+          "Strong self-sustain reports",
+          "Damage continues during movement"
+        ],
+        "cautions": [
+          "Pet AI and mana are recurring complaints",
+          "Early fights can require several setup buttons"
+        ],
+        "claim_ids": [
+          "observed:necromancer/animation:leveling-loop",
+          "observed:necromancer/animation:pet-ai",
+          "inference:necromancer/animation:army-cost",
+          "observed:necromancer/animation:performance",
+          "talent:necromancer/animation:23-61-2-8",
+          "talent:necromancer/animation:23-61-6-9",
+          "inference:necromancer/animation:realized-complexity",
+          "talent:necromancer/animation:23-61-4-0"
+        ]
+      },
+      "level_50_60": {
+        "feel": "A configurable army commander whose potential roster is broad, though current players may realize it through a smaller archer, ghoul, and abomination core.",
+        "strengths": [
+          "Highest Necromancer Mythic representation",
+          "Strong persistent damage",
+          "Late defensive symbiosis"
+        ],
+        "cautions": [
+          "Intended roster complexity may exceed the strongest practical subset",
+          "Pet AI remains consequential"
+        ],
+        "claim_ids": [
+          "observed:necromancer/animation:performance",
+          "talent:necromancer/animation:23-61-2-8",
+          "talent:necromancer/animation:23-61-6-9",
+          "observed:necromancer/animation:leveling-loop",
+          "observed:necromancer/animation:pet-ai",
+          "inference:necromancer/animation:army-cost",
+          "inference:necromancer/animation:realized-complexity",
+          "talent:necromancer/animation:23-61-4-0"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "By levels 30-49, choose an army composition, spend life force on archers, ghouls, an abomination, or later constructs, apply blight and crypt swarm, use command: undead as the active pet payoff, fire instant lichfrost when bone king procs, and align skeletal archers, unholy frenzy, or march of the dead with larger pulls and bosses.",
+        "strengths": [
+          "Core engine is online",
+          "More complete target coverage"
+        ],
+        "cautions": [
+          "Late talents still change the ceiling",
+          "Minions preserve damage while the player moves, but current reports repeatedly warn that pet pathing, unwanted aggro, and target selection can work against the player"
+        ],
+        "claim_ids": [
+          "observed:necromancer/animation:leveling-loop",
+          "observed:necromancer/animation:pet-ai",
+          "inference:necromancer/animation:army-cost",
+          "observed:necromancer/animation:performance",
+          "talent:necromancer/animation:23-61-2-8",
+          "talent:necromancer/animation:23-61-6-9",
+          "inference:necromancer/animation:realized-complexity",
+          "talent:necromancer/animation:23-61-4-0"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, current leveling guidance uses an abomination plus ghouls for safe solo play, blight and crypt swarm to open, command on cooldown, instant lichfrost procs, skeletal archers on cooldown, and unholy frenzy for bosses.",
+        "strengths": [
+          "Durable targets preserve the full loop",
+          "Cooldowns can be planned"
+        ],
+        "cautions": [
+          "Movement can break setup",
+          "Repeated errors remain visible"
+        ],
+        "claim_ids": [
+          "observed:necromancer/animation:leveling-loop",
+          "observed:necromancer/animation:pet-ai",
+          "inference:necromancer/animation:army-cost",
+          "observed:necromancer/animation:performance",
+          "talent:necromancer/animation:23-61-2-8",
+          "talent:necromancer/animation:23-61-6-9",
+          "inference:necromancer/animation:realized-complexity",
+          "talent:necromancer/animation:23-61-4-0"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, multiple ghouls, skeletal artillery, march of the dead, corpse effects, and later construct options scale the army into packs.",
+        "strengths": [
+          "Pack tools express the spec clearly",
+          "Group utility has regular value"
+        ],
+        "cautions": [
+          "Short-lived targets can erase setup",
+          "Tank movement changes the plan"
+        ],
+        "claim_ids": [
+          "observed:necromancer/animation:leveling-loop",
+          "observed:necromancer/animation:pet-ai",
+          "inference:necromancer/animation:army-cost",
+          "observed:necromancer/animation:performance",
+          "talent:necromancer/animation:23-61-2-8",
+          "talent:necromancer/animation:23-61-6-9",
+          "inference:necromancer/animation:realized-complexity",
+          "talent:necromancer/animation:23-61-4-0"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, minions preserve damage while the player moves, but current reports repeatedly warn that pet pathing, unwanted aggro, and target selection can work against the player. Fetid Ward, ghoul healing, sacrifice tools, Anti-Magic Shell, and Flesh Symbiosis give strong self-sustain when the army behaves correctly.",
+        "strengths": [
+          "Control and utility create options",
+          "Target swaps can reward flexibility"
+        ],
+        "cautions": [
+          "Disruption makes the loop less predictable",
+          "Defensive timing is punishable"
+        ],
+        "claim_ids": [
+          "observed:necromancer/animation:leveling-loop",
+          "observed:necromancer/animation:pet-ai",
+          "inference:necromancer/animation:army-cost",
+          "observed:necromancer/animation:performance",
+          "talent:necromancer/animation:23-61-2-8",
+          "talent:necromancer/animation:23-61-6-9",
+          "inference:necromancer/animation:realized-complexity",
+          "talent:necromancer/animation:23-61-4-0"
+        ]
+      }
+    },
+    "complexity": {
+      "core_actions": {
+        "boss": {
+          "value": "moderate",
+          "reason": "The practical loop can center on command, proc Lichfrost, archers, frenzy, and a stable army even though the tree offers many summons.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "inference:necromancer/animation:realized-complexity",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Choose an army composition, spend Life Force on archers, ghouls, an abomination, or later constructs, apply Blight and Crypt Swarm, use Command: Undead as the active pet payoff, fire instant Lichfrost when Bone King procs, and align skeletal archers, Unholy Frenzy, or March of the Dead with larger pulls and bosses. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate",
+          "reason": "The practical action set follows the authored loop: Choose an army composition, spend Life Force on archers, ghouls, an abomination, or later constructs, apply Blight and Crypt Swarm, use Command: Undead as the active pet payoff, fire instant Lichfrost when Bone King procs, and align skeletal archers, Unholy Frenzy, or March of the Dead with larger pulls and bosses. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate",
+          "reason": "The practical action set follows the authored loop: Choose an army composition, spend Life Force on archers, ghouls, an abomination, or later constructs, apply Blight and Crypt Swarm, use Command: Undead as the active pet payoff, fire instant Lichfrost when Bone King procs, and align skeletal archers, Unholy Frenzy, or March of the Dead with larger pulls and bosses. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "moderate",
+          "reason": "The practical action set follows the authored loop: Choose an army composition, spend Life Force on archers, ghouls, an abomination, or later constructs, apply Blight and Crypt Swarm, use Command: Undead as the active pet payoff, fire instant Lichfrost when Bone King procs, and align skeletal archers, Unholy Frenzy, or March of the Dead with larger pulls and bosses. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        },
+        "pvp": {
+          "value": "moderate",
+          "reason": "The practical action set follows the authored loop: Choose an army composition, spend Life Force on archers, ghouls, an abomination, or later constructs, apply Blight and Crypt Swarm, use Command: Undead as the active pet payoff, fire instant Lichfrost when Bone King procs, and align skeletal archers, Unholy Frenzy, or March of the Dead with larger pulls and bosses. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        }
+      },
+      "state_tracking": {
+        "dungeon_aoe": {
+          "value": "moderate-high",
+          "reason": "Life Force, summon durations, composition, command availability, pet health, and target behavior all matter.",
+          "claim_ids": [
+            "talent:necromancer/animation:23-61-4-0",
+            "talent:necromancer/animation:23-61-4-3",
+            "observed:necromancer/animation:pet-ai",
+            "observed:necromancer/animation:leveling-loop",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Current leveling guidance uses an abomination plus ghouls for safe solo play, Blight and Crypt Swarm to open, Command on cooldown, instant Lichfrost procs, skeletal archers on cooldown, and Unholy Frenzy for bosses. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Current leveling guidance uses an abomination plus ghouls for safe solo play, Blight and Crypt Swarm to open, Command on cooldown, instant Lichfrost procs, skeletal archers on cooldown, and Unholy Frenzy for bosses. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Current leveling guidance uses an abomination plus ghouls for safe solo play, Blight and Crypt Swarm to open, Command on cooldown, instant Lichfrost procs, skeletal archers on cooldown, and Unholy Frenzy for bosses. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Current leveling guidance uses an abomination plus ghouls for safe solo play, Blight and Crypt Swarm to open, Command on cooldown, instant Lichfrost procs, skeletal archers on cooldown, and Unholy Frenzy for bosses. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        },
+        "pvp": {
+          "value": "moderate-high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Current leveling guidance uses an abomination plus ghouls for safe solo play, Blight and Crypt Swarm to open, Command on cooldown, instant Lichfrost procs, skeletal archers on cooldown, and Unholy Frenzy for bosses. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        }
+      },
+      "failure_cost": {
+        "dungeon_aoe": {
+          "value": "moderate-high",
+          "reason": "Pet mistakes can pull extra enemies or strand a significant part of the damage budget.",
+          "claim_ids": [
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "A poor army composition or failed pet path can consume Life Force and pull enemies without delivering the intended damage or protection. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "A poor army composition or failed pet path can consume Life Force and pull enemies without delivering the intended damage or protection. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "A poor army composition or failed pet path can consume Life Force and pull enemies without delivering the intended damage or protection. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "A poor army composition or failed pet path can consume Life Force and pull enemies without delivering the intended damage or protection. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "A poor army composition or failed pet path can consume Life Force and pull enemies without delivering the intended damage or protection. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Multiple ghouls, skeletal artillery, March of the Dead, corpse effects, and later construct options scale the army into packs. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low-moderate",
+          "reason": "The payoff depends on establishing the conditions described by: Multiple ghouls, skeletal artillery, March of the Dead, corpse effects, and later construct options scale the army into packs. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        },
+        "level_50_60": {
+          "value": "low-moderate",
+          "reason": "The payoff depends on establishing the conditions described by: Multiple ghouls, skeletal artillery, March of the Dead, corpse effects, and later construct options scale the army into packs. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        },
+        "boss": {
+          "value": "low-moderate",
+          "reason": "The payoff depends on establishing the conditions described by: Multiple ghouls, skeletal artillery, March of the Dead, corpse effects, and later construct options scale the army into packs. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low-moderate",
+          "reason": "The payoff depends on establishing the conditions described by: Multiple ghouls, skeletal artillery, March of the Dead, corpse effects, and later construct options scale the army into packs. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "The payoff depends on establishing the conditions described by: Multiple ghouls, skeletal artillery, March of the Dead, corpse effects, and later construct options scale the army into packs. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; fetid ward, ghoul healing, sacrifice tools, anti-magic shell, and flesh symbiosis give strong self-sustain when the army behaves correctly. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; fetid ward, ghoul healing, sacrifice tools, anti-magic shell, and flesh symbiosis give strong self-sustain when the army behaves correctly. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; fetid ward, ghoul healing, sacrifice tools, anti-magic shell, and flesh symbiosis give strong self-sustain when the army behaves correctly. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; fetid ward, ghoul healing, sacrifice tools, anti-magic shell, and flesh symbiosis give strong self-sustain when the army behaves correctly. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; fetid ward, ghoul healing, sacrifice tools, anti-magic shell, and flesh symbiosis give strong self-sustain when the army behaves correctly. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "Target count, incoming pressure, and movement change the next action; fetid ward, ghoul healing, sacrifice tools, anti-magic shell, and flesh symbiosis give strong self-sustain when the army behaves correctly. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Minions preserve damage while the player moves, but current reports repeatedly warn that pet pathing, unwanted aggro, and target selection can work against the player. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Minions preserve damage while the player moves, but current reports repeatedly warn that pet pathing, unwanted aggro, and target selection can work against the player. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Minions preserve damage while the player moves, but current reports repeatedly warn that pet pathing, unwanted aggro, and target selection can work against the player. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Minions preserve damage while the player moves, but current reports repeatedly warn that pet pathing, unwanted aggro, and target selection can work against the player. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Minions preserve damage while the player moves, but current reports repeatedly warn that pet pathing, unwanted aggro, and target selection can work against the player. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "Execution is constrained by positioning and swaps: Minions preserve damage while the player moves, but current reports repeatedly warn that pet pathing, unwanted aggro, and target selection can work against the player. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8",
+            "talent:necromancer/animation:23-61-6-9",
+            "inference:necromancer/animation:realized-complexity",
+            "talent:necromancer/animation:23-61-4-0"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You want a persistent undead army to carry damage and protection while you issue active commands.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop"
+          ]
+        },
+        {
+          "text": "You enjoy the spec's core cadence: choose an army composition, spend life force on archers, ghouls, an abomination, or later constructs, apply blight and crypt swarm, use command: undead as the active pet payoff, fire instant lichfrost when bone king procs, and align skeletal archers, unholy frenzy, or march of the dead with larger pulls and bosses.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "Unreliable pet movement, unwanted aggro, or managing multiple temporary summons quickly frustrates you.",
+          "claim_ids": [
+            "observed:necromancer/animation:pet-ai"
+          ]
+        },
+        {
+          "text": "You dislike the positioning or swap constraint that minions preserve damage while the player moves, but current reports repeatedly warn that pet pathing, unwanted aggro, and target selection can work against the player.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "inference:necromancer/animation:army-cost",
+            "observed:necromancer/animation:performance",
+            "talent:necromancer/animation:23-61-2-8"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Players praise its leveling safety, self-sustain, and strong minion output once ghouls and an abomination are online.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Pet AI, random pulls, stuck minions, and early multi-button setup are the dominant complaints.",
+          "claim_ids": [
+            "observed:necromancer/animation:pet-ai"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "Some current players call Animation strong and safe while others call it clunky and weak; build, level, and pet behavior appear to explain part of the split.",
+          "claim_ids": [
+            "observed:necromancer/animation:leveling-loop",
+            "observed:necromancer/animation:pet-ai",
+            "observed:necromancer/animation:performance"
+          ]
+        }
+      ]
+    },
+    "performance_signal_ids": [
+      "observed:necromancer/animation:performance"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "moderate",
+      "performance": "limited_uncontrolled",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium",
+      "gaps": [
+        "No controlled comparison of army compositions.",
+        "Current pet-AI severity and encounter dependence need direct testing."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "A pet-protected leveling spec that becomes much safer once the first abomination, ghouls, and command loop are established.",
+      "observed_changes": [
+        "Pet AI and mana are recurring complaints",
+        "Early fights can require several setup buttons"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "A pet-protected leveling spec that becomes much safer once the first abomination, ghouls, and command loop are established.",
+      "observed_changes": [
+        "Pet AI and mana are recurring complaints",
+        "Early fights can require several setup buttons"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "A configurable army commander whose potential roster is broad, though current players may realize it through a smaller archer, ghoul, and abomination core.",
+      "observed_changes": [
+        "Intended roster complexity may exceed the strongest practical subset",
+        "Pet AI remains consequential"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "By levels 30-49, choose an army composition, spend life force on archers, ghouls, an abomination, or later constructs, apply blight and crypt swarm, use command: undead as the active pet payoff, fire instant lichfrost when bone king procs, and align skeletal archers, unholy frenzy, or march of the dead with larger pulls and bosses.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Minions preserve damage while the player moves, but current reports repeatedly warn that pet pathing, unwanted aggro, and target selection can work against the player"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "By levels 30-49, choose an army composition, spend life force on archers, ghouls, an abomination, or later constructs, apply blight and crypt swarm, use command: undead as the active pet payoff, fire instant lichfrost when bone king procs, and align skeletal archers, unholy frenzy, or march of the dead with larger pulls and bosses.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Minions preserve damage while the player moves, but current reports repeatedly warn that pet pathing, unwanted aggro, and target selection can work against the player"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:necromancer/animation:leveling-loop",
+      "kind": "observed",
+      "text": "A current level-43 Animation player recommends one abomination plus ghouls for solo play, full ghouls for dungeons, Blight and Crypt Swarm to open, Command when available, instant Lichfrost procs, skeletal archers on cooldown, and Unholy Frenzy for bosses; Fetid Ward and ghouls provide sustain.",
+      "source_ids": [
+        "reddit:necromancer-animation-2026-07-12"
+      ],
+      "scope": {
+        "levels": "leveling_20_49",
+        "content": [
+          "solo_leveling",
+          "dungeon"
+        ],
+        "build_or_mode": [
+          "abomination_ghouls"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [
+        "observed:necromancer/animation:pet-ai"
+      ],
+      "notes": "Detailed working leveling loop, not proven optimal at 60."
+    },
+    {
+      "id": "observed:necromancer/animation:pet-ai",
+      "kind": "observed",
+      "text": "Recent Necromancer discussions report minions pulling unintended targets, attacking random enemies, getting stuck, and requiring more actions than comparable classes; other players report the same army as safe and strong.",
+      "source_ids": [
+        "reddit:necromancer-animation-2026-07-12",
+        "reddit:necromancer-death-rime-2026-07-27"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "pet_builds"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [
+        "observed:necromancer/animation:leveling-loop"
+      ],
+      "notes": "Behavior likely varies by terrain, pet composition, and player control."
+    },
+    {
+      "id": "observed:necromancer/animation:performance",
+      "kind": "observed",
+      "text": "The July DPS compilation reports Animation at 4,702, and the August Mythic inventory lists 169 Animation records, the largest Necromancer spec count in that source.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "pve_unspecified",
+          "mythic_dungeons"
+        ],
+        "build_or_mode": [
+          "unspecified"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [
+        "observed:necromancer/animation:pet-ai"
+      ],
+      "notes": "Neither signal controls for army composition, gear, or player skill."
+    },
+    {
+      "id": "inference:necromancer/animation:army-cost",
+      "kind": "inference",
+      "text": "Animation pays for army mistakes twice: Life Force is committed to the summon and a failed pet path withholds both damage and protection.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:necromancer/animation:23-61-4-0",
+        "talent:necromancer/animation:23-61-4-3",
+        "observed:necromancer/animation:pet-ai"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Recovery time depends on remaining Life Force and summon cooldowns."
+    },
+    {
+      "id": "inference:necromancer/animation:realized-complexity",
+      "kind": "inference",
+      "text": "Animation's intended summon roster is broad, but current working builds may reduce moment-to-moment play to a smaller command, proc, archer, frenzy, and stable-pet subset.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "observed:necromancer/animation:leveling-loop",
+        "talent:necromancer/animation:23-61-6-9"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "pve"
+        ],
+        "build_or_mode": [
+          "current_practical_builds"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Needs level-60 build comparison."
+    }
+  ]
+}

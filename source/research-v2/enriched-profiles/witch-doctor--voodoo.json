@@ -1,0 +1,1968 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "witch-doctor/voodoo",
+    "class": "Witch Doctor",
+    "name": "Voodoo",
+    "roles": [
+      "Damage"
+    ],
+    "range": [
+      "Ranged"
+    ]
+  },
+  "identity": {
+    "fantasy": "A voodoo puppeteer who layers curses and Shadow damage, stores part of that pain in Threads, then releases it through clones, spirits, and delayed detonations.",
+    "one_line": "A voodoo puppeteer who layers curses and Shadow damage, stores part of that pain in Threads, then releases it through clones, spirits, and delayed detonations. The defining decision is contextual: Target count, clone time, and mana decide between Malefic Wrath and Shadowflare.",
+    "primary_family": "planners",
+    "also_fits": [
+      "commanders"
+    ],
+    "claim_ids": [
+      "talent:witch-doctor/voodoo:13-34-4-0",
+      "talent:witch-doctor/voodoo:13-34-10-0",
+      "talent:witch-doctor/voodoo:13-34-3-1",
+      "talent:witch-doctor/voodoo:13-34-2-9",
+      "observed:witch-doctor/voodoo:community-practice",
+      "observed:witch-doctor/voodoo:sentiment-context",
+      "inference:witch-doctor/voodoo:identity"
+    ],
+    "playstyle_tags": [
+      "delayed-burst-dot-caster",
+      "summon-caster",
+      "setup-caster"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "A Shadow-heavy damage-over-time and delayed-burst caster. Puppeteer's Threads stores part of the damage you deal, while Bad Juju, Hexfire, Shadow Puppets, wards, golems, and spirit cooldowns build toward large detonation windows. Strong multi-target potential comes with setup, DoT tracking, and cooldown alignment.",
+    "resources": [],
+    "builders": [],
+    "spenders": [],
+    "windows": [
+      {
+        "name": "Malignant Jinx",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-7"
+        ]
+      },
+      {
+        "name": "Soul Marionette",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-6-8"
+        ]
+      },
+      {
+        "name": "Hexfire Adept",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-10-8"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Puppeteer's Grasp",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-4"
+        ],
+        "structural_description": "Transform: into a malignant spirit for 30 seconds, allowing you to cast Malefic Wrath and Bad Juju while moving, and periodically granting you a Spirit every 2 sec.SpiritRegenerates 7 health and mana, repeating every 4 sec for 12 seconds, stacking 5 times."
+      },
+      {
+        "name": "Malignant Jinx",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-7"
+        ],
+        "structural_description": "Curse an enemy for 8 seconds, causing their next spell cast to silence them for 5 sec.Can only have 1 Jinx active on a target at a time."
+      },
+      {
+        "name": "Soul Marionette",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-6-8"
+        ],
+        "structural_description": "Root yourself for 8 sec and create 5 clones of yourself that channel on you, applying a stack of Soul Marionette.Soul Marionette (Stacks)Increases your haste by 1% per stack. At 20 stacks, you transform into a powerful spirit, increasing the damage of Malefic Wrath and Bad Juju by 30% and guaranteeing it to critically strike for 15 seconds.In addition, each Soul Marionette will explode, dealing 582 + 50% shadow SP Shadow Damage and stunning enemies within 5 yds for 4 seconds."
+      },
+      {
+        "name": "Hexfire Adept",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-10-8"
+        ],
+        "structural_description": "Level 50 PassiveCasting Hexfire transforms your next Malefic Wrath within 8 seconds into Hexfire Wrath.Hexfire WrathHurl hexfire energy at an enemy and up to 2 nearby enemies, dealing cond(gt(SPFI, SPN), 306+0+SPFI*0.75, 306+0+SPN*0.75) Fire damage and cursing them, dealing an additional cond(gt(SPFI, SPN), 239+0+SPFI*0.12, 239+0+SPN*0.12) over 9 seconds.Spawns a Serpent Ward for 10 seconds beneath your target. Scales with modifiers to Malefic Wrath."
+      }
+    ],
+    "single_target": "Apply Hex of Malice, summon Shadow Puppets, use Mimic and cooldowns, then Hexfire, Bad Juju, and Malefic Wrath while the clone window remains. This sequence is supported by one build and one brief community reply.",
+    "aoe": "At four or more targets, obtain the puppet buff and spam Shadowflare according to the captured guide. Players separately report slow setup and mana friction, so pack lifespan matters.",
+    "movement_and_target_switching": "Ranged kiting and slows help, but setup attached to enemies makes rapid target changes costly.",
+    "defense_and_control": "Its structural defensive package includes Shadow Puppets, Loa Spirits, Bad Juju, Puppeteer's Grasp, Beware Da Voodoo.",
+    "group_utility": "Group or control tools include Puppeteer's Grasp, Hollow Spirit, Malignant Jinx, Dark Loa's Blessing, Soul Marionette.",
+    "failure_modes": [
+      {
+        "text": "Detonating or channeling before curses and stored damage mature, losing the puppet window, or spending mana on short-lived packs collapses the delayed payoff.",
+        "claim_ids": [
+          "inference:witch-doctor/voodoo:failure-cost",
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1"
+        ]
+      },
+      {
+        "text": "Starting Malefic Wrath after the puppet or clone window expires channels into a missing multiplier.",
+        "claim_ids": [
+          "inference:witch-doctor/voodoo:failure-cost",
+          "observed:witch-doctor/voodoo:community-practice"
+        ]
+      },
+      {
+        "text": "Using the four-target Shadowflare plan on a short-lived pack can consume mana before setup pays back.",
+        "claim_ids": [
+          "inference:witch-doctor/voodoo:failure-cost",
+          "observed:witch-doctor/voodoo:community-practice"
+        ]
+      }
+    ],
+    "claim_ids": [
+      "talent:witch-doctor/voodoo:13-34-4-0",
+      "talent:witch-doctor/voodoo:13-34-10-0",
+      "talent:witch-doctor/voodoo:13-34-3-1",
+      "talent:witch-doctor/voodoo:13-34-2-9",
+      "observed:witch-doctor/voodoo:community-practice",
+      "observed:witch-doctor/voodoo:build-practice",
+      "observed:witch-doctor/voodoo:sentiment-context",
+      "inference:witch-doctor/voodoo:identity"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Shadow Puppets",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-4-0"
+          ]
+        },
+        {
+          "name": "Puppeteer's Threads",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-10-0"
+          ]
+        },
+        {
+          "name": "Loa Spirits",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-3-1"
+          ]
+        },
+        {
+          "name": "Stranglethorn Style",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-5-1"
+          ]
+        }
+      ],
+      "observed_loop": "Early Voodoo is reported squishy and slow until the mid-20s or 30s, before Mimic and the fuller puppet loop smooth the experience.",
+      "observed_changes": [
+        "Players agree on the broad sequence but disagree on feel, especially leveling speed, AoE setup, squishiness, and mana.",
+        "Do not project the mature priority backward."
+      ],
+      "claim_ids": [
+        "talent:witch-doctor/voodoo:13-34-4-0",
+        "talent:witch-doctor/voodoo:13-34-10-0",
+        "talent:witch-doctor/voodoo:13-34-3-1",
+        "talent:witch-doctor/voodoo:13-34-5-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Bad Juju",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-2-2"
+          ]
+        },
+        {
+          "name": "Zalazane's Malice",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-4-2"
+          ]
+        },
+        {
+          "name": "Hexfire",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-6-2"
+          ]
+        },
+        {
+          "name": "Voodoo Power",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-10-2"
+          ]
+        },
+        {
+          "name": "Dark Magic",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-3-3"
+          ]
+        },
+        {
+          "name": "Staff of the Coven",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-5-3"
+          ]
+        }
+      ],
+      "observed_loop": "Early Voodoo is reported squishy and slow until the mid-20s or 30s, before Mimic and the fuller puppet loop smooth the experience.",
+      "observed_changes": [
+        "Players agree on the broad sequence but disagree on feel, especially leveling speed, AoE setup, squishiness, and mana.",
+        "Do not project the mature priority backward."
+      ],
+      "claim_ids": [
+        "talent:witch-doctor/voodoo:13-34-2-2",
+        "talent:witch-doctor/voodoo:13-34-4-2",
+        "talent:witch-doctor/voodoo:13-34-6-2",
+        "talent:witch-doctor/voodoo:13-34-10-2",
+        "talent:witch-doctor/voodoo:13-34-3-3",
+        "talent:witch-doctor/voodoo:13-34-5-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Ritual Hexing",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-1-4"
+          ]
+        },
+        {
+          "name": "Puppeteer's Grasp",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-4-4"
+          ]
+        },
+        {
+          "name": "Jin'do's Wrath",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-7-4"
+          ]
+        },
+        {
+          "name": "Overflowing Juju",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-10-4"
+          ]
+        },
+        {
+          "name": "Overflowing Juju",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-1-5"
+          ]
+        },
+        {
+          "name": "Growing Malice",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-3-5"
+          ]
+        },
+        {
+          "name": "Beware Da Voodoo",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-5-5"
+          ]
+        },
+        {
+          "name": "Hexplosion",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-7-5"
+          ]
+        }
+      ],
+      "observed_loop": "The middle bands connect the foundational kit to the mature loop: A Shadow-heavy damage-over-time and delayed-burst caster. Exact level-by-level priority remains bounded by the available evidence.",
+      "observed_changes": [
+        "Detonating or channeling before curses and stored damage mature, losing the puppet window, or spending mana on short-lived packs collapses the delayed payoff.",
+        "Source levels and gear are not normalized."
+      ],
+      "claim_ids": [
+        "talent:witch-doctor/voodoo:13-34-1-4",
+        "talent:witch-doctor/voodoo:13-34-4-4",
+        "talent:witch-doctor/voodoo:13-34-7-4",
+        "talent:witch-doctor/voodoo:13-34-10-4",
+        "talent:witch-doctor/voodoo:13-34-1-5",
+        "talent:witch-doctor/voodoo:13-34-3-5",
+        "talent:witch-doctor/voodoo:13-34-5-5",
+        "talent:witch-doctor/voodoo:13-34-7-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Voodoo Strings",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-0-6"
+          ]
+        },
+        {
+          "name": "Malignant",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-3-6"
+          ]
+        },
+        {
+          "name": "Voodoo Mind",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-4-6"
+          ]
+        },
+        {
+          "name": "It's Da Voodoo",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-5-6a"
+          ]
+        },
+        {
+          "name": "Hollow Spirit",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-5-6b"
+          ]
+        },
+        {
+          "name": "Voodoo Spirits",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-8-6"
+          ]
+        },
+        {
+          "name": "Juju Spirits",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-10-6"
+          ]
+        },
+        {
+          "name": "Voodoo Unleashed",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-1-7"
+          ]
+        },
+        {
+          "name": "Prolonged Malice",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-2-7"
+          ]
+        },
+        {
+          "name": "Malignant Jinx",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-4-7"
+          ]
+        },
+        {
+          "name": "War Golem",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-6-7"
+          ]
+        },
+        {
+          "name": "Dark Loa's Blessing",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-7-7"
+          ]
+        }
+      ],
+      "observed_loop": "The middle bands connect the foundational kit to the mature loop: A Shadow-heavy damage-over-time and delayed-burst caster. Exact level-by-level priority remains bounded by the available evidence.",
+      "observed_changes": [
+        "Detonating or channeling before curses and stored damage mature, losing the puppet window, or spending mana on short-lived packs collapses the delayed payoff.",
+        "Source levels and gear are not normalized."
+      ],
+      "claim_ids": [
+        "talent:witch-doctor/voodoo:13-34-0-6",
+        "talent:witch-doctor/voodoo:13-34-3-6",
+        "talent:witch-doctor/voodoo:13-34-4-6",
+        "talent:witch-doctor/voodoo:13-34-5-6a",
+        "talent:witch-doctor/voodoo:13-34-5-6b",
+        "talent:witch-doctor/voodoo:13-34-8-6",
+        "talent:witch-doctor/voodoo:13-34-10-6",
+        "talent:witch-doctor/voodoo:13-34-1-7",
+        "talent:witch-doctor/voodoo:13-34-2-7",
+        "talent:witch-doctor/voodoo:13-34-4-7",
+        "talent:witch-doctor/voodoo:13-34-6-7",
+        "talent:witch-doctor/voodoo:13-34-7-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Voice of Bwonsamdi",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-2-8"
+          ]
+        },
+        {
+          "name": "Dark Effigy",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-4-8"
+          ]
+        },
+        {
+          "name": "Soul Marionette",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-6-8"
+          ]
+        },
+        {
+          "name": "Hexfire Adept",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-10-8"
+          ]
+        },
+        {
+          "name": "The Price of Power",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-2-9"
+          ]
+        },
+        {
+          "name": "De Other Side",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-4-9"
+          ]
+        },
+        {
+          "name": "Malicious Golems",
+          "claim_ids": [
+            "talent:witch-doctor/voodoo:13-34-6-9"
+          ]
+        }
+      ],
+      "observed_loop": "Later play aligns Hex of Malice, Shadow Puppets, Mimic, cooldowns, Hexfire, Bad Juju, and Malefic Wrath; four-plus targets switch toward Shadowflare.",
+      "observed_changes": [
+        "Players agree on the broad sequence but disagree on feel, especially leveling speed, AoE setup, squishiness, and mana.",
+        "Detonating or channeling before curses and stored damage mature, losing the puppet window, or spending mana on short-lived packs collapses the delayed payoff."
+      ],
+      "claim_ids": [
+        "talent:witch-doctor/voodoo:13-34-2-8",
+        "talent:witch-doctor/voodoo:13-34-4-8",
+        "talent:witch-doctor/voodoo:13-34-6-8",
+        "talent:witch-doctor/voodoo:13-34-10-8",
+        "talent:witch-doctor/voodoo:13-34-2-9",
+        "talent:witch-doctor/voodoo:13-34-4-9",
+        "talent:witch-doctor/voodoo:13-34-6-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "Early Voodoo is reported squishy and slow until the mid-20s or 30s, before Mimic and the fuller puppet loop smooth the experience.",
+      "strengths": [
+        "A voodoo puppeteer who layers curses and Shadow damage, stores part of that pain in Threads, then releases it through clones, spirits, and delayed detonations.",
+        "The documented loop has a clear curse, puppet, cooldown, and delayed-burst payoff with strong multi-target intent."
+      ],
+      "cautions": [
+        "Players agree on the broad sequence but disagree on feel, especially leveling speed, AoE setup, squishiness, and mana.",
+        "Do not project the mature priority backward."
+      ],
+      "claim_ids": [
+        "talent:witch-doctor/voodoo:13-34-4-0",
+        "talent:witch-doctor/voodoo:13-34-10-0",
+        "talent:witch-doctor/voodoo:13-34-3-1",
+        "talent:witch-doctor/voodoo:13-34-2-9",
+        "observed:witch-doctor/voodoo:community-practice",
+        "observed:witch-doctor/voodoo:build-practice",
+        "observed:witch-doctor/voodoo:sentiment-context",
+        "inference:witch-doctor/voodoo:identity"
+      ]
+    },
+    "leveling_30_49": {
+      "feel": "The middle bands connect the foundational kit to the mature loop: A Shadow-heavy damage-over-time and delayed-burst caster. Exact level-by-level priority remains bounded by the available evidence.",
+      "strengths": [
+        "A Shadow-heavy damage-over-time and delayed-burst caster.",
+        "More of the state and payoff loop is available."
+      ],
+      "cautions": [
+        "Detonating or channeling before curses and stored damage mature, losing the puppet window, or spending mana on short-lived packs collapses the delayed payoff.",
+        "Source levels and gear are not normalized."
+      ],
+      "claim_ids": [
+        "talent:witch-doctor/voodoo:13-34-4-0",
+        "talent:witch-doctor/voodoo:13-34-10-0",
+        "talent:witch-doctor/voodoo:13-34-3-1",
+        "talent:witch-doctor/voodoo:13-34-2-9",
+        "observed:witch-doctor/voodoo:community-practice",
+        "observed:witch-doctor/voodoo:build-practice",
+        "observed:witch-doctor/voodoo:sentiment-context",
+        "inference:witch-doctor/voodoo:identity"
+      ]
+    },
+    "level_50_60": {
+      "feel": "Later play aligns Hex of Malice, Shadow Puppets, Mimic, cooldowns, Hexfire, Bad Juju, and Malefic Wrath; four-plus targets switch toward Shadowflare.",
+      "strengths": [
+        "The documented loop has a clear curse, puppet, cooldown, and delayed-burst payoff with strong multi-target intent.",
+        "The full talent interaction is available."
+      ],
+      "cautions": [
+        "Players agree on the broad sequence but disagree on feel, especially leveling speed, AoE setup, squishiness, and mana.",
+        "Detonating or channeling before curses and stored damage mature, losing the puppet window, or spending mana on short-lived packs collapses the delayed payoff."
+      ],
+      "claim_ids": [
+        "talent:witch-doctor/voodoo:13-34-4-0",
+        "talent:witch-doctor/voodoo:13-34-10-0",
+        "talent:witch-doctor/voodoo:13-34-3-1",
+        "talent:witch-doctor/voodoo:13-34-2-9",
+        "observed:witch-doctor/voodoo:community-practice",
+        "observed:witch-doctor/voodoo:build-practice",
+        "observed:witch-doctor/voodoo:sentiment-context",
+        "inference:witch-doctor/voodoo:identity"
+      ]
+    },
+    "boss": {
+      "feel": "Apply Hex of Malice, summon Shadow Puppets, use Mimic and cooldowns, then Hexfire, Bad Juju, and Malefic Wrath while the clone window remains. This sequence is supported by one build and one brief community reply.",
+      "strengths": [
+        "Apply Hex of Malice, summon Shadow Puppets, use Mimic and cooldowns, then Hexfire, Bad Juju, and Malefic Wrath while the clone window remains.",
+        "Durable targets allow the documented cycle to complete."
+      ],
+      "cautions": [
+        "Detonating or channeling before curses and stored damage mature, losing the puppet window, or spending mana on short-lived packs collapses the delayed payoff.",
+        "No controlled ranking is asserted."
+      ],
+      "claim_ids": [
+        "talent:witch-doctor/voodoo:13-34-4-0",
+        "talent:witch-doctor/voodoo:13-34-10-0",
+        "talent:witch-doctor/voodoo:13-34-3-1",
+        "talent:witch-doctor/voodoo:13-34-2-9",
+        "observed:witch-doctor/voodoo:community-practice",
+        "observed:witch-doctor/voodoo:build-practice",
+        "observed:witch-doctor/voodoo:sentiment-context",
+        "inference:witch-doctor/voodoo:identity"
+      ]
+    },
+    "dungeon_aoe": {
+      "feel": "At four or more targets, obtain the puppet buff and spam Shadowflare according to the captured guide. Players separately report slow setup and mana friction, so pack lifespan matters.",
+      "strengths": [
+        "At four or more targets, obtain the puppet buff and spam Shadowflare according to the captured guide.",
+        "Pack play exposes the spec's target-count decisions."
+      ],
+      "cautions": [
+        "Detonating or channeling before curses and stored damage mature, losing the puppet window, or spending mana on short-lived packs collapses the delayed payoff.",
+        "Pull size, lifespan, and tank pace are uncontrolled."
+      ],
+      "claim_ids": [
+        "talent:witch-doctor/voodoo:13-34-4-0",
+        "talent:witch-doctor/voodoo:13-34-10-0",
+        "talent:witch-doctor/voodoo:13-34-3-1",
+        "talent:witch-doctor/voodoo:13-34-2-9",
+        "observed:witch-doctor/voodoo:community-practice",
+        "observed:witch-doctor/voodoo:build-practice",
+        "observed:witch-doctor/voodoo:sentiment-context",
+        "inference:witch-doctor/voodoo:identity"
+      ]
+    },
+    "pvp": {
+      "feel": "Curses, puppets, control, and delayed burst can shape PvP, but the documented rotation and complaints do not isolate arena, duel, or battleground practice.",
+      "strengths": [
+        "Curses, puppets, control, and delayed burst can shape PvP, but the documented rotation and complaints do not isolate arena, duel, or battleground practice.",
+        "Control and disruption change the normal loop."
+      ],
+      "cautions": [
+        "Detonating or channeling before curses and stored damage mature, losing the puppet window, or spending mana on short-lived packs collapses the delayed payoff.",
+        "No normalized matchup or bracket comparison is available."
+      ],
+      "claim_ids": [
+        "talent:witch-doctor/voodoo:13-34-4-0",
+        "talent:witch-doctor/voodoo:13-34-10-0",
+        "talent:witch-doctor/voodoo:13-34-3-1",
+        "talent:witch-doctor/voodoo:13-34-2-9",
+        "observed:witch-doctor/voodoo:community-practice",
+        "observed:witch-doctor/voodoo:build-practice",
+        "observed:witch-doctor/voodoo:sentiment-context",
+        "inference:witch-doctor/voodoo:identity"
+      ]
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "moderate",
+        "reason": "Several curses, puppets, cooldowns, channels, and AoE tools form distinct sequences. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "moderate-high",
+        "reason": "Several curses, puppets, cooldowns, channels, and AoE tools form distinct sequences. Middle talents make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "moderate-high",
+        "reason": "Several curses, puppets, cooldowns, channels, and AoE tools form distinct sequences. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "moderate-high",
+        "reason": "Several curses, puppets, cooldowns, channels, and AoE tools form distinct sequences. A durable target makes repeated timing and resource discipline matter.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "Several curses, puppets, cooldowns, channels, and AoE tools form distinct sequences. Changing pack size, lifespan, and tank movement add another constraint.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "moderate-high",
+        "reason": "Several curses, puppets, cooldowns, channels, and AoE tools form distinct sequences. Enemy disruption and an active opponent make the same task less predictable.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "moderate",
+        "reason": "DoTs, stored damage, puppet duration, Mimic, cooldowns, and mana all need tracking. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "moderate-high",
+        "reason": "DoTs, stored damage, puppet duration, Mimic, cooldowns, and mana all need tracking. Middle talents make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "moderate-high",
+        "reason": "DoTs, stored damage, puppet duration, Mimic, cooldowns, and mana all need tracking. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "moderate-high",
+        "reason": "DoTs, stored damage, puppet duration, Mimic, cooldowns, and mana all need tracking. A durable target makes repeated timing and resource discipline matter.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "DoTs, stored damage, puppet duration, Mimic, cooldowns, and mana all need tracking. Changing pack size, lifespan, and tank movement add another constraint.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "DoTs, stored damage, puppet duration, Mimic, cooldowns, and mana all need tracking. Enemy disruption and an active opponent make the same task less predictable.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "low-moderate",
+        "reason": "Target count, clone time, and mana decide between Malefic Wrath and Shadowflare. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "moderate",
+        "reason": "Target count, clone time, and mana decide between Malefic Wrath and Shadowflare. Middle talents make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "moderate",
+        "reason": "Target count, clone time, and mana decide between Malefic Wrath and Shadowflare. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "moderate",
+        "reason": "Target count, clone time, and mana decide between Malefic Wrath and Shadowflare. A durable target makes repeated timing and resource discipline matter.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "moderate-high",
+        "reason": "Target count, clone time, and mana decide between Malefic Wrath and Shadowflare. Changing pack size, lifespan, and tank movement add another constraint.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "moderate-high",
+        "reason": "Target count, clone time, and mana decide between Malefic Wrath and Shadowflare. Enemy disruption and an active opponent make the same task less predictable.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "low",
+        "reason": "The sequence is timing-heavy even when stationary casting is possible. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "low-moderate",
+        "reason": "The sequence is timing-heavy even when stationary casting is possible. Middle talents make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "low-moderate",
+        "reason": "The sequence is timing-heavy even when stationary casting is possible. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "low-moderate",
+        "reason": "The sequence is timing-heavy even when stationary casting is possible. A durable target makes repeated timing and resource discipline matter.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "moderate",
+        "reason": "The sequence is timing-heavy even when stationary casting is possible. Changing pack size, lifespan, and tank movement add another constraint.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "moderate",
+        "reason": "The sequence is timing-heavy even when stationary casting is possible. Enemy disruption and an active opponent make the same task less predictable.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "moderate",
+        "reason": "Early detonation or an expired puppet window wastes most of the stored setup. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "moderate-high",
+        "reason": "Early detonation or an expired puppet window wastes most of the stored setup. Middle talents make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "moderate-high",
+        "reason": "Early detonation or an expired puppet window wastes most of the stored setup. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "moderate-high",
+        "reason": "Early detonation or an expired puppet window wastes most of the stored setup. A durable target makes repeated timing and resource discipline matter.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "Early detonation or an expired puppet window wastes most of the stored setup. Changing pack size, lifespan, and tank movement add another constraint.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "Early detonation or an expired puppet window wastes most of the stored setup. Enemy disruption and an active opponent make the same task less predictable.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      }
+    },
+    "setup_burden": {
+      "leveling_10_29": {
+        "value": "low-moderate",
+        "reason": "Damage requires curses and puppets to be established before detonation or channeling. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "moderate",
+        "reason": "Damage requires curses and puppets to be established before detonation or channeling. Middle talents make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "moderate",
+        "reason": "Damage requires curses and puppets to be established before detonation or channeling. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "moderate",
+        "reason": "Damage requires curses and puppets to be established before detonation or channeling. A durable target makes repeated timing and resource discipline matter.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "moderate",
+        "reason": "Damage requires curses and puppets to be established before detonation or channeling. Changing pack size, lifespan, and tank movement add another constraint.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "moderate-high",
+        "reason": "Damage requires curses and puppets to be established before detonation or channeling. Enemy disruption and an active opponent make the same task less predictable.",
+        "claim_ids": [
+          "talent:witch-doctor/voodoo:13-34-4-0",
+          "talent:witch-doctor/voodoo:13-34-10-0",
+          "talent:witch-doctor/voodoo:13-34-3-1",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [
+      {
+        "text": "You enjoy DoT setup, stored-damage windows, summons, and large delayed payoffs.",
+        "claim_ids": [
+          "inference:witch-doctor/voodoo:identity"
+        ]
+      },
+      {
+        "text": "You enjoy a loop where this state matters: DoTs, stored damage, puppet duration, Mimic, cooldowns, and mana all need tracking.",
+        "claim_ids": [
+          "inference:witch-doctor/voodoo:identity",
+          "observed:witch-doctor/voodoo:community-practice"
+        ]
+      }
+    ],
+    "avoid_if": [
+      {
+        "text": "You want immediate damage, simple AoE, or forgiving mana and cooldown management.",
+        "claim_ids": [
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      },
+      {
+        "text": "You want mistakes to be cheap; here, detonating or channeling before curses and stored damage mature, losing the puppet window, or spending mana on short-lived packs collapses the delayed payoff.",
+        "claim_ids": [
+          "inference:witch-doctor/voodoo:failure-cost",
+          "observed:witch-doctor/voodoo:community-practice"
+        ]
+      }
+    ]
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [
+    "observed:witch-doctor/voodoo:performance"
+  ],
+  "sentiment": {
+    "praise": [
+      {
+        "theme": "The documented loop has a clear curse, puppet, cooldown, and delayed-burst payoff with strong multi-target intent.",
+        "claim_ids": [
+          "observed:witch-doctor/voodoo:sentiment-context",
+          "observed:witch-doctor/voodoo:community-practice",
+          "observed:witch-doctor/voodoo:build-practice"
+        ]
+      }
+    ],
+    "frustrations": [
+      {
+        "theme": "Detonating or channeling before curses and stored damage mature, losing the puppet window, or spending mana on short-lived packs collapses the delayed payoff.",
+        "claim_ids": [
+          "observed:witch-doctor/voodoo:sentiment-context",
+          "inference:witch-doctor/voodoo:failure-cost"
+        ]
+      }
+    ],
+    "contested": [
+      {
+        "theme": "Players agree on the broad sequence but disagree on feel, especially leveling speed, AoE setup, squishiness, and mana.",
+        "claim_ids": [
+          "observed:witch-doctor/voodoo:sentiment-context",
+          "observed:witch-doctor/voodoo:community-practice"
+        ]
+      }
+    ]
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 1,
+    "latest_update": "2026-07-23T07:40:37.987+00:00",
+    "top_title": "Who do your voodoo",
+    "top_url": "https://coabuildhub.com/build/05e9cd81-6697-4220-91c5-d1872fc44a29",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:05e9cd81-6697-4220-91c5-d1872fc44a29"
+    ]
+  },
+  "coverage": {
+    "mechanical": "manual_talent_and_build_interpretation",
+    "community": "manual_recent_source_review",
+    "performance": "limited_uncontrolled",
+    "video": "searched_none_verified",
+    "overall_confidence": "medium",
+    "gaps": [
+      "No verified current full-encounter rotation video.",
+      "Any priority or mode not supported above remains an explicit gap rather than an inferred optimum."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-4-0",
+      "kind": "structural",
+      "text": "Shadow Puppets: Summon a Shadow Puppet that collects a Spirit and rushes towards your target, dealing 25 + 22% shadow SP Shadow damage, repeating every 1 sec for 3 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-10-0",
+      "kind": "structural",
+      "text": "Puppeteer's Threads: Level 10 PassiveDamaging abilities now leave behind Puppeteer's Threads on enemies for 10 seconds. Puppeteer’s Threads (Debuff)Damage taken from the Witch Doctor stores 10% of its value. When the effect ends the damage stored is dealt instantly.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-3-1",
+      "kind": "structural",
+      "text": "Loa Spirits: Damage dealt and healing done now has a 8% chance to collect a Spirit.In addition, each active Spirit now increases your Spirit by 2%.SpiritRegenerates 7 health and mana, repeating every 4 sec for 12 seconds, stacking 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-5-1",
+      "kind": "structural",
+      "text": "Stranglethorn Style: Increases your critical strike chance by 4% and reduces threat generated by your Voodoo spells by -20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-2-2",
+      "kind": "structural",
+      "text": "Bad Juju: Hurl a bolt of dark magic at an enemy, dealing 191 + 87.65% SP Shadow damage, scaling with your Spirit.If the target is affected by Hex of Malice it also reduces the target's healing received by -20% for 8 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-4-2",
+      "kind": "structural",
+      "text": "Zalazane's Malice: Increases the damage of Hex of Malice by 15% and the duration of Jinxes by 2 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-6-2",
+      "kind": "structural",
+      "text": "Hexfire: Blast an enemy with hexfire, dealing cond(gt(SPFI, SPN), 60+0+SPFI*0.55, 60+0+SPN*0.55+SPI*0.5) Fire damage, scaling with your Spirit.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-10-2",
+      "kind": "structural",
+      "text": "Voodoo Power: Level 20 PassiveIncreases your spell damage by 50% of your Spirit and your spell hit rating by 5% of your Spirit.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-3-3",
+      "kind": "structural",
+      "text": "Dark Magic: Reduces the cast time of Malefic Wrath and Bad Juju by -0.3 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-5-3",
+      "kind": "structural",
+      "text": "Staff of the Coven: Increases your Spirit by 8% and your hit chance by 2%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-1-4",
+      "kind": "structural",
+      "text": "Ritual Hexing: Increases the damage of Bad Juju, Malefic Wrath and Hexfire by 10% against enemies affected by Hex of Malice.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-4-4",
+      "kind": "structural",
+      "text": "Puppeteer's Grasp: Transform: into a malignant spirit for 30 seconds, allowing you to cast Malefic Wrath and Bad Juju while moving, and periodically granting you a Spirit every 2 sec.SpiritRegenerates 7 health and mana, repeating every 4 sec for 12 seconds, stacking 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-7-4",
+      "kind": "structural",
+      "text": "Jin'do's Wrath: Increases the critical strike chance and critical damage of Hexfire by 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-10-4",
+      "kind": "structural",
+      "text": "Overflowing Juju: Level 30 PassiveDamage dealt by your Shadow Puppets and Puppeteer's Threads now has a 15% chance to reset the cooldown of Bad Juju and cause your next cast to incur an -8 sec reduced cooldown.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-1-5",
+      "kind": "structural",
+      "text": "Overflowing Juju: Increases the spell power scaling of Malefic Wrath, Shadowflare, and Bad Juju by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-3-5",
+      "kind": "structural",
+      "text": "Growing Malice: Each tick of Hex of Malice increases the damage of the next tick on the enemy by 3%, stacking 10 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-5-5",
+      "kind": "structural",
+      "text": "Beware Da Voodoo: Increases the duration of Mimic Ward and Spirits by 4 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-7-5",
+      "kind": "structural",
+      "text": "Hexplosion: Your offensive critical strikes now increase your haste by 20% for 6 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-0-6",
+      "kind": "structural",
+      "text": "Voodoo Strings: When Bad Juju is used on enemies affected by Puppeteer's Threads, it strikes an additional time every 1 sec for 30% of the damage dealt over 3 seconds as Nature damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-3-6",
+      "kind": "structural",
+      "text": "Malignant: Damage dealt by Bad Juju and Hexfire now spreads Hex of Malice to up to 1 nearby enemy.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-4-6",
+      "kind": "structural",
+      "text": "Voodoo Mind: Shadow Puppets now ticks -10% faster and lasts 10% longer for each Spirit active on you.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-5-6a",
+      "kind": "structural",
+      "text": "It's Da Voodoo: Increases the damage of Shadowflare by 0%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-5-6b",
+      "kind": "structural",
+      "text": "Hollow Spirit: Damage dealt by Shadowflare and Hexfire now increases the chance enemies are critically struck by 3% for 12 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-8-6",
+      "kind": "structural",
+      "text": "Voodoo Spirits: Hexfire now snaps your Puppeteer's Threads on your target, unleashing its damage on them instantly and collecting one Spirit.SpiritRegenerates 7 health and mana, repeating every 4 sec for 12 seconds, stacking 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-10-6",
+      "kind": "structural",
+      "text": "Juju Spirits: Level 40 PassiveIncreases your spell critical damage by 100% and increases the critical strike chance of Bad Juju by 5% for each active Spirit on you.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-1-7",
+      "kind": "structural",
+      "text": "Voodoo Unleashed: Your Mimic Wards now also cast Bad Juju and casting Bad Juju now reduces the cooldown of Shadow Puppets by -3 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-2-7",
+      "kind": "structural",
+      "text": "Prolonged Malice: Increases the duration of your Hex of Malice by 6 sec and the range of your offensive Voodoo spells by 6 yds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-4-7",
+      "kind": "structural",
+      "text": "Malignant Jinx: Curse an enemy for 8 seconds, causing their next spell cast to silence them for 5 sec.Can only have 1 Jinx active on a target at a time.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-6-7",
+      "kind": "structural",
+      "text": "War Golem: Summon a War Golem for 10 seconds, absorbing damage dealt to you based on your Intellect, and redirecting harmful spells cast on nearby allies to itself.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-7-7",
+      "kind": "structural",
+      "text": "Dark Loa's Blessing: Increases the all damage dealt by party and raid members by 3%. Does not stack with similar effects.In addition, your Shadow Puppets now deals damage -20% faster.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-2-8",
+      "kind": "structural",
+      "text": "Voice of Bwonsamdi: Let the spirit of Bwonsamdi possess you for 15 seconds.Dealing periodic damage unleashes a trapped voodoo spirit at enemies, exploding for 162 + 25% shadow SP Shadow damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-4-8",
+      "kind": "structural",
+      "text": "Dark Effigy: Your Bad Juju and Hexfire now strike 2 additional nearby enemies.Shadowflare now deals 50% increased damage to enemies affected by Puppeteer's Threads.Puppeteer’s Threads (Debuff)Damage taken from the Witch Doctor stores 10% of its value. When the effect ends the damage stored is dealt instantly.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-6-8",
+      "kind": "structural",
+      "text": "Soul Marionette: Root yourself for 8 sec and create 5 clones of yourself that channel on you, applying a stack of Soul Marionette.Soul Marionette (Stacks)Increases your haste by 1% per stack. At 20 stacks, you transform into a powerful spirit, increasing the damage of Malefic Wrath and Bad Juju by 30% and guaranteeing it to critically strike for 15 seconds.In addition, each Soul Marionette will explode, dealing 582 + 50% shadow SP Shadow Damage and stunning enemies within 5 yds for 4 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-10-8",
+      "kind": "structural",
+      "text": "Hexfire Adept: Level 50 PassiveCasting Hexfire transforms your next Malefic Wrath within 8 seconds into Hexfire Wrath.Hexfire WrathHurl hexfire energy at an enemy and up to 2 nearby enemies, dealing cond(gt(SPFI, SPN), 306+0+SPFI*0.75, 306+0+SPN*0.75) Fire damage and cursing them, dealing an additional cond(gt(SPFI, SPN), 239+0+SPFI*0.12, 239+0+SPN*0.12) over 9 seconds.Spawns a Serpent Ward for 10 seconds beneath your target. Scales with modifiers to Malefic Wrath.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-2-9",
+      "kind": "structural",
+      "text": "The Price of Power: Voice of Bwonsamdi now increases your Spirit by 100%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-4-9",
+      "kind": "structural",
+      "text": "De Other Side: Damage dealt by Shadow Puppets now increases your damage and critical strike chance by 1% for 20 seconds, stacking up to 10 times.Additional procs do not refresh the duration.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/voodoo:13-34-6-9",
+      "kind": "structural",
+      "text": "Malicious Golems: Summoning your War Golem now increases your spell haste by 30% for 20 seconds.In addition, periodic damage dealt by Hex of Malice and damage dealt by Shadow Puppets will reduce the cooldown of War Golem by -0.5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "observed:witch-doctor/voodoo:community-practice",
+      "kind": "observed",
+      "text": "The leading build supplies explicit single-target and four-plus-target sequences. A separate thread broadly says DoTs, Hexfire, cooldowns, then Malefic Wrath until clones expire, while the questioner reports clunky AoE and mana pressure.",
+      "source_ids": [
+        "reddit:witch-doctor-2026-07-31",
+        "reddit:witch-doctor-voodoo-2026-07-29",
+        "buildhub:05e9cd81-6697-4220-91c5-d1872fc44a29"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_contexts"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Manual source reading; reported play remains bounded to the author's level, build, mode, and stated limitations.",
+      "derived_from_claim_ids": []
+    },
+    {
+      "id": "observed:witch-doctor/voodoo:build-practice",
+      "kind": "observed",
+      "text": "The leading guide gives a Hex of Malice to puppet/Mimic/cooldown single-target sequence and a four-plus-target puppet-buff/Shadowflare rule.",
+      "source_ids": [
+        "buildhub-builds-2026-08-05",
+        "buildhub:05e9cd81-6697-4220-91c5-d1872fc44a29"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "community_build_snapshot"
+        ],
+        "build_or_mode": [
+          "documented_builds"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The captured build documents one contributor's practice; missing prose remains an explicit rotation gap.",
+      "derived_from_claim_ids": []
+    },
+    {
+      "id": "observed:witch-doctor/voodoo:performance",
+      "kind": "observed",
+      "text": "The July community compilation reports 5,419 DPS in the source's damage context, and the August Mythic inventory lists 62 record(s). Neither signal is normalized for gear, encounter, role contribution, or player selection.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "pve_unspecified",
+          "mythic_dungeons"
+        ],
+        "build_or_mode": [
+          "damage"
+        ]
+      },
+      "confidence": "low",
+      "conflicts_with": [],
+      "notes": "Performance context is incomplete; do not use as a tier rank.",
+      "derived_from_claim_ids": []
+    },
+    {
+      "id": "observed:witch-doctor/voodoo:sentiment-context",
+      "kind": "observed",
+      "text": "Praise: The documented loop has a clear curse, puppet, cooldown, and delayed-burst payoff with strong multi-target intent. Contested evidence: Players agree on the broad sequence but disagree on feel, especially leveling speed, AoE setup, squishiness, and mana.",
+      "source_ids": [
+        "reddit:witch-doctor-2026-07-31",
+        "reddit:witch-doctor-voodoo-2026-07-29",
+        "buildhub:05e9cd81-6697-4220-91c5-d1872fc44a29"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_sentiment"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Sentiment is reported by source and context, not averaged into a universal verdict.",
+      "derived_from_claim_ids": []
+    },
+    {
+      "id": "inference:witch-doctor/voodoo:identity",
+      "kind": "inference",
+      "text": "A voodoo puppeteer who layers curses and Shadow damage, stores part of that pain in Threads, then releases it through clones, spirits, and delayed detonations.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:witch-doctor/voodoo:13-34-4-0",
+        "talent:witch-doctor/voodoo:13-34-10-0",
+        "talent:witch-doctor/voodoo:13-34-3-1",
+        "talent:witch-doctor/voodoo:13-34-2-9",
+        "talent:witch-doctor/voodoo:13-34-4-9",
+        "talent:witch-doctor/voodoo:13-34-6-9",
+        "observed:witch-doctor/voodoo:community-practice",
+        "observed:witch-doctor/voodoo:sentiment-context"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Descriptive playstyle classification from talent structure and manually reviewed current practice, not an official label."
+    },
+    {
+      "id": "inference:witch-doctor/voodoo:failure-cost",
+      "kind": "inference",
+      "text": "Detonating or channeling before curses and stored damage mature, losing the puppet window, or spending mana on short-lived packs collapses the delayed payoff.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "observed:witch-doctor/voodoo:community-practice",
+        "inference:witch-doctor/voodoo:identity"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Failure-mode interpretation; exact thresholds require live verification."
+    }
+  ]
+}

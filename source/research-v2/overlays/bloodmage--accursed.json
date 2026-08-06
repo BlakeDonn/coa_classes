@@ -1,0 +1,953 @@
+{
+  "baseline": "bloodmage--accursed.json",
+  "set": {
+    "identity": {
+      "fantasy": "A feral blood-cursed hunter who abandons careful spellcasting for fangs, pursuit, and short violent transformations.",
+      "primary_family": "duelists",
+      "also_fits": [
+        "sequencers"
+      ],
+      "playstyle_tags": [
+        "mobile-melee-priority",
+        "transformation-dps",
+        "self-sustain-melee"
+      ],
+      "one_line": "A feral blood hunter using Accursed Form, bites, Reave, Veinburst, Bloodsurge, and Dark Frenzy. It is fast, mobile, and self-sustaining, with a clearer melee priority loop than Sanguine's spell package.",
+      "claim_ids": [
+        "talent:bloodmage/accursed:20-52-4-0",
+        "talent:bloodmage/accursed:20-52-6-6",
+        "inference:bloodmage/accursed:uptime-cost",
+        "observed:bloodmage/accursed:leveling",
+        "talent:bloodmage/accursed:20-52-4-1",
+        "observed:bloodmage/accursed:performance",
+        "talent:bloodmage/accursed:20-52-2-8",
+        "talent:bloodmage/accursed:20-52-10-8"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "Fight in Accursed Form, use Reave and bite attacks to sustain pressure, trigger Veinburst and Bloodsurge payoffs, and align Dark Frenzy or later hunting talents with targets that can survive the burst.",
+      "single_target": "Maintain the form and its bite-and-Reave priority, then exploit Bloodsurge, Dark Frenzy, and level-50 hunting effects for focused pressure.",
+      "aoe": "Veinburst, Gore Barrage, and Hemoburst add pack tools, but the specialization remains more naturally focused than Sanguine's spreading spell package.",
+      "movement_and_target_switching": "Dark Hunt, pursuit effects, and the melee form support rapid target access; switching is less punishing than abandoning a long DoT stack, though burst windows can still be wasted.",
+      "defense_and_control": "Bites, leeching effects, Clotting, and Endure the Curse provide recovery, while fear and Bloodmage control supplement the melee chase.",
+      "group_utility": "Most specialization value is personal damage and sustain; Bloodmage class tools still contribute control and off-healing.",
+      "failure_modes": [
+        {
+          "text": "Entering or spending a transformation window without enough target uptime wastes the spec's strongest sequence.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost"
+          ]
+        },
+        {
+          "text": "Movement or a target swap can interrupt the intended payoff: dark hunt, pursuit effects, and the melee form support rapid target access; switching is less punishing than abandoning a long dot stack, though burst windows can still be wasted.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1"
+          ]
+        },
+        {
+          "text": "Spending recovery or control too early leaves less protection for the next pressure event: bites, leeching effects, clotting, and endure the curse provide recovery, while fear and bloodmage control supplement the melee chase.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "talent:bloodmage/accursed:20-52-4-0",
+        "talent:bloodmage/accursed:20-52-6-6",
+        "inference:bloodmage/accursed:uptime-cost",
+        "observed:bloodmage/accursed:leveling",
+        "talent:bloodmage/accursed:20-52-4-1",
+        "observed:bloodmage/accursed:performance",
+        "talent:bloodmage/accursed:20-52-2-8",
+        "talent:bloodmage/accursed:20-52-10-8"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "A direct melee form with bites and Reave, but recent players warn that the early version can feel squishy or incomplete.",
+        "strengths": [
+          "Mobile melee pressure",
+          "Clearer priority than the caster specs"
+        ],
+        "cautions": [
+          "Current leveling sentiment is sharply negative",
+          "Defensive package arrives in pieces"
+        ],
+        "claim_ids": [
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      "level_50_60": {
+        "feel": "A fuller hunt-and-burst melee spec with stronger scent, pursuit, Hemoburst, and Darkcasting choices layered over the original form loop.",
+        "strengths": [
+          "Better target pressure",
+          "More burst and sustain hooks"
+        ],
+        "cautions": [
+          "Community performance signals conflict with poor leveling sentiment",
+          "Current endgame guide depth is thin"
+        ],
+        "claim_ids": [
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8",
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "By levels 30-49, fight in accursed form, use reave and bite attacks to sustain pressure, trigger veinburst and bloodsurge payoffs, and align dark frenzy or later hunting talents with targets that can survive the burst.",
+        "strengths": [
+          "Core engine is online",
+          "More complete target coverage"
+        ],
+        "cautions": [
+          "Late talents still change the ceiling",
+          "Dark Hunt, pursuit effects, and the melee form support rapid target access; switching is less punishing than abandoning a long DoT stack, though burst windows can still"
+        ],
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, maintain the form and its bite-and-reave priority, then exploit bloodsurge, dark frenzy, and level-50 hunting effects for focused pressure.",
+        "strengths": [
+          "Durable targets preserve the full loop",
+          "Cooldowns can be planned"
+        ],
+        "cautions": [
+          "Movement can break setup",
+          "Repeated errors remain visible"
+        ],
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, veinburst, gore barrage, and hemoburst add pack tools, but the specialization remains more naturally focused than sanguine's spreading spell package.",
+        "strengths": [
+          "Pack tools express the spec clearly",
+          "Group utility has regular value"
+        ],
+        "cautions": [
+          "Short-lived targets can erase setup",
+          "Tank movement changes the plan"
+        ],
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, dark hunt, pursuit effects, and the melee form support rapid target access; switching is less punishing than abandoning a long dot stack, though burst windows can still be wasted. Bites, leeching effects, Clotting, and Endure the Curse provide recovery, while fear and Bloodmage control supplement the melee chase.",
+        "strengths": [
+          "Control and utility create options",
+          "Target swaps can reward flexibility"
+        ],
+        "cautions": [
+          "Disruption makes the loop less predictable",
+          "Defensive timing is punishable"
+        ],
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      }
+    },
+    "complexity": {
+      "core_actions": {
+        "boss": {
+          "value": "moderate",
+          "reason": "The effective loop is a melee priority built around form attacks, bites, Reave, Bloodsurge, and burst cooldowns.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "talent:bloodmage/accursed:20-52-2-5",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Fight in Accursed Form, use Reave and bite attacks to sustain pressure, trigger Veinburst and Bloodsurge payoffs, and align Dark Frenzy or later hunting talents with targets that can survive the burst. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate",
+          "reason": "The practical action set follows the authored loop: Fight in Accursed Form, use Reave and bite attacks to sustain pressure, trigger Veinburst and Bloodsurge payoffs, and align Dark Frenzy or later hunting talents with targets that can survive the burst. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate",
+          "reason": "The practical action set follows the authored loop: Fight in Accursed Form, use Reave and bite attacks to sustain pressure, trigger Veinburst and Bloodsurge payoffs, and align Dark Frenzy or later hunting talents with targets that can survive the burst. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "moderate",
+          "reason": "The practical action set follows the authored loop: Fight in Accursed Form, use Reave and bite attacks to sustain pressure, trigger Veinburst and Bloodsurge payoffs, and align Dark Frenzy or later hunting talents with targets that can survive the burst. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        },
+        "pvp": {
+          "value": "moderate",
+          "reason": "The practical action set follows the authored loop: Fight in Accursed Form, use Reave and bite attacks to sustain pressure, trigger Veinburst and Bloodsurge payoffs, and align Dark Frenzy or later hunting talents with targets that can survive the burst. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        }
+      },
+      "execution": {
+        "pvp": {
+          "value": "moderate-high",
+          "reason": "The player must preserve melee uptime and choose pursuit tools while opponents kite or disrupt the form window.",
+          "claim_ids": [
+            "inference:bloodmage/accursed:uptime-cost",
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Execution is constrained by positioning and swaps: Dark Hunt, pursuit effects, and the melee form support rapid target access; switching is less punishing than abandoning a long DoT stack, though burst windows can still be wasted. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Execution is constrained by positioning and swaps: Dark Hunt, pursuit effects, and the melee form support rapid target access; switching is less punishing than abandoning a long DoT stack, though burst windows can still be wasted. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "Execution is constrained by positioning and swaps: Dark Hunt, pursuit effects, and the melee form support rapid target access; switching is less punishing than abandoning a long DoT stack, though burst windows can still be wasted. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Execution is constrained by positioning and swaps: Dark Hunt, pursuit effects, and the melee form support rapid target access; switching is less punishing than abandoning a long DoT stack, though burst windows can still be wasted. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "moderate-high",
+          "reason": "Execution is constrained by positioning and swaps: Dark Hunt, pursuit effects, and the melee form support rapid target access; switching is less punishing than abandoning a long DoT stack, though burst windows can still be wasted. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        }
+      },
+      "failure_cost": {
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Poor burst alignment loses a finite transformation or frenzy window, but the base melee loop continues.",
+          "claim_ids": [
+            "inference:bloodmage/accursed:uptime-cost",
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Entering or spending a transformation window without enough target uptime wastes the spec's strongest sequence. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Entering or spending a transformation window without enough target uptime wastes the spec's strongest sequence. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "Entering or spending a transformation window without enough target uptime wastes the spec's strongest sequence. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "moderate-high",
+          "reason": "Entering or spending a transformation window without enough target uptime wastes the spec's strongest sequence. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Entering or spending a transformation window without enough target uptime wastes the spec's strongest sequence. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        }
+      },
+      "state_tracking": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Maintain the form and its bite-and-Reave priority, then exploit Bloodsurge, Dark Frenzy, and level-50 hunting effects for focused pressure. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low-moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Maintain the form and its bite-and-Reave priority, then exploit Bloodsurge, Dark Frenzy, and level-50 hunting effects for focused pressure. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        },
+        "level_50_60": {
+          "value": "low-moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Maintain the form and its bite-and-Reave priority, then exploit Bloodsurge, Dark Frenzy, and level-50 hunting effects for focused pressure. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        },
+        "boss": {
+          "value": "low-moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Maintain the form and its bite-and-Reave priority, then exploit Bloodsurge, Dark Frenzy, and level-50 hunting effects for focused pressure. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low-moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Maintain the form and its bite-and-Reave priority, then exploit Bloodsurge, Dark Frenzy, and level-50 hunting effects for focused pressure. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Maintain the form and its bite-and-Reave priority, then exploit Bloodsurge, Dark Frenzy, and level-50 hunting effects for focused pressure. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Veinburst, Gore Barrage, and Hemoburst add pack tools, but the specialization remains more naturally focused than Sanguine's spreading spell package. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Veinburst, Gore Barrage, and Hemoburst add pack tools, but the specialization remains more naturally focused than Sanguine's spreading spell package. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Veinburst, Gore Barrage, and Hemoburst add pack tools, but the specialization remains more naturally focused than Sanguine's spreading spell package. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Veinburst, Gore Barrage, and Hemoburst add pack tools, but the specialization remains more naturally focused than Sanguine's spreading spell package. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Veinburst, Gore Barrage, and Hemoburst add pack tools, but the specialization remains more naturally focused than Sanguine's spreading spell package. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        },
+        "pvp": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Veinburst, Gore Barrage, and Hemoburst add pack tools, but the specialization remains more naturally focused than Sanguine's spreading spell package. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; bites, leeching effects, clotting, and endure the curse provide recovery, while fear and bloodmage control supplement the melee chase. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; bites, leeching effects, clotting, and endure the curse provide recovery, while fear and bloodmage control supplement the melee chase. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; bites, leeching effects, clotting, and endure the curse provide recovery, while fear and bloodmage control supplement the melee chase. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; bites, leeching effects, clotting, and endure the curse provide recovery, while fear and bloodmage control supplement the melee chase. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; bites, leeching effects, clotting, and endure the curse provide recovery, while fear and bloodmage control supplement the melee chase. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "Target count, incoming pressure, and movement change the next action; bites, leeching effects, clotting, and endure the curse provide recovery, while fear and bloodmage control supplement the melee chase. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1",
+            "observed:bloodmage/accursed:performance",
+            "talent:bloodmage/accursed:20-52-2-8",
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You want Bloodmage fantasy expressed through an aggressive mobile melee form rather than long caster setup.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "inference:bloodmage/accursed:identity"
+          ]
+        },
+        {
+          "text": "You enjoy the spec's core cadence: fight in accursed form, use reave and bite attacks to sustain pressure, trigger veinburst and bloodsurge payoffs, and align dark frenzy or later hunting talents with targets that can survive the burst.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You want a proven smooth early leveling curve or a passive ranged attrition loop.",
+          "claim_ids": [
+            "observed:bloodmage/accursed:leveling"
+          ]
+        },
+        {
+          "text": "You dislike the positioning or swap constraint that dark hunt, pursuit effects, and the melee form support rapid target access; switching is less punishing than abandoning a long dot stack, though burst windows can still be wasted.",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0",
+            "talent:bloodmage/accursed:20-52-6-6",
+            "inference:bloodmage/accursed:uptime-cost",
+            "observed:bloodmage/accursed:leveling",
+            "talent:bloodmage/accursed:20-52-4-1"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "The structural identity promises fast melee pursuit and a more readable priority than Sanguine.",
+          "claim_ids": [
+            "inference:bloodmage/accursed:identity"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Recent leveling players describe Accursed as late-blooming, squishy, and weak before the 40s.",
+          "claim_ids": [
+            "observed:bloodmage/accursed:leveling"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "The July DPS snapshot places Accursed above several Bloodmage alternatives, which conflicts with the poor leveling reports but covers a different level and context.",
+          "claim_ids": [
+            "observed:bloodmage/accursed:performance",
+            "observed:bloodmage/accursed:leveling"
+          ]
+        }
+      ]
+    },
+    "performance_signal_ids": [
+      "observed:bloodmage/accursed:performance"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "manual_recent_source_review",
+      "performance": "limited_uncontrolled",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium",
+      "gaps": [
+        "No detailed current level-60 rotation guide.",
+        "The leveling-to-endgame improvement point needs broader confirmation."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "A direct melee form with bites and Reave, but recent players warn that the early version can feel squishy or incomplete.",
+      "observed_changes": [
+        "Current leveling sentiment is sharply negative",
+        "Defensive package arrives in pieces"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "By levels 30-49, fight in accursed form, use reave and bite attacks to sustain pressure, trigger veinburst and bloodsurge payoffs, and align dark frenzy or later hunting talents with targets that can survive the burst.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Dark Hunt, pursuit effects, and the melee form support rapid target access; switching is less punishing than abandoning a long DoT stack, though burst windows can still"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "A fuller hunt-and-burst melee spec with stronger scent, pursuit, Hemoburst, and Darkcasting choices layered over the original form loop.",
+      "observed_changes": [
+        "Community performance signals conflict with poor leveling sentiment",
+        "Current endgame guide depth is thin"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "A direct melee form with bites and Reave, but recent players warn that the early version can feel squishy or incomplete.",
+      "observed_changes": [
+        "Current leveling sentiment is sharply negative",
+        "Defensive package arrives in pieces"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "By levels 30-49, fight in accursed form, use reave and bite attacks to sustain pressure, trigger veinburst and bloodsurge payoffs, and align dark frenzy or later hunting talents with targets that can survive the burst.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Dark Hunt, pursuit effects, and the melee form support rapid target access; switching is less punishing than abandoning a long DoT stack, though burst windows can still"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:bloodmage/accursed:leveling",
+      "kind": "observed",
+      "text": "A July 30 Bloodmage leveling discussion strongly discourages Accursed for solo leveling and says it takes more than 40 levels to feel functional, citing low damage, weak physical defense, and mediocre single-target self-healing.",
+      "source_ids": [
+        "reddit:bloodmage-leveling-2026-07-30"
+      ],
+      "scope": {
+        "levels": "leveling_10_49",
+        "content": [
+          "solo_leveling"
+        ],
+        "build_or_mode": [
+          "unspecified"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [
+        "observed:bloodmage/accursed:performance"
+      ],
+      "notes": "Small, strongly opinionated thread; it does not prove endgame weakness."
+    },
+    {
+      "id": "observed:bloodmage/accursed:performance",
+      "kind": "observed",
+      "text": "The July community DPS compilation reports Accursed at 4,477, while the August Mythic inventory lists 36 uploaded Accursed records.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "presumed_level_60",
+        "content": [
+          "pve_unspecified",
+          "mythic_dungeons"
+        ],
+        "build_or_mode": [
+          "unspecified"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [
+        "observed:bloodmage/accursed:leveling"
+      ],
+      "notes": "DPS methodology is incomplete and upload count measures representation, not power."
+    },
+    {
+      "id": "inference:bloodmage/accursed:identity",
+      "kind": "inference",
+      "text": "Accursed is a mobile melee priority specialization whose complexity comes from preserving target uptime during form and frenzy windows.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:bloodmage/accursed:20-52-4-0",
+        "talent:bloodmage/accursed:20-52-4-1",
+        "talent:bloodmage/accursed:20-52-6-6"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Playstyle classification, not an official label."
+    },
+    {
+      "id": "inference:bloodmage/accursed:uptime-cost",
+      "kind": "inference",
+      "text": "Accursed loses a material portion of its payoff when movement or control prevents melee contact during Dark Frenzy and related hunt windows.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:bloodmage/accursed:20-52-6-6",
+        "talent:bloodmage/accursed:20-52-2-8"
+      ],
+      "scope": {
+        "levels": "leveling_40_60",
+        "content": [
+          "boss",
+          "pvp"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The loss magnitude is not measured."
+    },
+    {
+      "id": "observed:bloodmage/accursed:recent-manual-review",
+      "kind": "observed",
+      "text": "Recent levelers advise delaying open-world transformation until roughly level 40, kiting with DoTs and Bloodmoon Blast early, and using the later form for tank-supported large-pull AoE; reports remain sharply mixed.",
+      "source_ids": [
+        "reddit:accursed-leveling-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually reviewed on 2026-08-06; anecdotal evidence is not treated as a power ranking."
+    }
+  ]
+}

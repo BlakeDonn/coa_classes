@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Concept B — Decision Workbench · CoA mockups v2</title>
+<link rel="stylesheet" href="shared/base.css">
+<style>
+  .bench { display: grid; grid-template-columns: 270px minmax(0,1fr); gap: 22px; margin-top: 26px; align-items: start; }
+  .roster { position: sticky; top: 78px; max-height: calc(100vh - 100px); overflow: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: 12px; scrollbar-width: thin; }
+  .roster input, .roster select { width: 100%; margin-bottom: 8px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 9px; background: var(--surface-2); outline: 0; font-size: 13px; }
+  .roster input:focus { border-color: #ffca6788; }
+  .r-item { width: 100%; display: grid; grid-template-columns: 8px 1fr auto; align-items: center; gap: 9px; padding: 8px 9px; margin-bottom: 4px; border: 1px solid transparent; border-radius: 9px; background: transparent; cursor: pointer; text-align: left; }
+  .r-item:hover { background: #ffffff07; }
+  .r-item.in-bench { border-color: color-mix(in srgb, var(--accent) 40%, transparent); background: color-mix(in srgb, var(--accent) 8%, transparent); }
+  .r-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+  .r-item b { display: block; font-size: 13px; }
+  .r-item small { color: var(--dim); font-size: 10px; }
+  .r-add { color: var(--dim); font-size: 15px; }
+  .canvas { min-width: 0; }
+  .canvas-bar { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+  .canvas-bar label { display: inline-flex; align-items: center; gap: 7px; color: var(--muted); font-size: 12px; cursor: pointer; }
+  .slots { display: grid; grid-template-columns: 150px repeat(3, minmax(160px,1fr)); border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); overflow: hidden; }
+  .cell { padding: 10px 13px; border-bottom: 1px solid var(--line-soft); border-left: 1px solid var(--line-soft); font-size: 12.5px; min-width: 0; }
+  .cell:first-child { border-left: 0; }
+  .rowhead { color: var(--dim); font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; display: flex; align-items: center; border-left: 0; }
+  .slot-head { padding: 15px 13px; }
+  .slot-head h3 { margin: 1px 0 2px; font-size: 18px; letter-spacing: -.02em; }
+  .slot-head .p-kicker { font-size: 9px; }
+  .slot-empty { color: var(--dim); font-style: italic; }
+  .row-same { opacity: .38; }
+  .diff-hide .row-same { display: none; }
+  .rmv { border: 0; background: transparent; color: var(--dim); cursor: pointer; font-size: 13px; float: right; }
+  .rmv:hover { color: var(--red); }
+  .bench-scroll { overflow-x: auto; }
+  @media (max-width: 900px) { .bench { grid-template-columns: 1fr; } .roster { position: static; max-height: 300px; } }
+</style>
+</head>
+<body>
+<header class="mock-topbar">
+  <a class="logo" href="index.html"><span>COA</span> Decision Workbench</a>
+  <span class="mock-badge">Concept B · Mockup</span>
+  <a class="back" href="index.html">← Back to mockup hub</a>
+</header>
+
+<main class="wrap">
+  <section style="padding:42px 0 0">
+    <p class="eyebrow">Concept B · Comparison is the home page</p>
+    <h1 class="page-title">Put three specs on the <span style="color:var(--gold)">bench.</span></h1>
+    <p class="page-copy">The workbench is always visible. Pick candidates from the roster, and every trait, complexity facet, and evidence claim lines up row by row.
+      Turn on "differences only" to hide everything the candidates share.</p>
+  </section>
+
+  <div class="bench">
+    <aside class="roster" aria-label="Roster">
+      <input id="q" type="search" placeholder="Search profiled specs…">
+      <select id="famFilter"><option value="">All feel-families</option></select>
+      <div id="rosterList"></div>
+      <p style="color:var(--dim);font-size:11px;margin:10px 2px 2px">12 of 70 specs profiled in this prototype.</p>
+    </aside>
+
+    <section class="canvas">
+      <div class="canvas-bar">
+        <label><input type="checkbox" id="diffOnly"> Differences only</label>
+        <span style="color:var(--dim);font-size:11px">Rows where all benched specs match are dimmed (or hidden).</span>
+        <span style="margin-left:auto"></span>
+        <button class="btn" id="clearBench">Clear bench</button>
+      </div>
+      <div class="bench-scroll"><div class="slots" id="slots"></div></div>
+      <div style="margin-top:14px" id="benchLegend"></div>
+    </section>
+  </div>
+
+  <section class="concept-notes">
+    <h2>About this concept</h2>
+    <div class="notes-grid">
+      <div class="note-card"><h3>Decision flow</h3>
+        <p>Filter or search the roster → click to bench up to three specs → scan aligned rows and hide the ties → eliminate one at a time → follow build links for the survivor.</p></div>
+      <div class="note-card"><h3>What it does best</h3>
+        <p>Head-to-head elimination. When you already have candidates ("Infinite or Sentinel?"), the aligned rows and the differences-only toggle answer it fastest of the three concepts.</p></div>
+      <div class="note-card"><h3>Main tradeoff</h3>
+        <p>Weakest cold start. An undecided player faces an empty bench and a flat roster with no narrative on-ramp, and the dense grid is the closest of the three to a spreadsheet.</p></div>
+      <div class="note-card"><h3>Still needs research</h3>
+        <ul><li>Are 1-5 positions defensible enough to sit side by side numerically?</li>
+        <li>Which rows do players actually use to eliminate?</li>
+        <li>Roster ergonomics at all 70 specs.</li></ul></div>
+    </div>
+  </section>
+</main>
+
+<script src="shared/profiles.js"></script>
+<script src="shared/render.js"></script>
+<script>
+(() => {
+  "use strict";
+  const { P, esc, srcBadge, meter5, TRAIT_NAMES, FACET_NAMES } = MockUI;
+  const el = id => document.getElementById(id);
+  const state = { bench: ["infinite", "sentinel", "houndmaster"], q: "", fam: "" };
+
+  const famOf = id => P.families.find(f => f.specIds.includes(id));
+
+  function renderRoster() {
+    const q = state.q.toLowerCase();
+    el("rosterList").innerHTML = Object.values(P.specs)
+      .filter(s => (!state.fam || s.family === state.fam)
+        && (!q || (s.name + " " + s.klass + " " + s.oneLiner).toLowerCase().includes(q)))
+      .map(s => `<button class="r-item ${state.bench.includes(s.id) ? "in-bench" : ""}" style="--accent:${s.color}" data-pick="${s.id}">
+          <span class="r-dot"></span>
+          <span><b>${esc(s.name)}</b><small>${esc(s.klass)} · ${esc(famOf(s.id).name)}</small></span>
+          <span class="r-add">${state.bench.includes(s.id) ? "✓" : "+"}</span>
+        </button>`).join("");
+  }
+
+  function row(label, cells, same) {
+    return `<div class="cell rowhead ${same ? "row-same" : ""}">${esc(label)}</div>`
+      + [0,1,2].map(i => `<div class="cell ${same ? "row-same" : ""}">${cells[i] ?? `<span class="slot-empty">—</span>`}</div>`).join("");
+  }
+
+  function renderBench() {
+    const specs = state.bench.map(id => P.specs[id]);
+    const filled = i => specs[i] !== undefined;
+    let html = `<div class="cell rowhead"></div>` + [0,1,2].map(i => filled(i)
+      ? `<div class="cell slot-head" style="--accent:${specs[i].color}">
+           <button class="rmv" data-unpick="${specs[i].id}" aria-label="Remove">×</button>
+           <div class="p-kicker">${esc(specs[i].klass)} · ${esc(specs[i].role)}</div>
+           <h3 style="color:${specs[i].color}">${esc(specs[i].name)}</h3></div>`
+      : `<div class="cell slot-head slot-empty">Empty slot — pick from the roster</div>`).join("");
+
+    html += row("Feels like", specs.map(s => `<span style="color:var(--muted)">${esc(s.oneLiner)}</span>`), false);
+    html += row("Feel-family", specs.map(s => `${esc(famOf(s.id).name)} ${srcBadge("inference")}`),
+      specs.length > 1 && specs.every(s => s.family === specs[0].family));
+
+    for (const [k, label] of Object.entries(TRAIT_NAMES)) {
+      const same = specs.length > 1 && specs.every(s => s.traits[k].v === specs[0].traits[k].v);
+      html += row(label, specs.map(s => `<span style="--accent:${s.color}">${meter5(s.traits[k].v)}</span> ${srcBadge(s.traits[k].s)}`), same);
+    }
+    for (const [k, label] of Object.entries(FACET_NAMES)) {
+      const same = specs.length > 1 && specs.every(s => s.complexity[k].v === specs[0].complexity[k].v);
+      html += row("Cx: " + label, specs.map(s => `<span style="--accent:${s.color}">${meter5(s.complexity[k].v)}</span> ${srcBadge(s.complexity[k].s)}`), same);
+    }
+    html += row("Enjoy if", specs.map(s => MockUI.likeList(s.enjoy.slice(0,2))), false);
+    html += row("Avoid if", specs.map(s => MockUI.likeList(s.avoid.slice(0,2))), false);
+    html += row("Higher levels", specs.map(s => `<span style="color:var(--muted);font-size:11.5px">${esc(s.shift.t)}</span> ${srcBadge(s.shift.s)}`), false);
+    html += row("Builds", specs.map(s => s.evidence.builds
+      ? `${s.evidence.builds} recent · <a style="color:var(--gold)" target="_blank" rel="noreferrer" href="${esc(s.evidence.topUrl)}">top ↗</a>`
+      : `<span style="color:var(--dim)">none captured — documentation gap</span>`), false);
+    html += row("Video", specs.map(s => `<span style="color:var(--dim);font-size:11.5px">${s.video === null ? "No verified video in the Aug 5 snapshot." : "verified"}</span>`), false);
+    el("slots").innerHTML = html;
+    el("benchLegend").innerHTML = MockUI.legend();
+  }
+
+  el("famFilter").innerHTML += P.families.map(f => `<option value="${f.id}">${esc(f.name)}</option>`).join("");
+  el("q").addEventListener("input", () => { state.q = el("q").value; renderRoster(); });
+  el("famFilter").addEventListener("change", () => { state.fam = el("famFilter").value; renderRoster(); });
+  el("diffOnly").addEventListener("change", () => el("slots").classList.toggle("diff-hide", el("diffOnly").checked));
+  el("clearBench").addEventListener("click", () => { state.bench = []; renderRoster(); renderBench(); });
+
+  document.addEventListener("click", e => {
+    const pick = e.target.closest("[data-pick]");
+    if (pick) {
+      const id = pick.dataset.pick;
+      const i = state.bench.indexOf(id);
+      if (i >= 0) state.bench.splice(i, 1);
+      else if (state.bench.length < 3) state.bench.push(id);
+      renderRoster(); renderBench(); return;
+    }
+    const un = e.target.closest("[data-unpick]");
+    if (un) { state.bench = state.bench.filter(x => x !== un.dataset.unpick); renderRoster(); renderBench(); }
+  });
+
+  renderRoster(); renderBench();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hybrid media spec — production skin example</title>
+<link rel="stylesheet" href="../../site/styles.css">
+<link rel="stylesheet" href="../../site/explorer.css">
+<style>
+  /* Example-only additions on top of the production skin. */
+  .demo-wrap { max-width: 1100px; margin: auto; padding: 26px clamp(12px,3vw,40px) 80px; }
+  .demo-note { border: 1px dashed #4a4131; border-radius: 3px; padding: 12px 16px; color: #83888f; font-size: 12px; margin-bottom: 20px; }
+  .demo-note b { color: #cdcdcd; }
+  .demo-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); gap: 14px; }
+
+  /* B on cards: real talent icon in the plate tile. */
+  .spec-icon img { width: 100%; height: 100%; object-fit: cover; border-radius: 2px; }
+
+  /* A in the dialog, revised: art sits BELOW the header as its own video strip.
+     Never behind our text — thumbnails carry baked-in titles. */
+  .cine-strip { position: relative; display: block; height: 150px;
+    background: #0a0a0a center 28%/cover no-repeat;
+    border-top: 1px solid var(--edge-in); border-bottom: 1px solid var(--edge-in); }
+  .cine-strip::before { content: ""; position: absolute; inset: 0;
+    background: linear-gradient(0deg, #10111470, transparent 40%), radial-gradient(closest-side at 50% 50%, transparent 60%, #10111455); }
+  .cine-strip .play { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: 46px; height: 46px; display: grid; place-items: center; border-radius: 999px;
+    border: 1px solid var(--gold); background: #0b0a09d8; color: var(--gold-bright); font-size: 17px;
+    box-shadow: 0 0 0 3px #0007, 0 6px 20px #000c; transition: transform .14s; }
+  .cine-strip:hover .play { transform: translate(-50%, -50%) scale(1.08); }
+
+  /* C labels: provenance line under any media. */
+  .media-label { display: flex; align-items: center; gap: 8px; padding: 9px 26px; font-size: 10.5px;
+    color: #9a9483; border-bottom: 1px solid #00000090; box-shadow: inset 0 1px 0 #ffffff07; }
+  .media-label .tag { font-weight: 800; letter-spacing: .1em; text-transform: uppercase; font-size: 8.5px;
+    border: 1px solid; border-radius: 3px; padding: 2px 6px; }
+  .tag-class { color: #9d9d9d; border-color: #9d9d9d55; }
+  .tag-guide { color: #e6b515; border-color: #e6b51555; }
+  .media-label a { color: var(--gold); }
+
+  /* Spec-guide row (only when verified) / icon strip in dialog. */
+  .guide-row { display: flex; gap: 11px; align-items: center; margin: 12px 26px 0; padding: 9px;
+    border: 1px solid var(--edge-out); border-radius: 3px; background: #131210; text-decoration: none; color: var(--ink); }
+  .guide-row img { width: 92px; height: 52px; object-fit: cover; border-radius: 2px; border: 1px solid #000; }
+  .guide-row b { display: block; font-size: 12.5px; color: var(--gold-bright); }
+  .guide-row small { color: #83888f; font-size: 10.5px; }
+  .icon-strip { display: flex; gap: 8px; margin: 12px 26px 2px; }
+  .icon-strip img { width: 42px; height: 42px; border-radius: 3px; border: 1px solid var(--edge-in); box-shadow: inset 0 0 8px #000, 0 3px 8px #0008; }
+  .icon-strip .cap { align-self: center; color: #565b62; font-size: 10px; margin-left: 4px; }
+</style>
+</head>
+<body class="atlas">
+<header class="a-topbar">
+  <a class="a-sigil" href="../../site/index.html">⚜ COA ATLAS</a>
+  <nav class="a-tabs"><a class="active" href="#">Hybrid media example</a></nav>
+</header>
+
+<main class="demo-wrap">
+  <div class="demo-note"><b>Hybrid spec demo, production skin.</b>
+    B on cards: real talent icons in the plate tile. A in the dialog: official class-highlight art as the header. C everywhere: strict provenance labels.
+    Three real cases — Heretic has a verified spec guide, Artificer and Draconic get the honest class fallback. Images are hotlinked for this demo; production would cache locally.</div>
+  <div class="demo-grid" id="cards"></div>
+</main>
+
+<dialog id="dlg" class="a-dialog">
+  <button class="d-close" data-close aria-label="Close">×</button>
+  <div id="dlgBody"></div>
+</dialog>
+
+<script src="../../site/explorer-data.js"></script>
+<script>
+(() => {
+  "use strict";
+  const D = window.COA_EXPLORER;
+  const esc = v => String(v ?? "").replace(/[&<>'"]/g, c => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;",
+  })[c]);
+  const ORD = { "low": 1, "low-moderate": 2, "moderate": 3, "moderate-high": 4, "high": 5 };
+  const AXES = { core_actions: "Core actions", state_tracking: "State tracking", sequencing: "Sequencing",
+    reactive_decisions: "Reactive decisions", execution: "Execution", failure_cost: "Failure cost" };
+  const pips = n => `<span class="pips">${[1,2,3,4,5].map(i => `<span class="${i <= n ? "" : "off"}">◆</span>`).join("")}</span>`;
+
+  // Real media from the availability audit.
+  const MEDIA = {
+    "cultist/heretic": {
+      icon: "https://coabuildhub.com/skill-icons/inv_mace_1h_orgrimmarraid_d_03.jpg",
+      icons: [
+        ["https://coabuildhub.com/skill-icons/inv_mace_1h_orgrimmarraid_d_03.jpg", "Malevolence"],
+        ["https://coabuildhub.com/skill-icons/spell_priest_void_flay.jpg", "Twisted Sanity"],
+        ["https://coabuildhub.com/skill-icons/achievement_dungeon_aqusirr.jpg", "Shadow Training"],
+      ],
+      classVideo: "g0NkjXMVSPA", className: "Cultist",
+      guide: { id: "-rMi2co9cUE", creator: "Zreula", title: "Melee-healer guide", verified: "2026-08-06" },
+    },
+    "chronomancer/artificer": {
+      icon: "https://coabuildhub.com/skill-icons/inv_wand_16.jpg",
+      icons: [
+        ["https://coabuildhub.com/skill-icons/inv_wand_16.jpg", "Artificer's Wand"],
+        ["https://coabuildhub.com/skill-icons/inv_elementalearth2.jpg", "Caverns of Time"],
+        ["https://coabuildhub.com/skill-icons/inv_azeritedebuff.jpg", "Artificer's Empowerment"],
+      ],
+      classVideo: "yvmzxxVsHZg", className: "Chronomancer", guide: null,
+    },
+    "pyromancer/draconic": {
+      icon: "https://coabuildhub.com/skill-icons/ability_deathwing_assualtaspects.jpg",
+      icons: [
+        ["https://coabuildhub.com/skill-icons/inv_misc_firedancer_01.jpg", "Alexstrasza's Gift"],
+        ["https://coabuildhub.com/skill-icons/spell_fire_immolation.jpg", "Agonizing Burns"],
+        ["https://coabuildhub.com/skill-icons/ability_deathwing_assualtaspects.jpg", "Aspect's Blessing"],
+      ],
+      classVideo: "eED_TiScjM8", className: "Pyromancer", guide: null,
+    },
+  };
+
+  const spec = id => D.specs.find(s => s.id === id);
+  const bestCtx = s => {
+    if (s.contexts.boss || Object.values(s.complexity).some(a => a.boss)) return "boss";
+    const ids = Object.keys(AXES).length && Object.keys(s.contexts);
+    return (ids && ids[0]) || "boss";
+  };
+  const cx = (s, axis, ctx) => (s.complexity[axis] || {})[ctx] || null;
+
+  function card(id) {
+    const s = spec(id), m = MEDIA[id];
+    const bc = bestCtx(s);
+    const rows = [["Sequencing", "sequencing"], ["Tracking", "state_tracking"],
+                  ["Reactive", "reactive_decisions"], ["Failure cost", "failure_cost"]];
+    return `<article class="plate spec-card q-c" tabindex="0" role="button" style="--class-color:${s.color}" data-open="${id}">
+      <div class="card-top">
+        <span class="spec-icon"><img src="${m.icon}" alt="" loading="lazy"></span>
+        <div><h3>${esc(s.name)}</h3>
+          <div class="sub">${esc(s.klass)} · ${[...s.roles, ...s.range].map(esc).join(" · ")}</div></div>
+      </div>
+      <div class="card-mid">
+        <p>${esc(s.oneLine)}</p>
+        ${rows.some(([, k]) => cx(s, k, bc))
+          ? `<div class="pips-grid">${rows.map(([n, k]) => {
+              const c = cx(s, k, bc);
+              return `<span class="pip-row">${n}${c ? pips(ORD[c.v] || 0) : `<span class="pips-na">unresearched</span>`}</span>`;
+            }).join("")}</div>`
+          : `<div class="pips-na" style="margin-left:0">complexity not yet researched for this spec</div>`}
+      </div>
+      <div class="card-foot">
+        <span>${s.community.count ? `${s.community.count} build${s.community.count === 1 ? "" : "s"}` : "no builds"}</span>
+        ${m.guide ? `<span class="chip-shift">· spec guide ✓</span>` : ""}
+        <span class="q-tag" style="margin-left:auto">Curated</span>
+      </div>
+    </article>`;
+  }
+
+  function dialogHTML(id) {
+    const s = spec(id), m = MEDIA[id];
+    const bc = bestCtx(s);
+    const stats = Object.entries(AXES).map(([k, label]) => {
+      const c = cx(s, k, bc);
+      return `<span class="stat">${label}${c ? pips(ORD[c.v] || 0) : `<span class="pips-na" style="margin-left:auto">—</span>`}</span>`;
+    }).join("");
+    return `
+      <header class="d-head q-c" style="--class-color:${s.color}">
+        <h2>${esc(s.name)}</h2>
+        <div class="d-meta"><span>${esc(s.klass)}</span><span>${[...s.roles, ...s.range].map(esc).join(" · ")}</span>
+          <span class="wb-q c">Curated · ${esc(s.confidence)}</span></div>
+        <p class="d-flavor">"${esc(s.fantasy || s.oneLine)}"</p>
+      </header>
+      <a class="cine-strip" href="https://www.youtube.com/watch?v=${m.classVideo}" target="_blank" rel="noreferrer"
+        style="background-image:url('https://i.ytimg.com/vi/${m.classVideo}/hqdefault.jpg')"
+        aria-label="Watch the official ${esc(m.className)} class highlight">
+        <span class="play">▶</span>
+      </a>
+      <div class="media-label">
+        <span class="tag tag-class">Class highlight</span>
+        Header art: official Ascension ${esc(m.className)} video — an older class-fantasy reference, not a rotation guide.
+        <a href="https://www.youtube.com/watch?v=${m.classVideo}" target="_blank" rel="noreferrer">Watch ↗</a>
+      </div>
+      ${m.guide ? `
+        <a class="guide-row" href="https://www.youtube.com/watch?v=${m.guide.id}" target="_blank" rel="noreferrer">
+          <img src="https://i.ytimg.com/vi/${m.guide.id}/mqdefault.jpg" alt="" loading="lazy">
+          <span><b>${esc(m.guide.title)} — ${esc(m.guide.creator)}</b>
+          <small><span class="tag tag-guide">Spec guide</span> Verified current community guide · checked ${esc(m.guide.verified)}</small></span>
+        </a>`
+      : `<div class="media-label" style="border-bottom:0">
+          <span class="tag tag-class">No spec video</span>
+          No verified current ${esc(s.name)}-specific video. We say so rather than surfacing a stale or unrelated upload.
+        </div>`}
+      <div class="icon-strip">${m.icons.map(([u, t]) => `<img src="${u}" title="${esc(t)}" alt="${esc(t)}" loading="lazy">`).join("")}
+        <span class="cap">Defining talents — icons from the current snapshot</span></div>
+      <div class="d-stats">${stats}</div>
+      <div class="d-quickfoot">Boss context · qualitative labels, not scores · full codex folds continue below in production</div>`;
+  }
+
+  document.getElementById("cards").innerHTML = Object.keys(MEDIA).map(card).join("");
+  const dlg = document.getElementById("dlg");
+  document.addEventListener("click", e => {
+    const open = e.target.closest("[data-open]");
+    if (open) { document.getElementById("dlgBody").innerHTML = dialogHTML(open.dataset.open); dlg.showModal(); return; }
+    if (e.target.closest("[data-close]") || e.target === dlg) dlg.close();
+  });
+})();
+</script>
+</body>
+</html>

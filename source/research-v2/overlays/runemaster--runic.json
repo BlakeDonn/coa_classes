@@ -1,0 +1,925 @@
+{
+  "baseline": "runemaster--runic.json",
+  "set": {
+    "identity": {
+      "fantasy": "A dual-wield martial engraver who brands a priority target, detonates marks with Runeblade, and lets fast elemental weapon procs splash through the pack.",
+      "primary_family": "sequencers",
+      "also_fits": [
+        "duelists"
+      ],
+      "playstyle_tags": [
+        "engraving-proc-melee",
+        "funnel-cleave",
+        "fast-weapon-melee"
+      ],
+      "one_line": "A martial engraver using Runic Brand, Runeblade, elemental weapon procs, Fists of Power, Zenith, and leyline burst. The player maintains brands and engraving states while attacking at a fast pace, then amplifies the package with Runic Tempest or Ley Power.",
+      "claim_ids": [
+        "observed:runemaster/runic:current-guide",
+        "inference:runemaster/runic:funnel-cost",
+        "talent:runemaster/runic:32-85-4-0",
+        "talent:runemaster/runic:32-85-10-0",
+        "talent:runemaster/runic:32-85-7-3",
+        "observed:runemaster/runic:performance",
+        "talent:runemaster/runic:32-85-1-9",
+        "observed:runemaster/runic:community-shift"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "Select Water tattoos for sustainable mana, apply Runic Brand marks to the priority target, pop them with Runeblade, use Primordial Blast to reset Runeblade charges, and weave Fist of the Ancients only when brands and blast are unavailable while Zenith and weapon engravings amplify the cycle.",
+      "single_target": "Prioritize Primordial Blast, keep Runic Brand marks active, detonate them through Runeblade filler, and use Frost plus Fire or double Fire engravings with the single-target talent swap.",
+      "aoe": "Use Earth plus Fire engravings and funnel into one important target while mark explosions, Wild Steams, and weapon procs passively damage the pack.",
+      "movement_and_target_switching": "The loop can move with the target, but its funnel design rewards keeping the correct priority enemy selected rather than spreading attention evenly.",
+      "defense_and_control": "Guarding Rune, Granite Shield, wards, tattoo utility, and a strong interrupt give the fast melee build meaningful defensive options.",
+      "group_utility": "Magic Etchings, Symbols of Power, a short-cast interrupt, and optional Guarding Rune can contribute group damage and defense.",
+      "failure_modes": [
+        {
+          "text": "Branding the wrong enemy, failing to detonate marks before a reset, or using slow weapons reduces both priority damage and the passive cleave built around it.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost"
+          ]
+        },
+        {
+          "text": "Movement or a target swap can interrupt the intended payoff: the loop can move with the target, but its funnel design rewards keeping the correct priority enemy selected rather than spreading attention evenly.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3"
+          ]
+        },
+        {
+          "text": "Spending recovery or control too early leaves less protection for the next pressure event: guarding rune, granite shield, wards, tattoo utility, and a strong interrupt give the fast melee build meaningful defensive options.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "observed:runemaster/runic:current-guide",
+        "inference:runemaster/runic:funnel-cost",
+        "talent:runemaster/runic:32-85-4-0",
+        "talent:runemaster/runic:32-85-10-0",
+        "talent:runemaster/runic:32-85-7-3",
+        "observed:runemaster/runic:performance",
+        "talent:runemaster/runic:32-85-1-9",
+        "observed:runemaster/runic:community-shift"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "A fast melee engraver that immediately combines Runic Brand, Fists of Power, and elemental weapon attacks.",
+        "strengths": [
+          "Direct brand-and-pop loop",
+          "Fast weapon feedback",
+          "Early sustain tools"
+        ],
+        "cautions": [
+          "Mana limits aggressive tattoo swapping",
+          "Weapon speed matters materially"
+        ],
+        "claim_ids": [
+          "talent:runemaster/runic:32-85-4-0",
+          "talent:runemaster/runic:32-85-10-0",
+          "talent:runemaster/runic:32-85-7-3",
+          "observed:runemaster/runic:current-guide",
+          "inference:runemaster/runic:funnel-cost",
+          "observed:runemaster/runic:performance",
+          "talent:runemaster/runic:32-85-1-9",
+          "observed:runemaster/runic:community-shift"
+        ]
+      },
+      "level_50_60": {
+        "feel": "A simple-looking priority loop with significant gearing, engraving, target-selection, and proc optimization beneath it.",
+        "strengths": [
+          "71 Mythic records",
+          "Strong funnel cleave",
+          "AoE and single-target require only small talent swaps"
+        ],
+        "cautions": [
+          "Fast weapons are central",
+          "Fire tattoo swapping depends on mana gear",
+          "The guide author explicitly disclaims expertise"
+        ],
+        "claim_ids": [
+          "observed:runemaster/runic:current-guide",
+          "observed:runemaster/runic:performance",
+          "talent:runemaster/runic:32-85-1-9",
+          "inference:runemaster/runic:funnel-cost",
+          "talent:runemaster/runic:32-85-4-0",
+          "talent:runemaster/runic:32-85-10-0",
+          "talent:runemaster/runic:32-85-7-3",
+          "observed:runemaster/runic:community-shift"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "By levels 30-49, select water tattoos for sustainable mana, apply runic brand marks to the priority target, pop them with runeblade, use primordial blast to reset runeblade charges, and weave fist of the ancients only when brands and blast are unavailable while zenith and weapon engravings amplify the cycle.",
+        "strengths": [
+          "Core engine is online",
+          "More complete target coverage"
+        ],
+        "cautions": [
+          "Late talents still change the ceiling",
+          "The loop can move with the target, but its funnel design rewards keeping the correct priority enemy selected rather than spreading attention evenly"
+        ],
+        "claim_ids": [
+          "observed:runemaster/runic:current-guide",
+          "inference:runemaster/runic:funnel-cost",
+          "talent:runemaster/runic:32-85-4-0",
+          "talent:runemaster/runic:32-85-10-0",
+          "talent:runemaster/runic:32-85-7-3",
+          "observed:runemaster/runic:performance",
+          "talent:runemaster/runic:32-85-1-9",
+          "observed:runemaster/runic:community-shift"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, prioritize primordial blast, keep runic brand marks active, detonate them through runeblade filler, and use frost plus fire or double fire engravings with the single-target talent swap.",
+        "strengths": [
+          "Durable targets preserve the full loop",
+          "Cooldowns can be planned"
+        ],
+        "cautions": [
+          "Movement can break setup",
+          "Repeated errors remain visible"
+        ],
+        "claim_ids": [
+          "observed:runemaster/runic:current-guide",
+          "inference:runemaster/runic:funnel-cost",
+          "talent:runemaster/runic:32-85-4-0",
+          "talent:runemaster/runic:32-85-10-0",
+          "talent:runemaster/runic:32-85-7-3",
+          "observed:runemaster/runic:performance",
+          "talent:runemaster/runic:32-85-1-9",
+          "observed:runemaster/runic:community-shift"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, use earth plus fire engravings and funnel into one important target while mark explosions, wild steams, and weapon procs passively damage the pack.",
+        "strengths": [
+          "Pack tools express the spec clearly",
+          "Group utility has regular value"
+        ],
+        "cautions": [
+          "Short-lived targets can erase setup",
+          "Tank movement changes the plan"
+        ],
+        "claim_ids": [
+          "observed:runemaster/runic:current-guide",
+          "inference:runemaster/runic:funnel-cost",
+          "talent:runemaster/runic:32-85-4-0",
+          "talent:runemaster/runic:32-85-10-0",
+          "talent:runemaster/runic:32-85-7-3",
+          "observed:runemaster/runic:performance",
+          "talent:runemaster/runic:32-85-1-9",
+          "observed:runemaster/runic:community-shift"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, the loop can move with the target, but its funnel design rewards keeping the correct priority enemy selected rather than spreading attention evenly. Guarding Rune, Granite Shield, wards, tattoo utility, and a strong interrupt give the fast melee build meaningful defensive options.",
+        "strengths": [
+          "Control and utility create options",
+          "Target swaps can reward flexibility"
+        ],
+        "cautions": [
+          "Disruption makes the loop less predictable",
+          "Defensive timing is punishable"
+        ],
+        "claim_ids": [
+          "observed:runemaster/runic:current-guide",
+          "inference:runemaster/runic:funnel-cost",
+          "talent:runemaster/runic:32-85-4-0",
+          "talent:runemaster/runic:32-85-10-0",
+          "talent:runemaster/runic:32-85-7-3",
+          "observed:runemaster/runic:performance",
+          "talent:runemaster/runic:32-85-1-9",
+          "observed:runemaster/runic:community-shift"
+        ]
+      }
+    },
+    "complexity": {
+      "core_actions": {
+        "dungeon_aoe": {
+          "value": "moderate",
+          "reason": "Brand, Runeblade, Primordial Blast, Fist fallback, and Zenith form a compact priority.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Select Water tattoos for sustainable mana, apply Runic Brand marks to the priority target, pop them with Runeblade, use Primordial Blast to reset Runeblade charges, and weave Fist of the Ancients only when brands and blast are unavailable while Zenith and weapon engravings amplify the cycle. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate",
+          "reason": "The practical action set follows the authored loop: Select Water tattoos for sustainable mana, apply Runic Brand marks to the priority target, pop them with Runeblade, use Primordial Blast to reset Runeblade charges, and weave Fist of the Ancients only when brands and blast are unavailable while Zenith and weapon engravings amplify the cycle. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate",
+          "reason": "The practical action set follows the authored loop: Select Water tattoos for sustainable mana, apply Runic Brand marks to the priority target, pop them with Runeblade, use Primordial Blast to reset Runeblade charges, and weave Fist of the Ancients only when brands and blast are unavailable while Zenith and weapon engravings amplify the cycle. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        },
+        "boss": {
+          "value": "moderate",
+          "reason": "The practical action set follows the authored loop: Select Water tattoos for sustainable mana, apply Runic Brand marks to the priority target, pop them with Runeblade, use Primordial Blast to reset Runeblade charges, and weave Fist of the Ancients only when brands and blast are unavailable while Zenith and weapon engravings amplify the cycle. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        },
+        "pvp": {
+          "value": "moderate",
+          "reason": "The practical action set follows the authored loop: Select Water tattoos for sustainable mana, apply Runic Brand marks to the priority target, pop them with Runeblade, use Primordial Blast to reset Runeblade charges, and weave Fist of the Ancients only when brands and blast are unavailable while Zenith and weapon engravings amplify the cycle. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        }
+      },
+      "setup_burden": {
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Weapon speed, engraving pair, tattoo, and small talent swaps change by single target or AoE.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "The payoff depends on establishing the conditions described by: Use Earth plus Fire engravings and funnel into one important target while mark explosions, Wild Steams, and weapon procs passively damage the pack. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "The payoff depends on establishing the conditions described by: Use Earth plus Fire engravings and funnel into one important target while mark explosions, Wild Steams, and weapon procs passively damage the pack. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "The payoff depends on establishing the conditions described by: Use Earth plus Fire engravings and funnel into one important target while mark explosions, Wild Steams, and weapon procs passively damage the pack. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "moderate-high",
+          "reason": "The payoff depends on establishing the conditions described by: Use Earth plus Fire engravings and funnel into one important target while mark explosions, Wild Steams, and weapon procs passively damage the pack. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        },
+        "pvp": {
+          "value": "moderate-high",
+          "reason": "The payoff depends on establishing the conditions described by: Use Earth plus Fire engravings and funnel into one important target while mark explosions, Wild Steams, and weapon procs passively damage the pack. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "dungeon_aoe": {
+          "value": "moderate-high",
+          "reason": "The player must keep the priority enemy selected while reacting to brand and Runeblade reset availability.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Target count, incoming pressure, and movement change the next action; guarding rune, granite shield, wards, tattoo utility, and a strong interrupt give the fast melee build meaningful defensive options. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Target count, incoming pressure, and movement change the next action; guarding rune, granite shield, wards, tattoo utility, and a strong interrupt give the fast melee build meaningful defensive options. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "Target count, incoming pressure, and movement change the next action; guarding rune, granite shield, wards, tattoo utility, and a strong interrupt give the fast melee build meaningful defensive options. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Target count, incoming pressure, and movement change the next action; guarding rune, granite shield, wards, tattoo utility, and a strong interrupt give the fast melee build meaningful defensive options. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Target count, incoming pressure, and movement change the next action; guarding rune, granite shield, wards, tattoo utility, and a strong interrupt give the fast melee build meaningful defensive options. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        }
+      },
+      "failure_cost": {
+        "dungeon_aoe": {
+          "value": "moderate",
+          "reason": "A wrong target or missed mark pop weakens funnel value, but the short priority recovers quickly.",
+          "claim_ids": [
+            "inference:runemaster/runic:funnel-cost",
+            "observed:runemaster/runic:current-guide",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "low-moderate",
+          "reason": "Branding the wrong enemy, failing to detonate marks before a reset, or using slow weapons reduces both priority damage and the passive cleave built around it. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate",
+          "reason": "Branding the wrong enemy, failing to detonate marks before a reset, or using slow weapons reduces both priority damage and the passive cleave built around it. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate",
+          "reason": "Branding the wrong enemy, failing to detonate marks before a reset, or using slow weapons reduces both priority damage and the passive cleave built around it. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        },
+        "boss": {
+          "value": "moderate",
+          "reason": "Branding the wrong enemy, failing to detonate marks before a reset, or using slow weapons reduces both priority damage and the passive cleave built around it. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        },
+        "pvp": {
+          "value": "moderate-high",
+          "reason": "Branding the wrong enemy, failing to detonate marks before a reset, or using slow weapons reduces both priority damage and the passive cleave built around it. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        }
+      },
+      "state_tracking": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Prioritize Primordial Blast, keep Runic Brand marks active, detonate them through Runeblade filler, and use Frost plus Fire or double Fire engravings with the single-target talent swap. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Prioritize Primordial Blast, keep Runic Brand marks active, detonate them through Runeblade filler, and use Frost plus Fire or double Fire engravings with the single-target talent swap. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Prioritize Primordial Blast, keep Runic Brand marks active, detonate them through Runeblade filler, and use Frost plus Fire or double Fire engravings with the single-target talent swap. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Prioritize Primordial Blast, keep Runic Brand marks active, detonate them through Runeblade filler, and use Frost plus Fire or double Fire engravings with the single-target talent swap. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Prioritize Primordial Blast, keep Runic Brand marks active, detonate them through Runeblade filler, and use Frost plus Fire or double Fire engravings with the single-target talent swap. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        },
+        "pvp": {
+          "value": "low",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Prioritize Primordial Blast, keep Runic Brand marks active, detonate them through Runeblade filler, and use Frost plus Fire or double Fire engravings with the single-target talent swap. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: The loop can move with the target, but its funnel design rewards keeping the correct priority enemy selected rather than spreading attention evenly. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: The loop can move with the target, but its funnel design rewards keeping the correct priority enemy selected rather than spreading attention evenly. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: The loop can move with the target, but its funnel design rewards keeping the correct priority enemy selected rather than spreading attention evenly. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: The loop can move with the target, but its funnel design rewards keeping the correct priority enemy selected rather than spreading attention evenly. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: The loop can move with the target, but its funnel design rewards keeping the correct priority enemy selected rather than spreading attention evenly. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "Execution is constrained by positioning and swaps: The loop can move with the target, but its funnel design rewards keeping the correct priority enemy selected rather than spreading attention evenly. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3",
+            "observed:runemaster/runic:performance",
+            "talent:runemaster/runic:32-85-1-9",
+            "observed:runemaster/runic:community-shift"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You want fast dual-wield proc combat with a clear priority target and passive cleave around it.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide"
+          ]
+        },
+        {
+          "text": "You enjoy the spec's core cadence: select water tattoos for sustainable mana, apply runic brand marks to the priority target, pop them with runeblade, use primordial blast to reset runeblade charges, and weave fist of the ancients only when brands and blast are unavailable while zenith and weapon engravings amplify the cycle.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You dislike weapon-speed dependence, pre-combat engraving choices, or funneling through one target.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide"
+          ]
+        },
+        {
+          "text": "You dislike the positioning or swap constraint that the loop can move with the target, but its funnel design rewards keeping the correct priority enemy selected rather than spreading attention evenly.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "inference:runemaster/runic:funnel-cost",
+            "talent:runemaster/runic:32-85-4-0",
+            "talent:runemaster/runic:32-85-10-0",
+            "talent:runemaster/runic:32-85-7-3"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "The current guide presents Engravement as a straightforward and strong funnel-cleave melee with useful group utility.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Mana can force permanent Water tattoos until gear improves, and current community performance confidence remains limited.",
+          "claim_ids": [
+            "observed:runemaster/runic:current-guide",
+            "observed:runemaster/runic:community-shift"
+          ]
+        }
+      ],
+      "contested": []
+    },
+    "performance_signal_ids": [
+      "observed:runemaster/runic:performance"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "strong_single_guide",
+      "performance": "limited_uncontrolled",
+      "video": "searched_none_verified",
+      "overall_confidence": "high",
+      "gaps": [
+        "Tattoo swapping thresholds need gear-normalized testing.",
+        "No current detailed PvP profile."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "A fast melee engraver that immediately combines Runic Brand, Fists of Power, and elemental weapon attacks.",
+      "observed_changes": [
+        "Mana limits aggressive tattoo swapping",
+        "Weapon speed matters materially"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "A simple-looking priority loop with significant gearing, engraving, target-selection, and proc optimization beneath it.",
+      "observed_changes": [
+        "Fast weapons are central",
+        "Fire tattoo swapping depends on mana gear",
+        "The guide author explicitly disclaims expertise"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "A fast melee engraver that immediately combines Runic Brand, Fists of Power, and elemental weapon attacks.",
+      "observed_changes": [
+        "Mana limits aggressive tattoo swapping",
+        "Weapon speed matters materially"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "By levels 30-49, select water tattoos for sustainable mana, apply runic brand marks to the priority target, pop them with runeblade, use primordial blast to reset runeblade charges, and weave fist of the ancients only when brands and blast are unavailable while zenith and weapon engravings amplify the cycle.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "The loop can move with the target, but its funnel design rewards keeping the correct priority enemy selected rather than spreading attention evenly"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "By levels 30-49, select water tattoos for sustainable mana, apply runic brand marks to the priority target, pop them with runeblade, use primordial blast to reset runeblade charges, and weave fist of the ancients only when brands and blast are unavailable while zenith and weapon engravings amplify the cycle.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "The loop can move with the target, but its funnel design rewards keeping the correct priority enemy selected rather than spreading attention evenly"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:runemaster/runic:current-guide",
+      "kind": "observed",
+      "text": "The July Engravement guide documents Earth plus Fire engravings for AoE and Frost plus Fire or double Fire for single target. It recommends very fast weapons, Water tattoos until mana supports Fire swapping, priority-target funneling through Runic Brand and Runeblade detonations, Primordial Blast resets, and Fist of the Ancients only during gaps. Single-target and AoE versions differ by a few talents.",
+      "source_ids": [
+        "buildhub:dca788b3-5300-440f-92e9-f0f6d118956a"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "dungeons",
+          "raids",
+          "pve"
+        ],
+        "build_or_mode": [
+          "documented_pve_build"
+        ]
+      },
+      "confidence": "high",
+      "conflicts_with": [],
+      "notes": "The author explicitly says the guide is provisional rather than expert-validated."
+    },
+    {
+      "id": "observed:runemaster/runic:community-shift",
+      "kind": "observed",
+      "text": "Recent Runemaster discussion describes the melee variants as input-heavy and capable of strong damage, but reports survivability pressure and incomplete community understanding.",
+      "source_ids": [
+        "reddit:runemaster-status-2026-07-19"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "pve",
+          "solo_leveling"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "Community label Engravement maps to current dataset name Runic."
+    },
+    {
+      "id": "observed:runemaster/runic:performance",
+      "kind": "observed",
+      "text": "The July DPS compilation reports Engravement at 3,702, and the August Mythic inventory lists 71 Runic or Engravement records.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "pve_unspecified",
+          "mythic_dungeons"
+        ],
+        "build_or_mode": [
+          "unspecified"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "Runic is the dataset label; Engravement is the community label. Sources are unnormalized."
+    },
+    {
+      "id": "inference:runemaster/runic:funnel-cost",
+      "kind": "inference",
+      "text": "Runic's main execution cost is funnel discipline: selecting the right durable target and converting brands and resets there determines both priority damage and the passive AoE surrounding it.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "observed:runemaster/runic:current-guide",
+        "talent:runemaster/runic:32-85-4-0",
+        "talent:runemaster/runic:32-85-2-5"
+      ],
+      "scope": {
+        "levels": "level_20_60",
+        "content": [
+          "dungeons",
+          "raids"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "high",
+      "conflicts_with": [],
+      "notes": "Playstyle classification from the documented funnel loop."
+    }
+  ]
+}

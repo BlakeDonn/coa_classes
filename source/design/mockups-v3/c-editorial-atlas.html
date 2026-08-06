@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Restyle C — Editorial Atlas</title>
+<style>
+:root {
+  --bg: #131417; --ink: #d6d6d3; --dim: #85888e; --faint: #5b5e64;
+  --gold: #c9aa71; --gold-bright: #e8d4a4; --hair: #c9aa7138; --line: #26282d;
+  --serif: Cinzel, "Trajan Pro", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  --sans: Inter, "Segoe UI", sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 14px/1.65 var(--sans); }
+body::before { content: ""; position: fixed; inset: 0; z-index: -1;
+  background: radial-gradient(900px 400px at 70% -120px, #1d1a13a8, transparent 70%); }
+button { font: inherit; color: inherit; cursor: pointer; background: none; border: 0; }
+
+.topbar { position: sticky; top: 0; z-index: 20; display: flex; align-items: baseline; gap: 8px;
+  padding: 18px clamp(18px,4vw,60px) 14px; background: #131417f0; backdrop-filter: blur(12px); border-bottom: 1px solid var(--hair); }
+.masthead-title { font: 700 17px/1 var(--serif); letter-spacing: .22em; text-transform: uppercase; color: var(--gold); }
+.masthead-sub { color: var(--faint); font-size: 11px; letter-spacing: .05em; }
+.top-nav { margin-left: auto; display: flex; gap: 6px; align-items: baseline; color: var(--faint); font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; }
+.top-nav a { color: var(--dim); text-decoration: none; padding: 2px 6px; }
+.top-nav a.active { color: var(--gold-bright); }
+.top-nav .sep { color: #3a3d43; }
+.wb-link { color: var(--gold); border-bottom: 1px solid var(--hair); }
+
+.wrap { max-width: 1180px; margin: auto; padding: 0 clamp(18px,4vw,60px) 90px; }
+
+.filter-line { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; padding: 22px 0 0; color: var(--faint); font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; }
+.filter-line .cat { color: #6d7076; margin-right: 2px; }
+.filter-line button { color: var(--dim); padding: 2px 4px; letter-spacing: .08em; text-transform: uppercase; font-size: 11.5px; }
+.filter-line button:hover { color: var(--ink); }
+.filter-line button.on { color: var(--gold-bright); border-bottom: 1px solid var(--gold); }
+.filter-line .sl { color: #34373d; }
+
+.spread { margin-top: 44px; }
+.spread-head { display: grid; grid-template-columns: auto 1fr; gap: 26px; align-items: start; padding-bottom: 18px; border-bottom: 1px solid var(--hair); }
+.spread-No { font: 700 84px/0.9 var(--serif); color: #c9aa7129; letter-spacing: -.02em; }
+.spread-head h2 { margin: 4px 0 6px; font: 700 42px/1 var(--serif); letter-spacing: .02em; color: var(--gold-bright); }
+.spread-head .kick { font-size: 10px; font-weight: 800; letter-spacing: .24em; text-transform: uppercase; color: var(--faint); }
+.standfirst { margin: 0; max-width: 720px; color: #a4a7ab; font-size: 14.5px; line-height: 1.7; }
+
+.roster { margin-top: 6px; }
+.row { display: grid; grid-template-columns: 30px 240px 1fr 190px 100px; gap: 18px; align-items: center;
+  padding: 15px 6px; border-bottom: 1px solid var(--line); cursor: pointer; transition: background .14s; }
+.row:hover { background: #ffffff05; }
+.row .idx { color: var(--faint); font: 600 12px var(--serif); }
+.row .name h3 { margin: 0; font: 700 18px/1.15 var(--serif); letter-spacing: .02em; color: var(--ink); }
+.row:hover .name h3 { color: var(--gold-bright); }
+.row .name .k { font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--c); }
+.row .line { color: #979aa0; font-size: 12.5px; }
+.matrix { display: grid; grid-template-columns: repeat(6, 14px); gap: 4px; justify-content: end; }
+.matrix i { height: 14px; border-radius: 2px; background: #202227; position: relative; }
+.matrix i.l1 { background: #2b2d33; } .matrix i.l2 { background: #3d3a30; } .matrix i.l3 { background: #5c5238; }
+.matrix i.l4 { background: #8a7546; } .matrix i.l5 { background: #c9aa71; }
+.matrix i.na { background: repeating-linear-gradient(45deg, #1b1d21, #1b1d21 3px, #232529 3px, #232529 6px); }
+.row .status { text-align: right; font-size: 9.5px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.row .status.cur { color: var(--gold); } .row .status.wip { color: var(--faint); }
+.matrix-key { display: flex; gap: 14px; justify-content: flex-end; padding: 10px 6px 0; color: var(--faint); font-size: 10px; letter-spacing: .06em; }
+
+dialog { width: min(880px, calc(100vw - 28px)); max-height: calc(100vh - 40px); padding: 0; border: 1px solid var(--hair);
+  background: #16171b; color: var(--ink); box-shadow: 0 40px 140px #000e; overflow: auto; border-radius: 2px; }
+dialog::backdrop { background: #0a0b0ef2; }
+.d-close { position: absolute; top: 16px; right: 18px; color: var(--faint); font-size: 20px; }
+.d-close:hover { color: var(--ink); }
+.dossier { padding: 40px 46px 46px; }
+.d-kick { font-size: 10px; font-weight: 800; letter-spacing: .26em; text-transform: uppercase; color: var(--c); }
+.dossier h2 { margin: 8px 0 4px; font: 700 44px/1 var(--serif); letter-spacing: .01em; color: var(--gold-bright); }
+.d-sub { color: var(--faint); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; margin-bottom: 24px; }
+.d-cols { display: grid; grid-template-columns: 1.15fr .85fr; gap: 40px; padding-top: 22px; border-top: 1px solid var(--hair); }
+.d-cols h4, .fold h4 { margin: 0 0 8px; font-size: 10px; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; color: var(--faint); }
+.lede { margin: 0 0 18px; font-size: 16.5px; line-height: 1.6; color: #cfc9bb; font-style: italic; }
+.d-cols p { margin: 0 0 16px; color: #a4a7ab; font-size: 13.5px; }
+.fits { display: grid; gap: 6px; margin-top: 4px; }
+.fits span { font-size: 12.5px; color: #a4a7ab; }
+.fits b { font-weight: 700; }
+.fits .y b { color: #86bd8e; } .fits .n b { color: #c98a8a; }
+.gauges { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px 10px; }
+.gauge { text-align: center; }
+.gauge svg { width: 76px; height: 76px; }
+.gauge .gl { font-size: 9.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--dim); display: block; margin-top: 2px; }
+.gauge .gv { font-size: 10px; color: var(--gold); text-transform: capitalize; }
+.ctx-note { margin-top: 14px; color: var(--faint); font-size: 10.5px; letter-spacing: .06em; text-align: center; }
+.folds { margin-top: 30px; border-top: 1px solid var(--hair); }
+.fold { border-bottom: 1px solid var(--line); }
+.fold-head { width: 100%; display: flex; align-items: baseline; gap: 12px; padding: 14px 2px; text-align: left; }
+.fold-head h4 { margin: 0; }
+.fold-head .arrow { margin-left: auto; color: var(--faint); transition: transform .18s; }
+.fold.open .arrow { transform: rotate(90deg); color: var(--gold); }
+.fold-body { display: none; padding: 0 2px 18px; color: #a4a7ab; font-size: 13.5px; }
+.fold.open .fold-body { display: block; }
+.note { margin-top: 40px; border-top: 1px solid var(--hair); padding: 16px 2px 0; color: var(--faint); font-size: 12px; }
+@media (max-width: 860px) {
+  .row { grid-template-columns: 1fr 110px; }
+  .row .idx, .row .line { display: none; }
+  .d-cols { grid-template-columns: 1fr; }
+  .dossier { padding: 28px 22px 34px; }
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <span class="masthead-title">The CoA Atlas</span>
+  <span class="masthead-sub">A field guide to 70 specializations · August 2026</span>
+  <nav class="top-nav">
+    <a class="active" href="#">Specs</a><span class="sep">/</span>
+    <a href="#">Loot 45+</a><span class="sep">/</span>
+    <a href="#" class="wb-link">Workbench · 2</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <div class="filter-line">
+    <span class="cat">Role</span>
+    <button class="on">All</button><span class="sl">/</span><button>Damage</button><span class="sl">/</span><button>Tank</button><span class="sl">/</span><button>Healer</button><span class="sl">/</span><button>Support</button>
+    <span style="width:26px"></span>
+    <span class="cat">Research</span>
+    <button class="on">All</button><span class="sl">/</span><button>Curated</button><span class="sl">/</span><button>In progress</button>
+  </div>
+
+  <section class="spread" id="fam"></section>
+
+  <p class="note"><b style="color:var(--ink)">Restyle C — Editorial Atlas.</b>
+    Magazine treatment: numbered family spreads, serif display with hairline gold rules, roster rows instead of cards, a six-cell complexity heat matrix per spec, and a dossier profile — italic lede, three radial gauges, then accordion folds for the detail. Quietest of the three; typography does the work.</p>
+</main>
+
+<dialog id="dlg"><button class="d-close" data-close>×</button><div id="dlgBody"></div></dialog>
+
+<script src="../../site/explorer-data.js"></script>
+<script src="shared.js"></script>
+<script>
+(() => {
+  "use strict";
+  const { D, esc, ORD, AXES, spec, family, inFamily, cx } = V3;
+  const FAM = "combo";
+  const AX_KEYS = Object.keys(AXES);
+
+  const matrix = s => `<span class="matrix">${AX_KEYS.map(k => {
+    const c = cx(s, k);
+    return c ? `<i class="l${ORD[c.v] || 1}" title="${AXES[k]}: ${c.v}"></i>` : `<i class="na" title="${AXES[k]}: unresearched"></i>`;
+  }).join("")}</span>`;
+
+  const f = family(FAM);
+  const specs = inFamily(FAM);
+  const famIdx = D.families.findIndex(x => x.id === FAM) + 1;
+  document.getElementById("fam").innerHTML = `
+    <div class="spread-head">
+      <div class="spread-No">${String(famIdx).padStart(2, "0")}</div>
+      <div>
+        <div class="kick">Playstyle family · ${specs.length} specializations</div>
+        <h2>${esc(f.name)}</h2>
+        <p class="standfirst">${esc(f.feels)}</p>
+      </div>
+    </div>
+    <div class="roster">
+      ${specs.map((s, i) => `
+        <div class="row" style="--c:${s.color}" data-open="${s.id}">
+          <span class="idx">${String(i + 1).padStart(2, "0")}</span>
+          <span class="name"><span class="k">${esc(s.klass)}</span><h3>${esc(s.name)}</h3></span>
+          <span class="line">${esc(s.oneLine)}</span>
+          ${matrix(s)}
+          <span class="status ${s.enriched ? "cur" : "wip"}">${s.enriched ? "Curated" : "In progress"}</span>
+        </div>`).join("")}
+      <div class="matrix-key">Boss-context complexity, six axes: darker = lower · gold = high · hatched = unresearched</div>
+    </div>`;
+
+  function gauge(label, c) {
+    const v = c ? (ORD[c.v] || 0) : 0;
+    const pct = v / 5;
+    const r = 30, circ = 2 * Math.PI * r;
+    return `<span class="gauge">
+      <svg viewBox="0 0 76 76">
+        <circle cx="38" cy="38" r="${r}" fill="none" stroke="#232529" stroke-width="5"/>
+        <circle cx="38" cy="38" r="${r}" fill="none" stroke="${v ? "#c9aa71" : "transparent"}" stroke-width="5"
+          stroke-dasharray="${circ * pct * 0.75} ${circ}" stroke-linecap="round" transform="rotate(112 38 38)"/>
+        <text x="38" y="43" text-anchor="middle" fill="${v ? "#e8d4a4" : "#5b5e64"}" font-size="13" font-family="Georgia">${v ? v + "/5" : "—"}</text>
+      </svg>
+      <span class="gl">${label}</span>
+      <span class="gv">${c ? esc(c.v) : "unresearched"}</span>
+    </span>`;
+  }
+
+  function fold(title, text, open) {
+    return text ? `<div class="fold ${open ? "open" : ""}">
+      <button class="fold-head"><h4>${title}</h4><span class="arrow">▸</span></button>
+      <div class="fold-body">${esc(text)}</div>
+    </div>` : "";
+  }
+
+  function dossierHTML(s) {
+    return `<div class="dossier" style="--c:${s.color}">
+      <div class="d-kick">${esc(s.klass)}</div>
+      <h2>${esc(s.name)}</h2>
+      <div class="d-sub">${[...s.roles, ...s.range].map(esc).join(" · ")} · ${s.enriched ? "curated · " + esc(s.confidence) + " confidence" : "research in progress"}</div>
+      <div class="d-cols">
+        <div>
+          <p class="lede">${esc(s.fantasy || s.oneLine)}</p>
+          ${s.mech.coreLoop !== s.oneLine && s.mech.coreLoop !== s.fantasy ? `<h4>The loop</h4><p>${esc(s.mech.coreLoop)}</p>` : ""}
+          <div class="fits">
+            ${s.fit.enjoy[0] ? `<span class="y"><b>For you</b> if ${esc(s.fit.enjoy[0].t.replace(/^You /, "you "))}</span>` : ""}
+            ${s.fit.avoid[0] ? `<span class="n"><b>Not for you</b> if ${esc(s.fit.avoid[0].t.replace(/^You /, "you "))}</span>` : ""}
+          </div>
+        </div>
+        <div>
+          <h4 style="text-align:center">Complexity</h4>
+          <div class="gauges">
+            ${gauge("Sequencing", cx(s, "sequencing"))}
+            ${gauge("Tracking", cx(s, "state_tracking"))}
+            ${gauge("Failure cost", cx(s, "failure_cost"))}
+            ${gauge("Core actions", cx(s, "core_actions"))}
+            ${gauge("Reactive", cx(s, "reactive_decisions"))}
+            ${gauge("Execution", cx(s, "execution"))}
+          </div>
+          <div class="ctx-note">Boss context · qualitative labels, not scores</div>
+        </div>
+      </div>
+      <div class="folds">
+        ${fold("Single target", s.mech.st)}
+        ${fold("AoE", s.mech.aoe)}
+        ${fold("Movement & switching", s.mech.movement)}
+        ${fold("How it fails", s.mech.failureModes.map(x => x.t).join(" "))}
+        ${fold("What players say", s.sentiment.praise.concat(s.sentiment.frustrations).map(x => x.t).join(" "))}
+        ${fold("Evidence", (s.enriched ? "Curated overlay. " : "Structural baseline only. ") + (s.community.count ? s.community.count + " recent community builds. " : "No builds captured. ") + "No verified video in the current snapshot.")}
+      </div>
+    </div>`;
+  }
+
+  const dlg = document.getElementById("dlg");
+  const body = document.getElementById("dlgBody");
+  document.addEventListener("click", e => {
+    const open = e.target.closest("[data-open]");
+    if (open) { body.innerHTML = dossierHTML(spec(open.dataset.open)); dlg.showModal(); return; }
+    const fh = e.target.closest(".fold-head");
+    if (fh) { fh.parentElement.classList.toggle("open"); return; }
+    if (e.target.closest("[data-close]") || e.target === dlg) dlg.close();
+  });
+  document.querySelectorAll(".filter-line").forEach(line => line.addEventListener("click", e => {
+    const b = e.target.closest("button"); if (!b) return;
+    let sib = b.parentElement.querySelectorAll("button");
+    // toggle within the group between the nearest .cat labels: simple visual only
+    sib.forEach(x => { if (x.previousElementSibling === b.previousElementSibling || true) {} });
+    b.classList.add("on");
+    let p = b.previousElementSibling;
+    while (p && !p.classList.contains("cat")) { if (p.tagName === "BUTTON") p.classList.remove("on"); p = p.previousElementSibling; }
+    let nx = b.nextElementSibling;
+    while (nx && !nx.classList.contains("cat") && nx.tagName !== "SPAN" || (nx && nx.classList.contains("sl"))) {
+      if (nx.tagName === "BUTTON") nx.classList.remove("on");
+      nx = nx.nextElementSibling;
+      if (nx && nx.classList.contains("cat")) break;
+    }
+  }));
+})();
+</script>
+</body>
+</html>

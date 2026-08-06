@@ -1,0 +1,968 @@
+{
+  "baseline": "ranger--archery.json",
+  "set": {
+    "identity": {
+      "fantasy": "A familiar marksman who uses Quick Shot to gain Advantage, empowers Precision Shot, and layers quivers, bleeds, and piercing finishers.",
+      "one_line": "Build Advantage with Quick Shot, empower Precision Shot, then choose Deadshot, Brutal Shot or late Incendiary payoff.",
+      "primary_family": "marksmen",
+      "also_fits": [],
+      "playstyle_tags": [
+        "advantage-marksman",
+        "precision-ranged",
+        "readable-builder-spender"
+      ],
+      "claim_ids": [
+        "talent:ranger/archery:21-54-4-0",
+        "talent:ranger/archery:21-54-10-0",
+        "talent:ranger/archery:21-54-2-1",
+        "talent:ranger/archery:21-54-6-1",
+        "observed:ranger/archery:level57-breakpoint",
+        "observed:ranger/archery:leveling-friction",
+        "inference:ranger/archery:playstyle-identity"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "A marksman using Quick Shot and Advantage to empower Precision Shot, bleeds, poisons, quivers, and large piercing finishers. It can skirmish at range and build toward Deadshot or Brutal Shot windows; the loop is familiar to Hunter players and comparatively readable.",
+      "single_target": "On durable targets, the structural path grows from Precision Shot, Skirmisher, Devastating Shots toward One Shot, One Kill, Silent, But Deadly, Brutal Shot. A precise priority remains limited to the captured build and community evidence.",
+      "aoe": "For multiple targets, Build Advantage with Quick Shot, empower Precision Shot, then choose Deadshot, Brutal Shot or late Incendiary payoff. The current evidence particularly constrains this through: Levelers report weak questing, limited AoE, low mobility and scarce self-healing before that point.",
+      "movement_and_target_switching": "Ranged skirmishing is supported, although its larger aimed finishers still reward planned positioning.",
+      "defense_and_control": "Its structural defensive package includes Deadshot, Corrosive Poison, Opportunist, Silent, But Deadly, Brutal Shot.",
+      "group_utility": "Group or control tools include Boots of Elvenkind, Neurotoxin Arrow, Bleeding Edge, Brutal Shot.",
+      "failure_modes": [
+        {
+          "text": "Spending Advantage on the wrong shot or losing an empowered Precision window lowers an otherwise forgiving cycle.",
+          "claim_ids": [
+            "inference:ranger/archery:failure-cost",
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1"
+          ]
+        },
+        {
+          "text": "Losing setup before payoff forces another recovery cycle.",
+          "claim_ids": [
+            "inference:ranger/archery:failure-cost",
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1"
+          ]
+        },
+        {
+          "text": "Losing setup before payoff forces another recovery cycle.",
+          "claim_ids": [
+            "inference:ranger/archery:failure-cost",
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "talent:ranger/archery:21-54-4-0",
+        "talent:ranger/archery:21-54-10-0",
+        "talent:ranger/archery:21-54-2-1",
+        "talent:ranger/archery:21-54-6-1",
+        "talent:ranger/archery:21-54-1-2",
+        "talent:ranger/archery:21-54-4-2",
+        "observed:ranger/archery:level57-breakpoint",
+        "observed:ranger/archery:leveling-friction",
+        "observed:ranger/archery:parse-caveat",
+        "observed:ranger/archery:build-practice",
+        "inference:ranger/archery:playstyle-identity"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "Early Quick Shot and Precision Shot lack pack coverage.",
+        "strengths": [
+          "Core identity",
+          "Readable payoff"
+        ],
+        "cautions": [
+          "Incomplete kit",
+          "Sparse guidance"
+        ],
+        "claim_ids": [
+          "talent:ranger/archery:21-54-4-0",
+          "talent:ranger/archery:21-54-10-0",
+          "talent:ranger/archery:21-54-2-1",
+          "talent:ranger/archery:21-54-6-1",
+          "observed:ranger/archery:level57-breakpoint",
+          "observed:ranger/archery:leveling-friction",
+          "observed:ranger/archery:parse-caveat",
+          "inference:ranger/archery:playstyle-identity"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "Quivers and Advantage deepen ST while AoE stays awkward.",
+        "strengths": [
+          "Complete engine",
+          "Better coverage"
+        ],
+        "cautions": [
+          "More states",
+          "Unlock dependent"
+        ],
+        "claim_ids": [
+          "talent:ranger/archery:21-54-4-0",
+          "talent:ranger/archery:21-54-10-0",
+          "talent:ranger/archery:21-54-2-1",
+          "talent:ranger/archery:21-54-6-1",
+          "observed:ranger/archery:level57-breakpoint",
+          "observed:ranger/archery:leveling-friction",
+          "observed:ranger/archery:parse-caveat",
+          "inference:ranger/archery:playstyle-identity"
+        ]
+      },
+      "level_50_60": {
+        "feel": "Incendiary Shot completes the boss marksman.",
+        "strengths": [
+          "Late package",
+          "Higher ceiling"
+        ],
+        "cautions": [
+          "Unsettled priority",
+          "Tracking"
+        ],
+        "claim_ids": [
+          "talent:ranger/archery:21-54-4-0",
+          "talent:ranger/archery:21-54-10-0",
+          "talent:ranger/archery:21-54-2-1",
+          "talent:ranger/archery:21-54-6-1",
+          "observed:ranger/archery:level57-breakpoint",
+          "observed:ranger/archery:leveling-friction",
+          "observed:ranger/archery:parse-caveat",
+          "inference:ranger/archery:playstyle-identity"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, On durable targets, the structural path grows from Precision Shot, Skirmisher, Devastating Shots toward One Shot, One Kill, Silent, But Deadly, Brutal Shot. A precise priority remains limited to the captured build and community evidence.",
+        "strengths": [
+          "Durable payoff",
+          "Repeatable loop"
+        ],
+        "cautions": [
+          "Movement",
+          "Repeated errors"
+        ],
+        "claim_ids": [
+          "talent:ranger/archery:21-54-4-0",
+          "talent:ranger/archery:21-54-10-0",
+          "talent:ranger/archery:21-54-2-1",
+          "talent:ranger/archery:21-54-6-1",
+          "observed:ranger/archery:level57-breakpoint",
+          "observed:ranger/archery:leveling-friction",
+          "observed:ranger/archery:parse-caveat",
+          "inference:ranger/archery:playstyle-identity"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, For multiple targets, Build Advantage with Quick Shot, empower Precision Shot, then choose Deadshot, Brutal Shot or late Incendiary payoff. The current evidence particularly constrains this through: Levelers report weak questing, limited AoE, low mobility and scarce self-healing before that point.",
+        "strengths": [
+          "Pack tools",
+          "Utility"
+        ],
+        "cautions": [
+          "Short packs",
+          "Position"
+        ],
+        "claim_ids": [
+          "talent:ranger/archery:21-54-4-0",
+          "talent:ranger/archery:21-54-10-0",
+          "talent:ranger/archery:21-54-2-1",
+          "talent:ranger/archery:21-54-6-1",
+          "observed:ranger/archery:level57-breakpoint",
+          "observed:ranger/archery:leveling-friction",
+          "observed:ranger/archery:parse-caveat",
+          "inference:ranger/archery:playstyle-identity"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, Ranged skirmishing is supported, although its larger aimed finishers still reward planned positioning. Its structural defensive package includes Deadshot, Corrosive Poison, Opportunist, Silent, But Deadly, Brutal Shot.",
+        "strengths": [
+          "Control",
+          "Pressure"
+        ],
+        "cautions": [
+          "Disruption",
+          "Defense"
+        ],
+        "claim_ids": [
+          "talent:ranger/archery:21-54-4-0",
+          "talent:ranger/archery:21-54-10-0",
+          "talent:ranger/archery:21-54-2-1",
+          "talent:ranger/archery:21-54-6-1",
+          "observed:ranger/archery:level57-breakpoint",
+          "observed:ranger/archery:leveling-friction",
+          "observed:ranger/archery:parse-caveat",
+          "inference:ranger/archery:playstyle-identity"
+        ]
+      }
+    },
+    "complexity": {
+      "core_actions": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "The active bar follows this loop: A marksman using Quick Shot and Advantage to empower Precision Shot, bleeds, poisons, quivers, and large piercing finishers. It can skirmish at range and build toward Deadshot or Brutal Shot windows; the loop is familiar to Hunter players and comparatively readable. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "The active bar follows this loop: A marksman using Quick Shot and Advantage to empower Precision Shot, bleeds, poisons, quivers, and large piercing finishers. It can skirmish at range and build toward Deadshot or Brutal Shot windows; the loop is familiar to Hunter players and comparatively readable. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "The active bar follows this loop: A marksman using Quick Shot and Advantage to empower Precision Shot, bleeds, poisons, quivers, and large piercing finishers. It can skirmish at range and build toward Deadshot or Brutal Shot windows; the loop is familiar to Hunter players and comparatively readable. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "The active bar follows this loop: A marksman using Quick Shot and Advantage to empower Precision Shot, bleeds, poisons, quivers, and large piercing finishers. It can skirmish at range and build toward Deadshot or Brutal Shot windows; the loop is familiar to Hunter players and comparatively readable. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "The active bar follows this loop: A marksman using Quick Shot and Advantage to empower Precision Shot, bleeds, poisons, quivers, and large piercing finishers. It can skirmish at range and build toward Deadshot or Brutal Shot windows; the loop is familiar to Hunter players and comparatively readable. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "The active bar follows this loop: A marksman using Quick Shot and Advantage to empower Precision Shot, bleeds, poisons, quivers, and large piercing finishers. It can skirmish at range and build toward Deadshot or Brutal Shot windows; the loop is familiar to Hunter players and comparatively readable. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        }
+      },
+      "state_tracking": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Precision Shot, Skirmisher, Devastating Shots toward One Shot, One Kill, Silent, But Deadly, Brutal Shot. A precise priority remains limited to the captured build and community evidence. must be tracked. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Precision Shot, Skirmisher, Devastating Shots toward One Shot, One Kill, Silent, But Deadly, Brutal Shot. A precise priority remains limited to the captured build and community evidence. must be tracked. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Precision Shot, Skirmisher, Devastating Shots toward One Shot, One Kill, Silent, But Deadly, Brutal Shot. A precise priority remains limited to the captured build and community evidence. must be tracked. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Precision Shot, Skirmisher, Devastating Shots toward One Shot, One Kill, Silent, But Deadly, Brutal Shot. A precise priority remains limited to the captured build and community evidence. must be tracked. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Precision Shot, Skirmisher, Devastating Shots toward One Shot, One Kill, Silent, But Deadly, Brutal Shot. A precise priority remains limited to the captured build and community evidence. must be tracked. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Precision Shot, Skirmisher, Devastating Shots toward One Shot, One Kill, Silent, But Deadly, Brutal Shot. A precise priority remains limited to the captured build and community evidence. must be tracked. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Build Advantage with Quick Shot, empower Precision Shot, then choose Deadshot, Brutal Shot or late Incendiary payoff. The current evidence particularly constrains this through: Levelers report weak questing, limited AoE, low mobility and scarce self-healing before that point. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Build Advantage with Quick Shot, empower Precision Shot, then choose Deadshot, Brutal Shot or late Incendiary payoff. The current evidence particularly constrains this through: Levelers report weak questing, limited AoE, low mobility and scarce self-healing before that point. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Build Advantage with Quick Shot, empower Precision Shot, then choose Deadshot, Brutal Shot or late Incendiary payoff. The current evidence particularly constrains this through: Levelers report weak questing, limited AoE, low mobility and scarce self-healing before that point. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Build Advantage with Quick Shot, empower Precision Shot, then choose Deadshot, Brutal Shot or late Incendiary payoff. The current evidence particularly constrains this through: Levelers report weak questing, limited AoE, low mobility and scarce self-healing before that point. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Build Advantage with Quick Shot, empower Precision Shot, then choose Deadshot, Brutal Shot or late Incendiary payoff. The current evidence particularly constrains this through: Levelers report weak questing, limited AoE, low mobility and scarce self-healing before that point. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Build Advantage with Quick Shot, empower Precision Shot, then choose Deadshot, Brutal Shot or late Incendiary payoff. The current evidence particularly constrains this through: Levelers report weak questing, limited AoE, low mobility and scarce self-healing before that point. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Target count, movement and pressure alter the next action. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Target count, movement and pressure alter the next action. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Target count, movement and pressure alter the next action. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Target count, movement and pressure alter the next action. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Target count, movement and pressure alter the next action. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Target count, movement and pressure alter the next action. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Execution depends on Ranged skirmishing is supported, although its larger aimed finishers still reward planned positioning. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Execution depends on Ranged skirmishing is supported, although its larger aimed finishers still reward planned positioning. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Execution depends on Ranged skirmishing is supported, although its larger aimed finishers still reward planned positioning. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Execution depends on Ranged skirmishing is supported, although its larger aimed finishers still reward planned positioning. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Execution depends on Ranged skirmishing is supported, although its larger aimed finishers still reward planned positioning. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Execution depends on Ranged skirmishing is supported, although its larger aimed finishers still reward planned positioning. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        }
+      },
+      "failure_cost": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Spending Advantage on the wrong shot or losing an empowered Precision window lowers an otherwise forgiving cycle. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Spending Advantage on the wrong shot or losing an empowered Precision window lowers an otherwise forgiving cycle. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Spending Advantage on the wrong shot or losing an empowered Precision window lowers an otherwise forgiving cycle. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Spending Advantage on the wrong shot or losing an empowered Precision window lowers an otherwise forgiving cycle. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Spending Advantage on the wrong shot or losing an empowered Precision window lowers an otherwise forgiving cycle. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Spending Advantage on the wrong shot or losing an empowered Precision window lowers an otherwise forgiving cycle. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0",
+            "talent:ranger/archery:21-54-2-1",
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You want this exact fantasy and decision loop.",
+          "claim_ids": [
+            "inference:ranger/archery:playstyle-identity",
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0"
+          ]
+        },
+        {
+          "text": "You enjoy a cadence that changes with late talents.",
+          "claim_ids": [
+            "inference:ranger/archery:playstyle-identity",
+            "talent:ranger/archery:21-54-4-0",
+            "talent:ranger/archery:21-54-10-0"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You want the complete rotation immediately.",
+          "claim_ids": [
+            "inference:ranger/archery:failure-cost",
+            "observed:ranger/archery:level57-breakpoint"
+          ]
+        },
+        {
+          "text": "You dislike setup loss to movement.",
+          "claim_ids": [
+            "inference:ranger/archery:failure-cost",
+            "observed:ranger/archery:level57-breakpoint"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Long-fight single-target payoff is praised.",
+          "claim_ids": [
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "observed:ranger/archery:build-practice"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "The level-57 wait and weak leveling dominate complaints.",
+          "claim_ids": [
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "inference:ranger/archery:failure-cost"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "Power anecdotes, popularity and subjective fun remain separate evidence.",
+          "claim_ids": [
+            "observed:ranger/archery:level57-breakpoint",
+            "observed:ranger/archery:leveling-friction",
+            "observed:ranger/archery:parse-caveat",
+            "observed:ranger/archery:performance-context"
+          ]
+        }
+      ]
+    },
+    "performance_signal_ids": [
+      "observed:ranger/archery:performance-context"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "manual_recent_source_review",
+      "performance": "limited_uncontrolled",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium",
+      "gaps": [
+        "No verified current full-rotation video.",
+        "Priority breakpoints remain unverified."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "Early Quick Shot and Precision Shot lack pack coverage.",
+      "observed_changes": [
+        "Incomplete kit",
+        "Sparse guidance"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "Early Quick Shot and Precision Shot lack pack coverage.",
+      "observed_changes": [
+        "Incomplete kit",
+        "Sparse guidance"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "Quivers and Advantage deepen ST while AoE stays awkward.",
+      "observed_changes": [
+        "More states",
+        "Unlock dependent"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "Quivers and Advantage deepen ST while AoE stays awkward.",
+      "observed_changes": [
+        "More states",
+        "Unlock dependent"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "Incendiary Shot completes the boss marksman.",
+      "observed_changes": [
+        "Unsettled priority",
+        "Tracking"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:ranger/archery:level57-breakpoint",
+      "kind": "observed",
+      "text": "Players repeatedly identify Incendiary Shot at 57 as when Archery finally feels complete on long fights.",
+      "source_ids": [
+        "reddit:ranger-status-2026-07-10",
+        "reddit:ranger-archery-2026-07-22"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:ranger/archery:leveling-friction",
+      "kind": "observed",
+      "text": "Levelers report weak questing, limited AoE, low mobility and scarce self-healing before that point.",
+      "source_ids": [
+        "reddit:ranger-status-2026-07-10",
+        "reddit:ranger-archery-2026-07-22"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:ranger/archery:parse-caveat",
+      "kind": "observed",
+      "text": "High parses were disputed because players reported a permanent critical effect that should be conditional.",
+      "source_ids": [
+        "reddit:ranger-status-2026-07-10",
+        "reddit:ranger-archery-2026-07-22"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:ranger/archery:build-practice",
+      "kind": "observed",
+      "text": "The captured PvE build documents a boss setup.",
+      "source_ids": [
+        "buildhub-builds-2026-08-05",
+        "buildhub:1a626108-5840-4b3b-aaf7-33777a358433"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "community_build_snapshot"
+        ],
+        "build_or_mode": [
+          "documented_build"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The guide documents one current way to play; it is not treated as proof of optimality."
+    },
+    {
+      "id": "observed:ranger/archery:performance-context",
+      "kind": "observed",
+      "text": "5,682 DPS and 230 records are confounded by a reported crit bug.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "uncontrolled_performance_signals"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "low",
+      "conflicts_with": [],
+      "notes": "Do not convert this into a tier ranking."
+    },
+    {
+      "id": "inference:ranger/archery:playstyle-identity",
+      "kind": "inference",
+      "text": "A familiar marksman who uses Quick Shot to gain Advantage, empowers Precision Shot, and layers quivers, bleeds, and piercing finishers.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:ranger/archery:21-54-4-0",
+        "talent:ranger/archery:21-54-10-0",
+        "talent:ranger/archery:21-54-2-1",
+        "talent:ranger/archery:21-54-6-1",
+        "observed:ranger/archery:level57-breakpoint",
+        "observed:ranger/archery:leveling-friction"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Descriptive playstyle classification, not an official label."
+    },
+    {
+      "id": "inference:ranger/archery:failure-cost",
+      "kind": "inference",
+      "text": "Spending Advantage on the wrong shot or losing an empowered Precision window lowers an otherwise forgiving cycle.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:ranger/archery:21-54-4-0",
+        "talent:ranger/archery:21-54-10-0",
+        "talent:ranger/archery:21-54-2-1",
+        "talent:ranger/archery:21-54-6-1",
+        "talent:ranger/archery:21-54-1-2",
+        "observed:ranger/archery:level57-breakpoint",
+        "observed:ranger/archery:leveling-friction",
+        "observed:ranger/archery:parse-caveat"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Direction is supported; exact throughput cost is not measured."
+    }
+  ]
+}

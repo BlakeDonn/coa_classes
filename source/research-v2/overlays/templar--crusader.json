@@ -1,0 +1,977 @@
+{
+  "baseline": "templar--crusader.json",
+  "set": {
+    "identity": {
+      "fantasy": "A heavy holy weapon fighter who spins Righteous Tempest through packs, builds radiant brands and judgments, and cashes them into large cleave.",
+      "primary_family": "marksmen",
+      "also_fits": [
+        "sequencers"
+      ],
+      "playstyle_tags": [
+        "holy-cleave-builder-spender",
+        "heavy-melee",
+        "easy-core-deeper-optimization"
+      ],
+      "one_line": "A heavy crusading attacker centered on Righteous Tempest, Holy Tempest, brands, judgments, and radiant weapon strikes. It offers strong cleave and a straightforward build-and-spend rhythm, with current builds particularly emphasizing AoE.",
+      "claim_ids": [
+        "observed:templar/crusader:leveling-loop",
+        "inference:templar/crusader:setup-cost",
+        "talent:templar/crusader:19-51-4-0",
+        "talent:templar/crusader:19-51-4-1",
+        "observed:templar/crusader:performance",
+        "observed:templar/crusader:build-snapshot",
+        "talent:templar/crusader:19-51-4-9",
+        "talent:templar/crusader:19-51-2-6"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "Use Righteous Tempest and weapon strikes to establish pressure, maintain Crusader's Brand and Judgment effects, trigger Holy Tempest and radiant echoes across packs, then align Titanfall or Scarlet Champion with durable targets.",
+      "single_target": "Build and spend through weapon strikes, brand, Judgment, and late Titan payoffs; current evidence is less detailed here than for AoE.",
+      "aoe": "Righteous Tempest, Whirling or Holy Tempest, Light's Echo, radiant strikes, and brand interactions make pack cleave the best-documented identity.",
+      "movement_and_target_switching": "Divine Charge helps reconnect, while persistent brands and tempest coverage reduce some target-swap friction.",
+      "defense_and_control": "Plate durability, Light's Chosen, Scourge-defense tools, and general Templar utility create a forgiving melee shell.",
+      "group_utility": "Judgment, brands, Holy effects, and Templar blessings provide secondary party value.",
+      "failure_modes": [
+        {
+          "text": "Spending or spreading the holy setup on enemies that die before Tempest and brand payoffs land wastes the cleave window.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost"
+          ]
+        },
+        {
+          "text": "Movement or a target swap can interrupt the intended payoff: divine charge helps reconnect, while persistent brands and tempest coverage reduce some target-swap friction.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance"
+          ]
+        },
+        {
+          "text": "Spending recovery or control too early leaves less protection for the next pressure event: plate durability, light's chosen, scourge-defense tools, and general templar utility create a forgiving melee shell.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "observed:templar/crusader:leveling-loop",
+        "inference:templar/crusader:setup-cost",
+        "talent:templar/crusader:19-51-4-0",
+        "talent:templar/crusader:19-51-4-1",
+        "observed:templar/crusader:performance",
+        "observed:templar/crusader:build-snapshot",
+        "talent:templar/crusader:19-51-4-9",
+        "talent:templar/crusader:19-51-2-6"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "A direct armored melee leveler whose Righteous Tempest and Argent Blade establish the core immediately.",
+        "strengths": [
+          "Readable core loop",
+          "Early cleave",
+          "Durable melee shell"
+        ],
+        "cautions": [
+          "Much of the holy layering arrives later",
+          "Single-target nuance is lightly documented"
+        ],
+        "claim_ids": [
+          "talent:templar/crusader:19-51-4-0",
+          "talent:templar/crusader:19-51-4-1",
+          "observed:templar/crusader:leveling-loop",
+          "inference:templar/crusader:setup-cost",
+          "observed:templar/crusader:performance",
+          "observed:templar/crusader:build-snapshot",
+          "talent:templar/crusader:19-51-4-9",
+          "talent:templar/crusader:19-51-2-6"
+        ]
+      },
+      "level_50_60": {
+        "feel": "A still-accessible cleave spec with more brand, Judgment, radiant-proc, and Titan-window optimization beneath the spinning surface.",
+        "strengths": [
+          "291 Mythic records",
+          "Strong current representation",
+          "AoE-focused community build"
+        ],
+        "cautions": [
+          "Reported DPS may include a bug",
+          "Current top build has almost no written explanation",
+          "Do not mistake representation for strength"
+        ],
+        "claim_ids": [
+          "observed:templar/crusader:performance",
+          "observed:templar/crusader:build-snapshot",
+          "talent:templar/crusader:19-51-4-9",
+          "observed:templar/crusader:leveling-loop",
+          "inference:templar/crusader:setup-cost",
+          "talent:templar/crusader:19-51-4-0",
+          "talent:templar/crusader:19-51-4-1",
+          "talent:templar/crusader:19-51-2-6"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "By levels 30-49, use righteous tempest and weapon strikes to establish pressure, maintain crusader's brand and judgment effects, trigger holy tempest and radiant echoes across packs, then align titanfall or scarlet champion with durable targets.",
+        "strengths": [
+          "Core engine is online",
+          "More complete target coverage"
+        ],
+        "cautions": [
+          "Late talents still change the ceiling",
+          "Divine Charge helps reconnect, while persistent brands and tempest coverage reduce some target-swap friction"
+        ],
+        "claim_ids": [
+          "observed:templar/crusader:leveling-loop",
+          "inference:templar/crusader:setup-cost",
+          "talent:templar/crusader:19-51-4-0",
+          "talent:templar/crusader:19-51-4-1",
+          "observed:templar/crusader:performance",
+          "observed:templar/crusader:build-snapshot",
+          "talent:templar/crusader:19-51-4-9",
+          "talent:templar/crusader:19-51-2-6"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, build and spend through weapon strikes, brand, judgment, and late titan payoffs; current evidence is less detailed here than for aoe.",
+        "strengths": [
+          "Durable targets preserve the full loop",
+          "Cooldowns can be planned"
+        ],
+        "cautions": [
+          "Movement can break setup",
+          "Repeated errors remain visible"
+        ],
+        "claim_ids": [
+          "observed:templar/crusader:leveling-loop",
+          "inference:templar/crusader:setup-cost",
+          "talent:templar/crusader:19-51-4-0",
+          "talent:templar/crusader:19-51-4-1",
+          "observed:templar/crusader:performance",
+          "observed:templar/crusader:build-snapshot",
+          "talent:templar/crusader:19-51-4-9",
+          "talent:templar/crusader:19-51-2-6"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, righteous tempest, whirling or holy tempest, light's echo, radiant strikes, and brand interactions make pack cleave the best-documented identity.",
+        "strengths": [
+          "Pack tools express the spec clearly",
+          "Group utility has regular value"
+        ],
+        "cautions": [
+          "Short-lived targets can erase setup",
+          "Tank movement changes the plan"
+        ],
+        "claim_ids": [
+          "observed:templar/crusader:leveling-loop",
+          "inference:templar/crusader:setup-cost",
+          "talent:templar/crusader:19-51-4-0",
+          "talent:templar/crusader:19-51-4-1",
+          "observed:templar/crusader:performance",
+          "observed:templar/crusader:build-snapshot",
+          "talent:templar/crusader:19-51-4-9",
+          "talent:templar/crusader:19-51-2-6"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, divine charge helps reconnect, while persistent brands and tempest coverage reduce some target-swap friction. Plate durability, Light's Chosen, Scourge-defense tools, and general Templar utility create a forgiving melee shell.",
+        "strengths": [
+          "Control and utility create options",
+          "Target swaps can reward flexibility"
+        ],
+        "cautions": [
+          "Disruption makes the loop less predictable",
+          "Defensive timing is punishable"
+        ],
+        "claim_ids": [
+          "observed:templar/crusader:leveling-loop",
+          "inference:templar/crusader:setup-cost",
+          "talent:templar/crusader:19-51-4-0",
+          "talent:templar/crusader:19-51-4-1",
+          "observed:templar/crusader:performance",
+          "observed:templar/crusader:build-snapshot",
+          "talent:templar/crusader:19-51-4-9",
+          "talent:templar/crusader:19-51-2-6"
+        ]
+      }
+    },
+    "complexity": {
+      "core_actions": {
+        "dungeon_aoe": {
+          "value": "low-moderate",
+          "reason": "Tempest, brand, Judgment, and radiant strikes form an approachable visible core.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "talent:templar/crusader:19-51-4-0",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Use Righteous Tempest and weapon strikes to establish pressure, maintain Crusader's Brand and Judgment effects, trigger Holy Tempest and radiant echoes across packs, then align Titanfall or Scarlet Champion with durable targets. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Use Righteous Tempest and weapon strikes to establish pressure, maintain Crusader's Brand and Judgment effects, trigger Holy Tempest and radiant echoes across packs, then align Titanfall or Scarlet Champion with durable targets. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        },
+        "level_50_60": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Use Righteous Tempest and weapon strikes to establish pressure, maintain Crusader's Brand and Judgment effects, trigger Holy Tempest and radiant echoes across packs, then align Titanfall or Scarlet Champion with durable targets. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        },
+        "boss": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Use Righteous Tempest and weapon strikes to establish pressure, maintain Crusader's Brand and Judgment effects, trigger Holy Tempest and radiant echoes across packs, then align Titanfall or Scarlet Champion with durable targets. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Use Righteous Tempest and weapon strikes to establish pressure, maintain Crusader's Brand and Judgment effects, trigger Holy Tempest and radiant echoes across packs, then align Titanfall or Scarlet Champion with durable targets. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        }
+      },
+      "state_tracking": {
+        "boss": {
+          "value": "moderate",
+          "reason": "Brand, Judgment, Light's Echo, Serendipity, and late Titan effects add optimization layers without replacing the core.",
+          "claim_ids": [
+            "talent:templar/crusader:19-51-2-6",
+            "talent:templar/crusader:19-51-4-6",
+            "talent:templar/crusader:19-51-5-7",
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "low-moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Build and spend through weapon strikes, brand, Judgment, and late Titan payoffs; current evidence is less detailed here than for AoE. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Build and spend through weapon strikes, brand, Judgment, and late Titan payoffs; current evidence is less detailed here than for AoE. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Build and spend through weapon strikes, brand, Judgment, and late Titan payoffs; current evidence is less detailed here than for AoE. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Build and spend through weapon strikes, brand, Judgment, and late Titan payoffs; current evidence is less detailed here than for AoE. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        },
+        "pvp": {
+          "value": "moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Build and spend through weapon strikes, brand, Judgment, and late Titan payoffs; current evidence is less detailed here than for AoE. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        }
+      },
+      "failure_cost": {
+        "dungeon_aoe": {
+          "value": "low-moderate",
+          "reason": "The rotation recovers quickly, although dead targets can waste setup.",
+          "claim_ids": [
+            "inference:templar/crusader:setup-cost",
+            "observed:templar/crusader:leveling-loop",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "Spending or spreading the holy setup on enemies that die before Tempest and brand payoffs land wastes the cleave window. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low-moderate",
+          "reason": "Spending or spreading the holy setup on enemies that die before Tempest and brand payoffs land wastes the cleave window. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        },
+        "level_50_60": {
+          "value": "low-moderate",
+          "reason": "Spending or spreading the holy setup on enemies that die before Tempest and brand payoffs land wastes the cleave window. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        },
+        "boss": {
+          "value": "low-moderate",
+          "reason": "Spending or spreading the holy setup on enemies that die before Tempest and brand payoffs land wastes the cleave window. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        },
+        "pvp": {
+          "value": "moderate",
+          "reason": "Spending or spreading the holy setup on enemies that die before Tempest and brand payoffs land wastes the cleave window. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Righteous Tempest, Whirling or Holy Tempest, Light's Echo, radiant strikes, and brand interactions make pack cleave the best-documented identity. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Righteous Tempest, Whirling or Holy Tempest, Light's Echo, radiant strikes, and brand interactions make pack cleave the best-documented identity. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Righteous Tempest, Whirling or Holy Tempest, Light's Echo, radiant strikes, and brand interactions make pack cleave the best-documented identity. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Righteous Tempest, Whirling or Holy Tempest, Light's Echo, radiant strikes, and brand interactions make pack cleave the best-documented identity. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Righteous Tempest, Whirling or Holy Tempest, Light's Echo, radiant strikes, and brand interactions make pack cleave the best-documented identity. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        },
+        "pvp": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Righteous Tempest, Whirling or Holy Tempest, Light's Echo, radiant strikes, and brand interactions make pack cleave the best-documented identity. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; plate durability, light's chosen, scourge-defense tools, and general templar utility create a forgiving melee shell. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; plate durability, light's chosen, scourge-defense tools, and general templar utility create a forgiving melee shell. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; plate durability, light's chosen, scourge-defense tools, and general templar utility create a forgiving melee shell. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; plate durability, light's chosen, scourge-defense tools, and general templar utility create a forgiving melee shell. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; plate durability, light's chosen, scourge-defense tools, and general templar utility create a forgiving melee shell. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "Target count, incoming pressure, and movement change the next action; plate durability, light's chosen, scourge-defense tools, and general templar utility create a forgiving melee shell. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Divine Charge helps reconnect, while persistent brands and tempest coverage reduce some target-swap friction. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Divine Charge helps reconnect, while persistent brands and tempest coverage reduce some target-swap friction. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Divine Charge helps reconnect, while persistent brands and tempest coverage reduce some target-swap friction. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Divine Charge helps reconnect, while persistent brands and tempest coverage reduce some target-swap friction. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Divine Charge helps reconnect, while persistent brands and tempest coverage reduce some target-swap friction. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "Execution is constrained by positioning and swaps: Divine Charge helps reconnect, while persistent brands and tempest coverage reduce some target-swap friction. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance",
+            "observed:templar/crusader:build-snapshot",
+            "talent:templar/crusader:19-51-4-9",
+            "talent:templar/crusader:19-51-2-6"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You want an accessible heavy holy melee spec with satisfying pack cleave and room for brand and proc optimization.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop"
+          ]
+        },
+        {
+          "text": "You enjoy the spec's core cadence: use righteous tempest and weapon strikes to establish pressure, maintain crusader's brand and judgment effects, trigger holy tempest and radiant echoes across packs, then align titanfall or scarlet champion with durable targets.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You want a highly mobile duelist or require a fully verified current single-target guide.",
+          "claim_ids": [
+            "observed:templar/crusader:build-snapshot"
+          ]
+        },
+        {
+          "text": "You dislike the positioning or swap constraint that divine charge helps reconnect, while persistent brands and tempest coverage reduce some target-swap friction.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:setup-cost",
+            "talent:templar/crusader:19-51-4-0",
+            "talent:templar/crusader:19-51-4-1",
+            "observed:templar/crusader:performance"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Recent new-player discussion and high Mythic representation support Crusader as a readable, popular holy cleave option.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "observed:templar/crusader:performance"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Current written build guidance is unusually thin, and the strongest DPS signal carries a possible-bug warning.",
+          "claim_ids": [
+            "observed:templar/crusader:build-snapshot",
+            "observed:templar/crusader:performance"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "Crusader is often called easy, but later brand, proc, and window layers make the optimized version more involved than its spinning core suggests.",
+          "claim_ids": [
+            "observed:templar/crusader:leveling-loop",
+            "inference:templar/crusader:late-depth"
+          ]
+        }
+      ]
+    },
+    "performance_signal_ids": [
+      "observed:templar/crusader:performance"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "manual_recent_source_review",
+      "performance": "possible_bug",
+      "video": "linked_not_verified",
+      "overall_confidence": "medium",
+      "gaps": [
+        "The linked build video has not been verified against the snapshot.",
+        "Current single-target rotation and possible performance bug need direct testing."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "A direct armored melee leveler whose Righteous Tempest and Argent Blade establish the core immediately.",
+      "observed_changes": [
+        "Much of the holy layering arrives later",
+        "Single-target nuance is lightly documented"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "A still-accessible cleave spec with more brand, Judgment, radiant-proc, and Titan-window optimization beneath the spinning surface.",
+      "observed_changes": [
+        "Reported DPS may include a bug",
+        "Current top build has almost no written explanation",
+        "Do not mistake representation for strength"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "A direct armored melee leveler whose Righteous Tempest and Argent Blade establish the core immediately.",
+      "observed_changes": [
+        "Much of the holy layering arrives later",
+        "Single-target nuance is lightly documented"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "By levels 30-49, use righteous tempest and weapon strikes to establish pressure, maintain crusader's brand and judgment effects, trigger holy tempest and radiant echoes across packs, then align titanfall or scarlet champion with durable targets.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Divine Charge helps reconnect, while persistent brands and tempest coverage reduce some target-swap friction"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "By levels 30-49, use righteous tempest and weapon strikes to establish pressure, maintain crusader's brand and judgment effects, trigger holy tempest and radiant echoes across packs, then align titanfall or scarlet champion with durable targets.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Divine Charge helps reconnect, while persistent brands and tempest coverage reduce some target-swap friction"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:templar/crusader:leveling-loop",
+      "kind": "observed",
+      "text": "A July level-56 Templar discussion describes a dungeon sequence built around applying and spreading holy damage-over-time effects before using the cleave package; an August new-player thread also treats Crusader as one of the more approachable specs, though definitions of easy differ.",
+      "source_ids": [
+        "reddit:templar-help-2026-07-17",
+        "reddit:easy-specs-roster-2026-08-03"
+      ],
+      "scope": {
+        "levels": "leveling_50_60",
+        "content": [
+          "dungeons",
+          "solo_leveling"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The detailed source is one leveling player's sequence, not an optimal guide."
+    },
+    {
+      "id": "observed:templar/crusader:build-snapshot",
+      "kind": "observed",
+      "text": "The current top Build Hub entry is explicitly AoE-focused but contains almost no written mechanical guidance and links an external video that has not been verified against the August snapshot.",
+      "source_ids": [
+        "buildhub:5cb8e685-f728-4360-b867-9b4b2eec22c0"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "pve",
+          "dungeons"
+        ],
+        "build_or_mode": [
+          "aoe_build"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The linked video is not accepted as verified evidence."
+    },
+    {
+      "id": "observed:templar/crusader:performance",
+      "kind": "observed",
+      "text": "The July compilation reports Crusader at 6,126 with a possible-bug warning, and the August Mythic inventory lists 291 records.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "pve_unspecified",
+          "mythic_dungeons"
+        ],
+        "build_or_mode": [
+          "unspecified"
+        ]
+      },
+      "confidence": "low",
+      "conflicts_with": [],
+      "notes": "Possible bug, missing normalization, and high representation prevent ranking claims."
+    },
+    {
+      "id": "inference:templar/crusader:setup-cost",
+      "kind": "inference",
+      "text": "Crusader's pack failure cost is mainly target lifetime: enemies that die before brands, judgments, and Tempest effects convert can waste setup without making the overall rotation hard to recover.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "observed:templar/crusader:leveling-loop",
+        "talent:templar/crusader:19-51-2-6",
+        "talent:templar/crusader:19-51-7-4b"
+      ],
+      "scope": {
+        "levels": "level_30_60",
+        "content": [
+          "dungeons"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Exact target-lifetime threshold is unknown."
+    },
+    {
+      "id": "inference:templar/crusader:late-depth",
+      "kind": "inference",
+      "text": "Crusader has a low entry floor but a moderately deeper late game because Brand, Judgment, Light's Echo, Serendipity, and capstone timing add optimization around the same visible Tempest core.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:templar/crusader:19-51-2-6",
+        "talent:templar/crusader:19-51-4-6",
+        "talent:templar/crusader:19-51-5-7",
+        "talent:templar/crusader:19-51-4-9"
+      ],
+      "scope": {
+        "levels": "level_40_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Complexity classification from the talent structure."
+    },
+    {
+      "id": "observed:templar/crusader:recent-manual-review",
+      "kind": "observed",
+      "text": "Current PvE advice stacks Holy Cleave to target count, uses several Condemns, preserves Oath Chain with Warrior of Dawn and Argent Blade procs, and saves Titanstrike for execution.",
+      "source_ids": [
+        "reddit:templar-crusader-pve-2026-07-20"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually reviewed on 2026-08-06; anecdotal evidence is not treated as a power ranking."
+    }
+  ]
+}

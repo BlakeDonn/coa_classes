@@ -1,0 +1,1488 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "guardian/vanguard",
+    "class": "Guardian",
+    "name": "Vanguard",
+    "roles": [
+      "Tank"
+    ],
+    "range": [
+      "Melee"
+    ]
+  },
+  "identity": {
+    "fantasy": "",
+    "one_line": "A classic armored defender using Heavy Blow, block, retaliation, Hammer of the Law, Hold the Line, and layered barriers. It is direct, durable, and formation-oriented, making its identity easier to read than many CoA tanks.",
+    "primary_family": "",
+    "also_fits": [],
+    "claim_ids": [
+      "talent:guardian/vanguard:18-7-4-0",
+      "talent:guardian/vanguard:18-7-10-0",
+      "talent:guardian/vanguard:18-7-4-1",
+      "talent:guardian/vanguard:18-7-2-2",
+      "talent:guardian/vanguard:18-7-6-2",
+      "talent:guardian/vanguard:18-7-10-2",
+      "talent:guardian/vanguard:18-7-1-3a",
+      "talent:guardian/vanguard:18-7-1-3b",
+      "talent:guardian/vanguard:18-7-4-3",
+      "talent:guardian/vanguard:18-7-7-3",
+      "talent:guardian/vanguard:18-7-2-4",
+      "talent:guardian/vanguard:18-7-4-4",
+      "talent:guardian/vanguard:18-7-6-4",
+      "talent:guardian/vanguard:18-7-10-4",
+      "talent:guardian/vanguard:18-7-0-5",
+      "talent:guardian/vanguard:18-7-2-5",
+      "talent:guardian/vanguard:18-7-6-5",
+      "talent:guardian/vanguard:18-7-8-5",
+      "talent:guardian/vanguard:18-7-1-6",
+      "talent:guardian/vanguard:18-7-2-6",
+      "talent:guardian/vanguard:18-7-4-6",
+      "talent:guardian/vanguard:18-7-6-6a",
+      "talent:guardian/vanguard:18-7-6-6b",
+      "talent:guardian/vanguard:18-7-7-6",
+      "talent:guardian/vanguard:18-7-10-6",
+      "talent:guardian/vanguard:18-7-0-7",
+      "talent:guardian/vanguard:18-7-2-7",
+      "talent:guardian/vanguard:18-7-4-7",
+      "talent:guardian/vanguard:18-7-6-7",
+      "talent:guardian/vanguard:18-7-8-7a",
+      "talent:guardian/vanguard:18-7-8-7b",
+      "talent:guardian/vanguard:18-7-2-8",
+      "talent:guardian/vanguard:18-7-4-8",
+      "talent:guardian/vanguard:18-7-6-8",
+      "talent:guardian/vanguard:18-7-10-8",
+      "talent:guardian/vanguard:18-7-2-9",
+      "talent:guardian/vanguard:18-7-4-9",
+      "talent:guardian/vanguard:18-7-6-9"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "A classic armored defender using Heavy Blow, block, retaliation, Hammer of the Law, Hold the Line, and layered barriers. It is direct, durable, and formation-oriented, making its identity easier to read than many CoA tanks.",
+    "resources": [],
+    "builders": [
+      {
+        "name": "Shield Unit",
+        "claim_ids": [
+          "talent:guardian/vanguard:18-7-4-8"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Honorbound",
+        "claim_ids": [
+          "talent:guardian/vanguard:18-7-1-3a"
+        ]
+      },
+      {
+        "name": "Shieldbound",
+        "claim_ids": [
+          "talent:guardian/vanguard:18-7-1-3b"
+        ]
+      },
+      {
+        "name": "Seasoned Fighter",
+        "claim_ids": [
+          "talent:guardian/vanguard:18-7-2-4"
+        ]
+      },
+      {
+        "name": "The Green Tower",
+        "claim_ids": [
+          "talent:guardian/vanguard:18-7-7-6"
+        ]
+      },
+      {
+        "name": "Valiant Knight",
+        "claim_ids": [
+          "talent:guardian/vanguard:18-7-8-7a"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Footman's Calling",
+        "claim_ids": [
+          "talent:guardian/vanguard:18-7-10-0"
+        ]
+      },
+      {
+        "name": "Unscuffable",
+        "claim_ids": [
+          "talent:guardian/vanguard:18-7-6-6a"
+        ]
+      },
+      {
+        "name": "Resilient",
+        "claim_ids": [
+          "talent:guardian/vanguard:18-7-2-7"
+        ]
+      },
+      {
+        "name": "Valiant Knight",
+        "claim_ids": [
+          "talent:guardian/vanguard:18-7-8-7a"
+        ]
+      },
+      {
+        "name": "High Guard",
+        "claim_ids": [
+          "talent:guardian/vanguard:18-7-10-8"
+        ]
+      },
+      {
+        "name": "Bastion",
+        "claim_ids": [
+          "talent:guardian/vanguard:18-7-4-9"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Footman's Calling",
+        "claim_ids": [
+          "talent:guardian/vanguard:18-7-10-0"
+        ],
+        "structural_description": "Level 10 PassiveYour damage taken is reduced by -10% while Tower Formation or Line Formation is active.In addition, your threat generated from Physical Damage dealt is increased significantly while Tower Formation or Line Formation is active."
+      },
+      {
+        "name": "The Green Tower",
+        "claim_ids": [
+          "talent:guardian/vanguard:18-7-7-6"
+        ],
+        "structural_description": "Reduces the Energy cost of your Formations and increases their effectiveness by 25%."
+      },
+      {
+        "name": "Paragon",
+        "claim_ids": [
+          "talent:guardian/vanguard:18-7-2-9"
+        ],
+        "structural_description": "Blocking an attack grants you a stack of Paragon for 10 seconds. Can only occur once every 0.5 sec.At 10 stacks, your Heavy Blow transforms into Paragon Smash for 10 seconds.Paragon Smash (Damage)Deals 144 + 37% AP Physical damage to all nearby enemies.Increases your chance to block by 10% and each block reduces the cooldown of Brace by -2 sec. Lasts for 5 blocks or 10 seconds.Scales with modifiers to Heavy Blow.Casting Heavy Blow instantly grants 3 stacks of this effect."
+      }
+    ],
+    "single_target": "",
+    "aoe": "",
+    "movement_and_target_switching": "",
+    "defense_and_control": "",
+    "group_utility": "",
+    "failure_modes": [],
+    "claim_ids": [
+      "talent:guardian/vanguard:18-7-4-0",
+      "talent:guardian/vanguard:18-7-10-0",
+      "talent:guardian/vanguard:18-7-4-1",
+      "talent:guardian/vanguard:18-7-2-2",
+      "talent:guardian/vanguard:18-7-6-2",
+      "talent:guardian/vanguard:18-7-10-2",
+      "talent:guardian/vanguard:18-7-1-3a",
+      "talent:guardian/vanguard:18-7-1-3b",
+      "talent:guardian/vanguard:18-7-4-3",
+      "talent:guardian/vanguard:18-7-7-3",
+      "talent:guardian/vanguard:18-7-2-4",
+      "talent:guardian/vanguard:18-7-4-4",
+      "talent:guardian/vanguard:18-7-6-4",
+      "talent:guardian/vanguard:18-7-10-4",
+      "talent:guardian/vanguard:18-7-0-5",
+      "talent:guardian/vanguard:18-7-2-5",
+      "talent:guardian/vanguard:18-7-6-5",
+      "talent:guardian/vanguard:18-7-8-5",
+      "talent:guardian/vanguard:18-7-1-6",
+      "talent:guardian/vanguard:18-7-2-6",
+      "talent:guardian/vanguard:18-7-4-6",
+      "talent:guardian/vanguard:18-7-6-6a",
+      "talent:guardian/vanguard:18-7-6-6b",
+      "talent:guardian/vanguard:18-7-7-6",
+      "talent:guardian/vanguard:18-7-10-6",
+      "talent:guardian/vanguard:18-7-0-7",
+      "talent:guardian/vanguard:18-7-2-7",
+      "talent:guardian/vanguard:18-7-4-7",
+      "talent:guardian/vanguard:18-7-6-7",
+      "talent:guardian/vanguard:18-7-8-7a",
+      "talent:guardian/vanguard:18-7-8-7b",
+      "talent:guardian/vanguard:18-7-2-8",
+      "talent:guardian/vanguard:18-7-4-8",
+      "talent:guardian/vanguard:18-7-6-8",
+      "talent:guardian/vanguard:18-7-10-8",
+      "talent:guardian/vanguard:18-7-2-9",
+      "talent:guardian/vanguard:18-7-4-9",
+      "talent:guardian/vanguard:18-7-6-9"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Heavy Blow",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-4-0"
+          ]
+        },
+        {
+          "name": "Footman's Calling",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-10-0"
+          ]
+        },
+        {
+          "name": "Iron Guardian",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-4-1"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:guardian/vanguard:18-7-4-0",
+        "talent:guardian/vanguard:18-7-10-0",
+        "talent:guardian/vanguard:18-7-4-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Heavy Expert",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-2-2"
+          ]
+        },
+        {
+          "name": "With Honor",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-6-2"
+          ]
+        },
+        {
+          "name": "Bulwark",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-10-2"
+          ]
+        },
+        {
+          "name": "Honorbound",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-1-3a"
+          ]
+        },
+        {
+          "name": "Shieldbound",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-1-3b"
+          ]
+        },
+        {
+          "name": "Knight's Conviction",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-4-3"
+          ]
+        },
+        {
+          "name": "Footman's Call",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-7-3"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:guardian/vanguard:18-7-2-2",
+        "talent:guardian/vanguard:18-7-6-2",
+        "talent:guardian/vanguard:18-7-10-2",
+        "talent:guardian/vanguard:18-7-1-3a",
+        "talent:guardian/vanguard:18-7-1-3b",
+        "talent:guardian/vanguard:18-7-4-3",
+        "talent:guardian/vanguard:18-7-7-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Seasoned Fighter",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-2-4"
+          ]
+        },
+        {
+          "name": "Vanguard's Might",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-4-4"
+          ]
+        },
+        {
+          "name": "Bring Down The Hammer!",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-6-4"
+          ]
+        },
+        {
+          "name": "Iron Barrier",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-10-4"
+          ]
+        },
+        {
+          "name": "Vanguard's Shield",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-0-5"
+          ]
+        },
+        {
+          "name": "Hold the Line",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        },
+        {
+          "name": "Hammer of the Law",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-6-5"
+          ]
+        },
+        {
+          "name": "Battle Wary",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-8-5"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:guardian/vanguard:18-7-2-4",
+        "talent:guardian/vanguard:18-7-4-4",
+        "talent:guardian/vanguard:18-7-6-4",
+        "talent:guardian/vanguard:18-7-10-4",
+        "talent:guardian/vanguard:18-7-0-5",
+        "talent:guardian/vanguard:18-7-2-5",
+        "talent:guardian/vanguard:18-7-6-5",
+        "talent:guardian/vanguard:18-7-8-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Retaliation",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-1-6"
+          ]
+        },
+        {
+          "name": "Plate Buster",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-2-6"
+          ]
+        },
+        {
+          "name": "Stalwart",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-4-6"
+          ]
+        },
+        {
+          "name": "Unscuffable",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-6-6a"
+          ]
+        },
+        {
+          "name": "Order In The Court",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-6-6b"
+          ]
+        },
+        {
+          "name": "The Green Tower",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-7-6"
+          ]
+        },
+        {
+          "name": "Experienced Soldier",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-10-6"
+          ]
+        },
+        {
+          "name": "Valorous Strikes",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-0-7"
+          ]
+        },
+        {
+          "name": "Resilient",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-2-7"
+          ]
+        },
+        {
+          "name": "Forceful Impact",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-4-7"
+          ]
+        },
+        {
+          "name": "Lionheart",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-6-7"
+          ]
+        },
+        {
+          "name": "Valiant Knight",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-8-7a"
+          ]
+        },
+        {
+          "name": "Valiant Defender",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-8-7b"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:guardian/vanguard:18-7-1-6",
+        "talent:guardian/vanguard:18-7-2-6",
+        "talent:guardian/vanguard:18-7-4-6",
+        "talent:guardian/vanguard:18-7-6-6a",
+        "talent:guardian/vanguard:18-7-6-6b",
+        "talent:guardian/vanguard:18-7-7-6",
+        "talent:guardian/vanguard:18-7-10-6",
+        "talent:guardian/vanguard:18-7-0-7",
+        "talent:guardian/vanguard:18-7-2-7",
+        "talent:guardian/vanguard:18-7-4-7",
+        "talent:guardian/vanguard:18-7-6-7",
+        "talent:guardian/vanguard:18-7-8-7a",
+        "talent:guardian/vanguard:18-7-8-7b"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "King's Guard",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-2-8"
+          ]
+        },
+        {
+          "name": "Shield Unit",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-4-8"
+          ]
+        },
+        {
+          "name": "Wreck Formation",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-6-8"
+          ]
+        },
+        {
+          "name": "High Guard",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-10-8"
+          ]
+        },
+        {
+          "name": "Paragon",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-2-9"
+          ]
+        },
+        {
+          "name": "Bastion",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-4-9"
+          ]
+        },
+        {
+          "name": "Shieldlord’s Strength",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-6-9"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:guardian/vanguard:18-7-2-8",
+        "talent:guardian/vanguard:18-7-4-8",
+        "talent:guardian/vanguard:18-7-6-8",
+        "talent:guardian/vanguard:18-7-10-8",
+        "talent:guardian/vanguard:18-7-2-9",
+        "talent:guardian/vanguard:18-7-4-9",
+        "talent:guardian/vanguard:18-7-6-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "leveling_30_49": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "level_50_60": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "boss": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "dungeon_aoe": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "pvp": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [],
+    "avoid_if": []
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [],
+  "sentiment": {
+    "praise": [],
+    "frustrations": [],
+    "contested": []
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 1,
+    "latest_update": "2026-07-17T21:16:49.004228+00:00",
+    "top_title": "reincarnated into another world and I can be hit in the face 10000 times and be fine",
+    "top_url": "https://coabuildhub.com/build/42d434c2-50ac-4f13-96ca-d69aaf05435d",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:42d434c2-50ac-4f13-96ca-d69aaf05435d"
+    ]
+  },
+  "coverage": {
+    "mechanical": "structural_baseline",
+    "community": "indexed",
+    "performance": "missing",
+    "video": "missing",
+    "overall_confidence": "low",
+    "gaps": [
+      "Effective core loop needs recent guide or player cross-check.",
+      "Contextual complexity values are not yet researched.",
+      "Recent performance, sentiment, issues, and video evidence are not yet reconciled."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:guardian/vanguard:18-7-4-0",
+      "kind": "structural",
+      "text": "Heavy Blow: Smash an enemy and enemies behind them in a line, dealing 23 + 45% AP High Threat Physical damage, scaling with defense rating.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-10-0",
+      "kind": "structural",
+      "text": "Footman's Calling: Level 10 PassiveYour damage taken is reduced by -10% while Tower Formation or Line Formation is active.In addition, your threat generated from Physical Damage dealt is increased significantly while Tower Formation or Line Formation is active.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-4-1",
+      "kind": "structural",
+      "text": "Iron Guardian: Increases your Stamina by 5%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-2-2",
+      "kind": "structural",
+      "text": "Heavy Expert: Increases your chance to parry and dodge by 4% and increase your Armor contribution from mail and plate items by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-6-2",
+      "kind": "structural",
+      "text": "With Honor: Reduces the cooldown of Ram by -4 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-10-2",
+      "kind": "structural",
+      "text": "Bulwark: Level 20 PassiveIncreases your block value by 25% and your hit rating by 5% of your Stamina.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-1-3a",
+      "kind": "structural",
+      "text": "Honorbound: Removes the Energy cost of Shield Challenge.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-1-3b",
+      "kind": "structural",
+      "text": "Shieldbound: Your Shield Challenge no longer has a cooldown, but now costs 10 additional Energy.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-4-3",
+      "kind": "structural",
+      "text": "Knight's Conviction: Increases the block value provided by Raise Shield by 25% and your block chance by 1%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-7-3",
+      "kind": "structural",
+      "text": "Footman's Call: Damage dealt by Pulverize is increased by 15, plus an additional amount scaling with your block value.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-2-4",
+      "kind": "structural",
+      "text": "Seasoned Fighter: Reduces the Energy cost of Pulverize, Ram, and Broad Sweep by -10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-4-4",
+      "kind": "structural",
+      "text": "Vanguard's Might: Your Heavy Blow now causes you to emanate an aura for 5 seconds that reduces all damage taken by -5% for party members.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-6-4",
+      "kind": "structural",
+      "text": "Bring Down The Hammer!: Damage dealt by Heavy Blow now deals an additional 20% of the damage dealt every 1 sec for 3 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-10-4",
+      "kind": "structural",
+      "text": "Iron Barrier: Level 30 PassiveYour successful blocks now have a 50% chance to critically block for twice the normal amount.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-0-5",
+      "kind": "structural",
+      "text": "Vanguard's Shield: Blocking an attack or landing an auto attack now grants a stack of Vanguard for 1 minute, stacking 10 times.Vanguard's ShieldMagic Damage taken reduced by -2%. Whenever you are hit by a spell, you lose 1 stack of this effect.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-2-5",
+      "kind": "structural",
+      "text": "Hold the Line: Command nearby allies to hold the line, making them immune to incapacitate, disorient, knockback, and grip effects for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-6-5",
+      "kind": "structural",
+      "text": "Hammer of the Law: Smash an enemy and enemies behind them in a line, dealing 90 + 100% AP High Threat Physical damage and silencing them for 3.5 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-8-5",
+      "kind": "structural",
+      "text": "Battle Wary: Reduces the cooldown of your Advance and Battle Rush by -30%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-1-6",
+      "kind": "structural",
+      "text": "Retaliation: Successful blocks now deal 51 + 5% AP Physical damage to the attacker, scaling with defense rating. Can only occur once per sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-2-6",
+      "kind": "structural",
+      "text": "Plate Buster: Critical strikes with Ram now reduces the remaining cooldown of your Challenging Cry and Hold the Line by -4 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-4-6",
+      "kind": "structural",
+      "text": "Stalwart: Increases your block value by 10% and your expertise by 4.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-6-6a",
+      "kind": "structural",
+      "text": "Unscuffable: Allies within 30 yds now take -10% less Magic damage from area of effect attacks.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-6-6b",
+      "kind": "structural",
+      "text": "Order In The Court: Damage dealt by Hammer of the Law now reduces the damage dealt by affected enemies by -10% for 8 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-7-6",
+      "kind": "structural",
+      "text": "The Green Tower: Reduces the Energy cost of your Formations and increases their effectiveness by 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-10-6",
+      "kind": "structural",
+      "text": "Experienced Soldier: Level 40 PassiveMelee attacks now reduce the cooldown of Brace by -1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-0-7",
+      "kind": "structural",
+      "text": "Valorous Strikes: Auto attacks now have a 10% chance to strike an additional time and reduce your target's chance to hit by -3% for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-2-7",
+      "kind": "structural",
+      "text": "Resilient: Blocking an attack while Raise Shield is active now increases your maximum health by 308 + 10% Stamina + 11% AP for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-4-7",
+      "kind": "structural",
+      "text": "Forceful Impact: Casting Raise Shield and Heavy Blow now extends the duration of your Brace by 1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-6-7",
+      "kind": "structural",
+      "text": "Lionheart: Your Shield of Denial now strikes 1 additional enemy.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-8-7a",
+      "kind": "structural",
+      "text": "Valiant Knight: Melee ability critical strikes now cause your next Pulverize within 6 seconds to be free of cost and deal 25% increased damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-8-7b",
+      "kind": "structural",
+      "text": "Valiant Defender: Increases your maximum Energy by 15 and increases the damage of Pulverize and Broad Sweep by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-2-8",
+      "kind": "structural",
+      "text": "King's Guard: Your Pulverize and Ram now have a 10% chance to reset the cooldown of Raise Shield.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-4-8",
+      "kind": "structural",
+      "text": "Shield Unit: Each time you take damage, you gain 5% of the damage taken as attack power for 1 minute.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-6-8",
+      "kind": "structural",
+      "text": "Wreck Formation: Melee critical strikes now have a 50% chance to reset the cooldown of Hammer of the Law.Casting Standard of Valiance now increases your attack power by 10% for 6 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-10-8",
+      "kind": "structural",
+      "text": "High Guard: Level 50 PassiveAfter using Raise Shield, Advance or Battle Rush, you are granted High Guard.High Guard (Buff)Your next Heavy Blow within 15 seconds triggers no cooldown.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-2-9",
+      "kind": "structural",
+      "text": "Paragon: Blocking an attack grants you a stack of Paragon for 10 seconds. Can only occur once every 0.5 sec.At 10 stacks, your Heavy Blow transforms into Paragon Smash for 10 seconds.Paragon Smash (Damage)Deals 144 + 37% AP Physical damage to all nearby enemies.Increases your chance to block by 10% and each block reduces the cooldown of Brace by -2 sec. Lasts for 5 blocks or 10 seconds.Scales with modifiers to Heavy Blow.Casting Heavy Blow instantly grants 3 stacks of this effect.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-4-9",
+      "kind": "structural",
+      "text": "Bastion: Raise your shield and lead your allies within 12 yds, reducing their damage taken by -40% for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/vanguard:18-7-6-9",
+      "kind": "structural",
+      "text": "Shieldlord’s Strength: You may now use two-handed Maces and can now equip two-handed Maces with a shield.Your Heavy Blow and Hammer of the Law now deal additional damage scaling with your Stamina and your Stamina is increased by 15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    }
+  ]
+}

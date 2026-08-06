@@ -1,0 +1,1540 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "felsworn/infernal",
+    "class": "Felsworn",
+    "name": "Infernal",
+    "roles": [
+      "Damage"
+    ],
+    "range": [
+      "Ranged"
+    ]
+  },
+  "identity": {
+    "fantasy": "",
+    "one_line": "A Shadowflame caster built around Fel Fireball, Felstrikes, Ruin, critical strikes, and Inner Demon. Crits feed more damage-over-time effects and resource refunds, so the tree scales sharply when its feedback loop is running; missed procs or poor Felfury control make it feel much weaker.",
+    "primary_family": "",
+    "also_fits": [],
+    "claim_ids": [
+      "talent:felsworn/infernal:14-38-4-0",
+      "talent:felsworn/infernal:14-38-10-0",
+      "talent:felsworn/infernal:14-38-2-1",
+      "talent:felsworn/infernal:14-38-6-1",
+      "talent:felsworn/infernal:14-38-1-2",
+      "talent:felsworn/infernal:14-38-4-2",
+      "talent:felsworn/infernal:14-38-7-2",
+      "talent:felsworn/infernal:14-38-10-2",
+      "talent:felsworn/infernal:14-38-1-3",
+      "talent:felsworn/infernal:14-38-4-3",
+      "talent:felsworn/infernal:14-38-7-3",
+      "talent:felsworn/infernal:14-38-0-4",
+      "talent:felsworn/infernal:14-38-2-4",
+      "talent:felsworn/infernal:14-38-6-4",
+      "talent:felsworn/infernal:14-38-8-4",
+      "talent:felsworn/infernal:14-38-10-4",
+      "talent:felsworn/infernal:14-38-1-5",
+      "talent:felsworn/infernal:14-38-4-5",
+      "talent:felsworn/infernal:14-38-7-5",
+      "talent:felsworn/infernal:14-38-0-6",
+      "talent:felsworn/infernal:14-38-2-6a",
+      "talent:felsworn/infernal:14-38-2-6b",
+      "talent:felsworn/infernal:14-38-4-6",
+      "talent:felsworn/infernal:14-38-6-6a",
+      "talent:felsworn/infernal:14-38-6-6b",
+      "talent:felsworn/infernal:14-38-8-6a",
+      "talent:felsworn/infernal:14-38-8-6b",
+      "talent:felsworn/infernal:14-38-10-6",
+      "talent:felsworn/infernal:14-38-1-7",
+      "talent:felsworn/infernal:14-38-3-7",
+      "talent:felsworn/infernal:14-38-5-7",
+      "talent:felsworn/infernal:14-38-7-7",
+      "talent:felsworn/infernal:14-38-2-8",
+      "talent:felsworn/infernal:14-38-4-8",
+      "talent:felsworn/infernal:14-38-6-8",
+      "talent:felsworn/infernal:14-38-10-8",
+      "talent:felsworn/infernal:14-38-2-9",
+      "talent:felsworn/infernal:14-38-4-9",
+      "talent:felsworn/infernal:14-38-6-9"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "A Shadowflame caster built around Fel Fireball, Felstrikes, Ruin, critical strikes, and Inner Demon. Crits feed more damage-over-time effects and resource refunds, so the tree scales sharply when its feedback loop is running; missed procs or poor Felfury control make it feel much weaker.",
+    "resources": [
+      "Felfury",
+      "Fragment of Malice"
+    ],
+    "builders": [
+      {
+        "name": "Bane of Chaos",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-1-2"
+        ]
+      },
+      {
+        "name": "Illidari Magi",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-8-4"
+        ]
+      },
+      {
+        "name": "Illidari Smiter",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-0-6"
+        ]
+      },
+      {
+        "name": "Malice of Gul'dan",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-9"
+        ]
+      },
+      {
+        "name": "Fury of Archimonde",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-6-9"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Ruin",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0"
+        ]
+      },
+      {
+        "name": "Gul'dan's Prodigy",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-7-2"
+        ]
+      },
+      {
+        "name": "Felwrath",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-7-3"
+        ]
+      },
+      {
+        "name": "Infernal Doom",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-2-8"
+        ]
+      },
+      {
+        "name": "Sargeras Embrace",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-2-9"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Dark Magician",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-2-1"
+        ]
+      },
+      {
+        "name": "Cursed Flames",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-6-4"
+        ]
+      },
+      {
+        "name": "Sculptor of Doom",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-10-4"
+        ]
+      },
+      {
+        "name": "The True Blessing",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-6"
+        ]
+      },
+      {
+        "name": "Oppressive Ruin",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-8-6a"
+        ]
+      },
+      {
+        "name": "Unphased",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-10-6"
+        ]
+      },
+      {
+        "name": "Fel Infusion",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-5-7"
+        ]
+      },
+      {
+        "name": "Fury of Archimonde",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-6-9"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Bane of Chaos",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-1-2"
+        ],
+        "structural_description": "Generates 1 FelfuryUnleash fel magic on an enemy, dealing 114 Chaos damage over 18 seconds.Inner Demon: The enemy takes an additional 13 + 100% SP Chaos Damage every 6 sec.Can only have 1 Bane active on a target at a time."
+      }
+    ],
+    "single_target": "",
+    "aoe": "",
+    "movement_and_target_switching": "",
+    "defense_and_control": "",
+    "group_utility": "",
+    "failure_modes": [],
+    "claim_ids": [
+      "talent:felsworn/infernal:14-38-4-0",
+      "talent:felsworn/infernal:14-38-10-0",
+      "talent:felsworn/infernal:14-38-2-1",
+      "talent:felsworn/infernal:14-38-6-1",
+      "talent:felsworn/infernal:14-38-1-2",
+      "talent:felsworn/infernal:14-38-4-2",
+      "talent:felsworn/infernal:14-38-7-2",
+      "talent:felsworn/infernal:14-38-10-2",
+      "talent:felsworn/infernal:14-38-1-3",
+      "talent:felsworn/infernal:14-38-4-3",
+      "talent:felsworn/infernal:14-38-7-3",
+      "talent:felsworn/infernal:14-38-0-4",
+      "talent:felsworn/infernal:14-38-2-4",
+      "talent:felsworn/infernal:14-38-6-4",
+      "talent:felsworn/infernal:14-38-8-4",
+      "talent:felsworn/infernal:14-38-10-4",
+      "talent:felsworn/infernal:14-38-1-5",
+      "talent:felsworn/infernal:14-38-4-5",
+      "talent:felsworn/infernal:14-38-7-5",
+      "talent:felsworn/infernal:14-38-0-6",
+      "talent:felsworn/infernal:14-38-2-6a",
+      "talent:felsworn/infernal:14-38-2-6b",
+      "talent:felsworn/infernal:14-38-4-6",
+      "talent:felsworn/infernal:14-38-6-6a",
+      "talent:felsworn/infernal:14-38-6-6b",
+      "talent:felsworn/infernal:14-38-8-6a",
+      "talent:felsworn/infernal:14-38-8-6b",
+      "talent:felsworn/infernal:14-38-10-6",
+      "talent:felsworn/infernal:14-38-1-7",
+      "talent:felsworn/infernal:14-38-3-7",
+      "talent:felsworn/infernal:14-38-5-7",
+      "talent:felsworn/infernal:14-38-7-7",
+      "talent:felsworn/infernal:14-38-2-8",
+      "talent:felsworn/infernal:14-38-4-8",
+      "talent:felsworn/infernal:14-38-6-8",
+      "talent:felsworn/infernal:14-38-10-8",
+      "talent:felsworn/infernal:14-38-2-9",
+      "talent:felsworn/infernal:14-38-4-9",
+      "talent:felsworn/infernal:14-38-6-9"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Ruin",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-4-0"
+          ]
+        },
+        {
+          "name": "Fel Apprentice",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-10-0"
+          ]
+        },
+        {
+          "name": "Dark Magician",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-2-1"
+          ]
+        },
+        {
+          "name": "Wrath of Sargeras",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-6-1"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:felsworn/infernal:14-38-4-0",
+        "talent:felsworn/infernal:14-38-10-0",
+        "talent:felsworn/infernal:14-38-2-1",
+        "talent:felsworn/infernal:14-38-6-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Bane of Chaos",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-1-2"
+          ]
+        },
+        {
+          "name": "Felfire Adept",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-4-2"
+          ]
+        },
+        {
+          "name": "Gul'dan's Prodigy",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-7-2"
+          ]
+        },
+        {
+          "name": "Hidden Power",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-10-2"
+          ]
+        },
+        {
+          "name": "Felforged",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-1-3"
+          ]
+        },
+        {
+          "name": "Fel Cannon",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-4-3"
+          ]
+        },
+        {
+          "name": "Felwrath",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-7-3"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:felsworn/infernal:14-38-1-2",
+        "talent:felsworn/infernal:14-38-4-2",
+        "talent:felsworn/infernal:14-38-7-2",
+        "talent:felsworn/infernal:14-38-10-2",
+        "talent:felsworn/infernal:14-38-1-3",
+        "talent:felsworn/infernal:14-38-4-3",
+        "talent:felsworn/infernal:14-38-7-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Withering",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-0-4"
+          ]
+        },
+        {
+          "name": "Black Magic",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-2-4"
+          ]
+        },
+        {
+          "name": "Cursed Flames",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-6-4"
+          ]
+        },
+        {
+          "name": "Illidari Magi",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-8-4"
+          ]
+        },
+        {
+          "name": "Sculptor of Doom",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-10-4"
+          ]
+        },
+        {
+          "name": "Felbreak",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-1-5"
+          ]
+        },
+        {
+          "name": "Shadow Magi",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-4-5"
+          ]
+        },
+        {
+          "name": "Infernal",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-7-5"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:felsworn/infernal:14-38-0-4",
+        "talent:felsworn/infernal:14-38-2-4",
+        "talent:felsworn/infernal:14-38-6-4",
+        "talent:felsworn/infernal:14-38-8-4",
+        "talent:felsworn/infernal:14-38-10-4",
+        "talent:felsworn/infernal:14-38-1-5",
+        "talent:felsworn/infernal:14-38-4-5",
+        "talent:felsworn/infernal:14-38-7-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Illidari Smiter",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-0-6"
+          ]
+        },
+        {
+          "name": "Herald of the Legion",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-2-6a"
+          ]
+        },
+        {
+          "name": "Fel Flamecasting",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-2-6b"
+          ]
+        },
+        {
+          "name": "The True Blessing",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-4-6"
+          ]
+        },
+        {
+          "name": "Doomsayer",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-6-6a"
+          ]
+        },
+        {
+          "name": "Infernal Summoner",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-6-6b"
+          ]
+        },
+        {
+          "name": "Oppressive Ruin",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-8-6a"
+          ]
+        },
+        {
+          "name": "Infernal Ruin",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-8-6b"
+          ]
+        },
+        {
+          "name": "Unphased",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-10-6"
+          ]
+        },
+        {
+          "name": "Curse of Argus",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-1-7"
+          ]
+        },
+        {
+          "name": "Felshock",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-3-7"
+          ]
+        },
+        {
+          "name": "Fel Infusion",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-5-7"
+          ]
+        },
+        {
+          "name": "Archimonde's Wrath",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-7-7"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:felsworn/infernal:14-38-0-6",
+        "talent:felsworn/infernal:14-38-2-6a",
+        "talent:felsworn/infernal:14-38-2-6b",
+        "talent:felsworn/infernal:14-38-4-6",
+        "talent:felsworn/infernal:14-38-6-6a",
+        "talent:felsworn/infernal:14-38-6-6b",
+        "talent:felsworn/infernal:14-38-8-6a",
+        "talent:felsworn/infernal:14-38-8-6b",
+        "talent:felsworn/infernal:14-38-10-6",
+        "talent:felsworn/infernal:14-38-1-7",
+        "talent:felsworn/infernal:14-38-3-7",
+        "talent:felsworn/infernal:14-38-5-7",
+        "talent:felsworn/infernal:14-38-7-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Infernal Doom",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-2-8"
+          ]
+        },
+        {
+          "name": "Nether Spirit",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-4-8"
+          ]
+        },
+        {
+          "name": "Chaotic Intuition",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-6-8"
+          ]
+        },
+        {
+          "name": "Man'ari Teachings",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-10-8"
+          ]
+        },
+        {
+          "name": "Sargeras Embrace",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-2-9"
+          ]
+        },
+        {
+          "name": "Malice of Gul'dan",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-4-9"
+          ]
+        },
+        {
+          "name": "Fury of Archimonde",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-6-9"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:felsworn/infernal:14-38-2-8",
+        "talent:felsworn/infernal:14-38-4-8",
+        "talent:felsworn/infernal:14-38-6-8",
+        "talent:felsworn/infernal:14-38-10-8",
+        "talent:felsworn/infernal:14-38-2-9",
+        "talent:felsworn/infernal:14-38-4-9",
+        "talent:felsworn/infernal:14-38-6-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "leveling_30_49": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "level_50_60": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "boss": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "dungeon_aoe": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "pvp": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [],
+    "avoid_if": []
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [],
+  "sentiment": {
+    "praise": [],
+    "frustrations": [],
+    "contested": []
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 2,
+    "latest_update": "2026-07-22T10:06:29.14+00:00",
+    "top_title": "Infernal sweet spot, for both aoe and ST",
+    "top_url": "https://coabuildhub.com/build/cc016d7c-76f2-4a71-aa8f-e8a41b4d9de5",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:cc016d7c-76f2-4a71-aa8f-e8a41b4d9de5"
+    ]
+  },
+  "coverage": {
+    "mechanical": "structural_baseline",
+    "community": "indexed",
+    "performance": "missing",
+    "video": "missing",
+    "overall_confidence": "low",
+    "gaps": [
+      "Effective core loop needs recent guide or player cross-check.",
+      "Contextual complexity values are not yet researched.",
+      "Recent performance, sentiment, issues, and video evidence are not yet reconciled."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:felsworn/infernal:14-38-4-0",
+      "kind": "structural",
+      "text": "Ruin: Consumes 2 FelfuryBring doom upon an enemy, dealing cond(gt(SPFI, SPS), 116+0+SPFI*1, 116+0+SPS*1.32) Shadowflame Damage to an enemy, piercing all absorption effects.Inner Demon: Deals an additional 30% of the damage dealt over 3 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-10-0",
+      "kind": "structural",
+      "text": "Fel Apprentice: Level 10 PassiveWhile Inner Demon is active, your Fel Fireball will now unleash a Felstrike on your target.FelstrikeBurn an enemy for 54 + 30% SP Shadowflame Damage over 6 seconds, stacking 3 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-2-1",
+      "kind": "structural",
+      "text": "Dark Magician: While Inner Demon is active, casting Ruin, Sunder, or Felwrath now refunds 20 Energy.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-6-1",
+      "kind": "structural",
+      "text": "Wrath of Sargeras: Increases your Magic damage dealt by 3% and your spell hit chance by 2%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-1-2",
+      "kind": "structural",
+      "text": "Bane of Chaos: Generates 1 FelfuryUnleash fel magic on an enemy, dealing 114 Chaos damage over 18 seconds.Inner Demon: The enemy takes an additional 13 + 100% SP Chaos Damage every 6 sec.Can only have 1 Bane active on a target at a time.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-4-2",
+      "kind": "structural",
+      "text": "Felfire Adept: Increases the critical strike chance of Sargeron Smite by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-7-2",
+      "kind": "structural",
+      "text": "Gul'dan's Prodigy: Reduces Energy cost and cast time of Fel Fireball by -15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-10-2",
+      "kind": "structural",
+      "text": "Hidden Power: Level 20 PassiveIncreases your spell damage by 15% of your Intellect and Spirit.In addition, Inner Demon now increases your spell damage and critical strike chance by an additional 20% of your Spirit.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-1-3",
+      "kind": "structural",
+      "text": "Felforged: Periodic damage dealt now has a 15% chance to grant you Felforged for 8 seconds.Felforged (Proc)Your next 3 Fel Fireballs have -30% reduced casting speed for 8 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-4-3",
+      "kind": "structural",
+      "text": "Fel Cannon: Increases the critical strike chance of Fel Fireball and Ruin by 15% on enemies above 75% health.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-7-3",
+      "kind": "structural",
+      "text": "Felwrath: Consumes 2 FelfuryBlast an enemy and all enemies near them with fel magic, dealing 69 + 40% SP Shadowflame Damage.Inner Demon: Striking at least 5 enemies with this spell causes it to deal an additional 108 + 10% SP Shadowflame Damage over 6 seconds, stacking 3 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-0-4",
+      "kind": "structural",
+      "text": "Withering: Your Fel Fireballs used with Felforged active now deal 30% increased damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-2-4",
+      "kind": "structural",
+      "text": "Black Magic: Increases the damage of your Bane of Chaos and Ruin by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-6-4",
+      "kind": "structural",
+      "text": "Cursed Flames: Critically striking with Fel Fireball now increases the critical strike chance of your next Fel Fireball within 10 seconds by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-8-4",
+      "kind": "structural",
+      "text": "Illidari Magi: Your periodic damage now has a 20% chance to generate 1 Felfury.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-10-4",
+      "kind": "structural",
+      "text": "Sculptor of Doom: Landing 3 direct critical strikes now grants Sculptor of Doom.Sculptor of DoomYour next Ruin within 8 seconds is instant cast.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-1-5",
+      "kind": "structural",
+      "text": "Felbreak: Interrupt a spell from being cast, preventing the target from casting spells of that school for 3 seconds and draining mana from the target based on your Spirit.Usable while moving.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-4-5",
+      "kind": "structural",
+      "text": "Shadow Magi: Reduces the cooldown of Annihilation by -15 sec and Sunder by -4 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-7-5",
+      "kind": "structural",
+      "text": "Infernal: Drop an infernal from the sky with grotesque magic, dealing 12 + 55% fire SP Fire damage to enemies in the radius, horrifying them for 4 seconds, and spawning an Infernal to fight by your side for 15 seconds.Inner Demon: Lasts 1 additional sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-0-6",
+      "kind": "structural",
+      "text": "Illidari Smiter: Critical strikes with Fel Fireball now generate 1 Felfury.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-2-6a",
+      "kind": "structural",
+      "text": "Herald of the Legion: Damage dealt by Bane of Chaos now radiates fel energy around the enemy, dealing 50% of the damage dealt to up to 8 nearby enemies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-2-6b",
+      "kind": "structural",
+      "text": "Fel Flamecasting: Damage dealt by Sargeron Smite now spreads your Cripple to 2 nearby enemies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-4-6",
+      "kind": "structural",
+      "text": "The True Blessing: Casting Annihilation now grants you Sculptor of Doom.Sculptor of DoomYour next Ruin within 8 seconds is instant cast.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-6-6a",
+      "kind": "structural",
+      "text": "Doomsayer: Critical strikes with Sargeron Smite now refund 1 Felfury.In addition, Sargeron Smite now deals 25% increased damage to enemies above 75% of their maximum health.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-6-6b",
+      "kind": "structural",
+      "text": "Infernal Summoner: Direct damage dealt now has a 5% chance to reset the cooldown of Infernal.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-8-6a",
+      "kind": "structural",
+      "text": "Oppressive Ruin: Damage dealt by Ruin now absorbs the next 99 healing on the target based on rank, up to 226 at rank 7, for 8 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-8-6b",
+      "kind": "structural",
+      "text": "Infernal Ruin: Every 3rd Ruin or Felwrath now spawns an Infernal to fight by your side for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-10-6",
+      "kind": "structural",
+      "text": "Unphased: Level 40 PassiveIncreases your spell penetration by 20, scaling with your level.In addition, reduces spell pushback suffered from damaging attacks by 50% while Inner Demon is active.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-1-7",
+      "kind": "structural",
+      "text": "Curse of Argus: Each time Bane of Chaos deals damage its damage is increased on the target by 1% for 6 seconds, stacking 20 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-3-7",
+      "kind": "structural",
+      "text": "Felshock: Direct critical strikes with Felfury spenders now extend the duration of Inner Demon by 1 sec and cause enemies struck to have a 3% increased chance to be hit by spells for 12 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-5-7",
+      "kind": "structural",
+      "text": "Fel Infusion: Increases critical strike chance of all party and raid members within 100 by 3%. Does not stack with similar effects.In addition, increases your critical strike chance by 3%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-7-7",
+      "kind": "structural",
+      "text": "Archimonde's Wrath: Increases the critical strike chance of your Felfury spenders by 1% for every 10 points of Energy you have at the time of casting.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-2-8",
+      "kind": "structural",
+      "text": "Infernal Doom: Ruin now has a -25% chance not to consume Felfury.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-4-8",
+      "kind": "structural",
+      "text": "Nether Spirit: Increases your spell critical strike chance by 20% of your Spirit.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-6-8",
+      "kind": "structural",
+      "text": "Chaotic Intuition: Damage dealt by Felstrikes now extends the duration of Cripple on the target by 1 sec and grants you 1% increased spell critical damage for 6 seconds, stacking 10 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-10-8",
+      "kind": "structural",
+      "text": "Man'ari Teachings: Level 50 PassiveIncreases your critical damage dealt by 100%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-2-9",
+      "kind": "structural",
+      "text": "Sargeras Embrace: Channel a beam of fel magic upon an enemy, slowing your target's movement speed by -60% for 5.5 seconds and dealing cond(gt(SPFI, SPS), 695+0+SPFI*0.85, 695+0+SPS*0.85) Shadowflame Damage at the end of the duration.For the duration, you may instant cast Fel Fireball and Ruin while channeling and they refund their cost.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-4-9",
+      "kind": "structural",
+      "text": "Malice of Gul'dan: Direct critical strikes now have a 60% chance to trigger a Felstrike and generate a Fragment of Malice.FelstrikeBurn an enemy for 54 + 30% SP Shadowflame Damage over 6 seconds, stacking 3 times.Fragment of MaliceRestores 5 Energy and increases your critical strike chance by 10% for 5 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-6-9",
+      "kind": "structural",
+      "text": "Fury of Archimonde: After generating 10 Felfury, your next Sargeron Smite within 15 seconds gains 50% increased critical strike chance and damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    }
+  ]
+}

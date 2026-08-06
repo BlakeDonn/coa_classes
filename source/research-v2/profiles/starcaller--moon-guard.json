@@ -1,0 +1,1380 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "starcaller/moon-guard",
+    "class": "Starcaller",
+    "name": "Moon Guard",
+    "roles": [
+      "Tank"
+    ],
+    "range": [
+      "Melee"
+    ]
+  },
+  "identity": {
+    "fantasy": "",
+    "one_line": "A mana-scaling tank that converts Strength into Intellect, applies Stars through AoE attacks, and consumes them to reset Starburst. It has strong block windows, a maximum-mana shield, and flat mitigation from mana. Recent opinions conflict sharply on its endgame durability, so its identity is clear but its comparative rank is not.",
+    "primary_family": "",
+    "also_fits": [],
+    "claim_ids": [
+      "talent:starcaller/moon-guard:26-67-4-0",
+      "talent:starcaller/moon-guard:26-67-10-0",
+      "talent:starcaller/moon-guard:26-67-3-1",
+      "talent:starcaller/moon-guard:26-67-5-1",
+      "talent:starcaller/moon-guard:26-67-2-2",
+      "talent:starcaller/moon-guard:26-67-4-2",
+      "talent:starcaller/moon-guard:26-67-6-2",
+      "talent:starcaller/moon-guard:26-67-10-2",
+      "talent:starcaller/moon-guard:26-67-0-3",
+      "talent:starcaller/moon-guard:26-67-4-3",
+      "talent:starcaller/moon-guard:26-67-8-3",
+      "talent:starcaller/moon-guard:26-67-2-4",
+      "talent:starcaller/moon-guard:26-67-4-4",
+      "talent:starcaller/moon-guard:26-67-6-4",
+      "talent:starcaller/moon-guard:26-67-10-4",
+      "talent:starcaller/moon-guard:26-67-0-5",
+      "talent:starcaller/moon-guard:26-67-2-5",
+      "talent:starcaller/moon-guard:26-67-4-5",
+      "talent:starcaller/moon-guard:26-67-6-5",
+      "talent:starcaller/moon-guard:26-67-8-5",
+      "talent:starcaller/moon-guard:26-67-1-6",
+      "talent:starcaller/moon-guard:26-67-3-6",
+      "talent:starcaller/moon-guard:26-67-5-6",
+      "talent:starcaller/moon-guard:26-67-7-6",
+      "talent:starcaller/moon-guard:26-67-10-6",
+      "talent:starcaller/moon-guard:26-67-1-7",
+      "talent:starcaller/moon-guard:26-67-3-7",
+      "talent:starcaller/moon-guard:26-67-5-7",
+      "talent:starcaller/moon-guard:26-67-7-7",
+      "talent:starcaller/moon-guard:26-67-2-8",
+      "talent:starcaller/moon-guard:26-67-4-8",
+      "talent:starcaller/moon-guard:26-67-6-8",
+      "talent:starcaller/moon-guard:26-67-10-8",
+      "talent:starcaller/moon-guard:26-67-2-9",
+      "talent:starcaller/moon-guard:26-67-4-9",
+      "talent:starcaller/moon-guard:26-67-6-9"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "A mana-scaling tank that converts Strength into Intellect, applies Stars through AoE attacks, and consumes them to reset Starburst. It has strong block windows, a maximum-mana shield, and flat mitigation from mana. Recent opinions conflict sharply on its endgame durability, so its identity is clear but its comparative rank is not.",
+    "resources": [
+      "Asteroid Belt"
+    ],
+    "builders": [
+      {
+        "name": "Moon Guard",
+        "claim_ids": [
+          "talent:starcaller/moon-guard:26-67-10-0"
+        ]
+      },
+      {
+        "name": "Asteroid Belt",
+        "claim_ids": [
+          "talent:starcaller/moon-guard:26-67-10-2"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Starsweep",
+        "claim_ids": [
+          "talent:starcaller/moon-guard:26-67-5-1"
+        ]
+      },
+      {
+        "name": "Mooncharged Blades",
+        "claim_ids": [
+          "talent:starcaller/moon-guard:26-67-6-9"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Chosen of the Moon",
+        "claim_ids": [
+          "talent:starcaller/moon-guard:26-67-2-9"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Blade of the Moon",
+        "claim_ids": [
+          "talent:starcaller/moon-guard:26-67-8-5"
+        ],
+        "structural_description": "Consuming Scattered Stars now has a 15% chance to transform Celestial Strike into Moonblade for 8 seconds.MoonbladeDevastate an enemy, dealing 130% Weapon Damage plus 100% Intellect Arcane damage and regenerating 15% missing mana."
+      }
+    ],
+    "single_target": "",
+    "aoe": "",
+    "movement_and_target_switching": "",
+    "defense_and_control": "",
+    "group_utility": "",
+    "failure_modes": [],
+    "claim_ids": [
+      "talent:starcaller/moon-guard:26-67-4-0",
+      "talent:starcaller/moon-guard:26-67-10-0",
+      "talent:starcaller/moon-guard:26-67-3-1",
+      "talent:starcaller/moon-guard:26-67-5-1",
+      "talent:starcaller/moon-guard:26-67-2-2",
+      "talent:starcaller/moon-guard:26-67-4-2",
+      "talent:starcaller/moon-guard:26-67-6-2",
+      "talent:starcaller/moon-guard:26-67-10-2",
+      "talent:starcaller/moon-guard:26-67-0-3",
+      "talent:starcaller/moon-guard:26-67-4-3",
+      "talent:starcaller/moon-guard:26-67-8-3",
+      "talent:starcaller/moon-guard:26-67-2-4",
+      "talent:starcaller/moon-guard:26-67-4-4",
+      "talent:starcaller/moon-guard:26-67-6-4",
+      "talent:starcaller/moon-guard:26-67-10-4",
+      "talent:starcaller/moon-guard:26-67-0-5",
+      "talent:starcaller/moon-guard:26-67-2-5",
+      "talent:starcaller/moon-guard:26-67-4-5",
+      "talent:starcaller/moon-guard:26-67-6-5",
+      "talent:starcaller/moon-guard:26-67-8-5",
+      "talent:starcaller/moon-guard:26-67-1-6",
+      "talent:starcaller/moon-guard:26-67-3-6",
+      "talent:starcaller/moon-guard:26-67-5-6",
+      "talent:starcaller/moon-guard:26-67-7-6",
+      "talent:starcaller/moon-guard:26-67-10-6",
+      "talent:starcaller/moon-guard:26-67-1-7",
+      "talent:starcaller/moon-guard:26-67-3-7",
+      "talent:starcaller/moon-guard:26-67-5-7",
+      "talent:starcaller/moon-guard:26-67-7-7",
+      "talent:starcaller/moon-guard:26-67-2-8",
+      "talent:starcaller/moon-guard:26-67-4-8",
+      "talent:starcaller/moon-guard:26-67-6-8",
+      "talent:starcaller/moon-guard:26-67-10-8",
+      "talent:starcaller/moon-guard:26-67-2-9",
+      "talent:starcaller/moon-guard:26-67-4-9",
+      "talent:starcaller/moon-guard:26-67-6-9"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Starburst",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-4-0"
+          ]
+        },
+        {
+          "name": "Moon Guard",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-10-0"
+          ]
+        },
+        {
+          "name": "Blanket of Stars",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-3-1"
+          ]
+        },
+        {
+          "name": "Starsweep",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-5-1"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:starcaller/moon-guard:26-67-4-0",
+        "talent:starcaller/moon-guard:26-67-10-0",
+        "talent:starcaller/moon-guard:26-67-3-1",
+        "talent:starcaller/moon-guard:26-67-5-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Improved Eclipse of Fury",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-2-2"
+          ]
+        },
+        {
+          "name": "Moonstone Hilt",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-4-2"
+          ]
+        },
+        {
+          "name": "Nebula",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-6-2"
+          ]
+        },
+        {
+          "name": "Asteroid Belt",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-10-2"
+          ]
+        },
+        {
+          "name": "Dance In The Starlight",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-0-3"
+          ]
+        },
+        {
+          "name": "Starlit Finesse",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-4-3"
+          ]
+        },
+        {
+          "name": "Celestial Divination",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-8-3"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:starcaller/moon-guard:26-67-2-2",
+        "talent:starcaller/moon-guard:26-67-4-2",
+        "talent:starcaller/moon-guard:26-67-6-2",
+        "talent:starcaller/moon-guard:26-67-10-2",
+        "talent:starcaller/moon-guard:26-67-0-3",
+        "talent:starcaller/moon-guard:26-67-4-3",
+        "talent:starcaller/moon-guard:26-67-8-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Tyrande's Guidance",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-2-4"
+          ]
+        },
+        {
+          "name": "Astral Reconstitution",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-4-4"
+          ]
+        },
+        {
+          "name": "Moonflares",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-6-4"
+          ]
+        },
+        {
+          "name": "Crystal Shield",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-10-4"
+          ]
+        },
+        {
+          "name": "Starcovered Night",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-0-5"
+          ]
+        },
+        {
+          "name": "Pulsar Explosion",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-2-5"
+          ]
+        },
+        {
+          "name": "Shrouded Stars",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-4-5"
+          ]
+        },
+        {
+          "name": "Moonveil Screen",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-6-5"
+          ]
+        },
+        {
+          "name": "Blade of the Moon",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-8-5"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:starcaller/moon-guard:26-67-2-4",
+        "talent:starcaller/moon-guard:26-67-4-4",
+        "talent:starcaller/moon-guard:26-67-6-4",
+        "talent:starcaller/moon-guard:26-67-10-4",
+        "talent:starcaller/moon-guard:26-67-0-5",
+        "talent:starcaller/moon-guard:26-67-2-5",
+        "talent:starcaller/moon-guard:26-67-4-5",
+        "talent:starcaller/moon-guard:26-67-6-5",
+        "talent:starcaller/moon-guard:26-67-8-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Starburst Invigoration",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-1-6"
+          ]
+        },
+        {
+          "name": "Cosmic Crown",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-3-6"
+          ]
+        },
+        {
+          "name": "Enduring Moon",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-5-6"
+          ]
+        },
+        {
+          "name": "Vengeful Inspiration",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-7-6"
+          ]
+        },
+        {
+          "name": "Celestial Guard",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-10-6"
+          ]
+        },
+        {
+          "name": "Will of Elune",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-1-7"
+          ]
+        },
+        {
+          "name": "Starbound",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-3-7"
+          ]
+        },
+        {
+          "name": "Enchanted Aegis",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-5-7"
+          ]
+        },
+        {
+          "name": "Starlight Duelist",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-7-7"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:starcaller/moon-guard:26-67-1-6",
+        "talent:starcaller/moon-guard:26-67-3-6",
+        "talent:starcaller/moon-guard:26-67-5-6",
+        "talent:starcaller/moon-guard:26-67-7-6",
+        "talent:starcaller/moon-guard:26-67-10-6",
+        "talent:starcaller/moon-guard:26-67-1-7",
+        "talent:starcaller/moon-guard:26-67-3-7",
+        "talent:starcaller/moon-guard:26-67-5-7",
+        "talent:starcaller/moon-guard:26-67-7-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Coalesced Resilience",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-2-8"
+          ]
+        },
+        {
+          "name": "Font of Magic",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-4-8"
+          ]
+        },
+        {
+          "name": "Lunar Knight",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-6-8"
+          ]
+        },
+        {
+          "name": "Dancing in the Moonlight",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-10-8"
+          ]
+        },
+        {
+          "name": "Chosen of the Moon",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-2-9"
+          ]
+        },
+        {
+          "name": "Moonlit Bulwark",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-4-9"
+          ]
+        },
+        {
+          "name": "Mooncharged Blades",
+          "claim_ids": [
+            "talent:starcaller/moon-guard:26-67-6-9"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:starcaller/moon-guard:26-67-2-8",
+        "talent:starcaller/moon-guard:26-67-4-8",
+        "talent:starcaller/moon-guard:26-67-6-8",
+        "talent:starcaller/moon-guard:26-67-10-8",
+        "talent:starcaller/moon-guard:26-67-2-9",
+        "talent:starcaller/moon-guard:26-67-4-9",
+        "talent:starcaller/moon-guard:26-67-6-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "leveling_30_49": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "level_50_60": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "boss": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "dungeon_aoe": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "pvp": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [],
+    "avoid_if": []
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [],
+  "sentiment": {
+    "praise": [],
+    "frustrations": [],
+    "contested": []
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 3,
+    "latest_update": "2026-08-04T14:41:02.223+00:00",
+    "top_title": "Moon Guard - Dungeon Farm",
+    "top_url": "https://coabuildhub.com/build/34420169-e989-4c4d-8775-d964755620fe",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:34420169-e989-4c4d-8775-d964755620fe"
+    ]
+  },
+  "coverage": {
+    "mechanical": "structural_baseline",
+    "community": "indexed",
+    "performance": "missing",
+    "video": "missing",
+    "overall_confidence": "low",
+    "gaps": [
+      "Effective core loop needs recent guide or player cross-check.",
+      "Contextual complexity values are not yet researched.",
+      "Recent performance, sentiment, issues, and video evidence are not yet reconciled."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:starcaller/moon-guard:26-67-4-0",
+      "kind": "structural",
+      "text": "Starburst: Applies 1 Scattered Star Per HitSmash up to 8 enemies, dealing 2 + 30% arcane SP + 15% AP Arcane damage, scaling with block value and maximum mana and reducing their attack speed by -20% for 10 seconds.Consuming a Scattered Star reduces the remaining cooldown of Starburst by -2 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-10-0",
+      "kind": "structural",
+      "text": "Moon Guard: Level 10 PassiveYou now gain Intellect equal to your Strength.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-3-1",
+      "kind": "structural",
+      "text": "Blanket of Stars: Cover your shield in a blanket of stars for 8 seconds, increasing your block chance and block value by 100%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-5-1",
+      "kind": "structural",
+      "text": "Starsweep: Consumes Scattered StarsSweep an enemy and all nearby enemies with your astral blade, dealing 30 + 30% AP + 35% SP Arcane damage.Every Scattered Star consumed reduces the cooldown of this spell by -3 sec.Consume Scattered StarsDeals 7 + 18.22% SP Arcane Damage and restores 8% maximum mana for each Scattered Star.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-2-2",
+      "kind": "structural",
+      "text": "Improved Eclipse of Fury: Increases the effectiveness of Eclipse of Fury by 40%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-4-2",
+      "kind": "structural",
+      "text": "Moonstone Hilt: Increases your parry chance by 2% and block value by 15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-6-2",
+      "kind": "structural",
+      "text": "Nebula: Blocking enemy attacks now applies Scattered Stars to the attacker.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-10-2",
+      "kind": "structural",
+      "text": "Asteroid Belt: Level 20 PassiveEvery 15 sec, you now gain Asteroid Belt.In addition, your hit rating is increased by 5% of your Intellect and your expertise is increased by 8.Asteroid BeltBlock rating, parry rating, and block value increased based on how much mana you had when this was applied for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-0-3",
+      "kind": "structural",
+      "text": "Dance In The Starlight: Reduces the cooldown of Blanket of Stars by -10 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-4-3",
+      "kind": "structural",
+      "text": "Starlit Finesse: Increases your hit and critical strike chance by 3%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-8-3",
+      "kind": "structural",
+      "text": "Celestial Divination: Increases your chance to dodge by 5%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-2-4",
+      "kind": "structural",
+      "text": "Tyrande's Guidance: Increases the critical strike chance of your Starburst by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-4-4",
+      "kind": "structural",
+      "text": "Astral Reconstitution: Surround yourself with lunar light, causing 30% of damage taken to be converted into mana for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-6-4",
+      "kind": "structural",
+      "text": "Moonflares: Avoiding melee attacks will call down a Moonflare at the attacker, dealing 66 Arcane damage.Can occur only once per second.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-10-4",
+      "kind": "structural",
+      "text": "Crystal Shield: Level 30 PassiveIncreases your Stamina by 10% and increases your spell damage by 25% of your attack power.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-0-5",
+      "kind": "structural",
+      "text": "Starcovered Night: Increases the duration of Blanket of Stars by 4 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-2-5",
+      "kind": "structural",
+      "text": "Pulsar Explosion: Increases the damage of Celestial Cleave by 10% and allows it to affect 1 additional enemies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-4-5",
+      "kind": "structural",
+      "text": "Shrouded Stars: Reduces damage taken by all party and raid members by -3%.Does not stack with similar effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-6-5",
+      "kind": "structural",
+      "text": "Moonveil Screen: Increases the damage of Starsunder and Moonflare by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-8-5",
+      "kind": "structural",
+      "text": "Blade of the Moon: Consuming Scattered Stars now has a 15% chance to transform Celestial Strike into Moonblade for 8 seconds.MoonbladeDevastate an enemy, dealing 130% Weapon Damage plus 100% Intellect Arcane damage and regenerating 15% missing mana.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-1-6",
+      "kind": "structural",
+      "text": "Starburst Invigoration: Increases your Energy regeneration by 15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-3-6",
+      "kind": "structural",
+      "text": "Cosmic Crown: Increases the duration of Aegis spells by 3 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-5-6",
+      "kind": "structural",
+      "text": "Enduring Moon: Critical strikes now increase the target's spell damage taken by 10% for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-7-6",
+      "kind": "structural",
+      "text": "Vengeful Inspiration: Increases your attack speed by 10% and causes critical strikes with melee attacks to apply a Scattered Star.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-10-6",
+      "kind": "structural",
+      "text": "Celestial Guard: Level 40 PassiveIncreases the effectiveness of consuming Scattered Stars by 50%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-1-7",
+      "kind": "structural",
+      "text": "Will of Elune: Damage dealt by Aspect of the Stars now strikes 2 additional nearby enemies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-3-7",
+      "kind": "structural",
+      "text": "Starbound: Increases your healing done and received by 10%, doubled while below 20% health.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-5-7",
+      "kind": "structural",
+      "text": "Enchanted Aegis: Your successful blocks now have a 50% chance to critically block for twice the normal amount.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-7-7",
+      "kind": "structural",
+      "text": "Starlight Duelist: Blocking or parrying an attack now increases your damage dealt by 10% for 6 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-2-8",
+      "kind": "structural",
+      "text": "Coalesced Resilience: Reduces your damage taken by an amount equal to 1% of your maximum mana.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-4-8",
+      "kind": "structural",
+      "text": "Font of Magic: Each time you spend a cumulative 100% of your maximum mana, you heal for 4% of your maximum health.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-6-8",
+      "kind": "structural",
+      "text": "Lunar Knight: Increases the damage of your Moonblade and Starsweep by 50% and their chance to critically strike by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-10-8",
+      "kind": "structural",
+      "text": "Dancing in the Moonlight: Level 50 PassiveParrying an attack now regenerates 15 of your Energy and deals 65% Weapon Damage to the attacker.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-2-9",
+      "kind": "structural",
+      "text": "Chosen of the Moon: Become the chosen of the moon, reducing all Physical damage taken by -60% and taunting all enemies within 8 yds for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-4-9",
+      "kind": "structural",
+      "text": "Moonlit Bulwark: Grants you a shield for an amount equal to your maximum mana for 10 seconds. Usable while stunned.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-guard:26-67-6-9",
+      "kind": "structural",
+      "text": "Mooncharged Blades: Blocking an attack allows your next Starsunder to hit an additional nearby enemy and cost -30% less mana.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    }
+  ]
+}

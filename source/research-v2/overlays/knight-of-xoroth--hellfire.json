@@ -1,0 +1,966 @@
+{
+  "baseline": "knight-of-xoroth--hellfire.json",
+  "set": {
+    "identity": {
+      "fantasy": "A mounted infernal spellblade fighting beside a Greater Imp, banking Hellfire Embers and turning them into a temporary demon-form barrage.",
+      "one_line": "Maintain pet and fire effects, build Embers through Cinderblade and infernal attacks, then enter Hellfire Form when the target count and cooldown package can repay it.",
+      "primary_family": "commanders",
+      "also_fits": [
+        "sequencers"
+      ],
+      "playstyle_tags": [
+        "pet-form-spellblade",
+        "proc-hybrid",
+        "summon-cleaver"
+      ],
+      "claim_ids": [
+        "talent:knight-of-xoroth/hellfire:17-46-4-3",
+        "talent:knight-of-xoroth/hellfire:17-46-3-4",
+        "talent:knight-of-xoroth/hellfire:17-46-10-0",
+        "talent:knight-of-xoroth/hellfire:17-46-10-4",
+        "observed:knight-of-xoroth/hellfire:midlevel-power",
+        "observed:knight-of-xoroth/hellfire:hybrid-load",
+        "inference:knight-of-xoroth/hellfire:playstyle-identity"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "Coordinate Greater Imp attacks, Cinderblade, Pestilence and seeking flames to build Embers; transform and spend the window on form-enhanced strikes and summons.",
+      "single_target": "Keep the pet connected, maintain the relevant wound or fire effects, and align Form rather than drifting it into movement.",
+      "aoe": "Infernal Strikes, seeking flames, Pestilence and summons cover packs once they are grouped; the mid-level AoE conversion is a major breakpoint.",
+      "movement_and_target_switching": "Mounted Combat and ranged fire effects soften melee downtime, but pet travel and a misplaced Form still cost output.",
+      "defense_and_control": "KoX self-healing, Pestilence choices, control and mounted escape give the hybrid several answers without making it a tank.",
+      "group_utility": "Pestilence modes, grips and the Greater Imp add group control and sustained pressure.",
+      "failure_modes": [
+        {
+          "text": "Entering Hellfire Form with low Embers or before the pack settles wastes its payoff.",
+          "claim_ids": [
+            "inference:knight-of-xoroth/hellfire:failure-cost",
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0"
+          ]
+        },
+        {
+          "text": "Losing the Greater Imp removes damage and interactions until it reconnects.",
+          "claim_ids": [
+            "inference:knight-of-xoroth/hellfire:failure-cost",
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0"
+          ]
+        },
+        {
+          "text": "Trying to maintain every fire, pet and melee effect can delay the actual spender.",
+          "claim_ids": [
+            "inference:knight-of-xoroth/hellfire:failure-cost",
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "talent:knight-of-xoroth/hellfire:17-46-4-3",
+        "talent:knight-of-xoroth/hellfire:17-46-3-4",
+        "talent:knight-of-xoroth/hellfire:17-46-10-0",
+        "talent:knight-of-xoroth/hellfire:17-46-10-4",
+        "talent:knight-of-xoroth/hellfire:17-46-1-7b",
+        "observed:knight-of-xoroth/hellfire:midlevel-power",
+        "observed:knight-of-xoroth/hellfire:hybrid-load",
+        "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+        "observed:knight-of-xoroth/hellfire:build-practice",
+        "inference:knight-of-xoroth/hellfire:playstyle-identity"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "Early Cinderblade and imp play hints at the hybrid but lacks the complete form.",
+        "strengths": [
+          "Pet-backed soloing",
+          "Hybrid reach"
+        ],
+        "cautions": [
+          "Form incomplete",
+          "Pet travel"
+        ],
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "talent:knight-of-xoroth/hellfire:17-46-10-4",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:playstyle-identity"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "The AoE conversion and mounted tools make the spellblade feel powerful in the 30s.",
+        "strengths": [
+          "Strong AoE unlock",
+          "Mounted mobility"
+        ],
+        "cautions": [
+          "More states to track",
+          "Setup can be misread"
+        ],
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "talent:knight-of-xoroth/hellfire:17-46-10-4",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:playstyle-identity"
+        ]
+      },
+      "level_50_60": {
+        "feel": "Late talents turn pet, Embers, form and summons into a layered burst engine.",
+        "strengths": [
+          "Flexible ST/AoE",
+          "Distinct transformation"
+        ],
+        "cautions": [
+          "High tracking",
+          "Sparse endgame guides"
+        ],
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "talent:knight-of-xoroth/hellfire:17-46-10-4",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:playstyle-identity"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, Keep the pet connected, maintain the relevant wound or fire effects, and align Form rather than drifting it into movement.",
+        "strengths": [
+          "Sustained pet pressure",
+          "Planned burst"
+        ],
+        "cautions": [
+          "Movement wastes Form",
+          "Pet uptime matters"
+        ],
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "talent:knight-of-xoroth/hellfire:17-46-10-4",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:playstyle-identity"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, Infernal Strikes, seeking flames, Pestilence and summons cover packs once they are grouped; the mid-level AoE conversion is a major breakpoint.",
+        "strengths": [
+          "Wide fire coverage",
+          "Good stacked burst"
+        ],
+        "cautions": [
+          "Tank movement breaks zones",
+          "Ramp can be late"
+        ],
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "talent:knight-of-xoroth/hellfire:17-46-10-4",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:playstyle-identity"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, Mounted Combat and ranged fire effects soften melee downtime, but pet travel and a misplaced Form still cost output. KoX self-healing, Pestilence choices, control and mounted escape give the hybrid several answers without making it a tank.",
+        "strengths": [
+          "Mounted chase",
+          "Mixed-range pressure"
+        ],
+        "cautions": [
+          "Pets can be controlled",
+          "Form is telegraphed"
+        ],
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "talent:knight-of-xoroth/hellfire:17-46-10-4",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:playstyle-identity"
+        ]
+      }
+    },
+    "complexity": {
+      "core_actions": {
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "The active bar combines melee strikes, fire spells, pet commands, Pestilence, Form and summons. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "The active bar combines melee strikes, fire spells, pet commands, Pestilence, Form and summons. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "The active bar combines melee strikes, fire spells, pet commands, Pestilence, Form and summons. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "The active bar combines melee strikes, fire spells, pet commands, Pestilence, Form and summons. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "The active bar combines melee strikes, fire spells, pet commands, Pestilence, Form and summons. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "The active bar combines melee strikes, fire spells, pet commands, Pestilence, Form and summons. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        }
+      },
+      "state_tracking": {
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "Embers, Hellfire Form, pet state, procs, DoTs and summon timers overlap. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Embers, Hellfire Form, pet state, procs, DoTs and summon timers overlap. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Embers, Hellfire Form, pet state, procs, DoTs and summon timers overlap. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "Embers, Hellfire Form, pet state, procs, DoTs and summon timers overlap. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Embers, Hellfire Form, pet state, procs, DoTs and summon timers overlap. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Embers, Hellfire Form, pet state, procs, DoTs and summon timers overlap. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "The burst requires pet uptime, Embers and a settled target before transformation. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "The burst requires pet uptime, Embers and a settled target before transformation. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "The burst requires pet uptime, Embers and a settled target before transformation. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "The burst requires pet uptime, Embers and a settled target before transformation. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "The burst requires pet uptime, Embers and a settled target before transformation. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "The burst requires pet uptime, Embers and a settled target before transformation. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "Target count and movement decide whether to remain hybrid or commit Form. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Target count and movement decide whether to remain hybrid or commit Form. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Target count and movement decide whether to remain hybrid or commit Form. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "Target count and movement decide whether to remain hybrid or commit Form. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Target count and movement decide whether to remain hybrid or commit Form. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Target count and movement decide whether to remain hybrid or commit Form. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "Melee contact, pet pathing and short proc windows must all be preserved. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Melee contact, pet pathing and short proc windows must all be preserved. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Melee contact, pet pathing and short proc windows must all be preserved. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "Melee contact, pet pathing and short proc windows must all be preserved. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Melee contact, pet pathing and short proc windows must all be preserved. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Melee contact, pet pathing and short proc windows must all be preserved. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        }
+      },
+      "failure_cost": {
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "A bad Form loses both banked Embers and cooldown alignment. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "A bad Form loses both banked Embers and cooldown alignment. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "A bad Form loses both banked Embers and cooldown alignment. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "A bad Form loses both banked Embers and cooldown alignment. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "A bad Form loses both banked Embers and cooldown alignment. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "A bad Form loses both banked Embers and cooldown alignment. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4",
+            "talent:knight-of-xoroth/hellfire:17-46-10-0",
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You want a melee caster with a meaningful pet and transformation.",
+          "claim_ids": [
+            "inference:knight-of-xoroth/hellfire:playstyle-identity",
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4"
+          ]
+        },
+        {
+          "text": "You enjoy adapting one engine between boss and pack damage.",
+          "claim_ids": [
+            "inference:knight-of-xoroth/hellfire:playstyle-identity",
+            "talent:knight-of-xoroth/hellfire:17-46-4-3",
+            "talent:knight-of-xoroth/hellfire:17-46-3-4"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You dislike pet state or temporary forms.",
+          "claim_ids": [
+            "inference:knight-of-xoroth/hellfire:failure-cost",
+            "observed:knight-of-xoroth/hellfire:midlevel-power"
+          ]
+        },
+        {
+          "text": "You want a clean weapon-only priority.",
+          "claim_ids": [
+            "inference:knight-of-xoroth/hellfire:failure-cost",
+            "observed:knight-of-xoroth/hellfire:midlevel-power"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Players praise its mid-level power, mounted flavor and ability to cover both packs and bosses.",
+          "claim_ids": [
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "observed:knight-of-xoroth/hellfire:build-practice"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Pet, proc and Form layers can feel busy or inconsistent when targets move.",
+          "claim_ids": [
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "inference:knight-of-xoroth/hellfire:failure-cost"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "Claims that KoX falls off conflict with positive War and Hellfire anecdotes and lack normalized data.",
+          "claim_ids": [
+            "observed:knight-of-xoroth/hellfire:midlevel-power",
+            "observed:knight-of-xoroth/hellfire:hybrid-load",
+            "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+            "observed:knight-of-xoroth/hellfire:performance-context"
+          ]
+        }
+      ]
+    },
+    "performance_signal_ids": [
+      "observed:knight-of-xoroth/hellfire:performance-context"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "manual_recent_source_review",
+      "performance": "limited_uncontrolled",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium",
+      "gaps": [
+        "No verified level-60 Hellfire rotation video.",
+        "Pet contribution and Form cadence need log validation."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "Early Cinderblade and imp play hints at the hybrid but lacks the complete form.",
+      "observed_changes": [
+        "Form incomplete",
+        "Pet travel"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "Early Cinderblade and imp play hints at the hybrid but lacks the complete form.",
+      "observed_changes": [
+        "Form incomplete",
+        "Pet travel"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "The AoE conversion and mounted tools make the spellblade feel powerful in the 30s.",
+      "observed_changes": [
+        "More states to track",
+        "Setup can be misread"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "The AoE conversion and mounted tools make the spellblade feel powerful in the 30s.",
+      "observed_changes": [
+        "More states to track",
+        "Setup can be misread"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "Late talents turn pet, Embers, form and summons into a layered burst engine.",
+      "observed_changes": [
+        "High tracking",
+        "Sparse endgame guides"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:knight-of-xoroth/hellfire:midlevel-power",
+      "kind": "observed",
+      "text": "A level-37 Hellfire player reports a large power increase from the AoE talent package and uses two Mounted Combat charges for questing and world PvP.",
+      "source_ids": [
+        "reddit:kox-question-2026-07-11"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:knight-of-xoroth/hellfire:hybrid-load",
+      "kind": "observed",
+      "text": "Current discussion and the captured build both show that Hellfire's output is distributed across melee attacks, fire effects, a permanent imp and a transformation rather than one short rotation.",
+      "source_ids": [
+        "reddit:kox-question-2026-07-11"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+      "kind": "observed",
+      "text": "Players dispute whether KoX falls after 50; the available thread supplies anecdotes, not a controlled Hellfire endgame comparison.",
+      "source_ids": [
+        "reddit:kox-question-2026-07-11"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:knight-of-xoroth/hellfire:build-practice",
+      "kind": "observed",
+      "text": "The captured balanced M+ build is explicitly designed for both AoE and single target and confirms the pet/Form package, but does not prove one universal priority.",
+      "source_ids": [
+        "buildhub-builds-2026-08-05",
+        "buildhub:45c0c353-08f3-487f-80c0-c47930763571"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "community_build_snapshot"
+        ],
+        "build_or_mode": [
+          "documented_build"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The guide documents one current way to play; it is not treated as proof of optimality."
+    },
+    {
+      "id": "observed:knight-of-xoroth/hellfire:performance-context",
+      "kind": "observed",
+      "text": "The July list reports 3,810 DPS and 41 Mythic records, both uncontrolled.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "uncontrolled_performance_signals"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "low",
+      "conflicts_with": [],
+      "notes": "Do not convert this into a tier ranking."
+    },
+    {
+      "id": "inference:knight-of-xoroth/hellfire:playstyle-identity",
+      "kind": "inference",
+      "text": "A mounted infernal spellblade fighting beside a Greater Imp, banking Hellfire Embers and turning them into a temporary demon-form barrage.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:knight-of-xoroth/hellfire:17-46-4-3",
+        "talent:knight-of-xoroth/hellfire:17-46-3-4",
+        "talent:knight-of-xoroth/hellfire:17-46-10-0",
+        "talent:knight-of-xoroth/hellfire:17-46-10-4",
+        "observed:knight-of-xoroth/hellfire:midlevel-power",
+        "observed:knight-of-xoroth/hellfire:hybrid-load"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Descriptive playstyle classification, not an official label."
+    },
+    {
+      "id": "inference:knight-of-xoroth/hellfire:failure-cost",
+      "kind": "inference",
+      "text": "Entering Hellfire Form with low Embers or before the pack settles wastes its payoff.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:knight-of-xoroth/hellfire:17-46-4-3",
+        "talent:knight-of-xoroth/hellfire:17-46-3-4",
+        "talent:knight-of-xoroth/hellfire:17-46-10-0",
+        "talent:knight-of-xoroth/hellfire:17-46-10-4",
+        "talent:knight-of-xoroth/hellfire:17-46-1-7b",
+        "observed:knight-of-xoroth/hellfire:midlevel-power",
+        "observed:knight-of-xoroth/hellfire:hybrid-load",
+        "observed:knight-of-xoroth/hellfire:scaling-uncertainty"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Direction is supported; exact throughput cost is not measured."
+    }
+  ]
+}

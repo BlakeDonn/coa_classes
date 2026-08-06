@@ -1,0 +1,1569 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "reaper/harvest",
+    "class": "Reaper",
+    "name": "Harvest",
+    "roles": [
+      "Damage"
+    ],
+    "range": [
+      "Melee"
+    ]
+  },
+  "identity": {
+    "fantasy": "",
+    "one_line": "An aggressive scythe executioner using Doomrend, Slaughter, Reap, Murder, bleeds, and Harvesting Grounds. It builds fragments, sustains through damage, and accelerates into Blood Frenzy and execute windows. Its kit is especially attractive in PvP because it combines chase, pressure, and self-healing.",
+    "primary_family": "",
+    "also_fits": [],
+    "claim_ids": [
+      "talent:reaper/harvest:30-79-4-0",
+      "talent:reaper/harvest:30-79-10-0",
+      "talent:reaper/harvest:30-79-2-1",
+      "talent:reaper/harvest:30-79-6-1",
+      "talent:reaper/harvest:30-79-1-2",
+      "talent:reaper/harvest:30-79-4-2",
+      "talent:reaper/harvest:30-79-7-2",
+      "talent:reaper/harvest:30-79-10-2",
+      "talent:reaper/harvest:30-79-0-3",
+      "talent:reaper/harvest:30-79-2-3",
+      "talent:reaper/harvest:30-79-6-3",
+      "talent:reaper/harvest:30-79-8-3",
+      "talent:reaper/harvest:30-79-1-4",
+      "talent:reaper/harvest:30-79-3-4",
+      "talent:reaper/harvest:30-79-4-4",
+      "talent:reaper/harvest:30-79-5-4",
+      "talent:reaper/harvest:30-79-7-4",
+      "talent:reaper/harvest:30-79-10-4",
+      "talent:reaper/harvest:30-79-1-5",
+      "talent:reaper/harvest:30-79-4-5",
+      "talent:reaper/harvest:30-79-7-5",
+      "talent:reaper/harvest:30-79-2-6",
+      "talent:reaper/harvest:30-79-4-6a",
+      "talent:reaper/harvest:30-79-4-6b",
+      "talent:reaper/harvest:30-79-6-6",
+      "talent:reaper/harvest:30-79-10-6",
+      "talent:reaper/harvest:30-79-1-7a",
+      "talent:reaper/harvest:30-79-1-7b",
+      "talent:reaper/harvest:30-79-3-7",
+      "talent:reaper/harvest:30-79-5-7",
+      "talent:reaper/harvest:30-79-7-7a",
+      "talent:reaper/harvest:30-79-7-7b",
+      "talent:reaper/harvest:30-79-2-8",
+      "talent:reaper/harvest:30-79-4-8",
+      "talent:reaper/harvest:30-79-6-8",
+      "talent:reaper/harvest:30-79-10-8",
+      "talent:reaper/harvest:30-79-2-9",
+      "talent:reaper/harvest:30-79-4-9",
+      "talent:reaper/harvest:30-79-6-9a",
+      "talent:reaper/harvest:30-79-6-9b"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "An aggressive scythe executioner using Doomrend, Slaughter, Reap, Murder, bleeds, and Harvesting Grounds. It builds fragments, sustains through damage, and accelerates into Blood Frenzy and execute windows. Its kit is especially attractive in PvP because it combines chase, pressure, and self-healing.",
+    "resources": [
+      "Runic Power",
+      "Soul Fragments"
+    ],
+    "builders": [
+      {
+        "name": "Doomrend",
+        "claim_ids": [
+          "talent:reaper/harvest:30-79-4-0"
+        ]
+      },
+      {
+        "name": "Slaughter",
+        "claim_ids": [
+          "talent:reaper/harvest:30-79-4-2"
+        ]
+      },
+      {
+        "name": "Red Wake",
+        "claim_ids": [
+          "talent:reaper/harvest:30-79-2-3"
+        ]
+      },
+      {
+        "name": "Shudder Scythe",
+        "claim_ids": [
+          "talent:reaper/harvest:30-79-6-9a"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Extinction",
+        "claim_ids": [
+          "talent:reaper/harvest:30-79-10-2"
+        ]
+      },
+      {
+        "name": "Dark Fate",
+        "claim_ids": [
+          "talent:reaper/harvest:30-79-0-3"
+        ]
+      },
+      {
+        "name": "Crimson Death",
+        "claim_ids": [
+          "talent:reaper/harvest:30-79-6-3"
+        ]
+      },
+      {
+        "name": "Mortal's End",
+        "claim_ids": [
+          "talent:reaper/harvest:30-79-10-4"
+        ]
+      },
+      {
+        "name": "Harvest Time",
+        "claim_ids": [
+          "talent:reaper/harvest:30-79-4-5"
+        ]
+      },
+      {
+        "name": "Blood Wraith",
+        "claim_ids": [
+          "talent:reaper/harvest:30-79-1-7b"
+        ]
+      },
+      {
+        "name": "Ravenous Thirst",
+        "claim_ids": [
+          "talent:reaper/harvest:30-79-7-7b"
+        ]
+      },
+      {
+        "name": "Shudder Scythe",
+        "claim_ids": [
+          "talent:reaper/harvest:30-79-6-9a"
+        ]
+      },
+      {
+        "name": "Crimson Thirst",
+        "claim_ids": [
+          "talent:reaper/harvest:30-79-6-9b"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Blood Frenzy",
+        "claim_ids": [
+          "talent:reaper/harvest:30-79-4-8"
+        ]
+      },
+      {
+        "name": "Redshade",
+        "claim_ids": [
+          "talent:reaper/harvest:30-79-2-9"
+        ]
+      },
+      {
+        "name": "Crimson Thirst",
+        "claim_ids": [
+          "talent:reaper/harvest:30-79-6-9b"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "The Grim Reaper",
+        "claim_ids": [
+          "talent:reaper/harvest:30-79-7-7a"
+        ],
+        "structural_description": "Your Ghost Claw transforms into Wraith Claw and now has 2 charges.Wraith Claw2 Charges,15 sec rechargeChill an enemy with a ghostly claw, slowing and stealing -50% of their movement speed for 8 seconds.Whenever you kill an enemy, refund a charge of this ability. Scales with modifiers to Ghost Claw."
+      },
+      {
+        "name": "Redshade",
+        "claim_ids": [
+          "talent:reaper/harvest:30-79-2-9"
+        ],
+        "structural_description": "Using Reap now transforms your Reap into Thresh for 10 sec.ThreshGenerates 1 Soul Fragment Strike enemies around you, dealing 110% Weapon Damage and generating Runic Power.Upon cast, this ability transforms into Bloodshatter for 10 sec.BloodshatterGenerates 1 Soul Fragment Strike enemies in front of you, dealing 329 + 20% AP Shadow damage and generating Runic Power.Your next Reliquary of the Lost within 10 seconds now triggers a -25% reduced cooldown."
+      },
+      {
+        "name": "Shudder Scythe",
+        "claim_ids": [
+          "talent:reaper/harvest:30-79-6-9a"
+        ],
+        "structural_description": "Your Murder is transformed into Shudder Scythe, which costs additional Runic Power but deals increased damage and generates Soul Fragments.Shudder Scythe (Transform)Strike an enemy 5 times, each dealing 30% Weapon Damage, scaling with level, and granting you a Soul Fragment with each strike."
+      }
+    ],
+    "single_target": "",
+    "aoe": "",
+    "movement_and_target_switching": "",
+    "defense_and_control": "",
+    "group_utility": "",
+    "failure_modes": [],
+    "claim_ids": [
+      "talent:reaper/harvest:30-79-4-0",
+      "talent:reaper/harvest:30-79-10-0",
+      "talent:reaper/harvest:30-79-2-1",
+      "talent:reaper/harvest:30-79-6-1",
+      "talent:reaper/harvest:30-79-1-2",
+      "talent:reaper/harvest:30-79-4-2",
+      "talent:reaper/harvest:30-79-7-2",
+      "talent:reaper/harvest:30-79-10-2",
+      "talent:reaper/harvest:30-79-0-3",
+      "talent:reaper/harvest:30-79-2-3",
+      "talent:reaper/harvest:30-79-6-3",
+      "talent:reaper/harvest:30-79-8-3",
+      "talent:reaper/harvest:30-79-1-4",
+      "talent:reaper/harvest:30-79-3-4",
+      "talent:reaper/harvest:30-79-4-4",
+      "talent:reaper/harvest:30-79-5-4",
+      "talent:reaper/harvest:30-79-7-4",
+      "talent:reaper/harvest:30-79-10-4",
+      "talent:reaper/harvest:30-79-1-5",
+      "talent:reaper/harvest:30-79-4-5",
+      "talent:reaper/harvest:30-79-7-5",
+      "talent:reaper/harvest:30-79-2-6",
+      "talent:reaper/harvest:30-79-4-6a",
+      "talent:reaper/harvest:30-79-4-6b",
+      "talent:reaper/harvest:30-79-6-6",
+      "talent:reaper/harvest:30-79-10-6",
+      "talent:reaper/harvest:30-79-1-7a",
+      "talent:reaper/harvest:30-79-1-7b",
+      "talent:reaper/harvest:30-79-3-7",
+      "talent:reaper/harvest:30-79-5-7",
+      "talent:reaper/harvest:30-79-7-7a",
+      "talent:reaper/harvest:30-79-7-7b",
+      "talent:reaper/harvest:30-79-2-8",
+      "talent:reaper/harvest:30-79-4-8",
+      "talent:reaper/harvest:30-79-6-8",
+      "talent:reaper/harvest:30-79-10-8",
+      "talent:reaper/harvest:30-79-2-9",
+      "talent:reaper/harvest:30-79-4-9",
+      "talent:reaper/harvest:30-79-6-9a",
+      "talent:reaper/harvest:30-79-6-9b"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Doomrend",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-4-0"
+          ]
+        },
+        {
+          "name": "Harvester",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-10-0"
+          ]
+        },
+        {
+          "name": "Maw Knight",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-2-1"
+          ]
+        },
+        {
+          "name": "Bountiful Harvest",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-6-1"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:reaper/harvest:30-79-4-0",
+        "talent:reaper/harvest:30-79-10-0",
+        "talent:reaper/harvest:30-79-2-1",
+        "talent:reaper/harvest:30-79-6-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Crow's Harvest",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-1-2"
+          ]
+        },
+        {
+          "name": "Slaughter",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-4-2"
+          ]
+        },
+        {
+          "name": "Haunter",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-7-2"
+          ]
+        },
+        {
+          "name": "Extinction",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-10-2"
+          ]
+        },
+        {
+          "name": "Dark Fate",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-0-3"
+          ]
+        },
+        {
+          "name": "Red Wake",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-2-3"
+          ]
+        },
+        {
+          "name": "Crimson Death",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-6-3"
+          ]
+        },
+        {
+          "name": "Callous Soul",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-8-3"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:reaper/harvest:30-79-1-2",
+        "talent:reaper/harvest:30-79-4-2",
+        "talent:reaper/harvest:30-79-7-2",
+        "talent:reaper/harvest:30-79-10-2",
+        "talent:reaper/harvest:30-79-0-3",
+        "talent:reaper/harvest:30-79-2-3",
+        "talent:reaper/harvest:30-79-6-3",
+        "talent:reaper/harvest:30-79-8-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Hungering Scythe",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-1-4"
+          ]
+        },
+        {
+          "name": "Blood Fueled",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-3-4"
+          ]
+        },
+        {
+          "name": "Genocide",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-4-4"
+          ]
+        },
+        {
+          "name": "Hemorrhage",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-5-4"
+          ]
+        },
+        {
+          "name": "Sanguine Harvester",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-7-4"
+          ]
+        },
+        {
+          "name": "Mortal's End",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-10-4"
+          ]
+        },
+        {
+          "name": "Crimson Wraith",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-1-5"
+          ]
+        },
+        {
+          "name": "Harvest Time",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-4-5"
+          ]
+        },
+        {
+          "name": "Souls for the Slaughter",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-7-5"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:reaper/harvest:30-79-1-4",
+        "talent:reaper/harvest:30-79-3-4",
+        "talent:reaper/harvest:30-79-4-4",
+        "talent:reaper/harvest:30-79-5-4",
+        "talent:reaper/harvest:30-79-7-4",
+        "talent:reaper/harvest:30-79-10-4",
+        "talent:reaper/harvest:30-79-1-5",
+        "talent:reaper/harvest:30-79-4-5",
+        "talent:reaper/harvest:30-79-7-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Harvesting Grounds",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-2-6"
+          ]
+        },
+        {
+          "name": "Blood Harvester",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-4-6a"
+          ]
+        },
+        {
+          "name": "The Time Has Come",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-4-6b"
+          ]
+        },
+        {
+          "name": "Sever",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-6-6"
+          ]
+        },
+        {
+          "name": "Executioner",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-10-6"
+          ]
+        },
+        {
+          "name": "Blood Knight",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-1-7a"
+          ]
+        },
+        {
+          "name": "Blood Wraith",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-1-7b"
+          ]
+        },
+        {
+          "name": "Doomer",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-3-7"
+          ]
+        },
+        {
+          "name": "Unbound",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-5-7"
+          ]
+        },
+        {
+          "name": "The Grim Reaper",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-7-7a"
+          ]
+        },
+        {
+          "name": "Ravenous Thirst",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-7-7b"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:reaper/harvest:30-79-2-6",
+        "talent:reaper/harvest:30-79-4-6a",
+        "talent:reaper/harvest:30-79-4-6b",
+        "talent:reaper/harvest:30-79-6-6",
+        "talent:reaper/harvest:30-79-10-6",
+        "talent:reaper/harvest:30-79-1-7a",
+        "talent:reaper/harvest:30-79-1-7b",
+        "talent:reaper/harvest:30-79-3-7",
+        "talent:reaper/harvest:30-79-5-7",
+        "talent:reaper/harvest:30-79-7-7a",
+        "talent:reaper/harvest:30-79-7-7b"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Darkrend Scythe",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-2-8"
+          ]
+        },
+        {
+          "name": "Blood Frenzy",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-4-8"
+          ]
+        },
+        {
+          "name": "Ruin",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-6-8"
+          ]
+        },
+        {
+          "name": "This Is My Domain",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-10-8"
+          ]
+        },
+        {
+          "name": "Redshade",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-2-9"
+          ]
+        },
+        {
+          "name": "Deathbringer",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-4-9"
+          ]
+        },
+        {
+          "name": "Shudder Scythe",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-6-9a"
+          ]
+        },
+        {
+          "name": "Crimson Thirst",
+          "claim_ids": [
+            "talent:reaper/harvest:30-79-6-9b"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:reaper/harvest:30-79-2-8",
+        "talent:reaper/harvest:30-79-4-8",
+        "talent:reaper/harvest:30-79-6-8",
+        "talent:reaper/harvest:30-79-10-8",
+        "talent:reaper/harvest:30-79-2-9",
+        "talent:reaper/harvest:30-79-4-9",
+        "talent:reaper/harvest:30-79-6-9a",
+        "talent:reaper/harvest:30-79-6-9b"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "leveling_30_49": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "level_50_60": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "boss": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "dungeon_aoe": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "pvp": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [],
+    "avoid_if": []
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [],
+  "sentiment": {
+    "praise": [],
+    "frustrations": [],
+    "contested": []
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 4,
+    "latest_update": "2026-08-05T07:02:50.569+00:00",
+    "top_title": "Harvest PvP King",
+    "top_url": "https://coabuildhub.com/build/abdf893c-83d0-4c9e-990f-4630c8d854ac",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:abdf893c-83d0-4c9e-990f-4630c8d854ac"
+    ]
+  },
+  "coverage": {
+    "mechanical": "structural_baseline",
+    "community": "indexed",
+    "performance": "missing",
+    "video": "missing",
+    "overall_confidence": "low",
+    "gaps": [
+      "Effective core loop needs recent guide or player cross-check.",
+      "Contextual complexity values are not yet researched.",
+      "Recent performance, sentiment, issues, and video evidence are not yet reconciled."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:reaper/harvest:30-79-4-0",
+      "kind": "structural",
+      "text": "Doomrend: Rend an enemy dealing 140% Weapon Damage plus 17 + 35% AP, causing you to apply a dark shield to them that absorbs the next 75 + 100% Strength healing done to them for 5 seconds, and generates Runic Power.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-10-0",
+      "kind": "structural",
+      "text": "Harvester: Level 10 PassiveYou now heal yourself equal to 15% of all damage dealt.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-2-1",
+      "kind": "structural",
+      "text": "Maw Knight: Increases the critical strike chance of Doomrend by 5%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-6-1",
+      "kind": "structural",
+      "text": "Bountiful Harvest: Increases the damage of Reap and Murder by 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-1-2",
+      "kind": "structural",
+      "text": "Crow's Harvest: Strike all nearby enemies for 65% Weapon Damage plus 6.Damage dealt harvests a Soul Fragment, up to a maximum of 3.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-4-2",
+      "kind": "structural",
+      "text": "Slaughter: Generates 1 Reaped SoulEradicate an enemy with your scythe, dealing 130% Weapon Damage plus 14.Only usable on enemies below 35% health.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-7-2",
+      "kind": "structural",
+      "text": "Haunter: Increases the duration of Soulrend by 10 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-10-2",
+      "kind": "structural",
+      "text": "Extinction: Level 20 PassiveDirect Physical damage dealt now has a 5% chance to grant you Extinction for 10 seconds.Chance to trigger this effect is increased by 10% for each Reaped Soul active.ExtinctionYour next Slaughter is usable regardless of the target's health and costs -10 less Runic Power.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-0-3",
+      "kind": "structural",
+      "text": "Dark Fate: Reduces the cost of Crow's Harvest by -10 Runic Power.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-2-3",
+      "kind": "structural",
+      "text": "Red Wake: Direct damage critical strikes now generate an additional Soul Fragment.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-6-3",
+      "kind": "structural",
+      "text": "Crimson Death: Your Slaughter now has a 20% chance to cast an additional time free of cost.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-8-3",
+      "kind": "structural",
+      "text": "Callous Soul: Increases the amount of armor Soulrend causes you to ignore by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-1-4",
+      "kind": "structural",
+      "text": "Hungering Scythe: Increases the duration of Deathwind by 4 sec and Crow's Harvest now deals 15% additional damage to enemies inside.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-3-4",
+      "kind": "structural",
+      "text": "Blood Fueled: Increases the healing absorbed by Doomrend by 30%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-4-4",
+      "kind": "structural",
+      "text": "Genocide: Increases the critical damage and critical strike chance of Slaughter by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-5-4",
+      "kind": "structural",
+      "text": "Hemorrhage: Increases the damage and critical strike chance of your abilities by 10% against enemies below 35% health.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-7-4",
+      "kind": "structural",
+      "text": "Sanguine Harvester: Increases your melee haste by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-10-4",
+      "kind": "structural",
+      "text": "Mortal's End: Level 30 PassiveAllows Extinction to stack an additional time and allows Wraithblade to grant you Extinction.ExtinctionYour next Slaughter is usable regardless of the target's health and costs -10 less Runic Power.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-1-5",
+      "kind": "structural",
+      "text": "Crimson Wraith: Increases your critical stike damage by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-4-5",
+      "kind": "structural",
+      "text": "Harvest Time: Increases your damage and critical strike chance by 15% and gives your spells that require Soul Infusion a -50% to not consume the effect for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-7-5",
+      "kind": "structural",
+      "text": "Souls for the Slaughter: Critical strikes with Slaughter now cause your auto attacks to deal an additional 85% Shadow damage for 5 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-2-6",
+      "kind": "structural",
+      "text": "Harvesting Grounds: Create a harvesting ground at the target location for 10 seconds, enemies inside have their melee and ranged haste and movement speed reduced by -20%For the duration, enemies that try to exit the harvesting ground will be pulled back to its center.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-4-6a",
+      "kind": "structural",
+      "text": "Blood Harvester: Increases critical strike chance of all party and raid members by 3%.Does not stack with similar effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-4-6b",
+      "kind": "structural",
+      "text": "The Time Has Come: Your abilities now deal 10% more damage against slowed targets.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-6-6",
+      "kind": "structural",
+      "text": "Sever: Attempt to drain an enemies vitals, leeching 22 + 31.03% AP health, interrupting casting and preventing any spell from that school from being cast for 3 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-10-6",
+      "kind": "structural",
+      "text": "Executioner: Level 40 PassiveIncreases your critical strike rating by 20% of your Strength.In addition, increases your Armor penetration by 30% against enemies below 35% health.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-1-7a",
+      "kind": "structural",
+      "text": "Blood Knight: Critical strikes with Doomrend now refund a Reaped Soul.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-1-7b",
+      "kind": "structural",
+      "text": "Blood Wraith: Wraithblade now deals an additional 100% Weapon Damage and its Runic Power cost is reduced by -20.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-3-7",
+      "kind": "structural",
+      "text": "Doomer: Increases the damage of Doomrend and Slaughter by 30%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-5-7",
+      "kind": "structural",
+      "text": "Unbound: Your Reliquary of the Lost is now guaranteed to critically strike for 25% increased damage on enemies below 20% health.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-7-7a",
+      "kind": "structural",
+      "text": "The Grim Reaper: Your Ghost Claw transforms into Wraith Claw and now has 2 charges.Wraith Claw2 Charges,15 sec rechargeChill an enemy with a ghostly claw, slowing and stealing -50% of their movement speed for 8 seconds.Whenever you kill an enemy, refund a charge of this ability. Scales with modifiers to Ghost Claw.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-7-7b",
+      "kind": "structural",
+      "text": "Ravenous Thirst: Reduces the Runic Power cost of Ghastly Screech and Soul Strike by -10.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-2-8",
+      "kind": "structural",
+      "text": "Darkrend Scythe: Damage dealt by Doomrend and Crow's Harvest now applies a bleed, dealing 56 + 8.5% AP Physical damage every 2 sec for 10 seconds, stacking 5 times.Additional applications do not refresh the duration.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-4-8",
+      "kind": "structural",
+      "text": "Blood Frenzy: Casting Harvest Time with an enemy targeted within 20 yds of you now unleashes a Blood Frenzy.Blood FrenzyDeals 1 + 36% AP Shadow Damage to your target every 0.75 sec for 7.5 seconds. At the end of the duration, the target takes an additional 457 + 45% AP Shadow Damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-6-8",
+      "kind": "structural",
+      "text": "Ruin: Damage dealt by Murder now applies Ruin to enemies for 10 seconds.RuinIncreases damage taken by Doomrend and Slaughter by 25% for 10 seconds.Using Doomrend on a target afflicted by Ruin will increase your haste by 15% for 5 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-10-8",
+      "kind": "structural",
+      "text": "This Is My Domain: Level 50 PassiveIncreases the amount healed through the Harvest - Level 10 Passive by 10% and causes being in your Harvesting Grounds to increase this effect by an additional 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-2-9",
+      "kind": "structural",
+      "text": "Redshade: Using Reap now transforms your Reap into Thresh for 10 sec.ThreshGenerates 1 Soul Fragment Strike enemies around you, dealing 110% Weapon Damage and generating Runic Power.Upon cast, this ability transforms into Bloodshatter for 10 sec.BloodshatterGenerates 1 Soul Fragment Strike enemies in front of you, dealing 329 + 20% AP Shadow damage and generating Runic Power.Your next Reliquary of the Lost within 10 seconds now triggers a -25% reduced cooldown.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-4-9",
+      "kind": "structural",
+      "text": "Deathbringer: Increases the duration of Blood Frenzy and Harvest Time by 100%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-6-9a",
+      "kind": "structural",
+      "text": "Shudder Scythe: Your Murder is transformed into Shudder Scythe, which costs additional Runic Power but deals increased damage and generates Soul Fragments.Shudder Scythe (Transform)Strike an enemy 5 times, each dealing 30% Weapon Damage, scaling with level, and granting you a Soul Fragment with each strike.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/harvest:30-79-6-9b",
+      "kind": "structural",
+      "text": "Crimson Thirst: Your Physical damage dealt to enemies now grants Crimson Thirst for 20 seconds, stacking 5 times.Crimson Thirst (Stacks)Your next Murder within 15 seconds deals 10% increased damage and costs -10% less Runic Power per stack. At 5 stacks, it also heals you equal to 50% of the damage dealt.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    }
+  ]
+}

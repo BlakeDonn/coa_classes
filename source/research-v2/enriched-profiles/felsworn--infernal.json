@@ -1,0 +1,2090 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "felsworn/infernal",
+    "class": "Felsworn",
+    "name": "Infernal",
+    "roles": [
+      "Damage"
+    ],
+    "range": [
+      "Ranged"
+    ]
+  },
+  "identity": {
+    "fantasy": "A Shadowflame caster whose critical strikes create more burns, refunds, and Inner Demon pressure until the rotation becomes a self-feeding inferno.",
+    "one_line": "A Shadowflame caster whose critical strikes create more burns, refunds, and Inner Demon pressure until the rotation becomes a self-feeding inferno. The defining decision is contextual: Proc availability and Felfury pressure change spender timing.",
+    "primary_family": "planners",
+    "also_fits": [
+      "sequencers"
+    ],
+    "claim_ids": [
+      "talent:felsworn/infernal:14-38-4-0",
+      "talent:felsworn/infernal:14-38-10-0",
+      "talent:felsworn/infernal:14-38-2-1",
+      "talent:felsworn/infernal:14-38-2-9",
+      "observed:felsworn/infernal:community-practice",
+      "observed:felsworn/infernal:sentiment-context",
+      "inference:felsworn/infernal:identity"
+    ],
+    "playstyle_tags": [
+      "shadowflame-feedback-caster",
+      "crit-caster",
+      "dot-burster"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "A Shadowflame caster built around Fel Fireball, Felstrikes, Ruin, critical strikes, and Inner Demon. Crits feed more damage-over-time effects and resource refunds, so the tree scales sharply when its feedback loop is running; missed procs or poor Felfury control make it feel much weaker.",
+    "resources": [
+      "Felfury",
+      "Fragment of Malice"
+    ],
+    "builders": [
+      {
+        "name": "Bane of Chaos",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-1-2"
+        ]
+      },
+      {
+        "name": "Illidari Magi",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-8-4"
+        ]
+      },
+      {
+        "name": "Illidari Smiter",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-0-6"
+        ]
+      },
+      {
+        "name": "Malice of Gul'dan",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-9"
+        ]
+      },
+      {
+        "name": "Fury of Archimonde",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-6-9"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Ruin",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0"
+        ]
+      },
+      {
+        "name": "Gul'dan's Prodigy",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-7-2"
+        ]
+      },
+      {
+        "name": "Felwrath",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-7-3"
+        ]
+      },
+      {
+        "name": "Infernal Doom",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-2-8"
+        ]
+      },
+      {
+        "name": "Sargeras Embrace",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-2-9"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Dark Magician",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-2-1"
+        ]
+      },
+      {
+        "name": "Cursed Flames",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-6-4"
+        ]
+      },
+      {
+        "name": "Sculptor of Doom",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-10-4"
+        ]
+      },
+      {
+        "name": "The True Blessing",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-6"
+        ]
+      },
+      {
+        "name": "Oppressive Ruin",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-8-6a"
+        ]
+      },
+      {
+        "name": "Unphased",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-10-6"
+        ]
+      },
+      {
+        "name": "Fel Infusion",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-5-7"
+        ]
+      },
+      {
+        "name": "Fury of Archimonde",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-6-9"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Bane of Chaos",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-1-2"
+        ],
+        "structural_description": "Generates 1 FelfuryUnleash fel magic on an enemy, dealing 114 Chaos damage over 18 seconds.Inner Demon: The enemy takes an additional 13 + 100% SP Chaos Damage every 6 sec.Can only have 1 Bane active on a target at a time."
+      }
+    ],
+    "single_target": "Use Fel Fireball and Felstrikes to feed the crit-dependent Ruin and Inner Demon engine, then spend Felfury without starving refunds. The captured hybrid build is explicitly unfinished pending gear, so no exact priority is treated as settled.",
+    "aoe": "The leading build is designed for both single target and AoE, but provides no repeatable pack sequence. Current roster discussion calls Infernal approachable without resolving late-level button count or proc tracking.",
+    "movement_and_target_switching": "Ranged play offers normal caster spacing, with less evidence for exceptional movement freedom.",
+    "defense_and_control": "Its structural defensive package includes Fel Cannon, Doomsayer, Oppressive Ruin.",
+    "group_utility": "Group or control tools include Cursed Flames, Felbreak, Fel Infusion, Sargeras Embrace.",
+    "failure_modes": [
+      {
+        "text": "A dry critical-strike streak, poor Felfury spending, or treating an unfinished hybrid build as optimized can make several linked effects fail together.",
+        "claim_ids": [
+          "inference:felsworn/infernal:failure-cost",
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1"
+        ]
+      },
+      {
+        "text": "Committing a Ruin sequence before the crit and resource engine is stable can leave the caster with neither burst nor refunds.",
+        "claim_ids": [
+          "inference:felsworn/infernal:failure-cost",
+          "observed:felsworn/infernal:community-practice"
+        ]
+      },
+      {
+        "text": "Treating the unfinished hybrid build as gear-independent can produce a rotation its own author has not validated.",
+        "claim_ids": [
+          "inference:felsworn/infernal:failure-cost",
+          "observed:felsworn/infernal:community-practice"
+        ]
+      }
+    ],
+    "claim_ids": [
+      "talent:felsworn/infernal:14-38-4-0",
+      "talent:felsworn/infernal:14-38-10-0",
+      "talent:felsworn/infernal:14-38-2-1",
+      "talent:felsworn/infernal:14-38-2-9",
+      "observed:felsworn/infernal:community-practice",
+      "observed:felsworn/infernal:build-practice",
+      "observed:felsworn/infernal:sentiment-context",
+      "inference:felsworn/infernal:identity"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Ruin",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-4-0"
+          ]
+        },
+        {
+          "name": "Fel Apprentice",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-10-0"
+          ]
+        },
+        {
+          "name": "Dark Magician",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-2-1"
+          ]
+        },
+        {
+          "name": "Wrath of Sargeras",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-6-1"
+          ]
+        }
+      ],
+      "observed_loop": "Ruin, Fel Apprentice, and Dark Magician introduce the Shadowflame and crit loop before late talents deepen refunds and Inner Demon uptime.",
+      "observed_changes": [
+        "Ease claims are broad, while the only detailed build is self-described as unfinished and gear-dependent.",
+        "Do not project the mature priority backward."
+      ],
+      "claim_ids": [
+        "talent:felsworn/infernal:14-38-4-0",
+        "talent:felsworn/infernal:14-38-10-0",
+        "talent:felsworn/infernal:14-38-2-1",
+        "talent:felsworn/infernal:14-38-6-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Bane of Chaos",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-1-2"
+          ]
+        },
+        {
+          "name": "Felfire Adept",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-4-2"
+          ]
+        },
+        {
+          "name": "Gul'dan's Prodigy",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-7-2"
+          ]
+        },
+        {
+          "name": "Hidden Power",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-10-2"
+          ]
+        },
+        {
+          "name": "Felforged",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-1-3"
+          ]
+        },
+        {
+          "name": "Fel Cannon",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-4-3"
+          ]
+        },
+        {
+          "name": "Felwrath",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-7-3"
+          ]
+        }
+      ],
+      "observed_loop": "Ruin, Fel Apprentice, and Dark Magician introduce the Shadowflame and crit loop before late talents deepen refunds and Inner Demon uptime.",
+      "observed_changes": [
+        "Ease claims are broad, while the only detailed build is self-described as unfinished and gear-dependent.",
+        "Do not project the mature priority backward."
+      ],
+      "claim_ids": [
+        "talent:felsworn/infernal:14-38-1-2",
+        "talent:felsworn/infernal:14-38-4-2",
+        "talent:felsworn/infernal:14-38-7-2",
+        "talent:felsworn/infernal:14-38-10-2",
+        "talent:felsworn/infernal:14-38-1-3",
+        "talent:felsworn/infernal:14-38-4-3",
+        "talent:felsworn/infernal:14-38-7-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Withering",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-0-4"
+          ]
+        },
+        {
+          "name": "Black Magic",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-2-4"
+          ]
+        },
+        {
+          "name": "Cursed Flames",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-6-4"
+          ]
+        },
+        {
+          "name": "Illidari Magi",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-8-4"
+          ]
+        },
+        {
+          "name": "Sculptor of Doom",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-10-4"
+          ]
+        },
+        {
+          "name": "Felbreak",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-1-5"
+          ]
+        },
+        {
+          "name": "Shadow Magi",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-4-5"
+          ]
+        },
+        {
+          "name": "Infernal",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-7-5"
+          ]
+        }
+      ],
+      "observed_loop": "The middle bands connect the foundational kit to the mature loop: A Shadowflame caster built around Fel Fireball, Felstrikes, Ruin, critical strikes, and Inner Demon. Exact level-by-level priority remains bounded by the available evidence.",
+      "observed_changes": [
+        "A dry critical-strike streak, poor Felfury spending, or treating an unfinished hybrid build as optimized can make several linked effects fail together.",
+        "Source levels and gear are not normalized."
+      ],
+      "claim_ids": [
+        "talent:felsworn/infernal:14-38-0-4",
+        "talent:felsworn/infernal:14-38-2-4",
+        "talent:felsworn/infernal:14-38-6-4",
+        "talent:felsworn/infernal:14-38-8-4",
+        "talent:felsworn/infernal:14-38-10-4",
+        "talent:felsworn/infernal:14-38-1-5",
+        "talent:felsworn/infernal:14-38-4-5",
+        "talent:felsworn/infernal:14-38-7-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Illidari Smiter",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-0-6"
+          ]
+        },
+        {
+          "name": "Herald of the Legion",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-2-6a"
+          ]
+        },
+        {
+          "name": "Fel Flamecasting",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-2-6b"
+          ]
+        },
+        {
+          "name": "The True Blessing",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-4-6"
+          ]
+        },
+        {
+          "name": "Doomsayer",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-6-6a"
+          ]
+        },
+        {
+          "name": "Infernal Summoner",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-6-6b"
+          ]
+        },
+        {
+          "name": "Oppressive Ruin",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-8-6a"
+          ]
+        },
+        {
+          "name": "Infernal Ruin",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-8-6b"
+          ]
+        },
+        {
+          "name": "Unphased",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-10-6"
+          ]
+        },
+        {
+          "name": "Curse of Argus",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-1-7"
+          ]
+        },
+        {
+          "name": "Felshock",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-3-7"
+          ]
+        },
+        {
+          "name": "Fel Infusion",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-5-7"
+          ]
+        },
+        {
+          "name": "Archimonde's Wrath",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-7-7"
+          ]
+        }
+      ],
+      "observed_loop": "The middle bands connect the foundational kit to the mature loop: A Shadowflame caster built around Fel Fireball, Felstrikes, Ruin, critical strikes, and Inner Demon. Exact level-by-level priority remains bounded by the available evidence.",
+      "observed_changes": [
+        "A dry critical-strike streak, poor Felfury spending, or treating an unfinished hybrid build as optimized can make several linked effects fail together.",
+        "Source levels and gear are not normalized."
+      ],
+      "claim_ids": [
+        "talent:felsworn/infernal:14-38-0-6",
+        "talent:felsworn/infernal:14-38-2-6a",
+        "talent:felsworn/infernal:14-38-2-6b",
+        "talent:felsworn/infernal:14-38-4-6",
+        "talent:felsworn/infernal:14-38-6-6a",
+        "talent:felsworn/infernal:14-38-6-6b",
+        "talent:felsworn/infernal:14-38-8-6a",
+        "talent:felsworn/infernal:14-38-8-6b",
+        "talent:felsworn/infernal:14-38-10-6",
+        "talent:felsworn/infernal:14-38-1-7",
+        "talent:felsworn/infernal:14-38-3-7",
+        "talent:felsworn/infernal:14-38-5-7",
+        "talent:felsworn/infernal:14-38-7-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Infernal Doom",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-2-8"
+          ]
+        },
+        {
+          "name": "Nether Spirit",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-4-8"
+          ]
+        },
+        {
+          "name": "Chaotic Intuition",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-6-8"
+          ]
+        },
+        {
+          "name": "Man'ari Teachings",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-10-8"
+          ]
+        },
+        {
+          "name": "Sargeras Embrace",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-2-9"
+          ]
+        },
+        {
+          "name": "Malice of Gul'dan",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-4-9"
+          ]
+        },
+        {
+          "name": "Fury of Archimonde",
+          "claim_ids": [
+            "talent:felsworn/infernal:14-38-6-9"
+          ]
+        }
+      ],
+      "observed_loop": "Late feedback is gear-sensitive: the captured author withholds a finished verdict until the intended set is assembled.",
+      "observed_changes": [
+        "Ease claims are broad, while the only detailed build is self-described as unfinished and gear-dependent.",
+        "A dry critical-strike streak, poor Felfury spending, or treating an unfinished hybrid build as optimized can make several linked effects fail together."
+      ],
+      "claim_ids": [
+        "talent:felsworn/infernal:14-38-2-8",
+        "talent:felsworn/infernal:14-38-4-8",
+        "talent:felsworn/infernal:14-38-6-8",
+        "talent:felsworn/infernal:14-38-10-8",
+        "talent:felsworn/infernal:14-38-2-9",
+        "talent:felsworn/infernal:14-38-4-9",
+        "talent:felsworn/infernal:14-38-6-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "Ruin, Fel Apprentice, and Dark Magician introduce the Shadowflame and crit loop before late talents deepen refunds and Inner Demon uptime.",
+      "strengths": [
+        "A Shadowflame caster whose critical strikes create more burns, refunds, and Inner Demon pressure until the rotation becomes a self-feeding inferno.",
+        "Players recommend Infernal as an approachable caster, and the documented hybrid aims to cover both bosses and packs."
+      ],
+      "cautions": [
+        "Ease claims are broad, while the only detailed build is self-described as unfinished and gear-dependent.",
+        "Do not project the mature priority backward."
+      ],
+      "claim_ids": [
+        "talent:felsworn/infernal:14-38-4-0",
+        "talent:felsworn/infernal:14-38-10-0",
+        "talent:felsworn/infernal:14-38-2-1",
+        "talent:felsworn/infernal:14-38-2-9",
+        "observed:felsworn/infernal:community-practice",
+        "observed:felsworn/infernal:build-practice",
+        "observed:felsworn/infernal:sentiment-context",
+        "inference:felsworn/infernal:identity"
+      ]
+    },
+    "leveling_30_49": {
+      "feel": "The middle bands connect the foundational kit to the mature loop: A Shadowflame caster built around Fel Fireball, Felstrikes, Ruin, critical strikes, and Inner Demon. Exact level-by-level priority remains bounded by the available evidence.",
+      "strengths": [
+        "A Shadowflame caster built around Fel Fireball, Felstrikes, Ruin, critical strikes, and Inner Demon.",
+        "More of the state and payoff loop is available."
+      ],
+      "cautions": [
+        "A dry critical-strike streak, poor Felfury spending, or treating an unfinished hybrid build as optimized can make several linked effects fail together.",
+        "Source levels and gear are not normalized."
+      ],
+      "claim_ids": [
+        "talent:felsworn/infernal:14-38-4-0",
+        "talent:felsworn/infernal:14-38-10-0",
+        "talent:felsworn/infernal:14-38-2-1",
+        "talent:felsworn/infernal:14-38-2-9",
+        "observed:felsworn/infernal:community-practice",
+        "observed:felsworn/infernal:build-practice",
+        "observed:felsworn/infernal:sentiment-context",
+        "inference:felsworn/infernal:identity"
+      ]
+    },
+    "level_50_60": {
+      "feel": "Late feedback is gear-sensitive: the captured author withholds a finished verdict until the intended set is assembled.",
+      "strengths": [
+        "Players recommend Infernal as an approachable caster, and the documented hybrid aims to cover both bosses and packs.",
+        "The full talent interaction is available."
+      ],
+      "cautions": [
+        "Ease claims are broad, while the only detailed build is self-described as unfinished and gear-dependent.",
+        "A dry critical-strike streak, poor Felfury spending, or treating an unfinished hybrid build as optimized can make several linked effects fail together."
+      ],
+      "claim_ids": [
+        "talent:felsworn/infernal:14-38-4-0",
+        "talent:felsworn/infernal:14-38-10-0",
+        "talent:felsworn/infernal:14-38-2-1",
+        "talent:felsworn/infernal:14-38-2-9",
+        "observed:felsworn/infernal:community-practice",
+        "observed:felsworn/infernal:build-practice",
+        "observed:felsworn/infernal:sentiment-context",
+        "inference:felsworn/infernal:identity"
+      ]
+    },
+    "boss": {
+      "feel": "Use Fel Fireball and Felstrikes to feed the crit-dependent Ruin and Inner Demon engine, then spend Felfury without starving refunds. The captured hybrid build is explicitly unfinished pending gear, so no exact priority is treated as settled.",
+      "strengths": [
+        "Use Fel Fireball and Felstrikes to feed the crit-dependent Ruin and Inner Demon engine, then spend Felfury without starving refunds.",
+        "Durable targets allow the documented cycle to complete."
+      ],
+      "cautions": [
+        "A dry critical-strike streak, poor Felfury spending, or treating an unfinished hybrid build as optimized can make several linked effects fail together.",
+        "No controlled ranking is asserted."
+      ],
+      "claim_ids": [
+        "talent:felsworn/infernal:14-38-4-0",
+        "talent:felsworn/infernal:14-38-10-0",
+        "talent:felsworn/infernal:14-38-2-1",
+        "talent:felsworn/infernal:14-38-2-9",
+        "observed:felsworn/infernal:community-practice",
+        "observed:felsworn/infernal:build-practice",
+        "observed:felsworn/infernal:sentiment-context",
+        "inference:felsworn/infernal:identity"
+      ]
+    },
+    "dungeon_aoe": {
+      "feel": "The leading build is designed for both single target and AoE, but provides no repeatable pack sequence. Current roster discussion calls Infernal approachable without resolving late-level button count or proc tracking.",
+      "strengths": [
+        "The leading build is designed for both single target and AoE, but provides no repeatable pack sequence.",
+        "Pack play exposes the spec's target-count decisions."
+      ],
+      "cautions": [
+        "A dry critical-strike streak, poor Felfury spending, or treating an unfinished hybrid build as optimized can make several linked effects fail together.",
+        "Pull size, lifespan, and tank pace are uncontrolled."
+      ],
+      "claim_ids": [
+        "talent:felsworn/infernal:14-38-4-0",
+        "talent:felsworn/infernal:14-38-10-0",
+        "talent:felsworn/infernal:14-38-2-1",
+        "talent:felsworn/infernal:14-38-2-9",
+        "observed:felsworn/infernal:community-practice",
+        "observed:felsworn/infernal:build-practice",
+        "observed:felsworn/infernal:sentiment-context",
+        "inference:felsworn/infernal:identity"
+      ]
+    },
+    "pvp": {
+      "feel": "The Shadowflame and Ruin feedback loop can pressure players, but no captured source separates PvP priorities from the unfinished hybrid build.",
+      "strengths": [
+        "The Shadowflame and Ruin feedback loop can pressure players, but no captured source separates PvP priorities from the unfinished hybrid build.",
+        "Control and disruption change the normal loop."
+      ],
+      "cautions": [
+        "A dry critical-strike streak, poor Felfury spending, or treating an unfinished hybrid build as optimized can make several linked effects fail together.",
+        "No normalized matchup or bracket comparison is available."
+      ],
+      "claim_ids": [
+        "talent:felsworn/infernal:14-38-4-0",
+        "talent:felsworn/infernal:14-38-10-0",
+        "talent:felsworn/infernal:14-38-2-1",
+        "talent:felsworn/infernal:14-38-2-9",
+        "observed:felsworn/infernal:community-practice",
+        "observed:felsworn/infernal:build-practice",
+        "observed:felsworn/infernal:sentiment-context",
+        "inference:felsworn/infernal:identity"
+      ]
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "low",
+        "reason": "The apparent bar is compact, but several attacks feed the same Ruin and Felfury engine. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "low-moderate",
+        "reason": "The apparent bar is compact, but several attacks feed the same Ruin and Felfury engine. Middle talents make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "low-moderate",
+        "reason": "The apparent bar is compact, but several attacks feed the same Ruin and Felfury engine. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "low-moderate",
+        "reason": "The apparent bar is compact, but several attacks feed the same Ruin and Felfury engine. A durable target makes repeated timing and resource discipline matter.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "moderate",
+        "reason": "The apparent bar is compact, but several attacks feed the same Ruin and Felfury engine. Changing pack size, lifespan, and tank movement add another constraint.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "low-moderate",
+        "reason": "The apparent bar is compact, but several attacks feed the same Ruin and Felfury engine. Enemy disruption and an active opponent make the same task less predictable.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "moderate",
+        "reason": "Critical feedback, Ruin effects, Inner Demon, and Felfury require concurrent tracking. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "moderate-high",
+        "reason": "Critical feedback, Ruin effects, Inner Demon, and Felfury require concurrent tracking. Middle talents make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "moderate-high",
+        "reason": "Critical feedback, Ruin effects, Inner Demon, and Felfury require concurrent tracking. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "moderate-high",
+        "reason": "Critical feedback, Ruin effects, Inner Demon, and Felfury require concurrent tracking. A durable target makes repeated timing and resource discipline matter.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "Critical feedback, Ruin effects, Inner Demon, and Felfury require concurrent tracking. Changing pack size, lifespan, and tank movement add another constraint.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "Critical feedback, Ruin effects, Inner Demon, and Felfury require concurrent tracking. Enemy disruption and an active opponent make the same task less predictable.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "low-moderate",
+        "reason": "Proc availability and Felfury pressure change spender timing. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "moderate",
+        "reason": "Proc availability and Felfury pressure change spender timing. Middle talents make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "moderate",
+        "reason": "Proc availability and Felfury pressure change spender timing. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "moderate",
+        "reason": "Proc availability and Felfury pressure change spender timing. A durable target makes repeated timing and resource discipline matter.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "moderate-high",
+        "reason": "Proc availability and Felfury pressure change spender timing. Changing pack size, lifespan, and tank movement add another constraint.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "moderate-high",
+        "reason": "Proc availability and Felfury pressure change spender timing. Enemy disruption and an active opponent make the same task less predictable.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "low",
+        "reason": "Casting and melee-linked Felstrikes make positioning and sequencing matter. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "low-moderate",
+        "reason": "Casting and melee-linked Felstrikes make positioning and sequencing matter. Middle talents make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "low-moderate",
+        "reason": "Casting and melee-linked Felstrikes make positioning and sequencing matter. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "low-moderate",
+        "reason": "Casting and melee-linked Felstrikes make positioning and sequencing matter. A durable target makes repeated timing and resource discipline matter.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "moderate",
+        "reason": "Casting and melee-linked Felstrikes make positioning and sequencing matter. Changing pack size, lifespan, and tank movement add another constraint.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "moderate",
+        "reason": "Casting and melee-linked Felstrikes make positioning and sequencing matter. Enemy disruption and an active opponent make the same task less predictable.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "low-moderate",
+        "reason": "Poor crit or resource routing can starve multiple refunds and damage-over-time effects. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "moderate",
+        "reason": "Poor crit or resource routing can starve multiple refunds and damage-over-time effects. Middle talents make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "moderate",
+        "reason": "Poor crit or resource routing can starve multiple refunds and damage-over-time effects. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "moderate",
+        "reason": "Poor crit or resource routing can starve multiple refunds and damage-over-time effects. A durable target makes repeated timing and resource discipline matter.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "moderate-high",
+        "reason": "Poor crit or resource routing can starve multiple refunds and damage-over-time effects. Changing pack size, lifespan, and tank movement add another constraint.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "moderate-high",
+        "reason": "Poor crit or resource routing can starve multiple refunds and damage-over-time effects. Enemy disruption and an active opponent make the same task less predictable.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      }
+    },
+    "setup_burden": {
+      "leveling_10_29": {
+        "value": "low",
+        "reason": "The loop needs resource and proc momentum more than a long scripted opener. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "low-moderate",
+        "reason": "The loop needs resource and proc momentum more than a long scripted opener. Middle talents make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "low-moderate",
+        "reason": "The loop needs resource and proc momentum more than a long scripted opener. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "low-moderate",
+        "reason": "The loop needs resource and proc momentum more than a long scripted opener. A durable target makes repeated timing and resource discipline matter.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "low-moderate",
+        "reason": "The loop needs resource and proc momentum more than a long scripted opener. Changing pack size, lifespan, and tank movement add another constraint.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "moderate",
+        "reason": "The loop needs resource and proc momentum more than a long scripted opener. Enemy disruption and an active opponent make the same task less predictable.",
+        "claim_ids": [
+          "talent:felsworn/infernal:14-38-4-0",
+          "talent:felsworn/infernal:14-38-10-0",
+          "talent:felsworn/infernal:14-38-2-1",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [
+      {
+        "text": "You want a crit-scaling caster with DoTs and an accelerating proc loop.",
+        "claim_ids": [
+          "inference:felsworn/infernal:identity"
+        ]
+      },
+      {
+        "text": "You enjoy a loop where this state matters: Critical feedback, Ruin effects, Inner Demon, and Felfury require concurrent tracking.",
+        "claim_ids": [
+          "inference:felsworn/infernal:identity",
+          "observed:felsworn/infernal:community-practice"
+        ]
+      }
+    ],
+    "avoid_if": [
+      {
+        "text": "You dislike output that feels weak when procs or Felfury control go poorly.",
+        "claim_ids": [
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      },
+      {
+        "text": "You want mistakes to be cheap; here, a dry critical-strike streak, poor Felfury spending, or treating an unfinished hybrid build as optimized can make several linked effects fail together.",
+        "claim_ids": [
+          "inference:felsworn/infernal:failure-cost",
+          "observed:felsworn/infernal:community-practice"
+        ]
+      }
+    ]
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [
+    "observed:felsworn/infernal:performance"
+  ],
+  "sentiment": {
+    "praise": [
+      {
+        "theme": "Players recommend Infernal as an approachable caster, and the documented hybrid aims to cover both bosses and packs.",
+        "claim_ids": [
+          "observed:felsworn/infernal:sentiment-context",
+          "observed:felsworn/infernal:community-practice",
+          "observed:felsworn/infernal:build-practice"
+        ]
+      }
+    ],
+    "frustrations": [
+      {
+        "theme": "A dry critical-strike streak, poor Felfury spending, or treating an unfinished hybrid build as optimized can make several linked effects fail together.",
+        "claim_ids": [
+          "observed:felsworn/infernal:sentiment-context",
+          "inference:felsworn/infernal:failure-cost"
+        ]
+      }
+    ],
+    "contested": [
+      {
+        "theme": "Ease claims are broad, while the only detailed build is self-described as unfinished and gear-dependent.",
+        "claim_ids": [
+          "observed:felsworn/infernal:sentiment-context",
+          "observed:felsworn/infernal:community-practice"
+        ]
+      }
+    ]
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 2,
+    "latest_update": "2026-07-22T10:06:29.14+00:00",
+    "top_title": "Infernal sweet spot, for both aoe and ST",
+    "top_url": "https://coabuildhub.com/build/cc016d7c-76f2-4a71-aa8f-e8a41b4d9de5",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:cc016d7c-76f2-4a71-aa8f-e8a41b4d9de5"
+    ]
+  },
+  "coverage": {
+    "mechanical": "manual_talent_and_build_interpretation",
+    "community": "manual_recent_source_review",
+    "performance": "limited_uncontrolled",
+    "video": "searched_none_verified",
+    "overall_confidence": "medium",
+    "gaps": [
+      "No verified current full-encounter rotation video.",
+      "Any priority or mode not supported above remains an explicit gap rather than an inferred optimum."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:felsworn/infernal:14-38-4-0",
+      "kind": "structural",
+      "text": "Ruin: Consumes 2 FelfuryBring doom upon an enemy, dealing cond(gt(SPFI, SPS), 116+0+SPFI*1, 116+0+SPS*1.32) Shadowflame Damage to an enemy, piercing all absorption effects.Inner Demon: Deals an additional 30% of the damage dealt over 3 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-10-0",
+      "kind": "structural",
+      "text": "Fel Apprentice: Level 10 PassiveWhile Inner Demon is active, your Fel Fireball will now unleash a Felstrike on your target.FelstrikeBurn an enemy for 54 + 30% SP Shadowflame Damage over 6 seconds, stacking 3 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-2-1",
+      "kind": "structural",
+      "text": "Dark Magician: While Inner Demon is active, casting Ruin, Sunder, or Felwrath now refunds 20 Energy.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-6-1",
+      "kind": "structural",
+      "text": "Wrath of Sargeras: Increases your Magic damage dealt by 3% and your spell hit chance by 2%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-1-2",
+      "kind": "structural",
+      "text": "Bane of Chaos: Generates 1 FelfuryUnleash fel magic on an enemy, dealing 114 Chaos damage over 18 seconds.Inner Demon: The enemy takes an additional 13 + 100% SP Chaos Damage every 6 sec.Can only have 1 Bane active on a target at a time.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-4-2",
+      "kind": "structural",
+      "text": "Felfire Adept: Increases the critical strike chance of Sargeron Smite by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-7-2",
+      "kind": "structural",
+      "text": "Gul'dan's Prodigy: Reduces Energy cost and cast time of Fel Fireball by -15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-10-2",
+      "kind": "structural",
+      "text": "Hidden Power: Level 20 PassiveIncreases your spell damage by 15% of your Intellect and Spirit.In addition, Inner Demon now increases your spell damage and critical strike chance by an additional 20% of your Spirit.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-1-3",
+      "kind": "structural",
+      "text": "Felforged: Periodic damage dealt now has a 15% chance to grant you Felforged for 8 seconds.Felforged (Proc)Your next 3 Fel Fireballs have -30% reduced casting speed for 8 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-4-3",
+      "kind": "structural",
+      "text": "Fel Cannon: Increases the critical strike chance of Fel Fireball and Ruin by 15% on enemies above 75% health.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-7-3",
+      "kind": "structural",
+      "text": "Felwrath: Consumes 2 FelfuryBlast an enemy and all enemies near them with fel magic, dealing 69 + 40% SP Shadowflame Damage.Inner Demon: Striking at least 5 enemies with this spell causes it to deal an additional 108 + 10% SP Shadowflame Damage over 6 seconds, stacking 3 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-0-4",
+      "kind": "structural",
+      "text": "Withering: Your Fel Fireballs used with Felforged active now deal 30% increased damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-2-4",
+      "kind": "structural",
+      "text": "Black Magic: Increases the damage of your Bane of Chaos and Ruin by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-6-4",
+      "kind": "structural",
+      "text": "Cursed Flames: Critically striking with Fel Fireball now increases the critical strike chance of your next Fel Fireball within 10 seconds by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-8-4",
+      "kind": "structural",
+      "text": "Illidari Magi: Your periodic damage now has a 20% chance to generate 1 Felfury.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-10-4",
+      "kind": "structural",
+      "text": "Sculptor of Doom: Landing 3 direct critical strikes now grants Sculptor of Doom.Sculptor of DoomYour next Ruin within 8 seconds is instant cast.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-1-5",
+      "kind": "structural",
+      "text": "Felbreak: Interrupt a spell from being cast, preventing the target from casting spells of that school for 3 seconds and draining mana from the target based on your Spirit.Usable while moving.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-4-5",
+      "kind": "structural",
+      "text": "Shadow Magi: Reduces the cooldown of Annihilation by -15 sec and Sunder by -4 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-7-5",
+      "kind": "structural",
+      "text": "Infernal: Drop an infernal from the sky with grotesque magic, dealing 12 + 55% fire SP Fire damage to enemies in the radius, horrifying them for 4 seconds, and spawning an Infernal to fight by your side for 15 seconds.Inner Demon: Lasts 1 additional sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-0-6",
+      "kind": "structural",
+      "text": "Illidari Smiter: Critical strikes with Fel Fireball now generate 1 Felfury.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-2-6a",
+      "kind": "structural",
+      "text": "Herald of the Legion: Damage dealt by Bane of Chaos now radiates fel energy around the enemy, dealing 50% of the damage dealt to up to 8 nearby enemies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-2-6b",
+      "kind": "structural",
+      "text": "Fel Flamecasting: Damage dealt by Sargeron Smite now spreads your Cripple to 2 nearby enemies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-4-6",
+      "kind": "structural",
+      "text": "The True Blessing: Casting Annihilation now grants you Sculptor of Doom.Sculptor of DoomYour next Ruin within 8 seconds is instant cast.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-6-6a",
+      "kind": "structural",
+      "text": "Doomsayer: Critical strikes with Sargeron Smite now refund 1 Felfury.In addition, Sargeron Smite now deals 25% increased damage to enemies above 75% of their maximum health.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-6-6b",
+      "kind": "structural",
+      "text": "Infernal Summoner: Direct damage dealt now has a 5% chance to reset the cooldown of Infernal.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-8-6a",
+      "kind": "structural",
+      "text": "Oppressive Ruin: Damage dealt by Ruin now absorbs the next 99 healing on the target based on rank, up to 226 at rank 7, for 8 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-8-6b",
+      "kind": "structural",
+      "text": "Infernal Ruin: Every 3rd Ruin or Felwrath now spawns an Infernal to fight by your side for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-10-6",
+      "kind": "structural",
+      "text": "Unphased: Level 40 PassiveIncreases your spell penetration by 20, scaling with your level.In addition, reduces spell pushback suffered from damaging attacks by 50% while Inner Demon is active.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-1-7",
+      "kind": "structural",
+      "text": "Curse of Argus: Each time Bane of Chaos deals damage its damage is increased on the target by 1% for 6 seconds, stacking 20 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-3-7",
+      "kind": "structural",
+      "text": "Felshock: Direct critical strikes with Felfury spenders now extend the duration of Inner Demon by 1 sec and cause enemies struck to have a 3% increased chance to be hit by spells for 12 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-5-7",
+      "kind": "structural",
+      "text": "Fel Infusion: Increases critical strike chance of all party and raid members within 100 by 3%. Does not stack with similar effects.In addition, increases your critical strike chance by 3%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-7-7",
+      "kind": "structural",
+      "text": "Archimonde's Wrath: Increases the critical strike chance of your Felfury spenders by 1% for every 10 points of Energy you have at the time of casting.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-2-8",
+      "kind": "structural",
+      "text": "Infernal Doom: Ruin now has a -25% chance not to consume Felfury.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-4-8",
+      "kind": "structural",
+      "text": "Nether Spirit: Increases your spell critical strike chance by 20% of your Spirit.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-6-8",
+      "kind": "structural",
+      "text": "Chaotic Intuition: Damage dealt by Felstrikes now extends the duration of Cripple on the target by 1 sec and grants you 1% increased spell critical damage for 6 seconds, stacking 10 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-10-8",
+      "kind": "structural",
+      "text": "Man'ari Teachings: Level 50 PassiveIncreases your critical damage dealt by 100%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-2-9",
+      "kind": "structural",
+      "text": "Sargeras Embrace: Channel a beam of fel magic upon an enemy, slowing your target's movement speed by -60% for 5.5 seconds and dealing cond(gt(SPFI, SPS), 695+0+SPFI*0.85, 695+0+SPS*0.85) Shadowflame Damage at the end of the duration.For the duration, you may instant cast Fel Fireball and Ruin while channeling and they refund their cost.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-4-9",
+      "kind": "structural",
+      "text": "Malice of Gul'dan: Direct critical strikes now have a 60% chance to trigger a Felstrike and generate a Fragment of Malice.FelstrikeBurn an enemy for 54 + 30% SP Shadowflame Damage over 6 seconds, stacking 3 times.Fragment of MaliceRestores 5 Energy and increases your critical strike chance by 10% for 5 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/infernal:14-38-6-9",
+      "kind": "structural",
+      "text": "Fury of Archimonde: After generating 10 Felfury, your next Sargeron Smite within 15 seconds gains 50% increased critical strike chance and damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "observed:felsworn/infernal:community-practice",
+      "kind": "observed",
+      "text": "A current build centers Ruin and calls itself a single-target/AoE hybrid, while its author says it remains unfinished until the gear set is complete. Separate players recommend Infernal as easy, but offer no detailed rotation.",
+      "source_ids": [
+        "reddit:easy-specs-roster-2026-08-03",
+        "buildhub:cc016d7c-76f2-4a71-aa8f-e8a41b4d9de5"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_contexts"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Manual source reading; reported play remains bounded to the author's level, build, mode, and stated limitations.",
+      "derived_from_claim_ids": []
+    },
+    {
+      "id": "observed:felsworn/infernal:build-practice",
+      "kind": "observed",
+      "text": "The leading Ruin build targets both single target and AoE but is explicitly unfinished until its author completes the intended gear.",
+      "source_ids": [
+        "buildhub-builds-2026-08-05",
+        "buildhub:cc016d7c-76f2-4a71-aa8f-e8a41b4d9de5"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "community_build_snapshot"
+        ],
+        "build_or_mode": [
+          "documented_builds"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The captured build documents one contributor's practice; missing prose remains an explicit rotation gap.",
+      "derived_from_claim_ids": []
+    },
+    {
+      "id": "observed:felsworn/infernal:performance",
+      "kind": "observed",
+      "text": "The July community compilation reports 4,961 DPS in the source's damage context, and the August Mythic inventory lists 161 record(s). Neither signal is normalized for gear, encounter, role contribution, or player selection.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "pve_unspecified",
+          "mythic_dungeons"
+        ],
+        "build_or_mode": [
+          "damage"
+        ]
+      },
+      "confidence": "low",
+      "conflicts_with": [],
+      "notes": "Performance context is incomplete; do not use as a tier rank.",
+      "derived_from_claim_ids": []
+    },
+    {
+      "id": "observed:felsworn/infernal:sentiment-context",
+      "kind": "observed",
+      "text": "Praise: Players recommend Infernal as an approachable caster, and the documented hybrid aims to cover both bosses and packs. Contested evidence: Ease claims are broad, while the only detailed build is self-described as unfinished and gear-dependent.",
+      "source_ids": [
+        "reddit:easy-specs-roster-2026-08-03",
+        "buildhub:cc016d7c-76f2-4a71-aa8f-e8a41b4d9de5"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_sentiment"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Sentiment is reported by source and context, not averaged into a universal verdict.",
+      "derived_from_claim_ids": []
+    },
+    {
+      "id": "inference:felsworn/infernal:identity",
+      "kind": "inference",
+      "text": "A Shadowflame caster whose critical strikes create more burns, refunds, and Inner Demon pressure until the rotation becomes a self-feeding inferno.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:felsworn/infernal:14-38-4-0",
+        "talent:felsworn/infernal:14-38-10-0",
+        "talent:felsworn/infernal:14-38-2-1",
+        "talent:felsworn/infernal:14-38-2-9",
+        "talent:felsworn/infernal:14-38-4-9",
+        "talent:felsworn/infernal:14-38-6-9",
+        "observed:felsworn/infernal:community-practice",
+        "observed:felsworn/infernal:sentiment-context"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Descriptive playstyle classification from talent structure and manually reviewed current practice, not an official label."
+    },
+    {
+      "id": "inference:felsworn/infernal:failure-cost",
+      "kind": "inference",
+      "text": "A dry critical-strike streak, poor Felfury spending, or treating an unfinished hybrid build as optimized can make several linked effects fail together.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "observed:felsworn/infernal:community-practice",
+        "inference:felsworn/infernal:identity"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Failure-mode interpretation; exact thresholds require live verification."
+    }
+  ]
+}

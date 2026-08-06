@@ -1,0 +1,1574 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "sun-cleric/valkyrie",
+    "class": "Sun Cleric",
+    "name": "Valkyrie",
+    "roles": [
+      "Damage"
+    ],
+    "range": [
+      "Melee"
+    ]
+  },
+  "identity": {
+    "fantasy": "",
+    "one_line": "A dual-wield or heavy-weapon solar fighter using Radiant Marks, Glorious Execution, Sunslam, leaps, grips, and judgment windows. It mixes mana regeneration through attacks with proc-driven Holy burst. Current PvE builds are detailed and popular, but at least one was already labeled old after rapid changes.",
+    "primary_family": "",
+    "also_fits": [],
+    "claim_ids": [
+      "talent:sun-cleric/valkyrie:27-90-4-0",
+      "talent:sun-cleric/valkyrie:27-90-10-0",
+      "talent:sun-cleric/valkyrie:27-90-4-1",
+      "talent:sun-cleric/valkyrie:27-90-2-2",
+      "talent:sun-cleric/valkyrie:27-90-6-2",
+      "talent:sun-cleric/valkyrie:27-90-10-2",
+      "talent:sun-cleric/valkyrie:27-90-0-3",
+      "talent:sun-cleric/valkyrie:27-90-3-3",
+      "talent:sun-cleric/valkyrie:27-90-5-3",
+      "talent:sun-cleric/valkyrie:27-90-8-3",
+      "talent:sun-cleric/valkyrie:27-90-1-4",
+      "talent:sun-cleric/valkyrie:27-90-4-4",
+      "talent:sun-cleric/valkyrie:27-90-7-4",
+      "talent:sun-cleric/valkyrie:27-90-10-4",
+      "talent:sun-cleric/valkyrie:27-90-0-5",
+      "talent:sun-cleric/valkyrie:27-90-1-5a",
+      "talent:sun-cleric/valkyrie:27-90-1-5b",
+      "talent:sun-cleric/valkyrie:27-90-3-5",
+      "talent:sun-cleric/valkyrie:27-90-4-5",
+      "talent:sun-cleric/valkyrie:27-90-5-5a",
+      "talent:sun-cleric/valkyrie:27-90-5-5b",
+      "talent:sun-cleric/valkyrie:27-90-7-5a",
+      "talent:sun-cleric/valkyrie:27-90-7-5b",
+      "talent:sun-cleric/valkyrie:27-90-8-5",
+      "talent:sun-cleric/valkyrie:27-90-1-6",
+      "talent:sun-cleric/valkyrie:27-90-2-6",
+      "talent:sun-cleric/valkyrie:27-90-4-6",
+      "talent:sun-cleric/valkyrie:27-90-6-6",
+      "talent:sun-cleric/valkyrie:27-90-7-6",
+      "talent:sun-cleric/valkyrie:27-90-10-6",
+      "talent:sun-cleric/valkyrie:27-90-2-7",
+      "talent:sun-cleric/valkyrie:27-90-4-7a",
+      "talent:sun-cleric/valkyrie:27-90-4-7b",
+      "talent:sun-cleric/valkyrie:27-90-6-7",
+      "talent:sun-cleric/valkyrie:27-90-7-7",
+      "talent:sun-cleric/valkyrie:27-90-2-8",
+      "talent:sun-cleric/valkyrie:27-90-4-8",
+      "talent:sun-cleric/valkyrie:27-90-6-8",
+      "talent:sun-cleric/valkyrie:27-90-10-8",
+      "talent:sun-cleric/valkyrie:27-90-2-9",
+      "talent:sun-cleric/valkyrie:27-90-4-9",
+      "talent:sun-cleric/valkyrie:27-90-6-9"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "A dual-wield or heavy-weapon solar fighter using Radiant Marks, Glorious Execution, Sunslam, leaps, grips, and judgment windows. It mixes mana regeneration through attacks with proc-driven Holy burst. Current PvE builds are detailed and popular, but at least one was already labeled old after rapid changes.",
+    "resources": [],
+    "builders": [
+      {
+        "name": "Sunwalker",
+        "claim_ids": [
+          "talent:sun-cleric/valkyrie:27-90-7-6"
+        ]
+      },
+      {
+        "name": "Vow of the Valkyr",
+        "claim_ids": [
+          "talent:sun-cleric/valkyrie:27-90-10-6"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Fanaticism",
+        "claim_ids": [
+          "talent:sun-cleric/valkyrie:27-90-7-4"
+        ]
+      },
+      {
+        "name": "Sunwalker",
+        "claim_ids": [
+          "talent:sun-cleric/valkyrie:27-90-7-6"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Sunslam",
+        "claim_ids": [
+          "talent:sun-cleric/valkyrie:27-90-2-2"
+        ]
+      },
+      {
+        "name": "Justice",
+        "claim_ids": [
+          "talent:sun-cleric/valkyrie:27-90-8-3"
+        ]
+      },
+      {
+        "name": "Sun's Gift",
+        "claim_ids": [
+          "talent:sun-cleric/valkyrie:27-90-10-4"
+        ]
+      },
+      {
+        "name": "Arbiter of Light",
+        "claim_ids": [
+          "talent:sun-cleric/valkyrie:27-90-5-5a"
+        ]
+      },
+      {
+        "name": "Arbiter of Grace",
+        "claim_ids": [
+          "talent:sun-cleric/valkyrie:27-90-5-5b"
+        ]
+      },
+      {
+        "name": "Valkyr's Calling",
+        "claim_ids": [
+          "talent:sun-cleric/valkyrie:27-90-4-6"
+        ]
+      },
+      {
+        "name": "Vindicator",
+        "claim_ids": [
+          "talent:sun-cleric/valkyrie:27-90-6-7"
+        ]
+      },
+      {
+        "name": "Divine Retribution",
+        "claim_ids": [
+          "talent:sun-cleric/valkyrie:27-90-6-9"
+        ]
+      }
+    ],
+    "modes": [],
+    "single_target": "",
+    "aoe": "",
+    "movement_and_target_switching": "",
+    "defense_and_control": "",
+    "group_utility": "",
+    "failure_modes": [],
+    "claim_ids": [
+      "talent:sun-cleric/valkyrie:27-90-4-0",
+      "talent:sun-cleric/valkyrie:27-90-10-0",
+      "talent:sun-cleric/valkyrie:27-90-4-1",
+      "talent:sun-cleric/valkyrie:27-90-2-2",
+      "talent:sun-cleric/valkyrie:27-90-6-2",
+      "talent:sun-cleric/valkyrie:27-90-10-2",
+      "talent:sun-cleric/valkyrie:27-90-0-3",
+      "talent:sun-cleric/valkyrie:27-90-3-3",
+      "talent:sun-cleric/valkyrie:27-90-5-3",
+      "talent:sun-cleric/valkyrie:27-90-8-3",
+      "talent:sun-cleric/valkyrie:27-90-1-4",
+      "talent:sun-cleric/valkyrie:27-90-4-4",
+      "talent:sun-cleric/valkyrie:27-90-7-4",
+      "talent:sun-cleric/valkyrie:27-90-10-4",
+      "talent:sun-cleric/valkyrie:27-90-0-5",
+      "talent:sun-cleric/valkyrie:27-90-1-5a",
+      "talent:sun-cleric/valkyrie:27-90-1-5b",
+      "talent:sun-cleric/valkyrie:27-90-3-5",
+      "talent:sun-cleric/valkyrie:27-90-4-5",
+      "talent:sun-cleric/valkyrie:27-90-5-5a",
+      "talent:sun-cleric/valkyrie:27-90-5-5b",
+      "talent:sun-cleric/valkyrie:27-90-7-5a",
+      "talent:sun-cleric/valkyrie:27-90-7-5b",
+      "talent:sun-cleric/valkyrie:27-90-8-5",
+      "talent:sun-cleric/valkyrie:27-90-1-6",
+      "talent:sun-cleric/valkyrie:27-90-2-6",
+      "talent:sun-cleric/valkyrie:27-90-4-6",
+      "talent:sun-cleric/valkyrie:27-90-6-6",
+      "talent:sun-cleric/valkyrie:27-90-7-6",
+      "talent:sun-cleric/valkyrie:27-90-10-6",
+      "talent:sun-cleric/valkyrie:27-90-2-7",
+      "talent:sun-cleric/valkyrie:27-90-4-7a",
+      "talent:sun-cleric/valkyrie:27-90-4-7b",
+      "talent:sun-cleric/valkyrie:27-90-6-7",
+      "talent:sun-cleric/valkyrie:27-90-7-7",
+      "talent:sun-cleric/valkyrie:27-90-2-8",
+      "talent:sun-cleric/valkyrie:27-90-4-8",
+      "talent:sun-cleric/valkyrie:27-90-6-8",
+      "talent:sun-cleric/valkyrie:27-90-10-8",
+      "talent:sun-cleric/valkyrie:27-90-2-9",
+      "talent:sun-cleric/valkyrie:27-90-4-9",
+      "talent:sun-cleric/valkyrie:27-90-6-9"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Glorious Execution",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-0"
+          ]
+        },
+        {
+          "name": "Valkyr's Grip",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-10-0"
+          ]
+        },
+        {
+          "name": "Odyn's Vanguard",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-1"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:sun-cleric/valkyrie:27-90-4-0",
+        "talent:sun-cleric/valkyrie:27-90-10-0",
+        "talent:sun-cleric/valkyrie:27-90-4-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Sunslam",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-2-2"
+          ]
+        },
+        {
+          "name": "Sunsworn",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-6-2"
+          ]
+        },
+        {
+          "name": "Valorous Champion",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-10-2"
+          ]
+        },
+        {
+          "name": "Radiant Marks",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-0-3"
+          ]
+        },
+        {
+          "name": "Valkyr's Grip",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-3-3"
+          ]
+        },
+        {
+          "name": "Light of the Sun",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-5-3"
+          ]
+        },
+        {
+          "name": "Justice",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-8-3"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:sun-cleric/valkyrie:27-90-2-2",
+        "talent:sun-cleric/valkyrie:27-90-6-2",
+        "talent:sun-cleric/valkyrie:27-90-10-2",
+        "talent:sun-cleric/valkyrie:27-90-0-3",
+        "talent:sun-cleric/valkyrie:27-90-3-3",
+        "talent:sun-cleric/valkyrie:27-90-5-3",
+        "talent:sun-cleric/valkyrie:27-90-8-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Fervor of the Sun",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-1-4"
+          ]
+        },
+        {
+          "name": "Champion of the Sun",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-4"
+          ]
+        },
+        {
+          "name": "Fanaticism",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-7-4"
+          ]
+        },
+        {
+          "name": "Sun's Gift",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-10-4"
+          ]
+        },
+        {
+          "name": "Gift of the Sun",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-0-5"
+          ]
+        },
+        {
+          "name": "Atone, Or Else",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-1-5a"
+          ]
+        },
+        {
+          "name": "It's Always Sunny",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-1-5b"
+          ]
+        },
+        {
+          "name": "Impartial",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-3-5"
+          ]
+        },
+        {
+          "name": "Champion's Arrival",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-5"
+          ]
+        },
+        {
+          "name": "Arbiter of Light",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-5-5a"
+          ]
+        },
+        {
+          "name": "Arbiter of Grace",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-5-5b"
+          ]
+        },
+        {
+          "name": "Judgement of the Valkyrie",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-7-5a"
+          ]
+        },
+        {
+          "name": "Leap of the Valkyrie",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-7-5b"
+          ]
+        },
+        {
+          "name": "Herald of Purity",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-8-5"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:sun-cleric/valkyrie:27-90-1-4",
+        "talent:sun-cleric/valkyrie:27-90-4-4",
+        "talent:sun-cleric/valkyrie:27-90-7-4",
+        "talent:sun-cleric/valkyrie:27-90-10-4",
+        "talent:sun-cleric/valkyrie:27-90-0-5",
+        "talent:sun-cleric/valkyrie:27-90-1-5a",
+        "talent:sun-cleric/valkyrie:27-90-1-5b",
+        "talent:sun-cleric/valkyrie:27-90-3-5",
+        "talent:sun-cleric/valkyrie:27-90-4-5",
+        "talent:sun-cleric/valkyrie:27-90-5-5a",
+        "talent:sun-cleric/valkyrie:27-90-5-5b",
+        "talent:sun-cleric/valkyrie:27-90-7-5a",
+        "talent:sun-cleric/valkyrie:27-90-7-5b",
+        "talent:sun-cleric/valkyrie:27-90-8-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Trial of Valor",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-1-6"
+          ]
+        },
+        {
+          "name": "Blessed Hammer",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-2-6"
+          ]
+        },
+        {
+          "name": "Valkyr's Calling",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-6"
+          ]
+        },
+        {
+          "name": "March of the Valkyr",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-6-6"
+          ]
+        },
+        {
+          "name": "Sunwalker",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-7-6"
+          ]
+        },
+        {
+          "name": "Vow of the Valkyr",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-10-6"
+          ]
+        },
+        {
+          "name": "Blessed Magic",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-2-7"
+          ]
+        },
+        {
+          "name": "Last Call",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-7a"
+          ]
+        },
+        {
+          "name": "By The Light",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-7b"
+          ]
+        },
+        {
+          "name": "Vindicator",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-6-7"
+          ]
+        },
+        {
+          "name": "Radiant Power",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-7-7"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:sun-cleric/valkyrie:27-90-1-6",
+        "talent:sun-cleric/valkyrie:27-90-2-6",
+        "talent:sun-cleric/valkyrie:27-90-4-6",
+        "talent:sun-cleric/valkyrie:27-90-6-6",
+        "talent:sun-cleric/valkyrie:27-90-7-6",
+        "talent:sun-cleric/valkyrie:27-90-10-6",
+        "talent:sun-cleric/valkyrie:27-90-2-7",
+        "talent:sun-cleric/valkyrie:27-90-4-7a",
+        "talent:sun-cleric/valkyrie:27-90-4-7b",
+        "talent:sun-cleric/valkyrie:27-90-6-7",
+        "talent:sun-cleric/valkyrie:27-90-7-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Pendant of the Sun",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-2-8"
+          ]
+        },
+        {
+          "name": "Radiant Halberd",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-8"
+          ]
+        },
+        {
+          "name": "Solar Empowerment",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-6-8"
+          ]
+        },
+        {
+          "name": "Holy Giant",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-10-8"
+          ]
+        },
+        {
+          "name": "Light's Blessing",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-2-9"
+          ]
+        },
+        {
+          "name": "Knight of Dawn",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-4-9"
+          ]
+        },
+        {
+          "name": "Divine Retribution",
+          "claim_ids": [
+            "talent:sun-cleric/valkyrie:27-90-6-9"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:sun-cleric/valkyrie:27-90-2-8",
+        "talent:sun-cleric/valkyrie:27-90-4-8",
+        "talent:sun-cleric/valkyrie:27-90-6-8",
+        "talent:sun-cleric/valkyrie:27-90-10-8",
+        "talent:sun-cleric/valkyrie:27-90-2-9",
+        "talent:sun-cleric/valkyrie:27-90-4-9",
+        "talent:sun-cleric/valkyrie:27-90-6-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "leveling_30_49": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "level_50_60": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "boss": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "dungeon_aoe": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "pvp": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [],
+    "avoid_if": []
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [],
+  "sentiment": {
+    "praise": [],
+    "frustrations": [],
+    "contested": []
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 4,
+    "latest_update": "2026-08-04T17:07:11.62+00:00",
+    "top_title": "PvE Valkyrie for Dungeons (M+ with Video Guide)",
+    "top_url": "https://coabuildhub.com/build/01175a7b-9331-48b6-98a0-fc2ce22ce560",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:01175a7b-9331-48b6-98a0-fc2ce22ce560"
+    ]
+  },
+  "coverage": {
+    "mechanical": "structural_baseline",
+    "community": "indexed",
+    "performance": "missing",
+    "video": "missing",
+    "overall_confidence": "low",
+    "gaps": [
+      "Effective core loop needs recent guide or player cross-check.",
+      "Contextual complexity values are not yet researched.",
+      "Recent performance, sentiment, issues, and video evidence are not yet reconciled."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-4-0",
+      "kind": "structural",
+      "text": "Glorious Execution: Strike with both weapons dealing Weapon Damage plus 8 Physical damage and regenerate mana equal to 5% of the damage dealt.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-10-0",
+      "kind": "structural",
+      "text": "Valkyr's Grip: Level 10 PassiveAllows you to dual wield and to wield a Two-Handed Mace, Sword, or Polearm in each hand and your chance to hit is increased by 6%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-4-1",
+      "kind": "structural",
+      "text": "Odyn's Vanguard: Melee attacks now have a 20% chance to reset the cooldown of Glorious Execution.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-2-2",
+      "kind": "structural",
+      "text": "Sunslam: Slam an enemy every 1 sec with the might of the sun, dealing 28 + 15.94% AP Holy damage and stunning them for 1 seconds. Lasts 4 seconds.Only usable while Dawn is active. Usable while moving.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-6-2",
+      "kind": "structural",
+      "text": "Sunsworn: Increases your Physical damage dealt by 6% and auto attacks now have a 10% chance to restore 3% of your maximum mana.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-10-2",
+      "kind": "structural",
+      "text": "Valorous Champion: Level 20 PassiveIncreases your attack power by 25% and your spell hit rating by 5% of your Strength.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-0-3",
+      "kind": "structural",
+      "text": "Radiant Marks: Reduces the channel time of Sunslam by 1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-3-3",
+      "kind": "structural",
+      "text": "Valkyr's Grip: Increases your off-hand Weapon Damage dealt by 20% and reduces the duration of disarm effects by -15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-5-3",
+      "kind": "structural",
+      "text": "Light of the Sun: Parrying an attack now restores 3% of your maximum health and increases your chance to parry the next attack by 30%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-8-3",
+      "kind": "structural",
+      "text": "Justice: Spin and strike with both weapons dealing 40% Weapon Damage plus 6 + 20% fire SP to up to 5 enemies within 5 yds.Your main-hand strike will deal Fire damage and your off-hand strike will deal Physical damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-1-4",
+      "kind": "structural",
+      "text": "Fervor of the Sun: Fulfilling a Vow now increases the damage of your Sunslam by 10% for 1 minute, stacking 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-4-4",
+      "kind": "structural",
+      "text": "Champion of the Sun: Become a champion of An'she, causing your melee auto attacks to deal an additional 50% of the damage dealt as Holy damage. Lasts 20 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-7-4",
+      "kind": "structural",
+      "text": "Fanaticism: Increases the effectiveness of Gavels and Horusath Blast and reduces their mana cost by -20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-10-4",
+      "kind": "structural",
+      "text": "Sun's Gift: Level 30 PassiveYour Horusath Blast now deals additional damage scaling with your attack power and grants allies Replenishment.ReplenishmentRestores 1% maximum mana every 5 sec to allies within 100 yds for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-0-5",
+      "kind": "structural",
+      "text": "Gift of the Sun: Increases your critical strike chance with Holy spells and abilities by 50% on enemies above 80% health.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-1-5a",
+      "kind": "structural",
+      "text": "Atone, Or Else: Fervor of the Sun now stacks up to 3 additional times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-1-5b",
+      "kind": "structural",
+      "text": "It's Always Sunny: Activating Dawn now reduces the cooldowns of Radiance, Valkyr's Calling, and Sunslam by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-3-5",
+      "kind": "structural",
+      "text": "Impartial: Increases your Strength and maximum mana by 5% and your expertise by 5.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-4-5",
+      "kind": "structural",
+      "text": "Champion's Arrival: Increases the duration of Champion of the Sun and Chains of Light by 5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-5-5a",
+      "kind": "structural",
+      "text": "Arbiter of Light: While Vow of Light is active, your Gavel of Light now restores an additional 100% health equal to the damage dealt.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-5-5b",
+      "kind": "structural",
+      "text": "Arbiter of Grace: While Vow of Grace is active, your Glorious Execution now regenerates an additional 15% mana equal to the damage dealt.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-7-5a",
+      "kind": "structural",
+      "text": "Judgement of the Valkyrie: Reduces the cooldown of Judgement Day by -15 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-7-5b",
+      "kind": "structural",
+      "text": "Leap of the Valkyrie: Reduces the cooldown of Sun Stride by -4 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-8-5",
+      "kind": "structural",
+      "text": "Herald of Purity: Damage dealt by Justice now has an 8% chance to reset its own cooldown.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-1-6",
+      "kind": "structural",
+      "text": "Trial of Valor: Fulfilling a Vow now reduces the cooldown of Horusath Blast by -2 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-2-6",
+      "kind": "structural",
+      "text": "Blessed Hammer: Reduces the cooldown of Solar Invocation spells by -10 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-4-6",
+      "kind": "structural",
+      "text": "Valkyr's Calling: Target an enemy and leap into the air, becoming immune to all physical attacks and spells for 2 seconds. At the end of the duration, you charge back down, dealing 428 + 100% AP + 22.5% SP Holy damage to all enemies within 8 yds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-6-6",
+      "kind": "structural",
+      "text": "March of the Valkyr: Increases the all damage dealt by party and raid members by 3%. Does not stack with similar effects.In addition, your chance to parry is increased by 5%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-7-6",
+      "kind": "structural",
+      "text": "Sunwalker: Dealing melee damage now generates a stack of Sunwalker.SunwalkerReduces the cast time and mana cost of your next Shine by -20% for 30 seconds, stacking 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-10-6",
+      "kind": "structural",
+      "text": "Vow of the Valkyr: Auto attacks generate 1 Solar Power and deal 10% increased damage.Fulfillment: Melee ability damage triggers an auto attack with each weapon.Only 1 Vow can be active at a time.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-2-7",
+      "kind": "structural",
+      "text": "Blessed Magic: Casting Horusath Blast now resets the cooldown of Glorious Execution.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-4-7a",
+      "kind": "structural",
+      "text": "Last Call: Increases the duration of Valkyr's Calling by 1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-4-7b",
+      "kind": "structural",
+      "text": "By The Light: Increases the critical strike chance of Valkyr's Calling by 50%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-6-7",
+      "kind": "structural",
+      "text": "Vindicator: Your Glorious Execution now ignores -10% of the target's armor while Vow of the Valkyr is active.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-7-7",
+      "kind": "structural",
+      "text": "Radiant Power: Each stack of Sunwalker now increases the critical strike chance of Shine by 3%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-2-8",
+      "kind": "structural",
+      "text": "Pendant of the Sun: Activate your pendant of the sun, refreshing the duration and all charges of Dawn.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-4-8",
+      "kind": "structural",
+      "text": "Radiant Halberd: Direct Physical damage dealt now reduces the cooldown of Champion of the Sun by -1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-6-8",
+      "kind": "structural",
+      "text": "Solar Empowerment: Fulfilling your Vow now unleashes a chain of light at your target, dealing 91 + 23% holy SP + 10% AP Holy damage and then bouncing to up to 5 additional enemies, dealing reduced damage with each strike.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-10-8",
+      "kind": "structural",
+      "text": "Holy Giant: Level 50 PassiveDoubles the effectiveness of Vow of the Valkyr.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-2-9",
+      "kind": "structural",
+      "text": "Light's Blessing: Casting Sunslam now reduces the cooldown of Pendant of the Sun by -10 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-4-9",
+      "kind": "structural",
+      "text": "Knight of Dawn: Your Glorious Execution now has a 20% chance to strike 1 additional time.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/valkyrie:27-90-6-9",
+      "kind": "structural",
+      "text": "Divine Retribution: Accumulates 25% of your damage dealt to on the target and unleashes it after 8 seconds, damaging enemies within 10 yds as Holy damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    }
+  ]
+}

@@ -1,0 +1,966 @@
+{
+  "baseline": "pyromancer--incineration.json",
+  "set": {
+    "identity": {
+      "fantasy": "A mobile Ignite specialist who layers long burns and detonates their stored value with Explode or Pyroclasm.",
+      "one_line": "Apply Ignite and Infernus, build Heat and periodic coverage, then use Fired Up before consuming stored damage at the profitable moment.",
+      "primary_family": "planners",
+      "also_fits": [
+        "sequencers"
+      ],
+      "playstyle_tags": [
+        "stored-ignite-detonator",
+        "dot-caster",
+        "high-ceiling-burster"
+      ],
+      "claim_ids": [
+        "talent:pyromancer/incineration:24-62-4-0",
+        "talent:pyromancer/incineration:24-62-10-0",
+        "talent:pyromancer/incineration:24-62-4-1",
+        "talent:pyromancer/incineration:24-62-6-3",
+        "observed:pyromancer/incineration:feel-conflict",
+        "observed:pyromancer/incineration:detonation-ceiling",
+        "inference:pyromancer/incineration:playstyle-identity"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "Maintain burns, use instant Ember spenders under Fired Up, and detonate only after enough periodic value accumulates.",
+      "single_target": "Durable targets reward full DoT coverage and delayed Pyroclasm.",
+      "aoe": "Spread burns and use resets, though players describe AoE as weaker than Draconic.",
+      "movement_and_target_switching": "Ignite and instant spenders permit kiting; detonation setup constrains swaps.",
+      "defense_and_control": "Control and mobile damage support kiting more than durability.",
+      "group_utility": "Sustained burns and dispel punishment create pressure.",
+      "failure_modes": [
+        {
+          "text": "Early Pyroclasm consumption sharply reduces payoff.",
+          "claim_ids": [
+            "inference:pyromancer/incineration:failure-cost",
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1"
+          ]
+        },
+        {
+          "text": "Target swaps discard ramp.",
+          "claim_ids": [
+            "inference:pyromancer/incineration:failure-cost",
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1"
+          ]
+        },
+        {
+          "text": "Fired Up without Embers wastes burst.",
+          "claim_ids": [
+            "inference:pyromancer/incineration:failure-cost",
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "talent:pyromancer/incineration:24-62-4-0",
+        "talent:pyromancer/incineration:24-62-10-0",
+        "talent:pyromancer/incineration:24-62-4-1",
+        "talent:pyromancer/incineration:24-62-6-3",
+        "talent:pyromancer/incineration:24-62-6-8",
+        "observed:pyromancer/incineration:feel-conflict",
+        "observed:pyromancer/incineration:detonation-ceiling",
+        "observed:pyromancer/incineration:mobility-and-pvp",
+        "observed:pyromancer/incineration:build-practice",
+        "inference:pyromancer/incineration:playstyle-identity"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "Ignite establishes a readable fire loop.",
+        "strengths": [
+          "Mobile Ignite",
+          "Clear theme"
+        ],
+        "cautions": [
+          "Incomplete ramp",
+          "Few effects"
+        ],
+        "claim_ids": [
+          "talent:pyromancer/incineration:24-62-4-0",
+          "talent:pyromancer/incineration:24-62-10-0",
+          "talent:pyromancer/incineration:24-62-4-1",
+          "talent:pyromancer/incineration:24-62-6-3",
+          "observed:pyromancer/incineration:feel-conflict",
+          "observed:pyromancer/incineration:detonation-ceiling",
+          "observed:pyromancer/incineration:mobility-and-pvp",
+          "inference:pyromancer/incineration:playstyle-identity"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "Fired Up creates mobile burst with growing DoT interaction.",
+        "strengths": [
+          "Instant burst",
+          "Kiting"
+        ],
+        "cautions": [
+          "Clunky for some",
+          "AoE lags"
+        ],
+        "claim_ids": [
+          "talent:pyromancer/incineration:24-62-4-0",
+          "talent:pyromancer/incineration:24-62-10-0",
+          "talent:pyromancer/incineration:24-62-4-1",
+          "talent:pyromancer/incineration:24-62-6-3",
+          "observed:pyromancer/incineration:feel-conflict",
+          "observed:pyromancer/incineration:detonation-ceiling",
+          "observed:pyromancer/incineration:mobility-and-pvp",
+          "inference:pyromancer/incineration:playstyle-identity"
+        ]
+      },
+      "level_50_60": {
+        "feel": "Late talents raise the detonation ceiling and timing demand.",
+        "strengths": [
+          "High ST ceiling",
+          "Optimization"
+        ],
+        "cautions": [
+          "Timing",
+          "Bugs"
+        ],
+        "claim_ids": [
+          "talent:pyromancer/incineration:24-62-4-0",
+          "talent:pyromancer/incineration:24-62-10-0",
+          "talent:pyromancer/incineration:24-62-4-1",
+          "talent:pyromancer/incineration:24-62-6-3",
+          "observed:pyromancer/incineration:feel-conflict",
+          "observed:pyromancer/incineration:detonation-ceiling",
+          "observed:pyromancer/incineration:mobility-and-pvp",
+          "inference:pyromancer/incineration:playstyle-identity"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, Durable targets reward full DoT coverage and delayed Pyroclasm.",
+        "strengths": [
+          "Ramp",
+          "Detonation"
+        ],
+        "cautions": [
+          "Phase changes",
+          "Early consume"
+        ],
+        "claim_ids": [
+          "talent:pyromancer/incineration:24-62-4-0",
+          "talent:pyromancer/incineration:24-62-10-0",
+          "talent:pyromancer/incineration:24-62-4-1",
+          "talent:pyromancer/incineration:24-62-6-3",
+          "observed:pyromancer/incineration:feel-conflict",
+          "observed:pyromancer/incineration:detonation-ceiling",
+          "observed:pyromancer/incineration:mobility-and-pvp",
+          "inference:pyromancer/incineration:playstyle-identity"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, Spread burns and use resets, though players describe AoE as weaker than Draconic.",
+        "strengths": [
+          "DoT spread",
+          "Pressure"
+        ],
+        "cautions": [
+          "Short packs",
+          "AoE"
+        ],
+        "claim_ids": [
+          "talent:pyromancer/incineration:24-62-4-0",
+          "talent:pyromancer/incineration:24-62-10-0",
+          "talent:pyromancer/incineration:24-62-4-1",
+          "talent:pyromancer/incineration:24-62-6-3",
+          "observed:pyromancer/incineration:feel-conflict",
+          "observed:pyromancer/incineration:detonation-ceiling",
+          "observed:pyromancer/incineration:mobility-and-pvp",
+          "inference:pyromancer/incineration:playstyle-identity"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, Ignite and instant spenders permit kiting; detonation setup constrains swaps. Control and mobile damage support kiting more than durability.",
+        "strengths": [
+          "Quick burst",
+          "Mobility"
+        ],
+        "cautions": [
+          "Pre-Heat",
+          "Dispels"
+        ],
+        "claim_ids": [
+          "talent:pyromancer/incineration:24-62-4-0",
+          "talent:pyromancer/incineration:24-62-10-0",
+          "talent:pyromancer/incineration:24-62-4-1",
+          "talent:pyromancer/incineration:24-62-6-3",
+          "observed:pyromancer/incineration:feel-conflict",
+          "observed:pyromancer/incineration:detonation-ceiling",
+          "observed:pyromancer/incineration:mobility-and-pvp",
+          "inference:pyromancer/incineration:playstyle-identity"
+        ]
+      }
+    },
+    "complexity": {
+      "core_actions": {
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "Burns, spenders, Explode, Pyroclasm and Fired Up form the bar. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Burns, spenders, Explode, Pyroclasm and Fired Up form the bar. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Burns, spenders, Explode, Pyroclasm and Fired Up form the bar. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "Burns, spenders, Explode, Pyroclasm and Fired Up form the bar. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Burns, spenders, Explode, Pyroclasm and Fired Up form the bar. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Burns, spenders, Explode, Pyroclasm and Fired Up form the bar. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        }
+      },
+      "state_tracking": {
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "DoTs, stored damage, Heat, Embers and refunds overlap. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "DoTs, stored damage, Heat, Embers and refunds overlap. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "DoTs, stored damage, Heat, Embers and refunds overlap. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "DoTs, stored damage, Heat, Embers and refunds overlap. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "DoTs, stored damage, Heat, Embers and refunds overlap. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "DoTs, stored damage, Heat, Embers and refunds overlap. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "Detonation requires periodic setup. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Detonation requires periodic setup. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Detonation requires periodic setup. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "Detonation requires periodic setup. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Detonation requires periodic setup. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Detonation requires periodic setup. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "Refunds and target lifetime alter consumption timing. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Refunds and target lifetime alter consumption timing. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Refunds and target lifetime alter consumption timing. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "Refunds and target lifetime alter consumption timing. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Refunds and target lifetime alter consumption timing. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Refunds and target lifetime alter consumption timing. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "Mobility lowers cast friction but not timing demand. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Mobility lowers cast friction but not timing demand. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Mobility lowers cast friction but not timing demand. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "Mobility lowers cast friction but not timing demand. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Mobility lowers cast friction but not timing demand. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Mobility lowers cast friction but not timing demand. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        }
+      },
+      "failure_cost": {
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "Premature consumption erases a ramp cycle. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Premature consumption erases a ramp cycle. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Premature consumption erases a ramp cycle. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "Premature consumption erases a ramp cycle. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Premature consumption erases a ramp cycle. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Premature consumption erases a ramp cycle. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0",
+            "talent:pyromancer/incineration:24-62-4-1",
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You enjoy DoT ramp ending in one huge explosion.",
+          "claim_ids": [
+            "inference:pyromancer/incineration:playstyle-identity",
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0"
+          ]
+        },
+        {
+          "text": "You want mobile pressure.",
+          "claim_ids": [
+            "inference:pyromancer/incineration:playstyle-identity",
+            "talent:pyromancer/incineration:24-62-4-0",
+            "talent:pyromancer/incineration:24-62-10-0"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You want instant swaps or effortless AoE.",
+          "claim_ids": [
+            "inference:pyromancer/incineration:failure-cost",
+            "observed:pyromancer/incineration:feel-conflict"
+          ]
+        },
+        {
+          "text": "You dislike holding payoff.",
+          "claim_ids": [
+            "inference:pyromancer/incineration:failure-cost",
+            "observed:pyromancer/incineration:feel-conflict"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Fans praise huge numbers and classic fire fantasy.",
+          "claim_ids": [
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "observed:pyromancer/incineration:build-practice"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Others find the ramp clunky.",
+          "claim_ids": [
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "inference:pyromancer/incineration:failure-cost"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "Recent fixes make launch verdicts provisional.",
+          "claim_ids": [
+            "observed:pyromancer/incineration:feel-conflict",
+            "observed:pyromancer/incineration:detonation-ceiling",
+            "observed:pyromancer/incineration:mobility-and-pvp",
+            "observed:pyromancer/incineration:performance-context"
+          ]
+        }
+      ]
+    },
+    "performance_signal_ids": [
+      "observed:pyromancer/incineration:performance-context"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "manual_recent_source_review",
+      "performance": "limited_uncontrolled",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium",
+      "gaps": [
+        "No post-patch guide.",
+        "Storage math needs testing."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "Ignite establishes a readable fire loop.",
+      "observed_changes": [
+        "Incomplete ramp",
+        "Few effects"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "Ignite establishes a readable fire loop.",
+      "observed_changes": [
+        "Incomplete ramp",
+        "Few effects"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "Fired Up creates mobile burst with growing DoT interaction.",
+      "observed_changes": [
+        "Clunky for some",
+        "AoE lags"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "Fired Up creates mobile burst with growing DoT interaction.",
+      "observed_changes": [
+        "Clunky for some",
+        "AoE lags"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "Late talents raise the detonation ceiling and timing demand.",
+      "observed_changes": [
+        "Timing",
+        "Bugs"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:pyromancer/incineration:feel-conflict",
+      "kind": "observed",
+      "text": "Players split between calling Incineration clunky and calling its DoT-heavy burst the ultimate fire-mage experience.",
+      "source_ids": [
+        "reddit:pyromancer-comparison-2026-07-22"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:pyromancer/incineration:detonation-ceiling",
+      "kind": "observed",
+      "text": "Discussion identifies detonation timing as major optimization because Pyroclasm value changes with stored damage.",
+      "source_ids": [
+        "reddit:pyromancer-comparison-2026-07-22"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:pyromancer/incineration:mobility-and-pvp",
+      "kind": "observed",
+      "text": "A player reports strong 1v1 mobility but awkward pre-Heat through self-healing.",
+      "source_ids": [
+        "reddit:pyromancer-comparison-2026-07-22"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:pyromancer/incineration:build-practice",
+      "kind": "observed",
+      "text": "The captured Explode ST build documents one detonation setup, not an AoE guide.",
+      "source_ids": [
+        "buildhub-builds-2026-08-05",
+        "buildhub:ccf0c5cd-363d-4f24-9812-3d23f23fbc65"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "community_build_snapshot"
+        ],
+        "build_or_mode": [
+          "documented_build"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The guide documents one current way to play; it is not treated as proof of optimality."
+    },
+    {
+      "id": "observed:pyromancer/incineration:performance-context",
+      "kind": "observed",
+      "text": "The July list reports 5,044 DPS and 65 Mythic records without normalization.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "uncontrolled_performance_signals"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "low",
+      "conflicts_with": [],
+      "notes": "Do not convert this into a tier ranking."
+    },
+    {
+      "id": "inference:pyromancer/incineration:playstyle-identity",
+      "kind": "inference",
+      "text": "A mobile Ignite specialist who layers long burns and detonates their stored value with Explode or Pyroclasm.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:pyromancer/incineration:24-62-4-0",
+        "talent:pyromancer/incineration:24-62-10-0",
+        "talent:pyromancer/incineration:24-62-4-1",
+        "talent:pyromancer/incineration:24-62-6-3",
+        "observed:pyromancer/incineration:feel-conflict",
+        "observed:pyromancer/incineration:detonation-ceiling"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Descriptive playstyle classification, not an official label."
+    },
+    {
+      "id": "inference:pyromancer/incineration:failure-cost",
+      "kind": "inference",
+      "text": "Early Pyroclasm consumption sharply reduces payoff.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:pyromancer/incineration:24-62-4-0",
+        "talent:pyromancer/incineration:24-62-10-0",
+        "talent:pyromancer/incineration:24-62-4-1",
+        "talent:pyromancer/incineration:24-62-6-3",
+        "talent:pyromancer/incineration:24-62-6-8",
+        "observed:pyromancer/incineration:feel-conflict",
+        "observed:pyromancer/incineration:detonation-ceiling",
+        "observed:pyromancer/incineration:mobility-and-pvp"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Direction is supported; exact throughput cost is not measured."
+    }
+  ]
+}

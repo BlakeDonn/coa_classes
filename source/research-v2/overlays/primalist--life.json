@@ -1,0 +1,922 @@
+{
+  "baseline": "primalist--life.json",
+  "set": {
+    "identity": {
+      "fantasy": "A primal grove champion who heals by striking enemies, then channels elemental spirits, sacred ground, and ancient forms into party-wide offense and recovery.",
+      "primary_family": "strategists",
+      "also_fits": [
+        "duelists"
+      ],
+      "playstyle_tags": [
+        "melee-healing-support",
+        "buff-support",
+        "hybrid-healer"
+      ],
+      "one_line": "Hammer of Life makes melee attacks heal allies and damage enemies, while Spirits of Life, Grove effects, and elemental infusions expand that conversion. Ancient of War and Ancient of Lore offer different party-amplification forms, and the tree brings both raid haste and a damage aura. It is a genuine hybrid rather than a passive buff bot.",
+      "claim_ids": [
+        "talent:primalist/life:31-84-4-0",
+        "observed:primalist/life:hybrid-report",
+        "inference:primalist/life:contact-cost",
+        "observed:primalist/life:performance",
+        "talent:primalist/life:31-84-2-9a",
+        "talent:primalist/life:31-84-2-9b",
+        "talent:primalist/life:31-84-4-5",
+        "observed:primalist/life:recent-manual-review"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "Attack through Hammer of Life to convert melee pressure into healing, build and spend Spirit Charge, maintain Grovekeeper's Presence and elemental infusions, place Ring of Life or Sacred Grove for group events, and choose Ancient of War or Ancient of Lore for the party's current offensive or healing need.",
+      "single_target": "Maintain Hammer of Life contact, use Spirit Charge and empowered hammers, and weave direct support cooldowns without abandoning melee uptime.",
+      "aoe": "Seismic Wave, Elemental Cascade, Ring of Life, Sacred Grove, and short-cooldown healing damage let the spec support large pulls while fighting inside them.",
+      "movement_and_target_switching": "Primalist movement and instant abilities help it stay connected, but losing melee contact reduces both damage and healing conversion.",
+      "defense_and_control": "Plate armor, rage-based healing, Sacred Grove, Protector's Hand, bindings, and elemental defensive infusions make the hybrid unusually durable.",
+      "group_utility": "Haste, healing effectiveness, hit, armor, enemy armor reduction, attack power, mana regeneration, damage auras, and Ancient forms create a broad support portfolio.",
+      "failure_modes": [
+        {
+          "text": "Losing melee uptime suppresses both personal damage and Hammer of Life healing, while choosing the wrong Ancient form misaligns the party window.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost"
+          ]
+        },
+        {
+          "text": "Movement or a target swap can interrupt the intended payoff: primalist movement and instant abilities help it stay connected, but losing melee contact reduces both damage and healing conversion.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a"
+          ]
+        },
+        {
+          "text": "Spending recovery or control too early leaves less protection for the next pressure event: plate armor, rage-based healing, sacred grove, protector's hand, bindings, and elemental defensive infusions make the hybrid unusually durable.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "talent:primalist/life:31-84-4-0",
+        "observed:primalist/life:hybrid-report",
+        "inference:primalist/life:contact-cost",
+        "observed:primalist/life:performance",
+        "talent:primalist/life:31-84-2-9a",
+        "talent:primalist/life:31-84-2-9b",
+        "talent:primalist/life:31-84-4-5",
+        "observed:primalist/life:recent-manual-review"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "A durable melee support that begins healing through attacks and gains Spirit Charge, party presence, and empowered hammers early.",
+        "strengths": [
+          "No-mana melee healing core",
+          "Good solo sustain",
+          "Early group buffs"
+        ],
+        "cautions": [
+          "Must stay in melee",
+          "Hybrid contribution is hard to read on one meter"
+        ],
+        "claim_ids": [
+          "observed:primalist/life:hybrid-report",
+          "talent:primalist/life:31-84-4-0",
+          "inference:primalist/life:contact-cost",
+          "observed:primalist/life:performance",
+          "talent:primalist/life:31-84-2-9a",
+          "talent:primalist/life:31-84-2-9b",
+          "talent:primalist/life:31-84-4-5",
+          "observed:primalist/life:recent-manual-review"
+        ]
+      },
+      "level_50_60": {
+        "feel": "A full offensive-support healer choosing between Ancient of War and Lore while managing grove zones, infusions, Spirit Charge, and melee conversion.",
+        "strengths": [
+          "175 Mythic records",
+          "High utility breadth",
+          "Can flex healing and damage"
+        ],
+        "cautions": [
+          "Party composition changes the best form",
+          "Support attribution remains opaque"
+        ],
+        "claim_ids": [
+          "observed:primalist/life:performance",
+          "talent:primalist/life:31-84-2-9a",
+          "talent:primalist/life:31-84-2-9b",
+          "talent:primalist/life:31-84-4-0",
+          "observed:primalist/life:hybrid-report",
+          "inference:primalist/life:contact-cost",
+          "talent:primalist/life:31-84-4-5",
+          "observed:primalist/life:recent-manual-review"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "By levels 30-49, attack through hammer of life to convert melee pressure into healing, build and spend spirit charge, maintain grovekeeper's presence and elemental infusions, place ring of life or sacred grove for group events, and choose ancient of war or ancient of lore for the party's current offensive or healing need.",
+        "strengths": [
+          "Core engine is online",
+          "More complete target coverage"
+        ],
+        "cautions": [
+          "Late talents still change the ceiling",
+          "Primalist movement and instant abilities help it stay connected, but losing melee contact reduces both damage and healing conversion"
+        ],
+        "claim_ids": [
+          "talent:primalist/life:31-84-4-0",
+          "observed:primalist/life:hybrid-report",
+          "inference:primalist/life:contact-cost",
+          "observed:primalist/life:performance",
+          "talent:primalist/life:31-84-2-9a",
+          "talent:primalist/life:31-84-2-9b",
+          "talent:primalist/life:31-84-4-5",
+          "observed:primalist/life:recent-manual-review"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, maintain hammer of life contact, use spirit charge and empowered hammers, and weave direct support cooldowns without abandoning melee uptime.",
+        "strengths": [
+          "Durable targets preserve the full loop",
+          "Cooldowns can be planned"
+        ],
+        "cautions": [
+          "Movement can break setup",
+          "Repeated errors remain visible"
+        ],
+        "claim_ids": [
+          "talent:primalist/life:31-84-4-0",
+          "observed:primalist/life:hybrid-report",
+          "inference:primalist/life:contact-cost",
+          "observed:primalist/life:performance",
+          "talent:primalist/life:31-84-2-9a",
+          "talent:primalist/life:31-84-2-9b",
+          "talent:primalist/life:31-84-4-5",
+          "observed:primalist/life:recent-manual-review"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, seismic wave, elemental cascade, ring of life, sacred grove, and short-cooldown healing damage let the spec support large pulls while fighting inside them.",
+        "strengths": [
+          "Pack tools express the spec clearly",
+          "Group utility has regular value"
+        ],
+        "cautions": [
+          "Short-lived targets can erase setup",
+          "Tank movement changes the plan"
+        ],
+        "claim_ids": [
+          "talent:primalist/life:31-84-4-0",
+          "observed:primalist/life:hybrid-report",
+          "inference:primalist/life:contact-cost",
+          "observed:primalist/life:performance",
+          "talent:primalist/life:31-84-2-9a",
+          "talent:primalist/life:31-84-2-9b",
+          "talent:primalist/life:31-84-4-5",
+          "observed:primalist/life:recent-manual-review"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, primalist movement and instant abilities help it stay connected, but losing melee contact reduces both damage and healing conversion. Plate armor, rage-based healing, Sacred Grove, Protector's Hand, bindings, and elemental defensive infusions make the hybrid unusually durable.",
+        "strengths": [
+          "Control and utility create options",
+          "Target swaps can reward flexibility"
+        ],
+        "cautions": [
+          "Disruption makes the loop less predictable",
+          "Defensive timing is punishable"
+        ],
+        "claim_ids": [
+          "talent:primalist/life:31-84-4-0",
+          "observed:primalist/life:hybrid-report",
+          "inference:primalist/life:contact-cost",
+          "observed:primalist/life:performance",
+          "talent:primalist/life:31-84-2-9a",
+          "talent:primalist/life:31-84-2-9b",
+          "talent:primalist/life:31-84-4-5",
+          "observed:primalist/life:recent-manual-review"
+        ]
+      }
+    },
+    "complexity": {
+      "reactive_decisions": {
+        "boss": {
+          "value": "high",
+          "reason": "The player balances melee conversion, direct healing, grove placement, elemental infusions, and Ancient form against party needs.",
+          "claim_ids": [
+            "observed:primalist/life:hybrid-report",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-0",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "Target count, incoming pressure, and movement change the next action; plate armor, rage-based healing, sacred grove, protector's hand, bindings, and elemental defensive infusions make the hybrid unusually durable. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Target count, incoming pressure, and movement change the next action; plate armor, rage-based healing, sacred grove, protector's hand, bindings, and elemental defensive infusions make the hybrid unusually durable. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Target count, incoming pressure, and movement change the next action; plate armor, rage-based healing, sacred grove, protector's hand, bindings, and elemental defensive infusions make the hybrid unusually durable. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Target count, incoming pressure, and movement change the next action; plate armor, rage-based healing, sacred grove, protector's hand, bindings, and elemental defensive infusions make the hybrid unusually durable. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Target count, incoming pressure, and movement change the next action; plate armor, rage-based healing, sacred grove, protector's hand, bindings, and elemental defensive infusions make the hybrid unusually durable. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        }
+      },
+      "execution": {
+        "dungeon_aoe": {
+          "value": "moderate-high",
+          "reason": "Healing and damage both reward staying in melee while placing group effects correctly.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Execution is constrained by positioning and swaps: Primalist movement and instant abilities help it stay connected, but losing melee contact reduces both damage and healing conversion. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Execution is constrained by positioning and swaps: Primalist movement and instant abilities help it stay connected, but losing melee contact reduces both damage and healing conversion. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "Execution is constrained by positioning and swaps: Primalist movement and instant abilities help it stay connected, but losing melee contact reduces both damage and healing conversion. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Execution is constrained by positioning and swaps: Primalist movement and instant abilities help it stay connected, but losing melee contact reduces both damage and healing conversion. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Execution is constrained by positioning and swaps: Primalist movement and instant abilities help it stay connected, but losing melee contact reduces both damage and healing conversion. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        }
+      },
+      "failure_cost": {
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Lost melee contact or a mismatched Ancient window removes shared rather than merely personal value.",
+          "claim_ids": [
+            "inference:primalist/life:contact-cost",
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Losing melee uptime suppresses both personal damage and Hammer of Life healing, while choosing the wrong Ancient form misaligns the party window. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Losing melee uptime suppresses both personal damage and Hammer of Life healing, while choosing the wrong Ancient form misaligns the party window. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "Losing melee uptime suppresses both personal damage and Hammer of Life healing, while choosing the wrong Ancient form misaligns the party window. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "moderate-high",
+          "reason": "Losing melee uptime suppresses both personal damage and Hammer of Life healing, while choosing the wrong Ancient form misaligns the party window. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Losing melee uptime suppresses both personal damage and Hammer of Life healing, while choosing the wrong Ancient form misaligns the party window. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        }
+      },
+      "core_actions": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Attack through Hammer of Life to convert melee pressure into healing, build and spend Spirit Charge, maintain Grovekeeper's Presence and elemental infusions, place Ring of Life or Sacred Grove for group events, and choose Ancient of War or Ancient of Lore for the party's current offensive or healing need. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Attack through Hammer of Life to convert melee pressure into healing, build and spend Spirit Charge, maintain Grovekeeper's Presence and elemental infusions, place Ring of Life or Sacred Grove for group events, and choose Ancient of War or Ancient of Lore for the party's current offensive or healing need. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        },
+        "level_50_60": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Attack through Hammer of Life to convert melee pressure into healing, build and spend Spirit Charge, maintain Grovekeeper's Presence and elemental infusions, place Ring of Life or Sacred Grove for group events, and choose Ancient of War or Ancient of Lore for the party's current offensive or healing need. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        },
+        "boss": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Attack through Hammer of Life to convert melee pressure into healing, build and spend Spirit Charge, maintain Grovekeeper's Presence and elemental infusions, place Ring of Life or Sacred Grove for group events, and choose Ancient of War or Ancient of Lore for the party's current offensive or healing need. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Attack through Hammer of Life to convert melee pressure into healing, build and spend Spirit Charge, maintain Grovekeeper's Presence and elemental infusions, place Ring of Life or Sacred Grove for group events, and choose Ancient of War or Ancient of Lore for the party's current offensive or healing need. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Attack through Hammer of Life to convert melee pressure into healing, build and spend Spirit Charge, maintain Grovekeeper's Presence and elemental infusions, place Ring of Life or Sacred Grove for group events, and choose Ancient of War or Ancient of Lore for the party's current offensive or healing need. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        }
+      },
+      "state_tracking": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Maintain Hammer of Life contact, use Spirit Charge and empowered hammers, and weave direct support cooldowns without abandoning melee uptime. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low-moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Maintain Hammer of Life contact, use Spirit Charge and empowered hammers, and weave direct support cooldowns without abandoning melee uptime. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        },
+        "level_50_60": {
+          "value": "low-moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Maintain Hammer of Life contact, use Spirit Charge and empowered hammers, and weave direct support cooldowns without abandoning melee uptime. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        },
+        "boss": {
+          "value": "low-moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Maintain Hammer of Life contact, use Spirit Charge and empowered hammers, and weave direct support cooldowns without abandoning melee uptime. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low-moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Maintain Hammer of Life contact, use Spirit Charge and empowered hammers, and weave direct support cooldowns without abandoning melee uptime. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Maintain Hammer of Life contact, use Spirit Charge and empowered hammers, and weave direct support cooldowns without abandoning melee uptime. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Seismic Wave, Elemental Cascade, Ring of Life, Sacred Grove, and short-cooldown healing damage let the spec support large pulls while fighting inside them. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Seismic Wave, Elemental Cascade, Ring of Life, Sacred Grove, and short-cooldown healing damage let the spec support large pulls while fighting inside them. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Seismic Wave, Elemental Cascade, Ring of Life, Sacred Grove, and short-cooldown healing damage let the spec support large pulls while fighting inside them. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Seismic Wave, Elemental Cascade, Ring of Life, Sacred Grove, and short-cooldown healing damage let the spec support large pulls while fighting inside them. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Seismic Wave, Elemental Cascade, Ring of Life, Sacred Grove, and short-cooldown healing damage let the spec support large pulls while fighting inside them. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        },
+        "pvp": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Seismic Wave, Elemental Cascade, Ring of Life, Sacred Grove, and short-cooldown healing damage let the spec support large pulls while fighting inside them. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a",
+            "talent:primalist/life:31-84-2-9b",
+            "talent:primalist/life:31-84-4-5",
+            "observed:primalist/life:recent-manual-review"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You want Enhancement-style melee with active healing and a large party-buff toolkit.",
+          "claim_ids": [
+            "observed:primalist/life:hybrid-report"
+          ]
+        },
+        {
+          "text": "You enjoy the spec's core cadence: attack through hammer of life to convert melee pressure into healing, build and spend spirit charge, maintain grovekeeper's presence and elemental infusions, place ring of life or sacred grove for group events, and choose ancient of war or ancient of lore for the party's current offensive or healing need.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You want a ranged healer or a personal meter that captures most of your contribution.",
+          "claim_ids": [
+            "inference:primalist/life:contact-cost"
+          ]
+        },
+        {
+          "text": "You dislike the positioning or swap constraint that primalist movement and instant abilities help it stay connected, but losing melee contact reduces both damage and healing conversion.",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0",
+            "observed:primalist/life:hybrid-report",
+            "inference:primalist/life:contact-cost",
+            "observed:primalist/life:performance",
+            "talent:primalist/life:31-84-2-9a"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Players praise Grovekeeper's melee healing, AoE damage, durability, mobility, and unusually broad party buffs.",
+          "claim_ids": [
+            "observed:primalist/life:hybrid-report"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Current discussion is uncertain whether it should be treated as a full healer or support in every group and notes that support impact is hard to measure.",
+          "claim_ids": [
+            "observed:primalist/life:hybrid-report",
+            "observed:primalist/life:performance"
+          ]
+        }
+      ],
+      "contested": []
+    },
+    "performance_signal_ids": [
+      "observed:primalist/life:performance"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "manual_recent_source_review",
+      "performance": "representation_and_offrole_only",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium-high",
+      "gaps": [
+        "No normalized healing or buff-attribution study.",
+        "Ancient form usage needs a current detailed level-60 guide."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "A durable melee support that begins healing through attacks and gains Spirit Charge, party presence, and empowered hammers early.",
+      "observed_changes": [
+        "Must stay in melee",
+        "Hybrid contribution is hard to read on one meter"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "By levels 30-49, attack through hammer of life to convert melee pressure into healing, build and spend spirit charge, maintain grovekeeper's presence and elemental infusions, place ring of life or sacred grove for group events, and choose ancient of war or ancient of lore for the party's current offensive or healing need.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Primalist movement and instant abilities help it stay connected, but losing melee contact reduces both damage and healing conversion"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "A full offensive-support healer choosing between Ancient of War and Lore while managing grove zones, infusions, Spirit Charge, and melee conversion.",
+      "observed_changes": [
+        "Party composition changes the best form",
+        "Support attribution remains opaque"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "A durable melee support that begins healing through attacks and gains Spirit Charge, party presence, and empowered hammers early.",
+      "observed_changes": [
+        "Must stay in melee",
+        "Hybrid contribution is hard to read on one meter"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "By levels 30-49, attack through hammer of life to convert melee pressure into healing, build and spend spirit charge, maintain grovekeeper's presence and elemental infusions, place ring of life or sacred grove for group events, and choose ancient of war or ancient of lore for the party's current offensive or healing need.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Primalist movement and instant abilities help it stay connected, but losing melee contact reduces both damage and healing conversion"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:primalist/life:hybrid-report",
+      "kind": "observed",
+      "text": "Recent players describe Grovekeeper as an Enhancement-Shaman-like melee healing support with strong AoE damage, damage-driven healing, plate durability, and buffs covering haste, healing effectiveness, hit, armor, armor reduction, attack power, and mana regeneration. Reports include successful dungeon healing and large solo pulls.",
+      "source_ids": [
+        "reddit:primalist-leveling-2026-07-22"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "solo_leveling",
+          "dungeon_healing",
+          "support"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Output claims are anecdotal; the playstyle description aligns with current talents."
+    },
+    {
+      "id": "observed:primalist/life:performance",
+      "kind": "observed",
+      "text": "The August Mythic inventory lists 175 Grovekeeper records. The DPS compilation's 2,274 value is a support/off-role signal and does not capture healing or buff contribution.",
+      "source_ids": [
+        "reddit:class-statistics-2026-08-02",
+        "reddit:dps-aggregate-2026-07-25"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "mythic_dungeons"
+        ],
+        "build_or_mode": [
+          "support",
+          "offrole_dps"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "Community label Grovekeeper maps to current dataset name Life."
+    },
+    {
+      "id": "inference:primalist/life:contact-cost",
+      "kind": "inference",
+      "text": "Because Hammer of Life couples offense and healing, forced melee downtime reduces two contribution lanes simultaneously; mistimed Ancient forms can additionally waste a party-wide window.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:primalist/life:31-84-4-0",
+        "talent:primalist/life:31-84-2-9a",
+        "talent:primalist/life:31-84-2-9b"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "group_pve"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Magnitude is encounter dependent."
+    },
+    {
+      "id": "observed:primalist/life:recent-manual-review",
+      "kind": "observed",
+      "text": "Life is described as a melee healer using Seismic Wave on cooldown and Wild Claw, with conflicting reports about whether its full-healer ceiling depends on later talents and player execution.",
+      "source_ids": [
+        "reddit:primalist-life-healer-2026-07-22"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually reviewed on 2026-08-06; anecdotal evidence is not treated as a power ranking."
+    }
+  ]
+}

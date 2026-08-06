@@ -1,0 +1,1592 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "witch-doctor/brewing",
+    "class": "Witch Doctor",
+    "name": "Brewing",
+    "roles": [
+      "Healer",
+      "Support"
+    ],
+    "range": [
+      "Hybrid"
+    ]
+  },
+  "identity": {
+    "fantasy": "",
+    "one_line": "A modular alchemist healer. Ingredients, Bases, and Mojos change the effects of the Cauldron and Potion Toss, so the player prepares the right brew for steady healing, shields, raid healing, or damage support. It is flexible and utility-rich, but less plug-and-play than a conventional direct healer.",
+    "primary_family": "",
+    "also_fits": [],
+    "claim_ids": [
+      "talent:witch-doctor/brewing:13-35-3-0",
+      "talent:witch-doctor/brewing:13-35-5-0",
+      "talent:witch-doctor/brewing:13-35-10-0",
+      "talent:witch-doctor/brewing:13-35-4-1",
+      "talent:witch-doctor/brewing:13-35-2-2",
+      "talent:witch-doctor/brewing:13-35-4-2",
+      "talent:witch-doctor/brewing:13-35-6-2",
+      "talent:witch-doctor/brewing:13-35-10-2",
+      "talent:witch-doctor/brewing:13-35-1-3",
+      "talent:witch-doctor/brewing:13-35-4-3",
+      "talent:witch-doctor/brewing:13-35-7-3",
+      "talent:witch-doctor/brewing:13-35-1-4",
+      "talent:witch-doctor/brewing:13-35-3-4",
+      "talent:witch-doctor/brewing:13-35-5-4",
+      "talent:witch-doctor/brewing:13-35-7-4",
+      "talent:witch-doctor/brewing:13-35-10-4",
+      "talent:witch-doctor/brewing:13-35-0-5",
+      "talent:witch-doctor/brewing:13-35-2-5a",
+      "talent:witch-doctor/brewing:13-35-2-5b",
+      "talent:witch-doctor/brewing:13-35-4-5",
+      "talent:witch-doctor/brewing:13-35-6-5",
+      "talent:witch-doctor/brewing:13-35-8-5a",
+      "talent:witch-doctor/brewing:13-35-8-5b",
+      "talent:witch-doctor/brewing:13-35-1-6",
+      "talent:witch-doctor/brewing:13-35-3-6",
+      "talent:witch-doctor/brewing:13-35-5-6a",
+      "talent:witch-doctor/brewing:13-35-5-6b",
+      "talent:witch-doctor/brewing:13-35-7-6",
+      "talent:witch-doctor/brewing:13-35-10-6",
+      "talent:witch-doctor/brewing:13-35-1-7a",
+      "talent:witch-doctor/brewing:13-35-1-7b",
+      "talent:witch-doctor/brewing:13-35-3-7",
+      "talent:witch-doctor/brewing:13-35-5-7",
+      "talent:witch-doctor/brewing:13-35-7-7",
+      "talent:witch-doctor/brewing:13-35-2-8",
+      "talent:witch-doctor/brewing:13-35-4-8",
+      "talent:witch-doctor/brewing:13-35-6-8",
+      "talent:witch-doctor/brewing:13-35-10-8",
+      "talent:witch-doctor/brewing:13-35-2-9",
+      "talent:witch-doctor/brewing:13-35-4-9",
+      "talent:witch-doctor/brewing:13-35-6-9"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "A modular alchemist healer. Ingredients, Bases, and Mojos change the effects of the Cauldron and Potion Toss, so the player prepares the right brew for steady healing, shields, raid healing, or damage support. It is flexible and utility-rich, but less plug-and-play than a conventional direct healer.",
+    "resources": [],
+    "builders": [
+      {
+        "name": "Tiki Splash",
+        "claim_ids": [
+          "talent:witch-doctor/brewing:13-35-6-9"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Plentiful Potions",
+        "claim_ids": [
+          "talent:witch-doctor/brewing:13-35-7-3"
+        ]
+      },
+      {
+        "name": "Mojo Beam",
+        "claim_ids": [
+          "talent:witch-doctor/brewing:13-35-4-5"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Ingredient: Jungle Shrooms",
+        "claim_ids": [
+          "talent:witch-doctor/brewing:13-35-3-0"
+        ]
+      },
+      {
+        "name": "Mixologist",
+        "claim_ids": [
+          "talent:witch-doctor/brewing:13-35-4-1"
+        ]
+      },
+      {
+        "name": "Ingredient: Frog Bones",
+        "claim_ids": [
+          "talent:witch-doctor/brewing:13-35-1-4"
+        ]
+      },
+      {
+        "name": "Ingredient: Bloodthistle",
+        "claim_ids": [
+          "talent:witch-doctor/brewing:13-35-7-4"
+        ]
+      },
+      {
+        "name": "Mojo: Fish Bones",
+        "claim_ids": [
+          "talent:witch-doctor/brewing:13-35-6-5"
+        ]
+      },
+      {
+        "name": "Spice: Peacebloom",
+        "claim_ids": [
+          "talent:witch-doctor/brewing:13-35-8-5b"
+        ]
+      },
+      {
+        "name": "Mojo: Frog Shrooms",
+        "claim_ids": [
+          "talent:witch-doctor/brewing:13-35-1-6"
+        ]
+      },
+      {
+        "name": "Jungle Secrets",
+        "claim_ids": [
+          "talent:witch-doctor/brewing:13-35-3-6"
+        ]
+      },
+      {
+        "name": "Mojo: Jungle Thistle",
+        "claim_ids": [
+          "talent:witch-doctor/brewing:13-35-7-6"
+        ]
+      },
+      {
+        "name": "Mojo Wave",
+        "claim_ids": [
+          "talent:witch-doctor/brewing:13-35-10-6"
+        ]
+      },
+      {
+        "name": "Base: Beast Blood",
+        "claim_ids": [
+          "talent:witch-doctor/brewing:13-35-7-7"
+        ]
+      },
+      {
+        "name": "Voodoo Cauldron",
+        "claim_ids": [
+          "talent:witch-doctor/brewing:13-35-2-8"
+        ]
+      },
+      {
+        "name": "Base: Crystal Water",
+        "claim_ids": [
+          "talent:witch-doctor/brewing:13-35-6-8"
+        ]
+      },
+      {
+        "name": "Unstable Concoction",
+        "claim_ids": [
+          "talent:witch-doctor/brewing:13-35-2-9"
+        ]
+      },
+      {
+        "name": "Tiki Splash",
+        "claim_ids": [
+          "talent:witch-doctor/brewing:13-35-6-9"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Tiki Splash",
+        "claim_ids": [
+          "talent:witch-doctor/brewing:13-35-6-9"
+        ],
+        "structural_description": "While a Base is active, Spirit in a Bottle will now transform into Tiki Splash.Tiki SplashSplash target location with healing waters, healing for 34 + 25% SP every 1 sec for 5 seconds. Gains a new effect based on your currently active Base. Scales with modifiers to Spirit in a Bottle.Beast Blood: Grants you 5% increased critical strike chance for 15 seconds, stacking 2 times.Crystal Water: Grants you a shield that absorbs 422 + 75% SP Magic damage for 15 seconds."
+      }
+    ],
+    "single_target": "",
+    "aoe": "",
+    "movement_and_target_switching": "",
+    "defense_and_control": "",
+    "group_utility": "",
+    "failure_modes": [],
+    "claim_ids": [
+      "talent:witch-doctor/brewing:13-35-3-0",
+      "talent:witch-doctor/brewing:13-35-5-0",
+      "talent:witch-doctor/brewing:13-35-10-0",
+      "talent:witch-doctor/brewing:13-35-4-1",
+      "talent:witch-doctor/brewing:13-35-2-2",
+      "talent:witch-doctor/brewing:13-35-4-2",
+      "talent:witch-doctor/brewing:13-35-6-2",
+      "talent:witch-doctor/brewing:13-35-10-2",
+      "talent:witch-doctor/brewing:13-35-1-3",
+      "talent:witch-doctor/brewing:13-35-4-3",
+      "talent:witch-doctor/brewing:13-35-7-3",
+      "talent:witch-doctor/brewing:13-35-1-4",
+      "talent:witch-doctor/brewing:13-35-3-4",
+      "talent:witch-doctor/brewing:13-35-5-4",
+      "talent:witch-doctor/brewing:13-35-7-4",
+      "talent:witch-doctor/brewing:13-35-10-4",
+      "talent:witch-doctor/brewing:13-35-0-5",
+      "talent:witch-doctor/brewing:13-35-2-5a",
+      "talent:witch-doctor/brewing:13-35-2-5b",
+      "talent:witch-doctor/brewing:13-35-4-5",
+      "talent:witch-doctor/brewing:13-35-6-5",
+      "talent:witch-doctor/brewing:13-35-8-5a",
+      "talent:witch-doctor/brewing:13-35-8-5b",
+      "talent:witch-doctor/brewing:13-35-1-6",
+      "talent:witch-doctor/brewing:13-35-3-6",
+      "talent:witch-doctor/brewing:13-35-5-6a",
+      "talent:witch-doctor/brewing:13-35-5-6b",
+      "talent:witch-doctor/brewing:13-35-7-6",
+      "talent:witch-doctor/brewing:13-35-10-6",
+      "talent:witch-doctor/brewing:13-35-1-7a",
+      "talent:witch-doctor/brewing:13-35-1-7b",
+      "talent:witch-doctor/brewing:13-35-3-7",
+      "talent:witch-doctor/brewing:13-35-5-7",
+      "talent:witch-doctor/brewing:13-35-7-7",
+      "talent:witch-doctor/brewing:13-35-2-8",
+      "talent:witch-doctor/brewing:13-35-4-8",
+      "talent:witch-doctor/brewing:13-35-6-8",
+      "talent:witch-doctor/brewing:13-35-10-8",
+      "talent:witch-doctor/brewing:13-35-2-9",
+      "talent:witch-doctor/brewing:13-35-4-9",
+      "talent:witch-doctor/brewing:13-35-6-9"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Ingredient: Jungle Shrooms",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0"
+          ]
+        },
+        {
+          "name": "Potion Toss",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-5-0"
+          ]
+        },
+        {
+          "name": "Cauldron Brewer",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-10-0"
+          ]
+        },
+        {
+          "name": "Mixologist",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-4-1"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:witch-doctor/brewing:13-35-3-0",
+        "talent:witch-doctor/brewing:13-35-5-0",
+        "talent:witch-doctor/brewing:13-35-10-0",
+        "talent:witch-doctor/brewing:13-35-4-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Potent Mixes",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-2-2"
+          ]
+        },
+        {
+          "name": "Mojo Addiction",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-4-2"
+          ]
+        },
+        {
+          "name": "Brewmaster",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-6-2"
+          ]
+        },
+        {
+          "name": "Spirit Healer",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-10-2"
+          ]
+        },
+        {
+          "name": "Presence of the Loa",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-1-3"
+          ]
+        },
+        {
+          "name": "Splash Potion",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-4-3"
+          ]
+        },
+        {
+          "name": "Plentiful Potions",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-7-3"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:witch-doctor/brewing:13-35-2-2",
+        "talent:witch-doctor/brewing:13-35-4-2",
+        "talent:witch-doctor/brewing:13-35-6-2",
+        "talent:witch-doctor/brewing:13-35-10-2",
+        "talent:witch-doctor/brewing:13-35-1-3",
+        "talent:witch-doctor/brewing:13-35-4-3",
+        "talent:witch-doctor/brewing:13-35-7-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Ingredient: Frog Bones",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-1-4"
+          ]
+        },
+        {
+          "name": "Potion Boss",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-4"
+          ]
+        },
+        {
+          "name": "Splash On 'Em",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-5-4"
+          ]
+        },
+        {
+          "name": "Ingredient: Bloodthistle",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-7-4"
+          ]
+        },
+        {
+          "name": "Loa's Blessing",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-10-4"
+          ]
+        },
+        {
+          "name": "Fresh Ingredients",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-0-5"
+          ]
+        },
+        {
+          "name": "Spirit Out Of The Bottle",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-2-5a"
+          ]
+        },
+        {
+          "name": "Touch of the Spirits",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-2-5b"
+          ]
+        },
+        {
+          "name": "Mojo Beam",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-4-5"
+          ]
+        },
+        {
+          "name": "Mojo: Fish Bones",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-6-5"
+          ]
+        },
+        {
+          "name": "Spice: Earthroot",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-8-5a"
+          ]
+        },
+        {
+          "name": "Spice: Peacebloom",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-8-5b"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:witch-doctor/brewing:13-35-1-4",
+        "talent:witch-doctor/brewing:13-35-3-4",
+        "talent:witch-doctor/brewing:13-35-5-4",
+        "talent:witch-doctor/brewing:13-35-7-4",
+        "talent:witch-doctor/brewing:13-35-10-4",
+        "talent:witch-doctor/brewing:13-35-0-5",
+        "talent:witch-doctor/brewing:13-35-2-5a",
+        "talent:witch-doctor/brewing:13-35-2-5b",
+        "talent:witch-doctor/brewing:13-35-4-5",
+        "talent:witch-doctor/brewing:13-35-6-5",
+        "talent:witch-doctor/brewing:13-35-8-5a",
+        "talent:witch-doctor/brewing:13-35-8-5b"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Mojo: Frog Shrooms",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-1-6"
+          ]
+        },
+        {
+          "name": "Jungle Secrets",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-6"
+          ]
+        },
+        {
+          "name": "Rage Brew",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-5-6a"
+          ]
+        },
+        {
+          "name": "Arcane Brew",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-5-6b"
+          ]
+        },
+        {
+          "name": "Mojo: Jungle Thistle",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-7-6"
+          ]
+        },
+        {
+          "name": "Mojo Wave",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-10-6"
+          ]
+        },
+        {
+          "name": "Jungle Booms",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-1-7a"
+          ]
+        },
+        {
+          "name": "Doctor of the Jungle",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-1-7b"
+          ]
+        },
+        {
+          "name": "Sen'jin's Presence",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-7"
+          ]
+        },
+        {
+          "name": "Disciple of Sseratus",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-5-7"
+          ]
+        },
+        {
+          "name": "Base: Beast Blood",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-7-7"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:witch-doctor/brewing:13-35-1-6",
+        "talent:witch-doctor/brewing:13-35-3-6",
+        "talent:witch-doctor/brewing:13-35-5-6a",
+        "talent:witch-doctor/brewing:13-35-5-6b",
+        "talent:witch-doctor/brewing:13-35-7-6",
+        "talent:witch-doctor/brewing:13-35-10-6",
+        "talent:witch-doctor/brewing:13-35-1-7a",
+        "talent:witch-doctor/brewing:13-35-1-7b",
+        "talent:witch-doctor/brewing:13-35-3-7",
+        "talent:witch-doctor/brewing:13-35-5-7",
+        "talent:witch-doctor/brewing:13-35-7-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Voodoo Cauldron",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-2-8"
+          ]
+        },
+        {
+          "name": "Master of Concoctions",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-4-8"
+          ]
+        },
+        {
+          "name": "Base: Crystal Water",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-6-8"
+          ]
+        },
+        {
+          "name": "It's Da Mojo",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-10-8"
+          ]
+        },
+        {
+          "name": "Unstable Concoction",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-2-9"
+          ]
+        },
+        {
+          "name": "Master Mixologist",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-4-9"
+          ]
+        },
+        {
+          "name": "Tiki Splash",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-6-9"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:witch-doctor/brewing:13-35-2-8",
+        "talent:witch-doctor/brewing:13-35-4-8",
+        "talent:witch-doctor/brewing:13-35-6-8",
+        "talent:witch-doctor/brewing:13-35-10-8",
+        "talent:witch-doctor/brewing:13-35-2-9",
+        "talent:witch-doctor/brewing:13-35-4-9",
+        "talent:witch-doctor/brewing:13-35-6-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "leveling_30_49": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "level_50_60": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "boss": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "dungeon_aoe": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "pvp": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [],
+    "avoid_if": []
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [],
+  "sentiment": {
+    "praise": [],
+    "frustrations": [],
+    "contested": []
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 5,
+    "latest_update": "2026-07-31T04:54:33.951885+00:00",
+    "top_title": "WD Brewing",
+    "top_url": "https://coabuildhub.com/build/fd4e200d-cfe4-45dc-b0a2-366e8971591d",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:fd4e200d-cfe4-45dc-b0a2-366e8971591d"
+    ]
+  },
+  "coverage": {
+    "mechanical": "structural_baseline",
+    "community": "indexed",
+    "performance": "missing",
+    "video": "missing",
+    "overall_confidence": "low",
+    "gaps": [
+      "Effective core loop needs recent guide or player cross-check.",
+      "Contextual complexity values are not yet researched.",
+      "Recent performance, sentiment, issues, and video evidence are not yet reconciled."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:witch-doctor/brewing:13-35-3-0",
+      "kind": "structural",
+      "text": "Ingredient: Jungle Shrooms: Brew Jungle Shrooms into your Cauldron.Cauldron: Heal up to 8 allies within 30 yds for 34 + 15% healing every 8 sec.Potion Toss: Heal the target ally for -3.75 to -2.75 every 3 sec for 18 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-5-0",
+      "kind": "structural",
+      "text": "Potion Toss: Fill a potion from your Cauldron, and toss it at a friendly target, healing them for 108 + 40% healing + 10% Spirit.The effect of Potion Toss will change based on your active Ingredients.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-10-0",
+      "kind": "structural",
+      "text": "Cauldron Brewer: Level 10 PassiveYou may now prepare Ingredients into a Cauldron, crafting a brew. Nearby allies are buffed based on the active brew.Only 1 of each Ingredient can be active at a time.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-4-1",
+      "kind": "structural",
+      "text": "Mixologist: You can now add an additional Ingredient to your Cauldron, enhancing your brew.Teaches you Ingredient: Fish Oil.Ingredient: Fish OilBrew Fish Oil into your Cauldron.Cauldron: Increases the movement speed and swim speed of allies within 40 yds by 10%.Potion: Increases the target ally's movement speed by 20% and dodge chance by 5% for 8 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-2-2",
+      "kind": "structural",
+      "text": "Potent Mixes: Increases your healing done by 4% and reduces the threat generated by your spells by -15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-4-2",
+      "kind": "structural",
+      "text": "Mojo Addiction: Increases your maximum mana by 5%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-6-2",
+      "kind": "structural",
+      "text": "Brewmaster: Reduces the cast time of Loa's Brew by 0.25 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-10-2",
+      "kind": "structural",
+      "text": "Spirit Healer: Level 20 PassiveIncreases healing power by 25% of Spirit and increases spell critical strike chance by 10% of Spirit.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-1-3",
+      "kind": "structural",
+      "text": "Presence of the Loa: Increases your critical strike chance by 4%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-4-3",
+      "kind": "structural",
+      "text": "Splash Potion: Fill a splash potion from your Cauldron, and toss it at a location, healing up to 8 allies for 54 + 22.45% healing + 8% Spirit.Potion effects from Ingredients used this way have reduced effectiveness.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-7-3",
+      "kind": "structural",
+      "text": "Plentiful Potions: Reduces the cost of your Loa's Brew and Hexbreak by -10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-1-4",
+      "kind": "structural",
+      "text": "Ingredient: Frog Bones: Brew Frog Bones into your Cauldron.Cauldron: Grants allies within 40 yds -3% reduced damage taken.Potion: Grants target ally an absorption shield, absorbing 50 + 35% Spirit damage, scaling with Spirit.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-3-4",
+      "kind": "structural",
+      "text": "Potion Boss: Increases the effectiveness of Potion Toss and your tossed Ingredients by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-5-4",
+      "kind": "structural",
+      "text": "Splash On 'Em: Effective healing done by Loa's Brew and Mojo Beam reduce the cooldown of Potion Toss and Splash Potion by -1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-7-4",
+      "kind": "structural",
+      "text": "Ingredient: Bloodthistle: Brew Bloodthistle into your Cauldron.Cauldron: Allies within 40 yds receive 8% increased healing.Potion: Causes target ally to leech 5% of all damage they deal for 15 seconds. Can only occur once every 0.5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-10-4",
+      "kind": "structural",
+      "text": "Loa's Blessing: Level 30 PassiveHealing done by Loa's Brew now applies a random empowerment to the target ally.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-0-5",
+      "kind": "structural",
+      "text": "Fresh Ingredients: Increases the healing of your Jungle Shrooms from your Cauldron by 15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-2-5a",
+      "kind": "structural",
+      "text": "Spirit Out Of The Bottle: Casting Spirit in a Bottle now grants Spirit.SpiritRegenerates 7 health and mana, repeating every 4 sec for 12 seconds, stacking 5 times.@ifknown:500950:In addition, channeling Mojo Beam causes Spirit in a Bottle to affect 3 additional allies near the primary target.:ifknown@",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-2-5b",
+      "kind": "structural",
+      "text": "Touch of the Spirits: Damage dealt by Spirit In a Bottle causes the enemies to take 3% more damage and deal -3% less damage for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-4-5",
+      "kind": "structural",
+      "text": "Mojo Beam: Bring mojo to an ally, healing for 174 + 18.5% SP every 1 sec for 4 seconds. While channeling, you can instantly cast Potion Toss, Splash Potion and Spirit in a Bottle at a 20% increased cost.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-6-5",
+      "kind": "structural",
+      "text": "Mojo: Fish Bones: Your Potion Toss and Splash Potion cooldown is reset, and the next use within 5 seconds now applies Fish Bones to affected allies.Instantly swaps your Ingredients to Fish Oil and Frog Bones.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-8-5a",
+      "kind": "structural",
+      "text": "Spice: Earthroot: Infuse your Cauldron with Spice: Earthbloom.Increases effectiveness of all Cauldron effects and Ingredients by 30%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-8-5b",
+      "kind": "structural",
+      "text": "Spice: Peacebloom: Infuse your Cauldron with Spice: Peacebloom.Reduces the duration of roots, stuns, and snares against allies within 40 yds by -25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-1-6",
+      "kind": "structural",
+      "text": "Mojo: Frog Shrooms: Your Potion Toss and Splash Potion cooldown is reset, and the next use within 5 seconds now applies Frog Shrooms to affected allies.Instantly swaps your Ingredients to Jungle Shrooms and Frog Bones.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-3-6",
+      "kind": "structural",
+      "text": "Jungle Secrets: When you heal with Loa's Brew your Effigies will now heal an additional ally within 20 yds for 35% of the healing done, prioritizing allies with low health.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-5-6a",
+      "kind": "structural",
+      "text": "Rage Brew: Throw your Rage Brew at an ally, regenerating 50% of their maximum Rage, Energy, and Focus. Increases their attack power and ranged attack power by 15% for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-5-6b",
+      "kind": "structural",
+      "text": "Arcane Brew: Throw your Arcane Brew at an ally, increasing their spell power and Spirit by 30 for 10 seconds.Spell power scales with caster level.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-7-6",
+      "kind": "structural",
+      "text": "Mojo: Jungle Thistle: Your Potion Toss and Splash Potion cooldown is reset, and the next use within 5 seconds now applies Jungle Thistle to affected allies.Instantly swaps your Ingredients to Jungle Shrooms and Bloodthistle.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-10-6",
+      "kind": "structural",
+      "text": "Mojo Wave: Level 40 PassiveHealing with Mojo Beam now heals up to 3 of the lowest health nearby allies within 20 yds for 75% of the healing done.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-1-7a",
+      "kind": "structural",
+      "text": "Jungle Booms: Jungle Shrooms when used with Potion Toss and Splash Potion now ticks -0.5 sec faster.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-1-7b",
+      "kind": "structural",
+      "text": "Doctor of the Jungle: Jungle Shrooms used from your Cauldron now ticks -3 sec faster.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-3-7",
+      "kind": "structural",
+      "text": "Sen'jin's Presence: Casting Potion Toss and Spirit in a Bottle now reduce the cast time of your next 2 Loa's Brews by -20% for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-5-7",
+      "kind": "structural",
+      "text": "Disciple of Sseratus: Increases the bonus healing scaling of Loa's Brew and Spirit in a Bottle by 15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-7-7",
+      "kind": "structural",
+      "text": "Base: Beast Blood: Infuse your Cauldron with Beast Blood for 10 seconds, causing 15% of the direct Physical damage taken by party and raid members within 40 yds to instead be dealt over time.Only 1 Base can be active at a time.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-2-8",
+      "kind": "structural",
+      "text": "Voodoo Cauldron: Place down a Voodoo Cauldron for 15 seconds, increasing allies' healing received by 20% while near the cauldron.Allies within 15 yds are healed for 300 + 60% healing every 1.5 sec for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-4-8",
+      "kind": "structural",
+      "text": "Master of Concoctions: Increases the duration of Ingredients by 20% and causes allies affected by Jungle Shrooms to heal for 5% of the damage they deal with their next 3 offensive abilities or spells for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-6-8",
+      "kind": "structural",
+      "text": "Base: Crystal Water: Infuse your Cauldron with Crystal Water for 10 seconds, causing party and raid members within 40 yds to be shielded for 20% of their healing taken for 5 seconds.Only 1 Base can be active at a time.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-10-8",
+      "kind": "structural",
+      "text": "It's Da Mojo: Level 50 PassiveAllows your Mojo Beam to critically heal.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-2-9",
+      "kind": "structural",
+      "text": "Unstable Concoction: Potion Toss now applies Unstable Concoction to the target for 20 seconds. Using Loa's Brew or Spirit in a Bottle on the target will trigger an explosion of mojo around the target, healing nearby allies within 20 yds for 177 + 40% healing.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-4-9",
+      "kind": "structural",
+      "text": "Master Mixologist: For 10 seconds, the effectiveness of all Cauldron effects and Ingredients is increased by 100% and you can cast Spirit in a Bottle while moving.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/brewing:13-35-6-9",
+      "kind": "structural",
+      "text": "Tiki Splash: While a Base is active, Spirit in a Bottle will now transform into Tiki Splash.Tiki SplashSplash target location with healing waters, healing for 34 + 25% SP every 1 sec for 5 seconds. Gains a new effect based on your currently active Base. Scales with modifiers to Spirit in a Bottle.Beast Blood: Grants you 5% increased critical strike chance for 15 seconds, stacking 2 times.Crystal Water: Grants you a shield that absorbs 422 + 75% SP Magic damage for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    }
+  ]
+}

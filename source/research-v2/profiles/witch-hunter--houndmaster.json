@@ -1,0 +1,1464 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "witch-hunter/houndmaster",
+    "class": "Witch Hunter",
+    "name": "Houndmaster",
+    "roles": [
+      "Damage"
+    ],
+    "range": [
+      "Ranged"
+    ]
+  },
+  "identity": {
+    "fantasy": "",
+    "one_line": "A Shadowhound commander focused on sustained single-target damage. Unleash the Hounds and Houndmaster's Call establish the pet package, Shadowblast and Sixfold Shot drive the priority loop, and traps and brands add utility. A July deep dive describes smooth boss damage, good personal durability, average AoE, and at least one pet talent that was still bugged at the time.",
+    "primary_family": "",
+    "also_fits": [],
+    "claim_ids": [
+      "talent:witch-hunter/houndmaster:15-40-4-0",
+      "talent:witch-hunter/houndmaster:15-40-10-0",
+      "talent:witch-hunter/houndmaster:15-40-4-1",
+      "talent:witch-hunter/houndmaster:15-40-2-2",
+      "talent:witch-hunter/houndmaster:15-40-6-2",
+      "talent:witch-hunter/houndmaster:15-40-10-2",
+      "talent:witch-hunter/houndmaster:15-40-1-3",
+      "talent:witch-hunter/houndmaster:15-40-3-3",
+      "talent:witch-hunter/houndmaster:15-40-5-3",
+      "talent:witch-hunter/houndmaster:15-40-7-3",
+      "talent:witch-hunter/houndmaster:15-40-0-4",
+      "talent:witch-hunter/houndmaster:15-40-2-4",
+      "talent:witch-hunter/houndmaster:15-40-4-4",
+      "talent:witch-hunter/houndmaster:15-40-6-4",
+      "talent:witch-hunter/houndmaster:15-40-8-4",
+      "talent:witch-hunter/houndmaster:15-40-10-4",
+      "talent:witch-hunter/houndmaster:15-40-0-5a",
+      "talent:witch-hunter/houndmaster:15-40-0-5b",
+      "talent:witch-hunter/houndmaster:15-40-2-5",
+      "talent:witch-hunter/houndmaster:15-40-4-5",
+      "talent:witch-hunter/houndmaster:15-40-6-5",
+      "talent:witch-hunter/houndmaster:15-40-8-5",
+      "talent:witch-hunter/houndmaster:15-40-1-6",
+      "talent:witch-hunter/houndmaster:15-40-4-6",
+      "talent:witch-hunter/houndmaster:15-40-7-6",
+      "talent:witch-hunter/houndmaster:15-40-10-6",
+      "talent:witch-hunter/houndmaster:15-40-1-7",
+      "talent:witch-hunter/houndmaster:15-40-3-7",
+      "talent:witch-hunter/houndmaster:15-40-4-7",
+      "talent:witch-hunter/houndmaster:15-40-5-7",
+      "talent:witch-hunter/houndmaster:15-40-7-7",
+      "talent:witch-hunter/houndmaster:15-40-2-8",
+      "talent:witch-hunter/houndmaster:15-40-4-8",
+      "talent:witch-hunter/houndmaster:15-40-6-8",
+      "talent:witch-hunter/houndmaster:15-40-10-8",
+      "talent:witch-hunter/houndmaster:15-40-1-9",
+      "talent:witch-hunter/houndmaster:15-40-4-9",
+      "talent:witch-hunter/houndmaster:15-40-7-9"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "A Shadowhound commander focused on sustained single-target damage. Unleash the Hounds and Houndmaster's Call establish the pet package, Shadowblast and Sixfold Shot drive the priority loop, and traps and brands add utility. A July deep dive describes smooth boss damage, good personal durability, average AoE, and at least one pet talent that was still bugged at the time.",
+    "resources": [
+      "Rage"
+    ],
+    "builders": [
+      {
+        "name": "Houndmaster",
+        "claim_ids": [
+          "talent:witch-hunter/houndmaster:15-40-10-0"
+        ]
+      },
+      {
+        "name": "Quickdraw",
+        "claim_ids": [
+          "talent:witch-hunter/houndmaster:15-40-1-3"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Darkrider",
+        "claim_ids": [
+          "talent:witch-hunter/houndmaster:15-40-2-4"
+        ]
+      },
+      {
+        "name": "Bringer of Darkness",
+        "claim_ids": [
+          "talent:witch-hunter/houndmaster:15-40-1-7"
+        ]
+      },
+      {
+        "name": "Deal With The Devil",
+        "claim_ids": [
+          "talent:witch-hunter/houndmaster:15-40-1-9"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Darkhunter",
+        "claim_ids": [
+          "talent:witch-hunter/houndmaster:15-40-0-5a"
+        ]
+      },
+      {
+        "name": "Anguish",
+        "claim_ids": [
+          "talent:witch-hunter/houndmaster:15-40-8-5"
+        ]
+      },
+      {
+        "name": "Bringer of Darkness",
+        "claim_ids": [
+          "talent:witch-hunter/houndmaster:15-40-1-7"
+        ]
+      },
+      {
+        "name": "Veiled in Darkness",
+        "claim_ids": [
+          "talent:witch-hunter/houndmaster:15-40-4-7"
+        ]
+      },
+      {
+        "name": "Sixfold Shot",
+        "claim_ids": [
+          "talent:witch-hunter/houndmaster:15-40-10-8"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Sixfold Shot",
+        "claim_ids": [
+          "talent:witch-hunter/houndmaster:15-40-10-8"
+        ],
+        "structural_description": "Level 50 PassiveEvery 5th Darkslayer within 15 seconds now transforms your Quickdraw into Sixfold Shot.Sixfold ShotUnleash 6 quick shots across 1.5 seconds, each dealing 100% Ranged Weapon Damage plus 133 Physical damage and generating 3 Rage. and 2% maximum mana.Usable while moving."
+      }
+    ],
+    "single_target": "",
+    "aoe": "",
+    "movement_and_target_switching": "",
+    "defense_and_control": "",
+    "group_utility": "",
+    "failure_modes": [],
+    "claim_ids": [
+      "talent:witch-hunter/houndmaster:15-40-4-0",
+      "talent:witch-hunter/houndmaster:15-40-10-0",
+      "talent:witch-hunter/houndmaster:15-40-4-1",
+      "talent:witch-hunter/houndmaster:15-40-2-2",
+      "talent:witch-hunter/houndmaster:15-40-6-2",
+      "talent:witch-hunter/houndmaster:15-40-10-2",
+      "talent:witch-hunter/houndmaster:15-40-1-3",
+      "talent:witch-hunter/houndmaster:15-40-3-3",
+      "talent:witch-hunter/houndmaster:15-40-5-3",
+      "talent:witch-hunter/houndmaster:15-40-7-3",
+      "talent:witch-hunter/houndmaster:15-40-0-4",
+      "talent:witch-hunter/houndmaster:15-40-2-4",
+      "talent:witch-hunter/houndmaster:15-40-4-4",
+      "talent:witch-hunter/houndmaster:15-40-6-4",
+      "talent:witch-hunter/houndmaster:15-40-8-4",
+      "talent:witch-hunter/houndmaster:15-40-10-4",
+      "talent:witch-hunter/houndmaster:15-40-0-5a",
+      "talent:witch-hunter/houndmaster:15-40-0-5b",
+      "talent:witch-hunter/houndmaster:15-40-2-5",
+      "talent:witch-hunter/houndmaster:15-40-4-5",
+      "talent:witch-hunter/houndmaster:15-40-6-5",
+      "talent:witch-hunter/houndmaster:15-40-8-5",
+      "talent:witch-hunter/houndmaster:15-40-1-6",
+      "talent:witch-hunter/houndmaster:15-40-4-6",
+      "talent:witch-hunter/houndmaster:15-40-7-6",
+      "talent:witch-hunter/houndmaster:15-40-10-6",
+      "talent:witch-hunter/houndmaster:15-40-1-7",
+      "talent:witch-hunter/houndmaster:15-40-3-7",
+      "talent:witch-hunter/houndmaster:15-40-4-7",
+      "talent:witch-hunter/houndmaster:15-40-5-7",
+      "talent:witch-hunter/houndmaster:15-40-7-7",
+      "talent:witch-hunter/houndmaster:15-40-2-8",
+      "talent:witch-hunter/houndmaster:15-40-4-8",
+      "talent:witch-hunter/houndmaster:15-40-6-8",
+      "talent:witch-hunter/houndmaster:15-40-10-8",
+      "talent:witch-hunter/houndmaster:15-40-1-9",
+      "talent:witch-hunter/houndmaster:15-40-4-9",
+      "talent:witch-hunter/houndmaster:15-40-7-9"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Unleash the Hounds",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-4-0"
+          ]
+        },
+        {
+          "name": "Houndmaster",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-10-0"
+          ]
+        },
+        {
+          "name": "Houndmaster's Call",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-4-1"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:witch-hunter/houndmaster:15-40-4-0",
+        "talent:witch-hunter/houndmaster:15-40-10-0",
+        "talent:witch-hunter/houndmaster:15-40-4-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Expert Shot",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-2-2"
+          ]
+        },
+        {
+          "name": "Shadow Rage",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-6-2"
+          ]
+        },
+        {
+          "name": "Sharpshooter ",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-10-2"
+          ]
+        },
+        {
+          "name": "Quickdraw",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        },
+        {
+          "name": "Trapper",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-3-3"
+          ]
+        },
+        {
+          "name": "Expulsion of Evil",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-5-3"
+          ]
+        },
+        {
+          "name": "Dark Ranger",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-7-3"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:witch-hunter/houndmaster:15-40-2-2",
+        "talent:witch-hunter/houndmaster:15-40-6-2",
+        "talent:witch-hunter/houndmaster:15-40-10-2",
+        "talent:witch-hunter/houndmaster:15-40-1-3",
+        "talent:witch-hunter/houndmaster:15-40-3-3",
+        "talent:witch-hunter/houndmaster:15-40-5-3",
+        "talent:witch-hunter/houndmaster:15-40-7-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Pure Agony",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-0-4"
+          ]
+        },
+        {
+          "name": "Darkrider",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-2-4"
+          ]
+        },
+        {
+          "name": "Decimate",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-4-4"
+          ]
+        },
+        {
+          "name": "Houndfeeder",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-6-4"
+          ]
+        },
+        {
+          "name": "Darkflock",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-8-4"
+          ]
+        },
+        {
+          "name": "Dark Mind",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-10-4"
+          ]
+        },
+        {
+          "name": "Darkhunter",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-0-5a"
+          ]
+        },
+        {
+          "name": "Reload",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-0-5b"
+          ]
+        },
+        {
+          "name": "Hail of Gunfire",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-2-5"
+          ]
+        },
+        {
+          "name": "Kennel Master",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-4-5"
+          ]
+        },
+        {
+          "name": "Defender of Darkshire",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-6-5"
+          ]
+        },
+        {
+          "name": "Anguish",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-8-5"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:witch-hunter/houndmaster:15-40-0-4",
+        "talent:witch-hunter/houndmaster:15-40-2-4",
+        "talent:witch-hunter/houndmaster:15-40-4-4",
+        "talent:witch-hunter/houndmaster:15-40-6-4",
+        "talent:witch-hunter/houndmaster:15-40-8-4",
+        "talent:witch-hunter/houndmaster:15-40-10-4",
+        "talent:witch-hunter/houndmaster:15-40-0-5a",
+        "talent:witch-hunter/houndmaster:15-40-0-5b",
+        "talent:witch-hunter/houndmaster:15-40-2-5",
+        "talent:witch-hunter/houndmaster:15-40-4-5",
+        "talent:witch-hunter/houndmaster:15-40-6-5",
+        "talent:witch-hunter/houndmaster:15-40-8-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Repulse",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-1-6"
+          ]
+        },
+        {
+          "name": "Houndmaster",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-4-6"
+          ]
+        },
+        {
+          "name": "Loksey's Journal",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-7-6"
+          ]
+        },
+        {
+          "name": "Daredevil",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-10-6"
+          ]
+        },
+        {
+          "name": "Bringer of Darkness",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-1-7"
+          ]
+        },
+        {
+          "name": "Silver Bullets",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-3-7"
+          ]
+        },
+        {
+          "name": "Veiled in Darkness",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-4-7"
+          ]
+        },
+        {
+          "name": "Scent of Magic",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-5-7"
+          ]
+        },
+        {
+          "name": "Rampaging Hounds",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-7-7"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:witch-hunter/houndmaster:15-40-1-6",
+        "talent:witch-hunter/houndmaster:15-40-4-6",
+        "talent:witch-hunter/houndmaster:15-40-7-6",
+        "talent:witch-hunter/houndmaster:15-40-10-6",
+        "talent:witch-hunter/houndmaster:15-40-1-7",
+        "talent:witch-hunter/houndmaster:15-40-3-7",
+        "talent:witch-hunter/houndmaster:15-40-4-7",
+        "talent:witch-hunter/houndmaster:15-40-5-7",
+        "talent:witch-hunter/houndmaster:15-40-7-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Rearmament",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-2-8"
+          ]
+        },
+        {
+          "name": "Low Dawn",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-4-8"
+          ]
+        },
+        {
+          "name": "Coordinated Killing",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-6-8"
+          ]
+        },
+        {
+          "name": "Sixfold Shot",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-10-8"
+          ]
+        },
+        {
+          "name": "Deal With The Devil",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-1-9"
+          ]
+        },
+        {
+          "name": "Lethal Pursuit",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-4-9"
+          ]
+        },
+        {
+          "name": "Feast of Talons",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-7-9"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:witch-hunter/houndmaster:15-40-2-8",
+        "talent:witch-hunter/houndmaster:15-40-4-8",
+        "talent:witch-hunter/houndmaster:15-40-6-8",
+        "talent:witch-hunter/houndmaster:15-40-10-8",
+        "talent:witch-hunter/houndmaster:15-40-1-9",
+        "talent:witch-hunter/houndmaster:15-40-4-9",
+        "talent:witch-hunter/houndmaster:15-40-7-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "leveling_30_49": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "level_50_60": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "boss": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "dungeon_aoe": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "pvp": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [],
+    "avoid_if": []
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [],
+  "sentiment": {
+    "praise": [],
+    "frustrations": [],
+    "contested": []
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 2,
+    "latest_update": "2026-07-30T09:18:21.694+00:00",
+    "top_title": "Houndmaster Deep Dive: Talents, Rotation, Macros, Tips.",
+    "top_url": "https://coabuildhub.com/build/e4e89e4c-e64d-41df-b93a-62e7a56fc887",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:e4e89e4c-e64d-41df-b93a-62e7a56fc887"
+    ]
+  },
+  "coverage": {
+    "mechanical": "structural_baseline",
+    "community": "indexed",
+    "performance": "missing",
+    "video": "missing",
+    "overall_confidence": "low",
+    "gaps": [
+      "Effective core loop needs recent guide or player cross-check.",
+      "Contextual complexity values are not yet researched.",
+      "Recent performance, sentiment, issues, and video evidence are not yet reconciled."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-4-0",
+      "kind": "structural",
+      "text": "Unleash the Hounds: Summon 1 Lesser Shadow Hound to aid you in combat for 20 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-10-0",
+      "kind": "structural",
+      "text": "Houndmaster: Level 10 PassiveYour ranged auto attacks now generate Rage.In addition, teaches you Houndmaster's Whistle.Houndmaster's WhistleSummons a permanent Shadowhound companion to aid you in combat.Your Shadowhound receives 25% of healing done to you.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-4-1",
+      "kind": "structural",
+      "text": "Houndmaster's Call: Command your Shadow Hounds to leap upon an enemy target, dealing two strikes for 1164 + 30% ranged AP Shadow damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-2-2",
+      "kind": "structural",
+      "text": "Expert Shot: Increases the damage of Shadowblast by 10% and your hit chance by 2%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-6-2",
+      "kind": "structural",
+      "text": "Shadow Rage: Casting Shadowblast now grants Shadow Rage to your Shadow Hound.Shadow RageAuto attacks have a 50% chance to deal an additional 57*1+AP*0.07t Shadow Damage. Lasts 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-10-2",
+      "kind": "structural",
+      "text": "Sharpshooter : Level 20 PassiveCasting Shadowblast now regenerates 5% of your maximum mana.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-1-3",
+      "kind": "structural",
+      "text": "Quickdraw: Unleash a quick shot, dealing 175% Ranged Weapon Damage plus 16 + 20% ranged AP Physical damage and generates Rage.Only usable after critically striking with an ability.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-3-3",
+      "kind": "structural",
+      "text": "Trapper: Reduces the cooldown of your Trap spells by -25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-5-3",
+      "kind": "structural",
+      "text": "Expulsion of Evil: Direct ranged attacks and abilities now have a 5% chance to reset the cooldown of Houndmaster's Call.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-7-3",
+      "kind": "structural",
+      "text": "Dark Ranger: Increases the Shadow damage dealt by your Shadow Hounds by 5%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-0-4",
+      "kind": "structural",
+      "text": "Pure Agony: Increases the critical damage of Quickdraw by 50%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-2-4",
+      "kind": "structural",
+      "text": "Darkrider: Reduces the Rage cost of Shadowblast, Vault, and Unleash the Hounds by -10.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-4-4",
+      "kind": "structural",
+      "text": "Decimate: Empowers your Shadow Hounds for 20 seconds, granting them 30% increased damage and haste and allowing them to ignore Armor.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-6-4",
+      "kind": "structural",
+      "text": "Houndfeeder: Increases the critical strike chance of you and your Shadow Hound by 4%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-8-4",
+      "kind": "structural",
+      "text": "Darkflock: Channel for 8 seconds, commanding a flock of crows to deal 50 + 15% ranged AP + 85% SP Shadow damage to enemies in a wide cone every 2 sec.Can channel while moving.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-10-4",
+      "kind": "structural",
+      "text": "Dark Mind: Level 30 PassiveIncreases your critical strike rating by 25% of your Intellect.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-0-5a",
+      "kind": "structural",
+      "text": "Darkhunter: Your Quickdraw now additionally causes your next Darkslayer within 15 seconds to be instant cast.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-0-5b",
+      "kind": "structural",
+      "text": "Reload: Reduces the cooldown of Quickdraw by -4 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-2-5",
+      "kind": "structural",
+      "text": "Hail of Gunfire: Increases your ranged haste by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-4-5",
+      "kind": "structural",
+      "text": "Kennel Master: Casting Unleash The Hounds now has a 25% chance to summon an additional Lesser Shadow Hound for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-6-5",
+      "kind": "structural",
+      "text": "Defender of Darkshire: Critical strikes with ranged auto attacks now increase the melee haste of your Shadow Hounds by 10% for 5 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-8-5",
+      "kind": "structural",
+      "text": "Anguish: Your Shadow damage dealt now has a 5% chance to reduce the channel time of your next Darkflock within 15 seconds by -50%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-1-6",
+      "kind": "structural",
+      "text": "Repulse: Emit a burst of shadow from your musket that strikes enemies in front of you, dealing 57 Shadow damage and knocking all affected targets back.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-4-6",
+      "kind": "structural",
+      "text": "Houndmaster: Using Houndmaster's Call summons 1 Lesser Shadow Hound for 15 seconds that leaps at the target and deals 217 Shadow damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-7-6",
+      "kind": "structural",
+      "text": "Loksey's Journal: Increases the damage of Shadow Rage by 20% of your ranged attack power.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-10-6",
+      "kind": "structural",
+      "text": "Daredevil: Level 40 PassiveWhen you take damage that would reduce your health to 35% or less, you summon 3 lesser Shadow Hounds and reset the cooldown of Vault.Can only occur once every 2 min.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-1-7",
+      "kind": "structural",
+      "text": "Bringer of Darkness: Your Repulse now resets the cooldown of Vault and makes your next Vault within 6 seconds free of cost.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-3-7",
+      "kind": "structural",
+      "text": "Silver Bullets: Increases the damage of Darkslayer by 10%, increased by an additional 10% against Undead.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-4-7",
+      "kind": "structural",
+      "text": "Veiled in Darkness: A veil of dark magic encircles you at all times, granting 5% increased Attack Power to party and raid members within 100 yds.Does not stack with similar effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-5-7",
+      "kind": "structural",
+      "text": "Scent of Magic: Critical strikes now apply Scent of Magic for 15 seconds, causing your Shadow Hound's next Shadow Leap to incur a -10 sec reduced cooldown.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-7-7",
+      "kind": "structural",
+      "text": "Rampaging Hounds: Your Shadow Hounds melee attacks now cleave 1 additional nearby enemy.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-2-8",
+      "kind": "structural",
+      "text": "Rearmament: Arm yourself against evil, resetting the cooldown of all Traps and Decimate.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-4-8",
+      "kind": "structural",
+      "text": "Low Dawn: Increases the damage of Sixfold Shot by 25% and causes it to channel 0.5 sec quicker.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-6-8",
+      "kind": "structural",
+      "text": "Coordinated Killing: Casting Unleash the Hounds now casts Shadow Rage on you for 10 seconds.Shadow RageRanged auto attacks deal an additional 50 Shadow Damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-10-8",
+      "kind": "structural",
+      "text": "Sixfold Shot: Level 50 PassiveEvery 5th Darkslayer within 15 seconds now transforms your Quickdraw into Sixfold Shot.Sixfold ShotUnleash 6 quick shots across 1.5 seconds, each dealing 100% Ranged Weapon Damage plus 133 Physical damage and generating 3 Rage. and 2% maximum mana.Usable while moving.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-1-9",
+      "kind": "structural",
+      "text": "Deal With The Devil: Your and your Shadow Hounds critical damage dealt with Shadow damage is increased by 50%, but the cost of your spells and abilities is increased by 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-4-9",
+      "kind": "structural",
+      "text": "Lethal Pursuit: Shadow Rage now also grants your Shadow Hounds 10% increased haste and it now stacks 3 additional times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-hunter/houndmaster:15-40-7-9",
+      "kind": "structural",
+      "text": "Feast of Talons: Striking at least 5 enemies with Darkflock now causes you to unleash a flock of crows around each enemy struck, dealing 762 + 78.75% SP + 45% ranged AP Twilight Damage over 9 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    }
+  ]
+}

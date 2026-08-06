@@ -1,0 +1,910 @@
+{
+  "baseline": "necromancer--rime.json",
+  "set": {
+    "identity": {
+      "fantasy": "A frost lich who freezes prey for guaranteed Glacial Impact detonations while skeletal mages and champion summons amplify a personal spell-burst engine.",
+      "primary_family": "sequencers",
+      "also_fits": [
+        "planners"
+      ],
+      "playstyle_tags": [
+        "freeze-combo-caster",
+        "pet-caster",
+        "late-blooming-burst"
+      ],
+      "one_line": "A Lich-themed caster combining freezes, Ice Barrage, Soulfreeze, and empowered Skeletal Mages. Command refunds and Lich Form tie spellcasting to minion output; it offers strong control and crit-based burst but asks the player to coordinate personal and army windows.",
+      "claim_ids": [
+        "talent:necromancer/rime:23-60-6-2",
+        "observed:necromancer/rime:late-bloom",
+        "inference:necromancer/rime:freeze-cost",
+        "talent:necromancer/rime:23-60-4-0",
+        "talent:necromancer/rime:23-60-6-8",
+        "talent:necromancer/rime:23-60-2-9",
+        "talent:necromancer/rime:23-60-6-9",
+        "talent:necromancer/rime:23-60-10-6"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "Use Ice Barrage and pet commands to create or exploit Frozen targets, cast Glacial Impact into those freezes, maintain Runic Power through frost interactions, summon skeletal mages, and enter Lich Form or champion windows when the target can absorb the burst.",
+      "single_target": "Freeze the target, exploit the guaranteed-critical Glacial Impact package, weave Ice Barrage and Lichfrost, and use Lich Form plus champion cooldown reduction for larger windows.",
+      "aoe": "Harrowing Winds copies Glacial Impact damage around the primary target, while skeletal mages and champion commands add pack pressure; current reports describe the capstone transition as essential.",
+      "movement_and_target_switching": "Freezes and pet commands create space, but the biggest payoff requires a valid Frozen primary target and can be lost to immunity or rapid death.",
+      "defense_and_control": "Repeated freezes, Necrotic Chains, Bonefreeze, wards, and a champion capable of major damage reduction provide control-heavy survival.",
+      "group_utility": "Chilling Presence gives a non-stacking critical-strike aura, and the freeze toolkit supplies substantial control where enemies are not immune.",
+      "failure_modes": [
+        {
+          "text": "Casting Glacial Impact without a durable Frozen target or entering the champion window before the fight warrants it wastes the spec's largest payoff.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost"
+          ]
+        },
+        {
+          "text": "Movement or a target swap can interrupt the intended payoff: freezes and pet commands create space, but the biggest payoff requires a valid frozen primary target and can be lost to immunity or rapid death.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8"
+          ]
+        },
+        {
+          "text": "Spending recovery or control too early leaves less protection for the next pressure event: repeated freezes, necrotic chains, bonefreeze, wards, and a champion capable of major damage reduction provide control-heavy survival.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "talent:necromancer/rime:23-60-6-2",
+        "observed:necromancer/rime:late-bloom",
+        "inference:necromancer/rime:freeze-cost",
+        "talent:necromancer/rime:23-60-4-0",
+        "talent:necromancer/rime:23-60-6-8",
+        "talent:necromancer/rime:23-60-2-9",
+        "talent:necromancer/rime:23-60-6-9",
+        "talent:necromancer/rime:23-60-10-6"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "A stripped-down frost mage with Ice Barrage, freezes, and Glacial Impact but without the complete Lich and skeletal-mage engine.",
+        "strengths": [
+          "Strong control fantasy",
+          "Visible freeze payoff"
+        ],
+        "cautions": [
+          "Multiple players call early Rime weak",
+          "Pet interactions are still required"
+        ],
+        "claim_ids": [
+          "observed:necromancer/rime:late-bloom",
+          "talent:necromancer/rime:23-60-4-0",
+          "talent:necromancer/rime:23-60-6-2",
+          "inference:necromancer/rime:freeze-cost",
+          "talent:necromancer/rime:23-60-6-8",
+          "talent:necromancer/rime:23-60-2-9",
+          "talent:necromancer/rime:23-60-6-9",
+          "talent:necromancer/rime:23-60-10-6"
+        ]
+      },
+      "level_50_60": {
+        "feel": "A much fuller freeze-burst caster with cheap skeletal mages, Soulfreeze, improved champions, and Master Lich vulnerability stacking.",
+        "strengths": [
+          "Large Glacial Impact criticals",
+          "Champion defense window",
+          "Strong freeze control"
+        ],
+        "cautions": [
+          "Performance changes sharply by level",
+          "Freeze immunity can disrupt the intended combo"
+        ],
+        "claim_ids": [
+          "observed:necromancer/rime:late-bloom",
+          "talent:necromancer/rime:23-60-6-8",
+          "talent:necromancer/rime:23-60-2-9",
+          "talent:necromancer/rime:23-60-6-9",
+          "talent:necromancer/rime:23-60-6-2",
+          "inference:necromancer/rime:freeze-cost",
+          "talent:necromancer/rime:23-60-4-0",
+          "talent:necromancer/rime:23-60-10-6"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "By levels 30-49, use ice barrage and pet commands to create or exploit frozen targets, cast glacial impact into those freezes, maintain runic power through frost interactions, summon skeletal mages, and enter lich form or champion windows when the target can absorb the burst.",
+        "strengths": [
+          "Core engine is online",
+          "More complete target coverage"
+        ],
+        "cautions": [
+          "Late talents still change the ceiling",
+          "Freezes and pet commands create space, but the biggest payoff requires a valid Frozen primary target and can be lost to immunity or rapid death"
+        ],
+        "claim_ids": [
+          "talent:necromancer/rime:23-60-6-2",
+          "observed:necromancer/rime:late-bloom",
+          "inference:necromancer/rime:freeze-cost",
+          "talent:necromancer/rime:23-60-4-0",
+          "talent:necromancer/rime:23-60-6-8",
+          "talent:necromancer/rime:23-60-2-9",
+          "talent:necromancer/rime:23-60-6-9",
+          "talent:necromancer/rime:23-60-10-6"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, freeze the target, exploit the guaranteed-critical glacial impact package, weave ice barrage and lichfrost, and use lich form plus champion cooldown reduction for larger windows.",
+        "strengths": [
+          "Durable targets preserve the full loop",
+          "Cooldowns can be planned"
+        ],
+        "cautions": [
+          "Movement can break setup",
+          "Repeated errors remain visible"
+        ],
+        "claim_ids": [
+          "talent:necromancer/rime:23-60-6-2",
+          "observed:necromancer/rime:late-bloom",
+          "inference:necromancer/rime:freeze-cost",
+          "talent:necromancer/rime:23-60-4-0",
+          "talent:necromancer/rime:23-60-6-8",
+          "talent:necromancer/rime:23-60-2-9",
+          "talent:necromancer/rime:23-60-6-9",
+          "talent:necromancer/rime:23-60-10-6"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, harrowing winds copies glacial impact damage around the primary target, while skeletal mages and champion commands add pack pressure; current reports describe the capstone transition as essential.",
+        "strengths": [
+          "Pack tools express the spec clearly",
+          "Group utility has regular value"
+        ],
+        "cautions": [
+          "Short-lived targets can erase setup",
+          "Tank movement changes the plan"
+        ],
+        "claim_ids": [
+          "talent:necromancer/rime:23-60-6-2",
+          "observed:necromancer/rime:late-bloom",
+          "inference:necromancer/rime:freeze-cost",
+          "talent:necromancer/rime:23-60-4-0",
+          "talent:necromancer/rime:23-60-6-8",
+          "talent:necromancer/rime:23-60-2-9",
+          "talent:necromancer/rime:23-60-6-9",
+          "talent:necromancer/rime:23-60-10-6"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, freezes and pet commands create space, but the biggest payoff requires a valid frozen primary target and can be lost to immunity or rapid death. Repeated freezes, Necrotic Chains, Bonefreeze, wards, and a champion capable of major damage reduction provide control-heavy survival.",
+        "strengths": [
+          "Control and utility create options",
+          "Target swaps can reward flexibility"
+        ],
+        "cautions": [
+          "Disruption makes the loop less predictable",
+          "Defensive timing is punishable"
+        ],
+        "claim_ids": [
+          "talent:necromancer/rime:23-60-6-2",
+          "observed:necromancer/rime:late-bloom",
+          "inference:necromancer/rime:freeze-cost",
+          "talent:necromancer/rime:23-60-4-0",
+          "talent:necromancer/rime:23-60-6-8",
+          "talent:necromancer/rime:23-60-2-9",
+          "talent:necromancer/rime:23-60-6-9",
+          "talent:necromancer/rime:23-60-10-6"
+        ]
+      }
+    },
+    "complexity": {
+      "execution": {
+        "pvp": {
+          "value": "high",
+          "reason": "The player must create a freeze, preserve range, and land the impact before the opponent escapes or uses immunity.",
+          "claim_ids": [
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "Execution is constrained by positioning and swaps: Freezes and pet commands create space, but the biggest payoff requires a valid Frozen primary target and can be lost to immunity or rapid death. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Execution is constrained by positioning and swaps: Freezes and pet commands create space, but the biggest payoff requires a valid Frozen primary target and can be lost to immunity or rapid death. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Execution is constrained by positioning and swaps: Freezes and pet commands create space, but the biggest payoff requires a valid Frozen primary target and can be lost to immunity or rapid death. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "Execution is constrained by positioning and swaps: Freezes and pet commands create space, but the biggest payoff requires a valid Frozen primary target and can be lost to immunity or rapid death. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Execution is constrained by positioning and swaps: Freezes and pet commands create space, but the biggest payoff requires a valid Frozen primary target and can be lost to immunity or rapid death. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        }
+      },
+      "failure_cost": {
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Freeze immunity or a mistimed champion window can invalidate the intended critical payoff.",
+          "claim_ids": [
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-6-2",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Casting Glacial Impact without a durable Frozen target or entering the champion window before the fight warrants it wastes the spec's largest payoff. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Casting Glacial Impact without a durable Frozen target or entering the champion window before the fight warrants it wastes the spec's largest payoff. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "Casting Glacial Impact without a durable Frozen target or entering the champion window before the fight warrants it wastes the spec's largest payoff. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "moderate-high",
+          "reason": "Casting Glacial Impact without a durable Frozen target or entering the champion window before the fight warrants it wastes the spec's largest payoff. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Casting Glacial Impact without a durable Frozen target or entering the champion window before the fight warrants it wastes the spec's largest payoff. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        }
+      },
+      "core_actions": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Use Ice Barrage and pet commands to create or exploit Frozen targets, cast Glacial Impact into those freezes, maintain Runic Power through frost interactions, summon skeletal mages, and enter Lich Form or champion windows when the target can absorb the burst. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Use Ice Barrage and pet commands to create or exploit Frozen targets, cast Glacial Impact into those freezes, maintain Runic Power through frost interactions, summon skeletal mages, and enter Lich Form or champion windows when the target can absorb the burst. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Use Ice Barrage and pet commands to create or exploit Frozen targets, cast Glacial Impact into those freezes, maintain Runic Power through frost interactions, summon skeletal mages, and enter Lich Form or champion windows when the target can absorb the burst. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Use Ice Barrage and pet commands to create or exploit Frozen targets, cast Glacial Impact into those freezes, maintain Runic Power through frost interactions, summon skeletal mages, and enter Lich Form or champion windows when the target can absorb the burst. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Use Ice Barrage and pet commands to create or exploit Frozen targets, cast Glacial Impact into those freezes, maintain Runic Power through frost interactions, summon skeletal mages, and enter Lich Form or champion windows when the target can absorb the burst. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        },
+        "pvp": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Use Ice Barrage and pet commands to create or exploit Frozen targets, cast Glacial Impact into those freezes, maintain Runic Power through frost interactions, summon skeletal mages, and enter Lich Form or champion windows when the target can absorb the burst. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        }
+      },
+      "state_tracking": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Freeze the target, exploit the guaranteed-critical Glacial Impact package, weave Ice Barrage and Lichfrost, and use Lich Form plus champion cooldown reduction for larger windows. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Freeze the target, exploit the guaranteed-critical Glacial Impact package, weave Ice Barrage and Lichfrost, and use Lich Form plus champion cooldown reduction for larger windows. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Freeze the target, exploit the guaranteed-critical Glacial Impact package, weave Ice Barrage and Lichfrost, and use Lich Form plus champion cooldown reduction for larger windows. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Freeze the target, exploit the guaranteed-critical Glacial Impact package, weave Ice Barrage and Lichfrost, and use Lich Form plus champion cooldown reduction for larger windows. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Freeze the target, exploit the guaranteed-critical Glacial Impact package, weave Ice Barrage and Lichfrost, and use Lich Form plus champion cooldown reduction for larger windows. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        },
+        "pvp": {
+          "value": "low",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Freeze the target, exploit the guaranteed-critical Glacial Impact package, weave Ice Barrage and Lichfrost, and use Lich Form plus champion cooldown reduction for larger windows. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Harrowing Winds copies Glacial Impact damage around the primary target, while skeletal mages and champion commands add pack pressure; current reports describe the capstone transition as essential. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Harrowing Winds copies Glacial Impact damage around the primary target, while skeletal mages and champion commands add pack pressure; current reports describe the capstone transition as essential. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Harrowing Winds copies Glacial Impact damage around the primary target, while skeletal mages and champion commands add pack pressure; current reports describe the capstone transition as essential. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Harrowing Winds copies Glacial Impact damage around the primary target, while skeletal mages and champion commands add pack pressure; current reports describe the capstone transition as essential. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Harrowing Winds copies Glacial Impact damage around the primary target, while skeletal mages and champion commands add pack pressure; current reports describe the capstone transition as essential. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        },
+        "pvp": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Harrowing Winds copies Glacial Impact damage around the primary target, while skeletal mages and champion commands add pack pressure; current reports describe the capstone transition as essential. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; repeated freezes, necrotic chains, bonefreeze, wards, and a champion capable of major damage reduction provide control-heavy survival. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; repeated freezes, necrotic chains, bonefreeze, wards, and a champion capable of major damage reduction provide control-heavy survival. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; repeated freezes, necrotic chains, bonefreeze, wards, and a champion capable of major damage reduction provide control-heavy survival. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; repeated freezes, necrotic chains, bonefreeze, wards, and a champion capable of major damage reduction provide control-heavy survival. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; repeated freezes, necrotic chains, bonefreeze, wards, and a champion capable of major damage reduction provide control-heavy survival. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "Target count, incoming pressure, and movement change the next action; repeated freezes, necrotic chains, bonefreeze, wards, and a champion capable of major damage reduction provide control-heavy survival. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8",
+            "talent:necromancer/rime:23-60-2-9",
+            "talent:necromancer/rime:23-60-6-9",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You enjoy setting up guaranteed frost criticals with control, lich form, and mage companions.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "talent:necromancer/rime:23-60-10-6"
+          ]
+        },
+        {
+          "text": "You enjoy the spec's core cadence: use ice barrage and pet commands to create or exploit frozen targets, cast glacial impact into those freezes, maintain runic power through frost interactions, summon skeletal mages, and enter lich form or champion windows when the target can absorb the burst.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You want the complete fantasy before level 40 or dislike pet and freeze dependencies.",
+          "claim_ids": [
+            "observed:necromancer/rime:late-bloom"
+          ]
+        },
+        {
+          "text": "You dislike the positioning or swap constraint that freezes and pet commands create space, but the biggest payoff requires a valid frozen primary target and can be lost to immunity or rapid death.",
+          "claim_ids": [
+            "talent:necromancer/rime:23-60-6-2",
+            "observed:necromancer/rime:late-bloom",
+            "inference:necromancer/rime:freeze-cost",
+            "talent:necromancer/rime:23-60-4-0",
+            "talent:necromancer/rime:23-60-6-8"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Level-50-plus players praise reduced champion cooldowns, major defensive access, and very large Glacial Impact criticals.",
+          "claim_ids": [
+            "observed:necromancer/rime:late-bloom"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "The most consistent report is that Rime feels incomplete or weak until Lich Form and capstone mage talents arrive.",
+          "claim_ids": [
+            "observed:necromancer/rime:late-bloom"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "Some players call Rime strong while others call it a worse Animation; the disagreement tracks closely with level and capstone access.",
+          "claim_ids": [
+            "observed:necromancer/rime:late-bloom",
+            "observed:necromancer/rime:performance"
+          ]
+        }
+      ]
+    },
+    "performance_signal_ids": [
+      "observed:necromancer/rime:performance"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "moderate",
+      "performance": "limited_uncontrolled",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium",
+      "gaps": [
+        "Champion cooldown reduction needs live confirmation.",
+        "No controlled pre-50 versus post-50 performance study."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "A stripped-down frost mage with Ice Barrage, freezes, and Glacial Impact but without the complete Lich and skeletal-mage engine.",
+      "observed_changes": [
+        "Multiple players call early Rime weak",
+        "Pet interactions are still required"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "By levels 30-49, use ice barrage and pet commands to create or exploit frozen targets, cast glacial impact into those freezes, maintain runic power through frost interactions, summon skeletal mages, and enter lich form or champion windows when the target can absorb the burst.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Freezes and pet commands create space, but the biggest payoff requires a valid Frozen primary target and can be lost to immunity or rapid death"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "A much fuller freeze-burst caster with cheap skeletal mages, Soulfreeze, improved champions, and Master Lich vulnerability stacking.",
+      "observed_changes": [
+        "Performance changes sharply by level",
+        "Freeze immunity can disrupt the intended combo"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "A stripped-down frost mage with Ice Barrage, freezes, and Glacial Impact but without the complete Lich and skeletal-mage engine.",
+      "observed_changes": [
+        "Multiple players call early Rime weak",
+        "Pet interactions are still required"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "By levels 30-49, use ice barrage and pet commands to create or exploit frozen targets, cast glacial impact into those freezes, maintain runic power through frost interactions, summon skeletal mages, and enter lich form or champion windows when the target can absorb the burst.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Freezes and pet commands create space, but the biggest payoff requires a valid Frozen primary target and can be lost to immunity or rapid death"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:necromancer/rime:late-bloom",
+      "kind": "observed",
+      "text": "Multiple current Necromancer players say Rime is weak or incomplete before Lich Form and level-50 capstones, then improves sharply through cheaper skeletal mages, reduced champion cooldowns, a champion granting major damage reduction, and large Glacial Impact criticals.",
+      "source_ids": [
+        "reddit:necromancer-death-rime-2026-07-27",
+        "reddit:necromancer-animation-2026-07-12"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "solo_leveling",
+          "group_pve",
+          "pvp"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The exact champion cooldown and damage-reduction values should be verified live."
+    },
+    {
+      "id": "observed:necromancer/rime:performance",
+      "kind": "observed",
+      "text": "The July DPS compilation reports Rime at 3,829, and the August Mythic inventory lists 89 Rime records.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "pve_unspecified",
+          "mythic_dungeons"
+        ],
+        "build_or_mode": [
+          "unspecified"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "Does not separate pre-capstone experiences or encounter freeze immunity."
+    },
+    {
+      "id": "inference:necromancer/rime:freeze-cost",
+      "kind": "inference",
+      "text": "Rime's largest direct payoff is conditionally gated by a Frozen target, so immunity, target death, or delayed execution can invalidate the setup.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:necromancer/rime:23-60-6-2",
+        "talent:necromancer/rime:23-60-6-4",
+        "talent:necromancer/rime:23-60-4-8"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "high",
+      "conflicts_with": [],
+      "notes": "The number of freeze-immune endgame targets is not catalogued."
+    }
+  ]
+}

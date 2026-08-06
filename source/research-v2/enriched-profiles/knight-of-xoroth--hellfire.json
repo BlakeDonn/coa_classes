@@ -1,0 +1,2102 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "knight-of-xoroth/hellfire",
+    "class": "Knight of Xoroth",
+    "name": "Hellfire",
+    "roles": [
+      "Damage"
+    ],
+    "range": [
+      "Hybrid"
+    ]
+  },
+  "identity": {
+    "fantasy": "A mounted infernal spellblade fighting beside a Greater Imp, banking Hellfire Embers and turning them into a temporary demon-form barrage.",
+    "one_line": "Maintain pet and fire effects, build Embers through Cinderblade and infernal attacks, then enter Hellfire Form when the target count and cooldown package can repay it.",
+    "primary_family": "commanders",
+    "also_fits": [
+      "sequencers"
+    ],
+    "claim_ids": [
+      "talent:knight-of-xoroth/hellfire:17-46-4-3",
+      "talent:knight-of-xoroth/hellfire:17-46-3-4",
+      "talent:knight-of-xoroth/hellfire:17-46-10-0",
+      "talent:knight-of-xoroth/hellfire:17-46-10-4",
+      "observed:knight-of-xoroth/hellfire:midlevel-power",
+      "observed:knight-of-xoroth/hellfire:hybrid-load",
+      "inference:knight-of-xoroth/hellfire:playstyle-identity"
+    ],
+    "playstyle_tags": [
+      "pet-form-spellblade",
+      "proc-hybrid",
+      "summon-cleaver"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "Coordinate Greater Imp attacks, Cinderblade, Pestilence and seeking flames to build Embers; transform and spend the window on form-enhanced strikes and summons.",
+    "resources": [],
+    "builders": [
+      {
+        "name": "Seeking Flame",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-6-2"
+        ]
+      },
+      {
+        "name": "Grotesque",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-3-5"
+        ]
+      },
+      {
+        "name": "Brimstone Splinters",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-7b"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Combusting Blade",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-3-1"
+        ]
+      },
+      {
+        "name": "Infernal Steel",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-7-5"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Grotesque",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-3-5"
+        ]
+      },
+      {
+        "name": "Infernal Steel",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-7-5"
+        ]
+      },
+      {
+        "name": "Indiscriminate",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-0-6"
+        ]
+      },
+      {
+        "name": "Into the Maw",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-2-8"
+        ]
+      },
+      {
+        "name": "Ascended Warlock",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-9"
+        ]
+      },
+      {
+        "name": "Fury of Xoroth",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-6-9"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Hellfire Form",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-3-4"
+        ],
+        "structural_description": "Enter your Hellfire Form, increasing your Fire damage dealt by 20% and Fire critical strike chance by 15% for 15 seconds."
+      },
+      {
+        "name": "Doom",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-5-4"
+        ],
+        "structural_description": "Transform: s your Greater Imp into a Doomguard for 12 seconds.While transformed, your Doomguard deals 20% more damage, and its auto attacks ignite the target, dealing 10% of the damage dealt as Fire damage over 6 seconds, stacking 6 times."
+      },
+      {
+        "name": "Grotesque",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-3-5"
+        ],
+        "structural_description": "While Hellfire Form is active, your Seeking Flame now has no cooldown and generates an additional Demonfire."
+      }
+    ],
+    "single_target": "Keep the pet connected, maintain the relevant wound or fire effects, and align Form rather than drifting it into movement.",
+    "aoe": "Infernal Strikes, seeking flames, Pestilence and summons cover packs once they are grouped; the mid-level AoE conversion is a major breakpoint.",
+    "movement_and_target_switching": "Mounted Combat and ranged fire effects soften melee downtime, but pet travel and a misplaced Form still cost output.",
+    "defense_and_control": "KoX self-healing, Pestilence choices, control and mounted escape give the hybrid several answers without making it a tank.",
+    "group_utility": "Pestilence modes, grips and the Greater Imp add group control and sustained pressure.",
+    "failure_modes": [
+      {
+        "text": "Entering Hellfire Form with low Embers or before the pack settles wastes its payoff.",
+        "claim_ids": [
+          "inference:knight-of-xoroth/hellfire:failure-cost",
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0"
+        ]
+      },
+      {
+        "text": "Losing the Greater Imp removes damage and interactions until it reconnects.",
+        "claim_ids": [
+          "inference:knight-of-xoroth/hellfire:failure-cost",
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0"
+        ]
+      },
+      {
+        "text": "Trying to maintain every fire, pet and melee effect can delay the actual spender.",
+        "claim_ids": [
+          "inference:knight-of-xoroth/hellfire:failure-cost",
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0"
+        ]
+      }
+    ],
+    "claim_ids": [
+      "talent:knight-of-xoroth/hellfire:17-46-4-3",
+      "talent:knight-of-xoroth/hellfire:17-46-3-4",
+      "talent:knight-of-xoroth/hellfire:17-46-10-0",
+      "talent:knight-of-xoroth/hellfire:17-46-10-4",
+      "talent:knight-of-xoroth/hellfire:17-46-1-7b",
+      "observed:knight-of-xoroth/hellfire:midlevel-power",
+      "observed:knight-of-xoroth/hellfire:hybrid-load",
+      "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+      "observed:knight-of-xoroth/hellfire:build-practice",
+      "inference:knight-of-xoroth/hellfire:playstyle-identity"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Hellmaw",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-0"
+          ]
+        },
+        {
+          "name": "Greater Imp",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-10-0"
+          ]
+        },
+        {
+          "name": "Combusting Blade",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-3-1"
+          ]
+        },
+        {
+          "name": "Invasion",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-5-1"
+          ]
+        }
+      ],
+      "observed_loop": "Early Cinderblade and imp play hints at the hybrid but lacks the complete form.",
+      "observed_changes": [
+        "Form incomplete",
+        "Pet travel"
+      ],
+      "claim_ids": [
+        "talent:knight-of-xoroth/hellfire:17-46-4-0",
+        "talent:knight-of-xoroth/hellfire:17-46-10-0",
+        "talent:knight-of-xoroth/hellfire:17-46-3-1",
+        "talent:knight-of-xoroth/hellfire:17-46-5-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Pestilence of Apocalypse",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-2-2"
+          ]
+        },
+        {
+          "name": "Seeking Flame",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-6-2"
+          ]
+        },
+        {
+          "name": "Burning Power",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-10-2"
+          ]
+        },
+        {
+          "name": "To Ashes",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-1-3"
+          ]
+        },
+        {
+          "name": "Hellfire Embers",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-3"
+          ]
+        },
+        {
+          "name": "Flamewrath",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-7-3"
+          ]
+        }
+      ],
+      "observed_loop": "Early Cinderblade and imp play hints at the hybrid but lacks the complete form.",
+      "observed_changes": [
+        "Form incomplete",
+        "Pet travel"
+      ],
+      "claim_ids": [
+        "talent:knight-of-xoroth/hellfire:17-46-2-2",
+        "talent:knight-of-xoroth/hellfire:17-46-6-2",
+        "talent:knight-of-xoroth/hellfire:17-46-10-2",
+        "talent:knight-of-xoroth/hellfire:17-46-1-3",
+        "talent:knight-of-xoroth/hellfire:17-46-4-3",
+        "talent:knight-of-xoroth/hellfire:17-46-7-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Claws of Hell",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-0-4a"
+          ]
+        },
+        {
+          "name": "Calamity",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-0-4b"
+          ]
+        },
+        {
+          "name": "Hellfire Form",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-3-4"
+          ]
+        },
+        {
+          "name": "Doom",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-5-4"
+          ]
+        },
+        {
+          "name": "Seething Strikes",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-8-4"
+          ]
+        },
+        {
+          "name": "Cinderblade",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-10-4"
+          ]
+        },
+        {
+          "name": "Rain of Chaos",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-1-5"
+          ]
+        },
+        {
+          "name": "Grotesque",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-3-5"
+          ]
+        },
+        {
+          "name": "Hellfire Rituals",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-5-5"
+          ]
+        },
+        {
+          "name": "Infernal Steel",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-7-5"
+          ]
+        }
+      ],
+      "observed_loop": "The AoE conversion and mounted tools make the spellblade feel powerful in the 30s.",
+      "observed_changes": [
+        "More states to track",
+        "Setup can be misread"
+      ],
+      "claim_ids": [
+        "talent:knight-of-xoroth/hellfire:17-46-0-4a",
+        "talent:knight-of-xoroth/hellfire:17-46-0-4b",
+        "talent:knight-of-xoroth/hellfire:17-46-3-4",
+        "talent:knight-of-xoroth/hellfire:17-46-5-4",
+        "talent:knight-of-xoroth/hellfire:17-46-8-4",
+        "talent:knight-of-xoroth/hellfire:17-46-10-4",
+        "talent:knight-of-xoroth/hellfire:17-46-1-5",
+        "talent:knight-of-xoroth/hellfire:17-46-3-5",
+        "talent:knight-of-xoroth/hellfire:17-46-5-5",
+        "talent:knight-of-xoroth/hellfire:17-46-7-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Indiscriminate",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-0-6"
+          ]
+        },
+        {
+          "name": "Inferno Blast",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-2-6"
+          ]
+        },
+        {
+          "name": "Infernal Pummeling",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-6"
+          ]
+        },
+        {
+          "name": "Hellbringer",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-6-6a"
+          ]
+        },
+        {
+          "name": "Xorothian Empowerment",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-6-6b"
+          ]
+        },
+        {
+          "name": "Infernal Pursuit",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-8-6"
+          ]
+        },
+        {
+          "name": "Impish Pestilence",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-10-6"
+          ]
+        },
+        {
+          "name": "Partners in Flames",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-1-7a"
+          ]
+        },
+        {
+          "name": "Unbound Inferno",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-1-7b"
+          ]
+        },
+        {
+          "name": "Brimstone Flames",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-7a"
+          ]
+        },
+        {
+          "name": "Brimstone Splinters",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-7b"
+          ]
+        },
+        {
+          "name": "Shadowflame Forge",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-7-7"
+          ]
+        }
+      ],
+      "observed_loop": "The AoE conversion and mounted tools make the spellblade feel powerful in the 30s.",
+      "observed_changes": [
+        "More states to track",
+        "Setup can be misread"
+      ],
+      "claim_ids": [
+        "talent:knight-of-xoroth/hellfire:17-46-0-6",
+        "talent:knight-of-xoroth/hellfire:17-46-2-6",
+        "talent:knight-of-xoroth/hellfire:17-46-4-6",
+        "talent:knight-of-xoroth/hellfire:17-46-6-6a",
+        "talent:knight-of-xoroth/hellfire:17-46-6-6b",
+        "talent:knight-of-xoroth/hellfire:17-46-8-6",
+        "talent:knight-of-xoroth/hellfire:17-46-10-6",
+        "talent:knight-of-xoroth/hellfire:17-46-1-7a",
+        "talent:knight-of-xoroth/hellfire:17-46-1-7b",
+        "talent:knight-of-xoroth/hellfire:17-46-4-7a",
+        "talent:knight-of-xoroth/hellfire:17-46-4-7b",
+        "talent:knight-of-xoroth/hellfire:17-46-7-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Into the Maw",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-2-8"
+          ]
+        },
+        {
+          "name": "Punisher",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-6-8"
+          ]
+        },
+        {
+          "name": "Evil Duo",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-10-8"
+          ]
+        },
+        {
+          "name": "Hellstorm",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-2-9"
+          ]
+        },
+        {
+          "name": "Ascended Warlock",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-4-9"
+          ]
+        },
+        {
+          "name": "Fury of Xoroth",
+          "claim_ids": [
+            "talent:knight-of-xoroth/hellfire:17-46-6-9"
+          ]
+        }
+      ],
+      "observed_loop": "Late talents turn pet, Embers, form and summons into a layered burst engine.",
+      "observed_changes": [
+        "High tracking",
+        "Sparse endgame guides"
+      ],
+      "claim_ids": [
+        "talent:knight-of-xoroth/hellfire:17-46-2-8",
+        "talent:knight-of-xoroth/hellfire:17-46-6-8",
+        "talent:knight-of-xoroth/hellfire:17-46-10-8",
+        "talent:knight-of-xoroth/hellfire:17-46-2-9",
+        "talent:knight-of-xoroth/hellfire:17-46-4-9",
+        "talent:knight-of-xoroth/hellfire:17-46-6-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "Early Cinderblade and imp play hints at the hybrid but lacks the complete form.",
+      "strengths": [
+        "Pet-backed soloing",
+        "Hybrid reach"
+      ],
+      "cautions": [
+        "Form incomplete",
+        "Pet travel"
+      ],
+      "claim_ids": [
+        "talent:knight-of-xoroth/hellfire:17-46-4-3",
+        "talent:knight-of-xoroth/hellfire:17-46-3-4",
+        "talent:knight-of-xoroth/hellfire:17-46-10-0",
+        "talent:knight-of-xoroth/hellfire:17-46-10-4",
+        "observed:knight-of-xoroth/hellfire:midlevel-power",
+        "observed:knight-of-xoroth/hellfire:hybrid-load",
+        "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+        "inference:knight-of-xoroth/hellfire:playstyle-identity"
+      ]
+    },
+    "leveling_30_49": {
+      "feel": "The AoE conversion and mounted tools make the spellblade feel powerful in the 30s.",
+      "strengths": [
+        "Strong AoE unlock",
+        "Mounted mobility"
+      ],
+      "cautions": [
+        "More states to track",
+        "Setup can be misread"
+      ],
+      "claim_ids": [
+        "talent:knight-of-xoroth/hellfire:17-46-4-3",
+        "talent:knight-of-xoroth/hellfire:17-46-3-4",
+        "talent:knight-of-xoroth/hellfire:17-46-10-0",
+        "talent:knight-of-xoroth/hellfire:17-46-10-4",
+        "observed:knight-of-xoroth/hellfire:midlevel-power",
+        "observed:knight-of-xoroth/hellfire:hybrid-load",
+        "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+        "inference:knight-of-xoroth/hellfire:playstyle-identity"
+      ]
+    },
+    "level_50_60": {
+      "feel": "Late talents turn pet, Embers, form and summons into a layered burst engine.",
+      "strengths": [
+        "Flexible ST/AoE",
+        "Distinct transformation"
+      ],
+      "cautions": [
+        "High tracking",
+        "Sparse endgame guides"
+      ],
+      "claim_ids": [
+        "talent:knight-of-xoroth/hellfire:17-46-4-3",
+        "talent:knight-of-xoroth/hellfire:17-46-3-4",
+        "talent:knight-of-xoroth/hellfire:17-46-10-0",
+        "talent:knight-of-xoroth/hellfire:17-46-10-4",
+        "observed:knight-of-xoroth/hellfire:midlevel-power",
+        "observed:knight-of-xoroth/hellfire:hybrid-load",
+        "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+        "inference:knight-of-xoroth/hellfire:playstyle-identity"
+      ]
+    },
+    "boss": {
+      "feel": "On bosses, Keep the pet connected, maintain the relevant wound or fire effects, and align Form rather than drifting it into movement.",
+      "strengths": [
+        "Sustained pet pressure",
+        "Planned burst"
+      ],
+      "cautions": [
+        "Movement wastes Form",
+        "Pet uptime matters"
+      ],
+      "claim_ids": [
+        "talent:knight-of-xoroth/hellfire:17-46-4-3",
+        "talent:knight-of-xoroth/hellfire:17-46-3-4",
+        "talent:knight-of-xoroth/hellfire:17-46-10-0",
+        "talent:knight-of-xoroth/hellfire:17-46-10-4",
+        "observed:knight-of-xoroth/hellfire:midlevel-power",
+        "observed:knight-of-xoroth/hellfire:hybrid-load",
+        "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+        "inference:knight-of-xoroth/hellfire:playstyle-identity"
+      ]
+    },
+    "dungeon_aoe": {
+      "feel": "In dungeons, Infernal Strikes, seeking flames, Pestilence and summons cover packs once they are grouped; the mid-level AoE conversion is a major breakpoint.",
+      "strengths": [
+        "Wide fire coverage",
+        "Good stacked burst"
+      ],
+      "cautions": [
+        "Tank movement breaks zones",
+        "Ramp can be late"
+      ],
+      "claim_ids": [
+        "talent:knight-of-xoroth/hellfire:17-46-4-3",
+        "talent:knight-of-xoroth/hellfire:17-46-3-4",
+        "talent:knight-of-xoroth/hellfire:17-46-10-0",
+        "talent:knight-of-xoroth/hellfire:17-46-10-4",
+        "observed:knight-of-xoroth/hellfire:midlevel-power",
+        "observed:knight-of-xoroth/hellfire:hybrid-load",
+        "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+        "inference:knight-of-xoroth/hellfire:playstyle-identity"
+      ]
+    },
+    "pvp": {
+      "feel": "In PvP, Mounted Combat and ranged fire effects soften melee downtime, but pet travel and a misplaced Form still cost output. KoX self-healing, Pestilence choices, control and mounted escape give the hybrid several answers without making it a tank.",
+      "strengths": [
+        "Mounted chase",
+        "Mixed-range pressure"
+      ],
+      "cautions": [
+        "Pets can be controlled",
+        "Form is telegraphed"
+      ],
+      "claim_ids": [
+        "talent:knight-of-xoroth/hellfire:17-46-4-3",
+        "talent:knight-of-xoroth/hellfire:17-46-3-4",
+        "talent:knight-of-xoroth/hellfire:17-46-10-0",
+        "talent:knight-of-xoroth/hellfire:17-46-10-4",
+        "observed:knight-of-xoroth/hellfire:midlevel-power",
+        "observed:knight-of-xoroth/hellfire:hybrid-load",
+        "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+        "inference:knight-of-xoroth/hellfire:playstyle-identity"
+      ]
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "moderate-high",
+        "reason": "The active bar combines melee strikes, fire spells, pet commands, Pestilence, Form and summons. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "high",
+        "reason": "The active bar combines melee strikes, fire spells, pet commands, Pestilence, Form and summons. The middle talent rows make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "The active bar combines melee strikes, fire spells, pet commands, Pestilence, Form and summons. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "high",
+        "reason": "The active bar combines melee strikes, fire spells, pet commands, Pestilence, Form and summons. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "The active bar combines melee strikes, fire spells, pet commands, Pestilence, Form and summons. Changing pack size and lifetime add another constraint.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "The active bar combines melee strikes, fire spells, pet commands, Pestilence, Form and summons. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "moderate-high",
+        "reason": "Embers, Hellfire Form, pet state, procs, DoTs and summon timers overlap. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "high",
+        "reason": "Embers, Hellfire Form, pet state, procs, DoTs and summon timers overlap. The middle talent rows make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "Embers, Hellfire Form, pet state, procs, DoTs and summon timers overlap. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "high",
+        "reason": "Embers, Hellfire Form, pet state, procs, DoTs and summon timers overlap. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "Embers, Hellfire Form, pet state, procs, DoTs and summon timers overlap. Changing pack size and lifetime add another constraint.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "Embers, Hellfire Form, pet state, procs, DoTs and summon timers overlap. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "moderate-high",
+        "reason": "Target count and movement decide whether to remain hybrid or commit Form. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "high",
+        "reason": "Target count and movement decide whether to remain hybrid or commit Form. The middle talent rows make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "Target count and movement decide whether to remain hybrid or commit Form. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "high",
+        "reason": "Target count and movement decide whether to remain hybrid or commit Form. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "Target count and movement decide whether to remain hybrid or commit Form. Changing pack size and lifetime add another constraint.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "Target count and movement decide whether to remain hybrid or commit Form. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "moderate-high",
+        "reason": "Melee contact, pet pathing and short proc windows must all be preserved. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "high",
+        "reason": "Melee contact, pet pathing and short proc windows must all be preserved. The middle talent rows make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "Melee contact, pet pathing and short proc windows must all be preserved. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "high",
+        "reason": "Melee contact, pet pathing and short proc windows must all be preserved. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "Melee contact, pet pathing and short proc windows must all be preserved. Changing pack size and lifetime add another constraint.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "Melee contact, pet pathing and short proc windows must all be preserved. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "moderate-high",
+        "reason": "A bad Form loses both banked Embers and cooldown alignment. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "high",
+        "reason": "A bad Form loses both banked Embers and cooldown alignment. The middle talent rows make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "A bad Form loses both banked Embers and cooldown alignment. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "high",
+        "reason": "A bad Form loses both banked Embers and cooldown alignment. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "A bad Form loses both banked Embers and cooldown alignment. Changing pack size and lifetime add another constraint.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "A bad Form loses both banked Embers and cooldown alignment. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      }
+    },
+    "setup_burden": {
+      "leveling_10_29": {
+        "value": "moderate-high",
+        "reason": "The burst requires pet uptime, Embers and a settled target before transformation. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "high",
+        "reason": "The burst requires pet uptime, Embers and a settled target before transformation. The middle talent rows make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "The burst requires pet uptime, Embers and a settled target before transformation. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "high",
+        "reason": "The burst requires pet uptime, Embers and a settled target before transformation. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "The burst requires pet uptime, Embers and a settled target before transformation. Changing pack size and lifetime add another constraint.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "The burst requires pet uptime, Embers and a settled target before transformation. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4",
+          "talent:knight-of-xoroth/hellfire:17-46-10-0",
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [
+      {
+        "text": "You want a melee caster with a meaningful pet and transformation.",
+        "claim_ids": [
+          "inference:knight-of-xoroth/hellfire:playstyle-identity",
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4"
+        ]
+      },
+      {
+        "text": "You enjoy adapting one engine between boss and pack damage.",
+        "claim_ids": [
+          "inference:knight-of-xoroth/hellfire:playstyle-identity",
+          "talent:knight-of-xoroth/hellfire:17-46-4-3",
+          "talent:knight-of-xoroth/hellfire:17-46-3-4"
+        ]
+      }
+    ],
+    "avoid_if": [
+      {
+        "text": "You dislike pet state or temporary forms.",
+        "claim_ids": [
+          "inference:knight-of-xoroth/hellfire:failure-cost",
+          "observed:knight-of-xoroth/hellfire:midlevel-power"
+        ]
+      },
+      {
+        "text": "You want a clean weapon-only priority.",
+        "claim_ids": [
+          "inference:knight-of-xoroth/hellfire:failure-cost",
+          "observed:knight-of-xoroth/hellfire:midlevel-power"
+        ]
+      }
+    ]
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [
+    "observed:knight-of-xoroth/hellfire:performance-context"
+  ],
+  "sentiment": {
+    "praise": [
+      {
+        "theme": "Players praise its mid-level power, mounted flavor and ability to cover both packs and bosses.",
+        "claim_ids": [
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "observed:knight-of-xoroth/hellfire:build-practice"
+        ]
+      }
+    ],
+    "frustrations": [
+      {
+        "theme": "Pet, proc and Form layers can feel busy or inconsistent when targets move.",
+        "claim_ids": [
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "inference:knight-of-xoroth/hellfire:failure-cost"
+        ]
+      }
+    ],
+    "contested": [
+      {
+        "theme": "Claims that KoX falls off conflict with positive War and Hellfire anecdotes and lack normalized data.",
+        "claim_ids": [
+          "observed:knight-of-xoroth/hellfire:midlevel-power",
+          "observed:knight-of-xoroth/hellfire:hybrid-load",
+          "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+          "observed:knight-of-xoroth/hellfire:performance-context"
+        ]
+      }
+    ]
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 6,
+    "latest_update": "2026-08-03T18:06:15.762+00:00",
+    "top_title": "KOX Hellfire balanced AOE+ST M+ build",
+    "top_url": "https://coabuildhub.com/build/45c0c353-08f3-487f-80c0-c47930763571",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:45c0c353-08f3-487f-80c0-c47930763571"
+    ]
+  },
+  "coverage": {
+    "mechanical": "manual_talent_and_build_interpretation",
+    "community": "manual_recent_source_review",
+    "performance": "limited_uncontrolled",
+    "video": "searched_none_verified",
+    "overall_confidence": "medium",
+    "gaps": [
+      "No verified level-60 Hellfire rotation video.",
+      "Pet contribution and Form cadence need log validation."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-4-0",
+      "kind": "structural",
+      "text": "Hellmaw: Burn an enemy with a fiery strike, dealing 18 + 10% AP + 18% SP Shadowflame Damage, plus an additional 72 + 56% AP + 57.2% SP over 12 seconds.Deals 20% increased damage per Demonfire consumed.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-10-0",
+      "kind": "structural",
+      "text": "Greater Imp: Level 10 PassiveTeaches you Summon: Greater Imp and increases your expertise by 10.Summon: Greater ImpSummon a Greater Imp to aid you in combat.Greater Imp has various combat abilities that provide excellent single target damage and control.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-3-1",
+      "kind": "structural",
+      "text": "Combusting Blade: Increases your Intellect by 5% and reduces the Rage cost of Infernal Strike by -5.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-5-1",
+      "kind": "structural",
+      "text": "Invasion: All Fire damage dealt is increased by 10% to enemies above 80% health.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-2-2",
+      "kind": "structural",
+      "text": "Pestilence of Apocalypse: Emanate the Pestilence of Apocalypse, causing nearby enemies to take 10% increased Fire damage from you.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-6-2",
+      "kind": "structural",
+      "text": "Seeking Flame: Generates 1 DemonfireSear an enemy, dealing 63 + 33.62% fire SP + 33% AP Fire damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-10-2",
+      "kind": "structural",
+      "text": "Burning Power: Level 20 PassiveIncreases your attack power by 100% of your Intellect and your spell damage by 50% of your Strength.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-1-3",
+      "kind": "structural",
+      "text": "To Ashes: Increases the critical strike chance of abilities that spend Demonfire by 5%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-4-3",
+      "kind": "structural",
+      "text": "Hellfire Embers: Increases the Fire damage dealt by your Hellfire Imp by 30% against enemies above 80% maximum health.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-7-3",
+      "kind": "structural",
+      "text": "Flamewrath: Increases the critical strike chance of Seeking Flame by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-0-4a",
+      "kind": "structural",
+      "text": "Claws of Hell: When you spend at least 4 Demonfire stacks you now refresh the duration of your Unleash Apocalypse on the target.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-0-4b",
+      "kind": "structural",
+      "text": "Calamity: Increases the damage of the Unleash effect of Pestilence of Apocalypse by 25% and its duration is increased by 5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-3-4",
+      "kind": "structural",
+      "text": "Hellfire Form: Enter your Hellfire Form, increasing your Fire damage dealt by 20% and Fire critical strike chance by 15% for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-5-4",
+      "kind": "structural",
+      "text": "Doom: Transform: s your Greater Imp into a Doomguard for 12 seconds.While transformed, your Doomguard deals 20% more damage, and its auto attacks ignite the target, dealing 10% of the damage dealt as Fire damage over 6 seconds, stacking 6 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-8-4",
+      "kind": "structural",
+      "text": "Seething Strikes: Increases the damage of Sever by 30% against Burning targets and it now increases the targets chance to be critically struck by 3% for 12 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-10-4",
+      "kind": "structural",
+      "text": "Cinderblade: Level 30 PassiveIncreases your critical strike rating by 20% of your Intellect and your spell hit chance by 6%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-1-5",
+      "kind": "structural",
+      "text": "Rain of Chaos: Casting Flames of Xoroth with 6 Demonfire now calls down a Rain of Chaos.Rain of ChaosMolten rain burns enemies in the area causing 234 Fire Damage over 9 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-3-5",
+      "kind": "structural",
+      "text": "Grotesque: While Hellfire Form is active, your Seeking Flame now has no cooldown and generates an additional Demonfire.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-5-5",
+      "kind": "structural",
+      "text": "Hellfire Rituals: Critical strikes with Skulltaker now increases the haste of your Greater Imp by 15% for 8 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-7-5",
+      "kind": "structural",
+      "text": "Infernal Steel: Casting Skulltaker with 6 Demonfire stacks now causes your next Hellmaw within 15 seconds to tick -25% faster and cost -50% less Rage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-0-6",
+      "kind": "structural",
+      "text": "Indiscriminate: Seeking Flame now spreads Hellmaw and Melt from the target to up to 3 enemies within 6 yds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-2-6",
+      "kind": "structural",
+      "text": "Inferno Blast: Increases your critical damage against Burning targets by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-4-6",
+      "kind": "structural",
+      "text": "Infernal Pummeling: Melt now increases the damage your target takes from Flames of Xoroth and Skulltaker by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-6-6a",
+      "kind": "structural",
+      "text": "Hellbringer: Increases the all damage dealt by party and raid members by 3%.Does not stack with similar effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-6-6b",
+      "kind": "structural",
+      "text": "Xorothian Empowerment: Increases the attack power of all party and raid members 5%. Does not stack with similar effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-8-6",
+      "kind": "structural",
+      "text": "Infernal Pursuit: Increases your melee haste by 3% and reduces the duration of root effects against you by -15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-10-6",
+      "kind": "structural",
+      "text": "Impish Pestilence: Level 40 PassiveUsing a Pestilence now applies a Lesser Pestilence to your pet.You can only apply a Lesser Pestilence to your pet every 10 sec.Pestilence of Apocalypse (Pet)Increases the Imps Fire Damage dealt by 10% and allows 50% of its mana regeneration to continue while in combat.Pestilence of Famine (Pet)Damage dealt by the Imp has a 20% chance to reduce the enemy's melee and ranged attack speed by -20% for 6 seconds.Pestilence of Conquest (Pet)Damage dealt by the Imp has a 20% chance to reduce the enemy's Magic Damage dealt by -5% for 5 seconds.Pestilence of War (Pet)Damage dealt by the Imp has a 20% chance to heal you for 1 + 10% AP health.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-1-7a",
+      "kind": "structural",
+      "text": "Partners in Flames: Fire damage dealt by your Greater Imp now has a 25% chance to empower you, increasing your damage dealt by 5% for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-1-7b",
+      "kind": "structural",
+      "text": "Unbound Inferno: Your Infernal Strikes against enemies affected by your Flames of Xoroth now blasts nearby enemies for 75 + 10% fire SP + 5% AP Fire damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-4-7a",
+      "kind": "structural",
+      "text": "Brimstone Flames: Damage dealt by Seeking Flame is increased by 20% on enemies affected by Pestilence of Apocalypse.Damage dealt is increased by an additional 10% for each Demonfire you have active.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-4-7b",
+      "kind": "structural",
+      "text": "Brimstone Splinters: Grants Seeking Flame a 30% chance to generate 1 additional Demonfire when it deals damage.Chance to trigger is increased by 5% for each Demonfire you have active.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-7-7",
+      "kind": "structural",
+      "text": "Shadowflame Forge: Increases the duration of Hellmaw by 3 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-2-8",
+      "kind": "structural",
+      "text": "Into the Maw: Hellmaw causes a Hellfire Explosion at the end of its duration, dealing additional Fire damage to all nearby enemies within 5 yards equal to 50% of the periodic damage dealt over the duration.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-6-8",
+      "kind": "structural",
+      "text": "Punisher: Increases the attack power and spell power scaling of Seeking Flame by 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-10-8",
+      "kind": "structural",
+      "text": "Evil Duo: Level 50 PassiveUnleashing a Pestilence now causes your Greater Imp to unleash it's Pestilence.The Imp's unleash effect is equivalent to your own unleash effect for the equivalent Pestilence.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-2-9",
+      "kind": "structural",
+      "text": "Hellstorm: Create a hellstorm, dealing 77 + 32.04% fire SP + 8% AP Fire damage to up to 8 nearby enemies.Embers then flare every 1 sec for 2 seconds, dealing 28 + 2.5% fire SP + 2.5% AP Fire damage.Duration is increased by 100% for each stack of Demonfire consumed.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-4-9",
+      "kind": "structural",
+      "text": "Ascended Warlock: Your Skulltaker used with 6 stacks of Demonfire now reduces the cooldown of Doom by -5 seconds.In addition, while Doom is active, your Doomguard will now copy your Skulltaker, dealing reduced damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:knight-of-xoroth/hellfire:17-46-6-9",
+      "kind": "structural",
+      "text": "Fury of Xoroth: Infernal Strike now grants you a stack of Xorothian Fury, increasing the chance for your next Skulltaker within 10 seconds to critically strike by 10% per stack, up to 3 stacks.Additionally, using Skulltaker with 6 stacks of Demonfire grants you Xorothian Rage, causing your next Infernal Strike within 10 seconds to be guaranteed to critically strike.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "observed:knight-of-xoroth/hellfire:midlevel-power",
+      "kind": "observed",
+      "text": "A level-37 Hellfire player reports a large power increase from the AoE talent package and uses two Mounted Combat charges for questing and world PvP.",
+      "source_ids": [
+        "reddit:kox-question-2026-07-11"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:knight-of-xoroth/hellfire:hybrid-load",
+      "kind": "observed",
+      "text": "Current discussion and the captured build both show that Hellfire's output is distributed across melee attacks, fire effects, a permanent imp and a transformation rather than one short rotation.",
+      "source_ids": [
+        "reddit:kox-question-2026-07-11"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:knight-of-xoroth/hellfire:scaling-uncertainty",
+      "kind": "observed",
+      "text": "Players dispute whether KoX falls after 50; the available thread supplies anecdotes, not a controlled Hellfire endgame comparison.",
+      "source_ids": [
+        "reddit:kox-question-2026-07-11"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:knight-of-xoroth/hellfire:build-practice",
+      "kind": "observed",
+      "text": "The captured balanced M+ build is explicitly designed for both AoE and single target and confirms the pet/Form package, but does not prove one universal priority.",
+      "source_ids": [
+        "buildhub-builds-2026-08-05",
+        "buildhub:45c0c353-08f3-487f-80c0-c47930763571"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "community_build_snapshot"
+        ],
+        "build_or_mode": [
+          "documented_build"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The guide documents one current way to play; it is not treated as proof of optimality."
+    },
+    {
+      "id": "observed:knight-of-xoroth/hellfire:performance-context",
+      "kind": "observed",
+      "text": "The July list reports 3,810 DPS and 41 Mythic records, both uncontrolled.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "uncontrolled_performance_signals"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "low",
+      "conflicts_with": [],
+      "notes": "Do not convert this into a tier ranking."
+    },
+    {
+      "id": "inference:knight-of-xoroth/hellfire:playstyle-identity",
+      "kind": "inference",
+      "text": "A mounted infernal spellblade fighting beside a Greater Imp, banking Hellfire Embers and turning them into a temporary demon-form barrage.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:knight-of-xoroth/hellfire:17-46-4-3",
+        "talent:knight-of-xoroth/hellfire:17-46-3-4",
+        "talent:knight-of-xoroth/hellfire:17-46-10-0",
+        "talent:knight-of-xoroth/hellfire:17-46-10-4",
+        "observed:knight-of-xoroth/hellfire:midlevel-power",
+        "observed:knight-of-xoroth/hellfire:hybrid-load"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Descriptive playstyle classification, not an official label."
+    },
+    {
+      "id": "inference:knight-of-xoroth/hellfire:failure-cost",
+      "kind": "inference",
+      "text": "Entering Hellfire Form with low Embers or before the pack settles wastes its payoff.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:knight-of-xoroth/hellfire:17-46-4-3",
+        "talent:knight-of-xoroth/hellfire:17-46-3-4",
+        "talent:knight-of-xoroth/hellfire:17-46-10-0",
+        "talent:knight-of-xoroth/hellfire:17-46-10-4",
+        "talent:knight-of-xoroth/hellfire:17-46-1-7b",
+        "observed:knight-of-xoroth/hellfire:midlevel-power",
+        "observed:knight-of-xoroth/hellfire:hybrid-load",
+        "observed:knight-of-xoroth/hellfire:scaling-uncertainty"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Direction is supported; exact throughput cost is not measured."
+    }
+  ]
+}

@@ -1,0 +1,961 @@
+{
+  "baseline": "pyromancer--draconic.json",
+  "set": {
+    "identity": {
+      "fantasy": "A dragon-aspect caster cycling Earth, Time, Magic and Deathwing effects while cooldown reduction drives repeated elemental spectacle.",
+      "one_line": "Enter the dragon package around 30, build Embers with Dragon's Wrath, then exploit Echo of Nozdormu and instant Pillars.",
+      "primary_family": "sequencers",
+      "also_fits": [
+        "planners"
+      ],
+      "playstyle_tags": [
+        "dragon-aspect-caster",
+        "cooldown-caster",
+        "mobile-burst-caster"
+      ],
+      "claim_ids": [
+        "talent:pyromancer/draconic:24-63-10-4",
+        "talent:pyromancer/draconic:24-63-4-0",
+        "talent:pyromancer/draconic:24-63-4-5",
+        "talent:pyromancer/draconic:24-63-10-6",
+        "observed:pyromancer/draconic:level30-transition",
+        "observed:pyromancer/draconic:form-preference",
+        "inference:pyromancer/draconic:playstyle-identity"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "Cycle aspects, Dragon's Wrath and spenders while Nozdormu shortens major effects.",
+      "single_target": "Aim cooldown reduction at the best durable-target spell.",
+      "aoe": "Pillars, breath and aspects create the reported AoE jump.",
+      "movement_and_target_switching": "Form and instant spenders improve flow, though some dislike the visual.",
+      "defense_and_control": "Control and movement combine with form bonuses without making a tank.",
+      "group_utility": "Aspect effects add varied magical pressure.",
+      "failure_modes": [
+        {
+          "text": "Reducing the wrong cooldown delays the window.",
+          "claim_ids": [
+            "inference:pyromancer/draconic:failure-cost",
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5"
+          ]
+        },
+        {
+          "text": "Poor Ember timing loses Pillar resets.",
+          "claim_ids": [
+            "inference:pyromancer/draconic:failure-cost",
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5"
+          ]
+        },
+        {
+          "text": "Treating aspects as identical misses their roles.",
+          "claim_ids": [
+            "inference:pyromancer/draconic:failure-cost",
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "talent:pyromancer/draconic:24-63-10-4",
+        "talent:pyromancer/draconic:24-63-4-0",
+        "talent:pyromancer/draconic:24-63-4-5",
+        "talent:pyromancer/draconic:24-63-10-6",
+        "observed:pyromancer/draconic:level30-transition",
+        "observed:pyromancer/draconic:form-preference",
+        "observed:pyromancer/draconic:relative-feel",
+        "observed:pyromancer/draconic:build-practice",
+        "inference:pyromancer/draconic:playstyle-identity"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "Early play lacks the defining form.",
+        "strengths": [
+          "Simple start",
+          "Fire basics"
+        ],
+        "cautions": [
+          "Delayed identity",
+          "Few aspects"
+        ],
+        "claim_ids": [
+          "talent:pyromancer/draconic:24-63-10-4",
+          "talent:pyromancer/draconic:24-63-4-0",
+          "talent:pyromancer/draconic:24-63-4-5",
+          "talent:pyromancer/draconic:24-63-10-6",
+          "observed:pyromancer/draconic:level30-transition",
+          "observed:pyromancer/draconic:form-preference",
+          "observed:pyromancer/draconic:relative-feel",
+          "inference:pyromancer/draconic:playstyle-identity"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "Level 30 is the clearest reported power and feel transition.",
+        "strengths": [
+          "Level-30 spike",
+          "AoE"
+        ],
+        "cautions": [
+          "Form appearance",
+          "New states"
+        ],
+        "claim_ids": [
+          "talent:pyromancer/draconic:24-63-10-4",
+          "talent:pyromancer/draconic:24-63-4-0",
+          "talent:pyromancer/draconic:24-63-4-5",
+          "talent:pyromancer/draconic:24-63-10-6",
+          "observed:pyromancer/draconic:level30-transition",
+          "observed:pyromancer/draconic:form-preference",
+          "observed:pyromancer/draconic:relative-feel",
+          "inference:pyromancer/draconic:playstyle-identity"
+        ]
+      },
+      "level_50_60": {
+        "feel": "Late aspects broaden a fast elemental priority.",
+        "strengths": [
+          "Spectacle",
+          "Flow"
+        ],
+        "cautions": [
+          "No build guide",
+          "Interactions"
+        ],
+        "claim_ids": [
+          "talent:pyromancer/draconic:24-63-10-4",
+          "talent:pyromancer/draconic:24-63-4-0",
+          "talent:pyromancer/draconic:24-63-4-5",
+          "talent:pyromancer/draconic:24-63-10-6",
+          "observed:pyromancer/draconic:level30-transition",
+          "observed:pyromancer/draconic:form-preference",
+          "observed:pyromancer/draconic:relative-feel",
+          "inference:pyromancer/draconic:playstyle-identity"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, Aim cooldown reduction at the best durable-target spell.",
+        "strengths": [
+          "Cooldown cycling",
+          "Burst"
+        ],
+        "cautions": [
+          "Wrong reduction",
+          "Movement"
+        ],
+        "claim_ids": [
+          "talent:pyromancer/draconic:24-63-10-4",
+          "talent:pyromancer/draconic:24-63-4-0",
+          "talent:pyromancer/draconic:24-63-4-5",
+          "talent:pyromancer/draconic:24-63-10-6",
+          "observed:pyromancer/draconic:level30-transition",
+          "observed:pyromancer/draconic:form-preference",
+          "observed:pyromancer/draconic:relative-feel",
+          "inference:pyromancer/draconic:playstyle-identity"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, Pillars, breath and aspects create the reported AoE jump.",
+        "strengths": [
+          "Coverage",
+          "Resets"
+        ],
+        "cautions": [
+          "Clutter",
+          "Cooldowns"
+        ],
+        "claim_ids": [
+          "talent:pyromancer/draconic:24-63-10-4",
+          "talent:pyromancer/draconic:24-63-4-0",
+          "talent:pyromancer/draconic:24-63-4-5",
+          "talent:pyromancer/draconic:24-63-10-6",
+          "observed:pyromancer/draconic:level30-transition",
+          "observed:pyromancer/draconic:form-preference",
+          "observed:pyromancer/draconic:relative-feel",
+          "inference:pyromancer/draconic:playstyle-identity"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, Form and instant spenders improve flow, though some dislike the visual. Control and movement combine with form bonuses without making a tank.",
+        "strengths": [
+          "Mobility",
+          "Variety"
+        ],
+        "cautions": [
+          "Telegraphed form",
+          "Fragility"
+        ],
+        "claim_ids": [
+          "talent:pyromancer/draconic:24-63-10-4",
+          "talent:pyromancer/draconic:24-63-4-0",
+          "talent:pyromancer/draconic:24-63-4-5",
+          "talent:pyromancer/draconic:24-63-10-6",
+          "observed:pyromancer/draconic:level30-transition",
+          "observed:pyromancer/draconic:form-preference",
+          "observed:pyromancer/draconic:relative-feel",
+          "inference:pyromancer/draconic:playstyle-identity"
+        ]
+      }
+    },
+    "complexity": {
+      "core_actions": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Aspect spells, spenders and Dragon's Wrath create a broad priority. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Aspect spells, spenders and Dragon's Wrath create a broad priority. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Aspect spells, spenders and Dragon's Wrath create a broad priority. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Aspect spells, spenders and Dragon's Wrath create a broad priority. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Aspect spells, spenders and Dragon's Wrath create a broad priority. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Aspect spells, spenders and Dragon's Wrath create a broad priority. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        }
+      },
+      "state_tracking": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Embers, form, reduction and resets overlap. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Embers, form, reduction and resets overlap. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Embers, form, reduction and resets overlap. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Embers, form, reduction and resets overlap. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Embers, form, reduction and resets overlap. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Embers, form, reduction and resets overlap. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Setup is resource and cooldown alignment. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Setup is resource and cooldown alignment. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Setup is resource and cooldown alignment. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Setup is resource and cooldown alignment. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Setup is resource and cooldown alignment. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Setup is resource and cooldown alignment. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Resets change the next cast. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Resets change the next cast. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Resets change the next cast. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Resets change the next cast. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Resets change the next cast. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Resets change the next cast. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Fast instants raise pace. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Fast instants raise pace. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Fast instants raise pace. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Fast instants raise pace. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Fast instants raise pace. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Fast instants raise pace. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        }
+      },
+      "failure_cost": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Misallocated reductions delay connected cooldowns. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Misallocated reductions delay connected cooldowns. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Misallocated reductions delay connected cooldowns. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Misallocated reductions delay connected cooldowns. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Misallocated reductions delay connected cooldowns. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Misallocated reductions delay connected cooldowns. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0",
+            "talent:pyromancer/draconic:24-63-4-5",
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You want a visible transformation and cooldown tricks.",
+          "claim_ids": [
+            "inference:pyromancer/draconic:playstyle-identity",
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0"
+          ]
+        },
+        {
+          "text": "You enjoy elemental procs.",
+          "claim_ids": [
+            "inference:pyromancer/draconic:playstyle-identity",
+            "talent:pyromancer/draconic:24-63-10-4",
+            "talent:pyromancer/draconic:24-63-4-0"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You dislike forms.",
+          "claim_ids": [
+            "inference:pyromancer/draconic:failure-cost",
+            "observed:pyromancer/draconic:level30-transition"
+          ]
+        },
+        {
+          "text": "You want settled documentation.",
+          "claim_ids": [
+            "inference:pyromancer/draconic:failure-cost",
+            "observed:pyromancer/draconic:level30-transition"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Players praise the level-30 jump and AoE.",
+          "claim_ids": [
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "observed:pyromancer/draconic:build-practice"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "The form visual and guide gap frustrate.",
+          "claim_ids": [
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "inference:pyromancer/draconic:failure-cost"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "Performance and leveling anecdotes remain unresolved.",
+          "claim_ids": [
+            "observed:pyromancer/draconic:level30-transition",
+            "observed:pyromancer/draconic:form-preference",
+            "observed:pyromancer/draconic:relative-feel",
+            "observed:pyromancer/draconic:performance-context"
+          ]
+        }
+      ]
+    },
+    "performance_signal_ids": [
+      "observed:pyromancer/draconic:performance-context"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "manual_recent_source_review",
+      "performance": "limited_uncontrolled",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium",
+      "gaps": [
+        "No captured build.",
+        "Aspect priorities need verification."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "Early play lacks the defining form.",
+      "observed_changes": [
+        "Delayed identity",
+        "Few aspects"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "Early play lacks the defining form.",
+      "observed_changes": [
+        "Delayed identity",
+        "Few aspects"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "Level 30 is the clearest reported power and feel transition.",
+      "observed_changes": [
+        "Form appearance",
+        "New states"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "Level 30 is the clearest reported power and feel transition.",
+      "observed_changes": [
+        "Form appearance",
+        "New states"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "Late aspects broaden a fast elemental priority.",
+      "observed_changes": [
+        "No build guide",
+        "Interactions"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:pyromancer/draconic:level30-transition",
+      "kind": "observed",
+      "text": "Multiple players report a major damage and flow jump after switching at 30, especially in AoE.",
+      "source_ids": [
+        "reddit:pyromancer-comparison-2026-07-22"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:pyromancer/draconic:form-preference",
+      "kind": "observed",
+      "text": "Players praise the buff but some dislike the forced appearance.",
+      "source_ids": [
+        "reddit:pyromancer-comparison-2026-07-22"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:pyromancer/draconic:relative-feel",
+      "kind": "observed",
+      "text": "Comparisons call Draconic smoother while Incineration fans prefer DoTs and ST burst.",
+      "source_ids": [
+        "reddit:pyromancer-comparison-2026-07-22"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:pyromancer/draconic:build-practice",
+      "kind": "observed",
+      "text": "No Draconic build existed in the snapshot, so no priority is inferred.",
+      "source_ids": [],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "community_build_snapshot"
+        ],
+        "build_or_mode": [
+          "documented_build"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The guide documents one current way to play; it is not treated as proof of optimality."
+    },
+    {
+      "id": "observed:pyromancer/draconic:performance-context",
+      "kind": "observed",
+      "text": "The July list reports 3,980 DPS and 77 Mythic records, conflicting with leveling impressions but not covering the same context.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "uncontrolled_performance_signals"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "low",
+      "conflicts_with": [],
+      "notes": "Do not convert this into a tier ranking."
+    },
+    {
+      "id": "inference:pyromancer/draconic:playstyle-identity",
+      "kind": "inference",
+      "text": "A dragon-aspect caster cycling Earth, Time, Magic and Deathwing effects while cooldown reduction drives repeated elemental spectacle.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:pyromancer/draconic:24-63-10-4",
+        "talent:pyromancer/draconic:24-63-4-0",
+        "talent:pyromancer/draconic:24-63-4-5",
+        "talent:pyromancer/draconic:24-63-10-6",
+        "observed:pyromancer/draconic:level30-transition",
+        "observed:pyromancer/draconic:form-preference"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Descriptive playstyle classification, not an official label."
+    },
+    {
+      "id": "inference:pyromancer/draconic:failure-cost",
+      "kind": "inference",
+      "text": "Reducing the wrong cooldown delays the window.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:pyromancer/draconic:24-63-10-4",
+        "talent:pyromancer/draconic:24-63-4-0",
+        "talent:pyromancer/draconic:24-63-4-5",
+        "talent:pyromancer/draconic:24-63-10-6",
+        "observed:pyromancer/draconic:level30-transition",
+        "observed:pyromancer/draconic:form-preference",
+        "observed:pyromancer/draconic:relative-feel"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Direction is supported; exact throughput cost is not measured."
+    }
+  ]
+}

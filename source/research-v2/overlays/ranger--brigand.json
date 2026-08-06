@@ -1,0 +1,973 @@
+{
+  "baseline": "ranger--brigand.json",
+  "set": {
+    "identity": {
+      "fantasy": "A dirty-fighting ranger who stacks bleeds and poison, teleports through danger, and uses Advantage finishers before snapping back to safety.",
+      "one_line": "Stack poison, bleeds and Advantage, then cash conditions into Viper's Bite or Skullpiercer while Outmaneuver controls distance.",
+      "primary_family": "duelists",
+      "also_fits": [
+        "sequencers"
+      ],
+      "playstyle_tags": [
+        "teleport-debuff-rogue",
+        "position-melee",
+        "pvp-ambusher"
+      ],
+      "claim_ids": [
+        "talent:ranger/brigand:21-55-4-0",
+        "talent:ranger/brigand:21-55-10-0",
+        "talent:ranger/brigand:21-55-2-1",
+        "talent:ranger/brigand:21-55-6-1",
+        "observed:ranger/brigand:early-aoe-gap",
+        "observed:ranger/brigand:leveling-comparison",
+        "inference:ranger/brigand:playstyle-identity"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "A rogue-like fighter using bleeds, poison, dirty strikes, Advantage finishers, decoys, and teleports. Outmaneuver rewards stacking attacks before snapping back to safety, while Viper's Bite and Skullpiercer cash out conditions. It is mobile and flexible but position and debuff dependent.",
+      "single_target": "On durable targets, the structural path grows from Ravage, Ravager, Banditry toward Viper's Bite, Instinctual Combatant, Barbed Quills. A precise priority remains limited to the captured build and community evidence.",
+      "aoe": "For multiple targets, Stack poison, bleeds and Advantage, then cash conditions into Viper's Bite or Skullpiercer while Outmaneuver controls distance. The current evidence particularly constrains this through: Later discussion calls Brigand smoother because Quills and Wild Strikes remove the Ranger dead zone.",
+      "movement_and_target_switching": "Teleports and the Outmaneuver return create exceptional mobility with corresponding positional execution demands.",
+      "defense_and_control": "Its structural defensive package includes Beatdown, Assault, Dirty Blades, Pilfering, Marked for Death.",
+      "group_utility": "Group or control tools include Throatpunch, Lacerations, Guile of the Cutthroat, Instinctual Combatant.",
+      "failure_modes": [
+        {
+          "text": "Using Outmaneuver or a finisher before the required debuffs and position are established wastes both offense and escape.",
+          "claim_ids": [
+            "inference:ranger/brigand:failure-cost",
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1"
+          ]
+        },
+        {
+          "text": "Losing setup before payoff forces another recovery cycle.",
+          "claim_ids": [
+            "inference:ranger/brigand:failure-cost",
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1"
+          ]
+        },
+        {
+          "text": "Losing setup before payoff forces another recovery cycle.",
+          "claim_ids": [
+            "inference:ranger/brigand:failure-cost",
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "talent:ranger/brigand:21-55-4-0",
+        "talent:ranger/brigand:21-55-10-0",
+        "talent:ranger/brigand:21-55-2-1",
+        "talent:ranger/brigand:21-55-6-1",
+        "talent:ranger/brigand:21-55-1-2",
+        "talent:ranger/brigand:21-55-4-2a",
+        "observed:ranger/brigand:early-aoe-gap",
+        "observed:ranger/brigand:leveling-comparison",
+        "observed:ranger/brigand:endgame-conflict",
+        "observed:ranger/brigand:build-practice",
+        "inference:ranger/brigand:playstyle-identity"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "Early rogue strikes lack pack tools.",
+        "strengths": [
+          "Core identity",
+          "Readable payoff"
+        ],
+        "cautions": [
+          "Incomplete kit",
+          "Sparse guidance"
+        ],
+        "claim_ids": [
+          "talent:ranger/brigand:21-55-4-0",
+          "talent:ranger/brigand:21-55-10-0",
+          "talent:ranger/brigand:21-55-2-1",
+          "talent:ranger/brigand:21-55-6-1",
+          "observed:ranger/brigand:early-aoe-gap",
+          "observed:ranger/brigand:leveling-comparison",
+          "observed:ranger/brigand:endgame-conflict",
+          "inference:ranger/brigand:playstyle-identity"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "Quill removes the worst AoE gap.",
+        "strengths": [
+          "Complete engine",
+          "Better coverage"
+        ],
+        "cautions": [
+          "More states",
+          "Unlock dependent"
+        ],
+        "claim_ids": [
+          "talent:ranger/brigand:21-55-4-0",
+          "talent:ranger/brigand:21-55-10-0",
+          "talent:ranger/brigand:21-55-2-1",
+          "talent:ranger/brigand:21-55-6-1",
+          "observed:ranger/brigand:early-aoe-gap",
+          "observed:ranger/brigand:leveling-comparison",
+          "observed:ranger/brigand:endgame-conflict",
+          "inference:ranger/brigand:playstyle-identity"
+        ]
+      },
+      "level_50_60": {
+        "feel": "Late condition finishers complete the skirmisher.",
+        "strengths": [
+          "Late package",
+          "Higher ceiling"
+        ],
+        "cautions": [
+          "Unsettled priority",
+          "Tracking"
+        ],
+        "claim_ids": [
+          "talent:ranger/brigand:21-55-4-0",
+          "talent:ranger/brigand:21-55-10-0",
+          "talent:ranger/brigand:21-55-2-1",
+          "talent:ranger/brigand:21-55-6-1",
+          "observed:ranger/brigand:early-aoe-gap",
+          "observed:ranger/brigand:leveling-comparison",
+          "observed:ranger/brigand:endgame-conflict",
+          "inference:ranger/brigand:playstyle-identity"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, On durable targets, the structural path grows from Ravage, Ravager, Banditry toward Viper's Bite, Instinctual Combatant, Barbed Quills. A precise priority remains limited to the captured build and community evidence.",
+        "strengths": [
+          "Durable payoff",
+          "Repeatable loop"
+        ],
+        "cautions": [
+          "Movement",
+          "Repeated errors"
+        ],
+        "claim_ids": [
+          "talent:ranger/brigand:21-55-4-0",
+          "talent:ranger/brigand:21-55-10-0",
+          "talent:ranger/brigand:21-55-2-1",
+          "talent:ranger/brigand:21-55-6-1",
+          "observed:ranger/brigand:early-aoe-gap",
+          "observed:ranger/brigand:leveling-comparison",
+          "observed:ranger/brigand:endgame-conflict",
+          "inference:ranger/brigand:playstyle-identity"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, For multiple targets, Stack poison, bleeds and Advantage, then cash conditions into Viper's Bite or Skullpiercer while Outmaneuver controls distance. The current evidence particularly constrains this through: Later discussion calls Brigand smoother because Quills and Wild Strikes remove the Ranger dead zone.",
+        "strengths": [
+          "Pack tools",
+          "Utility"
+        ],
+        "cautions": [
+          "Short packs",
+          "Position"
+        ],
+        "claim_ids": [
+          "talent:ranger/brigand:21-55-4-0",
+          "talent:ranger/brigand:21-55-10-0",
+          "talent:ranger/brigand:21-55-2-1",
+          "talent:ranger/brigand:21-55-6-1",
+          "observed:ranger/brigand:early-aoe-gap",
+          "observed:ranger/brigand:leveling-comparison",
+          "observed:ranger/brigand:endgame-conflict",
+          "inference:ranger/brigand:playstyle-identity"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, Teleports and the Outmaneuver return create exceptional mobility with corresponding positional execution demands. Its structural defensive package includes Beatdown, Assault, Dirty Blades, Pilfering, Marked for Death.",
+        "strengths": [
+          "Control",
+          "Pressure"
+        ],
+        "cautions": [
+          "Disruption",
+          "Defense"
+        ],
+        "claim_ids": [
+          "talent:ranger/brigand:21-55-4-0",
+          "talent:ranger/brigand:21-55-10-0",
+          "talent:ranger/brigand:21-55-2-1",
+          "talent:ranger/brigand:21-55-6-1",
+          "observed:ranger/brigand:early-aoe-gap",
+          "observed:ranger/brigand:leveling-comparison",
+          "observed:ranger/brigand:endgame-conflict",
+          "inference:ranger/brigand:playstyle-identity"
+        ]
+      }
+    },
+    "complexity": {
+      "core_actions": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "The active bar follows this loop: A rogue-like fighter using bleeds, poison, dirty strikes, Advantage finishers, decoys, and teleports. Outmaneuver rewards stacking attacks before snapping back to safety, while Viper's Bite and Skullpiercer cash out conditions. It is mobile and flexible but position and debuff dependent. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "The active bar follows this loop: A rogue-like fighter using bleeds, poison, dirty strikes, Advantage finishers, decoys, and teleports. Outmaneuver rewards stacking attacks before snapping back to safety, while Viper's Bite and Skullpiercer cash out conditions. It is mobile and flexible but position and debuff dependent. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "The active bar follows this loop: A rogue-like fighter using bleeds, poison, dirty strikes, Advantage finishers, decoys, and teleports. Outmaneuver rewards stacking attacks before snapping back to safety, while Viper's Bite and Skullpiercer cash out conditions. It is mobile and flexible but position and debuff dependent. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "The active bar follows this loop: A rogue-like fighter using bleeds, poison, dirty strikes, Advantage finishers, decoys, and teleports. Outmaneuver rewards stacking attacks before snapping back to safety, while Viper's Bite and Skullpiercer cash out conditions. It is mobile and flexible but position and debuff dependent. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "The active bar follows this loop: A rogue-like fighter using bleeds, poison, dirty strikes, Advantage finishers, decoys, and teleports. Outmaneuver rewards stacking attacks before snapping back to safety, while Viper's Bite and Skullpiercer cash out conditions. It is mobile and flexible but position and debuff dependent. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "The active bar follows this loop: A rogue-like fighter using bleeds, poison, dirty strikes, Advantage finishers, decoys, and teleports. Outmaneuver rewards stacking attacks before snapping back to safety, while Viper's Bite and Skullpiercer cash out conditions. It is mobile and flexible but position and debuff dependent. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        }
+      },
+      "state_tracking": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Ravage, Ravager, Banditry toward Viper's Bite, Instinctual Combatant, Barbed Quills. A precise priority remains limited to the captured build and community evidence. must be tracked. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Ravage, Ravager, Banditry toward Viper's Bite, Instinctual Combatant, Barbed Quills. A precise priority remains limited to the captured build and community evidence. must be tracked. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Ravage, Ravager, Banditry toward Viper's Bite, Instinctual Combatant, Barbed Quills. A precise priority remains limited to the captured build and community evidence. must be tracked. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Ravage, Ravager, Banditry toward Viper's Bite, Instinctual Combatant, Barbed Quills. A precise priority remains limited to the captured build and community evidence. must be tracked. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Ravage, Ravager, Banditry toward Viper's Bite, Instinctual Combatant, Barbed Quills. A precise priority remains limited to the captured build and community evidence. must be tracked. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Ravage, Ravager, Banditry toward Viper's Bite, Instinctual Combatant, Barbed Quills. A precise priority remains limited to the captured build and community evidence. must be tracked. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Stack poison, bleeds and Advantage, then cash conditions into Viper's Bite or Skullpiercer while Outmaneuver controls distance. The current evidence particularly constrains this through: Later discussion calls Brigand smoother because Quills and Wild Strikes remove the Ranger dead zone. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Stack poison, bleeds and Advantage, then cash conditions into Viper's Bite or Skullpiercer while Outmaneuver controls distance. The current evidence particularly constrains this through: Later discussion calls Brigand smoother because Quills and Wild Strikes remove the Ranger dead zone. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Stack poison, bleeds and Advantage, then cash conditions into Viper's Bite or Skullpiercer while Outmaneuver controls distance. The current evidence particularly constrains this through: Later discussion calls Brigand smoother because Quills and Wild Strikes remove the Ranger dead zone. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Stack poison, bleeds and Advantage, then cash conditions into Viper's Bite or Skullpiercer while Outmaneuver controls distance. The current evidence particularly constrains this through: Later discussion calls Brigand smoother because Quills and Wild Strikes remove the Ranger dead zone. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Stack poison, bleeds and Advantage, then cash conditions into Viper's Bite or Skullpiercer while Outmaneuver controls distance. The current evidence particularly constrains this through: Later discussion calls Brigand smoother because Quills and Wild Strikes remove the Ranger dead zone. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Stack poison, bleeds and Advantage, then cash conditions into Viper's Bite or Skullpiercer while Outmaneuver controls distance. The current evidence particularly constrains this through: Later discussion calls Brigand smoother because Quills and Wild Strikes remove the Ranger dead zone. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Target count, movement and pressure alter the next action. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Target count, movement and pressure alter the next action. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Target count, movement and pressure alter the next action. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Target count, movement and pressure alter the next action. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Target count, movement and pressure alter the next action. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Target count, movement and pressure alter the next action. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Execution depends on Teleports and the Outmaneuver return create exceptional mobility with corresponding positional execution demands. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Execution depends on Teleports and the Outmaneuver return create exceptional mobility with corresponding positional execution demands. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Execution depends on Teleports and the Outmaneuver return create exceptional mobility with corresponding positional execution demands. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Execution depends on Teleports and the Outmaneuver return create exceptional mobility with corresponding positional execution demands. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Execution depends on Teleports and the Outmaneuver return create exceptional mobility with corresponding positional execution demands. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Execution depends on Teleports and the Outmaneuver return create exceptional mobility with corresponding positional execution demands. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        }
+      },
+      "failure_cost": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Using Outmaneuver or a finisher before the required debuffs and position are established wastes both offense and escape. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Using Outmaneuver or a finisher before the required debuffs and position are established wastes both offense and escape. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Using Outmaneuver or a finisher before the required debuffs and position are established wastes both offense and escape. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Using Outmaneuver or a finisher before the required debuffs and position are established wastes both offense and escape. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Using Outmaneuver or a finisher before the required debuffs and position are established wastes both offense and escape. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Using Outmaneuver or a finisher before the required debuffs and position are established wastes both offense and escape. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0",
+            "talent:ranger/brigand:21-55-2-1",
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You want this exact fantasy and decision loop.",
+          "claim_ids": [
+            "inference:ranger/brigand:playstyle-identity",
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0"
+          ]
+        },
+        {
+          "text": "You enjoy a cadence that changes with late talents.",
+          "claim_ids": [
+            "inference:ranger/brigand:playstyle-identity",
+            "talent:ranger/brigand:21-55-4-0",
+            "talent:ranger/brigand:21-55-10-0"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You want the complete rotation immediately.",
+          "claim_ids": [
+            "inference:ranger/brigand:failure-cost",
+            "observed:ranger/brigand:early-aoe-gap"
+          ]
+        },
+        {
+          "text": "You dislike setup loss to movement.",
+          "claim_ids": [
+            "inference:ranger/brigand:failure-cost",
+            "observed:ranger/brigand:early-aoe-gap"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Rogue fantasy and post-Quill flow are praised.",
+          "claim_ids": [
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "observed:ranger/brigand:build-practice"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Condition dependence and disputed damage frustrate.",
+          "claim_ids": [
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "inference:ranger/brigand:failure-cost"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "Power anecdotes, popularity and subjective fun remain separate evidence.",
+          "claim_ids": [
+            "observed:ranger/brigand:early-aoe-gap",
+            "observed:ranger/brigand:leveling-comparison",
+            "observed:ranger/brigand:endgame-conflict",
+            "observed:ranger/brigand:performance-context"
+          ]
+        }
+      ]
+    },
+    "performance_signal_ids": [
+      "observed:ranger/brigand:performance-context"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "manual_recent_source_review",
+      "performance": "limited_uncontrolled",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium",
+      "gaps": [
+        "No verified current full-rotation video.",
+        "Priority breakpoints remain unverified."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "Early rogue strikes lack pack tools.",
+      "observed_changes": [
+        "Incomplete kit",
+        "Sparse guidance"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "Early rogue strikes lack pack tools.",
+      "observed_changes": [
+        "Incomplete kit",
+        "Sparse guidance"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "Quill removes the worst AoE gap.",
+      "observed_changes": [
+        "More states",
+        "Unlock dependent"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "Quill removes the worst AoE gap.",
+      "observed_changes": [
+        "More states",
+        "Unlock dependent"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "Late condition finishers complete the skirmisher.",
+      "observed_changes": [
+        "Unsettled priority",
+        "Tracking"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:ranger/brigand:early-aoe-gap",
+      "kind": "observed",
+      "text": "Level-33 players report no meaningful AoE before Quill.",
+      "source_ids": [
+        "reddit:ranger-brigand-2026-07-07",
+        "reddit:ranger-status-2026-07-10",
+        "reddit:ranger-archery-2026-07-22"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:ranger/brigand:leveling-comparison",
+      "kind": "observed",
+      "text": "Later discussion calls Brigand smoother because Quills and Wild Strikes remove the Ranger dead zone.",
+      "source_ids": [
+        "reddit:ranger-brigand-2026-07-07",
+        "reddit:ranger-status-2026-07-10",
+        "reddit:ranger-archery-2026-07-22"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:ranger/brigand:endgame-conflict",
+      "kind": "observed",
+      "text": "Reports range from very low damage to claims Brigand is decent at 60; neither is normalized.",
+      "source_ids": [
+        "reddit:ranger-brigand-2026-07-07",
+        "reddit:ranger-status-2026-07-10",
+        "reddit:ranger-archery-2026-07-22"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:ranger/brigand:build-practice",
+      "kind": "observed",
+      "text": "The leading build is PvP dagger Brigand, not universal PvE.",
+      "source_ids": [
+        "buildhub-builds-2026-08-05",
+        "buildhub:f90bd8a4-d012-477f-922d-3e6a3f8d9ed0"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "community_build_snapshot"
+        ],
+        "build_or_mode": [
+          "documented_build"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The guide documents one current way to play; it is not treated as proof of optimality."
+    },
+    {
+      "id": "observed:ranger/brigand:performance-context",
+      "kind": "observed",
+      "text": "2,865 DPS and 35 records are thin.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "uncontrolled_performance_signals"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "low",
+      "conflicts_with": [],
+      "notes": "Do not convert this into a tier ranking."
+    },
+    {
+      "id": "inference:ranger/brigand:playstyle-identity",
+      "kind": "inference",
+      "text": "A dirty-fighting ranger who stacks bleeds and poison, teleports through danger, and uses Advantage finishers before snapping back to safety.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:ranger/brigand:21-55-4-0",
+        "talent:ranger/brigand:21-55-10-0",
+        "talent:ranger/brigand:21-55-2-1",
+        "talent:ranger/brigand:21-55-6-1",
+        "observed:ranger/brigand:early-aoe-gap",
+        "observed:ranger/brigand:leveling-comparison"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Descriptive playstyle classification, not an official label."
+    },
+    {
+      "id": "inference:ranger/brigand:failure-cost",
+      "kind": "inference",
+      "text": "Using Outmaneuver or a finisher before the required debuffs and position are established wastes both offense and escape.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:ranger/brigand:21-55-4-0",
+        "talent:ranger/brigand:21-55-10-0",
+        "talent:ranger/brigand:21-55-2-1",
+        "talent:ranger/brigand:21-55-6-1",
+        "talent:ranger/brigand:21-55-1-2",
+        "observed:ranger/brigand:early-aoe-gap",
+        "observed:ranger/brigand:leveling-comparison",
+        "observed:ranger/brigand:endgame-conflict"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Direction is supported; exact throughput cost is not measured."
+    }
+  ]
+}

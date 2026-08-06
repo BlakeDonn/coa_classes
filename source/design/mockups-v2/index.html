@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CoA class explorer — mockups v2 hub</title>
+<link rel="stylesheet" href="shared/base.css">
+<style>
+  .concepts { display: grid; grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); gap: 16px; margin-top: 30px; }
+  .concept { display: block; text-decoration: none; border: 1px solid var(--line); border-radius: var(--radius); background: linear-gradient(145deg,#121620,#0d1016); padding: 22px; transition: transform .16s, border-color .16s; }
+  .concept:hover { transform: translateY(-3px); border-color: #ffca6766; }
+  .concept h2 { margin: 3px 0 8px; font-size: 24px; letter-spacing: -.03em; }
+  .concept .lead { color: var(--muted); font-size: 13.5px; margin: 0 0 14px; }
+  .concept dl { margin: 0; display: grid; gap: 8px; }
+  .concept dt { color: var(--gold); font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+  .concept dd { margin: 1px 0 0; color: var(--muted); font-size: 12.5px; }
+  .concept .open { display: inline-block; margin-top: 16px; color: var(--gold); font-size: 13px; font-weight: 750; }
+  .ground { margin-top: 44px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: 22px 24px; }
+  .ground h2 { margin: 0 0 12px; font-size: 18px; }
+  .ground li { color: var(--muted); font-size: 13px; margin: 5px 0; }
+</style>
+</head>
+<body>
+<header class="mock-topbar">
+  <a class="logo" href="index.html"><span>COA</span> Mockups v2</a>
+  <span class="mock-badge">Design prototypes — not production</span>
+</header>
+
+<main class="wrap">
+  <section style="padding:46px 0 0">
+    <p class="eyebrow">Class exploration redesign · 2026-08-05</p>
+    <h1 class="page-title">Three ways to pick a <span style="color:var(--gold)">main.</span></h1>
+    <p class="page-copy">All three concepts blend a playstyle atlas with a comparison tray, using real August 5 project data
+      for 12 deeply profiled specs. They differ in which step leads the experience. Open each, play with it, pick a direction.</p>
+  </section>
+
+  <div class="concepts">
+    <a class="concept" href="concept-a-atlas.html">
+      <div class="p-kicker" style="color:var(--gold)">Concept A</div>
+      <h2>Playstyle Atlas</h2>
+      <p class="lead">Six feel-families as browsable shelves. The tray docks at the bottom; comparison is a second step.</p>
+      <dl>
+        <dt>Decision flow</dt><dd>Recognize your temperament → browse the shelf → open profiles → tray → compare.</dd>
+        <dt>Best at</dt><dd>Cold-start discovery by feel, with zero CoA vocabulary required.</dd>
+        <dt>Main tradeoff</dt><dd>Family membership is editorial inference, and straddler specs get flattened into one shelf.</dd>
+        <dt>Needs research</dt><dd>Validating family assignments and choosing families for all 58 unprofiled specs.</dd>
+      </dl>
+      <span class="open">Open Concept A →</span>
+    </a>
+
+    <a class="concept" href="concept-b-workbench.html">
+      <div class="p-kicker" style="color:var(--gold)">Concept B</div>
+      <h2>Decision Workbench</h2>
+      <p class="lead">The three-slot comparison IS the home page. A roster rail feeds it; a differences-only toggle hides ties.</p>
+      <dl>
+        <dt>Decision flow</dt><dd>Filter the roster → bench up to three → hide the ties → eliminate → follow evidence links.</dd>
+        <dt>Best at</dt><dd>Head-to-head elimination when you already hold candidates.</dd>
+        <dt>Main tradeoff</dt><dd>Weak cold start and the highest spreadsheet risk of the three.</dd>
+        <dt>Needs research</dt><dd>Whether 1-5 positions are defensible side by side, and which rows drive real eliminations.</dd>
+      </dl>
+      <span class="open">Open Concept B →</span>
+    </a>
+
+    <a class="concept" href="concept-c-matcher.html">
+      <div class="p-kicker" style="color:var(--gold)">Concept C</div>
+      <h2>Fit Interview</h2>
+      <p class="lead">Five plain questions sort every spec into reasoned buckets. Every match shows its working; nothing is scored.</p>
+      <dl>
+        <dt>Decision flow</dt><dd>Answer questions → read reasoned buckets → open profiles → pin → compare pinned.</dd>
+        <dt>Best at</dt><dd>Turning self-knowledge directly into candidates for a brand-new player.</dd>
+        <dt>Main tradeoff</dt><dd>Matching rules are inference on inference; bad thresholds silently misroute people.</dd>
+        <dt>Needs research</dt><dd>Whether the five questions predict enjoyment, plus threshold tuning and reason-reading tests.</dd>
+      </dl>
+      <span class="open">Open Concept C →</span>
+    </a>
+  </div>
+
+  <section class="ground">
+    <h2>Ground rules all three share</h2>
+    <ul>
+      <li><b style="color:var(--text)">No universal fun score.</b> Traits are descriptive positions; buckets and families are labeled inference.</li>
+      <li><b style="color:var(--text)">Complexity is five dimensions</b> — buttons, tracking, setup, reactive calls, mistake punishment — never one number.</li>
+      <li><b style="color:var(--text)">Every value carries an evidence tier:</b> snapshot data, player reports, or our inference.</li>
+      <li><b style="color:var(--text)">Leveling shift is a first-class field.</b> Infinite, Sentinel, and Mechanics all change or conflict at higher levels, and the UI says so.</li>
+      <li><b style="color:var(--text)">Videos are honest.</b> The August 5 snapshot verified zero videos, so every video slot shows the empty state and the schema a verified video would need.</li>
+      <li><b style="color:var(--text)">Real data only.</b> Build counts, titles, links, and player-report claims come from the August 5 research snapshot. The 12 profiles cover your featured specs plus Brigand, Animation, Ancestry, and Archery for family coverage.</li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>

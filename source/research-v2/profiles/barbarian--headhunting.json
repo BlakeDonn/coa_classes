@@ -1,0 +1,1451 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "barbarian/headhunting",
+    "class": "Barbarian",
+    "name": "Headhunting",
+    "roles": [
+      "Damage"
+    ],
+    "range": [
+      "Ranged"
+    ]
+  },
+  "identity": {
+    "fantasy": "",
+    "one_line": "A fully mobile axe, spear, and javelin thrower. It stacks armor reduction and bleeds, builds Born in Blood and Enrage synergies, and uses rapid throws for single-target pressure; recent players describe strong single target and modest cleave, with weak true AoE.",
+    "primary_family": "",
+    "also_fits": [],
+    "claim_ids": [
+      "talent:barbarian/headhunting:12-32-4-0",
+      "talent:barbarian/headhunting:12-32-10-0",
+      "talent:barbarian/headhunting:12-32-4-1",
+      "talent:barbarian/headhunting:12-32-2-2",
+      "talent:barbarian/headhunting:12-32-6-2",
+      "talent:barbarian/headhunting:12-32-10-2",
+      "talent:barbarian/headhunting:12-32-1-3",
+      "talent:barbarian/headhunting:12-32-2-3",
+      "talent:barbarian/headhunting:12-32-4-3",
+      "talent:barbarian/headhunting:12-32-6-3",
+      "talent:barbarian/headhunting:12-32-7-3",
+      "talent:barbarian/headhunting:12-32-2-4",
+      "talent:barbarian/headhunting:12-32-4-4",
+      "talent:barbarian/headhunting:12-32-6-4",
+      "talent:barbarian/headhunting:12-32-10-4",
+      "talent:barbarian/headhunting:12-32-0-5",
+      "talent:barbarian/headhunting:12-32-2-5",
+      "talent:barbarian/headhunting:12-32-4-5",
+      "talent:barbarian/headhunting:12-32-6-5",
+      "talent:barbarian/headhunting:12-32-8-5",
+      "talent:barbarian/headhunting:12-32-2-6",
+      "talent:barbarian/headhunting:12-32-4-6a",
+      "talent:barbarian/headhunting:12-32-4-6b",
+      "talent:barbarian/headhunting:12-32-6-6",
+      "talent:barbarian/headhunting:12-32-10-6",
+      "talent:barbarian/headhunting:12-32-0-7",
+      "talent:barbarian/headhunting:12-32-2-7",
+      "talent:barbarian/headhunting:12-32-4-7",
+      "talent:barbarian/headhunting:12-32-6-7",
+      "talent:barbarian/headhunting:12-32-8-7",
+      "talent:barbarian/headhunting:12-32-1-8",
+      "talent:barbarian/headhunting:12-32-3-8",
+      "talent:barbarian/headhunting:12-32-5-8",
+      "talent:barbarian/headhunting:12-32-7-8",
+      "talent:barbarian/headhunting:12-32-10-8",
+      "talent:barbarian/headhunting:12-32-1-9",
+      "talent:barbarian/headhunting:12-32-4-9",
+      "talent:barbarian/headhunting:12-32-7-9"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "A fully mobile axe, spear, and javelin thrower. It stacks armor reduction and bleeds, builds Born in Blood and Enrage synergies, and uses rapid throws for single-target pressure; recent players describe strong single target and modest cleave, with weak true AoE.",
+    "resources": [],
+    "builders": [],
+    "spenders": [
+      {
+        "name": "Headhunter",
+        "claim_ids": [
+          "talent:barbarian/headhunting:12-32-10-0"
+        ]
+      },
+      {
+        "name": "You Want Axe?",
+        "claim_ids": [
+          "talent:barbarian/headhunting:12-32-4-1"
+        ]
+      },
+      {
+        "name": "Raging Spirit",
+        "claim_ids": [
+          "talent:barbarian/headhunting:12-32-2-7"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Hunting for Sport",
+        "claim_ids": [
+          "talent:barbarian/headhunting:12-32-4-6b"
+        ]
+      },
+      {
+        "name": "Berserker",
+        "claim_ids": [
+          "talent:barbarian/headhunting:12-32-5-8"
+        ]
+      },
+      {
+        "name": "Gurubashi Technique",
+        "claim_ids": [
+          "talent:barbarian/headhunting:12-32-1-9"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Gurubashi Technique",
+        "claim_ids": [
+          "talent:barbarian/headhunting:12-32-1-9"
+        ],
+        "structural_description": "Casting Throw Weapon now has a 25% chance to transform your next cast of it within 8 seconds into Rapid Throw.Rapid ThrowThrow your ranged weapon 3 times in quick succession, each dealing 50% Ranged Weapon Damage plus 25 Physical damage. Grants Born in Blood. Scales with damage modifiers to Throw Weapon."
+      },
+      {
+        "name": "Sen'jin's Guidance",
+        "claim_ids": [
+          "talent:barbarian/headhunting:12-32-4-9"
+        ],
+        "structural_description": "Transform: s your Throw Weapon into Javelin Toss and increases the critical strike chance of Javelin Toss by 5%.Javelin TossTake aim and hurl a javelin at an enemy dealing 160% Ranged Weapon Damage plus 241. Scales with damage modifiers to Throw Weapon and Spears. Usable while moving."
+      },
+      {
+        "name": "Spite",
+        "claim_ids": [
+          "talent:barbarian/headhunting:12-32-7-9"
+        ],
+        "structural_description": "Quickly unleash 3 Berserker Throws at your target and then fling yourself back a great distance, dealing 125% Ranged Weapon Damage, scaling with modifiers to Berserker Axe."
+      }
+    ],
+    "single_target": "",
+    "aoe": "",
+    "movement_and_target_switching": "",
+    "defense_and_control": "",
+    "group_utility": "",
+    "failure_modes": [],
+    "claim_ids": [
+      "talent:barbarian/headhunting:12-32-4-0",
+      "talent:barbarian/headhunting:12-32-10-0",
+      "talent:barbarian/headhunting:12-32-4-1",
+      "talent:barbarian/headhunting:12-32-2-2",
+      "talent:barbarian/headhunting:12-32-6-2",
+      "talent:barbarian/headhunting:12-32-10-2",
+      "talent:barbarian/headhunting:12-32-1-3",
+      "talent:barbarian/headhunting:12-32-2-3",
+      "talent:barbarian/headhunting:12-32-4-3",
+      "talent:barbarian/headhunting:12-32-6-3",
+      "talent:barbarian/headhunting:12-32-7-3",
+      "talent:barbarian/headhunting:12-32-2-4",
+      "talent:barbarian/headhunting:12-32-4-4",
+      "talent:barbarian/headhunting:12-32-6-4",
+      "talent:barbarian/headhunting:12-32-10-4",
+      "talent:barbarian/headhunting:12-32-0-5",
+      "talent:barbarian/headhunting:12-32-2-5",
+      "talent:barbarian/headhunting:12-32-4-5",
+      "talent:barbarian/headhunting:12-32-6-5",
+      "talent:barbarian/headhunting:12-32-8-5",
+      "talent:barbarian/headhunting:12-32-2-6",
+      "talent:barbarian/headhunting:12-32-4-6a",
+      "talent:barbarian/headhunting:12-32-4-6b",
+      "talent:barbarian/headhunting:12-32-6-6",
+      "talent:barbarian/headhunting:12-32-10-6",
+      "talent:barbarian/headhunting:12-32-0-7",
+      "talent:barbarian/headhunting:12-32-2-7",
+      "talent:barbarian/headhunting:12-32-4-7",
+      "talent:barbarian/headhunting:12-32-6-7",
+      "talent:barbarian/headhunting:12-32-8-7",
+      "talent:barbarian/headhunting:12-32-1-8",
+      "talent:barbarian/headhunting:12-32-3-8",
+      "talent:barbarian/headhunting:12-32-5-8",
+      "talent:barbarian/headhunting:12-32-7-8",
+      "talent:barbarian/headhunting:12-32-10-8",
+      "talent:barbarian/headhunting:12-32-1-9",
+      "talent:barbarian/headhunting:12-32-4-9",
+      "talent:barbarian/headhunting:12-32-7-9"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Berserker Axe",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-4-0"
+          ]
+        },
+        {
+          "name": "Headhunter",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-10-0"
+          ]
+        },
+        {
+          "name": "You Want Axe?",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-4-1"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:barbarian/headhunting:12-32-4-0",
+        "talent:barbarian/headhunting:12-32-10-0",
+        "talent:barbarian/headhunting:12-32-4-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Barbed Spear",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-2-2"
+          ]
+        },
+        {
+          "name": "Gutspiller",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-6-2"
+          ]
+        },
+        {
+          "name": "Savage",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-10-2"
+          ]
+        },
+        {
+          "name": "Puncture Wounds",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-1-3"
+          ]
+        },
+        {
+          "name": "Strong Arm",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-2-3"
+          ]
+        },
+        {
+          "name": "Vital Spirit",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-4-3"
+          ]
+        },
+        {
+          "name": "Guts Splatter",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-6-3"
+          ]
+        },
+        {
+          "name": "Deep Fury",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-7-3"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:barbarian/headhunting:12-32-2-2",
+        "talent:barbarian/headhunting:12-32-6-2",
+        "talent:barbarian/headhunting:12-32-10-2",
+        "talent:barbarian/headhunting:12-32-1-3",
+        "talent:barbarian/headhunting:12-32-2-3",
+        "talent:barbarian/headhunting:12-32-4-3",
+        "talent:barbarian/headhunting:12-32-6-3",
+        "talent:barbarian/headhunting:12-32-7-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Headhunting",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-2-4"
+          ]
+        },
+        {
+          "name": "Axe Twirling",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-4-4"
+          ]
+        },
+        {
+          "name": "Entrails",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-6-4"
+          ]
+        },
+        {
+          "name": "Spear Thrower",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-10-4"
+          ]
+        },
+        {
+          "name": "Frothing Savage",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-0-5"
+          ]
+        },
+        {
+          "name": "Impaling Spear",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-2-5"
+          ]
+        },
+        {
+          "name": "Time To Kill!",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-4-5"
+          ]
+        },
+        {
+          "name": "Berserker Rush",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-6-5"
+          ]
+        },
+        {
+          "name": "Gruesome",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-8-5"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:barbarian/headhunting:12-32-2-4",
+        "talent:barbarian/headhunting:12-32-4-4",
+        "talent:barbarian/headhunting:12-32-6-4",
+        "talent:barbarian/headhunting:12-32-10-4",
+        "talent:barbarian/headhunting:12-32-0-5",
+        "talent:barbarian/headhunting:12-32-2-5",
+        "talent:barbarian/headhunting:12-32-4-5",
+        "talent:barbarian/headhunting:12-32-6-5",
+        "talent:barbarian/headhunting:12-32-8-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Spear Shards",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-2-6"
+          ]
+        },
+        {
+          "name": "Furious Berserker",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-4-6a"
+          ]
+        },
+        {
+          "name": "Hunting for Sport",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-4-6b"
+          ]
+        },
+        {
+          "name": "Vengeance For Zul'jin",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-6-6"
+          ]
+        },
+        {
+          "name": "Bloody Fighter",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-10-6"
+          ]
+        },
+        {
+          "name": "Legacy of the Amani",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-0-7"
+          ]
+        },
+        {
+          "name": "Raging Spirit",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-2-7"
+          ]
+        },
+        {
+          "name": "No Survivors",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-4-7"
+          ]
+        },
+        {
+          "name": "Manhunter",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-6-7"
+          ]
+        },
+        {
+          "name": "To The Bone",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-8-7"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:barbarian/headhunting:12-32-2-6",
+        "talent:barbarian/headhunting:12-32-4-6a",
+        "talent:barbarian/headhunting:12-32-4-6b",
+        "talent:barbarian/headhunting:12-32-6-6",
+        "talent:barbarian/headhunting:12-32-10-6",
+        "talent:barbarian/headhunting:12-32-0-7",
+        "talent:barbarian/headhunting:12-32-2-7",
+        "talent:barbarian/headhunting:12-32-4-7",
+        "talent:barbarian/headhunting:12-32-6-7",
+        "talent:barbarian/headhunting:12-32-8-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Skullseeker",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-1-8"
+          ]
+        },
+        {
+          "name": "Brutal Form",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-3-8"
+          ]
+        },
+        {
+          "name": "Berserker",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-5-8"
+          ]
+        },
+        {
+          "name": "Payback",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-7-8"
+          ]
+        },
+        {
+          "name": "Power Tosser",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-10-8"
+          ]
+        },
+        {
+          "name": "Gurubashi Technique",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-1-9"
+          ]
+        },
+        {
+          "name": "Sen'jin's Guidance",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-4-9"
+          ]
+        },
+        {
+          "name": "Spite",
+          "claim_ids": [
+            "talent:barbarian/headhunting:12-32-7-9"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:barbarian/headhunting:12-32-1-8",
+        "talent:barbarian/headhunting:12-32-3-8",
+        "talent:barbarian/headhunting:12-32-5-8",
+        "talent:barbarian/headhunting:12-32-7-8",
+        "talent:barbarian/headhunting:12-32-10-8",
+        "talent:barbarian/headhunting:12-32-1-9",
+        "talent:barbarian/headhunting:12-32-4-9",
+        "talent:barbarian/headhunting:12-32-7-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "leveling_30_49": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "level_50_60": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "boss": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "dungeon_aoe": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "pvp": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [],
+    "avoid_if": []
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [],
+  "sentiment": {
+    "praise": [],
+    "frustrations": [],
+    "contested": []
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 3,
+    "latest_update": "2026-08-02T20:59:07.456+00:00",
+    "top_title": "HH Spearheads on Foreheads",
+    "top_url": "https://coabuildhub.com/build/357b736e-2be8-48bc-9052-fc4f9aa7c2e6",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:357b736e-2be8-48bc-9052-fc4f9aa7c2e6"
+    ]
+  },
+  "coverage": {
+    "mechanical": "structural_baseline",
+    "community": "indexed",
+    "performance": "missing",
+    "video": "missing",
+    "overall_confidence": "low",
+    "gaps": [
+      "Effective core loop needs recent guide or player cross-check.",
+      "Contextual complexity values are not yet researched.",
+      "Recent performance, sentiment, issues, and video evidence are not yet reconciled."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:barbarian/headhunting:12-32-4-0",
+      "kind": "structural",
+      "text": "Berserker Axe: Requires Enraged3 Charges, 8 sec rechargeHurl two axes at an enemy, each dealing 16 + 40% ranged AP Physical damage and reducing their armor by -4% for 20 seconds, stacking up to 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-10-0",
+      "kind": "structural",
+      "text": "Headhunter: Level 10 PassiveReduces the Energy cost of Throw Weapon, Maiming Spear, and Whirling Advance by -15.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-4-1",
+      "kind": "structural",
+      "text": "You Want Axe?: While enraged, casting Spears now refreshes 3 charges of Berserker Axe and your next 3 casts cost -50% less Energy. Lasts 12 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-2-2",
+      "kind": "structural",
+      "text": "Barbed Spear: Throw a heavy spear with precision at an enemy, dealing 160% Ranged Weapon Damage plus 37, and reducing their healing received by -30% for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-6-2",
+      "kind": "structural",
+      "text": "Gutspiller: Launch a heavy axe at an enemy, causing them to bleed for 96 damage over 12 seconds.Every 6 sec the target has their Guts Spilled, causing them to bleed out for an additional 71 + 40% ranged AP damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-10-2",
+      "kind": "structural",
+      "text": "Savage: Level 20 PassiveBorn in Blood now also increases your damage dealt by 5% and its duration is increased by 3 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-1-3",
+      "kind": "structural",
+      "text": "Puncture Wounds: Critical strikes with Spears now causes enemies to bleed for 633 + 16.5% ranged AP over 6 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-2-3",
+      "kind": "structural",
+      "text": "Strong Arm: Increases the damage of Spears by 15% and your hit chance by 3%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-4-3",
+      "kind": "structural",
+      "text": "Vital Spirit: Increases the range of your Spirit spells by 10 yds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-6-3",
+      "kind": "structural",
+      "text": "Guts Splatter: Your Gutspiller now allows your abilities to ignore 10% of the enemy's Armor.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-7-3",
+      "kind": "structural",
+      "text": "Deep Fury: Direct Physical damage dealt now reduces the cooldown of Unbridled Rage by -1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-2-4",
+      "kind": "structural",
+      "text": "Headhunting: Reduces the cast time of Throw Weapon by -20% and removes your spell pushback suffered from taking damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-4-4",
+      "kind": "structural",
+      "text": "Axe Twirling: Display mastery over throwing weapons for 10 seconds, causing Throw Weapon, Gutspiller, and Berserker Axe to strike 2 additional nearby enemies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-6-4",
+      "kind": "structural",
+      "text": "Entrails: Damage dealt by bleed effects now increases your Agility by 1% for 8 seconds, stacking 10 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-10-4",
+      "kind": "structural",
+      "text": "Spear Thrower: Level 30 PassiveCasting Throw Weapon now has a 30% chance to reset the cooldown of your Spears.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-0-5",
+      "kind": "structural",
+      "text": "Frothing Savage: Increases the critical strike chance of Spears and Berserker Axe by 8% against bleeding targets.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-2-5",
+      "kind": "structural",
+      "text": "Impaling Spear: Hurl a spear in a 30 yd frontal line, dealing 131% Ranged Weapon Damage plus 23, dealing less damage with each enemy struck.At the spear's impact location the spear shatters, dealing 277 + 15% ranged AP Physical damage to nearby enemies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-4-5",
+      "kind": "structural",
+      "text": "Time To Kill!: Reduces the cooldown of Axe Twirling by -15 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-6-5",
+      "kind": "structural",
+      "text": "Berserker Rush: Charge an enemy dealing 31 + 35% ranged AP Physical damage and rooting them for 2 seconds, then leap backwards.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-8-5",
+      "kind": "structural",
+      "text": "Gruesome: Increases the damage of Throw Weapon, Gutspiller, and Guts Spilled by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-2-6",
+      "kind": "structural",
+      "text": "Spear Shards: Whenever you shatter your Impaling Spear, affected enemies bleed for 100% of the damage dealt over 3 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-4-6a",
+      "kind": "structural",
+      "text": "Furious Berserker: Critical strikes with Barbed Spear now grants Born in Blood.Born in BloodBattle fuels your vitality, restoring 18 health and 12 Energy over 3 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-4-6b",
+      "kind": "structural",
+      "text": "Hunting for Sport: While Unbridled Rage is active, your attacks now ignore 20% of the target's Armor.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-6-6",
+      "kind": "structural",
+      "text": "Vengeance For Zul'jin: Casting Berserker Rush now grants you Born in Blood.Born in BloodBattle fuels your vitality, restoring 18 health and 12 Energy over 3 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-10-6",
+      "kind": "structural",
+      "text": "Bloody Fighter: Level 40 PassiveBorn in Blood now stacks 1 additional time.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-0-7",
+      "kind": "structural",
+      "text": "Legacy of the Amani: Damage dealt by your Spears now has a 25% chance to cause you to quickly throw an additional spear that strikes for 40% of the damage dealt.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-2-7",
+      "kind": "structural",
+      "text": "Raging Spirit: Casting Unbridled Rage now grants you 30 Energy and it now also removes the Energy cost of your Spirit spells while active.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-4-7",
+      "kind": "structural",
+      "text": "No Survivors: Increases the duration of Axe Twirling, Maiming Spear, and Barbed Spear by 5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-6-7",
+      "kind": "structural",
+      "text": "Manhunter: Increases critical strike chance of all party and raid members by 3%. Does not stack with similar effects.In addition, increases your damage dealt by 10% against Humanoids.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-8-7",
+      "kind": "structural",
+      "text": "To The Bone: Increases the critical strike chance of Guts Spilled by 10% and it now applies Break to the target and critically striking with it will apply an additional stack.BreakBreak an enemy's defenses, reducing their armor by -4% for 20 seconds, stacking 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-1-8",
+      "kind": "structural",
+      "text": "Skullseeker: Increases your critical strike chance against enemies above 80% health by 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-3-8",
+      "kind": "structural",
+      "text": "Brutal Form: Increases the tick rate of Born in Blood by -25%, allows its healing to scale with your Agility, and it can now critically heal you.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-5-8",
+      "kind": "structural",
+      "text": "Berserker: While enraged, your ranged critical strikes now grant you Berserker. Once applied it cannot be applied again.BerserkerYour ranged abilities have a 20% chance to unleash Berserker Throw, dealing 75% Ranged Weapon Damage. Lasts 15 seconds.While active, every offensive ranged ability used increases its chance to trigger by 2%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-7-8",
+      "kind": "structural",
+      "text": "Payback: Increases the damage dealt by your Guts Spilled by 75%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-10-8",
+      "kind": "structural",
+      "text": "Power Tosser: Level 50 PassiveDamage dealt by Throw Weapon now scales with your Agility.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-1-9",
+      "kind": "structural",
+      "text": "Gurubashi Technique: Casting Throw Weapon now has a 25% chance to transform your next cast of it within 8 seconds into Rapid Throw.Rapid ThrowThrow your ranged weapon 3 times in quick succession, each dealing 50% Ranged Weapon Damage plus 25 Physical damage. Grants Born in Blood. Scales with damage modifiers to Throw Weapon.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-4-9",
+      "kind": "structural",
+      "text": "Sen'jin's Guidance: Transform: s your Throw Weapon into Javelin Toss and increases the critical strike chance of Javelin Toss by 5%.Javelin TossTake aim and hurl a javelin at an enemy dealing 160% Ranged Weapon Damage plus 241. Scales with damage modifiers to Throw Weapon and Spears. Usable while moving.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/headhunting:12-32-7-9",
+      "kind": "structural",
+      "text": "Spite: Quickly unleash 3 Berserker Throws at your target and then fling yourself back a great distance, dealing 125% Ranged Weapon Damage, scaling with modifiers to Berserker Axe.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    }
+  ]
+}

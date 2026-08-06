@@ -1,0 +1,927 @@
+{
+  "baseline": "bloodmage--fleshweaver.json",
+  "set": {
+    "identity": {
+      "fantasy": "A macabre combat medic who transfers blood between bodies, converts attacks into healing, and rewrites incoming damage through organs, bindings, shields, and stored vitality.",
+      "primary_family": "strategists",
+      "also_fits": [
+        "planners"
+      ],
+      "playstyle_tags": [
+        "damage-to-healing-support",
+        "resource-healer",
+        "melee-support"
+      ],
+      "one_line": "A blood-transfer healer that stores, redistributes, shields, binds, and purifies health through Sanguine Essence and organ-themed spells. It can heal through attacks in a fistweaver-like style and manipulate incoming damage, but requires careful resource and target management.",
+      "claim_ids": [
+        "observed:bloodmage/fleshweaver:healing-loop",
+        "inference:bloodmage/fleshweaver:coverage-cost",
+        "talent:bloodmage/fleshweaver:20-93-1-2",
+        "observed:bloodmage/fleshweaver:dungeon-healing",
+        "observed:bloodmage/fleshweaver:representation",
+        "talent:bloodmage/fleshweaver:20-93-10-8b",
+        "talent:bloodmage/fleshweaver:20-93-4-0",
+        "talent:bloodmage/fleshweaver:20-93-10-0"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "Use Dark Liturgy to establish Blood Ritual recipients, attack through Bloodmoon Blast and later proc-enabled damage so allies carrying the ritual are healed, manage Sanguine Essence and instant Sanguine Mend access, and reserve Aortic Aegis, Arterial Bind, Blood Redistribution, or Purify Blood for dangerous events.",
+      "single_target": "Maintain ritual coverage on the priority ally, convert damage casts into healing, and use direct blood transfers or shields when passive conversion is insufficient.",
+      "aoe": "Dark Liturgy chains through allies, later Dark Essence adds healing-over-time conversion, and Crimson Tide, Waves of Blood, and redistribution tools broaden group recovery.",
+      "movement_and_target_switching": "Instant Sanguine Mend and proc-based healing help during movement, but ritual coverage and attack targets must remain valid for the conversion engine to work.",
+      "defense_and_control": "Aortic Aegis, Arterial Bind, Blood Redistribution, Hemoglobe, and purification effects manipulate damage rather than relying only on raw healing after the fact.",
+      "group_utility": "Blood-Cursed Weapons or Armor, damage-to-healing support, shields, bindings, and purification give Fleshweaver a hybrid contribution that ordinary healing meters may not fully explain.",
+      "failure_modes": [
+        {
+          "text": "Attacking without Blood Ritual coverage or letting the relevant buff fall off breaks the damage-to-healing conversion at the moment the group expects it.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost"
+          ]
+        },
+        {
+          "text": "Movement or a target swap can interrupt the intended payoff: instant sanguine mend and proc-based healing help during movement, but ritual coverage and attack targets must remain valid for the conversion engine to work.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation"
+          ]
+        },
+        {
+          "text": "Spending recovery or control too early leaves less protection for the next pressure event: aortic aegis, arterial bind, blood redistribution, hemoglobe, and purification effects manipulate damage rather than relying only on raw healing after the fact.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "observed:bloodmage/fleshweaver:healing-loop",
+        "inference:bloodmage/fleshweaver:coverage-cost",
+        "talent:bloodmage/fleshweaver:20-93-1-2",
+        "observed:bloodmage/fleshweaver:dungeon-healing",
+        "observed:bloodmage/fleshweaver:representation",
+        "talent:bloodmage/fleshweaver:20-93-10-8b",
+        "talent:bloodmage/fleshweaver:20-93-4-0",
+        "talent:bloodmage/fleshweaver:20-93-10-0"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "A support healer that begins with stored blood and instant-mend tools, then gains Dark Liturgy and the Blood Ritual engine.",
+        "strengths": [
+          "Can contribute damage while healing",
+          "Strong early chain-heal access"
+        ],
+        "cautions": [
+          "Some low-level players initially experience it as half a healer",
+          "The core interaction is not obvious from one button"
+        ],
+        "claim_ids": [
+          "observed:bloodmage/fleshweaver:healing-loop",
+          "talent:bloodmage/fleshweaver:20-93-1-2",
+          "inference:bloodmage/fleshweaver:coverage-cost",
+          "observed:bloodmage/fleshweaver:dungeon-healing",
+          "observed:bloodmage/fleshweaver:representation",
+          "talent:bloodmage/fleshweaver:20-93-10-8b",
+          "talent:bloodmage/fleshweaver:20-93-4-0",
+          "talent:bloodmage/fleshweaver:20-93-10-0"
+        ]
+      },
+      "level_50_60": {
+        "feel": "A full hybrid healer with ritual coverage, damage procs, direct transfers, shields, bindings, purification, and stored-vitality tools competing for attention.",
+        "strengths": [
+          "Current players report successful dungeon healing through 60",
+          "High Mythic representation for a support spec",
+          "Broad emergency toolkit"
+        ],
+        "cautions": [
+          "More target and buff tracking than a direct spam healer",
+          "Meter interpretation can undervalue support effects"
+        ],
+        "claim_ids": [
+          "observed:bloodmage/fleshweaver:dungeon-healing",
+          "observed:bloodmage/fleshweaver:representation",
+          "talent:bloodmage/fleshweaver:20-93-10-8b",
+          "observed:bloodmage/fleshweaver:healing-loop",
+          "inference:bloodmage/fleshweaver:coverage-cost",
+          "talent:bloodmage/fleshweaver:20-93-1-2",
+          "talent:bloodmage/fleshweaver:20-93-4-0",
+          "talent:bloodmage/fleshweaver:20-93-10-0"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "By levels 30-49, use dark liturgy to establish blood ritual recipients, attack through bloodmoon blast and later proc-enabled damage so allies carrying the ritual are healed, manage sanguine essence and instant sanguine mend access, and reserve aortic aegis, arterial bind, blood redistribution, or purify blood for dangerous events.",
+        "strengths": [
+          "Core engine is online",
+          "More complete target coverage"
+        ],
+        "cautions": [
+          "Late talents still change the ceiling",
+          "Instant Sanguine Mend and proc-based healing help during movement, but ritual coverage and attack targets must remain valid for the conversion engine to work"
+        ],
+        "claim_ids": [
+          "observed:bloodmage/fleshweaver:healing-loop",
+          "inference:bloodmage/fleshweaver:coverage-cost",
+          "talent:bloodmage/fleshweaver:20-93-1-2",
+          "observed:bloodmage/fleshweaver:dungeon-healing",
+          "observed:bloodmage/fleshweaver:representation",
+          "talent:bloodmage/fleshweaver:20-93-10-8b",
+          "talent:bloodmage/fleshweaver:20-93-4-0",
+          "talent:bloodmage/fleshweaver:20-93-10-0"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, maintain ritual coverage on the priority ally, convert damage casts into healing, and use direct blood transfers or shields when passive conversion is insufficient.",
+        "strengths": [
+          "Durable targets preserve the full loop",
+          "Cooldowns can be planned"
+        ],
+        "cautions": [
+          "Movement can break setup",
+          "Repeated errors remain visible"
+        ],
+        "claim_ids": [
+          "observed:bloodmage/fleshweaver:healing-loop",
+          "inference:bloodmage/fleshweaver:coverage-cost",
+          "talent:bloodmage/fleshweaver:20-93-1-2",
+          "observed:bloodmage/fleshweaver:dungeon-healing",
+          "observed:bloodmage/fleshweaver:representation",
+          "talent:bloodmage/fleshweaver:20-93-10-8b",
+          "talent:bloodmage/fleshweaver:20-93-4-0",
+          "talent:bloodmage/fleshweaver:20-93-10-0"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, dark liturgy chains through allies, later dark essence adds healing-over-time conversion, and crimson tide, waves of blood, and redistribution tools broaden group recovery.",
+        "strengths": [
+          "Pack tools express the spec clearly",
+          "Group utility has regular value"
+        ],
+        "cautions": [
+          "Short-lived targets can erase setup",
+          "Tank movement changes the plan"
+        ],
+        "claim_ids": [
+          "observed:bloodmage/fleshweaver:healing-loop",
+          "inference:bloodmage/fleshweaver:coverage-cost",
+          "talent:bloodmage/fleshweaver:20-93-1-2",
+          "observed:bloodmage/fleshweaver:dungeon-healing",
+          "observed:bloodmage/fleshweaver:representation",
+          "talent:bloodmage/fleshweaver:20-93-10-8b",
+          "talent:bloodmage/fleshweaver:20-93-4-0",
+          "talent:bloodmage/fleshweaver:20-93-10-0"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, instant sanguine mend and proc-based healing help during movement, but ritual coverage and attack targets must remain valid for the conversion engine to work. Aortic Aegis, Arterial Bind, Blood Redistribution, Hemoglobe, and purification effects manipulate damage rather than relying only on raw healing after the fact.",
+        "strengths": [
+          "Control and utility create options",
+          "Target swaps can reward flexibility"
+        ],
+        "cautions": [
+          "Disruption makes the loop less predictable",
+          "Defensive timing is punishable"
+        ],
+        "claim_ids": [
+          "observed:bloodmage/fleshweaver:healing-loop",
+          "inference:bloodmage/fleshweaver:coverage-cost",
+          "talent:bloodmage/fleshweaver:20-93-1-2",
+          "observed:bloodmage/fleshweaver:dungeon-healing",
+          "observed:bloodmage/fleshweaver:representation",
+          "talent:bloodmage/fleshweaver:20-93-10-8b",
+          "talent:bloodmage/fleshweaver:20-93-4-0",
+          "talent:bloodmage/fleshweaver:20-93-10-0"
+        ]
+      }
+    },
+    "complexity": {
+      "state_tracking": {
+        "boss": {
+          "value": "high",
+          "reason": "Blood Ritual coverage, Sanguine Essence, instant-mend access, proc conversions, stored vitality, and defensive bindings overlap.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Maintain ritual coverage on the priority ally, convert damage casts into healing, and use direct blood transfers or shields when passive conversion is insufficient. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Maintain ritual coverage on the priority ally, convert damage casts into healing, and use direct blood transfers or shields when passive conversion is insufficient. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Maintain ritual coverage on the priority ally, convert damage casts into healing, and use direct blood transfers or shields when passive conversion is insufficient. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Maintain ritual coverage on the priority ally, convert damage casts into healing, and use direct blood transfers or shields when passive conversion is insufficient. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Maintain ritual coverage on the priority ally, convert damage casts into healing, and use direct blood transfers or shields when passive conversion is insufficient. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "boss": {
+          "value": "high",
+          "reason": "The healer chooses between continuing damage conversion and interrupting it for direct transfer, shielding, binding, redistribution, or purification.",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-4-5",
+            "talent:bloodmage/fleshweaver:20-93-8-5",
+            "talent:bloodmage/fleshweaver:20-93-2-7",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "Target count, incoming pressure, and movement change the next action; aortic aegis, arterial bind, blood redistribution, hemoglobe, and purification effects manipulate damage rather than relying only on raw healing after the fact. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Target count, incoming pressure, and movement change the next action; aortic aegis, arterial bind, blood redistribution, hemoglobe, and purification effects manipulate damage rather than relying only on raw healing after the fact. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Target count, incoming pressure, and movement change the next action; aortic aegis, arterial bind, blood redistribution, hemoglobe, and purification effects manipulate damage rather than relying only on raw healing after the fact. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Target count, incoming pressure, and movement change the next action; aortic aegis, arterial bind, blood redistribution, hemoglobe, and purification effects manipulate damage rather than relying only on raw healing after the fact. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Target count, incoming pressure, and movement change the next action; aortic aegis, arterial bind, blood redistribution, hemoglobe, and purification effects manipulate damage rather than relying only on raw healing after the fact. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        }
+      },
+      "failure_cost": {
+        "boss": {
+          "value": "high",
+          "reason": "Missing ritual coverage or choosing damage during an emergency can remove both expected healing and a major response window.",
+          "claim_ids": [
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "Attacking without Blood Ritual coverage or letting the relevant buff fall off breaks the damage-to-healing conversion at the moment the group expects it. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Attacking without Blood Ritual coverage or letting the relevant buff fall off breaks the damage-to-healing conversion at the moment the group expects it. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Attacking without Blood Ritual coverage or letting the relevant buff fall off breaks the damage-to-healing conversion at the moment the group expects it. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Attacking without Blood Ritual coverage or letting the relevant buff fall off breaks the damage-to-healing conversion at the moment the group expects it. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Attacking without Blood Ritual coverage or letting the relevant buff fall off breaks the damage-to-healing conversion at the moment the group expects it. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        }
+      },
+      "core_actions": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Use Dark Liturgy to establish Blood Ritual recipients, attack through Bloodmoon Blast and later proc-enabled damage so allies carrying the ritual are healed, manage Sanguine Essence and instant Sanguine Mend access, and reserve Aortic Aegis, Arterial Bind, Blood Redistribution, or Purify Blood for dangerous events. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Use Dark Liturgy to establish Blood Ritual recipients, attack through Bloodmoon Blast and later proc-enabled damage so allies carrying the ritual are healed, manage Sanguine Essence and instant Sanguine Mend access, and reserve Aortic Aegis, Arterial Bind, Blood Redistribution, or Purify Blood for dangerous events. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        },
+        "level_50_60": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Use Dark Liturgy to establish Blood Ritual recipients, attack through Bloodmoon Blast and later proc-enabled damage so allies carrying the ritual are healed, manage Sanguine Essence and instant Sanguine Mend access, and reserve Aortic Aegis, Arterial Bind, Blood Redistribution, or Purify Blood for dangerous events. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        },
+        "boss": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Use Dark Liturgy to establish Blood Ritual recipients, attack through Bloodmoon Blast and later proc-enabled damage so allies carrying the ritual are healed, manage Sanguine Essence and instant Sanguine Mend access, and reserve Aortic Aegis, Arterial Bind, Blood Redistribution, or Purify Blood for dangerous events. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Use Dark Liturgy to establish Blood Ritual recipients, attack through Bloodmoon Blast and later proc-enabled damage so allies carrying the ritual are healed, manage Sanguine Essence and instant Sanguine Mend access, and reserve Aortic Aegis, Arterial Bind, Blood Redistribution, or Purify Blood for dangerous events. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Use Dark Liturgy to establish Blood Ritual recipients, attack through Bloodmoon Blast and later proc-enabled damage so allies carrying the ritual are healed, manage Sanguine Essence and instant Sanguine Mend access, and reserve Aortic Aegis, Arterial Bind, Blood Redistribution, or Purify Blood for dangerous events. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Dark Liturgy chains through allies, later Dark Essence adds healing-over-time conversion, and Crimson Tide, Waves of Blood, and redistribution tools broaden group recovery. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low-moderate",
+          "reason": "The payoff depends on establishing the conditions described by: Dark Liturgy chains through allies, later Dark Essence adds healing-over-time conversion, and Crimson Tide, Waves of Blood, and redistribution tools broaden group recovery. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        },
+        "level_50_60": {
+          "value": "low-moderate",
+          "reason": "The payoff depends on establishing the conditions described by: Dark Liturgy chains through allies, later Dark Essence adds healing-over-time conversion, and Crimson Tide, Waves of Blood, and redistribution tools broaden group recovery. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        },
+        "boss": {
+          "value": "low-moderate",
+          "reason": "The payoff depends on establishing the conditions described by: Dark Liturgy chains through allies, later Dark Essence adds healing-over-time conversion, and Crimson Tide, Waves of Blood, and redistribution tools broaden group recovery. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low-moderate",
+          "reason": "The payoff depends on establishing the conditions described by: Dark Liturgy chains through allies, later Dark Essence adds healing-over-time conversion, and Crimson Tide, Waves of Blood, and redistribution tools broaden group recovery. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "The payoff depends on establishing the conditions described by: Dark Liturgy chains through allies, later Dark Essence adds healing-over-time conversion, and Crimson Tide, Waves of Blood, and redistribution tools broaden group recovery. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Instant Sanguine Mend and proc-based healing help during movement, but ritual coverage and attack targets must remain valid for the conversion engine to work. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Instant Sanguine Mend and proc-based healing help during movement, but ritual coverage and attack targets must remain valid for the conversion engine to work. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Instant Sanguine Mend and proc-based healing help during movement, but ritual coverage and attack targets must remain valid for the conversion engine to work. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Instant Sanguine Mend and proc-based healing help during movement, but ritual coverage and attack targets must remain valid for the conversion engine to work. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Instant Sanguine Mend and proc-based healing help during movement, but ritual coverage and attack targets must remain valid for the conversion engine to work. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "Execution is constrained by positioning and swaps: Instant Sanguine Mend and proc-based healing help during movement, but ritual coverage and attack targets must remain valid for the conversion engine to work. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation",
+            "talent:bloodmage/fleshweaver:20-93-10-8b",
+            "talent:bloodmage/fleshweaver:20-93-4-0",
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You enjoy fistweaver-style healing where attacks, buffs, and direct emergency tools all matter.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "observed:bloodmage/fleshweaver:dungeon-healing"
+          ]
+        },
+        {
+          "text": "You enjoy the spec's core cadence: use dark liturgy to establish blood ritual recipients, attack through bloodmoon blast and later proc-enabled damage so allies carrying the ritual are healed, manage sanguine essence and instant sanguine mend access, and reserve aortic aegis, arterial bind, blood redistribution, or purify blood for dangerous events.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You want a pure reactive healer with no damage target, recipient-buff, or stored-resource management.",
+          "claim_ids": [
+            "inference:bloodmage/fleshweaver:coverage-cost"
+          ]
+        },
+        {
+          "text": "You dislike the positioning or swap constraint that instant sanguine mend and proc-based healing help during movement, but ritual coverage and attack targets must remain valid for the conversion engine to work.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop",
+            "inference:bloodmage/fleshweaver:coverage-cost",
+            "talent:bloodmage/fleshweaver:20-93-1-2",
+            "observed:bloodmage/fleshweaver:dungeon-healing",
+            "observed:bloodmage/fleshweaver:representation"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Current players report strong AoE damage, meaningful passive healing, and successful dungeon healing from level 15 through 60.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:dungeon-healing"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Early players can mistake Dark Liturgy spam for the whole spec or feel like only half a healer before later conversion talents arrive.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:healing-loop"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "Some advice calls Dark Liturgy spam sufficient, while an experienced level-60 player calls that approach lazy and instead uses the broader damage-and-proc kit.",
+          "claim_ids": [
+            "observed:bloodmage/fleshweaver:dungeon-healing"
+          ]
+        }
+      ]
+    },
+    "performance_signal_ids": [
+      "observed:bloodmage/fleshweaver:representation"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "moderate-high",
+      "performance": "representation_only",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium-high",
+      "gaps": [
+        "No normalized healer-throughput comparison.",
+        "The current Build Hub guide should be reconciled claim by claim in a later guide-text pass."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "A support healer that begins with stored blood and instant-mend tools, then gains Dark Liturgy and the Blood Ritual engine.",
+      "observed_changes": [
+        "Some low-level players initially experience it as half a healer",
+        "The core interaction is not obvious from one button"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "A support healer that begins with stored blood and instant-mend tools, then gains Dark Liturgy and the Blood Ritual engine.",
+      "observed_changes": [
+        "Some low-level players initially experience it as half a healer",
+        "The core interaction is not obvious from one button"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "A full hybrid healer with ritual coverage, damage procs, direct transfers, shields, bindings, purification, and stored-vitality tools competing for attention.",
+      "observed_changes": [
+        "More target and buff tracking than a direct spam healer",
+        "Meter interpretation can undervalue support effects"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "By levels 30-49, use dark liturgy to establish blood ritual recipients, attack through bloodmoon blast and later proc-enabled damage so allies carrying the ritual are healed, manage sanguine essence and instant sanguine mend access, and reserve aortic aegis, arterial bind, blood redistribution, or purify blood for dangerous events.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Instant Sanguine Mend and proc-based healing help during movement, but ritual coverage and attack targets must remain valid for the conversion engine to work"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "By levels 30-49, use dark liturgy to establish blood ritual recipients, attack through bloodmoon blast and later proc-enabled damage so allies carrying the ritual are healed, manage sanguine essence and instant sanguine mend access, and reserve aortic aegis, arterial bind, blood redistribution, or purify blood for dangerous events.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Instant Sanguine Mend and proc-based healing help during movement, but ritual coverage and attack targets must remain valid for the conversion engine to work"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:bloodmage/fleshweaver:healing-loop",
+      "kind": "observed",
+      "text": "A July Fleshweaver discussion explains that Dark Liturgy applies Blood Rituals, allowing Bloodmoon Blast to heal affected allies; later Dark Essence extends other spells into healing-over-time effects, while Pooled Vitality supports instant self-inclusive Sanguine Mend.",
+      "source_ids": [
+        "reddit:fleshweaver-loop-2026-07-11"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "group_healing"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Mechanics explanation aligns with current structural talents."
+    },
+    {
+      "id": "observed:bloodmage/fleshweaver:dungeon-healing",
+      "kind": "observed",
+      "text": "An August 2 player reports leveling from 15 to 60 plus heroic/mythic content as Fleshweaver, mostly through dungeons, and says higher-level play uses damage and healing procs rather than only Dark Liturgy spam. Another current player reports high AoE damage and substantial supplemental healing while leveling.",
+      "source_ids": [
+        "reddit:bloodmage-fleshweaver-2026-08-02",
+        "reddit:bloodmage-leveling-2026-07-30"
+      ],
+      "scope": {
+        "levels": "leveling_15_60",
+        "content": [
+          "dungeon_healing",
+          "dungeon_damage"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Player reports, not normalized logs."
+    },
+    {
+      "id": "observed:bloodmage/fleshweaver:representation",
+      "kind": "observed",
+      "text": "The August Mythic inventory lists 65 Fleshweaver records. The DPS compilation's 3,090 value is a support/off-role signal and cannot rank healing performance.",
+      "source_ids": [
+        "reddit:class-statistics-2026-08-02",
+        "reddit:dps-aggregate-2026-07-25"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "mythic_dungeons"
+        ],
+        "build_or_mode": [
+          "support",
+          "offrole_dps"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "Representation is not power."
+    },
+    {
+      "id": "inference:bloodmage/fleshweaver:coverage-cost",
+      "kind": "inference",
+      "text": "Fleshweaver's damage-to-healing engine fails when the intended recipients lack Blood Ritual coverage, making buff targeting a higher-cost mistake than pressing a weak filler.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:bloodmage/fleshweaver:20-93-1-2",
+        "talent:bloodmage/fleshweaver:20-93-0-4",
+        "observed:bloodmage/fleshweaver:healing-loop"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "group_healing"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Exact coverage requirements vary by group size and build."
+    }
+  ]
+}

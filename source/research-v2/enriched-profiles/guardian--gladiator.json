@@ -1,0 +1,2005 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "guardian/gladiator",
+    "class": "Guardian",
+    "name": "Gladiator",
+    "roles": [
+      "Damage"
+    ],
+    "range": [
+      "Melee"
+    ]
+  },
+  "identity": {
+    "fantasy": "A formation-switching arena fighter who adapts weapon training, banners, clinches, spear throws, and short burst combinations to the opponent.",
+    "one_line": "A weapon-training specialist with distinct sword, axe, mace, polearm, and shield synergies. Glory, Might, Momentum, clinch tools, spear throws, and tactical finishers make it especially PvP-friendly while remaining a physical PvE damage option.",
+    "primary_family": "duelists",
+    "also_fits": [
+      "sequencers"
+    ],
+    "claim_ids": [
+      "observed:guardian/gladiator:pvp-sequence",
+      "inference:guardian/gladiator:sequence-cost",
+      "talent:guardian/gladiator:18-49-4-0",
+      "talent:guardian/gladiator:18-49-10-0",
+      "talent:guardian/gladiator:18-49-0-2",
+      "observed:guardian/gladiator:performance",
+      "talent:guardian/gladiator:18-49-4-9",
+      "observed:guardian/gladiator:recent-manual-review"
+    ],
+    "playstyle_tags": [
+      "tactical-melee-burster",
+      "stance-dancer",
+      "pvp-controller"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "Build and preserve Glory, choose the formation and weapon package for the situation, then combine Spear Throw, Net Shot, Chivalry, Centurion Strike, Glorious Arena, and Grand Entrance into short kill attempts while holding mobility for the opponent's response.",
+    "resources": [],
+    "builders": [],
+    "spenders": [
+      {
+        "name": "No Retreating!",
+        "claim_ids": [
+          "talent:guardian/gladiator:18-49-0-6"
+        ]
+      },
+      {
+        "name": "Waste No Movement",
+        "claim_ids": [
+          "talent:guardian/gladiator:18-49-2-6"
+        ]
+      },
+      {
+        "name": "Heroism",
+        "claim_ids": [
+          "talent:guardian/gladiator:18-49-4-8"
+        ]
+      },
+      {
+        "name": "Earthsplitter",
+        "claim_ids": [
+          "talent:guardian/gladiator:18-49-6-9"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Glory",
+        "claim_ids": [
+          "talent:guardian/gladiator:18-49-10-0"
+        ]
+      },
+      {
+        "name": "Heroism",
+        "claim_ids": [
+          "talent:guardian/gladiator:18-49-4-8"
+        ]
+      }
+    ],
+    "modes": [],
+    "single_target": "The current PvP build front-loads healing reduction, root, banner, guaranteed Centurion Strike critical damage, arena control, and Grand Entrance into a layered opener.",
+    "aoe": "Broad Sweeps, polearm coverage, Earthsplitter, and arena effects support groups, but the best documented play is opponent-focused PvP burst.",
+    "movement_and_target_switching": "Spear Throw, Net Shot, Battle Rush, Advance, and formation macros provide strong access, but wasting a gap closer early creates a clear kiting vulnerability.",
+    "defense_and_control": "Counter Stance, Brace, Turn the Blade, banners, roots, slows, immunity breaking, and formation swaps create a deep defensive and control kit.",
+    "group_utility": "Spellwarding, recovery, stun-resist, slow, and other banners let Gladiator contribute meaningful teamfight utility.",
+    "failure_modes": [
+      {
+        "text": "Spending mobility or control too early, missing the five-second armor-break window, or reaching three Glory while Ram is unavailable can blunt the intended kill sequence.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost"
+        ]
+      },
+      {
+        "text": "Movement or a target swap can interrupt the intended payoff: spear throw, net shot, battle rush, advance, and formation macros provide strong access, but wasting a gap closer early creates a clear kiting vulnerability.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2"
+        ]
+      },
+      {
+        "text": "Spending recovery or control too early leaves less protection for the next pressure event: counter stance, brace, turn the blade, banners, roots, slows, immunity breaking, and formation swaps create a deep defensive and control kit.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2"
+        ]
+      }
+    ],
+    "claim_ids": [
+      "observed:guardian/gladiator:pvp-sequence",
+      "inference:guardian/gladiator:sequence-cost",
+      "talent:guardian/gladiator:18-49-4-0",
+      "talent:guardian/gladiator:18-49-10-0",
+      "talent:guardian/gladiator:18-49-0-2",
+      "observed:guardian/gladiator:performance",
+      "talent:guardian/gladiator:18-49-4-9",
+      "observed:guardian/gladiator:recent-manual-review"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Centurion Strike",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-4-0"
+          ]
+        },
+        {
+          "name": "Glory",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-10-0"
+          ]
+        },
+        {
+          "name": "Might",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-2-1"
+          ]
+        },
+        {
+          "name": "Legionnaire",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-6-1"
+          ]
+        }
+      ],
+      "observed_loop": "A physical fighter whose weapon choice and formations begin shaping the kit before its full control chain arrives.",
+      "observed_changes": [
+        "Many choices are not yet online",
+        "Weapon package changes the feel"
+      ],
+      "claim_ids": [
+        "talent:guardian/gladiator:18-49-4-0",
+        "talent:guardian/gladiator:18-49-10-0",
+        "talent:guardian/gladiator:18-49-2-1",
+        "talent:guardian/gladiator:18-49-6-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Sword Training",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-0-2"
+          ]
+        },
+        {
+          "name": "Supremacy",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-4-2"
+          ]
+        },
+        {
+          "name": "Axe Training",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-8-2"
+          ]
+        },
+        {
+          "name": "Shield Training",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-10-2"
+          ]
+        },
+        {
+          "name": "Polearm Training",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-1-3"
+          ]
+        },
+        {
+          "name": "Upper Hand",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-3-3"
+          ]
+        },
+        {
+          "name": "Built Different",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-5-3"
+          ]
+        },
+        {
+          "name": "Mace Training",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-7-3"
+          ]
+        }
+      ],
+      "observed_loop": "A physical fighter whose weapon choice and formations begin shaping the kit before its full control chain arrives.",
+      "observed_changes": [
+        "Many choices are not yet online",
+        "Weapon package changes the feel"
+      ],
+      "claim_ids": [
+        "talent:guardian/gladiator:18-49-0-2",
+        "talent:guardian/gladiator:18-49-4-2",
+        "talent:guardian/gladiator:18-49-8-2",
+        "talent:guardian/gladiator:18-49-10-2",
+        "talent:guardian/gladiator:18-49-1-3",
+        "talent:guardian/gladiator:18-49-3-3",
+        "talent:guardian/gladiator:18-49-5-3",
+        "talent:guardian/gladiator:18-49-7-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Double Duty",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-2-4"
+          ]
+        },
+        {
+          "name": "Champion",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-4-4"
+          ]
+        },
+        {
+          "name": "Crashing Force",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-6-4"
+          ]
+        },
+        {
+          "name": "Experienced Combatant",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-10-4"
+          ]
+        },
+        {
+          "name": "Spear Throw",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-1-5"
+          ]
+        },
+        {
+          "name": "Tactical Combat",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-3-5"
+          ]
+        },
+        {
+          "name": "Heroic Effort",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-5-5"
+          ]
+        },
+        {
+          "name": "No Escape",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-7-5a"
+          ]
+        },
+        {
+          "name": "Bulwark Rush",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-7-5b"
+          ]
+        }
+      ],
+      "observed_loop": "By levels 30-49, build and preserve glory, choose the formation and weapon package for the situation, then combine spear throw, net shot, chivalry, centurion strike, glorious arena, and grand entrance into short kill attempts while holding mobility for the opponent's response.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Spear Throw, Net Shot, Battle Rush, Advance, and formation macros provide strong access, but wasting a gap closer early creates a clear kiting vulnerability"
+      ],
+      "claim_ids": [
+        "talent:guardian/gladiator:18-49-2-4",
+        "talent:guardian/gladiator:18-49-4-4",
+        "talent:guardian/gladiator:18-49-6-4",
+        "talent:guardian/gladiator:18-49-10-4",
+        "talent:guardian/gladiator:18-49-1-5",
+        "talent:guardian/gladiator:18-49-3-5",
+        "talent:guardian/gladiator:18-49-5-5",
+        "talent:guardian/gladiator:18-49-7-5a",
+        "talent:guardian/gladiator:18-49-7-5b"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "No Retreating!",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-0-6"
+          ]
+        },
+        {
+          "name": "Waste No Movement",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-2-6"
+          ]
+        },
+        {
+          "name": "Overwhelming Presence",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-4-6"
+          ]
+        },
+        {
+          "name": "Momentum",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-6-6"
+          ]
+        },
+        {
+          "name": "Myrmidon",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-8-6"
+          ]
+        },
+        {
+          "name": "Shield Combat",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-10-6"
+          ]
+        },
+        {
+          "name": "Clinch Brawler",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-1-7a"
+          ]
+        },
+        {
+          "name": "Pinned Down!",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-1-7b"
+          ]
+        },
+        {
+          "name": "Deadly Blow",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-4-7"
+          ]
+        },
+        {
+          "name": "Retiarius",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-7-7"
+          ]
+        }
+      ],
+      "observed_loop": "By levels 30-49, build and preserve glory, choose the formation and weapon package for the situation, then combine spear throw, net shot, chivalry, centurion strike, glorious arena, and grand entrance into short kill attempts while holding mobility for the opponent's response.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Spear Throw, Net Shot, Battle Rush, Advance, and formation macros provide strong access, but wasting a gap closer early creates a clear kiting vulnerability"
+      ],
+      "claim_ids": [
+        "talent:guardian/gladiator:18-49-0-6",
+        "talent:guardian/gladiator:18-49-2-6",
+        "talent:guardian/gladiator:18-49-4-6",
+        "talent:guardian/gladiator:18-49-6-6",
+        "talent:guardian/gladiator:18-49-8-6",
+        "talent:guardian/gladiator:18-49-10-6",
+        "talent:guardian/gladiator:18-49-1-7a",
+        "talent:guardian/gladiator:18-49-1-7b",
+        "talent:guardian/gladiator:18-49-4-7",
+        "talent:guardian/gladiator:18-49-7-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Close Combat",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-2-8"
+          ]
+        },
+        {
+          "name": "Heroism",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-4-8"
+          ]
+        },
+        {
+          "name": "One-Handed Mastery",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-6-8"
+          ]
+        },
+        {
+          "name": "Favor",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-10-8"
+          ]
+        },
+        {
+          "name": "Calculated Strike",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-2-9"
+          ]
+        },
+        {
+          "name": "Final Verdict",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-4-9"
+          ]
+        },
+        {
+          "name": "Earthsplitter",
+          "claim_ids": [
+            "talent:guardian/gladiator:18-49-6-9"
+          ]
+        }
+      ],
+      "observed_loop": "A high-agency PvP duelist with several short cooldowns, formation macros, matchup defenses, and a rehearsed opener; PvE evidence is much thinner.",
+      "observed_changes": [
+        "Ranged opponents are harder",
+        "Heroism was reported bugged in the snapshot",
+        "PvE rotation is not documented to the same standard"
+      ],
+      "claim_ids": [
+        "talent:guardian/gladiator:18-49-2-8",
+        "talent:guardian/gladiator:18-49-4-8",
+        "talent:guardian/gladiator:18-49-6-8",
+        "talent:guardian/gladiator:18-49-10-8",
+        "talent:guardian/gladiator:18-49-2-9",
+        "talent:guardian/gladiator:18-49-4-9",
+        "talent:guardian/gladiator:18-49-6-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "A physical fighter whose weapon choice and formations begin shaping the kit before its full control chain arrives.",
+      "strengths": [
+        "Flexible weapon identity",
+        "Durable formation tools",
+        "Readable Centurion Strike center"
+      ],
+      "cautions": [
+        "Many choices are not yet online",
+        "Weapon package changes the feel"
+      ],
+      "claim_ids": [
+        "talent:guardian/gladiator:18-49-4-0",
+        "talent:guardian/gladiator:18-49-10-0",
+        "talent:guardian/gladiator:18-49-0-2",
+        "observed:guardian/gladiator:pvp-sequence",
+        "inference:guardian/gladiator:sequence-cost",
+        "observed:guardian/gladiator:performance",
+        "talent:guardian/gladiator:18-49-4-9",
+        "observed:guardian/gladiator:recent-manual-review"
+      ]
+    },
+    "leveling_30_49": {
+      "feel": "By levels 30-49, build and preserve glory, choose the formation and weapon package for the situation, then combine spear throw, net shot, chivalry, centurion strike, glorious arena, and grand entrance into short kill attempts while holding mobility for the opponent's response.",
+      "strengths": [
+        "Core engine is online",
+        "More complete target coverage"
+      ],
+      "cautions": [
+        "Late talents still change the ceiling",
+        "Spear Throw, Net Shot, Battle Rush, Advance, and formation macros provide strong access, but wasting a gap closer early creates a clear kiting vulnerability"
+      ],
+      "claim_ids": [
+        "observed:guardian/gladiator:pvp-sequence",
+        "inference:guardian/gladiator:sequence-cost",
+        "talent:guardian/gladiator:18-49-4-0",
+        "talent:guardian/gladiator:18-49-10-0",
+        "talent:guardian/gladiator:18-49-0-2",
+        "observed:guardian/gladiator:performance",
+        "talent:guardian/gladiator:18-49-4-9",
+        "observed:guardian/gladiator:recent-manual-review"
+      ]
+    },
+    "level_50_60": {
+      "feel": "A high-agency PvP duelist with several short cooldowns, formation macros, matchup defenses, and a rehearsed opener; PvE evidence is much thinner.",
+      "strengths": [
+        "Strong control and utility",
+        "Layered burst plan",
+        "47 Mythic records"
+      ],
+      "cautions": [
+        "Ranged opponents are harder",
+        "Heroism was reported bugged in the snapshot",
+        "PvE rotation is not documented to the same standard"
+      ],
+      "claim_ids": [
+        "observed:guardian/gladiator:pvp-sequence",
+        "observed:guardian/gladiator:performance",
+        "talent:guardian/gladiator:18-49-4-9",
+        "inference:guardian/gladiator:sequence-cost",
+        "talent:guardian/gladiator:18-49-4-0",
+        "talent:guardian/gladiator:18-49-10-0",
+        "talent:guardian/gladiator:18-49-0-2",
+        "observed:guardian/gladiator:recent-manual-review"
+      ]
+    },
+    "boss": {
+      "feel": "On bosses, the current pvp build front-loads healing reduction, root, banner, guaranteed centurion strike critical damage, arena control, and grand entrance into a layered opener.",
+      "strengths": [
+        "Durable targets preserve the full loop",
+        "Cooldowns can be planned"
+      ],
+      "cautions": [
+        "Movement can break setup",
+        "Repeated errors remain visible"
+      ],
+      "claim_ids": [
+        "observed:guardian/gladiator:pvp-sequence",
+        "inference:guardian/gladiator:sequence-cost",
+        "talent:guardian/gladiator:18-49-4-0",
+        "talent:guardian/gladiator:18-49-10-0",
+        "talent:guardian/gladiator:18-49-0-2",
+        "observed:guardian/gladiator:performance",
+        "talent:guardian/gladiator:18-49-4-9",
+        "observed:guardian/gladiator:recent-manual-review"
+      ]
+    },
+    "dungeon_aoe": {
+      "feel": "In dungeons, broad sweeps, polearm coverage, earthsplitter, and arena effects support groups, but the best documented play is opponent-focused pvp burst.",
+      "strengths": [
+        "Pack tools express the spec clearly",
+        "Group utility has regular value"
+      ],
+      "cautions": [
+        "Short-lived targets can erase setup",
+        "Tank movement changes the plan"
+      ],
+      "claim_ids": [
+        "observed:guardian/gladiator:pvp-sequence",
+        "inference:guardian/gladiator:sequence-cost",
+        "talent:guardian/gladiator:18-49-4-0",
+        "talent:guardian/gladiator:18-49-10-0",
+        "talent:guardian/gladiator:18-49-0-2",
+        "observed:guardian/gladiator:performance",
+        "talent:guardian/gladiator:18-49-4-9",
+        "observed:guardian/gladiator:recent-manual-review"
+      ]
+    },
+    "pvp": {
+      "feel": "In PvP, spear throw, net shot, battle rush, advance, and formation macros provide strong access, but wasting a gap closer early creates a clear kiting vulnerability. Counter Stance, Brace, Turn the Blade, banners, roots, slows, immunity breaking, and formation swaps create a deep defensive and control kit.",
+      "strengths": [
+        "Control and utility create options",
+        "Target swaps can reward flexibility"
+      ],
+      "cautions": [
+        "Disruption makes the loop less predictable",
+        "Defensive timing is punishable"
+      ],
+      "claim_ids": [
+        "observed:guardian/gladiator:pvp-sequence",
+        "inference:guardian/gladiator:sequence-cost",
+        "talent:guardian/gladiator:18-49-4-0",
+        "talent:guardian/gladiator:18-49-10-0",
+        "talent:guardian/gladiator:18-49-0-2",
+        "observed:guardian/gladiator:performance",
+        "talent:guardian/gladiator:18-49-4-9",
+        "observed:guardian/gladiator:recent-manual-review"
+      ]
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "moderate-high",
+        "reason": "The practical action set follows the authored loop: Build and preserve Glory, choose the formation and weapon package for the situation, then combine Spear Throw, Net Shot, Chivalry, Centurion Strike, Glorious Arena, and Grand Entrance into short kill attempts while holding mobility for the opponent's response. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "high",
+        "reason": "The practical action set follows the authored loop: Build and preserve Glory, choose the formation and weapon package for the situation, then combine Spear Throw, Net Shot, Chivalry, Centurion Strike, Glorious Arena, and Grand Entrance into short kill attempts while holding mobility for the opponent's response. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "The practical action set follows the authored loop: Build and preserve Glory, choose the formation and weapon package for the situation, then combine Spear Throw, Net Shot, Chivalry, Centurion Strike, Glorious Arena, and Grand Entrance into short kill attempts while holding mobility for the opponent's response. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      },
+      "boss": {
+        "value": "high",
+        "reason": "The practical action set follows the authored loop: Build and preserve Glory, choose the formation and weapon package for the situation, then combine Spear Throw, Net Shot, Chivalry, Centurion Strike, Glorious Arena, and Grand Entrance into short kill attempts while holding mobility for the opponent's response. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "The practical action set follows the authored loop: Build and preserve Glory, choose the formation and weapon package for the situation, then combine Spear Throw, Net Shot, Chivalry, Centurion Strike, Glorious Arena, and Grand Entrance into short kill attempts while holding mobility for the opponent's response. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "The current build uses formation swaps, a multi-step opener, banners, matchup defenses, and several mobility and control tools.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "low",
+        "reason": "The player must preserve the resources, effects, or target states implied by: The current PvP build front-loads healing reduction, root, banner, guaranteed Centurion Strike critical damage, arena control, and Grand Entrance into a layered opener. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "low",
+        "reason": "The player must preserve the resources, effects, or target states implied by: The current PvP build front-loads healing reduction, root, banner, guaranteed Centurion Strike critical damage, arena control, and Grand Entrance into a layered opener. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      },
+      "level_50_60": {
+        "value": "low",
+        "reason": "The player must preserve the resources, effects, or target states implied by: The current PvP build front-loads healing reduction, root, banner, guaranteed Centurion Strike critical damage, arena control, and Grand Entrance into a layered opener. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      },
+      "boss": {
+        "value": "low",
+        "reason": "The player must preserve the resources, effects, or target states implied by: The current PvP build front-loads healing reduction, root, banner, guaranteed Centurion Strike critical damage, arena control, and Grand Entrance into a layered opener. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "low",
+        "reason": "The player must preserve the resources, effects, or target states implied by: The current PvP build front-loads healing reduction, root, banner, guaranteed Centurion Strike critical damage, arena control, and Grand Entrance into a layered opener. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      },
+      "pvp": {
+        "value": "low",
+        "reason": "The player must preserve the resources, effects, or target states implied by: The current PvP build front-loads healing reduction, root, banner, guaranteed Centurion Strike critical damage, arena control, and Grand Entrance into a layered opener. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "moderate-high",
+        "reason": "Target count, incoming pressure, and movement change the next action; counter stance, brace, turn the blade, banners, roots, slows, immunity breaking, and formation swaps create a deep defensive and control kit. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "high",
+        "reason": "Target count, incoming pressure, and movement change the next action; counter stance, brace, turn the blade, banners, roots, slows, immunity breaking, and formation swaps create a deep defensive and control kit. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "Target count, incoming pressure, and movement change the next action; counter stance, brace, turn the blade, banners, roots, slows, immunity breaking, and formation swaps create a deep defensive and control kit. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      },
+      "boss": {
+        "value": "high",
+        "reason": "Target count, incoming pressure, and movement change the next action; counter stance, brace, turn the blade, banners, roots, slows, immunity breaking, and formation swaps create a deep defensive and control kit. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "Target count, incoming pressure, and movement change the next action; counter stance, brace, turn the blade, banners, roots, slows, immunity breaking, and formation swaps create a deep defensive and control kit. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "Banner, defensive, mobility, and diminishing-return choices change with the opposing class and teamfight.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "low",
+        "reason": "Execution is constrained by positioning and swaps: Spear Throw, Net Shot, Battle Rush, Advance, and formation macros provide strong access, but wasting a gap closer early creates a clear kiting vulnerability. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "low-moderate",
+        "reason": "Execution is constrained by positioning and swaps: Spear Throw, Net Shot, Battle Rush, Advance, and formation macros provide strong access, but wasting a gap closer early creates a clear kiting vulnerability. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      },
+      "level_50_60": {
+        "value": "low-moderate",
+        "reason": "Execution is constrained by positioning and swaps: Spear Throw, Net Shot, Battle Rush, Advance, and formation macros provide strong access, but wasting a gap closer early creates a clear kiting vulnerability. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      },
+      "boss": {
+        "value": "low-moderate",
+        "reason": "Execution is constrained by positioning and swaps: Spear Throw, Net Shot, Battle Rush, Advance, and formation macros provide strong access, but wasting a gap closer early creates a clear kiting vulnerability. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "low-moderate",
+        "reason": "Execution is constrained by positioning and swaps: Spear Throw, Net Shot, Battle Rush, Advance, and formation macros provide strong access, but wasting a gap closer early creates a clear kiting vulnerability. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      },
+      "pvp": {
+        "value": "moderate",
+        "reason": "Execution is constrained by positioning and swaps: Spear Throw, Net Shot, Battle Rush, Advance, and formation macros provide strong access, but wasting a gap closer early creates a clear kiting vulnerability. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "moderate-high",
+        "reason": "Spending mobility or control too early, missing the five-second armor-break window, or reaching three Glory while Ram is unavailable can blunt the intended kill sequence. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "high",
+        "reason": "Spending mobility or control too early, missing the five-second armor-break window, or reaching three Glory while Ram is unavailable can blunt the intended kill sequence. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "Spending mobility or control too early, missing the five-second armor-break window, or reaching three Glory while Ram is unavailable can blunt the intended kill sequence. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      },
+      "boss": {
+        "value": "high",
+        "reason": "Spending mobility or control too early, missing the five-second armor-break window, or reaching three Glory while Ram is unavailable can blunt the intended kill sequence. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "Spending mobility or control too early, missing the five-second armor-break window, or reaching three Glory while Ram is unavailable can blunt the intended kill sequence. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "Premature mobility or poorly ordered control can lose the short burst opportunity and leave the Gladiator kiteable.",
+        "claim_ids": [
+          "inference:guardian/gladiator:sequence-cost",
+          "observed:guardian/gladiator:pvp-sequence",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      }
+    },
+    "setup_burden": {
+      "leveling_10_29": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Broad Sweeps, polearm coverage, Earthsplitter, and arena effects support groups, but the best documented play is opponent-focused PvP burst. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "low-moderate",
+        "reason": "The payoff depends on establishing the conditions described by: Broad Sweeps, polearm coverage, Earthsplitter, and arena effects support groups, but the best documented play is opponent-focused PvP burst. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      },
+      "level_50_60": {
+        "value": "low-moderate",
+        "reason": "The payoff depends on establishing the conditions described by: Broad Sweeps, polearm coverage, Earthsplitter, and arena effects support groups, but the best documented play is opponent-focused PvP burst. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      },
+      "boss": {
+        "value": "low-moderate",
+        "reason": "The payoff depends on establishing the conditions described by: Broad Sweeps, polearm coverage, Earthsplitter, and arena effects support groups, but the best documented play is opponent-focused PvP burst. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "low-moderate",
+        "reason": "The payoff depends on establishing the conditions described by: Broad Sweeps, polearm coverage, Earthsplitter, and arena effects support groups, but the best documented play is opponent-focused PvP burst. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      },
+      "pvp": {
+        "value": "low-moderate",
+        "reason": "The payoff depends on establishing the conditions described by: Broad Sweeps, polearm coverage, Earthsplitter, and arena effects support groups, but the best documented play is opponent-focused PvP burst. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2",
+          "observed:guardian/gladiator:performance",
+          "talent:guardian/gladiator:18-49-4-9",
+          "observed:guardian/gladiator:recent-manual-review"
+        ]
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [
+      {
+        "text": "You want a tactical melee PvP kit with stance macros, banners, matchup tools, and rehearsed burst sequences.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence"
+        ]
+      },
+      {
+        "text": "You enjoy the spec's core cadence: build and preserve glory, choose the formation and weapon package for the situation, then combine spear throw, net shot, chivalry, centurion strike, glorious arena, and grand entrance into short kill attempts while holding mobility for the opponent's response.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2"
+        ]
+      }
+    ],
+    "avoid_if": [
+      {
+        "text": "You want a small universal rotation or primarily need a proven current PvE damage guide.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence"
+        ]
+      },
+      {
+        "text": "You dislike the positioning or swap constraint that spear throw, net shot, battle rush, advance, and formation macros provide strong access, but wasting a gap closer early creates a clear kiting vulnerability.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence",
+          "inference:guardian/gladiator:sequence-cost",
+          "talent:guardian/gladiator:18-49-4-0",
+          "talent:guardian/gladiator:18-49-10-0",
+          "talent:guardian/gladiator:18-49-0-2"
+        ]
+      }
+    ]
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [
+    "observed:guardian/gladiator:performance"
+  ],
+  "sentiment": {
+    "praise": [
+      {
+        "theme": "The current build presents Gladiator as utility-rich, durable, and capable of cycling frequent offensive cooldowns into a clear PvP win condition.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence"
+        ]
+      }
+    ],
+    "frustrations": [
+      {
+        "theme": "Its strongest evidence also shows a substantial macro, matchup, stance, and timing burden, plus a snapshot-era Heroism bug.",
+        "claim_ids": [
+          "observed:guardian/gladiator:pvp-sequence"
+        ]
+      }
+    ],
+    "contested": []
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 1,
+    "latest_update": "2026-07-19T00:55:15.877+00:00",
+    "top_title": "Guardian Gladiator PvP optimal build",
+    "top_url": "https://coabuildhub.com/build/086abfa8-9acf-47ed-bc73-9ca5438612fb",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:086abfa8-9acf-47ed-bc73-9ca5438612fb"
+    ]
+  },
+  "coverage": {
+    "mechanical": "manual_talent_and_build_interpretation",
+    "community": "manual_recent_source_review",
+    "performance": "limited_uncontrolled",
+    "video": "searched_none_verified",
+    "overall_confidence": "medium-high",
+    "gaps": [
+      "No equally detailed current PvE rotation.",
+      "Heroism bug status needs live verification."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:guardian/gladiator:18-49-4-0",
+      "kind": "structural",
+      "text": "Centurion Strike: Stab an enemy, dealing 110% Weapon Damage plus an additional effect based on your weapon.Sword: Triggers 3 additional auto attacks.Axe: Guaranteed to critically strike for 25% increased damage.Mace: Ignores -50% of your target's Armor.Polearm: Stabs the target and enemies behind them an additional time.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-10-0",
+      "kind": "structural",
+      "text": "Glory: Level 10 PassiveYour Ram now grants you a stack of Glory for 30 seconds.At 3 stacks, your next Ram within 30 seconds deals 150% increased damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-2-1",
+      "kind": "structural",
+      "text": "Might: Increases your attack power by 5%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-6-1",
+      "kind": "structural",
+      "text": "Legionnaire: Increases the critical damage of Centurion Strike and Reprisal by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-0-2",
+      "kind": "structural",
+      "text": "Sword Training: While a sword is equipped, your melee haste is increased by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-4-2",
+      "kind": "structural",
+      "text": "Supremacy: Casting Centurion Strike now refreshes a charge of Reprisal.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-8-2",
+      "kind": "structural",
+      "text": "Axe Training: While an axe is equipped, your critical strike chance is increased by 2% and critical damage increased by 5%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-10-2",
+      "kind": "structural",
+      "text": "Shield Training: Level 20 PassiveIncreases your block rating by 10% of your Strength.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-1-3",
+      "kind": "structural",
+      "text": "Polearm Training: Allows you to wield polearms and to wield them with a shield equipped.While a polearm is equipped, your melee abilities have 2 yds increased range.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-3-3",
+      "kind": "structural",
+      "text": "Upper Hand: Your melee auto attacks now have a 20% chance to strike 2 additional times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-5-3",
+      "kind": "structural",
+      "text": "Built Different: Increases your Strength and Stamina by 4%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-7-3",
+      "kind": "structural",
+      "text": "Mace Training: While a mace is equipped, your armor penetration is increased by 8%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-2-4",
+      "kind": "structural",
+      "text": "Double Duty: Increases your hit chance by 5% and expertise by 4.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-4-4",
+      "kind": "structural",
+      "text": "Champion: Your Centurion Strike now extends the duration of Raise Shield on you by 3 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-6-4",
+      "kind": "structural",
+      "text": "Crashing Force: Increases the damage of your Centurion Strike and Reprisal by 15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-10-4",
+      "kind": "structural",
+      "text": "Experienced Combatant: Level 30 PassiveIncreases your attack power by 20% of your Strength.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-1-5",
+      "kind": "structural",
+      "text": "Spear Throw: Throw a massive spear at an enemy, dealing 45 + 35% AP Physical damage, reducing the effectiveness of any healing by -50% for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-3-5",
+      "kind": "structural",
+      "text": "Tactical Combat: Increases your block value by 8% and chance to block by 2%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-5-5",
+      "kind": "structural",
+      "text": "Heroic Effort: Casting Centurion Strike now grants 1 stack of Glory.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-7-5a",
+      "kind": "structural",
+      "text": "No Escape: Ram now reduces the cooldown of your Battle Rush by -10 sec when used against a rooted enemy.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-7-5b",
+      "kind": "structural",
+      "text": "Bulwark Rush: Casting Battle Rush increases your block rating by 25% of Strength for 6 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-0-6",
+      "kind": "structural",
+      "text": "No Retreating!: While in combat, every 2 sec, increase the range and Energy cost of your next Spear Throw by 1 and its damage dealt by 3%, stacking up to 15 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-2-6",
+      "kind": "structural",
+      "text": "Waste No Movement: Reduces the Energy cost of Broad Sweep, Spear Throw, and Centurion Strike by -5.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-4-6",
+      "kind": "structural",
+      "text": "Overwhelming Presence: Increases the attack power of all party and raid members 5%. Does not stack with similar effects.In addition, increases your Agility by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-6-6",
+      "kind": "structural",
+      "text": "Momentum: Melee damage dealt now reduces the cooldown of your Chivlary by -2 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-8-6",
+      "kind": "structural",
+      "text": "Myrmidon: Increases the damage of Ram and Broad Sweep by 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-10-6",
+      "kind": "structural",
+      "text": "Shield Combat: Level 40 PassiveCasting Ram and Pulverize now increases your attack power based on your block rating for 6 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-1-7a",
+      "kind": "structural",
+      "text": "Clinch Brawler: Centurion Strike is now guaranteed to critically strike against enemies affected by Net Throw.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-1-7b",
+      "kind": "structural",
+      "text": "Pinned Down!: Damage dealt by Spear Throw now refreshes the duration of Net Throw on your target.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-4-7",
+      "kind": "structural",
+      "text": "Deadly Blow: Your Centurion Strike and Broad Sweep now bleed an additional 15% of the damage dealt over 3 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-7-7",
+      "kind": "structural",
+      "text": "Retiarius: Increases your maximum Energy by 25.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-2-8",
+      "kind": "structural",
+      "text": "Close Combat: Removes the shared cooldown of your Standards and reduces the cooldown of Guard by -10 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-4-8",
+      "kind": "structural",
+      "text": "Heroism: Whenever you reach 3 stacks of Glory or 20 stacks of Favor, your next 2 Pulverizes or Broad Sweeps within 10 seconds are free of cost.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-6-8",
+      "kind": "structural",
+      "text": "One-Handed Mastery: Increases your damage dealt by 10% while a one-handed weapon is equipped.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-10-8",
+      "kind": "structural",
+      "text": "Favor: Level 50 PassiveCritical strikes and killing blows now grant you Favor for 1 minute, stacking 20 times.At 20 stacks, your next auto attack deals an additional 500% Weapon Damage, consuming the stacks.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-2-9",
+      "kind": "structural",
+      "text": "Calculated Strike: Your Reprisal, Broad Sweep, and Spear Throw now deal an additional 2% Weapon Damage for each Energy point you have upon casting it.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-4-9",
+      "kind": "structural",
+      "text": "Final Verdict: Give the final verdict to your target, dealing 1195 + 100% AP Physical damage and healing you for 15% of your maximum health.Only usable on enemies below 20% health. Killing blows reset the cooldown of this ability.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/gladiator:18-49-6-9",
+      "kind": "structural",
+      "text": "Earthsplitter: Casting Broad Sweep now increases the amount of enemies struck by your next Broad Sweep by 1 and reduces its Energy cost by -10% for 6 seconds, stacking 3 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "observed:guardian/gladiator:pvp-sequence",
+      "kind": "observed",
+      "text": "The current Build Hub PvP guide describes a utility and burst Gladiator. Its ideal opener is Spear Throw, Net Shot, Standard of Valiance, Chivalry, Centurion Strike, Glorious Arena, then Grand Entrance; it recommends saving mobility to answer enemy movement, tracking Glory, varying defensive stances by matchup, and using banners for team utility. The author reports Heroism bugged at capture time.",
+      "source_ids": [
+        "buildhub:086abfa8-9acf-47ed-bc73-9ca5438612fb",
+        "reddit:guardian-tips-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "pvp"
+        ],
+        "build_or_mode": [
+          "documented_pvp_build"
+        ]
+      },
+      "confidence": "high",
+      "conflicts_with": [],
+      "notes": "Build guidance is detailed but represents one authored setup and snapshot."
+    },
+    {
+      "id": "observed:guardian/gladiator:performance",
+      "kind": "observed",
+      "text": "The July DPS compilation reports Gladiator at 3,538, and the August Mythic inventory lists 47 Gladiator records.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "pve_unspecified",
+          "mythic_dungeons"
+        ],
+        "build_or_mode": [
+          "unspecified"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "The sources are unnormalized and do not establish a tier rank."
+    },
+    {
+      "id": "inference:guardian/gladiator:sequence-cost",
+      "kind": "inference",
+      "text": "Gladiator's difficulty is sequence and response heavy: its individual attacks are readable, but the payoff depends on ordering control, armor reduction, guaranteed critical damage, and mobility without wasting the opponent-specific answers.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "observed:guardian/gladiator:pvp-sequence",
+        "talent:guardian/gladiator:18-49-1-5",
+        "talent:guardian/gladiator:18-49-1-7a",
+        "talent:guardian/gladiator:18-49-4-7"
+      ],
+      "scope": {
+        "levels": "level_40_60",
+        "content": [
+          "pvp"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "high",
+      "conflicts_with": [],
+      "notes": "Playstyle classification from the documented sequence."
+    },
+    {
+      "id": "observed:guardian/gladiator:recent-manual-review",
+      "kind": "observed",
+      "text": "Players describe Gladiator as rough early, smoother after its engine unlocks, and burst-dependent, with stance dancing creating a real skill ceiling and conflicting PvP results.",
+      "source_ids": [
+        "reddit:guardian-gladiator-2026-07-20"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually reviewed on 2026-08-06; anecdotal evidence is not treated as a power ranking."
+    }
+  ]
+}

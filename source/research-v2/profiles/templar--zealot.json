@@ -1,0 +1,1511 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "templar/zealot",
+    "class": "Templar",
+    "name": "Zealot",
+    "roles": [
+      "Damage"
+    ],
+    "range": [
+      "Melee"
+    ]
+  },
+  "identity": {
+    "fantasy": "",
+    "one_line": "A martial caster-brawler using Upheaval, Chakra states, condemnation effects, and Titan blessings. It moves between physical strikes and Holy amplification rather than playing like a simple retribution paladin.",
+    "primary_family": "",
+    "also_fits": [],
+    "claim_ids": [
+      "talent:templar/zealot:19-50-4-0",
+      "talent:templar/zealot:19-50-10-0",
+      "talent:templar/zealot:19-50-4-1",
+      "talent:templar/zealot:19-50-2-2",
+      "talent:templar/zealot:19-50-6-2",
+      "talent:templar/zealot:19-50-10-2",
+      "talent:templar/zealot:19-50-1-3",
+      "talent:templar/zealot:19-50-3-3",
+      "talent:templar/zealot:19-50-5-3a",
+      "talent:templar/zealot:19-50-5-3b",
+      "talent:templar/zealot:19-50-7-3",
+      "talent:templar/zealot:19-50-2-4",
+      "talent:templar/zealot:19-50-4-4",
+      "talent:templar/zealot:19-50-6-4",
+      "talent:templar/zealot:19-50-10-4",
+      "talent:templar/zealot:19-50-0-5a",
+      "talent:templar/zealot:19-50-0-5b",
+      "talent:templar/zealot:19-50-2-5",
+      "talent:templar/zealot:19-50-4-5a",
+      "talent:templar/zealot:19-50-4-5b",
+      "talent:templar/zealot:19-50-6-5",
+      "talent:templar/zealot:19-50-8-5",
+      "talent:templar/zealot:19-50-1-6",
+      "talent:templar/zealot:19-50-3-6",
+      "talent:templar/zealot:19-50-5-6",
+      "talent:templar/zealot:19-50-7-6",
+      "talent:templar/zealot:19-50-10-6",
+      "talent:templar/zealot:19-50-0-7",
+      "talent:templar/zealot:19-50-2-7",
+      "talent:templar/zealot:19-50-4-7",
+      "talent:templar/zealot:19-50-6-7",
+      "talent:templar/zealot:19-50-8-7a",
+      "talent:templar/zealot:19-50-8-7b",
+      "talent:templar/zealot:19-50-2-8",
+      "talent:templar/zealot:19-50-4-8",
+      "talent:templar/zealot:19-50-6-8",
+      "talent:templar/zealot:19-50-10-8",
+      "talent:templar/zealot:19-50-2-9",
+      "talent:templar/zealot:19-50-4-9",
+      "talent:templar/zealot:19-50-6-9"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "A martial caster-brawler using Upheaval, Chakra states, condemnation effects, and Titan blessings. It moves between physical strikes and Holy amplification rather than playing like a simple retribution paladin.",
+    "resources": [],
+    "builders": [
+      {
+        "name": "Holy Upheaval",
+        "claim_ids": [
+          "talent:templar/zealot:19-50-10-4"
+        ]
+      },
+      {
+        "name": "Blessing of Aggramar",
+        "claim_ids": [
+          "talent:templar/zealot:19-50-4-9"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Righteous Upheaval",
+        "claim_ids": [
+          "talent:templar/zealot:19-50-4-1"
+        ]
+      },
+      {
+        "name": "Radiance",
+        "claim_ids": [
+          "talent:templar/zealot:19-50-3-3"
+        ]
+      },
+      {
+        "name": "Force of Golganneth",
+        "claim_ids": [
+          "talent:templar/zealot:19-50-1-6"
+        ]
+      },
+      {
+        "name": "Unbroken Creed",
+        "claim_ids": [
+          "talent:templar/zealot:19-50-10-8"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Condemnation",
+        "claim_ids": [
+          "talent:templar/zealot:19-50-8-7b"
+        ]
+      },
+      {
+        "name": "Norgannon's Wrath",
+        "claim_ids": [
+          "talent:templar/zealot:19-50-2-9"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Divine Fury",
+        "claim_ids": [
+          "talent:templar/zealot:19-50-10-6"
+        ],
+        "structural_description": "Level 40 PassiveTriggering Zealotry 10 times now transforms your Chastise into Divine Fury. Divine FuryUnleash divine fury, dealing 91 + 45% holy SP + 25% AP Holy damage to an enemy and up to 4 nearby enemies and reduces their armor by -5% for 20 seconds, stacking 5 times."
+      },
+      {
+        "name": "Norgannon's Wrath",
+        "claim_ids": [
+          "talent:templar/zealot:19-50-2-9"
+        ],
+        "structural_description": "Target an enemy and leap into the air. After a short delay, you blast them with immense holy force, dealing 1506 + 100% holy SP + 100% AP Holy damage to up to 10 enemies within 5 yds and reduces their damage and healing done by -10% for 5 seconds.Damage dealt pierces all immunities, resistances, and damage absorption effects.Scales with modifiers to Chastise."
+      }
+    ],
+    "single_target": "",
+    "aoe": "",
+    "movement_and_target_switching": "",
+    "defense_and_control": "",
+    "group_utility": "",
+    "failure_modes": [],
+    "claim_ids": [
+      "talent:templar/zealot:19-50-4-0",
+      "talent:templar/zealot:19-50-10-0",
+      "talent:templar/zealot:19-50-4-1",
+      "talent:templar/zealot:19-50-2-2",
+      "talent:templar/zealot:19-50-6-2",
+      "talent:templar/zealot:19-50-10-2",
+      "talent:templar/zealot:19-50-1-3",
+      "talent:templar/zealot:19-50-3-3",
+      "talent:templar/zealot:19-50-5-3a",
+      "talent:templar/zealot:19-50-5-3b",
+      "talent:templar/zealot:19-50-7-3",
+      "talent:templar/zealot:19-50-2-4",
+      "talent:templar/zealot:19-50-4-4",
+      "talent:templar/zealot:19-50-6-4",
+      "talent:templar/zealot:19-50-10-4",
+      "talent:templar/zealot:19-50-0-5a",
+      "talent:templar/zealot:19-50-0-5b",
+      "talent:templar/zealot:19-50-2-5",
+      "talent:templar/zealot:19-50-4-5a",
+      "talent:templar/zealot:19-50-4-5b",
+      "talent:templar/zealot:19-50-6-5",
+      "talent:templar/zealot:19-50-8-5",
+      "talent:templar/zealot:19-50-1-6",
+      "talent:templar/zealot:19-50-3-6",
+      "talent:templar/zealot:19-50-5-6",
+      "talent:templar/zealot:19-50-7-6",
+      "talent:templar/zealot:19-50-10-6",
+      "talent:templar/zealot:19-50-0-7",
+      "talent:templar/zealot:19-50-2-7",
+      "talent:templar/zealot:19-50-4-7",
+      "talent:templar/zealot:19-50-6-7",
+      "talent:templar/zealot:19-50-8-7a",
+      "talent:templar/zealot:19-50-8-7b",
+      "talent:templar/zealot:19-50-2-8",
+      "talent:templar/zealot:19-50-4-8",
+      "talent:templar/zealot:19-50-6-8",
+      "talent:templar/zealot:19-50-10-8",
+      "talent:templar/zealot:19-50-2-9",
+      "talent:templar/zealot:19-50-4-9",
+      "talent:templar/zealot:19-50-6-9"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Vindication",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-4-0"
+          ]
+        },
+        {
+          "name": "Zealotry",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-10-0"
+          ]
+        },
+        {
+          "name": "Righteous Upheaval",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-4-1"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:templar/zealot:19-50-4-0",
+        "talent:templar/zealot:19-50-10-0",
+        "talent:templar/zealot:19-50-4-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Solemn Soldier",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-2-2"
+          ]
+        },
+        {
+          "name": "Combat Training",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-6-2"
+          ]
+        },
+        {
+          "name": "Calm Combatant",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-10-2"
+          ]
+        },
+        {
+          "name": "Oath Flow",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-1-3"
+          ]
+        },
+        {
+          "name": "Radiance",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-3-3"
+          ]
+        },
+        {
+          "name": "Upheave!",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-5-3a"
+          ]
+        },
+        {
+          "name": "Battle Hardened",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-5-3b"
+          ]
+        },
+        {
+          "name": "Martial Paladin",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-7-3"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:templar/zealot:19-50-2-2",
+        "talent:templar/zealot:19-50-6-2",
+        "talent:templar/zealot:19-50-10-2",
+        "talent:templar/zealot:19-50-1-3",
+        "talent:templar/zealot:19-50-3-3",
+        "talent:templar/zealot:19-50-5-3a",
+        "talent:templar/zealot:19-50-5-3b",
+        "talent:templar/zealot:19-50-7-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Bursting Impact",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-2-4"
+          ]
+        },
+        {
+          "name": "Libram of Zeal",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-4-4"
+          ]
+        },
+        {
+          "name": "Chakra of Power",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-6-4"
+          ]
+        },
+        {
+          "name": "Holy Upheaval",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-10-4"
+          ]
+        },
+        {
+          "name": "Light's Guidance",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-0-5a"
+          ]
+        },
+        {
+          "name": "Holy Light",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-0-5b"
+          ]
+        },
+        {
+          "name": "Blade Sermon",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-2-5"
+          ]
+        },
+        {
+          "name": "Priest Training",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-4-5a"
+          ]
+        },
+        {
+          "name": "Paladin Training",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-4-5b"
+          ]
+        },
+        {
+          "name": "One-Punch Man",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-6-5"
+          ]
+        },
+        {
+          "name": "Chakra of Light",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-8-5"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:templar/zealot:19-50-2-4",
+        "talent:templar/zealot:19-50-4-4",
+        "talent:templar/zealot:19-50-6-4",
+        "talent:templar/zealot:19-50-10-4",
+        "talent:templar/zealot:19-50-0-5a",
+        "talent:templar/zealot:19-50-0-5b",
+        "talent:templar/zealot:19-50-2-5",
+        "talent:templar/zealot:19-50-4-5a",
+        "talent:templar/zealot:19-50-4-5b",
+        "talent:templar/zealot:19-50-6-5",
+        "talent:templar/zealot:19-50-8-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Force of Golganneth",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-1-6"
+          ]
+        },
+        {
+          "name": "Deliverance",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-3-6"
+          ]
+        },
+        {
+          "name": "Condemnation",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-5-6"
+          ]
+        },
+        {
+          "name": "Iron Penance",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-7-6"
+          ]
+        },
+        {
+          "name": "Divine Fury",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-10-6"
+          ]
+        },
+        {
+          "name": "Pious Sweep",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-0-7"
+          ]
+        },
+        {
+          "name": "Heaven's Finest",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-2-7"
+          ]
+        },
+        {
+          "name": "Transcending Strikes",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-4-7"
+          ]
+        },
+        {
+          "name": "Devotion of Khaz'goroth",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-6-7"
+          ]
+        },
+        {
+          "name": "Fervent Castigation",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-8-7a"
+          ]
+        },
+        {
+          "name": "Condemnation",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-8-7b"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:templar/zealot:19-50-1-6",
+        "talent:templar/zealot:19-50-3-6",
+        "talent:templar/zealot:19-50-5-6",
+        "talent:templar/zealot:19-50-7-6",
+        "talent:templar/zealot:19-50-10-6",
+        "talent:templar/zealot:19-50-0-7",
+        "talent:templar/zealot:19-50-2-7",
+        "talent:templar/zealot:19-50-4-7",
+        "talent:templar/zealot:19-50-6-7",
+        "talent:templar/zealot:19-50-8-7a",
+        "talent:templar/zealot:19-50-8-7b"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "One With The Light",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-2-8"
+          ]
+        },
+        {
+          "name": "Might of Aggramar",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-4-8"
+          ]
+        },
+        {
+          "name": "Blessing of Eonar",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-6-8"
+          ]
+        },
+        {
+          "name": "Unbroken Creed",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-10-8"
+          ]
+        },
+        {
+          "name": "Norgannon's Wrath",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-2-9"
+          ]
+        },
+        {
+          "name": "Blessing of Aggramar",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-4-9"
+          ]
+        },
+        {
+          "name": "Fury of Aggramar",
+          "claim_ids": [
+            "talent:templar/zealot:19-50-6-9"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:templar/zealot:19-50-2-8",
+        "talent:templar/zealot:19-50-4-8",
+        "talent:templar/zealot:19-50-6-8",
+        "talent:templar/zealot:19-50-10-8",
+        "talent:templar/zealot:19-50-2-9",
+        "talent:templar/zealot:19-50-4-9",
+        "talent:templar/zealot:19-50-6-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "leveling_30_49": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "level_50_60": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "boss": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "dungeon_aoe": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "pvp": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [],
+    "avoid_if": []
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [],
+  "sentiment": {
+    "praise": [],
+    "frustrations": [],
+    "contested": []
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 1,
+    "latest_update": "2026-07-17T01:59:17.936767+00:00",
+    "top_title": "Templar Zealot PvP Theory Craft",
+    "top_url": "https://coabuildhub.com/build/ae701fc8-4071-4d50-a031-ec3a311b939a",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:ae701fc8-4071-4d50-a031-ec3a311b939a"
+    ]
+  },
+  "coverage": {
+    "mechanical": "structural_baseline",
+    "community": "indexed",
+    "performance": "missing",
+    "video": "missing",
+    "overall_confidence": "low",
+    "gaps": [
+      "Effective core loop needs recent guide or player cross-check.",
+      "Contextual complexity values are not yet researched.",
+      "Recent performance, sentiment, issues, and video evidence are not yet reconciled."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:templar/zealot:19-50-4-0",
+      "kind": "structural",
+      "text": "Vindication: Strike an enemy with zeal, dealing 31 + 28.5% AP + 35% SP Physical damage, triggering Zealotry, and granting an Oath.Oath: Your damaging abilities have a 10% chance to trigger Zealotry.Zealotry (Proc)Deals 40% off-hand Weapon Damage as Holy Damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-10-0",
+      "kind": "structural",
+      "text": "Zealotry: Level 10 PassiveYour off-hand auto attacks now trigger Zealotry.Zealotry (Proc)Deals 40% off-hand Weapon Damage as Holy Damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-4-1",
+      "kind": "structural",
+      "text": "Righteous Upheaval: Unleash a dominating Oath Breaker, dealing 31 + 45% AP + 45% SP Physical damage, increased by 3% for each time you triggered Zealotry during your Oath Chain.Consumes your Oaths, dealing additional damage for each consumed.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-2-2",
+      "kind": "structural",
+      "text": "Solemn Soldier: Increases your melee haste by 5% and expertise by 5.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-6-2",
+      "kind": "structural",
+      "text": "Combat Training: Increases the effectiveness of Oaths by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-10-2",
+      "kind": "structural",
+      "text": "Calm Combatant: Level 20 PassiveIncreases your Holy spell damage by 30% of your attack power.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-1-3",
+      "kind": "structural",
+      "text": "Oath Flow: Increases the duration of Oath Chain by 2 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-3-3",
+      "kind": "structural",
+      "text": "Radiance: Reduces the Energy cost of Vindication by -5.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-5-3a",
+      "kind": "structural",
+      "text": "Upheave!: Increases the critical damage of Righteous Upheaval by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-5-3b",
+      "kind": "structural",
+      "text": "Battle Hardened: Reduces the cooldown of Righteous Upheaval by -5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-7-3",
+      "kind": "structural",
+      "text": "Martial Paladin: Increases your Agility by 5% and your chance to hit by 3%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-2-4",
+      "kind": "structural",
+      "text": "Bursting Impact: Increases your off-hand weapon damage by 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-4-4",
+      "kind": "structural",
+      "text": "Libram of Zeal: Read from your Libram of Mortal Abdication, increasing your melee haste by 20% and causes your damaging abilities to reduce the cooldown of Righteous Upheaval by -2 sec for 20 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-6-4",
+      "kind": "structural",
+      "text": "Chakra of Power: Melee attacks now restore 1 Energy, plus an additional 2 Energy when they critically strike.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-10-4",
+      "kind": "structural",
+      "text": "Holy Upheaval: Level 30 PassiveIncreases the effectiveness Righteous Upheaval gains per trigger of Zealotry by 100%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-0-5a",
+      "kind": "structural",
+      "text": "Light's Guidance: Healing with Benediction now causes your next Benediction to heal for 25% more for 30 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-0-5b",
+      "kind": "structural",
+      "text": "Holy Light: Your Benediction now has a 1.5 sec cast time, but now heals for 100% more.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-2-5",
+      "kind": "structural",
+      "text": "Blade Sermon: Increases the Weapon Damage dealt by Zealotry by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-4-5a",
+      "kind": "structural",
+      "text": "Priest Training: Triggering Zealotry now also heals you for 3% of your missing health.Zealotry (Proc)Deals 40% off-hand Weapon Damage as Holy Damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-4-5b",
+      "kind": "structural",
+      "text": "Paladin Training: Triggering Zealotry now has an 8% chance to grant you an additional auto attack on your next strike.Zealotry (Proc)Deals 40% off-hand Weapon Damage as Holy Damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-6-5",
+      "kind": "structural",
+      "text": "One-Punch Man: Increases the the damage of Oath Breakers and Titanstrike by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-8-5",
+      "kind": "structural",
+      "text": "Chakra of Light: Reduces the cooldown of Testaments by -30 sec and Oath Breakers now heal allies around the target for 20 + 35% SP.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-1-6",
+      "kind": "structural",
+      "text": "Force of Golganneth: Explode with holy power, dealing 310 + 25% AP + 25% holy SP Holy damage and triggering Zealotry every 1 sec to nearby enemies for 5 seconds.Zealotry (Proc)Deals 40% off-hand Weapon Damage as Holy Damage.While active, your Temple Guardian spell has its Energy cost reduced by -50%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-3-6",
+      "kind": "structural",
+      "text": "Deliverance: Critically striking with Vindication or Righteous Lunge now deals 50% additional Physical damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-5-6",
+      "kind": "structural",
+      "text": "Condemnation: Increases the critical strike chance gained through Condemn by 3%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-7-6",
+      "kind": "structural",
+      "text": "Iron Penance: Dealing damage with Zealotry now applies Iron Penance to the target, increasing their Physical damage taken by you by 1% for 3 seconds, stacking 10 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-10-6",
+      "kind": "structural",
+      "text": "Divine Fury: Level 40 PassiveTriggering Zealotry 10 times now transforms your Chastise into Divine Fury. Divine FuryUnleash divine fury, dealing 91 + 45% holy SP + 25% AP Holy damage to an enemy and up to 4 nearby enemies and reduces their armor by -5% for 20 seconds, stacking 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-0-7",
+      "kind": "structural",
+      "text": "Pious Sweep: Increases the damage of Chastise by 25% on enemies above 75% health or affected by Tranquil Circle.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-2-7",
+      "kind": "structural",
+      "text": "Heaven's Finest: Damaging abilities now grant Heaven's Finest for 12 seconds, stacking 6 times.Heaven's FinestIncreases your movement speed by 5%.At 6 stacks, increases your Energy regeneration by 100% for 8 seconds.Additional applications do not refresh the duration.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-4-7",
+      "kind": "structural",
+      "text": "Transcending Strikes: Your Divine Force will now trigger a -30 sec reduced cooldown when used on enemies affected by Blade of Faith.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-6-7",
+      "kind": "structural",
+      "text": "Devotion of Khaz'goroth: Increases all party and raid member's melee and ranged haste by 10%. Does not stack with similar effects.Damage dealt with auto attacks reduce the cooldown of Libram spells by -0.5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-8-7a",
+      "kind": "structural",
+      "text": "Fervent Castigation: Casting Righteous Upheaval or Blade of Faith now grants you Oath: Retribution and starts your Oath Chain.Oath: RetributionCritical damage increased by 5%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-8-7b",
+      "kind": "structural",
+      "text": "Condemnation: Dealing damage with Condemn, Holy Cleave, or Blade of Faith now has a 15% chance to trigger Zealotry if you are within melee range of your target.Zealotry (Proc)Deals 40% off-hand Weapon Damage as Holy Damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-2-8",
+      "kind": "structural",
+      "text": "One With The Light: Casting Oath Breakers now triggers Zealotry on your target and reduces the cooldown of Librams, Force of Golganneth, and Mortal Abdication by -1 sec.Zealotry (Proc)Deals 40% off-hand Weapon Damage as Holy Damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-4-8",
+      "kind": "structural",
+      "text": "Might of Aggramar: Physical damage dealt now has a 25% chance to increase the tick rate and reduce cooldown of your next Blade of Faith by -10%, stacking 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-6-8",
+      "kind": "structural",
+      "text": "Blessing of Eonar: Using Libram spells now increases your damage dealt and healing done by 10% for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-10-8",
+      "kind": "structural",
+      "text": "Unbroken Creed: Level 50 PassiveDamaging abilities now grants you Unbroken Creed for 15 seconds, stacking up to 3 times.When you use a damaging Oath Breaker or Divine Fury you now consume the stacks and auto attack your target an amount of times equal to your stack count.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-2-9",
+      "kind": "structural",
+      "text": "Norgannon's Wrath: Target an enemy and leap into the air. After a short delay, you blast them with immense holy force, dealing 1506 + 100% holy SP + 100% AP Holy damage to up to 10 enemies within 5 yds and reduces their damage and healing done by -10% for 5 seconds.Damage dealt pierces all immunities, resistances, and damage absorption effects.Scales with modifiers to Chastise.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-4-9",
+      "kind": "structural",
+      "text": "Blessing of Aggramar: Righteous Lunge now has a 25% chance to generate an additional stack of Oath: Righteous Lunge.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/zealot:19-50-6-9",
+      "kind": "structural",
+      "text": "Fury of Aggramar: Increases the damage dealt by Libram of Consecration by 100% and the effectiveness of your Librams by 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    }
+  ]
+}

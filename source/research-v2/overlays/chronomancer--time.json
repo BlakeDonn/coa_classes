@@ -1,0 +1,906 @@
+{
+  "baseline": "chronomancer--time.json",
+  "set": {
+    "identity": {
+      "fantasy": "A timeline conductor who changes Epoch's behavior with Aeons, blankets allies in recovery effects, and rewrites group damage with large temporal interventions.",
+      "primary_family": "strategists",
+      "also_fits": [
+        "sequencers"
+      ],
+      "playstyle_tags": [
+        "stance-healer",
+        "hot-healer",
+        "support-caster"
+      ],
+      "one_line": "A proactive healer using Accelerated Recovery, Epoch, Aeons, Ripple, shields, damage delay, cooldown resets, and time-stasis utility. Aeons alter the same core spells for throughput, protection, or damage support. It is exceptionally flexible, but the player must understand which time mode is active and anticipate damage rather than only react.",
+      "claim_ids": [
+        "talent:chronomancer/time:22-58-10-0",
+        "talent:chronomancer/time:22-58-10-2",
+        "talent:chronomancer/time:22-58-10-6",
+        "inference:chronomancer/time:aeon-choice",
+        "observed:chronomancer/time:leveling-split",
+        "talent:chronomancer/time:22-58-5-6",
+        "observed:chronomancer/time:mythic-guide",
+        "talent:chronomancer/time:22-58-6-8"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "Maintain Accelerated Recovery on likely recipients, change Aeons to suit the next damage pattern, cast Epoch into those prepared allies, and use Ripple or Correct the Mistake for group recovery. At level 50, Epic Recovery and Eternity Warper make both HoT coverage and active Aeon selection central.",
+      "single_target": "Epoch and Reverse Wound handle focused recovery, with the current Aeon trading speed, mana, shields, or raw healing.",
+      "aoe": "Correct the Mistake and Ripple supply group healing; Epic Recovery makes Epoch echo onto allies already carrying Accelerated Recovery.",
+      "movement_and_target_switching": "Pre-applied HoTs preserve healing during movement, but Ripple channels and Epoch casts still create positioning windows.",
+      "defense_and_control": "Fortify Timeline, Aeon of Protection, Continuum Restoration, and The Vast Infinite provide prevention, cleansing, and emergency damage redistribution.",
+      "group_utility": "Mass dispel, external haste, mass resurrection, control, and Aeon-dependent recovery make utility a defining part of the kit.",
+      "failure_modes": [
+        {
+          "text": "Using the wrong Aeon for the incoming damage pattern makes the same Epoch cast slower, costlier, or less protective than intended.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice"
+          ]
+        },
+        {
+          "text": "Movement or a target swap can interrupt the intended payoff: pre-applied hots preserve healing during movement, but ripple channels and epoch casts still create positioning windows.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split"
+          ]
+        },
+        {
+          "text": "Spending recovery or control too early leaves less protection for the next pressure event: fortify timeline, aeon of protection, continuum restoration, and the vast infinite provide prevention, cleansing, and emergency damage redistribution.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "talent:chronomancer/time:22-58-10-0",
+        "talent:chronomancer/time:22-58-10-2",
+        "talent:chronomancer/time:22-58-10-6",
+        "inference:chronomancer/time:aeon-choice",
+        "observed:chronomancer/time:leveling-split",
+        "talent:chronomancer/time:22-58-5-6",
+        "observed:chronomancer/time:mythic-guide",
+        "talent:chronomancer/time:22-58-6-8"
+      ]
+    },
+    "contexts": {
+      "leveling_30_49": {
+        "feel": "By levels 30-49, maintain accelerated recovery on likely recipients, change aeons to suit the next damage pattern, cast epoch into those prepared allies, and use ripple or correct the mistake for group recovery.",
+        "strengths": [
+          "Broad group recovery",
+          "Flexible Aeon tradeoffs"
+        ],
+        "cautions": [
+          "Recent solo-leveling reports become negative near the high 40s",
+          "Aeon management adds attention cost"
+        ],
+        "claim_ids": [
+          "observed:chronomancer/time:leveling-split",
+          "talent:chronomancer/time:22-58-5-6",
+          "talent:chronomancer/time:22-58-10-0",
+          "talent:chronomancer/time:22-58-10-2",
+          "talent:chronomancer/time:22-58-10-6",
+          "inference:chronomancer/time:aeon-choice",
+          "observed:chronomancer/time:mythic-guide",
+          "talent:chronomancer/time:22-58-6-8"
+        ]
+      },
+      "level_50_60": {
+        "feel": "A preparation-heavy stance healer. HoT coverage determines Epic Recovery reach, while Eternity Warper changes Ripple according to the active Aeon.",
+        "strengths": [
+          "Strong prepared group coverage",
+          "Distinct emergency and utility tools"
+        ],
+        "cautions": [
+          "Stance and coverage mistakes are visible",
+          "The current guide explicitly calls the spec difficult"
+        ],
+        "claim_ids": [
+          "observed:chronomancer/time:mythic-guide",
+          "talent:chronomancer/time:22-58-6-8",
+          "talent:chronomancer/time:22-58-10-8",
+          "talent:chronomancer/time:22-58-10-0",
+          "talent:chronomancer/time:22-58-10-2",
+          "talent:chronomancer/time:22-58-10-6",
+          "inference:chronomancer/time:aeon-choice",
+          "observed:chronomancer/time:leveling-split",
+          "talent:chronomancer/time:22-58-5-6"
+        ]
+      },
+      "leveling_10_29": {
+        "feel": "Early play establishes the spec's central loop: maintain accelerated recovery on likely recipients, change aeons to suit the next damage pattern, cast epoch into those prepared allies, and use ripple or correct the.",
+        "strengths": [
+          "Core identity appears early",
+          "Basic loop is readable"
+        ],
+        "cautions": [
+          "Later interactions are still missing",
+          "Recovery tools are incomplete"
+        ],
+        "claim_ids": [
+          "talent:chronomancer/time:22-58-10-0",
+          "talent:chronomancer/time:22-58-10-2",
+          "talent:chronomancer/time:22-58-10-6",
+          "inference:chronomancer/time:aeon-choice",
+          "observed:chronomancer/time:leveling-split",
+          "talent:chronomancer/time:22-58-5-6",
+          "observed:chronomancer/time:mythic-guide",
+          "talent:chronomancer/time:22-58-6-8"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, epoch and reverse wound handle focused recovery, with the current aeon trading speed, mana, shields, or raw healing.",
+        "strengths": [
+          "Durable targets preserve the full loop",
+          "Cooldowns can be planned"
+        ],
+        "cautions": [
+          "Movement can break setup",
+          "Repeated errors remain visible"
+        ],
+        "claim_ids": [
+          "talent:chronomancer/time:22-58-10-0",
+          "talent:chronomancer/time:22-58-10-2",
+          "talent:chronomancer/time:22-58-10-6",
+          "inference:chronomancer/time:aeon-choice",
+          "observed:chronomancer/time:leveling-split",
+          "talent:chronomancer/time:22-58-5-6",
+          "observed:chronomancer/time:mythic-guide",
+          "talent:chronomancer/time:22-58-6-8"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, correct the mistake and ripple supply group healing; epic recovery makes epoch echo onto allies already carrying accelerated recovery.",
+        "strengths": [
+          "Pack tools express the spec clearly",
+          "Group utility has regular value"
+        ],
+        "cautions": [
+          "Short-lived targets can erase setup",
+          "Tank movement changes the plan"
+        ],
+        "claim_ids": [
+          "talent:chronomancer/time:22-58-10-0",
+          "talent:chronomancer/time:22-58-10-2",
+          "talent:chronomancer/time:22-58-10-6",
+          "inference:chronomancer/time:aeon-choice",
+          "observed:chronomancer/time:leveling-split",
+          "talent:chronomancer/time:22-58-5-6",
+          "observed:chronomancer/time:mythic-guide",
+          "talent:chronomancer/time:22-58-6-8"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, pre-applied hots preserve healing during movement, but ripple channels and epoch casts still create positioning windows. Fortify Timeline, Aeon of Protection, Continuum Restoration, and The Vast Infinite provide prevention, cleansing, and emergency damage redistribution.",
+        "strengths": [
+          "Control and utility create options",
+          "Target swaps can reward flexibility"
+        ],
+        "cautions": [
+          "Disruption makes the loop less predictable",
+          "Defensive timing is punishable"
+        ],
+        "claim_ids": [
+          "talent:chronomancer/time:22-58-10-0",
+          "talent:chronomancer/time:22-58-10-2",
+          "talent:chronomancer/time:22-58-10-6",
+          "inference:chronomancer/time:aeon-choice",
+          "observed:chronomancer/time:leveling-split",
+          "talent:chronomancer/time:22-58-5-6",
+          "observed:chronomancer/time:mythic-guide",
+          "talent:chronomancer/time:22-58-6-8"
+        ]
+      }
+    },
+    "complexity": {
+      "reactive_decisions": {
+        "boss": {
+          "value": "high",
+          "reason": "The healer chooses Aeons and recovery tools against changing damage patterns rather than following one fixed sequence.",
+          "claim_ids": [
+            "observed:chronomancer/time:mythic-guide",
+            "inference:chronomancer/time:aeon-choice",
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "Target count, incoming pressure, and movement change the next action; fortify timeline, aeon of protection, continuum restoration, and the vast infinite provide prevention, cleansing, and emergency damage redistribution. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Target count, incoming pressure, and movement change the next action; fortify timeline, aeon of protection, continuum restoration, and the vast infinite provide prevention, cleansing, and emergency damage redistribution. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Target count, incoming pressure, and movement change the next action; fortify timeline, aeon of protection, continuum restoration, and the vast infinite provide prevention, cleansing, and emergency damage redistribution. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Target count, incoming pressure, and movement change the next action; fortify timeline, aeon of protection, continuum restoration, and the vast infinite provide prevention, cleansing, and emergency damage redistribution. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Target count, incoming pressure, and movement change the next action; fortify timeline, aeon of protection, continuum restoration, and the vast infinite provide prevention, cleansing, and emergency damage redistribution. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        }
+      },
+      "state_tracking": {
+        "level_50_60": {
+          "value": "high",
+          "reason": "Accelerated Recovery coverage, Aeon state, Epoch casts, and Aeon-specific Ripple outcomes all overlap.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-6-8",
+            "talent:chronomancer/time:22-58-10-8",
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Epoch and Reverse Wound handle focused recovery, with the current Aeon trading speed, mana, shields, or raw healing. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Epoch and Reverse Wound handle focused recovery, with the current Aeon trading speed, mana, shields, or raw healing. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Epoch and Reverse Wound handle focused recovery, with the current Aeon trading speed, mana, shields, or raw healing. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Epoch and Reverse Wound handle focused recovery, with the current Aeon trading speed, mana, shields, or raw healing. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Epoch and Reverse Wound handle focused recovery, with the current Aeon trading speed, mana, shields, or raw healing. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        }
+      },
+      "failure_cost": {
+        "boss": {
+          "value": "high",
+          "reason": "A mismatched Aeon or missing HoT coverage can weaken the response to a scheduled group hit.",
+          "claim_ids": [
+            "inference:chronomancer/time:aeon-choice",
+            "talent:chronomancer/time:22-58-6-8",
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "Using the wrong Aeon for the incoming damage pattern makes the same Epoch cast slower, costlier, or less protective than intended. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Using the wrong Aeon for the incoming damage pattern makes the same Epoch cast slower, costlier, or less protective than intended. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Using the wrong Aeon for the incoming damage pattern makes the same Epoch cast slower, costlier, or less protective than intended. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Using the wrong Aeon for the incoming damage pattern makes the same Epoch cast slower, costlier, or less protective than intended. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Using the wrong Aeon for the incoming damage pattern makes the same Epoch cast slower, costlier, or less protective than intended. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        }
+      },
+      "core_actions": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Maintain Accelerated Recovery on likely recipients, change Aeons to suit the next damage pattern, cast Epoch into those prepared allies, and use Ripple or Correct the Mistake for group recovery. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Maintain Accelerated Recovery on likely recipients, change Aeons to suit the next damage pattern, cast Epoch into those prepared allies, and use Ripple or Correct the Mistake for group recovery. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Maintain Accelerated Recovery on likely recipients, change Aeons to suit the next damage pattern, cast Epoch into those prepared allies, and use Ripple or Correct the Mistake for group recovery. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Maintain Accelerated Recovery on likely recipients, change Aeons to suit the next damage pattern, cast Epoch into those prepared allies, and use Ripple or Correct the Mistake for group recovery. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Maintain Accelerated Recovery on likely recipients, change Aeons to suit the next damage pattern, cast Epoch into those prepared allies, and use Ripple or Correct the Mistake for group recovery. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        },
+        "pvp": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Maintain Accelerated Recovery on likely recipients, change Aeons to suit the next damage pattern, cast Epoch into those prepared allies, and use Ripple or Correct the Mistake for group recovery. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Correct the Mistake and Ripple supply group healing; Epic Recovery makes Epoch echo onto allies already carrying Accelerated Recovery. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Correct the Mistake and Ripple supply group healing; Epic Recovery makes Epoch echo onto allies already carrying Accelerated Recovery. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Correct the Mistake and Ripple supply group healing; Epic Recovery makes Epoch echo onto allies already carrying Accelerated Recovery. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Correct the Mistake and Ripple supply group healing; Epic Recovery makes Epoch echo onto allies already carrying Accelerated Recovery. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Correct the Mistake and Ripple supply group healing; Epic Recovery makes Epoch echo onto allies already carrying Accelerated Recovery. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        },
+        "pvp": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Correct the Mistake and Ripple supply group healing; Epic Recovery makes Epoch echo onto allies already carrying Accelerated Recovery. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Pre-applied HoTs preserve healing during movement, but Ripple channels and Epoch casts still create positioning windows. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Pre-applied HoTs preserve healing during movement, but Ripple channels and Epoch casts still create positioning windows. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Pre-applied HoTs preserve healing during movement, but Ripple channels and Epoch casts still create positioning windows. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Pre-applied HoTs preserve healing during movement, but Ripple channels and Epoch casts still create positioning windows. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Pre-applied HoTs preserve healing during movement, but Ripple channels and Epoch casts still create positioning windows. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "Execution is constrained by positioning and swaps: Pre-applied HoTs preserve healing during movement, but Ripple channels and Epoch casts still create positioning windows. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split",
+            "talent:chronomancer/time:22-58-5-6",
+            "observed:chronomancer/time:mythic-guide",
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You enjoy planning HoT coverage and changing healing modes around encounter damage.",
+          "claim_ids": [
+            "observed:chronomancer/time:mythic-guide",
+            "inference:chronomancer/time:aeon-choice"
+          ]
+        },
+        {
+          "text": "You enjoy the spec's core cadence: maintain accelerated recovery on likely recipients, change aeons to suit the next damage pattern, cast epoch into those prepared allies, and use ripple or correct the mistake for group recovery.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You want a low-attention healer or expect healer-spec solo damage to remain brisk in the late leveling game.",
+          "claim_ids": [
+            "observed:chronomancer/time:leveling-split"
+          ]
+        },
+        {
+          "text": "You dislike the positioning or swap constraint that pre-applied hots preserve healing during movement, but ripple channels and epoch casts still create positioning windows.",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0",
+            "talent:chronomancer/time:22-58-10-2",
+            "talent:chronomancer/time:22-58-10-6",
+            "inference:chronomancer/time:aeon-choice",
+            "observed:chronomancer/time:leveling-split"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Current guide material praises its broad utility and prepared group-healing package.",
+          "claim_ids": [
+            "observed:chronomancer/time:mythic-guide"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Recent players report weak late-level solo damage and at least one poor level-42 healing experience.",
+          "claim_ids": [
+            "observed:chronomancer/time:leveling-split"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "The negative leveling reports do not directly contradict the positive level-60 Mythic+ guide because the contexts and talent access differ.",
+          "claim_ids": [
+            "observed:chronomancer/time:leveling-split",
+            "observed:chronomancer/time:mythic-guide"
+          ]
+        }
+      ]
+    },
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "moderate",
+      "performance": "context_only",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium",
+      "gaps": [
+        "No normalized healer comparison.",
+        "No verified current gameplay video."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "Early play establishes the spec's central loop: maintain accelerated recovery on likely recipients, change aeons to suit the next damage pattern, cast epoch into those prepared allies, and use ripple or correct the.",
+      "observed_changes": [
+        "Later interactions are still missing",
+        "Recovery tools are incomplete"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "A preparation-heavy stance healer. HoT coverage determines Epic Recovery reach, while Eternity Warper changes Ripple according to the active Aeon.",
+      "observed_changes": [
+        "Stance and coverage mistakes are visible",
+        "The current guide explicitly calls the spec difficult"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "Early play establishes the spec's central loop: maintain accelerated recovery on likely recipients, change aeons to suit the next damage pattern, cast epoch into those prepared allies, and use ripple or correct the.",
+      "observed_changes": [
+        "Later interactions are still missing",
+        "Recovery tools are incomplete"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "By levels 30-49, maintain accelerated recovery on likely recipients, change aeons to suit the next damage pattern, cast epoch into those prepared allies, and use ripple or correct the mistake for group recovery.",
+      "observed_changes": [
+        "Recent solo-leveling reports become negative near the high 40s",
+        "Aeon management adds attention cost"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "By levels 30-49, maintain accelerated recovery on likely recipients, change aeons to suit the next damage pattern, cast epoch into those prepared allies, and use ripple or correct the mistake for group recovery.",
+      "observed_changes": [
+        "Recent solo-leveling reports become negative near the high 40s",
+        "Aeon management adds attention cost"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:chronomancer/time:mythic-guide",
+      "kind": "observed",
+      "text": "An August 4 current Build Hub Mythic+ guide calls Time difficult and describes frequent Aeon swapping, HoT coverage, moderate AoE damage, mass dispel, an external haste tool, mass resurrection, and Epic Recovery as a game-changing level-50 interaction.",
+      "source_ids": [
+        "buildhub:d0ca993a-cdea-4318-8ca8-129dcb617a31"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "mythic_plus"
+        ],
+        "build_or_mode": [
+          "guide_build"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Detailed current player guide, but still one author's build and experience."
+    },
+    {
+      "id": "observed:chronomancer/time:leveling-split",
+      "kind": "observed",
+      "text": "Recent discussions report that Time's solo damage becomes painful in the 40s while instance healing remains viable; another level-42 player reports a poor healing experience.",
+      "source_ids": [
+        "reddit:chrono-leveling-2026-07-18",
+        "reddit:time-healer-choice-2026-07-27"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "solo_leveling",
+          "dungeon_healing"
+        ],
+        "build_or_mode": [
+          "unspecified"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "Small samples and likely build variance."
+    },
+    {
+      "id": "inference:chronomancer/time:aeon-choice",
+      "kind": "inference",
+      "text": "Time's main decision burden is selecting the Aeon whose speed, cost, shielding, throughput, and Ripple behavior best matches the next damage event.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:chronomancer/time:22-58-10-0",
+        "talent:chronomancer/time:22-58-10-2",
+        "talent:chronomancer/time:22-58-10-6",
+        "talent:chronomancer/time:22-58-10-8"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "group_healing"
+        ],
+        "build_or_mode": [
+          "all_aeons"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Encounter-specific optimal switching cadence remains unmeasured."
+    }
+  ]
+}

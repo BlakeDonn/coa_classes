@@ -1,0 +1,900 @@
+{
+  "baseline": "reaper--domination.json",
+  "set": {
+    "identity": {
+      "fantasy": "A spectral knight who generates souls through Dreadwake, summons wardens and scythes, and turns avoidance and active pack pressure into healing and mitigation.",
+      "primary_family": "commanders",
+      "also_fits": [
+        "strategists"
+      ],
+      "playstyle_tags": [
+        "soul-summon-avoidance-tank",
+        "pack-sustain-tank",
+        "spectral-knight"
+      ],
+      "one_line": "A spectral knight who generates souls through Dreadwake, summons wardens and scythes, and turns avoidance and active pack pressure into healing and mitigation. The defining decision is contextual: Incoming pressure determines whether souls are held defensively or converted into tempo.",
+      "claim_ids": [
+        "talent:reaper/domination:30-81-4-0",
+        "talent:reaper/domination:30-81-10-0",
+        "talent:reaper/domination:30-81-2-1",
+        "talent:reaper/domination:30-81-2-9",
+        "observed:reaper/domination:community-practice",
+        "observed:reaper/domination:sentiment-context",
+        "inference:reaper/domination:identity"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "A spectral knight that generates souls through Dreadwake, summons wardens and scythes, and converts avoidance and soul states into healing and mitigation. Painmail and Eater of Souls reward staying active in packs, while Bolstered Form supplies the main defensive cycle.",
+      "single_target": "Use a single Reap, keep Tormented Souls available as a defensive resource, and cycle Dreadwake and Soul Strike. The captured guide warns against spending Tormented Souls as ordinary damage.",
+      "aoe": "Preload Tormented Souls, rush the pull, line-of-sight packs, Soul Tap, then loop Dreadwake and Soul Strike. The guide says larger pulls improve healing and runic flow, a claim limited to that author's dungeon setup.",
+      "movement_and_target_switching": "Hybrid reach, summoned scythes, and pack-centered sustain aid control while rewarding continuous activity.",
+      "defense_and_control": "Its structural defensive package includes Empyrean Fortitude, Lifestealer, Behemoth, Bolstered Form, Dreadknight.",
+      "group_utility": "Group or control tools include Soulsight, Ethereal Guard, Painmail.",
+      "failure_modes": [
+        {
+          "text": "Spending Tormented Souls offensively, entering Bolstered Form with a poor soul state, or failing to group a pull can collapse the self-healing loop.",
+          "claim_ids": [
+            "inference:reaper/domination:failure-cost",
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1"
+          ]
+        },
+        {
+          "text": "Spending Tormented Souls as routine damage removes the reserve the guide explicitly treats as defensive.",
+          "claim_ids": [
+            "inference:reaper/domination:failure-cost",
+            "observed:reaper/domination:community-practice"
+          ]
+        },
+        {
+          "text": "Failing to line-of-sight and group a pull denies Dreadwake and Soul Strike the multi-target activity that feeds healing.",
+          "claim_ids": [
+            "inference:reaper/domination:failure-cost",
+            "observed:reaper/domination:community-practice"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "talent:reaper/domination:30-81-4-0",
+        "talent:reaper/domination:30-81-10-0",
+        "talent:reaper/domination:30-81-2-1",
+        "talent:reaper/domination:30-81-2-9",
+        "observed:reaper/domination:community-practice",
+        "observed:reaper/domination:build-practice",
+        "observed:reaper/domination:sentiment-context",
+        "inference:reaper/domination:identity"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "Dreadwake, Tormentor, and avoidance establish the soul-tank identity before the late pack-healing engine is complete.",
+        "strengths": [
+          "A spectral knight who generates souls through Dreadwake, summons wardens and scythes, and turns avoidance and active pack pressure into healing and mitigation.",
+          "Players and the guide emphasize strong dungeon sustain, especially when many targets feed the soul engine."
+        ],
+        "cautions": [
+          "The claim that bigger pulls improve safety is plausible within the documented loop but comes from one high-progression build without controlled comparison.",
+          "Do not project the mature priority backward."
+        ],
+        "claim_ids": [
+          "talent:reaper/domination:30-81-4-0",
+          "talent:reaper/domination:30-81-10-0",
+          "talent:reaper/domination:30-81-2-1",
+          "talent:reaper/domination:30-81-2-9",
+          "observed:reaper/domination:community-practice",
+          "observed:reaper/domination:build-practice",
+          "observed:reaper/domination:sentiment-context",
+          "inference:reaper/domination:identity"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "The middle bands connect the foundational kit to the mature loop: A spectral knight that generates souls through Dreadwake, summons wardens and scythes, and converts avoidance and soul states into healing and mitigation. Exact level-by-level priority remains bounded by the available evidence.",
+        "strengths": [
+          "A spectral knight that generates souls through Dreadwake, summons wardens and scythes, and converts avoidance and soul states into healing and mitigation.",
+          "More of the state and payoff loop is available."
+        ],
+        "cautions": [
+          "Spending Tormented Souls offensively, entering Bolstered Form with a poor soul state, or failing to group a pull can collapse the self-healing loop.",
+          "Source levels and gear are not normalized."
+        ],
+        "claim_ids": [
+          "talent:reaper/domination:30-81-4-0",
+          "talent:reaper/domination:30-81-10-0",
+          "talent:reaper/domination:30-81-2-1",
+          "talent:reaper/domination:30-81-2-9",
+          "observed:reaper/domination:community-practice",
+          "observed:reaper/domination:build-practice",
+          "observed:reaper/domination:sentiment-context",
+          "inference:reaper/domination:identity"
+        ]
+      },
+      "level_50_60": {
+        "feel": "Late dungeon play uses preloaded Tormented Souls and grouped pulls to feed Dreadwake, Soul Strike, healing, and runic flow.",
+        "strengths": [
+          "Players and the guide emphasize strong dungeon sustain, especially when many targets feed the soul engine.",
+          "The full talent interaction is available."
+        ],
+        "cautions": [
+          "The claim that bigger pulls improve safety is plausible within the documented loop but comes from one high-progression build without controlled comparison.",
+          "Spending Tormented Souls offensively, entering Bolstered Form with a poor soul state, or failing to group a pull can collapse the self-healing loop."
+        ],
+        "claim_ids": [
+          "talent:reaper/domination:30-81-4-0",
+          "talent:reaper/domination:30-81-10-0",
+          "talent:reaper/domination:30-81-2-1",
+          "talent:reaper/domination:30-81-2-9",
+          "observed:reaper/domination:community-practice",
+          "observed:reaper/domination:build-practice",
+          "observed:reaper/domination:sentiment-context",
+          "inference:reaper/domination:identity"
+        ]
+      },
+      "boss": {
+        "feel": "Use a single Reap, keep Tormented Souls available as a defensive resource, and cycle Dreadwake and Soul Strike. The captured guide warns against spending Tormented Souls as ordinary damage.",
+        "strengths": [
+          "Use a single Reap, keep Tormented Souls available as a defensive resource, and cycle Dreadwake and Soul Strike.",
+          "Durable targets allow the documented cycle to complete."
+        ],
+        "cautions": [
+          "Spending Tormented Souls offensively, entering Bolstered Form with a poor soul state, or failing to group a pull can collapse the self-healing loop.",
+          "No controlled ranking is asserted."
+        ],
+        "claim_ids": [
+          "talent:reaper/domination:30-81-4-0",
+          "talent:reaper/domination:30-81-10-0",
+          "talent:reaper/domination:30-81-2-1",
+          "talent:reaper/domination:30-81-2-9",
+          "observed:reaper/domination:community-practice",
+          "observed:reaper/domination:build-practice",
+          "observed:reaper/domination:sentiment-context",
+          "inference:reaper/domination:identity"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "Preload Tormented Souls, rush the pull, line-of-sight packs, Soul Tap, then loop Dreadwake and Soul Strike. The guide says larger pulls improve healing and runic flow, a claim limited to that author's dungeon setup.",
+        "strengths": [
+          "Preload Tormented Souls, rush the pull, line-of-sight packs, Soul Tap, then loop Dreadwake and Soul Strike.",
+          "Pack play exposes the spec's target-count decisions."
+        ],
+        "cautions": [
+          "Spending Tormented Souls offensively, entering Bolstered Form with a poor soul state, or failing to group a pull can collapse the self-healing loop.",
+          "Pull size, lifespan, and tank pace are uncontrolled."
+        ],
+        "claim_ids": [
+          "talent:reaper/domination:30-81-4-0",
+          "talent:reaper/domination:30-81-10-0",
+          "talent:reaper/domination:30-81-2-1",
+          "talent:reaper/domination:30-81-2-9",
+          "observed:reaper/domination:community-practice",
+          "observed:reaper/domination:build-practice",
+          "observed:reaper/domination:sentiment-context",
+          "inference:reaper/domination:identity"
+        ]
+      },
+      "pvp": {
+        "feel": "Current evidence is dungeon-tank centered. Avoidance, summons, and defensive souls remain structurally relevant in PvP, but no verified mode-specific loop is available.",
+        "strengths": [
+          "Current evidence is dungeon-tank centered.",
+          "Control and disruption change the normal loop."
+        ],
+        "cautions": [
+          "Spending Tormented Souls offensively, entering Bolstered Form with a poor soul state, or failing to group a pull can collapse the self-healing loop.",
+          "No normalized matchup or bracket comparison is available."
+        ],
+        "claim_ids": [
+          "talent:reaper/domination:30-81-4-0",
+          "talent:reaper/domination:30-81-10-0",
+          "talent:reaper/domination:30-81-2-1",
+          "talent:reaper/domination:30-81-2-9",
+          "observed:reaper/domination:community-practice",
+          "observed:reaper/domination:build-practice",
+          "observed:reaper/domination:sentiment-context",
+          "inference:reaper/domination:identity"
+        ]
+      }
+    },
+    "complexity": {
+      "core_actions": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Single target is compact, while big pulls add preload, rush, line-of-sight, and summon steps. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Single target is compact, while big pulls add preload, rush, line-of-sight, and summon steps. Middle talents make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "Single target is compact, while big pulls add preload, rush, line-of-sight, and summon steps. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Single target is compact, while big pulls add preload, rush, line-of-sight, and summon steps. A durable target makes repeated timing and resource discipline matter.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Single target is compact, while big pulls add preload, rush, line-of-sight, and summon steps. Changing pack size, lifespan, and tank movement add another constraint.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "moderate-high",
+          "reason": "Single target is compact, while big pulls add preload, rush, line-of-sight, and summon steps. Enemy disruption and an active opponent make the same task less predictable.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        }
+      },
+      "state_tracking": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Tormented Souls, avoidance, Bolstered Form, healing, and runic flow require tracking. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Tormented Souls, avoidance, Bolstered Form, healing, and runic flow require tracking. Middle talents make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "Tormented Souls, avoidance, Bolstered Form, healing, and runic flow require tracking. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Tormented Souls, avoidance, Bolstered Form, healing, and runic flow require tracking. A durable target makes repeated timing and resource discipline matter.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Tormented Souls, avoidance, Bolstered Form, healing, and runic flow require tracking. Changing pack size, lifespan, and tank movement add another constraint.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Tormented Souls, avoidance, Bolstered Form, healing, and runic flow require tracking. Enemy disruption and an active opponent make the same task less predictable.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "low-moderate",
+          "reason": "The documented pack opener explicitly preloads souls and groups enemies before committing. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate",
+          "reason": "The documented pack opener explicitly preloads souls and groups enemies before committing. Middle talents make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate",
+          "reason": "The documented pack opener explicitly preloads souls and groups enemies before committing. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate",
+          "reason": "The documented pack opener explicitly preloads souls and groups enemies before committing. A durable target makes repeated timing and resource discipline matter.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "moderate",
+          "reason": "The documented pack opener explicitly preloads souls and groups enemies before committing. Changing pack size, lifespan, and tank movement add another constraint.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "moderate-high",
+          "reason": "The documented pack opener explicitly preloads souls and groups enemies before committing. Enemy disruption and an active opponent make the same task less predictable.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Incoming pressure determines whether souls are held defensively or converted into tempo. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Incoming pressure determines whether souls are held defensively or converted into tempo. Middle talents make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "Incoming pressure determines whether souls are held defensively or converted into tempo. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Incoming pressure determines whether souls are held defensively or converted into tempo. A durable target makes repeated timing and resource discipline matter.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Incoming pressure determines whether souls are held defensively or converted into tempo. Changing pack size, lifespan, and tank movement add another constraint.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Incoming pressure determines whether souls are held defensively or converted into tempo. Enemy disruption and an active opponent make the same task less predictable.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "low-moderate",
+          "reason": "Line-of-sight grouping and maintaining activity across a pack are execution requirements. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate",
+          "reason": "Line-of-sight grouping and maintaining activity across a pack are execution requirements. Middle talents make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate",
+          "reason": "Line-of-sight grouping and maintaining activity across a pack are execution requirements. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate",
+          "reason": "Line-of-sight grouping and maintaining activity across a pack are execution requirements. A durable target makes repeated timing and resource discipline matter.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "moderate-high",
+          "reason": "Line-of-sight grouping and maintaining activity across a pack are execution requirements. Changing pack size, lifespan, and tank movement add another constraint.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "moderate-high",
+          "reason": "Line-of-sight grouping and maintaining activity across a pack are execution requirements. Enemy disruption and an active opponent make the same task less predictable.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        }
+      },
+      "failure_cost": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Wasting Tormented Souls or entering a dispersed pull removes the healing engine under pressure. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Wasting Tormented Souls or entering a dispersed pull removes the healing engine under pressure. Middle talents make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "Wasting Tormented Souls or entering a dispersed pull removes the healing engine under pressure. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Wasting Tormented Souls or entering a dispersed pull removes the healing engine under pressure. A durable target makes repeated timing and resource discipline matter.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Wasting Tormented Souls or entering a dispersed pull removes the healing engine under pressure. Changing pack size, lifespan, and tank movement add another constraint.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Wasting Tormented Souls or entering a dispersed pull removes the healing engine under pressure. Enemy disruption and an active opponent make the same task less predictable.",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0",
+            "talent:reaper/domination:30-81-10-0",
+            "talent:reaper/domination:30-81-2-1",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice",
+            "inference:reaper/domination:failure-cost"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You want a summon-assisted tank that grows stronger while actively fighting large packs.",
+          "claim_ids": [
+            "inference:reaper/domination:identity"
+          ]
+        },
+        {
+          "text": "You enjoy a loop where this state matters: Tormented Souls, avoidance, Bolstered Form, healing, and runic flow require tracking.",
+          "claim_ids": [
+            "inference:reaper/domination:identity",
+            "observed:reaper/domination:community-practice"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You want passive defenses or dislike tracking souls, summons, Painmail, and Bolstered Form.",
+          "claim_ids": [
+            "inference:reaper/domination:failure-cost"
+          ]
+        },
+        {
+          "text": "You want mistakes to be cheap; here, spending Tormented Souls offensively, entering Bolstered Form with a poor soul state, or failing to group a pull can collapse the self-healing loop.",
+          "claim_ids": [
+            "inference:reaper/domination:failure-cost",
+            "observed:reaper/domination:community-practice"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Players and the guide emphasize strong dungeon sustain, especially when many targets feed the soul engine.",
+          "claim_ids": [
+            "observed:reaper/domination:sentiment-context",
+            "observed:reaper/domination:community-practice",
+            "observed:reaper/domination:build-practice"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Spending Tormented Souls offensively, entering Bolstered Form with a poor soul state, or failing to group a pull can collapse the self-healing loop.",
+          "claim_ids": [
+            "observed:reaper/domination:sentiment-context",
+            "inference:reaper/domination:failure-cost"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "The claim that bigger pulls improve safety is plausible within the documented loop but comes from one high-progression build without controlled comparison.",
+          "claim_ids": [
+            "observed:reaper/domination:sentiment-context",
+            "observed:reaper/domination:community-practice"
+          ]
+        }
+      ]
+    },
+    "performance_signal_ids": [
+      "observed:reaper/domination:performance"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "manual_recent_source_review",
+      "performance": "limited_uncontrolled",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium",
+      "gaps": [
+        "No verified current full-encounter rotation video.",
+        "Any priority or mode not supported above remains an explicit gap rather than an inferred optimum."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "Dreadwake, Tormentor, and avoidance establish the soul-tank identity before the late pack-healing engine is complete.",
+      "observed_changes": [
+        "The claim that bigger pulls improve safety is plausible within the documented loop but comes from one high-progression build without controlled comparison.",
+        "Do not project the mature priority backward."
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "Dreadwake, Tormentor, and avoidance establish the soul-tank identity before the late pack-healing engine is complete.",
+      "observed_changes": [
+        "The claim that bigger pulls improve safety is plausible within the documented loop but comes from one high-progression build without controlled comparison.",
+        "Do not project the mature priority backward."
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "The middle bands connect the foundational kit to the mature loop: A spectral knight that generates souls through Dreadwake, summons wardens and scythes, and converts avoidance and soul states into healing and mitigation. Exact level-by-level priority remains bounded by the available evidence.",
+      "observed_changes": [
+        "Spending Tormented Souls offensively, entering Bolstered Form with a poor soul state, or failing to group a pull can collapse the self-healing loop.",
+        "Source levels and gear are not normalized."
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "The middle bands connect the foundational kit to the mature loop: A spectral knight that generates souls through Dreadwake, summons wardens and scythes, and converts avoidance and soul states into healing and mitigation. Exact level-by-level priority remains bounded by the available evidence.",
+      "observed_changes": [
+        "Spending Tormented Souls offensively, entering Bolstered Form with a poor soul state, or failing to group a pull can collapse the self-healing loop.",
+        "Source levels and gear are not normalized."
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "Late dungeon play uses preloaded Tormented Souls and grouped pulls to feed Dreadwake, Soul Strike, healing, and runic flow.",
+      "observed_changes": [
+        "The claim that bigger pulls improve safety is plausible within the documented loop but comes from one high-progression build without controlled comparison.",
+        "Spending Tormented Souls offensively, entering Bolstered Form with a poor soul state, or failing to group a pull can collapse the self-healing loop."
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:reaper/domination:community-practice",
+      "kind": "observed",
+      "text": "A detailed dungeon guide separates single-target and big-pull play, reserves Tormented Souls for defense, and describes line-of-sight setup. Its level-482 dungeon claim and larger-pulls-are-safer assertion are uncontrolled.",
+      "source_ids": [
+        "reddit:tank-weapons-2026-08-01",
+        "reddit:reaper-status-2026-07-21",
+        "buildhub:88596de6-f880-4259-81d5-df050640d357"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_contexts"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Manual source reading; reported play remains bounded to the author's level, build, mode, and stated limitations.",
+      "derived_from_claim_ids": []
+    },
+    {
+      "id": "observed:reaper/domination:build-practice",
+      "kind": "observed",
+      "text": "The leading guide documents single-Reap single target, defensive Tormented Souls, and a preload/rush/line-of-sight/Soul Tap/Dreadwake pack sequence.",
+      "source_ids": [
+        "buildhub-builds-2026-08-05",
+        "buildhub:88596de6-f880-4259-81d5-df050640d357"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "community_build_snapshot"
+        ],
+        "build_or_mode": [
+          "documented_builds"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The captured build documents one contributor's practice; missing prose remains an explicit rotation gap.",
+      "derived_from_claim_ids": []
+    },
+    {
+      "id": "observed:reaper/domination:performance",
+      "kind": "observed",
+      "text": "The July community compilation reports 1,650 DPS in the source's tank_offrole context, and the August Mythic inventory lists 70 record(s). Neither signal is normalized for gear, encounter, role contribution, or player selection.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "pve_unspecified",
+          "mythic_dungeons"
+        ],
+        "build_or_mode": [
+          "tank_offrole"
+        ]
+      },
+      "confidence": "low",
+      "conflicts_with": [],
+      "notes": "Performance context is incomplete; do not use as a tier rank.",
+      "derived_from_claim_ids": []
+    },
+    {
+      "id": "observed:reaper/domination:sentiment-context",
+      "kind": "observed",
+      "text": "Praise: Players and the guide emphasize strong dungeon sustain, especially when many targets feed the soul engine. Contested evidence: The claim that bigger pulls improve safety is plausible within the documented loop but comes from one high-progression build without controlled comparison.",
+      "source_ids": [
+        "reddit:tank-weapons-2026-08-01",
+        "reddit:reaper-status-2026-07-21",
+        "buildhub:88596de6-f880-4259-81d5-df050640d357"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_sentiment"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Sentiment is reported by source and context, not averaged into a universal verdict.",
+      "derived_from_claim_ids": []
+    },
+    {
+      "id": "inference:reaper/domination:identity",
+      "kind": "inference",
+      "text": "A spectral knight who generates souls through Dreadwake, summons wardens and scythes, and turns avoidance and active pack pressure into healing and mitigation.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:reaper/domination:30-81-4-0",
+        "talent:reaper/domination:30-81-10-0",
+        "talent:reaper/domination:30-81-2-1",
+        "talent:reaper/domination:30-81-2-9",
+        "talent:reaper/domination:30-81-4-9",
+        "talent:reaper/domination:30-81-6-9",
+        "observed:reaper/domination:community-practice",
+        "observed:reaper/domination:sentiment-context"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Descriptive playstyle classification from talent structure and manually reviewed current practice, not an official label."
+    },
+    {
+      "id": "inference:reaper/domination:failure-cost",
+      "kind": "inference",
+      "text": "Spending Tormented Souls offensively, entering Bolstered Form with a poor soul state, or failing to group a pull can collapse the self-healing loop.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "observed:reaper/domination:community-practice",
+        "inference:reaper/domination:identity"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Failure-mode interpretation; exact thresholds require live verification."
+    }
+  ]
+}

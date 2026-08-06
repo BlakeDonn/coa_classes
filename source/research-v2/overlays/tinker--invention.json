@@ -1,0 +1,972 @@
+{
+  "baseline": "tinker--invention.json",
+  "set": {
+    "identity": {
+      "fantasy": "A gadget medic who surrounds allies with beacons, nanobots, batteries, cleansers, Bandage Gun fire, and emergency repair devices.",
+      "one_line": "Select a gun augment, maintain Nanobots, place and overcharge the correct beacon, then use Zap and Medkit for recovery.",
+      "primary_family": "strategists",
+      "also_fits": [
+        "commanders"
+      ],
+      "playstyle_tags": [
+        "device-area-healer",
+        "prepared-healer",
+        "emergency-toolbox"
+      ],
+      "claim_ids": [
+        "talent:tinker/invention:28-74-4-0",
+        "talent:tinker/invention:28-74-2-1",
+        "talent:tinker/invention:28-74-6-1",
+        "talent:tinker/invention:28-74-0-2",
+        "observed:tinker/invention:healing-loop",
+        "observed:tinker/invention:beacon-choice",
+        "inference:tinker/invention:playstyle-identity"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "A gadget healer using restorative beacons, ZIGGI-6K, nanobots, Stim effects, Bandage Gun, battery stations, cleansers, and emergency repairs. It excels at prepared area support and recovery tools but depends on placement and device cooldown awareness.",
+      "single_target": "On durable targets, the structural path grows from Build, Build, Over-Repaired toward Epiphany!, Combat Symbiosis, Emergency Enhancer. A precise priority remains limited to the captured build and community evidence.",
+      "aoe": "For multiple targets, Select a gun augment, maintain Nanobots, place and overcharge the correct beacon, then use Zap and Medkit for recovery. The current evidence particularly constrains this through: Players swap health, resource and defensive beacons and overcharge them; Replenishment anchors mana.",
+      "movement_and_target_switching": "Hybrid range helps reposition, while persistent support devices reward anticipating movement.",
+      "defense_and_control": "Its structural defensive package includes Build, Build, Over-Repaired, Stim Augmentation, Technician.",
+      "group_utility": "Group or control tools include Build, Nanobot Swarm, Fine Tuning, Zap!, Cybernetic Revivification.",
+      "failure_modes": [
+        {
+          "text": "Placing beacons or stations where the group cannot use them leaves emergency repairs carrying the entire event.",
+          "claim_ids": [
+            "inference:tinker/invention:failure-cost",
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1"
+          ]
+        },
+        {
+          "text": "Losing setup before payoff forces another recovery cycle.",
+          "claim_ids": [
+            "inference:tinker/invention:failure-cost",
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1"
+          ]
+        },
+        {
+          "text": "Losing setup before payoff forces another recovery cycle.",
+          "claim_ids": [
+            "inference:tinker/invention:failure-cost",
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "talent:tinker/invention:28-74-4-0",
+        "talent:tinker/invention:28-74-2-1",
+        "talent:tinker/invention:28-74-6-1",
+        "talent:tinker/invention:28-74-0-2",
+        "talent:tinker/invention:28-74-4-2",
+        "observed:tinker/invention:healing-loop",
+        "observed:tinker/invention:beacon-choice",
+        "observed:tinker/invention:leveling-flexibility",
+        "observed:tinker/invention:build-practice",
+        "inference:tinker/invention:playstyle-identity"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "Early pet and repair tools enable safe soloing.",
+        "strengths": [
+          "Core identity",
+          "Readable payoff"
+        ],
+        "cautions": [
+          "Incomplete kit",
+          "Sparse guidance"
+        ],
+        "claim_ids": [
+          "talent:tinker/invention:28-74-4-0",
+          "talent:tinker/invention:28-74-2-1",
+          "talent:tinker/invention:28-74-6-1",
+          "talent:tinker/invention:28-74-0-2",
+          "observed:tinker/invention:healing-loop",
+          "observed:tinker/invention:beacon-choice",
+          "observed:tinker/invention:leveling-flexibility",
+          "inference:tinker/invention:playstyle-identity"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "Radiator, Nanobots and beacons create the dungeon engine near 30.",
+        "strengths": [
+          "Complete engine",
+          "Better coverage"
+        ],
+        "cautions": [
+          "More states",
+          "Unlock dependent"
+        ],
+        "claim_ids": [
+          "talent:tinker/invention:28-74-4-0",
+          "talent:tinker/invention:28-74-2-1",
+          "talent:tinker/invention:28-74-6-1",
+          "talent:tinker/invention:28-74-0-2",
+          "observed:tinker/invention:healing-loop",
+          "observed:tinker/invention:beacon-choice",
+          "observed:tinker/invention:leveling-flexibility",
+          "inference:tinker/invention:playstyle-identity"
+        ]
+      },
+      "level_50_60": {
+        "feel": "Late Invention is prepared area support with many devices.",
+        "strengths": [
+          "Late package",
+          "Higher ceiling"
+        ],
+        "cautions": [
+          "Unsettled priority",
+          "Tracking"
+        ],
+        "claim_ids": [
+          "talent:tinker/invention:28-74-4-0",
+          "talent:tinker/invention:28-74-2-1",
+          "talent:tinker/invention:28-74-6-1",
+          "talent:tinker/invention:28-74-0-2",
+          "observed:tinker/invention:healing-loop",
+          "observed:tinker/invention:beacon-choice",
+          "observed:tinker/invention:leveling-flexibility",
+          "inference:tinker/invention:playstyle-identity"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, On durable targets, the structural path grows from Build, Build, Over-Repaired toward Epiphany!, Combat Symbiosis, Emergency Enhancer. A precise priority remains limited to the captured build and community evidence.",
+        "strengths": [
+          "Durable payoff",
+          "Repeatable loop"
+        ],
+        "cautions": [
+          "Movement",
+          "Repeated errors"
+        ],
+        "claim_ids": [
+          "talent:tinker/invention:28-74-4-0",
+          "talent:tinker/invention:28-74-2-1",
+          "talent:tinker/invention:28-74-6-1",
+          "talent:tinker/invention:28-74-0-2",
+          "observed:tinker/invention:healing-loop",
+          "observed:tinker/invention:beacon-choice",
+          "observed:tinker/invention:leveling-flexibility",
+          "inference:tinker/invention:playstyle-identity"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, For multiple targets, Select a gun augment, maintain Nanobots, place and overcharge the correct beacon, then use Zap and Medkit for recovery. The current evidence particularly constrains this through: Players swap health, resource and defensive beacons and overcharge them; Replenishment anchors mana.",
+        "strengths": [
+          "Pack tools",
+          "Utility"
+        ],
+        "cautions": [
+          "Short packs",
+          "Position"
+        ],
+        "claim_ids": [
+          "talent:tinker/invention:28-74-4-0",
+          "talent:tinker/invention:28-74-2-1",
+          "talent:tinker/invention:28-74-6-1",
+          "talent:tinker/invention:28-74-0-2",
+          "observed:tinker/invention:healing-loop",
+          "observed:tinker/invention:beacon-choice",
+          "observed:tinker/invention:leveling-flexibility",
+          "inference:tinker/invention:playstyle-identity"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, Hybrid range helps reposition, while persistent support devices reward anticipating movement. Its structural defensive package includes Build, Build, Over-Repaired, Stim Augmentation, Technician.",
+        "strengths": [
+          "Control",
+          "Pressure"
+        ],
+        "cautions": [
+          "Disruption",
+          "Defense"
+        ],
+        "claim_ids": [
+          "talent:tinker/invention:28-74-4-0",
+          "talent:tinker/invention:28-74-2-1",
+          "talent:tinker/invention:28-74-6-1",
+          "talent:tinker/invention:28-74-0-2",
+          "observed:tinker/invention:healing-loop",
+          "observed:tinker/invention:beacon-choice",
+          "observed:tinker/invention:leveling-flexibility",
+          "inference:tinker/invention:playstyle-identity"
+        ]
+      }
+    },
+    "complexity": {
+      "core_actions": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "The active bar follows this loop: A gadget healer using restorative beacons, ZIGGI-6K, nanobots, Stim effects, Bandage Gun, battery stations, cleansers, and emergency repairs. It excels at prepared area support and recovery tools but depends on placement and device cooldown awareness. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "The active bar follows this loop: A gadget healer using restorative beacons, ZIGGI-6K, nanobots, Stim effects, Bandage Gun, battery stations, cleansers, and emergency repairs. It excels at prepared area support and recovery tools but depends on placement and device cooldown awareness. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "The active bar follows this loop: A gadget healer using restorative beacons, ZIGGI-6K, nanobots, Stim effects, Bandage Gun, battery stations, cleansers, and emergency repairs. It excels at prepared area support and recovery tools but depends on placement and device cooldown awareness. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "The active bar follows this loop: A gadget healer using restorative beacons, ZIGGI-6K, nanobots, Stim effects, Bandage Gun, battery stations, cleansers, and emergency repairs. It excels at prepared area support and recovery tools but depends on placement and device cooldown awareness. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "The active bar follows this loop: A gadget healer using restorative beacons, ZIGGI-6K, nanobots, Stim effects, Bandage Gun, battery stations, cleansers, and emergency repairs. It excels at prepared area support and recovery tools but depends on placement and device cooldown awareness. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "The active bar follows this loop: A gadget healer using restorative beacons, ZIGGI-6K, nanobots, Stim effects, Bandage Gun, battery stations, cleansers, and emergency repairs. It excels at prepared area support and recovery tools but depends on placement and device cooldown awareness. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        }
+      },
+      "state_tracking": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Build, Build, Over-Repaired toward Epiphany!, Combat Symbiosis, Emergency Enhancer. A precise priority remains limited to the captured build and community evidence. must be tracked. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Build, Build, Over-Repaired toward Epiphany!, Combat Symbiosis, Emergency Enhancer. A precise priority remains limited to the captured build and community evidence. must be tracked. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Build, Build, Over-Repaired toward Epiphany!, Combat Symbiosis, Emergency Enhancer. A precise priority remains limited to the captured build and community evidence. must be tracked. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Build, Build, Over-Repaired toward Epiphany!, Combat Symbiosis, Emergency Enhancer. A precise priority remains limited to the captured build and community evidence. must be tracked. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Build, Build, Over-Repaired toward Epiphany!, Combat Symbiosis, Emergency Enhancer. A precise priority remains limited to the captured build and community evidence. must be tracked. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Build, Build, Over-Repaired toward Epiphany!, Combat Symbiosis, Emergency Enhancer. A precise priority remains limited to the captured build and community evidence. must be tracked. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Select a gun augment, maintain Nanobots, place and overcharge the correct beacon, then use Zap and Medkit for recovery. The current evidence particularly constrains this through: Players swap health, resource and defensive beacons and overcharge them; Replenishment anchors mana. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Select a gun augment, maintain Nanobots, place and overcharge the correct beacon, then use Zap and Medkit for recovery. The current evidence particularly constrains this through: Players swap health, resource and defensive beacons and overcharge them; Replenishment anchors mana. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Select a gun augment, maintain Nanobots, place and overcharge the correct beacon, then use Zap and Medkit for recovery. The current evidence particularly constrains this through: Players swap health, resource and defensive beacons and overcharge them; Replenishment anchors mana. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Select a gun augment, maintain Nanobots, place and overcharge the correct beacon, then use Zap and Medkit for recovery. The current evidence particularly constrains this through: Players swap health, resource and defensive beacons and overcharge them; Replenishment anchors mana. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Select a gun augment, maintain Nanobots, place and overcharge the correct beacon, then use Zap and Medkit for recovery. The current evidence particularly constrains this through: Players swap health, resource and defensive beacons and overcharge them; Replenishment anchors mana. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Select a gun augment, maintain Nanobots, place and overcharge the correct beacon, then use Zap and Medkit for recovery. The current evidence particularly constrains this through: Players swap health, resource and defensive beacons and overcharge them; Replenishment anchors mana. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Target count, movement and pressure alter the next action. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Target count, movement and pressure alter the next action. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Target count, movement and pressure alter the next action. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Target count, movement and pressure alter the next action. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Target count, movement and pressure alter the next action. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Target count, movement and pressure alter the next action. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Execution depends on Hybrid range helps reposition, while persistent support devices reward anticipating movement. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Execution depends on Hybrid range helps reposition, while persistent support devices reward anticipating movement. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Execution depends on Hybrid range helps reposition, while persistent support devices reward anticipating movement. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Execution depends on Hybrid range helps reposition, while persistent support devices reward anticipating movement. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Execution depends on Hybrid range helps reposition, while persistent support devices reward anticipating movement. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Execution depends on Hybrid range helps reposition, while persistent support devices reward anticipating movement. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        }
+      },
+      "failure_cost": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Placing beacons or stations where the group cannot use them leaves emergency repairs carrying the entire event. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Placing beacons or stations where the group cannot use them leaves emergency repairs carrying the entire event. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Placing beacons or stations where the group cannot use them leaves emergency repairs carrying the entire event. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Placing beacons or stations where the group cannot use them leaves emergency repairs carrying the entire event. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Placing beacons or stations where the group cannot use them leaves emergency repairs carrying the entire event. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Placing beacons or stations where the group cannot use them leaves emergency repairs carrying the entire event. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1",
+            "talent:tinker/invention:28-74-6-1",
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You want this exact fantasy and decision loop.",
+          "claim_ids": [
+            "inference:tinker/invention:playstyle-identity",
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1"
+          ]
+        },
+        {
+          "text": "You enjoy a cadence that changes with late talents.",
+          "claim_ids": [
+            "inference:tinker/invention:playstyle-identity",
+            "talent:tinker/invention:28-74-4-0",
+            "talent:tinker/invention:28-74-2-1"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You want the complete rotation immediately.",
+          "claim_ids": [
+            "inference:tinker/invention:failure-cost",
+            "observed:tinker/invention:healing-loop"
+          ]
+        },
+        {
+          "text": "You dislike setup loss to movement.",
+          "claim_ids": [
+            "inference:tinker/invention:failure-cost",
+            "observed:tinker/invention:healing-loop"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Chill healing, passive damage and utility are praised.",
+          "claim_ids": [
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "observed:tinker/invention:build-practice"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Beacon placement and gadget overload frustrate.",
+          "claim_ids": [
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "inference:tinker/invention:failure-cost"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "Power anecdotes, popularity and subjective fun remain separate evidence.",
+          "claim_ids": [
+            "observed:tinker/invention:healing-loop",
+            "observed:tinker/invention:beacon-choice",
+            "observed:tinker/invention:leveling-flexibility",
+            "observed:tinker/invention:performance-context"
+          ]
+        }
+      ]
+    },
+    "performance_signal_ids": [
+      "observed:tinker/invention:performance-context"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "manual_recent_source_review",
+      "performance": "limited_uncontrolled",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium",
+      "gaps": [
+        "No verified current full-rotation video.",
+        "Priority breakpoints remain unverified."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "Early pet and repair tools enable safe soloing.",
+      "observed_changes": [
+        "Incomplete kit",
+        "Sparse guidance"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "Early pet and repair tools enable safe soloing.",
+      "observed_changes": [
+        "Incomplete kit",
+        "Sparse guidance"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "Radiator, Nanobots and beacons create the dungeon engine near 30.",
+      "observed_changes": [
+        "More states",
+        "Unlock dependent"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "Radiator, Nanobots and beacons create the dungeon engine near 30.",
+      "observed_changes": [
+        "More states",
+        "Unlock dependent"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "Late Invention is prepared area support with many devices.",
+      "observed_changes": [
+        "Unsettled priority",
+        "Tracking"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:tinker/invention:healing-loop",
+      "kind": "observed",
+      "text": "A detailed summary describes Nanobots, instant spells, passive gun damage and beacons as the normal floor.",
+      "source_ids": [
+        "reddit:tinker-status-2026-07-09",
+        "reddit:tinker-enjoyers-2026-07-12",
+        "reddit:tinker-invention-2026-07-16"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:tinker/invention:beacon-choice",
+      "kind": "observed",
+      "text": "Players swap health, resource and defensive beacons and overcharge them; Replenishment anchors mana.",
+      "source_ids": [
+        "reddit:tinker-status-2026-07-09",
+        "reddit:tinker-enjoyers-2026-07-12",
+        "reddit:tinker-invention-2026-07-16"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:tinker/invention:leveling-flexibility",
+      "kind": "observed",
+      "text": "Levelers report safe questing through pet, turret, long HoT and Intellect scaling.",
+      "source_ids": [
+        "reddit:tinker-status-2026-07-09",
+        "reddit:tinker-enjoyers-2026-07-12",
+        "reddit:tinker-invention-2026-07-16"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:tinker/invention:build-practice",
+      "kind": "observed",
+      "text": "The leading build emphasizes Nanobots and explosive support.",
+      "source_ids": [
+        "buildhub-builds-2026-08-05",
+        "buildhub:1caf4376-e491-4896-a12e-bcddfb926158"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "community_build_snapshot"
+        ],
+        "build_or_mode": [
+          "documented_build"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The guide documents one current way to play; it is not treated as proof of optimality."
+    },
+    {
+      "id": "observed:tinker/invention:performance-context",
+      "kind": "observed",
+      "text": "No healer DPS; 116 records indicate use only.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "uncontrolled_performance_signals"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "low",
+      "conflicts_with": [],
+      "notes": "Do not convert this into a tier ranking."
+    },
+    {
+      "id": "inference:tinker/invention:playstyle-identity",
+      "kind": "inference",
+      "text": "A gadget medic who surrounds allies with beacons, nanobots, batteries, cleansers, Bandage Gun fire, and emergency repair devices.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:tinker/invention:28-74-4-0",
+        "talent:tinker/invention:28-74-2-1",
+        "talent:tinker/invention:28-74-6-1",
+        "talent:tinker/invention:28-74-0-2",
+        "observed:tinker/invention:healing-loop",
+        "observed:tinker/invention:beacon-choice"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Descriptive playstyle classification, not an official label."
+    },
+    {
+      "id": "inference:tinker/invention:failure-cost",
+      "kind": "inference",
+      "text": "Placing beacons or stations where the group cannot use them leaves emergency repairs carrying the entire event.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:tinker/invention:28-74-4-0",
+        "talent:tinker/invention:28-74-2-1",
+        "talent:tinker/invention:28-74-6-1",
+        "talent:tinker/invention:28-74-0-2",
+        "talent:tinker/invention:28-74-4-2",
+        "observed:tinker/invention:healing-loop",
+        "observed:tinker/invention:beacon-choice",
+        "observed:tinker/invention:leveling-flexibility"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Direction is supported; exact throughput cost is not measured."
+    }
+  ]
+}

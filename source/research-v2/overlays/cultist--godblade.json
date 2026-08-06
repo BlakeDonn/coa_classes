@@ -1,0 +1,972 @@
+{
+  "baseline": "cultist--godblade.json",
+  "set": {
+    "identity": {
+      "fantasy": "A Void-infused two-handed bruiser who deliberately flirts with madness, tears open damaging zones, and turns a full Insanity bar into a dangerous burst form.",
+      "one_line": "Build Insanity, establish Rift and tentacle pressure, then decide whether the target and incoming damage justify crossing 100 for Voidborne and repeated Hammer or Entropic Slam payoffs.",
+      "primary_family": "sequencers",
+      "also_fits": [
+        "planners"
+      ],
+      "playstyle_tags": [
+        "void-hybrid-bruiser",
+        "insanity-melee",
+        "zone-summoner"
+      ],
+      "claim_ids": [
+        "talent:cultist/godblade:25-64-4-0",
+        "talent:cultist/godblade:25-64-6-8",
+        "talent:cultist/godblade:25-64-4-1",
+        "talent:cultist/godblade:25-64-4-9",
+        "observed:cultist/godblade:pve-insanity-window",
+        "observed:cultist/godblade:pvp-burst-window",
+        "inference:cultist/godblade:playstyle-identity"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "Use weapon attacks and Cultist abilities to climb toward the Insanity threshold, establish Rift and summoned pressure, then spend the short Voidborne window on Rifted Hammer of Twilight and the correct single-target or multi-target strike. PvE practice can embrace 100 Insanity; PvP practice generally treats it as a timed risk.",
+      "single_target": "Current build guidance favors Rifted Hammer of Twilight on cooldown and Entropic Slam or Hammer follow-ups, with a slow heavy two-hander magnifying the large hits.",
+      "aoe": "Build Insanity while a pull gathers, place Rift and tentacle effects where the pack will remain, then use Hammer and Entropic Slam. The payoff is large but loses value when a tank drags the pack away.",
+      "movement_and_target_switching": "Melee range and ground-bound summons make moving enemies costly. Mounted and Cultist control tools help reconnect, but target swaps can strand a prepared Rift.",
+      "defense_and_control": "Voidborne can provide a burst and stun-immune window; Cultist absorbs, fears, and healing tools cover emergencies. At 100 Insanity the extra damage taken makes defense part of the burst decision.",
+      "group_utility": "Empire's Grasp, fear effects, healing denial, and Cultist utility matter beyond raw damage, particularly against healers.",
+      "failure_modes": [
+        {
+          "text": "Crossing 100 Insanity without a kill or defensive plan exposes the player to the same amplified damage that fuels the burst.",
+          "claim_ids": [
+            "inference:cultist/godblade:failure-cost",
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1"
+          ]
+        },
+        {
+          "text": "Dropping Rift, Hammer, or tentacles before the target is stationary wastes a large share of the planned window.",
+          "claim_ids": [
+            "inference:cultist/godblade:failure-cost",
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1"
+          ]
+        },
+        {
+          "text": "Spending or suppressing Insanity too conservatively in PvE can miss the spec's defining damage state.",
+          "claim_ids": [
+            "inference:cultist/godblade:failure-cost",
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "talent:cultist/godblade:25-64-4-0",
+        "talent:cultist/godblade:25-64-6-8",
+        "talent:cultist/godblade:25-64-4-1",
+        "talent:cultist/godblade:25-64-4-9",
+        "talent:cultist/godblade:25-64-2-9",
+        "observed:cultist/godblade:pve-insanity-window",
+        "observed:cultist/godblade:pvp-burst-window",
+        "observed:cultist/godblade:gear-and-priority",
+        "observed:cultist/godblade:build-practice",
+        "inference:cultist/godblade:playstyle-identity"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "A heavy melee builder with early Rift and Hand of N'Zoth pieces, but without the full transformation payoff.",
+        "strengths": [
+          "Readable large hits",
+          "Early zone identity"
+        ],
+        "cautions": [
+          "Incomplete Insanity economy",
+          "Limited recovery after a bad pull"
+        ],
+        "claim_ids": [
+          "talent:cultist/godblade:25-64-4-0",
+          "talent:cultist/godblade:25-64-6-8",
+          "talent:cultist/godblade:25-64-4-1",
+          "talent:cultist/godblade:25-64-4-9",
+          "observed:cultist/godblade:pve-insanity-window",
+          "observed:cultist/godblade:pvp-burst-window",
+          "observed:cultist/godblade:gear-and-priority",
+          "inference:cultist/godblade:playstyle-identity"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "The weapon-and-madness loop becomes coherent: bank Insanity while gathering, then line up Rift, Hammer, and Voidborne.",
+        "strengths": [
+          "Strong pack burst",
+          "Distinct risk-reward rhythm"
+        ],
+        "cautions": [
+          "Zone placement matters",
+          "Melee downtime delays the window"
+        ],
+        "claim_ids": [
+          "talent:cultist/godblade:25-64-4-0",
+          "talent:cultist/godblade:25-64-6-8",
+          "talent:cultist/godblade:25-64-4-1",
+          "talent:cultist/godblade:25-64-4-9",
+          "observed:cultist/godblade:pve-insanity-window",
+          "observed:cultist/godblade:pvp-burst-window",
+          "observed:cultist/godblade:gear-and-priority",
+          "inference:cultist/godblade:playstyle-identity"
+        ]
+      },
+      "level_50_60": {
+        "feel": "A deliberate high-risk bruiser that can sit near 100 or cross it for enormous PvE pressure, while PvP demands much stricter timing.",
+        "strengths": [
+          "Large burst ceiling",
+          "Strong anti-healer utility"
+        ],
+        "cautions": [
+          "Full Insanity amplifies incoming damage",
+          "Current optimal PvE priority is build-specific"
+        ],
+        "claim_ids": [
+          "talent:cultist/godblade:25-64-4-0",
+          "talent:cultist/godblade:25-64-6-8",
+          "talent:cultist/godblade:25-64-4-1",
+          "talent:cultist/godblade:25-64-4-9",
+          "observed:cultist/godblade:pve-insanity-window",
+          "observed:cultist/godblade:pvp-burst-window",
+          "observed:cultist/godblade:gear-and-priority",
+          "inference:cultist/godblade:playstyle-identity"
+        ]
+      },
+      "boss": {
+        "feel": "Prepare Insanity and Rift before committing the big Hammer sequence, then keep melee uptime through the transformation.",
+        "strengths": [
+          "Controllable burst timing",
+          "Good durable-target payoff"
+        ],
+        "cautions": [
+          "Forced movement can waste the zone",
+          "A failed 100-Insanity window is expensive"
+        ],
+        "claim_ids": [
+          "talent:cultist/godblade:25-64-4-0",
+          "talent:cultist/godblade:25-64-6-8",
+          "talent:cultist/godblade:25-64-4-1",
+          "talent:cultist/godblade:25-64-4-9",
+          "observed:cultist/godblade:pve-insanity-window",
+          "observed:cultist/godblade:pvp-burst-window",
+          "observed:cultist/godblade:gear-and-priority",
+          "inference:cultist/godblade:playstyle-identity"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "Gather, prebuild, plant the void zone, and detonate the pack with Hammer and Slam.",
+        "strengths": [
+          "High stacked-pack payoff",
+          "Useful grip and control"
+        ],
+        "cautions": [
+          "Moving tanks break setup",
+          "Risk rises when many enemies hit during 100 Insanity"
+        ],
+        "claim_ids": [
+          "talent:cultist/godblade:25-64-4-0",
+          "talent:cultist/godblade:25-64-6-8",
+          "talent:cultist/godblade:25-64-4-1",
+          "talent:cultist/godblade:25-64-4-9",
+          "observed:cultist/godblade:pve-insanity-window",
+          "observed:cultist/godblade:pvp-burst-window",
+          "observed:cultist/godblade:gear-and-priority",
+          "inference:cultist/godblade:playstyle-identity"
+        ]
+      },
+      "pvp": {
+        "feel": "A burst bruiser that threatens healers through huge hits and healing denial, but must enter madness only when crowd control and return damage are accounted for.",
+        "strengths": [
+          "Explosive multi-target moments",
+          "Meaningful anti-heal utility"
+        ],
+        "cautions": [
+          "Can be kited outside cooldowns",
+          "Bad Insanity timing is punishable"
+        ],
+        "claim_ids": [
+          "talent:cultist/godblade:25-64-4-0",
+          "talent:cultist/godblade:25-64-6-8",
+          "talent:cultist/godblade:25-64-4-1",
+          "talent:cultist/godblade:25-64-4-9",
+          "observed:cultist/godblade:pve-insanity-window",
+          "observed:cultist/godblade:pvp-burst-window",
+          "observed:cultist/godblade:gear-and-priority",
+          "inference:cultist/godblade:playstyle-identity"
+        ]
+      }
+    },
+    "complexity": {
+      "core_actions": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "The regular bar combines melee generators, Rift, Hammer, a spender, summons, utility, and a transformation cooldown. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "The regular bar combines melee generators, Rift, Hammer, a spender, summons, utility, and a transformation cooldown. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "The regular bar combines melee generators, Rift, Hammer, a spender, summons, utility, and a transformation cooldown. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate",
+          "reason": "The regular bar combines melee generators, Rift, Hammer, a spender, summons, utility, and a transformation cooldown. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "The regular bar combines melee generators, Rift, Hammer, a spender, summons, utility, and a transformation cooldown. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "The regular bar combines melee generators, Rift, Hammer, a spender, summons, utility, and a transformation cooldown. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        }
+      },
+      "state_tracking": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Insanity amount, Voidborne duration, Rift location, summoned-zone duration, and healing-denial opportunities all compete for attention. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Insanity amount, Voidborne duration, Rift location, summoned-zone duration, and healing-denial opportunities all compete for attention. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Insanity amount, Voidborne duration, Rift location, summoned-zone duration, and healing-denial opportunities all compete for attention. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "Insanity amount, Voidborne duration, Rift location, summoned-zone duration, and healing-denial opportunities all compete for attention. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Insanity amount, Voidborne duration, Rift location, summoned-zone duration, and healing-denial opportunities all compete for attention. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Insanity amount, Voidborne duration, Rift location, summoned-zone duration, and healing-denial opportunities all compete for attention. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Meaningful damage begins before the payoff through Insanity banking and zone placement. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Meaningful damage begins before the payoff through Insanity banking and zone placement. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Meaningful damage begins before the payoff through Insanity banking and zone placement. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "Meaningful damage begins before the payoff through Insanity banking and zone placement. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Meaningful damage begins before the payoff through Insanity banking and zone placement. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Meaningful damage begins before the payoff through Insanity banking and zone placement. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "leveling_10_29": {
+          "value": "low-moderate",
+          "reason": "The player must choose between staying safe below the threshold and crossing it for damage, while reacting to target movement. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "The player must choose between staying safe below the threshold and crossing it for damage, while reacting to target movement. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "The player must choose between staying safe below the threshold and crossing it for damage, while reacting to target movement. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate",
+          "reason": "The player must choose between staying safe below the threshold and crossing it for damage, while reacting to target movement. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "The player must choose between staying safe below the threshold and crossing it for damage, while reacting to target movement. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "The player must choose between staying safe below the threshold and crossing it for damage, while reacting to target movement. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Melee uptime and keeping enemies inside Rift and Hammer coverage determine whether the planned burst lands. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Melee uptime and keeping enemies inside Rift and Hammer coverage determine whether the planned burst lands. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Melee uptime and keeping enemies inside Rift and Hammer coverage determine whether the planned burst lands. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "Melee uptime and keeping enemies inside Rift and Hammer coverage determine whether the planned burst lands. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Melee uptime and keeping enemies inside Rift and Hammer coverage determine whether the planned burst lands. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Melee uptime and keeping enemies inside Rift and Hammer coverage determine whether the planned burst lands. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        }
+      },
+      "failure_cost": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "A mistimed 100-Insanity window simultaneously wastes offensive setup and increases incoming damage. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "A mistimed 100-Insanity window simultaneously wastes offensive setup and increases incoming damage. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "A mistimed 100-Insanity window simultaneously wastes offensive setup and increases incoming damage. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "A mistimed 100-Insanity window simultaneously wastes offensive setup and increases incoming damage. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "A mistimed 100-Insanity window simultaneously wastes offensive setup and increases incoming damage. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "A mistimed 100-Insanity window simultaneously wastes offensive setup and increases incoming damage. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8",
+            "talent:cultist/godblade:25-64-4-1",
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You enjoy visibly risky burst windows instead of a flat melee priority.",
+          "claim_ids": [
+            "inference:cultist/godblade:playstyle-identity",
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8"
+          ]
+        },
+        {
+          "text": "You want a heavy-weapon fighter with zones, summons, grips, and anti-heal utility.",
+          "claim_ids": [
+            "inference:cultist/godblade:playstyle-identity",
+            "talent:cultist/godblade:25-64-4-0",
+            "talent:cultist/godblade:25-64-6-8"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You dislike taking extra damage as the price of maximum throughput.",
+          "claim_ids": [
+            "inference:cultist/godblade:failure-cost",
+            "observed:cultist/godblade:pve-insanity-window"
+          ]
+        },
+        {
+          "text": "You want damage that follows a moving target without setup loss.",
+          "claim_ids": [
+            "inference:cultist/godblade:failure-cost",
+            "observed:cultist/godblade:pve-insanity-window"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Players praise the huge visual and numerical payoff when a prepared Rift, Hammer, and full-Insanity window connect.",
+          "claim_ids": [
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "observed:cultist/godblade:build-practice"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "The common frustration is feeling weak or kiteable outside cooldowns, especially before the level-60 package is assembled.",
+          "claim_ids": [
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "inference:cultist/godblade:failure-cost"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "Reports range from top-damage PvE anecdotes to PvP complaints about being fragile; neither side controls for gear, bracket, or matchup.",
+          "claim_ids": [
+            "observed:cultist/godblade:pve-insanity-window",
+            "observed:cultist/godblade:pvp-burst-window",
+            "observed:cultist/godblade:gear-and-priority",
+            "observed:cultist/godblade:performance-context"
+          ]
+        }
+      ]
+    },
+    "performance_signal_ids": [
+      "observed:cultist/godblade:performance-context"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "manual_recent_source_review",
+      "performance": "limited_uncontrolled",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium",
+      "gaps": [
+        "No verified current full-encounter rotation video.",
+        "The exact safe Insanity threshold and best N'Zoth package vary by content and build."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "A heavy melee builder with early Rift and Hand of N'Zoth pieces, but without the full transformation payoff.",
+      "observed_changes": [
+        "Incomplete Insanity economy",
+        "Limited recovery after a bad pull"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "A heavy melee builder with early Rift and Hand of N'Zoth pieces, but without the full transformation payoff.",
+      "observed_changes": [
+        "Incomplete Insanity economy",
+        "Limited recovery after a bad pull"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "The weapon-and-madness loop becomes coherent: bank Insanity while gathering, then line up Rift, Hammer, and Voidborne.",
+      "observed_changes": [
+        "Zone placement matters",
+        "Melee downtime delays the window"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "The weapon-and-madness loop becomes coherent: bank Insanity while gathering, then line up Rift, Hammer, and Voidborne.",
+      "observed_changes": [
+        "Zone placement matters",
+        "Melee downtime delays the window"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "A deliberate high-risk bruiser that can sit near 100 or cross it for enormous PvE pressure, while PvP demands much stricter timing.",
+      "observed_changes": [
+        "Full Insanity amplifies incoming damage",
+        "Current optimal PvE priority is build-specific"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:cultist/godblade:pve-insanity-window",
+      "kind": "observed",
+      "text": "Current PvE players describe intentionally reaching 100 Insanity for the damage-done amplification, then spamming the AoE slam and Rifted Hammer while accepting the matching increase to damage taken.",
+      "source_ids": [
+        "reddit:cultist-dps-2026-07-08",
+        "reddit:cultist-pvp-2026-08-01",
+        "reddit:cultist-heretic-2026-07-29"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:cultist/godblade:pvp-burst-window",
+      "kind": "observed",
+      "text": "Current PvP advice describes Godblade as cooldown-dependent but capable of mauling several players when its 100-Insanity burst is timed correctly; healing absorption is singled out as valuable against healers.",
+      "source_ids": [
+        "reddit:cultist-dps-2026-07-08",
+        "reddit:cultist-pvp-2026-08-01",
+        "reddit:cultist-heretic-2026-07-29"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:cultist/godblade:gear-and-priority",
+      "kind": "observed",
+      "text": "The captured Big Bonk guide recommends a slow large two-hander, prioritizes Rifted Hammer of Twilight, and distinguishes safer PvP Insanity management from aggressive PvE use.",
+      "source_ids": [
+        "reddit:cultist-dps-2026-07-08",
+        "reddit:cultist-pvp-2026-08-01",
+        "reddit:cultist-heretic-2026-07-29"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:cultist/godblade:build-practice",
+      "kind": "observed",
+      "text": "The captured Godblade Big Bonk guide documents Rifted Hammer on cooldown, PvE Insanity prebuilding, Entropic Slam for packs, and alternative N'Zoth cooldown packages rather than one universal setup.",
+      "source_ids": [
+        "buildhub-builds-2026-08-05",
+        "buildhub:f1209da4-7416-49df-b18a-b6f14fb4de1c"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "community_build_snapshot"
+        ],
+        "build_or_mode": [
+          "documented_build"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The guide documents one current way to play; it is not treated as proof of optimality."
+    },
+    {
+      "id": "observed:cultist/godblade:performance-context",
+      "kind": "observed",
+      "text": "The July damage compilation lists 4,127 DPS and the August inventory lists 169 Mythic records. These establish activity and a rough sample only, not comparative power.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "uncontrolled_performance_signals"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "low",
+      "conflicts_with": [],
+      "notes": "Do not convert this into a tier ranking."
+    },
+    {
+      "id": "inference:cultist/godblade:playstyle-identity",
+      "kind": "inference",
+      "text": "A Void-infused two-handed bruiser who deliberately flirts with madness, tears open damaging zones, and turns a full Insanity bar into a dangerous burst form.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:cultist/godblade:25-64-4-0",
+        "talent:cultist/godblade:25-64-6-8",
+        "talent:cultist/godblade:25-64-4-1",
+        "talent:cultist/godblade:25-64-4-9",
+        "observed:cultist/godblade:pve-insanity-window",
+        "observed:cultist/godblade:pvp-burst-window"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Descriptive playstyle classification, not an official label."
+    },
+    {
+      "id": "inference:cultist/godblade:failure-cost",
+      "kind": "inference",
+      "text": "Crossing 100 Insanity without a kill or defensive plan exposes the player to the same amplified damage that fuels the burst.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:cultist/godblade:25-64-4-0",
+        "talent:cultist/godblade:25-64-6-8",
+        "talent:cultist/godblade:25-64-4-1",
+        "talent:cultist/godblade:25-64-4-9",
+        "talent:cultist/godblade:25-64-2-9",
+        "observed:cultist/godblade:pve-insanity-window",
+        "observed:cultist/godblade:pvp-burst-window",
+        "observed:cultist/godblade:gear-and-priority"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Direction is supported; exact throughput cost is not measured."
+    }
+  ]
+}

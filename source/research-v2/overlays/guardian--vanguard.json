@@ -1,0 +1,943 @@
+{
+  "baseline": "guardian--vanguard.json",
+  "set": {
+    "identity": {
+      "fantasy": "A classic shield-wall commander who converts blocks, formations, Heavy Blow, retaliation, and barriers into stable front-line control.",
+      "primary_family": "strategists",
+      "also_fits": [
+        "marksmen"
+      ],
+      "playstyle_tags": [
+        "block-formation-tank",
+        "reactive-tank",
+        "easy-to-read-tank"
+      ],
+      "one_line": "A classic armored defender using Heavy Blow, block, retaliation, Hammer of the Law, Hold the Line, and layered barriers. It is direct, durable, and formation-oriented, making its identity easier to read than many CoA tanks.",
+      "claim_ids": [
+        "inference:guardian/vanguard:defensive-cost",
+        "talent:guardian/vanguard:18-7-4-0",
+        "talent:guardian/vanguard:18-7-10-0",
+        "talent:guardian/vanguard:18-7-10-2",
+        "observed:guardian/vanguard:performance",
+        "talent:guardian/vanguard:18-7-2-9",
+        "talent:guardian/vanguard:18-7-4-9",
+        "talent:guardian/vanguard:18-7-2-5"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "Stay in the appropriate tank formation, use Heavy Blow to maintain party mitigation, build block-driven Vanguard and Paragon states, answer pressure with Brace, barriers, and Hold the Line, and convert retaliation or Paragon Smash into threat and area damage.",
+      "single_target": "Heavy Blow, Hammer of the Law, retaliation, and block-triggered Paragon conversion form a direct boss loop around mitigation uptime.",
+      "aoe": "Heavy Blow modifiers, Hammer of the Law, Retaliation, Wreck Formation, and Paragon Smash provide formation-centered pack control.",
+      "movement_and_target_switching": "Line and Tower Formation, Hold the Line, and Guardian movement tools make positioning deliberate rather than highly mobile.",
+      "defense_and_control": "Block, Brace, Iron Barrier, Vanguard's Shield, High Guard, Bastion, and party mitigation from Heavy Blow create layered but legible defenses.",
+      "group_utility": "Formation effects, party damage reduction, barriers, and Guardian banners reinforce the shield-wall fantasy.",
+      "failure_modes": [
+        {
+          "text": "Dropping formation coverage or spending block and barrier tools together can leave the next damage event without an answer, though the baseline loop is comparatively forgiving.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost"
+          ]
+        },
+        {
+          "text": "Movement or a target swap can interrupt the intended payoff: line and tower formation, hold the line, and guardian movement tools make positioning deliberate rather than highly mobile.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance"
+          ]
+        },
+        {
+          "text": "Spending recovery or control too early leaves less protection for the next pressure event: block, brace, iron barrier, vanguard's shield, high guard, bastion, and party mitigation from heavy blow create layered but legible defenses.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "inference:guardian/vanguard:defensive-cost",
+        "talent:guardian/vanguard:18-7-4-0",
+        "talent:guardian/vanguard:18-7-10-0",
+        "talent:guardian/vanguard:18-7-10-2",
+        "observed:guardian/vanguard:performance",
+        "talent:guardian/vanguard:18-7-2-9",
+        "talent:guardian/vanguard:18-7-4-9",
+        "talent:guardian/vanguard:18-7-2-5"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "A direct shield tank with Heavy Blow, passive formation mitigation, early block scaling, and few hidden dependencies.",
+        "strengths": [
+          "Clear tank identity",
+          "Early damage reduction",
+          "Straightforward threat"
+        ],
+        "cautions": [
+          "Lower mobility than skirmisher tanks",
+          "Solo damage is not the primary strength"
+        ],
+        "claim_ids": [
+          "talent:guardian/vanguard:18-7-4-0",
+          "talent:guardian/vanguard:18-7-10-0",
+          "talent:guardian/vanguard:18-7-10-2",
+          "inference:guardian/vanguard:defensive-cost",
+          "observed:guardian/vanguard:performance",
+          "talent:guardian/vanguard:18-7-2-9",
+          "talent:guardian/vanguard:18-7-4-9",
+          "talent:guardian/vanguard:18-7-2-5"
+        ]
+      },
+      "level_50_60": {
+        "feel": "A fuller block engine that turns repeated blocks into Paragon Smash while layering High Guard and Bastion over a stable formation core.",
+        "strengths": [
+          "70 Mythic records",
+          "Readable mitigation model",
+          "Party-facing defense"
+        ],
+        "cautions": [
+          "The only captured Build Hub description is extremely brief",
+          "Tank DPS cannot measure durability"
+        ],
+        "claim_ids": [
+          "observed:guardian/vanguard:performance",
+          "talent:guardian/vanguard:18-7-2-9",
+          "talent:guardian/vanguard:18-7-4-9",
+          "inference:guardian/vanguard:defensive-cost",
+          "talent:guardian/vanguard:18-7-4-0",
+          "talent:guardian/vanguard:18-7-10-0",
+          "talent:guardian/vanguard:18-7-10-2",
+          "talent:guardian/vanguard:18-7-2-5"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "By levels 30-49, stay in the appropriate tank formation, use heavy blow to maintain party mitigation, build block-driven vanguard and paragon states, answer pressure with brace, barriers, and hold the line, and convert retaliation or paragon smash into threat and area damage.",
+        "strengths": [
+          "Core engine is online",
+          "More complete target coverage"
+        ],
+        "cautions": [
+          "Late talents still change the ceiling",
+          "Line and Tower Formation, Hold the Line, and Guardian movement tools make positioning deliberate rather than highly mobile"
+        ],
+        "claim_ids": [
+          "inference:guardian/vanguard:defensive-cost",
+          "talent:guardian/vanguard:18-7-4-0",
+          "talent:guardian/vanguard:18-7-10-0",
+          "talent:guardian/vanguard:18-7-10-2",
+          "observed:guardian/vanguard:performance",
+          "talent:guardian/vanguard:18-7-2-9",
+          "talent:guardian/vanguard:18-7-4-9",
+          "talent:guardian/vanguard:18-7-2-5"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, heavy blow, hammer of the law, retaliation, and block-triggered paragon conversion form a direct boss loop around mitigation uptime.",
+        "strengths": [
+          "Durable targets preserve the full loop",
+          "Cooldowns can be planned"
+        ],
+        "cautions": [
+          "Movement can break setup",
+          "Repeated errors remain visible"
+        ],
+        "claim_ids": [
+          "inference:guardian/vanguard:defensive-cost",
+          "talent:guardian/vanguard:18-7-4-0",
+          "talent:guardian/vanguard:18-7-10-0",
+          "talent:guardian/vanguard:18-7-10-2",
+          "observed:guardian/vanguard:performance",
+          "talent:guardian/vanguard:18-7-2-9",
+          "talent:guardian/vanguard:18-7-4-9",
+          "talent:guardian/vanguard:18-7-2-5"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, heavy blow modifiers, hammer of the law, retaliation, wreck formation, and paragon smash provide formation-centered pack control.",
+        "strengths": [
+          "Pack tools express the spec clearly",
+          "Group utility has regular value"
+        ],
+        "cautions": [
+          "Short-lived targets can erase setup",
+          "Tank movement changes the plan"
+        ],
+        "claim_ids": [
+          "inference:guardian/vanguard:defensive-cost",
+          "talent:guardian/vanguard:18-7-4-0",
+          "talent:guardian/vanguard:18-7-10-0",
+          "talent:guardian/vanguard:18-7-10-2",
+          "observed:guardian/vanguard:performance",
+          "talent:guardian/vanguard:18-7-2-9",
+          "talent:guardian/vanguard:18-7-4-9",
+          "talent:guardian/vanguard:18-7-2-5"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, line and tower formation, hold the line, and guardian movement tools make positioning deliberate rather than highly mobile. Block, Brace, Iron Barrier, Vanguard's Shield, High Guard, Bastion, and party mitigation from Heavy Blow create layered but legible defenses.",
+        "strengths": [
+          "Control and utility create options",
+          "Target swaps can reward flexibility"
+        ],
+        "cautions": [
+          "Disruption makes the loop less predictable",
+          "Defensive timing is punishable"
+        ],
+        "claim_ids": [
+          "inference:guardian/vanguard:defensive-cost",
+          "talent:guardian/vanguard:18-7-4-0",
+          "talent:guardian/vanguard:18-7-10-0",
+          "talent:guardian/vanguard:18-7-10-2",
+          "observed:guardian/vanguard:performance",
+          "talent:guardian/vanguard:18-7-2-9",
+          "talent:guardian/vanguard:18-7-4-9",
+          "talent:guardian/vanguard:18-7-2-5"
+        ]
+      }
+    },
+    "complexity": {
+      "core_actions": {
+        "dungeon_aoe": {
+          "value": "low-moderate",
+          "reason": "Heavy Blow, formation uptime, block conversion, threat attacks, and defensive responses form a readable core.",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-2-9",
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Stay in the appropriate tank formation, use Heavy Blow to maintain party mitigation, build block-driven Vanguard and Paragon states, answer pressure with Brace, barriers, and Hold the Line, and convert retaliation or Paragon Smash into threat and area damage. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Stay in the appropriate tank formation, use Heavy Blow to maintain party mitigation, build block-driven Vanguard and Paragon states, answer pressure with Brace, barriers, and Hold the Line, and convert retaliation or Paragon Smash into threat and area damage. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        },
+        "level_50_60": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Stay in the appropriate tank formation, use Heavy Blow to maintain party mitigation, build block-driven Vanguard and Paragon states, answer pressure with Brace, barriers, and Hold the Line, and convert retaliation or Paragon Smash into threat and area damage. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        },
+        "boss": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Stay in the appropriate tank formation, use Heavy Blow to maintain party mitigation, build block-driven Vanguard and Paragon states, answer pressure with Brace, barriers, and Hold the Line, and convert retaliation or Paragon Smash into threat and area damage. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Stay in the appropriate tank formation, use Heavy Blow to maintain party mitigation, build block-driven Vanguard and Paragon states, answer pressure with Brace, barriers, and Hold the Line, and convert retaliation or Paragon Smash into threat and area damage. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Brace, barriers, block windows, Hold the Line, High Guard, and Bastion still require encounter-timed defensive routing.",
+          "claim_ids": [
+            "talent:guardian/vanguard:18-7-2-5",
+            "talent:guardian/vanguard:18-7-10-8",
+            "talent:guardian/vanguard:18-7-4-9",
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Target count, incoming pressure, and movement change the next action; block, brace, iron barrier, vanguard's shield, high guard, bastion, and party mitigation from heavy blow create layered but legible defenses. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Target count, incoming pressure, and movement change the next action; block, brace, iron barrier, vanguard's shield, high guard, bastion, and party mitigation from heavy blow create layered but legible defenses. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "Target count, incoming pressure, and movement change the next action; block, brace, iron barrier, vanguard's shield, high guard, bastion, and party mitigation from heavy blow create layered but legible defenses. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "moderate-high",
+          "reason": "Target count, incoming pressure, and movement change the next action; block, brace, iron barrier, vanguard's shield, high guard, bastion, and party mitigation from heavy blow create layered but legible defenses. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Target count, incoming pressure, and movement change the next action; block, brace, iron barrier, vanguard's shield, high guard, bastion, and party mitigation from heavy blow create layered but legible defenses. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        }
+      },
+      "failure_cost": {
+        "boss": {
+          "value": "high",
+          "reason": "The rotation is readable, but a tank who overlaps major defenses can still leave the party exposed.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "Dropping formation coverage or spending block and barrier tools together can leave the next damage event without an answer, though the baseline loop is comparatively. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Dropping formation coverage or spending block and barrier tools together can leave the next damage event without an answer, though the baseline loop is comparatively. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Dropping formation coverage or spending block and barrier tools together can leave the next damage event without an answer, though the baseline loop is comparatively. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Dropping formation coverage or spending block and barrier tools together can leave the next damage event without an answer, though the baseline loop is comparatively. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Dropping formation coverage or spending block and barrier tools together can leave the next damage event without an answer, though the baseline loop is comparatively. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        }
+      },
+      "state_tracking": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Heavy Blow, Hammer of the Law, retaliation, and block-triggered Paragon conversion form a direct boss loop around mitigation uptime. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Heavy Blow, Hammer of the Law, retaliation, and block-triggered Paragon conversion form a direct boss loop around mitigation uptime. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Heavy Blow, Hammer of the Law, retaliation, and block-triggered Paragon conversion form a direct boss loop around mitigation uptime. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Heavy Blow, Hammer of the Law, retaliation, and block-triggered Paragon conversion form a direct boss loop around mitigation uptime. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Heavy Blow, Hammer of the Law, retaliation, and block-triggered Paragon conversion form a direct boss loop around mitigation uptime. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        },
+        "pvp": {
+          "value": "low",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Heavy Blow, Hammer of the Law, retaliation, and block-triggered Paragon conversion form a direct boss loop around mitigation uptime. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Heavy Blow modifiers, Hammer of the Law, Retaliation, Wreck Formation, and Paragon Smash provide formation-centered pack control. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Heavy Blow modifiers, Hammer of the Law, Retaliation, Wreck Formation, and Paragon Smash provide formation-centered pack control. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Heavy Blow modifiers, Hammer of the Law, Retaliation, Wreck Formation, and Paragon Smash provide formation-centered pack control. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Heavy Blow modifiers, Hammer of the Law, Retaliation, Wreck Formation, and Paragon Smash provide formation-centered pack control. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Heavy Blow modifiers, Hammer of the Law, Retaliation, Wreck Formation, and Paragon Smash provide formation-centered pack control. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        },
+        "pvp": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Heavy Blow modifiers, Hammer of the Law, Retaliation, Wreck Formation, and Paragon Smash provide formation-centered pack control. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Line and Tower Formation, Hold the Line, and Guardian movement tools make positioning deliberate rather than highly mobile. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Line and Tower Formation, Hold the Line, and Guardian movement tools make positioning deliberate rather than highly mobile. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Line and Tower Formation, Hold the Line, and Guardian movement tools make positioning deliberate rather than highly mobile. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Line and Tower Formation, Hold the Line, and Guardian movement tools make positioning deliberate rather than highly mobile. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Line and Tower Formation, Hold the Line, and Guardian movement tools make positioning deliberate rather than highly mobile. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "Execution is constrained by positioning and swaps: Line and Tower Formation, Hold the Line, and Guardian movement tools make positioning deliberate rather than highly mobile. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance",
+            "talent:guardian/vanguard:18-7-2-9",
+            "talent:guardian/vanguard:18-7-4-9",
+            "talent:guardian/vanguard:18-7-2-5"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You want the most immediately legible sword-and-board Guardian, with blocks and formations feeding a conventional active-defense loop.",
+          "claim_ids": [
+            "inference:guardian/vanguard:identity"
+          ]
+        },
+        {
+          "text": "You enjoy the spec's core cadence: stay in the appropriate tank formation, use heavy blow to maintain party mitigation, build block-driven vanguard and paragon states, answer pressure with brace, barriers, and hold the line, and convert retaliation or paragon smash into threat and area damage.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You want high personal DPS, constant mobility, or a tank built around an exotic resource puzzle.",
+          "claim_ids": [
+            "observed:guardian/vanguard:performance"
+          ]
+        },
+        {
+          "text": "You dislike the positioning or swap constraint that line and tower formation, hold the line, and guardian movement tools make positioning deliberate rather than highly mobile.",
+          "claim_ids": [
+            "inference:guardian/vanguard:defensive-cost",
+            "talent:guardian/vanguard:18-7-4-0",
+            "talent:guardian/vanguard:18-7-10-0",
+            "talent:guardian/vanguard:18-7-10-2",
+            "observed:guardian/vanguard:performance"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "The captured build and current discussions emphasize extreme durability and a direct classic-tank identity.",
+          "claim_ids": [
+            "observed:guardian/vanguard:current-evidence"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Current detailed community guidance is sparse, and the available DPS number is explicitly an off-role tank signal.",
+          "claim_ids": [
+            "observed:guardian/vanguard:performance"
+          ]
+        }
+      ],
+      "contested": []
+    },
+    "performance_signal_ids": [
+      "observed:guardian/vanguard:performance"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "manual_recent_source_review",
+      "performance": "representation_and_offrole_only",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium",
+      "gaps": [
+        "No detailed current tank rotation or mitigation log comparison.",
+        "Build Hub guidance is too brief to validate exact defensive ordering."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "A direct shield tank with Heavy Blow, passive formation mitigation, early block scaling, and few hidden dependencies.",
+      "observed_changes": [
+        "Lower mobility than skirmisher tanks",
+        "Solo damage is not the primary strength"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "A fuller block engine that turns repeated blocks into Paragon Smash while layering High Guard and Bastion over a stable formation core.",
+      "observed_changes": [
+        "The only captured Build Hub description is extremely brief",
+        "Tank DPS cannot measure durability"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "A direct shield tank with Heavy Blow, passive formation mitigation, early block scaling, and few hidden dependencies.",
+      "observed_changes": [
+        "Lower mobility than skirmisher tanks",
+        "Solo damage is not the primary strength"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "By levels 30-49, stay in the appropriate tank formation, use heavy blow to maintain party mitigation, build block-driven vanguard and paragon states, answer pressure with brace, barriers, and hold the line, and convert retaliation or paragon smash into threat and area damage.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Line and Tower Formation, Hold the Line, and Guardian movement tools make positioning deliberate rather than highly mobile"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "By levels 30-49, stay in the appropriate tank formation, use heavy blow to maintain party mitigation, build block-driven vanguard and paragon states, answer pressure with brace, barriers, and hold the line, and convert retaliation or paragon smash into threat and area damage.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Line and Tower Formation, Hold the Line, and Guardian movement tools make positioning deliberate rather than highly mobile"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:guardian/vanguard:current-evidence",
+      "kind": "observed",
+      "text": "The current Build Hub inventory contains one Vanguard tank build whose title and short description emphasize extreme durability and using Glorious effects on cooldown; recent Guardian discussion also frames Vanguard through current tank rotation and damage advice, but the captured written detail is sparse.",
+      "source_ids": [
+        "buildhub:42d434c2-50ac-4f13-96ca-d69aaf05435d",
+        "reddit:guardian-tips-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "tank",
+          "pve"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "Do not infer exact cooldown ordering from the terse build description."
+    },
+    {
+      "id": "observed:guardian/vanguard:performance",
+      "kind": "observed",
+      "text": "The August Mythic inventory lists 70 Vanguard records. The July compilation's 842 value is explicitly tank off-role DPS and does not measure mitigation or tank quality.",
+      "source_ids": [
+        "reddit:class-statistics-2026-08-02",
+        "reddit:dps-aggregate-2026-07-25"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "mythic_dungeons"
+        ],
+        "build_or_mode": [
+          "tank",
+          "offrole_dps"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "Representation and off-role damage are not durability evidence."
+    },
+    {
+      "id": "inference:guardian/vanguard:identity",
+      "kind": "inference",
+      "text": "Vanguard is a comparatively legible block and formation tank: Heavy Blow maintains mitigation, incoming attacks build retaliation and Paragon value, and major defensive buttons answer predictable danger.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:guardian/vanguard:18-7-4-0",
+        "talent:guardian/vanguard:18-7-10-0",
+        "talent:guardian/vanguard:18-7-2-9"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "tank"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "high",
+      "conflicts_with": [],
+      "notes": "Playstyle classification from current talent text."
+    },
+    {
+      "id": "inference:guardian/vanguard:defensive-cost",
+      "kind": "inference",
+      "text": "Vanguard's rotational floor appears accessible, but its tank failure cost remains high because formation lapses or overlapping Brace, barriers, High Guard, and Bastion can leave later damage uncovered.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:guardian/vanguard:18-7-10-0",
+        "talent:guardian/vanguard:18-7-10-4",
+        "talent:guardian/vanguard:18-7-10-8",
+        "talent:guardian/vanguard:18-7-4-9"
+      ],
+      "scope": {
+        "levels": "level_30_60",
+        "content": [
+          "tank"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Encounter-specific defensive cadence is not documented."
+    },
+    {
+      "id": "observed:guardian/vanguard:recent-manual-review",
+      "kind": "observed",
+      "text": "Current reports consistently describe Vanguard as shield-reliant and very durable, with low damage and little self-healing; endgame tank rankings remain disputed.",
+      "source_ids": [
+        "reddit:sturdy-tanks-2026-07-16"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually reviewed on 2026-08-06; anecdotal evidence is not treated as a power ranking."
+    }
+  ]
+}

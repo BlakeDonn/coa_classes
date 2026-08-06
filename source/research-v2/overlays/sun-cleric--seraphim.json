@@ -1,0 +1,970 @@
+{
+  "baseline": "sun-cleric--seraphim.json",
+  "set": {
+    "identity": {
+      "fantasy": "An angelic block tank who scales with Intellect, swings Dawnbreak and Gavels, casts instant Illumination, and protects the party from magical damage.",
+      "one_line": "Build Intellect-scaled block through Dawnbreak and Gavels, use instant Illumination, and time Solar Invocation for magic danger.",
+      "primary_family": "strategists",
+      "also_fits": [
+        "sequencers"
+      ],
+      "playstyle_tags": [
+        "healing-block-tank",
+        "intellect-tank",
+        "party-mitigation-tank"
+      ],
+      "claim_ids": [
+        "talent:sun-cleric/seraphim:27-72-4-0",
+        "talent:sun-cleric/seraphim:27-72-10-0",
+        "talent:sun-cleric/seraphim:27-72-3-1",
+        "talent:sun-cleric/seraphim:27-72-5-1",
+        "observed:sun-cleric/seraphim:prot-paladin-feel",
+        "observed:sun-cleric/seraphim:early-squishiness",
+        "inference:sun-cleric/seraphim:playstyle-identity"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "An Intellect and block-value tank using Dawnbreak, Gavels, Angelic Presence, instant Illumination, and Solar Invocation. It combines active tanking with meaningful party healing and a major group magic-damage cooldown.",
+      "single_target": "On durable targets, the structural path grows from Dawnbreak, Angelic Presence, The Chosen toward Adjudicator, Scroll of Hope, Sun Strider. A precise priority remains limited to the captured build and community evidence.",
+      "aoe": "For multiple targets, Build Intellect-scaled block through Dawnbreak and Gavels, use instant Illumination, and time Solar Invocation for magic danger. The current evidence particularly constrains this through: A Stockades leveler reports fragility; replies note many tanks lack tools before 25 to 30.",
+      "movement_and_target_switching": "Melee tank positioning combines with party-aware support targeting.",
+      "defense_and_control": "Its structural defensive package includes Dawnbreak, The Chosen, Shining Shield, Seraphic Bulwark, Sun-Touched Armor.",
+      "group_utility": "Group or control tools include Divine Right, Blessed One, Solar Nova, Calm, Judgement.",
+      "failure_modes": [
+        {
+          "text": "Using instant Illumination or Solar Invocation for routine damage can leave the party without its needed recovery or magic answer.",
+          "claim_ids": [
+            "inference:sun-cleric/seraphim:failure-cost",
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1"
+          ]
+        },
+        {
+          "text": "Losing setup before payoff forces another recovery cycle.",
+          "claim_ids": [
+            "inference:sun-cleric/seraphim:failure-cost",
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1"
+          ]
+        },
+        {
+          "text": "Losing setup before payoff forces another recovery cycle.",
+          "claim_ids": [
+            "inference:sun-cleric/seraphim:failure-cost",
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "talent:sun-cleric/seraphim:27-72-4-0",
+        "talent:sun-cleric/seraphim:27-72-10-0",
+        "talent:sun-cleric/seraphim:27-72-3-1",
+        "talent:sun-cleric/seraphim:27-72-5-1",
+        "talent:sun-cleric/seraphim:27-72-2-2",
+        "talent:sun-cleric/seraphim:27-72-4-2",
+        "observed:sun-cleric/seraphim:prot-paladin-feel",
+        "observed:sun-cleric/seraphim:early-squishiness",
+        "observed:sun-cleric/seraphim:hybrid-value",
+        "observed:sun-cleric/seraphim:build-practice",
+        "inference:sun-cleric/seraphim:playstyle-identity"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "Early block tools can feel fragile.",
+        "strengths": [
+          "Core identity",
+          "Readable payoff"
+        ],
+        "cautions": [
+          "Incomplete kit",
+          "Sparse guidance"
+        ],
+        "claim_ids": [
+          "talent:sun-cleric/seraphim:27-72-4-0",
+          "talent:sun-cleric/seraphim:27-72-10-0",
+          "talent:sun-cleric/seraphim:27-72-3-1",
+          "talent:sun-cleric/seraphim:27-72-5-1",
+          "observed:sun-cleric/seraphim:prot-paladin-feel",
+          "observed:sun-cleric/seraphim:early-squishiness",
+          "observed:sun-cleric/seraphim:hybrid-value",
+          "inference:sun-cleric/seraphim:playstyle-identity"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "Instant healing stabilizes active tanking.",
+        "strengths": [
+          "Complete engine",
+          "Better coverage"
+        ],
+        "cautions": [
+          "More states",
+          "Unlock dependent"
+        ],
+        "claim_ids": [
+          "talent:sun-cleric/seraphim:27-72-4-0",
+          "talent:sun-cleric/seraphim:27-72-10-0",
+          "talent:sun-cleric/seraphim:27-72-3-1",
+          "talent:sun-cleric/seraphim:27-72-5-1",
+          "observed:sun-cleric/seraphim:prot-paladin-feel",
+          "observed:sun-cleric/seraphim:early-squishiness",
+          "observed:sun-cleric/seraphim:hybrid-value",
+          "inference:sun-cleric/seraphim:playstyle-identity"
+        ]
+      },
+      "level_50_60": {
+        "feel": "Late Seraphim combines block, healing and magic mitigation.",
+        "strengths": [
+          "Late package",
+          "Higher ceiling"
+        ],
+        "cautions": [
+          "Unsettled priority",
+          "Tracking"
+        ],
+        "claim_ids": [
+          "talent:sun-cleric/seraphim:27-72-4-0",
+          "talent:sun-cleric/seraphim:27-72-10-0",
+          "talent:sun-cleric/seraphim:27-72-3-1",
+          "talent:sun-cleric/seraphim:27-72-5-1",
+          "observed:sun-cleric/seraphim:prot-paladin-feel",
+          "observed:sun-cleric/seraphim:early-squishiness",
+          "observed:sun-cleric/seraphim:hybrid-value",
+          "inference:sun-cleric/seraphim:playstyle-identity"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, On durable targets, the structural path grows from Dawnbreak, Angelic Presence, The Chosen toward Adjudicator, Scroll of Hope, Sun Strider. A precise priority remains limited to the captured build and community evidence.",
+        "strengths": [
+          "Durable payoff",
+          "Repeatable loop"
+        ],
+        "cautions": [
+          "Movement",
+          "Repeated errors"
+        ],
+        "claim_ids": [
+          "talent:sun-cleric/seraphim:27-72-4-0",
+          "talent:sun-cleric/seraphim:27-72-10-0",
+          "talent:sun-cleric/seraphim:27-72-3-1",
+          "talent:sun-cleric/seraphim:27-72-5-1",
+          "observed:sun-cleric/seraphim:prot-paladin-feel",
+          "observed:sun-cleric/seraphim:early-squishiness",
+          "observed:sun-cleric/seraphim:hybrid-value",
+          "inference:sun-cleric/seraphim:playstyle-identity"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, For multiple targets, Build Intellect-scaled block through Dawnbreak and Gavels, use instant Illumination, and time Solar Invocation for magic danger. The current evidence particularly constrains this through: A Stockades leveler reports fragility; replies note many tanks lack tools before 25 to 30.",
+        "strengths": [
+          "Pack tools",
+          "Utility"
+        ],
+        "cautions": [
+          "Short packs",
+          "Position"
+        ],
+        "claim_ids": [
+          "talent:sun-cleric/seraphim:27-72-4-0",
+          "talent:sun-cleric/seraphim:27-72-10-0",
+          "talent:sun-cleric/seraphim:27-72-3-1",
+          "talent:sun-cleric/seraphim:27-72-5-1",
+          "observed:sun-cleric/seraphim:prot-paladin-feel",
+          "observed:sun-cleric/seraphim:early-squishiness",
+          "observed:sun-cleric/seraphim:hybrid-value",
+          "inference:sun-cleric/seraphim:playstyle-identity"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, Melee tank positioning combines with party-aware support targeting. Its structural defensive package includes Dawnbreak, The Chosen, Shining Shield, Seraphic Bulwark, Sun-Touched Armor.",
+        "strengths": [
+          "Control",
+          "Pressure"
+        ],
+        "cautions": [
+          "Disruption",
+          "Defense"
+        ],
+        "claim_ids": [
+          "talent:sun-cleric/seraphim:27-72-4-0",
+          "talent:sun-cleric/seraphim:27-72-10-0",
+          "talent:sun-cleric/seraphim:27-72-3-1",
+          "talent:sun-cleric/seraphim:27-72-5-1",
+          "observed:sun-cleric/seraphim:prot-paladin-feel",
+          "observed:sun-cleric/seraphim:early-squishiness",
+          "observed:sun-cleric/seraphim:hybrid-value",
+          "inference:sun-cleric/seraphim:playstyle-identity"
+        ]
+      }
+    },
+    "complexity": {
+      "core_actions": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "The active bar follows this loop: An Intellect and block-value tank using Dawnbreak, Gavels, Angelic Presence, instant Illumination, and Solar Invocation. It combines active tanking with meaningful party healing and a major group magic-damage cooldown. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "The active bar follows this loop: An Intellect and block-value tank using Dawnbreak, Gavels, Angelic Presence, instant Illumination, and Solar Invocation. It combines active tanking with meaningful party healing and a major group magic-damage cooldown. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "The active bar follows this loop: An Intellect and block-value tank using Dawnbreak, Gavels, Angelic Presence, instant Illumination, and Solar Invocation. It combines active tanking with meaningful party healing and a major group magic-damage cooldown. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "The active bar follows this loop: An Intellect and block-value tank using Dawnbreak, Gavels, Angelic Presence, instant Illumination, and Solar Invocation. It combines active tanking with meaningful party healing and a major group magic-damage cooldown. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "The active bar follows this loop: An Intellect and block-value tank using Dawnbreak, Gavels, Angelic Presence, instant Illumination, and Solar Invocation. It combines active tanking with meaningful party healing and a major group magic-damage cooldown. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "The active bar follows this loop: An Intellect and block-value tank using Dawnbreak, Gavels, Angelic Presence, instant Illumination, and Solar Invocation. It combines active tanking with meaningful party healing and a major group magic-damage cooldown. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        }
+      },
+      "state_tracking": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Dawnbreak, Angelic Presence, The Chosen toward Adjudicator, Scroll of Hope, Sun Strider. A precise priority remains limited to the captured build and community evidence. must be tracked. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Dawnbreak, Angelic Presence, The Chosen toward Adjudicator, Scroll of Hope, Sun Strider. A precise priority remains limited to the captured build and community evidence. must be tracked. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Dawnbreak, Angelic Presence, The Chosen toward Adjudicator, Scroll of Hope, Sun Strider. A precise priority remains limited to the captured build and community evidence. must be tracked. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Dawnbreak, Angelic Presence, The Chosen toward Adjudicator, Scroll of Hope, Sun Strider. A precise priority remains limited to the captured build and community evidence. must be tracked. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Dawnbreak, Angelic Presence, The Chosen toward Adjudicator, Scroll of Hope, Sun Strider. A precise priority remains limited to the captured build and community evidence. must be tracked. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Dawnbreak, Angelic Presence, The Chosen toward Adjudicator, Scroll of Hope, Sun Strider. A precise priority remains limited to the captured build and community evidence. must be tracked. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Build Intellect-scaled block through Dawnbreak and Gavels, use instant Illumination, and time Solar Invocation for magic danger. The current evidence particularly constrains this through: A Stockades leveler reports fragility; replies note many tanks lack tools before 25 to 30. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Build Intellect-scaled block through Dawnbreak and Gavels, use instant Illumination, and time Solar Invocation for magic danger. The current evidence particularly constrains this through: A Stockades leveler reports fragility; replies note many tanks lack tools before 25 to 30. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Build Intellect-scaled block through Dawnbreak and Gavels, use instant Illumination, and time Solar Invocation for magic danger. The current evidence particularly constrains this through: A Stockades leveler reports fragility; replies note many tanks lack tools before 25 to 30. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Build Intellect-scaled block through Dawnbreak and Gavels, use instant Illumination, and time Solar Invocation for magic danger. The current evidence particularly constrains this through: A Stockades leveler reports fragility; replies note many tanks lack tools before 25 to 30. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Build Intellect-scaled block through Dawnbreak and Gavels, use instant Illumination, and time Solar Invocation for magic danger. The current evidence particularly constrains this through: A Stockades leveler reports fragility; replies note many tanks lack tools before 25 to 30. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Build Intellect-scaled block through Dawnbreak and Gavels, use instant Illumination, and time Solar Invocation for magic danger. The current evidence particularly constrains this through: A Stockades leveler reports fragility; replies note many tanks lack tools before 25 to 30. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Target count, movement and pressure alter the next action. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Target count, movement and pressure alter the next action. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Target count, movement and pressure alter the next action. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Target count, movement and pressure alter the next action. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Target count, movement and pressure alter the next action. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Target count, movement and pressure alter the next action. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Execution depends on Melee tank positioning combines with party-aware support targeting. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Execution depends on Melee tank positioning combines with party-aware support targeting. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Execution depends on Melee tank positioning combines with party-aware support targeting. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Execution depends on Melee tank positioning combines with party-aware support targeting. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Execution depends on Melee tank positioning combines with party-aware support targeting. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Execution depends on Melee tank positioning combines with party-aware support targeting. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        }
+      },
+      "failure_cost": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Using instant Illumination or Solar Invocation for routine damage can leave the party without its needed recovery or magic answer. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Using instant Illumination or Solar Invocation for routine damage can leave the party without its needed recovery or magic answer. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Using instant Illumination or Solar Invocation for routine damage can leave the party without its needed recovery or magic answer. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Using instant Illumination or Solar Invocation for routine damage can leave the party without its needed recovery or magic answer. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Using instant Illumination or Solar Invocation for routine damage can leave the party without its needed recovery or magic answer. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Using instant Illumination or Solar Invocation for routine damage can leave the party without its needed recovery or magic answer. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0",
+            "talent:sun-cleric/seraphim:27-72-3-1",
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You want this exact fantasy and decision loop.",
+          "claim_ids": [
+            "inference:sun-cleric/seraphim:playstyle-identity",
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0"
+          ]
+        },
+        {
+          "text": "You enjoy a cadence that changes with late talents.",
+          "claim_ids": [
+            "inference:sun-cleric/seraphim:playstyle-identity",
+            "talent:sun-cleric/seraphim:27-72-4-0",
+            "talent:sun-cleric/seraphim:27-72-10-0"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You want the complete rotation immediately.",
+          "claim_ids": [
+            "inference:sun-cleric/seraphim:failure-cost",
+            "observed:sun-cleric/seraphim:prot-paladin-feel"
+          ]
+        },
+        {
+          "text": "You dislike setup loss to movement.",
+          "claim_ids": [
+            "inference:sun-cleric/seraphim:failure-cost",
+            "observed:sun-cleric/seraphim:prot-paladin-feel"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "The holy shield-tank feel is praised.",
+          "claim_ids": [
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "observed:sun-cleric/seraphim:build-practice"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Early fragility and thin evidence frustrate.",
+          "claim_ids": [
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "inference:sun-cleric/seraphim:failure-cost"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "Power anecdotes, popularity and subjective fun remain separate evidence.",
+          "claim_ids": [
+            "observed:sun-cleric/seraphim:prot-paladin-feel",
+            "observed:sun-cleric/seraphim:early-squishiness",
+            "observed:sun-cleric/seraphim:hybrid-value",
+            "observed:sun-cleric/seraphim:performance-context"
+          ]
+        }
+      ]
+    },
+    "performance_signal_ids": [
+      "observed:sun-cleric/seraphim:performance-context"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "manual_recent_source_review",
+      "performance": "limited_uncontrolled",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium",
+      "gaps": [
+        "No verified current full-rotation video.",
+        "Priority breakpoints remain unverified."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "Early block tools can feel fragile.",
+      "observed_changes": [
+        "Incomplete kit",
+        "Sparse guidance"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "Early block tools can feel fragile.",
+      "observed_changes": [
+        "Incomplete kit",
+        "Sparse guidance"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "Instant healing stabilizes active tanking.",
+      "observed_changes": [
+        "More states",
+        "Unlock dependent"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "Instant healing stabilizes active tanking.",
+      "observed_changes": [
+        "More states",
+        "Unlock dependent"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "Late Seraphim combines block, healing and magic mitigation.",
+      "observed_changes": [
+        "Unsettled priority",
+        "Tracking"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:sun-cleric/seraphim:prot-paladin-feel",
+      "kind": "observed",
+      "text": "Players compare Seraphim favorably to older protection paladin designs.",
+      "source_ids": [
+        "reddit:tank-weapons-2026-08-01",
+        "reddit:sun-cleric-complexity-2026-08-01"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:sun-cleric/seraphim:early-squishiness",
+      "kind": "observed",
+      "text": "A Stockades leveler reports fragility; replies note many tanks lack tools before 25 to 30.",
+      "source_ids": [
+        "reddit:tank-weapons-2026-08-01",
+        "reddit:sun-cleric-complexity-2026-08-01"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:sun-cleric/seraphim:hybrid-value",
+      "kind": "observed",
+      "text": "The kit provides party healing and group magic mitigation alongside block.",
+      "source_ids": [
+        "reddit:tank-weapons-2026-08-01",
+        "reddit:sun-cleric-complexity-2026-08-01"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:sun-cleric/seraphim:build-practice",
+      "kind": "observed",
+      "text": "The captured AoE build documents pack play.",
+      "source_ids": [
+        "buildhub-builds-2026-08-05",
+        "buildhub:7bda5d79-f735-4ba0-b09c-941d060a4870"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "community_build_snapshot"
+        ],
+        "build_or_mode": [
+          "documented_build"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The guide documents one current way to play; it is not treated as proof of optimality."
+    },
+    {
+      "id": "observed:sun-cleric/seraphim:performance-context",
+      "kind": "observed",
+      "text": "1,775 off-role DPS and 94 records do not rank survival.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "uncontrolled_performance_signals"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "low",
+      "conflicts_with": [],
+      "notes": "Do not convert this into a tier ranking."
+    },
+    {
+      "id": "inference:sun-cleric/seraphim:playstyle-identity",
+      "kind": "inference",
+      "text": "An angelic block tank who scales with Intellect, swings Dawnbreak and Gavels, casts instant Illumination, and protects the party from magical damage.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:sun-cleric/seraphim:27-72-4-0",
+        "talent:sun-cleric/seraphim:27-72-10-0",
+        "talent:sun-cleric/seraphim:27-72-3-1",
+        "talent:sun-cleric/seraphim:27-72-5-1",
+        "observed:sun-cleric/seraphim:prot-paladin-feel",
+        "observed:sun-cleric/seraphim:early-squishiness"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Descriptive playstyle classification, not an official label."
+    },
+    {
+      "id": "inference:sun-cleric/seraphim:failure-cost",
+      "kind": "inference",
+      "text": "Using instant Illumination or Solar Invocation for routine damage can leave the party without its needed recovery or magic answer.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:sun-cleric/seraphim:27-72-4-0",
+        "talent:sun-cleric/seraphim:27-72-10-0",
+        "talent:sun-cleric/seraphim:27-72-3-1",
+        "talent:sun-cleric/seraphim:27-72-5-1",
+        "talent:sun-cleric/seraphim:27-72-2-2",
+        "observed:sun-cleric/seraphim:prot-paladin-feel",
+        "observed:sun-cleric/seraphim:early-squishiness",
+        "observed:sun-cleric/seraphim:hybrid-value"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Direction is supported; exact throughput cost is not measured."
+    }
+  ]
+}

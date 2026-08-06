@@ -1,0 +1,2222 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "felsworn/tyrant",
+    "class": "Felsworn",
+    "name": "Tyrant",
+    "roles": [
+      "Tank"
+    ],
+    "range": [
+      "Hybrid"
+    ]
+  },
+  "identity": {
+    "fantasy": "A dual-two-handed demonic fortress that converts avoidance into armor and resistance, then leeches through incoming pressure.",
+    "one_line": "A dual-two-handed demonic fortress that converts avoidance into armor and resistance, then leeches through incoming pressure. The defining decision is contextual: Incoming pressure determines whether Carve can safely be exchanged for Fireball.",
+    "primary_family": "strategists",
+    "also_fits": [
+      "duelists"
+    ],
+    "claim_ids": [
+      "talent:felsworn/tyrant:14-18-4-0",
+      "talent:felsworn/tyrant:14-18-10-0",
+      "talent:felsworn/tyrant:14-18-4-1",
+      "talent:felsworn/tyrant:14-18-2-9",
+      "observed:felsworn/tyrant:community-practice",
+      "observed:felsworn/tyrant:sentiment-context",
+      "inference:felsworn/tyrant:identity"
+    ],
+    "playstyle_tags": [
+      "avoidance-demonic-tank",
+      "aggressive-tank",
+      "dual-wield-tank"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "A dual-two-handed demonic tank that converts avoidance into armor and magic resistance, uses Carve and retaliation for threat, and leeches or heals through aggression. Its defining cooldowns include Tyrannical Resolve and group mitigation through Infernal Whipcrack. Recent players describe extremely high durability, though that does not prove comparative balance.",
+    "resources": [
+      "Energy",
+      "Felfury"
+    ],
+    "builders": [
+      {
+        "name": "Demonic Will",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-1"
+        ]
+      },
+      {
+        "name": "Felrend",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-1-3"
+        ]
+      },
+      {
+        "name": "Illidari Training",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-8-4b"
+        ]
+      },
+      {
+        "name": "Vengeance",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-1-5"
+        ]
+      },
+      {
+        "name": "Tyrant's Gaze",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-7-5"
+        ]
+      },
+      {
+        "name": "Fel Torpedo",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-2-6a"
+        ]
+      },
+      {
+        "name": "Demonic Fortitude",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-6-6b"
+        ]
+      },
+      {
+        "name": "Vengeance Is Mine",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-2-8"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Carve",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0"
+        ]
+      },
+      {
+        "name": "Burning Legionnaire",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-7-3"
+        ]
+      },
+      {
+        "name": "Outland Slaver",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-0-4"
+        ]
+      },
+      {
+        "name": "Illidan's Favor",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-2-6b"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Demon Hide",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-6-2"
+        ]
+      },
+      {
+        "name": "Felrend",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-1-3"
+        ]
+      },
+      {
+        "name": "Felspill",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-4"
+        ]
+      },
+      {
+        "name": "Betrayer",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-6-5"
+        ]
+      },
+      {
+        "name": "Straight to the Nether",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-0-6"
+        ]
+      },
+      {
+        "name": "Demonic Fortitude",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-6-6b"
+        ]
+      },
+      {
+        "name": "Eye of the Tyrant",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-7-7"
+        ]
+      },
+      {
+        "name": "Infernal Whipcrack",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-6-8"
+        ]
+      },
+      {
+        "name": "Grommash's Folly",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-9"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Burning Commander",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-10-0"
+        ],
+        "structural_description": "Level 10 PassiveAllows you to wield a Two-Handed Axe, Mace, or Sword in each hand and grants you additional Armor and magic resistance based on your dodge rating, but reducing your damage dealt by -10%."
+      },
+      {
+        "name": "Fel Torpedo",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-2-6a"
+        ],
+        "structural_description": "Transform: s your Chaos Rush into Fel Torpedo.Fel TorpedoGenerates 1 FelfuryTorpedo forward in the direction you're running and deal 195 + 35% AP Shadowflame Damage to enemies in your path.Generates a large amount of threat. Scales with modifiers to Chaos Rush"
+      },
+      {
+        "name": "Vengeance Is Mine",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-2-8"
+        ],
+        "structural_description": "Dodging or parrying an attack now gives you a 10% chance to make your next 10 instances of damage with Twin Slice deal 30% increased damage and generate 1 Felfury."
+      }
+    ],
+    "single_target": "Maintain barrier and Inner Demon uptime, use Twin Slice for single-target pressure, and never cast Smite without Inner Demon. The captured guide trades Carve for Fireball only when survivability permits.",
+    "aoe": "Felrend, Sunder, Sargeron, Carve, and retaliation form the pack engine. The guide treats Carve-to-Fireball as an explicit survival-for-damage trade rather than a free upgrade.",
+    "movement_and_target_switching": "Hybrid demonic tools aid contact, but its core durability comes from active melee aggression.",
+    "defense_and_control": "Its structural defensive package includes Burning Commander, Demonic Will, Nether Disciple, Demon Hide, Pure Hatred.",
+    "group_utility": "Group or control tools include Betrayer, Felblade, Eye of the Tyrant.",
+    "failure_modes": [
+      {
+        "text": "Casting Smite outside Inner Demon, replacing Carve when defense is still needed, or overlapping barrier and mitigation windows can expose the tank suddenly.",
+        "claim_ids": [
+          "inference:felsworn/tyrant:failure-cost",
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1"
+        ]
+      },
+      {
+        "text": "Casting Smite without Inner Demon violates the guide's central damage and survival rule.",
+        "claim_ids": [
+          "inference:felsworn/tyrant:failure-cost",
+          "observed:felsworn/tyrant:community-practice"
+        ]
+      },
+      {
+        "text": "Trading Carve for Fireball while incoming pressure is still high removes defense at the moment the tank needs it.",
+        "claim_ids": [
+          "inference:felsworn/tyrant:failure-cost",
+          "observed:felsworn/tyrant:community-practice"
+        ]
+      }
+    ],
+    "claim_ids": [
+      "talent:felsworn/tyrant:14-18-4-0",
+      "talent:felsworn/tyrant:14-18-10-0",
+      "talent:felsworn/tyrant:14-18-4-1",
+      "talent:felsworn/tyrant:14-18-2-9",
+      "observed:felsworn/tyrant:community-practice",
+      "observed:felsworn/tyrant:build-practice",
+      "observed:felsworn/tyrant:sentiment-context",
+      "inference:felsworn/tyrant:identity"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Carve",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-4-0"
+          ]
+        },
+        {
+          "name": "Burning Commander",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-10-0"
+          ]
+        },
+        {
+          "name": "Demonic Will",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-4-1"
+          ]
+        }
+      ],
+      "observed_loop": "Carve, Burning Commander, and Demonic Will establish threat and mitigation; players already recommend the spec as a smooth leveling route.",
+      "observed_changes": [
+        "The survivability claims and two-slow-two-hand setup come from a single guide and are not comparative tank benchmarks.",
+        "Do not project the mature priority backward."
+      ],
+      "claim_ids": [
+        "talent:felsworn/tyrant:14-18-4-0",
+        "talent:felsworn/tyrant:14-18-10-0",
+        "talent:felsworn/tyrant:14-18-4-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Annihilan Rituals",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-2-2a"
+          ]
+        },
+        {
+          "name": "Quick Carving",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-2-2b"
+          ]
+        },
+        {
+          "name": "Nether Disciple",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-4-2"
+          ]
+        },
+        {
+          "name": "Demon Hide",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-6-2"
+          ]
+        },
+        {
+          "name": "Hulking Demon",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-10-2"
+          ]
+        },
+        {
+          "name": "Felrend",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-1-3"
+          ]
+        },
+        {
+          "name": "Pure Hatred",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-4-3"
+          ]
+        },
+        {
+          "name": "Burning Legionnaire",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-7-3"
+          ]
+        }
+      ],
+      "observed_loop": "Carve, Burning Commander, and Demonic Will establish threat and mitigation; players already recommend the spec as a smooth leveling route.",
+      "observed_changes": [
+        "The survivability claims and two-slow-two-hand setup come from a single guide and are not comparative tank benchmarks.",
+        "Do not project the mature priority backward."
+      ],
+      "claim_ids": [
+        "talent:felsworn/tyrant:14-18-2-2a",
+        "talent:felsworn/tyrant:14-18-2-2b",
+        "talent:felsworn/tyrant:14-18-4-2",
+        "talent:felsworn/tyrant:14-18-6-2",
+        "talent:felsworn/tyrant:14-18-10-2",
+        "talent:felsworn/tyrant:14-18-1-3",
+        "talent:felsworn/tyrant:14-18-4-3",
+        "talent:felsworn/tyrant:14-18-7-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Outland Slaver",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-0-4"
+          ]
+        },
+        {
+          "name": "Unholy Endurance",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-2-4a"
+          ]
+        },
+        {
+          "name": "Battle Finesse",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-2-4b"
+          ]
+        },
+        {
+          "name": "Felspill",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-4-4"
+          ]
+        },
+        {
+          "name": "Infernal Constitution",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-6-4"
+          ]
+        },
+        {
+          "name": "Abyssal Conditioning",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-8-4a"
+          ]
+        },
+        {
+          "name": "Illidari Training",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-8-4b"
+          ]
+        },
+        {
+          "name": "Hellfire Carver",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-10-4"
+          ]
+        },
+        {
+          "name": "Vengeance",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-1-5"
+          ]
+        },
+        {
+          "name": "Bulwark of Azzinoth",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-2-5"
+          ]
+        },
+        {
+          "name": "Burning Hatred",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-4-5"
+          ]
+        },
+        {
+          "name": "Betrayer",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-6-5"
+          ]
+        },
+        {
+          "name": "Tyrant's Gaze",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-7-5"
+          ]
+        }
+      ],
+      "observed_loop": "The middle bands connect the foundational kit to the mature loop: A dual-two-handed demonic tank that converts avoidance into armor and magic resistance, uses Carve and retaliation for threat, and leeches or heals through aggression. Exact level-by-level priority remains bounded by the available evidence.",
+      "observed_changes": [
+        "Casting Smite outside Inner Demon, replacing Carve when defense is still needed, or overlapping barrier and mitigation windows can expose the tank suddenly.",
+        "Source levels and gear are not normalized."
+      ],
+      "claim_ids": [
+        "talent:felsworn/tyrant:14-18-0-4",
+        "talent:felsworn/tyrant:14-18-2-4a",
+        "talent:felsworn/tyrant:14-18-2-4b",
+        "talent:felsworn/tyrant:14-18-4-4",
+        "talent:felsworn/tyrant:14-18-6-4",
+        "talent:felsworn/tyrant:14-18-8-4a",
+        "talent:felsworn/tyrant:14-18-8-4b",
+        "talent:felsworn/tyrant:14-18-10-4",
+        "talent:felsworn/tyrant:14-18-1-5",
+        "talent:felsworn/tyrant:14-18-2-5",
+        "talent:felsworn/tyrant:14-18-4-5",
+        "talent:felsworn/tyrant:14-18-6-5",
+        "talent:felsworn/tyrant:14-18-7-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Straight to the Nether",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-0-6"
+          ]
+        },
+        {
+          "name": "Fel Torpedo",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-2-6a"
+          ]
+        },
+        {
+          "name": "Illidan's Favor",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-2-6b"
+          ]
+        },
+        {
+          "name": "Nether Strength",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-4-6"
+          ]
+        },
+        {
+          "name": "Demonic Blood",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-6-6a"
+          ]
+        },
+        {
+          "name": "Demonic Fortitude",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-6-6b"
+          ]
+        },
+        {
+          "name": "Expose",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-8-6"
+          ]
+        },
+        {
+          "name": "Felblade",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-10-6"
+          ]
+        },
+        {
+          "name": "Doomscarring",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-1-7"
+          ]
+        },
+        {
+          "name": "Fel Daze",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-4-7a"
+          ]
+        },
+        {
+          "name": "Dark Lord",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-4-7b"
+          ]
+        },
+        {
+          "name": "Eye of the Tyrant",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-7-7"
+          ]
+        }
+      ],
+      "observed_loop": "The middle bands connect the foundational kit to the mature loop: A dual-two-handed demonic tank that converts avoidance into armor and magic resistance, uses Carve and retaliation for threat, and leeches or heals through aggression. Exact level-by-level priority remains bounded by the available evidence.",
+      "observed_changes": [
+        "Casting Smite outside Inner Demon, replacing Carve when defense is still needed, or overlapping barrier and mitigation windows can expose the tank suddenly.",
+        "Source levels and gear are not normalized."
+      ],
+      "claim_ids": [
+        "talent:felsworn/tyrant:14-18-0-6",
+        "talent:felsworn/tyrant:14-18-2-6a",
+        "talent:felsworn/tyrant:14-18-2-6b",
+        "talent:felsworn/tyrant:14-18-4-6",
+        "talent:felsworn/tyrant:14-18-6-6a",
+        "talent:felsworn/tyrant:14-18-6-6b",
+        "talent:felsworn/tyrant:14-18-8-6",
+        "talent:felsworn/tyrant:14-18-10-6",
+        "talent:felsworn/tyrant:14-18-1-7",
+        "talent:felsworn/tyrant:14-18-4-7a",
+        "talent:felsworn/tyrant:14-18-4-7b",
+        "talent:felsworn/tyrant:14-18-7-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Vengeance Is Mine",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-2-8"
+          ]
+        },
+        {
+          "name": "Mannoroth's Rage",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-4-8"
+          ]
+        },
+        {
+          "name": "Infernal Whipcrack",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-6-8"
+          ]
+        },
+        {
+          "name": "Fel Monstrosity",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-10-8"
+          ]
+        },
+        {
+          "name": "Tyrannical Resolve",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-2-9"
+          ]
+        },
+        {
+          "name": "Grommash's Folly",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-4-9"
+          ]
+        },
+        {
+          "name": "Taskmaster's Army",
+          "claim_ids": [
+            "talent:felsworn/tyrant:14-18-6-9"
+          ]
+        }
+      ],
+      "observed_loop": "Late play adds Tyrannical Resolve and broader demon tools, while the guide makes Inner Demon and barrier sequencing the central survival discipline.",
+      "observed_changes": [
+        "The survivability claims and two-slow-two-hand setup come from a single guide and are not comparative tank benchmarks.",
+        "Casting Smite outside Inner Demon, replacing Carve when defense is still needed, or overlapping barrier and mitigation windows can expose the tank suddenly."
+      ],
+      "claim_ids": [
+        "talent:felsworn/tyrant:14-18-2-8",
+        "talent:felsworn/tyrant:14-18-4-8",
+        "talent:felsworn/tyrant:14-18-6-8",
+        "talent:felsworn/tyrant:14-18-10-8",
+        "talent:felsworn/tyrant:14-18-2-9",
+        "talent:felsworn/tyrant:14-18-4-9",
+        "talent:felsworn/tyrant:14-18-6-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "Carve, Burning Commander, and Demonic Will establish threat and mitigation; players already recommend the spec as a smooth leveling route.",
+      "strengths": [
+        "A dual-two-handed demonic fortress that converts avoidance into armor and resistance, then leeches through incoming pressure.",
+        "Players recommend Tyrant for smooth solo leveling, and the guide emphasizes unusually strong barriers and straightforward durability."
+      ],
+      "cautions": [
+        "The survivability claims and two-slow-two-hand setup come from a single guide and are not comparative tank benchmarks.",
+        "Do not project the mature priority backward."
+      ],
+      "claim_ids": [
+        "talent:felsworn/tyrant:14-18-4-0",
+        "talent:felsworn/tyrant:14-18-10-0",
+        "talent:felsworn/tyrant:14-18-4-1",
+        "talent:felsworn/tyrant:14-18-2-9",
+        "observed:felsworn/tyrant:community-practice",
+        "observed:felsworn/tyrant:build-practice",
+        "observed:felsworn/tyrant:sentiment-context",
+        "inference:felsworn/tyrant:identity"
+      ]
+    },
+    "leveling_30_49": {
+      "feel": "The middle bands connect the foundational kit to the mature loop: A dual-two-handed demonic tank that converts avoidance into armor and magic resistance, uses Carve and retaliation for threat, and leeches or heals through aggression. Exact level-by-level priority remains bounded by the available evidence.",
+      "strengths": [
+        "A dual-two-handed demonic tank that converts avoidance into armor and magic resistance, uses Carve and retaliation for threat, and leeches or heals through aggression.",
+        "More of the state and payoff loop is available."
+      ],
+      "cautions": [
+        "Casting Smite outside Inner Demon, replacing Carve when defense is still needed, or overlapping barrier and mitigation windows can expose the tank suddenly.",
+        "Source levels and gear are not normalized."
+      ],
+      "claim_ids": [
+        "talent:felsworn/tyrant:14-18-4-0",
+        "talent:felsworn/tyrant:14-18-10-0",
+        "talent:felsworn/tyrant:14-18-4-1",
+        "talent:felsworn/tyrant:14-18-2-9",
+        "observed:felsworn/tyrant:community-practice",
+        "observed:felsworn/tyrant:build-practice",
+        "observed:felsworn/tyrant:sentiment-context",
+        "inference:felsworn/tyrant:identity"
+      ]
+    },
+    "level_50_60": {
+      "feel": "Late play adds Tyrannical Resolve and broader demon tools, while the guide makes Inner Demon and barrier sequencing the central survival discipline.",
+      "strengths": [
+        "Players recommend Tyrant for smooth solo leveling, and the guide emphasizes unusually strong barriers and straightforward durability.",
+        "The full talent interaction is available."
+      ],
+      "cautions": [
+        "The survivability claims and two-slow-two-hand setup come from a single guide and are not comparative tank benchmarks.",
+        "Casting Smite outside Inner Demon, replacing Carve when defense is still needed, or overlapping barrier and mitigation windows can expose the tank suddenly."
+      ],
+      "claim_ids": [
+        "talent:felsworn/tyrant:14-18-4-0",
+        "talent:felsworn/tyrant:14-18-10-0",
+        "talent:felsworn/tyrant:14-18-4-1",
+        "talent:felsworn/tyrant:14-18-2-9",
+        "observed:felsworn/tyrant:community-practice",
+        "observed:felsworn/tyrant:build-practice",
+        "observed:felsworn/tyrant:sentiment-context",
+        "inference:felsworn/tyrant:identity"
+      ]
+    },
+    "boss": {
+      "feel": "Maintain barrier and Inner Demon uptime, use Twin Slice for single-target pressure, and never cast Smite without Inner Demon. The captured guide trades Carve for Fireball only when survivability permits.",
+      "strengths": [
+        "Maintain barrier and Inner Demon uptime, use Twin Slice for single-target pressure, and never cast Smite without Inner Demon.",
+        "Durable targets allow the documented cycle to complete."
+      ],
+      "cautions": [
+        "Casting Smite outside Inner Demon, replacing Carve when defense is still needed, or overlapping barrier and mitigation windows can expose the tank suddenly.",
+        "No controlled ranking is asserted."
+      ],
+      "claim_ids": [
+        "talent:felsworn/tyrant:14-18-4-0",
+        "talent:felsworn/tyrant:14-18-10-0",
+        "talent:felsworn/tyrant:14-18-4-1",
+        "talent:felsworn/tyrant:14-18-2-9",
+        "observed:felsworn/tyrant:community-practice",
+        "observed:felsworn/tyrant:build-practice",
+        "observed:felsworn/tyrant:sentiment-context",
+        "inference:felsworn/tyrant:identity"
+      ]
+    },
+    "dungeon_aoe": {
+      "feel": "Felrend, Sunder, Sargeron, Carve, and retaliation form the pack engine. The guide treats Carve-to-Fireball as an explicit survival-for-damage trade rather than a free upgrade.",
+      "strengths": [
+        "Felrend, Sunder, Sargeron, Carve, and retaliation form the pack engine.",
+        "Pack play exposes the spec's target-count decisions."
+      ],
+      "cautions": [
+        "Casting Smite outside Inner Demon, replacing Carve when defense is still needed, or overlapping barrier and mitigation windows can expose the tank suddenly.",
+        "Pull size, lifespan, and tank pace are uncontrolled."
+      ],
+      "claim_ids": [
+        "talent:felsworn/tyrant:14-18-4-0",
+        "talent:felsworn/tyrant:14-18-10-0",
+        "talent:felsworn/tyrant:14-18-4-1",
+        "talent:felsworn/tyrant:14-18-2-9",
+        "observed:felsworn/tyrant:community-practice",
+        "observed:felsworn/tyrant:build-practice",
+        "observed:felsworn/tyrant:sentiment-context",
+        "inference:felsworn/tyrant:identity"
+      ]
+    },
+    "pvp": {
+      "feel": "The leading guide specifically recommends Tyrant for flag carrying, where barriers and Inner Demon uptime matter more than its damage tradeoffs.",
+      "strengths": [
+        "The leading guide specifically recommends Tyrant for flag carrying, where barriers and Inner Demon uptime matter more than its damage tradeoffs.",
+        "Control and disruption change the normal loop."
+      ],
+      "cautions": [
+        "Casting Smite outside Inner Demon, replacing Carve when defense is still needed, or overlapping barrier and mitigation windows can expose the tank suddenly.",
+        "No normalized matchup or bracket comparison is available."
+      ],
+      "claim_ids": [
+        "talent:felsworn/tyrant:14-18-4-0",
+        "talent:felsworn/tyrant:14-18-10-0",
+        "talent:felsworn/tyrant:14-18-4-1",
+        "talent:felsworn/tyrant:14-18-2-9",
+        "observed:felsworn/tyrant:community-practice",
+        "observed:felsworn/tyrant:build-practice",
+        "observed:felsworn/tyrant:sentiment-context",
+        "inference:felsworn/tyrant:identity"
+      ]
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "low",
+        "reason": "The guide uses distinct Twin Slice and Felrend/Sunder/Sargeron packages plus defensive buttons. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "low-moderate",
+        "reason": "The guide uses distinct Twin Slice and Felrend/Sunder/Sargeron packages plus defensive buttons. Middle talents make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "low-moderate",
+        "reason": "The guide uses distinct Twin Slice and Felrend/Sunder/Sargeron packages plus defensive buttons. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "low-moderate",
+        "reason": "The guide uses distinct Twin Slice and Felrend/Sunder/Sargeron packages plus defensive buttons. A durable target makes repeated timing and resource discipline matter.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "moderate",
+        "reason": "The guide uses distinct Twin Slice and Felrend/Sunder/Sargeron packages plus defensive buttons. Changing pack size, lifespan, and tank movement add another constraint.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "low-moderate",
+        "reason": "The guide uses distinct Twin Slice and Felrend/Sunder/Sargeron packages plus defensive buttons. Enemy disruption and an active opponent make the same task less predictable.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "moderate",
+        "reason": "Barrier, Inner Demon, Felfury, retaliation, and mitigation cooldowns all matter. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "moderate-high",
+        "reason": "Barrier, Inner Demon, Felfury, retaliation, and mitigation cooldowns all matter. Middle talents make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "moderate-high",
+        "reason": "Barrier, Inner Demon, Felfury, retaliation, and mitigation cooldowns all matter. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "moderate-high",
+        "reason": "Barrier, Inner Demon, Felfury, retaliation, and mitigation cooldowns all matter. A durable target makes repeated timing and resource discipline matter.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "Barrier, Inner Demon, Felfury, retaliation, and mitigation cooldowns all matter. Changing pack size, lifespan, and tank movement add another constraint.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "Barrier, Inner Demon, Felfury, retaliation, and mitigation cooldowns all matter. Enemy disruption and an active opponent make the same task less predictable.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "moderate",
+        "reason": "Incoming pressure determines whether Carve can safely be exchanged for Fireball. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "moderate-high",
+        "reason": "Incoming pressure determines whether Carve can safely be exchanged for Fireball. Middle talents make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "moderate-high",
+        "reason": "Incoming pressure determines whether Carve can safely be exchanged for Fireball. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "moderate-high",
+        "reason": "Incoming pressure determines whether Carve can safely be exchanged for Fireball. A durable target makes repeated timing and resource discipline matter.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "Incoming pressure determines whether Carve can safely be exchanged for Fireball. Changing pack size, lifespan, and tank movement add another constraint.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "Incoming pressure determines whether Carve can safely be exchanged for Fireball. Enemy disruption and an active opponent make the same task less predictable.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "low-moderate",
+        "reason": "Two slow weapons and active mitigation reward deliberate sequencing over speed. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "moderate",
+        "reason": "Two slow weapons and active mitigation reward deliberate sequencing over speed. Middle talents make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "moderate",
+        "reason": "Two slow weapons and active mitigation reward deliberate sequencing over speed. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "moderate",
+        "reason": "Two slow weapons and active mitigation reward deliberate sequencing over speed. A durable target makes repeated timing and resource discipline matter.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "moderate-high",
+        "reason": "Two slow weapons and active mitigation reward deliberate sequencing over speed. Changing pack size, lifespan, and tank movement add another constraint.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "moderate-high",
+        "reason": "Two slow weapons and active mitigation reward deliberate sequencing over speed. Enemy disruption and an active opponent make the same task less predictable.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "moderate",
+        "reason": "A bad Inner Demon or barrier decision can convert a durable pull into an uncovered spike. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "moderate-high",
+        "reason": "A bad Inner Demon or barrier decision can convert a durable pull into an uncovered spike. Middle talents make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "moderate-high",
+        "reason": "A bad Inner Demon or barrier decision can convert a durable pull into an uncovered spike. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "moderate-high",
+        "reason": "A bad Inner Demon or barrier decision can convert a durable pull into an uncovered spike. A durable target makes repeated timing and resource discipline matter.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "A bad Inner Demon or barrier decision can convert a durable pull into an uncovered spike. Changing pack size, lifespan, and tank movement add another constraint.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "A bad Inner Demon or barrier decision can convert a durable pull into an uncovered spike. Enemy disruption and an active opponent make the same task less predictable.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      }
+    },
+    "setup_burden": {
+      "leveling_10_29": {
+        "value": "low",
+        "reason": "Inner Demon must precede Smite, and tougher pulls need barriers prepared before aggression. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "low-moderate",
+        "reason": "Inner Demon must precede Smite, and tougher pulls need barriers prepared before aggression. Middle talents make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "low-moderate",
+        "reason": "Inner Demon must precede Smite, and tougher pulls need barriers prepared before aggression. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "low-moderate",
+        "reason": "Inner Demon must precede Smite, and tougher pulls need barriers prepared before aggression. A durable target makes repeated timing and resource discipline matter.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "low-moderate",
+        "reason": "Inner Demon must precede Smite, and tougher pulls need barriers prepared before aggression. Changing pack size, lifespan, and tank movement add another constraint.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "moderate",
+        "reason": "Inner Demon must precede Smite, and tougher pulls need barriers prepared before aggression. Enemy disruption and an active opponent make the same task less predictable.",
+        "claim_ids": [
+          "talent:felsworn/tyrant:14-18-4-0",
+          "talent:felsworn/tyrant:14-18-10-0",
+          "talent:felsworn/tyrant:14-18-4-1",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [
+      {
+        "text": "You want an aggressive, visually imposing tank with avoidance conversion and self-healing.",
+        "claim_ids": [
+          "inference:felsworn/tyrant:identity"
+        ]
+      },
+      {
+        "text": "You enjoy a loop where this state matters: Barrier, Inner Demon, Felfury, retaliation, and mitigation cooldowns all matter.",
+        "claim_ids": [
+          "inference:felsworn/tyrant:identity",
+          "observed:felsworn/tyrant:community-practice"
+        ]
+      }
+    ],
+    "avoid_if": [
+      {
+        "text": "You want a conventional shield tank or dislike tracking avoidance and retaliation states.",
+        "claim_ids": [
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      },
+      {
+        "text": "You want mistakes to be cheap; here, casting Smite outside Inner Demon, replacing Carve when defense is still needed, or overlapping barrier and mitigation windows can expose the tank suddenly.",
+        "claim_ids": [
+          "inference:felsworn/tyrant:failure-cost",
+          "observed:felsworn/tyrant:community-practice"
+        ]
+      }
+    ]
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [
+    "observed:felsworn/tyrant:performance"
+  ],
+  "sentiment": {
+    "praise": [
+      {
+        "theme": "Players recommend Tyrant for smooth solo leveling, and the guide emphasizes unusually strong barriers and straightforward durability.",
+        "claim_ids": [
+          "observed:felsworn/tyrant:sentiment-context",
+          "observed:felsworn/tyrant:community-practice",
+          "observed:felsworn/tyrant:build-practice"
+        ]
+      }
+    ],
+    "frustrations": [
+      {
+        "theme": "Casting Smite outside Inner Demon, replacing Carve when defense is still needed, or overlapping barrier and mitigation windows can expose the tank suddenly.",
+        "claim_ids": [
+          "observed:felsworn/tyrant:sentiment-context",
+          "inference:felsworn/tyrant:failure-cost"
+        ]
+      }
+    ],
+    "contested": [
+      {
+        "theme": "The survivability claims and two-slow-two-hand setup come from a single guide and are not comparative tank benchmarks.",
+        "claim_ids": [
+          "observed:felsworn/tyrant:sentiment-context",
+          "observed:felsworn/tyrant:community-practice"
+        ]
+      }
+    ]
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 2,
+    "latest_update": "2026-07-24T10:39:20.69+00:00",
+    "top_title": "IMMORTAL TYRANT - Walking Fortress",
+    "top_url": "https://coabuildhub.com/build/ae283725-5e17-4da9-b724-6729e0729a54",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:ae283725-5e17-4da9-b724-6729e0729a54"
+    ]
+  },
+  "coverage": {
+    "mechanical": "manual_talent_and_build_interpretation",
+    "community": "manual_recent_source_review",
+    "performance": "limited_uncontrolled",
+    "video": "searched_none_verified",
+    "overall_confidence": "medium",
+    "gaps": [
+      "No verified current full-encounter rotation video.",
+      "Any priority or mode not supported above remains an explicit gap rather than an inferred optimum."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:felsworn/tyrant:14-18-4-0",
+      "kind": "structural",
+      "text": "Carve: Consumes 2 FelfuryCharge up a powerful attack over 2.5 seconds. Upon ending the channel, slash in front of you, dealing increased Weapon Damage with both weapons based on how long you channel, dealing less damage with each target struck. Inner Demon: Reduces affected enemies melee and ranged haste by -20% for 8 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-10-0",
+      "kind": "structural",
+      "text": "Burning Commander: Level 10 PassiveAllows you to wield a Two-Handed Axe, Mace, or Sword in each hand and grants you additional Armor and magic resistance based on your dodge rating, but reducing your damage dealt by -10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-4-1",
+      "kind": "structural",
+      "text": "Demonic Will: Generates 1 FelfuryStrengthen your will, reducing Physical damage taken by -30% for 10 seconds.While active, direct damaging abilities heal you for 3% of your maximum health. Can only occur once every 0.5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-2-2a",
+      "kind": "structural",
+      "text": "Annihilan Rituals: Fully channeling Carve now refunds 1 Felfury.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-2-2b",
+      "kind": "structural",
+      "text": "Quick Carving: Carve now channels 1 sec faster.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-4-2",
+      "kind": "structural",
+      "text": "Nether Disciple: Increases your dodge and parry chance by 3%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-6-2",
+      "kind": "structural",
+      "text": "Demon Hide: While Inner Demon is active, your Armor contribution from cloth and leather items is increased by 120%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-10-2",
+      "kind": "structural",
+      "text": "Hulking Demon: Level 20 PassiveIncreases your attack power by 30% of your Stamina and your hit rating by 6% of your Agility.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-1-3",
+      "kind": "structural",
+      "text": "Felrend: Generates 1 FelfuryErupt in a whirlwind of felfury, striking all enemies within 6 yds with both weapons, dealing Weapon Damage plus 5.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-4-3",
+      "kind": "structural",
+      "text": "Pure Hatred: Your Hateforged Barrier now also scales with your dodge rating.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-7-3",
+      "kind": "structural",
+      "text": "Burning Legionnaire: Reduces the Energy cost of Twin Slice and Sunder by -10.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-0-4",
+      "kind": "structural",
+      "text": "Outland Slaver: Reduces the cost of your Felrend and Fel Fireball by -3 and increases their damage dealt by 15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-2-4a",
+      "kind": "structural",
+      "text": "Unholy Endurance: Increases the damage and threat generated from Carve by 15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-2-4b",
+      "kind": "structural",
+      "text": "Battle Finesse: While channeling Carve, your chance to dodge is now increased by 1% based on how long you channel, up to a maximum of 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-4-4",
+      "kind": "structural",
+      "text": "Felspill: Generating Felfury now leeches 10% AP health from 3 nearby enemies within 6 yds, scaling with your attack power.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-6-4",
+      "kind": "structural",
+      "text": "Infernal Constitution: Increases your maximum health by 10% and increases your off-hand weapon damage by 30%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-8-4a",
+      "kind": "structural",
+      "text": "Abyssal Conditioning: Casting Felfury spenders now increases your Energy regeneration by 5% for 10 seconds, stacking up to 4 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-8-4b",
+      "kind": "structural",
+      "text": "Illidari Training: Dodging an attack now generates 3 Energy.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-10-4",
+      "kind": "structural",
+      "text": "Hellfire Carver: Level 30 PassiveCasting Carve now makes your next Fel Fireball instant cast and causes it to strike 1 additional enemy near the primary target based on how long you channeled, up to a maximum of 10 enemies, dealing less damage with each target struck.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-1-5",
+      "kind": "structural",
+      "text": "Vengeance: Your Twin Slice and Felrend now have a 60% chance to generate 1 additional Felfury.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-2-5",
+      "kind": "structural",
+      "text": "Bulwark of Azzinoth: Inner Demon now also reduces your damage taken by -10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-4-5",
+      "kind": "structural",
+      "text": "Burning Hatred: Enrages you, instantly generating 6 Felfury and causing your melee damage to leech health to you equal to 50% of the damage dealt as Chaos damage for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-6-5",
+      "kind": "structural",
+      "text": "Betrayer: Dodging attacks causes 40% off-hand Weapon Damage to attackers and enrages your party and raid members within 20 yds, increasing their critical strike chance by 2% for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-7-5",
+      "kind": "structural",
+      "text": "Tyrant's Gaze: Set your fiery gaze upon an enemy and all enemies nearby, intimidating them and causing them to combust, dealing 220 + 35% AP Shadowflame Damage to them.Damaging an enemy in this way heals you for 146 + 50% AP and generates 1 Felfury.Only usable on enemies below 35% health.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-0-6",
+      "kind": "structural",
+      "text": "Straight to the Nether: While Inner Demon is active, Carve and Sargeron Smite now leeches 20% of the damage dealt from the initial strike as Shadowflame Damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-2-6a",
+      "kind": "structural",
+      "text": "Fel Torpedo: Transform: s your Chaos Rush into Fel Torpedo.Fel TorpedoGenerates 1 FelfuryTorpedo forward in the direction you're running and deal 195 + 35% AP Shadowflame Damage to enemies in your path.Generates a large amount of threat. Scales with modifiers to Chaos Rush",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-2-6b",
+      "kind": "structural",
+      "text": "Illidan's Favor: Removes the Energy cost of your Felbane and Manaburn and your Manaburn now strikes 4 additional enemies near the primary target.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-4-6",
+      "kind": "structural",
+      "text": "Nether Strength: Casting Felfury spenders now reduces the cooldown of Burning Hatred, Hateforged Barrier, and Demonic Will by -1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-6-6a",
+      "kind": "structural",
+      "text": "Demonic Blood: Generating Felfury now extends the duration of Inner Demon by 0.5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-6-6b",
+      "kind": "structural",
+      "text": "Demonic Fortitude: While Demonic Will or Hateforged Barrier are active, all damage taken or avoided now has a 20% chance to generate 1 Felfury.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-8-6",
+      "kind": "structural",
+      "text": "Expose: Direct Fire and Shadow spell damage dealt now applies Expose to enemies.Expose (Proc)Damage taken from the Felsworn increased by 10% and the critical strike chance of all allies against this target is increased by 3% for 8 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-10-6",
+      "kind": "structural",
+      "text": "Felblade: Level 40 PassiveDamage dealt by Fel Fireball, Sargeron Smite, and Twin Slice now additionally scales with your Agility.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-1-7",
+      "kind": "structural",
+      "text": "Doomscarring: Your melee critical strikes now deal an additional 1 + 30% AP Physical damage and scars enemies for 12 seconds, increasing your allies' attack power against them by 45 + 15% Agility.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-4-7a",
+      "kind": "structural",
+      "text": "Fel Daze: Increases the critical strike chance of Fel Fireball by 10% and it's damage dealt now reduces the enemy's chance to hit by -3% for 6 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-4-7b",
+      "kind": "structural",
+      "text": "Dark Lord: While above 75% health, your damage taken is reduced by -5% and damage dealt is increased by 5%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-7-7",
+      "kind": "structural",
+      "text": "Eye of the Tyrant: Grant 10% increased melee and ranged haste to party and raid members within 100 yds. Does not stack with similar effects.In addition, your attack power is increased by 5%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-2-8",
+      "kind": "structural",
+      "text": "Vengeance Is Mine: Dodging or parrying an attack now gives you a 10% chance to make your next 10 instances of damage with Twin Slice deal 30% increased damage and generate 1 Felfury.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-4-8",
+      "kind": "structural",
+      "text": "Mannoroth's Rage: Reduces the cooldown of Burning Hatred by -60 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-6-8",
+      "kind": "structural",
+      "text": "Infernal Whipcrack: Enrage up to 8 allies within 20 yds, reducing their damage taken by -15% and increasing their haste by 10% for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-10-8",
+      "kind": "structural",
+      "text": "Fel Monstrosity: Level 50 PassiveIncreases your Stamina by 25% and size by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-2-9",
+      "kind": "structural",
+      "text": "Tyrannical Resolve: Taunt nearby enemies for 4 seconds and ignore -50% of all damage taken for 30 seconds, up to 100% of your maximum health.When this ends, you unleash a Felfire Blast that leeches health from nearby enemies based on how many times you took damage with the effect active.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-4-9",
+      "kind": "structural",
+      "text": "Grommash's Folly: While Inner Demon is active, your melee haste is now increased by 15% and you now heal equal to 50% of all damage dealt by critical strikes with auto attacks.In addition, critical strikes with Carve deal 5% increased damage, increasing up to 60% with each strike based on how long you channel.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:felsworn/tyrant:14-18-6-9",
+      "kind": "structural",
+      "text": "Taskmaster's Army: Reduces the cooldown of Infernal Whipcrack by -30 sec and it now affects all allies and its radius is increased by 15 yds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "observed:felsworn/tyrant:community-practice",
+      "kind": "observed",
+      "text": "The detailed 'Walking Fortress' guide documents barrier, Inner Demon, single-target Twin Slice, and Felrend/Sunder/Sargeron AoE priorities. It presents Tyrant as beginner-friendly for leveling and PvP flag carrying, but remains one author's two-slow-two-hand build.",
+      "source_ids": [
+        "reddit:felsworn-leveling-2026-07-31",
+        "buildhub:ae283725-5e17-4da9-b724-6729e0729a54"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_contexts"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Manual source reading; reported play remains bounded to the author's level, build, mode, and stated limitations.",
+      "derived_from_claim_ids": []
+    },
+    {
+      "id": "observed:felsworn/tyrant:build-practice",
+      "kind": "observed",
+      "text": "The leading guide supplies separate single-target and AoE priorities, barrier and Inner Demon rules, a survival tradeoff, leveling advice, and PvP flag-carrier context.",
+      "source_ids": [
+        "buildhub-builds-2026-08-05",
+        "buildhub:ae283725-5e17-4da9-b724-6729e0729a54"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "community_build_snapshot"
+        ],
+        "build_or_mode": [
+          "documented_builds"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The captured build documents one contributor's practice; missing prose remains an explicit rotation gap.",
+      "derived_from_claim_ids": []
+    },
+    {
+      "id": "observed:felsworn/tyrant:performance",
+      "kind": "observed",
+      "text": "The July community compilation reports 3,601 DPS in the source's tank_or_offrole context, and the August Mythic inventory lists 100 record(s). Neither signal is normalized for gear, encounter, role contribution, or player selection.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "pve_unspecified",
+          "mythic_dungeons"
+        ],
+        "build_or_mode": [
+          "tank_or_offrole"
+        ]
+      },
+      "confidence": "low",
+      "conflicts_with": [],
+      "notes": "Performance context is incomplete; do not use as a tier rank.",
+      "derived_from_claim_ids": []
+    },
+    {
+      "id": "observed:felsworn/tyrant:sentiment-context",
+      "kind": "observed",
+      "text": "Praise: Players recommend Tyrant for smooth solo leveling, and the guide emphasizes unusually strong barriers and straightforward durability. Contested evidence: The survivability claims and two-slow-two-hand setup come from a single guide and are not comparative tank benchmarks.",
+      "source_ids": [
+        "reddit:felsworn-leveling-2026-07-31",
+        "buildhub:ae283725-5e17-4da9-b724-6729e0729a54"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_sentiment"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Sentiment is reported by source and context, not averaged into a universal verdict.",
+      "derived_from_claim_ids": []
+    },
+    {
+      "id": "inference:felsworn/tyrant:identity",
+      "kind": "inference",
+      "text": "A dual-two-handed demonic fortress that converts avoidance into armor and resistance, then leeches through incoming pressure.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:felsworn/tyrant:14-18-4-0",
+        "talent:felsworn/tyrant:14-18-10-0",
+        "talent:felsworn/tyrant:14-18-4-1",
+        "talent:felsworn/tyrant:14-18-2-9",
+        "talent:felsworn/tyrant:14-18-4-9",
+        "talent:felsworn/tyrant:14-18-6-9",
+        "observed:felsworn/tyrant:community-practice",
+        "observed:felsworn/tyrant:sentiment-context"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Descriptive playstyle classification from talent structure and manually reviewed current practice, not an official label."
+    },
+    {
+      "id": "inference:felsworn/tyrant:failure-cost",
+      "kind": "inference",
+      "text": "Casting Smite outside Inner Demon, replacing Carve when defense is still needed, or overlapping barrier and mitigation windows can expose the tank suddenly.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "observed:felsworn/tyrant:community-practice",
+        "inference:felsworn/tyrant:identity"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Failure-mode interpretation; exact thresholds require live verification."
+    }
+  ]
+}

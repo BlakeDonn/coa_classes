@@ -1,0 +1,1551 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "runemaster/arcane",
+    "class": "Runemaster",
+    "name": "Arcane",
+    "roles": [
+      "Damage"
+    ],
+    "range": [
+      "Ranged"
+    ]
+  },
+  "identity": {
+    "fantasy": "",
+    "one_line": "A Glyph builder/spender. Elemental spells grant Frost, Flame, and Arcane Glyphs; Glyphic Ruin unleashes the active effect; Overload, Manuscription, and Chapters create larger multi-school sequences. It has flexible control and AoE, but the correct order of attunements and Glyph releases matters.",
+    "primary_family": "",
+    "also_fits": [],
+    "claim_ids": [
+      "talent:runemaster/arcane:32-11-4-0",
+      "talent:runemaster/arcane:32-11-10-0",
+      "talent:runemaster/arcane:32-11-4-1",
+      "talent:runemaster/arcane:32-11-2-2",
+      "talent:runemaster/arcane:32-11-4-2",
+      "talent:runemaster/arcane:32-11-6-2",
+      "talent:runemaster/arcane:32-11-10-2",
+      "talent:runemaster/arcane:32-11-1-3",
+      "talent:runemaster/arcane:32-11-4-3",
+      "talent:runemaster/arcane:32-11-7-3",
+      "talent:runemaster/arcane:32-11-0-4a",
+      "talent:runemaster/arcane:32-11-0-4b",
+      "talent:runemaster/arcane:32-11-2-4",
+      "talent:runemaster/arcane:32-11-3-4",
+      "talent:runemaster/arcane:32-11-5-4",
+      "talent:runemaster/arcane:32-11-6-4",
+      "talent:runemaster/arcane:32-11-8-4",
+      "talent:runemaster/arcane:32-11-10-4",
+      "talent:runemaster/arcane:32-11-0-5",
+      "talent:runemaster/arcane:32-11-2-5",
+      "talent:runemaster/arcane:32-11-4-5",
+      "talent:runemaster/arcane:32-11-6-5",
+      "talent:runemaster/arcane:32-11-8-5",
+      "talent:runemaster/arcane:32-11-0-6",
+      "talent:runemaster/arcane:32-11-2-6",
+      "talent:runemaster/arcane:32-11-4-6",
+      "talent:runemaster/arcane:32-11-6-6",
+      "talent:runemaster/arcane:32-11-8-6",
+      "talent:runemaster/arcane:32-11-10-6",
+      "talent:runemaster/arcane:32-11-1-7",
+      "talent:runemaster/arcane:32-11-3-7",
+      "talent:runemaster/arcane:32-11-5-7",
+      "talent:runemaster/arcane:32-11-7-7a",
+      "talent:runemaster/arcane:32-11-7-7b",
+      "talent:runemaster/arcane:32-11-2-8",
+      "talent:runemaster/arcane:32-11-4-8",
+      "talent:runemaster/arcane:32-11-6-8",
+      "talent:runemaster/arcane:32-11-10-8",
+      "talent:runemaster/arcane:32-11-1-9",
+      "talent:runemaster/arcane:32-11-4-9",
+      "talent:runemaster/arcane:32-11-7-9"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "A Glyph builder/spender. Elemental spells grant Frost, Flame, and Arcane Glyphs; Glyphic Ruin unleashes the active effect; Overload, Manuscription, and Chapters create larger multi-school sequences. It has flexible control and AoE, but the correct order of attunements and Glyph releases matters.",
+    "resources": [
+      "Frost Glyph"
+    ],
+    "builders": [
+      {
+        "name": "Glyphic Overload",
+        "claim_ids": [
+          "talent:runemaster/arcane:32-11-4-3"
+        ]
+      },
+      {
+        "name": "Harnessing Leylines",
+        "claim_ids": [
+          "talent:runemaster/arcane:32-11-7-7a"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Unleashed Tattoos",
+        "claim_ids": [
+          "talent:runemaster/arcane:32-11-10-4"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Flame Glyph",
+        "claim_ids": [
+          "talent:runemaster/arcane:32-11-4-1"
+        ]
+      },
+      {
+        "name": "Arcane Glyph",
+        "claim_ids": [
+          "talent:runemaster/arcane:32-11-4-2"
+        ]
+      },
+      {
+        "name": "Cold Elements",
+        "claim_ids": [
+          "talent:runemaster/arcane:32-11-0-4b"
+        ]
+      },
+      {
+        "name": "Primordial Salvos",
+        "claim_ids": [
+          "talent:runemaster/arcane:32-11-6-4"
+        ]
+      },
+      {
+        "name": "Unleashed Tattoos",
+        "claim_ids": [
+          "talent:runemaster/arcane:32-11-10-4"
+        ]
+      },
+      {
+        "name": "Silencing Rune",
+        "claim_ids": [
+          "talent:runemaster/arcane:32-11-2-5"
+        ]
+      },
+      {
+        "name": "Arcane Student",
+        "claim_ids": [
+          "talent:runemaster/arcane:32-11-2-6"
+        ]
+      },
+      {
+        "name": "Burned Etching",
+        "claim_ids": [
+          "talent:runemaster/arcane:32-11-7-7b"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Runic Obliteration",
+        "claim_ids": [
+          "talent:runemaster/arcane:32-11-10-8"
+        ],
+        "structural_description": "Level 50 PassiveUsing Elemental Burst now has a 20% chance to transform your next Primordial Blast into Runic Obliteration for 10 seconds.Runic Obliteration (Spell)Hurl powerful elemental missiles at an enemy, dealing 250 + 44% SP Elemental Damage every 0 sec for 1 seconds. Each missile grants you a Glyph.Scales with modifiers to Primordial Blast."
+      }
+    ],
+    "single_target": "",
+    "aoe": "",
+    "movement_and_target_switching": "",
+    "defense_and_control": "",
+    "group_utility": "",
+    "failure_modes": [],
+    "claim_ids": [
+      "talent:runemaster/arcane:32-11-4-0",
+      "talent:runemaster/arcane:32-11-10-0",
+      "talent:runemaster/arcane:32-11-4-1",
+      "talent:runemaster/arcane:32-11-2-2",
+      "talent:runemaster/arcane:32-11-4-2",
+      "talent:runemaster/arcane:32-11-6-2",
+      "talent:runemaster/arcane:32-11-10-2",
+      "talent:runemaster/arcane:32-11-1-3",
+      "talent:runemaster/arcane:32-11-4-3",
+      "talent:runemaster/arcane:32-11-7-3",
+      "talent:runemaster/arcane:32-11-0-4a",
+      "talent:runemaster/arcane:32-11-0-4b",
+      "talent:runemaster/arcane:32-11-2-4",
+      "talent:runemaster/arcane:32-11-3-4",
+      "talent:runemaster/arcane:32-11-5-4",
+      "talent:runemaster/arcane:32-11-6-4",
+      "talent:runemaster/arcane:32-11-8-4",
+      "talent:runemaster/arcane:32-11-10-4",
+      "talent:runemaster/arcane:32-11-0-5",
+      "talent:runemaster/arcane:32-11-2-5",
+      "talent:runemaster/arcane:32-11-4-5",
+      "talent:runemaster/arcane:32-11-6-5",
+      "talent:runemaster/arcane:32-11-8-5",
+      "talent:runemaster/arcane:32-11-0-6",
+      "talent:runemaster/arcane:32-11-2-6",
+      "talent:runemaster/arcane:32-11-4-6",
+      "talent:runemaster/arcane:32-11-6-6",
+      "talent:runemaster/arcane:32-11-8-6",
+      "talent:runemaster/arcane:32-11-10-6",
+      "talent:runemaster/arcane:32-11-1-7",
+      "talent:runemaster/arcane:32-11-3-7",
+      "talent:runemaster/arcane:32-11-5-7",
+      "talent:runemaster/arcane:32-11-7-7a",
+      "talent:runemaster/arcane:32-11-7-7b",
+      "talent:runemaster/arcane:32-11-2-8",
+      "talent:runemaster/arcane:32-11-4-8",
+      "talent:runemaster/arcane:32-11-6-8",
+      "talent:runemaster/arcane:32-11-10-8",
+      "talent:runemaster/arcane:32-11-1-9",
+      "talent:runemaster/arcane:32-11-4-9",
+      "talent:runemaster/arcane:32-11-7-9"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Glyphic Ruin",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-4-0"
+          ]
+        },
+        {
+          "name": "Frost Glyph",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-10-0"
+          ]
+        },
+        {
+          "name": "Flame Glyph",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-4-1"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:runemaster/arcane:32-11-4-0",
+        "talent:runemaster/arcane:32-11-10-0",
+        "talent:runemaster/arcane:32-11-4-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Focusing Crystals",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-2-2"
+          ]
+        },
+        {
+          "name": "Arcane Glyph",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-4-2"
+          ]
+        },
+        {
+          "name": "Expert Elementalist",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-6-2"
+          ]
+        },
+        {
+          "name": "Ley Magician",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-10-2"
+          ]
+        },
+        {
+          "name": "Frigid Blast",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-1-3"
+          ]
+        },
+        {
+          "name": "Glyphic Overload",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-4-3"
+          ]
+        },
+        {
+          "name": "Concentrated Magic",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-7-3"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:runemaster/arcane:32-11-2-2",
+        "talent:runemaster/arcane:32-11-4-2",
+        "talent:runemaster/arcane:32-11-6-2",
+        "talent:runemaster/arcane:32-11-10-2",
+        "talent:runemaster/arcane:32-11-1-3",
+        "talent:runemaster/arcane:32-11-4-3",
+        "talent:runemaster/arcane:32-11-7-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Frigid Elements",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-0-4a"
+          ]
+        },
+        {
+          "name": "Cold Elements",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-0-4b"
+          ]
+        },
+        {
+          "name": "Primordial Power",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-2-4"
+          ]
+        },
+        {
+          "name": "Wizardry",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-3-4"
+          ]
+        },
+        {
+          "name": "Runeslinger",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-5-4"
+          ]
+        },
+        {
+          "name": "Primordial Salvos",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-6-4"
+          ]
+        },
+        {
+          "name": "Primordial Pulse",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-8-4"
+          ]
+        },
+        {
+          "name": "Unleashed Tattoos",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-10-4"
+          ]
+        },
+        {
+          "name": "Advanced Magi",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-0-5"
+          ]
+        },
+        {
+          "name": "Silencing Rune",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-2-5"
+          ]
+        },
+        {
+          "name": "Thaumaturgy",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-4-5"
+          ]
+        },
+        {
+          "name": "Terraglyphs",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-6-5"
+          ]
+        },
+        {
+          "name": "Leyline Magician",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-8-5"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:runemaster/arcane:32-11-0-4a",
+        "talent:runemaster/arcane:32-11-0-4b",
+        "talent:runemaster/arcane:32-11-2-4",
+        "talent:runemaster/arcane:32-11-3-4",
+        "talent:runemaster/arcane:32-11-5-4",
+        "talent:runemaster/arcane:32-11-6-4",
+        "talent:runemaster/arcane:32-11-8-4",
+        "talent:runemaster/arcane:32-11-10-4",
+        "talent:runemaster/arcane:32-11-0-5",
+        "talent:runemaster/arcane:32-11-2-5",
+        "talent:runemaster/arcane:32-11-4-5",
+        "talent:runemaster/arcane:32-11-6-5",
+        "talent:runemaster/arcane:32-11-8-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Glyphic Destruction",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-0-6"
+          ]
+        },
+        {
+          "name": "Arcane Student",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-2-6"
+          ]
+        },
+        {
+          "name": "Phase Rush",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-4-6"
+          ]
+        },
+        {
+          "name": "Runes of Quickness",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-6-6"
+          ]
+        },
+        {
+          "name": "Bursting Pulses",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-8-6"
+          ]
+        },
+        {
+          "name": "Unleashed Power",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-10-6"
+          ]
+        },
+        {
+          "name": "Glyph Seeker",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-1-7"
+          ]
+        },
+        {
+          "name": "Cryomagi",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-3-7"
+          ]
+        },
+        {
+          "name": "Ley Walker",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-5-7"
+          ]
+        },
+        {
+          "name": "Harnessing Leylines",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-7-7a"
+          ]
+        },
+        {
+          "name": "Burned Etching",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-7-7b"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:runemaster/arcane:32-11-0-6",
+        "talent:runemaster/arcane:32-11-2-6",
+        "talent:runemaster/arcane:32-11-4-6",
+        "talent:runemaster/arcane:32-11-6-6",
+        "talent:runemaster/arcane:32-11-8-6",
+        "talent:runemaster/arcane:32-11-10-6",
+        "talent:runemaster/arcane:32-11-1-7",
+        "talent:runemaster/arcane:32-11-3-7",
+        "talent:runemaster/arcane:32-11-5-7",
+        "talent:runemaster/arcane:32-11-7-7a",
+        "talent:runemaster/arcane:32-11-7-7b"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Eye of the Beholder",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-2-8"
+          ]
+        },
+        {
+          "name": "Glyph God",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-4-8"
+          ]
+        },
+        {
+          "name": "Scroll of Magic",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-6-8"
+          ]
+        },
+        {
+          "name": "Runic Obliteration",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-10-8"
+          ]
+        },
+        {
+          "name": "Kirin Tor Agent",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-1-9"
+          ]
+        },
+        {
+          "name": "Manuscription",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-4-9"
+          ]
+        },
+        {
+          "name": "Glyph Master",
+          "claim_ids": [
+            "talent:runemaster/arcane:32-11-7-9"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:runemaster/arcane:32-11-2-8",
+        "talent:runemaster/arcane:32-11-4-8",
+        "talent:runemaster/arcane:32-11-6-8",
+        "talent:runemaster/arcane:32-11-10-8",
+        "talent:runemaster/arcane:32-11-1-9",
+        "talent:runemaster/arcane:32-11-4-9",
+        "talent:runemaster/arcane:32-11-7-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "leveling_30_49": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "level_50_60": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "boss": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "dungeon_aoe": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "pvp": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [],
+    "avoid_if": []
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [],
+  "sentiment": {
+    "praise": [],
+    "frustrations": [],
+    "contested": []
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 2,
+    "latest_update": "2026-07-25T01:46:06.08+00:00",
+    "top_title": "Guia Glyphic Runemaster (pt-br)",
+    "top_url": "https://coabuildhub.com/build/8c73e1e4-17b0-4a02-aae9-db2be4d5a4ea",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:8c73e1e4-17b0-4a02-aae9-db2be4d5a4ea"
+    ]
+  },
+  "coverage": {
+    "mechanical": "structural_baseline",
+    "community": "indexed",
+    "performance": "missing",
+    "video": "missing",
+    "overall_confidence": "low",
+    "gaps": [
+      "Effective core loop needs recent guide or player cross-check.",
+      "Contextual complexity values are not yet researched.",
+      "Recent performance, sentiment, issues, and video evidence are not yet reconciled."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:runemaster/arcane:32-11-4-0",
+      "kind": "structural",
+      "text": "Glyphic Ruin: Unleash your active Glyph effect on an enemy and deal 82 + 100% SP Elemental Damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-10-0",
+      "kind": "structural",
+      "text": "Frost Glyph: Level 10 PassiveUsing Elemental Burst and Primordial Blast now grants you Frost Glyph. Frost GlyphUnleash: Deals 437 Frost Damage and slows movement speed by -30% for 4 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-4-1",
+      "kind": "structural",
+      "text": "Flame Glyph: Using Elemental Burst or Primordial Blast while Frost Glyph is active now grants you a Flame Glyph.Flame GlyphUnleash: Deals 250 + 65% fire SP Fire Damage and an additional 750 + 30% SP Fire Damage over 6 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-2-2",
+      "kind": "structural",
+      "text": "Focusing Crystals: Increases your Magic Damage dealt by 3% and allows 30% of your mana regeneration to continue while in combat.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-4-2",
+      "kind": "structural",
+      "text": "Arcane Glyph: Using Elemental Burst or Primordial Blast while Flame Glyph is active now grants you Arcane Glyph.Arcane GlyphUnleash: Deals 276 + 18% arcane SP Arcane Damage to up to 0 enemies near the primary target.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-6-2",
+      "kind": "structural",
+      "text": "Expert Elementalist: Reduces the cast time of Elemental Burst and Glyphic Ruin by 0.5 sec and increases your chance to hit by 3%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-10-2",
+      "kind": "structural",
+      "text": "Ley Magician: Level 20 PassiveIncreases your spell damage by 30% of Spirit and 10% of your Intellect, and spell hit rating by 6% of your Spirit.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-1-3",
+      "kind": "structural",
+      "text": "Frigid Blast: Blast an enemy with frigid runic magic, dealing cond(gt(SPFR, SPA), 40+0+SPFR*0.65, 40+0+SPA*0.65) Frost damage and applying Frigid Fusion. Frigid Fusion (Aura)Accumulate 20% of your damage dealt to the target over 6 seconds.After the duration, deal it as Frost Damage to the target.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-4-3",
+      "kind": "structural",
+      "text": "Glyphic Overload: Instantly generate Frost Glyph, Flame Glyph, and Arcane Glyph on yourself and overload, granting all active Glyphs an additional effect the next time you unleash them on an enemy. Lasts 15 seconds.Usable while stealthed.Overloaded Arcane GlyphDeals 100% increased damage.Overloaded Flame GlyphFlame Glyph now affects 2 additional enemies, and deals an additional 475 + 200% fire SP Fire Damage over 5 seconds.Overloaded Frost GlyphFreeze an enemy in place for 3 seconds. At the end of this duration, their movement speed is reduced by -50% for 5 seconds. Does not break on damage taken.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-7-3",
+      "kind": "structural",
+      "text": "Concentrated Magic: Increases your Spirit by 5% and reduces spell pushback suffered from damaging attacks by 35%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-0-4a",
+      "kind": "structural",
+      "text": "Frigid Elements: Increases the spell power scaling of Frigid Blast by 50%, but the cast time is increased by 1 sec.Additionally, Frigid Fusion now accumulates 10% more damage on the target.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-0-4b",
+      "kind": "structural",
+      "text": "Cold Elements: Damage dealt with Elemental Burst and Primordial Blast now has a 20% chance to reset the cooldown of Frigid Blast and make its next use within 10 seconds instant cast.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-2-4",
+      "kind": "structural",
+      "text": "Primordial Power: Increases the duration of Frigid Fusion by 2 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-3-4",
+      "kind": "structural",
+      "text": "Wizardry: Increases your Intellect by 10% and increases the mana gained for each point of Intellect by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-5-4",
+      "kind": "structural",
+      "text": "Runeslinger: Direct damage dealt has a 5% chance to increase your spell haste by 20% for 5 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-6-4",
+      "kind": "structural",
+      "text": "Primordial Salvos: Unleashing a Glyph now deals an additional 115 + 6% SP damage of the same magic school to all enemies within 8 yds of the target.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-8-4",
+      "kind": "structural",
+      "text": "Primordial Pulse: Inscribe an area with runes for 2 seconds, dealing 23 + 30% SP Elemental Damage every 0 sec to up to 5 enemies inside.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-10-4",
+      "kind": "structural",
+      "text": "Unleashed Tattoos: Level 30 PassiveWhile Runic Tattoos: Fire is active, your Glyphic Ruin now has 30% increased critical damage.While Runic Tattoos: Water is active, the cost of your Glyphic Ruin is now reduced by -50%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-0-5",
+      "kind": "structural",
+      "text": "Advanced Magi: Increases the spell power scaling of Elemental Burst by 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-2-5",
+      "kind": "structural",
+      "text": "Silencing Rune: Inscribe a rune in a 5 yd radius at target location that activates after 1 sec, silencing all enemies within for 6 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-4-5",
+      "kind": "structural",
+      "text": "Thaumaturgy: Blast an enemy for 67 + 41% arcane SP + 10% AP Arcane damage and unleash your active Glyph effect.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-6-5",
+      "kind": "structural",
+      "text": "Terraglyphs: Increases the chance to trigger Weapon Engraving: Earth by 4%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-8-5",
+      "kind": "structural",
+      "text": "Leyline Magician: Casting Primordial Blast now reduces the cooldown of Primordial Pulse by -5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-0-6",
+      "kind": "structural",
+      "text": "Glyphic Destruction: Increases the damage of Glyphic Ruin by 100% against Frozen targets.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-2-6",
+      "kind": "structural",
+      "text": "Arcane Student: While Glyphic Overload is active, your Glyphic Ruin is guaranteed to critically strike.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-4-6",
+      "kind": "structural",
+      "text": "Phase Rush: Casting Thaumaturgy now grants you 25% increased movement speed for 5 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-6-6",
+      "kind": "structural",
+      "text": "Runes of Quickness: Increases the spell haste of all party and raid members by 3%. Does not stack with similar effects.In addition, the range of your Glyphic spells is increased by 6 yds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-8-6",
+      "kind": "structural",
+      "text": "Bursting Pulses: Each weapon enchanted by Weapon Engraving: Earth now reduces the cooldown of Primordial Pulse by -4 sec and increases it's damage by 15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-10-6",
+      "kind": "structural",
+      "text": "Unleashed Power: Level 40 PassiveIncreases the spell power scaling of your Unleashed Glyphs by 10%.In addition, dealing damage with Elemental Burst now increases the target's spell damage taken by 10% for 12 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-1-7",
+      "kind": "structural",
+      "text": "Glyph Seeker: Increases the damage of Primordial Blast and Thaumaturgy by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-3-7",
+      "kind": "structural",
+      "text": "Cryomagi: Increases the range of Cryobrand by 10 yds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-5-7",
+      "kind": "structural",
+      "text": "Ley Walker: Casting or reactivating Warpdagger now removes all root and snare effects from you.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-7-7a",
+      "kind": "structural",
+      "text": "Harnessing Leylines: You now gain a stack of Harnessed Leylines every 1 sec for until cancelled. After the duration, the stacks reset.Harnessed Leylines (Proc)Increases the damage of your Runeblade and Elemental Burst by 3%, stacking up to 10 times.Additional applications do not refresh the effect.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-7-7b",
+      "kind": "structural",
+      "text": "Burned Etching: While Weapon Engraving: Fire is active, your Elemental Burst now deals 10% increased damage as Fire damage and your chance to trigger Weapon Engraving: Fire is increased by 5%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-2-8",
+      "kind": "structural",
+      "text": "Eye of the Beholder: Increases your spell critical strike chance by 25% for 15 seconds.While active, the damage of your Glyphic Ruin and Primordial Blast is increased by 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-4-8",
+      "kind": "structural",
+      "text": "Glyph God: Reduces the cooldown of Glyphic Overload by -15 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-6-8",
+      "kind": "structural",
+      "text": "Scroll of Magic: Unleashing a Glyph increases the damage of your Unleashed Glyphs by 5% for 15 seconds, stacking 3 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-10-8",
+      "kind": "structural",
+      "text": "Runic Obliteration: Level 50 PassiveUsing Elemental Burst now has a 20% chance to transform your next Primordial Blast into Runic Obliteration for 10 seconds.Runic Obliteration (Spell)Hurl powerful elemental missiles at an enemy, dealing 250 + 44% SP Elemental Damage every 0 sec for 1 seconds. Each missile grants you a Glyph.Scales with modifiers to Primordial Blast.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-1-9",
+      "kind": "structural",
+      "text": "Kirin Tor Agent: Casting Eye of the Beholder now rapidly reduces the coldown of your Rune spells and Phase Out for the duration.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-4-9",
+      "kind": "structural",
+      "text": "Manuscription: Send manuscriptions to envelop an enemy and enemies around them, dealing 1620 + 190% SP Arcane damage over 5 seconds.When you cast this ability, you are granted Transcribing for 5 seconds.TranscribingWhile active, your next Thaumaturgy or Glyphic Ruin will now grant you a Chapter of the same school as your active Attunement, causing your next 10 direct spell casts to deal additional school damage to nearby enemies, reduced by 20% for each target hit past the initial.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/arcane:32-11-7-9",
+      "kind": "structural",
+      "text": "Glyph Master: Scroll of Magic now also increases the critical damage and critical strike chance of Unleashed Glyphs by 5% for 15 seconds, stacking 3 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    }
+  ]
+}

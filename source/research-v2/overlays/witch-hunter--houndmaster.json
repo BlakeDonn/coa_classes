@@ -1,0 +1,827 @@
+{
+  "baseline": "witch-hunter--houndmaster.json",
+  "set": {
+    "identity": {
+      "fantasy": "A shadow marksman who hunts beside a growing pack of hounds and crows, using ranged shots to direct and amplify the swarm.",
+      "primary_family": "commanders",
+      "also_fits": [
+        "strategists"
+      ],
+      "playstyle_tags": [
+        "pet-marksman",
+        "priority-dps",
+        "proc-ranged"
+      ],
+      "one_line": "A Shadowhound commander focused on sustained single-target damage. Unleash the Hounds and Houndmaster's Call establish the pet package, Shadowblast and Sixfold Shot drive the priority loop, and traps and brands add utility. A July deep dive describes smooth boss damage, good personal durability, average AoE, and at least one pet talent that was still bugged at the time.",
+      "claim_ids": [
+        "observed:witch-hunter/houndmaster:deep-dive",
+        "inference:witch-hunter/houndmaster:priority-cost",
+        "observed:witch-hunter/houndmaster:leveling",
+        "talent:witch-hunter/houndmaster:15-40-4-0",
+        "talent:witch-hunter/houndmaster:15-40-10-8",
+        "talent:witch-hunter/houndmaster:15-40-1-3"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "Keep Unleash the Hounds and Houndmaster's Call working, build Shadowblast pressure, then use proc-gated Quickdraw and the level-50 Sixfold Shot conversion while Darkflock covers multi-target situations.",
+      "single_target": "Current guide priority places Unleash the Hounds and Houndmaster's Call first, then Shadowblast to five stacks, followed by Sixfold Shot and Quickdraw.",
+      "aoe": "Darkflock supplies cone pressure and Feast of Talons rewards connecting with at least five enemies; community guidance still describes overall AoE as average.",
+      "movement_and_target_switching": "Pets keep contributing while the player repositions, but hound leap commands and stacked target effects reward deliberate focus.",
+      "defense_and_control": "Pet pressure and Witch Hunter movement tools make leveling feel protected; current players describe the spec as durable, with mana as a more common concern.",
+      "group_utility": "The broader Witch Hunter kit contributes ranged control and movement, while the specialization focuses primarily on damage and pet pressure.",
+      "failure_modes": [
+        {
+          "text": "Ignoring pet cooldowns or firing proc-gated shots out of priority lowers the value of the otherwise straightforward loop.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost"
+          ]
+        },
+        {
+          "text": "Movement or a target swap can interrupt the intended payoff: pets keep contributing while the player repositions, but hound leap commands and stacked target effects reward deliberate focus.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8"
+          ]
+        },
+        {
+          "text": "Spending recovery or control too early leaves less protection for the next pressure event: pet pressure and witch hunter movement tools make leveling feel protected; current players describe the spec as durable, with mana as a more common concern.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "observed:witch-hunter/houndmaster:deep-dive",
+        "inference:witch-hunter/houndmaster:priority-cost",
+        "observed:witch-hunter/houndmaster:leveling",
+        "talent:witch-hunter/houndmaster:15-40-4-0",
+        "talent:witch-hunter/houndmaster:15-40-10-8",
+        "talent:witch-hunter/houndmaster:15-40-1-3"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "A forgiving ranged pet spec. Hounds absorb pressure while the player establishes a simple command-and-shot rhythm.",
+        "strengths": [
+          "Pet protection",
+          "Straightforward identity"
+        ],
+        "cautions": [
+          "Some early mana pressure reports"
+        ],
+        "claim_ids": [
+          "observed:witch-hunter/houndmaster:leveling",
+          "talent:witch-hunter/houndmaster:15-40-4-0",
+          "observed:witch-hunter/houndmaster:deep-dive",
+          "inference:witch-hunter/houndmaster:priority-cost",
+          "talent:witch-hunter/houndmaster:15-40-10-8",
+          "talent:witch-hunter/houndmaster:15-40-1-3"
+        ]
+      },
+      "level_50_60": {
+        "feel": "A compact priority system with a visible every-fifth-Darkslayer conversion into Sixfold Shot and stronger pet scaling.",
+        "strengths": [
+          "Strong single target",
+          "Readable priority"
+        ],
+        "cautions": [
+          "Average AoE",
+          "One current guide reports Lethal Pursuit as bugged"
+        ],
+        "claim_ids": [
+          "observed:witch-hunter/houndmaster:deep-dive",
+          "talent:witch-hunter/houndmaster:15-40-10-8",
+          "inference:witch-hunter/houndmaster:priority-cost",
+          "observed:witch-hunter/houndmaster:leveling",
+          "talent:witch-hunter/houndmaster:15-40-4-0",
+          "talent:witch-hunter/houndmaster:15-40-1-3"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "By levels 30-49, keep unleash the hounds and houndmaster's call working, build shadowblast pressure, then use proc-gated quickdraw and the level-50 sixfold shot conversion while darkflock covers multi-target situations.",
+        "strengths": [
+          "Core engine is online",
+          "More complete target coverage"
+        ],
+        "cautions": [
+          "Late talents still change the ceiling",
+          "Pets keep contributing while the player repositions, but hound leap commands and stacked target effects reward deliberate focus"
+        ],
+        "claim_ids": [
+          "observed:witch-hunter/houndmaster:deep-dive",
+          "inference:witch-hunter/houndmaster:priority-cost",
+          "observed:witch-hunter/houndmaster:leveling",
+          "talent:witch-hunter/houndmaster:15-40-4-0",
+          "talent:witch-hunter/houndmaster:15-40-10-8",
+          "talent:witch-hunter/houndmaster:15-40-1-3"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, current guide priority places unleash the hounds and houndmaster's call first, then shadowblast to five stacks, followed by sixfold shot and quickdraw.",
+        "strengths": [
+          "Durable targets preserve the full loop",
+          "Cooldowns can be planned"
+        ],
+        "cautions": [
+          "Movement can break setup",
+          "Repeated errors remain visible"
+        ],
+        "claim_ids": [
+          "observed:witch-hunter/houndmaster:deep-dive",
+          "inference:witch-hunter/houndmaster:priority-cost",
+          "observed:witch-hunter/houndmaster:leveling",
+          "talent:witch-hunter/houndmaster:15-40-4-0",
+          "talent:witch-hunter/houndmaster:15-40-10-8",
+          "talent:witch-hunter/houndmaster:15-40-1-3"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, darkflock supplies cone pressure and feast of talons rewards connecting with at least five enemies; community guidance still describes overall aoe as average.",
+        "strengths": [
+          "Pack tools express the spec clearly",
+          "Group utility has regular value"
+        ],
+        "cautions": [
+          "Short-lived targets can erase setup",
+          "Tank movement changes the plan"
+        ],
+        "claim_ids": [
+          "observed:witch-hunter/houndmaster:deep-dive",
+          "inference:witch-hunter/houndmaster:priority-cost",
+          "observed:witch-hunter/houndmaster:leveling",
+          "talent:witch-hunter/houndmaster:15-40-4-0",
+          "talent:witch-hunter/houndmaster:15-40-10-8",
+          "talent:witch-hunter/houndmaster:15-40-1-3"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, pets keep contributing while the player repositions, but hound leap commands and stacked target effects reward deliberate focus. Pet pressure and Witch Hunter movement tools make leveling feel protected; current players describe the spec as durable, with mana as a more common concern.",
+        "strengths": [
+          "Control and utility create options",
+          "Target swaps can reward flexibility"
+        ],
+        "cautions": [
+          "Disruption makes the loop less predictable",
+          "Defensive timing is punishable"
+        ],
+        "claim_ids": [
+          "observed:witch-hunter/houndmaster:deep-dive",
+          "inference:witch-hunter/houndmaster:priority-cost",
+          "observed:witch-hunter/houndmaster:leveling",
+          "talent:witch-hunter/houndmaster:15-40-4-0",
+          "talent:witch-hunter/houndmaster:15-40-10-8",
+          "talent:witch-hunter/houndmaster:15-40-1-3"
+        ]
+      }
+    },
+    "complexity": {
+      "core_actions": {
+        "boss": {
+          "value": "low-moderate",
+          "reason": "The current guide reduces boss play to a short pet-first priority with a proc shot and one five-cast conversion.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Keep Unleash the Hounds and Houndmaster's Call working, build Shadowblast pressure, then use proc-gated Quickdraw and the level-50 Sixfold Shot conversion while Darkflock covers multi-target situations. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Keep Unleash the Hounds and Houndmaster's Call working, build Shadowblast pressure, then use proc-gated Quickdraw and the level-50 Sixfold Shot conversion while Darkflock covers multi-target situations. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        },
+        "level_50_60": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Keep Unleash the Hounds and Houndmaster's Call working, build Shadowblast pressure, then use proc-gated Quickdraw and the level-50 Sixfold Shot conversion while Darkflock covers multi-target situations. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Keep Unleash the Hounds and Houndmaster's Call working, build Shadowblast pressure, then use proc-gated Quickdraw and the level-50 Sixfold Shot conversion while Darkflock covers multi-target situations. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Keep Unleash the Hounds and Houndmaster's Call working, build Shadowblast pressure, then use proc-gated Quickdraw and the level-50 Sixfold Shot conversion while Darkflock covers multi-target situations. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        }
+      },
+      "state_tracking": {
+        "level_50_60": {
+          "value": "moderate",
+          "reason": "Pet cooldowns, Shadowblast stacks, Quickdraw availability, and the fifth-Darkslayer Sixfold conversion overlap.",
+          "claim_ids": [
+            "talent:witch-hunter/houndmaster:15-40-1-3",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "low-moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Current guide priority places Unleash the Hounds and Houndmaster's Call first, then Shadowblast to five stacks, followed by Sixfold Shot and Quickdraw. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Current guide priority places Unleash the Hounds and Houndmaster's Call first, then Shadowblast to five stacks, followed by Sixfold Shot and Quickdraw. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        },
+        "boss": {
+          "value": "moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Current guide priority places Unleash the Hounds and Houndmaster's Call first, then Shadowblast to five stacks, followed by Sixfold Shot and Quickdraw. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Current guide priority places Unleash the Hounds and Houndmaster's Call first, then Shadowblast to five stacks, followed by Sixfold Shot and Quickdraw. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        },
+        "pvp": {
+          "value": "moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Current guide priority places Unleash the Hounds and Houndmaster's Call first, then Shadowblast to five stacks, followed by Sixfold Shot and Quickdraw. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        }
+      },
+      "failure_cost": {
+        "boss": {
+          "value": "moderate",
+          "reason": "Priority errors cost throughput but pets continue contributing while the player recovers.",
+          "claim_ids": [
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "low-moderate",
+          "reason": "Ignoring pet cooldowns or firing proc-gated shots out of priority lowers the value of the otherwise straightforward loop. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate",
+          "reason": "Ignoring pet cooldowns or firing proc-gated shots out of priority lowers the value of the otherwise straightforward loop. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate",
+          "reason": "Ignoring pet cooldowns or firing proc-gated shots out of priority lowers the value of the otherwise straightforward loop. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "moderate",
+          "reason": "Ignoring pet cooldowns or firing proc-gated shots out of priority lowers the value of the otherwise straightforward loop. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        },
+        "pvp": {
+          "value": "moderate-high",
+          "reason": "Ignoring pet cooldowns or firing proc-gated shots out of priority lowers the value of the otherwise straightforward loop. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Darkflock supplies cone pressure and Feast of Talons rewards connecting with at least five enemies; community guidance still describes overall AoE as average. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Darkflock supplies cone pressure and Feast of Talons rewards connecting with at least five enemies; community guidance still describes overall AoE as average. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Darkflock supplies cone pressure and Feast of Talons rewards connecting with at least five enemies; community guidance still describes overall AoE as average. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Darkflock supplies cone pressure and Feast of Talons rewards connecting with at least five enemies; community guidance still describes overall AoE as average. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Darkflock supplies cone pressure and Feast of Talons rewards connecting with at least five enemies; community guidance still describes overall AoE as average. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        },
+        "pvp": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Darkflock supplies cone pressure and Feast of Talons rewards connecting with at least five enemies; community guidance still describes overall AoE as average. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; pet pressure and witch hunter movement tools make leveling feel protected; current players describe the spec as durable, with mana as a more common concern. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; pet pressure and witch hunter movement tools make leveling feel protected; current players describe the spec as durable, with mana as a more common concern. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; pet pressure and witch hunter movement tools make leveling feel protected; current players describe the spec as durable, with mana as a more common concern. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; pet pressure and witch hunter movement tools make leveling feel protected; current players describe the spec as durable, with mana as a more common concern. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; pet pressure and witch hunter movement tools make leveling feel protected; current players describe the spec as durable, with mana as a more common concern. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "Target count, incoming pressure, and movement change the next action; pet pressure and witch hunter movement tools make leveling feel protected; current players describe the spec as durable, with mana as a more common concern. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Pets keep contributing while the player repositions, but hound leap commands and stacked target effects reward deliberate focus. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Pets keep contributing while the player repositions, but hound leap commands and stacked target effects reward deliberate focus. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Pets keep contributing while the player repositions, but hound leap commands and stacked target effects reward deliberate focus. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Pets keep contributing while the player repositions, but hound leap commands and stacked target effects reward deliberate focus. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Pets keep contributing while the player repositions, but hound leap commands and stacked target effects reward deliberate focus. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "Execution is constrained by positioning and swaps: Pets keep contributing while the player repositions, but hound leap commands and stacked target effects reward deliberate focus. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8",
+            "talent:witch-hunter/houndmaster:15-40-1-3"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You want a relatively approachable ranged spec whose pets carry meaningful damage and protection.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:leveling",
+            "observed:witch-hunter/houndmaster:deep-dive"
+          ]
+        },
+        {
+          "text": "You enjoy the spec's core cadence: keep unleash the hounds and houndmaster's call working, build shadowblast pressure, then use proc-gated quickdraw and the level-50 sixfold shot conversion while darkflock covers multi-target situations.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You want high-control pet micromanagement or exceptional pack damage.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive"
+          ]
+        },
+        {
+          "text": "You dislike the positioning or swap constraint that pets keep contributing while the player repositions, but hound leap commands and stacked target effects reward deliberate focus.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:deep-dive",
+            "inference:witch-hunter/houndmaster:priority-cost",
+            "observed:witch-hunter/houndmaster:leveling",
+            "talent:witch-hunter/houndmaster:15-40-4-0",
+            "talent:witch-hunter/houndmaster:15-40-10-8"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Recent players describe Houndmaster as simple, durable, and pet-protected, with strong single-target damage.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:leveling",
+            "observed:witch-hunter/houndmaster:deep-dive"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Mana pressure, average AoE, an underwhelming Quickdraw, and a reported Lethal Pursuit bug are current cautions.",
+          "claim_ids": [
+            "observed:witch-hunter/houndmaster:leveling",
+            "observed:witch-hunter/houndmaster:deep-dive"
+          ]
+        }
+      ],
+      "contested": []
+    },
+    "known_issue_claim_ids": [
+      "observed:witch-hunter/houndmaster:lethal-pursuit-bug"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "moderate",
+      "performance": "qualitative_only",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium-high",
+      "gaps": [
+        "No normalized current performance sample.",
+        "The reported Lethal Pursuit bug needs official confirmation or retest."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "A forgiving ranged pet spec. Hounds absorb pressure while the player establishes a simple command-and-shot rhythm.",
+      "observed_changes": [
+        "Some early mana pressure reports"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "A compact priority system with a visible every-fifth-Darkslayer conversion into Sixfold Shot and stronger pet scaling.",
+      "observed_changes": [
+        "Average AoE",
+        "One current guide reports Lethal Pursuit as bugged"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "A forgiving ranged pet spec. Hounds absorb pressure while the player establishes a simple command-and-shot rhythm.",
+      "observed_changes": [
+        "Some early mana pressure reports"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "By levels 30-49, keep unleash the hounds and houndmaster's call working, build shadowblast pressure, then use proc-gated quickdraw and the level-50 sixfold shot conversion while darkflock covers multi-target situations.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Pets keep contributing while the player repositions, but hound leap commands and stacked target effects reward deliberate focus"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "By levels 30-49, keep unleash the hounds and houndmaster's call working, build shadowblast pressure, then use proc-gated quickdraw and the level-50 sixfold shot conversion while darkflock covers multi-target situations.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Pets keep contributing while the player repositions, but hound leap commands and stacked target effects reward deliberate focus"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:witch-hunter/houndmaster:deep-dive",
+      "kind": "observed",
+      "text": "A July 30 current Build Hub deep dive describes Houndmaster as straightforward and pet-focused, with strong single-target damage, survivability, utility, average AoE, and a priority of Unleash Hounds, Houndmaster's Call, five Shadowblast stacks, then Sixfold Shot and Quickdraw.",
+      "source_ids": [
+        "buildhub:e4e89e4c-e64d-41df-b93a-62e7a56fc887"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "pve_general"
+        ],
+        "build_or_mode": [
+          "guide_build"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Detailed current guide; its planner caveat is retained."
+    },
+    {
+      "id": "observed:witch-hunter/houndmaster:leveling",
+      "kind": "observed",
+      "text": "Current leveling comments describe Houndmaster as simple and protected by pets; an earlier July discussion reports strong durability but some mana pressure.",
+      "source_ids": [
+        "reddit:houndmaster-leveling-2026-07-07",
+        "reddit:easy-specs-2026-08-03"
+      ],
+      "scope": {
+        "levels": "leveling_10_49",
+        "content": [
+          "solo_leveling"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "Recommendation anecdotes rather than controlled comparisons."
+    },
+    {
+      "id": "observed:witch-hunter/houndmaster:lethal-pursuit-bug",
+      "kind": "observed",
+      "text": "The July 30 Houndmaster guide reports Lethal Pursuit as bugged at the time of writing.",
+      "source_ids": [
+        "buildhub:e4e89e4c-e64d-41df-b93a-62e7a56fc887"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "client_behavior"
+        ],
+        "build_or_mode": [
+          "lethal_pursuit"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "Not independently reproduced and may be fixed later."
+    },
+    {
+      "id": "inference:witch-hunter/houndmaster:priority-cost",
+      "kind": "inference",
+      "text": "Houndmaster's mistake punishment is buffered by persistent pet damage, although missing pet cooldowns or Sixfold conversions still costs throughput.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:witch-hunter/houndmaster:15-40-4-0",
+        "talent:witch-hunter/houndmaster:15-40-10-8",
+        "observed:witch-hunter/houndmaster:deep-dive"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Throughput magnitude is not quantified."
+    }
+  ]
+}

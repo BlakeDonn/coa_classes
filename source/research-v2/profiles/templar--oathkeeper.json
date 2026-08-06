@@ -1,0 +1,1555 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "templar/oathkeeper",
+    "class": "Templar",
+    "name": "Oathkeeper",
+    "roles": [
+      "Tank"
+    ],
+    "range": [
+      "Hybrid"
+    ]
+  },
+  "identity": {
+    "fantasy": "",
+    "one_line": "An avoidance tank built around Sacred Swing, staff guard, disciplined blows, wards, barriers, and reactive healing. It converts parries and patient defensive play into survival and group protection. Recent builds also frame it as beginner-friendlier than several summon-heavy tanks.",
+    "primary_family": "",
+    "also_fits": [],
+    "claim_ids": [
+      "talent:templar/oathkeeper:19-16-4-0",
+      "talent:templar/oathkeeper:19-16-10-0",
+      "talent:templar/oathkeeper:19-16-2-1",
+      "talent:templar/oathkeeper:19-16-6-1",
+      "talent:templar/oathkeeper:19-16-1-2",
+      "talent:templar/oathkeeper:19-16-4-2",
+      "talent:templar/oathkeeper:19-16-7-2",
+      "talent:templar/oathkeeper:19-16-10-2",
+      "talent:templar/oathkeeper:19-16-1-3",
+      "talent:templar/oathkeeper:19-16-4-3",
+      "talent:templar/oathkeeper:19-16-7-3",
+      "talent:templar/oathkeeper:19-16-2-4",
+      "talent:templar/oathkeeper:19-16-4-4",
+      "talent:templar/oathkeeper:19-16-6-4",
+      "talent:templar/oathkeeper:19-16-10-4",
+      "talent:templar/oathkeeper:19-16-1-5",
+      "talent:templar/oathkeeper:19-16-2-5",
+      "talent:templar/oathkeeper:19-16-3-5",
+      "talent:templar/oathkeeper:19-16-5-5",
+      "talent:templar/oathkeeper:19-16-6-5a",
+      "talent:templar/oathkeeper:19-16-6-5b",
+      "talent:templar/oathkeeper:19-16-7-5",
+      "talent:templar/oathkeeper:19-16-1-6a",
+      "talent:templar/oathkeeper:19-16-1-6b",
+      "talent:templar/oathkeeper:19-16-4-6",
+      "talent:templar/oathkeeper:19-16-7-6",
+      "talent:templar/oathkeeper:19-16-10-6",
+      "talent:templar/oathkeeper:19-16-0-7",
+      "talent:templar/oathkeeper:19-16-2-7",
+      "talent:templar/oathkeeper:19-16-4-7a",
+      "talent:templar/oathkeeper:19-16-4-7b",
+      "talent:templar/oathkeeper:19-16-6-7",
+      "talent:templar/oathkeeper:19-16-8-7a",
+      "talent:templar/oathkeeper:19-16-8-7b",
+      "talent:templar/oathkeeper:19-16-2-8",
+      "talent:templar/oathkeeper:19-16-4-8",
+      "talent:templar/oathkeeper:19-16-6-8",
+      "talent:templar/oathkeeper:19-16-10-8",
+      "talent:templar/oathkeeper:19-16-2-9",
+      "talent:templar/oathkeeper:19-16-4-9",
+      "talent:templar/oathkeeper:19-16-6-9"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "An avoidance tank built around Sacred Swing, staff guard, disciplined blows, wards, barriers, and reactive healing. It converts parries and patient defensive play into survival and group protection. Recent builds also frame it as beginner-friendlier than several summon-heavy tanks.",
+    "resources": [],
+    "builders": [],
+    "spenders": [
+      {
+        "name": "Keeping the Oath",
+        "claim_ids": [
+          "talent:templar/oathkeeper:19-16-10-0"
+        ]
+      },
+      {
+        "name": "Reckoning",
+        "claim_ids": [
+          "talent:templar/oathkeeper:19-16-4-2"
+        ]
+      },
+      {
+        "name": "Grace of Aman'thul",
+        "claim_ids": [
+          "talent:templar/oathkeeper:19-16-7-3"
+        ]
+      },
+      {
+        "name": "Justicar of the Light",
+        "claim_ids": [
+          "talent:templar/oathkeeper:19-16-1-6a"
+        ]
+      },
+      {
+        "name": "Guardian of the Light",
+        "claim_ids": [
+          "talent:templar/oathkeeper:19-16-1-6b"
+        ]
+      },
+      {
+        "name": "Mending Ward",
+        "claim_ids": [
+          "talent:templar/oathkeeper:19-16-4-8"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Faith Guard",
+        "claim_ids": [
+          "talent:templar/oathkeeper:19-16-2-4"
+        ]
+      },
+      {
+        "name": "Absolution",
+        "claim_ids": [
+          "talent:templar/oathkeeper:19-16-4-4"
+        ]
+      },
+      {
+        "name": "Fortified Body",
+        "claim_ids": [
+          "talent:templar/oathkeeper:19-16-5-5"
+        ]
+      },
+      {
+        "name": "Tome of Light",
+        "claim_ids": [
+          "talent:templar/oathkeeper:19-16-4-9"
+        ]
+      },
+      {
+        "name": "Lightkeeper",
+        "claim_ids": [
+          "talent:templar/oathkeeper:19-16-6-9"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Mending Ward",
+        "claim_ids": [
+          "talent:templar/oathkeeper:19-16-4-8"
+        ],
+        "structural_description": "Oath Breakers now grant you a stack of Mending Ward for 15 seconds, stacking 3 times.Mending WardNext instance of direct damage taken while below 35% maximum health will consume these stacks to heal you for 395 + 25% Stamina. Healing scales with your Stamina and parry rating."
+      },
+      {
+        "name": "Light's Ward",
+        "claim_ids": [
+          "talent:templar/oathkeeper:19-16-10-8"
+        ],
+        "structural_description": "Level 50 PassiveIncreases all magic resistances equal to 10% of your dodge rating and reduces your damage taken from periodic effects by -15%."
+      }
+    ],
+    "single_target": "",
+    "aoe": "",
+    "movement_and_target_switching": "",
+    "defense_and_control": "",
+    "group_utility": "",
+    "failure_modes": [],
+    "claim_ids": [
+      "talent:templar/oathkeeper:19-16-4-0",
+      "talent:templar/oathkeeper:19-16-10-0",
+      "talent:templar/oathkeeper:19-16-2-1",
+      "talent:templar/oathkeeper:19-16-6-1",
+      "talent:templar/oathkeeper:19-16-1-2",
+      "talent:templar/oathkeeper:19-16-4-2",
+      "talent:templar/oathkeeper:19-16-7-2",
+      "talent:templar/oathkeeper:19-16-10-2",
+      "talent:templar/oathkeeper:19-16-1-3",
+      "talent:templar/oathkeeper:19-16-4-3",
+      "talent:templar/oathkeeper:19-16-7-3",
+      "talent:templar/oathkeeper:19-16-2-4",
+      "talent:templar/oathkeeper:19-16-4-4",
+      "talent:templar/oathkeeper:19-16-6-4",
+      "talent:templar/oathkeeper:19-16-10-4",
+      "talent:templar/oathkeeper:19-16-1-5",
+      "talent:templar/oathkeeper:19-16-2-5",
+      "talent:templar/oathkeeper:19-16-3-5",
+      "talent:templar/oathkeeper:19-16-5-5",
+      "talent:templar/oathkeeper:19-16-6-5a",
+      "talent:templar/oathkeeper:19-16-6-5b",
+      "talent:templar/oathkeeper:19-16-7-5",
+      "talent:templar/oathkeeper:19-16-1-6a",
+      "talent:templar/oathkeeper:19-16-1-6b",
+      "talent:templar/oathkeeper:19-16-4-6",
+      "talent:templar/oathkeeper:19-16-7-6",
+      "talent:templar/oathkeeper:19-16-10-6",
+      "talent:templar/oathkeeper:19-16-0-7",
+      "talent:templar/oathkeeper:19-16-2-7",
+      "talent:templar/oathkeeper:19-16-4-7a",
+      "talent:templar/oathkeeper:19-16-4-7b",
+      "talent:templar/oathkeeper:19-16-6-7",
+      "talent:templar/oathkeeper:19-16-8-7a",
+      "talent:templar/oathkeeper:19-16-8-7b",
+      "talent:templar/oathkeeper:19-16-2-8",
+      "talent:templar/oathkeeper:19-16-4-8",
+      "talent:templar/oathkeeper:19-16-6-8",
+      "talent:templar/oathkeeper:19-16-10-8",
+      "talent:templar/oathkeeper:19-16-2-9",
+      "talent:templar/oathkeeper:19-16-4-9",
+      "talent:templar/oathkeeper:19-16-6-9"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Sacred Swing",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-4-0"
+          ]
+        },
+        {
+          "name": "Keeping the Oath",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-10-0"
+          ]
+        },
+        {
+          "name": "Blessed Padding",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-2-1"
+          ]
+        },
+        {
+          "name": "Staffguard",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-6-1"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:templar/oathkeeper:19-16-4-0",
+        "talent:templar/oathkeeper:19-16-10-0",
+        "talent:templar/oathkeeper:19-16-2-1",
+        "talent:templar/oathkeeper:19-16-6-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Paragon",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-1-2"
+          ]
+        },
+        {
+          "name": "Reckoning",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-4-2"
+          ]
+        },
+        {
+          "name": "Bells of Light",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-7-2"
+          ]
+        },
+        {
+          "name": "Graceful Fighter",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-10-2"
+          ]
+        },
+        {
+          "name": "Sacred Oath",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-1-3"
+          ]
+        },
+        {
+          "name": "Sacred Resistance",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-4-3"
+          ]
+        },
+        {
+          "name": "Grace of Aman'thul",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-7-3"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:templar/oathkeeper:19-16-1-2",
+        "talent:templar/oathkeeper:19-16-4-2",
+        "talent:templar/oathkeeper:19-16-7-2",
+        "talent:templar/oathkeeper:19-16-10-2",
+        "talent:templar/oathkeeper:19-16-1-3",
+        "talent:templar/oathkeeper:19-16-4-3",
+        "talent:templar/oathkeeper:19-16-7-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Faith Guard",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-2-4"
+          ]
+        },
+        {
+          "name": "Absolution",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-4-4"
+          ]
+        },
+        {
+          "name": "Conviction",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-6-4"
+          ]
+        },
+        {
+          "name": "Holy Books",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-10-4"
+          ]
+        },
+        {
+          "name": "Disciplined Mind",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-1-5"
+          ]
+        },
+        {
+          "name": "Disciplined Blows",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-2-5"
+          ]
+        },
+        {
+          "name": "Call of the Monastery",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-3-5"
+          ]
+        },
+        {
+          "name": "Fortified Body",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-5-5"
+          ]
+        },
+        {
+          "name": "Way of the Monk",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-6-5a"
+          ]
+        },
+        {
+          "name": "Holy Warstaff",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-6-5b"
+          ]
+        },
+        {
+          "name": "Parry Dance",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-7-5"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:templar/oathkeeper:19-16-2-4",
+        "talent:templar/oathkeeper:19-16-4-4",
+        "talent:templar/oathkeeper:19-16-6-4",
+        "talent:templar/oathkeeper:19-16-10-4",
+        "talent:templar/oathkeeper:19-16-1-5",
+        "talent:templar/oathkeeper:19-16-2-5",
+        "talent:templar/oathkeeper:19-16-3-5",
+        "talent:templar/oathkeeper:19-16-5-5",
+        "talent:templar/oathkeeper:19-16-6-5a",
+        "talent:templar/oathkeeper:19-16-6-5b",
+        "talent:templar/oathkeeper:19-16-7-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Justicar of the Light",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-1-6a"
+          ]
+        },
+        {
+          "name": "Guardian of the Light",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-1-6b"
+          ]
+        },
+        {
+          "name": "Barrier of Light",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-4-6"
+          ]
+        },
+        {
+          "name": "Duty Calls",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-7-6"
+          ]
+        },
+        {
+          "name": "Lorescribe",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-10-6"
+          ]
+        },
+        {
+          "name": "Spiritual Abdicator",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-0-7"
+          ]
+        },
+        {
+          "name": "Untainted",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-2-7"
+          ]
+        },
+        {
+          "name": "Patience",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-4-7a"
+          ]
+        },
+        {
+          "name": "Justice",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-4-7b"
+          ]
+        },
+        {
+          "name": "Uther's Legacy",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-6-7"
+          ]
+        },
+        {
+          "name": "Transcendent Guardian",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-8-7a"
+          ]
+        },
+        {
+          "name": "Armor of Faith",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-8-7b"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:templar/oathkeeper:19-16-1-6a",
+        "talent:templar/oathkeeper:19-16-1-6b",
+        "talent:templar/oathkeeper:19-16-4-6",
+        "talent:templar/oathkeeper:19-16-7-6",
+        "talent:templar/oathkeeper:19-16-10-6",
+        "talent:templar/oathkeeper:19-16-0-7",
+        "talent:templar/oathkeeper:19-16-2-7",
+        "talent:templar/oathkeeper:19-16-4-7a",
+        "talent:templar/oathkeeper:19-16-4-7b",
+        "talent:templar/oathkeeper:19-16-6-7",
+        "talent:templar/oathkeeper:19-16-8-7a",
+        "talent:templar/oathkeeper:19-16-8-7b"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Eternal Blessing",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-2-8"
+          ]
+        },
+        {
+          "name": "Mending Ward",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-4-8"
+          ]
+        },
+        {
+          "name": "Battlepriest",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-6-8"
+          ]
+        },
+        {
+          "name": "Light's Ward",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-10-8"
+          ]
+        },
+        {
+          "name": "Eternally Devoted",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-2-9"
+          ]
+        },
+        {
+          "name": "Tome of Light",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        },
+        {
+          "name": "Lightkeeper",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-6-9"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:templar/oathkeeper:19-16-2-8",
+        "talent:templar/oathkeeper:19-16-4-8",
+        "talent:templar/oathkeeper:19-16-6-8",
+        "talent:templar/oathkeeper:19-16-10-8",
+        "talent:templar/oathkeeper:19-16-2-9",
+        "talent:templar/oathkeeper:19-16-4-9",
+        "talent:templar/oathkeeper:19-16-6-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "leveling_30_49": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "level_50_60": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "boss": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "dungeon_aoe": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "pvp": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [],
+    "avoid_if": []
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [],
+  "sentiment": {
+    "praise": [],
+    "frustrations": [],
+    "contested": []
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 3,
+    "latest_update": "2026-08-02T15:03:38.795+00:00",
+    "top_title": "Deadmanfred Oathkeeper Tank - Dungeons",
+    "top_url": "https://coabuildhub.com/build/a7792a90-0e37-4798-a849-30dd1ed291da",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:a7792a90-0e37-4798-a849-30dd1ed291da"
+    ]
+  },
+  "coverage": {
+    "mechanical": "structural_baseline",
+    "community": "indexed",
+    "performance": "missing",
+    "video": "missing",
+    "overall_confidence": "low",
+    "gaps": [
+      "Effective core loop needs recent guide or player cross-check.",
+      "Contextual complexity values are not yet researched.",
+      "Recent performance, sentiment, issues, and video evidence are not yet reconciled."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:templar/oathkeeper:19-16-4-0",
+      "kind": "structural",
+      "text": "Sacred Swing: Swing at enemies in front of you, dealing 125% High Threat Weapon Damage plus 9, slowing their attack and movement speed by -20% for 10 seconds.Only usable after avoiding an attack.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-10-0",
+      "kind": "structural",
+      "text": "Keeping the Oath: Level 10 PassiveYou now delay 40% of direct damage taken, instead taking it over 8 seconds.In addition, you no longer consume your Oaths with Oath Breakers.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-2-1",
+      "kind": "structural",
+      "text": "Blessed Padding: Increases your Armor contribution from mail items by 50% and reduces damage taken from area of effect attacks by -10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-6-1",
+      "kind": "structural",
+      "text": "Staffguard: Casting Sacred Swing now grants you Staffguard, absorbing 125 + 30% Stamina damage, scaling with Stamina, parry and dodge rating, for 8 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-1-2",
+      "kind": "structural",
+      "text": "Paragon: Increases your Stamina by 10, plus an additional amount equal to 10% of your Agility.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-4-2",
+      "kind": "structural",
+      "text": "Reckoning: Unleash a powerful Oath Breaker, dealing 27 + 17.5% AP + 50% Stamina Holy damage and restoring 15 Energy for each enemy struck.Consumes your Oaths, dealing additional damage for each consumed.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-7-2",
+      "kind": "structural",
+      "text": "Bells of Light: Increases your Agility, Intellect, and hit chance by 3%",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-10-2",
+      "kind": "structural",
+      "text": "Graceful Fighter: Level 20 PassiveIncreases your parry rating by 20% of Agility and your dodge rating by 20% of Intellect.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-1-3",
+      "kind": "structural",
+      "text": "Sacred Oath: Critical strikes now remove 1 sec from the duration of Oathkeeper when used.Oathkeeper40% of damage taken is now delayed and dealt to you over 8 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-4-3",
+      "kind": "structural",
+      "text": "Sacred Resistance: Casting Reckoning now increases your Armor by 15% for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-7-3",
+      "kind": "structural",
+      "text": "Grace of Aman'thul: Reduces the Energy cost of Righteous Lunge by -5 and Sacred Swing by -10.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-2-4",
+      "kind": "structural",
+      "text": "Faith Guard: While a Libram is active, your Chastise will now unleash a line of holy power, dealing 112 + 25% AP High Threat Holy damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-4-4",
+      "kind": "structural",
+      "text": "Absolution: Taunt all enemies within 8 yds for 4 seconds and increase your movement speed by 50% for 4 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-6-4",
+      "kind": "structural",
+      "text": "Conviction: Casting Sacred Swing now increases your melee haste by 5% for 15 seconds, stacking 4 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-10-4",
+      "kind": "structural",
+      "text": "Holy Books: Level 30 PassiveUsing a Libram now removes 70% of the delayed damage from Oathkeeper.Oathkeeper40% of damage taken is now delayed and dealt to you over 8 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-1-5",
+      "kind": "structural",
+      "text": "Disciplined Mind: Increases the healing of Benediction by 15% and causes it to dispel 1 poison and disease effect.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-2-5",
+      "kind": "structural",
+      "text": "Disciplined Blows: Your healing done triggers a holy pulse around healed targets, dealing 89 + 5% AP + 20% Agility Holy damage to nearby enemies.Cnly occur once every 0.5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-3-5",
+      "kind": "structural",
+      "text": "Call of the Monastery: Increases the attack power of all party and raid members 5%. Does not stack with similar effects.In addition, increases your attack power by 5%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-5-5",
+      "kind": "structural",
+      "text": "Fortified Body: Allies within 40 yds receive 6% more healing. Does not stack with similar effects.Additionally, increases your maximum health by 6%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-6-5a",
+      "kind": "structural",
+      "text": "Way of the Monk: Damage dealt by Sacred Swing and Reckoning now reduces casting speed by -10% for 10 seconds, stacking 2 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-6-5b",
+      "kind": "structural",
+      "text": "Holy Warstaff: Increases the damage of Reckoning by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-7-5",
+      "kind": "structural",
+      "text": "Parry Dance: When you critically strike with auto attacks or parry an attack, your chance to parry is now increased by 3% for 5 seconds, stacking 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-1-6a",
+      "kind": "structural",
+      "text": "Justicar of the Light: Removes the cooldown from Benediction, but increases its Energy cost by 10.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-1-6b",
+      "kind": "structural",
+      "text": "Guardian of the Light: Casting Benediction now reduces the cost of your next Temple Guardian by -50% for 6 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-4-6",
+      "kind": "structural",
+      "text": "Barrier of Light: Emit saving light, increasing the healing received by nearby party and raid members by 40% for 15 seconds.For the duration, threat generated by your allies is redirected to you.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-7-6",
+      "kind": "structural",
+      "text": "Duty Calls: Casting abilities that grant an Oath now increases your damage dealt and movement speed by 2% for 15 seconds, stacking 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-10-6",
+      "kind": "structural",
+      "text": "Lorescribe: Level 40 PassiveCasting Oath Breaker abilities now reduce the cooldown of Librams by -4 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-0-7",
+      "kind": "structural",
+      "text": "Spiritual Abdicator: Your Testament of Hope now reduces damage taken by an additional 0% per copy.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-2-7",
+      "kind": "structural",
+      "text": "Untainted: Effectively healing yourself now reduces your Physical damage taken by -10 + 10% Stamina for 8 seconds.Can only occur every 15 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-4-7a",
+      "kind": "structural",
+      "text": "Patience: Increases the duration of Interdict by 2 sec and its cooldown by -5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-4-7b",
+      "kind": "structural",
+      "text": "Justice: Your Interdict now strikes 1 additional nearby target.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-6-7",
+      "kind": "structural",
+      "text": "Uther's Legacy: Your Condemn now heals you for 75% of the damage dealt.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-8-7a",
+      "kind": "structural",
+      "text": "Transcendent Guardian: Charging to an ally with Temple Guardian now has a 40% chance to refresh a charge.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-8-7b",
+      "kind": "structural",
+      "text": "Armor of Faith: Whenever the absorption shield from Staffguard breaks, inflict 207 + 20% AP + 50% holy SP High Threat Holy damage to nearby enemies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-2-8",
+      "kind": "structural",
+      "text": "Eternal Blessing: Increases your Holy damage and healing done by 15% for 30 seconds.While active, Oath Breakers deal an additional 141 + 12% AP Holy damage to nearby enemies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-4-8",
+      "kind": "structural",
+      "text": "Mending Ward: Oath Breakers now grant you a stack of Mending Ward for 15 seconds, stacking 3 times.Mending WardNext instance of direct damage taken while below 35% maximum health will consume these stacks to heal you for 395 + 25% Stamina. Healing scales with your Stamina and parry rating.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-6-8",
+      "kind": "structural",
+      "text": "Battlepriest: While above 80% health or below 20% health, you now take 20% reduced Magic damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-10-8",
+      "kind": "structural",
+      "text": "Light's Ward: Level 50 PassiveIncreases all magic resistances equal to 10% of your dodge rating and reduces your damage taken from periodic effects by -15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-2-9",
+      "kind": "structural",
+      "text": "Eternally Devoted: Damage dealt through Eternal Blessing now reduces the cooldown of Libram spells by -4 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-4-9",
+      "kind": "structural",
+      "text": "Tome of Light: Grants a shield equal to 100% of your maximum health for 30 seconds, resets the cooldown of Barrier of Light and Tranquil Circle, and grants an additional effect for each.Tome of Light: Barrier of LightYour next Barrier of Light within 30 seconds removes the Oathkeeper stagger debuff.Tome of Light: Tranquil CircleYour next Tranquil Circle within 30 seconds triggers instantly.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:templar/oathkeeper:19-16-6-9",
+      "kind": "structural",
+      "text": "Lightkeeper: Periodic damage dealt by Condemn now has a 15% chance to increase your parry chance by 2% for 8 seconds, stacking 3 times.Periodic damage dealt by Condemn also has a 15% chance to burst, dealing 100 + 22% AP Holy damage to up to 5 enemies within 5 yds of the target.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    }
+  ]
+}

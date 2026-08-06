@@ -1,0 +1,932 @@
+{
+  "baseline": "templar--oathkeeper.json",
+  "set": {
+    "identity": {
+      "fantasy": "A staff-bearing holy guardian who parries through danger, accumulates oath and discipline states, and answers damage with wards, barriers, and reactive healing.",
+      "primary_family": "strategists",
+      "also_fits": [
+        "marksmen"
+      ],
+      "playstyle_tags": [
+        "avoidance-ward-tank",
+        "reactive-healing-tank",
+        "beginner-readable-tank"
+      ],
+      "one_line": "An avoidance tank built around Sacred Swing, staff guard, disciplined blows, wards, barriers, and reactive healing. It converts parries and patient defensive play into survival and group protection. Recent builds also frame it as beginner-friendlier than several summon-heavy tanks.",
+      "claim_ids": [
+        "observed:templar/oathkeeper:tracking",
+        "inference:templar/oathkeeper:state-cost",
+        "talent:templar/oathkeeper:19-16-4-0",
+        "talent:templar/oathkeeper:19-16-6-1",
+        "talent:templar/oathkeeper:19-16-1-2",
+        "observed:templar/oathkeeper:current-build",
+        "observed:templar/oathkeeper:performance",
+        "talent:templar/oathkeeper:19-16-4-9"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "Maintain the staffguard and Sacred Swing package, build value through parries and disciplined attacks, track Oath Chain and stagger-like states, then route Barrier of Light, Mending Ward, librams, and reactive healing around incoming damage.",
+      "single_target": "Parry and disciplined attacks sustain the avoidance engine while wards and librams answer boss pressure.",
+      "aoe": "Sacred Swing, Bells of Light, Reckoning, and staff attacks provide area threat while defensive state remains centered on the tank.",
+      "movement_and_target_switching": "The tank's core state travels with the player, though deliberate positioning and staff melee contact still matter.",
+      "defense_and_control": "Parry, Sacred Oath, Faith Guard, Barrier of Light, Patience, Mending Ward, Tome of Light, and Lightkeeper create avoidance, smoothing, and recovery layers.",
+      "group_utility": "Barriers, wards, bells, librams, and healer-relief windows protect the party beyond personal survival.",
+      "failure_modes": [
+        {
+          "text": "Losing track of Oath, stagger-like damage, or the active libram can make a calm avoidance loop fail suddenly when a ward or healing answer is late.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost"
+          ]
+        },
+        {
+          "text": "Movement or a target swap can interrupt the intended payoff: the tank's core state travels with the player, though deliberate positioning and staff melee contact still matter.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2"
+          ]
+        },
+        {
+          "text": "Spending recovery or control too early leaves less protection for the next pressure event: parry, sacred oath, faith guard, barrier of light, patience, mending ward, tome of light, and lightkeeper create avoidance, smoothing, and recovery layers.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "observed:templar/oathkeeper:tracking",
+        "inference:templar/oathkeeper:state-cost",
+        "talent:templar/oathkeeper:19-16-4-0",
+        "talent:templar/oathkeeper:19-16-6-1",
+        "talent:templar/oathkeeper:19-16-1-2",
+        "observed:templar/oathkeeper:current-build",
+        "observed:templar/oathkeeper:performance",
+        "talent:templar/oathkeeper:19-16-4-9"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "A readable staff tank with early parry scaling, Sacred Swing, padding, and a clear oath identity.",
+        "strengths": [
+          "Immediate mitigation identity",
+          "Beginner-friendly framing",
+          "Reactive healing potential"
+        ],
+        "cautions": [
+          "Avoidance can feel streaky",
+          "Several tracked states arrive later"
+        ],
+        "claim_ids": [
+          "talent:templar/oathkeeper:19-16-4-0",
+          "talent:templar/oathkeeper:19-16-6-1",
+          "talent:templar/oathkeeper:19-16-1-2",
+          "observed:templar/oathkeeper:tracking",
+          "inference:templar/oathkeeper:state-cost",
+          "observed:templar/oathkeeper:current-build",
+          "observed:templar/oathkeeper:performance",
+          "talent:templar/oathkeeper:19-16-4-9"
+        ]
+      },
+      "level_50_60": {
+        "feel": "A layered avoidance tank whose dungeon and progression setups diverge mainly through libram uptime and emergency-healing choices.",
+        "strengths": [
+          "99 Mythic records",
+          "Strong current dungeon build",
+          "Tome of Light can create a large recovery window"
+        ],
+        "cautions": [
+          "WeakAura package indicates real tracking burden",
+          "Tank DPS is not durability evidence",
+          "Raid and key setup differs from random dungeons"
+        ],
+        "claim_ids": [
+          "observed:templar/oathkeeper:current-build",
+          "observed:templar/oathkeeper:performance",
+          "talent:templar/oathkeeper:19-16-4-9",
+          "observed:templar/oathkeeper:tracking",
+          "inference:templar/oathkeeper:state-cost",
+          "talent:templar/oathkeeper:19-16-4-0",
+          "talent:templar/oathkeeper:19-16-6-1",
+          "talent:templar/oathkeeper:19-16-1-2"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "By levels 30-49, maintain the staffguard and sacred swing package, build value through parries and disciplined attacks, track oath chain and stagger-like states, then route barrier of light, mending ward, librams, and reactive healing around incoming damage.",
+        "strengths": [
+          "Core engine is online",
+          "More complete target coverage"
+        ],
+        "cautions": [
+          "Late talents still change the ceiling",
+          "The tank's core state travels with the player, though deliberate positioning and staff melee contact still matter"
+        ],
+        "claim_ids": [
+          "observed:templar/oathkeeper:tracking",
+          "inference:templar/oathkeeper:state-cost",
+          "talent:templar/oathkeeper:19-16-4-0",
+          "talent:templar/oathkeeper:19-16-6-1",
+          "talent:templar/oathkeeper:19-16-1-2",
+          "observed:templar/oathkeeper:current-build",
+          "observed:templar/oathkeeper:performance",
+          "talent:templar/oathkeeper:19-16-4-9"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, parry and disciplined attacks sustain the avoidance engine while wards and librams answer boss pressure.",
+        "strengths": [
+          "Durable targets preserve the full loop",
+          "Cooldowns can be planned"
+        ],
+        "cautions": [
+          "Movement can break setup",
+          "Repeated errors remain visible"
+        ],
+        "claim_ids": [
+          "observed:templar/oathkeeper:tracking",
+          "inference:templar/oathkeeper:state-cost",
+          "talent:templar/oathkeeper:19-16-4-0",
+          "talent:templar/oathkeeper:19-16-6-1",
+          "talent:templar/oathkeeper:19-16-1-2",
+          "observed:templar/oathkeeper:current-build",
+          "observed:templar/oathkeeper:performance",
+          "talent:templar/oathkeeper:19-16-4-9"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, sacred swing, bells of light, reckoning, and staff attacks provide area threat while defensive state remains centered on the tank.",
+        "strengths": [
+          "Pack tools express the spec clearly",
+          "Group utility has regular value"
+        ],
+        "cautions": [
+          "Short-lived targets can erase setup",
+          "Tank movement changes the plan"
+        ],
+        "claim_ids": [
+          "observed:templar/oathkeeper:tracking",
+          "inference:templar/oathkeeper:state-cost",
+          "talent:templar/oathkeeper:19-16-4-0",
+          "talent:templar/oathkeeper:19-16-6-1",
+          "talent:templar/oathkeeper:19-16-1-2",
+          "observed:templar/oathkeeper:current-build",
+          "observed:templar/oathkeeper:performance",
+          "talent:templar/oathkeeper:19-16-4-9"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, the tank's core state travels with the player, though deliberate positioning and staff melee contact still matter. Parry, Sacred Oath, Faith Guard, Barrier of Light, Patience, Mending Ward, Tome of Light, and Lightkeeper create avoidance, smoothing, and recovery layers.",
+        "strengths": [
+          "Control and utility create options",
+          "Target swaps can reward flexibility"
+        ],
+        "cautions": [
+          "Disruption makes the loop less predictable",
+          "Defensive timing is punishable"
+        ],
+        "claim_ids": [
+          "observed:templar/oathkeeper:tracking",
+          "inference:templar/oathkeeper:state-cost",
+          "talent:templar/oathkeeper:19-16-4-0",
+          "talent:templar/oathkeeper:19-16-6-1",
+          "talent:templar/oathkeeper:19-16-1-2",
+          "observed:templar/oathkeeper:current-build",
+          "observed:templar/oathkeeper:performance",
+          "talent:templar/oathkeeper:19-16-4-9"
+        ]
+      }
+    },
+    "complexity": {
+      "core_actions": {
+        "dungeon_aoe": {
+          "value": "moderate",
+          "reason": "Sacred Swing, parry value, threat attacks, and ward responses form a readable tank core.",
+          "claim_ids": [
+            "talent:templar/oathkeeper:19-16-4-0",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Maintain the staffguard and Sacred Swing package, build value through parries and disciplined attacks, track Oath Chain and stagger-like states, then route Barrier of Light, Mending Ward, librams, and reactive healing around incoming damage. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate",
+          "reason": "The practical action set follows the authored loop: Maintain the staffguard and Sacred Swing package, build value through parries and disciplined attacks, track Oath Chain and stagger-like states, then route Barrier of Light, Mending Ward, librams, and reactive healing around incoming damage. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate",
+          "reason": "The practical action set follows the authored loop: Maintain the staffguard and Sacred Swing package, build value through parries and disciplined attacks, track Oath Chain and stagger-like states, then route Barrier of Light, Mending Ward, librams, and reactive healing around incoming damage. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        },
+        "boss": {
+          "value": "moderate",
+          "reason": "The practical action set follows the authored loop: Maintain the staffguard and Sacred Swing package, build value through parries and disciplined attacks, track Oath Chain and stagger-like states, then route Barrier of Light, Mending Ward, librams, and reactive healing around incoming damage. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        },
+        "pvp": {
+          "value": "moderate",
+          "reason": "The practical action set follows the authored loop: Maintain the staffguard and Sacred Swing package, build value through parries and disciplined attacks, track Oath Chain and stagger-like states, then route Barrier of Light, Mending Ward, librams, and reactive healing around incoming damage. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        }
+      },
+      "state_tracking": {
+        "boss": {
+          "value": "high",
+          "reason": "The community WeakAura tracks stagger, Oath Chain, Oath stacks, and related defensive states in addition to wards and librams.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Parry and disciplined attacks sustain the avoidance engine while wards and librams answer boss pressure. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Parry and disciplined attacks sustain the avoidance engine while wards and librams answer boss pressure. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Parry and disciplined attacks sustain the avoidance engine while wards and librams answer boss pressure. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Parry and disciplined attacks sustain the avoidance engine while wards and librams answer boss pressure. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Parry and disciplined attacks sustain the avoidance engine while wards and librams answer boss pressure. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "boss": {
+          "value": "high",
+          "reason": "Avoidance, delayed damage, barriers, healing, and libram choice must be interpreted against incoming pressure.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "Target count, incoming pressure, and movement change the next action; parry, sacred oath, faith guard, barrier of light, patience, mending ward, tome of light, and lightkeeper create avoidance, smoothing, and recovery layers. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Target count, incoming pressure, and movement change the next action; parry, sacred oath, faith guard, barrier of light, patience, mending ward, tome of light, and lightkeeper create avoidance, smoothing, and recovery layers. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Target count, incoming pressure, and movement change the next action; parry, sacred oath, faith guard, barrier of light, patience, mending ward, tome of light, and lightkeeper create avoidance, smoothing, and recovery layers. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Target count, incoming pressure, and movement change the next action; parry, sacred oath, faith guard, barrier of light, patience, mending ward, tome of light, and lightkeeper create avoidance, smoothing, and recovery layers. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Target count, incoming pressure, and movement change the next action; parry, sacred oath, faith guard, barrier of light, patience, mending ward, tome of light, and lightkeeper create avoidance, smoothing, and recovery layers. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        }
+      },
+      "failure_cost": {
+        "boss": {
+          "value": "high",
+          "reason": "A late defensive interpretation can turn accumulated pressure into a tank death despite an approachable action core.",
+          "claim_ids": [
+            "inference:templar/oathkeeper:state-cost",
+            "observed:templar/oathkeeper:tracking",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "Losing track of Oath, stagger-like damage, or the active libram can make a calm avoidance loop fail suddenly when a ward or healing answer is late. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Losing track of Oath, stagger-like damage, or the active libram can make a calm avoidance loop fail suddenly when a ward or healing answer is late. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Losing track of Oath, stagger-like damage, or the active libram can make a calm avoidance loop fail suddenly when a ward or healing answer is late. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Losing track of Oath, stagger-like damage, or the active libram can make a calm avoidance loop fail suddenly when a ward or healing answer is late. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Losing track of Oath, stagger-like damage, or the active libram can make a calm avoidance loop fail suddenly when a ward or healing answer is late. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Sacred Swing, Bells of Light, Reckoning, and staff attacks provide area threat while defensive state remains centered on the tank. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Sacred Swing, Bells of Light, Reckoning, and staff attacks provide area threat while defensive state remains centered on the tank. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Sacred Swing, Bells of Light, Reckoning, and staff attacks provide area threat while defensive state remains centered on the tank. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Sacred Swing, Bells of Light, Reckoning, and staff attacks provide area threat while defensive state remains centered on the tank. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Sacred Swing, Bells of Light, Reckoning, and staff attacks provide area threat while defensive state remains centered on the tank. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        },
+        "pvp": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Sacred Swing, Bells of Light, Reckoning, and staff attacks provide area threat while defensive state remains centered on the tank. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: The tank's core state travels with the player, though deliberate positioning and staff melee contact still matter. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: The tank's core state travels with the player, though deliberate positioning and staff melee contact still matter. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: The tank's core state travels with the player, though deliberate positioning and staff melee contact still matter. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: The tank's core state travels with the player, though deliberate positioning and staff melee contact still matter. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: The tank's core state travels with the player, though deliberate positioning and staff melee contact still matter. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "Execution is constrained by positioning and swaps: The tank's core state travels with the player, though deliberate positioning and staff melee contact still matter. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2",
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:performance",
+            "talent:templar/oathkeeper:19-16-4-9"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You want a holy staff tank with an accessible action loop but meaningful avoidance, ward, and recovery-state mastery.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:tracking"
+          ]
+        },
+        {
+          "text": "You enjoy the spec's core cadence: maintain the staffguard and sacred swing package, build value through parries and disciplined attacks, track oath chain and stagger-like states, then route barrier of light, mending ward, librams, and reactive healing around incoming damage.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You dislike avoidance variance, defensive trackers, or changing libram choices by content.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking"
+          ]
+        },
+        {
+          "text": "You dislike the positioning or swap constraint that the tank's core state travels with the player, though deliberate positioning and staff melee contact still matter.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking",
+            "inference:templar/oathkeeper:state-cost",
+            "talent:templar/oathkeeper:19-16-4-0",
+            "talent:templar/oathkeeper:19-16-6-1",
+            "talent:templar/oathkeeper:19-16-1-2"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Current builds frame Oathkeeper as beginner-friendlier than summon-heavy tanks and praise Tome of Light as a major dungeon emergency tool.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:current-build"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "The dedicated WeakAura package shows that Oath, chain, and stagger-like state visibility can exceed what the base presentation communicates.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:tracking"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "Its action floor may be beginner-friendly while its defensive-information ceiling remains high.",
+          "claim_ids": [
+            "observed:templar/oathkeeper:current-build",
+            "observed:templar/oathkeeper:tracking"
+          ]
+        }
+      ]
+    },
+    "performance_signal_ids": [
+      "observed:templar/oathkeeper:performance"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "moderate",
+      "performance": "representation_and_offrole_only",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium-high",
+      "gaps": [
+        "No controlled comparative mitigation logs.",
+        "Exact Oath Chain and stagger cadence needs a current full guide."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "A readable staff tank with early parry scaling, Sacred Swing, padding, and a clear oath identity.",
+      "observed_changes": [
+        "Avoidance can feel streaky",
+        "Several tracked states arrive later"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "A layered avoidance tank whose dungeon and progression setups diverge mainly through libram uptime and emergency-healing choices.",
+      "observed_changes": [
+        "WeakAura package indicates real tracking burden",
+        "Tank DPS is not durability evidence",
+        "Raid and key setup differs from random dungeons"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "A readable staff tank with early parry scaling, Sacred Swing, padding, and a clear oath identity.",
+      "observed_changes": [
+        "Avoidance can feel streaky",
+        "Several tracked states arrive later"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "By levels 30-49, maintain the staffguard and sacred swing package, build value through parries and disciplined attacks, track oath chain and stagger-like states, then route barrier of light, mending ward, librams, and reactive healing around incoming damage.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "The tank's core state travels with the player, though deliberate positioning and staff melee contact still matter"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "By levels 30-49, maintain the staffguard and sacred swing package, build value through parries and disciplined attacks, track oath chain and stagger-like states, then route barrier of light, mending ward, librams, and reactive healing around incoming damage.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "The tank's core state travels with the player, though deliberate positioning and staff melee contact still matter"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:templar/oathkeeper:current-build",
+      "kind": "observed",
+      "text": "The August dungeon build recommends Tome of Light as a five-minute emergency window that can let the healer deal damage for roughly thirty seconds, while suggesting Eternally Devoted for raid bosses or higher keys requiring continuous libram uptime. It prioritizes hit and expertise, then Agility and Stamina, and notes critical strike contributes damage reduction through Sacred Oath.",
+      "source_ids": [
+        "buildhub:a7792a90-0e37-4798-a849-30dd1ed291da",
+        "reddit:tank-weapons-2026-08-01"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "dungeons",
+          "raids",
+          "mythic_dungeons"
+        ],
+        "build_or_mode": [
+          "tank"
+        ]
+      },
+      "confidence": "high",
+      "conflicts_with": [],
+      "notes": "Dungeon and progression capstone choices should remain separate."
+    },
+    {
+      "id": "observed:templar/oathkeeper:tracking",
+      "kind": "observed",
+      "text": "A dedicated Oathkeeper WeakAura package tracks stagger-like damage, Oath Chain, Oath stacks, and other tank states, demonstrating a meaningful information burden even though it is not itself a rotation guide.",
+      "source_ids": [
+        "reddit:templar-oathkeeper-wa-2026-07-06"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "tank"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "high",
+      "conflicts_with": [],
+      "notes": "The tool proves tracked states exist, not how difficult every player finds them."
+    },
+    {
+      "id": "observed:templar/oathkeeper:performance",
+      "kind": "observed",
+      "text": "The August Mythic inventory lists 99 Oathkeeper records. The July compilation's 2,172 value is explicitly tank off-role DPS and does not measure durability.",
+      "source_ids": [
+        "reddit:class-statistics-2026-08-02",
+        "reddit:dps-aggregate-2026-07-25"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "mythic_dungeons"
+        ],
+        "build_or_mode": [
+          "tank",
+          "offrole_dps"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "Representation and tank damage do not rank survival."
+    },
+    {
+      "id": "inference:templar/oathkeeper:state-cost",
+      "kind": "inference",
+      "text": "Oathkeeper separates action complexity from defensive-information complexity: the attack loop can remain readable while Oath, delayed pressure, avoidance variance, wards, and libram state demand careful interpretation.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "observed:templar/oathkeeper:tracking",
+        "observed:templar/oathkeeper:current-build",
+        "talent:templar/oathkeeper:19-16-4-7a"
+      ],
+      "scope": {
+        "levels": "level_40_60",
+        "content": [
+          "tank"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "high",
+      "conflicts_with": [],
+      "notes": "Useful example of context-dependent complexity dimensions."
+    }
+  ]
+}

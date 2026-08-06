@@ -1,0 +1,924 @@
+{
+  "baseline": "primalist--geomancy.json",
+  "set": {
+    "identity": {
+      "fantasy": "An earthbender who keeps an Earthshaping state alive through Seismic choices, then turns stone-spam and aligned procs into lances, landslides, eruptions, and golem bursts.",
+      "primary_family": "sequencers",
+      "also_fits": [
+        "planners"
+      ],
+      "playstyle_tags": [
+        "proc-maintenance-caster",
+        "turret-caster",
+        "shared-cooldown-caster"
+      ],
+      "one_line": "An earth caster that uses shared-cooldown Seismic choices, builds Earthshaping and Geomolding, and spends them on Terrasurge, Lithic Lance, Eruption, and Golem Form. Current players describe simple basic casting but meaningful proc alignment, strong single target, and less impressive AoE in mid-level gear.",
+      "claim_ids": [
+        "observed:primalist/geomancy:current-loop",
+        "inference:primalist/geomancy:uptime-cost",
+        "talent:primalist/geomancy:31-83-10-0",
+        "observed:primalist/geomancy:performance",
+        "talent:primalist/geomancy:31-83-2-8",
+        "talent:primalist/geomancy:31-83-4-8",
+        "talent:primalist/geomancy:31-83-6-8",
+        "observed:primalist/geomancy:recent-manual-review"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "Maintain Earthshaping by choosing the appropriate shared-cooldown Seismic spell, cast rapid Stoneshards while waiting for Crag and related procs, then spend aligned windows on Lithic Lance, Terrasurge, Golem Form, or later Eruption and Geomolding.",
+      "single_target": "Current players describe very fast Stoneshard casting with Earthshaping refreshes, then high burst when Lithic Lance and landslide-style procs align.",
+      "aoe": "Use Earthquake and Seismic Tremor across several targets to produce Crag interactions, then add Eruption and Journey to the Core at level 50; mid-level AoE reports are mixed.",
+      "movement_and_target_switching": "Seismic spells are instant choices, but interruption, silence, pushback, or movement can break Earthshaping uptime and sharply reduce the stone-spam engine.",
+      "defense_and_control": "Stoneskin, the Primalist rage heal, slows, knock effects, and Golem Form provide survival, though current solo players report damage falling when enemies reach them.",
+      "group_utility": "Terrasurge and earth debuffs can add physical amplification, while the base Primalist kit supplies healing and group tools.",
+      "failure_modes": [
+        {
+          "text": "Losing Earthshaping during silence, stun, pushback, or poor Seismic timing interrupts the entire proc and cast-speed engine.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost"
+          ]
+        },
+        {
+          "text": "Movement or a target swap can interrupt the intended payoff: seismic spells are instant choices, but interruption, silence, pushback, or movement can break earthshaping uptime and sharply reduce the stone-spam engine.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8"
+          ]
+        },
+        {
+          "text": "Spending recovery or control too early leaves less protection for the next pressure event: stoneskin, the primalist rage heal, slows, knock effects, and golem form provide survival, though current solo players report damage falling when enemies reach them.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "observed:primalist/geomancy:current-loop",
+        "inference:primalist/geomancy:uptime-cost",
+        "talent:primalist/geomancy:31-83-10-0",
+        "observed:primalist/geomancy:performance",
+        "talent:primalist/geomancy:31-83-2-8",
+        "talent:primalist/geomancy:31-83-4-8",
+        "talent:primalist/geomancy:31-83-6-8",
+        "observed:primalist/geomancy:recent-manual-review"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "A simple-looking stone caster whose real skill is preserving Earthshaping while choosing among mutually cooling Seismic tools.",
+        "strengths": [
+          "Fast basic casting",
+          "Strong single-target burst reports"
+        ],
+        "cautions": [
+          "Pushback hurts badly",
+          "AoE is not yet complete"
+        ],
+        "claim_ids": [
+          "observed:primalist/geomancy:current-loop",
+          "talent:primalist/geomancy:31-83-10-0",
+          "inference:primalist/geomancy:uptime-cost",
+          "observed:primalist/geomancy:performance",
+          "talent:primalist/geomancy:31-83-2-8",
+          "talent:primalist/geomancy:31-83-4-8",
+          "talent:primalist/geomancy:31-83-6-8",
+          "observed:primalist/geomancy:recent-manual-review"
+        ]
+      },
+      "level_50_60": {
+        "feel": "A denser proc caster with Eruption, Journey to the Core, Geomolding, and capstone choices expanding both pack and burst decisions.",
+        "strengths": [
+          "More complete AoE",
+          "High proc-alignment payoff"
+        ],
+        "cautions": [
+          "Only 24 Mythic records",
+          "Damage reports remain gear and crit dependent"
+        ],
+        "claim_ids": [
+          "observed:primalist/geomancy:performance",
+          "talent:primalist/geomancy:31-83-2-8",
+          "talent:primalist/geomancy:31-83-4-8",
+          "talent:primalist/geomancy:31-83-6-8",
+          "observed:primalist/geomancy:current-loop",
+          "inference:primalist/geomancy:uptime-cost",
+          "talent:primalist/geomancy:31-83-10-0",
+          "observed:primalist/geomancy:recent-manual-review"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "By levels 30-49, maintain earthshaping by choosing the appropriate shared-cooldown seismic spell, cast rapid stoneshards while waiting for crag and related procs, then spend aligned windows on lithic lance, terrasurge, golem form, or later eruption and geomolding.",
+        "strengths": [
+          "Core engine is online",
+          "More complete target coverage"
+        ],
+        "cautions": [
+          "Late talents still change the ceiling",
+          "Seismic spells are instant choices, but interruption, silence, pushback, or movement can break Earthshaping uptime and sharply reduce the stone-spam engine"
+        ],
+        "claim_ids": [
+          "observed:primalist/geomancy:current-loop",
+          "inference:primalist/geomancy:uptime-cost",
+          "talent:primalist/geomancy:31-83-10-0",
+          "observed:primalist/geomancy:performance",
+          "talent:primalist/geomancy:31-83-2-8",
+          "talent:primalist/geomancy:31-83-4-8",
+          "talent:primalist/geomancy:31-83-6-8",
+          "observed:primalist/geomancy:recent-manual-review"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, current players describe very fast stoneshard casting with earthshaping refreshes, then high burst when lithic lance and landslide-style procs align.",
+        "strengths": [
+          "Durable targets preserve the full loop",
+          "Cooldowns can be planned"
+        ],
+        "cautions": [
+          "Movement can break setup",
+          "Repeated errors remain visible"
+        ],
+        "claim_ids": [
+          "observed:primalist/geomancy:current-loop",
+          "inference:primalist/geomancy:uptime-cost",
+          "talent:primalist/geomancy:31-83-10-0",
+          "observed:primalist/geomancy:performance",
+          "talent:primalist/geomancy:31-83-2-8",
+          "talent:primalist/geomancy:31-83-4-8",
+          "talent:primalist/geomancy:31-83-6-8",
+          "observed:primalist/geomancy:recent-manual-review"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, use earthquake and seismic tremor across several targets to produce crag interactions, then add eruption and journey to the core at level 50; mid-level aoe reports are mixed.",
+        "strengths": [
+          "Pack tools express the spec clearly",
+          "Group utility has regular value"
+        ],
+        "cautions": [
+          "Short-lived targets can erase setup",
+          "Tank movement changes the plan"
+        ],
+        "claim_ids": [
+          "observed:primalist/geomancy:current-loop",
+          "inference:primalist/geomancy:uptime-cost",
+          "talent:primalist/geomancy:31-83-10-0",
+          "observed:primalist/geomancy:performance",
+          "talent:primalist/geomancy:31-83-2-8",
+          "talent:primalist/geomancy:31-83-4-8",
+          "talent:primalist/geomancy:31-83-6-8",
+          "observed:primalist/geomancy:recent-manual-review"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, seismic spells are instant choices, but interruption, silence, pushback, or movement can break earthshaping uptime and sharply reduce the stone-spam engine. Stoneskin, the Primalist rage heal, slows, knock effects, and Golem Form provide survival, though current solo players report damage falling when enemies reach them.",
+        "strengths": [
+          "Control and utility create options",
+          "Target swaps can reward flexibility"
+        ],
+        "cautions": [
+          "Disruption makes the loop less predictable",
+          "Defensive timing is punishable"
+        ],
+        "claim_ids": [
+          "observed:primalist/geomancy:current-loop",
+          "inference:primalist/geomancy:uptime-cost",
+          "talent:primalist/geomancy:31-83-10-0",
+          "observed:primalist/geomancy:performance",
+          "talent:primalist/geomancy:31-83-2-8",
+          "talent:primalist/geomancy:31-83-4-8",
+          "talent:primalist/geomancy:31-83-6-8",
+          "observed:primalist/geomancy:recent-manual-review"
+        ]
+      }
+    },
+    "complexity": {
+      "state_tracking": {
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Earthshaping duration, shared Seismic cooldowns, Crag procs, crit alignment, and form or lance windows overlap.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "talent:primalist/geomancy:31-83-10-0",
+            "inference:primalist/geomancy:uptime-cost",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Current players describe very fast Stoneshard casting with Earthshaping refreshes, then high burst when Lithic Lance and landslide-style procs align. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Current players describe very fast Stoneshard casting with Earthshaping refreshes, then high burst when Lithic Lance and landslide-style procs align. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Current players describe very fast Stoneshard casting with Earthshaping refreshes, then high burst when Lithic Lance and landslide-style procs align. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "moderate-high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Current players describe very fast Stoneshard casting with Earthshaping refreshes, then high burst when Lithic Lance and landslide-style procs align. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        },
+        "pvp": {
+          "value": "moderate-high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Current players describe very fast Stoneshard casting with Earthshaping refreshes, then high burst when Lithic Lance and landslide-style procs align. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        }
+      },
+      "execution": {
+        "pvp": {
+          "value": "high",
+          "reason": "Pushback and disruption directly threaten the maintained casting state.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "Execution is constrained by positioning and swaps: Seismic spells are instant choices, but interruption, silence, pushback, or movement can break Earthshaping uptime and sharply reduce the stone-spam engine. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Execution is constrained by positioning and swaps: Seismic spells are instant choices, but interruption, silence, pushback, or movement can break Earthshaping uptime and sharply reduce the stone-spam engine. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Execution is constrained by positioning and swaps: Seismic spells are instant choices, but interruption, silence, pushback, or movement can break Earthshaping uptime and sharply reduce the stone-spam engine. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "Execution is constrained by positioning and swaps: Seismic spells are instant choices, but interruption, silence, pushback, or movement can break Earthshaping uptime and sharply reduce the stone-spam engine. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Execution is constrained by positioning and swaps: Seismic spells are instant choices, but interruption, silence, pushback, or movement can break Earthshaping uptime and sharply reduce the stone-spam engine. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        }
+      },
+      "failure_cost": {
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Dropped Earthshaping loses accumulated casting and proc momentum until rebuilt.",
+          "claim_ids": [
+            "inference:primalist/geomancy:uptime-cost",
+            "observed:primalist/geomancy:current-loop",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Losing Earthshaping during silence, stun, pushback, or poor Seismic timing interrupts the entire proc and cast-speed engine. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Losing Earthshaping during silence, stun, pushback, or poor Seismic timing interrupts the entire proc and cast-speed engine. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "Losing Earthshaping during silence, stun, pushback, or poor Seismic timing interrupts the entire proc and cast-speed engine. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "moderate-high",
+          "reason": "Losing Earthshaping during silence, stun, pushback, or poor Seismic timing interrupts the entire proc and cast-speed engine. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Losing Earthshaping during silence, stun, pushback, or poor Seismic timing interrupts the entire proc and cast-speed engine. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        }
+      },
+      "core_actions": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Maintain Earthshaping by choosing the appropriate shared-cooldown Seismic spell, cast rapid Stoneshards while waiting for Crag and related procs, then spend aligned windows on Lithic Lance, Terrasurge, Golem Form, or later Eruption and Geomolding. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Maintain Earthshaping by choosing the appropriate shared-cooldown Seismic spell, cast rapid Stoneshards while waiting for Crag and related procs, then spend aligned windows on Lithic Lance, Terrasurge, Golem Form, or later Eruption and Geomolding. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Maintain Earthshaping by choosing the appropriate shared-cooldown Seismic spell, cast rapid Stoneshards while waiting for Crag and related procs, then spend aligned windows on Lithic Lance, Terrasurge, Golem Form, or later Eruption and Geomolding. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Maintain Earthshaping by choosing the appropriate shared-cooldown Seismic spell, cast rapid Stoneshards while waiting for Crag and related procs, then spend aligned windows on Lithic Lance, Terrasurge, Golem Form, or later Eruption and Geomolding. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Maintain Earthshaping by choosing the appropriate shared-cooldown Seismic spell, cast rapid Stoneshards while waiting for Crag and related procs, then spend aligned windows on Lithic Lance, Terrasurge, Golem Form, or later Eruption and Geomolding. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        },
+        "pvp": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Maintain Earthshaping by choosing the appropriate shared-cooldown Seismic spell, cast rapid Stoneshards while waiting for Crag and related procs, then spend aligned windows on Lithic Lance, Terrasurge, Golem Form, or later Eruption and Geomolding. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Use Earthquake and Seismic Tremor across several targets to produce Crag interactions, then add Eruption and Journey to the Core at level 50; mid-level AoE reports are mixed. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Use Earthquake and Seismic Tremor across several targets to produce Crag interactions, then add Eruption and Journey to the Core at level 50; mid-level AoE reports are mixed. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Use Earthquake and Seismic Tremor across several targets to produce Crag interactions, then add Eruption and Journey to the Core at level 50; mid-level AoE reports are mixed. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Use Earthquake and Seismic Tremor across several targets to produce Crag interactions, then add Eruption and Journey to the Core at level 50; mid-level AoE reports are mixed. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Use Earthquake and Seismic Tremor across several targets to produce Crag interactions, then add Eruption and Journey to the Core at level 50; mid-level AoE reports are mixed. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        },
+        "pvp": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Use Earthquake and Seismic Tremor across several targets to produce Crag interactions, then add Eruption and Journey to the Core at level 50; mid-level AoE reports are mixed. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; stoneskin, the primalist rage heal, slows, knock effects, and golem form provide survival, though current solo players report damage falling when enemies reach them. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; stoneskin, the primalist rage heal, slows, knock effects, and golem form provide survival, though current solo players report damage falling when enemies reach them. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; stoneskin, the primalist rage heal, slows, knock effects, and golem form provide survival, though current solo players report damage falling when enemies reach them. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; stoneskin, the primalist rage heal, slows, knock effects, and golem form provide survival, though current solo players report damage falling when enemies reach them. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; stoneskin, the primalist rage heal, slows, knock effects, and golem form provide survival, though current solo players report damage falling when enemies reach them. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "Target count, incoming pressure, and movement change the next action; stoneskin, the primalist rage heal, slows, knock effects, and golem form provide survival, though current solo players report damage falling when enemies reach them. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8",
+            "talent:primalist/geomancy:31-83-4-8",
+            "talent:primalist/geomancy:31-83-6-8",
+            "observed:primalist/geomancy:recent-manual-review"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You want an earth caster with rapid filler and satisfying crit-proc eruptions rather than slow boulder casts.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop"
+          ]
+        },
+        {
+          "text": "You enjoy the spec's core cadence: maintain earthshaping by choosing the appropriate shared-cooldown seismic spell, cast rapid stoneshards while waiting for crag and related procs, then spend aligned windows on lithic lance, terrasurge, golem form, or later eruption and geomolding.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You dislike maintaining a timed state or losing output to pushback and interruption.",
+          "claim_ids": [
+            "inference:primalist/geomancy:uptime-cost"
+          ]
+        },
+        {
+          "text": "You dislike the positioning or swap constraint that seismic spells are instant choices, but interruption, silence, pushback, or movement can break earthshaping uptime and sharply reduce the stone-spam engine.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop",
+            "inference:primalist/geomancy:uptime-cost",
+            "talent:primalist/geomancy:31-83-10-0",
+            "observed:primalist/geomancy:performance",
+            "talent:primalist/geomancy:31-83-2-8"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Players praise the earthbender fantasy, rapid Stoneshard spam, and explosive Lithic Lance or landslide proc chains.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Pushback, Earthshaping upkeep, crit reliance, and inconsistent mid-level AoE are the recurring cautions.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "Some players call it beginner-friendly while experienced reports describe meaningful uptime and proc management; the basic cast loop and optimized loop differ.",
+          "claim_ids": [
+            "observed:primalist/geomancy:current-loop"
+          ]
+        }
+      ]
+    },
+    "performance_signal_ids": [
+      "observed:primalist/geomancy:performance"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "manual_recent_source_review",
+      "performance": "low_representation_uncontrolled",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium",
+      "gaps": [
+        "No current Build Hub build was captured.",
+        "Only 24 Mythic records and self-reported damage samples."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "A simple-looking stone caster whose real skill is preserving Earthshaping while choosing among mutually cooling Seismic tools.",
+      "observed_changes": [
+        "Pushback hurts badly",
+        "AoE is not yet complete"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "By levels 30-49, maintain earthshaping by choosing the appropriate shared-cooldown seismic spell, cast rapid stoneshards while waiting for crag and related procs, then spend aligned windows on lithic lance, terrasurge, golem form, or later eruption and geomolding.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Seismic spells are instant choices, but interruption, silence, pushback, or movement can break Earthshaping uptime and sharply reduce the stone-spam engine"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "A denser proc caster with Eruption, Journey to the Core, Geomolding, and capstone choices expanding both pack and burst decisions.",
+      "observed_changes": [
+        "Only 24 Mythic records",
+        "Damage reports remain gear and crit dependent"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "A simple-looking stone caster whose real skill is preserving Earthshaping while choosing among mutually cooling Seismic tools.",
+      "observed_changes": [
+        "Pushback hurts badly",
+        "AoE is not yet complete"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "By levels 30-49, maintain earthshaping by choosing the appropriate shared-cooldown seismic spell, cast rapid stoneshards while waiting for crag and related procs, then spend aligned windows on lithic lance, terrasurge, golem form, or later eruption and geomolding.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Seismic spells are instant choices, but interruption, silence, pushback, or movement can break Earthshaping uptime and sharply reduce the stone-spam engine"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:primalist/geomancy:current-loop",
+      "kind": "observed",
+      "text": "A July Geomancy discussion describes rapid Stoneshard casting, refreshing Earthshaping with Seismic procs, Lithic Lance and landslide burst when procs align, Earthquake plus Seismic Tremor for AoE Crag procs, and severe rotation loss from silence, stun, or pushback. Players disagree on AoE strength and report strong single target.",
+      "source_ids": [
+        "reddit:primalist-geomancer-2026-07-19"
+      ],
+      "scope": {
+        "levels": "leveling_30_60",
+        "content": [
+          "solo_leveling",
+          "group_pve",
+          "pvp"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Self-reported damage and gear are not normalized."
+    },
+    {
+      "id": "observed:primalist/geomancy:performance",
+      "kind": "observed",
+      "text": "The July DPS compilation reports Geomancy at 3,343, and the August Mythic inventory lists 24 Geomancy records.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "pve_unspecified",
+          "mythic_dungeons"
+        ],
+        "build_or_mode": [
+          "unspecified"
+        ]
+      },
+      "confidence": "low",
+      "conflicts_with": [],
+      "notes": "Low representation and incomplete methodology prevent ranking."
+    },
+    {
+      "id": "inference:primalist/geomancy:uptime-cost",
+      "kind": "inference",
+      "text": "Geomancy's optimized difficulty comes less from button count than from keeping Earthshaping and proc momentum alive through disruption.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:primalist/geomancy:31-83-10-0",
+        "observed:primalist/geomancy:current-loop"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Playstyle inference."
+    },
+    {
+      "id": "observed:primalist/geomancy:recent-manual-review",
+      "kind": "observed",
+      "text": "Geomancy is recommended as a comparatively simple caster and mana spec, but current community evidence remains too thin to establish an optimized endgame priority.",
+      "source_ids": [
+        "reddit:beginner-specs-2026-07-14"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually reviewed on 2026-08-06; anecdotal evidence is not treated as a power ranking."
+    }
+  ]
+}

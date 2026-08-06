@@ -1,0 +1,2099 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "starcaller/warden",
+    "class": "Starcaller",
+    "name": "Warden",
+    "roles": [
+      "Damage"
+    ],
+    "range": [
+      "Melee"
+    ]
+  },
+  "identity": {
+    "fantasy": "A vengeful glaive skirmisher who marks enemies in melee, spends stars through arcane blades, and teleports through targets during lunar pursuit windows.",
+    "one_line": "A mobile glaive fighter that applies Stars in melee, spends them through Starsunder and Astral Blade, and teleports through targets during Avatar of Vengeance. It blends Intellect scaling, short-range AoE, and pursuit tools, giving it a strong PvP/skirmisher shape.",
+    "primary_family": "duelists",
+    "also_fits": [
+      "sequencers"
+    ],
+    "claim_ids": [
+      "observed:starcaller/warden:post-update-loop",
+      "inference:starcaller/warden:star-cycle-cost",
+      "talent:starcaller/warden:26-89-4-0",
+      "talent:starcaller/warden:26-89-10-0",
+      "talent:starcaller/warden:26-89-4-2",
+      "observed:starcaller/warden:performance",
+      "talent:starcaller/warden:26-89-4-9",
+      "observed:starcaller/warden:sentiment-conflict"
+    ],
+    "playstyle_tags": [
+      "mobile-melee-star-spender",
+      "proc-melee",
+      "skirmisher"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "Build Scattered Stars through the melee package, use Lunar Lance as the reported setup point, spend with Starsunder and Astral Blade, and exploit Shattered Stars procs while using Lunar Charge, Lethal Pursuit, and Avatar of Vengeance to stay attached.",
+    "resources": [],
+    "builders": [],
+    "spenders": [
+      {
+        "name": "Umbral Blade",
+        "claim_ids": [
+          "talent:starcaller/warden:26-89-4-3"
+        ]
+      },
+      {
+        "name": "Sentinel Glaive",
+        "claim_ids": [
+          "talent:starcaller/warden:26-89-7-3"
+        ]
+      },
+      {
+        "name": "Stellar Amplification",
+        "claim_ids": [
+          "talent:starcaller/warden:26-89-3-6"
+        ]
+      },
+      {
+        "name": "Infused Blades",
+        "claim_ids": [
+          "talent:starcaller/warden:26-89-4-7"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Star Pupil",
+        "claim_ids": [
+          "talent:starcaller/warden:26-89-0-5"
+        ]
+      },
+      {
+        "name": "Pulverizing Blade",
+        "claim_ids": [
+          "talent:starcaller/warden:26-89-1-9"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Lunar Charge",
+        "claim_ids": [
+          "talent:starcaller/warden:26-89-0-7"
+        ],
+        "structural_description": "After using Shooting Star, your next Celestial Strike, Starsunder or auto attack ends the effect to deal 87 + 28.75% arcane SP + 4.65% AP Arcane damage, increased based on distance travelled."
+      },
+      {
+        "name": "Avatar of Vengeance",
+        "claim_ids": [
+          "talent:starcaller/warden:26-89-4-9"
+        ],
+        "structural_description": "Transform: into an Avatar of Vengeance, teleporting to your target and increasing your Intellect by 25% for 30 seconds. For the duration, the range of Astral Blade is increased by 30 yards and will teleport you to your target.If your target is an enemy, you strike them dealing 50 + 22% Intellect + 6.5% arcane SP Arcane damage per 1 sec for 8 seconds, scaling with Intellect."
+      }
+    ],
+    "single_target": "A current post-update sequence reportedly builds to eight stars, uses Lunar Lance, then spends through repeated Starsunder while arcane Shattered Stars procs supply much of the payoff.",
+    "aoe": "Fan of Knives, Sentinel Glaive, Astral Blade, and star effects provide short-range coverage, but current discussion places Warden's relative strength more clearly in single target than Moon Guard-style area damage.",
+    "movement_and_target_switching": "Lunar Charge, Lethal Pursuit, and Avatar of Vengeance create an aggressive gap-closing and teleport identity well suited to skirmishes.",
+    "defense_and_control": "Pursuit tools, Starcaller control, and Aspect of the Moonwell resource cycling help sustain pressure, though the spec still pays normal melee exposure costs.",
+    "group_utility": "Mobile target pressure and Starcaller control are its clearest contributions beyond damage.",
+    "failure_modes": [
+      {
+        "text": "Spending stars before the intended setup or losing contact during the proc and pursuit window reduces the payoff of an otherwise compact sequence.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost"
+        ]
+      },
+      {
+        "text": "Movement or a target swap can interrupt the intended payoff: lunar charge, lethal pursuit, and avatar of vengeance create an aggressive gap-closing and teleport identity well suited to skirmishes.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2"
+        ]
+      },
+      {
+        "text": "Spending recovery or control too early leaves less protection for the next pressure event: pursuit tools, starcaller control, and aspect of the moonwell resource cycling help sustain pressure, though the spec still pays normal melee exposure costs.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2"
+        ]
+      }
+    ],
+    "claim_ids": [
+      "observed:starcaller/warden:post-update-loop",
+      "inference:starcaller/warden:star-cycle-cost",
+      "talent:starcaller/warden:26-89-4-0",
+      "talent:starcaller/warden:26-89-10-0",
+      "talent:starcaller/warden:26-89-4-2",
+      "observed:starcaller/warden:performance",
+      "talent:starcaller/warden:26-89-4-9",
+      "observed:starcaller/warden:sentiment-conflict"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Fan of Knives",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-4-0"
+          ]
+        },
+        {
+          "name": "Warden Training",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-10-0"
+          ]
+        },
+        {
+          "name": "Astral Blade",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-4-1"
+          ]
+        }
+      ],
+      "observed_loop": "A mobile melee star-spender with immediate glaive fantasy, gap closers, and short-range arcane cleave.",
+      "observed_changes": [
+        "Melee exposure",
+        "Early loop is simpler than the full teleport package"
+      ],
+      "claim_ids": [
+        "talent:starcaller/warden:26-89-4-0",
+        "talent:starcaller/warden:26-89-10-0",
+        "talent:starcaller/warden:26-89-4-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Fury of the Stars",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-2-2"
+          ]
+        },
+        {
+          "name": "Lethal Pursuit",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-4-2"
+          ]
+        },
+        {
+          "name": "Moonlit Impaler",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-6-2"
+          ]
+        },
+        {
+          "name": "Maiev's Discipline",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-10-2"
+          ]
+        },
+        {
+          "name": "Astral Finesse",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-1-3a"
+          ]
+        },
+        {
+          "name": "Astral Onslaught",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-1-3b"
+          ]
+        },
+        {
+          "name": "Umbral Blade",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-4-3"
+          ]
+        },
+        {
+          "name": "Sentinel Glaive",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-7-3"
+          ]
+        }
+      ],
+      "observed_loop": "A mobile melee star-spender with immediate glaive fantasy, gap closers, and short-range arcane cleave.",
+      "observed_changes": [
+        "Melee exposure",
+        "Early loop is simpler than the full teleport package"
+      ],
+      "claim_ids": [
+        "talent:starcaller/warden:26-89-2-2",
+        "talent:starcaller/warden:26-89-4-2",
+        "talent:starcaller/warden:26-89-6-2",
+        "talent:starcaller/warden:26-89-10-2",
+        "talent:starcaller/warden:26-89-1-3a",
+        "talent:starcaller/warden:26-89-1-3b",
+        "talent:starcaller/warden:26-89-4-3",
+        "talent:starcaller/warden:26-89-7-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Halt",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-0-4"
+          ]
+        },
+        {
+          "name": "Moonstone",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-2-4"
+          ]
+        },
+        {
+          "name": "Celestial Surge",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-4-4"
+          ]
+        },
+        {
+          "name": "Warden Training",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-6-4"
+          ]
+        },
+        {
+          "name": "Rally The Sentinels",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-8-4"
+          ]
+        },
+        {
+          "name": "Celestial Glaives",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-10-4"
+          ]
+        },
+        {
+          "name": "Star Pupil",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-0-5"
+          ]
+        },
+        {
+          "name": "Maiev's Guard",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-2-5a"
+          ]
+        },
+        {
+          "name": "Astral Combatant",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-2-5b"
+          ]
+        },
+        {
+          "name": "Bonds of Justice",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-4-5"
+          ]
+        },
+        {
+          "name": "Aspect Mastery",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-6-5"
+          ]
+        },
+        {
+          "name": "Wrath of Elune",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-8-5"
+          ]
+        }
+      ],
+      "observed_loop": "By levels 30-49, build scattered stars through the melee package, use lunar lance as the reported setup point, spend with starsunder and astral blade, and exploit shattered stars procs while using lunar charge, lethal pursuit, and avatar of vengeance to stay attached.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Lunar Charge, Lethal Pursuit, and Avatar of Vengeance create an aggressive gap-closing and teleport identity well suited to skirmishes"
+      ],
+      "claim_ids": [
+        "talent:starcaller/warden:26-89-0-4",
+        "talent:starcaller/warden:26-89-2-4",
+        "talent:starcaller/warden:26-89-4-4",
+        "talent:starcaller/warden:26-89-6-4",
+        "talent:starcaller/warden:26-89-8-4",
+        "talent:starcaller/warden:26-89-10-4",
+        "talent:starcaller/warden:26-89-0-5",
+        "talent:starcaller/warden:26-89-2-5a",
+        "talent:starcaller/warden:26-89-2-5b",
+        "talent:starcaller/warden:26-89-4-5",
+        "talent:starcaller/warden:26-89-6-5",
+        "talent:starcaller/warden:26-89-8-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Vigil of the Watchers",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-1-6"
+          ]
+        },
+        {
+          "name": "Stellar Amplification",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-3-6"
+          ]
+        },
+        {
+          "name": "Scattering Blades",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-5-6"
+          ]
+        },
+        {
+          "name": "Warrior of Elune",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-7-6"
+          ]
+        },
+        {
+          "name": "Lunar Combatant",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-10-6"
+          ]
+        },
+        {
+          "name": "Lunar Charge",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-0-7"
+          ]
+        },
+        {
+          "name": "Wrath of the Moon",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-2-7"
+          ]
+        },
+        {
+          "name": "Infused Blades",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-4-7"
+          ]
+        },
+        {
+          "name": "Warden's Precision",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-6-7"
+          ]
+        },
+        {
+          "name": "Pierce The Night",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-8-7"
+          ]
+        }
+      ],
+      "observed_loop": "By levels 30-49, build scattered stars through the melee package, use lunar lance as the reported setup point, spend with starsunder and astral blade, and exploit shattered stars procs while using lunar charge, lethal pursuit, and avatar of vengeance to stay attached.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Lunar Charge, Lethal Pursuit, and Avatar of Vengeance create an aggressive gap-closing and teleport identity well suited to skirmishes"
+      ],
+      "claim_ids": [
+        "talent:starcaller/warden:26-89-1-6",
+        "talent:starcaller/warden:26-89-3-6",
+        "talent:starcaller/warden:26-89-5-6",
+        "talent:starcaller/warden:26-89-7-6",
+        "talent:starcaller/warden:26-89-10-6",
+        "talent:starcaller/warden:26-89-0-7",
+        "talent:starcaller/warden:26-89-2-7",
+        "talent:starcaller/warden:26-89-4-7",
+        "talent:starcaller/warden:26-89-6-7",
+        "talent:starcaller/warden:26-89-8-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Moontouched Weapons",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-1-8"
+          ]
+        },
+        {
+          "name": "Spirit of Vengeance",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-4-8"
+          ]
+        },
+        {
+          "name": "Shadowsong's Mandate",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-7-8"
+          ]
+        },
+        {
+          "name": "Astral Blessing",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-10-8"
+          ]
+        },
+        {
+          "name": "Pulverizing Blade",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-1-9"
+          ]
+        },
+        {
+          "name": "Avatar of Vengeance",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-4-9"
+          ]
+        },
+        {
+          "name": "Highest Order",
+          "claim_ids": [
+            "talent:starcaller/warden:26-89-7-9"
+          ]
+        }
+      ],
+      "observed_loop": "A fast lunar skirmisher whose current PvE surface may remain a small setup-and-spend loop, while PvP adds much more pursuit, target, and resource judgment.",
+      "observed_changes": [
+        "Some players call the loop boring or two-spell",
+        "Weapon speed and proc routing are unintuitive"
+      ],
+      "claim_ids": [
+        "talent:starcaller/warden:26-89-1-8",
+        "talent:starcaller/warden:26-89-4-8",
+        "talent:starcaller/warden:26-89-7-8",
+        "talent:starcaller/warden:26-89-10-8",
+        "talent:starcaller/warden:26-89-1-9",
+        "talent:starcaller/warden:26-89-4-9",
+        "talent:starcaller/warden:26-89-7-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "A mobile melee star-spender with immediate glaive fantasy, gap closers, and short-range arcane cleave.",
+      "strengths": [
+        "Strong pursuit identity",
+        "Readable early builder-spender",
+        "Hybrid physical and Arcane theme"
+      ],
+      "cautions": [
+        "Melee exposure",
+        "Early loop is simpler than the full teleport package"
+      ],
+      "claim_ids": [
+        "talent:starcaller/warden:26-89-4-0",
+        "talent:starcaller/warden:26-89-10-0",
+        "talent:starcaller/warden:26-89-4-2",
+        "observed:starcaller/warden:post-update-loop",
+        "inference:starcaller/warden:star-cycle-cost",
+        "observed:starcaller/warden:performance",
+        "talent:starcaller/warden:26-89-4-9",
+        "observed:starcaller/warden:sentiment-conflict"
+      ]
+    },
+    "leveling_30_49": {
+      "feel": "By levels 30-49, build scattered stars through the melee package, use lunar lance as the reported setup point, spend with starsunder and astral blade, and exploit shattered stars procs while using lunar charge, lethal pursuit, and avatar of vengeance to stay attached.",
+      "strengths": [
+        "Core engine is online",
+        "More complete target coverage"
+      ],
+      "cautions": [
+        "Late talents still change the ceiling",
+        "Lunar Charge, Lethal Pursuit, and Avatar of Vengeance create an aggressive gap-closing and teleport identity well suited to skirmishes"
+      ],
+      "claim_ids": [
+        "observed:starcaller/warden:post-update-loop",
+        "inference:starcaller/warden:star-cycle-cost",
+        "talent:starcaller/warden:26-89-4-0",
+        "talent:starcaller/warden:26-89-10-0",
+        "talent:starcaller/warden:26-89-4-2",
+        "observed:starcaller/warden:performance",
+        "talent:starcaller/warden:26-89-4-9",
+        "observed:starcaller/warden:sentiment-conflict"
+      ]
+    },
+    "level_50_60": {
+      "feel": "A fast lunar skirmisher whose current PvE surface may remain a small setup-and-spend loop, while PvP adds much more pursuit, target, and resource judgment.",
+      "strengths": [
+        "174 Mythic records",
+        "Reportedly strong single target",
+        "Excellent thematic mobility"
+      ],
+      "cautions": [
+        "Some players call the loop boring or two-spell",
+        "Weapon speed and proc routing are unintuitive"
+      ],
+      "claim_ids": [
+        "observed:starcaller/warden:post-update-loop",
+        "observed:starcaller/warden:performance",
+        "talent:starcaller/warden:26-89-4-9",
+        "inference:starcaller/warden:star-cycle-cost",
+        "talent:starcaller/warden:26-89-4-0",
+        "talent:starcaller/warden:26-89-10-0",
+        "talent:starcaller/warden:26-89-4-2",
+        "observed:starcaller/warden:sentiment-conflict"
+      ]
+    },
+    "boss": {
+      "feel": "On bosses, a current post-update sequence reportedly builds to eight stars, uses lunar lance, then spends through repeated starsunder while arcane shattered stars procs supply much of the payoff.",
+      "strengths": [
+        "Durable targets preserve the full loop",
+        "Cooldowns can be planned"
+      ],
+      "cautions": [
+        "Movement can break setup",
+        "Repeated errors remain visible"
+      ],
+      "claim_ids": [
+        "observed:starcaller/warden:post-update-loop",
+        "inference:starcaller/warden:star-cycle-cost",
+        "talent:starcaller/warden:26-89-4-0",
+        "talent:starcaller/warden:26-89-10-0",
+        "talent:starcaller/warden:26-89-4-2",
+        "observed:starcaller/warden:performance",
+        "talent:starcaller/warden:26-89-4-9",
+        "observed:starcaller/warden:sentiment-conflict"
+      ]
+    },
+    "dungeon_aoe": {
+      "feel": "In dungeons, fan of knives, sentinel glaive, astral blade, and star effects provide short-range coverage, but current discussion places warden's relative strength more clearly in single target than moon guard-style area damage.",
+      "strengths": [
+        "Pack tools express the spec clearly",
+        "Group utility has regular value"
+      ],
+      "cautions": [
+        "Short-lived targets can erase setup",
+        "Tank movement changes the plan"
+      ],
+      "claim_ids": [
+        "observed:starcaller/warden:post-update-loop",
+        "inference:starcaller/warden:star-cycle-cost",
+        "talent:starcaller/warden:26-89-4-0",
+        "talent:starcaller/warden:26-89-10-0",
+        "talent:starcaller/warden:26-89-4-2",
+        "observed:starcaller/warden:performance",
+        "talent:starcaller/warden:26-89-4-9",
+        "observed:starcaller/warden:sentiment-conflict"
+      ]
+    },
+    "pvp": {
+      "feel": "In PvP, lunar charge, lethal pursuit, and avatar of vengeance create an aggressive gap-closing and teleport identity well suited to skirmishes. Pursuit tools, Starcaller control, and Aspect of the Moonwell resource cycling help sustain pressure, though the spec still pays normal melee exposure costs.",
+      "strengths": [
+        "Control and utility create options",
+        "Target swaps can reward flexibility"
+      ],
+      "cautions": [
+        "Disruption makes the loop less predictable",
+        "Defensive timing is punishable"
+      ],
+      "claim_ids": [
+        "observed:starcaller/warden:post-update-loop",
+        "inference:starcaller/warden:star-cycle-cost",
+        "talent:starcaller/warden:26-89-4-0",
+        "talent:starcaller/warden:26-89-10-0",
+        "talent:starcaller/warden:26-89-4-2",
+        "observed:starcaller/warden:performance",
+        "talent:starcaller/warden:26-89-4-9",
+        "observed:starcaller/warden:sentiment-conflict"
+      ]
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "low",
+        "reason": "The practical action set follows the authored loop: Build Scattered Stars through the melee package, use Lunar Lance as the reported setup point, spend with Starsunder and Astral Blade, and exploit Shattered Stars procs while using Lunar Charge, Lethal Pursuit, and Avatar of Vengeance to stay attached. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "low-moderate",
+        "reason": "The practical action set follows the authored loop: Build Scattered Stars through the melee package, use Lunar Lance as the reported setup point, spend with Starsunder and Astral Blade, and exploit Shattered Stars procs while using Lunar Charge, Lethal Pursuit, and Avatar of Vengeance to stay attached. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      },
+      "level_50_60": {
+        "value": "low-moderate",
+        "reason": "The practical action set follows the authored loop: Build Scattered Stars through the melee package, use Lunar Lance as the reported setup point, spend with Starsunder and Astral Blade, and exploit Shattered Stars procs while using Lunar Charge, Lethal Pursuit, and Avatar of Vengeance to stay attached. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      },
+      "boss": {
+        "value": "low-moderate",
+        "reason": "The reported post-update PvE loop builds stars, uses Lunar Lance, then repeats Starsunder around proc value.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "low-moderate",
+        "reason": "The practical action set follows the authored loop: Build Scattered Stars through the melee package, use Lunar Lance as the reported setup point, spend with Starsunder and Astral Blade, and exploit Shattered Stars procs while using Lunar Charge, Lethal Pursuit, and Avatar of Vengeance to stay attached. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      },
+      "pvp": {
+        "value": "low-moderate",
+        "reason": "The practical action set follows the authored loop: Build Scattered Stars through the melee package, use Lunar Lance as the reported setup point, spend with Starsunder and Astral Blade, and exploit Shattered Stars procs while using Lunar Charge, Lethal Pursuit, and Avatar of Vengeance to stay attached. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "moderate",
+        "reason": "The player must preserve the resources, effects, or target states implied by: A current post-update sequence reportedly builds to eight stars, uses Lunar Lance, then spends through repeated Starsunder while arcane Shattered Stars procs supply much of the payoff. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "moderate-high",
+        "reason": "The player must preserve the resources, effects, or target states implied by: A current post-update sequence reportedly builds to eight stars, uses Lunar Lance, then spends through repeated Starsunder while arcane Shattered Stars procs supply much of the payoff. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      },
+      "level_50_60": {
+        "value": "moderate-high",
+        "reason": "The player must preserve the resources, effects, or target states implied by: A current post-update sequence reportedly builds to eight stars, uses Lunar Lance, then spends through repeated Starsunder while arcane Shattered Stars procs supply much of the payoff. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      },
+      "boss": {
+        "value": "moderate-high",
+        "reason": "The player must preserve the resources, effects, or target states implied by: A current post-update sequence reportedly builds to eight stars, uses Lunar Lance, then spends through repeated Starsunder while arcane Shattered Stars procs supply much of the payoff. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "moderate-high",
+        "reason": "The player must preserve the resources, effects, or target states implied by: A current post-update sequence reportedly builds to eight stars, uses Lunar Lance, then spends through repeated Starsunder while arcane Shattered Stars procs supply much of the payoff. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      },
+      "pvp": {
+        "value": "moderate-high",
+        "reason": "Stars, Moonwell resource cycling, proc state, pursuit availability, and enemy movement overlap in skirmishes.",
+        "claim_ids": [
+          "observed:starcaller/warden:sentiment-conflict",
+          "talent:starcaller/warden:26-89-4-8",
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance"
+        ]
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "low",
+        "reason": "Target count, incoming pressure, and movement change the next action; pursuit tools, starcaller control, and aspect of the moonwell resource cycling help sustain pressure, though the spec still pays normal melee exposure costs. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "low",
+        "reason": "Target count, incoming pressure, and movement change the next action; pursuit tools, starcaller control, and aspect of the moonwell resource cycling help sustain pressure, though the spec still pays normal melee exposure costs. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      },
+      "level_50_60": {
+        "value": "low",
+        "reason": "Target count, incoming pressure, and movement change the next action; pursuit tools, starcaller control, and aspect of the moonwell resource cycling help sustain pressure, though the spec still pays normal melee exposure costs. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      },
+      "boss": {
+        "value": "low",
+        "reason": "Target count, incoming pressure, and movement change the next action; pursuit tools, starcaller control, and aspect of the moonwell resource cycling help sustain pressure, though the spec still pays normal melee exposure costs. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "low",
+        "reason": "Target count, incoming pressure, and movement change the next action; pursuit tools, starcaller control, and aspect of the moonwell resource cycling help sustain pressure, though the spec still pays normal melee exposure costs. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      },
+      "pvp": {
+        "value": "low-moderate",
+        "reason": "Target count, incoming pressure, and movement change the next action; pursuit tools, starcaller control, and aspect of the moonwell resource cycling help sustain pressure, though the spec still pays normal melee exposure costs. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "moderate-high",
+        "reason": "Execution is constrained by positioning and swaps: Lunar Charge, Lethal Pursuit, and Avatar of Vengeance create an aggressive gap-closing and teleport identity well suited to skirmishes. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "high",
+        "reason": "Execution is constrained by positioning and swaps: Lunar Charge, Lethal Pursuit, and Avatar of Vengeance create an aggressive gap-closing and teleport identity well suited to skirmishes. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "Execution is constrained by positioning and swaps: Lunar Charge, Lethal Pursuit, and Avatar of Vengeance create an aggressive gap-closing and teleport identity well suited to skirmishes. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      },
+      "boss": {
+        "value": "high",
+        "reason": "Execution is constrained by positioning and swaps: Lunar Charge, Lethal Pursuit, and Avatar of Vengeance create an aggressive gap-closing and teleport identity well suited to skirmishes. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "Execution is constrained by positioning and swaps: Lunar Charge, Lethal Pursuit, and Avatar of Vengeance create an aggressive gap-closing and teleport identity well suited to skirmishes. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "Charges, teleports, target swaps, and melee uptime create a much higher execution ceiling than the PvE button count implies.",
+        "claim_ids": [
+          "talent:starcaller/warden:26-89-4-2",
+          "talent:starcaller/warden:26-89-0-7",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "observed:starcaller/warden:performance"
+        ]
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "low-moderate",
+        "reason": "Spending stars before the intended setup or losing contact during the proc and pursuit window reduces the payoff of an otherwise compact sequence. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "moderate",
+        "reason": "Spending stars before the intended setup or losing contact during the proc and pursuit window reduces the payoff of an otherwise compact sequence. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      },
+      "level_50_60": {
+        "value": "moderate",
+        "reason": "Spending stars before the intended setup or losing contact during the proc and pursuit window reduces the payoff of an otherwise compact sequence. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      },
+      "boss": {
+        "value": "moderate",
+        "reason": "A mistimed star spend or lost melee window weakens proc conversion, but the compact loop is recoverable.",
+        "claim_ids": [
+          "inference:starcaller/warden:star-cycle-cost",
+          "observed:starcaller/warden:post-update-loop",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "moderate",
+        "reason": "Spending stars before the intended setup or losing contact during the proc and pursuit window reduces the payoff of an otherwise compact sequence. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      },
+      "pvp": {
+        "value": "moderate-high",
+        "reason": "Spending stars before the intended setup or losing contact during the proc and pursuit window reduces the payoff of an otherwise compact sequence. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      }
+    },
+    "setup_burden": {
+      "leveling_10_29": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Fan of Knives, Sentinel Glaive, Astral Blade, and star effects provide short-range coverage, but current discussion places Warden's relative strength more clearly in single target than Moon Guard-style area damage. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Fan of Knives, Sentinel Glaive, Astral Blade, and star effects provide short-range coverage, but current discussion places Warden's relative strength more clearly in single target than Moon Guard-style area damage. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      },
+      "level_50_60": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Fan of Knives, Sentinel Glaive, Astral Blade, and star effects provide short-range coverage, but current discussion places Warden's relative strength more clearly in single target than Moon Guard-style area damage. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      },
+      "boss": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Fan of Knives, Sentinel Glaive, Astral Blade, and star effects provide short-range coverage, but current discussion places Warden's relative strength more clearly in single target than Moon Guard-style area damage. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Fan of Knives, Sentinel Glaive, Astral Blade, and star effects provide short-range coverage, but current discussion places Warden's relative strength more clearly in single target than Moon Guard-style area damage. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      },
+      "pvp": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Fan of Knives, Sentinel Glaive, Astral Blade, and star effects provide short-range coverage, but current discussion places Warden's relative strength more clearly in single target than Moon Guard-style area damage. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2",
+          "observed:starcaller/warden:performance",
+          "talent:starcaller/warden:26-89-4-9",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [
+      {
+        "text": "You want a mobile glaive fighter with arcane procs, teleports, and a compact PvE core that opens into PvP skirmishing decisions.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      },
+      {
+        "text": "You enjoy the spec's core cadence: build scattered stars through the melee package, use lunar lance as the reported setup point, spend with starsunder and astral blade, and exploit shattered stars procs while using lunar charge, lethal pursuit, and avatar of vengeance to stay attached.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2"
+        ]
+      }
+    ],
+    "avoid_if": [
+      {
+        "text": "You want a dense boss rotation or dislike melee uptime and unintuitive weapon-speed optimization.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop"
+        ]
+      },
+      {
+        "text": "You dislike the positioning or swap constraint that lunar charge, lethal pursuit, and avatar of vengeance create an aggressive gap-closing and teleport identity well suited to skirmishes.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "inference:starcaller/warden:star-cycle-cost",
+          "talent:starcaller/warden:26-89-4-0",
+          "talent:starcaller/warden:26-89-10-0",
+          "talent:starcaller/warden:26-89-4-2"
+        ]
+      }
+    ]
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [
+    "observed:starcaller/warden:performance"
+  ],
+  "sentiment": {
+    "praise": [
+      {
+        "theme": "Players praise Warden's glaive fantasy, mobility, PvP pressure, and strength once the Moonwell cycle and star spending click.",
+        "claim_ids": [
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      }
+    ],
+    "frustrations": [
+      {
+        "theme": "Other players call the surface rotation boring or effectively two-spell, and current weapon-speed advice is not intuitive.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop"
+        ]
+      }
+    ],
+    "contested": [
+      {
+        "theme": "Warden looks mechanically broad in the tree and PvP, but current PvE reports describe a much smaller realized loop.",
+        "claim_ids": [
+          "observed:starcaller/warden:post-update-loop",
+          "observed:starcaller/warden:sentiment-conflict"
+        ]
+      }
+    ]
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 3,
+    "latest_update": "2026-07-21T05:12:05.586+00:00",
+    "top_title": "Warden PvP Skirmisher GOD Build",
+    "top_url": "https://coabuildhub.com/build/0186feb6-32f0-46d9-8914-26261bca5475",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:0186feb6-32f0-46d9-8914-26261bca5475"
+    ]
+  },
+  "coverage": {
+    "mechanical": "manual_talent_and_build_interpretation",
+    "community": "manual_recent_source_review",
+    "performance": "limited_uncontrolled",
+    "video": "searched_none_verified",
+    "overall_confidence": "medium-high",
+    "gaps": [
+      "The post-update optimal rotation is still settling.",
+      "PvE and PvP complexity need separate current guides."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:starcaller/warden:26-89-4-0",
+      "kind": "structural",
+      "text": "Fan of Knives: Applies 1 Scattered Star Per HitUnleash hidden blades upon nearby enemies, dealing 10 + 30% SP Arcane damage scaling with maximum mana.Consuming a Scattered Star reduces the remaining cooldown of Fan of Knives by -2 sec.Scattered StarsCan be consumed by spells to deal additional Arcane Damage. Lasts 30 seconds, stacking 4 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-10-0",
+      "kind": "structural",
+      "text": "Warden Training: Level 10 PassiveCritically striking with Starsunder now applies an additional stack of Scattered Stars.Scattered StarsCan be consumed by spells to deal additional Arcane Damage. Lasts 30 seconds, stacking 4 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-4-1",
+      "kind": "structural",
+      "text": "Astral Blade: Drains 25% Maximum ManaStrike an enemy with precision, dealing 106 + 100% SP + 100% AP Arcane damage, increased further based on your maximum mana.Increases your dealt to the enemy by 15% for 5 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-2-2",
+      "kind": "structural",
+      "text": "Fury of the Stars: Increases the damage of Astral Blade by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-4-2",
+      "kind": "structural",
+      "text": "Lethal Pursuit: Reduces the cooldown of Fan of Knives by -5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-6-2",
+      "kind": "structural",
+      "text": "Moonlit Impaler: Increases your Arcane damage by 5% and your hit chance by 2%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-10-2",
+      "kind": "structural",
+      "text": "Maiev's Discipline: Level 20 PassiveIncreases your critical strike rating by 12% of your Intellect and your expertise by 10% of your Intellect.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-1-3a",
+      "kind": "structural",
+      "text": "Astral Finesse: Reduces the cooldown of Astral Blade by -4 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-1-3b",
+      "kind": "structural",
+      "text": "Astral Onslaught: Increases the duration of Astral Blade by 7 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-4-3",
+      "kind": "structural",
+      "text": "Umbral Blade: Consumes Scattered StarsSlash an enemy, dealing 97 + 63.5% arcane SP + 20% AP Arcane damage to them and nearby enemies. Each additional enemy beyond the first takes 20% less damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-7-3",
+      "kind": "structural",
+      "text": "Sentinel Glaive: Throw a sentinel glaive at an enemy, dealing Weapon Damage plus 53 as Arcane damage, increased further based on your maximum mana, and increasing their resource costs by 15% for 8 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-0-4",
+      "kind": "structural",
+      "text": "Halt: Teleport to a target location, silencing all enemies around you for 4 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-2-4",
+      "kind": "structural",
+      "text": "Moonstone: Increases the damage of Lunar Lance by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-4-4",
+      "kind": "structural",
+      "text": "Celestial Surge: Increases the damage dealt by consuming Scattered Stars by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-6-4",
+      "kind": "structural",
+      "text": "Warden Training: Reduces the cooldown of Warden's Blade by -25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-8-4",
+      "kind": "structural",
+      "text": "Rally The Sentinels: Sentinel Glaive now restores 20% of your maximum mana and applies a Scattered Star to the enemy.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-10-4",
+      "kind": "structural",
+      "text": "Celestial Glaives: Level 30 PassiveYour Scattered Stars can now stack 2 additional times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-0-5",
+      "kind": "structural",
+      "text": "Star Pupil: Your damaging critical strikes now grant you a stack of Star Pupil.Star PupilReduces the cast time of Moonwell Splash by -25% for 8 seconds, stacking 4 times.While this is active, Moonwell Splash is castable while moving.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-2-5a",
+      "kind": "structural",
+      "text": "Maiev's Guard: Critical strikes with Astral Blade now strike 2 additional times, one for 40% of the damage dealt and the other for 20% of the damage dealt.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-2-5b",
+      "kind": "structural",
+      "text": "Astral Combatant: Lunar Lance and Umbral Blade increase the enemy damage taken from Scattered Stars by 10% for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-4-5",
+      "kind": "structural",
+      "text": "Bonds of Justice: Send forth bonds of justice to an enemy, tethering them to you for 8 seconds.If the tether is broken through expiration or the target runs at least 10 yds from you, they are gripped back towards you, taking 441 + 120% arcane SP Arcane damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-6-5",
+      "kind": "structural",
+      "text": "Aspect Mastery: Increases the effectiveness of your Aspects by 10% and their chance to trigger by 5%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-8-5",
+      "kind": "structural",
+      "text": "Wrath of Elune: Reduces the cooldown of Sentinel Glaive by -5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-1-6",
+      "kind": "structural",
+      "text": "Vigil of the Watchers: Increases critical strike chance of all party and raid members by 3%.Does not stack with similar effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-3-6",
+      "kind": "structural",
+      "text": "Stellar Amplification: Dealing damage with Scattered Stars now has a 15% chance to make your next Astral Blade free of cost.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-5-6",
+      "kind": "structural",
+      "text": "Scattering Blades: Your Warden's Blade now increases the chance to trigger Aspect of the Warden by 10% for 8 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-7-6",
+      "kind": "structural",
+      "text": "Warrior of Elune: Increases your melee haste by 5% and movement speed by 10%.Movement speed granted by this talent stacks with Moonwalk.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-10-6",
+      "kind": "structural",
+      "text": "Lunar Combatant: Level 40 PassiveIncreases the effectiveness of consuming Scattered Stars by 50%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-0-7",
+      "kind": "structural",
+      "text": "Lunar Charge: After using Shooting Star, your next Celestial Strike, Starsunder or auto attack ends the effect to deal 87 + 28.75% arcane SP + 4.65% AP Arcane damage, increased based on distance travelled.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-2-7",
+      "kind": "structural",
+      "text": "Wrath of the Moon: Increases your Arcane critical damage dealt by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-4-7",
+      "kind": "structural",
+      "text": "Infused Blades: Your Astral Blade now has a 30% chance to reset its own cooldown and refund its maximum mana cost.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-6-7",
+      "kind": "structural",
+      "text": "Warden's Precision: Your Warden's Blade now launches an additional 2 blades at the target, dealing 49 + 24.5% SP Spellstrike Damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-8-7",
+      "kind": "structural",
+      "text": "Pierce The Night: Your Fan of Knives now applies an additional stack of Scattered Stars to each enemy struck.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-1-8",
+      "kind": "structural",
+      "text": "Moontouched Weapons: Increases the damage of Aspect of the Warden by POWER1*0.01, scaling with maximum mana.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-4-8",
+      "kind": "structural",
+      "text": "Spirit of Vengeance: Fan of Knives now marks enemies with Vengeance for 10 seconds. Successfully marking an enemy increases the range of your next Astral Blade by 25 yards.Casting Astral Blade on a marked enemy causes it to deal 30% more damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-7-8",
+      "kind": "structural",
+      "text": "Shadowsong's Mandate: Increases your critical strike chance by 15% for 10 seconds.While active, your damaging critical strikes have a 40% chance to trigger Warden's Blade.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-10-8",
+      "kind": "structural",
+      "text": "Astral Blessing: Level 50 PassiveDamaging critical strikes now reduce the cooldown of Warden's Blade by -1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-1-9",
+      "kind": "structural",
+      "text": "Pulverizing Blade: Casting Warden's Blade now grants you Pulverizing Blade.Pulverizing BladeNext 5 Starsunders within 20 seconds deal increasing damage, scaling with 10% of Intellect, with each subsequent use, stacking 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-4-9",
+      "kind": "structural",
+      "text": "Avatar of Vengeance: Transform: into an Avatar of Vengeance, teleporting to your target and increasing your Intellect by 25% for 30 seconds. For the duration, the range of Astral Blade is increased by 30 yards and will teleport you to your target.If your target is an enemy, you strike them dealing 50 + 22% Intellect + 6.5% arcane SP Arcane damage per 1 sec for 8 seconds, scaling with Intellect.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/warden:26-89-7-9",
+      "kind": "structural",
+      "text": "Highest Order: Reduces the cooldown of Shadowsong's Mandate by -25% and increases the chance to trigger Warden's Blade by 60%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "observed:starcaller/warden:post-update-loop",
+      "kind": "observed",
+      "text": "An August post-update Warden discussion recommends building to eight stars, using Lunar Lance, then repeatedly spending with Starsunder. It advises a slow main hand and fast off hand for procs, says much of the damage comes from Arcane Shattered Stars, and characterizes Warden as stronger at single target than Moon Guard while also calling the surface loop boring or two-spell.",
+      "source_ids": [
+        "reddit:starcaller-warden-2026-08-04"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "pve",
+          "mythic_dungeons"
+        ],
+        "build_or_mode": [
+          "post_update_general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Advice was posted immediately after an update and may still be settling."
+    },
+    {
+      "id": "observed:starcaller/warden:sentiment-conflict",
+      "kind": "observed",
+      "text": "Starcaller discussions split on Warden: some players find the small apparent loop dull, while PvP-focused reports say Aspect of the Moonwell resolves mana flow and makes its mobile star-spender gameplay strong and fun.",
+      "source_ids": [
+        "reddit:starcaller-status-2026-07-10",
+        "reddit:starcaller-warden-2026-08-04"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "pve",
+          "pvp"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The split likely reflects both content type and patch timing."
+    },
+    {
+      "id": "observed:starcaller/warden:performance",
+      "kind": "observed",
+      "text": "The July DPS compilation reports Warden at 4,080, and the August Mythic inventory lists 174 Warden records.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "pve_unspecified",
+          "mythic_dungeons"
+        ],
+        "build_or_mode": [
+          "unspecified"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "The performance sources lack normalization and should not be read as a tier ranking."
+    },
+    {
+      "id": "inference:starcaller/warden:star-cycle-cost",
+      "kind": "inference",
+      "text": "Warden's small realized sequence still carries meaningful timing cost because premature star spending or lost melee contact can reduce the Lunar Lance, Starsunder, and Shattered Stars conversion window.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "observed:starcaller/warden:post-update-loop",
+        "talent:starcaller/warden:26-89-0-7",
+        "talent:starcaller/warden:26-89-4-8"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "pve",
+          "pvp"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Exact star thresholds and proc conversion require current live verification."
+    },
+    {
+      "id": "observed:starcaller/warden:recent-manual-review",
+      "kind": "observed",
+      "text": "Current PvE advice builds scattered stars, triggers Lunar Lance, then uses Starsunder; dual wield and Warden Aspect favor single targets while Moonwell favors AoE, but stat and weapon advice still conflicts.",
+      "source_ids": [
+        "reddit:starcaller-warden-2026-08-04"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually reviewed on 2026-08-06; anecdotal evidence is not treated as a power ranking."
+    }
+  ]
+}

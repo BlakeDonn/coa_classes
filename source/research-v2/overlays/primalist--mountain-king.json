@@ -1,0 +1,879 @@
+{
+  "baseline": "primalist--mountain-king.json",
+  "set": {
+    "identity": {
+      "fantasy": "A dual-wielding earthen juggernaut who turns rapid weapon procs into instant earthquakes, hammers, barriers, and avatar-sized control.",
+      "primary_family": "strategists",
+      "also_fits": [
+        "sequencers"
+      ],
+      "playstyle_tags": [
+        "proc-tank",
+        "aoe-control-tank",
+        "dual-wield-tank"
+      ],
+      "one_line": "A Stamina-scaling earth tank with Quake, hammers, pulls, Aftershock procs, Earthen Avatar, and heavy frontal control. Recent builds and reports consistently praise its dungeon durability and solo capability, though logs are still too young for a durable ranking.",
+      "claim_ids": [
+        "observed:primalist/mountain-king:weapon-loop",
+        "inference:primalist/mountain-king:proc-choice",
+        "talent:primalist/mountain-king:31-91-4-0",
+        "observed:primalist/mountain-king:performance",
+        "talent:primalist/mountain-king:31-91-1-8",
+        "talent:primalist/mountain-king:31-91-3-9a",
+        "observed:primalist/mountain-king:tank-sentiment"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "Dual wield fast weapons to trigger Aftershock-style effects, keep Quake active for area threat, use Mountain Hammer and Terrasmash for focused control, spend excess procs on Geode only when Quake coverage and Rage permit, and rotate Earthen Avatar, barriers, and Call of the Mountain around dangerous pulls.",
+      "single_target": "Maintain the proc engine and hammer priority while preserving defensive avatar and barrier timing for boss swings.",
+      "aoe": "Instant Quake refreshes, Earthbreaker, frontal hammers, pulls, and later Seismic Smash make large grouped pulls the specialization's clearest strength.",
+      "movement_and_target_switching": "Roll and Primalist mobility help reposition; area effects live around the tank, so target switching is less costly than losing the pack's grouping.",
+      "defense_and_control": "Mountain Giant, Stone Skin, Earthen Avatar, Earthenforged Barrier, Call of the Mountain, and heavy frontal control create strong physical durability.",
+      "group_utility": "Pulls, stuns, bellow effects, armor, and stable area threat support fast dungeon pacing.",
+      "failure_modes": [
+        {
+          "text": "Spending an instant-earthquake proc on Geode when Quake is about to fall can cost area threat and mitigation rhythm.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice"
+          ]
+        },
+        {
+          "text": "Movement or a target swap can interrupt the intended payoff: roll and primalist mobility help reposition; area effects live around the tank, so target switching is less costly than losing the pack's grouping.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8"
+          ]
+        },
+        {
+          "text": "Spending recovery or control too early leaves less protection for the next pressure event: mountain giant, stone skin, earthen avatar, earthenforged barrier, call of the mountain, and heavy frontal control create strong physical durability.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "observed:primalist/mountain-king:weapon-loop",
+        "inference:primalist/mountain-king:proc-choice",
+        "talent:primalist/mountain-king:31-91-4-0",
+        "observed:primalist/mountain-king:performance",
+        "talent:primalist/mountain-king:31-91-1-8",
+        "talent:primalist/mountain-king:31-91-3-9a",
+        "observed:primalist/mountain-king:tank-sentiment"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "A durable dual-wield tank whose early Quake and fast-weapon proc loop already supports large pulls.",
+        "strengths": [
+          "Strong physical durability",
+          "Early area threat",
+          "No shield dependency"
+        ],
+        "cautions": [
+          "Two-hander is currently considered a trap",
+          "Proc use needs discipline"
+        ],
+        "claim_ids": [
+          "observed:primalist/mountain-king:weapon-loop",
+          "talent:primalist/mountain-king:31-91-4-0",
+          "inference:primalist/mountain-king:proc-choice",
+          "observed:primalist/mountain-king:performance",
+          "talent:primalist/mountain-king:31-91-1-8",
+          "talent:primalist/mountain-king:31-91-3-9a",
+          "observed:primalist/mountain-king:tank-sentiment"
+        ]
+      },
+      "level_50_60": {
+        "feel": "A mature earthquake-and-hammer tank with multiple avatar, barrier, and capstone configurations for raids or large pulls.",
+        "strengths": [
+          "Strong solo and dungeon reports",
+          "93 Mythic records",
+          "Heavy control"
+        ],
+        "cautions": [
+          "Off-role DPS values are irrelevant to tank quality",
+          "Magic pressure may require different answers than physical packs"
+        ],
+        "claim_ids": [
+          "observed:primalist/mountain-king:performance",
+          "talent:primalist/mountain-king:31-91-1-8",
+          "talent:primalist/mountain-king:31-91-3-9a",
+          "observed:primalist/mountain-king:weapon-loop",
+          "inference:primalist/mountain-king:proc-choice",
+          "talent:primalist/mountain-king:31-91-4-0",
+          "observed:primalist/mountain-king:tank-sentiment"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "By levels 30-49, dual wield fast weapons to trigger aftershock-style effects, keep quake active for area threat, use mountain hammer and terrasmash for focused control, spend excess procs on geode only when quake coverage and rage permit, and rotate earthen avatar, barriers, and call of the mountain around dangerous pulls.",
+        "strengths": [
+          "Core engine is online",
+          "More complete target coverage"
+        ],
+        "cautions": [
+          "Late talents still change the ceiling",
+          "Roll and Primalist mobility help reposition; area effects live around the tank, so target switching is less costly than losing the pack's grouping"
+        ],
+        "claim_ids": [
+          "observed:primalist/mountain-king:weapon-loop",
+          "inference:primalist/mountain-king:proc-choice",
+          "talent:primalist/mountain-king:31-91-4-0",
+          "observed:primalist/mountain-king:performance",
+          "talent:primalist/mountain-king:31-91-1-8",
+          "talent:primalist/mountain-king:31-91-3-9a",
+          "observed:primalist/mountain-king:tank-sentiment"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, maintain the proc engine and hammer priority while preserving defensive avatar and barrier timing for boss swings.",
+        "strengths": [
+          "Durable targets preserve the full loop",
+          "Cooldowns can be planned"
+        ],
+        "cautions": [
+          "Movement can break setup",
+          "Repeated errors remain visible"
+        ],
+        "claim_ids": [
+          "observed:primalist/mountain-king:weapon-loop",
+          "inference:primalist/mountain-king:proc-choice",
+          "talent:primalist/mountain-king:31-91-4-0",
+          "observed:primalist/mountain-king:performance",
+          "talent:primalist/mountain-king:31-91-1-8",
+          "talent:primalist/mountain-king:31-91-3-9a",
+          "observed:primalist/mountain-king:tank-sentiment"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, instant quake refreshes, earthbreaker, frontal hammers, pulls, and later seismic smash make large grouped pulls the specialization's clearest strength.",
+        "strengths": [
+          "Pack tools express the spec clearly",
+          "Group utility has regular value"
+        ],
+        "cautions": [
+          "Short-lived targets can erase setup",
+          "Tank movement changes the plan"
+        ],
+        "claim_ids": [
+          "observed:primalist/mountain-king:weapon-loop",
+          "inference:primalist/mountain-king:proc-choice",
+          "talent:primalist/mountain-king:31-91-4-0",
+          "observed:primalist/mountain-king:performance",
+          "talent:primalist/mountain-king:31-91-1-8",
+          "talent:primalist/mountain-king:31-91-3-9a",
+          "observed:primalist/mountain-king:tank-sentiment"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, roll and primalist mobility help reposition; area effects live around the tank, so target switching is less costly than losing the pack's grouping. Mountain Giant, Stone Skin, Earthen Avatar, Earthenforged Barrier, Call of the Mountain, and heavy frontal control create strong physical durability.",
+        "strengths": [
+          "Control and utility create options",
+          "Target swaps can reward flexibility"
+        ],
+        "cautions": [
+          "Disruption makes the loop less predictable",
+          "Defensive timing is punishable"
+        ],
+        "claim_ids": [
+          "observed:primalist/mountain-king:weapon-loop",
+          "inference:primalist/mountain-king:proc-choice",
+          "talent:primalist/mountain-king:31-91-4-0",
+          "observed:primalist/mountain-king:performance",
+          "talent:primalist/mountain-king:31-91-1-8",
+          "talent:primalist/mountain-king:31-91-3-9a",
+          "observed:primalist/mountain-king:tank-sentiment"
+        ]
+      }
+    },
+    "complexity": {
+      "reactive_decisions": {
+        "dungeon_aoe": {
+          "value": "moderate-high",
+          "reason": "The player chooses whether each proc refreshes Quake, funds Geode, or is held while defensive avatars and control respond to pull pressure.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Target count, incoming pressure, and movement change the next action; mountain giant, stone skin, earthen avatar, earthenforged barrier, call of the mountain, and heavy frontal control create strong physical durability. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Target count, incoming pressure, and movement change the next action; mountain giant, stone skin, earthen avatar, earthenforged barrier, call of the mountain, and heavy frontal control create strong physical durability. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "Target count, incoming pressure, and movement change the next action; mountain giant, stone skin, earthen avatar, earthenforged barrier, call of the mountain, and heavy frontal control create strong physical durability. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Target count, incoming pressure, and movement change the next action; mountain giant, stone skin, earthen avatar, earthenforged barrier, call of the mountain, and heavy frontal control create strong physical durability. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Target count, incoming pressure, and movement change the next action; mountain giant, stone skin, earthen avatar, earthenforged barrier, call of the mountain, and heavy frontal control create strong physical durability. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        }
+      },
+      "execution": {
+        "dungeon_aoe": {
+          "value": "moderate",
+          "reason": "Line and frontal control, pack grouping, and Quake coverage matter more than a long damage sequence.",
+          "claim_ids": [
+            "talent:primalist/mountain-king:31-91-4-0",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "low-moderate",
+          "reason": "Execution is constrained by positioning and swaps: Roll and Primalist mobility help reposition; area effects live around the tank, so target switching is less costly than losing the pack's grouping. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate",
+          "reason": "Execution is constrained by positioning and swaps: Roll and Primalist mobility help reposition; area effects live around the tank, so target switching is less costly than losing the pack's grouping. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate",
+          "reason": "Execution is constrained by positioning and swaps: Roll and Primalist mobility help reposition; area effects live around the tank, so target switching is less costly than losing the pack's grouping. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        },
+        "boss": {
+          "value": "moderate",
+          "reason": "Execution is constrained by positioning and swaps: Roll and Primalist mobility help reposition; area effects live around the tank, so target switching is less costly than losing the pack's grouping. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        },
+        "pvp": {
+          "value": "moderate-high",
+          "reason": "Execution is constrained by positioning and swaps: Roll and Primalist mobility help reposition; area effects live around the tank, so target switching is less costly than losing the pack's grouping. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        }
+      },
+      "failure_cost": {
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "A dropped Quake or mistimed defensive during the large pulls this spec encourages can lose threat or kill the tank.",
+          "claim_ids": [
+            "inference:primalist/mountain-king:proc-choice",
+            "observed:primalist/mountain-king:weapon-loop",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "Spending an instant-earthquake proc on Geode when Quake is about to fall can cost area threat and mitigation rhythm. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Spending an instant-earthquake proc on Geode when Quake is about to fall can cost area threat and mitigation rhythm. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Spending an instant-earthquake proc on Geode when Quake is about to fall can cost area threat and mitigation rhythm. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "Spending an instant-earthquake proc on Geode when Quake is about to fall can cost area threat and mitigation rhythm. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Spending an instant-earthquake proc on Geode when Quake is about to fall can cost area threat and mitigation rhythm. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        }
+      },
+      "core_actions": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Dual wield fast weapons to trigger Aftershock-style effects, keep Quake active for area threat, use Mountain Hammer and Terrasmash for focused control, spend excess procs on Geode only when Quake coverage and Rage permit, and rotate Earthen Avatar, barriers, and Call of the Mountain around dangerous pulls. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Dual wield fast weapons to trigger Aftershock-style effects, keep Quake active for area threat, use Mountain Hammer and Terrasmash for focused control, spend excess procs on Geode only when Quake coverage and Rage permit, and rotate Earthen Avatar, barriers, and Call of the Mountain around dangerous pulls. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Dual wield fast weapons to trigger Aftershock-style effects, keep Quake active for area threat, use Mountain Hammer and Terrasmash for focused control, spend excess procs on Geode only when Quake coverage and Rage permit, and rotate Earthen Avatar, barriers, and Call of the Mountain around dangerous pulls. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Dual wield fast weapons to trigger Aftershock-style effects, keep Quake active for area threat, use Mountain Hammer and Terrasmash for focused control, spend excess procs on Geode only when Quake coverage and Rage permit, and rotate Earthen Avatar, barriers, and Call of the Mountain around dangerous pulls. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Dual wield fast weapons to trigger Aftershock-style effects, keep Quake active for area threat, use Mountain Hammer and Terrasmash for focused control, spend excess procs on Geode only when Quake coverage and Rage permit, and rotate Earthen Avatar, barriers, and Call of the Mountain around dangerous pulls. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        },
+        "pvp": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Dual wield fast weapons to trigger Aftershock-style effects, keep Quake active for area threat, use Mountain Hammer and Terrasmash for focused control, spend excess procs on Geode only when Quake coverage and Rage permit, and rotate Earthen Avatar, barriers, and Call of the Mountain around dangerous pulls. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        }
+      },
+      "state_tracking": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Maintain the proc engine and hammer priority while preserving defensive avatar and barrier timing for boss swings. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low-moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Maintain the proc engine and hammer priority while preserving defensive avatar and barrier timing for boss swings. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        },
+        "level_50_60": {
+          "value": "low-moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Maintain the proc engine and hammer priority while preserving defensive avatar and barrier timing for boss swings. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        },
+        "boss": {
+          "value": "low-moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Maintain the proc engine and hammer priority while preserving defensive avatar and barrier timing for boss swings. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low-moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Maintain the proc engine and hammer priority while preserving defensive avatar and barrier timing for boss swings. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Maintain the proc engine and hammer priority while preserving defensive avatar and barrier timing for boss swings. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Instant Quake refreshes, Earthbreaker, frontal hammers, pulls, and later Seismic Smash make large grouped pulls the specialization's clearest strength. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Instant Quake refreshes, Earthbreaker, frontal hammers, pulls, and later Seismic Smash make large grouped pulls the specialization's clearest strength. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Instant Quake refreshes, Earthbreaker, frontal hammers, pulls, and later Seismic Smash make large grouped pulls the specialization's clearest strength. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Instant Quake refreshes, Earthbreaker, frontal hammers, pulls, and later Seismic Smash make large grouped pulls the specialization's clearest strength. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Instant Quake refreshes, Earthbreaker, frontal hammers, pulls, and later Seismic Smash make large grouped pulls the specialization's clearest strength. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        },
+        "pvp": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Instant Quake refreshes, Earthbreaker, frontal hammers, pulls, and later Seismic Smash make large grouped pulls the specialization's clearest strength. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8",
+            "talent:primalist/mountain-king:31-91-3-9a",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You want a fast dual-wield tank that turns weapon procs into earthquakes and large-pull control.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop"
+          ]
+        },
+        {
+          "text": "You enjoy the spec's core cadence: dual wield fast weapons to trigger aftershock-style effects, keep quake active for area threat, use mountain hammer and terrasmash for focused control, spend excess procs on geode only when quake coverage and rage permit, and rotate earthen avatar, barriers, and call of the mountain around dangerous pulls.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You want traditional sword-and-shield tanking or dislike proc-driven defensive pacing.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop"
+          ]
+        },
+        {
+          "text": "You dislike the positioning or swap constraint that roll and primalist mobility help reposition; area effects live around the tank, so target switching is less costly than losing the pack's grouping.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "inference:primalist/mountain-king:proc-choice",
+            "talent:primalist/mountain-king:31-91-4-0",
+            "observed:primalist/mountain-king:performance",
+            "talent:primalist/mountain-king:31-91-1-8"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Recent players consistently praise Mountain King's dungeon durability, solo pulling, aesthetics, and frequent instant Earthquakes.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop",
+            "observed:primalist/mountain-king:tank-sentiment"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Players warn that two-handers reduce proc frequency and that Geode can waste a global or proc when Rage is already healthy.",
+          "claim_ids": [
+            "observed:primalist/mountain-king:weapon-loop"
+          ]
+        }
+      ],
+      "contested": []
+    },
+    "performance_signal_ids": [
+      "observed:primalist/mountain-king:performance"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "moderate-high",
+      "performance": "representation_and_offrole_only",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium-high",
+      "gaps": [
+        "No controlled tank survival comparison.",
+        "Magic-damage weakness and capstone choices need encounter-specific evidence."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "A durable dual-wield tank whose early Quake and fast-weapon proc loop already supports large pulls.",
+      "observed_changes": [
+        "Two-hander is currently considered a trap",
+        "Proc use needs discipline"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "By levels 30-49, dual wield fast weapons to trigger aftershock-style effects, keep quake active for area threat, use mountain hammer and terrasmash for focused control, spend excess procs on geode only when quake coverage and rage permit, and rotate earthen avatar, barriers, and call of the mountain around dangerous pulls.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Roll and Primalist mobility help reposition; area effects live around the tank, so target switching is less costly than losing the pack's grouping"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "A mature earthquake-and-hammer tank with multiple avatar, barrier, and capstone configurations for raids or large pulls.",
+      "observed_changes": [
+        "Off-role DPS values are irrelevant to tank quality",
+        "Magic pressure may require different answers than physical packs"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "A durable dual-wield tank whose early Quake and fast-weapon proc loop already supports large pulls.",
+      "observed_changes": [
+        "Two-hander is currently considered a trap",
+        "Proc use needs discipline"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "By levels 30-49, dual wield fast weapons to trigger aftershock-style effects, keep quake active for area threat, use mountain hammer and terrasmash for focused control, spend excess procs on geode only when quake coverage and rage permit, and rotate earthen avatar, barriers, and call of the mountain around dangerous pulls.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Roll and Primalist mobility help reposition; area effects live around the tank, so target switching is less costly than losing the pack's grouping"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:primalist/mountain-king:weapon-loop",
+      "kind": "observed",
+      "text": "A July weapon discussion says Mountain King should dual wield because fast attacks generate frequent Aftershock procs for instant Quake. Players recommend refreshing Quake about every nine seconds and using spare procs on Geode only when Rage and Quake timing justify it.",
+      "source_ids": [
+        "reddit:primalist-mountain-king-2026-07-26",
+        "reddit:tank-weapons-2026-08-01"
+      ],
+      "scope": {
+        "levels": "leveling_20_60",
+        "content": [
+          "solo_leveling",
+          "dungeon_tanking"
+        ],
+        "build_or_mode": [
+          "dual_wield"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Community working guidance, not controlled weapon testing."
+    },
+    {
+      "id": "observed:primalist/mountain-king:tank-sentiment",
+      "kind": "observed",
+      "text": "Recent Primalist players describe Mountain King as highly durable, capable of massive solo pulls, easy dungeon tanking, high physical resistance, and strong battleground flag carrying, while warning that strong casters remain a weakness.",
+      "source_ids": [
+        "reddit:primalist-mountain-king-2026-07-26",
+        "reddit:primalist-geomancer-2026-07-19"
+      ],
+      "scope": {
+        "levels": "leveling_30_60",
+        "content": [
+          "solo",
+          "dungeon",
+          "pvp"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "Self-selected player reports."
+    },
+    {
+      "id": "observed:primalist/mountain-king:performance",
+      "kind": "observed",
+      "text": "The August Mythic inventory lists 93 Mountain King records. The DPS compilation's 1,661 value is explicitly off-role tank DPS and must not be treated as tank strength.",
+      "source_ids": [
+        "reddit:class-statistics-2026-08-02",
+        "reddit:dps-aggregate-2026-07-25"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "mythic_dungeons"
+        ],
+        "build_or_mode": [
+          "tank",
+          "offrole_dps"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "Representation is not mitigation or power."
+    },
+    {
+      "id": "inference:primalist/mountain-king:proc-choice",
+      "kind": "inference",
+      "text": "Mountain King's central decision is routing frequent instant-earth procs between mandatory Quake coverage and optional Rage or damage payoffs without compromising defense.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:primalist/mountain-king:31-91-4-0",
+        "observed:primalist/mountain-king:weapon-loop"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "dual_wield"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Exact proc name is community shorthand and should be verified against the current base class kit."
+    }
+  ]
+}

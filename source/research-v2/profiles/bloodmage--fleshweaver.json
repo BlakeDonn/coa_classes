@@ -1,0 +1,1718 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "bloodmage/fleshweaver",
+    "class": "Bloodmage",
+    "name": "Fleshweaver",
+    "roles": [
+      "Healer",
+      "Support"
+    ],
+    "range": [
+      "Hybrid"
+    ]
+  },
+  "identity": {
+    "fantasy": "",
+    "one_line": "A blood-transfer healer that stores, redistributes, shields, binds, and purifies health through Sanguine Essence and organ-themed spells. It can heal through attacks in a fistweaver-like style and manipulate incoming damage, but requires careful resource and target management.",
+    "primary_family": "",
+    "also_fits": [],
+    "claim_ids": [
+      "talent:bloodmage/fleshweaver:20-93-4-0",
+      "talent:bloodmage/fleshweaver:20-93-10-0",
+      "talent:bloodmage/fleshweaver:20-93-2-1",
+      "talent:bloodmage/fleshweaver:20-93-6-1",
+      "talent:bloodmage/fleshweaver:20-93-1-2",
+      "talent:bloodmage/fleshweaver:20-93-4-2",
+      "talent:bloodmage/fleshweaver:20-93-7-2",
+      "talent:bloodmage/fleshweaver:20-93-10-2a",
+      "talent:bloodmage/fleshweaver:20-93-10-2b",
+      "talent:bloodmage/fleshweaver:20-93-1-3",
+      "talent:bloodmage/fleshweaver:20-93-4-3",
+      "talent:bloodmage/fleshweaver:20-93-7-3",
+      "talent:bloodmage/fleshweaver:20-93-0-4",
+      "talent:bloodmage/fleshweaver:20-93-2-4",
+      "talent:bloodmage/fleshweaver:20-93-4-4",
+      "talent:bloodmage/fleshweaver:20-93-6-4",
+      "talent:bloodmage/fleshweaver:20-93-8-4",
+      "talent:bloodmage/fleshweaver:20-93-10-4a",
+      "talent:bloodmage/fleshweaver:20-93-10-4b",
+      "talent:bloodmage/fleshweaver:20-93-0-5",
+      "talent:bloodmage/fleshweaver:20-93-2-5a",
+      "talent:bloodmage/fleshweaver:20-93-2-5b",
+      "talent:bloodmage/fleshweaver:20-93-4-5",
+      "talent:bloodmage/fleshweaver:20-93-6-5",
+      "talent:bloodmage/fleshweaver:20-93-8-5",
+      "talent:bloodmage/fleshweaver:20-93-1-6",
+      "talent:bloodmage/fleshweaver:20-93-2-6",
+      "talent:bloodmage/fleshweaver:20-93-4-6",
+      "talent:bloodmage/fleshweaver:20-93-6-6",
+      "talent:bloodmage/fleshweaver:20-93-7-6",
+      "talent:bloodmage/fleshweaver:20-93-10-6a",
+      "talent:bloodmage/fleshweaver:20-93-10-6b",
+      "talent:bloodmage/fleshweaver:20-93-2-7",
+      "talent:bloodmage/fleshweaver:20-93-4-7a",
+      "talent:bloodmage/fleshweaver:20-93-4-7b",
+      "talent:bloodmage/fleshweaver:20-93-6-7",
+      "talent:bloodmage/fleshweaver:20-93-2-8",
+      "talent:bloodmage/fleshweaver:20-93-4-8",
+      "talent:bloodmage/fleshweaver:20-93-6-8",
+      "talent:bloodmage/fleshweaver:20-93-10-8a",
+      "talent:bloodmage/fleshweaver:20-93-10-8b",
+      "talent:bloodmage/fleshweaver:20-93-2-9",
+      "talent:bloodmage/fleshweaver:20-93-4-9",
+      "talent:bloodmage/fleshweaver:20-93-6-9"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "A blood-transfer healer that stores, redistributes, shields, binds, and purifies health through Sanguine Essence and organ-themed spells. It can heal through attacks in a fistweaver-like style and manipulate incoming damage, but requires careful resource and target management.",
+    "resources": [
+      "Rage"
+    ],
+    "builders": [
+      {
+        "name": "Raging Hunger",
+        "claim_ids": [
+          "talent:bloodmage/fleshweaver:20-93-6-1"
+        ]
+      },
+      {
+        "name": "Acquired Taste",
+        "claim_ids": [
+          "talent:bloodmage/fleshweaver:20-93-2-5a"
+        ]
+      },
+      {
+        "name": "Gorge",
+        "claim_ids": [
+          "talent:bloodmage/fleshweaver:20-93-4-8"
+        ]
+      },
+      {
+        "name": "Hemoglobe",
+        "claim_ids": [
+          "talent:bloodmage/fleshweaver:20-93-2-9"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Pooled Vitality",
+        "claim_ids": [
+          "talent:bloodmage/fleshweaver:20-93-10-0"
+        ]
+      },
+      {
+        "name": "Dark Blood",
+        "claim_ids": [
+          "talent:bloodmage/fleshweaver:20-93-1-3"
+        ]
+      },
+      {
+        "name": "Crimson Tide",
+        "claim_ids": [
+          "talent:bloodmage/fleshweaver:20-93-6-4"
+        ]
+      },
+      {
+        "name": "Sovereignty",
+        "claim_ids": [
+          "talent:bloodmage/fleshweaver:20-93-6-5"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Crimson Tide",
+        "claim_ids": [
+          "talent:bloodmage/fleshweaver:20-93-6-4"
+        ]
+      },
+      {
+        "name": "Hemal Excision",
+        "claim_ids": [
+          "talent:bloodmage/fleshweaver:20-93-0-5"
+        ]
+      },
+      {
+        "name": "Sovereignty",
+        "claim_ids": [
+          "talent:bloodmage/fleshweaver:20-93-6-5"
+        ]
+      },
+      {
+        "name": "Vitality For Later",
+        "claim_ids": [
+          "talent:bloodmage/fleshweaver:20-93-4-6"
+        ]
+      },
+      {
+        "name": "Heartbreak",
+        "claim_ids": [
+          "talent:bloodmage/fleshweaver:20-93-10-6b"
+        ]
+      },
+      {
+        "name": "Crimson Scion",
+        "claim_ids": [
+          "talent:bloodmage/fleshweaver:20-93-4-7b"
+        ]
+      },
+      {
+        "name": "Darkfallen Lament",
+        "claim_ids": [
+          "talent:bloodmage/fleshweaver:20-93-6-8"
+        ]
+      },
+      {
+        "name": "Red Thirst",
+        "claim_ids": [
+          "talent:bloodmage/fleshweaver:20-93-10-8a"
+        ]
+      },
+      {
+        "name": "Hemoglobe",
+        "claim_ids": [
+          "talent:bloodmage/fleshweaver:20-93-2-9"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Sanguine Essence",
+        "claim_ids": [
+          "talent:bloodmage/fleshweaver:20-93-4-0"
+        ],
+        "structural_description": "Transform: s your Blood Curse into Sanguine Essence.Sanguine Essence (Cursed Form)Enter a unique Cursed Form that does not disable Mortal Form abilties, coalescing a blood orb that will float beside you.While active, you replicate 20% of healing or damage done by Sanguine Mend and Bloodmoon Blast on the target every 1 sec for 3 seconds."
+      },
+      {
+        "name": "Pooled Vitality",
+        "claim_ids": [
+          "talent:bloodmage/fleshweaver:20-93-10-0"
+        ],
+        "structural_description": "Level 10 PassiveSpells that cost health now grant a stack of Pooled Vitality, stacking 10 times.Mortal Form spells that cost Rage consume 10 stacks of Pooled Vitality to become empowered."
+      },
+      {
+        "name": "Dark Liturgy",
+        "claim_ids": [
+          "talent:bloodmage/fleshweaver:20-93-1-2"
+        ],
+        "structural_description": "Requires Mortal FormForm a blood bond, healing a friendly target for 77 + 35% SP + 25% Spirit and applying Blood Rituals to them, bouncing to up to 10 nearby allies, healing for less for each target struck.Blood RitualsCauses Bloodmoon Blast to heal marked allies for 178 + 7% healing + 8.5% Stamina."
+      },
+      {
+        "name": "Dark Blood",
+        "claim_ids": [
+          "talent:bloodmage/fleshweaver:20-93-1-3"
+        ],
+        "structural_description": "Reduces the cost of your abilities that require Cursed Form and increases the healing done by Blood Rituals by -25%."
+      },
+      {
+        "name": "Dark Essence",
+        "claim_ids": [
+          "talent:bloodmage/fleshweaver:20-93-0-4"
+        ],
+        "structural_description": "Casting Cursed Form abilities or Bloodbolt will now heal allies affected by Blood Rituals for 114 + 10% healing every 1 sec for 3 seconds."
+      },
+      {
+        "name": "Crimson Tide",
+        "claim_ids": [
+          "talent:bloodmage/fleshweaver:20-93-6-4"
+        ],
+        "structural_description": "Requires Mortal FormCreate a pool of blood beneath up to 10 enemies within 10 yds of you, causing them to bleed for 165 + 140% SP Shadow damage over 15 seconds.Empowered: Radius increased by 5 yds and costs -100% less Rage."
+      },
+      {
+        "name": "Cursed Blood",
+        "claim_ids": [
+          "talent:bloodmage/fleshweaver:20-93-10-6a"
+        ],
+        "structural_description": "Increases the damage dealt and spell power scaling of Bloodbolt, Bloodmoon Blast, and Crimson Tide by 20%.In addition, damage dealt by Bloodbolt now reduces all resistances by 75 and increases the target's Magic damage taken by 2% for 10 seconds."
+      },
+      {
+        "name": "Adrenaline Boost",
+        "claim_ids": [
+          "talent:bloodmage/fleshweaver:20-93-4-9"
+        ],
+        "structural_description": "Increases the critical strike chance of abilities that require Cursed Form on enemies above 75% or below 35% health by 20%.In addition, melee critical strikes now have a 50% chance to make your next Dark Liturgy or Bloodmoon Blast instant cast."
+      }
+    ],
+    "single_target": "",
+    "aoe": "",
+    "movement_and_target_switching": "",
+    "defense_and_control": "",
+    "group_utility": "",
+    "failure_modes": [],
+    "claim_ids": [
+      "talent:bloodmage/fleshweaver:20-93-4-0",
+      "talent:bloodmage/fleshweaver:20-93-10-0",
+      "talent:bloodmage/fleshweaver:20-93-2-1",
+      "talent:bloodmage/fleshweaver:20-93-6-1",
+      "talent:bloodmage/fleshweaver:20-93-1-2",
+      "talent:bloodmage/fleshweaver:20-93-4-2",
+      "talent:bloodmage/fleshweaver:20-93-7-2",
+      "talent:bloodmage/fleshweaver:20-93-10-2a",
+      "talent:bloodmage/fleshweaver:20-93-10-2b",
+      "talent:bloodmage/fleshweaver:20-93-1-3",
+      "talent:bloodmage/fleshweaver:20-93-4-3",
+      "talent:bloodmage/fleshweaver:20-93-7-3",
+      "talent:bloodmage/fleshweaver:20-93-0-4",
+      "talent:bloodmage/fleshweaver:20-93-2-4",
+      "talent:bloodmage/fleshweaver:20-93-4-4",
+      "talent:bloodmage/fleshweaver:20-93-6-4",
+      "talent:bloodmage/fleshweaver:20-93-8-4",
+      "talent:bloodmage/fleshweaver:20-93-10-4a",
+      "talent:bloodmage/fleshweaver:20-93-10-4b",
+      "talent:bloodmage/fleshweaver:20-93-0-5",
+      "talent:bloodmage/fleshweaver:20-93-2-5a",
+      "talent:bloodmage/fleshweaver:20-93-2-5b",
+      "talent:bloodmage/fleshweaver:20-93-4-5",
+      "talent:bloodmage/fleshweaver:20-93-6-5",
+      "talent:bloodmage/fleshweaver:20-93-8-5",
+      "talent:bloodmage/fleshweaver:20-93-1-6",
+      "talent:bloodmage/fleshweaver:20-93-2-6",
+      "talent:bloodmage/fleshweaver:20-93-4-6",
+      "talent:bloodmage/fleshweaver:20-93-6-6",
+      "talent:bloodmage/fleshweaver:20-93-7-6",
+      "talent:bloodmage/fleshweaver:20-93-10-6a",
+      "talent:bloodmage/fleshweaver:20-93-10-6b",
+      "talent:bloodmage/fleshweaver:20-93-2-7",
+      "talent:bloodmage/fleshweaver:20-93-4-7a",
+      "talent:bloodmage/fleshweaver:20-93-4-7b",
+      "talent:bloodmage/fleshweaver:20-93-6-7",
+      "talent:bloodmage/fleshweaver:20-93-2-8",
+      "talent:bloodmage/fleshweaver:20-93-4-8",
+      "talent:bloodmage/fleshweaver:20-93-6-8",
+      "talent:bloodmage/fleshweaver:20-93-10-8a",
+      "talent:bloodmage/fleshweaver:20-93-10-8b",
+      "talent:bloodmage/fleshweaver:20-93-2-9",
+      "talent:bloodmage/fleshweaver:20-93-4-9",
+      "talent:bloodmage/fleshweaver:20-93-6-9"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Sanguine Essence",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-4-0"
+          ]
+        },
+        {
+          "name": "Pooled Vitality",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-10-0"
+          ]
+        },
+        {
+          "name": "Consolidation",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-2-1"
+          ]
+        },
+        {
+          "name": "Raging Hunger",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-6-1"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:bloodmage/fleshweaver:20-93-4-0",
+        "talent:bloodmage/fleshweaver:20-93-10-0",
+        "talent:bloodmage/fleshweaver:20-93-2-1",
+        "talent:bloodmage/fleshweaver:20-93-6-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Dark Liturgy",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-1-2"
+          ]
+        },
+        {
+          "name": "Gift of Lana'thel",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-4-2"
+          ]
+        },
+        {
+          "name": "Vampyr's Kiss",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-7-2"
+          ]
+        },
+        {
+          "name": "Fleshbending",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-10-2a"
+          ]
+        },
+        {
+          "name": "Invigorated Flesh",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-10-2b"
+          ]
+        },
+        {
+          "name": "Dark Blood",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-1-3"
+          ]
+        },
+        {
+          "name": "Organ Orbs",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-4-3"
+          ]
+        },
+        {
+          "name": "Lingering Essence",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-7-3"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:bloodmage/fleshweaver:20-93-1-2",
+        "talent:bloodmage/fleshweaver:20-93-4-2",
+        "talent:bloodmage/fleshweaver:20-93-7-2",
+        "talent:bloodmage/fleshweaver:20-93-10-2a",
+        "talent:bloodmage/fleshweaver:20-93-10-2b",
+        "talent:bloodmage/fleshweaver:20-93-1-3",
+        "talent:bloodmage/fleshweaver:20-93-4-3",
+        "talent:bloodmage/fleshweaver:20-93-7-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Dark Essence",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-0-4"
+          ]
+        },
+        {
+          "name": "Infuse",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-2-4"
+          ]
+        },
+        {
+          "name": "Gruesome Rituals",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-4-4"
+          ]
+        },
+        {
+          "name": "Crimson Tide",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-6-4"
+          ]
+        },
+        {
+          "name": "Black Heart",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-8-4"
+          ]
+        },
+        {
+          "name": "Blood-Cursed Weapons",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-10-4a"
+          ]
+        },
+        {
+          "name": "Blood-Cursed Armor",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-10-4b"
+          ]
+        },
+        {
+          "name": "Hemal Excision",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-0-5"
+          ]
+        },
+        {
+          "name": "Acquired Taste",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-2-5a"
+          ]
+        },
+        {
+          "name": "Universal Donor",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-2-5b"
+          ]
+        },
+        {
+          "name": "Aortic Aegis",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-4-5"
+          ]
+        },
+        {
+          "name": "Sovereignty",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-6-5"
+          ]
+        },
+        {
+          "name": "Arterial Bind",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-8-5"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:bloodmage/fleshweaver:20-93-0-4",
+        "talent:bloodmage/fleshweaver:20-93-2-4",
+        "talent:bloodmage/fleshweaver:20-93-4-4",
+        "talent:bloodmage/fleshweaver:20-93-6-4",
+        "talent:bloodmage/fleshweaver:20-93-8-4",
+        "talent:bloodmage/fleshweaver:20-93-10-4a",
+        "talent:bloodmage/fleshweaver:20-93-10-4b",
+        "talent:bloodmage/fleshweaver:20-93-0-5",
+        "talent:bloodmage/fleshweaver:20-93-2-5a",
+        "talent:bloodmage/fleshweaver:20-93-2-5b",
+        "talent:bloodmage/fleshweaver:20-93-4-5",
+        "talent:bloodmage/fleshweaver:20-93-6-5",
+        "talent:bloodmage/fleshweaver:20-93-8-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Dissipation",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-1-6"
+          ]
+        },
+        {
+          "name": "Heart Rupturer",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-2-6"
+          ]
+        },
+        {
+          "name": "Vitality For Later",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-4-6"
+          ]
+        },
+        {
+          "name": "Waves of Blood",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-6-6"
+          ]
+        },
+        {
+          "name": "Spice of Life",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-7-6"
+          ]
+        },
+        {
+          "name": "Cursed Blood",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-10-6a"
+          ]
+        },
+        {
+          "name": "Heartbreak",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-10-6b"
+          ]
+        },
+        {
+          "name": "Blood Redistribution",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-2-7"
+          ]
+        },
+        {
+          "name": "Sanguine Scion",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-4-7a"
+          ]
+        },
+        {
+          "name": "Crimson Scion",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-4-7b"
+          ]
+        },
+        {
+          "name": "Excess Blood",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-6-7"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:bloodmage/fleshweaver:20-93-1-6",
+        "talent:bloodmage/fleshweaver:20-93-2-6",
+        "talent:bloodmage/fleshweaver:20-93-4-6",
+        "talent:bloodmage/fleshweaver:20-93-6-6",
+        "talent:bloodmage/fleshweaver:20-93-7-6",
+        "talent:bloodmage/fleshweaver:20-93-10-6a",
+        "talent:bloodmage/fleshweaver:20-93-10-6b",
+        "talent:bloodmage/fleshweaver:20-93-2-7",
+        "talent:bloodmage/fleshweaver:20-93-4-7a",
+        "talent:bloodmage/fleshweaver:20-93-4-7b",
+        "talent:bloodmage/fleshweaver:20-93-6-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Flesh Foundry",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-2-8"
+          ]
+        },
+        {
+          "name": "Gorge",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-4-8"
+          ]
+        },
+        {
+          "name": "Darkfallen Lament",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-6-8"
+          ]
+        },
+        {
+          "name": "Red Thirst",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-10-8a"
+          ]
+        },
+        {
+          "name": "Purify Blood",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-10-8b"
+          ]
+        },
+        {
+          "name": "Hemoglobe",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-2-9"
+          ]
+        },
+        {
+          "name": "Adrenaline Boost",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-4-9"
+          ]
+        },
+        {
+          "name": "Bloodcraft",
+          "claim_ids": [
+            "talent:bloodmage/fleshweaver:20-93-6-9"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:bloodmage/fleshweaver:20-93-2-8",
+        "talent:bloodmage/fleshweaver:20-93-4-8",
+        "talent:bloodmage/fleshweaver:20-93-6-8",
+        "talent:bloodmage/fleshweaver:20-93-10-8a",
+        "talent:bloodmage/fleshweaver:20-93-10-8b",
+        "talent:bloodmage/fleshweaver:20-93-2-9",
+        "talent:bloodmage/fleshweaver:20-93-4-9",
+        "talent:bloodmage/fleshweaver:20-93-6-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "leveling_30_49": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "level_50_60": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "boss": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "dungeon_aoe": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "pvp": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [],
+    "avoid_if": []
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [],
+  "sentiment": {
+    "praise": [],
+    "frustrations": [],
+    "contested": []
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 2,
+    "latest_update": "2026-07-28T06:53:20.729262+00:00",
+    "top_title": "The Fistweaver (A Fleshweaver Healing Guide). Ready for M+",
+    "top_url": "https://coabuildhub.com/build/2eb43843-d2ab-45f9-987c-fb7c73a3dd1b",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:2eb43843-d2ab-45f9-987c-fb7c73a3dd1b"
+    ]
+  },
+  "coverage": {
+    "mechanical": "structural_baseline",
+    "community": "indexed",
+    "performance": "missing",
+    "video": "missing",
+    "overall_confidence": "low",
+    "gaps": [
+      "Effective core loop needs recent guide or player cross-check.",
+      "Contextual complexity values are not yet researched.",
+      "Recent performance, sentiment, issues, and video evidence are not yet reconciled."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-4-0",
+      "kind": "structural",
+      "text": "Sanguine Essence: Transform: s your Blood Curse into Sanguine Essence.Sanguine Essence (Cursed Form)Enter a unique Cursed Form that does not disable Mortal Form abilties, coalescing a blood orb that will float beside you.While active, you replicate 20% of healing or damage done by Sanguine Mend and Bloodmoon Blast on the target every 1 sec for 3 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-10-0",
+      "kind": "structural",
+      "text": "Pooled Vitality: Level 10 PassiveSpells that cost health now grant a stack of Pooled Vitality, stacking 10 times.Mortal Form spells that cost Rage consume 10 stacks of Pooled Vitality to become empowered.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-2-1",
+      "kind": "structural",
+      "text": "Consolidation: Increases your haste by 5%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-6-1",
+      "kind": "structural",
+      "text": "Raging Hunger: Triggering Pooled Vitality now also generates 3 Rage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-1-2",
+      "kind": "structural",
+      "text": "Dark Liturgy: Requires Mortal FormForm a blood bond, healing a friendly target for 77 + 35% SP + 25% Spirit and applying Blood Rituals to them, bouncing to up to 10 nearby allies, healing for less for each target struck.Blood RitualsCauses Bloodmoon Blast to heal marked allies for 178 + 7% healing + 8.5% Stamina.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-4-2",
+      "kind": "structural",
+      "text": "Gift of Lana'thel: Become blessed by Lana'thel, increasing your spell power by 25% of your Spirit and your hit rating by 4% of your Spirit.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-7-2",
+      "kind": "structural",
+      "text": "Vampyr's Kiss: Curse an enemy, causing them to bleed for 174 Shadow damage over 30 seconds.All periodic damage dealt to an enemy affected by Vampyr's Kiss is replicated on them equal to 25% of the value.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-10-2a",
+      "kind": "structural",
+      "text": "Fleshbending: Your critical strikes now increase the critical strike chance of all party and raid members by 5% for 10 seconds.Does not stack with similar effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-10-2b",
+      "kind": "structural",
+      "text": "Invigorated Flesh: Increases chance to hit with all spells and attacks by 1% for you and party and raid members.Does not stack with similar effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-1-3",
+      "kind": "structural",
+      "text": "Dark Blood: Reduces the cost of your abilities that require Cursed Form and increases the healing done by Blood Rituals by -25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-4-3",
+      "kind": "structural",
+      "text": "Organ Orbs: Each stack of Pooled Vitality now increases your Spirit by 3%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-7-3",
+      "kind": "structural",
+      "text": "Lingering Essence: Periodic damage and healing done now has a 50% chance to reduce the cooldown of Vampyr's Kiss by -1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-0-4",
+      "kind": "structural",
+      "text": "Dark Essence: Casting Cursed Form abilities or Bloodbolt will now heal allies affected by Blood Rituals for 114 + 10% healing every 1 sec for 3 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-2-4",
+      "kind": "structural",
+      "text": "Infuse: Accumulates 10% of all damage dealt to the target and unleashes it after 10 seconds, dealing Shadow damage and absorbing healing done to the target equal to the damage done for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-4-4",
+      "kind": "structural",
+      "text": "Gruesome Rituals: Your damage dealt is now increased by 1% for each stack of Pooled Vitality.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-6-4",
+      "kind": "structural",
+      "text": "Crimson Tide: Requires Mortal FormCreate a pool of blood beneath up to 10 enemies within 10 yds of you, causing them to bleed for 165 + 140% SP Shadow damage over 15 seconds.Empowered: Radius increased by 5 yds and costs -100% less Rage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-8-4",
+      "kind": "structural",
+      "text": "Black Heart: Your Vampyr's Kiss now regenerates 20% of your maximum Rage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-10-4a",
+      "kind": "structural",
+      "text": "Blood-Cursed Weapons: Casting Crimson Tide now additionally increases the haste of all party and raid members by 5% for 15 seconds.Does not stack with similar effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-10-4b",
+      "kind": "structural",
+      "text": "Blood-Cursed Armor: You now emanate an aura around you, increasing the Armor of party and raid members by 390.Does not stack with similar effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-0-5",
+      "kind": "structural",
+      "text": "Hemal Excision: Cut into an ally's vital essence, siphoning all curse effects from them. You may reactivate this ability again within 10 seconds to place these curse effects on an enemy.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-2-5a",
+      "kind": "structural",
+      "text": "Acquired Taste: Casting Infuse or Vampyr's Kiss now generates 2 additional stacks of Pooled Vitality.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-2-5b",
+      "kind": "structural",
+      "text": "Universal Donor: Casting Infuse or Vampyr's Kiss now increases the healing received by all allies by 6% for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-4-5",
+      "kind": "structural",
+      "text": "Aortic Aegis: Your Blood Veil now applies to the party members of the target.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-6-5",
+      "kind": "structural",
+      "text": "Sovereignty: Damage dealt by Crimson Tide now grants you Sovereignty.SovereigntyReduces the cost of your next Bloodbolt within 12 seconds by -10% and causes it to strike 1 additional nearby enemy for each target damaged, stacking up to 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-8-5",
+      "kind": "structural",
+      "text": "Arterial Bind: Place a pool of blood on the ground, instantly silencing all enemies for 4 seconds and healing allies for 203 + 33% healing every 1 sec for 4 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-1-6",
+      "kind": "structural",
+      "text": "Dissipation: Reduces the cooldown of Fleshcraft and the duration of the Sated debuff by -60 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-2-6",
+      "kind": "structural",
+      "text": "Heart Rupturer: Increases the damage of Claw Sweep, Sanguine Rupture, Ravenous Strike and Bloodmoon Blast by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-4-6",
+      "kind": "structural",
+      "text": "Vitality For Later: Consuming Pooled Vitality now heals up to 10 allies within 30 yds for 176 + 25% SP + 50% Spirit, scaling with Spirit and healing power.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-6-6",
+      "kind": "structural",
+      "text": "Waves of Blood: Each tick of Crimson Tide now has a 10% chance to heal a nearby ally for 25% of the damage dealt.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-7-6",
+      "kind": "structural",
+      "text": "Spice of Life: Your periodic damage and healing now has a 10% chance to grant a stack of Pooled Vitality.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-10-6a",
+      "kind": "structural",
+      "text": "Cursed Blood: Increases the damage dealt and spell power scaling of Bloodbolt, Bloodmoon Blast, and Crimson Tide by 20%.In addition, damage dealt by Bloodbolt now reduces all resistances by 75 and increases the target's Magic damage taken by 2% for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-10-6b",
+      "kind": "structural",
+      "text": "Heartbreak: Unleash a powerful surge of blood, dealing 172 + 50% shadow SP + 100% Spirit Shadow damage to an enemy, and healing 12 allies within 20 yds of the target for 162 + 30% healing + 100% Spirit.Empowered: Increases your party and raid members attack or spell power by 95 for 20 seconds, plus an additional 95 for you, scaling with level.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-2-7",
+      "kind": "structural",
+      "text": "Blood Redistribution: Increases the maximum health restored by Fleshcraft by 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-4-7a",
+      "kind": "structural",
+      "text": "Sanguine Scion: Increases the critical strike chance of Sanguine Mend and Bloodbolt by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-4-7b",
+      "kind": "structural",
+      "text": "Crimson Scion: Direct damage dealt now has a 10% chance to make your next Sanguine Mend within 10 seconds instant cast.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-6-7",
+      "kind": "structural",
+      "text": "Excess Blood: Your healing done now has a 10% chance to heal the target for an additional 240 + 3% healing over 6 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-2-8",
+      "kind": "structural",
+      "text": "Flesh Foundry: Your critical strikes now reduce the cooldown of Fleshcraft and the duration of Sated on the target by -4 sec.In addition, increases your critical strike rating by 15% of your Spirit.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-4-8",
+      "kind": "structural",
+      "text": "Gorge: Instantly gain 10 stacks of Pooled Vitality every 5 sec for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-6-8",
+      "kind": "structural",
+      "text": "Darkfallen Lament: Chant a sinister ritual, healing up to 12 allies affected by Blood Rituals for 648 + 80% healing over 8 seconds and leeching 684 + 800% healing health from enemies within 10 yds over 8 seconds.While active, you are immune to silence and interrupt effects, but cannot move.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-10-8a",
+      "kind": "structural",
+      "text": "Red Thirst: Enrage allies within 40 yds, increasing haste by 30% for 20 seconds.After being affected by this spell, allies cannot benefit from similar effects for 5 minutes.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-10-8b",
+      "kind": "structural",
+      "text": "Purify Blood: Emanate an aura for 15 seconds, causing allied players to deal 70% shadow SP additional damage as Shadow damage when they deal direct damage.Applies Exhaustion, preventing you from benefiting from similar effects for 1 minute.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-2-9",
+      "kind": "structural",
+      "text": "Hemoglobe: Coalesce a powerful sanguine orb above you, healing up to 12 allies within 20 yds for 4247 + 84.38% healing + 337.5% Spirit + 262.5% Stamina over 15 seconds.Generates 2 stacks of Pooled Vitality, and 150 Rage every 2 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-4-9",
+      "kind": "structural",
+      "text": "Adrenaline Boost: Increases the critical strike chance of abilities that require Cursed Form on enemies above 75% or below 35% health by 20%.In addition, melee critical strikes now have a 50% chance to make your next Dark Liturgy or Bloodmoon Blast instant cast.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/fleshweaver:20-93-6-9",
+      "kind": "structural",
+      "text": "Bloodcraft: Your damage dealt by Darkfallen Lament now applies Bloodcraft to affected enemies, reducing damage dealt by -2% for 5 seconds, stacking 4 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    }
+  ]
+}

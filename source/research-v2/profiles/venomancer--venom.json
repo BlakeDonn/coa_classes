@@ -1,0 +1,1493 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "venomancer/venom",
+    "class": "Venomancer",
+    "name": "Venom",
+    "roles": [
+      "Damage"
+    ],
+    "range": [
+      "Ranged"
+    ]
+  },
+  "identity": {
+    "fantasy": "",
+    "one_line": "An Affliction-like rot caster using Wilt, Spore, Fungal Growth, snakes, and disease cycles. Sepsis Bloom can consume periodic effects for control and a delayed detonation, while fungal summons extend multi-target pressure. Recent players specifically compare it to Affliction Warlock with druid-like utility.",
+    "primary_family": "",
+    "also_fits": [],
+    "claim_ids": [
+      "talent:venomancer/venom:29-76-4-0",
+      "talent:venomancer/venom:29-76-10-0",
+      "talent:venomancer/venom:29-76-4-1",
+      "talent:venomancer/venom:29-76-2-2",
+      "talent:venomancer/venom:29-76-4-2",
+      "talent:venomancer/venom:29-76-6-2",
+      "talent:venomancer/venom:29-76-10-2",
+      "talent:venomancer/venom:29-76-1-3a",
+      "talent:venomancer/venom:29-76-1-3b",
+      "talent:venomancer/venom:29-76-4-3",
+      "talent:venomancer/venom:29-76-7-3",
+      "talent:venomancer/venom:29-76-0-4",
+      "talent:venomancer/venom:29-76-2-4",
+      "talent:venomancer/venom:29-76-4-4",
+      "talent:venomancer/venom:29-76-6-4",
+      "talent:venomancer/venom:29-76-8-4",
+      "talent:venomancer/venom:29-76-10-4",
+      "talent:venomancer/venom:29-76-1-5",
+      "talent:venomancer/venom:29-76-3-5",
+      "talent:venomancer/venom:29-76-4-5",
+      "talent:venomancer/venom:29-76-5-5",
+      "talent:venomancer/venom:29-76-7-5",
+      "talent:venomancer/venom:29-76-1-6",
+      "talent:venomancer/venom:29-76-2-6",
+      "talent:venomancer/venom:29-76-4-6",
+      "talent:venomancer/venom:29-76-6-6",
+      "talent:venomancer/venom:29-76-7-6",
+      "talent:venomancer/venom:29-76-10-6",
+      "talent:venomancer/venom:29-76-0-7",
+      "talent:venomancer/venom:29-76-4-7",
+      "talent:venomancer/venom:29-76-8-7",
+      "talent:venomancer/venom:29-76-1-8",
+      "talent:venomancer/venom:29-76-3-8",
+      "talent:venomancer/venom:29-76-5-8",
+      "talent:venomancer/venom:29-76-7-8",
+      "talent:venomancer/venom:29-76-10-8",
+      "talent:venomancer/venom:29-76-1-9",
+      "talent:venomancer/venom:29-76-4-9",
+      "talent:venomancer/venom:29-76-7-9"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "An Affliction-like rot caster using Wilt, Spore, Fungal Growth, snakes, and disease cycles. Sepsis Bloom can consume periodic effects for control and a delayed detonation, while fungal summons extend multi-target pressure. Recent players specifically compare it to Affliction Warlock with druid-like utility.",
+    "resources": [
+      "Cycle of Decay"
+    ],
+    "builders": [
+      {
+        "name": "Fungal Link",
+        "claim_ids": [
+          "talent:venomancer/venom:29-76-4-7"
+        ]
+      },
+      {
+        "name": "Cycle of Decay",
+        "claim_ids": [
+          "talent:venomancer/venom:29-76-10-8"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Rot Lich",
+        "claim_ids": [
+          "talent:venomancer/venom:29-76-10-0"
+        ]
+      },
+      {
+        "name": "Lethargy",
+        "claim_ids": [
+          "talent:venomancer/venom:29-76-0-4"
+        ]
+      },
+      {
+        "name": "Limb Decayer",
+        "claim_ids": [
+          "talent:venomancer/venom:29-76-1-6"
+        ]
+      },
+      {
+        "name": "Serpent Lord's Ring",
+        "claim_ids": [
+          "talent:venomancer/venom:29-76-7-8"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Rot Lich",
+        "claim_ids": [
+          "talent:venomancer/venom:29-76-10-0"
+        ]
+      },
+      {
+        "name": "Suffocating Coils",
+        "claim_ids": [
+          "talent:venomancer/venom:29-76-5-8"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Weaver Form",
+        "claim_ids": [
+          "talent:venomancer/venom:29-76-10-4"
+        ],
+        "structural_description": "Level 30 PassiveTeaches you Weaver Form.Weaver Form (Shapeshift)Shapeshift into Weaver Form, allowing your periodic effects to benefit from spell haste, reducing spell pushback suffered from damaging attacks by 70%, and giving periodic damage dealt a 5% chance to restore 5% of your missing mana.Cannot use healing spells while in Weaver Form."
+      },
+      {
+        "name": "Fungal Assailant",
+        "claim_ids": [
+          "talent:venomancer/venom:29-76-7-5"
+        ],
+        "structural_description": "Summon a Fungarian to attack an enemy, dealing 226 + 65% SP Nature damage, and instantly apply Debilitating Venom to your target. Lasts 20 seconds.Debilitating Venom (Slow)Movement speed slowed by -40% for 8 seconds.Can be used in any form."
+      },
+      {
+        "name": "Mycelial Ring",
+        "claim_ids": [
+          "talent:venomancer/venom:29-76-1-9"
+        ],
+        "structural_description": "Create an 8 yd ring beneath you for 10 seconds that deals 59 Nature damage every 1 sec to enemies inside and immediately grows 12 Mushrooms in a circle around you.At the end of the duration, up to 15 allies inside are healed for 845 + 65% nature SP.Can be used in any form."
+      }
+    ],
+    "single_target": "",
+    "aoe": "",
+    "movement_and_target_switching": "",
+    "defense_and_control": "",
+    "group_utility": "",
+    "failure_modes": [],
+    "claim_ids": [
+      "talent:venomancer/venom:29-76-4-0",
+      "talent:venomancer/venom:29-76-10-0",
+      "talent:venomancer/venom:29-76-4-1",
+      "talent:venomancer/venom:29-76-2-2",
+      "talent:venomancer/venom:29-76-4-2",
+      "talent:venomancer/venom:29-76-6-2",
+      "talent:venomancer/venom:29-76-10-2",
+      "talent:venomancer/venom:29-76-1-3a",
+      "talent:venomancer/venom:29-76-1-3b",
+      "talent:venomancer/venom:29-76-4-3",
+      "talent:venomancer/venom:29-76-7-3",
+      "talent:venomancer/venom:29-76-0-4",
+      "talent:venomancer/venom:29-76-2-4",
+      "talent:venomancer/venom:29-76-4-4",
+      "talent:venomancer/venom:29-76-6-4",
+      "talent:venomancer/venom:29-76-8-4",
+      "talent:venomancer/venom:29-76-10-4",
+      "talent:venomancer/venom:29-76-1-5",
+      "talent:venomancer/venom:29-76-3-5",
+      "talent:venomancer/venom:29-76-4-5",
+      "talent:venomancer/venom:29-76-5-5",
+      "talent:venomancer/venom:29-76-7-5",
+      "talent:venomancer/venom:29-76-1-6",
+      "talent:venomancer/venom:29-76-2-6",
+      "talent:venomancer/venom:29-76-4-6",
+      "talent:venomancer/venom:29-76-6-6",
+      "talent:venomancer/venom:29-76-7-6",
+      "talent:venomancer/venom:29-76-10-6",
+      "talent:venomancer/venom:29-76-0-7",
+      "talent:venomancer/venom:29-76-4-7",
+      "talent:venomancer/venom:29-76-8-7",
+      "talent:venomancer/venom:29-76-1-8",
+      "talent:venomancer/venom:29-76-3-8",
+      "talent:venomancer/venom:29-76-5-8",
+      "talent:venomancer/venom:29-76-7-8",
+      "talent:venomancer/venom:29-76-10-8",
+      "talent:venomancer/venom:29-76-1-9",
+      "talent:venomancer/venom:29-76-4-9",
+      "talent:venomancer/venom:29-76-7-9"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Wilt",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-4-0"
+          ]
+        },
+        {
+          "name": "Rot Lich",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-10-0"
+          ]
+        },
+        {
+          "name": "Spore",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-4-1"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:venomancer/venom:29-76-4-0",
+        "talent:venomancer/venom:29-76-10-0",
+        "talent:venomancer/venom:29-76-4-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Protraction",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-2-2"
+          ]
+        },
+        {
+          "name": "Fungal Growth",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-4-2"
+          ]
+        },
+        {
+          "name": "Acid Bolt",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-6-2"
+          ]
+        },
+        {
+          "name": "Shadra's Gift",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-10-2"
+          ]
+        },
+        {
+          "name": "Rotting Away",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-1-3a"
+          ]
+        },
+        {
+          "name": "Wilting Away",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-1-3b"
+          ]
+        },
+        {
+          "name": "Mycosis",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-4-3"
+          ]
+        },
+        {
+          "name": "Envenom",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-7-3"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:venomancer/venom:29-76-2-2",
+        "talent:venomancer/venom:29-76-4-2",
+        "talent:venomancer/venom:29-76-6-2",
+        "talent:venomancer/venom:29-76-10-2",
+        "talent:venomancer/venom:29-76-1-3a",
+        "talent:venomancer/venom:29-76-1-3b",
+        "talent:venomancer/venom:29-76-4-3",
+        "talent:venomancer/venom:29-76-7-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Lethargy",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-0-4"
+          ]
+        },
+        {
+          "name": "Rotpriest",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-2-4"
+          ]
+        },
+        {
+          "name": "Captivation",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-4-4"
+          ]
+        },
+        {
+          "name": "Serpent's Embrace",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-6-4"
+          ]
+        },
+        {
+          "name": "Blightfang",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-8-4"
+          ]
+        },
+        {
+          "name": "Weaver Form",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-10-4"
+          ]
+        },
+        {
+          "name": "Decay",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-1-5"
+          ]
+        },
+        {
+          "name": "Necessary Preparations",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-3-5"
+          ]
+        },
+        {
+          "name": "Sepsis Bloom",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-4-5"
+          ]
+        },
+        {
+          "name": "A Pit of Snakes",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-5-5"
+          ]
+        },
+        {
+          "name": "Fungal Assailant",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-7-5"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:venomancer/venom:29-76-0-4",
+        "talent:venomancer/venom:29-76-2-4",
+        "talent:venomancer/venom:29-76-4-4",
+        "talent:venomancer/venom:29-76-6-4",
+        "talent:venomancer/venom:29-76-8-4",
+        "talent:venomancer/venom:29-76-10-4",
+        "talent:venomancer/venom:29-76-1-5",
+        "talent:venomancer/venom:29-76-3-5",
+        "talent:venomancer/venom:29-76-4-5",
+        "talent:venomancer/venom:29-76-5-5",
+        "talent:venomancer/venom:29-76-7-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Limb Decayer",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-1-6"
+          ]
+        },
+        {
+          "name": "Septic Trauma",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-2-6"
+          ]
+        },
+        {
+          "name": "Venom Saturation",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-4-6"
+          ]
+        },
+        {
+          "name": "Infestation",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-6-6"
+          ]
+        },
+        {
+          "name": "Venoxis Rage",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-7-6"
+          ]
+        },
+        {
+          "name": "Intoxicating Venoms",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-10-6"
+          ]
+        },
+        {
+          "name": "From Death Comes Life",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-0-7"
+          ]
+        },
+        {
+          "name": "Fungal Link",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-4-7"
+          ]
+        },
+        {
+          "name": "Sporelord",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-8-7"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:venomancer/venom:29-76-1-6",
+        "talent:venomancer/venom:29-76-2-6",
+        "talent:venomancer/venom:29-76-4-6",
+        "talent:venomancer/venom:29-76-6-6",
+        "talent:venomancer/venom:29-76-7-6",
+        "talent:venomancer/venom:29-76-10-6",
+        "talent:venomancer/venom:29-76-0-7",
+        "talent:venomancer/venom:29-76-4-7",
+        "talent:venomancer/venom:29-76-8-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Fungic",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-1-8"
+          ]
+        },
+        {
+          "name": "Prophetic Speaker",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-3-8"
+          ]
+        },
+        {
+          "name": "Suffocating Coils",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-5-8"
+          ]
+        },
+        {
+          "name": "Serpent Lord's Ring",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-7-8"
+          ]
+        },
+        {
+          "name": "Cycle of Decay",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-10-8"
+          ]
+        },
+        {
+          "name": "Mycelial Ring",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-1-9"
+          ]
+        },
+        {
+          "name": "From Life Comes Death",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-4-9"
+          ]
+        },
+        {
+          "name": "Fungal Allies",
+          "claim_ids": [
+            "talent:venomancer/venom:29-76-7-9"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:venomancer/venom:29-76-1-8",
+        "talent:venomancer/venom:29-76-3-8",
+        "talent:venomancer/venom:29-76-5-8",
+        "talent:venomancer/venom:29-76-7-8",
+        "talent:venomancer/venom:29-76-10-8",
+        "talent:venomancer/venom:29-76-1-9",
+        "talent:venomancer/venom:29-76-4-9",
+        "talent:venomancer/venom:29-76-7-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "leveling_30_49": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "level_50_60": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "boss": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "dungeon_aoe": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "pvp": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [],
+    "avoid_if": []
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [],
+  "sentiment": {
+    "praise": [],
+    "frustrations": [],
+    "contested": []
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 3,
+    "latest_update": "2026-08-03T20:57:50.050237+00:00",
+    "top_title": "ROT BUILD Fungal Assailant",
+    "top_url": "https://coabuildhub.com/build/dcc2e0ce-fbc3-46f4-8b1d-516105d87d0e",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:dcc2e0ce-fbc3-46f4-8b1d-516105d87d0e"
+    ]
+  },
+  "coverage": {
+    "mechanical": "structural_baseline",
+    "community": "indexed",
+    "performance": "missing",
+    "video": "missing",
+    "overall_confidence": "low",
+    "gaps": [
+      "Effective core loop needs recent guide or player cross-check.",
+      "Contextual complexity values are not yet researched.",
+      "Recent performance, sentiment, issues, and video evidence are not yet reconciled."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:venomancer/venom:29-76-4-0",
+      "kind": "structural",
+      "text": "Wilt: Wilt the life of an enemy with vile poison, dealing 144 Nature damage over 18 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-10-0",
+      "kind": "structural",
+      "text": "Rot Lich: Level 10 PassiveDirect damage dealt now has a 20% chance to reset the cooldown of Serpent's Fang and grant you Rot Lich.Rot Lich (Proc)Your next Serpent's Fang within 15 seconds is free of cost.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-4-1",
+      "kind": "structural",
+      "text": "Spore: Inject an enemy with parasitic spores, dealing 20 + 17.5% nature SP Shadow damage, plus an additional 231 over 21 seconds.After 10 sec, drop a Mushroom below the target that explodes after 2 sec, dealing 303 + 25% nature SP Nature damage to nearby enemies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-2-2",
+      "kind": "structural",
+      "text": "Protraction: Increases the duration of your Venomancer periodic damage effects by 3 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-4-2",
+      "kind": "structural",
+      "text": "Fungal Growth: Shadow and Nature damage dealt now has a 35% chance to increase periodic damage you deal to the target by 2% for 30 seconds, stacking 10 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-6-2",
+      "kind": "structural",
+      "text": "Acid Bolt: Increases the damage of Venom Bolt by 10% and its critical strike chance by 2%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-10-2",
+      "kind": "structural",
+      "text": "Shadra's Gift: Level 20 PassiveIncreases your spell damage by 25% of your Intellect and your haste rating by 20% of your Intellect.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-1-3a",
+      "kind": "structural",
+      "text": "Rotting Away: Your Wilt now has a 15% chance when it deals damage to strike again as Shadow damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-1-3b",
+      "kind": "structural",
+      "text": "Wilting Away: Your Wilt now strikes an additional nearby enemy.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-4-3",
+      "kind": "structural",
+      "text": "Mycosis: Fungus grows throughout the body of an enemy, dealing 153 + 65% nature SP Nature damage and applying a shield that absorbs the next 100 + 200% SP healing done to them for 8 seconds.Deals 20% increased damage for each stack of Fungal Growth on the target.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-7-3",
+      "kind": "structural",
+      "text": "Envenom: Reduces the cast time of Venom Bolt by -0.3 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-0-4",
+      "kind": "structural",
+      "text": "Lethargy: Damage dealt by your Wilt now applies Lethargy to affected enemies.Lethargy (Dummy)Reduces an enemy's chance to hit by -3% and increases their Nature Damage taken from you by 5% for 8 seconds.Dispelling this effect increases the dispeller's resource costs by 100% for 5 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-2-4",
+      "kind": "structural",
+      "text": "Rotpriest: Increases your spell critical damage by 100%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-4-4",
+      "kind": "structural",
+      "text": "Captivation: Increases Mycosis's damage through Fungal Growth stacks by 5%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-6-4",
+      "kind": "structural",
+      "text": "Serpent's Embrace: Increases the damage of Serpent's Fang and its spell power scaling by 15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-8-4",
+      "kind": "structural",
+      "text": "Blightfang: Casting Serpent's Fang now spawns a Mushroom below the target that will explode after 2 sec, dealing 303 + 12.5% SP Nature damage to nearby enemies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-10-4",
+      "kind": "structural",
+      "text": "Weaver Form: Level 30 PassiveTeaches you Weaver Form.Weaver Form (Shapeshift)Shapeshift into Weaver Form, allowing your periodic effects to benefit from spell haste, reducing spell pushback suffered from damaging attacks by 70%, and giving periodic damage dealt a 5% chance to restore 5% of your missing mana.Cannot use healing spells while in Weaver Form.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-1-5",
+      "kind": "structural",
+      "text": "Decay: Apply Wilt to up to 5 enemies at target location and drop a Mushroom that will explode after 2 sec, dealing 303 + 25% nature SP Nature damage to nearby enemies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-3-5",
+      "kind": "structural",
+      "text": "Necessary Preparations: Increases the damage of Wilt by 20% and it now increases the chance to hit the target with spells by 3% for 20 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-4-5",
+      "kind": "structural",
+      "text": "Sepsis Bloom: Create pustules that swell and then burst, disorienting a target enemy for 6 seconds.All of your Venomancer poison effects are purged from the target, dealing damage equal to their remaining duration at the end of the duration.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-5-5",
+      "kind": "structural",
+      "text": "A Pit of Snakes: Serpent's Fang now increases the damage of subsequent Serpent's Fangs by 15% for 8 seconds, stacking up to 3 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-7-5",
+      "kind": "structural",
+      "text": "Fungal Assailant: Summon a Fungarian to attack an enemy, dealing 226 + 65% SP Nature damage, and instantly apply Debilitating Venom to your target. Lasts 20 seconds.Debilitating Venom (Slow)Movement speed slowed by -40% for 8 seconds.Can be used in any form.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-1-6",
+      "kind": "structural",
+      "text": "Limb Decayer: Reduces the cast time and increases the mana cost of Decay by 50%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-2-6",
+      "kind": "structural",
+      "text": "Septic Trauma: Harmful critical strikes now increase the duration of Wilt by 2 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-4-6",
+      "kind": "structural",
+      "text": "Venom Saturation: Increases the damage of your poison effects by 25% against enemies above 50% health.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-6-6",
+      "kind": "structural",
+      "text": "Infestation: Periodic damage dealt now has a 10% chance to reduce the cooldown of Serpent's Fang and Fungal Assailant by 20% of the remaining cooldown.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-7-6",
+      "kind": "structural",
+      "text": "Venoxis Rage: Your Mycosis now enrages your Fungarians for 6 seconds, increasing its damage and attack speed by 30% for 6 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-10-6",
+      "kind": "structural",
+      "text": "Intoxicating Venoms: Level 40 PassiveMycosis is now enhanced based on your currently active Venom.Debilitating Venom: Reduces the cast time by -20%.Blight Venom: Extends the duration of Spore on the target by 4 sec.Adrenal Venom: Strikes 1 additional nearby target.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-0-7",
+      "kind": "structural",
+      "text": "From Death Comes Life: Damage dealt by Spore now reduces the cooldown of Decay by -1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-4-7",
+      "kind": "structural",
+      "text": "Fungal Link: Increases the spell haste of all party and raid members by 3%. Does not stack with similar effects.In addition, the range of your Rot spells is increased by 20% and the threat they generate is reduced by -20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-8-7",
+      "kind": "structural",
+      "text": "Sporelord: Fungal Assailant now spawns 3 Mushrooms below the target.Mushroom (dmg)Drop a Mushroom near the target that explodes after 2 sec, dealing 303 + 35% SP Plague Damage to all nearby enemies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-1-8",
+      "kind": "structural",
+      "text": "Fungic: You now apply Fungic to enemies affected by Lethargy, dealing an additional 20% of the damage dealt by your Venom Bolt or Serpent's Fang as Nature damage over 3 seconds, stacking up to 2 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-3-8",
+      "kind": "structural",
+      "text": "Prophetic Speaker: Each time you spawn a Mushroom, you now reduce the cooldown of Decay by -1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-5-8",
+      "kind": "structural",
+      "text": "Suffocating Coils: Periodic damage now has a 5% chance to cause you to launch webs at your target, wrapping them in a Suffocating Coil.Suffocating CoilLaunch a beam of webbing at an enemy, inflicting 91 + 12% nature SP Nature damage every 1 sec for 4 seconds.After 4 seconds, if Spore is active on the target, drop a Mushroom below them that will explode after 2 sec, dealing 303 + 12.5% nature SP Nature damage to all enemies within 5 yds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-7-8",
+      "kind": "structural",
+      "text": "Serpent Lord's Ring: Draw power from the Serpent Lord's Ring instantly regenerating 20% of your maximum mana and causing your Mycosiss to trigger no cooldown and be free of cost for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-10-8",
+      "kind": "structural",
+      "text": "Cycle of Decay: Level 50 PassiveWhen you cast any spell you now have a 20% chance to gain Cycle of Decay.Cycle of Decay (Proc)Your Venom Bolt is now castable while moving and casts -30% faster for 6 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-1-9",
+      "kind": "structural",
+      "text": "Mycelial Ring: Create an 8 yd ring beneath you for 10 seconds that deals 59 Nature damage every 1 sec to enemies inside and immediately grows 12 Mushrooms in a circle around you.At the end of the duration, up to 15 allies inside are healed for 845 + 65% nature SP.Can be used in any form.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-4-9",
+      "kind": "structural",
+      "text": "From Life Comes Death: For 20 seconds, when you kill an enemy that yields experience or honor they now spawn a Mushroom beneath them. Can only occur once per sec.Mushroom (dmg)Drop a Mushroom near the target that explodes after 2 sec, dealing 303 + 35% SP Plague Damage to all nearby enemies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/venom:29-76-7-9",
+      "kind": "structural",
+      "text": "Fungal Allies: Fungal Assailant now summons 2 additional Fungarians.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    }
+  ]
+}

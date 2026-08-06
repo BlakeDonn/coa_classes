@@ -1,0 +1,1516 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "venomancer/vizier",
+    "class": "Venomancer",
+    "name": "Vizier",
+    "roles": [
+      "Healer"
+    ],
+    "range": [
+      "Hybrid"
+    ]
+  },
+  "identity": {
+    "fantasy": "",
+    "one_line": "A poison-to-medicine healer using Mycelial Healing, Mending Mist, Good Venom, extraction, rituals, and Vizier Form. It specializes in healing-over-time networks and can convert harmful themes into recovery. It also has a battle resurrection, despite at least one recent third-party list omitting it.",
+    "primary_family": "",
+    "also_fits": [],
+    "claim_ids": [
+      "talent:venomancer/vizier:29-92-4-0",
+      "talent:venomancer/vizier:29-92-10-0",
+      "talent:venomancer/vizier:29-92-4-1",
+      "talent:venomancer/vizier:29-92-2-2",
+      "talent:venomancer/vizier:29-92-6-2",
+      "talent:venomancer/vizier:29-92-10-2",
+      "talent:venomancer/vizier:29-92-1-3",
+      "talent:venomancer/vizier:29-92-3-3",
+      "talent:venomancer/vizier:29-92-5-3",
+      "talent:venomancer/vizier:29-92-7-3",
+      "talent:venomancer/vizier:29-92-1-4a",
+      "talent:venomancer/vizier:29-92-1-4b",
+      "talent:venomancer/vizier:29-92-3-4",
+      "talent:venomancer/vizier:29-92-5-4a",
+      "talent:venomancer/vizier:29-92-5-4b",
+      "talent:venomancer/vizier:29-92-7-4a",
+      "talent:venomancer/vizier:29-92-7-4b",
+      "talent:venomancer/vizier:29-92-10-4",
+      "talent:venomancer/vizier:29-92-1-5",
+      "talent:venomancer/vizier:29-92-3-5",
+      "talent:venomancer/vizier:29-92-4-5",
+      "talent:venomancer/vizier:29-92-5-5",
+      "talent:venomancer/vizier:29-92-7-5",
+      "talent:venomancer/vizier:29-92-0-6",
+      "talent:venomancer/vizier:29-92-2-6",
+      "talent:venomancer/vizier:29-92-4-6",
+      "talent:venomancer/vizier:29-92-6-6",
+      "talent:venomancer/vizier:29-92-8-6",
+      "talent:venomancer/vizier:29-92-10-6",
+      "talent:venomancer/vizier:29-92-1-7",
+      "talent:venomancer/vizier:29-92-4-7",
+      "talent:venomancer/vizier:29-92-7-7a",
+      "talent:venomancer/vizier:29-92-7-7b",
+      "talent:venomancer/vizier:29-92-2-8",
+      "talent:venomancer/vizier:29-92-4-8",
+      "talent:venomancer/vizier:29-92-6-8",
+      "talent:venomancer/vizier:29-92-10-8",
+      "talent:venomancer/vizier:29-92-2-9",
+      "talent:venomancer/vizier:29-92-4-9",
+      "talent:venomancer/vizier:29-92-6-9"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "A poison-to-medicine healer using Mycelial Healing, Mending Mist, Good Venom, extraction, rituals, and Vizier Form. It specializes in healing-over-time networks and can convert harmful themes into recovery. It also has a battle resurrection, despite at least one recent third-party list omitting it.",
+    "resources": [],
+    "builders": [],
+    "spenders": [
+      {
+        "name": "Mycelial Replenishment",
+        "claim_ids": [
+          "talent:venomancer/vizier:29-92-4-5"
+        ]
+      },
+      {
+        "name": "Sublime Extraction",
+        "claim_ids": [
+          "talent:venomancer/vizier:29-92-7-7a"
+        ]
+      },
+      {
+        "name": "Serpent Lord's Amulet",
+        "claim_ids": [
+          "talent:venomancer/vizier:29-92-6-8"
+        ]
+      },
+      {
+        "name": "Serpent Lord's Ritual",
+        "claim_ids": [
+          "talent:venomancer/vizier:29-92-6-9"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Mending Mist",
+        "claim_ids": [
+          "talent:venomancer/vizier:29-92-2-2"
+        ]
+      },
+      {
+        "name": "Vizier Form",
+        "claim_ids": [
+          "talent:venomancer/vizier:29-92-10-4"
+        ]
+      },
+      {
+        "name": "Toxic Communion",
+        "claim_ids": [
+          "talent:venomancer/vizier:29-92-2-6"
+        ]
+      },
+      {
+        "name": "Shadra's Presence",
+        "claim_ids": [
+          "talent:venomancer/vizier:29-92-4-6"
+        ]
+      },
+      {
+        "name": "Cycle of Rebirth",
+        "claim_ids": [
+          "talent:venomancer/vizier:29-92-4-9"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Shadra's Vigil",
+        "claim_ids": [
+          "talent:venomancer/vizier:29-92-10-0"
+        ],
+        "structural_description": "Level 10 PassiveHealing done by Serpent's Fang now applies Shadra's Vigil to allies.Shadra's VigilThe next 5 instances of periodic healing by you on this target will heal them for an additional 10% of the value."
+      },
+      {
+        "name": "Vizier Form",
+        "claim_ids": [
+          "talent:venomancer/vizier:29-92-10-4"
+        ],
+        "structural_description": "Level 30 PassiveTeaches you Vizier Form.Vizier Form (Shapeshift)Shapeshift into Vizier Form, allowing you to cast Shadra's Prayer while moving and causing your periodic healing to have a 20% chance to grant allies Replenishment. Allows your heal over time effects to critically strike.ReplenishmentRestores 1% maximum mana every 5 sec to allies within 100 yds for 15 seconds."
+      }
+    ],
+    "single_target": "",
+    "aoe": "",
+    "movement_and_target_switching": "",
+    "defense_and_control": "",
+    "group_utility": "",
+    "failure_modes": [],
+    "claim_ids": [
+      "talent:venomancer/vizier:29-92-4-0",
+      "talent:venomancer/vizier:29-92-10-0",
+      "talent:venomancer/vizier:29-92-4-1",
+      "talent:venomancer/vizier:29-92-2-2",
+      "talent:venomancer/vizier:29-92-6-2",
+      "talent:venomancer/vizier:29-92-10-2",
+      "talent:venomancer/vizier:29-92-1-3",
+      "talent:venomancer/vizier:29-92-3-3",
+      "talent:venomancer/vizier:29-92-5-3",
+      "talent:venomancer/vizier:29-92-7-3",
+      "talent:venomancer/vizier:29-92-1-4a",
+      "talent:venomancer/vizier:29-92-1-4b",
+      "talent:venomancer/vizier:29-92-3-4",
+      "talent:venomancer/vizier:29-92-5-4a",
+      "talent:venomancer/vizier:29-92-5-4b",
+      "talent:venomancer/vizier:29-92-7-4a",
+      "talent:venomancer/vizier:29-92-7-4b",
+      "talent:venomancer/vizier:29-92-10-4",
+      "talent:venomancer/vizier:29-92-1-5",
+      "talent:venomancer/vizier:29-92-3-5",
+      "talent:venomancer/vizier:29-92-4-5",
+      "talent:venomancer/vizier:29-92-5-5",
+      "talent:venomancer/vizier:29-92-7-5",
+      "talent:venomancer/vizier:29-92-0-6",
+      "talent:venomancer/vizier:29-92-2-6",
+      "talent:venomancer/vizier:29-92-4-6",
+      "talent:venomancer/vizier:29-92-6-6",
+      "talent:venomancer/vizier:29-92-8-6",
+      "talent:venomancer/vizier:29-92-10-6",
+      "talent:venomancer/vizier:29-92-1-7",
+      "talent:venomancer/vizier:29-92-4-7",
+      "talent:venomancer/vizier:29-92-7-7a",
+      "talent:venomancer/vizier:29-92-7-7b",
+      "talent:venomancer/vizier:29-92-2-8",
+      "talent:venomancer/vizier:29-92-4-8",
+      "talent:venomancer/vizier:29-92-6-8",
+      "talent:venomancer/vizier:29-92-10-8",
+      "talent:venomancer/vizier:29-92-2-9",
+      "talent:venomancer/vizier:29-92-4-9",
+      "talent:venomancer/vizier:29-92-6-9"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Alkahest",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0"
+          ]
+        },
+        {
+          "name": "Shadra's Vigil",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-10-0"
+          ]
+        },
+        {
+          "name": "Mycelial Healing",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-1"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:venomancer/vizier:29-92-4-0",
+        "talent:venomancer/vizier:29-92-10-0",
+        "talent:venomancer/vizier:29-92-4-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Mending Mist",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-2-2"
+          ]
+        },
+        {
+          "name": "Shadra's Gift",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-6-2"
+          ]
+        },
+        {
+          "name": "Spiritual Healing",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-10-2"
+          ]
+        },
+        {
+          "name": "Venom Glands",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-1-3"
+          ]
+        },
+        {
+          "name": "Fang Blessing",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-3-3"
+          ]
+        },
+        {
+          "name": "Fangbinder",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-5-3"
+          ]
+        },
+        {
+          "name": "Ritualistic",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-7-3"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:venomancer/vizier:29-92-2-2",
+        "talent:venomancer/vizier:29-92-6-2",
+        "talent:venomancer/vizier:29-92-10-2",
+        "talent:venomancer/vizier:29-92-1-3",
+        "talent:venomancer/vizier:29-92-3-3",
+        "talent:venomancer/vizier:29-92-5-3",
+        "talent:venomancer/vizier:29-92-7-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "The Antidote",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-1-4a"
+          ]
+        },
+        {
+          "name": "Good Venom",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-1-4b"
+          ]
+        },
+        {
+          "name": "Soothing Venoms",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-3-4"
+          ]
+        },
+        {
+          "name": "Lifemender",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-5-4a"
+          ]
+        },
+        {
+          "name": "Melioration",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-5-4b"
+          ]
+        },
+        {
+          "name": "Book of Shadra",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-7-4a"
+          ]
+        },
+        {
+          "name": "Venomcult Scrolls",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-7-4b"
+          ]
+        },
+        {
+          "name": "Vizier Form",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-10-4"
+          ]
+        },
+        {
+          "name": "Spirit of the Jungle",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-1-5"
+          ]
+        },
+        {
+          "name": "Worship",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-3-5"
+          ]
+        },
+        {
+          "name": "Mycelial Replenishment",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-5"
+          ]
+        },
+        {
+          "name": "Sage",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-5-5"
+          ]
+        },
+        {
+          "name": "Bountiful Gifts",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-7-5"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:venomancer/vizier:29-92-1-4a",
+        "talent:venomancer/vizier:29-92-1-4b",
+        "talent:venomancer/vizier:29-92-3-4",
+        "talent:venomancer/vizier:29-92-5-4a",
+        "talent:venomancer/vizier:29-92-5-4b",
+        "talent:venomancer/vizier:29-92-7-4a",
+        "talent:venomancer/vizier:29-92-7-4b",
+        "talent:venomancer/vizier:29-92-10-4",
+        "talent:venomancer/vizier:29-92-1-5",
+        "talent:venomancer/vizier:29-92-3-5",
+        "talent:venomancer/vizier:29-92-4-5",
+        "talent:venomancer/vizier:29-92-5-5",
+        "talent:venomancer/vizier:29-92-7-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Advisor's Perfidy",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-0-6"
+          ]
+        },
+        {
+          "name": "Toxic Communion",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-2-6"
+          ]
+        },
+        {
+          "name": "Shadra's Presence",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-6"
+          ]
+        },
+        {
+          "name": "Blight Antidote",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-6-6"
+          ]
+        },
+        {
+          "name": "Widow's Watch",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-8-6"
+          ]
+        },
+        {
+          "name": "Occultist",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-10-6"
+          ]
+        },
+        {
+          "name": "Ophidian Renewal",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-1-7"
+          ]
+        },
+        {
+          "name": "Extraction",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-7"
+          ]
+        },
+        {
+          "name": "Sublime Extraction",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-7-7a"
+          ]
+        },
+        {
+          "name": "Venom Fanatic",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-7-7b"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:venomancer/vizier:29-92-0-6",
+        "talent:venomancer/vizier:29-92-2-6",
+        "talent:venomancer/vizier:29-92-4-6",
+        "talent:venomancer/vizier:29-92-6-6",
+        "talent:venomancer/vizier:29-92-8-6",
+        "talent:venomancer/vizier:29-92-10-6",
+        "talent:venomancer/vizier:29-92-1-7",
+        "talent:venomancer/vizier:29-92-4-7",
+        "talent:venomancer/vizier:29-92-7-7a",
+        "talent:venomancer/vizier:29-92-7-7b"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Shadra's Aid",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-2-8"
+          ]
+        },
+        {
+          "name": "Venom Weaving",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-8"
+          ]
+        },
+        {
+          "name": "Serpent Lord's Amulet",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-6-8"
+          ]
+        },
+        {
+          "name": "Ritual Healing",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-10-8"
+          ]
+        },
+        {
+          "name": "Mycelial Synchronization",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-2-9"
+          ]
+        },
+        {
+          "name": "Cycle of Rebirth",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-9"
+          ]
+        },
+        {
+          "name": "Serpent Lord's Ritual",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-6-9"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:venomancer/vizier:29-92-2-8",
+        "talent:venomancer/vizier:29-92-4-8",
+        "talent:venomancer/vizier:29-92-6-8",
+        "talent:venomancer/vizier:29-92-10-8",
+        "talent:venomancer/vizier:29-92-2-9",
+        "talent:venomancer/vizier:29-92-4-9",
+        "talent:venomancer/vizier:29-92-6-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "leveling_30_49": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "level_50_60": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "boss": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "dungeon_aoe": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "pvp": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [],
+    "avoid_if": []
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [],
+  "sentiment": {
+    "praise": [],
+    "frustrations": [],
+    "contested": []
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 1,
+    "latest_update": "2026-07-20T21:55:26.873+00:00",
+    "top_title": "Venomancer (Vizier) - Healing leveling/dungeons build",
+    "top_url": "https://coabuildhub.com/build/6861f8ca-3e80-44c4-9d10-9969d29710f6",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:6861f8ca-3e80-44c4-9d10-9969d29710f6"
+    ]
+  },
+  "coverage": {
+    "mechanical": "structural_baseline",
+    "community": "indexed",
+    "performance": "missing",
+    "video": "missing",
+    "overall_confidence": "low",
+    "gaps": [
+      "Effective core loop needs recent guide or player cross-check.",
+      "Contextual complexity values are not yet researched.",
+      "Recent performance, sentiment, issues, and video evidence are not yet reconciled."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:venomancer/vizier:29-92-4-0",
+      "kind": "structural",
+      "text": "Alkahest: 2 Charges, 12 sec rechargeBless an ally with Shadra's grace, healing them for 85 + 31.44% healing and extending the duration of Shadra's Prayer on them by 9 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-10-0",
+      "kind": "structural",
+      "text": "Shadra's Vigil: Level 10 PassiveHealing done by Serpent's Fang now applies Shadra's Vigil to allies.Shadra's VigilThe next 5 instances of periodic healing by you on this target will heal them for an additional 10% of the value.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-4-1",
+      "kind": "structural",
+      "text": "Mycelial Healing: All effective healing done now increases your periodic healing done to an ally by 1% for 30 seconds, stacking 8 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-2-2",
+      "kind": "structural",
+      "text": "Mending Mist: Spread a precarious mist to up to 8 allies within 30 yds, healing them for 9 + 15% healing every 1 sec for 7 seconds.After 1.69 sec, all allies within 30 yds are healed for an additional 104 + 23.1% healing.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-6-2",
+      "kind": "structural",
+      "text": "Shadra's Gift: Reduces the cast time of Shadra's Prayer by -10% and your spell pushback suffered from damaging attacks by 35%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-10-2",
+      "kind": "structural",
+      "text": "Spiritual Healing: Level 20 PassiveIncreases your spell critical strike rating and your healing power by 20% of your Intellect.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-1-3",
+      "kind": "structural",
+      "text": "Venom Glands: Increases your healing done by 15% on allies below 35% health or if they are Poisoned.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-3-3",
+      "kind": "structural",
+      "text": "Fang Blessing: Increases your critical strike chance by 3%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-5-3",
+      "kind": "structural",
+      "text": "Fangbinder: Increases the healing of Serpent's Fang by 50% and Serpent's Fang can no longer miss.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-7-3",
+      "kind": "structural",
+      "text": "Ritualistic: Casting Green Salve now also refunds you 20% of your base mana.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-1-4a",
+      "kind": "structural",
+      "text": "The Antidote: Increases the duration of Rejuvenating Venom by 2 sec and increases its tick rate by -30%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-1-4b",
+      "kind": "structural",
+      "text": "Good Venom: Rejuvenating Venom will now affect 1 additional nearby ally.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-3-4",
+      "kind": "structural",
+      "text": "Soothing Venoms: Increases the critical healing of Shadra's Prayer by 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-5-4a",
+      "kind": "structural",
+      "text": "Lifemender: Your Serpent's Fang now heals up to 5 additional nearby allies and Alkahest now heals an additional nearby target.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-5-4b",
+      "kind": "structural",
+      "text": "Melioration: Your Serpent's Fang now refreshes a charge of Alkahest.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-7-4a",
+      "kind": "structural",
+      "text": "Book of Shadra: Doubles the duration, cooldown, and healing of Green Salve.In addition, it now seeks another nearby ally to heal every 6 sec, instead of at the end of the duration.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-7-4b",
+      "kind": "structural",
+      "text": "Venomcult Scrolls: Reduces the cooldown of Green Salve by -2 sec and increases the healing done at the end of the duration by 50%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-10-4",
+      "kind": "structural",
+      "text": "Vizier Form: Level 30 PassiveTeaches you Vizier Form.Vizier Form (Shapeshift)Shapeshift into Vizier Form, allowing you to cast Shadra's Prayer while moving and causing your periodic healing to have a 20% chance to grant allies Replenishment. Allows your heal over time effects to critically strike.ReplenishmentRestores 1% maximum mana every 5 sec to allies within 100 yds for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-1-5",
+      "kind": "structural",
+      "text": "Spirit of the Jungle: Increases the proc chance of Rejuvenating Venom by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-3-5",
+      "kind": "structural",
+      "text": "Worship: Allows all critical heals to increase periodic healing the target receives from you by 10% for 5 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-4-5",
+      "kind": "structural",
+      "text": "Mycelial Replenishment: Increases your critical strike chance and critical healing done by 20% for 20 seconds and instantly restore 30% of your maximum mana, but consumes all stacks of Mycelial Healing on all nearby allies.While active, all periodic critical strikes heal for an additional 20% of the healing done.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-5-5",
+      "kind": "structural",
+      "text": "Sage: Direct healing done by Alkahest now spreads an active Shadra's Balm from the primary target to a nearby ally.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-7-5",
+      "kind": "structural",
+      "text": "Bountiful Gifts: Increases the healing of Shadra's Prayer, Green Salve, and Alkahest by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-0-6",
+      "kind": "structural",
+      "text": "Advisor's Perfidy: Increases the bonus healing scaling of Serpent's Fang, Mending Mist, and Shadra's Balm by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-2-6",
+      "kind": "structural",
+      "text": "Toxic Communion: Extend the duration of Shadra's Balm and Mending Mist by 15 sec on all allies within 30 yds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-4-6",
+      "kind": "structural",
+      "text": "Shadra's Presence: Allies within 100 yds receive 6% more healing. Does not stack with similar effects.In addition, your Antivenom now dispels 1 additional effect.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-6-6",
+      "kind": "structural",
+      "text": "Blight Antidote: Inject an ally with a powerful magic antidote, dispelling 2 curse effects from them.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-8-6",
+      "kind": "structural",
+      "text": "Widow's Watch: Allies affected by Shadra's Balm now have a 20% increased chance to resist poison and curse effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-10-6",
+      "kind": "structural",
+      "text": "Occultist: Level 40 PassiveCasting Green Salve or Serpent's Fang now has a 30% chance to refresh a charge of Alkahest.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-1-7",
+      "kind": "structural",
+      "text": "Ophidian Renewal: Increases the duration of Shadra's Balm and Mending Mist and Shadra's Prayer by 3 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-4-7",
+      "kind": "structural",
+      "text": "Extraction: For 15 seconds, your Intellect and Spirit are doubled and all critical periodic healing done by you restores 5% of your missing mana.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-7-7a",
+      "kind": "structural",
+      "text": "Sublime Extraction: Casting Green Salve now resets the cooldown of Serpent's Fang and removes the cost of your next Serpent's Fang for 8 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-7-7b",
+      "kind": "structural",
+      "text": "Venom Fanatic: Your Serpent's Fang now strikes 2 additional nearby enemies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-2-8",
+      "kind": "structural",
+      "text": "Shadra's Aid: Envelop an ally in Shadra's grace, reducing all damage taken by -20% and causing direct damage taken to restore 3% maximum health for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-4-8",
+      "kind": "structural",
+      "text": "Venom Weaving: Your Serpent's Fang now increases the healing of your next 2 Alkahests by 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-6-8",
+      "kind": "structural",
+      "text": "Serpent Lord's Amulet: Draw power from the Serpent Lord's Amulet, increasing your spell haste by 20% and reduces your mana costs by -50% for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-10-8",
+      "kind": "structural",
+      "text": "Ritual Healing: Level 50 PassiveEvery 9 sec, your Shadra's Prayer will now restore 1% of the target's maximum mana, 8 Energy or Focus, 4 Rage and 4 Runic Power.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-2-9",
+      "kind": "structural",
+      "text": "Mycelial Synchronization: Casting Shadra's Aid on an ally now also casts it on yourself.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-4-9",
+      "kind": "structural",
+      "text": "Cycle of Rebirth: Effective periodic healing with Shadra's Balm now has a 10% chance to make your next Alkahest within 8 seconds is free and instant.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:venomancer/vizier:29-92-6-9",
+      "kind": "structural",
+      "text": "Serpent Lord's Ritual: Direct healing done now has a 5% chance to grant you 5 sec of Serpent Lord's Amulet.Serpent Lord's AmuletDraw power from the Serpent Lord's Amulet, increasing your spell haste by 20% and reduces your mana costs by -50% for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    }
+  ]
+}

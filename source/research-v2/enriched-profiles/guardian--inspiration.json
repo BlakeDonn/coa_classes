@@ -1,0 +1,2210 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "guardian/inspiration",
+    "class": "Guardian",
+    "name": "Inspiration",
+    "roles": [
+      "Damage",
+      "Support"
+    ],
+    "range": [
+      "Melee"
+    ]
+  },
+  "identity": {
+    "fantasy": "A battle bard and field commander who turns ballads, Tempo, formations, banners, drums, and timed marches into raid-wide momentum.",
+    "one_line": "A bard-commander using Tempo, songs, banners, drums, and party auras. It contributes damage while maintaining Battle Bard effects and choosing the right manuscript, march, or banner for the encounter. Its strength is group amplification, but personal rotation and raid-buff timing compete for attention.",
+    "primary_family": "strategists",
+    "also_fits": [
+      "sequencers"
+    ],
+    "claim_ids": [
+      "observed:guardian/inspiration:current-guide",
+      "inference:guardian/inspiration:coordination-cost",
+      "talent:guardian/inspiration:18-48-4-0",
+      "talent:guardian/inspiration:18-48-10-0",
+      "observed:guardian/inspiration:performance",
+      "talent:guardian/inspiration:18-48-4-9"
+    ],
+    "playstyle_tags": [
+      "melee-raid-support",
+      "stance-combo-support",
+      "proc-melee"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "Open in Line Formation for Harrowing Melody and Advance, deploy the chosen standard and Battle Drums, shift into Assault Formation, stack major buffs, then prioritize Dragonslayer or Conqueror, Empowered Ram at the intended Tempo state, Reprisal procs, and Glorious Arena while protecting Energy for the next formation transition.",
+    "resources": [],
+    "builders": [
+      {
+        "name": "Little Drummer",
+        "claim_ids": [
+          "talent:guardian/inspiration:18-48-3-6"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Tempo",
+        "claim_ids": [
+          "talent:guardian/inspiration:18-48-10-0"
+        ]
+      },
+      {
+        "name": "Harrowing Melody",
+        "claim_ids": [
+          "talent:guardian/inspiration:18-48-1-4"
+        ]
+      },
+      {
+        "name": "Elegant Combat",
+        "claim_ids": [
+          "talent:guardian/inspiration:18-48-5-6"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Tempo",
+        "claim_ids": [
+          "talent:guardian/inspiration:18-48-10-0"
+        ]
+      },
+      {
+        "name": "Strength In Unison",
+        "claim_ids": [
+          "talent:guardian/inspiration:18-48-1-2"
+        ]
+      },
+      {
+        "name": "Banner of Conquest",
+        "claim_ids": [
+          "talent:guardian/inspiration:18-48-10-2a"
+        ]
+      },
+      {
+        "name": "Harrowing Melody",
+        "claim_ids": [
+          "talent:guardian/inspiration:18-48-1-4"
+        ]
+      },
+      {
+        "name": "Hero's March",
+        "claim_ids": [
+          "talent:guardian/inspiration:18-48-4-4"
+        ]
+      },
+      {
+        "name": "Banner of Swiftness",
+        "claim_ids": [
+          "talent:guardian/inspiration:18-48-10-4a"
+        ]
+      },
+      {
+        "name": "Frontliner",
+        "claim_ids": [
+          "talent:guardian/inspiration:18-48-2-5b"
+        ]
+      },
+      {
+        "name": "Little Drummer",
+        "claim_ids": [
+          "talent:guardian/inspiration:18-48-3-6"
+        ]
+      },
+      {
+        "name": "Fearless",
+        "claim_ids": [
+          "talent:guardian/inspiration:18-48-6-7"
+        ]
+      },
+      {
+        "name": "Song of Battle",
+        "claim_ids": [
+          "talent:guardian/inspiration:18-48-5-8"
+        ]
+      },
+      {
+        "name": "Inspiring Presence",
+        "claim_ids": [
+          "talent:guardian/inspiration:18-48-10-8a"
+        ]
+      },
+      {
+        "name": "Field Commander",
+        "claim_ids": [
+          "talent:guardian/inspiration:18-48-7-9"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Inspiring Leader",
+        "claim_ids": [
+          "talent:guardian/inspiration:18-48-4-0"
+        ],
+        "structural_description": "You pledge to inspire your allies in the midst of battle, transforming your Pulverize and your Broad Sweep into Ballads."
+      },
+      {
+        "name": "Tempo",
+        "claim_ids": [
+          "talent:guardian/inspiration:18-48-10-0"
+        ],
+        "structural_description": "Level 10 PassiveCasting Ballads now grants Tempo, stacking 3 times. Upon reaching 3 stacks of Tempo, you consume them to perform a Sound of War, striking all enemies within 8 yds for 71 + 12.74% AP Magic damage.Tempo (Proc)Critical strike chance increased by 2%, stacking 3 times."
+      },
+      {
+        "name": "Banner Boy",
+        "claim_ids": [
+          "talent:guardian/inspiration:18-48-7-6"
+        ],
+        "structural_description": "Increases your haste by 5% and the movement speed granted by Line Formation by 8%."
+      },
+      {
+        "name": "Dissonance",
+        "claim_ids": [
+          "talent:guardian/inspiration:18-48-10-6b"
+        ],
+        "structural_description": "Damage dealt by Sound of War now has a 25% chance to reduce enemies' resistances by 75 and increases their Magic damage taken by -2% for 8 seconds."
+      },
+      {
+        "name": "Battle Drums",
+        "claim_ids": [
+          "talent:guardian/inspiration:18-48-4-7"
+        ],
+        "structural_description": "Place down 3 Battle Drums around you for 1 minute. Allies may click on the drums to increase their critical strike chance, haste, damage, and healing done by 10% and causes their damage dealt to trigger a Sound of War for their next 5 instances of damage or 30 seconds."
+      },
+      {
+        "name": "War Drums",
+        "claim_ids": [
+          "talent:guardian/inspiration:18-48-4-9"
+        ],
+        "structural_description": "Adds 5% to the value of Echoes of War.In addition, performing a Sound of War now has a 40% chance to echo, striking an additional time after 0.5 sec. Can only occur once per sec."
+      },
+      {
+        "name": "Field Commander",
+        "claim_ids": [
+          "talent:guardian/inspiration:18-48-7-9"
+        ],
+        "structural_description": "Placing a Standard causes your next Song of Steel to unleash an additional unique effect.SpellwardingIncreases the magic resistance of party and raid members within 100 yds by 20 for 10 seconds.MightReduces the Armor of enemies within 100 yds by -15% for 10 seconds.RallyingIncreases the movement speed of party and raid members within 100 yds by 15% for 10 seconds.RecoveryReduces the melee and ranged attack speed of enemies within 100 yds by -10% for 10 seconds."
+      }
+    ],
+    "single_target": "Personal damage comes from a priority system driven by buffs, Tempo, Empowered Ram, Reprisal, and arena effects rather than a fixed repeating rotation.",
+    "aoe": "Sound of War, Dragonslayer, banners, drums, and party-triggered Echoes of War create strong pack and group amplification.",
+    "movement_and_target_switching": "Advance, formations, Charge, marches, and high mobility help reposition, but the opener asks the player to place drums and swap stances quickly.",
+    "defense_and_control": "Guardian defensive tools, AoE control, crowd-control immunity, and group protections make the support unusually durable.",
+    "group_utility": "Its defining value is a large raid-buff inventory, with different physical, magical, dungeon, and raid packages that must be coordinated with other supports.",
+    "failure_modes": [
+      {
+        "text": "Poor formation timing can strand the player at low Energy, while overlapping another support's raid buffs or placing clickable drums badly wastes much of the spec's unique value.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost"
+        ]
+      },
+      {
+        "text": "Movement or a target swap can interrupt the intended payoff: advance, formations, charge, marches, and high mobility help reposition, but the opener asks the player to place drums and swap stances quickly.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance"
+        ]
+      },
+      {
+        "text": "Spending recovery or control too early leaves less protection for the next pressure event: guardian defensive tools, aoe control, crowd-control immunity, and group protections make the support unusually durable.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance"
+        ]
+      }
+    ],
+    "claim_ids": [
+      "observed:guardian/inspiration:current-guide",
+      "inference:guardian/inspiration:coordination-cost",
+      "talent:guardian/inspiration:18-48-4-0",
+      "talent:guardian/inspiration:18-48-10-0",
+      "observed:guardian/inspiration:performance",
+      "talent:guardian/inspiration:18-48-4-9"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Inspiring Leader",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-4-0"
+          ]
+        },
+        {
+          "name": "Tempo",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-10-0"
+          ]
+        },
+        {
+          "name": "A Hero's Tale",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-2-1"
+          ]
+        },
+        {
+          "name": "Leading the March",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-6-1"
+          ]
+        }
+      ],
+      "observed_loop": "A melee bard whose Ballads and three-stack Tempo cycle already produce periodic Sound of War attacks.",
+      "observed_changes": [
+        "Early solo value does not show the full raid identity",
+        "Resource flow changes with group tools"
+      ],
+      "claim_ids": [
+        "talent:guardian/inspiration:18-48-4-0",
+        "talent:guardian/inspiration:18-48-10-0",
+        "talent:guardian/inspiration:18-48-2-1",
+        "talent:guardian/inspiration:18-48-6-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Strength In Unison",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-1-2"
+          ]
+        },
+        {
+          "name": "Veteran of the Third War",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-3-2"
+          ]
+        },
+        {
+          "name": "Dragonslayer",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-5-2"
+          ]
+        },
+        {
+          "name": "Into The Fray",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-7-2"
+          ]
+        },
+        {
+          "name": "Banner of Conquest",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-10-2a"
+          ]
+        },
+        {
+          "name": "Spirit of Battle",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-10-2b"
+          ]
+        },
+        {
+          "name": "Battle Bard",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-2-3"
+          ]
+        },
+        {
+          "name": "Soundwave",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-6-3"
+          ]
+        }
+      ],
+      "observed_loop": "A melee bard whose Ballads and three-stack Tempo cycle already produce periodic Sound of War attacks.",
+      "observed_changes": [
+        "Early solo value does not show the full raid identity",
+        "Resource flow changes with group tools"
+      ],
+      "claim_ids": [
+        "talent:guardian/inspiration:18-48-1-2",
+        "talent:guardian/inspiration:18-48-3-2",
+        "talent:guardian/inspiration:18-48-5-2",
+        "talent:guardian/inspiration:18-48-7-2",
+        "talent:guardian/inspiration:18-48-10-2a",
+        "talent:guardian/inspiration:18-48-10-2b",
+        "talent:guardian/inspiration:18-48-2-3",
+        "talent:guardian/inspiration:18-48-6-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Harrowing Melody",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-1-4"
+          ]
+        },
+        {
+          "name": "Hero's March",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-4-4"
+          ]
+        },
+        {
+          "name": "Liberation",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-7-4"
+          ]
+        },
+        {
+          "name": "Banner of Swiftness",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-10-4a"
+          ]
+        },
+        {
+          "name": "Knight's Song",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-10-4b"
+          ]
+        },
+        {
+          "name": "Minstrel",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-0-5"
+          ]
+        },
+        {
+          "name": "Pied Piper",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-2-5a"
+          ]
+        },
+        {
+          "name": "Frontliner",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-2-5b"
+          ]
+        },
+        {
+          "name": "Bard's Manuscript",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-4-5a"
+          ]
+        },
+        {
+          "name": "Warbringer's Manuscript",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-4-5b"
+          ]
+        },
+        {
+          "name": "Reverberations",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-6-5"
+          ]
+        },
+        {
+          "name": "Show of Force",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-8-5"
+          ]
+        }
+      ],
+      "observed_loop": "By levels 30-49, open in line formation for harrowing melody and advance, deploy the chosen standard and battle drums, shift into assault formation, stack major buffs, then prioritize dragonslayer or conqueror, empowered ram at the intended tempo state, reprisal procs, and glorious arena while protecting energy for the next formation transition.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Advance, formations, Charge, marches, and high mobility help reposition, but the opener asks the player to place drums and swap stances quickly"
+      ],
+      "claim_ids": [
+        "talent:guardian/inspiration:18-48-1-4",
+        "talent:guardian/inspiration:18-48-4-4",
+        "talent:guardian/inspiration:18-48-7-4",
+        "talent:guardian/inspiration:18-48-10-4a",
+        "talent:guardian/inspiration:18-48-10-4b",
+        "talent:guardian/inspiration:18-48-0-5",
+        "talent:guardian/inspiration:18-48-2-5a",
+        "talent:guardian/inspiration:18-48-2-5b",
+        "talent:guardian/inspiration:18-48-4-5a",
+        "talent:guardian/inspiration:18-48-4-5b",
+        "talent:guardian/inspiration:18-48-6-5",
+        "talent:guardian/inspiration:18-48-8-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Powerful Voice",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-1-6"
+          ]
+        },
+        {
+          "name": "Little Drummer",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-3-6"
+          ]
+        },
+        {
+          "name": "Elegant Combat",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-5-6"
+          ]
+        },
+        {
+          "name": "Banner Boy",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-7-6"
+          ]
+        },
+        {
+          "name": "Song of Steel",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-10-6a"
+          ]
+        },
+        {
+          "name": "Dissonance",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-10-6b"
+          ]
+        },
+        {
+          "name": "War's Muse",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-0-7"
+          ]
+        },
+        {
+          "name": "Stand Your Ground!",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-2-7a"
+          ]
+        },
+        {
+          "name": "You Shall Not Fall!",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-2-7b"
+          ]
+        },
+        {
+          "name": "Battle Drums",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-4-7"
+          ]
+        },
+        {
+          "name": "Fearless",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-6-7"
+          ]
+        },
+        {
+          "name": "Cavalry Tactics",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-8-7"
+          ]
+        }
+      ],
+      "observed_loop": "By levels 30-49, open in line formation for harrowing melody and advance, deploy the chosen standard and battle drums, shift into assault formation, stack major buffs, then prioritize dragonslayer or conqueror, empowered ram at the intended tempo state, reprisal procs, and glorious arena while protecting energy for the next formation transition.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Advance, formations, Charge, marches, and high mobility help reposition, but the opener asks the player to place drums and swap stances quickly"
+      ],
+      "claim_ids": [
+        "talent:guardian/inspiration:18-48-1-6",
+        "talent:guardian/inspiration:18-48-3-6",
+        "talent:guardian/inspiration:18-48-5-6",
+        "talent:guardian/inspiration:18-48-7-6",
+        "talent:guardian/inspiration:18-48-10-6a",
+        "talent:guardian/inspiration:18-48-10-6b",
+        "talent:guardian/inspiration:18-48-0-7",
+        "talent:guardian/inspiration:18-48-2-7a",
+        "talent:guardian/inspiration:18-48-2-7b",
+        "talent:guardian/inspiration:18-48-4-7",
+        "talent:guardian/inspiration:18-48-6-7",
+        "talent:guardian/inspiration:18-48-8-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Legion Commander",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-1-8"
+          ]
+        },
+        {
+          "name": "Echoes of War",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-3-8"
+          ]
+        },
+        {
+          "name": "Song of Battle",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-5-8"
+          ]
+        },
+        {
+          "name": "Bannerman",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-7-8"
+          ]
+        },
+        {
+          "name": "Inspiring Presence",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-10-8a"
+          ]
+        },
+        {
+          "name": "Champion's Presence",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-10-8b"
+          ]
+        },
+        {
+          "name": "Voice of an Angel",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-1-9"
+          ]
+        },
+        {
+          "name": "War Drums",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        },
+        {
+          "name": "Field Commander",
+          "claim_ids": [
+            "talent:guardian/inspiration:18-48-7-9"
+          ]
+        }
+      ],
+      "observed_loop": "A very busy raid-support priority system with fast stance swaps, proc-driven Energy flow, encounter-specific talent choices, and major communication responsibility.",
+      "observed_changes": [
+        "RNG can create empty Energy moments",
+        "Peak personal damage is not the point",
+        "Support overlap must be coordinated"
+      ],
+      "claim_ids": [
+        "talent:guardian/inspiration:18-48-1-8",
+        "talent:guardian/inspiration:18-48-3-8",
+        "talent:guardian/inspiration:18-48-5-8",
+        "talent:guardian/inspiration:18-48-7-8",
+        "talent:guardian/inspiration:18-48-10-8a",
+        "talent:guardian/inspiration:18-48-10-8b",
+        "talent:guardian/inspiration:18-48-1-9",
+        "talent:guardian/inspiration:18-48-4-9",
+        "talent:guardian/inspiration:18-48-7-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "A melee bard whose Ballads and three-stack Tempo cycle already produce periodic Sound of War attacks.",
+      "strengths": [
+        "Immediate class fantasy",
+        "Party amplification",
+        "Formation mobility"
+      ],
+      "cautions": [
+        "Early solo value does not show the full raid identity",
+        "Resource flow changes with group tools"
+      ],
+      "claim_ids": [
+        "talent:guardian/inspiration:18-48-4-0",
+        "talent:guardian/inspiration:18-48-10-0",
+        "observed:guardian/inspiration:current-guide",
+        "inference:guardian/inspiration:coordination-cost",
+        "observed:guardian/inspiration:performance",
+        "talent:guardian/inspiration:18-48-4-9"
+      ]
+    },
+    "leveling_30_49": {
+      "feel": "By levels 30-49, open in line formation for harrowing melody and advance, deploy the chosen standard and battle drums, shift into assault formation, stack major buffs, then prioritize dragonslayer or conqueror, empowered ram at the intended tempo state, reprisal procs, and glorious arena while protecting energy for the next formation transition.",
+      "strengths": [
+        "Core engine is online",
+        "More complete target coverage"
+      ],
+      "cautions": [
+        "Late talents still change the ceiling",
+        "Advance, formations, Charge, marches, and high mobility help reposition, but the opener asks the player to place drums and swap stances quickly"
+      ],
+      "claim_ids": [
+        "observed:guardian/inspiration:current-guide",
+        "inference:guardian/inspiration:coordination-cost",
+        "talent:guardian/inspiration:18-48-4-0",
+        "talent:guardian/inspiration:18-48-10-0",
+        "observed:guardian/inspiration:performance",
+        "talent:guardian/inspiration:18-48-4-9"
+      ]
+    },
+    "level_50_60": {
+      "feel": "A very busy raid-support priority system with fast stance swaps, proc-driven Energy flow, encounter-specific talent choices, and major communication responsibility.",
+      "strengths": [
+        "Exceptional buff breadth",
+        "Strong survival and mobility",
+        "44 Mythic records"
+      ],
+      "cautions": [
+        "RNG can create empty Energy moments",
+        "Peak personal damage is not the point",
+        "Support overlap must be coordinated"
+      ],
+      "claim_ids": [
+        "observed:guardian/inspiration:current-guide",
+        "observed:guardian/inspiration:performance",
+        "talent:guardian/inspiration:18-48-4-9",
+        "inference:guardian/inspiration:coordination-cost",
+        "talent:guardian/inspiration:18-48-4-0",
+        "talent:guardian/inspiration:18-48-10-0"
+      ]
+    },
+    "boss": {
+      "feel": "On bosses, personal damage comes from a priority system driven by buffs, tempo, empowered ram, reprisal, and arena effects rather than a fixed repeating rotation.",
+      "strengths": [
+        "Durable targets preserve the full loop",
+        "Cooldowns can be planned"
+      ],
+      "cautions": [
+        "Movement can break setup",
+        "Repeated errors remain visible"
+      ],
+      "claim_ids": [
+        "observed:guardian/inspiration:current-guide",
+        "inference:guardian/inspiration:coordination-cost",
+        "talent:guardian/inspiration:18-48-4-0",
+        "talent:guardian/inspiration:18-48-10-0",
+        "observed:guardian/inspiration:performance",
+        "talent:guardian/inspiration:18-48-4-9"
+      ]
+    },
+    "dungeon_aoe": {
+      "feel": "In dungeons, sound of war, dragonslayer, banners, drums, and party-triggered echoes of war create strong pack and group amplification.",
+      "strengths": [
+        "Pack tools express the spec clearly",
+        "Group utility has regular value"
+      ],
+      "cautions": [
+        "Short-lived targets can erase setup",
+        "Tank movement changes the plan"
+      ],
+      "claim_ids": [
+        "observed:guardian/inspiration:current-guide",
+        "inference:guardian/inspiration:coordination-cost",
+        "talent:guardian/inspiration:18-48-4-0",
+        "talent:guardian/inspiration:18-48-10-0",
+        "observed:guardian/inspiration:performance",
+        "talent:guardian/inspiration:18-48-4-9"
+      ]
+    },
+    "pvp": {
+      "feel": "In PvP, advance, formations, charge, marches, and high mobility help reposition, but the opener asks the player to place drums and swap stances quickly. Guardian defensive tools, AoE control, crowd-control immunity, and group protections make the support unusually durable.",
+      "strengths": [
+        "Control and utility create options",
+        "Target swaps can reward flexibility"
+      ],
+      "cautions": [
+        "Disruption makes the loop less predictable",
+        "Defensive timing is punishable"
+      ],
+      "claim_ids": [
+        "observed:guardian/inspiration:current-guide",
+        "inference:guardian/inspiration:coordination-cost",
+        "talent:guardian/inspiration:18-48-4-0",
+        "talent:guardian/inspiration:18-48-10-0",
+        "observed:guardian/inspiration:performance",
+        "talent:guardian/inspiration:18-48-4-9"
+      ]
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "moderate-high",
+        "reason": "The practical action set follows the authored loop: Open in Line Formation for Harrowing Melody and Advance, deploy the chosen standard and Battle Drums, shift into Assault Formation, stack major buffs, then prioritize Dragonslayer or Conqueror, Empowered Ram at the intended Tempo state, Reprisal procs, and Glorious Arena while protecting Energy for the next formation transition. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "high",
+        "reason": "The practical action set follows the authored loop: Open in Line Formation for Harrowing Melody and Advance, deploy the chosen standard and Battle Drums, shift into Assault Formation, stack major buffs, then prioritize Dragonslayer or Conqueror, Empowered Ram at the intended Tempo state, Reprisal procs, and Glorious Arena while protecting Energy for the next formation transition. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "The practical action set follows the authored loop: Open in Line Formation for Harrowing Melody and Advance, deploy the chosen standard and Battle Drums, shift into Assault Formation, stack major buffs, then prioritize Dragonslayer or Conqueror, Empowered Ram at the intended Tempo state, Reprisal procs, and Glorious Arena while protecting Energy for the next formation transition. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "boss": {
+        "value": "high",
+        "reason": "The current guide combines a rapid opener, multiple buffs, formations, Tempo timing, a proc priority, and encounter-specific support choices.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "The practical action set follows the authored loop: Open in Line Formation for Harrowing Melody and Advance, deploy the chosen standard and Battle Drums, shift into Assault Formation, stack major buffs, then prioritize Dragonslayer or Conqueror, Empowered Ram at the intended Tempo state, Reprisal procs, and Glorious Arena while protecting Energy for the next formation transition. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "The practical action set follows the authored loop: Open in Line Formation for Harrowing Melody and Advance, deploy the chosen standard and Battle Drums, shift into Assault Formation, stack major buffs, then prioritize Dragonslayer or Conqueror, Empowered Ram at the intended Tempo state, Reprisal procs, and Glorious Arena while protecting Energy for the next formation transition. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "moderate-high",
+        "reason": "The player must preserve the resources, effects, or target states implied by: Personal damage comes from a priority system driven by buffs, Tempo, Empowered Ram, Reprisal, and arena effects rather than a fixed repeating rotation. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "high",
+        "reason": "The player must preserve the resources, effects, or target states implied by: Personal damage comes from a priority system driven by buffs, Tempo, Empowered Ram, Reprisal, and arena effects rather than a fixed repeating rotation. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "The player must preserve the resources, effects, or target states implied by: Personal damage comes from a priority system driven by buffs, Tempo, Empowered Ram, Reprisal, and arena effects rather than a fixed repeating rotation. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "boss": {
+        "value": "high",
+        "reason": "Tempo, Energy, Reprisal, Empowered Ram, banners, drums, formation, and several buff cooldowns overlap.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "talent:guardian/inspiration:18-48-10-0",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "The player must preserve the resources, effects, or target states implied by: Personal damage comes from a priority system driven by buffs, Tempo, Empowered Ram, Reprisal, and arena effects rather than a fixed repeating rotation. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "The player must preserve the resources, effects, or target states implied by: Personal damage comes from a priority system driven by buffs, Tempo, Empowered Ram, Reprisal, and arena effects rather than a fixed repeating rotation. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "low",
+        "reason": "Target count, incoming pressure, and movement change the next action; guardian defensive tools, aoe control, crowd-control immunity, and group protections make the support unusually durable. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "low-moderate",
+        "reason": "Target count, incoming pressure, and movement change the next action; guardian defensive tools, aoe control, crowd-control immunity, and group protections make the support unusually durable. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "level_50_60": {
+        "value": "low-moderate",
+        "reason": "Target count, incoming pressure, and movement change the next action; guardian defensive tools, aoe control, crowd-control immunity, and group protections make the support unusually durable. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "boss": {
+        "value": "low-moderate",
+        "reason": "Target count, incoming pressure, and movement change the next action; guardian defensive tools, aoe control, crowd-control immunity, and group protections make the support unusually durable. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "low-moderate",
+        "reason": "Target count, incoming pressure, and movement change the next action; guardian defensive tools, aoe control, crowd-control immunity, and group protections make the support unusually durable. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "pvp": {
+        "value": "moderate",
+        "reason": "Target count, incoming pressure, and movement change the next action; guardian defensive tools, aoe control, crowd-control immunity, and group protections make the support unusually durable. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "low",
+        "reason": "Execution is constrained by positioning and swaps: Advance, formations, Charge, marches, and high mobility help reposition, but the opener asks the player to place drums and swap stances quickly. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "low-moderate",
+        "reason": "Execution is constrained by positioning and swaps: Advance, formations, Charge, marches, and high mobility help reposition, but the opener asks the player to place drums and swap stances quickly. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "level_50_60": {
+        "value": "low-moderate",
+        "reason": "Execution is constrained by positioning and swaps: Advance, formations, Charge, marches, and high mobility help reposition, but the opener asks the player to place drums and swap stances quickly. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "boss": {
+        "value": "low-moderate",
+        "reason": "Execution is constrained by positioning and swaps: Advance, formations, Charge, marches, and high mobility help reposition, but the opener asks the player to place drums and swap stances quickly. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "low-moderate",
+        "reason": "Execution is constrained by positioning and swaps: Advance, formations, Charge, marches, and high mobility help reposition, but the opener asks the player to place drums and swap stances quickly. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "pvp": {
+        "value": "moderate",
+        "reason": "Execution is constrained by positioning and swaps: Advance, formations, Charge, marches, and high mobility help reposition, but the opener asks the player to place drums and swap stances quickly. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "moderate-high",
+        "reason": "Poor formation timing can strand the player at low Energy, while overlapping another support's raid buffs or placing clickable drums badly wastes much of the spec's. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "high",
+        "reason": "Poor formation timing can strand the player at low Energy, while overlapping another support's raid buffs or placing clickable drums badly wastes much of the spec's. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "Poor formation timing can strand the player at low Energy, while overlapping another support's raid buffs or placing clickable drums badly wastes much of the spec's. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "boss": {
+        "value": "high",
+        "reason": "Poor formation timing can strand the player at low Energy, while overlapping another support's raid buffs or placing clickable drums badly wastes much of the spec's. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "Poor formation timing can strand the player at low Energy, while overlapping another support's raid buffs or placing clickable drums badly wastes much of the spec's. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "Poor formation timing can strand the player at low Energy, while overlapping another support's raid buffs or placing clickable drums badly wastes much of the spec's. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "raid": {
+        "value": "high",
+        "reason": "Bad Energy routing, duplicated buffs, or unusable drum placement can lose both personal throughput and raid value.",
+        "claim_ids": [
+          "inference:guardian/inspiration:coordination-cost"
+        ]
+      }
+    },
+    "setup_burden": {
+      "raid": {
+        "value": "high",
+        "reason": "The support package must be selected around raid size and composition, then deconflicted with other supports before the pull.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost"
+        ]
+      },
+      "leveling_10_29": {
+        "value": "moderate-high",
+        "reason": "The payoff depends on establishing the conditions described by: Sound of War, Dragonslayer, banners, drums, and party-triggered Echoes of War create strong pack and group amplification. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "high",
+        "reason": "The payoff depends on establishing the conditions described by: Sound of War, Dragonslayer, banners, drums, and party-triggered Echoes of War create strong pack and group amplification. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "The payoff depends on establishing the conditions described by: Sound of War, Dragonslayer, banners, drums, and party-triggered Echoes of War create strong pack and group amplification. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "boss": {
+        "value": "high",
+        "reason": "The payoff depends on establishing the conditions described by: Sound of War, Dragonslayer, banners, drums, and party-triggered Echoes of War create strong pack and group amplification. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "The payoff depends on establishing the conditions described by: Sound of War, Dragonslayer, banners, drums, and party-triggered Echoes of War create strong pack and group amplification. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "The payoff depends on establishing the conditions described by: Sound of War, Dragonslayer, banners, drums, and party-triggered Echoes of War create strong pack and group amplification. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [
+      {
+        "text": "You want a genuinely supportive battle bard with a demanding melee priority system and responsibility for the whole group's buff plan.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide"
+        ]
+      },
+      {
+        "text": "You enjoy the spec's core cadence: open in line formation for harrowing melody and advance, deploy the chosen standard and battle drums, shift into assault formation, stack major buffs, then prioritize dragonslayer or conqueror, empowered ram at the intended tempo state, reprisal procs, and glorious arena while protecting energy for the next formation transition.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance"
+        ]
+      }
+    ],
+    "avoid_if": [
+      {
+        "text": "You dislike stance swapping, proc variance, raid coordination, or doing work whose payoff appears on teammates' meters.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide"
+        ]
+      },
+      {
+        "text": "You dislike the positioning or swap constraint that advance, formations, charge, marches, and high mobility help reposition, but the opener asks the player to place drums and swap stances quickly.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance"
+        ]
+      }
+    ]
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [
+    "observed:guardian/inspiration:performance"
+  ],
+  "sentiment": {
+    "praise": [
+      {
+        "theme": "The current guide praises its raid-wide buff range, useful damage, survivability, mobility, AoE control, and crowd-control immunity.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide"
+        ]
+      }
+    ],
+    "frustrations": [
+      {
+        "theme": "The same guide calls it overly complex, RNG dependent, prone to zero-Energy downtime, and potentially off-putting because of stance swaps.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide"
+        ]
+      }
+    ],
+    "contested": [
+      {
+        "theme": "Its reported personal DPS understates a role explicitly designed to move meaningful damage into allied buffs and Echoes of War.",
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "observed:guardian/inspiration:performance"
+        ]
+      }
+    ]
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 1,
+    "latest_update": "2026-08-05T20:24:21.703+00:00",
+    "top_title": "Inspiration Guardian(PvE)",
+    "top_url": "https://coabuildhub.com/build/0f6836ab-b365-4f6d-9090-6a2d78eacda4",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:0f6836ab-b365-4f6d-9090-6a2d78eacda4"
+    ]
+  },
+  "coverage": {
+    "mechanical": "manual_talent_and_build_interpretation",
+    "community": "strong_single_guide",
+    "performance": "support_not_comparable",
+    "video": "searched_none_verified",
+    "overall_confidence": "high",
+    "gaps": [
+      "Four reported viable builds are not separately profiled.",
+      "Raid contribution lacks a controlled group-level comparison."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:guardian/inspiration:18-48-4-0",
+      "kind": "structural",
+      "text": "Inspiring Leader: You pledge to inspire your allies in the midst of battle, transforming your Pulverize and your Broad Sweep into Ballads.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-10-0",
+      "kind": "structural",
+      "text": "Tempo: Level 10 PassiveCasting Ballads now grants Tempo, stacking 3 times. Upon reaching 3 stacks of Tempo, you consume them to perform a Sound of War, striking all enemies within 8 yds for 71 + 12.74% AP Magic damage.Tempo (Proc)Critical strike chance increased by 2%, stacking 3 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-2-1",
+      "kind": "structural",
+      "text": "A Hero's Tale: Increases your Energy regeneration by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-6-1",
+      "kind": "structural",
+      "text": "Leading the March: Increases your attack power and total Armor by 4%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-1-2",
+      "kind": "structural",
+      "text": "Strength In Unison: Increases your melee haste by 1% for each ally within 20 yds, up to a maximum of 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-3-2",
+      "kind": "structural",
+      "text": "Veteran of the Third War: You now restore 3% of your base health whenever you block an attack.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-5-2",
+      "kind": "structural",
+      "text": "Dragonslayer: Increases your Agility by 5%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-7-2",
+      "kind": "structural",
+      "text": "Into The Fray: Triggering a Sound of War now grants you an additional auto attack on your next swing.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-10-2a",
+      "kind": "structural",
+      "text": "Banner of Conquest: Attach a Banner of Conquest to your back, increasing the critical strike chance of party and raid members within 40 yds by 5%.Does not stack with similar effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-10-2b",
+      "kind": "structural",
+      "text": "Spirit of Battle: Increases chance to hit with all spells and attacks by 1% for you and party and raid members.Does not stack with similar effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-2-3",
+      "kind": "structural",
+      "text": "Battle Bard: Increases the damage of your Ballads by 15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-6-3",
+      "kind": "structural",
+      "text": "Soundwave: Increases the damage dealt by Sound of War by 15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-1-4",
+      "kind": "structural",
+      "text": "Harrowing Melody: Play a harrowing melody, dealing 191 + 42% AP Magic damage and reducing all healing received by enemies within 10 yds by -30% for 10 seconds.In addition, your next Ballad within 10 seconds is free of cost and deals 50% increased damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-4-4",
+      "kind": "structural",
+      "text": "Hero's March: Beat the drums of war, causing your auto attacks to trigger a Sound of War and increasing your haste by 15% for 15 seconds.In addition, allies within 10 yds of you have a 5% chance to trigger a Sound of War on any damage dealt.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-7-4",
+      "kind": "structural",
+      "text": "Liberation: Instantly breaks an ally free of any stun, fear, or polymorph effects and grants immunity to such effects for 5 seconds. Dispels 2 harmful magic effects from the ally.Usable while stunned, feared, or polymorphed.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-10-4a",
+      "kind": "structural",
+      "text": "Banner of Swiftness: Attach a Banner of Swiftness to your back, increasing the haste of party and raid members within 40 yds by 5%.Does not stack with similar effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-10-4b",
+      "kind": "structural",
+      "text": "Knight's Song: Casting a Ballad now grants allies Knight's Song.Knight's SongEmanate an aura for 10 seconds that increases the Armor of party and raid members by 400.Does not stack with similar effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-0-5",
+      "kind": "structural",
+      "text": "Minstrel: Casting a Ballad now increases your haste by 3%, stacking 3 times, for 8 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-2-5a",
+      "kind": "structural",
+      "text": "Pied Piper: Triggering a Sound of War now increases damage of your next Ram by 20% for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-2-5b",
+      "kind": "structural",
+      "text": "Frontliner: Triggering a Sound of War now increases your movement speed by 40% and allies' within 20 yds movement speed by 20% for 2 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-4-5a",
+      "kind": "structural",
+      "text": "Bard's Manuscript: Reduces the cooldown of Hero's March by -60 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-4-5b",
+      "kind": "structural",
+      "text": "Warbringer's Manuscript: Critical strikes now reduce the cooldown of Hero's March by -1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-6-5",
+      "kind": "structural",
+      "text": "Reverberations: Casting Ram now causes your next 3 melee attacks to deal an additional 30 + 10% AP Magic damage for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-8-5",
+      "kind": "structural",
+      "text": "Show of Force: Dealing damage with Ram now dispels 1 magic effect from the target.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-1-6",
+      "kind": "structural",
+      "text": "Powerful Voice: Increases the critical strike chance of your Ballads by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-3-6",
+      "kind": "structural",
+      "text": "Little Drummer: Allies within 20 yds of you now gain 20% chance to resist curses.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-5-6",
+      "kind": "structural",
+      "text": "Elegant Combat: Casting a Ballad has a 20% chance to remove the cost of the next Ram and increase its critical chance by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-7-6",
+      "kind": "structural",
+      "text": "Banner Boy: Increases your haste by 5% and the movement speed granted by Line Formation by 8%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-10-6a",
+      "kind": "structural",
+      "text": "Song of Steel: Boost the morale of party and raid members, increasing their attack or spell power by 95 for 15 seconds.Does not stack with similar effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-10-6b",
+      "kind": "structural",
+      "text": "Dissonance: Damage dealt by Sound of War now has a 25% chance to reduce enemies' resistances by 75 and increases their Magic damage taken by -2% for 8 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-0-7",
+      "kind": "structural",
+      "text": "War's Muse: Increases your critical damage by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-2-7a",
+      "kind": "structural",
+      "text": "Stand Your Ground!: While standing in your Standard of Valiance, your allies' Physical damage taken is reduced by -10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-2-7b",
+      "kind": "structural",
+      "text": "You Shall Not Fall!: While standing in your Standard of Valiance, allies have a -20% increased chance to resist stun and grip effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-4-7",
+      "kind": "structural",
+      "text": "Battle Drums: Place down 3 Battle Drums around you for 1 minute. Allies may click on the drums to increase their critical strike chance, haste, damage, and healing done by 10% and causes their damage dealt to trigger a Sound of War for their next 5 instances of damage or 30 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-6-7",
+      "kind": "structural",
+      "text": "Fearless: Each nearby enemy within 10 yds now reduces your damage taken by 1%, up to a maximum of 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-8-7",
+      "kind": "structural",
+      "text": "Cavalry Tactics: Reduces the cooldown of your Cavalry Charge by -30 sec and it now prevents root and slow effects on allies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-1-8",
+      "kind": "structural",
+      "text": "Legion Commander: The damage increase of Harrowing Melody now affects an additional 2 Ballad casts and guarantees them to critically strike and deal 100% more damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-3-8",
+      "kind": "structural",
+      "text": "Echoes of War: Triggering a Sound of War now grants Echoes of War to nearby allies for 8 seconds.Echoes of WarNext direct ability or spell deals 15% of their damage as additional Magic Damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-5-8",
+      "kind": "structural",
+      "text": "Song of Battle: Every 2 sec you emanate Sounds of War, dealing 71 + 12.74% AP Physical damage to all enemies within 8 yds. Lasts 15 seconds.Upon expiration, stun all enemies within 8 yds for 4 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-7-8",
+      "kind": "structural",
+      "text": "Bannerman: While affected by your Banner of Swiftness or Banner of Conquest, the initial damage dealt by your Standard of Valiance now deals 150% more damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-10-8a",
+      "kind": "structural",
+      "text": "Inspiring Presence: Emanate an aura around you for 15 seconds, causing allied players within 100 yds to deal 35% AP additional damage as Holy damage when they deal direct damage.Applies Exhaustion, preventing you from benefiting from similar effects for 1 minute.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-10-8b",
+      "kind": "structural",
+      "text": "Champion's Presence: Enrage all nearby allies, increasing their haste by 30% for 20 seconds.After being affected by this spell, allies cannot benefit from similar effects for 5 minutes.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-1-9",
+      "kind": "structural",
+      "text": "Voice of an Angel: Sing a beautiful song, instantly resetting the cooldown of Liberation, Harrowing Melody, and Hero's March.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-4-9",
+      "kind": "structural",
+      "text": "War Drums: Adds 5% to the value of Echoes of War.In addition, performing a Sound of War now has a 40% chance to echo, striking an additional time after 0.5 sec. Can only occur once per sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:guardian/inspiration:18-48-7-9",
+      "kind": "structural",
+      "text": "Field Commander: Placing a Standard causes your next Song of Steel to unleash an additional unique effect.SpellwardingIncreases the magic resistance of party and raid members within 100 yds by 20 for 10 seconds.MightReduces the Armor of enemies within 100 yds by -15% for 10 seconds.RallyingIncreases the movement speed of party and raid members within 100 yds by 15% for 10 seconds.RecoveryReduces the melee and ranged attack speed of enemies within 100 yds by -10% for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "observed:guardian/inspiration:current-guide",
+      "kind": "observed",
+      "text": "The August Build Hub guide describes Inspiration as an unusually complex stance-swapping support with broad raid buffs, strong survivability and mobility, AoE control, and good damage, but also RNG damage and possible zero-Energy downtime. It documents a Line-to-Assault opener, Tempo and Empowered Ram timing, Reprisal priority, fast-weapon preference, different dungeon and raid buff packages, and a requirement to coordinate non-overlapping talents with other supports.",
+      "source_ids": [
+        "buildhub:0f6836ab-b365-4f6d-9090-6a2d78eacda4",
+        "reddit:guardian-tips-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "dungeons",
+          "raids",
+          "pve"
+        ],
+        "build_or_mode": [
+          "documented_personal_dps_support_build"
+        ]
+      },
+      "confidence": "high",
+      "conflicts_with": [],
+      "notes": "The author reports four viable builds and documents one personal-DPS-oriented version."
+    },
+    {
+      "id": "observed:guardian/inspiration:performance",
+      "kind": "observed",
+      "text": "The July compilation reports Inspiration at 2,562 in a support or off-role context, and the August Mythic inventory lists 44 records. The current guide states that Echoes of War can transfer substantial damage into party members, so personal DPS alone is incomplete.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02",
+        "buildhub:0f6836ab-b365-4f6d-9090-6a2d78eacda4"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "mythic_dungeons",
+          "raids"
+        ],
+        "build_or_mode": [
+          "support"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "No normalized group-contribution metric is available."
+    },
+    {
+      "id": "inference:guardian/inspiration:coordination-cost",
+      "kind": "inference",
+      "text": "Inspiration has both rotational and social setup burden because its raid value depends on choosing the right shared buffs, avoiding overlap with other supports, and placing interactive effects where allies can use them.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "observed:guardian/inspiration:current-guide",
+        "talent:guardian/inspiration:18-48-4-7",
+        "talent:guardian/inspiration:18-48-7-9"
+      ],
+      "scope": {
+        "levels": "level_40_60",
+        "content": [
+          "dungeons",
+          "raids"
+        ],
+        "build_or_mode": [
+          "support"
+        ]
+      },
+      "confidence": "high",
+      "conflicts_with": [],
+      "notes": "This burden is part of the intended support identity, not merely button count."
+    }
+  ]
+}

@@ -1,0 +1,970 @@
+{
+  "baseline": "pyromancer--flameweaving.json",
+  "set": {
+    "identity": {
+      "fantasy": "A Phoenix healer who plants Roaring Pyres, turns critical healing and Heat into Inferno procs, and can die into a mana-restored Spirit of the Phoenix.",
+      "one_line": "Position persistent fire-healing, use Cleansing Flames and Kindle for efficient coverage, then spend Emberheart and Phoenix tools before damage overwhelms the field.",
+      "primary_family": "strategists",
+      "also_fits": [
+        "planners"
+      ],
+      "playstyle_tags": [
+        "persistent-object-healer",
+        "crit-healer",
+        "movement-support-healer"
+      ],
+      "claim_ids": [
+        "talent:pyromancer/flameweaving:24-19-2-8",
+        "talent:pyromancer/flameweaving:24-19-4-0",
+        "talent:pyromancer/flameweaving:24-19-4-9",
+        "talent:pyromancer/flameweaving:24-19-5-1",
+        "observed:pyromancer/flameweaving:utility-package",
+        "observed:pyromancer/flameweaving:cone-healing",
+        "inference:pyromancer/flameweaving:playstyle-identity"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "Maintain Pyres and efficient direct healing, build Heat through critical effects, and turn Inferno or Emberheart windows into area recovery.",
+      "single_target": "Keep durable-target healing efficient with Kindle, shields and Phoenix support rather than repeatedly replacing stationary effects.",
+      "aoe": "Cleansing Flames and Roaring Pyres cover stacked groups; cone aim and placement make party geometry central.",
+      "movement_and_target_switching": "Two movement abilities correct positioning, but placed Pyres still punish scattering.",
+      "defense_and_control": "Burn Impurities removes magic and disease, Cauterize covers bleeds, and Spirit of the Phoenix supplies a cheat death and mana reset.",
+      "group_utility": "Combat resurrection, Innervate, Fear Ward and movement support give exceptional healer utility.",
+      "failure_modes": [
+        {
+          "text": "A misplaced Pyre wastes healing and Heat generation.",
+          "claim_ids": [
+            "inference:pyromancer/flameweaving:failure-cost",
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9"
+          ]
+        },
+        {
+          "text": "Holding Emberheart until allies collapse reduces preventive value.",
+          "claim_ids": [
+            "inference:pyromancer/flameweaving:failure-cost",
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9"
+          ]
+        },
+        {
+          "text": "Using Spirit of the Phoenix for routine mana leaves no cheat death.",
+          "claim_ids": [
+            "inference:pyromancer/flameweaving:failure-cost",
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "talent:pyromancer/flameweaving:24-19-2-8",
+        "talent:pyromancer/flameweaving:24-19-4-0",
+        "talent:pyromancer/flameweaving:24-19-4-9",
+        "talent:pyromancer/flameweaving:24-19-5-1",
+        "talent:pyromancer/flameweaving:24-19-10-0",
+        "talent:pyromancer/flameweaving:24-19-6-6",
+        "observed:pyromancer/flameweaving:utility-package",
+        "observed:pyromancer/flameweaving:cone-healing",
+        "observed:pyromancer/flameweaving:phoenix-recovery",
+        "observed:pyromancer/flameweaving:build-practice",
+        "inference:pyromancer/flameweaving:playstyle-identity"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "Cleansing Flames makes early healing and soloing direct.",
+        "strengths": [
+          "Easy cone coverage",
+          "Solo damage"
+        ],
+        "cautions": [
+          "Cone aim",
+          "Mana"
+        ],
+        "claim_ids": [
+          "talent:pyromancer/flameweaving:24-19-2-8",
+          "talent:pyromancer/flameweaving:24-19-4-0",
+          "talent:pyromancer/flameweaving:24-19-4-9",
+          "talent:pyromancer/flameweaving:24-19-5-1",
+          "observed:pyromancer/flameweaving:utility-package",
+          "observed:pyromancer/flameweaving:cone-healing",
+          "observed:pyromancer/flameweaving:phoenix-recovery",
+          "inference:pyromancer/flameweaving:playstyle-identity"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "Pyres, Heat and critical interactions add positioning and proc rhythm.",
+        "strengths": [
+          "Pyre network",
+          "Movement"
+        ],
+        "cautions": [
+          "Ground placement",
+          "Procs"
+        ],
+        "claim_ids": [
+          "talent:pyromancer/flameweaving:24-19-2-8",
+          "talent:pyromancer/flameweaving:24-19-4-0",
+          "talent:pyromancer/flameweaving:24-19-4-9",
+          "talent:pyromancer/flameweaving:24-19-5-1",
+          "observed:pyromancer/flameweaving:utility-package",
+          "observed:pyromancer/flameweaving:cone-healing",
+          "observed:pyromancer/flameweaving:phoenix-recovery",
+          "inference:pyromancer/flameweaving:playstyle-identity"
+        ]
+      },
+      "level_50_60": {
+        "feel": "The complete Phoenix package is a mobile, utility-rich area healer.",
+        "strengths": [
+          "Deep utility",
+          "Recovery"
+        ],
+        "cautions": [
+          "Many cooldowns",
+          "Scattered allies"
+        ],
+        "claim_ids": [
+          "talent:pyromancer/flameweaving:24-19-2-8",
+          "talent:pyromancer/flameweaving:24-19-4-0",
+          "talent:pyromancer/flameweaving:24-19-4-9",
+          "talent:pyromancer/flameweaving:24-19-5-1",
+          "observed:pyromancer/flameweaving:utility-package",
+          "observed:pyromancer/flameweaving:cone-healing",
+          "observed:pyromancer/flameweaving:phoenix-recovery",
+          "inference:pyromancer/flameweaving:playstyle-identity"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, Keep durable-target healing efficient with Kindle, shields and Phoenix support rather than repeatedly replacing stationary effects.",
+        "strengths": [
+          "Efficient sustain",
+          "Cheat death"
+        ],
+        "cautions": [
+          "Relocating Pyres",
+          "Planning"
+        ],
+        "claim_ids": [
+          "talent:pyromancer/flameweaving:24-19-2-8",
+          "talent:pyromancer/flameweaving:24-19-4-0",
+          "talent:pyromancer/flameweaving:24-19-4-9",
+          "talent:pyromancer/flameweaving:24-19-5-1",
+          "observed:pyromancer/flameweaving:utility-package",
+          "observed:pyromancer/flameweaving:cone-healing",
+          "observed:pyromancer/flameweaving:phoenix-recovery",
+          "inference:pyromancer/flameweaving:playstyle-identity"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, Cleansing Flames and Roaring Pyres cover stacked groups; cone aim and placement make party geometry central.",
+        "strengths": [
+          "Stacked healing",
+          "Area damage"
+        ],
+        "cautions": [
+          "Tank movement",
+          "Split party"
+        ],
+        "claim_ids": [
+          "talent:pyromancer/flameweaving:24-19-2-8",
+          "talent:pyromancer/flameweaving:24-19-4-0",
+          "talent:pyromancer/flameweaving:24-19-4-9",
+          "talent:pyromancer/flameweaving:24-19-5-1",
+          "observed:pyromancer/flameweaving:utility-package",
+          "observed:pyromancer/flameweaving:cone-healing",
+          "observed:pyromancer/flameweaving:phoenix-recovery",
+          "inference:pyromancer/flameweaving:playstyle-identity"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, Two movement abilities correct positioning, but placed Pyres still punish scattering. Burn Impurities removes magic and disease, Cauterize covers bleeds, and Spirit of the Phoenix supplies a cheat death and mana reset.",
+        "strengths": [
+          "Mobility",
+          "Dispels"
+        ],
+        "cautions": [
+          "Interrupts",
+          "Telegraphed position"
+        ],
+        "claim_ids": [
+          "talent:pyromancer/flameweaving:24-19-2-8",
+          "talent:pyromancer/flameweaving:24-19-4-0",
+          "talent:pyromancer/flameweaving:24-19-4-9",
+          "talent:pyromancer/flameweaving:24-19-5-1",
+          "observed:pyromancer/flameweaving:utility-package",
+          "observed:pyromancer/flameweaving:cone-healing",
+          "observed:pyromancer/flameweaving:phoenix-recovery",
+          "inference:pyromancer/flameweaving:playstyle-identity"
+        ]
+      }
+    },
+    "complexity": {
+      "core_actions": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Direct heals, cone healing, Pyres, Phoenixes, cleanses and utility create a broad bar. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Direct heals, cone healing, Pyres, Phoenixes, cleanses and utility create a broad bar. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Direct heals, cone healing, Pyres, Phoenixes, cleanses and utility create a broad bar. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Direct heals, cone healing, Pyres, Phoenixes, cleanses and utility create a broad bar. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Direct heals, cone healing, Pyres, Phoenixes, cleanses and utility create a broad bar. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Direct heals, cone healing, Pyres, Phoenixes, cleanses and utility create a broad bar. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        }
+      },
+      "state_tracking": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Heat, Inferno, Pyre locations, Emberheart and Phoenix cooldowns overlap. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Heat, Inferno, Pyre locations, Emberheart and Phoenix cooldowns overlap. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Heat, Inferno, Pyre locations, Emberheart and Phoenix cooldowns overlap. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Heat, Inferno, Pyre locations, Emberheart and Phoenix cooldowns overlap. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Heat, Inferno, Pyre locations, Emberheart and Phoenix cooldowns overlap. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Heat, Inferno, Pyre locations, Emberheart and Phoenix cooldowns overlap. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Persistent effects must be placed before damage. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Persistent effects must be placed before damage. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Persistent effects must be placed before damage. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Persistent effects must be placed before damage. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Persistent effects must be placed before damage. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Persistent effects must be placed before damage. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Proc state and party geometry decide the next response. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Proc state and party geometry decide the next response. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Proc state and party geometry decide the next response. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Proc state and party geometry decide the next response. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Proc state and party geometry decide the next response. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Proc state and party geometry decide the next response. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Cone aim and placement are the main mechanical checks. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Cone aim and placement are the main mechanical checks. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Cone aim and placement are the main mechanical checks. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Cone aim and placement are the main mechanical checks. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Cone aim and placement are the main mechanical checks. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Cone aim and placement are the main mechanical checks. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        }
+      },
+      "failure_cost": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Bad placement can remove healing from several allies. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Bad placement can remove healing from several allies. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Bad placement can remove healing from several allies. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Bad placement can remove healing from several allies. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Bad placement can remove healing from several allies. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Bad placement can remove healing from several allies. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0",
+            "talent:pyromancer/flameweaving:24-19-4-9",
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You want a visually loud area healer with unusual utility.",
+          "claim_ids": [
+            "inference:pyromancer/flameweaving:playstyle-identity",
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0"
+          ]
+        },
+        {
+          "text": "You enjoy ground placement and cone geometry.",
+          "claim_ids": [
+            "inference:pyromancer/flameweaving:playstyle-identity",
+            "talent:pyromancer/flameweaving:24-19-2-8",
+            "talent:pyromancer/flameweaving:24-19-4-0"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You want only target-frame healing.",
+          "claim_ids": [
+            "inference:pyromancer/flameweaving:failure-cost",
+            "observed:pyromancer/flameweaving:utility-package"
+          ]
+        },
+        {
+          "text": "You dislike stationary effects.",
+          "claim_ids": [
+            "inference:pyromancer/flameweaving:failure-cost",
+            "observed:pyromancer/flameweaving:utility-package"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Players call it accessible, powerful and unusually fun.",
+          "claim_ids": [
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "observed:pyromancer/flameweaving:build-practice"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Scattered groups undermine placed healing.",
+          "claim_ids": [
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "inference:pyromancer/flameweaving:failure-cost"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "Ease describes the floor while full utility creates a higher ceiling.",
+          "claim_ids": [
+            "observed:pyromancer/flameweaving:utility-package",
+            "observed:pyromancer/flameweaving:cone-healing",
+            "observed:pyromancer/flameweaving:phoenix-recovery",
+            "observed:pyromancer/flameweaving:performance-context"
+          ]
+        }
+      ]
+    },
+    "performance_signal_ids": [
+      "observed:pyromancer/flameweaving:performance-context"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "manual_recent_source_review",
+      "performance": "limited_uncontrolled",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium",
+      "gaps": [
+        "No verified healing breakdown.",
+        "Pyre cadence needs live testing."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "Cleansing Flames makes early healing and soloing direct.",
+      "observed_changes": [
+        "Cone aim",
+        "Mana"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "Cleansing Flames makes early healing and soloing direct.",
+      "observed_changes": [
+        "Cone aim",
+        "Mana"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "Pyres, Heat and critical interactions add positioning and proc rhythm.",
+      "observed_changes": [
+        "Ground placement",
+        "Procs"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "Pyres, Heat and critical interactions add positioning and proc rhythm.",
+      "observed_changes": [
+        "Ground placement",
+        "Procs"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "The complete Phoenix package is a mobile, utility-rich area healer.",
+      "observed_changes": [
+        "Many cooldowns",
+        "Scattered allies"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:pyromancer/flameweaving:utility-package",
+      "kind": "observed",
+      "text": "Players document magic, disease and bleed removal, combat resurrection, Innervate, Fear Ward and two movement abilities.",
+      "source_ids": [
+        "reddit:flameweaving-healer-2026-07-06",
+        "reddit:easy-specs-roster-2026-08-03"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:pyromancer/flameweaving:cone-healing",
+      "kind": "observed",
+      "text": "Cleansing Flames is described as both a strong dungeon cone heal and useful leveling damage.",
+      "source_ids": [
+        "reddit:flameweaving-healer-2026-07-06",
+        "reddit:easy-specs-roster-2026-08-03"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:pyromancer/flameweaving:phoenix-recovery",
+      "kind": "observed",
+      "text": "Spirit of the Phoenix reportedly returns the healer with full mana on a ten-minute cooldown.",
+      "source_ids": [
+        "reddit:flameweaving-healer-2026-07-06",
+        "reddit:easy-specs-roster-2026-08-03"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:pyromancer/flameweaving:build-practice",
+      "kind": "observed",
+      "text": "The captured Phoenix Healer build supports the Pyre/Phoenix identity but cannot prove one universal priority.",
+      "source_ids": [
+        "buildhub-builds-2026-08-05",
+        "buildhub:95a75263-aeef-43f3-8203-91182b522da6"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "community_build_snapshot"
+        ],
+        "build_or_mode": [
+          "documented_build"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The guide documents one current way to play; it is not treated as proof of optimality."
+    },
+    {
+      "id": "observed:pyromancer/flameweaving:performance-context",
+      "kind": "observed",
+      "text": "Healers have no DPS entry; 186 Mythic records show use, not quality.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "uncontrolled_performance_signals"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "low",
+      "conflicts_with": [],
+      "notes": "Do not convert this into a tier ranking."
+    },
+    {
+      "id": "inference:pyromancer/flameweaving:playstyle-identity",
+      "kind": "inference",
+      "text": "A Phoenix healer who plants Roaring Pyres, turns critical healing and Heat into Inferno procs, and can die into a mana-restored Spirit of the Phoenix.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:pyromancer/flameweaving:24-19-2-8",
+        "talent:pyromancer/flameweaving:24-19-4-0",
+        "talent:pyromancer/flameweaving:24-19-4-9",
+        "talent:pyromancer/flameweaving:24-19-5-1",
+        "observed:pyromancer/flameweaving:utility-package",
+        "observed:pyromancer/flameweaving:cone-healing"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Descriptive playstyle classification, not an official label."
+    },
+    {
+      "id": "inference:pyromancer/flameweaving:failure-cost",
+      "kind": "inference",
+      "text": "A misplaced Pyre wastes healing and Heat generation.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:pyromancer/flameweaving:24-19-2-8",
+        "talent:pyromancer/flameweaving:24-19-4-0",
+        "talent:pyromancer/flameweaving:24-19-4-9",
+        "talent:pyromancer/flameweaving:24-19-5-1",
+        "talent:pyromancer/flameweaving:24-19-10-0",
+        "observed:pyromancer/flameweaving:utility-package",
+        "observed:pyromancer/flameweaving:cone-healing",
+        "observed:pyromancer/flameweaving:phoenix-recovery"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Direction is supported; exact throughput cost is not measured."
+    }
+  ]
+}

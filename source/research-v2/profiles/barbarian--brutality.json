@@ -1,0 +1,1445 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "barbarian/brutality",
+    "class": "Barbarian",
+    "name": "Brutality",
+    "roles": [
+      "Damage"
+    ],
+    "range": [
+      "Melee"
+    ]
+  },
+  "identity": {
+    "fantasy": "",
+    "one_line": "A heavy-weapon brawler built around large swings, Whirls, Storm of Steel, and execute attacks such as Decapitate. It wants to build momentum and Fury, then cash out below 35% health; it has strong cleave and self-sustain, but its best damage requires melee uptime and correct execute timing.",
+    "primary_family": "",
+    "also_fits": [],
+    "claim_ids": [
+      "talent:barbarian/brutality:12-31-4-0",
+      "talent:barbarian/brutality:12-31-10-0",
+      "talent:barbarian/brutality:12-31-4-1",
+      "talent:barbarian/brutality:12-31-2-2",
+      "talent:barbarian/brutality:12-31-4-2",
+      "talent:barbarian/brutality:12-31-6-2",
+      "talent:barbarian/brutality:12-31-10-2",
+      "talent:barbarian/brutality:12-31-1-3",
+      "talent:barbarian/brutality:12-31-4-3",
+      "talent:barbarian/brutality:12-31-7-3",
+      "talent:barbarian/brutality:12-31-1-4",
+      "talent:barbarian/brutality:12-31-3-4",
+      "talent:barbarian/brutality:12-31-5-4",
+      "talent:barbarian/brutality:12-31-7-4a",
+      "talent:barbarian/brutality:12-31-7-4b",
+      "talent:barbarian/brutality:12-31-10-4",
+      "talent:barbarian/brutality:12-31-2-5",
+      "talent:barbarian/brutality:12-31-4-5",
+      "talent:barbarian/brutality:12-31-6-5",
+      "talent:barbarian/brutality:12-31-0-6",
+      "talent:barbarian/brutality:12-31-2-6",
+      "talent:barbarian/brutality:12-31-4-6",
+      "talent:barbarian/brutality:12-31-6-6a",
+      "talent:barbarian/brutality:12-31-6-6b",
+      "talent:barbarian/brutality:12-31-8-6",
+      "talent:barbarian/brutality:12-31-10-6",
+      "talent:barbarian/brutality:12-31-0-7",
+      "talent:barbarian/brutality:12-31-2-7a",
+      "talent:barbarian/brutality:12-31-2-7b",
+      "talent:barbarian/brutality:12-31-4-7",
+      "talent:barbarian/brutality:12-31-6-7",
+      "talent:barbarian/brutality:12-31-8-7",
+      "talent:barbarian/brutality:12-31-2-8",
+      "talent:barbarian/brutality:12-31-6-8",
+      "talent:barbarian/brutality:12-31-10-8",
+      "talent:barbarian/brutality:12-31-1-9",
+      "talent:barbarian/brutality:12-31-3-9",
+      "talent:barbarian/brutality:12-31-5-9",
+      "talent:barbarian/brutality:12-31-7-9"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "A heavy-weapon brawler built around large swings, Whirls, Storm of Steel, and execute attacks such as Decapitate. It wants to build momentum and Fury, then cash out below 35% health; it has strong cleave and self-sustain, but its best damage requires melee uptime and correct execute timing.",
+    "resources": [],
+    "builders": [
+      {
+        "name": "Giant Tosser",
+        "claim_ids": [
+          "talent:barbarian/brutality:12-31-2-7b"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Decapitate",
+        "claim_ids": [
+          "talent:barbarian/brutality:12-31-4-0"
+        ]
+      },
+      {
+        "name": "Efficient Killer",
+        "claim_ids": [
+          "talent:barbarian/brutality:12-31-4-6"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Killing Spree",
+        "claim_ids": [
+          "talent:barbarian/brutality:12-31-4-2"
+        ]
+      }
+    ],
+    "modes": [],
+    "single_target": "",
+    "aoe": "",
+    "movement_and_target_switching": "",
+    "defense_and_control": "",
+    "group_utility": "",
+    "failure_modes": [],
+    "claim_ids": [
+      "talent:barbarian/brutality:12-31-4-0",
+      "talent:barbarian/brutality:12-31-10-0",
+      "talent:barbarian/brutality:12-31-4-1",
+      "talent:barbarian/brutality:12-31-2-2",
+      "talent:barbarian/brutality:12-31-4-2",
+      "talent:barbarian/brutality:12-31-6-2",
+      "talent:barbarian/brutality:12-31-10-2",
+      "talent:barbarian/brutality:12-31-1-3",
+      "talent:barbarian/brutality:12-31-4-3",
+      "talent:barbarian/brutality:12-31-7-3",
+      "talent:barbarian/brutality:12-31-1-4",
+      "talent:barbarian/brutality:12-31-3-4",
+      "talent:barbarian/brutality:12-31-5-4",
+      "talent:barbarian/brutality:12-31-7-4a",
+      "talent:barbarian/brutality:12-31-7-4b",
+      "talent:barbarian/brutality:12-31-10-4",
+      "talent:barbarian/brutality:12-31-2-5",
+      "talent:barbarian/brutality:12-31-4-5",
+      "talent:barbarian/brutality:12-31-6-5",
+      "talent:barbarian/brutality:12-31-0-6",
+      "talent:barbarian/brutality:12-31-2-6",
+      "talent:barbarian/brutality:12-31-4-6",
+      "talent:barbarian/brutality:12-31-6-6a",
+      "talent:barbarian/brutality:12-31-6-6b",
+      "talent:barbarian/brutality:12-31-8-6",
+      "talent:barbarian/brutality:12-31-10-6",
+      "talent:barbarian/brutality:12-31-0-7",
+      "talent:barbarian/brutality:12-31-2-7a",
+      "talent:barbarian/brutality:12-31-2-7b",
+      "talent:barbarian/brutality:12-31-4-7",
+      "talent:barbarian/brutality:12-31-6-7",
+      "talent:barbarian/brutality:12-31-8-7",
+      "talent:barbarian/brutality:12-31-2-8",
+      "talent:barbarian/brutality:12-31-6-8",
+      "talent:barbarian/brutality:12-31-10-8",
+      "talent:barbarian/brutality:12-31-1-9",
+      "talent:barbarian/brutality:12-31-3-9",
+      "talent:barbarian/brutality:12-31-5-9",
+      "talent:barbarian/brutality:12-31-7-9"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Decapitate",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-4-0"
+          ]
+        },
+        {
+          "name": "Excessive Power",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-10-0"
+          ]
+        },
+        {
+          "name": "Beheader",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-4-1"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:barbarian/brutality:12-31-4-0",
+        "talent:barbarian/brutality:12-31-10-0",
+        "talent:barbarian/brutality:12-31-4-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Reckless Movements",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-2-2"
+          ]
+        },
+        {
+          "name": "Killing Spree",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-4-2"
+          ]
+        },
+        {
+          "name": "Pure Power",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-6-2"
+          ]
+        },
+        {
+          "name": "Relentless",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-10-2"
+          ]
+        },
+        {
+          "name": "Brutal Swing",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-1-3"
+          ]
+        },
+        {
+          "name": "Overkill",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-4-3"
+          ]
+        },
+        {
+          "name": "Crush",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-7-3"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:barbarian/brutality:12-31-2-2",
+        "talent:barbarian/brutality:12-31-4-2",
+        "talent:barbarian/brutality:12-31-6-2",
+        "talent:barbarian/brutality:12-31-10-2",
+        "talent:barbarian/brutality:12-31-1-3",
+        "talent:barbarian/brutality:12-31-4-3",
+        "talent:barbarian/brutality:12-31-7-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Bloody Fighter",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-1-4"
+          ]
+        },
+        {
+          "name": "Headlopper",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-3-4"
+          ]
+        },
+        {
+          "name": "Spiked Weapons",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-5-4"
+          ]
+        },
+        {
+          "name": "Horde Breaker",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-7-4a"
+          ]
+        },
+        {
+          "name": "Power Swings",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-7-4b"
+          ]
+        },
+        {
+          "name": "Thirst for Battle",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-10-4"
+          ]
+        },
+        {
+          "name": "Rancor",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-2-5"
+          ]
+        },
+        {
+          "name": "Battering Ram",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-4-5"
+          ]
+        },
+        {
+          "name": "Hail of Hammers",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-6-5"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:barbarian/brutality:12-31-1-4",
+        "talent:barbarian/brutality:12-31-3-4",
+        "talent:barbarian/brutality:12-31-5-4",
+        "talent:barbarian/brutality:12-31-7-4a",
+        "talent:barbarian/brutality:12-31-7-4b",
+        "talent:barbarian/brutality:12-31-10-4",
+        "talent:barbarian/brutality:12-31-2-5",
+        "talent:barbarian/brutality:12-31-4-5",
+        "talent:barbarian/brutality:12-31-6-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Anger Issues",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-0-6"
+          ]
+        },
+        {
+          "name": "Whirling Assault",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-2-6"
+          ]
+        },
+        {
+          "name": "Efficient Killer",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-4-6"
+          ]
+        },
+        {
+          "name": "Mounting Fury",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-6-6a"
+          ]
+        },
+        {
+          "name": "Savage",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-6-6b"
+          ]
+        },
+        {
+          "name": "Ancestral Trauma",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-8-6"
+          ]
+        },
+        {
+          "name": "Ogre's Strength",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-10-6"
+          ]
+        },
+        {
+          "name": "Reckful",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-0-7"
+          ]
+        },
+        {
+          "name": "Incredibly Strong",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-2-7a"
+          ]
+        },
+        {
+          "name": "Giant Tosser",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-2-7b"
+          ]
+        },
+        {
+          "name": "Symbol of the Warspear",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-4-7"
+          ]
+        },
+        {
+          "name": "Brutal Spirit",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-6-7"
+          ]
+        },
+        {
+          "name": "Crusher",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-8-7"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:barbarian/brutality:12-31-0-6",
+        "talent:barbarian/brutality:12-31-2-6",
+        "talent:barbarian/brutality:12-31-4-6",
+        "talent:barbarian/brutality:12-31-6-6a",
+        "talent:barbarian/brutality:12-31-6-6b",
+        "talent:barbarian/brutality:12-31-8-6",
+        "talent:barbarian/brutality:12-31-10-6",
+        "talent:barbarian/brutality:12-31-0-7",
+        "talent:barbarian/brutality:12-31-2-7a",
+        "talent:barbarian/brutality:12-31-2-7b",
+        "talent:barbarian/brutality:12-31-4-7",
+        "talent:barbarian/brutality:12-31-6-7",
+        "talent:barbarian/brutality:12-31-8-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Maximum Carnage",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-2-8"
+          ]
+        },
+        {
+          "name": "Storm of Steel",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-6-8"
+          ]
+        },
+        {
+          "name": "Body Builder",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-10-8"
+          ]
+        },
+        {
+          "name": "Steelslinger",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-1-9"
+          ]
+        },
+        {
+          "name": "Utter Devastation",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-3-9"
+          ]
+        },
+        {
+          "name": "Steel Fury",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-5-9"
+          ]
+        },
+        {
+          "name": "Sustaining Swings",
+          "claim_ids": [
+            "talent:barbarian/brutality:12-31-7-9"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:barbarian/brutality:12-31-2-8",
+        "talent:barbarian/brutality:12-31-6-8",
+        "talent:barbarian/brutality:12-31-10-8",
+        "talent:barbarian/brutality:12-31-1-9",
+        "talent:barbarian/brutality:12-31-3-9",
+        "talent:barbarian/brutality:12-31-5-9",
+        "talent:barbarian/brutality:12-31-7-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "leveling_30_49": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "level_50_60": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "boss": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "dungeon_aoe": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "pvp": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [],
+    "avoid_if": []
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [],
+  "sentiment": {
+    "praise": [],
+    "frustrations": [],
+    "contested": []
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 2,
+    "latest_update": "2026-07-23T12:43:53.913+00:00",
+    "top_title": "Leveling",
+    "top_url": "https://coabuildhub.com/build/cd0b0cbc-76b4-4bb2-9ab4-fcdba4797f24",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:cd0b0cbc-76b4-4bb2-9ab4-fcdba4797f24"
+    ]
+  },
+  "coverage": {
+    "mechanical": "structural_baseline",
+    "community": "indexed",
+    "performance": "missing",
+    "video": "missing",
+    "overall_confidence": "low",
+    "gaps": [
+      "Effective core loop needs recent guide or player cross-check.",
+      "Contextual complexity values are not yet researched.",
+      "Recent performance, sentiment, issues, and video evidence are not yet reconciled."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:barbarian/brutality:12-31-4-0",
+      "kind": "structural",
+      "text": "Decapitate: Attempt to decapitate an injured enemy, dealing 200% Weapon Damage plus 27, and converting each extra point of Energy to deal additional damage (up to a maximum cost of 100 Energy).Only usable on enemies below 35% health.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-10-0",
+      "kind": "structural",
+      "text": "Excessive Power: Level 10 PassiveIncreases your maximum Energy by 100%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-4-1",
+      "kind": "structural",
+      "text": "Beheader: Scoring a kill blow with Decapitate now refunds 100% of your maximum Energy.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-2-2",
+      "kind": "structural",
+      "text": "Reckless Movements: Increases the damage of Ancestral Strike and Barbaric Whirl by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-4-2",
+      "kind": "structural",
+      "text": "Killing Spree: Charge at an enemy, dealing 25 + 30% AP Physical damage.Can only be used within 6 seconds of scoring a killing blow or applying Born in Blood.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-6-2",
+      "kind": "structural",
+      "text": "Pure Power: Increases the damage of Smash by 15% and your expertise by 5.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-10-2",
+      "kind": "structural",
+      "text": "Relentless: Level 20 PassiveCritical strikes with Ancestral Strike and Brutal Swing now refund 10 Energy.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-1-3",
+      "kind": "structural",
+      "text": "Brutal Swing: Your next attack causes you to swing violently at an enemy and up to 2 nearby enemies, dealing 120% Weapon Damage plus 10.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-4-3",
+      "kind": "structural",
+      "text": "Overkill: Increases the critical strike chance of Decapitate and Headhunter's Spear by 30% against targets below 20% health.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-7-3",
+      "kind": "structural",
+      "text": "Crush: Crush enemies in a frontal cone, dealing 250% Weapon Damage plus 30, knocking them down briefly and stunning them for 3 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-1-4",
+      "kind": "structural",
+      "text": "Bloody Fighter: Increases the critical strike chance of Brutal Swing and Smash by 5%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-3-4",
+      "kind": "structural",
+      "text": "Headlopper: Your critical strikes with Decapitate now cause the enemy to bleed, dealing an additional 30% of the damage dealt over 5 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-5-4",
+      "kind": "structural",
+      "text": "Spiked Weapons: Increases the critical damage of Crush, Brutal Swing, and Decapitate by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-7-4a",
+      "kind": "structural",
+      "text": "Horde Breaker: Your Crush now applies Wounded to enemies for 1 minute and is now guaranteed to critically strike enemies affected by Headbutt.Wounded (Proc)Increases Physical Damage taken by 4% for 1 minute.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-7-4b",
+      "kind": "structural",
+      "text": "Power Swings: Reduces the cooldown of Crush by -5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-10-4",
+      "kind": "structural",
+      "text": "Thirst for Battle: Your Smash now regenerate 25% of your maximum Energy.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-2-5",
+      "kind": "structural",
+      "text": "Rancor: Your Brutal Swing now triggers an additional auto attack on the primary target.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-4-5",
+      "kind": "structural",
+      "text": "Battering Ram: Increases your Armor penetration by 10% while wielding a two-handed mace or axe.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-6-5",
+      "kind": "structural",
+      "text": "Hail of Hammers: Reduces the cast time of Crush by -25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-0-6",
+      "kind": "structural",
+      "text": "Anger Issues: Scoring a critical strike against an enemy now reduces the cooldown of Carnage by -4 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-2-6",
+      "kind": "structural",
+      "text": "Whirling Assault: Increases the damage of Whirling Advance by 300% on enemies above 80% health.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-4-6",
+      "kind": "structural",
+      "text": "Efficient Killer: Reduces the Energy cost of your spells and abilities by -10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-6-6a",
+      "kind": "structural",
+      "text": "Mounting Fury: Increases the duration of Born in Blood by 2 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-6-6b",
+      "kind": "structural",
+      "text": "Savage: Unbridled Rage now also increases your critical damage by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-8-6",
+      "kind": "structural",
+      "text": "Ancestral Trauma: Damage dealt by Ancestral Strike and Crush now scales with your Strength.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-10-6",
+      "kind": "structural",
+      "text": "Ogre's Strength: Level 40 PassiveIncreases your Strength by 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-0-7",
+      "kind": "structural",
+      "text": "Reckful: Your Smash now has a 30% chance to not trigger a cooldown.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-2-7a",
+      "kind": "structural",
+      "text": "Incredibly Strong: Removes the minimum range from Maiming Spear, but reduces its maximum range by -5 yds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-2-7b",
+      "kind": "structural",
+      "text": "Giant Tosser: Your Headhunter's Spear now generates 50% additional Energy when you strike an enemy that is at least 20 yds away.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-4-7",
+      "kind": "structural",
+      "text": "Symbol of the Warspear: You are marked by the Warspear symbol, granting 10% increased attack power to party and raid members. Does not stack with similar effects.In addition, reduces the cooldown of Spears by -2 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-6-7",
+      "kind": "structural",
+      "text": "Brutal Spirit: Increases the effectiveness of your Spirit spells by 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-8-7",
+      "kind": "structural",
+      "text": "Crusher: Melee auto attacks now have a 10% chance to reset the cooldown of Crush.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-2-8",
+      "kind": "structural",
+      "text": "Maximum Carnage: Casting Unbridled Rage now causes you to begin swinging your weapon around you dealing 47 + 25% AP Physical damage to up to 5 nearby enemies over 5 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-6-8",
+      "kind": "structural",
+      "text": "Storm of Steel: Begin striking your target every 1 sec for 80% Weapon Damage for 3 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-10-8",
+      "kind": "structural",
+      "text": "Body Builder: Level 50 PassiveIncreases your size by 5% and when your Strength is lower than your Agility your melee attack power is further increased by 75% of your Strength.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-1-9",
+      "kind": "structural",
+      "text": "Steelslinger: Reduces the cooldown of Barbaric Whirl by -2 sec and increases its damage dealt by 100% on enemies below 35% health.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-3-9",
+      "kind": "structural",
+      "text": "Utter Devastation: Increases the duration of Maximum Carnage by 1 sec and it now grants Utter Devastation for 6 seconds. Utter DevastationInstantly removes all movement impairing effects, increases your movement speed by 25%, and makes you immune to slows.Can be consumed by Decapitate or Crush to guarantee them to critically strike.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-5-9",
+      "kind": "structural",
+      "text": "Steel Fury: Dealing damage with Storm of Steel increases the damage of its subsequent strikes by 4%, stacking 10 times.In addition, the duration of Storm of Steel is increased by 2.5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:barbarian/brutality:12-31-7-9",
+      "kind": "structural",
+      "text": "Sustaining Swings: Melee attacks now have an 8% chance to heal you for 10% of the damage dealt and cause your next Ancestral Strike to deal 50% increased damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    }
+  ]
+}

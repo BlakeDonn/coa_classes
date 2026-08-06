@@ -1,0 +1,1619 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "stormbringer/wind",
+    "class": "Stormbringer",
+    "name": "Wind",
+    "roles": [
+      "Support"
+    ],
+    "range": [
+      "Ranged"
+    ]
+  },
+  "identity": {
+    "fantasy": "",
+    "one_line": "An Air Elemental controller with Updrafts, movement tools, pulls, rescue gates, and party buffs. Tempest's Call and Surge of Might provide major offensive windows, while Wind Gate, Evacuate, Unshackle, and Raging Zephyr control positioning. Its personal damage exists, but current builds most often frame it as support.",
+    "primary_family": "",
+    "also_fits": [],
+    "claim_ids": [
+      "talent:stormbringer/wind:16-43-4-0",
+      "talent:stormbringer/wind:16-43-10-0",
+      "talent:stormbringer/wind:16-43-2-1",
+      "talent:stormbringer/wind:16-43-6-1",
+      "talent:stormbringer/wind:16-43-1-2",
+      "talent:stormbringer/wind:16-43-4-2",
+      "talent:stormbringer/wind:16-43-7-2",
+      "talent:stormbringer/wind:16-43-10-2a",
+      "talent:stormbringer/wind:16-43-10-2b",
+      "talent:stormbringer/wind:16-43-1-3",
+      "talent:stormbringer/wind:16-43-4-3",
+      "talent:stormbringer/wind:16-43-7-3",
+      "talent:stormbringer/wind:16-43-1-4",
+      "talent:stormbringer/wind:16-43-3-4a",
+      "talent:stormbringer/wind:16-43-3-4b",
+      "talent:stormbringer/wind:16-43-5-4",
+      "talent:stormbringer/wind:16-43-7-4",
+      "talent:stormbringer/wind:16-43-10-4a",
+      "talent:stormbringer/wind:16-43-10-4b",
+      "talent:stormbringer/wind:16-43-0-5",
+      "talent:stormbringer/wind:16-43-2-5a",
+      "talent:stormbringer/wind:16-43-2-5b",
+      "talent:stormbringer/wind:16-43-4-5",
+      "talent:stormbringer/wind:16-43-6-5",
+      "talent:stormbringer/wind:16-43-8-5",
+      "talent:stormbringer/wind:16-43-1-6",
+      "talent:stormbringer/wind:16-43-3-6",
+      "talent:stormbringer/wind:16-43-5-6",
+      "talent:stormbringer/wind:16-43-7-6",
+      "talent:stormbringer/wind:16-43-10-6a",
+      "talent:stormbringer/wind:16-43-10-6b",
+      "talent:stormbringer/wind:16-43-0-7",
+      "talent:stormbringer/wind:16-43-2-7",
+      "talent:stormbringer/wind:16-43-4-7",
+      "talent:stormbringer/wind:16-43-6-7",
+      "talent:stormbringer/wind:16-43-8-7",
+      "talent:stormbringer/wind:16-43-2-8",
+      "talent:stormbringer/wind:16-43-6-8",
+      "talent:stormbringer/wind:16-43-10-8a",
+      "talent:stormbringer/wind:16-43-10-8b",
+      "talent:stormbringer/wind:16-43-2-9",
+      "talent:stormbringer/wind:16-43-4-9",
+      "talent:stormbringer/wind:16-43-6-9"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "An Air Elemental controller with Updrafts, movement tools, pulls, rescue gates, and party buffs. Tempest's Call and Surge of Might provide major offensive windows, while Wind Gate, Evacuate, Unshackle, and Raging Zephyr control positioning. Its personal damage exists, but current builds most often frame it as support.",
+    "resources": [],
+    "builders": [
+      {
+        "name": "Air Elemental",
+        "claim_ids": [
+          "talent:stormbringer/wind:16-43-10-0"
+        ]
+      },
+      {
+        "name": "Storm Bond",
+        "claim_ids": [
+          "talent:stormbringer/wind:16-43-6-1"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Lexicon of Servitude",
+        "claim_ids": [
+          "talent:stormbringer/wind:16-43-4-7"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Tempest Calling",
+        "claim_ids": [
+          "talent:stormbringer/wind:16-43-4-0"
+        ]
+      },
+      {
+        "name": "Clearsky Pendant",
+        "claim_ids": [
+          "talent:stormbringer/wind:16-43-3-6"
+        ]
+      },
+      {
+        "name": "Aerodynamics",
+        "claim_ids": [
+          "talent:stormbringer/wind:16-43-10-6a"
+        ]
+      },
+      {
+        "name": "Skyfall",
+        "claim_ids": [
+          "talent:stormbringer/wind:16-43-6-8"
+        ]
+      },
+      {
+        "name": "Surge of Might",
+        "claim_ids": [
+          "talent:stormbringer/wind:16-43-10-8b"
+        ]
+      },
+      {
+        "name": "Raging Zephyr",
+        "claim_ids": [
+          "talent:stormbringer/wind:16-43-4-9"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Tempest Calling",
+        "claim_ids": [
+          "talent:stormbringer/wind:16-43-4-0"
+        ],
+        "structural_description": "Enhances some of your spells with the power of the wind, tranforming your Conjure Storm into Updraft and Call Lightning into Aeroblast.UpdraftDepletes 20 Static2 Charges, 10 sec rechargeCreate an 8 yd Updraft at the target location for 20 seconds.Deals 160 + 68.3% nature SP Nature damage over the duration to enemies within the radius.Increases movement speed by 25% for allies within the radius.AeroblastDepletes 50 StaticCrush an enemy with the weight of the winds, dealing 109 + 63.5% nature SP Nature damage to them and then an additional time for 40% of the damage dealt after 1 seconds."
+      },
+      {
+        "name": "Unshackle",
+        "claim_ids": [
+          "talent:stormbringer/wind:16-43-7-4"
+        ],
+        "structural_description": "Depletes 50 StaticTransforms your Air Elemental into a more powerful form for 15 seconds, increasing damage dealt by 25% and spell haste by 30%."
+      },
+      {
+        "name": "Flurry",
+        "claim_ids": [
+          "talent:stormbringer/wind:16-43-10-6b"
+        ],
+        "structural_description": "Depletes 10 StaticCommand your Air Elemental, causing its next instance of damage to unleash a flurry of air on your target, dealing 763 + 140% nature SP Nature damage over 21 seconds, and reducing their resistances by 75, and increasing their Magic damage taken by -2%."
+      },
+      {
+        "name": "Skyfall",
+        "claim_ids": [
+          "talent:stormbringer/wind:16-43-6-8"
+        ],
+        "structural_description": "Depletes 40 StaticCommand your Air Elemental, causing its next instance of damage within 8 seconds to strike an enemy, dealing 1349 + 100% arcane SP Nature damage and increasing the movement speed of all nearby allies by 30% for 15 seconds."
+      },
+      {
+        "name": "Raging Zephyr",
+        "claim_ids": [
+          "talent:stormbringer/wind:16-43-4-9"
+        ],
+        "structural_description": "Transform: s your Whirlpool into Raging Zephyr.Raging Zephyr3 Charges, 35 sec rechargeSummon a Raging Zephyr at the targeted location for 12 seconds.Every 4 sec, it will pull all enemies within 10 yds inside of it."
+      }
+    ],
+    "single_target": "",
+    "aoe": "",
+    "movement_and_target_switching": "",
+    "defense_and_control": "",
+    "group_utility": "",
+    "failure_modes": [],
+    "claim_ids": [
+      "talent:stormbringer/wind:16-43-4-0",
+      "talent:stormbringer/wind:16-43-10-0",
+      "talent:stormbringer/wind:16-43-2-1",
+      "talent:stormbringer/wind:16-43-6-1",
+      "talent:stormbringer/wind:16-43-1-2",
+      "talent:stormbringer/wind:16-43-4-2",
+      "talent:stormbringer/wind:16-43-7-2",
+      "talent:stormbringer/wind:16-43-10-2a",
+      "talent:stormbringer/wind:16-43-10-2b",
+      "talent:stormbringer/wind:16-43-1-3",
+      "talent:stormbringer/wind:16-43-4-3",
+      "talent:stormbringer/wind:16-43-7-3",
+      "talent:stormbringer/wind:16-43-1-4",
+      "talent:stormbringer/wind:16-43-3-4a",
+      "talent:stormbringer/wind:16-43-3-4b",
+      "talent:stormbringer/wind:16-43-5-4",
+      "talent:stormbringer/wind:16-43-7-4",
+      "talent:stormbringer/wind:16-43-10-4a",
+      "talent:stormbringer/wind:16-43-10-4b",
+      "talent:stormbringer/wind:16-43-0-5",
+      "talent:stormbringer/wind:16-43-2-5a",
+      "talent:stormbringer/wind:16-43-2-5b",
+      "talent:stormbringer/wind:16-43-4-5",
+      "talent:stormbringer/wind:16-43-6-5",
+      "talent:stormbringer/wind:16-43-8-5",
+      "talent:stormbringer/wind:16-43-1-6",
+      "talent:stormbringer/wind:16-43-3-6",
+      "talent:stormbringer/wind:16-43-5-6",
+      "talent:stormbringer/wind:16-43-7-6",
+      "talent:stormbringer/wind:16-43-10-6a",
+      "talent:stormbringer/wind:16-43-10-6b",
+      "talent:stormbringer/wind:16-43-0-7",
+      "talent:stormbringer/wind:16-43-2-7",
+      "talent:stormbringer/wind:16-43-4-7",
+      "talent:stormbringer/wind:16-43-6-7",
+      "talent:stormbringer/wind:16-43-8-7",
+      "talent:stormbringer/wind:16-43-2-8",
+      "talent:stormbringer/wind:16-43-6-8",
+      "talent:stormbringer/wind:16-43-10-8a",
+      "talent:stormbringer/wind:16-43-10-8b",
+      "talent:stormbringer/wind:16-43-2-9",
+      "talent:stormbringer/wind:16-43-4-9",
+      "talent:stormbringer/wind:16-43-6-9"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Tempest Calling",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-4-0"
+          ]
+        },
+        {
+          "name": "Air Elemental",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-10-0"
+          ]
+        },
+        {
+          "name": "Power the Elements",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-2-1"
+          ]
+        },
+        {
+          "name": "Storm Bond",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-6-1"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:stormbringer/wind:16-43-4-0",
+        "talent:stormbringer/wind:16-43-10-0",
+        "talent:stormbringer/wind:16-43-2-1",
+        "talent:stormbringer/wind:16-43-6-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Flow",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-1-2"
+          ]
+        },
+        {
+          "name": "Air Flow",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-4-2"
+          ]
+        },
+        {
+          "name": "Invigoration",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-7-2"
+          ]
+        },
+        {
+          "name": "Clear Skies",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-10-2a"
+          ]
+        },
+        {
+          "name": "Focal Point",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-10-2b"
+          ]
+        },
+        {
+          "name": "Quickdraft",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-1-3"
+          ]
+        },
+        {
+          "name": "Gale",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-4-3"
+          ]
+        },
+        {
+          "name": "Everlasting Invigoration",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-7-3"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:stormbringer/wind:16-43-1-2",
+        "talent:stormbringer/wind:16-43-4-2",
+        "talent:stormbringer/wind:16-43-7-2",
+        "talent:stormbringer/wind:16-43-10-2a",
+        "talent:stormbringer/wind:16-43-10-2b",
+        "talent:stormbringer/wind:16-43-1-3",
+        "talent:stormbringer/wind:16-43-4-3",
+        "talent:stormbringer/wind:16-43-7-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Kiss of the Clouds",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-1-4"
+          ]
+        },
+        {
+          "name": "Evergale",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-3-4a"
+          ]
+        },
+        {
+          "name": "Unrelenting Winds",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-3-4b"
+          ]
+        },
+        {
+          "name": "Master Airbender",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-5-4"
+          ]
+        },
+        {
+          "name": "Unshackle",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-7-4"
+          ]
+        },
+        {
+          "name": "Enveloping Winds",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-10-4a"
+          ]
+        },
+        {
+          "name": "Tailwind",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-10-4b"
+          ]
+        },
+        {
+          "name": "Gift of Air",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-0-5"
+          ]
+        },
+        {
+          "name": "Cyclone's Embrace",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-2-5a"
+          ]
+        },
+        {
+          "name": "Cyclone's Recharge",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-2-5b"
+          ]
+        },
+        {
+          "name": "Aeromancy",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-4-5"
+          ]
+        },
+        {
+          "name": "Windrunner",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-6-5"
+          ]
+        },
+        {
+          "name": "Wrath of Al'Akir",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-8-5"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:stormbringer/wind:16-43-1-4",
+        "talent:stormbringer/wind:16-43-3-4a",
+        "talent:stormbringer/wind:16-43-3-4b",
+        "talent:stormbringer/wind:16-43-5-4",
+        "talent:stormbringer/wind:16-43-7-4",
+        "talent:stormbringer/wind:16-43-10-4a",
+        "talent:stormbringer/wind:16-43-10-4b",
+        "talent:stormbringer/wind:16-43-0-5",
+        "talent:stormbringer/wind:16-43-2-5a",
+        "talent:stormbringer/wind:16-43-2-5b",
+        "talent:stormbringer/wind:16-43-4-5",
+        "talent:stormbringer/wind:16-43-6-5",
+        "talent:stormbringer/wind:16-43-8-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Windsurf",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-1-6"
+          ]
+        },
+        {
+          "name": "Clearsky Pendant",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-3-6"
+          ]
+        },
+        {
+          "name": "Master Elementalist",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-5-6"
+          ]
+        },
+        {
+          "name": "Unbound Elementalist",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-7-6"
+          ]
+        },
+        {
+          "name": "Aerodynamics",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-10-6a"
+          ]
+        },
+        {
+          "name": "Flurry",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-10-6b"
+          ]
+        },
+        {
+          "name": "Child of the Storm",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-0-7"
+          ]
+        },
+        {
+          "name": "Storm Clouds",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-2-7"
+          ]
+        },
+        {
+          "name": "Lexicon of Servitude",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-4-7"
+          ]
+        },
+        {
+          "name": "Comforting Winds",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-6-7"
+          ]
+        },
+        {
+          "name": "Hurricanes",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-8-7"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:stormbringer/wind:16-43-1-6",
+        "talent:stormbringer/wind:16-43-3-6",
+        "talent:stormbringer/wind:16-43-5-6",
+        "talent:stormbringer/wind:16-43-7-6",
+        "talent:stormbringer/wind:16-43-10-6a",
+        "talent:stormbringer/wind:16-43-10-6b",
+        "talent:stormbringer/wind:16-43-0-7",
+        "talent:stormbringer/wind:16-43-2-7",
+        "talent:stormbringer/wind:16-43-4-7",
+        "talent:stormbringer/wind:16-43-6-7",
+        "talent:stormbringer/wind:16-43-8-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Wind Gate",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-2-8"
+          ]
+        },
+        {
+          "name": "Skyfall",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-6-8"
+          ]
+        },
+        {
+          "name": "Tempest's Call",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-10-8a"
+          ]
+        },
+        {
+          "name": "Surge of Might",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-10-8b"
+          ]
+        },
+        {
+          "name": "Nimbus",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-2-9"
+          ]
+        },
+        {
+          "name": "Raging Zephyr",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-4-9"
+          ]
+        },
+        {
+          "name": "Aurat Scripts",
+          "claim_ids": [
+            "talent:stormbringer/wind:16-43-6-9"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:stormbringer/wind:16-43-2-8",
+        "talent:stormbringer/wind:16-43-6-8",
+        "talent:stormbringer/wind:16-43-10-8a",
+        "talent:stormbringer/wind:16-43-10-8b",
+        "talent:stormbringer/wind:16-43-2-9",
+        "talent:stormbringer/wind:16-43-4-9",
+        "talent:stormbringer/wind:16-43-6-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "leveling_30_49": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "level_50_60": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "boss": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "dungeon_aoe": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "pvp": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [],
+    "avoid_if": []
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [],
+  "sentiment": {
+    "praise": [],
+    "frustrations": [],
+    "contested": []
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 3,
+    "latest_update": "2026-08-05T13:45:27.451626+00:00",
+    "top_title": "É isso aqui que vou fazer",
+    "top_url": "https://coabuildhub.com/build/ce56255d-72cd-4be3-9cc0-8569c976e2af",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:ce56255d-72cd-4be3-9cc0-8569c976e2af"
+    ]
+  },
+  "coverage": {
+    "mechanical": "structural_baseline",
+    "community": "indexed",
+    "performance": "missing",
+    "video": "missing",
+    "overall_confidence": "low",
+    "gaps": [
+      "Effective core loop needs recent guide or player cross-check.",
+      "Contextual complexity values are not yet researched.",
+      "Recent performance, sentiment, issues, and video evidence are not yet reconciled."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:stormbringer/wind:16-43-4-0",
+      "kind": "structural",
+      "text": "Tempest Calling: Enhances some of your spells with the power of the wind, tranforming your Conjure Storm into Updraft and Call Lightning into Aeroblast.UpdraftDepletes 20 Static2 Charges, 10 sec rechargeCreate an 8 yd Updraft at the target location for 20 seconds.Deals 160 + 68.3% nature SP Nature damage over the duration to enemies within the radius.Increases movement speed by 25% for allies within the radius.AeroblastDepletes 50 StaticCrush an enemy with the weight of the winds, dealing 109 + 63.5% nature SP Nature damage to them and then an additional time for 40% of the damage dealt after 1 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-10-0",
+      "kind": "structural",
+      "text": "Air Elemental: Level 10 PassiveTeaches you Summon: Air Elemental.Summon: Air ElementalCall an Air Elemental to aid you in combat that gains a stack of Invigoration whenever it deals damage.InvigorationIncreases the damage of your Air Elemental by 3% for 15 seconds, stacking 10 times.Additional applications do not refresh duration.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-2-1",
+      "kind": "structural",
+      "text": "Power the Elements: Increases the damage dealt by your Air Elemental's spells by 10% and your Nature damage dealt by 2%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-6-1",
+      "kind": "structural",
+      "text": "Storm Bond: Damage dealt by your Air Elemental now generates you 2 Static.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-1-2",
+      "kind": "structural",
+      "text": "Flow: Your Invigoration now stacks 5 additional times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-4-2",
+      "kind": "structural",
+      "text": "Air Flow: Reduces the cast time of Aeroblast by -0.3 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-7-2",
+      "kind": "structural",
+      "text": "Invigoration: Your Aeroblast now grants your Air Elemental a stack of Invigoration.InvigorationIncreases the damage of your Air Elemental by 3% for 15 seconds, stacking 10 times.Additional applications do not refresh duration.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-10-2a",
+      "kind": "structural",
+      "text": "Clear Skies: Increases chance to hit with all spells and attacks by 1% for you and party and raid members.Does not stack with similar effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-10-2b",
+      "kind": "structural",
+      "text": "Focal Point: Casting Call Lightning now increases the critical strike chance of party and raid members by 5% for 10 seconds.Does not stack with similar effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-1-3",
+      "kind": "structural",
+      "text": "Quickdraft: Increases the duration of your Updraft by 3 sec and increases its tick rate by -15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-4-3",
+      "kind": "structural",
+      "text": "Gale: 3 Charges, 10 sec rechargeGenerates 20 StaticBlast an enemy and up to 2 nearby enemies with a powerful gust of wind for 53 + 42% nature SP Nature damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-7-3",
+      "kind": "structural",
+      "text": "Everlasting Invigoration: Increases the duration of Invigoration by 5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-1-4",
+      "kind": "structural",
+      "text": "Kiss of the Clouds: Depletes 40 StaticGrant all party and raid members a shield that absorbs 101 + 100% Intellect damage, scaling with Intellect, for 10 seconds.While active, the target suffers no spell pushback from taking damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-3-4a",
+      "kind": "structural",
+      "text": "Evergale: Casting Call Lightning now refreshes a charge of Gale.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-3-4b",
+      "kind": "structural",
+      "text": "Unrelenting Winds: Increases the critical strike chance of Gale by 15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-5-4",
+      "kind": "structural",
+      "text": "Master Airbender: Casting Gale now reduces the cooldown of abilities that deplete Static by -1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-7-4",
+      "kind": "structural",
+      "text": "Unshackle: Depletes 50 StaticTransforms your Air Elemental into a more powerful form for 15 seconds, increasing damage dealt by 25% and spell haste by 30%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-10-4a",
+      "kind": "structural",
+      "text": "Enveloping Winds: Casting Gale now causes your Air Elemental to cast Gale.Additionally, you now emanate an aura around you, increasing the Armor of party and raid members by 390.Does not stack with similar effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-10-4b",
+      "kind": "structural",
+      "text": "Tailwind: Depletes 20 StaticTap into the swift winds, increasing your damage by 10% and granting all allied players 5% increased haste for 15 seconds.Does not stack with similar effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-0-5",
+      "kind": "structural",
+      "text": "Gift of Air: Casting Kiss of the Clouds now empowers your Air Elemental with Gift of Air for 30 seconds.In addition, your critical strikes now extend the duration of your Tailwind by 1.5 sec.Gift of AirIncreases damage dealt by 20%, spell haste by 15%, and heals for 13.75 every 2 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-2-5a",
+      "kind": "structural",
+      "text": "Cyclone's Embrace: Increases the base amount absorbed by your Kiss of the Clouds by 100%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-2-5b",
+      "kind": "structural",
+      "text": "Cyclone's Recharge: Casting Shock, Gale or Electrocute now reduces the remaining cooldown of your Kiss of the Clouds by -1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-4-5",
+      "kind": "structural",
+      "text": "Aeromancy: Casting Updraft will now cause your Air Elemental to cast its own Updraft beneath you.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-6-5",
+      "kind": "structural",
+      "text": "Windrunner: The wind is always at your back, pushing you to move faster, increasing your movement speed and mounted movement speed by 15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-8-5",
+      "kind": "structural",
+      "text": "Wrath of Al'Akir: Depleting Static extends the duration of your Unshackle by 3 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-1-6",
+      "kind": "structural",
+      "text": "Windsurf: Command your Air Elemental to windsurf to you, intercepting the next melee or ranged attack made against you, and allowing you to cast Shock and Call Lightning while moving for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-3-6",
+      "kind": "structural",
+      "text": "Clearsky Pendant: Ally movement speed is increased by an additional 25% to allies within your Updraft.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-5-6",
+      "kind": "structural",
+      "text": "Master Elementalist: Increases the spell damage scaling of Shock by 10% and Aeroblast by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-7-6",
+      "kind": "structural",
+      "text": "Unbound Elementalist: Increases the effectiveness of your Unshackle by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-10-6a",
+      "kind": "structural",
+      "text": "Aerodynamics: Depletes 40 StaticEnvelop party and raid members within 40 yds in magical mist, increasing their attack or spell power by 95 for 15 seconds.Does not stack with similar effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-10-6b",
+      "kind": "structural",
+      "text": "Flurry: Depletes 10 StaticCommand your Air Elemental, causing its next instance of damage to unleash a flurry of air on your target, dealing 763 + 140% nature SP Nature damage over 21 seconds, and reducing their resistances by 75, and increasing their Magic damage taken by -2%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-0-7",
+      "kind": "structural",
+      "text": "Child of the Storm: Reduces the cooldown of your Cloudburst and Windsurf by -20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-2-7",
+      "kind": "structural",
+      "text": "Storm Clouds: Your Body of Lightning is now automatically cast on you when you cast it on an ally.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-4-7",
+      "kind": "structural",
+      "text": "Lexicon of Servitude: Read from your ancient lexicon, causing your next Summon: Air Elemental to be instant cast and cost no mana. Lasts 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-6-7",
+      "kind": "structural",
+      "text": "Comforting Winds: Your damage dealt now increases the haste of your Air Elemental by 1% for 10 seconds, stacking 5 times.Damage dealt by your Air Elemental now increases your haste by 1% for 10 seconds, stacking 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-8-7",
+      "kind": "structural",
+      "text": "Hurricanes: Casting Unshackle now unshackles you, increasing your damage dealt by 15% for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-2-8",
+      "kind": "structural",
+      "text": "Wind Gate: Place a Wind Gate at target location for 1 minute. You may cast Wind Gate: Evacuate on an ally to pull them to your Wind Gate.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-6-8",
+      "kind": "structural",
+      "text": "Skyfall: Depletes 40 StaticCommand your Air Elemental, causing its next instance of damage within 8 seconds to strike an enemy, dealing 1349 + 100% arcane SP Nature damage and increasing the movement speed of all nearby allies by 30% for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-10-8a",
+      "kind": "structural",
+      "text": "Tempest's Call: Bring the power of wind and storm to all nearby allies, increasing haste by 30% for 20 seconds.After being affected by this spell, allies cannot benefit from similar effects for 5 minutes.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-10-8b",
+      "kind": "structural",
+      "text": "Surge of Might: Emanate an aura around you for 15 seconds, causing allied players within 100 yds to deal 70% nature SP additional damage as Nature damage when they deal direct damage.Applies Exhaustion, preventing you from benefiting from similar effects for 1 minute.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-2-9",
+      "kind": "structural",
+      "text": "Nimbus: Instantly resets the cooldown of your Evacuate, Windsurf, and Unshackle.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-4-9",
+      "kind": "structural",
+      "text": "Raging Zephyr: Transform: s your Whirlpool into Raging Zephyr.Raging Zephyr3 Charges, 35 sec rechargeSummon a Raging Zephyr at the targeted location for 12 seconds.Every 4 sec, it will pull all enemies within 10 yds inside of it.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/wind:16-43-6-9",
+      "kind": "structural",
+      "text": "Aurat Scripts: Increases the damage gained per stack of Invigoration by 2%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    }
+  ]
+}

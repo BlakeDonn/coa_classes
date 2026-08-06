@@ -1,0 +1,1520 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "chronomancer/time",
+    "class": "Chronomancer",
+    "name": "Time",
+    "roles": [
+      "Healer",
+      "Support"
+    ],
+    "range": [
+      "Hybrid"
+    ]
+  },
+  "identity": {
+    "fantasy": "",
+    "one_line": "A proactive healer using Accelerated Recovery, Epoch, Aeons, Ripple, shields, damage delay, cooldown resets, and time-stasis utility. Aeons alter the same core spells for throughput, protection, or damage support. It is exceptionally flexible, but the player must understand which time mode is active and anticipate damage rather than only react.",
+    "primary_family": "",
+    "also_fits": [],
+    "claim_ids": [
+      "talent:chronomancer/time:22-58-4-0",
+      "talent:chronomancer/time:22-58-10-0",
+      "talent:chronomancer/time:22-58-3-1",
+      "talent:chronomancer/time:22-58-5-1",
+      "talent:chronomancer/time:22-58-4-2",
+      "talent:chronomancer/time:22-58-10-2",
+      "talent:chronomancer/time:22-58-2-3",
+      "talent:chronomancer/time:22-58-4-3",
+      "talent:chronomancer/time:22-58-6-3",
+      "talent:chronomancer/time:22-58-1-4",
+      "talent:chronomancer/time:22-58-3-4",
+      "talent:chronomancer/time:22-58-5-4",
+      "talent:chronomancer/time:22-58-7-4",
+      "talent:chronomancer/time:22-58-10-4",
+      "talent:chronomancer/time:22-58-0-5",
+      "talent:chronomancer/time:22-58-2-5",
+      "talent:chronomancer/time:22-58-4-5",
+      "talent:chronomancer/time:22-58-6-5",
+      "talent:chronomancer/time:22-58-8-5",
+      "talent:chronomancer/time:22-58-0-6",
+      "talent:chronomancer/time:22-58-3-6",
+      "talent:chronomancer/time:22-58-5-6",
+      "talent:chronomancer/time:22-58-8-6",
+      "talent:chronomancer/time:22-58-10-6",
+      "talent:chronomancer/time:22-58-0-7a",
+      "talent:chronomancer/time:22-58-0-7b",
+      "talent:chronomancer/time:22-58-2-7a",
+      "talent:chronomancer/time:22-58-2-7b",
+      "talent:chronomancer/time:22-58-3-7",
+      "talent:chronomancer/time:22-58-5-7",
+      "talent:chronomancer/time:22-58-6-7",
+      "talent:chronomancer/time:22-58-8-7",
+      "talent:chronomancer/time:22-58-2-8",
+      "talent:chronomancer/time:22-58-4-8",
+      "talent:chronomancer/time:22-58-6-8",
+      "talent:chronomancer/time:22-58-10-8",
+      "talent:chronomancer/time:22-58-2-9",
+      "talent:chronomancer/time:22-58-4-9",
+      "talent:chronomancer/time:22-58-6-9"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "A proactive healer using Accelerated Recovery, Epoch, Aeons, Ripple, shields, damage delay, cooldown resets, and time-stasis utility. Aeons alter the same core spells for throughput, protection, or damage support. It is exceptionally flexible, but the player must understand which time mode is active and anticipate damage rather than only react.",
+    "resources": [],
+    "builders": [
+      {
+        "name": "Mark of Order",
+        "claim_ids": [
+          "talent:chronomancer/time:22-58-3-6"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Aeon of Resilience",
+        "claim_ids": [
+          "talent:chronomancer/time:22-58-10-0"
+        ]
+      },
+      {
+        "name": "Timeless",
+        "claim_ids": [
+          "talent:chronomancer/time:22-58-5-4"
+        ]
+      },
+      {
+        "name": "Fabric of Time",
+        "claim_ids": [
+          "talent:chronomancer/time:22-58-7-4"
+        ]
+      },
+      {
+        "name": "Aeon of Oblivion",
+        "claim_ids": [
+          "talent:chronomancer/time:22-58-10-6"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Ripple",
+        "claim_ids": [
+          "talent:chronomancer/time:22-58-4-0"
+        ]
+      },
+      {
+        "name": "Endless Sands",
+        "claim_ids": [
+          "talent:chronomancer/time:22-58-5-1"
+        ]
+      },
+      {
+        "name": "Correct the Mistake",
+        "claim_ids": [
+          "talent:chronomancer/time:22-58-4-2"
+        ]
+      },
+      {
+        "name": "Timeless",
+        "claim_ids": [
+          "talent:chronomancer/time:22-58-5-4"
+        ]
+      },
+      {
+        "name": "Fabric of Time",
+        "claim_ids": [
+          "talent:chronomancer/time:22-58-7-4"
+        ]
+      },
+      {
+        "name": "Bronze Timeways",
+        "claim_ids": [
+          "talent:chronomancer/time:22-58-2-7b"
+        ]
+      },
+      {
+        "name": "Wonders of Time",
+        "claim_ids": [
+          "talent:chronomancer/time:22-58-3-7"
+        ]
+      },
+      {
+        "name": "Chronicler",
+        "claim_ids": [
+          "talent:chronomancer/time:22-58-6-7"
+        ]
+      },
+      {
+        "name": "Eternity Warper",
+        "claim_ids": [
+          "talent:chronomancer/time:22-58-10-8"
+        ]
+      },
+      {
+        "name": "Timeblender",
+        "claim_ids": [
+          "talent:chronomancer/time:22-58-2-9"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Eternity Warper",
+        "claim_ids": [
+          "talent:chronomancer/time:22-58-10-8"
+        ],
+        "structural_description": "Level 50 PassiveYour Ripple channel performs a unique effect based on your active Aeon:Rippling RenewalRipple periodically heals allies within 0 yds for 71 + 12.5% SP every 1 sec.Rippling OblivionRipple deals periodic damage to enemies within 25 yds for 156 + 38.5% SP every 1 sec.Rippling ProtectionRipple now places a damage absorb for 420 + 75% healing on allies within 15 yds for the duration of its channel.Rippling ResilienceRipple now delays 30% of incoming direct Physical Damage to allies within 15 yds for it's duration, instead taking it over 5 seconds."
+      }
+    ],
+    "single_target": "",
+    "aoe": "",
+    "movement_and_target_switching": "",
+    "defense_and_control": "",
+    "group_utility": "",
+    "failure_modes": [],
+    "claim_ids": [
+      "talent:chronomancer/time:22-58-4-0",
+      "talent:chronomancer/time:22-58-10-0",
+      "talent:chronomancer/time:22-58-3-1",
+      "talent:chronomancer/time:22-58-5-1",
+      "talent:chronomancer/time:22-58-4-2",
+      "talent:chronomancer/time:22-58-10-2",
+      "talent:chronomancer/time:22-58-2-3",
+      "talent:chronomancer/time:22-58-4-3",
+      "talent:chronomancer/time:22-58-6-3",
+      "talent:chronomancer/time:22-58-1-4",
+      "talent:chronomancer/time:22-58-3-4",
+      "talent:chronomancer/time:22-58-5-4",
+      "talent:chronomancer/time:22-58-7-4",
+      "talent:chronomancer/time:22-58-10-4",
+      "talent:chronomancer/time:22-58-0-5",
+      "talent:chronomancer/time:22-58-2-5",
+      "talent:chronomancer/time:22-58-4-5",
+      "talent:chronomancer/time:22-58-6-5",
+      "talent:chronomancer/time:22-58-8-5",
+      "talent:chronomancer/time:22-58-0-6",
+      "talent:chronomancer/time:22-58-3-6",
+      "talent:chronomancer/time:22-58-5-6",
+      "talent:chronomancer/time:22-58-8-6",
+      "talent:chronomancer/time:22-58-10-6",
+      "talent:chronomancer/time:22-58-0-7a",
+      "talent:chronomancer/time:22-58-0-7b",
+      "talent:chronomancer/time:22-58-2-7a",
+      "talent:chronomancer/time:22-58-2-7b",
+      "talent:chronomancer/time:22-58-3-7",
+      "talent:chronomancer/time:22-58-5-7",
+      "talent:chronomancer/time:22-58-6-7",
+      "talent:chronomancer/time:22-58-8-7",
+      "talent:chronomancer/time:22-58-2-8",
+      "talent:chronomancer/time:22-58-4-8",
+      "talent:chronomancer/time:22-58-6-8",
+      "talent:chronomancer/time:22-58-10-8",
+      "talent:chronomancer/time:22-58-2-9",
+      "talent:chronomancer/time:22-58-4-9",
+      "talent:chronomancer/time:22-58-6-9"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Ripple",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-4-0"
+          ]
+        },
+        {
+          "name": "Aeon of Resilience",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-0"
+          ]
+        },
+        {
+          "name": "Sands of Life",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-3-1"
+          ]
+        },
+        {
+          "name": "Endless Sands",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-5-1"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:chronomancer/time:22-58-4-0",
+        "talent:chronomancer/time:22-58-10-0",
+        "talent:chronomancer/time:22-58-3-1",
+        "talent:chronomancer/time:22-58-5-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Correct the Mistake",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-4-2"
+          ]
+        },
+        {
+          "name": "Aeon of Protection",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-2"
+          ]
+        },
+        {
+          "name": "Time Wizard",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-2-3"
+          ]
+        },
+        {
+          "name": "Keep Accelerating",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-4-3"
+          ]
+        },
+        {
+          "name": "Time Beacon",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-6-3"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:chronomancer/time:22-58-4-2",
+        "talent:chronomancer/time:22-58-10-2",
+        "talent:chronomancer/time:22-58-2-3",
+        "talent:chronomancer/time:22-58-4-3",
+        "talent:chronomancer/time:22-58-6-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Cadence of Time",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-1-4"
+          ]
+        },
+        {
+          "name": "Carbon Dating",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-3-4"
+          ]
+        },
+        {
+          "name": "Timeless",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-5-4"
+          ]
+        },
+        {
+          "name": "Fabric of Time",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-7-4"
+          ]
+        },
+        {
+          "name": "Aeon of Renewal",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-4"
+          ]
+        },
+        {
+          "name": "A Ripple In Time",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-0-5"
+          ]
+        },
+        {
+          "name": "Ideal Time",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-2-5"
+          ]
+        },
+        {
+          "name": "Continuum Restoration",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-4-5"
+          ]
+        },
+        {
+          "name": "Time Skip",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-6-5"
+          ]
+        },
+        {
+          "name": "Orderly Protector",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-8-5"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:chronomancer/time:22-58-1-4",
+        "talent:chronomancer/time:22-58-3-4",
+        "talent:chronomancer/time:22-58-5-4",
+        "talent:chronomancer/time:22-58-7-4",
+        "talent:chronomancer/time:22-58-10-4",
+        "talent:chronomancer/time:22-58-0-5",
+        "talent:chronomancer/time:22-58-2-5",
+        "talent:chronomancer/time:22-58-4-5",
+        "talent:chronomancer/time:22-58-6-5",
+        "talent:chronomancer/time:22-58-8-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Displacement",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-0-6"
+          ]
+        },
+        {
+          "name": "Mark of Order",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-3-6"
+          ]
+        },
+        {
+          "name": "Cycling Aeons",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-5-6"
+          ]
+        },
+        {
+          "name": "Shimmering Shard",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-8-6"
+          ]
+        },
+        {
+          "name": "Aeon of Oblivion",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-6"
+          ]
+        },
+        {
+          "name": "Nozdormu's Gaze",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-0-7a"
+          ]
+        },
+        {
+          "name": "Titan's Gaze",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-0-7b"
+          ]
+        },
+        {
+          "name": "Overcorrection",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-2-7a"
+          ]
+        },
+        {
+          "name": "Bronze Timeways",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-2-7b"
+          ]
+        },
+        {
+          "name": "Wonders of Time",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-3-7"
+          ]
+        },
+        {
+          "name": "Through The Aeons",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-5-7"
+          ]
+        },
+        {
+          "name": "Chronicler",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-6-7"
+          ]
+        },
+        {
+          "name": "Timeline Tether",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-8-7"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:chronomancer/time:22-58-0-6",
+        "talent:chronomancer/time:22-58-3-6",
+        "talent:chronomancer/time:22-58-5-6",
+        "talent:chronomancer/time:22-58-8-6",
+        "talent:chronomancer/time:22-58-10-6",
+        "talent:chronomancer/time:22-58-0-7a",
+        "talent:chronomancer/time:22-58-0-7b",
+        "talent:chronomancer/time:22-58-2-7a",
+        "talent:chronomancer/time:22-58-2-7b",
+        "talent:chronomancer/time:22-58-3-7",
+        "talent:chronomancer/time:22-58-5-7",
+        "talent:chronomancer/time:22-58-6-7",
+        "talent:chronomancer/time:22-58-8-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Shield of the Ages",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-2-8"
+          ]
+        },
+        {
+          "name": "Converge the Infinite",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-4-8"
+          ]
+        },
+        {
+          "name": "Epic Recovery",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-6-8"
+          ]
+        },
+        {
+          "name": "Eternity Warper",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-10-8"
+          ]
+        },
+        {
+          "name": "Timeblender",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-2-9"
+          ]
+        },
+        {
+          "name": "The Vast Infinite",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-4-9"
+          ]
+        },
+        {
+          "name": "Buy Time",
+          "claim_ids": [
+            "talent:chronomancer/time:22-58-6-9"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:chronomancer/time:22-58-2-8",
+        "talent:chronomancer/time:22-58-4-8",
+        "talent:chronomancer/time:22-58-6-8",
+        "talent:chronomancer/time:22-58-10-8",
+        "talent:chronomancer/time:22-58-2-9",
+        "talent:chronomancer/time:22-58-4-9",
+        "talent:chronomancer/time:22-58-6-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "leveling_30_49": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "level_50_60": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "boss": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "dungeon_aoe": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "pvp": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [],
+    "avoid_if": []
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [],
+  "sentiment": {
+    "praise": [],
+    "frustrations": [],
+    "contested": []
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 2,
+    "latest_update": "2026-08-04T01:52:55.701+00:00",
+    "top_title": "[UPDATED AFTER REWORK] Mythic+ Time guide",
+    "top_url": "https://coabuildhub.com/build/d0ca993a-cdea-4318-8ca8-129dcb617a31",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:d0ca993a-cdea-4318-8ca8-129dcb617a31"
+    ]
+  },
+  "coverage": {
+    "mechanical": "structural_baseline",
+    "community": "indexed",
+    "performance": "missing",
+    "video": "missing",
+    "overall_confidence": "low",
+    "gaps": [
+      "Effective core loop needs recent guide or player cross-check.",
+      "Contextual complexity values are not yet researched.",
+      "Recent performance, sentiment, issues, and video evidence are not yet reconciled."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:chronomancer/time:22-58-4-0",
+      "kind": "structural",
+      "text": "Ripple: Channel for up to 5 seconds. When the channel ends, if you channeled for at least 1.5 sec, allies within 40 yds are healed based on the duration of the channel.While channeling, you are immune to stun effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-10-0",
+      "kind": "structural",
+      "text": "Aeon of Resilience: Level 10 PassiveTeaches you Aeon of Resilience.Aeon of ResilienceReduces Epoch's cast time by -25% and it's mana cost by -10%, and healing done by it now reduces the target's damage taken by -5% for 6 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-3-1",
+      "kind": "structural",
+      "text": "Sands of Life: Increases your healing power by 25% of your Spirit.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-5-1",
+      "kind": "structural",
+      "text": "Endless Sands: Casting Epoch now grants you Endless Sands.Endless SandsCast time of your next Reverse Wounds within 15 seconds is reduced by -20%, stacking up to 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-4-2",
+      "kind": "structural",
+      "text": "Correct the Mistake: Retell the fate of party members within 30 yds, healing them for 91 + 68.57% healing.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-10-2",
+      "kind": "structural",
+      "text": "Aeon of Protection: Increases Epoch's cast time by 15%, healing done by 15%, and causes it to apply a damage absorption shield equal to 30% of the amount healed for 8 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-2-3",
+      "kind": "structural",
+      "text": "Time Wizard: Increases the critical strike chance of your Reverse Wound, Epoch, and Correct the Mistake by 8%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-4-3",
+      "kind": "structural",
+      "text": "Keep Accelerating: Your Accelerated Recovery now applies to an additional nearby target.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-6-3",
+      "kind": "structural",
+      "text": "Time Beacon: Increases the duration of effects applied by your Aeons by 4 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-1-4",
+      "kind": "structural",
+      "text": "Cadence of Time: Your critical strikes with Epoch now grant Cadence of Time, increasing the healing of Ripple by 10% for 15 seconds. Stacks 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-3-4",
+      "kind": "structural",
+      "text": "Carbon Dating: Each stack of Sands of Time now also increases the healing of your Epoch by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-5-4",
+      "kind": "structural",
+      "text": "Timeless: While Endless Sands is active, the mana costs of your spells and abilities is reduced by -3% per stack.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-7-4",
+      "kind": "structural",
+      "text": "Fabric of Time: Alter the fabric of time, healing an ally for 158 + 64% healing.Your next Aeon used within 8 seconds will trigger with no cooldown or cost.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-10-4",
+      "kind": "structural",
+      "text": "Aeon of Renewal: Reduces Epoch's healing by -30%, but causes it to heal for an additional 50% of the amount healed over 3 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-0-5",
+      "kind": "structural",
+      "text": "A Ripple In Time: Your damaging and healing critical strikes now reduce the remaining cooldown of Ripple by -1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-2-5",
+      "kind": "structural",
+      "text": "Ideal Time: Every 30 sec, your next ability is guaranteed to critically strike.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-4-5",
+      "kind": "structural",
+      "text": "Continuum Restoration: Restore the continuum at target location for all allies and enemies, removing all beneficial magic effects from enemies and harmful magic effects from allies.This dispel is potent enough to remove magic effects that are normally undispellable",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-6-5",
+      "kind": "structural",
+      "text": "Time Skip: Your Roll Back now removes 1 additional harmful effect.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-8-5",
+      "kind": "structural",
+      "text": "Orderly Protector: Healing done by your Epoch now increases the healing of Fabric of Time by 10% for 10 seconds, stacking 10 times.Each stack gives you a 2% chance when you cast Fabric of Time to reset its own cooldown.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-0-6",
+      "kind": "structural",
+      "text": "Displacement: Displaces a party or raid member and pulls them to you, dispelling root and snare effects from them.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-3-6",
+      "kind": "structural",
+      "text": "Mark of Order: Healing done by Fortify Timeline now applies Mark of Order.Mark of OrderIncreases the healing of your next Reverse Wound on the target by 10% for 20 seconds. Every 1 sec for the duration, they gain an additional stack of this effect, up to 5.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-5-6",
+      "kind": "structural",
+      "text": "Cycling Aeons: Reduces the cooldown of your Aeons by -50%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-8-6",
+      "kind": "structural",
+      "text": "Shimmering Shard: Activating Aeon spells now grants you 4% increased damage and healing for 20 seconds, stacking 3 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-10-6",
+      "kind": "structural",
+      "text": "Aeon of Oblivion: Increases Epoch's mana cost by 30%, critical strike chance by 10%, and healing done by 15%. In addition, healing with Epoch now increases the target's damage dealt by 3% for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-0-7a",
+      "kind": "structural",
+      "text": "Nozdormu's Gaze: Your Time Out! now regenerates -2% less mana per tick, but casting it now instantly restores 15% of your maximum mana.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-0-7b",
+      "kind": "structural",
+      "text": "Titan's Gaze: Your Time Out! no longer breaks on damage, but now only reduces damage taken by 15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-2-7a",
+      "kind": "structural",
+      "text": "Overcorrection: Overhealing done by Correct the Mistake now applies a heal over time effect to the ally equal to 30% of the healing done over 5 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-2-7b",
+      "kind": "structural",
+      "text": "Bronze Timeways: Casting Correct the Mistake now grants 2 stacks of Endless Sands.Endless SandsCast time of your next Reverse Wounds within 15 seconds is reduced by -20%, stacking up to 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-3-7",
+      "kind": "structural",
+      "text": "Wonders of Time: Increases the spell haste of all party and raid members by 3%.Does not stack with similar effects.Additionally, all healing done now has a 10% chance to grant you Endless Sands.Endless SandsCast time of your next Reverse Wounds within 15 seconds is reduced by -20%, stacking up to 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-5-7",
+      "kind": "structural",
+      "text": "Through The Aeons: Activating an Aeon now increases your mana regeneration from Spirit by 100% for 8 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-6-7",
+      "kind": "structural",
+      "text": "Chronicler: Casting Fortify Timeline now extends the duration of Accelerated Recovery on all targets within 40 yds by an additional 10 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-8-7",
+      "kind": "structural",
+      "text": "Timeline Tether: Your periodic damage and healing reduces the cooldown of your Fortify Timeline by -1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-2-8",
+      "kind": "structural",
+      "text": "Shield of the Ages: When hit by a damaging critical strike, your damage taken is reduced by -3%, and healing received is increased by 5% for 3 seconds, stacking 3 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-4-8",
+      "kind": "structural",
+      "text": "Converge the Infinite: Casting Fortify Timeline now grants you Converge the Infinite.Converge the InfiniteYour next Correct the Mistake has a 1 sec increased cast time, but heals for 30% more and is guaranteed to critically strike.Successfully healing an ally in this way reduces the cooldown of Fortify Timeline by 8%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-6-8",
+      "kind": "structural",
+      "text": "Epic Recovery: When you cast Epoch you now also cast a Rank 1 Epoch on up to 5 allies affected by Accelerated Recovery.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-10-8",
+      "kind": "structural",
+      "text": "Eternity Warper: Level 50 PassiveYour Ripple channel performs a unique effect based on your active Aeon:Rippling RenewalRipple periodically heals allies within 0 yds for 71 + 12.5% SP every 1 sec.Rippling OblivionRipple deals periodic damage to enemies within 25 yds for 156 + 38.5% SP every 1 sec.Rippling ProtectionRipple now places a damage absorb for 420 + 75% healing on allies within 15 yds for the duration of its channel.Rippling ResilienceRipple now delays 30% of incoming direct Physical Damage to allies within 15 yds for it's duration, instead taking it over 5 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-2-9",
+      "kind": "structural",
+      "text": "Timeblender: Guarantees healing done by Fabric of Time to critically strike and gives it an additional charge.Fabric of Time (Timeblender)2 Charges, 15 sec rechargeAlter the fabric of time, healing an ally for 529 + 64% healing.Your next Aeon used within 8 seconds will trigger with no cooldown.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-4-9",
+      "kind": "structural",
+      "text": "The Vast Infinite: All party and raid members become one, equally sharing 25% of all damage dealt to them for 10 seconds, up to a maximum of 100% of their total health.At the end of the duration, all affected allies are healed equal to the total damage shared split evenly amongst all allies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/time:22-58-6-9",
+      "kind": "structural",
+      "text": "Buy Time: Put all enemies and allies in an 8 yd radius in target area into a stasis, banishing them for 6 seconds, making them invulnerable to all effects but unable to move.Casting Unmake on a target will remove this effect.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    }
+  ]
+}

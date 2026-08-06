@@ -1,0 +1,2509 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "chronomancer/artificer",
+    "class": "Chronomancer",
+    "name": "Artificer",
+    "roles": [
+      "Damage"
+    ],
+    "range": [
+      "Ranged"
+    ]
+  },
+  "identity": {
+    "fantasy": "An arcane wand gunslinger who banks fragments, configures a temporary firing mode, and cashes the setup into engineered payoff shots.",
+    "one_line": "Build Echo Fragments with wand attacks and Discordance, then spend them on Shatter Echo, Distortion spells, or one of several mutually exclusive Continuums. The skill is choosing and sequencing the payoff, not simply pressing faster.",
+    "primary_family": "sequencers",
+    "also_fits": [
+      "duelists"
+    ],
+    "claim_ids": [
+      "talent:chronomancer/artificer:22-57-3-0",
+      "talent:chronomancer/artificer:22-57-5-0",
+      "talent:chronomancer/artificer:22-57-10-0",
+      "observed:chronomancer/artificer:continuum-roles",
+      "inference:chronomancer/artificer:identity",
+      "talent:chronomancer/artificer:22-57-3-3",
+      "inference:chronomancer/artificer:fragment-failure",
+      "talent:chronomancer/artificer:22-57-4-9"
+    ],
+    "playstyle_tags": [
+      "combo-sequencer",
+      "burst-builder",
+      "mobile-caster"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "Generate Echo Fragments with Artificer's Wand, Wand of Time, and Discordance; choose whether to fire Shatter Echo or invest fragments into a Continuum; then use the active Continuum's altered wand, AoE, movement, or burst behavior to rebuild and cash out again.",
+    "resources": [
+      "Echo Fragment"
+    ],
+    "builders": [
+      {
+        "name": "Artificer's Wand",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-5-0"
+        ]
+      },
+      {
+        "name": "Echo Fragments",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-10-0"
+        ]
+      },
+      {
+        "name": "Caverns of Time",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-4-1"
+        ]
+      },
+      {
+        "name": "Archaeology",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-1-4"
+        ]
+      },
+      {
+        "name": "Clocked In",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-3-5"
+        ]
+      },
+      {
+        "name": "Paradox Cannon",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-7-5"
+        ]
+      },
+      {
+        "name": "Threads of Eternity",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-4-9"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Threads of Eternity",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-4-9"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Singularity Core",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-7-3"
+        ]
+      },
+      {
+        "name": "Conduction Burst",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-7-4"
+        ]
+      },
+      {
+        "name": "Clocked In",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-3-5"
+        ]
+      },
+      {
+        "name": "Flux Emitter",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-4-5"
+        ]
+      },
+      {
+        "name": "Reverse Engineering",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-7-6b"
+        ]
+      },
+      {
+        "name": "Aether Compression",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-1-8"
+        ]
+      },
+      {
+        "name": "Pulse Driver",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-7-8"
+        ]
+      },
+      {
+        "name": "Threads of Eternity",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-4-9"
+        ]
+      },
+      {
+        "name": "Wand Mastery",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-6-9"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Artificer's Wand",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-5-0"
+        ],
+        "structural_description": "Transform: s your Unmake into Artificer's Wand.Artificer's WandFocus to unleash 2 wand attacks dealing Ranged Weapon damage plus 5 over 1 seconds.Generates 1 Echo Fragment."
+      },
+      {
+        "name": "Echo Fragments",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-10-0"
+        ],
+        "structural_description": "Level 10 PassiveWand of Time now generates an Echo Fragment, which can be used to unleash Distortion and Continuum spells.Decomposition is now a Distortion spell, dealing increased damage based on how many Echo Fragments you have."
+      },
+      {
+        "name": "Singularity Core",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-7-3"
+        ],
+        "structural_description": "Continuum Spell: Empower your Wand attacks to deal an additional 50% Ranged Weapon Damage plus 2 + 25% SP + 12% ranged AP additional Arcane damage for 3 sec plus 5 sec per Echo Fragment.Can only have 1 Continuum spell active at a time."
+      },
+      {
+        "name": "Conduction Burst",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-7-4"
+        ],
+        "structural_description": "Your Shatter Echo now deals 20% additional damage while a Continuum spell is active."
+      },
+      {
+        "name": "Flux Emitter",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-4-5"
+        ],
+        "structural_description": "Continuum Spell: Empower Wand attacks to affect up to 2 additional nearby enemies for 3 sec plus 5 sec per Echo Fragment. Affected attacks deal less damage per additional enemy hit.Can only have 1 Continuum spell active at a time."
+      },
+      {
+        "name": "Paradox Cannon",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-7-5"
+        ],
+        "structural_description": "Continuum Spell: Generate 1 Echo Fragment every 3 sec for 5 seconds, plus an additional 5 sec per Echo Fragment consumed.Can only have 1 Continuum spell active at a time."
+      },
+      {
+        "name": "Tamed Incantations",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-4-6b"
+        ],
+        "structural_description": "Increases the duration of Continuum spells per Echo Fragment consumed by 0.5 sec."
+      },
+      {
+        "name": "Time Is A Circle",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-10-6"
+        ],
+        "structural_description": "Level 40 PassiveCasting Wand of Time now extends the duration of your Continuum spells by 3 sec.Continuum spells cannot be extended beyond their maximum duration."
+      },
+      {
+        "name": "Aether Compression",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-1-8"
+        ],
+        "structural_description": "Continuum Spell: Artificer's Wand and Reverse Wound can be cast while moving for 5 seconds.Duration increased by 5 sec per Echo Fragment.Can only have 1 Continuum spell active at a time."
+      },
+      {
+        "name": "Threads of Eternity",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-4-9"
+        ],
+        "structural_description": "Damage dealt by Discordance now applies Thread of Eternity to enemies.Thread of EternityMarked for 6 seconds. Damage taken from Wand of Time is increased by 30%.You may consume this debuff with Wand of Time to gain an additional effect based on your active Continuum Spell.Singularity Core: Triggers 3 instances of Singularity Core damage.Flux Emitter: Explodes on the enemy, dealing 50% of the damage dealt to all enemies within 8 yds.Paradox Cannon: Increases the damage of your next Shatter Echo within 6 sec by 25%."
+      }
+    ],
+    "single_target": "For ordinary leveling, current players describe banking four or five fragments and using Shatter Echo as the main direct payoff. Paradox Cannon can refill fragments during movement or between pulls, while Singularity Core is the sustained single-target Continuum and gains a stronger Shatter interaction at level 50 through Pulse Driver.",
+    "aoe": "Flux Emitter turns wand attacks into cleave and gains more targets from later talents. Arc Collision becomes a fragment-scaled Distortion option at level 50. Current leveling reports say AoE feels limited before the Flux package arrives.",
+    "movement_and_target_switching": "Paradox Cannon generates fragments while the player moves or kites, and level-50 Aether Compression permits Artificer's Wand and Reverse Wound while moving. The spec can keep much of its engine running during movement, but direct gap creation and personal durability remain separate concerns.",
+    "defense_and_control": "The class kit supplies roots, knockback, healing, and Unstable Chronoglass for redirecting enemy casts. Borrowed Time supplies limited physical-damage recovery. Community PvP descriptions emphasize control and casting while moving more than flag-carrying or dueling strength.",
+    "group_utility": "Infinity Stone provides a non-stacking group critical-strike buff, Reverse Engineering can grant Replenishment, and the base Chronomancer kit contributes control and external haste utility depending on class-tree choices.",
+    "failure_modes": [
+      {
+        "text": "Spending fragments early weakens Shatter Echo or shortens the Continuum that should power the next sequence.",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-3-3",
+          "inference:chronomancer/artificer:fragment-failure"
+        ]
+      },
+      {
+        "text": "After level 50, missing the six-second Thread of Eternity consumption window wastes a mode-specific payoff.",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-4-9",
+          "inference:chronomancer/artificer:level-50-complexity"
+        ]
+      },
+      {
+        "text": "Some level-50-plus players report mana pressure; a lower-cost Wand-and-Shatter fallback sacrifices parts of the full loop.",
+        "claim_ids": [
+          "observed:chronomancer/artificer:mana-50plus"
+        ]
+      }
+    ],
+    "claim_ids": [
+      "talent:chronomancer/artificer:22-57-3-0",
+      "talent:chronomancer/artificer:22-57-5-0",
+      "talent:chronomancer/artificer:22-57-10-0",
+      "talent:chronomancer/artificer:22-57-7-3",
+      "talent:chronomancer/artificer:22-57-4-5",
+      "talent:chronomancer/artificer:22-57-7-5",
+      "talent:chronomancer/artificer:22-57-1-8",
+      "talent:chronomancer/artificer:22-57-4-8",
+      "talent:chronomancer/artificer:22-57-7-8",
+      "talent:chronomancer/artificer:22-57-4-9",
+      "observed:chronomancer/artificer:leveling-loop",
+      "observed:chronomancer/artificer:continuum-roles"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Shatter Echo",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-3-0"
+          ]
+        },
+        {
+          "name": "Artificer's Wand",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-5-0"
+          ]
+        },
+        {
+          "name": "Echo Fragments",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-10-0"
+          ]
+        },
+        {
+          "name": "Caverns of Time",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-4-1"
+          ]
+        }
+      ],
+      "observed_loop": "A readable wand builder-spender. Generate fragments, then fire an empowered Shatter Echo; Singularity Core begins the mode-selection identity late in this band.",
+      "observed_changes": [
+        "Limited early AoE",
+        "Wand quality materially affects the experience"
+      ],
+      "claim_ids": [
+        "talent:chronomancer/artificer:22-57-3-0",
+        "talent:chronomancer/artificer:22-57-5-0",
+        "talent:chronomancer/artificer:22-57-10-0",
+        "talent:chronomancer/artificer:22-57-4-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Artificer's Empowerment",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-2-2"
+          ]
+        },
+        {
+          "name": "Wand Master",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-6-2"
+          ]
+        },
+        {
+          "name": "Wand Expert",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-10-2"
+          ]
+        },
+        {
+          "name": "Discovery",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-1-3"
+          ]
+        },
+        {
+          "name": "Concentrated Fate",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-3-3"
+          ]
+        },
+        {
+          "name": "Bronze Echoes",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-5-3"
+          ]
+        },
+        {
+          "name": "Singularity Core",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-7-3"
+          ]
+        }
+      ],
+      "observed_loop": "A readable wand builder-spender. Generate fragments, then fire an empowered Shatter Echo; Singularity Core begins the mode-selection identity late in this band.",
+      "observed_changes": [
+        "Limited early AoE",
+        "Wand quality materially affects the experience"
+      ],
+      "claim_ids": [
+        "talent:chronomancer/artificer:22-57-2-2",
+        "talent:chronomancer/artificer:22-57-6-2",
+        "talent:chronomancer/artificer:22-57-10-2",
+        "talent:chronomancer/artificer:22-57-1-3",
+        "talent:chronomancer/artificer:22-57-3-3",
+        "talent:chronomancer/artificer:22-57-5-3",
+        "talent:chronomancer/artificer:22-57-7-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Archaeology",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-1-4"
+          ]
+        },
+        {
+          "name": "Hyperwand",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-3-4"
+          ]
+        },
+        {
+          "name": "Elder Wand",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-4-4"
+          ]
+        },
+        {
+          "name": "Temporal Convergence",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-5-4"
+          ]
+        },
+        {
+          "name": "Conduction Burst",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-7-4"
+          ]
+        },
+        {
+          "name": "Crystal Cannon",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-10-4"
+          ]
+        },
+        {
+          "name": "Unstable Chronoglass",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-1-5"
+          ]
+        },
+        {
+          "name": "Clocked In",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-3-5"
+          ]
+        },
+        {
+          "name": "Flux Emitter",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-4-5"
+          ]
+        },
+        {
+          "name": "Hands of Time",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-5-5"
+          ]
+        },
+        {
+          "name": "Paradox Cannon",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-7-5"
+          ]
+        }
+      ],
+      "observed_loop": "By levels 30-49, generate echo fragments with artificer's wand, wand of time, and discordance; choose whether to fire shatter echo or invest fragments into a continuum; then use the active continuum's altered wand, aoe, movement, or burst behavior to rebuild and cash out again.",
+      "observed_changes": [
+        "Choosing the wrong Continuum for the pull wastes fragments",
+        "Community optimization guidance remains thin"
+      ],
+      "claim_ids": [
+        "talent:chronomancer/artificer:22-57-1-4",
+        "talent:chronomancer/artificer:22-57-3-4",
+        "talent:chronomancer/artificer:22-57-4-4",
+        "talent:chronomancer/artificer:22-57-5-4",
+        "talent:chronomancer/artificer:22-57-7-4",
+        "talent:chronomancer/artificer:22-57-10-4",
+        "talent:chronomancer/artificer:22-57-1-5",
+        "talent:chronomancer/artificer:22-57-3-5",
+        "talent:chronomancer/artificer:22-57-4-5",
+        "talent:chronomancer/artificer:22-57-5-5",
+        "talent:chronomancer/artificer:22-57-7-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Borrowed Time",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-1-6"
+          ]
+        },
+        {
+          "name": "Sporadic Incantations",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-4-6a"
+          ]
+        },
+        {
+          "name": "Tamed Incantations",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-4-6b"
+          ]
+        },
+        {
+          "name": "Erode Armaments",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-7-6a"
+          ]
+        },
+        {
+          "name": "Reverse Engineering",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-7-6b"
+          ]
+        },
+        {
+          "name": "Time Is A Circle",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-10-6"
+          ]
+        },
+        {
+          "name": "Fate Twister",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-0-7"
+          ]
+        },
+        {
+          "name": "Magic Sensitivity",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-2-7"
+          ]
+        },
+        {
+          "name": "Infinity Stone",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-3-7"
+          ]
+        },
+        {
+          "name": "Splitting Time",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-5-7"
+          ]
+        },
+        {
+          "name": "Resonance",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-6-7"
+          ]
+        },
+        {
+          "name": "Timemage",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-8-7"
+          ]
+        }
+      ],
+      "observed_loop": "By levels 30-49, generate echo fragments with artificer's wand, wand of time, and discordance; choose whether to fire shatter echo or invest fragments into a continuum; then use the active continuum's altered wand, aoe, movement, or burst behavior to rebuild and cash out again.",
+      "observed_changes": [
+        "Choosing the wrong Continuum for the pull wastes fragments",
+        "Community optimization guidance remains thin"
+      ],
+      "claim_ids": [
+        "talent:chronomancer/artificer:22-57-1-6",
+        "talent:chronomancer/artificer:22-57-4-6a",
+        "talent:chronomancer/artificer:22-57-4-6b",
+        "talent:chronomancer/artificer:22-57-7-6a",
+        "talent:chronomancer/artificer:22-57-7-6b",
+        "talent:chronomancer/artificer:22-57-10-6",
+        "talent:chronomancer/artificer:22-57-0-7",
+        "talent:chronomancer/artificer:22-57-2-7",
+        "talent:chronomancer/artificer:22-57-3-7",
+        "talent:chronomancer/artificer:22-57-5-7",
+        "talent:chronomancer/artificer:22-57-6-7",
+        "talent:chronomancer/artificer:22-57-8-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Aether Compression",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-1-8"
+          ]
+        },
+        {
+          "name": "Arc Collision",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-4-8"
+          ]
+        },
+        {
+          "name": "Pulse Driver",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-7-8"
+          ]
+        },
+        {
+          "name": "Intuition",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-10-8"
+          ]
+        },
+        {
+          "name": "Cheating Time",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-2-9"
+          ]
+        },
+        {
+          "name": "Threads of Eternity",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-4-9"
+          ]
+        },
+        {
+          "name": "Wand Mastery",
+          "claim_ids": [
+            "talent:chronomancer/artificer:22-57-6-9"
+          ]
+        }
+      ],
+      "observed_loop": "A more demanding sequencer. Threads of Eternity adds a six-second Discordance mark with a different consumption payoff for each Continuum, while Aether Compression, Arc Collision, Pulse Driver, and Wand Mastery broaden movement, AoE, and burst choices.",
+      "observed_changes": [
+        "More simultaneous state tracking",
+        "Some players report mana pressure",
+        "A spec-switch or spellbook bug can temporarily remove or down-rank abilities"
+      ],
+      "claim_ids": [
+        "talent:chronomancer/artificer:22-57-1-8",
+        "talent:chronomancer/artificer:22-57-4-8",
+        "talent:chronomancer/artificer:22-57-7-8",
+        "talent:chronomancer/artificer:22-57-10-8",
+        "talent:chronomancer/artificer:22-57-2-9",
+        "talent:chronomancer/artificer:22-57-4-9",
+        "talent:chronomancer/artificer:22-57-6-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "A readable wand builder-spender. Generate fragments, then fire an empowered Shatter Echo; Singularity Core begins the mode-selection identity late in this band.",
+      "strengths": [
+        "Clear fragment payoff",
+        "Strong single-target identity"
+      ],
+      "cautions": [
+        "Limited early AoE",
+        "Wand quality materially affects the experience"
+      ],
+      "claim_ids": [
+        "talent:chronomancer/artificer:22-57-3-0",
+        "talent:chronomancer/artificer:22-57-5-0",
+        "talent:chronomancer/artificer:22-57-7-3",
+        "observed:chronomancer/artificer:leveling-loop",
+        "talent:chronomancer/artificer:22-57-10-0",
+        "observed:chronomancer/artificer:continuum-roles",
+        "inference:chronomancer/artificer:identity",
+        "talent:chronomancer/artificer:22-57-3-3",
+        "inference:chronomancer/artificer:fragment-failure",
+        "talent:chronomancer/artificer:22-57-4-9"
+      ]
+    },
+    "leveling_30_49": {
+      "feel": "By levels 30-49, generate echo fragments with artificer's wand, wand of time, and discordance; choose whether to fire shatter echo or invest fragments into a continuum; then use the active continuum's altered wand, aoe, movement, or burst behavior to rebuild and cash out again.",
+      "strengths": [
+        "Meaningful mode choice",
+        "Better cleave and fragment flow",
+        "Can rebuild while kiting through Paradox Cannon"
+      ],
+      "cautions": [
+        "Choosing the wrong Continuum for the pull wastes fragments",
+        "Community optimization guidance remains thin"
+      ],
+      "claim_ids": [
+        "talent:chronomancer/artificer:22-57-3-5",
+        "talent:chronomancer/artificer:22-57-4-5",
+        "talent:chronomancer/artificer:22-57-7-5",
+        "observed:chronomancer/artificer:continuum-roles",
+        "talent:chronomancer/artificer:22-57-3-0",
+        "talent:chronomancer/artificer:22-57-5-0",
+        "talent:chronomancer/artificer:22-57-10-0",
+        "inference:chronomancer/artificer:identity",
+        "talent:chronomancer/artificer:22-57-3-3",
+        "inference:chronomancer/artificer:fragment-failure"
+      ]
+    },
+    "level_50_60": {
+      "feel": "A more demanding sequencer. Threads of Eternity adds a six-second Discordance mark with a different consumption payoff for each Continuum, while Aether Compression, Arc Collision, Pulse Driver, and Wand Mastery broaden movement, AoE, and burst choices.",
+      "strengths": [
+        "Mode-specific payoff windows",
+        "Improved movement and AoE options",
+        "High direct critical-damage scaling"
+      ],
+      "cautions": [
+        "More simultaneous state tracking",
+        "Some players report mana pressure",
+        "A spec-switch or spellbook bug can temporarily remove or down-rank abilities"
+      ],
+      "claim_ids": [
+        "talent:chronomancer/artificer:22-57-1-8",
+        "talent:chronomancer/artificer:22-57-4-8",
+        "talent:chronomancer/artificer:22-57-7-8",
+        "talent:chronomancer/artificer:22-57-4-9",
+        "observed:chronomancer/artificer:mana-50plus",
+        "inference:chronomancer/artificer:level-50-complexity",
+        "talent:chronomancer/artificer:22-57-3-0",
+        "talent:chronomancer/artificer:22-57-5-0",
+        "talent:chronomancer/artificer:22-57-10-0",
+        "observed:chronomancer/artificer:continuum-roles"
+      ]
+    },
+    "boss": {
+      "feel": "On bosses, for ordinary leveling, current players describe banking four or five fragments and using shatter echo as the main direct payoff.",
+      "strengths": [
+        "Strong sustained single-target reports",
+        "Deliberate burst control"
+      ],
+      "cautions": [
+        "Sequence errors directly reduce payoff",
+        "Current cross-spec performance evidence is not controlled"
+      ],
+      "claim_ids": [
+        "observed:chronomancer/artificer:continuum-roles",
+        "observed:chronomancer/artificer:dps-aggregate",
+        "observed:chronomancer/artificer:editorial-tier-conflict",
+        "talent:chronomancer/artificer:22-57-3-0",
+        "talent:chronomancer/artificer:22-57-5-0",
+        "talent:chronomancer/artificer:22-57-10-0",
+        "inference:chronomancer/artificer:identity",
+        "talent:chronomancer/artificer:22-57-3-3",
+        "inference:chronomancer/artificer:fragment-failure",
+        "talent:chronomancer/artificer:22-57-4-9"
+      ]
+    },
+    "dungeon_aoe": {
+      "feel": "In dungeons, flux emitter turns wand attacks into cleave and gains more targets from later talents.",
+      "strengths": [
+        "Cleave mode integrated with the normal wand loop",
+        "Control and mobile casting help during pack movement"
+      ],
+      "cautions": [
+        "Earlier leveling reports call AoE weak before Flux Emitter",
+        "Short-lived packs can invalidate setup"
+      ],
+      "claim_ids": [
+        "talent:chronomancer/artificer:22-57-4-5",
+        "talent:chronomancer/artificer:22-57-4-8",
+        "observed:chronomancer/artificer:leveling-loop",
+        "inference:chronomancer/artificer:aoe-payback",
+        "talent:chronomancer/artificer:22-57-3-0",
+        "talent:chronomancer/artificer:22-57-5-0",
+        "talent:chronomancer/artificer:22-57-10-0",
+        "observed:chronomancer/artificer:continuum-roles",
+        "inference:chronomancer/artificer:identity",
+        "talent:chronomancer/artificer:22-57-3-3"
+      ]
+    },
+    "pvp": {
+      "feel": "In PvP, paradox cannon generates fragments while the player moves or kites, and level-50 aether compression permits artificer's wand and reverse wound while moving. The class kit supplies roots, knockback, healing, and Unstable Chronoglass for redirecting enemy casts.",
+      "strengths": [
+        "High control",
+        "Substantial cast-while-moving access",
+        "Can generate fragments during kiting"
+      ],
+      "cautions": [
+        "Community reports do not frame it as a strong flag carrier or isolated duelist",
+        "Disruption can break a planned consumption sequence"
+      ],
+      "claim_ids": [
+        "observed:chronomancer/artificer:pvp-mobility",
+        "talent:chronomancer/artificer:22-57-7-5",
+        "talent:chronomancer/artificer:22-57-1-8",
+        "talent:chronomancer/artificer:22-57-3-0",
+        "talent:chronomancer/artificer:22-57-5-0",
+        "talent:chronomancer/artificer:22-57-10-0",
+        "observed:chronomancer/artificer:continuum-roles",
+        "inference:chronomancer/artificer:identity",
+        "talent:chronomancer/artificer:22-57-3-3",
+        "inference:chronomancer/artificer:fragment-failure"
+      ]
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "low-moderate",
+        "reason": "The early loop centers on two fragment generators and Shatter Echo, with Singularity Core added near the end of the band.",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-7-3",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "observed:chronomancer/artificer:continuum-roles",
+          "inference:chronomancer/artificer:identity",
+          "talent:chronomancer/artificer:22-57-3-3",
+          "inference:chronomancer/artificer:fragment-failure"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "moderate",
+        "reason": "Discordance, instant Artificer's Wand, and three practical Continuum choices expand the regular loop.",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-3-5",
+          "talent:chronomancer/artificer:22-57-4-5",
+          "talent:chronomancer/artificer:22-57-7-5",
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "observed:chronomancer/artificer:continuum-roles",
+          "inference:chronomancer/artificer:identity"
+        ]
+      },
+      "level_50_60": {
+        "value": "moderate-high",
+        "reason": "Threads, Arc Collision, Aether Compression, and Continuum-specific payoffs add situational actions without replacing the base wand loop.",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-1-8",
+          "talent:chronomancer/artificer:22-57-4-8",
+          "talent:chronomancer/artificer:22-57-4-9",
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "observed:chronomancer/artificer:continuum-roles",
+          "inference:chronomancer/artificer:identity"
+        ]
+      },
+      "boss": {
+        "value": "moderate",
+        "reason": "The boss loop uses a stable subset of generators, Discordance interactions, one chosen Continuum, and Shatter Echo.",
+        "claim_ids": [
+          "observed:chronomancer/artificer:leveling-loop",
+          "observed:chronomancer/artificer:continuum-roles",
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "inference:chronomancer/artificer:identity",
+          "talent:chronomancer/artificer:22-57-3-3",
+          "inference:chronomancer/artificer:fragment-failure"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "moderate-high",
+        "reason": "Flux Emitter, Arc Collision, target selection, and control add situational actions to the base loop.",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-4-5",
+          "talent:chronomancer/artificer:22-57-4-8",
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "observed:chronomancer/artificer:continuum-roles",
+          "inference:chronomancer/artificer:identity",
+          "talent:chronomancer/artificer:22-57-3-3"
+        ]
+      },
+      "pvp": {
+        "value": "moderate-high",
+        "reason": "The damage loop remains compact, but control, healing, and movement tools expand the effective bar.",
+        "claim_ids": [
+          "observed:chronomancer/artificer:pvp-mobility",
+          "inference:chronomancer/artificer:pvp-actions",
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "observed:chronomancer/artificer:continuum-roles",
+          "inference:chronomancer/artificer:identity",
+          "talent:chronomancer/artificer:22-57-3-3"
+        ]
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "low-moderate",
+        "reason": "The primary tracked state is Echo Fragment count and a single Continuum duration.",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-10-0",
+          "talent:chronomancer/artificer:22-57-7-3",
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "observed:chronomancer/artificer:continuum-roles",
+          "inference:chronomancer/artificer:identity",
+          "talent:chronomancer/artificer:22-57-3-3",
+          "inference:chronomancer/artificer:fragment-failure"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "moderate",
+        "reason": "Fragment count, active Continuum, Continuum duration, Discovery, and Discordance's instant-Wand window all matter.",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-1-3",
+          "talent:chronomancer/artificer:22-57-3-5",
+          "talent:chronomancer/artificer:22-57-10-6",
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "observed:chronomancer/artificer:continuum-roles",
+          "inference:chronomancer/artificer:identity"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "Threads adds a six-second enemy mark and each Continuum changes what consuming that mark accomplishes.",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-4-9",
+          "inference:chronomancer/artificer:level-50-complexity",
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "observed:chronomancer/artificer:continuum-roles",
+          "inference:chronomancer/artificer:identity",
+          "talent:chronomancer/artificer:22-57-3-3"
+        ]
+      },
+      "boss": {
+        "value": "moderate-high",
+        "reason": "Long encounters reward tracking fragment economy, Continuum duration, Threads, and Shatter amplification together.",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-4-9",
+          "observed:chronomancer/artificer:continuum-roles",
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "inference:chronomancer/artificer:identity",
+          "talent:chronomancer/artificer:22-57-3-3",
+          "inference:chronomancer/artificer:fragment-failure"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "The same personal states combine with target count, pack lifetime, and Flux or Arc Collision coverage.",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-4-5",
+          "talent:chronomancer/artificer:22-57-4-8",
+          "inference:chronomancer/artificer:aoe-payback",
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "observed:chronomancer/artificer:continuum-roles",
+          "inference:chronomancer/artificer:identity"
+        ]
+      },
+      "pvp": {
+        "value": "moderate-high",
+        "reason": "Fragment and Continuum states remain important while control and enemy disruption compete for attention.",
+        "claim_ids": [
+          "observed:chronomancer/artificer:pvp-mobility",
+          "inference:chronomancer/artificer:pvp-actions",
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "observed:chronomancer/artificer:continuum-roles",
+          "inference:chronomancer/artificer:identity",
+          "talent:chronomancer/artificer:22-57-3-3"
+        ]
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "low-moderate",
+        "reason": "The early answer is usually build fragments and Shatter, with limited branching.",
+        "claim_ids": [
+          "observed:chronomancer/artificer:leveling-loop",
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "observed:chronomancer/artificer:continuum-roles",
+          "inference:chronomancer/artificer:identity",
+          "talent:chronomancer/artificer:22-57-3-3",
+          "inference:chronomancer/artificer:fragment-failure"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "moderate",
+        "reason": "Pull size and movement determine which Continuum pays off.",
+        "claim_ids": [
+          "observed:chronomancer/artificer:continuum-roles",
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "inference:chronomancer/artificer:identity",
+          "talent:chronomancer/artificer:22-57-3-3",
+          "inference:chronomancer/artificer:fragment-failure",
+          "talent:chronomancer/artificer:22-57-4-9"
+        ]
+      },
+      "level_50_60": {
+        "value": "moderate-high",
+        "reason": "Continuum choice, Thread consumption, procs, mana, and movement can change the next action.",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-4-9",
+          "observed:chronomancer/artificer:mana-50plus",
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "observed:chronomancer/artificer:continuum-roles",
+          "inference:chronomancer/artificer:identity",
+          "talent:chronomancer/artificer:22-57-3-3"
+        ]
+      },
+      "boss": {
+        "value": "moderate",
+        "reason": "A stable target reduces branching, though movement and window alignment still matter.",
+        "claim_ids": [
+          "observed:chronomancer/artificer:continuum-roles",
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "inference:chronomancer/artificer:identity",
+          "talent:chronomancer/artificer:22-57-3-3",
+          "inference:chronomancer/artificer:fragment-failure",
+          "talent:chronomancer/artificer:22-57-4-9"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "moderate-high",
+        "reason": "Pack lifetime, target count, and control needs can change the correct spender.",
+        "claim_ids": [
+          "inference:chronomancer/artificer:aoe-payback",
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "observed:chronomancer/artificer:continuum-roles",
+          "inference:chronomancer/artificer:identity",
+          "talent:chronomancer/artificer:22-57-3-3",
+          "inference:chronomancer/artificer:fragment-failure"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "Control, kiting, healing, and disruption frequently override the planned damage sequence.",
+        "claim_ids": [
+          "observed:chronomancer/artificer:pvp-mobility",
+          "inference:chronomancer/artificer:pvp-actions",
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "observed:chronomancer/artificer:continuum-roles",
+          "inference:chronomancer/artificer:identity",
+          "talent:chronomancer/artificer:22-57-3-3"
+        ]
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "low-moderate",
+        "reason": "The early ranged loop is mechanically straightforward, but weak targets reaching the caster can force kiting.",
+        "claim_ids": [
+          "observed:chronomancer/artificer:leveling-loop",
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "observed:chronomancer/artificer:continuum-roles",
+          "inference:chronomancer/artificer:identity",
+          "talent:chronomancer/artificer:22-57-3-3",
+          "inference:chronomancer/artificer:fragment-failure"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "moderate",
+        "reason": "Paradox Cannon supports kiting, while Continuum durations reward maintaining casts during movement.",
+        "claim_ids": [
+          "observed:chronomancer/artificer:continuum-roles",
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "inference:chronomancer/artificer:identity",
+          "talent:chronomancer/artificer:22-57-3-3",
+          "inference:chronomancer/artificer:fragment-failure",
+          "talent:chronomancer/artificer:22-57-4-9"
+        ]
+      },
+      "level_50_60": {
+        "value": "moderate",
+        "reason": "Aether Compression reduces cast-movement friction, but six-second Thread windows still demand timely inputs.",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-1-8",
+          "talent:chronomancer/artificer:22-57-4-9",
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "observed:chronomancer/artificer:continuum-roles",
+          "inference:chronomancer/artificer:identity",
+          "talent:chronomancer/artificer:22-57-3-3"
+        ]
+      },
+      "boss": {
+        "value": "moderate",
+        "reason": "The main execution demand is preserving the sequence through encounter movement.",
+        "claim_ids": [
+          "inference:chronomancer/artificer:level-50-complexity",
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "observed:chronomancer/artificer:continuum-roles",
+          "inference:chronomancer/artificer:identity",
+          "talent:chronomancer/artificer:22-57-3-3",
+          "inference:chronomancer/artificer:fragment-failure"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "moderate-high",
+        "reason": "Cleave coverage, target changes, and ground or control placement raise execution demands.",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-4-5",
+          "talent:chronomancer/artificer:22-57-4-8",
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "observed:chronomancer/artificer:continuum-roles",
+          "inference:chronomancer/artificer:identity",
+          "talent:chronomancer/artificer:22-57-3-3"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "The player must kite, aim control, and finish short windows under active disruption.",
+        "claim_ids": [
+          "observed:chronomancer/artificer:pvp-mobility",
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "observed:chronomancer/artificer:continuum-roles",
+          "inference:chronomancer/artificer:identity",
+          "talent:chronomancer/artificer:22-57-3-3",
+          "inference:chronomancer/artificer:fragment-failure"
+        ]
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "moderate",
+        "reason": "An early Shatter spends the bank for a visibly weaker hit, but rebuilding is quick.",
+        "claim_ids": [
+          "inference:chronomancer/artificer:fragment-failure",
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "observed:chronomancer/artificer:continuum-roles",
+          "inference:chronomancer/artificer:identity",
+          "talent:chronomancer/artificer:22-57-3-3",
+          "talent:chronomancer/artificer:22-57-4-9"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "moderate-high",
+        "reason": "A poor Continuum choice spends fragments and locks out the other modes until the current investment ends.",
+        "claim_ids": [
+          "observed:chronomancer/artificer:continuum-roles",
+          "inference:chronomancer/artificer:fragment-failure",
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "inference:chronomancer/artificer:identity",
+          "talent:chronomancer/artificer:22-57-3-3",
+          "talent:chronomancer/artificer:22-57-4-9"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "Missing Threads or misaligning a mode can lose both the fragment investment and its intended payoff window.",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-4-9",
+          "inference:chronomancer/artificer:level-50-complexity",
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "observed:chronomancer/artificer:continuum-roles",
+          "inference:chronomancer/artificer:identity",
+          "talent:chronomancer/artificer:22-57-3-3"
+        ]
+      },
+      "boss": {
+        "value": "high",
+        "reason": "Repeated sequencing mistakes compound across a long encounter.",
+        "claim_ids": [
+          "inference:chronomancer/artificer:fragment-failure",
+          "inference:chronomancer/artificer:level-50-complexity",
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "observed:chronomancer/artificer:continuum-roles",
+          "inference:chronomancer/artificer:identity",
+          "talent:chronomancer/artificer:22-57-3-3"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "moderate-high",
+        "reason": "The pack may die before a mistaken mode investment can be recovered.",
+        "claim_ids": [
+          "inference:chronomancer/artificer:aoe-payback",
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "observed:chronomancer/artificer:continuum-roles",
+          "inference:chronomancer/artificer:identity",
+          "talent:chronomancer/artificer:22-57-3-3",
+          "inference:chronomancer/artificer:fragment-failure"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "Disruption can waste short marks and leave the player without the banked payoff during a kill window.",
+        "claim_ids": [
+          "inference:chronomancer/artificer:pvp-actions",
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "observed:chronomancer/artificer:continuum-roles",
+          "inference:chronomancer/artificer:identity",
+          "talent:chronomancer/artificer:22-57-3-3",
+          "inference:chronomancer/artificer:fragment-failure"
+        ]
+      }
+    },
+    "setup_burden": {
+      "leveling_10_29": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Flux Emitter turns wand attacks into cleave and gains more targets from later talents. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "observed:chronomancer/artificer:continuum-roles",
+          "inference:chronomancer/artificer:identity",
+          "talent:chronomancer/artificer:22-57-3-3",
+          "inference:chronomancer/artificer:fragment-failure",
+          "talent:chronomancer/artificer:22-57-4-9"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Flux Emitter turns wand attacks into cleave and gains more targets from later talents. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "observed:chronomancer/artificer:continuum-roles",
+          "inference:chronomancer/artificer:identity",
+          "talent:chronomancer/artificer:22-57-3-3",
+          "inference:chronomancer/artificer:fragment-failure",
+          "talent:chronomancer/artificer:22-57-4-9"
+        ]
+      },
+      "level_50_60": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Flux Emitter turns wand attacks into cleave and gains more targets from later talents. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "observed:chronomancer/artificer:continuum-roles",
+          "inference:chronomancer/artificer:identity",
+          "talent:chronomancer/artificer:22-57-3-3",
+          "inference:chronomancer/artificer:fragment-failure",
+          "talent:chronomancer/artificer:22-57-4-9"
+        ]
+      },
+      "boss": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Flux Emitter turns wand attacks into cleave and gains more targets from later talents. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "observed:chronomancer/artificer:continuum-roles",
+          "inference:chronomancer/artificer:identity",
+          "talent:chronomancer/artificer:22-57-3-3",
+          "inference:chronomancer/artificer:fragment-failure",
+          "talent:chronomancer/artificer:22-57-4-9"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Flux Emitter turns wand attacks into cleave and gains more targets from later talents. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "observed:chronomancer/artificer:continuum-roles",
+          "inference:chronomancer/artificer:identity",
+          "talent:chronomancer/artificer:22-57-3-3",
+          "inference:chronomancer/artificer:fragment-failure",
+          "talent:chronomancer/artificer:22-57-4-9"
+        ]
+      },
+      "pvp": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Flux Emitter turns wand attacks into cleave and gains more targets from later talents. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-3-0",
+          "talent:chronomancer/artificer:22-57-5-0",
+          "talent:chronomancer/artificer:22-57-10-0",
+          "observed:chronomancer/artificer:continuum-roles",
+          "inference:chronomancer/artificer:identity",
+          "talent:chronomancer/artificer:22-57-3-3",
+          "inference:chronomancer/artificer:fragment-failure",
+          "talent:chronomancer/artificer:22-57-4-9"
+        ]
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [
+      {
+        "text": "You enjoy builder-spender systems where order and timing matter more than raw speed.",
+        "claim_ids": [
+          "observed:chronomancer/artificer:leveling-loop",
+          "inference:chronomancer/artificer:identity"
+        ]
+      },
+      {
+        "text": "You like selecting a temporary mode for burst, sustained damage, cleave, or movement.",
+        "claim_ids": [
+          "observed:chronomancer/artificer:continuum-roles"
+        ]
+      },
+      {
+        "text": "You want a ranged weapon to feel central rather than cosmetic.",
+        "claim_ids": [
+          "talent:chronomancer/artificer:22-57-2-2",
+          "talent:chronomancer/artificer:22-57-10-2"
+        ]
+      }
+    ],
+    "avoid_if": [
+      {
+        "text": "You dislike banking resources or losing value after spending them at the wrong moment.",
+        "claim_ids": [
+          "inference:chronomancer/artificer:fragment-failure"
+        ]
+      },
+      {
+        "text": "You want the same low-attention loop from level 10 through level 60.",
+        "claim_ids": [
+          "inference:chronomancer/artificer:level-50-complexity"
+        ]
+      },
+      {
+        "text": "You prefer passive pets or DoTs to continue most of your damage while you react defensively.",
+        "claim_ids": [
+          "inference:chronomancer/artificer:identity"
+        ]
+      }
+    ]
+  },
+  "stat_and_equipment_hooks": [
+    {
+      "text": "Wand weapon damage directly contributes to Artificer's Wand and Shatter Echo, so wand upgrades matter independently of caster stats.",
+      "claim_ids": [
+        "talent:chronomancer/artificer:22-57-3-0",
+        "talent:chronomancer/artificer:22-57-5-0"
+      ]
+    },
+    {
+      "text": "Spirit is structurally important because Artificer's Empowerment raises it and Wand Expert converts Spirit into ranged attack power; several wand effects also scale from Spirit.",
+      "claim_ids": [
+        "talent:chronomancer/artificer:22-57-2-2",
+        "talent:chronomancer/artificer:22-57-10-2",
+        "guide-claim:chronomancer/artificer:stat-hooks"
+      ]
+    },
+    {
+      "text": "Current independent guidance prioritizes hit and penetration caps before Spirit and secondary throughput stats, but the optimization is not settled enough to publish as a definitive weight string.",
+      "claim_ids": [
+        "guide-claim:chronomancer/artificer:stat-hooks"
+      ]
+    }
+  ],
+  "performance_signal_ids": [
+    "observed:chronomancer/artificer:dps-aggregate",
+    "observed:chronomancer/artificer:editorial-tier-conflict"
+  ],
+  "sentiment": {
+    "praise": [
+      {
+        "theme": "Players describe a satisfying, understandable fragment payoff once the Continuum roles are understood.",
+        "support_count": 2,
+        "claim_ids": [
+          "observed:chronomancer/artificer:leveling-loop",
+          "observed:chronomancer/artificer:continuum-roles"
+        ]
+      },
+      {
+        "theme": "Recent discussion recommends Artificer as a mobile ranged damage option with strong control.",
+        "support_count": 1,
+        "claim_ids": [
+          "observed:chronomancer/artificer:pvp-mobility"
+        ]
+      }
+    ],
+    "frustrations": [
+      {
+        "theme": "Early AoE and solo kill speed can feel weak before the mode package develops.",
+        "support_count": 1,
+        "claim_ids": [
+          "observed:chronomancer/artificer:leveling-loop"
+        ]
+      },
+      {
+        "theme": "Mana pressure is reported by some players after level 50.",
+        "support_count": 1,
+        "claim_ids": [
+          "observed:chronomancer/artificer:mana-50plus"
+        ]
+      }
+    ],
+    "contested": [
+      {
+        "theme": "Recent sources range from a B-tier editorial label to an A-tier community DPS aggregation; neither provides enough controlled evidence to resolve a precise rank.",
+        "support_count": 2,
+        "claim_ids": [
+          "observed:chronomancer/artificer:dps-aggregate",
+          "observed:chronomancer/artificer:editorial-tier-conflict"
+        ]
+      }
+    ]
+  },
+  "known_issue_claim_ids": [
+    "observed:chronomancer:spec-switch-bars",
+    "observed:chronomancer:spell-rank-refresh"
+  ],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 1,
+    "latest_update": "2026-08-04T21:15:39.5354+00:00",
+    "top_title": "silly wand spec for silly guys",
+    "top_url": "https://coabuildhub.com/build/04e5f412-87ae-464d-af49-3a35f86119da",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:04e5f412-87ae-464d-af49-3a35f86119da"
+    ]
+  },
+  "coverage": {
+    "mechanical": "manual_talent_and_build_interpretation",
+    "community": "moderate",
+    "performance": "conflicting_limited",
+    "video": "searched_none_verified",
+    "overall_confidence": "medium",
+    "gaps": [
+      "No controlled level-60 rotation or stat-weight study was found.",
+      "No current verified Artificer video has been added yet.",
+      "PvP evidence is one recent recommendation thread rather than a detailed guide.",
+      "Mana-pressure prevalence and its dependence on build, gear, or play remain unresolved."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:chronomancer/artificer:22-57-3-0",
+      "kind": "structural",
+      "text": "Shatter Echo: Distortion Spell: Launch a distorted echo from your wand at an enemy, dealing 90% Ranged Weapon damage plus cond(gt(SPA, SPH), 4+0+SPA*0.3, 4+0+SPH*0.3) Arcane damage.Damage increased by 40% for each Echo Fragment consumed.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-5-0",
+      "kind": "structural",
+      "text": "Artificer's Wand: Transform: s your Unmake into Artificer's Wand.Artificer's WandFocus to unleash 2 wand attacks dealing Ranged Weapon damage plus 5 over 1 seconds.Generates 1 Echo Fragment.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-10-0",
+      "kind": "structural",
+      "text": "Echo Fragments: Level 10 PassiveWand of Time now generates an Echo Fragment, which can be used to unleash Distortion and Continuum spells.Decomposition is now a Distortion spell, dealing increased damage based on how many Echo Fragments you have.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-4-1",
+      "kind": "structural",
+      "text": "Caverns of Time: Your Discordance now generates 1 Echo Fragment.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-2-2",
+      "kind": "structural",
+      "text": "Artificer's Empowerment: Increases your Spirit by 8%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-6-2",
+      "kind": "structural",
+      "text": "Wand Master: Increases the damage of Wand of Time and Artificer's Wand by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-10-2",
+      "kind": "structural",
+      "text": "Wand Expert: Level 20 PassiveIncreases your ranged attack power by 100% of your Spirit.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-1-3",
+      "kind": "structural",
+      "text": "Discovery: Casting Artificers's Wand and Wand of Time now grants Discovery for 30 seconds, stacking 4 times. DiscoveryAt 3 stacks, your next Wand of Time or Artificer's Wand causes an additional 1 + 21.2% arcane SP + 25% Spirit + 10% ranged AP Arcane Damage, scaling with Spirit.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-3-3",
+      "kind": "structural",
+      "text": "Concentrated Fate: Increases the effectiveness of your Echo Fragments by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-5-3",
+      "kind": "structural",
+      "text": "Bronze Echoes: Reduces the cast time of Artificer's Wand by -0.2 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-7-3",
+      "kind": "structural",
+      "text": "Singularity Core: Continuum Spell: Empower your Wand attacks to deal an additional 50% Ranged Weapon Damage plus 2 + 25% SP + 12% ranged AP additional Arcane damage for 3 sec plus 5 sec per Echo Fragment.Can only have 1 Continuum spell active at a time.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-1-4",
+      "kind": "structural",
+      "text": "Archaeology: Your Discovery now also generates 3% of your base mana and health.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-3-4",
+      "kind": "structural",
+      "text": "Hyperwand: Increases the damage and critical damage of your Shatter Echo by 30%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-4-4",
+      "kind": "structural",
+      "text": "Elder Wand: Your Wand attacks now have a 30% chance to increase the damage of Artificer's Wand against the target by 3% for 15 seconds, stacking 10 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-5-4",
+      "kind": "structural",
+      "text": "Temporal Convergence: Your Wand of Time now has a 40% chance to reset its own cooldown.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-7-4",
+      "kind": "structural",
+      "text": "Conduction Burst: Your Shatter Echo now deals 20% additional damage while a Continuum spell is active.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-10-4",
+      "kind": "structural",
+      "text": "Crystal Cannon: Level 30 PassiveCasting Discordance now unleashes the Crystal Cannon, launching 2 quick lesser Wand attacks at the enemy over 1 seconds, scaling with Spirit.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-1-5",
+      "kind": "structural",
+      "text": "Unstable Chronoglass: Place an Unstable Chronoglass at target location for 30 seconds that will redirect the next 3 offensive enemy spell casts onto itself.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-3-5",
+      "kind": "structural",
+      "text": "Clocked In: Casting Discordance now makes your next Artificer's Wand within 10 seconds instant cast and causes it to generate an additional Echo Fragment.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-4-5",
+      "kind": "structural",
+      "text": "Flux Emitter: Continuum Spell: Empower Wand attacks to affect up to 2 additional nearby enemies for 3 sec plus 5 sec per Echo Fragment. Affected attacks deal less damage per additional enemy hit.Can only have 1 Continuum spell active at a time.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-5-5",
+      "kind": "structural",
+      "text": "Hands of Time: Increases the effectiveness of your Accelerate and Decelerate spells by 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-7-5",
+      "kind": "structural",
+      "text": "Paradox Cannon: Continuum Spell: Generate 1 Echo Fragment every 3 sec for 5 seconds, plus an additional 5 sec per Echo Fragment consumed.Can only have 1 Continuum spell active at a time.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-1-6",
+      "kind": "structural",
+      "text": "Borrowed Time: Taking Physical damage now heals you equal to 10% of the damage dealt. Can only occur once per sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-4-6a",
+      "kind": "structural",
+      "text": "Sporadic Incantations: Your Flux Emitter now strikes 1 additional enemy.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-4-6b",
+      "kind": "structural",
+      "text": "Tamed Incantations: Increases the duration of Continuum spells per Echo Fragment consumed by 0.5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-7-6a",
+      "kind": "structural",
+      "text": "Erode Armaments: Your Wand attacks now reduce enemy attack power by 208 for 5 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-7-6b",
+      "kind": "structural",
+      "text": "Reverse Engineering: Periodic damage and healing now has a 15% chance to increase your haste by 15% for 6 seconds and grant allies Replenishment.ReplenishmentRestores 1% maximum mana every 5 sec to allies within 100 yds for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-10-6",
+      "kind": "structural",
+      "text": "Time Is A Circle: Level 40 PassiveCasting Wand of Time now extends the duration of your Continuum spells by 3 sec.Continuum spells cannot be extended beyond their maximum duration.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-0-7",
+      "kind": "structural",
+      "text": "Fate Twister: Reduces the cooldown of Unstable Chronoglass by -30 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-2-7",
+      "kind": "structural",
+      "text": "Magic Sensitivity: Critical strikes with Shatter Echo now increases the enemy's damage taken from you by 10% for 8 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-3-7",
+      "kind": "structural",
+      "text": "Infinity Stone: Increases the critical strike chance of all party and raid members by 3%. Does not stack with similar effects.In addition, increases your critical strike chance by 3%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-5-7",
+      "kind": "structural",
+      "text": "Splitting Time: Your Crystal Cannon now strikes 2 additional nearby enemies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-6-7",
+      "kind": "structural",
+      "text": "Resonance: Casting Artificer's Wand or Crystal Cannon now has a 35% chance to reduce the cooldown of Hasten by -1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-8-7",
+      "kind": "structural",
+      "text": "Timemage: Reduces the duration of harmful magic effects on you by -30%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-1-8",
+      "kind": "structural",
+      "text": "Aether Compression: Continuum Spell: Artificer's Wand and Reverse Wound can be cast while moving for 5 seconds.Duration increased by 5 sec per Echo Fragment.Can only have 1 Continuum spell active at a time.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-4-8",
+      "kind": "structural",
+      "text": "Arc Collision: Distortion Spell: Create a timestorm around an enemy that causes them and up to 2 nearby enemies to take 270 + 24% SP Arcane damage, repeating over 4 seconds. Duration increased by 2 sec for each Echo Fragment consumed.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-7-8",
+      "kind": "structural",
+      "text": "Pulse Driver: Singularity Core now increases the damage of Shatter Echo while its active by 30% and allows Shatter Echo to trigger its damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-10-8",
+      "kind": "structural",
+      "text": "Intuition: Level 50 PassiveIncreases your critical damage by 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-2-9",
+      "kind": "structural",
+      "text": "Cheating Time: Casting Shatter Echo now extends the duration of your Flux Emitter by 4 sec.Cannot be extended beyond maximum duration.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-4-9",
+      "kind": "structural",
+      "text": "Threads of Eternity: Damage dealt by Discordance now applies Thread of Eternity to enemies.Thread of EternityMarked for 6 seconds. Damage taken from Wand of Time is increased by 30%.You may consume this debuff with Wand of Time to gain an additional effect based on your active Continuum Spell.Singularity Core: Triggers 3 instances of Singularity Core damage.Flux Emitter: Explodes on the enemy, dealing 50% of the damage dealt to all enemies within 8 yds.Paradox Cannon: Increases the damage of your next Shatter Echo within 6 sec by 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/artificer:22-57-6-9",
+      "kind": "structural",
+      "text": "Wand Mastery: Wand of Time and Shatter Echo now have a 25% chance to unleash Crystal Cannon, launching 2 quick lesser Wand auto attacks at the enemy over 1 seconds, scaling with Spirit.While Paradox Cannon is active, the chance to trigger this effect is increased by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "observed:chronomancer/artificer:leveling-loop",
+      "kind": "observed",
+      "text": "A current leveling player describes building toward four or five Echo Fragments before Shatter Echo, while replies recommend Discordance into an instant Artificer's Wand and identify weak-feeling early AoE before Flux Emitter.",
+      "source_ids": [
+        "reddit:artificer-pvp-2026-07-28"
+      ],
+      "scope": {
+        "levels": "leveling_10_49",
+        "content": [
+          "solo_leveling"
+        ],
+        "build_or_mode": [
+          "general",
+          "paradox_cannon"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Small discussion, but the described sequence matches current structural talents."
+    },
+    {
+      "id": "observed:chronomancer/artificer:continuum-roles",
+      "kind": "observed",
+      "text": "Current players describe Paradox Cannon as the burst, leveling, and kiting mode; Singularity Core as sustained single-target; and Flux Emitter as AoE. The current independent guide likewise describes fragment-fueled Continuum modes.",
+      "source_ids": [
+        "reddit:artificer-loop-2026-07-16",
+        "guide:artificer-2026-07-23"
+      ],
+      "scope": {
+        "levels": "leveling_30_60",
+        "content": [
+          "solo_leveling",
+          "boss",
+          "dungeon_aoe",
+          "pvp"
+        ],
+        "build_or_mode": [
+          "paradox_cannon",
+          "singularity_core",
+          "flux_emitter"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "The role labels are player shorthand rather than official categories, but align with current tooltips."
+    },
+    {
+      "id": "observed:chronomancer/artificer:mana-50plus",
+      "kind": "observed",
+      "text": "A current level-50-plus discussion reports mana pressure for some Artificer builds; one suggested fallback is restricting casts to Artificer's Wand and Shatter Echo, while others cite Time Out and Infinite Clone as mana tools.",
+      "source_ids": [
+        "reddit:artificer-mana-2026-07-31"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "general"
+        ],
+        "build_or_mode": [
+          "unspecified"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "The report establishes a possible pain point, not prevalence or cause."
+    },
+    {
+      "id": "observed:chronomancer/artificer:dps-aggregate",
+      "kind": "observed",
+      "text": "A July 25 community aggregation reports Artificer at 5,448 and places it in its A-tier band.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25"
+      ],
+      "scope": {
+        "levels": "presumed_level_60",
+        "content": [
+          "pve_unspecified"
+        ],
+        "build_or_mode": [
+          "unspecified"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [
+        "observed:chronomancer/artificer:editorial-tier-conflict"
+      ],
+      "notes": "The post does not fully document sample size, encounter mix, gear, or normalization."
+    },
+    {
+      "id": "observed:chronomancer/artificer:editorial-tier-conflict",
+      "kind": "observed",
+      "text": "A July 23 independent guide labels Artificer B-tier while describing its fragment economy and Wand-focused loop.",
+      "source_ids": [
+        "guide:artificer-2026-07-23"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "pve_general"
+        ],
+        "build_or_mode": [
+          "guide_build"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [
+        "observed:chronomancer/artificer:dps-aggregate"
+      ],
+      "notes": "An editorial tier is not directly comparable to the community aggregation. The conflict is retained, not resolved."
+    },
+    {
+      "id": "guide-claim:chronomancer/artificer:stat-hooks",
+      "kind": "observed",
+      "text": "The current independent guide recommends hit and spell penetration caps, then Spirit, critical strike, haste, spell power, and Intellect for PvE, while stating that optimization is not settled.",
+      "source_ids": [
+        "guide:artificer-2026-07-23"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "pve"
+        ],
+        "build_or_mode": [
+          "guide_build"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "Treat as a current proposal, not a verified weight string. Structural Spirit and wand scaling are independently supported by talents."
+    },
+    {
+      "id": "observed:chronomancer/artificer:pvp-mobility",
+      "kind": "observed",
+      "text": "A late-July battleground discussion recommends Artificer as a ranged option with substantial cast-while-moving access, strong control, and solid damage, while cautioning that it has limited direct mobility and is not primarily a flag carrier or isolated duelist.",
+      "source_ids": [
+        "reddit:artificer-loop-2026-07-16"
+      ],
+      "scope": {
+        "levels": "leveling_pvp",
+        "content": [
+          "pvp"
+        ],
+        "build_or_mode": [
+          "unspecified"
+        ]
+      },
+      "confidence": "low",
+      "conflicts_with": [],
+      "notes": "Current recommendation thread, not a detailed PvP guide or controlled match analysis."
+    },
+    {
+      "id": "observed:chronomancer:spec-switch-bars",
+      "kind": "observed",
+      "text": "Multiple current CoA players report specialization-specific or entire action-bar abilities disappearing after specialization switches; Action Bar Saver and spell-name macros are common workarounds.",
+      "source_ids": [
+        "reddit:chrono-leveling-2026-07-18"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "client_behavior"
+        ],
+        "build_or_mode": [
+          "specialization_switch"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "A dedicated action-bar report source will be added during the known-issues pass."
+    },
+    {
+      "id": "observed:chronomancer:spell-rank-refresh",
+      "kind": "observed",
+      "text": "Current Chronomancer players report higher spell ranks sometimes returning only after opening the Book of Ascension following a specialization change.",
+      "source_ids": [
+        "reddit:chrono-leveling-2026-07-18"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "client_behavior"
+        ],
+        "build_or_mode": [
+          "specialization_switch"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "Observed by several players but not independently reproduced in this research pass."
+    },
+    {
+      "id": "inference:chronomancer/artificer:identity",
+      "kind": "inference",
+      "text": "Artificer is best described as an arcane wand gunslinger and combo sequencer because its direct weapon attacks build a resource that is spent into mutually exclusive firing modes and payoff shots.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:chronomancer/artificer:22-57-3-0",
+        "talent:chronomancer/artificer:22-57-5-0",
+        "observed:chronomancer/artificer:continuum-roles"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Playstyle label, not an official category."
+    },
+    {
+      "id": "inference:chronomancer/artificer:fragment-failure",
+      "kind": "inference",
+      "text": "Spending Echo Fragments before the intended Shatter or Continuum payoff creates a recoverable but material throughput loss.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:chronomancer/artificer:22-57-3-0",
+        "talent:chronomancer/artificer:22-57-3-3",
+        "observed:chronomancer/artificer:leveling-loop"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Magnitude is not quantified."
+    },
+    {
+      "id": "inference:chronomancer/artificer:level-50-complexity",
+      "kind": "inference",
+      "text": "Artificer's sequencing and state-tracking demands rise materially at level 50 because Threads of Eternity adds a six-second mark whose correct follow-up changes with the active Continuum.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:chronomancer/artificer:22-57-4-9",
+        "observed:chronomancer/artificer:continuum-roles"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "all_continuums"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "The structural branching is certain; the degree of felt difficulty still needs broader player validation."
+    },
+    {
+      "id": "inference:chronomancer/artificer:aoe-payback",
+      "kind": "inference",
+      "text": "Artificer's AoE setup loses value when targets die before Flux Emitter or Arc Collision can repay the fragment investment.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:chronomancer/artificer:22-57-4-5",
+        "talent:chronomancer/artificer:22-57-4-8",
+        "observed:chronomancer/artificer:leveling-loop"
+      ],
+      "scope": {
+        "levels": "leveling_30_60",
+        "content": [
+          "dungeon_aoe"
+        ],
+        "build_or_mode": [
+          "flux_emitter",
+          "arc_collision"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Pack-lifetime threshold is not measured."
+    },
+    {
+      "id": "inference:chronomancer/artificer:pvp-actions",
+      "kind": "inference",
+      "text": "Artificer's effective PvP action and decision load is higher than its stable PvE damage loop because control, kiting, healing, and disrupted windows compete for attention.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "observed:chronomancer/artificer:pvp-mobility",
+        "inference:chronomancer/artificer:level-50-complexity"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "pvp"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "Requires a current detailed PvP guide or verified gameplay video."
+    }
+  ]
+}

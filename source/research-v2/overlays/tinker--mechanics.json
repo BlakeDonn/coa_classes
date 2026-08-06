@@ -1,0 +1,920 @@
+{
+  "baseline": "tinker--mechanics.json",
+  "set": {
+    "identity": {
+      "fantasy": "A battlefield engineer who converts gunfire into Scrap, then routes that fuel through explosives, a combat suit, a mechanical beast, and upgraded turrets.",
+      "primary_family": "commanders",
+      "also_fits": [
+        "sequencers"
+      ],
+      "playstyle_tags": [
+        "pet-engineer",
+        "resource-builder",
+        "maintenance-dps"
+      ],
+      "one_line": "The tree builds a Mechsuit and Scrapmaw, upgrades lasers, guns, jets, regeneration, and turrets, then overclocks the machine. Although the old game label reportedly calls it expert, current players say its effective damage loop can be extremely simple. The complexity sits more in setup and build choices than moment-to-moment buttons.",
+      "claim_ids": [
+        "observed:tinker/mechanics:current-loop",
+        "inference:tinker/mechanics:scrap-failure",
+        "observed:tinker/mechanics:level-45-experience",
+        "talent:tinker/mechanics:28-75-7-4",
+        "observed:tinker/mechanics:stat-conflict",
+        "talent:tinker/mechanics:28-75-6-8",
+        "talent:tinker/mechanics:28-75-10-8",
+        "talent:tinker/mechanics:28-75-1-6b"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "Generate Scrap through Scrap Shot, critical hits, and temporary engine effects; spend it through the active explosive and Mechsuit package; keep Scrapmaw and useful turrets contributing; and use Makeshift Dynamite to connect personal, suit, and pet damage.",
+      "single_target": "Scrapmaw, ranged criticals, Makeshift Dynamite, and Mechsuit abilities form the sustained engine, with Arclight Core and Overclocked Machine adding pet-triggered payoff.",
+      "aoe": "Sticky Bomb, dynamite, Mechsuit Combustion, upgraded turrets, and later Gear Grind provide overlapping pack tools.",
+      "movement_and_target_switching": "Much of the gun and pet package works at range, but placed turrets and pet marks make rapid relocation or target turnover less efficient.",
+      "defense_and_control": "Mechsuit is both an offensive window and a durability tool; the Tinker class kit adds gadgets and control.",
+      "group_utility": "Turrets and gadgets broaden the effective bar beyond the damage priority, which current players describe as useful but crowded.",
+      "failure_modes": [
+        {
+          "text": "Spending Scrap without preserving the next Mechsuit, pet, or explosive payoff can leave the engine resource-starved.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure"
+          ]
+        },
+        {
+          "text": "Movement or a target swap can interrupt the intended payoff: much of the gun and pet package works at range, but placed turrets and pet marks make rapid relocation or target turnover less efficient.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict"
+          ]
+        },
+        {
+          "text": "Spending recovery or control too early leaves less protection for the next pressure event: mechsuit is both an offensive window and a durability tool; the tinker class kit adds gadgets and control.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "observed:tinker/mechanics:current-loop",
+        "inference:tinker/mechanics:scrap-failure",
+        "observed:tinker/mechanics:level-45-experience",
+        "talent:tinker/mechanics:28-75-7-4",
+        "observed:tinker/mechanics:stat-conflict",
+        "talent:tinker/mechanics:28-75-6-8",
+        "talent:tinker/mechanics:28-75-10-8",
+        "talent:tinker/mechanics:28-75-1-6b"
+      ]
+    },
+    "contexts": {
+      "leveling_30_49": {
+        "feel": "By levels 30-49, generate scrap through scrap shot, critical hits, and temporary engine effects; spend it through the active explosive and mechsuit package; keep scrapmaw and useful turrets contributing; and use makeshift dynamite to connect personal, suit, and pet damage.",
+        "strengths": [
+          "Strong pet contribution",
+          "Mechsuit improves survival",
+          "Useful dungeon gadgets"
+        ],
+        "cautions": [
+          "Scrap sustain matters",
+          "Many optional buttons"
+        ],
+        "claim_ids": [
+          "observed:tinker/mechanics:level-45-experience",
+          "talent:tinker/mechanics:28-75-7-4",
+          "observed:tinker/mechanics:current-loop",
+          "inference:tinker/mechanics:scrap-failure",
+          "observed:tinker/mechanics:stat-conflict",
+          "talent:tinker/mechanics:28-75-6-8",
+          "talent:tinker/mechanics:28-75-10-8",
+          "talent:tinker/mechanics:28-75-1-6b"
+        ]
+      },
+      "level_50_60": {
+        "feel": "A layered engineer with personal, pet, turret, and suit states. Gear Grind and Overclocked Machine add payoff decisions to an already broad kit.",
+        "strengths": [
+          "Multiple damage channels",
+          "High optimization headroom"
+        ],
+        "cautions": [
+          "Stat advice currently conflicts",
+          "Pet and placement dependencies"
+        ],
+        "claim_ids": [
+          "observed:tinker/mechanics:current-loop",
+          "observed:tinker/mechanics:stat-conflict",
+          "talent:tinker/mechanics:28-75-6-8",
+          "talent:tinker/mechanics:28-75-10-8",
+          "inference:tinker/mechanics:scrap-failure",
+          "observed:tinker/mechanics:level-45-experience",
+          "talent:tinker/mechanics:28-75-7-4",
+          "talent:tinker/mechanics:28-75-1-6b"
+        ]
+      },
+      "leveling_10_29": {
+        "feel": "Early play establishes the spec's central loop: generate scrap through scrap shot, critical hits, and temporary engine effects; spend it through the active explosive and mechsuit package; keep scrapmaw and useful.",
+        "strengths": [
+          "Core identity appears early",
+          "Basic loop is readable"
+        ],
+        "cautions": [
+          "Later interactions are still missing",
+          "Recovery tools are incomplete"
+        ],
+        "claim_ids": [
+          "observed:tinker/mechanics:current-loop",
+          "inference:tinker/mechanics:scrap-failure",
+          "observed:tinker/mechanics:level-45-experience",
+          "talent:tinker/mechanics:28-75-7-4",
+          "observed:tinker/mechanics:stat-conflict",
+          "talent:tinker/mechanics:28-75-6-8",
+          "talent:tinker/mechanics:28-75-10-8",
+          "talent:tinker/mechanics:28-75-1-6b"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, scrapmaw, ranged criticals, makeshift dynamite, and mechsuit abilities form the sustained engine, with arclight core and overclocked machine adding pet-triggered payoff.",
+        "strengths": [
+          "Durable targets preserve the full loop",
+          "Cooldowns can be planned"
+        ],
+        "cautions": [
+          "Movement can break setup",
+          "Repeated errors remain visible"
+        ],
+        "claim_ids": [
+          "observed:tinker/mechanics:current-loop",
+          "inference:tinker/mechanics:scrap-failure",
+          "observed:tinker/mechanics:level-45-experience",
+          "talent:tinker/mechanics:28-75-7-4",
+          "observed:tinker/mechanics:stat-conflict",
+          "talent:tinker/mechanics:28-75-6-8",
+          "talent:tinker/mechanics:28-75-10-8",
+          "talent:tinker/mechanics:28-75-1-6b"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, sticky bomb, dynamite, mechsuit combustion, upgraded turrets, and later gear grind provide overlapping pack tools.",
+        "strengths": [
+          "Pack tools express the spec clearly",
+          "Group utility has regular value"
+        ],
+        "cautions": [
+          "Short-lived targets can erase setup",
+          "Tank movement changes the plan"
+        ],
+        "claim_ids": [
+          "observed:tinker/mechanics:current-loop",
+          "inference:tinker/mechanics:scrap-failure",
+          "observed:tinker/mechanics:level-45-experience",
+          "talent:tinker/mechanics:28-75-7-4",
+          "observed:tinker/mechanics:stat-conflict",
+          "talent:tinker/mechanics:28-75-6-8",
+          "talent:tinker/mechanics:28-75-10-8",
+          "talent:tinker/mechanics:28-75-1-6b"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, much of the gun and pet package works at range, but placed turrets and pet marks make rapid relocation or target turnover less efficient. Mechsuit is both an offensive window and a durability tool; the Tinker class kit adds gadgets and control.",
+        "strengths": [
+          "Control and utility create options",
+          "Target swaps can reward flexibility"
+        ],
+        "cautions": [
+          "Disruption makes the loop less predictable",
+          "Defensive timing is punishable"
+        ],
+        "claim_ids": [
+          "observed:tinker/mechanics:current-loop",
+          "inference:tinker/mechanics:scrap-failure",
+          "observed:tinker/mechanics:level-45-experience",
+          "talent:tinker/mechanics:28-75-7-4",
+          "observed:tinker/mechanics:stat-conflict",
+          "talent:tinker/mechanics:28-75-6-8",
+          "talent:tinker/mechanics:28-75-10-8",
+          "talent:tinker/mechanics:28-75-1-6b"
+        ]
+      }
+    },
+    "complexity": {
+      "core_actions": {
+        "level_50_60": {
+          "value": "high",
+          "reason": "The practical toolkit spans gun builders, explosives, Mechsuit actions, pet commands, turret upkeep, and utility gadgets.",
+          "claim_ids": [
+            "observed:tinker/mechanics:level-45-experience",
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "The practical action set follows the authored loop: Generate Scrap through Scrap Shot, critical hits, and temporary engine effects; spend it through the active explosive and Mechsuit package; keep Scrapmaw and useful turrets contributing; and use Makeshift Dynamite to connect personal, suit, and pet damage. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "The practical action set follows the authored loop: Generate Scrap through Scrap Shot, critical hits, and temporary engine effects; spend it through the active explosive and Mechsuit package; keep Scrapmaw and useful turrets contributing; and use Makeshift Dynamite to connect personal, suit, and pet damage. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "The practical action set follows the authored loop: Generate Scrap through Scrap Shot, critical hits, and temporary engine effects; spend it through the active explosive and Mechsuit package; keep Scrapmaw and useful turrets contributing; and use Makeshift Dynamite to connect personal, suit, and pet damage. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "The practical action set follows the authored loop: Generate Scrap through Scrap Shot, critical hits, and temporary engine effects; spend it through the active explosive and Mechsuit package; keep Scrapmaw and useful turrets contributing; and use Makeshift Dynamite to connect personal, suit, and pet damage. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "The practical action set follows the authored loop: Generate Scrap through Scrap Shot, critical hits, and temporary engine effects; spend it through the active explosive and Mechsuit package; keep Scrapmaw and useful turrets contributing; and use Makeshift Dynamite to connect personal, suit, and pet damage. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        }
+      },
+      "state_tracking": {
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Scrap, Mechsuit timing, Scrapmaw, Arclight marks, turrets, and Overclock overlap.",
+          "claim_ids": [
+            "talent:tinker/mechanics:28-75-1-6b",
+            "talent:tinker/mechanics:28-75-8-6",
+            "talent:tinker/mechanics:28-75-6-8",
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Scrapmaw, ranged criticals, Makeshift Dynamite, and Mechsuit abilities form the sustained engine, with Arclight Core and Overclocked Machine adding pet-triggered payoff. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Scrapmaw, ranged criticals, Makeshift Dynamite, and Mechsuit abilities form the sustained engine, with Arclight Core and Overclocked Machine adding pet-triggered payoff. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Scrapmaw, ranged criticals, Makeshift Dynamite, and Mechsuit abilities form the sustained engine, with Arclight Core and Overclocked Machine adding pet-triggered payoff. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "moderate-high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Scrapmaw, ranged criticals, Makeshift Dynamite, and Mechsuit abilities form the sustained engine, with Arclight Core and Overclocked Machine adding pet-triggered payoff. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        },
+        "pvp": {
+          "value": "moderate-high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Scrapmaw, ranged criticals, Makeshift Dynamite, and Mechsuit abilities form the sustained engine, with Arclight Core and Overclocked Machine adding pet-triggered payoff. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        }
+      },
+      "failure_cost": {
+        "dungeon_aoe": {
+          "value": "moderate-high",
+          "reason": "Poor Scrap routing or turret placement can waste setup before the pack moves or dies.",
+          "claim_ids": [
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:current-loop",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Spending Scrap without preserving the next Mechsuit, pet, or explosive payoff can leave the engine resource-starved. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Spending Scrap without preserving the next Mechsuit, pet, or explosive payoff can leave the engine resource-starved. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "Spending Scrap without preserving the next Mechsuit, pet, or explosive payoff can leave the engine resource-starved. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Spending Scrap without preserving the next Mechsuit, pet, or explosive payoff can leave the engine resource-starved. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Spending Scrap without preserving the next Mechsuit, pet, or explosive payoff can leave the engine resource-starved. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Sticky Bomb, dynamite, Mechsuit Combustion, upgraded turrets, and later Gear Grind provide overlapping pack tools. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low-moderate",
+          "reason": "The payoff depends on establishing the conditions described by: Sticky Bomb, dynamite, Mechsuit Combustion, upgraded turrets, and later Gear Grind provide overlapping pack tools. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        },
+        "level_50_60": {
+          "value": "low-moderate",
+          "reason": "The payoff depends on establishing the conditions described by: Sticky Bomb, dynamite, Mechsuit Combustion, upgraded turrets, and later Gear Grind provide overlapping pack tools. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        },
+        "boss": {
+          "value": "low-moderate",
+          "reason": "The payoff depends on establishing the conditions described by: Sticky Bomb, dynamite, Mechsuit Combustion, upgraded turrets, and later Gear Grind provide overlapping pack tools. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low-moderate",
+          "reason": "The payoff depends on establishing the conditions described by: Sticky Bomb, dynamite, Mechsuit Combustion, upgraded turrets, and later Gear Grind provide overlapping pack tools. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "The payoff depends on establishing the conditions described by: Sticky Bomb, dynamite, Mechsuit Combustion, upgraded turrets, and later Gear Grind provide overlapping pack tools. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; mechsuit is both an offensive window and a durability tool; the tinker class kit adds gadgets and control. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; mechsuit is both an offensive window and a durability tool; the tinker class kit adds gadgets and control. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; mechsuit is both an offensive window and a durability tool; the tinker class kit adds gadgets and control. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; mechsuit is both an offensive window and a durability tool; the tinker class kit adds gadgets and control. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; mechsuit is both an offensive window and a durability tool; the tinker class kit adds gadgets and control. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "Target count, incoming pressure, and movement change the next action; mechsuit is both an offensive window and a durability tool; the tinker class kit adds gadgets and control. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Much of the gun and pet package works at range, but placed turrets and pet marks make rapid relocation or target turnover less efficient. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Much of the gun and pet package works at range, but placed turrets and pet marks make rapid relocation or target turnover less efficient. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Much of the gun and pet package works at range, but placed turrets and pet marks make rapid relocation or target turnover less efficient. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Much of the gun and pet package works at range, but placed turrets and pet marks make rapid relocation or target turnover less efficient. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Much of the gun and pet package works at range, but placed turrets and pet marks make rapid relocation or target turnover less efficient. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "Execution is constrained by positioning and swaps: Much of the gun and pet package works at range, but placed turrets and pet marks make rapid relocation or target turnover less efficient. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict",
+            "talent:tinker/mechanics:28-75-6-8",
+            "talent:tinker/mechanics:28-75-10-8",
+            "talent:tinker/mechanics:28-75-1-6b"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You like managing several cooperating machines rather than one compact spell rotation.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop"
+          ]
+        },
+        {
+          "text": "You enjoy the spec's core cadence: generate scrap through scrap shot, critical hits, and temporary engine effects; spend it through the active explosive and mechsuit package; keep scrapmaw and useful turrets contributing; and use makeshift dynamite to connect personal, suit, and pet damage.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You dislike pet, turret, and resource maintenance or want a small action bar.",
+          "claim_ids": [
+            "observed:tinker/mechanics:level-45-experience"
+          ]
+        },
+        {
+          "text": "You dislike the positioning or swap constraint that much of the gun and pet package works at range, but placed turrets and pet marks make rapid relocation or target turnover less efficient.",
+          "claim_ids": [
+            "observed:tinker/mechanics:current-loop",
+            "inference:tinker/mechanics:scrap-failure",
+            "observed:tinker/mechanics:level-45-experience",
+            "talent:tinker/mechanics:28-75-7-4",
+            "observed:tinker/mechanics:stat-conflict"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Recent players praise Scrapmaw damage, Mechsuit durability, utility, and strong output when allowed to set up.",
+          "claim_ids": [
+            "observed:tinker/mechanics:level-45-experience"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Bar pressure, Scrap sustain, and setup dependence are recurring cautions.",
+          "claim_ids": [
+            "observed:tinker/mechanics:level-45-experience"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "Current Agility-versus-Intellect recommendations conflict and should not be collapsed into one stat rule.",
+          "claim_ids": [
+            "observed:tinker/mechanics:stat-conflict"
+          ]
+        }
+      ]
+    },
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "moderate",
+      "performance": "editorial_only",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium",
+      "gaps": [
+        "No controlled stat weights.",
+        "No verified current gameplay video."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "Early play establishes the spec's central loop: generate scrap through scrap shot, critical hits, and temporary engine effects; spend it through the active explosive and mechsuit package; keep scrapmaw and useful.",
+      "observed_changes": [
+        "Later interactions are still missing",
+        "Recovery tools are incomplete"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "A layered engineer with personal, pet, turret, and suit states. Gear Grind and Overclocked Machine add payoff decisions to an already broad kit.",
+      "observed_changes": [
+        "Stat advice currently conflicts",
+        "Pet and placement dependencies"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "Early play establishes the spec's central loop: generate scrap through scrap shot, critical hits, and temporary engine effects; spend it through the active explosive and mechsuit package; keep scrapmaw and useful.",
+      "observed_changes": [
+        "Later interactions are still missing",
+        "Recovery tools are incomplete"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "By levels 30-49, generate scrap through scrap shot, critical hits, and temporary engine effects; spend it through the active explosive and mechsuit package; keep scrapmaw and useful turrets contributing; and use makeshift dynamite to connect personal, suit, and pet damage.",
+      "observed_changes": [
+        "Scrap sustain matters",
+        "Many optional buttons"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "By levels 30-49, generate scrap through scrap shot, critical hits, and temporary engine effects; spend it through the active explosive and mechsuit package; keep scrapmaw and useful turrets contributing; and use makeshift dynamite to connect personal, suit, and pet damage.",
+      "observed_changes": [
+        "Scrap sustain matters",
+        "Many optional buttons"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:tinker/mechanics:current-loop",
+      "kind": "observed",
+      "text": "A current independent guide describes Scrap from Scrap Shot, Sticky Bomb, and criticals; Makeshift Dynamite spending; Mechsuit Combustion and Laser Beam; Scrapmaw; turret upkeep; and a high optimization ceiling.",
+      "source_ids": [
+        "guide:mechanics-2026-07-22"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "pve_general"
+        ],
+        "build_or_mode": [
+          "guide_build"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Editorial synthesis that aligns with current structural talents."
+    },
+    {
+      "id": "observed:tinker/mechanics:level-45-experience",
+      "kind": "observed",
+      "text": "A July level-45 player reports strong damage when left to operate, a powerful Scrapmaw, useful Mechsuit durability, meaningful Scrap sustain, broad utility, and crowded action bars.",
+      "source_ids": [
+        "reddit:tinker-experience-2026-07-12"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "pvp",
+          "dungeon"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "One detailed leveling report."
+    },
+    {
+      "id": "observed:tinker/mechanics:stat-conflict",
+      "kind": "observed",
+      "text": "A current Mechanics discussion contains conflicting Agility and Intellect recommendations and a simplified Gatling-focused play suggestion.",
+      "source_ids": [
+        "reddit:mechanics-stats-2026-07-31"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "pvp"
+        ],
+        "build_or_mode": [
+          "unspecified"
+        ]
+      },
+      "confidence": "low",
+      "conflicts_with": [],
+      "notes": "The disagreement is preserved because the builds and testing conditions are not documented."
+    },
+    {
+      "id": "inference:tinker/mechanics:scrap-failure",
+      "kind": "inference",
+      "text": "Mechanics rewards planning Scrap around suit, pet, and explosive payoffs; careless spending can create a temporary dead zone in the engine.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:tinker/mechanics:28-75-4-0",
+        "talent:tinker/mechanics:28-75-1-6b",
+        "observed:tinker/mechanics:current-loop"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The optimal reserve threshold is not measured."
+    }
+  ]
+}

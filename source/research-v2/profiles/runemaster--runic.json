@@ -1,0 +1,1558 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "runemaster/runic",
+    "class": "Runemaster",
+    "name": "Runic",
+    "roles": [
+      "Damage"
+    ],
+    "range": [
+      "Melee"
+    ]
+  },
+  "identity": {
+    "fantasy": "",
+    "one_line": "A martial engraver using Runic Brand, Runeblade, elemental weapon procs, Fists of Power, Zenith, and leyline burst. The player maintains brands and engraving states while attacking at a fast pace, then amplifies the package with Runic Tempest or Ley Power.",
+    "primary_family": "",
+    "also_fits": [],
+    "claim_ids": [
+      "talent:runemaster/runic:32-85-4-0",
+      "talent:runemaster/runic:32-85-10-0",
+      "talent:runemaster/runic:32-85-3-1",
+      "talent:runemaster/runic:32-85-5-1",
+      "talent:runemaster/runic:32-85-1-2",
+      "talent:runemaster/runic:32-85-4-2",
+      "talent:runemaster/runic:32-85-7-2",
+      "talent:runemaster/runic:32-85-10-2",
+      "talent:runemaster/runic:32-85-1-3",
+      "talent:runemaster/runic:32-85-4-3",
+      "talent:runemaster/runic:32-85-7-3",
+      "talent:runemaster/runic:32-85-2-4",
+      "talent:runemaster/runic:32-85-4-4",
+      "talent:runemaster/runic:32-85-6-4",
+      "talent:runemaster/runic:32-85-10-4",
+      "talent:runemaster/runic:32-85-0-5",
+      "talent:runemaster/runic:32-85-2-5",
+      "talent:runemaster/runic:32-85-4-5",
+      "talent:runemaster/runic:32-85-6-5",
+      "talent:runemaster/runic:32-85-8-5a",
+      "talent:runemaster/runic:32-85-8-5b",
+      "talent:runemaster/runic:32-85-1-6a",
+      "talent:runemaster/runic:32-85-1-6b",
+      "talent:runemaster/runic:32-85-3-6",
+      "talent:runemaster/runic:32-85-4-6a",
+      "talent:runemaster/runic:32-85-4-6b",
+      "talent:runemaster/runic:32-85-5-6",
+      "talent:runemaster/runic:32-85-7-6",
+      "talent:runemaster/runic:32-85-10-6",
+      "talent:runemaster/runic:32-85-1-7",
+      "talent:runemaster/runic:32-85-3-7",
+      "talent:runemaster/runic:32-85-5-7",
+      "talent:runemaster/runic:32-85-7-7",
+      "talent:runemaster/runic:32-85-1-8",
+      "talent:runemaster/runic:32-85-4-8",
+      "talent:runemaster/runic:32-85-7-8",
+      "talent:runemaster/runic:32-85-10-8",
+      "talent:runemaster/runic:32-85-1-9",
+      "talent:runemaster/runic:32-85-3-9",
+      "talent:runemaster/runic:32-85-5-9",
+      "talent:runemaster/runic:32-85-7-9"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "A martial engraver using Runic Brand, Runeblade, elemental weapon procs, Fists of Power, Zenith, and leyline burst. The player maintains brands and engraving states while attacking at a fast pace, then amplifies the package with Runic Tempest or Ley Power.",
+    "resources": [
+      "Granite Shield"
+    ],
+    "builders": [
+      {
+        "name": "Granite Shield",
+        "claim_ids": [
+          "talent:runemaster/runic:32-85-1-6b"
+        ]
+      }
+    ],
+    "spenders": [],
+    "windows": [
+      {
+        "name": "Leystone Springs",
+        "claim_ids": [
+          "talent:runemaster/runic:32-85-5-1"
+        ]
+      },
+      {
+        "name": "Uncovered Engravings",
+        "claim_ids": [
+          "talent:runemaster/runic:32-85-4-4"
+        ]
+      },
+      {
+        "name": "Guarding Rune",
+        "claim_ids": [
+          "talent:runemaster/runic:32-85-4-5"
+        ]
+      },
+      {
+        "name": "Granite Shield",
+        "claim_ids": [
+          "talent:runemaster/runic:32-85-1-6b"
+        ]
+      },
+      {
+        "name": "Leyline Disturbance",
+        "claim_ids": [
+          "talent:runemaster/runic:32-85-3-6"
+        ]
+      },
+      {
+        "name": "Symbols of Power",
+        "claim_ids": [
+          "talent:runemaster/runic:32-85-5-7"
+        ]
+      },
+      {
+        "name": "Sky and Stone",
+        "claim_ids": [
+          "talent:runemaster/runic:32-85-7-7"
+        ]
+      },
+      {
+        "name": "Ley Power",
+        "claim_ids": [
+          "talent:runemaster/runic:32-85-3-9"
+        ]
+      },
+      {
+        "name": "Stone Savant",
+        "claim_ids": [
+          "talent:runemaster/runic:32-85-7-9"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Elemental Mastery",
+        "claim_ids": [
+          "talent:runemaster/runic:32-85-1-3"
+        ],
+        "structural_description": "Damage dealt by Runic Brand now has a 33% chance to transform your Primordial Blast into a random unique elemental version of itself."
+      },
+      {
+        "name": "Earth, Wind, and Fire",
+        "claim_ids": [
+          "talent:runemaster/runic:32-85-5-6"
+        ],
+        "structural_description": "Striking at least 5 enemies with Runic Explosion now unleashes Wild Steam.Wild Steam (Transform)Stomp the ground in a 5 yd radius around you and release steam, dealing 128 + 25% AP Frostfire Damage to nearby enemies."
+      },
+      {
+        "name": "Steam Conjurer",
+        "claim_ids": [
+          "talent:runemaster/runic:32-85-5-9"
+        ],
+        "structural_description": "Damage dealt by Weapon Engraving: Earth now has a 5% chance to cast Wild Steam. Can only occur once every 3 sec.Wild Steam (Transform)Stomp the ground in a 5 yd radius around you and release steam, dealing 128 + 25% AP Frostfire Damage to nearby enemies."
+      }
+    ],
+    "single_target": "",
+    "aoe": "",
+    "movement_and_target_switching": "",
+    "defense_and_control": "",
+    "group_utility": "",
+    "failure_modes": [],
+    "claim_ids": [
+      "talent:runemaster/runic:32-85-4-0",
+      "talent:runemaster/runic:32-85-10-0",
+      "talent:runemaster/runic:32-85-3-1",
+      "talent:runemaster/runic:32-85-5-1",
+      "talent:runemaster/runic:32-85-1-2",
+      "talent:runemaster/runic:32-85-4-2",
+      "talent:runemaster/runic:32-85-7-2",
+      "talent:runemaster/runic:32-85-10-2",
+      "talent:runemaster/runic:32-85-1-3",
+      "talent:runemaster/runic:32-85-4-3",
+      "talent:runemaster/runic:32-85-7-3",
+      "talent:runemaster/runic:32-85-2-4",
+      "talent:runemaster/runic:32-85-4-4",
+      "talent:runemaster/runic:32-85-6-4",
+      "talent:runemaster/runic:32-85-10-4",
+      "talent:runemaster/runic:32-85-0-5",
+      "talent:runemaster/runic:32-85-2-5",
+      "talent:runemaster/runic:32-85-4-5",
+      "talent:runemaster/runic:32-85-6-5",
+      "talent:runemaster/runic:32-85-8-5a",
+      "talent:runemaster/runic:32-85-8-5b",
+      "talent:runemaster/runic:32-85-1-6a",
+      "talent:runemaster/runic:32-85-1-6b",
+      "talent:runemaster/runic:32-85-3-6",
+      "talent:runemaster/runic:32-85-4-6a",
+      "talent:runemaster/runic:32-85-4-6b",
+      "talent:runemaster/runic:32-85-5-6",
+      "talent:runemaster/runic:32-85-7-6",
+      "talent:runemaster/runic:32-85-10-6",
+      "talent:runemaster/runic:32-85-1-7",
+      "talent:runemaster/runic:32-85-3-7",
+      "talent:runemaster/runic:32-85-5-7",
+      "talent:runemaster/runic:32-85-7-7",
+      "talent:runemaster/runic:32-85-1-8",
+      "talent:runemaster/runic:32-85-4-8",
+      "talent:runemaster/runic:32-85-7-8",
+      "talent:runemaster/runic:32-85-10-8",
+      "talent:runemaster/runic:32-85-1-9",
+      "talent:runemaster/runic:32-85-3-9",
+      "talent:runemaster/runic:32-85-5-9",
+      "talent:runemaster/runic:32-85-7-9"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Runic Brand",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-4-0"
+          ]
+        },
+        {
+          "name": "Fists of Power",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-10-0"
+          ]
+        },
+        {
+          "name": "Eternal Magic",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-3-1"
+          ]
+        },
+        {
+          "name": "Leystone Springs",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-5-1"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:runemaster/runic:32-85-4-0",
+        "talent:runemaster/runic:32-85-10-0",
+        "talent:runemaster/runic:32-85-3-1",
+        "talent:runemaster/runic:32-85-5-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Graceful",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-1-2"
+          ]
+        },
+        {
+          "name": "Fist of the Ancients",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-4-2"
+          ]
+        },
+        {
+          "name": "Alteration",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-7-2"
+          ]
+        },
+        {
+          "name": "Primordial Strength",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-10-2"
+          ]
+        },
+        {
+          "name": "Elemental Mastery",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-1-3"
+          ]
+        },
+        {
+          "name": "Ancient Warrior",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-4-3"
+          ]
+        },
+        {
+          "name": "Elemental Strikes",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-7-3"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:runemaster/runic:32-85-1-2",
+        "talent:runemaster/runic:32-85-4-2",
+        "talent:runemaster/runic:32-85-7-2",
+        "talent:runemaster/runic:32-85-10-2",
+        "talent:runemaster/runic:32-85-1-3",
+        "talent:runemaster/runic:32-85-4-3",
+        "talent:runemaster/runic:32-85-7-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Leyborn",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-2-4"
+          ]
+        },
+        {
+          "name": "Uncovered Engravings",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-4-4"
+          ]
+        },
+        {
+          "name": "Tempo",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-6-4"
+          ]
+        },
+        {
+          "name": "Elemental Carvings",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-10-4"
+          ]
+        },
+        {
+          "name": "Mark of Strength",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-0-5"
+          ]
+        },
+        {
+          "name": "Brandmaster",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-2-5"
+          ]
+        },
+        {
+          "name": "Guarding Rune",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-4-5"
+          ]
+        },
+        {
+          "name": "Volcanic Etching",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-6-5"
+          ]
+        },
+        {
+          "name": "Flowing Rivers",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-8-5a"
+          ]
+        },
+        {
+          "name": "Wind Surge",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-8-5b"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:runemaster/runic:32-85-2-4",
+        "talent:runemaster/runic:32-85-4-4",
+        "talent:runemaster/runic:32-85-6-4",
+        "talent:runemaster/runic:32-85-10-4",
+        "talent:runemaster/runic:32-85-0-5",
+        "talent:runemaster/runic:32-85-2-5",
+        "talent:runemaster/runic:32-85-4-5",
+        "talent:runemaster/runic:32-85-6-5",
+        "talent:runemaster/runic:32-85-8-5a",
+        "talent:runemaster/runic:32-85-8-5b"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Devastating Flames",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-1-6a"
+          ]
+        },
+        {
+          "name": "Granite Shield",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-1-6b"
+          ]
+        },
+        {
+          "name": "Leyline Disturbance",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-3-6"
+          ]
+        },
+        {
+          "name": "Protective Warding",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-4-6a"
+          ]
+        },
+        {
+          "name": "Runebound Surge",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-4-6b"
+          ]
+        },
+        {
+          "name": "Earth, Wind, and Fire",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-5-6"
+          ]
+        },
+        {
+          "name": "Forbidden Engraving",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-7-6"
+          ]
+        },
+        {
+          "name": "Power Overwhelming",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-10-6"
+          ]
+        },
+        {
+          "name": "Explosive Runes",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-1-7"
+          ]
+        },
+        {
+          "name": "Magic Etchings",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-3-7"
+          ]
+        },
+        {
+          "name": "Symbols of Power",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-5-7"
+          ]
+        },
+        {
+          "name": "Sky and Stone",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-7-7"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:runemaster/runic:32-85-1-6a",
+        "talent:runemaster/runic:32-85-1-6b",
+        "talent:runemaster/runic:32-85-3-6",
+        "talent:runemaster/runic:32-85-4-6a",
+        "talent:runemaster/runic:32-85-4-6b",
+        "talent:runemaster/runic:32-85-5-6",
+        "talent:runemaster/runic:32-85-7-6",
+        "talent:runemaster/runic:32-85-10-6",
+        "talent:runemaster/runic:32-85-1-7",
+        "talent:runemaster/runic:32-85-3-7",
+        "talent:runemaster/runic:32-85-5-7",
+        "talent:runemaster/runic:32-85-7-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Echoes of Eternity",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-1-8"
+          ]
+        },
+        {
+          "name": "Runic Tempest",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-4-8"
+          ]
+        },
+        {
+          "name": "Fists of Power",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-7-8"
+          ]
+        },
+        {
+          "name": "Branded",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-10-8"
+          ]
+        },
+        {
+          "name": "Runelord",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-1-9"
+          ]
+        },
+        {
+          "name": "Ley Power",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-3-9"
+          ]
+        },
+        {
+          "name": "Steam Conjurer",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-5-9"
+          ]
+        },
+        {
+          "name": "Stone Savant",
+          "claim_ids": [
+            "talent:runemaster/runic:32-85-7-9"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:runemaster/runic:32-85-1-8",
+        "talent:runemaster/runic:32-85-4-8",
+        "talent:runemaster/runic:32-85-7-8",
+        "talent:runemaster/runic:32-85-10-8",
+        "talent:runemaster/runic:32-85-1-9",
+        "talent:runemaster/runic:32-85-3-9",
+        "talent:runemaster/runic:32-85-5-9",
+        "talent:runemaster/runic:32-85-7-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "leveling_30_49": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "level_50_60": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "boss": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "dungeon_aoe": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "pvp": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [],
+    "avoid_if": []
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [],
+  "sentiment": {
+    "praise": [],
+    "frustrations": [],
+    "contested": []
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 3,
+    "latest_update": "2026-07-22T00:28:13.848+00:00",
+    "top_title": "Runemaster PvE Engravement - AoE + Single Target",
+    "top_url": "https://coabuildhub.com/build/dca788b3-5300-440f-92e9-f0f6d118956a",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:dca788b3-5300-440f-92e9-f0f6d118956a"
+    ]
+  },
+  "coverage": {
+    "mechanical": "structural_baseline",
+    "community": "indexed",
+    "performance": "missing",
+    "video": "missing",
+    "overall_confidence": "low",
+    "gaps": [
+      "Effective core loop needs recent guide or player cross-check.",
+      "Contextual complexity values are not yet researched.",
+      "Recent performance, sentiment, issues, and video evidence are not yet reconciled."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:runemaster/runic:32-85-4-0",
+      "kind": "structural",
+      "text": "Runic Brand: Brand an enemy, dealing 10 + 26% AP Fire damage with each weapon, and marking the enemy for 8 seconds.Marked: Runic BrandYour next Runeblade on the enemy causes a Runic Explosion, dealing an additional 121 + 18.5% AP Spellfire Damage to nearby enemies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-10-0",
+      "kind": "structural",
+      "text": "Fists of Power: Level 10 PassiveRuneblade now strikes your target an additional time for 50% of the damage dealt with your offhand weapon.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-3-1",
+      "kind": "structural",
+      "text": "Eternal Magic: Reduces the cooldown of Primordial Blast by -4 sec and it now refreshes 3 charges of Runeblade.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-5-1",
+      "kind": "structural",
+      "text": "Leystone Springs: Your melee auto attacks now have a 15% chance to restore 49 + 5% AP mana. While Runic Tattoos: Water is active, the mana restored is increased by 200%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-1-2",
+      "kind": "structural",
+      "text": "Graceful: Increases your haste by 5%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-4-2",
+      "kind": "structural",
+      "text": "Fist of the Ancients: Smash an enemy and 1 nearby enemy with your rune-engraved fists, dealing 40 + 40% AP Elemental Damage and triggering your Weapon Engraving.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-7-2",
+      "kind": "structural",
+      "text": "Alteration: Increases the effectiveness of your Runic Tattoos by 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-10-2",
+      "kind": "structural",
+      "text": "Primordial Strength: Level 20 PassiveIncreases your spell damage by 25% of your attack power, your chance to hit by 3% of your Agility and your spell hit rating by 3% of your Agility.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-1-3",
+      "kind": "structural",
+      "text": "Elemental Mastery: Damage dealt by Runic Brand now has a 33% chance to transform your Primordial Blast into a random unique elemental version of itself.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-4-3",
+      "kind": "structural",
+      "text": "Ancient Warrior: Reduces the cooldown of Fist of the Ancients by -2 sec whenever you use Runeblade or Primordial Blast.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-7-3",
+      "kind": "structural",
+      "text": "Elemental Strikes: Increases your critical strike chance with Fire, Frost, and Nature spells by 3% and your expertise by 4.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-2-4",
+      "kind": "structural",
+      "text": "Leyborn: Your Marked: Runic Brand now stacks 3 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-4-4",
+      "kind": "structural",
+      "text": "Uncovered Engravings: Using Fist of the Ancients now increases your chance to trigger Weapon Engravings by 20% for 5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-6-4",
+      "kind": "structural",
+      "text": "Tempo: Increases the damage of Runeblade by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-10-4",
+      "kind": "structural",
+      "text": "Elemental Carvings: Level 30 PassiveFist of the Ancients now unleashes an elemental carving at random.Fire Carving: Increases your Armor penetration by 15% for 6 seconds.Water Carving: Restores 306 mana over 6 seconds.Earth Carving: Restores 3% missing health every 1 sec for 6 seconds.Air Carving: Increases your melee haste by 10% for 6 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-0-5",
+      "kind": "structural",
+      "text": "Mark of Strength: Increases the spell power scaling of Primordial Blast by 30%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-2-5",
+      "kind": "structural",
+      "text": "Brandmaster: Increases your critical strike chance with Runic Brand's explosion effect by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-4-5",
+      "kind": "structural",
+      "text": "Guarding Rune: Inscribe a defensive rune beneath you in a 10 yd radius, summoning a barrier that causes allies within the radius to take -40% reduced Magic damage. Lasts 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-6-5",
+      "kind": "structural",
+      "text": "Volcanic Etching: Increases the chance to trigger Weapon Engraving: Fire and Weapon Engraving: Earth by 5%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-8-5a",
+      "kind": "structural",
+      "text": "Flowing Rivers: Increases the chance to trigger Replenishment with Weapon Engravement: Water by 10% and the mana restored by Runic Tattoos: Water by 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-8-5b",
+      "kind": "structural",
+      "text": "Wind Surge: Your Weapon Engraving: Air will now strike 2 additional enemies near its target.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-1-6a",
+      "kind": "structural",
+      "text": "Devastating Flames: Increases the damage dealt of Weapon Engraving: Fire by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-1-6b",
+      "kind": "structural",
+      "text": "Granite Shield: While Runic Tattoos: Earth is active, you now periodically gain Granite Shield every 20 sec.Granite ShieldAbsorbs 780 + 10% AP + 30% SP damage for 20 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-3-6",
+      "kind": "structural",
+      "text": "Leyline Disturbance: Increases melee and ranged haste of party and raid members within 100 yds by 10%.Does not stack with similar effects.Additionally, the duration of stun effects on you is reduced by -20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-4-6a",
+      "kind": "structural",
+      "text": "Protective Warding: Critical damage taken reduces the cooldown of Rune of Guarding by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-4-6b",
+      "kind": "structural",
+      "text": "Runebound Surge: Casting Runeshroud now increases your movement speed by 75% for 3 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-5-6",
+      "kind": "structural",
+      "text": "Earth, Wind, and Fire: Striking at least 5 enemies with Runic Explosion now unleashes Wild Steam.Wild Steam (Transform)Stomp the ground in a 5 yd radius around you and release steam, dealing 128 + 25% AP Frostfire Damage to nearby enemies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-7-6",
+      "kind": "structural",
+      "text": "Forbidden Engraving: Increases the effectiveness of your Weapon Engravings by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-10-6",
+      "kind": "structural",
+      "text": "Power Overwhelming: Level 40 PassiveYour Runeblade and Primordial Blast now have a 35% chance to grant you Power Overwhelming, resetting the cooldown of Runic Brand.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-1-7",
+      "kind": "structural",
+      "text": "Explosive Runes: Your Weapon Engraving: Fire now detonates after 2 sec and its critical damage is increased by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-3-7",
+      "kind": "structural",
+      "text": "Magic Etchings: Dealing damage with Primordial Blast now reduces the affected target's armor by -4% for 12 seconds, stacking 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-5-7",
+      "kind": "structural",
+      "text": "Symbols of Power: Increases the damage of Fist of the Ancients while you have Weapon Engraving: Fire active by 15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-7-7",
+      "kind": "structural",
+      "text": "Sky and Stone: Damage dealt by Weapon Engraving: Air and Weapon Engraving: Earth now have a 10% chance to increase the melee attack speed of your next 10 attacks within 10 seconds by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-1-8",
+      "kind": "structural",
+      "text": "Echoes of Eternity: Your Zenith now has 2 charges.Zenith2 Charges, 45 sec rechargeFor 6 seconds, your runic tattoos flare up, increasing your chance to trigger your Weapon Engravings by 100%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-4-8",
+      "kind": "structural",
+      "text": "Runic Tempest: Harness the power of your runic tattoos, resetting the cooldown of Fist of the Ancients and allowing the use of abilities that require Runeshroud and making them able to be cast while moving for 8 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-7-8",
+      "kind": "structural",
+      "text": "Fists of Power: Engrave your fists for 15 seconds, causing auto attacks to grant Earthen Fists for 10 seconds, increasing melee haste by 3% and the chance to trigger Weapon Engraving: Earth by 10%, stacking 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-10-8",
+      "kind": "structural",
+      "text": "Branded: Level 50 PassiveGaining Power Overwhelming now also guarantees your next Runic Brand to critically strike.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-1-9",
+      "kind": "structural",
+      "text": "Runelord: After activating Zenith, deal 900 + 33% AP Elemental Damage to your target and increase the damage dealt by your Runic Brand and Weapon Engravings by 30% for 8 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-3-9",
+      "kind": "structural",
+      "text": "Ley Power: Divert ley energy into your weapons, drawing power from enemies within 20 yds of you. For each enemy in the radius, your damage dealt deals an additional 10% of the damage as Arcane damage, up to 100%, for 15 seconds.While active, melee attacks and abilities grant you Harnessed Leylines.Harnessed Leylines (Proc)Increases the damage of your Runeblade and Elemental Burst by 3%, stacking up to 10 times.Additional applications do not refresh the effect.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-5-9",
+      "kind": "structural",
+      "text": "Steam Conjurer: Damage dealt by Weapon Engraving: Earth now has a 5% chance to cast Wild Steam. Can only occur once every 3 sec.Wild Steam (Transform)Stomp the ground in a 5 yd radius around you and release steam, dealing 128 + 25% AP Frostfire Damage to nearby enemies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:runemaster/runic:32-85-7-9",
+      "kind": "structural",
+      "text": "Stone Savant: While Earthen Fists is active, critical strikes with Weapon Engraving: Earth now causes you to strike twice with your next auto attack.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CoA restyle mockups v3</title>
+<style>
+:root { --bg:#121416; --ink:#cdcdcd; --dim:#85888e; --gold:#c9aa71; --gold-bright:#e8d4a4; --line:#2a2d33;
+  --serif: Cinzel, "Trajan Pro", "Palatino Linotype", "Book Antiqua", Georgia, serif; }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font:14px/1.6 Inter,"Segoe UI",sans-serif; }
+.wrap { max-width:1000px; margin:auto; padding:50px clamp(18px,4vw,50px) 80px; }
+h1 { margin:0 0 6px; font:700 34px/1.05 var(--serif); letter-spacing:.04em; color:var(--gold-bright); }
+.sub { color:var(--dim); margin:0 0 34px; }
+.c { display:block; color:inherit; text-decoration:none; border:1px solid var(--line); border-radius:6px; padding:22px 26px; margin-bottom:16px;
+  background:linear-gradient(170deg,#191b1f,#141619); transition:border-color .15s, transform .15s; }
+.c:hover { border-color:#c9aa7166; transform:translateY(-2px); }
+.c h2 { margin:0 0 4px; font:700 22px/1.1 var(--serif); letter-spacing:.03em; color:var(--gold); }
+.c .tag { color:var(--dim); font-size:12px; margin:0 0 10px; }
+.c dl { margin:0; display:grid; grid-template-columns:110px 1fr; gap:5px 14px; font-size:12.5px; }
+.c dt { color:#6d7178; font-weight:700; font-size:10px; letter-spacing:.14em; text-transform:uppercase; padding-top:2px; }
+.c dd { margin:0; color:#a7acb3; }
+.ground { border-top:1px solid var(--line); margin-top:30px; padding-top:20px; color:var(--dim); font-size:12.5px; }
+.ground b { color:var(--ink); }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <h1>Restyle Mockups v3</h1>
+  <p class="sub">One family section (Combo Sequencers, real data) plus the Artificer profile in each. All three: compact header replacing the bulky hero, redesigned toggles, more visual cards, and a TL;DR versus detail split. All three are phone-friendly. Pick one; the pick becomes the production restyle spec.</p>
+
+  <a class="c" href="a-ascension-chrome.html">
+    <h2>A · Ascension Chrome</h2>
+    <p class="tag">Faithful lift of ascension.gg's language.</p>
+    <dl>
+      <dt>Look</dt><dd>Black chrome nav, gold serif display, gold outline and fill buttons, underline segmented toggles, one-line masthead.</dd>
+      <dt>Profile</dt><dd>TL;DR and Full-codex toggle. TL;DR is fantasy plus loop plus six gold complexity bars plus one enjoy and one skip verdict.</dd>
+      <dt>Tradeoff</dt><dd>Safest and most on-brand, least distinctive. Closest to the current site's bones.</dd>
+    </dl>
+  </a>
+
+  <a class="c" href="b-war-plate.html">
+    <h2>B · War Plate</h2>
+    <p class="tag">In-game UI language: plates, pips, item tooltips.</p>
+    <dl>
+      <dt>Look</dt><dd>Braided double-border plates with corner gems, spec icons, stone segmented toggles, item-quality colors for research state (gold curated, grey in progress).</dd>
+      <dt>Profile</dt><dd>An item-tooltip IS the TL;DR: quality-colored name, pip stats, flavor line, verdicts. "Read the full codex" reveals detail.</dd>
+      <dt>Tradeoff</dt><dd>Most game-flavored and most visual. Heaviest chrome; risks kitsch if overdone.</dd>
+    </dl>
+  </a>
+
+  <a class="c" href="c-editorial-atlas.html">
+    <h2>C · Editorial Atlas</h2>
+    <p class="tag">Magazine treatment; typography does the work.</p>
+    <dl>
+      <dt>Look</dt><dd>Numbered family spreads, hairline gold rules, roster rows instead of cards, a six-cell complexity heat matrix per spec.</dd>
+      <dt>Profile</dt><dd>A dossier: italic lede, six radial gauges, accordion folds for detail. TL;DR is everything above the folds.</dd>
+      <dt>Tradeoff</dt><dd>Most elegant and scannable at 70 specs. Least "game UI"; rows are less swatchy than cards.</dd>
+    </dl>
+  </a>
+
+  <div class="ground">
+    <b>Shared ground rules:</b> real data from the production explorer-data.js. Qualitative complexity, honest unresearched states, no fun scores. Serif is a Cinzel-style stand-in for ascension.gg's Beaufort; production would bundle Cinzel (open license). Elements mix freely — pick a base and name the swaps.
+  </div>
+</main>
+</body>
+</html>

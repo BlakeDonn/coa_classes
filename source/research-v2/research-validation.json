@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "validated_date": "2026-08-06",
+  "freshness_floor": "2026-05-05",
+  "checks": {
+    "profile_count_is_70": true,
+    "class_count_is_21": true,
+    "all_profiles_have_structural_claims": true,
+    "community_inventory_covers_every_profile": true,
+    "performance_signals_cover_every_profile": true,
+    "every_profile_has_direct_source_or_overlay": true,
+    "all_discovered_sources_inside_freshness_window": true
+  },
+  "passed": true,
+  "stale_discovered_source_ids": [],
+  "notes": [
+    "Passing validates inventory, linkage, and freshness only.",
+    "All 70 profiles now have validated overlays, but evidence depth varies; inspect each profile's coverage and gaps before making comparative claims.",
+    "Overlay claim-reference validation is performed by tools/apply_coa_research_overlays.py.",
+    "All 70 enriched profiles now expose six canonical contexts, six claim-backed complexity axes in every context, at least three failure modes, two-sided fit guidance, and five level bands."
+  ]
+}

@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Concept C — Fit Interview · CoA mockups v2</title>
+<link rel="stylesheet" href="shared/base.css">
+<style>
+  .interview { display: grid; grid-template-columns: repeat(auto-fit,minmax(215px,1fr)); gap: 12px; margin-top: 24px; }
+  .q-card { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: 15px; }
+  .q-card h3 { margin: 0 0 3px; font-size: 14px; }
+  .q-card p { margin: 0 0 10px; color: var(--dim); font-size: 11.5px; }
+  .q-opts { display: flex; flex-direction: column; gap: 6px; }
+  .q-opt { text-align: left; border: 1px solid var(--line); border-radius: 9px; padding: 7px 11px; background: var(--surface-2); cursor: pointer; font-size: 12.5px; color: #b8bfcc; }
+  .q-opt:hover { background: var(--surface-3); }
+  .q-opt.picked { border-color: #ffca6788; color: var(--gold); background: #ffca6712; }
+  .bucket { margin-top: 40px; }
+  .bucket-head { display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px; }
+  .bucket-head h2 { margin: 0; font-size: 22px; letter-spacing: -.03em; }
+  .bucket-head span { color: var(--dim); font-size: 12px; }
+  .match-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(320px,1fr)); gap: 12px; }
+  .why { margin: 11px 0 0; padding: 10px 12px; border-radius: 9px; background: #0d1016; border: 1px solid var(--line-soft); }
+  .why li { font-size: 12px; margin: 3px 0; }
+  .why .yes { color: var(--green); }
+  .why .no { color: var(--red); }
+  .why .neutral { color: var(--dim); }
+  .match-foot { display: flex; justify-content: space-between; align-items: center; margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line-soft); }
+  .honesty { margin-top: 14px; border: 1px dashed #38404e; border-radius: 11px; padding: 13px 16px; color: var(--dim); font-size: 12px; }
+</style>
+</head>
+<body>
+<header class="mock-topbar">
+  <a class="logo" href="index.html"><span>COA</span> Fit Interview</a>
+  <span class="mock-badge">Concept C · Mockup</span>
+  <a class="back" href="index.html">← Back to mockup hub</a>
+</header>
+
+<main class="wrap">
+  <section style="padding:42px 0 0">
+    <p class="eyebrow">Concept C · Guided questions, reasoned answers</p>
+    <h1 class="page-title">Tell us how you like to <span style="color:var(--gold)">play.</span></h1>
+    <p class="page-copy">Answer any of the five questions. Every spec is then sorted into plain-language buckets with the exact reasons shown —
+      there is no hidden score and no "fun rating." Skip any question you don't care about.</p>
+  </section>
+
+  <div class="interview" id="interview"></div>
+
+  <div class="honesty">
+    <strong style="color:var(--muted)">How matching works:</strong> each answer is a simple visible rule against the profile data
+    (for example "calm pace" means Pace 3 or less). A spec with no rule conflicts is a strong fit. One conflict: worth a look.
+    Two or more: probably frustrating. Rules run on our profile values, which mix snapshot data, player reports, and inference — each reason shows its evidence tier.
+  </div>
+
+  <div id="buckets"></div>
+
+  <section class="concept-notes">
+    <h2>About this concept</h2>
+    <div class="notes-grid">
+      <div class="note-card"><h3>Decision flow</h3>
+        <p>Answer up to five plain questions → read the reasoned buckets → open full profiles from the cards → pin favorites to the tray → compare pinned picks.</p></div>
+      <div class="note-card"><h3>What it does best</h3>
+        <p>Cold start for players with zero CoA vocabulary. It converts self-knowledge ("I hate being punished") directly into candidates, and every match shows its working.</p></div>
+      <div class="note-card"><h3>Main tradeoff</h3>
+        <p>The matching rules are our inference stacked on our inference-tagged profiles. Bad rules silently misroute people, so the visible-reasons design is load-bearing, not decorative. Browsing and serendipity are weaker than the atlas.</p></div>
+      <div class="note-card"><h3>Still needs research</h3>
+        <ul><li>Do these five questions predict actual enjoyment?</li>
+        <li>Threshold tuning (is Pace 3 "calm"?).</li>
+        <li>User testing on whether reasons are read or ignored.</li></ul></div>
+    </div>
+  </section>
+</main>
+
+<div class="tray" id="tray" hidden>
+  <span class="tray-label">Pinned</span>
+  <div class="tray-slots" id="traySlots"></div>
+  <button class="btn btn-gold" id="compareBtn" disabled>Compare</button>
+</div>
+
+<dialog class="mock-dialog" id="specDialog">
+  <button class="dlg-close" id="specClose" aria-label="Close">×</button>
+  <div id="specBody"></div>
+</dialog>
+
+<dialog class="mock-dialog" id="cmpDialog" style="width:min(1000px,calc(100vw - 24px))">
+  <button class="dlg-close" id="cmpClose" aria-label="Close">×</button>
+  <div style="padding:28px 30px" id="cmpBody"></div>
+</dialog>
+
+<script src="shared/profiles.js"></script>
+<script src="shared/render.js"></script>
+<script>
+(() => {
+  "use strict";
+  const { P, esc, srcBadge, meter5, detailHTML, makeTray, TRAIT_NAMES, FACET_NAMES } = MockUI;
+  const el = id => document.getElementById(id);
+
+  // Each option is a visible rule: test(spec) -> {ok, why, src} or null (no opinion).
+  const QUESTIONS = [
+    { id: "pace", title: "What pace feels good?", sub: "Moment-to-moment speed of hands and decisions.",
+      opts: [
+        { label: "Calm and deliberate", test: s => rule(s.traits.pace.v <= 3, `Pace ${s.traits.pace.v}/5`, s.traits.pace.s) },
+        { label: "Fast and busy", test: s => rule(s.traits.pace.v >= 4, `Pace ${s.traits.pace.v}/5`, s.traits.pace.s) }
+      ] },
+    { id: "plan", title: "Planner or reactor?", sub: "Do you enjoy setup and payoff, or answering the fight live?",
+      opts: [
+        { label: "I plan and detonate", test: s => rule(s.traits.setup.v >= 4, `Setup need ${s.traits.setup.v}/5`, s.traits.setup.s) },
+        { label: "I react in the moment", test: s => rule(s.complexity.reactive.v >= 4, `Reactive calls ${s.complexity.reactive.v}/5`, s.complexity.reactive.s) },
+        { label: "Neither — keep it steady", test: s => rule(s.traits.setup.v <= 2 && s.complexity.reactive.v <= 2, `Setup ${s.traits.setup.v}/5, reactive ${s.complexity.reactive.v}/5`, "inference") }
+      ] },
+    { id: "pets", title: "Pets and minions?", sub: "Companions, armies, machines.",
+      opts: [
+        { label: "Love commanding them", test: s => rule(s.traits.pets.v >= 4, `Pet reliance ${s.traits.pets.v}/5`, s.traits.pets.s) },
+        { label: "Prefer to fight alone", test: s => rule(s.traits.pets.v <= 1, `Pet reliance ${s.traits.pets.v}/5`, s.traits.pets.s) }
+      ] },
+    { id: "punish", title: "How much punishment is OK?", sub: "What happens when you make a mistake.",
+      opts: [
+        { label: "Keep it forgiving", test: s => rule(s.complexity.punishment.v <= 2, `Mistake punishment ${s.complexity.punishment.v}/5`, s.complexity.punishment.s) },
+        { label: "High stakes are the fun", test: s => rule(s.complexity.punishment.v >= 4, `Mistake punishment ${s.complexity.punishment.v}/5`, s.complexity.punishment.s) }
+      ] },
+    { id: "group", title: "Whose numbers matter?", sub: "Your meter, or the group's success.",
+      opts: [
+        { label: "The group is my instrument", test: s => rule(s.traits.group.v >= 4, `Group responsibility ${s.traits.group.v}/5`, s.traits.group.s) },
+        { label: "My own damage tells the story", test: s => rule(s.traits.group.v <= 2, `Group responsibility ${s.traits.group.v}/5`, s.traits.group.s) }
+      ] }
+  ];
+  const rule = (ok, why, src) => ({ ok, why, src });
+
+  const picked = {}; // qid -> opt index
+
+  function renderInterview() {
+    el("interview").innerHTML = QUESTIONS.map((q, qi) => `
+      <div class="q-card"><h3>${esc(q.title)}</h3><p>${esc(q.sub)}</p>
+        <div class="q-opts">${q.opts.map((o, oi) =>
+          `<button class="q-opt ${picked[q.id] === oi ? "picked" : ""}" data-q="${qi}" data-o="${oi}">${esc(o.label)}</button>`).join("")}
+        </div></div>`).join("");
+  }
+
+  function evaluate(spec) {
+    const reasons = [];
+    let clashes = 0, answered = 0;
+    for (const q of QUESTIONS) {
+      if (picked[q.id] === undefined) continue;
+      answered++;
+      const r = q.opts[picked[q.id]].test(spec);
+      if (r.ok) reasons.push({ cls: "yes", text: `Fits "${q.opts[picked[q.id]].label}" — ${r.why}`, src: r.src });
+      else { clashes++; reasons.push({ cls: "no", text: `Clashes with "${q.opts[picked[q.id]].label}" — ${r.why}`, src: r.src }); }
+    }
+    return { reasons, clashes, answered };
+  }
+
+  function matchCard(spec, ev) {
+    return `<article class="p-card" style="--accent:${spec.color}">
+      <div style="display:flex;justify-content:space-between;gap:10px;align-items:start">
+        <div><div class="p-kicker">${esc(spec.klass)} · ${esc(spec.role)}</div><h3>${esc(spec.name)}</h3></div>
+        <span class="pill pill-accent">${esc(P.families.find(f => f.id === spec.family).name)}</span>
+      </div>
+      <p class="p-oneliner">${esc(spec.oneLiner)}</p>
+      ${ev.answered ? `<ul class="why" style="list-style:none;padding:10px 12px;margin-top:11px">${ev.reasons.map(r =>
+        `<li class="${r.cls}">${r.cls === "yes" ? "✓" : "✕"} ${esc(r.text)} ${srcBadge(r.src)}</li>`).join("")}</ul>` : ""}
+      <div class="match-foot">
+        <button class="btn" data-open="${spec.id}">Full profile</button>
+        <button class="btn btn-gold" data-pin="${spec.id}">📌 Pin</button>
+      </div></article>`;
+  }
+
+  function renderBuckets() {
+    const evaluated = Object.values(P.specs).map(s => ({ s, ev: evaluate(s) }));
+    const answered = evaluated[0].ev.answered > 0;
+    const strong = evaluated.filter(x => answered && x.ev.clashes === 0);
+    const maybe = evaluated.filter(x => answered && x.ev.clashes === 1);
+    const frict = evaluated.filter(x => answered && x.ev.clashes >= 2);
+    const bucket = (title, note, list) => list.length ? `
+      <section class="bucket"><div class="bucket-head"><h2>${title}</h2><span>${note}</span></div>
+      <div class="match-grid">${list.map(x => matchCard(x.s, x.ev)).join("")}</div></section>` : "";
+    el("buckets").innerHTML = answered
+      ? bucket("Strong fit", "No conflicts with your answers.", strong)
+        + bucket("Worth a look", "One conflict — read it and decide if you care.", maybe)
+        + bucket("Probably frustrating", "Two or more conflicts. Not a quality judgment.", frict)
+        + (strong.length === 0 ? `<div class="honesty" style="margin-top:26px">Nothing fit every answer. That is an honest result — loosen one answer, or read the "worth a look" conflicts.</div>` : "")
+      : bucket("All profiled specs", "Answer a question above to start sorting.", evaluated);
+  }
+
+  const tray = makeTray(ids => {
+    el("tray").hidden = ids.length === 0;
+    el("traySlots").innerHTML = ids.map(id => {
+      const s = P.specs[id];
+      return `<span class="tray-chip" style="--accent:${s.color}">${esc(s.name)}<button data-remove="${id}" aria-label="Remove">×</button></span>`;
+    }).join("");
+    el("compareBtn").disabled = ids.length < 2;
+    el("compareBtn").textContent = ids.length < 2 ? "Compare" : `Compare ${ids.length}`;
+  });
+
+  function compareHTML(ids) {
+    const specs = ids.map(id => P.specs[id]);
+    let html = `<h2 style="margin:0 0 14px;font-size:24px;letter-spacing:-.03em">Pinned picks, side by side</h2>
+      <div style="overflow-x:auto"><div style="display:grid;grid-template-columns:130px repeat(${specs.length},minmax(150px,1fr));min-width:520px">`;
+    const row = (label, cells) => `<div style="padding:8px 10px;border-bottom:1px solid var(--line-soft);color:var(--dim);font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;align-self:center">${esc(label)}</div>`
+      + cells.map(c => `<div style="padding:8px 10px;border-bottom:1px solid var(--line-soft);font-size:12.5px">${c}</div>`).join("");
+    html += row("", specs.map(s => `<b style="color:${s.color};font-size:15px">${esc(s.name)}</b>`));
+    for (const [k, label] of Object.entries(TRAIT_NAMES))
+      html += row(label, specs.map(s => `<span style="--accent:${s.color}">${meter5(s.traits[k].v)}</span> ${srcBadge(s.traits[k].s)}`));
+    for (const [k, label] of Object.entries(FACET_NAMES))
+      html += row("Cx: " + label, specs.map(s => `<span style="--accent:${s.color}">${meter5(s.complexity[k].v)}</span> ${srcBadge(s.complexity[k].s)}`));
+    html += row("Video", specs.map(s => `<span style="color:var(--dim);font-size:11.5px">${s.video === null ? "None verified" : "verified"}</span>`));
+    html += `</div></div><div style="margin-top:14px">${MockUI.legend()}</div>`;
+    return html;
+  }
+
+  document.addEventListener("click", e => {
+    const opt = e.target.closest(".q-opt");
+    if (opt) {
+      const q = QUESTIONS[Number(opt.dataset.q)];
+      picked[q.id] = picked[q.id] === Number(opt.dataset.o) ? undefined : Number(opt.dataset.o);
+      renderInterview(); renderBuckets(); return;
+    }
+    const pin = e.target.closest("[data-pin]");
+    if (pin) { tray.toggle(pin.dataset.pin); return; }
+    const rm = e.target.closest("[data-remove]");
+    if (rm) { tray.remove(rm.dataset.remove); return; }
+    const open = e.target.closest("[data-open]");
+    if (open) { el("specBody").innerHTML = detailHTML(P.specs[open.dataset.open]); el("specDialog").showModal(); }
+  });
+  el("compareBtn").addEventListener("click", () => { el("cmpBody").innerHTML = compareHTML(tray.ids); el("cmpDialog").showModal(); });
+  el("specClose").addEventListener("click", () => el("specDialog").close());
+  el("cmpClose").addEventListener("click", () => el("cmpDialog").close());
+  for (const d of ["specDialog","cmpDialog"])
+    el(d).addEventListener("click", e => { if (e.target === el(d)) el(d).close(); });
+
+  renderInterview(); renderBuckets();
+})();
+</script>
+</body>
+</html>

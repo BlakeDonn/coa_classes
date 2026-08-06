@@ -1,0 +1,973 @@
+{
+  "baseline": "tinker--demolition.json",
+  "set": {
+    "identity": {
+      "fantasy": "A battlefield engineer who overlaps bombs, napalm, rockets, turrets, drones, factories, and oil until the whole pull becomes one explosive machine.",
+      "one_line": "Layer Napalm and oil, deploy after the tank stacks enemies, then turn Sparked and Ready into instant rockets and explosive rounds.",
+      "primary_family": "planners",
+      "also_fits": [
+        "commanders"
+      ],
+      "playstyle_tags": [
+        "deployable-explosives-caster",
+        "high-load-ranged",
+        "ground-setup-dps"
+      ],
+      "claim_ids": [
+        "talent:tinker/demolition:28-73-4-0",
+        "talent:tinker/demolition:28-73-10-0",
+        "talent:tinker/demolition:28-73-4-1",
+        "talent:tinker/demolition:28-73-2-2",
+        "observed:tinker/demolition:proc-breakpoint",
+        "observed:tinker/demolition:pack-dependency",
+        "inference:tinker/demolition:playstyle-identity"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "Bomb Toss, Napalm, rockets, turrets, drones, factories, and oil effects create a busy battlefield. The base concept is simple, but maximizing overlapping explosive windows and deployables is one of the higher-load current DPS jobs.",
+      "single_target": "On durable targets, the structural path grows from Bomb Toss, Napalm, Rocket Launcher toward Rocket Barrage, Explosive Inventor, Hyperblast Barrage. A precise priority remains limited to the captured build and community evidence.",
+      "aoe": "For multiple targets, Layer Napalm and oil, deploy after the tank stacks enemies, then turn Sparked and Ready into instant rockets and explosive rounds. The current evidence particularly constrains this through: Advice says turret placement after gathering is essential; moving packs sharply reduce damage.",
+      "movement_and_target_switching": "Ranged attacks allow space, but factories, oil, turrets, and napalm anchor damage to locations.",
+      "defense_and_control": "Its structural defensive package includes Bomb Toss, Napalm, Build, Build, Duobombers.",
+      "group_utility": "Group or control tools include Build, Surprise Launch!, The BIG Guns!, Bomber Man, Explosive Inventor.",
+      "failure_modes": [
+        {
+          "text": "Poor placement or staggered deployable cooldowns can make several explosive multipliers miss the same pack.",
+          "claim_ids": [
+            "inference:tinker/demolition:failure-cost",
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1"
+          ]
+        },
+        {
+          "text": "Losing setup before payoff forces another recovery cycle.",
+          "claim_ids": [
+            "inference:tinker/demolition:failure-cost",
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1"
+          ]
+        },
+        {
+          "text": "Losing setup before payoff forces another recovery cycle.",
+          "claim_ids": [
+            "inference:tinker/demolition:failure-cost",
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "talent:tinker/demolition:28-73-4-0",
+        "talent:tinker/demolition:28-73-10-0",
+        "talent:tinker/demolition:28-73-4-1",
+        "talent:tinker/demolition:28-73-2-2",
+        "talent:tinker/demolition:28-73-6-2",
+        "talent:tinker/demolition:28-73-10-2",
+        "observed:tinker/demolition:proc-breakpoint",
+        "observed:tinker/demolition:pack-dependency",
+        "observed:tinker/demolition:damage-profile",
+        "observed:tinker/demolition:build-practice",
+        "inference:tinker/demolition:playstyle-identity"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "Early bombs precede the proc engine.",
+        "strengths": [
+          "Core identity",
+          "Readable payoff"
+        ],
+        "cautions": [
+          "Incomplete kit",
+          "Sparse guidance"
+        ],
+        "claim_ids": [
+          "talent:tinker/demolition:28-73-4-0",
+          "talent:tinker/demolition:28-73-10-0",
+          "talent:tinker/demolition:28-73-4-1",
+          "talent:tinker/demolition:28-73-2-2",
+          "observed:tinker/demolition:proc-breakpoint",
+          "observed:tinker/demolition:pack-dependency",
+          "observed:tinker/demolition:damage-profile",
+          "inference:tinker/demolition:playstyle-identity"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "Spider mines and rockets define mid-level flow.",
+        "strengths": [
+          "Complete engine",
+          "Better coverage"
+        ],
+        "cautions": [
+          "More states",
+          "Unlock dependent"
+        ],
+        "claim_ids": [
+          "talent:tinker/demolition:28-73-4-0",
+          "talent:tinker/demolition:28-73-10-0",
+          "talent:tinker/demolition:28-73-4-1",
+          "talent:tinker/demolition:28-73-2-2",
+          "observed:tinker/demolition:proc-breakpoint",
+          "observed:tinker/demolition:pack-dependency",
+          "observed:tinker/demolition:damage-profile",
+          "inference:tinker/demolition:playstyle-identity"
+        ]
+      },
+      "level_50_60": {
+        "feel": "Factories and drones create a high-load AoE job.",
+        "strengths": [
+          "Late package",
+          "Higher ceiling"
+        ],
+        "cautions": [
+          "Unsettled priority",
+          "Tracking"
+        ],
+        "claim_ids": [
+          "talent:tinker/demolition:28-73-4-0",
+          "talent:tinker/demolition:28-73-10-0",
+          "talent:tinker/demolition:28-73-4-1",
+          "talent:tinker/demolition:28-73-2-2",
+          "observed:tinker/demolition:proc-breakpoint",
+          "observed:tinker/demolition:pack-dependency",
+          "observed:tinker/demolition:damage-profile",
+          "inference:tinker/demolition:playstyle-identity"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, On durable targets, the structural path grows from Bomb Toss, Napalm, Rocket Launcher toward Rocket Barrage, Explosive Inventor, Hyperblast Barrage. A precise priority remains limited to the captured build and community evidence.",
+        "strengths": [
+          "Durable payoff",
+          "Repeatable loop"
+        ],
+        "cautions": [
+          "Movement",
+          "Repeated errors"
+        ],
+        "claim_ids": [
+          "talent:tinker/demolition:28-73-4-0",
+          "talent:tinker/demolition:28-73-10-0",
+          "talent:tinker/demolition:28-73-4-1",
+          "talent:tinker/demolition:28-73-2-2",
+          "observed:tinker/demolition:proc-breakpoint",
+          "observed:tinker/demolition:pack-dependency",
+          "observed:tinker/demolition:damage-profile",
+          "inference:tinker/demolition:playstyle-identity"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, For multiple targets, Layer Napalm and oil, deploy after the tank stacks enemies, then turn Sparked and Ready into instant rockets and explosive rounds. The current evidence particularly constrains this through: Advice says turret placement after gathering is essential; moving packs sharply reduce damage.",
+        "strengths": [
+          "Pack tools",
+          "Utility"
+        ],
+        "cautions": [
+          "Short packs",
+          "Position"
+        ],
+        "claim_ids": [
+          "talent:tinker/demolition:28-73-4-0",
+          "talent:tinker/demolition:28-73-10-0",
+          "talent:tinker/demolition:28-73-4-1",
+          "talent:tinker/demolition:28-73-2-2",
+          "observed:tinker/demolition:proc-breakpoint",
+          "observed:tinker/demolition:pack-dependency",
+          "observed:tinker/demolition:damage-profile",
+          "inference:tinker/demolition:playstyle-identity"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, Ranged attacks allow space, but factories, oil, turrets, and napalm anchor damage to locations. Its structural defensive package includes Bomb Toss, Napalm, Build, Build, Duobombers.",
+        "strengths": [
+          "Control",
+          "Pressure"
+        ],
+        "cautions": [
+          "Disruption",
+          "Defense"
+        ],
+        "claim_ids": [
+          "talent:tinker/demolition:28-73-4-0",
+          "talent:tinker/demolition:28-73-10-0",
+          "talent:tinker/demolition:28-73-4-1",
+          "talent:tinker/demolition:28-73-2-2",
+          "observed:tinker/demolition:proc-breakpoint",
+          "observed:tinker/demolition:pack-dependency",
+          "observed:tinker/demolition:damage-profile",
+          "inference:tinker/demolition:playstyle-identity"
+        ]
+      }
+    },
+    "complexity": {
+      "core_actions": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "The active bar follows this loop: Bomb Toss, Napalm, rockets, turrets, drones, factories, and oil effects create a busy battlefield. The base concept is simple, but maximizing overlapping explosive windows and deployables is one of the higher-load current DPS jobs. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "The active bar follows this loop: Bomb Toss, Napalm, rockets, turrets, drones, factories, and oil effects create a busy battlefield. The base concept is simple, but maximizing overlapping explosive windows and deployables is one of the higher-load current DPS jobs. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "The active bar follows this loop: Bomb Toss, Napalm, rockets, turrets, drones, factories, and oil effects create a busy battlefield. The base concept is simple, but maximizing overlapping explosive windows and deployables is one of the higher-load current DPS jobs. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "The active bar follows this loop: Bomb Toss, Napalm, rockets, turrets, drones, factories, and oil effects create a busy battlefield. The base concept is simple, but maximizing overlapping explosive windows and deployables is one of the higher-load current DPS jobs. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "The active bar follows this loop: Bomb Toss, Napalm, rockets, turrets, drones, factories, and oil effects create a busy battlefield. The base concept is simple, but maximizing overlapping explosive windows and deployables is one of the higher-load current DPS jobs. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "The active bar follows this loop: Bomb Toss, Napalm, rockets, turrets, drones, factories, and oil effects create a busy battlefield. The base concept is simple, but maximizing overlapping explosive windows and deployables is one of the higher-load current DPS jobs. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        }
+      },
+      "state_tracking": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Bomb Toss, Napalm, Rocket Launcher toward Rocket Barrage, Explosive Inventor, Hyperblast Barrage. A precise priority remains limited to the captured build and community evidence. must be tracked. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Bomb Toss, Napalm, Rocket Launcher toward Rocket Barrage, Explosive Inventor, Hyperblast Barrage. A precise priority remains limited to the captured build and community evidence. must be tracked. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Bomb Toss, Napalm, Rocket Launcher toward Rocket Barrage, Explosive Inventor, Hyperblast Barrage. A precise priority remains limited to the captured build and community evidence. must be tracked. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Bomb Toss, Napalm, Rocket Launcher toward Rocket Barrage, Explosive Inventor, Hyperblast Barrage. A precise priority remains limited to the captured build and community evidence. must be tracked. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Bomb Toss, Napalm, Rocket Launcher toward Rocket Barrage, Explosive Inventor, Hyperblast Barrage. A precise priority remains limited to the captured build and community evidence. must be tracked. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Bomb Toss, Napalm, Rocket Launcher toward Rocket Barrage, Explosive Inventor, Hyperblast Barrage. A precise priority remains limited to the captured build and community evidence. must be tracked. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Layer Napalm and oil, deploy after the tank stacks enemies, then turn Sparked and Ready into instant rockets and explosive rounds. The current evidence particularly constrains this through: Advice says turret placement after gathering is essential; moving packs sharply reduce damage. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Layer Napalm and oil, deploy after the tank stacks enemies, then turn Sparked and Ready into instant rockets and explosive rounds. The current evidence particularly constrains this through: Advice says turret placement after gathering is essential; moving packs sharply reduce damage. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Layer Napalm and oil, deploy after the tank stacks enemies, then turn Sparked and Ready into instant rockets and explosive rounds. The current evidence particularly constrains this through: Advice says turret placement after gathering is essential; moving packs sharply reduce damage. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Layer Napalm and oil, deploy after the tank stacks enemies, then turn Sparked and Ready into instant rockets and explosive rounds. The current evidence particularly constrains this through: Advice says turret placement after gathering is essential; moving packs sharply reduce damage. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Layer Napalm and oil, deploy after the tank stacks enemies, then turn Sparked and Ready into instant rockets and explosive rounds. The current evidence particularly constrains this through: Advice says turret placement after gathering is essential; moving packs sharply reduce damage. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Layer Napalm and oil, deploy after the tank stacks enemies, then turn Sparked and Ready into instant rockets and explosive rounds. The current evidence particularly constrains this through: Advice says turret placement after gathering is essential; moving packs sharply reduce damage. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Target count, movement and pressure alter the next action. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Target count, movement and pressure alter the next action. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Target count, movement and pressure alter the next action. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Target count, movement and pressure alter the next action. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Target count, movement and pressure alter the next action. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Target count, movement and pressure alter the next action. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Execution depends on Ranged attacks allow space, but factories, oil, turrets, and napalm anchor damage to locations. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Execution depends on Ranged attacks allow space, but factories, oil, turrets, and napalm anchor damage to locations. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Execution depends on Ranged attacks allow space, but factories, oil, turrets, and napalm anchor damage to locations. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Execution depends on Ranged attacks allow space, but factories, oil, turrets, and napalm anchor damage to locations. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Execution depends on Ranged attacks allow space, but factories, oil, turrets, and napalm anchor damage to locations. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Execution depends on Ranged attacks allow space, but factories, oil, turrets, and napalm anchor damage to locations. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        }
+      },
+      "failure_cost": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Poor placement or staggered deployable cooldowns can make several explosive multipliers miss the same pack. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Poor placement or staggered deployable cooldowns can make several explosive multipliers miss the same pack. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Poor placement or staggered deployable cooldowns can make several explosive multipliers miss the same pack. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Poor placement or staggered deployable cooldowns can make several explosive multipliers miss the same pack. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Poor placement or staggered deployable cooldowns can make several explosive multipliers miss the same pack. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Poor placement or staggered deployable cooldowns can make several explosive multipliers miss the same pack. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0",
+            "talent:tinker/demolition:28-73-4-1",
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You want this exact fantasy and decision loop.",
+          "claim_ids": [
+            "inference:tinker/demolition:playstyle-identity",
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0"
+          ]
+        },
+        {
+          "text": "You enjoy a cadence that changes with late talents.",
+          "claim_ids": [
+            "inference:tinker/demolition:playstyle-identity",
+            "talent:tinker/demolition:28-73-4-0",
+            "talent:tinker/demolition:28-73-10-0"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You want the complete rotation immediately.",
+          "claim_ids": [
+            "inference:tinker/demolition:failure-cost",
+            "observed:tinker/demolition:proc-breakpoint"
+          ]
+        },
+        {
+          "text": "You dislike setup loss to movement.",
+          "claim_ids": [
+            "inference:tinker/demolition:failure-cost",
+            "observed:tinker/demolition:proc-breakpoint"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Huge dungeon pulls and gadget spectacle are praised.",
+          "claim_ids": [
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "observed:tinker/demolition:build-practice"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Single target, dead zone and moving tanks frustrate.",
+          "claim_ids": [
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "inference:tinker/demolition:failure-cost"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "Power anecdotes, popularity and subjective fun remain separate evidence.",
+          "claim_ids": [
+            "observed:tinker/demolition:proc-breakpoint",
+            "observed:tinker/demolition:pack-dependency",
+            "observed:tinker/demolition:damage-profile",
+            "observed:tinker/demolition:performance-context"
+          ]
+        }
+      ]
+    },
+    "performance_signal_ids": [
+      "observed:tinker/demolition:performance-context"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "manual_recent_source_review",
+      "performance": "limited_uncontrolled",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium",
+      "gaps": [
+        "No verified current full-rotation video.",
+        "Priority breakpoints remain unverified."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "Early bombs precede the proc engine.",
+      "observed_changes": [
+        "Incomplete kit",
+        "Sparse guidance"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "Early bombs precede the proc engine.",
+      "observed_changes": [
+        "Incomplete kit",
+        "Sparse guidance"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "Spider mines and rockets define mid-level flow.",
+      "observed_changes": [
+        "More states",
+        "Unlock dependent"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "Spider mines and rockets define mid-level flow.",
+      "observed_changes": [
+        "More states",
+        "Unlock dependent"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "Factories and drones create a high-load AoE job.",
+      "observed_changes": [
+        "Unsettled priority",
+        "Tracking"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:tinker/demolition:proc-breakpoint",
+      "kind": "observed",
+      "text": "Players identify Sparked and Ready plus the level-30 Spider Mine package as the instant-rocket transition.",
+      "source_ids": [
+        "reddit:tinker-status-2026-07-09",
+        "reddit:tinker-enjoyers-2026-07-12",
+        "reddit:tinker-procs-2026-07-20"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:tinker/demolition:pack-dependency",
+      "kind": "observed",
+      "text": "Advice says turret placement after gathering is essential; moving packs sharply reduce damage.",
+      "source_ids": [
+        "reddit:tinker-status-2026-07-09",
+        "reddit:tinker-enjoyers-2026-07-12",
+        "reddit:tinker-procs-2026-07-20"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:tinker/demolition:damage-profile",
+      "kind": "observed",
+      "text": "Reports praise AoE and call single target weaker, while aggregate damage is high.",
+      "source_ids": [
+        "reddit:tinker-status-2026-07-09",
+        "reddit:tinker-enjoyers-2026-07-12",
+        "reddit:tinker-procs-2026-07-20"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:tinker/demolition:build-practice",
+      "kind": "observed",
+      "text": "The captured PvE build documents one explosive setup.",
+      "source_ids": [
+        "buildhub-builds-2026-08-05",
+        "buildhub:367f91fe-9108-4d77-9994-054ff4dd090c"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "community_build_snapshot"
+        ],
+        "build_or_mode": [
+          "documented_build"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The guide documents one current way to play; it is not treated as proof of optimality."
+    },
+    {
+      "id": "observed:tinker/demolition:performance-context",
+      "kind": "observed",
+      "text": "5,551 DPS and 141 records are uncontrolled.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "uncontrolled_performance_signals"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "low",
+      "conflicts_with": [],
+      "notes": "Do not convert this into a tier ranking."
+    },
+    {
+      "id": "inference:tinker/demolition:playstyle-identity",
+      "kind": "inference",
+      "text": "A battlefield engineer who overlaps bombs, napalm, rockets, turrets, drones, factories, and oil until the whole pull becomes one explosive machine.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:tinker/demolition:28-73-4-0",
+        "talent:tinker/demolition:28-73-10-0",
+        "talent:tinker/demolition:28-73-4-1",
+        "talent:tinker/demolition:28-73-2-2",
+        "observed:tinker/demolition:proc-breakpoint",
+        "observed:tinker/demolition:pack-dependency"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Descriptive playstyle classification, not an official label."
+    },
+    {
+      "id": "inference:tinker/demolition:failure-cost",
+      "kind": "inference",
+      "text": "Poor placement or staggered deployable cooldowns can make several explosive multipliers miss the same pack.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:tinker/demolition:28-73-4-0",
+        "talent:tinker/demolition:28-73-10-0",
+        "talent:tinker/demolition:28-73-4-1",
+        "talent:tinker/demolition:28-73-2-2",
+        "talent:tinker/demolition:28-73-6-2",
+        "observed:tinker/demolition:proc-breakpoint",
+        "observed:tinker/demolition:pack-dependency",
+        "observed:tinker/demolition:damage-profile"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Direction is supported; exact throughput cost is not measured."
+    }
+  ]
+}

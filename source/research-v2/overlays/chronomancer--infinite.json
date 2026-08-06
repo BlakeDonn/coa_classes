@@ -1,0 +1,891 @@
+{
+  "baseline": "chronomancer--infinite.json",
+  "set": {
+    "identity": {
+      "fantasy": "A reality-corroding time mage who layers long-lived effects until anomalies and impossible spell repeats begin feeding themselves.",
+      "primary_family": "planners",
+      "also_fits": [
+        "sequencers"
+      ],
+      "playstyle_tags": [
+        "dot-engine",
+        "proc-caster",
+        "transformation-burst"
+      ],
+      "one_line": "Timerend and other periodic effects constantly reduce the remaining cooldowns of damaging spells. The spec stacks Mind Melt, triggers Anomaly Spikes and Chromatic Shards, and enters Incarnation of Chaos for a volatile burst phase. Recent players describe it as almost entirely DoT-based and note that late talents materially change its form loop.",
+      "claim_ids": [
+        "talent:chronomancer/infinite:22-56-4-1",
+        "inference:chronomancer/infinite:dot-payback",
+        "talent:chronomancer/infinite:22-56-6-2",
+        "talent:chronomancer/infinite:22-56-1-3",
+        "observed:chronomancer/infinite:leveling-mana",
+        "talent:chronomancer/infinite:22-56-10-0",
+        "talent:chronomancer/infinite:22-56-3-8",
+        "talent:chronomancer/infinite:22-56-5-8"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "Keep Timerend and Melt Reality working, build Mind Melt through periodic pressure, use Anomaly Spikes to accelerate Chromatic Shard, and enter Incarnation of Chaos when its reset and damage window can be exploited.",
+      "single_target": "Long-lived periodic effects create cooldown reduction and proc opportunities; Chromatic Shard and Incarnation of Chaos turn that setup into direct burst.",
+      "aoe": "Shifting Chaos spreads part of Chromatic Shard and Anomaly Spike damage, while later Timerend interactions add another pack payoff. Much of the setup still begins on a primary target.",
+      "movement_and_target_switching": "DoTs continue working while moving, but changing targets can abandon Mind Melt stacks and other accumulated setup. Chaos Fusion later allows Chromatic Shard during Incarnation movement.",
+      "defense_and_control": "Chronomancer roots, slows, knockback, healing, and temporal defenses support a kite-and-let-DoTs-work pattern reported by current leveling players.",
+      "group_utility": "Infinite Horizon supplies a non-stacking party damage aura, alongside the base Chronomancer control and haste toolkit.",
+      "failure_modes": [
+        {
+          "text": "Refreshing or replacing long effects without regard to target lifetime spends mana on damage that may never tick.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback"
+          ]
+        },
+        {
+          "text": "Changing targets early loses accumulated Mind Melt and Chromatic Shard acceleration.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3"
+          ]
+        },
+        {
+          "text": "Movement or a target swap can interrupt the intended payoff: dots continue working while moving, but changing targets can abandon mind melt stacks and other accumulated setup.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "talent:chronomancer/infinite:22-56-4-1",
+        "inference:chronomancer/infinite:dot-payback",
+        "talent:chronomancer/infinite:22-56-6-2",
+        "talent:chronomancer/infinite:22-56-1-3",
+        "observed:chronomancer/infinite:leveling-mana",
+        "talent:chronomancer/infinite:22-56-10-0",
+        "talent:chronomancer/infinite:22-56-3-8",
+        "talent:chronomancer/infinite:22-56-5-8"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "A patient attrition caster. Apply long effects, kite, and let their remaining damage finish enemies instead of recasting everything.",
+        "strengths": [
+          "Damage continues during movement",
+          "Early cooldown feedback"
+        ],
+        "cautions": [
+          "Current players report early mana pressure",
+          "Short-lived targets waste DoT duration"
+        ],
+        "claim_ids": [
+          "observed:chronomancer/infinite:leveling-mana",
+          "talent:chronomancer/infinite:22-56-10-0",
+          "talent:chronomancer/infinite:22-56-4-1",
+          "inference:chronomancer/infinite:dot-payback",
+          "talent:chronomancer/infinite:22-56-6-2",
+          "talent:chronomancer/infinite:22-56-1-3",
+          "talent:chronomancer/infinite:22-56-3-8",
+          "talent:chronomancer/infinite:22-56-5-8"
+        ]
+      },
+      "level_50_60": {
+        "feel": "A denser proc-and-transformation engine where Null Orbs, Aeon Rend, Erasion, and Chaotic Time make critical periodic damage and Incarnation windows more important.",
+        "strengths": [
+          "More explosive proc chains",
+          "Stronger transformation payoff"
+        ],
+        "cautions": [
+          "More overlapping states",
+          "Current rotation evidence remains thin"
+        ],
+        "claim_ids": [
+          "talent:chronomancer/infinite:22-56-3-8",
+          "talent:chronomancer/infinite:22-56-5-8",
+          "talent:chronomancer/infinite:22-56-2-9",
+          "talent:chronomancer/infinite:22-56-4-9",
+          "talent:chronomancer/infinite:22-56-4-1",
+          "inference:chronomancer/infinite:dot-payback",
+          "talent:chronomancer/infinite:22-56-6-2",
+          "talent:chronomancer/infinite:22-56-1-3",
+          "observed:chronomancer/infinite:leveling-mana",
+          "talent:chronomancer/infinite:22-56-10-0"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "By levels 30-49, keep timerend and melt reality working, build mind melt through periodic pressure, use anomaly spikes to accelerate chromatic shard, and enter incarnation of chaos when its reset and damage window can be exploited.",
+        "strengths": [
+          "Core engine is online",
+          "More complete target coverage"
+        ],
+        "cautions": [
+          "Late talents still change the ceiling",
+          "DoTs continue working while moving, but changing targets can abandon Mind Melt stacks and other accumulated setup"
+        ],
+        "claim_ids": [
+          "talent:chronomancer/infinite:22-56-4-1",
+          "inference:chronomancer/infinite:dot-payback",
+          "talent:chronomancer/infinite:22-56-6-2",
+          "talent:chronomancer/infinite:22-56-1-3",
+          "observed:chronomancer/infinite:leveling-mana",
+          "talent:chronomancer/infinite:22-56-10-0",
+          "talent:chronomancer/infinite:22-56-3-8",
+          "talent:chronomancer/infinite:22-56-5-8"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, long-lived periodic effects create cooldown reduction and proc opportunities; chromatic shard and incarnation of chaos turn that setup into direct burst.",
+        "strengths": [
+          "Durable targets preserve the full loop",
+          "Cooldowns can be planned"
+        ],
+        "cautions": [
+          "Movement can break setup",
+          "Repeated errors remain visible"
+        ],
+        "claim_ids": [
+          "talent:chronomancer/infinite:22-56-4-1",
+          "inference:chronomancer/infinite:dot-payback",
+          "talent:chronomancer/infinite:22-56-6-2",
+          "talent:chronomancer/infinite:22-56-1-3",
+          "observed:chronomancer/infinite:leveling-mana",
+          "talent:chronomancer/infinite:22-56-10-0",
+          "talent:chronomancer/infinite:22-56-3-8",
+          "talent:chronomancer/infinite:22-56-5-8"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, shifting chaos spreads part of chromatic shard and anomaly spike damage, while later timerend interactions add another pack payoff.",
+        "strengths": [
+          "Pack tools express the spec clearly",
+          "Group utility has regular value"
+        ],
+        "cautions": [
+          "Short-lived targets can erase setup",
+          "Tank movement changes the plan"
+        ],
+        "claim_ids": [
+          "talent:chronomancer/infinite:22-56-4-1",
+          "inference:chronomancer/infinite:dot-payback",
+          "talent:chronomancer/infinite:22-56-6-2",
+          "talent:chronomancer/infinite:22-56-1-3",
+          "observed:chronomancer/infinite:leveling-mana",
+          "talent:chronomancer/infinite:22-56-10-0",
+          "talent:chronomancer/infinite:22-56-3-8",
+          "talent:chronomancer/infinite:22-56-5-8"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, dots continue working while moving, but changing targets can abandon mind melt stacks and other accumulated setup. Chronomancer roots, slows, knockback, healing, and temporal defenses support a kite-and-let-DoTs-work pattern reported by current leveling players.",
+        "strengths": [
+          "Control and utility create options",
+          "Target swaps can reward flexibility"
+        ],
+        "cautions": [
+          "Disruption makes the loop less predictable",
+          "Defensive timing is punishable"
+        ],
+        "claim_ids": [
+          "talent:chronomancer/infinite:22-56-4-1",
+          "inference:chronomancer/infinite:dot-payback",
+          "talent:chronomancer/infinite:22-56-6-2",
+          "talent:chronomancer/infinite:22-56-1-3",
+          "observed:chronomancer/infinite:leveling-mana",
+          "talent:chronomancer/infinite:22-56-10-0",
+          "talent:chronomancer/infinite:22-56-3-8",
+          "talent:chronomancer/infinite:22-56-5-8"
+        ]
+      }
+    },
+    "complexity": {
+      "state_tracking": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Timerend, Melt Reality, Mind Melt stacks, and Anomaly acceleration overlap by the end of the band.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-0",
+            "talent:chronomancer/infinite:22-56-4-1",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Critical-periodic procs and transformation modifiers add several short states to the existing DoT stack.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-2-9",
+            "talent:chronomancer/infinite:22-56-4-9",
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Long-lived periodic effects create cooldown reduction and proc opportunities; Chromatic Shard and Incarnation of Chaos turn that setup into direct burst. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8",
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        },
+        "boss": {
+          "value": "moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Long-lived periodic effects create cooldown reduction and proc opportunities; Chromatic Shard and Incarnation of Chaos turn that setup into direct burst. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8",
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Long-lived periodic effects create cooldown reduction and proc opportunities; Chromatic Shard and Incarnation of Chaos turn that setup into direct burst. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8",
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        },
+        "pvp": {
+          "value": "moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Long-lived periodic effects create cooldown reduction and proc opportunities; Chromatic Shard and Incarnation of Chaos turn that setup into direct burst. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8",
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        }
+      },
+      "failure_cost": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Poor DoT payback costs both time and mana, though kiting allows recovery.",
+          "claim_ids": [
+            "observed:chronomancer/infinite:leveling-mana",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-4-1",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8",
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Dropped long effects or badly used Incarnation windows compound across a long fight.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-1-5",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-4-1",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate",
+          "reason": "Refreshing or replacing long effects without regard to target lifetime spends mana on damage that may never tick. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8",
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate",
+          "reason": "Refreshing or replacing long effects without regard to target lifetime spends mana on damage that may never tick. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8",
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "moderate",
+          "reason": "Refreshing or replacing long effects without regard to target lifetime spends mana on damage that may never tick. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8",
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        },
+        "pvp": {
+          "value": "moderate-high",
+          "reason": "Refreshing or replacing long effects without regard to target lifetime spends mana on damage that may never tick. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8",
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        }
+      },
+      "core_actions": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Keep Timerend and Melt Reality working, build Mind Melt through periodic pressure, use Anomaly Spikes to accelerate Chromatic Shard, and enter Incarnation of Chaos when its reset and damage window can be exploited. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8",
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Keep Timerend and Melt Reality working, build Mind Melt through periodic pressure, use Anomaly Spikes to accelerate Chromatic Shard, and enter Incarnation of Chaos when its reset and damage window can be exploited. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8",
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Keep Timerend and Melt Reality working, build Mind Melt through periodic pressure, use Anomaly Spikes to accelerate Chromatic Shard, and enter Incarnation of Chaos when its reset and damage window can be exploited. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8",
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Keep Timerend and Melt Reality working, build Mind Melt through periodic pressure, use Anomaly Spikes to accelerate Chromatic Shard, and enter Incarnation of Chaos when its reset and damage window can be exploited. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8",
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Keep Timerend and Melt Reality working, build Mind Melt through periodic pressure, use Anomaly Spikes to accelerate Chromatic Shard, and enter Incarnation of Chaos when its reset and damage window can be exploited. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8",
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        },
+        "pvp": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Keep Timerend and Melt Reality working, build Mind Melt through periodic pressure, use Anomaly Spikes to accelerate Chromatic Shard, and enter Incarnation of Chaos when its reset and damage window can be exploited. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8",
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Shifting Chaos spreads part of Chromatic Shard and Anomaly Spike damage, while later Timerend interactions add another pack payoff. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8",
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Shifting Chaos spreads part of Chromatic Shard and Anomaly Spike damage, while later Timerend interactions add another pack payoff. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8",
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Shifting Chaos spreads part of Chromatic Shard and Anomaly Spike damage, while later Timerend interactions add another pack payoff. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8",
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Shifting Chaos spreads part of Chromatic Shard and Anomaly Spike damage, while later Timerend interactions add another pack payoff. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8",
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Shifting Chaos spreads part of Chromatic Shard and Anomaly Spike damage, while later Timerend interactions add another pack payoff. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8",
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        },
+        "pvp": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Shifting Chaos spreads part of Chromatic Shard and Anomaly Spike damage, while later Timerend interactions add another pack payoff. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8",
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; chronomancer roots, slows, knockback, healing, and temporal defenses support a kite-and-let-dots-work pattern reported by current leveling players. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8",
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; chronomancer roots, slows, knockback, healing, and temporal defenses support a kite-and-let-dots-work pattern reported by current leveling players. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8",
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; chronomancer roots, slows, knockback, healing, and temporal defenses support a kite-and-let-dots-work pattern reported by current leveling players. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8",
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; chronomancer roots, slows, knockback, healing, and temporal defenses support a kite-and-let-dots-work pattern reported by current leveling players. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8",
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; chronomancer roots, slows, knockback, healing, and temporal defenses support a kite-and-let-dots-work pattern reported by current leveling players. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8",
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "Target count, incoming pressure, and movement change the next action; chronomancer roots, slows, knockback, healing, and temporal defenses support a kite-and-let-dots-work pattern reported by current leveling players. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8",
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: DoTs continue working while moving, but changing targets can abandon Mind Melt stacks and other accumulated setup. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8",
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: DoTs continue working while moving, but changing targets can abandon Mind Melt stacks and other accumulated setup. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8",
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: DoTs continue working while moving, but changing targets can abandon Mind Melt stacks and other accumulated setup. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8",
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: DoTs continue working while moving, but changing targets can abandon Mind Melt stacks and other accumulated setup. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8",
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: DoTs continue working while moving, but changing targets can abandon Mind Melt stacks and other accumulated setup. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8",
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "Execution is constrained by positioning and swaps: DoTs continue working while moving, but changing targets can abandon Mind Melt stacks and other accumulated setup. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana",
+            "talent:chronomancer/infinite:22-56-10-0",
+            "talent:chronomancer/infinite:22-56-3-8",
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You like damage-over-time engines that keep producing procs while you reposition.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-2-2",
+            "observed:chronomancer/infinite:leveling-mana"
+          ]
+        },
+        {
+          "text": "You enjoy the spec's core cadence: keep timerend and melt reality working, build mind melt through periodic pressure, use anomaly spikes to accelerate chromatic shard, and enter incarnation of chaos when its reset and damage window can be exploited.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You want every cast to deliver its full value immediately or switch targets without setup loss.",
+          "claim_ids": [
+            "inference:chronomancer/infinite:dot-payback"
+          ]
+        },
+        {
+          "text": "You dislike the positioning or swap constraint that dots continue working while moving, but changing targets can abandon mind melt stacks and other accumulated setup.",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1",
+            "inference:chronomancer/infinite:dot-payback",
+            "talent:chronomancer/infinite:22-56-6-2",
+            "talent:chronomancer/infinite:22-56-1-3",
+            "observed:chronomancer/infinite:leveling-mana"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Players who settle into the DoT-and-kite rhythm describe the spec as improving once more mana and talent support arrives.",
+          "claim_ids": [
+            "observed:chronomancer/infinite:leveling-mana"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Early mana pressure is the most concrete recent leveling complaint.",
+          "claim_ids": [
+            "observed:chronomancer/infinite:leveling-mana"
+          ]
+        }
+      ],
+      "contested": []
+    },
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "manual_recent_source_review",
+      "performance": "missing",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium-low",
+      "gaps": [
+        "No current controlled level-60 rotation or performance sample.",
+        "No verified current gameplay video."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "A patient attrition caster. Apply long effects, kite, and let their remaining damage finish enemies instead of recasting everything.",
+      "observed_changes": [
+        "Current players report early mana pressure",
+        "Short-lived targets waste DoT duration"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "A denser proc-and-transformation engine where Null Orbs, Aeon Rend, Erasion, and Chaotic Time make critical periodic damage and Incarnation windows more important.",
+      "observed_changes": [
+        "More overlapping states",
+        "Current rotation evidence remains thin"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "A patient attrition caster. Apply long effects, kite, and let their remaining damage finish enemies instead of recasting everything.",
+      "observed_changes": [
+        "Current players report early mana pressure",
+        "Short-lived targets waste DoT duration"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "By levels 30-49, keep timerend and melt reality working, build mind melt through periodic pressure, use anomaly spikes to accelerate chromatic shard, and enter incarnation of chaos when its reset and damage window can be exploited.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "DoTs continue working while moving, but changing targets can abandon Mind Melt stacks and other accumulated setup"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "By levels 30-49, keep timerend and melt reality working, build mind melt through periodic pressure, use anomaly spikes to accelerate chromatic shard, and enter incarnation of chaos when its reset and damage window can be exploited.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "DoTs continue working while moving, but changing targets can abandon Mind Melt stacks and other accumulated setup"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:chronomancer/infinite:leveling-mana",
+      "kind": "observed",
+      "text": "A July leveling discussion reports early Infinite mana pressure; replies recommend Spirit and mana tools, note improvement around level 32, and advise letting periodic effects finish enemies while kiting.",
+      "source_ids": [
+        "reddit:infinite-mana-2026-07-20"
+      ],
+      "scope": {
+        "levels": "leveling_20_39",
+        "content": [
+          "solo_leveling"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "Small anecdotal sample with differing experiences."
+    },
+    {
+      "id": "inference:chronomancer/infinite:dot-payback",
+      "kind": "inference",
+      "text": "Infinite loses efficiency when a target dies or is abandoned before its long periodic effects and stacked debuffs repay their setup cost.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:chronomancer/infinite:22-56-4-1",
+        "talent:chronomancer/infinite:22-56-6-2",
+        "observed:chronomancer/infinite:leveling-mana"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The exact target-lifetime threshold is not measured."
+    },
+    {
+      "id": "observed:chronomancer/infinite:recent-manual-review",
+      "kind": "observed",
+      "text": "Players describe Infinite as an almost-all-DoT caster mixing instant cooldown DoTs with hard-cast DoTs that reduce those cooldowns before a large finisher.",
+      "source_ids": [
+        "reddit:infinite-dots-2026-07-16"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually reviewed on 2026-08-06; anecdotal evidence is not treated as a power ranking."
+    }
+  ]
+}

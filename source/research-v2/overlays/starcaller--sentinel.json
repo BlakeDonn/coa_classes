@@ -1,0 +1,951 @@
+{
+  "baseline": "starcaller--sentinel.json",
+  "set": {
+    "identity": {
+      "fantasy": "A moonlit archer who pins Scattered Stars to enemies with Huntress Shot, then detonates them through Starfire Shot and late celestial barrages.",
+      "primary_family": "marksmen",
+      "also_fits": [],
+      "playstyle_tags": [
+        "ranged-star-builder",
+        "simple-realized-loop",
+        "position-ranged"
+      ],
+      "one_line": "A bow user that applies Scattered Stars with Huntress Shot and spends them with Starfire Shot for Arcane damage and mana return. Current players report that the realized boss loop may collapse to a small builder/spender sequence despite a broader intended kit. Its single target is described as consistent, with more disputed AoE scaling.",
+      "claim_ids": [
+        "observed:starcaller/sentinel:current-loop",
+        "inference:starcaller/sentinel:position-cost",
+        "talent:starcaller/sentinel:26-69-4-0",
+        "talent:starcaller/sentinel:26-69-10-0",
+        "observed:starcaller/sentinel:performance",
+        "talent:starcaller/sentinel:26-69-1-9",
+        "talent:starcaller/sentinel:26-69-4-9",
+        "inference:starcaller/sentinel:realized-complexity"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "Apply Scattered Stars with Huntress Shot, spend them with Starfire Shot for Arcane damage and mana return, use Starcall and Starcrash around denser moments, and align late Starfire Barrage or Arrow of the Goddess with durable targets.",
+      "single_target": "A consistent builder-spender centered on Huntress Shot and Starfire Shot, with later barrage and arrow windows adding burst.",
+      "aoe": "Starcrash, Shattered Stars, and barrage effects broaden the kit, but current players dispute whether its area scaling keeps pace with its reliable single-target damage.",
+      "movement_and_target_switching": "Long range helps target access, but current reports say important ranged attacks require standing still and minimum-range behavior can become awkward when enemies close in.",
+      "defense_and_control": "Starcaller slows, knockbacks, lunar defenses, and long-range pressure help maintain the preferred firing distance.",
+      "group_utility": "Reliable ranged pressure and Starcaller control are the main contribution beyond personal damage.",
+      "failure_modes": [
+        {
+          "text": "Being forced to move or letting enemies enter the awkward close-range zone interrupts a core loop that otherwise asks for few actions.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost"
+          ]
+        },
+        {
+          "text": "Movement or a target swap can interrupt the intended payoff: long range helps target access, but current reports say important ranged attacks require standing still and minimum-range behavior can become awkward when enemies close in.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance"
+          ]
+        },
+        {
+          "text": "Spending recovery or control too early leaves less protection for the next pressure event: starcaller slows, knockbacks, lunar defenses, and long-range pressure help maintain the preferred firing distance.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "observed:starcaller/sentinel:current-loop",
+        "inference:starcaller/sentinel:position-cost",
+        "talent:starcaller/sentinel:26-69-4-0",
+        "talent:starcaller/sentinel:26-69-10-0",
+        "observed:starcaller/sentinel:performance",
+        "talent:starcaller/sentinel:26-69-1-9",
+        "talent:starcaller/sentinel:26-69-4-9",
+        "inference:starcaller/sentinel:realized-complexity"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "A readable ranged builder-spender with strong target access and a clean moon-archer identity.",
+        "strengths": [
+          "Long range",
+          "Consistent single-target pressure",
+          "Simple core loop"
+        ],
+        "cautions": [
+          "Important shots reportedly root the player",
+          "Close enemies can create minimum-range friction"
+        ],
+        "claim_ids": [
+          "observed:starcaller/sentinel:current-loop",
+          "talent:starcaller/sentinel:26-69-4-0",
+          "talent:starcaller/sentinel:26-69-10-0",
+          "inference:starcaller/sentinel:position-cost",
+          "observed:starcaller/sentinel:performance",
+          "talent:starcaller/sentinel:26-69-1-9",
+          "talent:starcaller/sentinel:26-69-4-9",
+          "inference:starcaller/sentinel:realized-complexity"
+        ]
+      },
+      "level_50_60": {
+        "feel": "A still-compact ranged rotation with Starfire Barrage and Arrow of the Goddess adding larger celestial windows without replacing the builder-spender center.",
+        "strengths": [
+          "48 Mythic records",
+          "Reportedly consistent single target",
+          "Capstone burst tools"
+        ],
+        "cautions": [
+          "AoE scaling is disputed",
+          "The realized boss loop may remain only two central buttons"
+        ],
+        "claim_ids": [
+          "observed:starcaller/sentinel:performance",
+          "observed:starcaller/sentinel:current-loop",
+          "talent:starcaller/sentinel:26-69-1-9",
+          "talent:starcaller/sentinel:26-69-4-9",
+          "inference:starcaller/sentinel:position-cost",
+          "talent:starcaller/sentinel:26-69-4-0",
+          "talent:starcaller/sentinel:26-69-10-0",
+          "inference:starcaller/sentinel:realized-complexity"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "By levels 30-49, apply scattered stars with huntress shot, spend them with starfire shot for arcane damage and mana return, use starcall and starcrash around denser moments, and align late starfire barrage or arrow of the goddess with durable targets.",
+        "strengths": [
+          "Core engine is online",
+          "More complete target coverage"
+        ],
+        "cautions": [
+          "Late talents still change the ceiling",
+          "Long range helps target access, but current reports say important ranged attacks require standing still and minimum-range behavior can become awkward when enemies close"
+        ],
+        "claim_ids": [
+          "observed:starcaller/sentinel:current-loop",
+          "inference:starcaller/sentinel:position-cost",
+          "talent:starcaller/sentinel:26-69-4-0",
+          "talent:starcaller/sentinel:26-69-10-0",
+          "observed:starcaller/sentinel:performance",
+          "talent:starcaller/sentinel:26-69-1-9",
+          "talent:starcaller/sentinel:26-69-4-9",
+          "inference:starcaller/sentinel:realized-complexity"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, a consistent builder-spender centered on huntress shot and starfire shot, with later barrage and arrow windows adding burst.",
+        "strengths": [
+          "Durable targets preserve the full loop",
+          "Cooldowns can be planned"
+        ],
+        "cautions": [
+          "Movement can break setup",
+          "Repeated errors remain visible"
+        ],
+        "claim_ids": [
+          "observed:starcaller/sentinel:current-loop",
+          "inference:starcaller/sentinel:position-cost",
+          "talent:starcaller/sentinel:26-69-4-0",
+          "talent:starcaller/sentinel:26-69-10-0",
+          "observed:starcaller/sentinel:performance",
+          "talent:starcaller/sentinel:26-69-1-9",
+          "talent:starcaller/sentinel:26-69-4-9",
+          "inference:starcaller/sentinel:realized-complexity"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, starcrash, shattered stars, and barrage effects broaden the kit, but current players dispute whether its area scaling keeps pace with its reliable single-target damage.",
+        "strengths": [
+          "Pack tools express the spec clearly",
+          "Group utility has regular value"
+        ],
+        "cautions": [
+          "Short-lived targets can erase setup",
+          "Tank movement changes the plan"
+        ],
+        "claim_ids": [
+          "observed:starcaller/sentinel:current-loop",
+          "inference:starcaller/sentinel:position-cost",
+          "talent:starcaller/sentinel:26-69-4-0",
+          "talent:starcaller/sentinel:26-69-10-0",
+          "observed:starcaller/sentinel:performance",
+          "talent:starcaller/sentinel:26-69-1-9",
+          "talent:starcaller/sentinel:26-69-4-9",
+          "inference:starcaller/sentinel:realized-complexity"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, long range helps target access, but current reports say important ranged attacks require standing still and minimum-range behavior can become awkward when enemies close in. Starcaller slows, knockbacks, lunar defenses, and long-range pressure help maintain the preferred firing distance.",
+        "strengths": [
+          "Control and utility create options",
+          "Target swaps can reward flexibility"
+        ],
+        "cautions": [
+          "Disruption makes the loop less predictable",
+          "Defensive timing is punishable"
+        ],
+        "claim_ids": [
+          "observed:starcaller/sentinel:current-loop",
+          "inference:starcaller/sentinel:position-cost",
+          "talent:starcaller/sentinel:26-69-4-0",
+          "talent:starcaller/sentinel:26-69-10-0",
+          "observed:starcaller/sentinel:performance",
+          "talent:starcaller/sentinel:26-69-1-9",
+          "talent:starcaller/sentinel:26-69-4-9",
+          "inference:starcaller/sentinel:realized-complexity"
+        ]
+      }
+    },
+    "complexity": {
+      "core_actions": {
+        "boss": {
+          "value": "low-moderate",
+          "reason": "Current players describe a small Huntress Shot and Starfire Shot center even though the tree offers several supporting celestial attacks.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:realized-complexity",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Apply Scattered Stars with Huntress Shot, spend them with Starfire Shot for Arcane damage and mana return, use Starcall and Starcrash around denser moments, and align late Starfire Barrage or Arrow of the Goddess with durable targets. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Apply Scattered Stars with Huntress Shot, spend them with Starfire Shot for Arcane damage and mana return, use Starcall and Starcrash around denser moments, and align late Starfire Barrage or Arrow of the Goddess with durable targets. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        },
+        "level_50_60": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Apply Scattered Stars with Huntress Shot, spend them with Starfire Shot for Arcane damage and mana return, use Starcall and Starcrash around denser moments, and align late Starfire Barrage or Arrow of the Goddess with durable targets. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Apply Scattered Stars with Huntress Shot, spend them with Starfire Shot for Arcane damage and mana return, use Starcall and Starcrash around denser moments, and align late Starfire Barrage or Arrow of the Goddess with durable targets. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Apply Scattered Stars with Huntress Shot, spend them with Starfire Shot for Arcane damage and mana return, use Starcall and Starcrash around denser moments, and align late Starfire Barrage or Arrow of the Goddess with durable targets. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        }
+      },
+      "execution": {
+        "pvp": {
+          "value": "moderate-high",
+          "reason": "Range control, cast immobility, target access, and the reported minimum-range dead zone make positioning more demanding than the button count suggests.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Execution is constrained by positioning and swaps: Long range helps target access, but current reports say important ranged attacks require standing still and minimum-range behavior can become awkward when enemies close in. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Execution is constrained by positioning and swaps: Long range helps target access, but current reports say important ranged attacks require standing still and minimum-range behavior can become awkward when enemies close in. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "Execution is constrained by positioning and swaps: Long range helps target access, but current reports say important ranged attacks require standing still and minimum-range behavior can become awkward when enemies close in. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Execution is constrained by positioning and swaps: Long range helps target access, but current reports say important ranged attacks require standing still and minimum-range behavior can become awkward when enemies close in. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "moderate-high",
+          "reason": "Execution is constrained by positioning and swaps: Long range helps target access, but current reports say important ranged attacks require standing still and minimum-range behavior can become awkward when enemies close in. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        }
+      },
+      "failure_cost": {
+        "boss": {
+          "value": "low-moderate",
+          "reason": "The resource loop is recoverable, but movement during an important shot or poor distance control loses uptime.",
+          "claim_ids": [
+            "inference:starcaller/sentinel:position-cost",
+            "observed:starcaller/sentinel:current-loop",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "Being forced to move or letting enemies enter the awkward close-range zone interrupts a core loop that otherwise asks for few actions. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low-moderate",
+          "reason": "Being forced to move or letting enemies enter the awkward close-range zone interrupts a core loop that otherwise asks for few actions. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        },
+        "level_50_60": {
+          "value": "low-moderate",
+          "reason": "Being forced to move or letting enemies enter the awkward close-range zone interrupts a core loop that otherwise asks for few actions. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low-moderate",
+          "reason": "Being forced to move or letting enemies enter the awkward close-range zone interrupts a core loop that otherwise asks for few actions. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        },
+        "pvp": {
+          "value": "moderate",
+          "reason": "Being forced to move or letting enemies enter the awkward close-range zone interrupts a core loop that otherwise asks for few actions. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        }
+      },
+      "state_tracking": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The player must preserve the resources, effects, or target states implied by: A consistent builder-spender centered on Huntress Shot and Starfire Shot, with later barrage and arrow windows adding burst. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "The player must preserve the resources, effects, or target states implied by: A consistent builder-spender centered on Huntress Shot and Starfire Shot, with later barrage and arrow windows adding burst. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "The player must preserve the resources, effects, or target states implied by: A consistent builder-spender centered on Huntress Shot and Starfire Shot, with later barrage and arrow windows adding burst. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "The player must preserve the resources, effects, or target states implied by: A consistent builder-spender centered on Huntress Shot and Starfire Shot, with later barrage and arrow windows adding burst. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "The player must preserve the resources, effects, or target states implied by: A consistent builder-spender centered on Huntress Shot and Starfire Shot, with later barrage and arrow windows adding burst. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        },
+        "pvp": {
+          "value": "low",
+          "reason": "The player must preserve the resources, effects, or target states implied by: A consistent builder-spender centered on Huntress Shot and Starfire Shot, with later barrage and arrow windows adding burst. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Starcrash, Shattered Stars, and barrage effects broaden the kit, but current players dispute whether its area scaling keeps pace with its reliable single-target damage. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Starcrash, Shattered Stars, and barrage effects broaden the kit, but current players dispute whether its area scaling keeps pace with its reliable single-target damage. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Starcrash, Shattered Stars, and barrage effects broaden the kit, but current players dispute whether its area scaling keeps pace with its reliable single-target damage. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Starcrash, Shattered Stars, and barrage effects broaden the kit, but current players dispute whether its area scaling keeps pace with its reliable single-target damage. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Starcrash, Shattered Stars, and barrage effects broaden the kit, but current players dispute whether its area scaling keeps pace with its reliable single-target damage. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        },
+        "pvp": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Starcrash, Shattered Stars, and barrage effects broaden the kit, but current players dispute whether its area scaling keeps pace with its reliable single-target damage. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; starcaller slows, knockbacks, lunar defenses, and long-range pressure help maintain the preferred firing distance. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; starcaller slows, knockbacks, lunar defenses, and long-range pressure help maintain the preferred firing distance. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; starcaller slows, knockbacks, lunar defenses, and long-range pressure help maintain the preferred firing distance. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; starcaller slows, knockbacks, lunar defenses, and long-range pressure help maintain the preferred firing distance. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; starcaller slows, knockbacks, lunar defenses, and long-range pressure help maintain the preferred firing distance. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "Target count, incoming pressure, and movement change the next action; starcaller slows, knockbacks, lunar defenses, and long-range pressure help maintain the preferred firing distance. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance",
+            "talent:starcaller/sentinel:26-69-1-9",
+            "talent:starcaller/sentinel:26-69-4-9",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You want a thematic long-range archer with a compact builder-spender and reliable single-target rhythm.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop"
+          ]
+        },
+        {
+          "text": "You enjoy the spec's core cadence: apply scattered stars with huntress shot, spend them with starfire shot for arcane damage and mana return, use starcall and starcrash around denser moments, and align late starfire barrage or arrow of the goddess with durable targets.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You want constant cast-while-moving freedom, a dense rotation, or proven large-pack scaling.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop"
+          ]
+        },
+        {
+          "text": "You dislike the positioning or swap constraint that long range helps target access, but current reports say important ranged attacks require standing still and minimum-range behavior can become awkward when enemies close in.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:position-cost",
+            "talent:starcaller/sentinel:26-69-4-0",
+            "talent:starcaller/sentinel:26-69-10-0",
+            "observed:starcaller/sentinel:performance"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Players praise the moon-archer theme, range, and consistent single-target pressure.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Players report stationary attacks, awkward close-range behavior, disputed AoE, and a boss loop that may collapse to two central buttons.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "The talent tree signals a broader celestial toolkit, while current play reports describe a much simpler realized rotation.",
+          "claim_ids": [
+            "observed:starcaller/sentinel:current-loop",
+            "inference:starcaller/sentinel:realized-complexity"
+          ]
+        }
+      ]
+    },
+    "performance_signal_ids": [
+      "observed:starcaller/sentinel:performance"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "manual_recent_source_review",
+      "performance": "limited_uncontrolled",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium",
+      "gaps": [
+        "No current full level-60 rotation guide.",
+        "AoE comparison and minimum-range behavior need controlled verification."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "A readable ranged builder-spender with strong target access and a clean moon-archer identity.",
+      "observed_changes": [
+        "Important shots reportedly root the player",
+        "Close enemies can create minimum-range friction"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "A still-compact ranged rotation with Starfire Barrage and Arrow of the Goddess adding larger celestial windows without replacing the builder-spender center.",
+      "observed_changes": [
+        "AoE scaling is disputed",
+        "The realized boss loop may remain only two central buttons"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "A readable ranged builder-spender with strong target access and a clean moon-archer identity.",
+      "observed_changes": [
+        "Important shots reportedly root the player",
+        "Close enemies can create minimum-range friction"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "By levels 30-49, apply scattered stars with huntress shot, spend them with starfire shot for arcane damage and mana return, use starcall and starcrash around denser moments, and align late starfire barrage or arrow of the goddess with durable targets.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Long range helps target access, but current reports say important ranged attacks require standing still and minimum-range behavior can become awkward when enemies close"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "By levels 30-49, apply scattered stars with huntress shot, spend them with starfire shot for arcane damage and mana return, use starcall and starcrash around denser moments, and align late starfire barrage or arrow of the goddess with durable targets.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Long range helps target access, but current reports say important ranged attacks require standing still and minimum-range behavior can become awkward when enemies close"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:starcaller/sentinel:current-loop",
+      "kind": "observed",
+      "text": "Current Starcaller discussions describe Sentinel as thematic and consistent at single target, but report that important ranged skills cannot be used while moving, close-range behavior can be awkward, AoE scaling is disputed, and the realized boss loop may center on only Huntress Shot and Starfire Shot.",
+      "source_ids": [
+        "reddit:starcaller-status-2026-07-10",
+        "reddit:starcaller-warden-2026-08-04"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "solo_leveling",
+          "pve",
+          "pvp"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The source mixes player contexts and does not supply a controlled rotation or AoE comparison."
+    },
+    {
+      "id": "observed:starcaller/sentinel:performance",
+      "kind": "observed",
+      "text": "The July DPS compilation reports Sentinel at 4,395, and the August Mythic inventory lists 48 Sentinel records.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "pve_unspecified",
+          "mythic_dungeons"
+        ],
+        "build_or_mode": [
+          "unspecified"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "The performance sources lack normalization and should not be read as a tier ranking."
+    },
+    {
+      "id": "inference:starcaller/sentinel:realized-complexity",
+      "kind": "inference",
+      "text": "Sentinel's realized complexity appears lower than its talent inventory suggests because current players describe a small builder-spender center with several situational or cooldown additions.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "observed:starcaller/sentinel:current-loop",
+        "talent:starcaller/sentinel:26-69-4-0",
+        "talent:starcaller/sentinel:26-69-6-2",
+        "talent:starcaller/sentinel:26-69-1-9"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "pve"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "A current full rotation guide could raise or lower this assessment."
+    },
+    {
+      "id": "inference:starcaller/sentinel:position-cost",
+      "kind": "inference",
+      "text": "Sentinel shifts difficulty away from button count and toward maintaining a valid firing distance while handling movement mechanics.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "observed:starcaller/sentinel:current-loop",
+        "talent:starcaller/sentinel:26-69-1-4"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "pve",
+          "pvp"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Exact movement restrictions require live verification."
+    },
+    {
+      "id": "observed:starcaller/sentinel:recent-manual-review",
+      "kind": "observed",
+      "text": "A current player abandoned Sentinel after finding its main ranged attacks could not be cast while moving, making movement a material execution constraint rather than a cosmetic difference.",
+      "source_ids": [
+        "reddit:starcaller-warden-2026-08-04"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually reviewed on 2026-08-06; anecdotal evidence is not treated as a power ranking."
+    }
+  ]
+}

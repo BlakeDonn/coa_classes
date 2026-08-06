@@ -1,0 +1,840 @@
+{
+  "baseline": "guardian--inspiration.json",
+  "set": {
+    "identity": {
+      "fantasy": "A battle bard and field commander who turns ballads, Tempo, formations, banners, drums, and timed marches into raid-wide momentum.",
+      "primary_family": "strategists",
+      "also_fits": [
+        "sequencers"
+      ],
+      "playstyle_tags": [
+        "melee-raid-support",
+        "stance-combo-support",
+        "proc-melee"
+      ],
+      "one_line": "A bard-commander using Tempo, songs, banners, drums, and party auras. It contributes damage while maintaining Battle Bard effects and choosing the right manuscript, march, or banner for the encounter. Its strength is group amplification, but personal rotation and raid-buff timing compete for attention.",
+      "claim_ids": [
+        "observed:guardian/inspiration:current-guide",
+        "inference:guardian/inspiration:coordination-cost",
+        "talent:guardian/inspiration:18-48-4-0",
+        "talent:guardian/inspiration:18-48-10-0",
+        "observed:guardian/inspiration:performance",
+        "talent:guardian/inspiration:18-48-4-9"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "Open in Line Formation for Harrowing Melody and Advance, deploy the chosen standard and Battle Drums, shift into Assault Formation, stack major buffs, then prioritize Dragonslayer or Conqueror, Empowered Ram at the intended Tempo state, Reprisal procs, and Glorious Arena while protecting Energy for the next formation transition.",
+      "single_target": "Personal damage comes from a priority system driven by buffs, Tempo, Empowered Ram, Reprisal, and arena effects rather than a fixed repeating rotation.",
+      "aoe": "Sound of War, Dragonslayer, banners, drums, and party-triggered Echoes of War create strong pack and group amplification.",
+      "movement_and_target_switching": "Advance, formations, Charge, marches, and high mobility help reposition, but the opener asks the player to place drums and swap stances quickly.",
+      "defense_and_control": "Guardian defensive tools, AoE control, crowd-control immunity, and group protections make the support unusually durable.",
+      "group_utility": "Its defining value is a large raid-buff inventory, with different physical, magical, dungeon, and raid packages that must be coordinated with other supports.",
+      "failure_modes": [
+        {
+          "text": "Poor formation timing can strand the player at low Energy, while overlapping another support's raid buffs or placing clickable drums badly wastes much of the spec's unique value.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost"
+          ]
+        },
+        {
+          "text": "Movement or a target swap can interrupt the intended payoff: advance, formations, charge, marches, and high mobility help reposition, but the opener asks the player to place drums and swap stances quickly.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance"
+          ]
+        },
+        {
+          "text": "Spending recovery or control too early leaves less protection for the next pressure event: guardian defensive tools, aoe control, crowd-control immunity, and group protections make the support unusually durable.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "observed:guardian/inspiration:current-guide",
+        "inference:guardian/inspiration:coordination-cost",
+        "talent:guardian/inspiration:18-48-4-0",
+        "talent:guardian/inspiration:18-48-10-0",
+        "observed:guardian/inspiration:performance",
+        "talent:guardian/inspiration:18-48-4-9"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "A melee bard whose Ballads and three-stack Tempo cycle already produce periodic Sound of War attacks.",
+        "strengths": [
+          "Immediate class fantasy",
+          "Party amplification",
+          "Formation mobility"
+        ],
+        "cautions": [
+          "Early solo value does not show the full raid identity",
+          "Resource flow changes with group tools"
+        ],
+        "claim_ids": [
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "level_50_60": {
+        "feel": "A very busy raid-support priority system with fast stance swaps, proc-driven Energy flow, encounter-specific talent choices, and major communication responsibility.",
+        "strengths": [
+          "Exceptional buff breadth",
+          "Strong survival and mobility",
+          "44 Mythic records"
+        ],
+        "cautions": [
+          "RNG can create empty Energy moments",
+          "Peak personal damage is not the point",
+          "Support overlap must be coordinated"
+        ],
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "By levels 30-49, open in line formation for harrowing melody and advance, deploy the chosen standard and battle drums, shift into assault formation, stack major buffs, then prioritize dragonslayer or conqueror, empowered ram at the intended tempo state, reprisal procs, and glorious arena while protecting energy for the next formation transition.",
+        "strengths": [
+          "Core engine is online",
+          "More complete target coverage"
+        ],
+        "cautions": [
+          "Late talents still change the ceiling",
+          "Advance, formations, Charge, marches, and high mobility help reposition, but the opener asks the player to place drums and swap stances quickly"
+        ],
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, personal damage comes from a priority system driven by buffs, tempo, empowered ram, reprisal, and arena effects rather than a fixed repeating rotation.",
+        "strengths": [
+          "Durable targets preserve the full loop",
+          "Cooldowns can be planned"
+        ],
+        "cautions": [
+          "Movement can break setup",
+          "Repeated errors remain visible"
+        ],
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, sound of war, dragonslayer, banners, drums, and party-triggered echoes of war create strong pack and group amplification.",
+        "strengths": [
+          "Pack tools express the spec clearly",
+          "Group utility has regular value"
+        ],
+        "cautions": [
+          "Short-lived targets can erase setup",
+          "Tank movement changes the plan"
+        ],
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, advance, formations, charge, marches, and high mobility help reposition, but the opener asks the player to place drums and swap stances quickly. Guardian defensive tools, AoE control, crowd-control immunity, and group protections make the support unusually durable.",
+        "strengths": [
+          "Control and utility create options",
+          "Target swaps can reward flexibility"
+        ],
+        "cautions": [
+          "Disruption makes the loop less predictable",
+          "Defensive timing is punishable"
+        ],
+        "claim_ids": [
+          "observed:guardian/inspiration:current-guide",
+          "inference:guardian/inspiration:coordination-cost",
+          "talent:guardian/inspiration:18-48-4-0",
+          "talent:guardian/inspiration:18-48-10-0",
+          "observed:guardian/inspiration:performance",
+          "talent:guardian/inspiration:18-48-4-9"
+        ]
+      }
+    },
+    "complexity": {
+      "core_actions": {
+        "boss": {
+          "value": "high",
+          "reason": "The current guide combines a rapid opener, multiple buffs, formations, Tempo timing, a proc priority, and encounter-specific support choices.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "The practical action set follows the authored loop: Open in Line Formation for Harrowing Melody and Advance, deploy the chosen standard and Battle Drums, shift into Assault Formation, stack major buffs, then prioritize Dragonslayer or Conqueror, Empowered Ram at the intended Tempo state, Reprisal procs, and Glorious Arena while protecting Energy for the next formation transition. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "The practical action set follows the authored loop: Open in Line Formation for Harrowing Melody and Advance, deploy the chosen standard and Battle Drums, shift into Assault Formation, stack major buffs, then prioritize Dragonslayer or Conqueror, Empowered Ram at the intended Tempo state, Reprisal procs, and Glorious Arena while protecting Energy for the next formation transition. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "The practical action set follows the authored loop: Open in Line Formation for Harrowing Melody and Advance, deploy the chosen standard and Battle Drums, shift into Assault Formation, stack major buffs, then prioritize Dragonslayer or Conqueror, Empowered Ram at the intended Tempo state, Reprisal procs, and Glorious Arena while protecting Energy for the next formation transition. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "The practical action set follows the authored loop: Open in Line Formation for Harrowing Melody and Advance, deploy the chosen standard and Battle Drums, shift into Assault Formation, stack major buffs, then prioritize Dragonslayer or Conqueror, Empowered Ram at the intended Tempo state, Reprisal procs, and Glorious Arena while protecting Energy for the next formation transition. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "The practical action set follows the authored loop: Open in Line Formation for Harrowing Melody and Advance, deploy the chosen standard and Battle Drums, shift into Assault Formation, stack major buffs, then prioritize Dragonslayer or Conqueror, Empowered Ram at the intended Tempo state, Reprisal procs, and Glorious Arena while protecting Energy for the next formation transition. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        }
+      },
+      "state_tracking": {
+        "boss": {
+          "value": "high",
+          "reason": "Tempo, Energy, Reprisal, Empowered Ram, banners, drums, formation, and several buff cooldowns overlap.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "talent:guardian/inspiration:18-48-10-0",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Personal damage comes from a priority system driven by buffs, Tempo, Empowered Ram, Reprisal, and arena effects rather than a fixed repeating rotation. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Personal damage comes from a priority system driven by buffs, Tempo, Empowered Ram, Reprisal, and arena effects rather than a fixed repeating rotation. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Personal damage comes from a priority system driven by buffs, Tempo, Empowered Ram, Reprisal, and arena effects rather than a fixed repeating rotation. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Personal damage comes from a priority system driven by buffs, Tempo, Empowered Ram, Reprisal, and arena effects rather than a fixed repeating rotation. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Personal damage comes from a priority system driven by buffs, Tempo, Empowered Ram, Reprisal, and arena effects rather than a fixed repeating rotation. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        }
+      },
+      "setup_burden": {
+        "raid": {
+          "value": "high",
+          "reason": "The support package must be selected around raid size and composition, then deconflicted with other supports before the pull.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "The payoff depends on establishing the conditions described by: Sound of War, Dragonslayer, banners, drums, and party-triggered Echoes of War create strong pack and group amplification. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "The payoff depends on establishing the conditions described by: Sound of War, Dragonslayer, banners, drums, and party-triggered Echoes of War create strong pack and group amplification. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "The payoff depends on establishing the conditions described by: Sound of War, Dragonslayer, banners, drums, and party-triggered Echoes of War create strong pack and group amplification. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "The payoff depends on establishing the conditions described by: Sound of War, Dragonslayer, banners, drums, and party-triggered Echoes of War create strong pack and group amplification. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "The payoff depends on establishing the conditions described by: Sound of War, Dragonslayer, banners, drums, and party-triggered Echoes of War create strong pack and group amplification. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "The payoff depends on establishing the conditions described by: Sound of War, Dragonslayer, banners, drums, and party-triggered Echoes of War create strong pack and group amplification. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        }
+      },
+      "failure_cost": {
+        "raid": {
+          "value": "high",
+          "reason": "Bad Energy routing, duplicated buffs, or unusable drum placement can lose both personal throughput and raid value.",
+          "claim_ids": [
+            "inference:guardian/inspiration:coordination-cost"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "Poor formation timing can strand the player at low Energy, while overlapping another support's raid buffs or placing clickable drums badly wastes much of the spec's. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Poor formation timing can strand the player at low Energy, while overlapping another support's raid buffs or placing clickable drums badly wastes much of the spec's. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Poor formation timing can strand the player at low Energy, while overlapping another support's raid buffs or placing clickable drums badly wastes much of the spec's. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "Poor formation timing can strand the player at low Energy, while overlapping another support's raid buffs or placing clickable drums badly wastes much of the spec's. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Poor formation timing can strand the player at low Energy, while overlapping another support's raid buffs or placing clickable drums badly wastes much of the spec's. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Poor formation timing can strand the player at low Energy, while overlapping another support's raid buffs or placing clickable drums badly wastes much of the spec's. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; guardian defensive tools, aoe control, crowd-control immunity, and group protections make the support unusually durable. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low-moderate",
+          "reason": "Target count, incoming pressure, and movement change the next action; guardian defensive tools, aoe control, crowd-control immunity, and group protections make the support unusually durable. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        },
+        "level_50_60": {
+          "value": "low-moderate",
+          "reason": "Target count, incoming pressure, and movement change the next action; guardian defensive tools, aoe control, crowd-control immunity, and group protections make the support unusually durable. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        },
+        "boss": {
+          "value": "low-moderate",
+          "reason": "Target count, incoming pressure, and movement change the next action; guardian defensive tools, aoe control, crowd-control immunity, and group protections make the support unusually durable. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low-moderate",
+          "reason": "Target count, incoming pressure, and movement change the next action; guardian defensive tools, aoe control, crowd-control immunity, and group protections make the support unusually durable. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        },
+        "pvp": {
+          "value": "moderate",
+          "reason": "Target count, incoming pressure, and movement change the next action; guardian defensive tools, aoe control, crowd-control immunity, and group protections make the support unusually durable. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Advance, formations, Charge, marches, and high mobility help reposition, but the opener asks the player to place drums and swap stances quickly. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low-moderate",
+          "reason": "Execution is constrained by positioning and swaps: Advance, formations, Charge, marches, and high mobility help reposition, but the opener asks the player to place drums and swap stances quickly. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        },
+        "level_50_60": {
+          "value": "low-moderate",
+          "reason": "Execution is constrained by positioning and swaps: Advance, formations, Charge, marches, and high mobility help reposition, but the opener asks the player to place drums and swap stances quickly. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        },
+        "boss": {
+          "value": "low-moderate",
+          "reason": "Execution is constrained by positioning and swaps: Advance, formations, Charge, marches, and high mobility help reposition, but the opener asks the player to place drums and swap stances quickly. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low-moderate",
+          "reason": "Execution is constrained by positioning and swaps: Advance, formations, Charge, marches, and high mobility help reposition, but the opener asks the player to place drums and swap stances quickly. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        },
+        "pvp": {
+          "value": "moderate",
+          "reason": "Execution is constrained by positioning and swaps: Advance, formations, Charge, marches, and high mobility help reposition, but the opener asks the player to place drums and swap stances quickly. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance",
+            "talent:guardian/inspiration:18-48-4-9"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You want a genuinely supportive battle bard with a demanding melee priority system and responsibility for the whole group's buff plan.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide"
+          ]
+        },
+        {
+          "text": "You enjoy the spec's core cadence: open in line formation for harrowing melody and advance, deploy the chosen standard and battle drums, shift into assault formation, stack major buffs, then prioritize dragonslayer or conqueror, empowered ram at the intended tempo state, reprisal procs, and glorious arena while protecting energy for the next formation transition.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You dislike stance swapping, proc variance, raid coordination, or doing work whose payoff appears on teammates' meters.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide"
+          ]
+        },
+        {
+          "text": "You dislike the positioning or swap constraint that advance, formations, charge, marches, and high mobility help reposition, but the opener asks the player to place drums and swap stances quickly.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "inference:guardian/inspiration:coordination-cost",
+            "talent:guardian/inspiration:18-48-4-0",
+            "talent:guardian/inspiration:18-48-10-0",
+            "observed:guardian/inspiration:performance"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "The current guide praises its raid-wide buff range, useful damage, survivability, mobility, AoE control, and crowd-control immunity.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "The same guide calls it overly complex, RNG dependent, prone to zero-Energy downtime, and potentially off-putting because of stance swaps.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "Its reported personal DPS understates a role explicitly designed to move meaningful damage into allied buffs and Echoes of War.",
+          "claim_ids": [
+            "observed:guardian/inspiration:current-guide",
+            "observed:guardian/inspiration:performance"
+          ]
+        }
+      ]
+    },
+    "performance_signal_ids": [
+      "observed:guardian/inspiration:performance"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "strong_single_guide",
+      "performance": "support_not_comparable",
+      "video": "searched_none_verified",
+      "overall_confidence": "high",
+      "gaps": [
+        "Four reported viable builds are not separately profiled.",
+        "Raid contribution lacks a controlled group-level comparison."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "A melee bard whose Ballads and three-stack Tempo cycle already produce periodic Sound of War attacks.",
+      "observed_changes": [
+        "Early solo value does not show the full raid identity",
+        "Resource flow changes with group tools"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "A very busy raid-support priority system with fast stance swaps, proc-driven Energy flow, encounter-specific talent choices, and major communication responsibility.",
+      "observed_changes": [
+        "RNG can create empty Energy moments",
+        "Peak personal damage is not the point",
+        "Support overlap must be coordinated"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "A melee bard whose Ballads and three-stack Tempo cycle already produce periodic Sound of War attacks.",
+      "observed_changes": [
+        "Early solo value does not show the full raid identity",
+        "Resource flow changes with group tools"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "By levels 30-49, open in line formation for harrowing melody and advance, deploy the chosen standard and battle drums, shift into assault formation, stack major buffs, then prioritize dragonslayer or conqueror, empowered ram at the intended tempo state, reprisal procs, and glorious arena while protecting energy for the next formation transition.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Advance, formations, Charge, marches, and high mobility help reposition, but the opener asks the player to place drums and swap stances quickly"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "By levels 30-49, open in line formation for harrowing melody and advance, deploy the chosen standard and battle drums, shift into assault formation, stack major buffs, then prioritize dragonslayer or conqueror, empowered ram at the intended tempo state, reprisal procs, and glorious arena while protecting energy for the next formation transition.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Advance, formations, Charge, marches, and high mobility help reposition, but the opener asks the player to place drums and swap stances quickly"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:guardian/inspiration:current-guide",
+      "kind": "observed",
+      "text": "The August Build Hub guide describes Inspiration as an unusually complex stance-swapping support with broad raid buffs, strong survivability and mobility, AoE control, and good damage, but also RNG damage and possible zero-Energy downtime. It documents a Line-to-Assault opener, Tempo and Empowered Ram timing, Reprisal priority, fast-weapon preference, different dungeon and raid buff packages, and a requirement to coordinate non-overlapping talents with other supports.",
+      "source_ids": [
+        "buildhub:0f6836ab-b365-4f6d-9090-6a2d78eacda4",
+        "reddit:guardian-tips-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "dungeons",
+          "raids",
+          "pve"
+        ],
+        "build_or_mode": [
+          "documented_personal_dps_support_build"
+        ]
+      },
+      "confidence": "high",
+      "conflicts_with": [],
+      "notes": "The author reports four viable builds and documents one personal-DPS-oriented version."
+    },
+    {
+      "id": "observed:guardian/inspiration:performance",
+      "kind": "observed",
+      "text": "The July compilation reports Inspiration at 2,562 in a support or off-role context, and the August Mythic inventory lists 44 records. The current guide states that Echoes of War can transfer substantial damage into party members, so personal DPS alone is incomplete.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02",
+        "buildhub:0f6836ab-b365-4f6d-9090-6a2d78eacda4"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "mythic_dungeons",
+          "raids"
+        ],
+        "build_or_mode": [
+          "support"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "No normalized group-contribution metric is available."
+    },
+    {
+      "id": "inference:guardian/inspiration:coordination-cost",
+      "kind": "inference",
+      "text": "Inspiration has both rotational and social setup burden because its raid value depends on choosing the right shared buffs, avoiding overlap with other supports, and placing interactive effects where allies can use them.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "observed:guardian/inspiration:current-guide",
+        "talent:guardian/inspiration:18-48-4-7",
+        "talent:guardian/inspiration:18-48-7-9"
+      ],
+      "scope": {
+        "levels": "level_40_60",
+        "content": [
+          "dungeons",
+          "raids"
+        ],
+        "build_or_mode": [
+          "support"
+        ]
+      },
+      "confidence": "high",
+      "conflicts_with": [],
+      "notes": "This burden is part of the intended support identity, not merely button count."
+    }
+  ]
+}

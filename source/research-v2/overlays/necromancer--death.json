@@ -1,0 +1,927 @@
+{
+  "baseline": "necromancer--death.json",
+  "set": {
+    "identity": {
+      "fantasy": "A plague savant who cultivates a target into a disease reservoir, then mutates, refreshes, copies, and detonates that infection during an execute window.",
+      "primary_family": "planners",
+      "also_fits": [
+        "sequencers"
+      ],
+      "playstyle_tags": [
+        "dot-maintenance",
+        "execute-ramp",
+        "spread-caster"
+      ],
+      "one_line": "A plague specialist that stacks Crypt Plague and multiple diseases, channels Crypt Swarm, and spawns Rotlings or a Gargoyle. Damage grows with the number of diseases on a target, so correct setup matters more than immediate burst.",
+      "claim_ids": [
+        "observed:necromancer/death:execute-loop",
+        "inference:necromancer/death:stack-failure",
+        "observed:necromancer/death:leveling",
+        "talent:necromancer/death:23-59-4-0",
+        "talent:necromancer/death:23-59-10-0",
+        "observed:necromancer/death:performance",
+        "talent:necromancer/death:23-59-2-8",
+        "talent:necromancer/death:23-59-10-6"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "Apply Flesh to Worms and build Crypt Plague with Crypt Swarm, Lichfrost, commands, and criticals; preserve the stack with Virulency; add the remaining diseases; then use Mutation and repeated Virulency refreshes during execute while Rot Fetishist converts periodic damage into direct payoff.",
+      "single_target": "A current level-60 player recommends holding Virulency and Mutation for execute, reaching fifteen Crypt Plague stacks, then using Mutation into Virulency and reapplying copied diseases to trigger repeated refresh and direct-damage conversions.",
+      "aoe": "Crypt Explosion spreads plague through commands, Virulency can Infest additional targets, and later Rotlings, Gargoyle, and disease-scaled effects widen the pack engine.",
+      "movement_and_target_switching": "DoTs continue during movement, but switching away from a cultivated fifteen-stack target abandons significant setup unless Virulency is available to copy it.",
+      "defense_and_control": "Necromancer ward, sacrifice, slows, and minion tools support attrition; Death's specialization budget is weighted toward offensive disease control.",
+      "group_utility": "Persistent diseases and minions add pressure while the base class contributes pet control, wards, and debuffs.",
+      "failure_modes": [
+        {
+          "text": "Letting Crypt Plague fall or spending Virulency before the execute sequence erases a long buildup and weakens Mutation's strongest window.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure"
+          ]
+        },
+        {
+          "text": "Movement or a target swap can interrupt the intended payoff: dots continue during movement, but switching away from a cultivated fifteen-stack target abandons significant setup unless virulency is available to copy it.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0"
+          ]
+        },
+        {
+          "text": "Spending recovery or control too early leaves less protection for the next pressure event: necromancer ward, sacrifice, slows, and minion tools support attrition; death's specialization budget is weighted toward offensive disease control.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "observed:necromancer/death:execute-loop",
+        "inference:necromancer/death:stack-failure",
+        "observed:necromancer/death:leveling",
+        "talent:necromancer/death:23-59-4-0",
+        "talent:necromancer/death:23-59-10-0",
+        "observed:necromancer/death:performance",
+        "talent:necromancer/death:23-59-2-8",
+        "talent:necromancer/death:23-59-10-6"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "An affliction-style caster that begins with worms and a ten-stack plague but can face early mana pressure before the broader rune and refresh package arrives.",
+        "strengths": [
+          "Clear disease fantasy",
+          "Damage continues while moving"
+        ],
+        "cautions": [
+          "Early mana reports",
+          "Short targets die before full setup"
+        ],
+        "claim_ids": [
+          "observed:necromancer/death:leveling",
+          "talent:necromancer/death:23-59-4-0",
+          "talent:necromancer/death:23-59-10-0",
+          "observed:necromancer/death:execute-loop",
+          "inference:necromancer/death:stack-failure",
+          "observed:necromancer/death:performance",
+          "talent:necromancer/death:23-59-2-8",
+          "talent:necromancer/death:23-59-10-6"
+        ]
+      },
+      "level_50_60": {
+        "feel": "A demanding execute-ramp DoT spec with fifteen plague stacks, snapshot-sensitive effects, Mutation, Virulency refreshes, and direct-damage replication.",
+        "strengths": [
+          "Strong long-target optimization identity",
+          "Excellent spread tools",
+          "High execute ceiling"
+        ],
+        "cautions": [
+          "Only five Mythic records in the current inventory",
+          "Timers and snapshots require attention"
+        ],
+        "claim_ids": [
+          "observed:necromancer/death:execute-loop",
+          "observed:necromancer/death:performance",
+          "talent:necromancer/death:23-59-2-8",
+          "inference:necromancer/death:stack-failure",
+          "observed:necromancer/death:leveling",
+          "talent:necromancer/death:23-59-4-0",
+          "talent:necromancer/death:23-59-10-0",
+          "talent:necromancer/death:23-59-10-6"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "By levels 30-49, apply flesh to worms and build crypt plague with crypt swarm, lichfrost, commands, and criticals; preserve the stack with virulency; add the remaining diseases; then use mutation and repeated virulency refreshes during execute while rot fetishist converts periodic damage into direct payoff.",
+        "strengths": [
+          "Core engine is online",
+          "More complete target coverage"
+        ],
+        "cautions": [
+          "Late talents still change the ceiling",
+          "DoTs continue during movement, but switching away from a cultivated fifteen-stack target abandons significant setup unless Virulency is available to copy it"
+        ],
+        "claim_ids": [
+          "observed:necromancer/death:execute-loop",
+          "inference:necromancer/death:stack-failure",
+          "observed:necromancer/death:leveling",
+          "talent:necromancer/death:23-59-4-0",
+          "talent:necromancer/death:23-59-10-0",
+          "observed:necromancer/death:performance",
+          "talent:necromancer/death:23-59-2-8",
+          "talent:necromancer/death:23-59-10-6"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, a current level-60 player recommends holding virulency and mutation for execute, reaching fifteen crypt plague stacks, then using mutation into virulency and reapplying copied diseases to trigger repeated refresh and direct-damage conversions.",
+        "strengths": [
+          "Durable targets preserve the full loop",
+          "Cooldowns can be planned"
+        ],
+        "cautions": [
+          "Movement can break setup",
+          "Repeated errors remain visible"
+        ],
+        "claim_ids": [
+          "observed:necromancer/death:execute-loop",
+          "inference:necromancer/death:stack-failure",
+          "observed:necromancer/death:leveling",
+          "talent:necromancer/death:23-59-4-0",
+          "talent:necromancer/death:23-59-10-0",
+          "observed:necromancer/death:performance",
+          "talent:necromancer/death:23-59-2-8",
+          "talent:necromancer/death:23-59-10-6"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, crypt explosion spreads plague through commands, virulency can infest additional targets, and later rotlings, gargoyle, and disease-scaled effects widen the pack engine.",
+        "strengths": [
+          "Pack tools express the spec clearly",
+          "Group utility has regular value"
+        ],
+        "cautions": [
+          "Short-lived targets can erase setup",
+          "Tank movement changes the plan"
+        ],
+        "claim_ids": [
+          "observed:necromancer/death:execute-loop",
+          "inference:necromancer/death:stack-failure",
+          "observed:necromancer/death:leveling",
+          "talent:necromancer/death:23-59-4-0",
+          "talent:necromancer/death:23-59-10-0",
+          "observed:necromancer/death:performance",
+          "talent:necromancer/death:23-59-2-8",
+          "talent:necromancer/death:23-59-10-6"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, dots continue during movement, but switching away from a cultivated fifteen-stack target abandons significant setup unless virulency is available to copy it. Necromancer ward, sacrifice, slows, and minion tools support attrition; Death's specialization budget is weighted toward offensive disease control.",
+        "strengths": [
+          "Control and utility create options",
+          "Target swaps can reward flexibility"
+        ],
+        "cautions": [
+          "Disruption makes the loop less predictable",
+          "Defensive timing is punishable"
+        ],
+        "claim_ids": [
+          "observed:necromancer/death:execute-loop",
+          "inference:necromancer/death:stack-failure",
+          "observed:necromancer/death:leveling",
+          "talent:necromancer/death:23-59-4-0",
+          "talent:necromancer/death:23-59-10-0",
+          "observed:necromancer/death:performance",
+          "talent:necromancer/death:23-59-2-8",
+          "talent:necromancer/death:23-59-10-6"
+        ]
+      }
+    },
+    "complexity": {
+      "state_tracking": {
+        "boss": {
+          "value": "high",
+          "reason": "Fifteen Crypt Plague stacks, several diseases, Virulency availability, Mutation, execute health, and snapshot behavior overlap.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "talent:necromancer/death:23-59-10-6",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: A current level-60 player recommends holding Virulency and Mutation for execute, reaching fifteen Crypt Plague stacks, then using Mutation into Virulency and reapplying copied diseases to trigger repeated refresh and direct-damage conversions. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: A current level-60 player recommends holding Virulency and Mutation for execute, reaching fifteen Crypt Plague stacks, then using Mutation into Virulency and reapplying copied diseases to trigger repeated refresh and direct-damage conversions. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: A current level-60 player recommends holding Virulency and Mutation for execute, reaching fifteen Crypt Plague stacks, then using Mutation into Virulency and reapplying copied diseases to trigger repeated refresh and direct-damage conversions. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: A current level-60 player recommends holding Virulency and Mutation for execute, reaching fifteen Crypt Plague stacks, then using Mutation into Virulency and reapplying copied diseases to trigger repeated refresh and direct-damage conversions. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: A current level-60 player recommends holding Virulency and Mutation for execute, reaching fifteen Crypt Plague stacks, then using Mutation into Virulency and reapplying copied diseases to trigger repeated refresh and direct-damage conversions. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        }
+      },
+      "failure_cost": {
+        "boss": {
+          "value": "high",
+          "reason": "A dropped plague stack or premature Virulency loses setup accumulated across many casts.",
+          "claim_ids": [
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:execute-loop",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "Letting Crypt Plague fall or spending Virulency before the execute sequence erases a long buildup and weakens Mutation's strongest window. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Letting Crypt Plague fall or spending Virulency before the execute sequence erases a long buildup and weakens Mutation's strongest window. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Letting Crypt Plague fall or spending Virulency before the execute sequence erases a long buildup and weakens Mutation's strongest window. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Letting Crypt Plague fall or spending Virulency before the execute sequence erases a long buildup and weakens Mutation's strongest window. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Letting Crypt Plague fall or spending Virulency before the execute sequence erases a long buildup and weakens Mutation's strongest window. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        }
+      },
+      "core_actions": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Apply Flesh to Worms and build Crypt Plague with Crypt Swarm, Lichfrost, commands, and criticals; preserve the stack with Virulency; add the remaining diseases; then use Mutation and repeated Virulency refreshes during execute while Rot Fetishist converts periodic damage into direct payoff. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Apply Flesh to Worms and build Crypt Plague with Crypt Swarm, Lichfrost, commands, and criticals; preserve the stack with Virulency; add the remaining diseases; then use Mutation and repeated Virulency refreshes during execute while Rot Fetishist converts periodic damage into direct payoff. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Apply Flesh to Worms and build Crypt Plague with Crypt Swarm, Lichfrost, commands, and criticals; preserve the stack with Virulency; add the remaining diseases; then use Mutation and repeated Virulency refreshes during execute while Rot Fetishist converts periodic damage into direct payoff. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Apply Flesh to Worms and build Crypt Plague with Crypt Swarm, Lichfrost, commands, and criticals; preserve the stack with Virulency; add the remaining diseases; then use Mutation and repeated Virulency refreshes during execute while Rot Fetishist converts periodic damage into direct payoff. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Apply Flesh to Worms and build Crypt Plague with Crypt Swarm, Lichfrost, commands, and criticals; preserve the stack with Virulency; add the remaining diseases; then use Mutation and repeated Virulency refreshes during execute while Rot Fetishist converts periodic damage into direct payoff. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        },
+        "pvp": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Apply Flesh to Worms and build Crypt Plague with Crypt Swarm, Lichfrost, commands, and criticals; preserve the stack with Virulency; add the remaining diseases; then use Mutation and repeated Virulency refreshes during execute while Rot Fetishist converts periodic damage into direct payoff. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Crypt Explosion spreads plague through commands, Virulency can Infest additional targets, and later Rotlings, Gargoyle, and disease-scaled effects widen the pack engine. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Crypt Explosion spreads plague through commands, Virulency can Infest additional targets, and later Rotlings, Gargoyle, and disease-scaled effects widen the pack engine. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Crypt Explosion spreads plague through commands, Virulency can Infest additional targets, and later Rotlings, Gargoyle, and disease-scaled effects widen the pack engine. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Crypt Explosion spreads plague through commands, Virulency can Infest additional targets, and later Rotlings, Gargoyle, and disease-scaled effects widen the pack engine. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Crypt Explosion spreads plague through commands, Virulency can Infest additional targets, and later Rotlings, Gargoyle, and disease-scaled effects widen the pack engine. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        },
+        "pvp": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Crypt Explosion spreads plague through commands, Virulency can Infest additional targets, and later Rotlings, Gargoyle, and disease-scaled effects widen the pack engine. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; necromancer ward, sacrifice, slows, and minion tools support attrition; death's specialization budget is weighted toward offensive disease control. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; necromancer ward, sacrifice, slows, and minion tools support attrition; death's specialization budget is weighted toward offensive disease control. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; necromancer ward, sacrifice, slows, and minion tools support attrition; death's specialization budget is weighted toward offensive disease control. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; necromancer ward, sacrifice, slows, and minion tools support attrition; death's specialization budget is weighted toward offensive disease control. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; necromancer ward, sacrifice, slows, and minion tools support attrition; death's specialization budget is weighted toward offensive disease control. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "Target count, incoming pressure, and movement change the next action; necromancer ward, sacrifice, slows, and minion tools support attrition; death's specialization budget is weighted toward offensive disease control. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: DoTs continue during movement, but switching away from a cultivated fifteen-stack target abandons significant setup unless Virulency is available to copy it. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: DoTs continue during movement, but switching away from a cultivated fifteen-stack target abandons significant setup unless Virulency is available to copy it. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: DoTs continue during movement, but switching away from a cultivated fifteen-stack target abandons significant setup unless Virulency is available to copy it. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: DoTs continue during movement, but switching away from a cultivated fifteen-stack target abandons significant setup unless Virulency is available to copy it. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: DoTs continue during movement, but switching away from a cultivated fifteen-stack target abandons significant setup unless Virulency is available to copy it. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "Execution is constrained by positioning and swaps: DoTs continue during movement, but switching away from a cultivated fifteen-stack target abandons significant setup unless Virulency is available to copy it. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0",
+            "observed:necromancer/death:performance",
+            "talent:necromancer/death:23-59-2-8",
+            "talent:necromancer/death:23-59-10-6"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You enjoy Affliction-style maintenance with a highly technical execute sequence and disease copying.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop"
+          ]
+        },
+        {
+          "text": "You enjoy the spec's core cadence: apply flesh to worms and build crypt plague with crypt swarm, lichfrost, commands, and criticals; preserve the stack with virulency; add the remaining diseases; then use mutation and repeated virulency refreshes during execute while rot fetishist converts periodic damage into direct payoff.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You want immediate damage, frequent target switching, or minimal timer tracking.",
+          "claim_ids": [
+            "inference:necromancer/death:stack-failure"
+          ]
+        },
+        {
+          "text": "You dislike the positioning or swap constraint that dots continue during movement, but switching away from a cultivated fifteen-stack target abandons significant setup unless virulency is available to copy it.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop",
+            "inference:necromancer/death:stack-failure",
+            "observed:necromancer/death:leveling",
+            "talent:necromancer/death:23-59-4-0",
+            "talent:necromancer/death:23-59-10-0"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Current level-60 players praise Death's timers, procs, disease spreading, and explosive execute optimization.",
+          "claim_ids": [
+            "observed:necromancer/death:execute-loop"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Early mana pressure and the amount of setup make it a poor fit for some new players or short fights.",
+          "claim_ids": [
+            "observed:necromancer/death:leveling"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "Players call Death strong and engaging, yet it has only five current Mythic records; low representation is an evidence warning, not proof of weakness.",
+          "claim_ids": [
+            "observed:necromancer/death:performance",
+            "observed:necromancer/death:execute-loop"
+          ]
+        }
+      ]
+    },
+    "performance_signal_ids": [
+      "observed:necromancer/death:performance"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "moderate",
+      "performance": "very_low_representation",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium",
+      "gaps": [
+        "Only five Mythic records in the current upload inventory.",
+        "Snapshot behavior and execute sequence need direct in-game verification after patches."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "An affliction-style caster that begins with worms and a ten-stack plague but can face early mana pressure before the broader rune and refresh package arrives.",
+      "observed_changes": [
+        "Early mana reports",
+        "Short targets die before full setup"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "By levels 30-49, apply flesh to worms and build crypt plague with crypt swarm, lichfrost, commands, and criticals; preserve the stack with virulency; add the remaining diseases; then use mutation and repeated virulency refreshes during execute while rot fetishist converts periodic damage into direct payoff.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "DoTs continue during movement, but switching away from a cultivated fifteen-stack target abandons significant setup unless Virulency is available to copy it"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "A demanding execute-ramp DoT spec with fifteen plague stacks, snapshot-sensitive effects, Mutation, Virulency refreshes, and direct-damage replication.",
+      "observed_changes": [
+        "Only five Mythic records in the current inventory",
+        "Timers and snapshots require attention"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "An affliction-style caster that begins with worms and a ten-stack plague but can face early mana pressure before the broader rune and refresh package arrives.",
+      "observed_changes": [
+        "Early mana reports",
+        "Short targets die before full setup"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "By levels 30-49, apply flesh to worms and build crypt plague with crypt swarm, lichfrost, commands, and criticals; preserve the stack with virulency; add the remaining diseases; then use mutation and repeated virulency refreshes during execute while rot fetishist converts periodic damage into direct payoff.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "DoTs continue during movement, but switching away from a cultivated fifteen-stack target abandons significant setup unless Virulency is available to copy it"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:necromancer/death:execute-loop",
+      "kind": "observed",
+      "text": "A current level-60 Death player recommends maintaining fifteen Crypt Plague stacks with Virulency, saving Virulency and Mutation for execute, then using Mutation into Virulency and repeated disease reapplication to refresh effects and trigger Rot Fetishist direct-damage copies. The player also warns that haste and critical values do not dynamically update on existing effects.",
+      "source_ids": [
+        "reddit:necromancer-death-rime-2026-07-27"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "boss"
+        ],
+        "build_or_mode": [
+          "execute_build"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Detailed player sequence; snapshot claim is not independently reproduced."
+    },
+    {
+      "id": "observed:necromancer/death:leveling",
+      "kind": "observed",
+      "text": "Current Necromancer discussions compare Death to an Affliction Warlock, report early mana pressure, and generally recommend Animation for a new player's leveling safety even while praising Death's DoT pressure.",
+      "source_ids": [
+        "reddit:necromancer-animation-2026-07-12",
+        "reddit:necromancer-death-rime-2026-07-27"
+      ],
+      "scope": {
+        "levels": "leveling_10_49",
+        "content": [
+          "solo_leveling",
+          "pvp"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "Mixed levels and player experience."
+    },
+    {
+      "id": "observed:necromancer/death:performance",
+      "kind": "observed",
+      "text": "The July DPS compilation reports Death at 4,087, while the August Mythic inventory lists only five Death records.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "pve_unspecified",
+          "mythic_dungeons"
+        ],
+        "build_or_mode": [
+          "unspecified"
+        ]
+      },
+      "confidence": "low",
+      "conflicts_with": [],
+      "notes": "The extremely small upload count makes cross-spec inference unsafe."
+    },
+    {
+      "id": "inference:necromancer/death:stack-failure",
+      "kind": "inference",
+      "text": "Death has high cumulative mistake cost because Crypt Plague, copied diseases, and saved execute cooldowns represent setup accumulated across many global cooldowns.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:necromancer/death:23-59-10-0",
+        "talent:necromancer/death:23-59-4-4",
+        "observed:necromancer/death:execute-loop"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "boss"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "high",
+      "conflicts_with": [],
+      "notes": "Exact throughput loss is not measured."
+    }
+  ]
+}

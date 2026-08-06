@@ -1,0 +1,1665 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "witch-doctor/shadowhunting",
+    "class": "Witch Doctor",
+    "name": "Shadowhunting",
+    "roles": [
+      "Damage"
+    ],
+    "range": [
+      "Ranged"
+    ]
+  },
+  "identity": {
+    "fantasy": "",
+    "one_line": "A mobile bow-and-voodoo hybrid that collects Spirits through Reclamation and Malefic Arrow, then spends them on Spirit Eclipse, glaives, wards, or Frenzied Spirits. It combines sustained ranged damage, self-healing, summons, and burst, but asks the player to juggle two damage scalings and a Spirit cycle.",
+    "primary_family": "",
+    "also_fits": [],
+    "claim_ids": [
+      "talent:witch-doctor/shadowhunting:13-36-3-0",
+      "talent:witch-doctor/shadowhunting:13-36-5-0",
+      "talent:witch-doctor/shadowhunting:13-36-10-0",
+      "talent:witch-doctor/shadowhunting:13-36-2-1",
+      "talent:witch-doctor/shadowhunting:13-36-6-1",
+      "talent:witch-doctor/shadowhunting:13-36-2-2",
+      "talent:witch-doctor/shadowhunting:13-36-6-2",
+      "talent:witch-doctor/shadowhunting:13-36-10-2",
+      "talent:witch-doctor/shadowhunting:13-36-1-3",
+      "talent:witch-doctor/shadowhunting:13-36-3-3",
+      "talent:witch-doctor/shadowhunting:13-36-5-3",
+      "talent:witch-doctor/shadowhunting:13-36-7-3",
+      "talent:witch-doctor/shadowhunting:13-36-2-4",
+      "talent:witch-doctor/shadowhunting:13-36-4-4",
+      "talent:witch-doctor/shadowhunting:13-36-6-4",
+      "talent:witch-doctor/shadowhunting:13-36-10-4",
+      "talent:witch-doctor/shadowhunting:13-36-0-5a",
+      "talent:witch-doctor/shadowhunting:13-36-0-5b",
+      "talent:witch-doctor/shadowhunting:13-36-2-5",
+      "talent:witch-doctor/shadowhunting:13-36-4-5",
+      "talent:witch-doctor/shadowhunting:13-36-6-5",
+      "talent:witch-doctor/shadowhunting:13-36-8-5a",
+      "talent:witch-doctor/shadowhunting:13-36-8-5b",
+      "talent:witch-doctor/shadowhunting:13-36-1-6",
+      "talent:witch-doctor/shadowhunting:13-36-2-6",
+      "talent:witch-doctor/shadowhunting:13-36-4-6a",
+      "talent:witch-doctor/shadowhunting:13-36-4-6b",
+      "talent:witch-doctor/shadowhunting:13-36-6-6",
+      "talent:witch-doctor/shadowhunting:13-36-7-6",
+      "talent:witch-doctor/shadowhunting:13-36-10-6",
+      "talent:witch-doctor/shadowhunting:13-36-1-7a",
+      "talent:witch-doctor/shadowhunting:13-36-1-7b",
+      "talent:witch-doctor/shadowhunting:13-36-3-7",
+      "talent:witch-doctor/shadowhunting:13-36-5-7",
+      "talent:witch-doctor/shadowhunting:13-36-7-7",
+      "talent:witch-doctor/shadowhunting:13-36-2-8",
+      "talent:witch-doctor/shadowhunting:13-36-4-8a",
+      "talent:witch-doctor/shadowhunting:13-36-4-8b",
+      "talent:witch-doctor/shadowhunting:13-36-6-8",
+      "talent:witch-doctor/shadowhunting:13-36-10-8",
+      "talent:witch-doctor/shadowhunting:13-36-2-9",
+      "talent:witch-doctor/shadowhunting:13-36-4-9",
+      "talent:witch-doctor/shadowhunting:13-36-6-9"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "A mobile bow-and-voodoo hybrid that collects Spirits through Reclamation and Malefic Arrow, then spends them on Spirit Eclipse, glaives, wards, or Frenzied Spirits. It combines sustained ranged damage, self-healing, summons, and burst, but asks the player to juggle two damage scalings and a Spirit cycle.",
+    "resources": [
+      "Spirit"
+    ],
+    "builders": [
+      {
+        "name": "Voodoo Hunger",
+        "claim_ids": [
+          "talent:witch-doctor/shadowhunting:13-36-6-5"
+        ]
+      },
+      {
+        "name": "Spirit Hunting",
+        "claim_ids": [
+          "talent:witch-doctor/shadowhunting:13-36-8-5b"
+        ]
+      },
+      {
+        "name": "Frenzied Spirits",
+        "claim_ids": [
+          "talent:witch-doctor/shadowhunting:13-36-4-9"
+        ]
+      },
+      {
+        "name": "Bwonsamdi's Gift",
+        "claim_ids": [
+          "talent:witch-doctor/shadowhunting:13-36-6-9"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Shadowhunter",
+        "claim_ids": [
+          "talent:witch-doctor/shadowhunting:13-36-10-0"
+        ]
+      },
+      {
+        "name": "Frenzied Spirits",
+        "claim_ids": [
+          "talent:witch-doctor/shadowhunting:13-36-4-9"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Spirit Eclipse",
+        "claim_ids": [
+          "talent:witch-doctor/shadowhunting:13-36-6-2"
+        ]
+      },
+      {
+        "name": "Vol'jin's Blessing",
+        "claim_ids": [
+          "talent:witch-doctor/shadowhunting:13-36-2-4"
+        ]
+      },
+      {
+        "name": "Voodoo Hunger",
+        "claim_ids": [
+          "talent:witch-doctor/shadowhunting:13-36-6-5"
+        ]
+      },
+      {
+        "name": "Dambala's Lethality",
+        "claim_ids": [
+          "talent:witch-doctor/shadowhunting:13-36-1-7a"
+        ]
+      },
+      {
+        "name": "Spirit Volley",
+        "claim_ids": [
+          "talent:witch-doctor/shadowhunting:13-36-10-8"
+        ]
+      },
+      {
+        "name": "A Price To Pay",
+        "claim_ids": [
+          "talent:witch-doctor/shadowhunting:13-36-2-9"
+        ]
+      },
+      {
+        "name": "Frenzied Spirits",
+        "claim_ids": [
+          "talent:witch-doctor/shadowhunting:13-36-4-9"
+        ]
+      },
+      {
+        "name": "Bwonsamdi's Gift",
+        "claim_ids": [
+          "talent:witch-doctor/shadowhunting:13-36-6-9"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Malefic Arrow",
+        "claim_ids": [
+          "talent:witch-doctor/shadowhunting:13-36-3-0"
+        ],
+        "structural_description": "Transform: s your Malefic Wrath into Malefic Arrow.Malefic ArrowLaunch a voodoo arrow at an enemy, dealing 85% Ranged Weapon Damage plus 25 + 20% ranged AP + 25% nature SP as Nature damage, healing you equal to 40% of the damage dealt."
+      },
+      {
+        "name": "Spirit Glaive",
+        "claim_ids": [
+          "talent:witch-doctor/shadowhunting:13-36-2-2"
+        ],
+        "structural_description": "Toss spectral glaives that strikes enemies it passes through, dealing 66 + 50% ranged AP + 50% shadow SP Shadow damage, and reducing their Shadow Resistance by 61 for 5 seconds.Usable while moving. Cast time scales with your Agility."
+      },
+      {
+        "name": "Shadowstalker",
+        "claim_ids": [
+          "talent:witch-doctor/shadowhunting:13-36-6-4"
+        ],
+        "structural_description": "Disappear into darkness, entering an improved stealth mode, clearing all harmful effects, and increasing movement speed by 50% for 20 seconds."
+      },
+      {
+        "name": "Umbral Glaive",
+        "claim_ids": [
+          "talent:witch-doctor/shadowhunting:13-36-10-4"
+        ],
+        "structural_description": "Level 30 PassiveRanged attacks now have a 10% chance to transform Hex of Malice into Umbral Glaive for 10 seconds.Umbral Glaive (Damage)Throw a glaive that curses an enemy and up to 2 nearby enemies, leeching 3 + 10% ranged AP health, repeating every 1 sec for 6 seconds. Refreshes the duration of Hex of Malice.Scales with modifiers to Hex of Malice.Chance increased by your ranged critical strike rating."
+      },
+      {
+        "name": "Viper Ward",
+        "claim_ids": [
+          "talent:witch-doctor/shadowhunting:13-36-4-8b"
+        ],
+        "structural_description": "Transform: s Call of Sseratus into Viper Ward.Viper WardSummons a powerful and fast-attacking Viper Ward at target location for 20 seconds.Viper Wards have a 50% chance to unleash a Hexfire Blast, dealing 216 + 15% ranged AP Fire damage to an enemy.Chance increased based on your ranged critical strike rating."
+      },
+      {
+        "name": "Spirit Volley",
+        "claim_ids": [
+          "talent:witch-doctor/shadowhunting:13-36-10-8"
+        ],
+        "structural_description": "Level 50 PassiveCasting Reclamation and Malefic Arrow now has a 30% chance to transform your next Reclamation into Spirit Volley for 6 seconds.Spirit VolleyLaunch a spirit volley at your enemy, dealing 540 + 28.5% ranged AP Shadow damage to them and up to 3 enemies within 8 yds and collects a Spirit.Reduces the cooldown of Spirit Glaive by -3 sec.Scales with modifiers to Reclamation."
+      },
+      {
+        "name": "Bwonsamdi's Gift",
+        "claim_ids": [
+          "talent:witch-doctor/shadowhunting:13-36-6-9"
+        ],
+        "structural_description": "While Mimic Ward is active, you now gain 15% increased ranged haste and your Reclamation transforms into Spirit Volley. Each Spirit now increases the damage of Spirit Volley by 3%.In addition, direct ranged abilty damage dealt now reduces the cooldown of Mimic Ward by -0.5 sec."
+      }
+    ],
+    "single_target": "",
+    "aoe": "",
+    "movement_and_target_switching": "",
+    "defense_and_control": "",
+    "group_utility": "",
+    "failure_modes": [],
+    "claim_ids": [
+      "talent:witch-doctor/shadowhunting:13-36-3-0",
+      "talent:witch-doctor/shadowhunting:13-36-5-0",
+      "talent:witch-doctor/shadowhunting:13-36-10-0",
+      "talent:witch-doctor/shadowhunting:13-36-2-1",
+      "talent:witch-doctor/shadowhunting:13-36-6-1",
+      "talent:witch-doctor/shadowhunting:13-36-2-2",
+      "talent:witch-doctor/shadowhunting:13-36-6-2",
+      "talent:witch-doctor/shadowhunting:13-36-10-2",
+      "talent:witch-doctor/shadowhunting:13-36-1-3",
+      "talent:witch-doctor/shadowhunting:13-36-3-3",
+      "talent:witch-doctor/shadowhunting:13-36-5-3",
+      "talent:witch-doctor/shadowhunting:13-36-7-3",
+      "talent:witch-doctor/shadowhunting:13-36-2-4",
+      "talent:witch-doctor/shadowhunting:13-36-4-4",
+      "talent:witch-doctor/shadowhunting:13-36-6-4",
+      "talent:witch-doctor/shadowhunting:13-36-10-4",
+      "talent:witch-doctor/shadowhunting:13-36-0-5a",
+      "talent:witch-doctor/shadowhunting:13-36-0-5b",
+      "talent:witch-doctor/shadowhunting:13-36-2-5",
+      "talent:witch-doctor/shadowhunting:13-36-4-5",
+      "talent:witch-doctor/shadowhunting:13-36-6-5",
+      "talent:witch-doctor/shadowhunting:13-36-8-5a",
+      "talent:witch-doctor/shadowhunting:13-36-8-5b",
+      "talent:witch-doctor/shadowhunting:13-36-1-6",
+      "talent:witch-doctor/shadowhunting:13-36-2-6",
+      "talent:witch-doctor/shadowhunting:13-36-4-6a",
+      "talent:witch-doctor/shadowhunting:13-36-4-6b",
+      "talent:witch-doctor/shadowhunting:13-36-6-6",
+      "talent:witch-doctor/shadowhunting:13-36-7-6",
+      "talent:witch-doctor/shadowhunting:13-36-10-6",
+      "talent:witch-doctor/shadowhunting:13-36-1-7a",
+      "talent:witch-doctor/shadowhunting:13-36-1-7b",
+      "talent:witch-doctor/shadowhunting:13-36-3-7",
+      "talent:witch-doctor/shadowhunting:13-36-5-7",
+      "talent:witch-doctor/shadowhunting:13-36-7-7",
+      "talent:witch-doctor/shadowhunting:13-36-2-8",
+      "talent:witch-doctor/shadowhunting:13-36-4-8a",
+      "talent:witch-doctor/shadowhunting:13-36-4-8b",
+      "talent:witch-doctor/shadowhunting:13-36-6-8",
+      "talent:witch-doctor/shadowhunting:13-36-10-8",
+      "talent:witch-doctor/shadowhunting:13-36-2-9",
+      "talent:witch-doctor/shadowhunting:13-36-4-9",
+      "talent:witch-doctor/shadowhunting:13-36-6-9"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Malefic Arrow",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-3-0"
+          ]
+        },
+        {
+          "name": "Reclamation",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-5-0"
+          ]
+        },
+        {
+          "name": "Shadowhunter",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-10-0"
+          ]
+        },
+        {
+          "name": "Improved Malefic Arrow",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-2-1"
+          ]
+        },
+        {
+          "name": "Loa's Strength",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-6-1"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:witch-doctor/shadowhunting:13-36-3-0",
+        "talent:witch-doctor/shadowhunting:13-36-5-0",
+        "talent:witch-doctor/shadowhunting:13-36-10-0",
+        "talent:witch-doctor/shadowhunting:13-36-2-1",
+        "talent:witch-doctor/shadowhunting:13-36-6-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Spirit Glaive",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-2-2"
+          ]
+        },
+        {
+          "name": "Spirit Eclipse",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-6-2"
+          ]
+        },
+        {
+          "name": "Loa Spirits",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-10-2"
+          ]
+        },
+        {
+          "name": "Soul Feeder",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-1-3"
+          ]
+        },
+        {
+          "name": "Mojo High",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-3-3"
+          ]
+        },
+        {
+          "name": "Spiritual Devotee",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-5-3"
+          ]
+        },
+        {
+          "name": "Village Wisdom",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-7-3"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:witch-doctor/shadowhunting:13-36-2-2",
+        "talent:witch-doctor/shadowhunting:13-36-6-2",
+        "talent:witch-doctor/shadowhunting:13-36-10-2",
+        "talent:witch-doctor/shadowhunting:13-36-1-3",
+        "talent:witch-doctor/shadowhunting:13-36-3-3",
+        "talent:witch-doctor/shadowhunting:13-36-5-3",
+        "talent:witch-doctor/shadowhunting:13-36-7-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Vol'jin's Blessing",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-2-4"
+          ]
+        },
+        {
+          "name": "Call of Sseratus",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-4-4"
+          ]
+        },
+        {
+          "name": "Shadowstalker",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-6-4"
+          ]
+        },
+        {
+          "name": "Umbral Glaive",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-10-4"
+          ]
+        },
+        {
+          "name": "The True Spirit",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-0-5a"
+          ]
+        },
+        {
+          "name": "Godslayer",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-0-5b"
+          ]
+        },
+        {
+          "name": "Residual Energy",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-2-5"
+          ]
+        },
+        {
+          "name": "Voodoo Fire",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-4-5"
+          ]
+        },
+        {
+          "name": "Voodoo Hunger",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-6-5"
+          ]
+        },
+        {
+          "name": "Hex of Death",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-8-5a"
+          ]
+        },
+        {
+          "name": "Spirit Hunting",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-8-5b"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:witch-doctor/shadowhunting:13-36-2-4",
+        "talent:witch-doctor/shadowhunting:13-36-4-4",
+        "talent:witch-doctor/shadowhunting:13-36-6-4",
+        "talent:witch-doctor/shadowhunting:13-36-10-4",
+        "talent:witch-doctor/shadowhunting:13-36-0-5a",
+        "talent:witch-doctor/shadowhunting:13-36-0-5b",
+        "talent:witch-doctor/shadowhunting:13-36-2-5",
+        "talent:witch-doctor/shadowhunting:13-36-4-5",
+        "talent:witch-doctor/shadowhunting:13-36-6-5",
+        "talent:witch-doctor/shadowhunting:13-36-8-5a",
+        "talent:witch-doctor/shadowhunting:13-36-8-5b"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Dark Loa's Incantation",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-1-6"
+          ]
+        },
+        {
+          "name": "Darkspear Traditionalist",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-2-6"
+          ]
+        },
+        {
+          "name": "Spirit Striker",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-4-6a"
+          ]
+        },
+        {
+          "name": "Hexfire Mass",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-4-6b"
+          ]
+        },
+        {
+          "name": "Strength of Da Loa",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-6-6"
+          ]
+        },
+        {
+          "name": "Spirit Shock",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-7-6"
+          ]
+        },
+        {
+          "name": "Sen'jin's Apprentice",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-10-6"
+          ]
+        },
+        {
+          "name": "Dambala's Lethality",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-1-7a"
+          ]
+        },
+        {
+          "name": "Bwonsamdi's Edge",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-1-7b"
+          ]
+        },
+        {
+          "name": "Eye of Kimbul",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-3-7"
+          ]
+        },
+        {
+          "name": "Berserking",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-5-7"
+          ]
+        },
+        {
+          "name": "Shadow Enchantments",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-7-7"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:witch-doctor/shadowhunting:13-36-1-6",
+        "talent:witch-doctor/shadowhunting:13-36-2-6",
+        "talent:witch-doctor/shadowhunting:13-36-4-6a",
+        "talent:witch-doctor/shadowhunting:13-36-4-6b",
+        "talent:witch-doctor/shadowhunting:13-36-6-6",
+        "talent:witch-doctor/shadowhunting:13-36-7-6",
+        "talent:witch-doctor/shadowhunting:13-36-10-6",
+        "talent:witch-doctor/shadowhunting:13-36-1-7a",
+        "talent:witch-doctor/shadowhunting:13-36-1-7b",
+        "talent:witch-doctor/shadowhunting:13-36-3-7",
+        "talent:witch-doctor/shadowhunting:13-36-5-7",
+        "talent:witch-doctor/shadowhunting:13-36-7-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Fool's Play",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-2-8"
+          ]
+        },
+        {
+          "name": "Serpent Handler",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-4-8a"
+          ]
+        },
+        {
+          "name": "Viper Ward",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-4-8b"
+          ]
+        },
+        {
+          "name": "Serpent's Guile",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-6-8"
+          ]
+        },
+        {
+          "name": "Spirit Volley",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-10-8"
+          ]
+        },
+        {
+          "name": "A Price To Pay",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-2-9"
+          ]
+        },
+        {
+          "name": "Frenzied Spirits",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-4-9"
+          ]
+        },
+        {
+          "name": "Bwonsamdi's Gift",
+          "claim_ids": [
+            "talent:witch-doctor/shadowhunting:13-36-6-9"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:witch-doctor/shadowhunting:13-36-2-8",
+        "talent:witch-doctor/shadowhunting:13-36-4-8a",
+        "talent:witch-doctor/shadowhunting:13-36-4-8b",
+        "talent:witch-doctor/shadowhunting:13-36-6-8",
+        "talent:witch-doctor/shadowhunting:13-36-10-8",
+        "talent:witch-doctor/shadowhunting:13-36-2-9",
+        "talent:witch-doctor/shadowhunting:13-36-4-9",
+        "talent:witch-doctor/shadowhunting:13-36-6-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "leveling_30_49": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "level_50_60": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "boss": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "dungeon_aoe": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "pvp": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [],
+    "avoid_if": []
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [],
+  "sentiment": {
+    "praise": [],
+    "frustrations": [],
+    "contested": []
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 2,
+    "latest_update": "2026-07-29T19:30:52.961+00:00",
+    "top_title": "Shadowhunter Witch Doctor build",
+    "top_url": "https://coabuildhub.com/build/f9b4830a-0000-492c-936a-afe69c347fc9",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:f9b4830a-0000-492c-936a-afe69c347fc9"
+    ]
+  },
+  "coverage": {
+    "mechanical": "structural_baseline",
+    "community": "indexed",
+    "performance": "missing",
+    "video": "missing",
+    "overall_confidence": "low",
+    "gaps": [
+      "Effective core loop needs recent guide or player cross-check.",
+      "Contextual complexity values are not yet researched.",
+      "Recent performance, sentiment, issues, and video evidence are not yet reconciled."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-3-0",
+      "kind": "structural",
+      "text": "Malefic Arrow: Transform: s your Malefic Wrath into Malefic Arrow.Malefic ArrowLaunch a voodoo arrow at an enemy, dealing 85% Ranged Weapon Damage plus 25 + 20% ranged AP + 25% nature SP as Nature damage, healing you equal to 40% of the damage dealt.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-5-0",
+      "kind": "structural",
+      "text": "Reclamation: Shoot a quick voodoo arrow at an enemy dealing 100% Ranged Weapon Damage plus 15 as Nature damage and collecting a Spirit.SpiritRegenerates 7 health and mana, repeating every 4 sec for 12 seconds, stacking 5 times.Usable while moving.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-10-0",
+      "kind": "structural",
+      "text": "Shadowhunter: Level 10 PassiveAllows you to auto shoot with a ranged weapon.In addition, reduces the mana cost of all spells and abilities by -25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-2-1",
+      "kind": "structural",
+      "text": "Improved Malefic Arrow: Reduces the cooldown of Malefic Arrow by -2 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-6-1",
+      "kind": "structural",
+      "text": "Loa's Strength: Increases your Agility and your Nature and Shadow damage dealt by 3%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-2-2",
+      "kind": "structural",
+      "text": "Spirit Glaive: Toss spectral glaives that strikes enemies it passes through, dealing 66 + 50% ranged AP + 50% shadow SP Shadow damage, and reducing their Shadow Resistance by 61 for 5 seconds.Usable while moving. Cast time scales with your Agility.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-6-2",
+      "kind": "structural",
+      "text": "Spirit Eclipse: Unleash your Spirits on an enemy, dealing 8 + 7% ranged AP + 12% shadow SP Shadow damage every 0 sec for each active Spirit.Each Spirit explodes on impact, dealing 71 + 6% shadow SP + 3.5% ranged AP Shadow damage to other nearby enemies within 5 yds of the target.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-10-2",
+      "kind": "structural",
+      "text": "Loa Spirits: Level 20 PassiveFor each active Spirit on you, you have an 5% chance for your Reclamation to cast an additional time.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-1-3",
+      "kind": "structural",
+      "text": "Soul Feeder: Increases the damage dealt by Malefic Arrow by 5% for each active Spirit on you.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-3-3",
+      "kind": "structural",
+      "text": "Mojo High: Your Mimic Ward now summons 1 additional Mimic Ward and its duration is increased by 3 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-5-3",
+      "kind": "structural",
+      "text": "Spiritual Devotee: Collecting a Spirit now instantly restores 3% of your maximum mana.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-7-3",
+      "kind": "structural",
+      "text": "Village Wisdom: Increases your hit chance by 5% and the damage of Reclamation by 15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-2-4",
+      "kind": "structural",
+      "text": "Vol'jin's Blessing: While Shadow Avatar is active, the cooldown of Spirit Glaive is now reduced by 20% every 1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-4-4",
+      "kind": "structural",
+      "text": "Call of Sseratus: Summon 4 Serpent Wards near you for 15 seconds.Scales with modifiers to Serpent Ward.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-6-4",
+      "kind": "structural",
+      "text": "Shadowstalker: Disappear into darkness, entering an improved stealth mode, clearing all harmful effects, and increasing movement speed by 50% for 20 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-10-4",
+      "kind": "structural",
+      "text": "Umbral Glaive: Level 30 PassiveRanged attacks now have a 10% chance to transform Hex of Malice into Umbral Glaive for 10 seconds.Umbral Glaive (Damage)Throw a glaive that curses an enemy and up to 2 nearby enemies, leeching 3 + 10% ranged AP health, repeating every 1 sec for 6 seconds. Refreshes the duration of Hex of Malice.Scales with modifiers to Hex of Malice.Chance increased by your ranged critical strike rating.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-0-5a",
+      "kind": "structural",
+      "text": "The True Spirit: Summoning a Serpent Ward or Spirit now increases the damage of your next Spirit Glaive or Spirit Eclipse by 6% for 10 seconds, stacking 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-0-5b",
+      "kind": "structural",
+      "text": "Godslayer: Your Spirit Glaive now deals an additional 54 + 19% shadow SP + 14% ranged AP Shadow damage to up to 5 nearby enemies at the end of its duration.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-2-5",
+      "kind": "structural",
+      "text": "Residual Energy: At the end of Shadow Avatar's duration you become a Lesser Shadow Avatar.Lesser Shadow AvatarIncreases magic damage dealt by 10% and reduces the cooldown of Spirit Glaive by 20% every 1 sec. Lasts for 8 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-4-5",
+      "kind": "structural",
+      "text": "Voodoo Fire: Your Serpent Ward's attacks now have a 20% chance to shoot Voodoo Fire, dealing cond(gt(SPFI, SPN), 73*1+ranged AP*0.03+SPFI*0.12, 73*1+ranged AP*0.03+SPN*0.12) Fire damage to up to 3 nearby enemies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-6-5",
+      "kind": "structural",
+      "text": "Voodoo Hunger: While Shadowstalker or Mirage is active, every 1 sec you now gain a stack of Voodoo Hunger.Voodoo HungerIncreases the damage of your next Malefic Arrow by 10%, stacking 10 times. Lasts 8 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-8-5a",
+      "kind": "structural",
+      "text": "Hex of Death: Damage dealt by Malefic Arrow now reduces the targets healing received by -20% for 10 seconds, stacking 2 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-8-5b",
+      "kind": "structural",
+      "text": "Spirit Hunting: Each active Spirit gives you a 15% chance when you cast Malefic Arrow to generate an additional Spirit.SpiritRegenerates 7 health and mana, repeating every 4 sec for 12 seconds, stacking 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-1-6",
+      "kind": "structural",
+      "text": "Dark Loa's Incantation: Dealing damage with Shadowflare now applies Hex of Malice if it strikes at least 3 enemies.Hex of MaliceCurse an enemy, dealing 5 + 8% shadow SP + 10% ranged AP Shadow damage and an additional 96 Shadow damage over 24 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-2-6",
+      "kind": "structural",
+      "text": "Darkspear Traditionalist: Emanate a powerful aura, granting 10% increased melee and ranged haste to party and raid members. Does not stack with similar effects.Periodic damage dealt by Hex of Malice now has a 20% chance to collect a Spirit.SpiritRegenerates 7 health and mana, repeating every 4 sec for 12 seconds, stacking 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-4-6a",
+      "kind": "structural",
+      "text": "Spirit Striker: Increases the proc chance of Voodoo Fire by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-4-6b",
+      "kind": "structural",
+      "text": "Hexfire Mass: Damage dealt by Hex of Malice now has a 30% chance to summon a Serpent Ward on top of your enemy for 10 seconds to aid you in combat.Can only occur once every 3 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-6-6",
+      "kind": "structural",
+      "text": "Strength of Da Loa: Increases the attack power of party and raid members by 5%.Does not stack with similar effects.In addition, health and mana restoration provided by your Spirits now occurs -50% more often.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-7-6",
+      "kind": "structural",
+      "text": "Spirit Shock: Shock an enemy's spirit, silencing them for 4 seconds and interrupting non-player spellcasting for 4 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-10-6",
+      "kind": "structural",
+      "text": "Sen'jin's Apprentice: Level 40 PassiveIncreases your ranged attack power by 100% of your Intellect and your ranged attack power and spell power by 25% of your Agility.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-1-7a",
+      "kind": "structural",
+      "text": "Dambala's Lethality: After using Spirit Eclipse, the damage of your next Shadowflare within 15 seconds is increased by 50%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-1-7b",
+      "kind": "structural",
+      "text": "Bwonsamdi's Edge: Your Spirit Eclipse now deals 40% increased damage when it explodes on impact.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-3-7",
+      "kind": "structural",
+      "text": "Eye of Kimbul: Critical strikes now apply Eye of Kimbul to enemies for 15 seconds.Eye of KimbulIncreases damage dealt and critical strike chance against this target by 1%, stacking 5 times.While affected, enemies cannot stealth or turn invisible.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-5-7",
+      "kind": "structural",
+      "text": "Berserking: Periodic damage dealt now has a 25% chance to increase the haste of your Serpent Wards by 3% for 15 seconds, stacking up to 3 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-7-7",
+      "kind": "structural",
+      "text": "Shadow Enchantments: Increases the duration and effectiveness of your Jinxes by 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-2-8",
+      "kind": "structural",
+      "text": "Fool's Play: Target an enemy and summon a copy of them for 20 seconds that attacks them and replicates their spells back on them.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-4-8a",
+      "kind": "structural",
+      "text": "Serpent Handler: Increases the cooldown of Call of Sseratus by 5 sec, but increases the amount of Serpent Wards summoned by it by 2.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-4-8b",
+      "kind": "structural",
+      "text": "Viper Ward: Transform: s Call of Sseratus into Viper Ward.Viper WardSummons a powerful and fast-attacking Viper Ward at target location for 20 seconds.Viper Wards have a 50% chance to unleash a Hexfire Blast, dealing 216 + 15% ranged AP Fire damage to an enemy.Chance increased based on your ranged critical strike rating.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-6-8",
+      "kind": "structural",
+      "text": "Serpent's Guile: Your Malefic Arrow now deals an additional 15% of its damage dealt every 1 sec for 4 seconds as Nature damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-10-8",
+      "kind": "structural",
+      "text": "Spirit Volley: Level 50 PassiveCasting Reclamation and Malefic Arrow now has a 30% chance to transform your next Reclamation into Spirit Volley for 6 seconds.Spirit VolleyLaunch a spirit volley at your enemy, dealing 540 + 28.5% ranged AP Shadow damage to them and up to 3 enemies within 8 yds and collects a Spirit.Reduces the cooldown of Spirit Glaive by -3 sec.Scales with modifiers to Reclamation.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-2-9",
+      "kind": "structural",
+      "text": "A Price To Pay: Casting Spirit Eclipse with 5 Spirits now resets the cooldown of Spirit Glaive and causes your next cast within 8 seconds to be guaranteed to critically strike.Spirit Glaives used in this way will reduce the cooldown of Shadowstalker by -15 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-4-9",
+      "kind": "structural",
+      "text": "Frenzied Spirits: Consumes your Spirits to increase your ranged critical strike rating by 10, critical damage by 5%, and causing you to heal for 2% of all damage dealt for each Spirit consumed.In addition, you gain 1 Spirit every 1 sec while active.Lasts for 3 sec per Spirit consumed.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:witch-doctor/shadowhunting:13-36-6-9",
+      "kind": "structural",
+      "text": "Bwonsamdi's Gift: While Mimic Ward is active, you now gain 15% increased ranged haste and your Reclamation transforms into Spirit Volley. Each Spirit now increases the damage of Spirit Volley by 3%.In addition, direct ranged abilty damage dealt now reduces the cooldown of Mimic Ward by -0.5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    }
+  ]
+}

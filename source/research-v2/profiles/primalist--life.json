@@ -1,0 +1,1705 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "primalist/life",
+    "class": "Primalist",
+    "name": "Life",
+    "roles": [
+      "Healer",
+      "Support"
+    ],
+    "range": [
+      "Melee"
+    ]
+  },
+  "identity": {
+    "fantasy": "",
+    "one_line": "Hammer of Life makes melee attacks heal allies and damage enemies, while Spirits of Life, Grove effects, and elemental infusions expand that conversion. Ancient of War and Ancient of Lore offer different party-amplification forms, and the tree brings both raid haste and a damage aura. It is a genuine hybrid rather than a passive buff bot.",
+    "primary_family": "",
+    "also_fits": [],
+    "claim_ids": [
+      "talent:primalist/life:31-84-4-0",
+      "talent:primalist/life:31-84-10-0",
+      "talent:primalist/life:31-84-2-1",
+      "talent:primalist/life:31-84-6-1",
+      "talent:primalist/life:31-84-1-2",
+      "talent:primalist/life:31-84-4-2",
+      "talent:primalist/life:31-84-7-2",
+      "talent:primalist/life:31-84-10-2a",
+      "talent:primalist/life:31-84-10-2b",
+      "talent:primalist/life:31-84-2-3a",
+      "talent:primalist/life:31-84-2-3b",
+      "talent:primalist/life:31-84-4-3",
+      "talent:primalist/life:31-84-6-3",
+      "talent:primalist/life:31-84-1-4",
+      "talent:primalist/life:31-84-2-4",
+      "talent:primalist/life:31-84-4-4",
+      "talent:primalist/life:31-84-6-4",
+      "talent:primalist/life:31-84-7-4a",
+      "talent:primalist/life:31-84-7-4b",
+      "talent:primalist/life:31-84-10-4a",
+      "talent:primalist/life:31-84-10-4b",
+      "talent:primalist/life:31-84-0-5",
+      "talent:primalist/life:31-84-2-5",
+      "talent:primalist/life:31-84-4-5",
+      "talent:primalist/life:31-84-6-5",
+      "talent:primalist/life:31-84-8-5",
+      "talent:primalist/life:31-84-1-6",
+      "talent:primalist/life:31-84-4-6",
+      "talent:primalist/life:31-84-7-6a",
+      "talent:primalist/life:31-84-7-6b",
+      "talent:primalist/life:31-84-10-6a",
+      "talent:primalist/life:31-84-10-6b",
+      "talent:primalist/life:31-84-0-7a",
+      "talent:primalist/life:31-84-0-7b",
+      "talent:primalist/life:31-84-2-7",
+      "talent:primalist/life:31-84-4-7a",
+      "talent:primalist/life:31-84-4-7b",
+      "talent:primalist/life:31-84-6-7",
+      "talent:primalist/life:31-84-8-7",
+      "talent:primalist/life:31-84-2-8",
+      "talent:primalist/life:31-84-6-8",
+      "talent:primalist/life:31-84-10-8a",
+      "talent:primalist/life:31-84-10-8b",
+      "talent:primalist/life:31-84-2-9a",
+      "talent:primalist/life:31-84-2-9b",
+      "talent:primalist/life:31-84-6-9"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "Hammer of Life makes melee attacks heal allies and damage enemies, while Spirits of Life, Grove effects, and elemental infusions expand that conversion. Ancient of War and Ancient of Lore offer different party-amplification forms, and the tree brings both raid haste and a damage aura. It is a genuine hybrid rather than a passive buff bot.",
+    "resources": [],
+    "builders": [
+      {
+        "name": "Power Hammer",
+        "claim_ids": [
+          "talent:primalist/life:31-84-4-3"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Grove Training",
+        "claim_ids": [
+          "talent:primalist/life:31-84-10-0"
+        ]
+      },
+      {
+        "name": "Hand of a God",
+        "claim_ids": [
+          "talent:primalist/life:31-84-2-3a"
+        ]
+      },
+      {
+        "name": "Primal Power",
+        "claim_ids": [
+          "talent:primalist/life:31-84-0-5"
+        ]
+      },
+      {
+        "name": "Ancient of Lore",
+        "claim_ids": [
+          "talent:primalist/life:31-84-2-9b"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Grove Training",
+        "claim_ids": [
+          "talent:primalist/life:31-84-10-0"
+        ]
+      },
+      {
+        "name": "Spirit Charge",
+        "claim_ids": [
+          "talent:primalist/life:31-84-6-1"
+        ]
+      },
+      {
+        "name": "Primal Power",
+        "claim_ids": [
+          "talent:primalist/life:31-84-0-5"
+        ]
+      },
+      {
+        "name": "Ring of Life",
+        "claim_ids": [
+          "talent:primalist/life:31-84-2-5"
+        ]
+      },
+      {
+        "name": "Flourishing Growth",
+        "claim_ids": [
+          "talent:primalist/life:31-84-10-6a"
+        ]
+      },
+      {
+        "name": "Nature's Blessing",
+        "claim_ids": [
+          "talent:primalist/life:31-84-0-7a"
+        ]
+      },
+      {
+        "name": "Druid Training",
+        "claim_ids": [
+          "talent:primalist/life:31-84-6-7"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Douse",
+        "claim_ids": [
+          "talent:primalist/life:31-84-10-6b"
+        ],
+        "structural_description": "Striking an enemy with Seismic spells now deals an additional 1 + 8% AP Frost damage and reduces all resistances by 75 and increases their Magic damage taken by -2% for 10 seconds."
+      },
+      {
+        "name": "Ancient of War",
+        "claim_ids": [
+          "talent:primalist/life:31-84-2-9a"
+        ],
+        "structural_description": "Funnel nature's fury into yourself, transforming into an Ancient of War for 20 seconds.While active, your Hammer of Life effectiveness is increased by 30% and nearby party members have their critical strike chance increased by 20%.While transformed, your movement speed is reduced by -30%."
+      },
+      {
+        "name": "Ancient of Lore",
+        "claim_ids": [
+          "talent:primalist/life:31-84-2-9b"
+        ],
+        "structural_description": "Funnel nature's energies into yourself, transforming into an Ancient of Lore for 20 seconds.While active, your stats are increased by 20% and nearby party members have their costs reduced by -30%.While transformed, your movement speed is reduced by -30%."
+      }
+    ],
+    "single_target": "",
+    "aoe": "",
+    "movement_and_target_switching": "",
+    "defense_and_control": "",
+    "group_utility": "",
+    "failure_modes": [],
+    "claim_ids": [
+      "talent:primalist/life:31-84-4-0",
+      "talent:primalist/life:31-84-10-0",
+      "talent:primalist/life:31-84-2-1",
+      "talent:primalist/life:31-84-6-1",
+      "talent:primalist/life:31-84-1-2",
+      "talent:primalist/life:31-84-4-2",
+      "talent:primalist/life:31-84-7-2",
+      "talent:primalist/life:31-84-10-2a",
+      "talent:primalist/life:31-84-10-2b",
+      "talent:primalist/life:31-84-2-3a",
+      "talent:primalist/life:31-84-2-3b",
+      "talent:primalist/life:31-84-4-3",
+      "talent:primalist/life:31-84-6-3",
+      "talent:primalist/life:31-84-1-4",
+      "talent:primalist/life:31-84-2-4",
+      "talent:primalist/life:31-84-4-4",
+      "talent:primalist/life:31-84-6-4",
+      "talent:primalist/life:31-84-7-4a",
+      "talent:primalist/life:31-84-7-4b",
+      "talent:primalist/life:31-84-10-4a",
+      "talent:primalist/life:31-84-10-4b",
+      "talent:primalist/life:31-84-0-5",
+      "talent:primalist/life:31-84-2-5",
+      "talent:primalist/life:31-84-4-5",
+      "talent:primalist/life:31-84-6-5",
+      "talent:primalist/life:31-84-8-5",
+      "talent:primalist/life:31-84-1-6",
+      "talent:primalist/life:31-84-4-6",
+      "talent:primalist/life:31-84-7-6a",
+      "talent:primalist/life:31-84-7-6b",
+      "talent:primalist/life:31-84-10-6a",
+      "talent:primalist/life:31-84-10-6b",
+      "talent:primalist/life:31-84-0-7a",
+      "talent:primalist/life:31-84-0-7b",
+      "talent:primalist/life:31-84-2-7",
+      "talent:primalist/life:31-84-4-7a",
+      "talent:primalist/life:31-84-4-7b",
+      "talent:primalist/life:31-84-6-7",
+      "talent:primalist/life:31-84-8-7",
+      "talent:primalist/life:31-84-2-8",
+      "talent:primalist/life:31-84-6-8",
+      "talent:primalist/life:31-84-10-8a",
+      "talent:primalist/life:31-84-10-8b",
+      "talent:primalist/life:31-84-2-9a",
+      "talent:primalist/life:31-84-2-9b",
+      "talent:primalist/life:31-84-6-9"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Hammer of Life",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-0"
+          ]
+        },
+        {
+          "name": "Grove Training",
+          "claim_ids": [
+            "talent:primalist/life:31-84-10-0"
+          ]
+        },
+        {
+          "name": "Seismic Wave",
+          "claim_ids": [
+            "talent:primalist/life:31-84-2-1"
+          ]
+        },
+        {
+          "name": "Spirit Charge",
+          "claim_ids": [
+            "talent:primalist/life:31-84-6-1"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:primalist/life:31-84-4-0",
+        "talent:primalist/life:31-84-10-0",
+        "talent:primalist/life:31-84-2-1",
+        "talent:primalist/life:31-84-6-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Tranquil Mind",
+          "claim_ids": [
+            "talent:primalist/life:31-84-1-2"
+          ]
+        },
+        {
+          "name": "Nature's Fury",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-2"
+          ]
+        },
+        {
+          "name": "Spiritual Warrior",
+          "claim_ids": [
+            "talent:primalist/life:31-84-7-2"
+          ]
+        },
+        {
+          "name": "Grovekeeper's Presence",
+          "claim_ids": [
+            "talent:primalist/life:31-84-10-2a"
+          ]
+        },
+        {
+          "name": "Vitality Surge",
+          "claim_ids": [
+            "talent:primalist/life:31-84-10-2b"
+          ]
+        },
+        {
+          "name": "Hand of a God",
+          "claim_ids": [
+            "talent:primalist/life:31-84-2-3a"
+          ]
+        },
+        {
+          "name": "Blessing of Neptulon",
+          "claim_ids": [
+            "talent:primalist/life:31-84-2-3b"
+          ]
+        },
+        {
+          "name": "Power Hammer",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-3"
+          ]
+        },
+        {
+          "name": "Ancient Power",
+          "claim_ids": [
+            "talent:primalist/life:31-84-6-3"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:primalist/life:31-84-1-2",
+        "talent:primalist/life:31-84-4-2",
+        "talent:primalist/life:31-84-7-2",
+        "talent:primalist/life:31-84-10-2a",
+        "talent:primalist/life:31-84-10-2b",
+        "talent:primalist/life:31-84-2-3a",
+        "talent:primalist/life:31-84-2-3b",
+        "talent:primalist/life:31-84-4-3",
+        "talent:primalist/life:31-84-6-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Battleweaver",
+          "claim_ids": [
+            "talent:primalist/life:31-84-1-4"
+          ]
+        },
+        {
+          "name": "Elemental Cascade",
+          "claim_ids": [
+            "talent:primalist/life:31-84-2-4"
+          ]
+        },
+        {
+          "name": "Thorns",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-4"
+          ]
+        },
+        {
+          "name": "Earth's Guidance",
+          "claim_ids": [
+            "talent:primalist/life:31-84-6-4"
+          ]
+        },
+        {
+          "name": "Crashing Out",
+          "claim_ids": [
+            "talent:primalist/life:31-84-7-4a"
+          ]
+        },
+        {
+          "name": "Tears of the Earthmother",
+          "claim_ids": [
+            "talent:primalist/life:31-84-7-4b"
+          ]
+        },
+        {
+          "name": "Protector's Hand",
+          "claim_ids": [
+            "talent:primalist/life:31-84-10-4a"
+          ]
+        },
+        {
+          "name": "Infused With Power",
+          "claim_ids": [
+            "talent:primalist/life:31-84-10-4b"
+          ]
+        },
+        {
+          "name": "Primal Power",
+          "claim_ids": [
+            "talent:primalist/life:31-84-0-5"
+          ]
+        },
+        {
+          "name": "Ring of Life",
+          "claim_ids": [
+            "talent:primalist/life:31-84-2-5"
+          ]
+        },
+        {
+          "name": "Sacred Grove",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-5"
+          ]
+        },
+        {
+          "name": "Keeper of the Grove",
+          "claim_ids": [
+            "talent:primalist/life:31-84-6-5"
+          ]
+        },
+        {
+          "name": "Running on Instinct",
+          "claim_ids": [
+            "talent:primalist/life:31-84-8-5"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:primalist/life:31-84-1-4",
+        "talent:primalist/life:31-84-2-4",
+        "talent:primalist/life:31-84-4-4",
+        "talent:primalist/life:31-84-6-4",
+        "talent:primalist/life:31-84-7-4a",
+        "talent:primalist/life:31-84-7-4b",
+        "talent:primalist/life:31-84-10-4a",
+        "talent:primalist/life:31-84-10-4b",
+        "talent:primalist/life:31-84-0-5",
+        "talent:primalist/life:31-84-2-5",
+        "talent:primalist/life:31-84-4-5",
+        "talent:primalist/life:31-84-6-5",
+        "talent:primalist/life:31-84-8-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Earthmother's Binding",
+          "claim_ids": [
+            "talent:primalist/life:31-84-1-6"
+          ]
+        },
+        {
+          "name": "Verdant Warrior",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-6"
+          ]
+        },
+        {
+          "name": "Earthmother's Warden",
+          "claim_ids": [
+            "talent:primalist/life:31-84-7-6a"
+          ]
+        },
+        {
+          "name": "Grove Tender",
+          "claim_ids": [
+            "talent:primalist/life:31-84-7-6b"
+          ]
+        },
+        {
+          "name": "Flourishing Growth",
+          "claim_ids": [
+            "talent:primalist/life:31-84-10-6a"
+          ]
+        },
+        {
+          "name": "Douse",
+          "claim_ids": [
+            "talent:primalist/life:31-84-10-6b"
+          ]
+        },
+        {
+          "name": "Nature's Blessing",
+          "claim_ids": [
+            "talent:primalist/life:31-84-0-7a"
+          ]
+        },
+        {
+          "name": "Ride the Wave",
+          "claim_ids": [
+            "talent:primalist/life:31-84-0-7b"
+          ]
+        },
+        {
+          "name": "Infusion of Neptulon",
+          "claim_ids": [
+            "talent:primalist/life:31-84-2-7"
+          ]
+        },
+        {
+          "name": "Earthmother's Roar",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-7a"
+          ]
+        },
+        {
+          "name": "Earthmother's Empowerment",
+          "claim_ids": [
+            "talent:primalist/life:31-84-4-7b"
+          ]
+        },
+        {
+          "name": "Druid Training",
+          "claim_ids": [
+            "talent:primalist/life:31-84-6-7"
+          ]
+        },
+        {
+          "name": "Shaman Training",
+          "claim_ids": [
+            "talent:primalist/life:31-84-8-7"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:primalist/life:31-84-1-6",
+        "talent:primalist/life:31-84-4-6",
+        "talent:primalist/life:31-84-7-6a",
+        "talent:primalist/life:31-84-7-6b",
+        "talent:primalist/life:31-84-10-6a",
+        "talent:primalist/life:31-84-10-6b",
+        "talent:primalist/life:31-84-0-7a",
+        "talent:primalist/life:31-84-0-7b",
+        "talent:primalist/life:31-84-2-7",
+        "talent:primalist/life:31-84-4-7a",
+        "talent:primalist/life:31-84-4-7b",
+        "talent:primalist/life:31-84-6-7",
+        "talent:primalist/life:31-84-8-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Primordial Earth",
+          "claim_ids": [
+            "talent:primalist/life:31-84-2-8"
+          ]
+        },
+        {
+          "name": "Verdant Chase",
+          "claim_ids": [
+            "talent:primalist/life:31-84-6-8"
+          ]
+        },
+        {
+          "name": "Neptulon's Wrath",
+          "claim_ids": [
+            "talent:primalist/life:31-84-10-8a"
+          ]
+        },
+        {
+          "name": "Primal Awakening",
+          "claim_ids": [
+            "talent:primalist/life:31-84-10-8b"
+          ]
+        },
+        {
+          "name": "Ancient of War",
+          "claim_ids": [
+            "talent:primalist/life:31-84-2-9a"
+          ]
+        },
+        {
+          "name": "Ancient of Lore",
+          "claim_ids": [
+            "talent:primalist/life:31-84-2-9b"
+          ]
+        },
+        {
+          "name": "Eternally Chosen",
+          "claim_ids": [
+            "talent:primalist/life:31-84-6-9"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:primalist/life:31-84-2-8",
+        "talent:primalist/life:31-84-6-8",
+        "talent:primalist/life:31-84-10-8a",
+        "talent:primalist/life:31-84-10-8b",
+        "talent:primalist/life:31-84-2-9a",
+        "talent:primalist/life:31-84-2-9b",
+        "talent:primalist/life:31-84-6-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "leveling_30_49": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "level_50_60": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "boss": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "dungeon_aoe": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "pvp": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [],
+    "avoid_if": []
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [],
+  "sentiment": {
+    "praise": [],
+    "frustrations": [],
+    "contested": []
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 4,
+    "latest_update": "2026-08-02T10:14:14.816+00:00",
+    "top_title": "Grovekeeper General Purpose - DPS/Healer Hybrid",
+    "top_url": "https://coabuildhub.com/build/e4f93380-6b16-429b-abf6-7add7b0fb7b6",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:e4f93380-6b16-429b-abf6-7add7b0fb7b6"
+    ]
+  },
+  "coverage": {
+    "mechanical": "structural_baseline",
+    "community": "indexed",
+    "performance": "missing",
+    "video": "missing",
+    "overall_confidence": "low",
+    "gaps": [
+      "Effective core loop needs recent guide or player cross-check.",
+      "Contextual complexity values are not yet researched.",
+      "Recent performance, sentiment, issues, and video evidence are not yet reconciled."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:primalist/life:31-84-4-0",
+      "kind": "structural",
+      "text": "Hammer of Life: Your melee attacks and abilities now heal nearby allies and damage nearby enemies equal to 20% of the damage dealt.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-10-0",
+      "kind": "structural",
+      "text": "Grove Training: Level 10 PassiveAll melee damage, or healing done, now has a 10% chance to grant you Aftershock for 15 seconds.AftershockYour next Geode Barrage or Earthquake within 15 seconds is now instant cast and costs -75% less.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-2-1",
+      "kind": "structural",
+      "text": "Seismic Wave: Create a seismic wave of healing water around you, healing for 27 + 60% healing + 28% AP health to up to 8 allies and dealing 47 + 28% AP + 30% healing Nature damage to enemies in a 25 yd radius.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-6-1",
+      "kind": "structural",
+      "text": "Spirit Charge: Charge to an ally's aid, healing them for 53 + 20% healing + 20% AP and dealing 67 + 20% healing + 20% AP Nature damage to enemies within 5 yds of them.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-1-2",
+      "kind": "structural",
+      "text": "Tranquil Mind: Increases your damage and healing done by 4%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-4-2",
+      "kind": "structural",
+      "text": "Nature's Fury: Auto attacks now have a 20% chance to deal Weapon Damage and restore 5% of your maximum mana.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-7-2",
+      "kind": "structural",
+      "text": "Spiritual Warrior: Increases the critical strike chance of Spirit Charge by 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-10-2a",
+      "kind": "structural",
+      "text": "Grovekeeper's Presence: Increases chance to hit with all spells and attacks by 1% for you and party and raid members.Does not stack with similar effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-10-2b",
+      "kind": "structural",
+      "text": "Vitality Surge: All effective healing done now has a 25% chance to increase the haste of party and raid members by 5% for 20 seconds.Does not stack with similar effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-2-3a",
+      "kind": "structural",
+      "text": "Hand of a God: Reduces the Rage cost of Hand of the Earthmother by -5.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-2-3b",
+      "kind": "structural",
+      "text": "Blessing of Neptulon: Your Hand of the Earthmother now bounces to 1 ally near the primary target.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-4-3",
+      "kind": "structural",
+      "text": "Power Hammer: You now generate 10% more Rage from damage dealt, increased by 15% while a two-handed weapon is equipped.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-6-3",
+      "kind": "structural",
+      "text": "Ancient Power: Increases your Strength by 5% and your hit chance by 3%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-1-4",
+      "kind": "structural",
+      "text": "Battleweaver: Effective healing now increases your melee haste and damage by 2% for 5 seconds, stacking 3 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-2-4",
+      "kind": "structural",
+      "text": "Elemental Cascade: Critical strikes with Wildclaw now unleash an Elemental Cascade.Elemental CascadeRestores 32 + 10% AP + 10% healing health to allies in a 12 yd radius around you.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-4-4",
+      "kind": "structural",
+      "text": "Thorns: Physical damage dealt or taken now has a 10% chance to unleash Thorns on an enemy.Thorns (Talent)Create thorns around an enemy, rooting them and dealing 270 Nature Damage over 6 seconds.Direct damage taken may end this effect.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-6-4",
+      "kind": "structural",
+      "text": "Earth's Guidance: Damage and healing done by Seismic spells now has a 20% chance to reduce the cooldown of all Seismic spells by -1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-7-4a",
+      "kind": "structural",
+      "text": "Crashing Out: Increases the damage of Seismic Crash by 30%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-7-4b",
+      "kind": "structural",
+      "text": "Tears of the Earthmother: Increases the amount of targets hit by Seismic Spike by 4.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-10-4a",
+      "kind": "structural",
+      "text": "Protector's Hand: You now emanate an aura around you, increasing the Armor of party and raid members by 390.Does not stack with similar effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-10-4b",
+      "kind": "structural",
+      "text": "Infused With Power: Effectively healing allies with Hammer of Life or Hand of the Earthmother now has a 20% chance to apply Infused With Power.Infused With PowerIncreases the critical strike chance of all party and raid members by 5% for 10 seconds.Does not stack with similar effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-0-5",
+      "kind": "structural",
+      "text": "Primal Power: Casting Seismic Wave now causes your next Hand of the Earthmother within 8 seconds to cost -50% less Rage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-2-5",
+      "kind": "structural",
+      "text": "Ring of Life: Allies within 40 yds receive 6% increased healing. Does not stack with similar effects.In addition, your Magic damage taken is reduced by -10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-4-5",
+      "kind": "structural",
+      "text": "Sacred Grove: Create a Sacred Grove in a 15 yd radius around you for 16 seconds, instantly healing all nearby party and raid members for 2002 + 100% AP.While active, up to 12 allies in the grove receive 25% increased healing, and regain 3% of their missing health, Rage, and mana every 2 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-6-5",
+      "kind": "structural",
+      "text": "Keeper of the Grove: Reduces the cooldown of Bramblepatch by -30 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-8-5",
+      "kind": "structural",
+      "text": "Running on Instinct: Passing through allies with Primal Rush now heals up to 5 of them for 166 + 25% AP + 35% SP and grants a stack of Running on Instinct.Running on Instinct (Proc)Damage of Wildclaw and Seismic spells is increased by 5% for 20 seconds, stacking 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-1-6",
+      "kind": "structural",
+      "text": "Earthmother's Binding: Envelop a target in the Earthmother's love, healing them for 501 + 100% healing + 100% AP. If used on an ally, 30% of their damage taken is redirected to you for 6 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-4-6",
+      "kind": "structural",
+      "text": "Verdant Warrior: Increases the damage of Wildclaw by 15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-7-6a",
+      "kind": "structural",
+      "text": "Earthmother's Warden: Reduces the cooldown of your Seismic abilities by -2 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-7-6b",
+      "kind": "structural",
+      "text": "Grove Tender: While inside your Bramblepatch your Seismic abilities now have a -80% reduced cooldown.In addition, the duration of Bramblepatch is doubled.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-10-6a",
+      "kind": "structural",
+      "text": "Flourishing Growth: Empower party and raid members within 40 yds with verdant strength, increasing their attack or spell power by 95 for 20 seconds.Does not stack with similar effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-10-6b",
+      "kind": "structural",
+      "text": "Douse: Striking an enemy with Seismic spells now deals an additional 1 + 8% AP Frost damage and reduces all resistances by 75 and increases their Magic damage taken by -2% for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-0-7a",
+      "kind": "structural",
+      "text": "Nature's Blessing: Healing allies with Seismic Wave now heals them for an additional 20% of the healing done every 3 sec for 9 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-0-7b",
+      "kind": "structural",
+      "text": "Ride the Wave: Seismic Wave now increases the movement speed of affected allies by 30% for 4 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-2-7",
+      "kind": "structural",
+      "text": "Infusion of Neptulon: Critically healing an ally now increases your attack power by 15% for your next 3 attacks. Lasts 12 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-4-7a",
+      "kind": "structural",
+      "text": "Earthmother's Roar: Your Protective Roar now also heals allies equal to 20% of their missing health.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-4-7b",
+      "kind": "structural",
+      "text": "Earthmother's Empowerment: Hand of the Earthmother now increases the target's dodge chance by 15% for 5 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-6-7",
+      "kind": "structural",
+      "text": "Druid Training: Your Geode Barrage now heals all allies within 20 yds equal to 10% of the damage dealt.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-8-7",
+      "kind": "structural",
+      "text": "Shaman Training: Damage dealt by Wildclaw now reduces the enemy's armor by -4% for 20 seconds, stacking up to 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-2-8",
+      "kind": "structural",
+      "text": "Primordial Earth: Critical strikes with melee attacks now summon 1 Spirit of Life that immediately casts a lesser Spirit Charge on a nearby ally, healing them for 397 + 20% nature SP + 20% AP and dealing 404 + 20% nature SP + 20% AP Nature damage to nearby enemies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-6-8",
+      "kind": "structural",
+      "text": "Verdant Chase: Your Spirit Charge and Primal Rush now cooldown faster.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-10-8a",
+      "kind": "structural",
+      "text": "Neptulon's Wrath: Emanate an aura for 15 seconds, causing allied players to deal 35% AP additional damage as Froststorm Damage when they deal direct damage.Applies Exhaustion, preventing you from benefiting from similar effects for 1 minute.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-10-8b",
+      "kind": "structural",
+      "text": "Primal Awakening: Enrage all nearby allies, increasing their haste by 30% for 20 seconds.After being affected by this spell, allies cannot benefit from similar effects for 5 minutes.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-2-9a",
+      "kind": "structural",
+      "text": "Ancient of War: Funnel nature's fury into yourself, transforming into an Ancient of War for 20 seconds.While active, your Hammer of Life effectiveness is increased by 30% and nearby party members have their critical strike chance increased by 20%.While transformed, your movement speed is reduced by -30%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-2-9b",
+      "kind": "structural",
+      "text": "Ancient of Lore: Funnel nature's energies into yourself, transforming into an Ancient of Lore for 20 seconds.While active, your stats are increased by 20% and nearby party members have their costs reduced by -30%.While transformed, your movement speed is reduced by -30%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:primalist/life:31-84-6-9",
+      "kind": "structural",
+      "text": "Eternally Chosen: Spirit Charge and Primal Rush now summons 2 Spirits of Life that immediately cast a lesser Spirit Charge on the nearest ally, healing them for 397 + 20% nature SP + 20% AP and dealing 404 + 20% nature SP + 20% AP Nature damage to nearby enemies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    }
+  ]
+}

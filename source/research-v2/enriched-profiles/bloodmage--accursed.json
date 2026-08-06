@@ -1,0 +1,2331 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "bloodmage/accursed",
+    "class": "Bloodmage",
+    "name": "Accursed",
+    "roles": [
+      "Damage"
+    ],
+    "range": [
+      "Melee"
+    ]
+  },
+  "identity": {
+    "fantasy": "A feral blood-cursed hunter who abandons careful spellcasting for fangs, pursuit, and short violent transformations.",
+    "one_line": "A feral blood hunter using Accursed Form, bites, Reave, Veinburst, Bloodsurge, and Dark Frenzy. It is fast, mobile, and self-sustaining, with a clearer melee priority loop than Sanguine's spell package.",
+    "primary_family": "duelists",
+    "also_fits": [
+      "sequencers"
+    ],
+    "claim_ids": [
+      "talent:bloodmage/accursed:20-52-4-0",
+      "talent:bloodmage/accursed:20-52-6-6",
+      "inference:bloodmage/accursed:uptime-cost",
+      "observed:bloodmage/accursed:leveling",
+      "talent:bloodmage/accursed:20-52-4-1",
+      "observed:bloodmage/accursed:performance",
+      "talent:bloodmage/accursed:20-52-2-8",
+      "talent:bloodmage/accursed:20-52-10-8"
+    ],
+    "playstyle_tags": [
+      "mobile-melee-priority",
+      "transformation-dps",
+      "self-sustain-melee"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "Fight in Accursed Form, use Reave and bite attacks to sustain pressure, trigger Veinburst and Bloodsurge payoffs, and align Dark Frenzy or later hunting talents with targets that can survive the burst.",
+    "resources": [
+      "Blood Shard",
+      "Bloodchaser instead"
+    ],
+    "builders": [
+      {
+        "name": "Puncturing Fangs",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-2-2"
+        ]
+      },
+      {
+        "name": "Sanguine Scripture",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-1-4"
+        ]
+      },
+      {
+        "name": "Blood Shards",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-10-4"
+        ]
+      },
+      {
+        "name": "Bloodsurge",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-2-5"
+        ]
+      },
+      {
+        "name": "Battleweaver",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-5-7"
+        ]
+      },
+      {
+        "name": "Final Embrace",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-9"
+        ]
+      },
+      {
+        "name": "Darkcasting",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-6-9"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Barely Human",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-6-2"
+        ]
+      },
+      {
+        "name": "Leeching Tome",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-7-4b"
+        ]
+      },
+      {
+        "name": "Gore Barrage",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-6-5"
+        ]
+      },
+      {
+        "name": "One Man's Curse...",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-3-7"
+        ]
+      },
+      {
+        "name": "Night Hunter",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-2-8"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Dark Frenzy",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-6-6"
+        ]
+      },
+      {
+        "name": "Ultra Instinct",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-6-8"
+        ]
+      },
+      {
+        "name": "The Hunter and the Hunted",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      {
+        "name": "Final Embrace",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-9"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Accursed Form",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0"
+        ],
+        "structural_description": "Transform: s your Blood Curse into Accursed Form.Accursed Form (Cursed Form)Embrace your demonic curse for 30 seconds, entering an improved Cursed Form, increasing your attack power by 50% of your Agility and causing your melee attacks to reduce all healing done to the target by -20% for 10 seconds, stacking 2 times."
+      },
+      {
+        "name": "Unchained",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-10-0"
+        ],
+        "structural_description": "Level 10 PassiveYour damaging Mortal Form spells can now be cast while moving."
+      },
+      {
+        "name": "Veinburst",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-1-3"
+        ],
+        "structural_description": "Requires Mortal FormBlast an enemy, dealing 123 + 25% AP + 85% shadow SP Shadow damage.Deals 25% increased damage to bleeding targets."
+      },
+      {
+        "name": "Aortic Assault",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-7-3"
+        ],
+        "structural_description": "Extend the duration of your active Cursed Form by 3 sec and strike nearby enemies every 1 sec for 3 seconds, each strike causing 20 + 12% AP Physical damage."
+      },
+      {
+        "name": "Sanguine Scripture",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-1-4"
+        ],
+        "structural_description": "Upon exiting Accursed Form, you gain 70% movement speed and spell haste for 5 seconds."
+      },
+      {
+        "name": "Gore Tome",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-7-4a"
+        ],
+        "structural_description": "For the first 5 sec after activating a Cursed Form, your Bloodfang Bite is now guaranteed to critically strike."
+      },
+      {
+        "name": "Bloodsurge",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-2-5"
+        ],
+        "structural_description": "Requires Mortal FormEnter a bloodsurge, enraging you and increasing your Shadow damage dealt and your spell critical strike chance by 20% for 20 seconds.At the end of the duration, or whenever you trigger Accursed Form, gain Bloodchaser instead.BloodchaserEnrage, increasing your Physical Damage dealt by 20% for 30 secondsWhile active, Bloodfang Bite now launches 1 Blood Shard, dealing 18 + 15% AP + 35% SP Shadow Damage to your target."
+      },
+      {
+        "name": "Crimson Feast",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-2-6"
+        ],
+        "structural_description": "Every 5 second you remain in a Cursed Form now reduces the cooldown of your Bloodsurge by -5 sec."
+      },
+      {
+        "name": "Dark Frenzy",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-6-6"
+        ],
+        "structural_description": "Increases spell haste of all party and raid members by 3%. Does not stack with similar effects.In addition, while a Cursed Form is active, your global cooldowns are reduced by -25%."
+      },
+      {
+        "name": "One Man's Curse...",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-3-7"
+        ],
+        "structural_description": "Removes the health cost of Accursed Form and entering it now instantly restores 15% of your maximum health."
+      },
+      {
+        "name": "Battleweaver",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-5-7"
+        ],
+        "structural_description": "Casting Cursed Form abilities now has a 50% chance to generate 1 Blood Shard for 10 minutes, up to 8.Dealing damage with Bloodbolt will launch 1 Blood Shard, dealing 18 + 15% AP + 35% SP Arcane damage to your target."
+      },
+      {
+        "name": "Blood Scent",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-8"
+        ],
+        "structural_description": "While in Accursed Form, you now deal 15% increased damage to targets below 35% maximum health.Dealing direct damage to enemies below 35% maximum health now leeches health equal to 10% of the damage dealt."
+      },
+      {
+        "name": "The Hunter and the Hunted",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-10-8"
+        ],
+        "structural_description": "Level 50 PassiveWhen you activate a Cursed Form you now charge to your target if they are within 20 yds. If they're an enemy you root them for 2 seconds.Upon expiration, your Accursed Form can be reactivated to cause you to erupt in a burst of blood magic, leeching 364 + 33% shadow SP + 12.5% AP health from nearby enemies and teleporting you backwards."
+      },
+      {
+        "name": "Hemoburst",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-2-9"
+        ],
+        "structural_description": "Requires Mortal FormUnleash a powerful burst of blood at an enemy, dealing 1480 + 65% AP + 50% SP Shadow damage. This ability is guaranteed to critically strike against bleeding targets.Extends the duration of your next Cursed Form by 5 sec for 30 seconds, stacking 2 times."
+      },
+      {
+        "name": "Final Embrace",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-9"
+        ],
+        "structural_description": "Requires Mortal FormGorge on blood magic, entering a dramatically improved Cursed Form for 20 seconds, transforming your Bloodfang Bite into Crimson Maw, but draining your health over time.While active, every 1 sec you curse enemies within 8 yds, applying Hematoma for 6 seconds.Hematoma (Shadow Damage)Deals 55 + 15% shadow SP + 10% AP Shadow Damage and increases the damage the target takes from subsequent applications of Hematoma by 3%, stacking 10 times. Generates Rage based on damage dealt."
+      }
+    ],
+    "single_target": "Maintain the form and its bite-and-Reave priority, then exploit Bloodsurge, Dark Frenzy, and level-50 hunting effects for focused pressure.",
+    "aoe": "Veinburst, Gore Barrage, and Hemoburst add pack tools, but the specialization remains more naturally focused than Sanguine's spreading spell package.",
+    "movement_and_target_switching": "Dark Hunt, pursuit effects, and the melee form support rapid target access; switching is less punishing than abandoning a long DoT stack, though burst windows can still be wasted.",
+    "defense_and_control": "Bites, leeching effects, Clotting, and Endure the Curse provide recovery, while fear and Bloodmage control supplement the melee chase.",
+    "group_utility": "Most specialization value is personal damage and sustain; Bloodmage class tools still contribute control and off-healing.",
+    "failure_modes": [
+      {
+        "text": "Entering or spending a transformation window without enough target uptime wastes the spec's strongest sequence.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost"
+        ]
+      },
+      {
+        "text": "Movement or a target swap can interrupt the intended payoff: dark hunt, pursuit effects, and the melee form support rapid target access; switching is less punishing than abandoning a long dot stack, though burst windows can still be wasted.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1"
+        ]
+      },
+      {
+        "text": "Spending recovery or control too early leaves less protection for the next pressure event: bites, leeching effects, clotting, and endure the curse provide recovery, while fear and bloodmage control supplement the melee chase.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1"
+        ]
+      }
+    ],
+    "claim_ids": [
+      "talent:bloodmage/accursed:20-52-4-0",
+      "talent:bloodmage/accursed:20-52-6-6",
+      "inference:bloodmage/accursed:uptime-cost",
+      "observed:bloodmage/accursed:leveling",
+      "talent:bloodmage/accursed:20-52-4-1",
+      "observed:bloodmage/accursed:performance",
+      "talent:bloodmage/accursed:20-52-2-8",
+      "talent:bloodmage/accursed:20-52-10-8"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Accursed Form",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-0"
+          ]
+        },
+        {
+          "name": "Unchained",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-10-0"
+          ]
+        },
+        {
+          "name": "Reave",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-1"
+          ]
+        }
+      ],
+      "observed_loop": "A direct melee form with bites and Reave, but recent players warn that the early version can feel squishy or incomplete.",
+      "observed_changes": [
+        "Current leveling sentiment is sharply negative",
+        "Defensive package arrives in pieces"
+      ],
+      "claim_ids": [
+        "talent:bloodmage/accursed:20-52-4-0",
+        "talent:bloodmage/accursed:20-52-10-0",
+        "talent:bloodmage/accursed:20-52-4-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Puncturing Fangs",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-2-2"
+          ]
+        },
+        {
+          "name": "Fang Over Fang",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-2"
+          ]
+        },
+        {
+          "name": "Barely Human",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-6-2"
+          ]
+        },
+        {
+          "name": "Forbidden Power",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-10-2"
+          ]
+        },
+        {
+          "name": "Veinburst",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-1-3"
+          ]
+        },
+        {
+          "name": "Shadow Pact",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-3-3a"
+          ]
+        },
+        {
+          "name": "Blood Pact",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-3-3b"
+          ]
+        },
+        {
+          "name": "Rage",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-5-3"
+          ]
+        },
+        {
+          "name": "Aortic Assault",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-7-3"
+          ]
+        }
+      ],
+      "observed_loop": "A direct melee form with bites and Reave, but recent players warn that the early version can feel squishy or incomplete.",
+      "observed_changes": [
+        "Current leveling sentiment is sharply negative",
+        "Defensive package arrives in pieces"
+      ],
+      "claim_ids": [
+        "talent:bloodmage/accursed:20-52-2-2",
+        "talent:bloodmage/accursed:20-52-4-2",
+        "talent:bloodmage/accursed:20-52-6-2",
+        "talent:bloodmage/accursed:20-52-10-2",
+        "talent:bloodmage/accursed:20-52-1-3",
+        "talent:bloodmage/accursed:20-52-3-3a",
+        "talent:bloodmage/accursed:20-52-3-3b",
+        "talent:bloodmage/accursed:20-52-5-3",
+        "talent:bloodmage/accursed:20-52-7-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Terrorizer",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-0-4"
+          ]
+        },
+        {
+          "name": "Sanguine Scripture",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-1-4"
+          ]
+        },
+        {
+          "name": "Dark Hunt",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-4"
+          ]
+        },
+        {
+          "name": "Gore Tome",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-7-4a"
+          ]
+        },
+        {
+          "name": "Leeching Tome",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-7-4b"
+          ]
+        },
+        {
+          "name": "Dark Intent",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-8-4a"
+          ]
+        },
+        {
+          "name": "Cruel Intent",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-8-4b"
+          ]
+        },
+        {
+          "name": "Blood Shards",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-10-4"
+          ]
+        },
+        {
+          "name": "Corrupted Blood",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-0-5a"
+          ]
+        },
+        {
+          "name": "Cursed Blood",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-0-5b"
+          ]
+        },
+        {
+          "name": "Bloodsurge",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-2-5"
+          ]
+        },
+        {
+          "name": "Dark Sigil",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-5"
+          ]
+        },
+        {
+          "name": "Gore Barrage",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-6-5"
+          ]
+        },
+        {
+          "name": "Crimson Expedition",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-8-5"
+          ]
+        }
+      ],
+      "observed_loop": "By levels 30-49, fight in accursed form, use reave and bite attacks to sustain pressure, trigger veinburst and bloodsurge payoffs, and align dark frenzy or later hunting talents with targets that can survive the burst.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Dark Hunt, pursuit effects, and the melee form support rapid target access; switching is less punishing than abandoning a long DoT stack, though burst windows can still"
+      ],
+      "claim_ids": [
+        "talent:bloodmage/accursed:20-52-0-4",
+        "talent:bloodmage/accursed:20-52-1-4",
+        "talent:bloodmage/accursed:20-52-4-4",
+        "talent:bloodmage/accursed:20-52-7-4a",
+        "talent:bloodmage/accursed:20-52-7-4b",
+        "talent:bloodmage/accursed:20-52-8-4a",
+        "talent:bloodmage/accursed:20-52-8-4b",
+        "talent:bloodmage/accursed:20-52-10-4",
+        "talent:bloodmage/accursed:20-52-0-5a",
+        "talent:bloodmage/accursed:20-52-0-5b",
+        "talent:bloodmage/accursed:20-52-2-5",
+        "talent:bloodmage/accursed:20-52-4-5",
+        "talent:bloodmage/accursed:20-52-6-5",
+        "talent:bloodmage/accursed:20-52-8-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Killer Instinct",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-0-6"
+          ]
+        },
+        {
+          "name": "Crimson Feast",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-2-6"
+          ]
+        },
+        {
+          "name": "Endure the Curse",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-6"
+          ]
+        },
+        {
+          "name": "Dark Frenzy",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-6-6"
+          ]
+        },
+        {
+          "name": "Clotting",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-8-6"
+          ]
+        },
+        {
+          "name": "Relentless",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-10-6"
+          ]
+        },
+        {
+          "name": "Everlasting Hunt",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-1-7"
+          ]
+        },
+        {
+          "name": "One Man's Curse...",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-3-7"
+          ]
+        },
+        {
+          "name": "Battleweaver",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-5-7"
+          ]
+        },
+        {
+          "name": "Inhumane",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-7-7"
+          ]
+        }
+      ],
+      "observed_loop": "By levels 30-49, fight in accursed form, use reave and bite attacks to sustain pressure, trigger veinburst and bloodsurge payoffs, and align dark frenzy or later hunting talents with targets that can survive the burst.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Dark Hunt, pursuit effects, and the melee form support rapid target access; switching is less punishing than abandoning a long DoT stack, though burst windows can still"
+      ],
+      "claim_ids": [
+        "talent:bloodmage/accursed:20-52-0-6",
+        "talent:bloodmage/accursed:20-52-2-6",
+        "talent:bloodmage/accursed:20-52-4-6",
+        "talent:bloodmage/accursed:20-52-6-6",
+        "talent:bloodmage/accursed:20-52-8-6",
+        "talent:bloodmage/accursed:20-52-10-6",
+        "talent:bloodmage/accursed:20-52-1-7",
+        "talent:bloodmage/accursed:20-52-3-7",
+        "talent:bloodmage/accursed:20-52-5-7",
+        "talent:bloodmage/accursed:20-52-7-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Night Hunter",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-2-8"
+          ]
+        },
+        {
+          "name": "Blood Scent",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-8"
+          ]
+        },
+        {
+          "name": "Ultra Instinct",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-6-8"
+          ]
+        },
+        {
+          "name": "The Hunter and the Hunted",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-10-8"
+          ]
+        },
+        {
+          "name": "Hemoburst",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-2-9"
+          ]
+        },
+        {
+          "name": "Final Embrace",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-4-9"
+          ]
+        },
+        {
+          "name": "Darkcasting",
+          "claim_ids": [
+            "talent:bloodmage/accursed:20-52-6-9"
+          ]
+        }
+      ],
+      "observed_loop": "A fuller hunt-and-burst melee spec with stronger scent, pursuit, Hemoburst, and Darkcasting choices layered over the original form loop.",
+      "observed_changes": [
+        "Community performance signals conflict with poor leveling sentiment",
+        "Current endgame guide depth is thin"
+      ],
+      "claim_ids": [
+        "talent:bloodmage/accursed:20-52-2-8",
+        "talent:bloodmage/accursed:20-52-4-8",
+        "talent:bloodmage/accursed:20-52-6-8",
+        "talent:bloodmage/accursed:20-52-10-8",
+        "talent:bloodmage/accursed:20-52-2-9",
+        "talent:bloodmage/accursed:20-52-4-9",
+        "talent:bloodmage/accursed:20-52-6-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "A direct melee form with bites and Reave, but recent players warn that the early version can feel squishy or incomplete.",
+      "strengths": [
+        "Mobile melee pressure",
+        "Clearer priority than the caster specs"
+      ],
+      "cautions": [
+        "Current leveling sentiment is sharply negative",
+        "Defensive package arrives in pieces"
+      ],
+      "claim_ids": [
+        "observed:bloodmage/accursed:leveling",
+        "talent:bloodmage/accursed:20-52-4-0",
+        "talent:bloodmage/accursed:20-52-4-1",
+        "talent:bloodmage/accursed:20-52-6-6",
+        "inference:bloodmage/accursed:uptime-cost",
+        "observed:bloodmage/accursed:performance",
+        "talent:bloodmage/accursed:20-52-2-8",
+        "talent:bloodmage/accursed:20-52-10-8"
+      ]
+    },
+    "leveling_30_49": {
+      "feel": "By levels 30-49, fight in accursed form, use reave and bite attacks to sustain pressure, trigger veinburst and bloodsurge payoffs, and align dark frenzy or later hunting talents with targets that can survive the burst.",
+      "strengths": [
+        "Core engine is online",
+        "More complete target coverage"
+      ],
+      "cautions": [
+        "Late talents still change the ceiling",
+        "Dark Hunt, pursuit effects, and the melee form support rapid target access; switching is less punishing than abandoning a long DoT stack, though burst windows can still"
+      ],
+      "claim_ids": [
+        "talent:bloodmage/accursed:20-52-4-0",
+        "talent:bloodmage/accursed:20-52-6-6",
+        "inference:bloodmage/accursed:uptime-cost",
+        "observed:bloodmage/accursed:leveling",
+        "talent:bloodmage/accursed:20-52-4-1",
+        "observed:bloodmage/accursed:performance",
+        "talent:bloodmage/accursed:20-52-2-8",
+        "talent:bloodmage/accursed:20-52-10-8"
+      ]
+    },
+    "level_50_60": {
+      "feel": "A fuller hunt-and-burst melee spec with stronger scent, pursuit, Hemoburst, and Darkcasting choices layered over the original form loop.",
+      "strengths": [
+        "Better target pressure",
+        "More burst and sustain hooks"
+      ],
+      "cautions": [
+        "Community performance signals conflict with poor leveling sentiment",
+        "Current endgame guide depth is thin"
+      ],
+      "claim_ids": [
+        "observed:bloodmage/accursed:performance",
+        "talent:bloodmage/accursed:20-52-2-8",
+        "talent:bloodmage/accursed:20-52-10-8",
+        "talent:bloodmage/accursed:20-52-4-0",
+        "talent:bloodmage/accursed:20-52-6-6",
+        "inference:bloodmage/accursed:uptime-cost",
+        "observed:bloodmage/accursed:leveling",
+        "talent:bloodmage/accursed:20-52-4-1"
+      ]
+    },
+    "boss": {
+      "feel": "On bosses, maintain the form and its bite-and-reave priority, then exploit bloodsurge, dark frenzy, and level-50 hunting effects for focused pressure.",
+      "strengths": [
+        "Durable targets preserve the full loop",
+        "Cooldowns can be planned"
+      ],
+      "cautions": [
+        "Movement can break setup",
+        "Repeated errors remain visible"
+      ],
+      "claim_ids": [
+        "talent:bloodmage/accursed:20-52-4-0",
+        "talent:bloodmage/accursed:20-52-6-6",
+        "inference:bloodmage/accursed:uptime-cost",
+        "observed:bloodmage/accursed:leveling",
+        "talent:bloodmage/accursed:20-52-4-1",
+        "observed:bloodmage/accursed:performance",
+        "talent:bloodmage/accursed:20-52-2-8",
+        "talent:bloodmage/accursed:20-52-10-8"
+      ]
+    },
+    "dungeon_aoe": {
+      "feel": "In dungeons, veinburst, gore barrage, and hemoburst add pack tools, but the specialization remains more naturally focused than sanguine's spreading spell package.",
+      "strengths": [
+        "Pack tools express the spec clearly",
+        "Group utility has regular value"
+      ],
+      "cautions": [
+        "Short-lived targets can erase setup",
+        "Tank movement changes the plan"
+      ],
+      "claim_ids": [
+        "talent:bloodmage/accursed:20-52-4-0",
+        "talent:bloodmage/accursed:20-52-6-6",
+        "inference:bloodmage/accursed:uptime-cost",
+        "observed:bloodmage/accursed:leveling",
+        "talent:bloodmage/accursed:20-52-4-1",
+        "observed:bloodmage/accursed:performance",
+        "talent:bloodmage/accursed:20-52-2-8",
+        "talent:bloodmage/accursed:20-52-10-8"
+      ]
+    },
+    "pvp": {
+      "feel": "In PvP, dark hunt, pursuit effects, and the melee form support rapid target access; switching is less punishing than abandoning a long dot stack, though burst windows can still be wasted. Bites, leeching effects, Clotting, and Endure the Curse provide recovery, while fear and Bloodmage control supplement the melee chase.",
+      "strengths": [
+        "Control and utility create options",
+        "Target swaps can reward flexibility"
+      ],
+      "cautions": [
+        "Disruption makes the loop less predictable",
+        "Defensive timing is punishable"
+      ],
+      "claim_ids": [
+        "talent:bloodmage/accursed:20-52-4-0",
+        "talent:bloodmage/accursed:20-52-6-6",
+        "inference:bloodmage/accursed:uptime-cost",
+        "observed:bloodmage/accursed:leveling",
+        "talent:bloodmage/accursed:20-52-4-1",
+        "observed:bloodmage/accursed:performance",
+        "talent:bloodmage/accursed:20-52-2-8",
+        "talent:bloodmage/accursed:20-52-10-8"
+      ]
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "low-moderate",
+        "reason": "The practical action set follows the authored loop: Fight in Accursed Form, use Reave and bite attacks to sustain pressure, trigger Veinburst and Bloodsurge payoffs, and align Dark Frenzy or later hunting talents with targets that can survive the burst. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "moderate",
+        "reason": "The practical action set follows the authored loop: Fight in Accursed Form, use Reave and bite attacks to sustain pressure, trigger Veinburst and Bloodsurge payoffs, and align Dark Frenzy or later hunting talents with targets that can survive the burst. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      "level_50_60": {
+        "value": "moderate",
+        "reason": "The practical action set follows the authored loop: Fight in Accursed Form, use Reave and bite attacks to sustain pressure, trigger Veinburst and Bloodsurge payoffs, and align Dark Frenzy or later hunting talents with targets that can survive the burst. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      "boss": {
+        "value": "moderate",
+        "reason": "The effective loop is a melee priority built around form attacks, bites, Reave, Bloodsurge, and burst cooldowns.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "talent:bloodmage/accursed:20-52-2-5",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "moderate",
+        "reason": "The practical action set follows the authored loop: Fight in Accursed Form, use Reave and bite attacks to sustain pressure, trigger Veinburst and Bloodsurge payoffs, and align Dark Frenzy or later hunting talents with targets that can survive the burst. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      "pvp": {
+        "value": "moderate",
+        "reason": "The practical action set follows the authored loop: Fight in Accursed Form, use Reave and bite attacks to sustain pressure, trigger Veinburst and Bloodsurge payoffs, and align Dark Frenzy or later hunting talents with targets that can survive the burst. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "low",
+        "reason": "The player must preserve the resources, effects, or target states implied by: Maintain the form and its bite-and-Reave priority, then exploit Bloodsurge, Dark Frenzy, and level-50 hunting effects for focused pressure. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "low-moderate",
+        "reason": "The player must preserve the resources, effects, or target states implied by: Maintain the form and its bite-and-Reave priority, then exploit Bloodsurge, Dark Frenzy, and level-50 hunting effects for focused pressure. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      "level_50_60": {
+        "value": "low-moderate",
+        "reason": "The player must preserve the resources, effects, or target states implied by: Maintain the form and its bite-and-Reave priority, then exploit Bloodsurge, Dark Frenzy, and level-50 hunting effects for focused pressure. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      "boss": {
+        "value": "low-moderate",
+        "reason": "The player must preserve the resources, effects, or target states implied by: Maintain the form and its bite-and-Reave priority, then exploit Bloodsurge, Dark Frenzy, and level-50 hunting effects for focused pressure. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "low-moderate",
+        "reason": "The player must preserve the resources, effects, or target states implied by: Maintain the form and its bite-and-Reave priority, then exploit Bloodsurge, Dark Frenzy, and level-50 hunting effects for focused pressure. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      "pvp": {
+        "value": "low-moderate",
+        "reason": "The player must preserve the resources, effects, or target states implied by: Maintain the form and its bite-and-Reave priority, then exploit Bloodsurge, Dark Frenzy, and level-50 hunting effects for focused pressure. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "low",
+        "reason": "Target count, incoming pressure, and movement change the next action; bites, leeching effects, clotting, and endure the curse provide recovery, while fear and bloodmage control supplement the melee chase. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "low",
+        "reason": "Target count, incoming pressure, and movement change the next action; bites, leeching effects, clotting, and endure the curse provide recovery, while fear and bloodmage control supplement the melee chase. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      "level_50_60": {
+        "value": "low",
+        "reason": "Target count, incoming pressure, and movement change the next action; bites, leeching effects, clotting, and endure the curse provide recovery, while fear and bloodmage control supplement the melee chase. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      "boss": {
+        "value": "low",
+        "reason": "Target count, incoming pressure, and movement change the next action; bites, leeching effects, clotting, and endure the curse provide recovery, while fear and bloodmage control supplement the melee chase. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "low",
+        "reason": "Target count, incoming pressure, and movement change the next action; bites, leeching effects, clotting, and endure the curse provide recovery, while fear and bloodmage control supplement the melee chase. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      "pvp": {
+        "value": "low-moderate",
+        "reason": "Target count, incoming pressure, and movement change the next action; bites, leeching effects, clotting, and endure the curse provide recovery, while fear and bloodmage control supplement the melee chase. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "moderate",
+        "reason": "Execution is constrained by positioning and swaps: Dark Hunt, pursuit effects, and the melee form support rapid target access; switching is less punishing than abandoning a long DoT stack, though burst windows can still be wasted. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "moderate-high",
+        "reason": "Execution is constrained by positioning and swaps: Dark Hunt, pursuit effects, and the melee form support rapid target access; switching is less punishing than abandoning a long DoT stack, though burst windows can still be wasted. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      "level_50_60": {
+        "value": "moderate-high",
+        "reason": "Execution is constrained by positioning and swaps: Dark Hunt, pursuit effects, and the melee form support rapid target access; switching is less punishing than abandoning a long DoT stack, though burst windows can still be wasted. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      "boss": {
+        "value": "moderate-high",
+        "reason": "Execution is constrained by positioning and swaps: Dark Hunt, pursuit effects, and the melee form support rapid target access; switching is less punishing than abandoning a long DoT stack, though burst windows can still be wasted. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "moderate-high",
+        "reason": "Execution is constrained by positioning and swaps: Dark Hunt, pursuit effects, and the melee form support rapid target access; switching is less punishing than abandoning a long DoT stack, though burst windows can still be wasted. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      "pvp": {
+        "value": "moderate-high",
+        "reason": "The player must preserve melee uptime and choose pursuit tools while opponents kite or disrupt the form window.",
+        "claim_ids": [
+          "inference:bloodmage/accursed:uptime-cost",
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "moderate",
+        "reason": "Entering or spending a transformation window without enough target uptime wastes the spec's strongest sequence. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "moderate-high",
+        "reason": "Entering or spending a transformation window without enough target uptime wastes the spec's strongest sequence. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      "level_50_60": {
+        "value": "moderate-high",
+        "reason": "Entering or spending a transformation window without enough target uptime wastes the spec's strongest sequence. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      "boss": {
+        "value": "moderate-high",
+        "reason": "Poor burst alignment loses a finite transformation or frenzy window, but the base melee loop continues.",
+        "claim_ids": [
+          "inference:bloodmage/accursed:uptime-cost",
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "moderate-high",
+        "reason": "Entering or spending a transformation window without enough target uptime wastes the spec's strongest sequence. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "Entering or spending a transformation window without enough target uptime wastes the spec's strongest sequence. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      }
+    },
+    "setup_burden": {
+      "leveling_10_29": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Veinburst, Gore Barrage, and Hemoburst add pack tools, but the specialization remains more naturally focused than Sanguine's spreading spell package. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Veinburst, Gore Barrage, and Hemoburst add pack tools, but the specialization remains more naturally focused than Sanguine's spreading spell package. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      "level_50_60": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Veinburst, Gore Barrage, and Hemoburst add pack tools, but the specialization remains more naturally focused than Sanguine's spreading spell package. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      "boss": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Veinburst, Gore Barrage, and Hemoburst add pack tools, but the specialization remains more naturally focused than Sanguine's spreading spell package. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Veinburst, Gore Barrage, and Hemoburst add pack tools, but the specialization remains more naturally focused than Sanguine's spreading spell package. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      },
+      "pvp": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Veinburst, Gore Barrage, and Hemoburst add pack tools, but the specialization remains more naturally focused than Sanguine's spreading spell package. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1",
+          "observed:bloodmage/accursed:performance",
+          "talent:bloodmage/accursed:20-52-2-8",
+          "talent:bloodmage/accursed:20-52-10-8"
+        ]
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [
+      {
+        "text": "You want Bloodmage fantasy expressed through an aggressive mobile melee form rather than long caster setup.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "inference:bloodmage/accursed:identity"
+        ]
+      },
+      {
+        "text": "You enjoy the spec's core cadence: fight in accursed form, use reave and bite attacks to sustain pressure, trigger veinburst and bloodsurge payoffs, and align dark frenzy or later hunting talents with targets that can survive the burst.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1"
+        ]
+      }
+    ],
+    "avoid_if": [
+      {
+        "text": "You want a proven smooth early leveling curve or a passive ranged attrition loop.",
+        "claim_ids": [
+          "observed:bloodmage/accursed:leveling"
+        ]
+      },
+      {
+        "text": "You dislike the positioning or swap constraint that dark hunt, pursuit effects, and the melee form support rapid target access; switching is less punishing than abandoning a long dot stack, though burst windows can still be wasted.",
+        "claim_ids": [
+          "talent:bloodmage/accursed:20-52-4-0",
+          "talent:bloodmage/accursed:20-52-6-6",
+          "inference:bloodmage/accursed:uptime-cost",
+          "observed:bloodmage/accursed:leveling",
+          "talent:bloodmage/accursed:20-52-4-1"
+        ]
+      }
+    ]
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [
+    "observed:bloodmage/accursed:performance"
+  ],
+  "sentiment": {
+    "praise": [
+      {
+        "theme": "The structural identity promises fast melee pursuit and a more readable priority than Sanguine.",
+        "claim_ids": [
+          "inference:bloodmage/accursed:identity"
+        ]
+      }
+    ],
+    "frustrations": [
+      {
+        "theme": "Recent leveling players describe Accursed as late-blooming, squishy, and weak before the 40s.",
+        "claim_ids": [
+          "observed:bloodmage/accursed:leveling"
+        ]
+      }
+    ],
+    "contested": [
+      {
+        "theme": "The July DPS snapshot places Accursed above several Bloodmage alternatives, which conflicts with the poor leveling reports but covers a different level and context.",
+        "claim_ids": [
+          "observed:bloodmage/accursed:performance",
+          "observed:bloodmage/accursed:leveling"
+        ]
+      }
+    ]
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 2,
+    "latest_update": "2026-07-18T21:58:02.411211+00:00",
+    "top_title": "HC Accursed hybrid",
+    "top_url": "https://coabuildhub.com/build/beca43e0-6485-4965-811f-29575146a97c",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:beca43e0-6485-4965-811f-29575146a97c"
+    ]
+  },
+  "coverage": {
+    "mechanical": "manual_talent_and_build_interpretation",
+    "community": "manual_recent_source_review",
+    "performance": "limited_uncontrolled",
+    "video": "searched_none_verified",
+    "overall_confidence": "medium",
+    "gaps": [
+      "No detailed current level-60 rotation guide.",
+      "The leveling-to-endgame improvement point needs broader confirmation."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:bloodmage/accursed:20-52-4-0",
+      "kind": "structural",
+      "text": "Accursed Form: Transform: s your Blood Curse into Accursed Form.Accursed Form (Cursed Form)Embrace your demonic curse for 30 seconds, entering an improved Cursed Form, increasing your attack power by 50% of your Agility and causing your melee attacks to reduce all healing done to the target by -20% for 10 seconds, stacking 2 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-10-0",
+      "kind": "structural",
+      "text": "Unchained: Level 10 PassiveYour damaging Mortal Form spells can now be cast while moving.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-4-1",
+      "kind": "structural",
+      "text": "Reave: Lacerate an enemy, dealing 125% Weapon Damage plus 26.If the enemy is bleeding, below 35% health, or if you are behind them, deal 100% additional Shadow damage for each condition met.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-2-2",
+      "kind": "structural",
+      "text": "Puncturing Fangs: Your Bloodmoon Blast now generates 3 additional Rage per hit.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-4-2",
+      "kind": "structural",
+      "text": "Fang Over Fang: Casting Bloodfang Bite now has a 20% chance to reset the cooldown of Reave.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-6-2",
+      "kind": "structural",
+      "text": "Barely Human: Increases your armor penetration and the damage of spells that cost health by 15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-10-2",
+      "kind": "structural",
+      "text": "Forbidden Power: Level 20 PassiveIncreases your spell critical strike rating by 30% of your Agility and spell hit rating by 5% of your Agility.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-1-3",
+      "kind": "structural",
+      "text": "Veinburst: Requires Mortal FormBlast an enemy, dealing 123 + 25% AP + 85% shadow SP Shadow damage.Deals 25% increased damage to bleeding targets.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-3-3a",
+      "kind": "structural",
+      "text": "Shadow Pact: Increases the effectiveness of your Shields by 50%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-3-3b",
+      "kind": "structural",
+      "text": "Blood Pact: Increases your maximum Rage by 20 and you now regenerate 4 Rage every 5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-5-3",
+      "kind": "structural",
+      "text": "Rage: Increases your spell damage by 15% of your attack power and the damage dealt by Reave by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-7-3",
+      "kind": "structural",
+      "text": "Aortic Assault: Extend the duration of your active Cursed Form by 3 sec and strike nearby enemies every 1 sec for 3 seconds, each strike causing 20 + 12% AP Physical damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-0-4",
+      "kind": "structural",
+      "text": "Terrorizer: Increases the damage of Veinburst, Bloodfang Bite, and Claw Sweep on enemies below 35% health by 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-1-4",
+      "kind": "structural",
+      "text": "Sanguine Scripture: Upon exiting Accursed Form, you gain 70% movement speed and spell haste for 5 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-4-4",
+      "kind": "structural",
+      "text": "Dark Hunt: Increases your Shadow damage dealt by 10% against bleeding targets.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-7-4a",
+      "kind": "structural",
+      "text": "Gore Tome: For the first 5 sec after activating a Cursed Form, your Bloodfang Bite is now guaranteed to critically strike.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-7-4b",
+      "kind": "structural",
+      "text": "Leeching Tome: Your Bloodbolt now leeches 50% more health, but it now costs 5 additional Rage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-8-4a",
+      "kind": "structural",
+      "text": "Dark Intent: When you Lunge at an enemy you now heal for 5% of your maximum health.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-8-4b",
+      "kind": "structural",
+      "text": "Cruel Intent: When you Lunge at an enemy you now strike them 3 times with auto attacks.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-10-4",
+      "kind": "structural",
+      "text": "Blood Shards: Level 30 PassiveShadow Damage dealt now generates 1 Blood Shard, plus 1 additional if it critically strikes, for 10 minutes, up to 8.Dealing damage with Veinburst will now expend all stacks of Blood Shards, each dealing 18 + 9% AP + 15% SP Arcane damage to your target.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-0-5a",
+      "kind": "structural",
+      "text": "Corrupted Blood: When you use Taldaram's Torment on a Humanoid or Beast it now corrupts their blood, increasing your damage dealt against them by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-0-5b",
+      "kind": "structural",
+      "text": "Cursed Blood: Damage dealt by Taldaram's Torment now has a 20% chance to internally rupture, causing it to deal its damage an additional time to all enemies near the target.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-2-5",
+      "kind": "structural",
+      "text": "Bloodsurge: Requires Mortal FormEnter a bloodsurge, enraging you and increasing your Shadow damage dealt and your spell critical strike chance by 20% for 20 seconds.At the end of the duration, or whenever you trigger Accursed Form, gain Bloodchaser instead.BloodchaserEnrage, increasing your Physical Damage dealt by 20% for 30 secondsWhile active, Bloodfang Bite now launches 1 Blood Shard, dealing 18 + 15% AP + 35% SP Shadow Damage to your target.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-4-5",
+      "kind": "structural",
+      "text": "Dark Sigil: Increases critical strike chance of all party and raid members by 3%. Does not stack with similar effects.In addition, you now heal for 15% of all critical damage dealt.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-6-5",
+      "kind": "structural",
+      "text": "Gore Barrage: Reduces the cost of spells that cost health and Animated Blood by -30%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-8-5",
+      "kind": "structural",
+      "text": "Crimson Expedition: Increases the critical strike chance of your Bloodbolt, Blood Shards, and Aortic Assault by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-0-6",
+      "kind": "structural",
+      "text": "Killer Instinct: Each point of Rage now increases the critical strike chance of Veinburst and Reave by 0.5%, up to a maximum of 50%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-2-6",
+      "kind": "structural",
+      "text": "Crimson Feast: Every 5 second you remain in a Cursed Form now reduces the cooldown of your Bloodsurge by -5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-4-6",
+      "kind": "structural",
+      "text": "Endure the Curse: Reduce all damage taken by -30% for 10 seconds.While active, taking damage that would reduce your health below 10% will instantly heal you for 30% of your maximum health. Can only occur once.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-6-6",
+      "kind": "structural",
+      "text": "Dark Frenzy: Increases spell haste of all party and raid members by 3%. Does not stack with similar effects.In addition, while a Cursed Form is active, your global cooldowns are reduced by -25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-8-6",
+      "kind": "structural",
+      "text": "Clotting: At the end of Aortic Assault's duration, all enemies in a 10 yd frontal cone suffer 600 + 50% AP Physical damage.Damage dealt by this effect is increased by 25% against bleeding targets.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-10-6",
+      "kind": "structural",
+      "text": "Relentless: Level 40 PassivePhysical critical strikes now reduce the cooldown of Aortic Assault by -1 sec and grant you Relentless.Relentless (Proc)Your Aortic Assault channels -10% faster for 10 seconds, stacking 5 times, and each strike now extends the duration of Taldaram's Torment by 2 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-1-7",
+      "kind": "structural",
+      "text": "Everlasting Hunt: Damage dealt by Blood Shards now reduces the cooldown of Veinburst and Reave by -1.5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-3-7",
+      "kind": "structural",
+      "text": "One Man's Curse...: Removes the health cost of Accursed Form and entering it now instantly restores 15% of your maximum health.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-5-7",
+      "kind": "structural",
+      "text": "Battleweaver: Casting Cursed Form abilities now has a 50% chance to generate 1 Blood Shard for 10 minutes, up to 8.Dealing damage with Bloodbolt will launch 1 Blood Shard, dealing 18 + 15% AP + 35% SP Arcane damage to your target.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-7-7",
+      "kind": "structural",
+      "text": "Inhumane: Dealing damage with Aortic Assault will now launch 1 Blood Shard, dealing 18 + 15% AP + 35% SP Arcane damage to your target.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-2-8",
+      "kind": "structural",
+      "text": "Night Hunter: Your Veinburst now has a 40% chance to not trigger a cooldown when cast.Your Bloodbolt now has a 40% chance to refund half of its Rage cost when cast.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-4-8",
+      "kind": "structural",
+      "text": "Blood Scent: While in Accursed Form, you now deal 15% increased damage to targets below 35% maximum health.Dealing direct damage to enemies below 35% maximum health now leeches health equal to 10% of the damage dealt.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-6-8",
+      "kind": "structural",
+      "text": "Ultra Instinct: Direct ability critical strikes now increase your spell and ability critical strike chance and critical damage by 3% for 10 sec.Each additional critical strike increases this by an additional 3%, but reduces its duration by -1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-10-8",
+      "kind": "structural",
+      "text": "The Hunter and the Hunted: Level 50 PassiveWhen you activate a Cursed Form you now charge to your target if they are within 20 yds. If they're an enemy you root them for 2 seconds.Upon expiration, your Accursed Form can be reactivated to cause you to erupt in a burst of blood magic, leeching 364 + 33% shadow SP + 12.5% AP health from nearby enemies and teleporting you backwards.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-2-9",
+      "kind": "structural",
+      "text": "Hemoburst: Requires Mortal FormUnleash a powerful burst of blood at an enemy, dealing 1480 + 65% AP + 50% SP Shadow damage. This ability is guaranteed to critically strike against bleeding targets.Extends the duration of your next Cursed Form by 5 sec for 30 seconds, stacking 2 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-4-9",
+      "kind": "structural",
+      "text": "Final Embrace: Requires Mortal FormGorge on blood magic, entering a dramatically improved Cursed Form for 20 seconds, transforming your Bloodfang Bite into Crimson Maw, but draining your health over time.While active, every 1 sec you curse enemies within 8 yds, applying Hematoma for 6 seconds.Hematoma (Shadow Damage)Deals 55 + 15% shadow SP + 10% AP Shadow Damage and increases the damage the target takes from subsequent applications of Hematoma by 3%, stacking 10 times. Generates Rage based on damage dealt.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/accursed:20-52-6-9",
+      "kind": "structural",
+      "text": "Darkcasting: Critical strikes with abilities now spawn a Blood Orb near you for 15 seconds.Blood Orb (Spawn)When you run over this, restore 3% of your missing health and 5 Rage and gain a stack of Darkcasting for 1 minute, stacking 10 times.Darkcasting (Buff)Gaining a stack reduces the cooldown of Animated Blood by 1 sec and causes your next Animated Blood to spawn 1 blood worm to attack your enemies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "observed:bloodmage/accursed:leveling",
+      "kind": "observed",
+      "text": "A July 30 Bloodmage leveling discussion strongly discourages Accursed for solo leveling and says it takes more than 40 levels to feel functional, citing low damage, weak physical defense, and mediocre single-target self-healing.",
+      "source_ids": [
+        "reddit:bloodmage-leveling-2026-07-30"
+      ],
+      "scope": {
+        "levels": "leveling_10_49",
+        "content": [
+          "solo_leveling"
+        ],
+        "build_or_mode": [
+          "unspecified"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [
+        "observed:bloodmage/accursed:performance"
+      ],
+      "notes": "Small, strongly opinionated thread; it does not prove endgame weakness."
+    },
+    {
+      "id": "observed:bloodmage/accursed:performance",
+      "kind": "observed",
+      "text": "The July community DPS compilation reports Accursed at 4,477, while the August Mythic inventory lists 36 uploaded Accursed records.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "presumed_level_60",
+        "content": [
+          "pve_unspecified",
+          "mythic_dungeons"
+        ],
+        "build_or_mode": [
+          "unspecified"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [
+        "observed:bloodmage/accursed:leveling"
+      ],
+      "notes": "DPS methodology is incomplete and upload count measures representation, not power."
+    },
+    {
+      "id": "inference:bloodmage/accursed:identity",
+      "kind": "inference",
+      "text": "Accursed is a mobile melee priority specialization whose complexity comes from preserving target uptime during form and frenzy windows.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:bloodmage/accursed:20-52-4-0",
+        "talent:bloodmage/accursed:20-52-4-1",
+        "talent:bloodmage/accursed:20-52-6-6"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Playstyle classification, not an official label."
+    },
+    {
+      "id": "inference:bloodmage/accursed:uptime-cost",
+      "kind": "inference",
+      "text": "Accursed loses a material portion of its payoff when movement or control prevents melee contact during Dark Frenzy and related hunt windows.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:bloodmage/accursed:20-52-6-6",
+        "talent:bloodmage/accursed:20-52-2-8"
+      ],
+      "scope": {
+        "levels": "leveling_40_60",
+        "content": [
+          "boss",
+          "pvp"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The loss magnitude is not measured."
+    },
+    {
+      "id": "observed:bloodmage/accursed:recent-manual-review",
+      "kind": "observed",
+      "text": "Recent levelers advise delaying open-world transformation until roughly level 40, kiting with DoTs and Bloodmoon Blast early, and using the later form for tank-supported large-pull AoE; reports remain sharply mixed.",
+      "source_ids": [
+        "reddit:accursed-leveling-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually reviewed on 2026-08-06; anecdotal evidence is not treated as a power ranking."
+    }
+  ]
+}

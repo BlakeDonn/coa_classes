@@ -1,0 +1,1468 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "cultist/dreadnought",
+    "class": "Cultist",
+    "name": "Dreadnought",
+    "roles": [
+      "Tank"
+    ],
+    "range": [
+      "Melee"
+    ]
+  },
+  "identity": {
+    "fantasy": "",
+    "one_line": "An Insanity-powered Void tank using Twilight Shieldtoss, large absorb forms, block scaling, retaliation, and summoned eldritch entities. It cycles Dreadnought and Void shields rather than relying on passive armor alone, making cooldown and Insanity timing central.",
+    "primary_family": "",
+    "also_fits": [],
+    "claim_ids": [
+      "talent:cultist/dreadnought:25-88-4-0",
+      "talent:cultist/dreadnought:25-88-10-0",
+      "talent:cultist/dreadnought:25-88-2-1",
+      "talent:cultist/dreadnought:25-88-4-1",
+      "talent:cultist/dreadnought:25-88-6-1",
+      "talent:cultist/dreadnought:25-88-4-2",
+      "talent:cultist/dreadnought:25-88-10-2",
+      "talent:cultist/dreadnought:25-88-1-3",
+      "talent:cultist/dreadnought:25-88-4-3a",
+      "talent:cultist/dreadnought:25-88-4-3b",
+      "talent:cultist/dreadnought:25-88-7-3",
+      "talent:cultist/dreadnought:25-88-0-4",
+      "talent:cultist/dreadnought:25-88-2-4",
+      "talent:cultist/dreadnought:25-88-4-4",
+      "talent:cultist/dreadnought:25-88-6-4",
+      "talent:cultist/dreadnought:25-88-8-4",
+      "talent:cultist/dreadnought:25-88-10-4",
+      "talent:cultist/dreadnought:25-88-1-5",
+      "talent:cultist/dreadnought:25-88-3-5",
+      "talent:cultist/dreadnought:25-88-5-5",
+      "talent:cultist/dreadnought:25-88-7-5",
+      "talent:cultist/dreadnought:25-88-0-6",
+      "talent:cultist/dreadnought:25-88-2-6",
+      "talent:cultist/dreadnought:25-88-4-6",
+      "talent:cultist/dreadnought:25-88-6-6",
+      "talent:cultist/dreadnought:25-88-8-6",
+      "talent:cultist/dreadnought:25-88-10-6",
+      "talent:cultist/dreadnought:25-88-1-7",
+      "talent:cultist/dreadnought:25-88-3-7",
+      "talent:cultist/dreadnought:25-88-5-7",
+      "talent:cultist/dreadnought:25-88-7-7",
+      "talent:cultist/dreadnought:25-88-1-8",
+      "talent:cultist/dreadnought:25-88-4-8",
+      "talent:cultist/dreadnought:25-88-7-8",
+      "talent:cultist/dreadnought:25-88-10-8",
+      "talent:cultist/dreadnought:25-88-1-9",
+      "talent:cultist/dreadnought:25-88-4-9",
+      "talent:cultist/dreadnought:25-88-7-9"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "An Insanity-powered Void tank using Twilight Shieldtoss, large absorb forms, block scaling, retaliation, and summoned eldritch entities. It cycles Dreadnought and Void shields rather than relying on passive armor alone, making cooldown and Insanity timing central.",
+    "resources": [
+      "Insanity"
+    ],
+    "builders": [
+      {
+        "name": "Boon of Y'shaarj",
+        "claim_ids": [
+          "talent:cultist/dreadnought:25-88-6-1"
+        ]
+      },
+      {
+        "name": "Inner Darkness",
+        "claim_ids": [
+          "talent:cultist/dreadnought:25-88-2-4"
+        ]
+      },
+      {
+        "name": "Twilight Incarnate",
+        "claim_ids": [
+          "talent:cultist/dreadnought:25-88-4-4"
+        ]
+      },
+      {
+        "name": "Eldritch Strength",
+        "claim_ids": [
+          "talent:cultist/dreadnought:25-88-8-4"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Deep Secrets",
+        "claim_ids": [
+          "talent:cultist/dreadnought:25-88-10-4"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Void Augmentation",
+        "claim_ids": [
+          "talent:cultist/dreadnought:25-88-4-9"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Voidwarding",
+        "claim_ids": [
+          "talent:cultist/dreadnought:25-88-4-6"
+        ],
+        "structural_description": "Reduces damage taken by party and raid members by -3%. Does not stack with similar effects.In addition, increases all of your resistances by 5, scaling with level."
+      },
+      {
+        "name": "Strength of the Black Empire",
+        "claim_ids": [
+          "talent:cultist/dreadnought:25-88-10-6"
+        ],
+        "structural_description": "Level 40 PassiveDreadnought now sheds your mortal form, transforming you into a void monstrosity, reducing your damage taken by -10%"
+      },
+      {
+        "name": "Twilight Guardian",
+        "claim_ids": [
+          "talent:cultist/dreadnought:25-88-4-8"
+        ],
+        "structural_description": "The first instance of damage dealt by Twilight Shieldtoss now shields you for 100% of the damage dealt for 8 seconds."
+      },
+      {
+        "name": "Blessing of Y'Shaarj",
+        "claim_ids": [
+          "talent:cultist/dreadnought:25-88-10-8"
+        ],
+        "structural_description": "Level 50 PassiveWhile transformed into a void monstrosity your damage dealt is now also increased by 20%."
+      },
+      {
+        "name": "Eldritch Force",
+        "claim_ids": [
+          "talent:cultist/dreadnought:25-88-1-9"
+        ],
+        "structural_description": "Every 5th critical strike with abilities now transforms your next Gaze of C'Thun into Eldritch Force.Eldritch ForceGenerates 30 InsanitySend out a wave of force, dealing 631 + 76.26% SP + 12.5% AP Shadow damage to enemies in front of you and reducing their movement speed by -30% for 10 seconds."
+      }
+    ],
+    "single_target": "",
+    "aoe": "",
+    "movement_and_target_switching": "",
+    "defense_and_control": "",
+    "group_utility": "",
+    "failure_modes": [],
+    "claim_ids": [
+      "talent:cultist/dreadnought:25-88-4-0",
+      "talent:cultist/dreadnought:25-88-10-0",
+      "talent:cultist/dreadnought:25-88-2-1",
+      "talent:cultist/dreadnought:25-88-4-1",
+      "talent:cultist/dreadnought:25-88-6-1",
+      "talent:cultist/dreadnought:25-88-4-2",
+      "talent:cultist/dreadnought:25-88-10-2",
+      "talent:cultist/dreadnought:25-88-1-3",
+      "talent:cultist/dreadnought:25-88-4-3a",
+      "talent:cultist/dreadnought:25-88-4-3b",
+      "talent:cultist/dreadnought:25-88-7-3",
+      "talent:cultist/dreadnought:25-88-0-4",
+      "talent:cultist/dreadnought:25-88-2-4",
+      "talent:cultist/dreadnought:25-88-4-4",
+      "talent:cultist/dreadnought:25-88-6-4",
+      "talent:cultist/dreadnought:25-88-8-4",
+      "talent:cultist/dreadnought:25-88-10-4",
+      "talent:cultist/dreadnought:25-88-1-5",
+      "talent:cultist/dreadnought:25-88-3-5",
+      "talent:cultist/dreadnought:25-88-5-5",
+      "talent:cultist/dreadnought:25-88-7-5",
+      "talent:cultist/dreadnought:25-88-0-6",
+      "talent:cultist/dreadnought:25-88-2-6",
+      "talent:cultist/dreadnought:25-88-4-6",
+      "talent:cultist/dreadnought:25-88-6-6",
+      "talent:cultist/dreadnought:25-88-8-6",
+      "talent:cultist/dreadnought:25-88-10-6",
+      "talent:cultist/dreadnought:25-88-1-7",
+      "talent:cultist/dreadnought:25-88-3-7",
+      "talent:cultist/dreadnought:25-88-5-7",
+      "talent:cultist/dreadnought:25-88-7-7",
+      "talent:cultist/dreadnought:25-88-1-8",
+      "talent:cultist/dreadnought:25-88-4-8",
+      "talent:cultist/dreadnought:25-88-7-8",
+      "talent:cultist/dreadnought:25-88-10-8",
+      "talent:cultist/dreadnought:25-88-1-9",
+      "talent:cultist/dreadnought:25-88-4-9",
+      "talent:cultist/dreadnought:25-88-7-9"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Twilight Shieldtoss",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0"
+          ]
+        },
+        {
+          "name": "Dreadnought",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-10-0"
+          ]
+        },
+        {
+          "name": "Adaptive Combatant",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-2-1"
+          ]
+        },
+        {
+          "name": "Malignant Armor",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-1"
+          ]
+        },
+        {
+          "name": "Boon of Y'shaarj",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-6-1"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:cultist/dreadnought:25-88-4-0",
+        "talent:cultist/dreadnought:25-88-10-0",
+        "talent:cultist/dreadnought:25-88-2-1",
+        "talent:cultist/dreadnought:25-88-4-1",
+        "talent:cultist/dreadnought:25-88-6-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Bulwark of Horror",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-2"
+          ]
+        },
+        {
+          "name": "Strength of the Sha",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-10-2"
+          ]
+        },
+        {
+          "name": "Bulwark of Y'shaarj",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-1-3"
+          ]
+        },
+        {
+          "name": "Y'Shaarj's Enforcer",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-3a"
+          ]
+        },
+        {
+          "name": "Bouncing Thoughts",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-3b"
+          ]
+        },
+        {
+          "name": "Tentacle of Y'shaarj",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-7-3"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:cultist/dreadnought:25-88-4-2",
+        "talent:cultist/dreadnought:25-88-10-2",
+        "talent:cultist/dreadnought:25-88-1-3",
+        "talent:cultist/dreadnought:25-88-4-3a",
+        "talent:cultist/dreadnought:25-88-4-3b",
+        "talent:cultist/dreadnought:25-88-7-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Entropic Retaliation",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-0-4"
+          ]
+        },
+        {
+          "name": "Inner Darkness",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-2-4"
+          ]
+        },
+        {
+          "name": "Twilight Incarnate",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-4"
+          ]
+        },
+        {
+          "name": "Everpresent",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-6-4"
+          ]
+        },
+        {
+          "name": "Eldritch Strength",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-8-4"
+          ]
+        },
+        {
+          "name": "Deep Secrets",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-10-4"
+          ]
+        },
+        {
+          "name": "Dreadfall",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-1-5"
+          ]
+        },
+        {
+          "name": "Wavering Hope",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-3-5"
+          ]
+        },
+        {
+          "name": "Eldritch Bastion",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-5-5"
+          ]
+        },
+        {
+          "name": "Crushing Dissonance",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-7-5"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:cultist/dreadnought:25-88-0-4",
+        "talent:cultist/dreadnought:25-88-2-4",
+        "talent:cultist/dreadnought:25-88-4-4",
+        "talent:cultist/dreadnought:25-88-6-4",
+        "talent:cultist/dreadnought:25-88-8-4",
+        "talent:cultist/dreadnought:25-88-10-4",
+        "talent:cultist/dreadnought:25-88-1-5",
+        "talent:cultist/dreadnought:25-88-3-5",
+        "talent:cultist/dreadnought:25-88-5-5",
+        "talent:cultist/dreadnought:25-88-7-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Void-Enhanced Shield",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-0-6"
+          ]
+        },
+        {
+          "name": "Void Reaver",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-2-6"
+          ]
+        },
+        {
+          "name": "Voidwarding",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-6"
+          ]
+        },
+        {
+          "name": "In And Out of Insanity",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-6-6"
+          ]
+        },
+        {
+          "name": "Bulwark of Shadow",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-8-6"
+          ]
+        },
+        {
+          "name": "Strength of the Black Empire",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-10-6"
+          ]
+        },
+        {
+          "name": "Shadowy Symbiosis",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-1-7"
+          ]
+        },
+        {
+          "name": "Void Strikes",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-3-7"
+          ]
+        },
+        {
+          "name": "General of Y'shaarj",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-5-7"
+          ]
+        },
+        {
+          "name": "Eldritch Entities",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-7-7"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:cultist/dreadnought:25-88-0-6",
+        "talent:cultist/dreadnought:25-88-2-6",
+        "talent:cultist/dreadnought:25-88-4-6",
+        "talent:cultist/dreadnought:25-88-6-6",
+        "talent:cultist/dreadnought:25-88-8-6",
+        "talent:cultist/dreadnought:25-88-10-6",
+        "talent:cultist/dreadnought:25-88-1-7",
+        "talent:cultist/dreadnought:25-88-3-7",
+        "talent:cultist/dreadnought:25-88-5-7",
+        "talent:cultist/dreadnought:25-88-7-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Dreadful",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-1-8"
+          ]
+        },
+        {
+          "name": "Twilight Guardian",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-8"
+          ]
+        },
+        {
+          "name": "Void Tolerance",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-7-8"
+          ]
+        },
+        {
+          "name": "Blessing of Y'Shaarj",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-10-8"
+          ]
+        },
+        {
+          "name": "Eldritch Force",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-1-9"
+          ]
+        },
+        {
+          "name": "Void Augmentation",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-9"
+          ]
+        },
+        {
+          "name": "Embodiment of Y'shaarj",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-7-9"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:cultist/dreadnought:25-88-1-8",
+        "talent:cultist/dreadnought:25-88-4-8",
+        "talent:cultist/dreadnought:25-88-7-8",
+        "talent:cultist/dreadnought:25-88-10-8",
+        "talent:cultist/dreadnought:25-88-1-9",
+        "talent:cultist/dreadnought:25-88-4-9",
+        "talent:cultist/dreadnought:25-88-7-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "leveling_30_49": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "level_50_60": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "boss": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "dungeon_aoe": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "pvp": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [],
+    "avoid_if": []
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [],
+  "sentiment": {
+    "praise": [],
+    "frustrations": [],
+    "contested": []
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 4,
+    "latest_update": "2026-08-03T18:19:44.096023+00:00",
+    "top_title": "Big Tentacle Boy",
+    "top_url": "https://coabuildhub.com/build/54cb9a25-8641-49be-badc-e4ee4aa1ade7",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:54cb9a25-8641-49be-badc-e4ee4aa1ade7"
+    ]
+  },
+  "coverage": {
+    "mechanical": "structural_baseline",
+    "community": "indexed",
+    "performance": "missing",
+    "video": "missing",
+    "overall_confidence": "low",
+    "gaps": [
+      "Effective core loop needs recent guide or player cross-check.",
+      "Contextual complexity values are not yet researched.",
+      "Recent performance, sentiment, issues, and video evidence are not yet reconciled."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:cultist/dreadnought:25-88-4-0",
+      "kind": "structural",
+      "text": "Twilight Shieldtoss: Hurl a cursed shield, dealing 40 Shadow damage to up to 3 enemies, reduced by 20% with each jump.Damage increased by 1% for each stack of Insanity.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-10-0",
+      "kind": "structural",
+      "text": "Dreadnought: Level 10 PassiveReaching 100 Insanity no longer causes Total Madness.Teaches you Dreadnought.DreadnoughtAbsorbs 150 + 300% Stamina + 300% Intellect damage, scaling with Intellect and Stamina. Protects movement speed from going below 80% of normal speed. Lasts 20 seconds.Depletes all Insanity upon expiration.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-2-1",
+      "kind": "structural",
+      "text": "Adaptive Combatant: Increases your parry chance by 3% and dodge chance by 2%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-4-1",
+      "kind": "structural",
+      "text": "Malignant Armor: Increases your attack power by 2 for every 100 armor value you have.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-6-1",
+      "kind": "structural",
+      "text": "Boon of Y'shaarj: You now gain an additional 2 mana per point of Intellect.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-4-2",
+      "kind": "structural",
+      "text": "Bulwark of Horror: Avoiding an attack now has a 40% chance to refresh a charge of Blade of the Empire.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-10-2",
+      "kind": "structural",
+      "text": "Strength of the Sha: Level 20 PassiveIncreases your spell damage by 25% of your Strength and your spell hit rating by 6% of your Intellect.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-1-3",
+      "kind": "structural",
+      "text": "Bulwark of Y'shaarj: Increases your block chance by 5%, plus an additional 10% while above 40 Insanity.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-4-3a",
+      "kind": "structural",
+      "text": "Y'Shaarj's Enforcer: Increases the damage dealt by your Twilight Shieldtoss by 100% but it to no longer bounces.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-4-3b",
+      "kind": "structural",
+      "text": "Bouncing Thoughts: Your Twilight Shieldtoss now hits an additional enemy for every 20 Insanity you have.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-7-3",
+      "kind": "structural",
+      "text": "Tentacle of Y'shaarj: Summon a Tentacle of Y'shaarj near you for 30 seconds.When summoned and whenever Gaze of C'thun is used, it slams the ground dealing Physical damage, scaling with Stamina, to all enemies in a 10 yd frontal cone.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-0-4",
+      "kind": "structural",
+      "text": "Entropic Retaliation: Blocking an attack now increases your critical strike chance by 2% for 6 seconds, stacking up to 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-2-4",
+      "kind": "structural",
+      "text": "Inner Darkness: Blocking an attack now generates 3 Insanity.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-4-4",
+      "kind": "structural",
+      "text": "Twilight Incarnate: Damage dealt by Twilight Shieldtoss now generates 3 Insanity.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-6-4",
+      "kind": "structural",
+      "text": "Everpresent: Increases the chance to trigger Presences by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-8-4",
+      "kind": "structural",
+      "text": "Eldritch Strength: Increases the damage of Hammer of Twilight and Entropic Slam by 25% and they now generates a large amount of threat.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-10-4",
+      "kind": "structural",
+      "text": "Deep Secrets: Level 30 PassiveEach point of Insanity now reduces mana costs of your instant cast spells and abilities by 1%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-1-5",
+      "kind": "structural",
+      "text": "Dreadfall: Raise your shield and charge towards an enemy, dealing 50% AP Shadow damage to enemies you pass through, generating additional threat.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-3-5",
+      "kind": "structural",
+      "text": "Wavering Hope: While above 60 Insanity, the cooldown of your Twilight Shieldtoss and Gaze of C'thun is reduced by -25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-5-5",
+      "kind": "structural",
+      "text": "Eldritch Bastion: Increases your Armor contribution from your shield by 15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-7-5",
+      "kind": "structural",
+      "text": "Crushing Dissonance: Unleash a wave of maddening resonance, interrupting the current spell cast of all enemies around you and preventing any spell in that school from being cast for 2 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-0-6",
+      "kind": "structural",
+      "text": "Void-Enhanced Shield: Increases your block value by 20%.While above 60 Insanity, the value of this effect is doubled.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-2-6",
+      "kind": "structural",
+      "text": "Void Reaver: Avoiding or absorbing an attack now has a 20% chance to make your next Blade of the Empire deal 20% more damage and hit an additional nearby enemy.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-4-6",
+      "kind": "structural",
+      "text": "Voidwarding: Reduces damage taken by party and raid members by -3%. Does not stack with similar effects.In addition, increases all of your resistances by 5, scaling with level.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-6-6",
+      "kind": "structural",
+      "text": "In And Out of Insanity: Increases the effectiveness of your damage absorption effects by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-8-6",
+      "kind": "structural",
+      "text": "Bulwark of Shadow: While above 80 Insanity, your Void Shield has 30% increased value.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-10-6",
+      "kind": "structural",
+      "text": "Strength of the Black Empire: Level 40 PassiveDreadnought now sheds your mortal form, transforming you into a void monstrosity, reducing your damage taken by -10%",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-1-7",
+      "kind": "structural",
+      "text": "Shadowy Symbiosis: Your successful blocks now have a 20% chance to critically block for twice the normal amount.This effect is doubled while above 60 Insanity.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-3-7",
+      "kind": "structural",
+      "text": "Void Strikes: Damage dealt by Blade of the Empire and Entropic Slam is now increased based on your defense rating.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-5-7",
+      "kind": "structural",
+      "text": "General of Y'shaarj: Dealing damage with Twilight Shieldtoss now heals you for 10% of the damage dealt.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-7-7",
+      "kind": "structural",
+      "text": "Eldritch Entities: Critical strikes with abilities now summon a Manifestation of Y'shaarj for 10 seconds, which will attack enemies and heal you for 2% of your base health.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-1-8",
+      "kind": "structural",
+      "text": "Dreadful: Increases your critical strike rating equal to your block rating.In addition, critical strikes now reduce the cooldown of Dreadfall and Dreadnought by 1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-4-8",
+      "kind": "structural",
+      "text": "Twilight Guardian: The first instance of damage dealt by Twilight Shieldtoss now shields you for 100% of the damage dealt for 8 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-7-8",
+      "kind": "structural",
+      "text": "Void Tolerance: Reduces the cooldown of Abyssal Ward by -30 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-10-8",
+      "kind": "structural",
+      "text": "Blessing of Y'Shaarj: Level 50 PassiveWhile transformed into a void monstrosity your damage dealt is now also increased by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-1-9",
+      "kind": "structural",
+      "text": "Eldritch Force: Every 5th critical strike with abilities now transforms your next Gaze of C'Thun into Eldritch Force.Eldritch ForceGenerates 30 InsanitySend out a wave of force, dealing 631 + 76.26% SP + 12.5% AP Shadow damage to enemies in front of you and reducing their movement speed by -30% for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-4-9",
+      "kind": "structural",
+      "text": "Void Augmentation: While Dreadnought is active, your Twilight Shieldtoss has a -3 sec reduced cooldown.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/dreadnought:25-88-7-9",
+      "kind": "structural",
+      "text": "Embodiment of Y'shaarj: Increases the amount that Void Shield absorbs by 100%.Absorbing damage grants you 20% of the absorbed value as spell power for 8 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    }
+  ]
+}

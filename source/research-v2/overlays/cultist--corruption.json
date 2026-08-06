@@ -1,0 +1,972 @@
+{
+  "baseline": "cultist--corruption.json",
+  "set": {
+    "identity": {
+      "fantasy": "A mobile C'Thun affliction caster who carpets targets in Darkwither, grows an eye-and-beam network, and turns accumulated Insanity into escalating void pressure.",
+      "one_line": "Apply and preserve Darkwither, use periodic damage to accelerate Obliteration Beam and Gaze, then choose between controlled 60-Insanity pressure and a Wrath-heavy 100-Insanity state.",
+      "primary_family": "planners",
+      "also_fits": [
+        "sequencers"
+      ],
+      "playstyle_tags": [
+        "beam-ramp-dot-caster",
+        "insanity-caster",
+        "setup-caster"
+      ],
+      "claim_ids": [
+        "talent:cultist/corruption:25-65-4-0",
+        "talent:cultist/corruption:25-65-6-3",
+        "talent:cultist/corruption:25-65-7-2",
+        "talent:cultist/corruption:25-65-2-1",
+        "observed:cultist/corruption:leveling-transition",
+        "observed:cultist/corruption:pvp-spread-priority",
+        "inference:cultist/corruption:playstyle-identity"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "Open with Darkwither, establish Tentacle and C'Thun effects, fire Obliteration Beam and Gaze as the DoTs accelerate them, and use Psychic Suppression or Horrorbolt while refreshing rather than tunneling one target. Sanity Tap converts the resource back into mana when the danger window permits.",
+      "single_target": "The captured PvP sequence is Darkwither, Tentacle, Obliteration Beam, Gaze, then Psychic Suppression; longer PvE fights add refresh discipline and Wrath of the Black Empire decisions.",
+      "aoe": "Spread Darkwither, tab-refresh it, use Eldritch Devastation when enough enemies are grouped, and exploit beam and Gaze cooldowns. Multi-DoT pressure is the point rather than a single instant nuke.",
+      "movement_and_target_switching": "Many core spells can be applied while repositioning, but channels, hard-cast Wrath, and placed tentacles still punish abrupt target changes.",
+      "defense_and_control": "Grasp, fear, Void Shield, Corrupt Mind, Abyssal Ward, and Hallucination give a broad control and survival kit; it is strong only if woven between DoT refreshes.",
+      "group_utility": "Cultist fears, slows, healing denial, and pressure across several targets create disruption even before a kill.",
+      "failure_modes": [
+        {
+          "text": "Letting Darkwither expire breaks the periodic-damage engine that feeds beam pressure.",
+          "claim_ids": [
+            "inference:cultist/corruption:failure-cost",
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2"
+          ]
+        },
+        {
+          "text": "Accidentally reaching 100 Insanity can expose the caster before Wrath or defensive tools are ready.",
+          "claim_ids": [
+            "inference:cultist/corruption:failure-cost",
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2"
+          ]
+        },
+        {
+          "text": "Tunneling one target wastes the spec's ability to spread pressure and shorten cooldowns across a pack.",
+          "claim_ids": [
+            "inference:cultist/corruption:failure-cost",
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "talent:cultist/corruption:25-65-4-0",
+        "talent:cultist/corruption:25-65-6-3",
+        "talent:cultist/corruption:25-65-7-2",
+        "talent:cultist/corruption:25-65-2-1",
+        "talent:cultist/corruption:25-65-1-2",
+        "observed:cultist/corruption:leveling-transition",
+        "observed:cultist/corruption:pvp-spread-priority",
+        "observed:cultist/corruption:insanity-control",
+        "observed:cultist/corruption:build-practice",
+        "inference:cultist/corruption:playstyle-identity"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "A DoT caster whose rotation becomes more manageable after the earliest levels, but whose full beam and Insanity network is not yet present.",
+        "strengths": [
+          "Mobile damage application",
+          "Early control access"
+        ],
+        "cautions": [
+          "Ramp feels incomplete",
+          "Mana and Insanity habits are still forming"
+        ],
+        "claim_ids": [
+          "talent:cultist/corruption:25-65-4-0",
+          "talent:cultist/corruption:25-65-6-3",
+          "talent:cultist/corruption:25-65-7-2",
+          "talent:cultist/corruption:25-65-2-1",
+          "observed:cultist/corruption:leveling-transition",
+          "observed:cultist/corruption:pvp-spread-priority",
+          "observed:cultist/corruption:insanity-control",
+          "inference:cultist/corruption:playstyle-identity"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "Darkwither spread, Tentacle, Beam, Gaze, and Sanity Tap form a real multi-target pressure loop.",
+        "strengths": [
+          "Strong sustained pressure",
+          "Good kiting toolkit"
+        ],
+        "cautions": [
+          "Many effects to refresh",
+          "Burst is setup-dependent"
+        ],
+        "claim_ids": [
+          "talent:cultist/corruption:25-65-4-0",
+          "talent:cultist/corruption:25-65-6-3",
+          "talent:cultist/corruption:25-65-7-2",
+          "talent:cultist/corruption:25-65-2-1",
+          "observed:cultist/corruption:leveling-transition",
+          "observed:cultist/corruption:pvp-spread-priority",
+          "observed:cultist/corruption:insanity-control",
+          "inference:cultist/corruption:playstyle-identity"
+        ]
+      },
+      "level_50_60": {
+        "feel": "A mature affliction controller balancing DoT coverage, beam cadence, mana conversion, and whether to approach the dangerous Wrath state.",
+        "strengths": [
+          "Excellent multi-target pressure",
+          "Deep utility"
+        ],
+        "cautions": [
+          "High tracking load",
+          "Few current PvE optimization sources"
+        ],
+        "claim_ids": [
+          "talent:cultist/corruption:25-65-4-0",
+          "talent:cultist/corruption:25-65-6-3",
+          "talent:cultist/corruption:25-65-7-2",
+          "talent:cultist/corruption:25-65-2-1",
+          "observed:cultist/corruption:leveling-transition",
+          "observed:cultist/corruption:pvp-spread-priority",
+          "observed:cultist/corruption:insanity-control",
+          "inference:cultist/corruption:playstyle-identity"
+        ]
+      },
+      "boss": {
+        "feel": "Maintain the full periodic package and convert its ticks into repeated beam and eye payoffs without clipping refreshes.",
+        "strengths": [
+          "Durable-target ramp",
+          "Mobile maintenance"
+        ],
+        "cautions": [
+          "Short phases erase setup value",
+          "Resource mistakes compound over time"
+        ],
+        "claim_ids": [
+          "talent:cultist/corruption:25-65-4-0",
+          "talent:cultist/corruption:25-65-6-3",
+          "talent:cultist/corruption:25-65-7-2",
+          "talent:cultist/corruption:25-65-2-1",
+          "observed:cultist/corruption:leveling-transition",
+          "observed:cultist/corruption:pvp-spread-priority",
+          "observed:cultist/corruption:insanity-control",
+          "inference:cultist/corruption:playstyle-identity"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "Tag widely, stabilize Darkwither coverage, then channel or detonate only after the tank has settled the pack.",
+        "strengths": [
+          "Natural multi-target design",
+          "AoE fear and control"
+        ],
+        "cautions": [
+          "Fast packs may die during setup",
+          "Tab management is demanding"
+        ],
+        "claim_ids": [
+          "talent:cultist/corruption:25-65-4-0",
+          "talent:cultist/corruption:25-65-6-3",
+          "talent:cultist/corruption:25-65-7-2",
+          "talent:cultist/corruption:25-65-2-1",
+          "observed:cultist/corruption:leveling-transition",
+          "observed:cultist/corruption:pvp-spread-priority",
+          "observed:cultist/corruption:insanity-control",
+          "inference:cultist/corruption:playstyle-identity"
+        ]
+      },
+      "pvp": {
+        "feel": "A spread-pressure caster that kites with Grasp and fears while cycling Beam, Gaze, and Suppression across vulnerable targets.",
+        "strengths": [
+          "Strong disruption",
+          "Pressure survives target swaps"
+        ],
+        "cautions": [
+          "Channels invite interrupts",
+          "Plate does not remove caster burst vulnerability"
+        ],
+        "claim_ids": [
+          "talent:cultist/corruption:25-65-4-0",
+          "talent:cultist/corruption:25-65-6-3",
+          "talent:cultist/corruption:25-65-7-2",
+          "talent:cultist/corruption:25-65-2-1",
+          "observed:cultist/corruption:leveling-transition",
+          "observed:cultist/corruption:pvp-spread-priority",
+          "observed:cultist/corruption:insanity-control",
+          "inference:cultist/corruption:playstyle-identity"
+        ]
+      }
+    },
+    "complexity": {
+      "core_actions": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "The practical bar includes several DoTs, Beam, Gaze, Tentacle, a filler or suppression spell, Sanity Tap, and numerous control tools. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "The practical bar includes several DoTs, Beam, Gaze, Tentacle, a filler or suppression spell, Sanity Tap, and numerous control tools. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "The practical bar includes several DoTs, Beam, Gaze, Tentacle, a filler or suppression spell, Sanity Tap, and numerous control tools. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "The practical bar includes several DoTs, Beam, Gaze, Tentacle, a filler or suppression spell, Sanity Tap, and numerous control tools. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "The practical bar includes several DoTs, Beam, Gaze, Tentacle, a filler or suppression spell, Sanity Tap, and numerous control tools. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "The practical bar includes several DoTs, Beam, Gaze, Tentacle, a filler or suppression spell, Sanity Tap, and numerous control tools. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        }
+      },
+      "state_tracking": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Darkwither duration, multiple target coverage, Insanity, mana, beam cadence, and summoned effects are all live states. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Darkwither duration, multiple target coverage, Insanity, mana, beam cadence, and summoned effects are all live states. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Darkwither duration, multiple target coverage, Insanity, mana, beam cadence, and summoned effects are all live states. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "Darkwither duration, multiple target coverage, Insanity, mana, beam cadence, and summoned effects are all live states. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Darkwither duration, multiple target coverage, Insanity, mana, beam cadence, and summoned effects are all live states. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Darkwither duration, multiple target coverage, Insanity, mana, beam cadence, and summoned effects are all live states. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Damage ramps through DoT coverage and placed C'Thun effects before the beam or Wrath payoff arrives. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Damage ramps through DoT coverage and placed C'Thun effects before the beam or Wrath payoff arrives. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Damage ramps through DoT coverage and placed C'Thun effects before the beam or Wrath payoff arrives. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "Damage ramps through DoT coverage and placed C'Thun effects before the beam or Wrath payoff arrives. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Damage ramps through DoT coverage and placed C'Thun effects before the beam or Wrath payoff arrives. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Damage ramps through DoT coverage and placed C'Thun effects before the beam or Wrath payoff arrives. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Refresh timing, target count, interrupts, mana, and the safety of approaching 100 Insanity change the next action. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Refresh timing, target count, interrupts, mana, and the safety of approaching 100 Insanity change the next action. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Refresh timing, target count, interrupts, mana, and the safety of approaching 100 Insanity change the next action. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "Refresh timing, target count, interrupts, mana, and the safety of approaching 100 Insanity change the next action. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Refresh timing, target count, interrupts, mana, and the safety of approaching 100 Insanity change the next action. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Refresh timing, target count, interrupts, mana, and the safety of approaching 100 Insanity change the next action. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "The player must tab efficiently, preserve channels, and kite without allowing the periodic engine to collapse. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "The player must tab efficiently, preserve channels, and kite without allowing the periodic engine to collapse. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "The player must tab efficiently, preserve channels, and kite without allowing the periodic engine to collapse. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "The player must tab efficiently, preserve channels, and kite without allowing the periodic engine to collapse. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "The player must tab efficiently, preserve channels, and kite without allowing the periodic engine to collapse. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "The player must tab efficiently, preserve channels, and kite without allowing the periodic engine to collapse. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        }
+      },
+      "failure_cost": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Dropped DoTs or an uncontrolled Insanity transition delay both resource recovery and damage payoff. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Dropped DoTs or an uncontrolled Insanity transition delay both resource recovery and damage payoff. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Dropped DoTs or an uncontrolled Insanity transition delay both resource recovery and damage payoff. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "Dropped DoTs or an uncontrolled Insanity transition delay both resource recovery and damage payoff. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Dropped DoTs or an uncontrolled Insanity transition delay both resource recovery and damage payoff. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Dropped DoTs or an uncontrolled Insanity transition delay both resource recovery and damage payoff. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3",
+            "talent:cultist/corruption:25-65-7-2",
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You like multi-DoT pressure whose ticks accelerate larger eye and beam effects.",
+          "claim_ids": [
+            "inference:cultist/corruption:playstyle-identity",
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3"
+          ]
+        },
+        {
+          "text": "You want a caster with enough fears, slows, shields, and mana tools to make many small decisions.",
+          "claim_ids": [
+            "inference:cultist/corruption:playstyle-identity",
+            "talent:cultist/corruption:25-65-4-0",
+            "talent:cultist/corruption:25-65-6-3"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You want immediate burst on every new target.",
+          "claim_ids": [
+            "inference:cultist/corruption:failure-cost",
+            "observed:cultist/corruption:leveling-transition"
+          ]
+        },
+        {
+          "text": "You dislike tab-target upkeep, channels, or a second resource that can become dangerous.",
+          "claim_ids": [
+            "inference:cultist/corruption:failure-cost",
+            "observed:cultist/corruption:leveling-transition"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Players who enjoy Corruption emphasize its strong spread pressure, Cultist utility, and increasingly coherent loop after the earliest levels.",
+          "claim_ids": [
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "observed:cultist/corruption:build-practice"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Documentation is sparse, and the setup can feel clunky when targets die before Darkwither and beam interactions mature.",
+          "claim_ids": [
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "inference:cultist/corruption:failure-cost"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "PvP praise and the small PvE performance sample answer different questions; the profile does not treat either as a universal verdict.",
+          "claim_ids": [
+            "observed:cultist/corruption:leveling-transition",
+            "observed:cultist/corruption:pvp-spread-priority",
+            "observed:cultist/corruption:insanity-control",
+            "observed:cultist/corruption:performance-context"
+          ]
+        }
+      ]
+    },
+    "performance_signal_ids": [
+      "observed:cultist/corruption:performance-context"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "manual_recent_source_review",
+      "performance": "limited_uncontrolled",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium",
+      "gaps": [
+        "No current detailed PvE boss guide.",
+        "Exact beam cooldown acceleration and ideal Wrath cadence need live combat verification."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "A DoT caster whose rotation becomes more manageable after the earliest levels, but whose full beam and Insanity network is not yet present.",
+      "observed_changes": [
+        "Ramp feels incomplete",
+        "Mana and Insanity habits are still forming"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "A DoT caster whose rotation becomes more manageable after the earliest levels, but whose full beam and Insanity network is not yet present.",
+      "observed_changes": [
+        "Ramp feels incomplete",
+        "Mana and Insanity habits are still forming"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "Darkwither spread, Tentacle, Beam, Gaze, and Sanity Tap form a real multi-target pressure loop.",
+      "observed_changes": [
+        "Many effects to refresh",
+        "Burst is setup-dependent"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "Darkwither spread, Tentacle, Beam, Gaze, and Sanity Tap form a real multi-target pressure loop.",
+      "observed_changes": [
+        "Many effects to refresh",
+        "Burst is setup-dependent"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "A mature affliction controller balancing DoT coverage, beam cadence, mana conversion, and whether to approach the dangerous Wrath state.",
+      "observed_changes": [
+        "High tracking load",
+        "Few current PvE optimization sources"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:cultist/corruption:leveling-transition",
+      "kind": "observed",
+      "text": "A current player who used Corruption in beta says the rotation became more manageable after level 15, supporting a real early-level transition without establishing endgame strength.",
+      "source_ids": [
+        "reddit:cultist-dps-2026-07-08",
+        "reddit:cultist-heretic-2026-07-29",
+        "reddit:cultist-pvp-2026-08-01"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:cultist/corruption:pvp-spread-priority",
+      "kind": "observed",
+      "text": "The captured PvP and leveling guide recommends spreading Darkwither, refreshing across targets, then using Tentacle, Obliteration Beam, Gaze, and Psychic Suppression rather than tunneling one opponent.",
+      "source_ids": [
+        "reddit:cultist-dps-2026-07-08",
+        "reddit:cultist-heretic-2026-07-29",
+        "reddit:cultist-pvp-2026-08-01"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:cultist/corruption:insanity-control",
+      "kind": "observed",
+      "text": "The same guide aims for roughly 60 Insanity for a damage benefit, uses Sanity Tap for mana, and treats 100 Insanity plus Wrath of the Black Empire as a deliberate state rather than an accidental overflow.",
+      "source_ids": [
+        "reddit:cultist-dps-2026-07-08",
+        "reddit:cultist-heretic-2026-07-29",
+        "reddit:cultist-pvp-2026-08-01"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:cultist/corruption:build-practice",
+      "kind": "observed",
+      "text": "The captured Corruption PvP and leveling build supplies explicit single-target, spread-pressure, kiting, defensive, and Insanity-management priorities, but does not claim an optimized raid rotation.",
+      "source_ids": [
+        "buildhub-builds-2026-08-05",
+        "buildhub:c5d075a0-4f69-4476-b84f-246dc67d40fb"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "community_build_snapshot"
+        ],
+        "build_or_mode": [
+          "documented_build"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The guide documents one current way to play; it is not treated as proof of optimality."
+    },
+    {
+      "id": "observed:cultist/corruption:performance-context",
+      "kind": "observed",
+      "text": "The July compilation lists 3,500 DPS and the August inventory lists only 31 Mythic records, a particularly thin and uncontrolled sample.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "uncontrolled_performance_signals"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "low",
+      "conflicts_with": [],
+      "notes": "Do not convert this into a tier ranking."
+    },
+    {
+      "id": "inference:cultist/corruption:playstyle-identity",
+      "kind": "inference",
+      "text": "A mobile C'Thun affliction caster who carpets targets in Darkwither, grows an eye-and-beam network, and turns accumulated Insanity into escalating void pressure.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:cultist/corruption:25-65-4-0",
+        "talent:cultist/corruption:25-65-6-3",
+        "talent:cultist/corruption:25-65-7-2",
+        "talent:cultist/corruption:25-65-2-1",
+        "observed:cultist/corruption:leveling-transition",
+        "observed:cultist/corruption:pvp-spread-priority"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Descriptive playstyle classification, not an official label."
+    },
+    {
+      "id": "inference:cultist/corruption:failure-cost",
+      "kind": "inference",
+      "text": "Letting Darkwither expire breaks the periodic-damage engine that feeds beam pressure.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:cultist/corruption:25-65-4-0",
+        "talent:cultist/corruption:25-65-6-3",
+        "talent:cultist/corruption:25-65-7-2",
+        "talent:cultist/corruption:25-65-2-1",
+        "talent:cultist/corruption:25-65-1-2",
+        "observed:cultist/corruption:leveling-transition",
+        "observed:cultist/corruption:pvp-spread-priority",
+        "observed:cultist/corruption:insanity-control"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Direction is supported; exact throughput cost is not measured."
+    }
+  ]
+}

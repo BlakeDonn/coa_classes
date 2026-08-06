@@ -1,0 +1,3070 @@
+# Current CoA roster and talent-source digest
+
+Retrieved: 2026-08-06T02:38:59.764710+00:00
+
+> Source warning: CoA Build Hub is fan maintained. Treat these current tree and tooltip records as a research baseline, then cross-check material claims against recent player evidence and the game client.
+
+Coverage: 21 classes, 70 specializations.
+
+## Barbarian
+
+### Brutality (39 nodes)
+
+- Row 0: **Decapitate** (TE 1, 1 rank) | Attempt to decapitate an injured enemy, dealing 200% Weapon Damage plus 27, and converting each extra point of Energy to deal additional damage (up to a maximum cost of 100 Energy).Only usable on enemies below 35% health.
+- Row 0: **Excessive Power** (AE 0, 1 rank) | Level 10 PassiveIncreases your maximum Energy by 100%.
+- Row 1: **Beheader** (TE 1, 1 rank) | Scoring a kill blow with Decapitate now refunds 100% of your maximum Energy.
+- Row 2: **Reckless Movements** (TE 1, 1 rank) | Increases the damage of Ancestral Strike and Barbaric Whirl by 20%.
+- Row 2: **Killing Spree** (TE 1, 1 rank) | Charge at an enemy, dealing 25 + 30% AP Physical damage.Can only be used within 6 seconds of scoring a killing blow or applying Born in Blood.
+- Row 2: **Pure Power** (TE 1, 2 rank) | Increases the damage of Smash by 15% and your expertise by 5.
+- Row 2: **Relentless** (AE 0, 1 rank) | Level 20 PassiveCritical strikes with Ancestral Strike and Brutal Swing now refund 10 Energy.
+- Row 3: **Brutal Swing** (TE 1, 1 rank) | Your next attack causes you to swing violently at an enemy and up to 2 nearby enemies, dealing 120% Weapon Damage plus 10.
+- Row 3: **Overkill** (TE 1, 1 rank) | Increases the critical strike chance of Decapitate and Headhunter's Spear by 30% against targets below 20% health.
+- Row 3: **Crush** (TE 1, 1 rank) | Crush enemies in a frontal cone, dealing 250% Weapon Damage plus 30, knocking them down briefly and stunning them for 3 seconds.
+- Row 4: **Bloody Fighter** (TE 1, 2 rank) | Increases the critical strike chance of Brutal Swing and Smash by 5%.
+- Row 4: **Headlopper** (TE 1, 1 rank) | Your critical strikes with Decapitate now cause the enemy to bleed, dealing an additional 30% of the damage dealt over 5 seconds.
+- Row 4: **Spiked Weapons** (TE 1, 1 rank) | Increases the critical damage of Crush, Brutal Swing, and Decapitate by 20%.
+- Row 4: **Horde Breaker** (TE 1, 1 rank) | Your Crush now applies Wounded to enemies for 1 minute and is now guaranteed to critically strike enemies affected by Headbutt.Wounded (Proc)Increases Physical Damage taken by 4% for 1 minute.
+- Row 4: **Power Swings** (TE 1, 1 rank) | Reduces the cooldown of Crush by -5 sec.
+- Row 4: **Thirst for Battle** (AE 0, 1 rank) | Your Smash now regenerate 25% of your maximum Energy.
+- Row 5: **Rancor** (TE 1, 1 rank) | Your Brutal Swing now triggers an additional auto attack on the primary target.
+- Row 5: **Battering Ram** (TE 1, 2 rank) | Increases your Armor penetration by 10% while wielding a two-handed mace or axe.
+- Row 5: **Hail of Hammers** (TE 1, 1 rank) | Reduces the cast time of Crush by -25%.
+- Row 6: **Anger Issues** (TE 1, 1 rank) | Scoring a critical strike against an enemy now reduces the cooldown of Carnage by -4 sec.
+- Row 6: **Whirling Assault** (TE 1, 1 rank) | Increases the damage of Whirling Advance by 300% on enemies above 80% health.
+- Row 6: **Efficient Killer** (TE 1, 1 rank) | Reduces the Energy cost of your spells and abilities by -10%.
+- Row 6: **Mounting Fury** (TE 1, 1 rank) | Increases the duration of Born in Blood by 2 sec.
+- Row 6: **Savage** (TE 1, 1 rank) | Unbridled Rage now also increases your critical damage by 10%.
+- Row 6: **Ancestral Trauma** (TE 1, 1 rank) | Damage dealt by Ancestral Strike and Crush now scales with your Strength.
+- Row 6: **Ogre's Strength** (AE 0, 1 rank) | Level 40 PassiveIncreases your Strength by 25%.
+- Row 7: **Reckful** (TE 1, 2 rank) | Your Smash now has a 30% chance to not trigger a cooldown.
+- Row 7: **Incredibly Strong** (TE 1, 1 rank) | Removes the minimum range from Maiming Spear, but reduces its maximum range by -5 yds.
+- Row 7: **Giant Tosser** (TE 1, 1 rank) | Your Headhunter's Spear now generates 50% additional Energy when you strike an enemy that is at least 20 yds away.
+- Row 7: **Symbol of the Warspear** (TE 1, 1 rank) | You are marked by the Warspear symbol, granting 10% increased attack power to party and raid members. Does not stack with similar effects.In addition, reduces the cooldown of Spears by -2 sec.
+- Row 7: **Brutal Spirit** (TE 1, 1 rank) | Increases the effectiveness of your Spirit spells by 25%.
+- Row 7: **Crusher** (TE 1, 2 rank) | Melee auto attacks now have a 10% chance to reset the cooldown of Crush.
+- Row 8: **Maximum Carnage** (TE 1, 1 rank) | Casting Unbridled Rage now causes you to begin swinging your weapon around you dealing 47 + 25% AP Physical damage to up to 5 nearby enemies over 5 seconds.
+- Row 8: **Storm of Steel** (TE 1, 1 rank) | Begin striking your target every 1 sec for 80% Weapon Damage for 3 seconds.
+- Row 8: **Body Builder** (AE 0, 1 rank) | Level 50 PassiveIncreases your size by 5% and when your Strength is lower than your Agility your melee attack power is further increased by 75% of your Strength.
+- Row 9: **Steelslinger** (TE 1, 1 rank) | Reduces the cooldown of Barbaric Whirl by -2 sec and increases its damage dealt by 100% on enemies below 35% health.
+- Row 9: **Utter Devastation** (TE 1, 1 rank) | Increases the duration of Maximum Carnage by 1 sec and it now grants Utter Devastation for 6 seconds. Utter DevastationInstantly removes all movement impairing effects, increases your movement speed by 25%, and makes you immune to slows.Can be consumed by Decapitate or Crush to guarantee them to critically strike.
+- Row 9: **Steel Fury** (TE 1, 1 rank) | Dealing damage with Storm of Steel increases the damage of its subsequent strikes by 4%, stacking 10 times.In addition, the duration of Storm of Steel is increased by 2.5 sec.
+- Row 9: **Sustaining Swings** (TE 1, 1 rank) | Melee attacks now have an 8% chance to heal you for 10% of the damage dealt and cause your next Ancestral Strike to deal 50% increased damage.
+
+### Headhunting (38 nodes)
+
+- Row 0: **Berserker Axe** (TE 1, 1 rank) | Requires Enraged3 Charges, 8 sec rechargeHurl two axes at an enemy, each dealing 16 + 40% ranged AP Physical damage and reducing their armor by -4% for 20 seconds, stacking up to 5 times.
+- Row 0: **Headhunter** (AE 0, 1 rank) | Level 10 PassiveReduces the Energy cost of Throw Weapon, Maiming Spear, and Whirling Advance by -15.
+- Row 1: **You Want Axe?** (TE 1, 1 rank) | While enraged, casting Spears now refreshes 3 charges of Berserker Axe and your next 3 casts cost -50% less Energy. Lasts 12 seconds.
+- Row 2: **Barbed Spear** (TE 1, 1 rank) | Throw a heavy spear with precision at an enemy, dealing 160% Ranged Weapon Damage plus 37, and reducing their healing received by -30% for 10 seconds.
+- Row 2: **Gutspiller** (TE 1, 1 rank) | Launch a heavy axe at an enemy, causing them to bleed for 96 damage over 12 seconds.Every 6 sec the target has their Guts Spilled, causing them to bleed out for an additional 71 + 40% ranged AP damage.
+- Row 2: **Savage** (AE 0, 1 rank) | Level 20 PassiveBorn in Blood now also increases your damage dealt by 5% and its duration is increased by 3 sec.
+- Row 3: **Puncture Wounds** (TE 1, 1 rank) | Critical strikes with Spears now causes enemies to bleed for 633 + 16.5% ranged AP over 6 seconds.
+- Row 3: **Strong Arm** (TE 1, 1 rank) | Increases the damage of Spears by 15% and your hit chance by 3%.
+- Row 3: **Vital Spirit** (TE 1, 2 rank) | Increases the range of your Spirit spells by 10 yds.
+- Row 3: **Guts Splatter** (TE 1, 2 rank) | Your Gutspiller now allows your abilities to ignore 10% of the enemy's Armor.
+- Row 3: **Deep Fury** (TE 1, 1 rank) | Direct Physical damage dealt now reduces the cooldown of Unbridled Rage by -1 sec.
+- Row 4: **Headhunting** (TE 1, 1 rank) | Reduces the cast time of Throw Weapon by -20% and removes your spell pushback suffered from taking damage.
+- Row 4: **Axe Twirling** (TE 1, 1 rank) | Display mastery over throwing weapons for 10 seconds, causing Throw Weapon, Gutspiller, and Berserker Axe to strike 2 additional nearby enemies.
+- Row 4: **Entrails** (TE 1, 1 rank) | Damage dealt by bleed effects now increases your Agility by 1% for 8 seconds, stacking 10 times.
+- Row 4: **Spear Thrower** (AE 0, 1 rank) | Level 30 PassiveCasting Throw Weapon now has a 30% chance to reset the cooldown of your Spears.
+- Row 5: **Frothing Savage** (TE 1, 2 rank) | Increases the critical strike chance of Spears and Berserker Axe by 8% against bleeding targets.
+- Row 5: **Impaling Spear** (TE 1, 1 rank) | Hurl a spear in a 30 yd frontal line, dealing 131% Ranged Weapon Damage plus 23, dealing less damage with each enemy struck.At the spear's impact location the spear shatters, dealing 277 + 15% ranged AP Physical damage to nearby enemies.
+- Row 5: **Time To Kill!** (TE 1, 1 rank) | Reduces the cooldown of Axe Twirling by -15 sec.
+- Row 5: **Berserker Rush** (TE 1, 1 rank) | Charge an enemy dealing 31 + 35% ranged AP Physical damage and rooting them for 2 seconds, then leap backwards.
+- Row 5: **Gruesome** (TE 1, 2 rank) | Increases the damage of Throw Weapon, Gutspiller, and Guts Spilled by 10%.
+- Row 6: **Spear Shards** (TE 1, 1 rank) | Whenever you shatter your Impaling Spear, affected enemies bleed for 100% of the damage dealt over 3 seconds.
+- Row 6: **Furious Berserker** (TE 1, 1 rank) | Critical strikes with Barbed Spear now grants Born in Blood.Born in BloodBattle fuels your vitality, restoring 18 health and 12 Energy over 3 seconds.
+- Row 6: **Hunting for Sport** (TE 1, 1 rank) | While Unbridled Rage is active, your attacks now ignore 20% of the target's Armor.
+- Row 6: **Vengeance For Zul'jin** (TE 1, 1 rank) | Casting Berserker Rush now grants you Born in Blood.Born in BloodBattle fuels your vitality, restoring 18 health and 12 Energy over 3 seconds.
+- Row 6: **Bloody Fighter** (AE 0, 1 rank) | Level 40 PassiveBorn in Blood now stacks 1 additional time.
+- Row 7: **Legacy of the Amani** (TE 1, 1 rank) | Damage dealt by your Spears now has a 25% chance to cause you to quickly throw an additional spear that strikes for 40% of the damage dealt.
+- Row 7: **Raging Spirit** (TE 1, 1 rank) | Casting Unbridled Rage now grants you 30 Energy and it now also removes the Energy cost of your Spirit spells while active.
+- Row 7: **No Survivors** (TE 1, 1 rank) | Increases the duration of Axe Twirling, Maiming Spear, and Barbed Spear by 5 sec.
+- Row 7: **Manhunter** (TE 1, 1 rank) | Increases critical strike chance of all party and raid members by 3%. Does not stack with similar effects.In addition, increases your damage dealt by 10% against Humanoids.
+- Row 7: **To The Bone** (TE 1, 1 rank) | Increases the critical strike chance of Guts Spilled by 10% and it now applies Break to the target and critically striking with it will apply an additional stack.BreakBreak an enemy's defenses, reducing their armor by -4% for 20 seconds, stacking 5 times.
+- Row 8: **Skullseeker** (TE 1, 1 rank) | Increases your critical strike chance against enemies above 80% health by 25%.
+- Row 8: **Brutal Form** (TE 1, 1 rank) | Increases the tick rate of Born in Blood by -25%, allows its healing to scale with your Agility, and it can now critically heal you.
+- Row 8: **Berserker** (TE 1, 1 rank) | While enraged, your ranged critical strikes now grant you Berserker. Once applied it cannot be applied again.BerserkerYour ranged abilities have a 20% chance to unleash Berserker Throw, dealing 75% Ranged Weapon Damage. Lasts 15 seconds.While active, every offensive ranged ability used increases its chance to trigger by 2%.
+- Row 8: **Payback** (TE 1, 1 rank) | Increases the damage dealt by your Guts Spilled by 75%.
+- Row 8: **Power Tosser** (AE 0, 1 rank) | Level 50 PassiveDamage dealt by Throw Weapon now scales with your Agility.
+- Row 9: **Gurubashi Technique** (TE 1, 1 rank) | Casting Throw Weapon now has a 25% chance to transform your next cast of it within 8 seconds into Rapid Throw.Rapid ThrowThrow your ranged weapon 3 times in quick succession, each dealing 50% Ranged Weapon Damage plus 25 Physical damage. Grants Born in Blood. Scales with damage modifiers to Throw Weapon.
+- Row 9: **Sen'jin's Guidance** (TE 1, 1 rank) | Transforms your Throw Weapon into Javelin Toss and increases the critical strike chance of Javelin Toss by 5%.Javelin TossTake aim and hurl a javelin at an enemy dealing 160% Ranged Weapon Damage plus 241. Scales with damage modifiers to Throw Weapon and Spears. Usable while moving.
+- Row 9: **Spite** (TE 1, 1 rank) | Quickly unleash 3 Berserker Throws at your target and then fling yourself back a great distance, dealing 125% Ranged Weapon Damage, scaling with modifiers to Berserker Axe.
+
+### Ancestry (43 nodes)
+
+- Row 0: **Keg Smash** (AE 0, 1 rank) | Smash an enemy for 21 + 15% AP Physical damage, plus an additional 17 + 25% AP Frost damage to up to 5 nearby enemies.
+- Row 0: **Fill Level** (AE 0, 1 rank) | Level 10 PassiveGrants you Fill Level and the ability to manipulate a Tankard.Fill LevelYou have a magical Tankard that fills up over time, granting you 1 stack of Fill Level every 2 sec.Some of your other abilities empty your Tankard to trigger with a reduced cooldown.
+- Row 1: **Ancestor's Call** (TE 1, 1 rank) | Teaches you Ancestor's Call.Ancestor&#39;s Call (Troll)Call an Honored Ancestor to aid you in battle until dismissed that scales with your Agility and attack power.Whenever you use Barbaric Whirl or Whirling Advance, your Honored Ancestor mimics it.
+- Row 2: **Breath of The North** (TE 1, 1 rank) | Unleashes a frost breath, dealing 31 + 20% AP Frost damage to enemies in a 12 yd cone and slowing them by -30% for 5 seconds.Can only be used after emptying your Tankard.
+- Row 2: **Ale of The God-King** (TE 1, 1 rank) | Empower your Honored Ancestor's melee attacks to deal additional Frost damage scaling with your attack power. Lasts for 20 seconds or 10 attacks.This ability consumes Fill Level stacks and triggers a reduced cooldown based on stacks consumed.
+- Row 2: **Frozen Blades** (AE 0, 1 rank) | Critical strikes now grant party and raid members 5% critical strike chance for 8 seconds.Does not stack with similar effects.
+- Row 2: **Ancestral Wisdom** (AE 0, 1 rank) | Increases chance to hit with all spells and attacks by 1% for you and party and raid members.Does not stack with similar effects.
+- Row 3: **Frostbite** (TE 1, 1 rank) | Breath of The North now causes the target to bleed for an additional 30% of its damage over 6 seconds as Frost damage.
+- Row 3: **Ancestral Fury** (TE 1, 1 rank) | Emanate a powerful aura, granting 10% increased melee and ranged haste to party and raid members within 100 yds.Does not stack with similar effects.
+- Row 3: **Ancestral Combat** (TE 1, 1 rank) | Empower yourself, granting your Physical damage dealt a 25% chance to trigger an additional main hand attack as Frost damage on your target and grant a stack of Fill Level.Lasts until triggered 20 times.
+- Row 3: **Trip to the Alehouse** (TE 1, 2 rank) | Increases the damage of Keg Smash by 10% and its range by 3 yds.
+- Row 3: **Drinking Frenzy** (TE 1, 1 rank) | Your melee attacks now have a 15% chance to grant a stack of Fill Level.In addition, your chance to hit is increased by 5%.
+- Row 4: **Frost Giant's Fury** (TE 1, 1 rank) | Casting Breath of the North now grants you 10% melee attack speed, plus an additional 20% when using a two-handed weapon, for 8 seconds.
+- Row 4: **Frozen Tankard** (TE 1, 1 rank) | Throw one of your extra tankards at an enemy, dealing 107 Frost damage and stunning them for 4 seconds. Stunned enemies are considered Frozen.
+- Row 4: **Improved Ancestral Combat** (TE 1, 3 rank) | Reduces the Energy cost of your Ancestral Combat by -10 and allows it to trigger 3 additional times.
+- Row 4: **Cheers!** (TE 1, 1 rank) | Designate an ally as your drinking partner for 30 minutes, reducing all damage they take by -5%, and causing 10% of all damage they take to be redirected to you.You can only have 1 ally designated at a time.
+- Row 4: **The Finest Ale** (TE 1, 1 rank) | Your Ale of The God-King no longer empties your Tankard.
+- Row 4: **Crystal Enhancements** (AE 0, 1 rank) | You now emanate an aura around you, increasing the Armor of party and raid members by 390.Does not stack with similar effects.
+- Row 4: **Uniting Voice** (AE 0, 1 rank) | Casting Ancestral Roar now increases haste of party and raid members by 5% for 20 seconds.Does not stack with similar effects.Critical strikes extend the duration of the buff by 1 sec.
+- Row 5: **Icebound Ancestry** (TE 1, 1 rank) | Increases the critical strike chance of Breath of the North by 10%.In addition, your attacks now ignore Armor against Frozen targets.
+- Row 5: **Hodir's Revenge** (TE 1, 1 rank) | Enemies damaged by your Frozen Tankard now take 50% increased damage from you for 6 seconds.
+- Row 5: **Thane's Guard** (TE 1, 1 rank) | Gain the Shield proficiency and while wearing a shield you gain 40% increased attack speed and 100% increased Armor contribution from your shield.
+- Row 5: **Thane's Grip** (TE 1, 1 rank) | Allows you to wield a Two-Handed Axe, Mace, or Sword in each hand, but reduces your Physical Damage dealt by -8%.
+- Row 5: **Liquid Courage** (TE 1, 1 rank) | Each Fill Level stack now reduces your damage taken by -2%.
+- Row 5: **Breaking Morale** (TE 1, 1 rank) | Reduces the Energy cost of Break by -15.
+- Row 6: **Ice Cold Bubbles** (TE 1, 2 rank) | Each Fill Level stack now also increases Frost damage dealt by 2%.
+- Row 6: **Unified Rage** (TE 1, 1 rank) | Your Unbridled Rage now increases your chance to trigger Ancestral Combat by 25%.
+- Row 6: **Blind Stupor** (TE 1, 1 rank) | Damage dealt by Keg Smash now reduces enemies' casting speed by -30% for 15 seconds.
+- Row 6: **Splash Zone** (AE 0, 1 rank) | Share a drink from your Tankard with all party and raid members, granting 95 increased attack or spell power for 15 seconds.Does not stack with similar effects.
+- Row 6: **To The Bone** (AE 0, 1 rank) | Damage dealt by Breath of the North now reduces enemies' resistances by 75 and increases their Magic damage taken by -2% for 8 seconds.
+- Row 7: **Drunken Frenzy** (TE 1, 1 rank) | Unbridled Rage now increases your Honored Ancestor's Physical damage by 15% for 10 seconds.
+- Row 7: **Ancestor's Fury** (TE 1, 1 rank) | Unbridled Rage now also increases your Frost damage by 10%.
+- Row 7: **Cold Brew** (TE 1, 1 rank) | Critical strikes with Frost damage now generate a stack of Fill Level. Can only occur once per sec.
+- Row 7: **Ancestral Spirit** (TE 1, 2 rank) | Reduces the Energy cost of your Spirit spells and increases the duration of your Shouts by -50%.
+- Row 8: **The Spins** (TE 1, 1 rank) | Casting Keg Smash now causes your Honored Ancestor to perform an Ancestral Whirl attack upon nearby enemies.
+- Row 8: **Ramhorn Rage** (TE 1, 1 rank) | Enrage EffectEnrage party and raid members within 8 yds for 3 seconds, regenerating 2% of their maximum health every 2 sec. Melee auto attacks extend the duration of this effect by 2 sec, up to a maximum of 15 seconds.This ability empties your Tankard, consuming Fill Level stacks and triggering with a reduced cooldown based on stacks consumed.Barbaric Rage (Passive)While enraged, the global cooldown of Barbarian abilities is reduced by 30%.
+- Row 8: **War Cry** (TE 1, 1 rank) | Unleash a blood curdling war cry, increasing melee and ranged attack speed by 20%, and attack power by 150 of party and raid members within 25 yds for 20 seconds.Allies cannot benefit from this spell again for 5 minutes.
+- Row 8: **Clanlord's Totem** (AE 0, 1 rank) | Drop the Clanlord's Totem at the target location where it will remain for 15 seconds.The totem emanates an aura for 15 seconds, causing allied players within 100 yds to deal 35% AP additional damage as Frost damage when they deal direct damage and gain 50% increased honor.Applies Exhaustion, preventing you from benefiting from similar effects for 1 minute.
+- Row 8: **Tavern Brawl!** (AE 0, 1 rank) | Enrage all nearby allies, increasing their haste by 30% for 20 seconds.After being affected by this spell, allies cannot benefit from similar effects for 5 minutes.
+- Row 9: **Might of Utgarde** (TE 1, 1 rank) | Attacks from your Ancestral Combat now heal your Honored Ancestor for 5% maximum health and cause it to perform an Ancestral Whirl attack.
+- Row 9: **Rage of the North** (TE 1, 1 rank) | Increases the amount of attacks that can trigger your Ale of The God-King by 10.
+- Row 9: **Fury of the North** (TE 1, 1 rank) | Increases the duration of the enrage effect from your Ramhorn Rage by 6 sec and causes it to increase your movement speed by 40% for its duration.
+- Row 9: **Rally Behind Me!** (TE 1, 1 rank) | Increases the duration of Warband by 3 sec.In addition, your first use of Warband will incur no cooldown. Can only occur once every 1.5 min.
+
+## Witch Doctor
+
+### Voodoo (37 nodes)
+
+- Row 0: **Shadow Puppets** (TE 1, 1 rank) | Summon a Shadow Puppet that collects a Spirit and rushes towards your target, dealing 25 + 22% shadow SP Shadow damage, repeating every 1 sec for 3 seconds.
+- Row 0: **Puppeteer's Threads** (AE 0, 1 rank) | Level 10 PassiveDamaging abilities now leave behind Puppeteer's Threads on enemies for 10 seconds. Puppeteer’s Threads (Debuff)Damage taken from the Witch Doctor stores 10% of its value. When the effect ends the damage stored is dealt instantly.
+- Row 1: **Loa Spirits** (TE 1, 2 rank) | Damage dealt and healing done now has a 8% chance to collect a Spirit.In addition, each active Spirit now increases your Spirit by 2%.SpiritRegenerates 7 health and mana, repeating every 4 sec for 12 seconds, stacking 5 times.
+- Row 1: **Stranglethorn Style** (TE 1, 1 rank) | Increases your critical strike chance by 4% and reduces threat generated by your Voodoo spells by -20%.
+- Row 2: **Bad Juju** (TE 1, 1 rank) | Hurl a bolt of dark magic at an enemy, dealing 191 + 87.65% SP Shadow damage, scaling with your Spirit.If the target is affected by Hex of Malice it also reduces the target's healing received by -20% for 8 seconds.
+- Row 2: **Zalazane's Malice** (TE 1, 1 rank) | Increases the damage of Hex of Malice by 15% and the duration of Jinxes by 2 sec.
+- Row 2: **Hexfire** (TE 1, 1 rank) | Blast an enemy with hexfire, dealing cond(gt(SPFI, SPN), 60+0+SPFI*0.55, 60+0+SPN*0.55+SPI*0.5) Fire damage, scaling with your Spirit.
+- Row 2: **Voodoo Power** (AE 0, 1 rank) | Level 20 PassiveIncreases your spell damage by 50% of your Spirit and your spell hit rating by 5% of your Spirit.
+- Row 3: **Dark Magic** (TE 1, 1 rank) | Reduces the cast time of Malefic Wrath and Bad Juju by -0.3 sec.
+- Row 3: **Staff of the Coven** (TE 1, 3 rank) | Increases your Spirit by 8% and your hit chance by 2%.
+- Row 4: **Ritual Hexing** (TE 1, 2 rank) | Increases the damage of Bad Juju, Malefic Wrath and Hexfire by 10% against enemies affected by Hex of Malice.
+- Row 4: **Puppeteer's Grasp** (TE 1, 1 rank) | Transform into a malignant spirit for 30 seconds, allowing you to cast Malefic Wrath and Bad Juju while moving, and periodically granting you a Spirit every 2 sec.SpiritRegenerates 7 health and mana, repeating every 4 sec for 12 seconds, stacking 5 times.
+- Row 4: **Jin'do's Wrath** (TE 1, 1 rank) | Increases the critical strike chance and critical damage of Hexfire by 25%.
+- Row 4: **Overflowing Juju** (AE 0, 1 rank) | Level 30 PassiveDamage dealt by your Shadow Puppets and Puppeteer's Threads now has a 15% chance to reset the cooldown of Bad Juju and cause your next cast to incur an -8 sec reduced cooldown.
+- Row 5: **Overflowing Juju** (TE 1, 1 rank) | Increases the spell power scaling of Malefic Wrath, Shadowflare, and Bad Juju by 20%.
+- Row 5: **Growing Malice** (TE 1, 1 rank) | Each tick of Hex of Malice increases the damage of the next tick on the enemy by 3%, stacking 10 times.
+- Row 5: **Beware Da Voodoo** (TE 1, 2 rank) | Increases the duration of Mimic Ward and Spirits by 4 sec.
+- Row 5: **Hexplosion** (TE 1, 1 rank) | Your offensive critical strikes now increase your haste by 20% for 6 seconds.
+- Row 6: **Voodoo Strings** (TE 1, 1 rank) | When Bad Juju is used on enemies affected by Puppeteer's Threads, it strikes an additional time every 1 sec for 30% of the damage dealt over 3 seconds as Nature damage.
+- Row 6: **Malignant** (TE 1, 1 rank) | Damage dealt by Bad Juju and Hexfire now spreads Hex of Malice to up to 1 nearby enemy.
+- Row 6: **Voodoo Mind** (TE 1, 1 rank) | Shadow Puppets now ticks -10% faster and lasts 10% longer for each Spirit active on you.
+- Row 6: **It's Da Voodoo** (TE 1, 1 rank) | Increases the damage of Shadowflare by 0%.
+- Row 6: **Hollow Spirit** (TE 1, 1 rank) | Damage dealt by Shadowflare and Hexfire now increases the chance enemies are critically struck by 3% for 12 seconds.
+- Row 6: **Voodoo Spirits** (TE 1, 1 rank) | Hexfire now snaps your Puppeteer's Threads on your target, unleashing its damage on them instantly and collecting one Spirit.SpiritRegenerates 7 health and mana, repeating every 4 sec for 12 seconds, stacking 5 times.
+- Row 6: **Juju Spirits** (AE 0, 1 rank) | Level 40 PassiveIncreases your spell critical damage by 100% and increases the critical strike chance of Bad Juju by 5% for each active Spirit on you.
+- Row 7: **Voodoo Unleashed** (TE 1, 1 rank) | Your Mimic Wards now also cast Bad Juju and casting Bad Juju now reduces the cooldown of Shadow Puppets by -3 sec.
+- Row 7: **Prolonged Malice** (TE 1, 1 rank) | Increases the duration of your Hex of Malice by 6 sec and the range of your offensive Voodoo spells by 6 yds.
+- Row 7: **Malignant Jinx** (TE 1, 1 rank) | Curse an enemy for 8 seconds, causing their next spell cast to silence them for 5 sec.Can only have 1 Jinx active on a target at a time.
+- Row 7: **War Golem** (TE 1, 1 rank) | Summon a War Golem for 10 seconds, absorbing damage dealt to you based on your Intellect, and redirecting harmful spells cast on nearby allies to itself.
+- Row 7: **Dark Loa's Blessing** (TE 1, 1 rank) | Increases the all damage dealt by party and raid members by 3%. Does not stack with similar effects.In addition, your Shadow Puppets now deals damage -20% faster.
+- Row 8: **Voice of Bwonsamdi** (TE 1, 1 rank) | Let the spirit of Bwonsamdi possess you for 15 seconds.Dealing periodic damage unleashes a trapped voodoo spirit at enemies, exploding for 162 + 25% shadow SP Shadow damage.
+- Row 8: **Dark Effigy** (TE 1, 1 rank) | Your Bad Juju and Hexfire now strike 2 additional nearby enemies.Shadowflare now deals 50% increased damage to enemies affected by Puppeteer's Threads.Puppeteer’s Threads (Debuff)Damage taken from the Witch Doctor stores 10% of its value. When the effect ends the damage stored is dealt instantly.
+- Row 8: **Soul Marionette** (TE 1, 1 rank) | Root yourself for 8 sec and create 5 clones of yourself that channel on you, applying a stack of Soul Marionette.Soul Marionette (Stacks)Increases your haste by 1% per stack. At 20 stacks, you transform into a powerful spirit, increasing the damage of Malefic Wrath and Bad Juju by 30% and guaranteeing it to critically strike for 15 seconds.In addition, each Soul Marionette will explode, dealing 582 + 50% shadow SP Shadow Damage and stunning enemies within 5 yds for 4 seconds.
+- Row 8: **Hexfire Adept** (AE 0, 1 rank) | Level 50 PassiveCasting Hexfire transforms your next Malefic Wrath within 8 seconds into Hexfire Wrath.Hexfire WrathHurl hexfire energy at an enemy and up to 2 nearby enemies, dealing cond(gt(SPFI, SPN), 306+0+SPFI*0.75, 306+0+SPN*0.75) Fire damage and cursing them, dealing an additional cond(gt(SPFI, SPN), 239+0+SPFI*0.12, 239+0+SPN*0.12) over 9 seconds.Spawns a Serpent Ward for 10 seconds beneath your target. Scales with modifiers to Malefic Wrath.
+- Row 9: **The Price of Power** (TE 1, 1 rank) | Voice of Bwonsamdi now increases your Spirit by 100%.
+- Row 9: **De Other Side** (TE 1, 1 rank) | Damage dealt by Shadow Puppets now increases your damage and critical strike chance by 1% for 20 seconds, stacking up to 10 times.Additional procs do not refresh the duration.
+- Row 9: **Malicious Golems** (TE 1, 1 rank) | Summoning your War Golem now increases your spell haste by 30% for 20 seconds.In addition, periodic damage dealt by Hex of Malice and damage dealt by Shadow Puppets will reduce the cooldown of War Golem by -0.5 sec.
+
+### Brewing (41 nodes)
+
+- Row 0: **Ingredient: Jungle Shrooms** (AE 0, 1 rank) | Brew Jungle Shrooms into your Cauldron.Cauldron: Heal up to 8 allies within 30 yds for 34 + 15% healing every 8 sec.Potion Toss: Heal the target ally for -3.75 to -2.75 every 3 sec for 18 seconds.
+- Row 0: **Potion Toss** (AE 0, 1 rank) | Fill a potion from your Cauldron, and toss it at a friendly target, healing them for 108 + 40% healing + 10% Spirit.The effect of Potion Toss will change based on your active Ingredients.
+- Row 0: **Cauldron Brewer** (AE 0, 1 rank) | Level 10 PassiveYou may now prepare Ingredients into a Cauldron, crafting a brew. Nearby allies are buffed based on the active brew.Only 1 of each Ingredient can be active at a time.
+- Row 1: **Mixologist** (TE 1, 1 rank) | You can now add an additional Ingredient to your Cauldron, enhancing your brew.Teaches you Ingredient: Fish Oil.Ingredient: Fish OilBrew Fish Oil into your Cauldron.Cauldron: Increases the movement speed and swim speed of allies within 40 yds by 10%.Potion: Increases the target ally's movement speed by 20% and dodge chance by 5% for 8 seconds.
+- Row 2: **Potent Mixes** (TE 1, 2 rank) | Increases your healing done by 4% and reduces the threat generated by your spells by -15%.
+- Row 2: **Mojo Addiction** (TE 1, 2 rank) | Increases your maximum mana by 5%.
+- Row 2: **Brewmaster** (TE 1, 2 rank) | Reduces the cast time of Loa's Brew by 0.25 sec.
+- Row 2: **Spirit Healer** (AE 0, 1 rank) | Level 20 PassiveIncreases healing power by 25% of Spirit and increases spell critical strike chance by 10% of Spirit.
+- Row 3: **Presence of the Loa** (TE 1, 1 rank) | Increases your critical strike chance by 4%.
+- Row 3: **Splash Potion** (TE 1, 1 rank) | Fill a splash potion from your Cauldron, and toss it at a location, healing up to 8 allies for 54 + 22.45% healing + 8% Spirit.Potion effects from Ingredients used this way have reduced effectiveness.
+- Row 3: **Plentiful Potions** (TE 1, 1 rank) | Reduces the cost of your Loa's Brew and Hexbreak by -10%.
+- Row 4: **Ingredient: Frog Bones** (TE 1, 1 rank) | Brew Frog Bones into your Cauldron.Cauldron: Grants allies within 40 yds -3% reduced damage taken.Potion: Grants target ally an absorption shield, absorbing 50 + 35% Spirit damage, scaling with Spirit.
+- Row 4: **Potion Boss** (TE 1, 1 rank) | Increases the effectiveness of Potion Toss and your tossed Ingredients by 20%.
+- Row 4: **Splash On 'Em** (TE 1, 1 rank) | Effective healing done by Loa's Brew and Mojo Beam reduce the cooldown of Potion Toss and Splash Potion by -1 sec.
+- Row 4: **Ingredient: Bloodthistle** (TE 1, 1 rank) | Brew Bloodthistle into your Cauldron.Cauldron: Allies within 40 yds receive 8% increased healing.Potion: Causes target ally to leech 5% of all damage they deal for 15 seconds. Can only occur once every 0.5 sec.
+- Row 4: **Loa's Blessing** (AE 0, 1 rank) | Level 30 PassiveHealing done by Loa's Brew now applies a random empowerment to the target ally.
+- Row 5: **Fresh Ingredients** (TE 1, 2 rank) | Increases the healing of your Jungle Shrooms from your Cauldron by 15%.
+- Row 5: **Spirit Out Of The Bottle** (TE 1, 1 rank) | Casting Spirit in a Bottle now grants Spirit.SpiritRegenerates 7 health and mana, repeating every 4 sec for 12 seconds, stacking 5 times.@ifknown:500950:In addition, channeling Mojo Beam causes Spirit in a Bottle to affect 3 additional allies near the primary target.:ifknown@
+- Row 5: **Touch of the Spirits** (TE 1, 1 rank) | Damage dealt by Spirit In a Bottle causes the enemies to take 3% more damage and deal -3% less damage for 15 seconds.
+- Row 5: **Mojo Beam** (TE 1, 1 rank) | Bring mojo to an ally, healing for 174 + 18.5% SP every 1 sec for 4 seconds. While channeling, you can instantly cast Potion Toss, Splash Potion and Spirit in a Bottle at a 20% increased cost.
+- Row 5: **Mojo: Fish Bones** (TE 1, 1 rank) | Your Potion Toss and Splash Potion cooldown is reset, and the next use within 5 seconds now applies Fish Bones to affected allies.Instantly swaps your Ingredients to Fish Oil and Frog Bones.
+- Row 5: **Spice: Earthroot** (TE 1, 1 rank) | Infuse your Cauldron with Spice: Earthbloom.Increases effectiveness of all Cauldron effects and Ingredients by 30%.
+- Row 5: **Spice: Peacebloom** (TE 1, 1 rank) | Infuse your Cauldron with Spice: Peacebloom.Reduces the duration of roots, stuns, and snares against allies within 40 yds by -25%.
+- Row 6: **Mojo: Frog Shrooms** (TE 1, 1 rank) | Your Potion Toss and Splash Potion cooldown is reset, and the next use within 5 seconds now applies Frog Shrooms to affected allies.Instantly swaps your Ingredients to Jungle Shrooms and Frog Bones.
+- Row 6: **Jungle Secrets** (TE 1, 1 rank) | When you heal with Loa's Brew your Effigies will now heal an additional ally within 20 yds for 35% of the healing done, prioritizing allies with low health.
+- Row 6: **Rage Brew** (TE 1, 1 rank) | Throw your Rage Brew at an ally, regenerating 50% of their maximum Rage, Energy, and Focus. Increases their attack power and ranged attack power by 15% for 10 seconds.
+- Row 6: **Arcane Brew** (TE 1, 1 rank) | Throw your Arcane Brew at an ally, increasing their spell power and Spirit by 30 for 10 seconds.Spell power scales with caster level.
+- Row 6: **Mojo: Jungle Thistle** (TE 1, 1 rank) | Your Potion Toss and Splash Potion cooldown is reset, and the next use within 5 seconds now applies Jungle Thistle to affected allies.Instantly swaps your Ingredients to Jungle Shrooms and Bloodthistle.
+- Row 6: **Mojo Wave** (AE 0, 1 rank) | Level 40 PassiveHealing with Mojo Beam now heals up to 3 of the lowest health nearby allies within 20 yds for 75% of the healing done.
+- Row 7: **Jungle Booms** (TE 1, 1 rank) | Jungle Shrooms when used with Potion Toss and Splash Potion now ticks -0.5 sec faster.
+- Row 7: **Doctor of the Jungle** (TE 1, 1 rank) | Jungle Shrooms used from your Cauldron now ticks -3 sec faster.
+- Row 7: **Sen'jin's Presence** (TE 1, 1 rank) | Casting Potion Toss and Spirit in a Bottle now reduce the cast time of your next 2 Loa's Brews by -20% for 10 seconds.
+- Row 7: **Disciple of Sseratus** (TE 1, 1 rank) | Increases the bonus healing scaling of Loa's Brew and Spirit in a Bottle by 15%.
+- Row 7: **Base: Beast Blood** (TE 1, 1 rank) | Infuse your Cauldron with Beast Blood for 10 seconds, causing 15% of the direct Physical damage taken by party and raid members within 40 yds to instead be dealt over time.Only 1 Base can be active at a time.
+- Row 8: **Voodoo Cauldron** (TE 1, 1 rank) | Place down a Voodoo Cauldron for 15 seconds, increasing allies' healing received by 20% while near the cauldron.Allies within 15 yds are healed for 300 + 60% healing every 1.5 sec for 15 seconds.
+- Row 8: **Master of Concoctions** (TE 1, 1 rank) | Increases the duration of Ingredients by 20% and causes allies affected by Jungle Shrooms to heal for 5% of the damage they deal with their next 3 offensive abilities or spells for 15 seconds.
+- Row 8: **Base: Crystal Water** (TE 1, 1 rank) | Infuse your Cauldron with Crystal Water for 10 seconds, causing party and raid members within 40 yds to be shielded for 20% of their healing taken for 5 seconds.Only 1 Base can be active at a time.
+- Row 8: **It's Da Mojo** (AE 0, 1 rank) | Level 50 PassiveAllows your Mojo Beam to critically heal.
+- Row 9: **Unstable Concoction** (TE 1, 1 rank) | Potion Toss now applies Unstable Concoction to the target for 20 seconds. Using Loa's Brew or Spirit in a Bottle on the target will trigger an explosion of mojo around the target, healing nearby allies within 20 yds for 177 + 40% healing.
+- Row 9: **Master Mixologist** (TE 1, 1 rank) | For 10 seconds, the effectiveness of all Cauldron effects and Ingredients is increased by 100% and you can cast Spirit in a Bottle while moving.
+- Row 9: **Tiki Splash** (TE 1, 1 rank) | While a Base is active, Spirit in a Bottle will now transform into Tiki Splash.Tiki SplashSplash target location with healing waters, healing for 34 + 25% SP every 1 sec for 5 seconds. Gains a new effect based on your currently active Base. Scales with modifiers to Spirit in a Bottle.Beast Blood: Grants you 5% increased critical strike chance for 15 seconds, stacking 2 times.Crystal Water: Grants you a shield that absorbs 422 + 75% SP Magic damage for 15 seconds.
+
+### Shadowhunting (43 nodes)
+
+- Row 0: **Malefic Arrow** (AE 0, 1 rank) | Transforms your Malefic Wrath into Malefic Arrow.Malefic ArrowLaunch a voodoo arrow at an enemy, dealing 85% Ranged Weapon Damage plus 25 + 20% ranged AP + 25% nature SP as Nature damage, healing you equal to 40% of the damage dealt.
+- Row 0: **Reclamation** (AE 0, 1 rank) | Shoot a quick voodoo arrow at an enemy dealing 100% Ranged Weapon Damage plus 15 as Nature damage and collecting a Spirit.SpiritRegenerates 7 health and mana, repeating every 4 sec for 12 seconds, stacking 5 times.Usable while moving.
+- Row 0: **Shadowhunter** (AE 0, 1 rank) | Level 10 PassiveAllows you to auto shoot with a ranged weapon.In addition, reduces the mana cost of all spells and abilities by -25%.
+- Row 1: **Improved Malefic Arrow** (TE 1, 2 rank) | Reduces the cooldown of Malefic Arrow by -2 sec.
+- Row 1: **Loa's Strength** (TE 1, 2 rank) | Increases your Agility and your Nature and Shadow damage dealt by 3%.
+- Row 2: **Spirit Glaive** (TE 1, 1 rank) | Toss spectral glaives that strikes enemies it passes through, dealing 66 + 50% ranged AP + 50% shadow SP Shadow damage, and reducing their Shadow Resistance by 61 for 5 seconds.Usable while moving. Cast time scales with your Agility.
+- Row 2: **Spirit Eclipse** (TE 1, 1 rank) | Unleash your Spirits on an enemy, dealing 8 + 7% ranged AP + 12% shadow SP Shadow damage every 0 sec for each active Spirit.Each Spirit explodes on impact, dealing 71 + 6% shadow SP + 3.5% ranged AP Shadow damage to other nearby enemies within 5 yds of the target.
+- Row 2: **Loa Spirits** (AE 0, 1 rank) | Level 20 PassiveFor each active Spirit on you, you have an 5% chance for your Reclamation to cast an additional time.
+- Row 3: **Soul Feeder** (TE 1, 1 rank) | Increases the damage dealt by Malefic Arrow by 5% for each active Spirit on you.
+- Row 3: **Mojo High** (TE 1, 1 rank) | Your Mimic Ward now summons 1 additional Mimic Ward and its duration is increased by 3 sec.
+- Row 3: **Spiritual Devotee** (TE 1, 1 rank) | Collecting a Spirit now instantly restores 3% of your maximum mana.
+- Row 3: **Village Wisdom** (TE 1, 1 rank) | Increases your hit chance by 5% and the damage of Reclamation by 15%.
+- Row 4: **Vol'jin's Blessing** (TE 1, 1 rank) | While Shadow Avatar is active, the cooldown of Spirit Glaive is now reduced by 20% every 1 sec.
+- Row 4: **Call of Sseratus** (TE 1, 1 rank) | Summon 4 Serpent Wards near you for 15 seconds.Scales with modifiers to Serpent Ward.
+- Row 4: **Shadowstalker** (TE 1, 1 rank) | Disappear into darkness, entering an improved stealth mode, clearing all harmful effects, and increasing movement speed by 50% for 20 seconds.
+- Row 4: **Umbral Glaive** (AE 0, 1 rank) | Level 30 PassiveRanged attacks now have a 10% chance to transform Hex of Malice into Umbral Glaive for 10 seconds.Umbral Glaive (Damage)Throw a glaive that curses an enemy and up to 2 nearby enemies, leeching 3 + 10% ranged AP health, repeating every 1 sec for 6 seconds. Refreshes the duration of Hex of Malice.Scales with modifiers to Hex of Malice.Chance increased by your ranged critical strike rating.
+- Row 5: **The True Spirit** (TE 1, 1 rank) | Summoning a Serpent Ward or Spirit now increases the damage of your next Spirit Glaive or Spirit Eclipse by 6% for 10 seconds, stacking 5 times.
+- Row 5: **Godslayer** (TE 1, 1 rank) | Your Spirit Glaive now deals an additional 54 + 19% shadow SP + 14% ranged AP Shadow damage to up to 5 nearby enemies at the end of its duration.
+- Row 5: **Residual Energy** (TE 1, 1 rank) | At the end of Shadow Avatar's duration you become a Lesser Shadow Avatar.Lesser Shadow AvatarIncreases magic damage dealt by 10% and reduces the cooldown of Spirit Glaive by 20% every 1 sec. Lasts for 8 seconds.
+- Row 5: **Voodoo Fire** (TE 1, 2 rank) | Your Serpent Ward's attacks now have a 20% chance to shoot Voodoo Fire, dealing cond(gt(SPFI, SPN), 73*1+ranged AP*0.03+SPFI*0.12, 73*1+ranged AP*0.03+SPN*0.12) Fire damage to up to 3 nearby enemies.
+- Row 5: **Voodoo Hunger** (TE 1, 1 rank) | While Shadowstalker or Mirage is active, every 1 sec you now gain a stack of Voodoo Hunger.Voodoo HungerIncreases the damage of your next Malefic Arrow by 10%, stacking 10 times. Lasts 8 seconds.
+- Row 5: **Hex of Death** (TE 1, 1 rank) | Damage dealt by Malefic Arrow now reduces the targets healing received by -20% for 10 seconds, stacking 2 times.
+- Row 5: **Spirit Hunting** (TE 1, 1 rank) | Each active Spirit gives you a 15% chance when you cast Malefic Arrow to generate an additional Spirit.SpiritRegenerates 7 health and mana, repeating every 4 sec for 12 seconds, stacking 5 times.
+- Row 6: **Dark Loa's Incantation** (TE 1, 1 rank) | Dealing damage with Shadowflare now applies Hex of Malice if it strikes at least 3 enemies.Hex of MaliceCurse an enemy, dealing 5 + 8% shadow SP + 10% ranged AP Shadow damage and an additional 96 Shadow damage over 24 seconds.
+- Row 6: **Darkspear Traditionalist** (TE 1, 1 rank) | Emanate a powerful aura, granting 10% increased melee and ranged haste to party and raid members. Does not stack with similar effects.Periodic damage dealt by Hex of Malice now has a 20% chance to collect a Spirit.SpiritRegenerates 7 health and mana, repeating every 4 sec for 12 seconds, stacking 5 times.
+- Row 6: **Spirit Striker** (TE 1, 1 rank) | Increases the proc chance of Voodoo Fire by 10%.
+- Row 6: **Hexfire Mass** (TE 1, 1 rank) | Damage dealt by Hex of Malice now has a 30% chance to summon a Serpent Ward on top of your enemy for 10 seconds to aid you in combat.Can only occur once every 3 sec.
+- Row 6: **Strength of Da Loa** (TE 1, 1 rank) | Increases the attack power of party and raid members by 5%.Does not stack with similar effects.In addition, health and mana restoration provided by your Spirits now occurs -50% more often.
+- Row 6: **Spirit Shock** (TE 1, 1 rank) | Shock an enemy's spirit, silencing them for 4 seconds and interrupting non-player spellcasting for 4 seconds.
+- Row 6: **Sen'jin's Apprentice** (AE 0, 1 rank) | Level 40 PassiveIncreases your ranged attack power by 100% of your Intellect and your ranged attack power and spell power by 25% of your Agility.
+- Row 7: **Dambala's Lethality** (TE 1, 1 rank) | After using Spirit Eclipse, the damage of your next Shadowflare within 15 seconds is increased by 50%.
+- Row 7: **Bwonsamdi's Edge** (TE 1, 1 rank) | Your Spirit Eclipse now deals 40% increased damage when it explodes on impact.
+- Row 7: **Eye of Kimbul** (TE 1, 1 rank) | Critical strikes now apply Eye of Kimbul to enemies for 15 seconds.Eye of KimbulIncreases damage dealt and critical strike chance against this target by 1%, stacking 5 times.While affected, enemies cannot stealth or turn invisible.
+- Row 7: **Berserking** (TE 1, 1 rank) | Periodic damage dealt now has a 25% chance to increase the haste of your Serpent Wards by 3% for 15 seconds, stacking up to 3 times.
+- Row 7: **Shadow Enchantments** (TE 1, 2 rank) | Increases the duration and effectiveness of your Jinxes by 25%.
+- Row 8: **Fool's Play** (TE 1, 1 rank) | Target an enemy and summon a copy of them for 20 seconds that attacks them and replicates their spells back on them.
+- Row 8: **Serpent Handler** (TE 1, 1 rank) | Increases the cooldown of Call of Sseratus by 5 sec, but increases the amount of Serpent Wards summoned by it by 2.
+- Row 8: **Viper Ward** (TE 1, 1 rank) | Transforms Call of Sseratus into Viper Ward.Viper WardSummons a powerful and fast-attacking Viper Ward at target location for 20 seconds.Viper Wards have a 50% chance to unleash a Hexfire Blast, dealing 216 + 15% ranged AP Fire damage to an enemy.Chance increased based on your ranged critical strike rating.
+- Row 8: **Serpent's Guile** (TE 1, 1 rank) | Your Malefic Arrow now deals an additional 15% of its damage dealt every 1 sec for 4 seconds as Nature damage.
+- Row 8: **Spirit Volley** (AE 0, 1 rank) | Level 50 PassiveCasting Reclamation and Malefic Arrow now has a 30% chance to transform your next Reclamation into Spirit Volley for 6 seconds.Spirit VolleyLaunch a spirit volley at your enemy, dealing 540 + 28.5% ranged AP Shadow damage to them and up to 3 enemies within 8 yds and collects a Spirit.Reduces the cooldown of Spirit Glaive by -3 sec.Scales with modifiers to Reclamation.
+- Row 9: **A Price To Pay** (TE 1, 1 rank) | Casting Spirit Eclipse with 5 Spirits now resets the cooldown of Spirit Glaive and causes your next cast within 8 seconds to be guaranteed to critically strike.Spirit Glaives used in this way will reduce the cooldown of Shadowstalker by -15 sec.
+- Row 9: **Frenzied Spirits** (TE 1, 1 rank) | Consumes your Spirits to increase your ranged critical strike rating by 10, critical damage by 5%, and causing you to heal for 2% of all damage dealt for each Spirit consumed.In addition, you gain 1 Spirit every 1 sec while active.Lasts for 3 sec per Spirit consumed.
+- Row 9: **Bwonsamdi's Gift** (TE 1, 1 rank) | While Mimic Ward is active, you now gain 15% increased ranged haste and your Reclamation transforms into Spirit Volley. Each Spirit now increases the damage of Spirit Volley by 3%.In addition, direct ranged abilty damage dealt now reduces the cooldown of Mimic Ward by -0.5 sec.
+
+## Felsworn
+
+### Slayer (39 nodes)
+
+- Row 0: **Azzinoth's Assault** (TE 1, 1 rank) | Consumes 2 FelfuryStrike an enemy for Weapon Damage plus 15 + 10% AP with both weapons, additionally scaling with your attack power.
+- Row 0: **Dancing Blades** (AE 0, 1 rank) | Level 10 PassiveCritical strikes with melee abilities now trigger Dancing Blades, dealing off-hand Weapon Damage to up to 5 nearby enemies.
+- Row 1: **Slice & Dice** (TE 1, 2 rank) | Increases your off-hand weapon damage by 25% and reduces the Energy cost of Twin Slice by -5.
+- Row 2: **Annihilan Strike** (TE 1, 1 rank) | Generates 2 FelfuryUnleash a devastating attack, dealing 145% Weapon Damage to your target with both weapons.This ability is guaranteed to critically strike against enemies above 75% health.
+- Row 2: **Immolation Aura** (TE 1, 1 rank) | Wreathe yourself in fire for up to 1 minute, dealing 23 + 30% fire SP + 23% AP Fire Damage to nearby enemies every 3 sec.
+- Row 2: **True Self** (AE 0, 1 rank) | Level 20 PassiveYour Inner Demon now grants 10% increased dodge chance and critical damage dealt while active.
+- Row 3: **Twin Fury** (TE 1, 1 rank) | Critically striking with Twin Slice or Annihilan Strike now generates an additional 1 Felfury.
+- Row 3: **Azzinoth's Rage** (TE 1, 3 rank) | Increases your Armor penetration by 10% and your expertise by 4.
+- Row 3: **Chaos Soldier** (TE 1, 1 rank) | Increases the critical strike chance of Azzinoth's Assault and Sargeron Smite by 5%.
+- Row 4: **Legionfall** (TE 1, 1 rank) | Melee ability damage now has a 15% chance to reset the cooldown of Annihilan Strike.
+- Row 4: **Scars of Suffering** (TE 1, 1 rank) | Casting Azzinoth's Assault now scars the enemy, increasing your allies' attack power against them by 15% Agility for 10 seconds.
+- Row 4: **Fel Blades** (TE 1, 1 rank) | Damage dealt by Azzinoth's Assault now reduces the enemy's armor by -4% for 10 seconds, stacking 5 times.
+- Row 4: **Pit Lord's Strength** (TE 1, 2 rank) | Your Annihilation now affects 1 additional attack.
+- Row 4: **Burning Rage** (TE 1, 1 rank) | Increases the damage and reduces the cost of Sunder and Immolation Aura by 20%.
+- Row 4: **Unbound** (AE 0, 1 rank) | Level 30 PassiveIncreases your dodge by 15% of your Agility and your hit rating by 6% of your Agility.
+- Row 5: **Spite** (TE 1, 2 rank) | Increases your Agility by 8% and dodge chance by 3%.
+- Row 5: **Felhoof Charge** (TE 1, 1 rank) | Generates 1 FelfuryCharge an enemy, dealing 60 + 28.5% AP Physical damage.
+- Row 5: **You Cheat, Gul'dan!** (TE 1, 1 rank) | Increases your critical damage by 50% against enemies above 75% health.
+- Row 5: **Nether Champion** (TE 1, 1 rank) | Triggering Dancing Blades now increases the damage of next Sargeron Smite by 8% for 20 seconds, stacking 5 times.
+- Row 5: **Demonic Machinations** (TE 1, 1 rank) | Critical strikes with Sargeron Smite now cause the target to bleed for an additional 50% of the damage dealt over 5 seconds.
+- Row 5: **Consumed By Fel** (TE 1, 1 rank) | Increases the tick rate of Immolation Aura by -25%.
+- Row 6: **A Thousand Cuts** (TE 1, 1 rank) | Azzinoth's Assault now has a 30% chance to hit an additional time with your main-hand Weapon.
+- Row 6: **Scars of the Past** (TE 1, 1 rank) | Reduces the Energy cost of Chaos Rush by -5 and casting Chaos Rush now heals you for 81 + 20% Stamina + 33% AP.
+- Row 6: **Blighted Strikes** (TE 1, 1 rank) | While Inner Demon is active your melee attacks reduce the target's healing received by -20% for 8 seconds, stacking 2 times.
+- Row 6: **Fury Unleashed** (TE 1, 1 rank) | Spin your glaives for 5 seconds, increasing movement speed by 30% and dealing 200% Weapon Damage every 1 sec with both weapons to all nearby enemies.You are immune to movement impairing and loss of control effects.
+- Row 6: **Chaotic** (AE 0, 1 rank) | Level 40 PassiveWhile Inner Demon is active, direct melee ability critical strikes now refund 3 Energy.
+- Row 7: **Fel Instincts** (TE 1, 1 rank) | Increases the damage of Azzinoth's Assault by 10% and causes it to increase your melee haste by 20% for 5 seconds.
+- Row 7: **Reckless Assault** (TE 1, 1 rank) | Increases the damage of Azzinoth's Assault, Annihilan Strike, and Twin Slice by 15% against slowed enemies.
+- Row 7: **Fel Haze** (TE 1, 1 rank) | While active, Blood of Mannoroth now also causes you to ignore all enemy Armor.
+- Row 7: **Felguard** (TE 1, 1 rank) | Emanate a powerful aura, granting 10% increased melee and ranged haste to party and raid members within 100 yds. Does not stack with similar effects.In addition, while Inner Demon is active, you now heal for 15% of all melee damage dealt.
+- Row 7: **Perpetual Fury** (TE 1, 1 rank) | Dealing damage with Dancing Blades reduces the cooldown of Fury Unleashed by -1 sec.
+- Row 7: **Glaiving** (TE 1, 1 rank) | Increases the damage dealt and reduces the Energy cost of Fury Unleashed by 50%.
+- Row 8: **Reachwalker** (TE 1, 1 rank) | Casting Chaos Rush now reduces the cooldown of Felhoof Charge by -2 sec.
+- Row 8: **Azzinoth's Battery** (TE 1, 1 rank) | Your Azzinoth's Assault now has a 30% chance to not consume Felfury.
+- Row 8: **Oblivion** (TE 1, 1 rank) | Critically striking now increases your damage dealt by 1% for 4 seconds, stacking 10 times.
+- Row 8: **Felcaked Blades** (AE 0, 1 rank) | Level 50 PassiveTwin Slice and Sargeron Smite now additionally scale with your Agility.
+- Row 9: **Pit Lord's Rage** (TE 1, 1 rank) | Casting Chaos Rush now increases your Physical damage by 15% for 10 seconds.Casting Felhoof Charge increases your critical strike chance by 6% for 15 seconds.
+- Row 9: **Fury of the Illidari** (TE 1, 1 rank) | 2 Charges, 1.5 min rechargeMove quickly from enemy to enemy, attacking them every 1 sec with both weapons until 6 assaults are made, generating 1 Felfury with each strike. While active you are immune to crowd control effects.Can hit the same target multiple times. Cannot hit invisible or stealthed targets.
+- Row 9: **Whirling Vengeance** (TE 1, 1 rank) | Reduces the cooldown of Fury Unleashed by -60 sec. When Fury Unleashed ends, you strike all nearby enemies for 757 + 56.14% AP Shadowflame Damage and increase their damage taken from Sunder by 100% for 15 seconds.
+
+### Infernal (39 nodes)
+
+- Row 0: **Ruin** (TE 1, 1 rank) | Consumes 2 FelfuryBring doom upon an enemy, dealing cond(gt(SPFI, SPS), 116+0+SPFI*1, 116+0+SPS*1.32) Shadowflame Damage to an enemy, piercing all absorption effects.Inner Demon: Deals an additional 30% of the damage dealt over 3 seconds.
+- Row 0: **Fel Apprentice** (AE 0, 1 rank) | Level 10 PassiveWhile Inner Demon is active, your Fel Fireball will now unleash a Felstrike on your target.FelstrikeBurn an enemy for 54 + 30% SP Shadowflame Damage over 6 seconds, stacking 3 times.
+- Row 1: **Dark Magician** (TE 1, 1 rank) | While Inner Demon is active, casting Ruin, Sunder, or Felwrath now refunds 20 Energy.
+- Row 1: **Wrath of Sargeras** (TE 1, 2 rank) | Increases your Magic damage dealt by 3% and your spell hit chance by 2%.
+- Row 2: **Bane of Chaos** (TE 1, 1 rank) | Generates 1 FelfuryUnleash fel magic on an enemy, dealing 114 Chaos damage over 18 seconds.Inner Demon: The enemy takes an additional 13 + 100% SP Chaos Damage every 6 sec.Can only have 1 Bane active on a target at a time.
+- Row 2: **Felfire Adept** (TE 1, 2 rank) | Increases the critical strike chance of Sargeron Smite by 10%.
+- Row 2: **Gul'dan's Prodigy** (TE 1, 1 rank) | Reduces Energy cost and cast time of Fel Fireball by -15%.
+- Row 2: **Hidden Power** (AE 0, 1 rank) | Level 20 PassiveIncreases your spell damage by 15% of your Intellect and Spirit.In addition, Inner Demon now increases your spell damage and critical strike chance by an additional 20% of your Spirit.
+- Row 3: **Felforged** (TE 1, 1 rank) | Periodic damage dealt now has a 15% chance to grant you Felforged for 8 seconds.Felforged (Proc)Your next 3 Fel Fireballs have -30% reduced casting speed for 8 seconds.
+- Row 3: **Fel Cannon** (TE 1, 1 rank) | Increases the critical strike chance of Fel Fireball and Ruin by 15% on enemies above 75% health.
+- Row 3: **Felwrath** (TE 1, 1 rank) | Consumes 2 FelfuryBlast an enemy and all enemies near them with fel magic, dealing 69 + 40% SP Shadowflame Damage.Inner Demon: Striking at least 5 enemies with this spell causes it to deal an additional 108 + 10% SP Shadowflame Damage over 6 seconds, stacking 3 times.
+- Row 4: **Withering** (TE 1, 1 rank) | Your Fel Fireballs used with Felforged active now deal 30% increased damage.
+- Row 4: **Black Magic** (TE 1, 2 rank) | Increases the damage of your Bane of Chaos and Ruin by 10%.
+- Row 4: **Cursed Flames** (TE 1, 1 rank) | Critically striking with Fel Fireball now increases the critical strike chance of your next Fel Fireball within 10 seconds by 20%.
+- Row 4: **Illidari Magi** (TE 1, 1 rank) | Your periodic damage now has a 20% chance to generate 1 Felfury.
+- Row 4: **Sculptor of Doom** (AE 0, 1 rank) | Landing 3 direct critical strikes now grants Sculptor of Doom.Sculptor of DoomYour next Ruin within 8 seconds is instant cast.
+- Row 5: **Felbreak** (TE 1, 1 rank) | Interrupt a spell from being cast, preventing the target from casting spells of that school for 3 seconds and draining mana from the target based on your Spirit.Usable while moving.
+- Row 5: **Shadow Magi** (TE 1, 1 rank) | Reduces the cooldown of Annihilation by -15 sec and Sunder by -4 sec.
+- Row 5: **Infernal** (TE 1, 1 rank) | Drop an infernal from the sky with grotesque magic, dealing 12 + 55% fire SP Fire damage to enemies in the radius, horrifying them for 4 seconds, and spawning an Infernal to fight by your side for 15 seconds.Inner Demon: Lasts 1 additional sec.
+- Row 6: **Illidari Smiter** (TE 1, 1 rank) | Critical strikes with Fel Fireball now generate 1 Felfury.
+- Row 6: **Herald of the Legion** (TE 1, 1 rank) | Damage dealt by Bane of Chaos now radiates fel energy around the enemy, dealing 50% of the damage dealt to up to 8 nearby enemies.
+- Row 6: **Fel Flamecasting** (TE 1, 1 rank) | Damage dealt by Sargeron Smite now spreads your Cripple to 2 nearby enemies.
+- Row 6: **The True Blessing** (TE 1, 1 rank) | Casting Annihilation now grants you Sculptor of Doom.Sculptor of DoomYour next Ruin within 8 seconds is instant cast.
+- Row 6: **Doomsayer** (TE 1, 1 rank) | Critical strikes with Sargeron Smite now refund 1 Felfury.In addition, Sargeron Smite now deals 25% increased damage to enemies above 75% of their maximum health.
+- Row 6: **Infernal Summoner** (TE 1, 1 rank) | Direct damage dealt now has a 5% chance to reset the cooldown of Infernal.
+- Row 6: **Oppressive Ruin** (TE 1, 1 rank) | Damage dealt by Ruin now absorbs the next 99 healing on the target based on rank, up to 226 at rank 7, for 8 sec.
+- Row 6: **Infernal Ruin** (TE 1, 1 rank) | Every 3rd Ruin or Felwrath now spawns an Infernal to fight by your side for 15 seconds.
+- Row 6: **Unphased** (AE 0, 1 rank) | Level 40 PassiveIncreases your spell penetration by 20, scaling with your level.In addition, reduces spell pushback suffered from damaging attacks by 50% while Inner Demon is active.
+- Row 7: **Curse of Argus** (TE 1, 1 rank) | Each time Bane of Chaos deals damage its damage is increased on the target by 1% for 6 seconds, stacking 20 times.
+- Row 7: **Felshock** (TE 1, 1 rank) | Direct critical strikes with Felfury spenders now extend the duration of Inner Demon by 1 sec and cause enemies struck to have a 3% increased chance to be hit by spells for 12 seconds.
+- Row 7: **Fel Infusion** (TE 1, 1 rank) | Increases critical strike chance of all party and raid members within 100 by 3%. Does not stack with similar effects.In addition, increases your critical strike chance by 3%.
+- Row 7: **Archimonde's Wrath** (TE 1, 1 rank) | Increases the critical strike chance of your Felfury spenders by 1% for every 10 points of Energy you have at the time of casting.
+- Row 8: **Infernal Doom** (TE 1, 1 rank) | Ruin now has a -25% chance not to consume Felfury.
+- Row 8: **Nether Spirit** (TE 1, 1 rank) | Increases your spell critical strike chance by 20% of your Spirit.
+- Row 8: **Chaotic Intuition** (TE 1, 1 rank) | Damage dealt by Felstrikes now extends the duration of Cripple on the target by 1 sec and grants you 1% increased spell critical damage for 6 seconds, stacking 10 times.
+- Row 8: **Man'ari Teachings** (AE 0, 1 rank) | Level 50 PassiveIncreases your critical damage dealt by 100%.
+- Row 9: **Sargeras Embrace** (TE 1, 1 rank) | Channel a beam of fel magic upon an enemy, slowing your target's movement speed by -60% for 5.5 seconds and dealing cond(gt(SPFI, SPS), 695+0+SPFI*0.85, 695+0+SPS*0.85) Shadowflame Damage at the end of the duration.For the duration, you may instant cast Fel Fireball and Ruin while channeling and they refund their cost.
+- Row 9: **Malice of Gul'dan** (TE 1, 1 rank) | Direct critical strikes now have a 60% chance to trigger a Felstrike and generate a Fragment of Malice.FelstrikeBurn an enemy for 54 + 30% SP Shadowflame Damage over 6 seconds, stacking 3 times.Fragment of MaliceRestores 5 Energy and increases your critical strike chance by 10% for 5 seconds.
+- Row 9: **Fury of Archimonde** (TE 1, 1 rank) | After generating 10 Felfury, your next Sargeron Smite within 15 seconds gains 50% increased critical strike chance and damage.
+
+### Tyrant (43 nodes)
+
+- Row 0: **Carve** (TE 1, 1 rank) | Consumes 2 FelfuryCharge up a powerful attack over 2.5 seconds. Upon ending the channel, slash in front of you, dealing increased Weapon Damage with both weapons based on how long you channel, dealing less damage with each target struck. Inner Demon: Reduces affected enemies melee and ranged haste by -20% for 8 seconds.
+- Row 0: **Burning Commander** (AE 0, 1 rank) | Level 10 PassiveAllows you to wield a Two-Handed Axe, Mace, or Sword in each hand and grants you additional Armor and magic resistance based on your dodge rating, but reducing your damage dealt by -10%.
+- Row 1: **Demonic Will** (TE 1, 1 rank) | Generates 1 FelfuryStrengthen your will, reducing Physical damage taken by -30% for 10 seconds.While active, direct damaging abilities heal you for 3% of your maximum health. Can only occur once every 0.5 sec.
+- Row 2: **Annihilan Rituals** (TE 1, 1 rank) | Fully channeling Carve now refunds 1 Felfury.
+- Row 2: **Quick Carving** (TE 1, 1 rank) | Carve now channels 1 sec faster.
+- Row 2: **Nether Disciple** (TE 1, 2 rank) | Increases your dodge and parry chance by 3%.
+- Row 2: **Demon Hide** (TE 1, 2 rank) | While Inner Demon is active, your Armor contribution from cloth and leather items is increased by 120%.
+- Row 2: **Hulking Demon** (AE 0, 1 rank) | Level 20 PassiveIncreases your attack power by 30% of your Stamina and your hit rating by 6% of your Agility.
+- Row 3: **Felrend** (TE 1, 1 rank) | Generates 1 FelfuryErupt in a whirlwind of felfury, striking all enemies within 6 yds with both weapons, dealing Weapon Damage plus 5.
+- Row 3: **Pure Hatred** (TE 1, 1 rank) | Your Hateforged Barrier now also scales with your dodge rating.
+- Row 3: **Burning Legionnaire** (TE 1, 1 rank) | Reduces the Energy cost of Twin Slice and Sunder by -10.
+- Row 4: **Outland Slaver** (TE 1, 2 rank) | Reduces the cost of your Felrend and Fel Fireball by -3 and increases their damage dealt by 15%.
+- Row 4: **Unholy Endurance** (TE 1, 1 rank) | Increases the damage and threat generated from Carve by 15%.
+- Row 4: **Battle Finesse** (TE 1, 1 rank) | While channeling Carve, your chance to dodge is now increased by 1% based on how long you channel, up to a maximum of 10%.
+- Row 4: **Felspill** (TE 1, 1 rank) | Generating Felfury now leeches 10% AP health from 3 nearby enemies within 6 yds, scaling with your attack power.
+- Row 4: **Infernal Constitution** (TE 1, 1 rank) | Increases your maximum health by 10% and increases your off-hand weapon damage by 30%.
+- Row 4: **Abyssal Conditioning** (TE 1, 1 rank) | Casting Felfury spenders now increases your Energy regeneration by 5% for 10 seconds, stacking up to 4 times.
+- Row 4: **Illidari Training** (TE 1, 1 rank) | Dodging an attack now generates 3 Energy.
+- Row 4: **Hellfire Carver** (AE 0, 1 rank) | Level 30 PassiveCasting Carve now makes your next Fel Fireball instant cast and causes it to strike 1 additional enemy near the primary target based on how long you channeled, up to a maximum of 10 enemies, dealing less damage with each target struck.
+- Row 5: **Vengeance** (TE 1, 1 rank) | Your Twin Slice and Felrend now have a 60% chance to generate 1 additional Felfury.
+- Row 5: **Bulwark of Azzinoth** (TE 1, 1 rank) | Inner Demon now also reduces your damage taken by -10%.
+- Row 5: **Burning Hatred** (TE 1, 1 rank) | Enrages you, instantly generating 6 Felfury and causing your melee damage to leech health to you equal to 50% of the damage dealt as Chaos damage for 15 seconds.
+- Row 5: **Betrayer** (TE 1, 1 rank) | Dodging attacks causes 40% off-hand Weapon Damage to attackers and enrages your party and raid members within 20 yds, increasing their critical strike chance by 2% for 10 seconds.
+- Row 5: **Tyrant's Gaze** (TE 1, 1 rank) | Set your fiery gaze upon an enemy and all enemies nearby, intimidating them and causing them to combust, dealing 220 + 35% AP Shadowflame Damage to them.Damaging an enemy in this way heals you for 146 + 50% AP and generates 1 Felfury.Only usable on enemies below 35% health.
+- Row 6: **Straight to the Nether** (TE 1, 1 rank) | While Inner Demon is active, Carve and Sargeron Smite now leeches 20% of the damage dealt from the initial strike as Shadowflame Damage.
+- Row 6: **Fel Torpedo** (TE 1, 1 rank) | Transforms your Chaos Rush into Fel Torpedo.Fel TorpedoGenerates 1 FelfuryTorpedo forward in the direction you're running and deal 195 + 35% AP Shadowflame Damage to enemies in your path.Generates a large amount of threat. Scales with modifiers to Chaos Rush
+- Row 6: **Illidan's Favor** (TE 1, 1 rank) | Removes the Energy cost of your Felbane and Manaburn and your Manaburn now strikes 4 additional enemies near the primary target.
+- Row 6: **Nether Strength** (TE 1, 1 rank) | Casting Felfury spenders now reduces the cooldown of Burning Hatred, Hateforged Barrier, and Demonic Will by -1 sec.
+- Row 6: **Demonic Blood** (TE 1, 1 rank) | Generating Felfury now extends the duration of Inner Demon by 0.5 sec.
+- Row 6: **Demonic Fortitude** (TE 1, 1 rank) | While Demonic Will or Hateforged Barrier are active, all damage taken or avoided now has a 20% chance to generate 1 Felfury.
+- Row 6: **Expose** (TE 1, 1 rank) | Direct Fire and Shadow spell damage dealt now applies Expose to enemies.Expose (Proc)Damage taken from the Felsworn increased by 10% and the critical strike chance of all allies against this target is increased by 3% for 8 seconds.
+- Row 6: **Felblade** (AE 0, 1 rank) | Level 40 PassiveDamage dealt by Fel Fireball, Sargeron Smite, and Twin Slice now additionally scales with your Agility.
+- Row 7: **Doomscarring** (TE 1, 1 rank) | Your melee critical strikes now deal an additional 1 + 30% AP Physical damage and scars enemies for 12 seconds, increasing your allies' attack power against them by 45 + 15% Agility.
+- Row 7: **Fel Daze** (TE 1, 1 rank) | Increases the critical strike chance of Fel Fireball by 10% and it's damage dealt now reduces the enemy's chance to hit by -3% for 6 seconds.
+- Row 7: **Dark Lord** (TE 1, 1 rank) | While above 75% health, your damage taken is reduced by -5% and damage dealt is increased by 5%.
+- Row 7: **Eye of the Tyrant** (TE 1, 1 rank) | Grant 10% increased melee and ranged haste to party and raid members within 100 yds. Does not stack with similar effects.In addition, your attack power is increased by 5%.
+- Row 8: **Vengeance Is Mine** (TE 1, 1 rank) | Dodging or parrying an attack now gives you a 10% chance to make your next 10 instances of damage with Twin Slice deal 30% increased damage and generate 1 Felfury.
+- Row 8: **Mannoroth's Rage** (TE 1, 1 rank) | Reduces the cooldown of Burning Hatred by -60 sec.
+- Row 8: **Infernal Whipcrack** (TE 1, 1 rank) | Enrage up to 8 allies within 20 yds, reducing their damage taken by -15% and increasing their haste by 10% for 10 seconds.
+- Row 8: **Fel Monstrosity** (AE 0, 1 rank) | Level 50 PassiveIncreases your Stamina by 25% and size by 10%.
+- Row 9: **Tyrannical Resolve** (TE 1, 1 rank) | Taunt nearby enemies for 4 seconds and ignore -50% of all damage taken for 30 seconds, up to 100% of your maximum health.When this ends, you unleash a Felfire Blast that leeches health from nearby enemies based on how many times you took damage with the effect active.
+- Row 9: **Grommash's Folly** (TE 1, 1 rank) | While Inner Demon is active, your melee haste is now increased by 15% and you now heal equal to 50% of all damage dealt by critical strikes with auto attacks.In addition, critical strikes with Carve deal 5% increased damage, increasing up to 60% with each strike based on how long you channel.
+- Row 9: **Taskmaster's Army** (TE 1, 1 rank) | Reduces the cooldown of Infernal Whipcrack by -30 sec and it now affects all allies and its radius is increased by 15 yds.
+
+## Witch Hunter
+
+### Boltslinger (39 nodes)
+
+- Row 0: **Witchbane** (TE 1, 1 rank) | Unleash a series of devastating shots dealing 60 + 45% ranged AP Physical damage over 3 seconds.
+- Row 0: **Boltslinger** (AE 0, 1 rank) | Level 10 PassiveYou may now cast Darkslayer while moving.Ranged attacks and abilities now have a 25% chance to shoot an additional shot, dealing 20% ranged AP Physical damage and generating 5 Rage.
+- Row 1: **Mechanized Crossbows** (TE 1, 1 rank) | Increases your ranged attack power by 10% and the range of your ranged abilities by 5 yds.
+- Row 1: **My Trusty Arbalest** (TE 1, 2 rank) | Reduces the Rage cost of Witchbane and Shadowblast by -10% and increases your chance to hit by 2%.
+- Row 2: **Heartseeking Bolt** (TE 1, 1 rank) | Charge up a powerful bolt that deals 200% Ranged Weapon Damage plus 40 + 50% ranged AP + 30% shadow SP to an enemy and reduces their healing received by -30% for 10 seconds.Generates Rage based on the damage dealt.
+- Row 2: **Kingdom Hearts** (AE 0, 1 rank) | Level 20 PassiveYour Heartseeking Bolt is now guaranteed to critically strike on enemies below 20% health and it now restores 10% of your maximum mana.
+- Row 3: **Damnation** (TE 1, 1 rank) | Deplete your rage to shoot a powerful bolt dealing 130% Weapon Damage plus 6 Twilight Damage and converting each point of Rage into additional damage.Only usable on enemies below 35% health.
+- Row 3: **Rapid Reload** (TE 1, 3 rank) | Increases your ranged haste by 8%.
+- Row 3: **Tormentor** (TE 1, 1 rank) | Fire a deadly bolt dealing cond(gt(SPS, SPH), 5+0+SPS*0.175, 5+0+SPH*0.175) Twilight Damage plus 63 + 87.5% ranged AP over 14 seconds.
+- Row 4: **Resourceful Pursuit** (TE 1, 1 rank) | Reduces the Rage cost of Tormentor and Damnation by -20%.
+- Row 4: **Witching Bolt** (TE 1, 1 rank) | Increases the critical strike chance of Damnation against Undead and Demons by 25%.
+- Row 4: **Neverending Pursuit** (TE 1, 1 rank) | Critically striking with Damnation now refunds 40 Rage.
+- Row 4: **One Shot** (TE 1, 1 rank) | Increases the critical strike chance of Heartseeking Bolt by 20%.
+- Row 4: **Bane of Witches** (TE 1, 1 rank) | Casting Heartseeking Bolt now increases your Physical damage dealt by 10% for 8 seconds.
+- Row 4: **Rapid** (TE 1, 1 rank) | Your Witchbane now deals its full damage over -1 second shorter period.
+- Row 4: **Relentless** (TE 1, 1 rank) | Allows Witchbane to hit an additional nearby enemy.
+- Row 4: **Strafing Shot** (TE 1, 1 rank) | Critical strikes with ranged abilities now spread Tormentor to a nearby enemy.
+- Row 4: **Arbalist** (AE 0, 1 rank) | Level 30 PassiveIncreases your attack power by 100% of your Intellect.
+- Row 5: **Daring Escape** (TE 1, 1 rank) | Jump backwards, causing all ranged attacks to miss you for 2 seconds.
+- Row 5: **Heartless** (TE 1, 2 rank) | Increases your Physical ranged critical damage by 15%.
+- Row 5: **Twilight Frenzy** (TE 1, 1 rank) | Spin around, unable to stop moving for 5 seconds, firing shots at nearby enemies for 50% Ranged Weapon Damage plus cond(gt(SPS, SPH), 15+31+SPS*0.2+ranged AP*0.1, 15+31+SPH*0.2+ranged AP*0.1) as Twilight Damage.Can dodge and parry while active.
+- Row 6: **Escape Artist** (TE 1, 1 rank) | Your Daring Escape now resets the cooldown of Vault and generates 10 Rage.
+- Row 6: **Bringing the Law** (TE 1, 1 rank) | Increases the critical strike chance of Shadowblast by 10%.
+- Row 6: **Enchanted Bolts** (TE 1, 1 rank) | Increases your Magic damage dealt by 5% and your Armor penetration by 10%.
+- Row 6: **Evasive** (TE 1, 1 rank) | Twilight Frenzy now grants you -20% reduced damage taken while active.
+- Row 6: **Crossbow Frenzy** (TE 1, 1 rank) | While Twilight Frenzy is active, your movement speed is now increased by 40%.
+- Row 6: **Slinging Bolts** (AE 0, 1 rank) | Level 40 PassiveDirect ranged damage dealt now has an 8% chance to grant you Slinging Bolts.Slinging Bolts (Proc)Your next Damnation is usable regardless of the target's current health. Lasts 20 seconds.Can only occur once every 5 sec.
+- Row 7: **Silver Bolts** (TE 1, 1 rank) | Damage dealt by Heartseeking Bolt and Damnation is increased by 15%, doubled against Undead or Demons or enemies affected by Shadow Trap.
+- Row 7: **Arbalest Mastery** (TE 1, 1 rank) | Each subsequent shot of a Witchbane cast deals 15% more damage, up to a maximum of 150%.
+- Row 7: **Slayer** (TE 1, 1 rank) | Increases critical strike chance of all party and raid members by 3%. Does not stack with similar effects.In addition, increases your critical strike chance by 3%.
+- Row 7: **Crossbow Expert** (TE 1, 2 rank) | Increases the damage of Shadowblast by 10% and Witchbane by 5%.
+- Row 8: **Contract Killing** (TE 1, 1 rank) | Increases damage dealt against enemies above 75% health and below 35% health by 15%.
+- Row 8: **Pavise Crossbowman** (TE 1, 1 rank) | Teaches you how to use Shields and teaches you Pavise.PaviseSlam your shield into the ground, forming a pavise for 10 sec.While you remain near it, hostile spells targeting you are deflected.
+- Row 8: **Bolt and Dash** (TE 1, 1 rank) | Your next Heartseeking Bolt within 10 seconds deals 25% more damage and incurs no cooldown.When this buff is consumed you gain 50% increased movement speed for 3 seconds.
+- Row 8: **Everything You Have** (TE 1, 1 rank) | Increases the duration of Twilight Frenzy by 5 sec, and gives damage dealt by it a 15% chance to strike again.
+- Row 8: **Tormenting the Tormented** (AE 0, 1 rank) | Level 50 PassiveYour Tormentor can now critically strike.
+- Row 9: **Bounty Hunter** (TE 1, 1 rank) | Casting Darkslayer or Witchbane now applies a stack of Bounty Hunter to you for 8 seconds, which can be consumed by casting Heartseeking Bolt to deal an additional 305 + 45% SP + 30% ranged AP Physical damage, stacking 2 times.
+- Row 9: **Dead and Gone** (TE 1, 1 rank) | Your Bolt and Dash now affects an additional use of a Heartseeking Bolt.Your Pavise now lasts 2 additional sec and has a -30 sec reduced cooldown.
+- Row 9: **Heavy Crossbows** (TE 1, 1 rank) | Increases the damage of Darkslayer by 50%, but increases its cast time by 0.5 sec.Your Heartseeking Bolt and Darkslayer now have a 25% chance to strike an additional time.
+
+### Houndmaster (38 nodes)
+
+- Row 0: **Unleash the Hounds** (TE 1, 1 rank) | Summon 1 Lesser Shadow Hound to aid you in combat for 20 seconds.
+- Row 0: **Houndmaster** (AE 0, 1 rank) | Level 10 PassiveYour ranged auto attacks now generate Rage.In addition, teaches you Houndmaster's Whistle.Houndmaster&#39;s WhistleSummons a permanent Shadowhound companion to aid you in combat.Your Shadowhound receives 25% of healing done to you.
+- Row 1: **Houndmaster's Call** (TE 1, 1 rank) | Command your Shadow Hounds to leap upon an enemy target, dealing two strikes for 1164 + 30% ranged AP Shadow damage.
+- Row 2: **Expert Shot** (TE 1, 2 rank) | Increases the damage of Shadowblast by 10% and your hit chance by 2%.
+- Row 2: **Shadow Rage** (TE 1, 1 rank) | Casting Shadowblast now grants Shadow Rage to your Shadow Hound.Shadow RageAuto attacks have a 50% chance to deal an additional 57*1+AP*0.07t Shadow Damage. Lasts 15 seconds.
+- Row 2: **Sharpshooter ** (AE 0, 1 rank) | Level 20 PassiveCasting Shadowblast now regenerates 5% of your maximum mana.
+- Row 3: **Quickdraw** (TE 1, 1 rank) | Unleash a quick shot, dealing 175% Ranged Weapon Damage plus 16 + 20% ranged AP Physical damage and generates Rage.Only usable after critically striking with an ability.
+- Row 3: **Trapper** (TE 1, 1 rank) | Reduces the cooldown of your Trap spells by -25%.
+- Row 3: **Expulsion of Evil** (TE 1, 1 rank) | Direct ranged attacks and abilities now have a 5% chance to reset the cooldown of Houndmaster's Call.
+- Row 3: **Dark Ranger** (TE 1, 2 rank) | Increases the Shadow damage dealt by your Shadow Hounds by 5%.
+- Row 4: **Pure Agony** (TE 1, 1 rank) | Increases the critical damage of Quickdraw by 50%.
+- Row 4: **Darkrider** (TE 1, 1 rank) | Reduces the Rage cost of Shadowblast, Vault, and Unleash the Hounds by -10.
+- Row 4: **Decimate** (TE 1, 1 rank) | Empowers your Shadow Hounds for 20 seconds, granting them 30% increased damage and haste and allowing them to ignore Armor.
+- Row 4: **Houndfeeder** (TE 1, 1 rank) | Increases the critical strike chance of you and your Shadow Hound by 4%.
+- Row 4: **Darkflock** (TE 1, 1 rank) | Channel for 8 seconds, commanding a flock of crows to deal 50 + 15% ranged AP + 85% SP Shadow damage to enemies in a wide cone every 2 sec.Can channel while moving.
+- Row 4: **Dark Mind** (AE 0, 1 rank) | Level 30 PassiveIncreases your critical strike rating by 25% of your Intellect.
+- Row 5: **Darkhunter** (TE 1, 1 rank) | Your Quickdraw now additionally causes your next Darkslayer within 15 seconds to be instant cast.
+- Row 5: **Reload** (TE 1, 1 rank) | Reduces the cooldown of Quickdraw by -4 sec.
+- Row 5: **Hail of Gunfire** (TE 1, 1 rank) | Increases your ranged haste by 10%.
+- Row 5: **Kennel Master** (TE 1, 2 rank) | Casting Unleash The Hounds now has a 25% chance to summon an additional Lesser Shadow Hound for 15 seconds.
+- Row 5: **Defender of Darkshire** (TE 1, 1 rank) | Critical strikes with ranged auto attacks now increase the melee haste of your Shadow Hounds by 10% for 5 seconds.
+- Row 5: **Anguish** (TE 1, 1 rank) | Your Shadow damage dealt now has a 5% chance to reduce the channel time of your next Darkflock within 15 seconds by -50%.
+- Row 6: **Repulse** (TE 1, 1 rank) | Emit a burst of shadow from your musket that strikes enemies in front of you, dealing 57 Shadow damage and knocking all affected targets back.
+- Row 6: **Houndmaster** (TE 1, 1 rank) | Using Houndmaster's Call summons 1 Lesser Shadow Hound for 15 seconds that leaps at the target and deals 217 Shadow damage.
+- Row 6: **Loksey's Journal** (TE 1, 1 rank) | Increases the damage of Shadow Rage by 20% of your ranged attack power.
+- Row 6: **Daredevil** (AE 0, 1 rank) | Level 40 PassiveWhen you take damage that would reduce your health to 35% or less, you summon 3 lesser Shadow Hounds and reset the cooldown of Vault.Can only occur once every 2 min.
+- Row 7: **Bringer of Darkness** (TE 1, 1 rank) | Your Repulse now resets the cooldown of Vault and makes your next Vault within 6 seconds free of cost.
+- Row 7: **Silver Bullets** (TE 1, 2 rank) | Increases the damage of Darkslayer by 10%, increased by an additional 10% against Undead.
+- Row 7: **Veiled in Darkness** (TE 1, 1 rank) | A veil of dark magic encircles you at all times, granting 5% increased Attack Power to party and raid members within 100 yds.Does not stack with similar effects.
+- Row 7: **Scent of Magic** (TE 1, 1 rank) | Critical strikes now apply Scent of Magic for 15 seconds, causing your Shadow Hound's next Shadow Leap to incur a -10 sec reduced cooldown.
+- Row 7: **Rampaging Hounds** (TE 1, 1 rank) | Your Shadow Hounds melee attacks now cleave 1 additional nearby enemy.
+- Row 8: **Rearmament** (TE 1, 1 rank) | Arm yourself against evil, resetting the cooldown of all Traps and Decimate.
+- Row 8: **Low Dawn** (TE 1, 1 rank) | Increases the damage of Sixfold Shot by 25% and causes it to channel 0.5 sec quicker.
+- Row 8: **Coordinated Killing** (TE 1, 1 rank) | Casting Unleash the Hounds now casts Shadow Rage on you for 10 seconds.Shadow RageRanged auto attacks deal an additional 50 Shadow Damage.
+- Row 8: **Sixfold Shot** (AE 0, 1 rank) | Level 50 PassiveEvery 5th Darkslayer within 15 seconds now transforms your Quickdraw into Sixfold Shot.Sixfold ShotUnleash 6 quick shots across 1.5 seconds, each dealing 100% Ranged Weapon Damage plus 133 Physical damage and generating 3 Rage. and 2% maximum mana.Usable while moving.
+- Row 9: **Deal With The Devil** (TE 1, 1 rank) | Your and your Shadow Hounds critical damage dealt with Shadow damage is increased by 50%, but the cost of your spells and abilities is increased by 25%.
+- Row 9: **Lethal Pursuit** (TE 1, 1 rank) | Shadow Rage now also grants your Shadow Hounds 10% increased haste and it now stacks 3 additional times.
+- Row 9: **Feast of Talons** (TE 1, 1 rank) | Striking at least 5 enemies with Darkflock now causes you to unleash a flock of crows around each enemy struck, dealing 762 + 78.75% SP + 45% ranged AP Twilight Damage over 9 seconds.
+
+### Black Knight (38 nodes)
+
+- Row 0: **Noctis Blade** (TE 1, 1 rank) | Strike an enemy, dealing 100% Weapon Damage plus 26, scaling with your parry rating, and healing you for 50% of the damage dealt.
+- Row 0: **Grasp of the Undying** (AE 0, 1 rank) | Level 10 PassiveAuto attacks while wielding a two-handed weapon now have a 25% chance to unleash Grasp of the Undying, leeching 20 + 15% SP + 10% AP health from the target.
+- Row 1: **Shadow Brand** (TE 1, 1 rank) | Direct ability damage now applies Shadow Brand to enemies.Shadow BrandMarks the target for 12 seconds, dealing 36 High Threat Shadow Damage over 12 seconds.
+- Row 2: **Dark Chivalry** (TE 1, 1 rank) | Increases your Armor contribution from mail items by 100%.
+- Row 2: **Dark Penance** (TE 1, 2 rank) | Increases your Agility and your chance to parry and dodge by 2%.
+- Row 2: **Dusk Knight** (AE 0, 1 rank) | Level 20 PassiveIncreases your parry rating by 40% of your Agility and your dodge rating by 25% of your Intellect.
+- Row 3: **March of the Black King** (TE 1, 1 rank) | Expel darkness from within you, dealing 55 Shadow damage to nearby enemies over 10 seconds.Generates 5 Rage every 2 sec.
+- Row 3: **Shadow Order** (TE 1, 2 rank) | Increases the damage of Shadow Brand by 20% and your hit rating by 3% of your Agility.
+- Row 3: **Wide Swings** (TE 1, 1 rank) | Increases the damage of Noctis Blade and Grasp of the Undying by 20% on enemies affected by Shadow Brand.
+- Row 3: **Desecrate** (TE 1, 1 rank) | Desecrate up to 8 enemies in front of you, dealing Weapon Damage plus 18 as Shadow damage, piercing resistances.Only usable after avoiding an attack.
+- Row 4: **No Regrets** (TE 1, 1 rank) | Your March of the Black King now increases your Armor by 15%.
+- Row 4: **Witchblight** (TE 1, 1 rank) | Explode with dark energy, dealing 51 + 50% shadow SP + 20% AP Shadow damage to up to to 10 nearby enemies and healing you for 20% of your maximum health.Each target struck is guaranteed to miss their next instance of damage within 6 seconds.
+- Row 4: **Knight's Seal** (TE 1, 1 rank) | Curse an enemy, dealing 66 + 19.2% shadow SP + 14.6% AP Shadow damage every 2 sec and applying Dark Oath to you, reducing all damage taken by -5% for 8 seconds.Your next Desecrate within 8 seconds now restores 15% of your maximum health and mana.
+- Row 4: **Dark Power** (AE 0, 1 rank) | Level 30 PassiveYou now gain 1 Stamina for every 2 Agility.
+- Row 5: **Dark Riposte** (TE 1, 1 rank) | Parrying enemy attacks now restores 5% of your missing health and Rage.
+- Row 5: **Guard Strike** (TE 1, 1 rank) | Bash an enemy with your weapon's hilt, interrupting them and preventing any spell from that school of magic from being cast for 3 seconds.
+- Row 5: **Noctis Protection** (TE 1, 1 rank) | Casting Noctis Blade now applies a shield absorbing 166 + 200% Stamina + 10% AP damage for 4 seconds.
+- Row 5: **Secret Society** (TE 1, 2 rank) | Increases your Shadow critical strike chance and Shadow damage dealt by 4% and your expertise by 5.
+- Row 5: **Dark Juggernaut** (TE 1, 1 rank) | Desecrate now restores 10 + 20% shadow SP + 10% AP health plus an additional 1% maximum health for each target struck affected by Shadow Brand.
+- Row 5: **Wicked Intent** (TE 1, 1 rank) | Casting Desecrate now has a 15% chance to reset the cooldown of Noctis Blade.
+- Row 6: **Bulwark of Darkness** (TE 1, 1 rank) | Damage dealt by Dawn Blade is now increased by 5% for each stack of Pommel Smash on the target.
+- Row 6: **Clinch Fighting** (TE 1, 1 rank) | Attacks which would otherwise kill you now heal you for 50% maximum health and increases the damage of Noctis Blade by 50% for 6 seconds.Can only occur once every 2 min.
+- Row 6: **Dark Barrier** (TE 1, 1 rank) | Increases the duration of Stoicism by 5 sec.
+- Row 6: **Calm Under Pressure** (TE 1, 1 rank) | Reduces the cooldown of Stoicism by -30 sec and Burrow Bolt by -5 sec.
+- Row 6: **Shadowy Tendrils** (AE 0, 1 rank) | Your Grasp of the Undying now strikes 2 additional nearby enemies.
+- Row 7: **Guardbreaker** (TE 1, 2 rank) | Your Pommel Smash now strikes an additional nearby enemy.
+- Row 7: **Witching Idol** (TE 1, 1 rank) | Drop a Witching Idol that periodically dispels fear, sleep, and charm effects every 3 sec from party members within 20 yds.
+- Row 7: **Destroyer of Evil** (TE 1, 1 rank) | Damage dealt by Dawn Blade now deals an additional 20% of the damage dealt as Twilight Damage every 1 sec for 3 seconds.Shadow BrandMarks the target for 12 seconds, dealing 36 High Threat Shadow Damage over 12 seconds.
+- Row 7: **Foresight** (TE 1, 1 rank) | Your direct Physical critical strikes now grant allies Replenishment.In addition, Dawn Blade is now guaranteed to critically strike against Undead or Demons.ReplenishmentRestores 1% maximum mana every 5 sec to allies within 100 yds for 15 seconds.
+- Row 7: **Chains of Darkness** (TE 1, 1 rank) | Pull all nearby enemies to you, dealing 84 + 55% shadow SP + 15% AP Shadow damage and taunting them for 3 seconds.
+- Row 7: **Undying** (TE 1, 1 rank) | While below 75% maximum health, Dawn Blade now increases the critical strike chance of Noctis Blade by 40% for 10 seconds.
+- Row 8: **Witch Knight** (TE 1, 1 rank) | Direct ability damage with a two-handed weapon now reduces the remaining cooldown of your Tonics by -1 sec and grants Witching.WitchingIncreases magic resistances by 10%, and melee haste by 10% for 8 seconds, stacking 3 times.
+- Row 8: **Shadowstorm** (TE 1, 1 rank) | Damage dealt by Pommel Smash now has a 20% chance to trigger a Shadowstorm.ShadowstormLeeches 350 + 30% SP + 10% AP health from enemies within 8 yds.
+- Row 8: **Night King** (TE 1, 1 rank) | Noctis Blade now consumes Shadow Brand to deal 50% increased damage.
+- Row 8: **Dawn Knight** (AE 0, 1 rank) | Level 50 PassiveAvoiding damage or dealing damage with auto attacks now has a 40% chance to grant you Dawn Knight.Dawn KnightYour next Dawn Blade within 15 seconds is free of cost and deals 25% increased damage.
+- Row 9: **Secret of Raven Hill** (TE 1, 1 rank) | Drinking a Tonic will transform your Dawn Blade into powerful damaging spells with unique effects for 30 seconds based on the last Tonic consumed.Surging BladeSlash an enemy for 280% Weapon Damage and increase your haste by 15% for 10 seconds.Witchblood FeverCurse all nearby enemies, dealing 104 + 12% AP Shadow damage every 1 sec for 8 seconds and increasing their Magic damage taken from you by 3%.Enemies affected by Witchblood Fever can be seen while stealthed.Dark PerilCrush nearby enemies, dealing 241 + 24% AP Shadow damage and stunning them for 3 seconds.Vampiric RageLeech the life from 10 enemies within 8 yds, dealing 279 + 28% AP Shadow damage and healing for 90% of the damage dealt.
+- Row 9: **Gaze of the Black Knight** (TE 1, 1 rank) | Apply a dark shield to yourself, absorbing 3255 + 700% Stamina + 41% AP damage and then gaze upon your party members, causing 25% of the damage they take to be transferred to you for 12 seconds.Damage which reduces your health below 20% will break the effect.Usable while stunned.
+- Row 9: **Blade of the Misbegotten** (TE 1, 1 rank) | Damage dealt by Dawn Blade now increases your health by 15% of the damage dealt for 8 seconds, stacking 3 times.
+
+### Inquisition (40 nodes)
+
+- Row 0: **Hunt** (TE 1, 1 rank) | 2 Charges, 25 sec rechargeCharge an enemy, slowing their movement speed by -70% for 2 seconds and generating 20 Rage.
+- Row 0: **Flames of Sin** (AE 0, 1 rank) | Level 10 PassiveUsing Dawn Blade now grants you Flames of Sin for 3 sec, causing your auto attacks to deal an additional 30% of the damage dealt as Fire damage.Granting yourself Flames of Sin in this way while it's already active will increase the current duration by 3 sec.
+- Row 1: **Dusk Blade** (TE 1, 1 rank) | Strike an enemy with both weapons, dealing Weapon Damage plus 10 + 15% shadow SP Shadow damage, piercing resistances. Heals for 25% of damage dealt.
+- Row 2: **Sermon of Flame** (TE 1, 2 rank) | Increases your Fire damage dealt by 5%.
+- Row 2: **Brooding Hatred** (TE 1, 2 rank) | Increases your off-hand Weapon Damage by 20% and increases your chance to hit by 3%.
+- Row 2: **Interrogator** (AE 0, 1 rank) | Level 20 PassiveDamage dealt by Dawn Blade now deals an additional 100% of the damage dealt over 10 seconds as Fire damage.
+- Row 3: **Purifier's Edge** (TE 1, 1 rank) | Strike an enemy with searing blades, dealing Weapon Damage plus 20 with both weapons as Fire damage.Grants Flames of Sin or increases the duration by 3 sec.
+- Row 3: **Flexible Fighter** (TE 1, 1 rank) | Increases your Agility by 6%.
+- Row 3: **Protector of Darkshire** (TE 1, 1 rank) | Increases the damage of Dawn Blade and Dusk Blade by 15%.
+- Row 3: **Refined Combatant** (TE 1, 1 rank) | Increases your expertise by 10.
+- Row 3: **Smite Evil** (TE 1, 1 rank) | Strike an enemy with your blade, dealing Weapon Damage plus 25 as Holy damage to them and 5 nearby enemies.
+- Row 4: **Searing Hilt** (TE 1, 1 rank) | Purifier's Edge now grants you Searing Hilt for 10 seconds.Searing HiltIncreases your melee attack speed by 10% for 10 seconds.
+- Row 4: **Fiery Judgement** (TE 1, 1 rank) | Judge an enemy, dealing 361 + 40% AP + 100% fire SP Fire damage to them and nearby enemies.Grants Flames of Sin or increases the duration by 3 sec.
+- Row 4: **Duskwood Renegade** (TE 1, 2 rank) | Reduces the cooldown of Burrow Bolt by -5 sec.
+- Row 4: **Brushin' Off The Dusk** (TE 1, 2 rank) | Your off-hand auto attacks now have a 10% chance to strike 2 additional times.
+- Row 4: **Darkslayer's Lantern** (TE 1, 1 rank) | Empower a lantern with your Flames of Sin and let it shine, dealing 291 + 15% AP Fire damage and stunning all enemies within 5 yds for 5 seconds.
+- Row 4: **Flames of the Sinned** (TE 1, 1 rank) | Your Smite Evil now has a 25% chance to strike again.While you have Flames of Sin active, the chance to trigger this effect is increased by 10%.
+- Row 4: **Malice** (AE 0, 1 rank) | Level 30 PassiveIncreases your Fire spell damage by 50% of your Agility and your attack power by 100% of your Intellect.
+- Row 5: **Cinder and Ashes** (TE 1, 1 rank) | Increases the spell power scaling of Purifier's Edge and Fiery Judgement by 25%.
+- Row 5: **Scarlet Inquisitor** (TE 1, 1 rank) | Reduces the mana cost of your Traps and Brands by -50%.
+- Row 5: **Pyro Tonic** (TE 1, 1 rank) | Drink a fiery tonic, increasing your Fire damage dealt by 20% and your critical damage by 10% for 15 seconds.
+- Row 5: **The Hunt Continues** (TE 1, 1 rank) | Hunt now generates an additional 15 Rage and the mana cost is reduced by -15%.
+- Row 5: **Evil Never Sleeps** (TE 1, 1 rank) | Hunt now slows movement speed by an additional 2 sec.
+- Row 5: **Flourish** (TE 1, 1 rank) | Perform an advanced flourish, dealing 207 + 100% AP Fire damage to nearby enemies, repeating every 4 sec, and causing your Flames of Sin to cleave up to 3 additional enemies for 20 seconds.Grants you Flames of Sin and increases the duration by 10 sec.
+- Row 6: **Torchlight** (TE 1, 1 rank) | Throw a torch at an enemy, dealing 166 + 30% AP + 45% fire SP Fire damage, and causing up to 5 of the next attacks you make against them to grant you Flames of Sin and increasing the duration by 2 sec.
+- Row 6: **Holy Frenzy** (TE 1, 1 rank) | Increases your melee haste by 15%.
+- Row 6: **Stake** (TE 1, 1 rank) | Drive your concealed stake into the chest of an injured enemy, dealing 197 + 67.5% AP Physical damage.Grants Flames of Sin and increases the duration by 3 sec.Only usable on enemies at or below 35% health.
+- Row 6: **Heartstopper** (AE 0, 1 rank) | Level 40 PassiveCasting Purifier's Edge or Fiery Judgement now has a 30% chance to allow the use of Stake within 8 seconds regardless of the target's health percentage.
+- Row 7: **Sinner** (TE 1, 1 rank) | Increases the damage of Torchlight by 100%.
+- Row 7: **Sin Eater** (TE 1, 1 rank) | Increases the amount of next attacks that grant Flames of Sin through Torchlight by 5.
+- Row 7: **Dawn** (TE 1, 1 rank) | Dealing Fire damage now increases the damage dealt by Torchlight and Dusk Blade by 2% for 5 seconds, stacking 10 times.
+- Row 7: **Dusk** (TE 1, 1 rank) | Dealing Physical damage now increases the damage dealt by Stake and Dawn Blade by 2% for 5 seconds, stacking 10 times.
+- Row 7: **Monster Hunting** (TE 1, 1 rank) | Increases melee and ranged haste of party and raid members within 100 yds by 10%. Does not stack with similar effects.In addition, increases your damage dealt against Undead and Demons by 10%.
+- Row 8: **Lightbringer** (TE 1, 1 rank) | Damage dealt by Dusk Blade now has a 15% chance to reduce the mana cost of your next Purifier's Edge by -100%. This effect has a 25% chance to not be consumed by Purifier's Edge.
+- Row 8: **Torch the Wicked!** (TE 1, 1 rank) | Dealing damage with Flames of Sin now grants 2% attack speed, stacking up to 12 times for 6 seconds. Application of this effect does not refresh the duration.Additionally, Pyro Tonic now also resets the cooldown of Torchlight.
+- Row 8: **Burned Alive** (TE 1, 1 rank) | Increases your critical strike chance by 25% on enemies below 20% health.
+- Row 8: **Evil Doers, Beware!** (AE 0, 1 rank) | Level 50 PassiveStake is now guaranteed to critically strike enemies above 75% health.
+- Row 9: **Purity & Wickedness** (TE 1, 1 rank) | Main-hand auto attacks now apply a stack of Purity to the target, increasing the Fire and Holy damage you deal to them by 2% per stack, stacking 6 times.Off-hand auto attacks now apply a stack of Wickedness to the target, increasing the Shadow and Physical damage you deal to them by 2% per stack, stacking 6 times.Torchlight can now consume these stacks to deal 1028 + 25% holy SP + 45% AP Holyflame or Shadowstrike damage to the target.
+- Row 9: **Cycle of Despair** (TE 1, 1 rank) | Increases the amount of stacks of Dawn and Dusk by 10.In addition, reaching 20 stacks with both buffs will consume them to grant you 20% increased damage, melee haste, movement speed, and critical strike chance for 6 seconds.
+- Row 9: **Hatred & Vitriol** (TE 1, 1 rank) | Damage dealt by Stake now ignores enemy armor and its critical strikes refund half of its cost.
+
+## Stormbringer
+
+### Lightning (37 nodes)
+
+- Row 0: **Arm of Thorim** (TE 1, 1 rank) | Depletes All StaticCall down a terrible beam of lightning upon an enemy, dealing 135 + 120% nature SP Nature damage and stunning them for 1 seconds.Damage and cast time increased based on Static level.
+- Row 0: **Electrocutioner** (AE 0, 1 rank) | Level 10 PassiveDealing spell damage now has a 5% chance to grant you Electrocutioner.Electrocutioner (Proc)Resets the cooldown of Electrocute and makes your next usable regardless of the target's health percentage.Chance increases based on Static level.
+- Row 1: **Superconductor** (TE 1, 1 rank) | Increases the damage of your Arm of Thorim by an additional 1% per Static depleted.
+- Row 2: **Forked Lightning** (TE 1, 1 rank) | Shoot lightning at an enemy, dealing 69 + 49% SP Nature damage, bouncing to up to 4 enemies.Generates 5 Static for each enemy struck.
+- Row 2: **Volt** (TE 1, 1 rank) | Fuse lightning into an enemy, dealing 150 + 114% nature SP Nature damage over 18 seconds and slowing them by -40%.Generates 2 Static per tick.
+- Row 2: **Thunderous** (AE 0, 1 rank) | Level 20 PassiveIncreases the critical damage of your spells by 150%.
+- Row 3: **Thorim's Gift** (TE 1, 1 rank) | Your Arm of Thorim now leaves unstable electricity beneath the target, dealing damage equal to 10% of its damage dealt to enemies within every 1 sec for 3 seconds.
+- Row 3: **Titanic Thunderbolt** (TE 1, 2 rank) | Increases the critical strike chance of Shock, Conjure Storm, and Eye of the Storm by 4%.
+- Row 3: **Fulmination** (TE 1, 2 rank) | Increases the critical strike chance of Call Lightning and Arm of Thorim by 15% against targets affected by your Volt.
+- Row 4: **Improved Forked Lightning** (TE 1, 1 rank) | Your Forked Lightning now affects 1 additional enemy.
+- Row 4: **Electric Energy** (TE 1, 1 rank) | Increases the damage of your Shock, Call Lightning, and Arm of Thorim by 20%.
+- Row 4: **Electrifying Aura** (TE 1, 1 rank) | Increases critical strike chance of all party and raid members by 3%.Does not stack with similar effects.
+- Row 4: **Tome of Lightning** (TE 1, 1 rank) | Increases your critical strike chance by 2% and reduces the duration of interrupt and silence effects against you by -20%.
+- Row 4: **Wicked Storms** (TE 1, 1 rank) | Increases your Nature damage dealt by 5%.
+- Row 4: **Fast as Lightning** (AE 0, 1 rank) | Level 30 PassiveWhile Electrocutioner is active, your Electrocute now gains 20% increased damage.
+- Row 5: **Stormy Days** (TE 1, 1 rank) | Increases the tick rate of Conjure Storm by -25%.
+- Row 5: **Invoking Storms** (TE 1, 2 rank) | Increases the spell power scaling of Shock, Call Lightning, and Arm of Thorim by 15%.
+- Row 5: **Lightning Cage** (TE 1, 1 rank) | Generates 50 StaticAscend into the air and cage yourself in lightning for 30 seconds, locking yourself in place.While inside the cage, damaging spells generate 20 Static and their range is doubled.
+- Row 5: **Never Strikes Twice?** (TE 1, 1 rank) | Your Electrocute now has a 25% chance to strike again.
+- Row 5: **Jolt** (TE 1, 2 rank) | Increases the damage and critical strike chance of Electrocute by 10%.
+- Row 6: **Lightning Rod** (TE 1, 1 rank) | Damage dealt by Forked Lightning now has a 20% chance to spread an active Volt on your target to each affected enemy.Chance increases based on Static level.
+- Row 6: **Thundershocker** (TE 1, 1 rank) | While rooted by Eye of the Storm, affected enemies now take 30% increased damage from you.
+- Row 6: **Storm Barrier** (TE 1, 1 rank) | While Lightning Cage is active your Magic Damage taken is now reduced by -25% and you are unable to be hit by ranged attacks.
+- Row 6: **Critical Circuit** (TE 1, 1 rank) | Direct critical strikes with Static spenders now refund 10 Static.
+- Row 6: **Sparks** (TE 1, 1 rank) | Damage dealt by Electrocute and Arm of Thorim now increase the target's chance to be critically hit by spells by 3% for 10 seconds.
+- Row 6: **Piercing Lightning** (AE 0, 1 rank) | Level 40 PassiveIncreases your Nature spell penetration by 20, scaling with your level.In addition, Stormbreaker now dispels 1 additional magic effect.
+- Row 7: **High Voltage** (TE 1, 1 rank) | Increases the duration of Arm of Thorim's stun effect by 1 sec.
+- Row 7: **Voltaic Bursts** (TE 1, 1 rank) | Increases the periodic damage of Shock by 50%.
+- Row 7: **Titanstorm** (TE 1, 1 rank) | Casting Call Lightning or Electrocute now reduces the cooldown of Arm of Thorim and Lightning Cage by -1.5 sec.
+- Row 7: **Dark Skies** (TE 1, 1 rank) | When your direct damage spells fail to critically strike, your critical strike chance is increased by 2% for 10 seconds, stacking up to 5 times.Critically striking removes this effect.
+- Row 8: **Flux Arc** (TE 1, 1 rank) | Your Forked Lightning and Arm of Thorim now marks enemies for 6 sec. Your Call Lightning against marked enemies deals an additional 15% of its damage to them and nearby enemies.
+- Row 8: **Crackling Devastation** (TE 1, 1 rank) | Increases the critical damage of Electrocute by 30%.
+- Row 8: **Electrical Charge** (TE 1, 1 rank) | Standing still grants you Electrical Charge every second, increasing your haste by 1%. Upon reaching 20 stacks, your spells dont deplete Static for 10 seconds, after which the charges are depleted.
+- Row 8: **Ascension** (AE 0, 1 rank) | Level 50 PassiveIncreases the duration of your Storm Ascendance by 10 sec.
+- Row 9: **Lord of Lightning** (TE 1, 1 rank) | Storm Ascendance now additionally grants you Lord of Lightning for 20 seconds.Lord of LightningIncreases the damage dealt by Forked Lightning, Call Lightning, and Electrocute by an additional 30% and allows Electrocute to strike 3 additional enemies.
+- Row 9: **Ride the Lightning** (TE 1, 1 rank) | Depletes 40 StaticInfuse yourself with lightning and blink forward a long distance, dealing 540 + 50% SP Nature damage to all enemies in your path.Scales with modifiers to Discharge
+- Row 9: **Thunder Wave** (TE 1, 1 rank) | Damage dealt by Forked Lightning has a 5% chance to transform it into Thunder Wave.Thunder Wave (Spell)Bring lightning down upon an enemy and nearby enemies, dealing 206 + 65% arcane SP Spellstorm Damage and refreshing the duration of Volt on enemies struck.Deals 30% increased damage to enemies affected by Volt.
+
+### Wind (43 nodes)
+
+- Row 0: **Tempest Calling** (AE 0, 1 rank) | Enhances some of your spells with the power of the wind, tranforming your Conjure Storm into Updraft and Call Lightning into Aeroblast.UpdraftDepletes 20 Static2 Charges, 10 sec rechargeCreate an 8 yd Updraft at the target location for 20 seconds.Deals 160 + 68.3% nature SP Nature damage over the duration to enemies within the radius.Increases movement speed by 25% for allies within the radius.AeroblastDepletes 50 StaticCrush an enemy with the weight of the winds, dealing 109 + 63.5% nature SP Nature damage to them and then an additional time for 40% of the damage dealt after 1 seconds.
+- Row 0: **Air Elemental** (AE 0, 1 rank) | Level 10 PassiveTeaches you Summon: Air Elemental.Summon: Air ElementalCall an Air Elemental to aid you in combat that gains a stack of Invigoration whenever it deals damage.InvigorationIncreases the damage of your Air Elemental by 3% for 15 seconds, stacking 10 times.Additional applications do not refresh duration.
+- Row 1: **Power the Elements** (TE 1, 2 rank) | Increases the damage dealt by your Air Elemental's spells by 10% and your Nature damage dealt by 2%.
+- Row 1: **Storm Bond** (TE 1, 1 rank) | Damage dealt by your Air Elemental now generates you 2 Static.
+- Row 2: **Flow** (TE 1, 1 rank) | Your Invigoration now stacks 5 additional times.
+- Row 2: **Air Flow** (TE 1, 1 rank) | Reduces the cast time of Aeroblast by -0.3 sec.
+- Row 2: **Invigoration** (TE 1, 1 rank) | Your Aeroblast now grants your Air Elemental a stack of Invigoration.InvigorationIncreases the damage of your Air Elemental by 3% for 15 seconds, stacking 10 times.Additional applications do not refresh duration.
+- Row 2: **Clear Skies** (AE 0, 1 rank) | Increases chance to hit with all spells and attacks by 1% for you and party and raid members.Does not stack with similar effects.
+- Row 2: **Focal Point** (AE 0, 1 rank) | Casting Call Lightning now increases the critical strike chance of party and raid members by 5% for 10 seconds.Does not stack with similar effects.
+- Row 3: **Quickdraft** (TE 1, 2 rank) | Increases the duration of your Updraft by 3 sec and increases its tick rate by -15%.
+- Row 3: **Gale** (TE 1, 1 rank) | 3 Charges, 10 sec rechargeGenerates 20 StaticBlast an enemy and up to 2 nearby enemies with a powerful gust of wind for 53 + 42% nature SP Nature damage.
+- Row 3: **Everlasting Invigoration** (TE 1, 2 rank) | Increases the duration of Invigoration by 5 sec.
+- Row 4: **Kiss of the Clouds** (TE 1, 1 rank) | Depletes 40 StaticGrant all party and raid members a shield that absorbs 101 + 100% Intellect damage, scaling with Intellect, for 10 seconds.While active, the target suffers no spell pushback from taking damage.
+- Row 4: **Evergale** (TE 1, 1 rank) | Casting Call Lightning now refreshes a charge of Gale.
+- Row 4: **Unrelenting Winds** (TE 1, 1 rank) | Increases the critical strike chance of Gale by 15%.
+- Row 4: **Master Airbender** (TE 1, 1 rank) | Casting Gale now reduces the cooldown of abilities that deplete Static by -1 sec.
+- Row 4: **Unshackle** (TE 1, 1 rank) | Depletes 50 StaticTransforms your Air Elemental into a more powerful form for 15 seconds, increasing damage dealt by 25% and spell haste by 30%.
+- Row 4: **Enveloping Winds** (AE 0, 1 rank) | Casting Gale now causes your Air Elemental to cast Gale.Additionally, you now emanate an aura around you, increasing the Armor of party and raid members by 390.Does not stack with similar effects.
+- Row 4: **Tailwind** (AE 0, 1 rank) | Depletes 20 StaticTap into the swift winds, increasing your damage by 10% and granting all allied players 5% increased haste for 15 seconds.Does not stack with similar effects.
+- Row 5: **Gift of Air** (TE 1, 1 rank) | Casting Kiss of the Clouds now empowers your Air Elemental with Gift of Air for 30 seconds.In addition, your critical strikes now extend the duration of your Tailwind by 1.5 sec.Gift of AirIncreases damage dealt by 20%, spell haste by 15%, and heals for 13.75 every 2 sec.
+- Row 5: **Cyclone's Embrace** (TE 1, 1 rank) | Increases the base amount absorbed by your Kiss of the Clouds by 100%.
+- Row 5: **Cyclone's Recharge** (TE 1, 1 rank) | Casting Shock, Gale or Electrocute now reduces the remaining cooldown of your Kiss of the Clouds by -1 sec.
+- Row 5: **Aeromancy** (TE 1, 1 rank) | Casting Updraft will now cause your Air Elemental to cast its own Updraft beneath you.
+- Row 5: **Windrunner** (TE 1, 1 rank) | The wind is always at your back, pushing you to move faster, increasing your movement speed and mounted movement speed by 15%.
+- Row 5: **Wrath of Al'Akir** (TE 1, 1 rank) | Depleting Static extends the duration of your Unshackle by 3 sec.
+- Row 6: **Windsurf** (TE 1, 1 rank) | Command your Air Elemental to windsurf to you, intercepting the next melee or ranged attack made against you, and allowing you to cast Shock and Call Lightning while moving for 15 seconds.
+- Row 6: **Clearsky Pendant** (TE 1, 1 rank) | Ally movement speed is increased by an additional 25% to allies within your Updraft.
+- Row 6: **Master Elementalist** (TE 1, 1 rank) | Increases the spell damage scaling of Shock by 10% and Aeroblast by 20%.
+- Row 6: **Unbound Elementalist** (TE 1, 1 rank) | Increases the effectiveness of your Unshackle by 20%.
+- Row 6: **Aerodynamics** (AE 0, 1 rank) | Depletes 40 StaticEnvelop party and raid members within 40 yds in magical mist, increasing their attack or spell power by 95 for 15 seconds.Does not stack with similar effects.
+- Row 6: **Flurry** (AE 0, 1 rank) | Depletes 10 StaticCommand your Air Elemental, causing its next instance of damage to unleash a flurry of air on your target, dealing 763 + 140% nature SP Nature damage over 21 seconds, and reducing their resistances by 75, and increasing their Magic damage taken by -2%.
+- Row 7: **Child of the Storm** (TE 1, 1 rank) | Reduces the cooldown of your Cloudburst and Windsurf by -20%.
+- Row 7: **Storm Clouds** (TE 1, 1 rank) | Your Body of Lightning is now automatically cast on you when you cast it on an ally.
+- Row 7: **Lexicon of Servitude** (TE 1, 1 rank) | Read from your ancient lexicon, causing your next Summon: Air Elemental to be instant cast and cost no mana. Lasts 15 seconds.
+- Row 7: **Comforting Winds** (TE 1, 1 rank) | Your damage dealt now increases the haste of your Air Elemental by 1% for 10 seconds, stacking 5 times.Damage dealt by your Air Elemental now increases your haste by 1% for 10 seconds, stacking 5 times.
+- Row 7: **Hurricanes** (TE 1, 1 rank) | Casting Unshackle now unshackles you, increasing your damage dealt by 15% for 15 seconds.
+- Row 8: **Wind Gate** (TE 1, 1 rank) | Place a Wind Gate at target location for 1 minute. You may cast Wind Gate: Evacuate on an ally to pull them to your Wind Gate.
+- Row 8: **Skyfall** (TE 1, 1 rank) | Depletes 40 StaticCommand your Air Elemental, causing its next instance of damage within 8 seconds to strike an enemy, dealing 1349 + 100% arcane SP Nature damage and increasing the movement speed of all nearby allies by 30% for 15 seconds.
+- Row 8: **Tempest's Call** (AE 0, 1 rank) | Bring the power of wind and storm to all nearby allies, increasing haste by 30% for 20 seconds.After being affected by this spell, allies cannot benefit from similar effects for 5 minutes.
+- Row 8: **Surge of Might** (AE 0, 1 rank) | Emanate an aura around you for 15 seconds, causing allied players within 100 yds to deal 70% nature SP additional damage as Nature damage when they deal direct damage.Applies Exhaustion, preventing you from benefiting from similar effects for 1 minute.
+- Row 9: **Nimbus** (TE 1, 1 rank) | Instantly resets the cooldown of your Evacuate, Windsurf, and Unshackle.
+- Row 9: **Raging Zephyr** (TE 1, 1 rank) | Transforms your Whirlpool into Raging Zephyr.Raging Zephyr3 Charges, 35 sec rechargeSummon a Raging Zephyr at the targeted location for 12 seconds.Every 4 sec, it will pull all enemies within 10 yds inside of it.
+- Row 9: **Aurat Scripts** (TE 1, 1 rank) | Increases the damage gained per stack of Invigoration by 2%.
+
+### Maelstrom (37 nodes)
+
+- Row 0: **Tempest Sovereign** (AE 0, 1 rank) | Enhances some of your spells with the power of the maelstrom, transforming your Shock into Brine and Call Lightning into Torrential Wrath.BrineGenerates 25 StaticDouse an enemy, dealing cond(gt(SPFR, SPN), 89+0+SPFR*0.571, 89+0+SPN*0.871) Frost damage, scaling with your critical strike rating.Scales with modifiers to Shock.Torrential WrathDepletes 50 StaticBlast an enemy, dealing cond(gt(SPFR, SPN), 111+0+SPFR*1, 111+0+SPN*1.5) Frost damage, scaling with your haste rating.
+- Row 0: **Conductive** (AE 0, 1 rank) | Level 10 PassiveShock now grants Conductive for 1 minute, stacking 6 times.Torrential Wrath consumes all stacks of Conductive to trigger Conduction.Conduction (Damage)Deals cond(gt(SPFR, SPN), 202*1+SPFR*0.585, 202*1+SPN*0.35) Frost Damage, increased by 25% for each stack of Conductive consumed.
+- Row 1: **Stormflow** (TE 1, 1 rank) | Depletes 20 StaticChannel a storm beam upon an enemy, dealing 112 + 160% SP Frost Damage over 8 seconds, scaling with your spell haste.Shock can be instantly cast while channeling.
+- Row 2: **Torrential Rage** (TE 1, 2 rank) | Increases the damage of Torrential Wrath and Stormflow by 15%.
+- Row 2: **Conduit** (TE 1, 1 rank) | Dealing Frost damage now has a 60% chance to increase the damage the target takes from Electrocute by 15% for 10 seconds, stacking up to 4 times.
+- Row 2: **Disciple of Thorim** (TE 1, 3 rank) | Reduces the cast time of your Torrential Wrath by -0.2 sec and increases your hit chance by 2%.
+- Row 2: **Whirling Maelstrom** (AE 0, 1 rank) | Level 20 PassiveIncreases your spell haste by 20% of your Intellect.
+- Row 3: **Blessing of Lei Shen** (TE 1, 1 rank) | Damage dealt by Stormflow now heals you equal to the damage dealt.
+- Row 3: **Prodigy of Lei Shen** (TE 1, 1 rank) | Allows your Stormflow to critically strike.
+- Row 3: **Drown** (TE 1, 1 rank) | Attempt to drown an enemy, reducing their healing received by -20% for 8 seconds. At the end of the duration, unleash a creature from the depths dealing cond(gt(SPFR, SPN), 83+0+SPFR*1, 83+0+SPN*1) Frost Damage.Each time you generate a stack of Conductive you increase their damage taken from this effect, stacking up to 5 times.
+- Row 3: **Raining and Pouring** (TE 1, 1 rank) | Increases the critical damage of your Torrential Wrath and Electrocute by 30%.
+- Row 4: **Deluge** (TE 1, 1 rank) | Depletes 50 StaticConsumes ConductiveEnvelop enemies in the target area in water, dealing cond(gt(SPFR, SPN), 106+0+SPFR*0.3, 106+0+SPN*0.3) Frost damage, triggering Conduction and reducing their attack power by -24 for 10 seconds.Conduction (Damage)Deals cond(gt(SPFR, SPN), 202*1+SPFR*0.585, 202*1+SPN*0.35) Frost Damage, increased by 25% for each stack of Conductive consumed.
+- Row 4: **Flow of Wrath** (TE 1, 1 rank) | Increases your critical strike chance by 15% against enemies affected by Drown.
+- Row 4: **Undertow** (TE 1, 2 rank) | Increases the critical strike chance of Drown by 25%.
+- Row 4: **Mystic Thunder** (TE 1, 1 rank) | Interrupt the target's current spell cast and then mark them for 5 seconds.If they cast again while marked they are silenced for 3 seconds.
+- Row 4: **Unbridled Flow** (AE 0, 1 rank) | Level 30 PassiveDamage dealt by Shock is now increased by 15% while channeling Stormflow.
+- Row 5: **Voltaic Mastery** (TE 1, 1 rank) | Damage dealt by Deluge is increased by 5% for each stack of Conductive.
+- Row 5: **Stormcaller** (TE 1, 2 rank) | Reduces the cooldown and mana cost of Eye of the Storm by -15%.
+- Row 5: **Washed Away** (TE 1, 1 rank) | Reduces the cooldown of Drown by -15 sec.
+- Row 5: **Bursting** (TE 1, 1 rank) | Increases the stack value of Drowning by 20%.
+- Row 5: **Cloudsurfer** (TE 1, 1 rank) | Increases the damage of Shock by 20%.
+- Row 5: **Lethal Current** (TE 1, 2 rank) | Increases the critical strike chance of Electrocute by 30% against enemies below 20% health.
+- Row 6: **Unstable** (TE 1, 1 rank) | Your direct damage critical strikes cause your Stormflow to tick -20% faster for 3 seconds.
+- Row 6: **Thunder Ward** (TE 1, 1 rank) | Depletes All StaticEncase yourself in an electrical shield, removing and making you immune to all physical attacks and spells for 10 seconds.Cannot generate Static for the duration.
+- Row 6: **Kinetic Energy** (TE 1, 1 rank) | Casting a spell that consumes Conductive now grants you a stack of Kinetic Energy.Kinetic EnergyCritical strike chance increased by 2%, stacking 3 times, for 10 seconds.Additional applications do not refresh the duration.
+- Row 6: **Storm Synergy** (AE 0, 1 rank) | Level 40 PassiveYour Electrocute can now be used while channeling Stormflow.
+- Row 7: **Amped Flow** (TE 1, 1 rank) | While channeling Stormflow, your Shock now strikes 1 additional target at 75% value.
+- Row 7: **Static Electricity** (TE 1, 1 rank) | Critical strikes with Torrential Wrath now spawn an Electrified Water Elemental to aid you in combat for 20 sec.When an Electrified Water Elemental dissipates, the cooldown of your Drown is reduced by -1.5 sec.
+- Row 7: **Conductor In Charge** (TE 1, 1 rank) | Increases all damage dealt by party and raid members by 3% and your Frost damage dealt by 5%.Does not stack with similar effects.
+- Row 7: **Hydro Powered** (TE 1, 1 rank) | Increases your spell critical damage by 35%.
+- Row 8: **Binder of Storms** (TE 1, 1 rank) | Damage dealt by Conduction now has a 60% chance to summon a Thunder Orb.Summon: Thunder OrbSummon a Thunder Orb at the target location for 16 seconds that triggers an Orb Shock and generates 10 Static.Orb ShockDeals 16 + 4% nature SP Nature Damage to up to 3 enemies and increases damage taken from Thunder Orbs and Spheres of Power for 8 seconds, stacking 6 times.
+- Row 8: **Electrified Waters** (TE 1, 1 rank) | Your direct critical strikes against an enemy affected by Drown spawn an Electrified Water Elemental to aid you in combat for 20 seconds.When an Electrified Water Elemental dissipates, the cooldown of your Drown is reduced by -1.5 sec.
+- Row 8: **Stormfury** (TE 1, 1 rank) | Depletes 50 StaticSummon a flurry of rain, wind, and lightning from the sky for 20 seconds. Every 2 sec, enemies within 30 yds of the caster are zapped with lightning, dealing 540 + 55% nature SP Nature damage.
+- Row 8: **Hydromatic** (AE 0, 1 rank) | Level 50 PassiveYour Electrocute is now affected by Conductive, increasing its damage by 10% per stack.
+- Row 9: **Spheres of Power** (TE 1, 1 rank) | Your direct damage dealt now has a 25% chance to summon a Power Sphere that will move towards your target. Can only have 1 Power Sphere up at a time.Power Sphere will redirect its movement towards enemies you cast Stormflow on.Upon reaching the target, it deals cond(gt(SPA, SPN), 697+33+SPA*0.485, 697+33+SPN*0.485) Spellstorm Damage to them and enemies within 5 yds.
+- Row 9: **Stormcloud** (TE 1, 1 rank) | Summon a cloud above an enemy target's head for 15 seconds, causing them to take 20% additional damage from your spells.Using Torrential Wrath on an enemy affected by Stormcloud causes a Geyser to erupt beneath them, dealing 571 + 25% frost SP Frost damage and knocking them up slightly.
+- Row 9: **Shockingly Powerful** (TE 1, 1 rank) | Your Conduction now has a -25% chance to not consume Conductive.
+
+## Knight of Xoroth
+
+### Hellfire (38 nodes)
+
+- Row 0: **Hellmaw** (TE 1, 1 rank) | Burn an enemy with a fiery strike, dealing 18 + 10% AP + 18% SP Shadowflame Damage, plus an additional 72 + 56% AP + 57.2% SP over 12 seconds.Deals 20% increased damage per Demonfire consumed.
+- Row 0: **Greater Imp** (AE 0, 1 rank) | Level 10 PassiveTeaches you Summon: Greater Imp and increases your expertise by 10.Summon: Greater ImpSummon a Greater Imp to aid you in combat.Greater Imp has various combat abilities that provide excellent single target damage and control.
+- Row 1: **Combusting Blade** (TE 1, 2 rank) | Increases your Intellect by 5% and reduces the Rage cost of Infernal Strike by -5.
+- Row 1: **Invasion** (TE 1, 2 rank) | All Fire damage dealt is increased by 10% to enemies above 80% health.
+- Row 2: **Pestilence of Apocalypse** (TE 1, 1 rank) | Emanate the Pestilence of Apocalypse, causing nearby enemies to take 10% increased Fire damage from you.
+- Row 2: **Seeking Flame** (TE 1, 1 rank) | Generates 1 DemonfireSear an enemy, dealing 63 + 33.62% fire SP + 33% AP Fire damage.
+- Row 2: **Burning Power** (AE 0, 1 rank) | Level 20 PassiveIncreases your attack power by 100% of your Intellect and your spell damage by 50% of your Strength.
+- Row 3: **To Ashes** (TE 1, 1 rank) | Increases the critical strike chance of abilities that spend Demonfire by 5%.
+- Row 3: **Hellfire Embers** (TE 1, 1 rank) | Increases the Fire damage dealt by your Hellfire Imp by 30% against enemies above 80% maximum health.
+- Row 3: **Flamewrath** (TE 1, 1 rank) | Increases the critical strike chance of Seeking Flame by 20%.
+- Row 4: **Claws of Hell** (TE 1, 1 rank) | When you spend at least 4 Demonfire stacks you now refresh the duration of your Unleash Apocalypse on the target.
+- Row 4: **Calamity** (TE 1, 1 rank) | Increases the damage of the Unleash effect of Pestilence of Apocalypse by 25% and its duration is increased by 5 sec.
+- Row 4: **Hellfire Form** (TE 1, 1 rank) | Enter your Hellfire Form, increasing your Fire damage dealt by 20% and Fire critical strike chance by 15% for 15 seconds.
+- Row 4: **Doom** (TE 1, 1 rank) | Transforms your Greater Imp into a Doomguard for 12 seconds.While transformed, your Doomguard deals 20% more damage, and its auto attacks ignite the target, dealing 10% of the damage dealt as Fire damage over 6 seconds, stacking 6 times.
+- Row 4: **Seething Strikes** (TE 1, 1 rank) | Increases the damage of Sever by 30% against Burning targets and it now increases the targets chance to be critically struck by 3% for 12 seconds.
+- Row 4: **Cinderblade** (AE 0, 1 rank) | Level 30 PassiveIncreases your critical strike rating by 20% of your Intellect and your spell hit chance by 6%.
+- Row 5: **Rain of Chaos** (TE 1, 1 rank) | Casting Flames of Xoroth with 6 Demonfire now calls down a Rain of Chaos.Rain of ChaosMolten rain burns enemies in the area causing 234 Fire Damage over 9 seconds.
+- Row 5: **Grotesque** (TE 1, 1 rank) | While Hellfire Form is active, your Seeking Flame now has no cooldown and generates an additional Demonfire.
+- Row 5: **Hellfire Rituals** (TE 1, 1 rank) | Critical strikes with Skulltaker now increases the haste of your Greater Imp by 15% for 8 seconds.
+- Row 5: **Infernal Steel** (TE 1, 1 rank) | Casting Skulltaker with 6 Demonfire stacks now causes your next Hellmaw within 15 seconds to tick -25% faster and cost -50% less Rage.
+- Row 6: **Indiscriminate** (TE 1, 1 rank) | Seeking Flame now spreads Hellmaw and Melt from the target to up to 3 enemies within 6 yds.
+- Row 6: **Inferno Blast** (TE 1, 2 rank) | Increases your critical damage against Burning targets by 20%.
+- Row 6: **Infernal Pummeling** (TE 1, 1 rank) | Melt now increases the damage your target takes from Flames of Xoroth and Skulltaker by 10%.
+- Row 6: **Hellbringer** (TE 1, 1 rank) | Increases the all damage dealt by party and raid members by 3%.Does not stack with similar effects.
+- Row 6: **Xorothian Empowerment** (TE 1, 1 rank) | Increases the attack power of all party and raid members 5%. Does not stack with similar effects.
+- Row 6: **Infernal Pursuit** (TE 1, 2 rank) | Increases your melee haste by 3% and reduces the duration of root effects against you by -15%.
+- Row 6: **Impish Pestilence** (AE 0, 1 rank) | Level 40 PassiveUsing a Pestilence now applies a Lesser Pestilence to your pet.You can only apply a Lesser Pestilence to your pet every 10 sec.Pestilence of Apocalypse (Pet)Increases the Imps Fire Damage dealt by 10% and allows 50% of its mana regeneration to continue while in combat.Pestilence of Famine (Pet)Damage dealt by the Imp has a 20% chance to reduce the enemy's melee and ranged attack speed by -20% for 6 seconds.Pestilence of Conquest (Pet)Damage dealt by the Imp has a 20% chance to reduce the enemy's Magic Damage dealt by -5% for 5 seconds.Pestilence of War (Pet)Damage dealt by the Imp has a 20% chance to heal you for 1 + 10% AP health.
+- Row 7: **Partners in Flames** (TE 1, 1 rank) | Fire damage dealt by your Greater Imp now has a 25% chance to empower you, increasing your damage dealt by 5% for 10 seconds.
+- Row 7: **Unbound Inferno** (TE 1, 1 rank) | Your Infernal Strikes against enemies affected by your Flames of Xoroth now blasts nearby enemies for 75 + 10% fire SP + 5% AP Fire damage.
+- Row 7: **Brimstone Flames** (TE 1, 1 rank) | Damage dealt by Seeking Flame is increased by 20% on enemies affected by Pestilence of Apocalypse.Damage dealt is increased by an additional 10% for each Demonfire you have active.
+- Row 7: **Brimstone Splinters** (TE 1, 1 rank) | Grants Seeking Flame a 30% chance to generate 1 additional Demonfire when it deals damage.Chance to trigger is increased by 5% for each Demonfire you have active.
+- Row 7: **Shadowflame Forge** (TE 1, 2 rank) | Increases the duration of Hellmaw by 3 sec.
+- Row 8: **Into the Maw** (TE 1, 1 rank) | Hellmaw causes a Hellfire Explosion at the end of its duration, dealing additional Fire damage to all nearby enemies within 5 yards equal to 50% of the periodic damage dealt over the duration.
+- Row 8: **Punisher** (TE 1, 1 rank) | Increases the attack power and spell power scaling of Seeking Flame by 25%.
+- Row 8: **Evil Duo** (AE 0, 1 rank) | Level 50 PassiveUnleashing a Pestilence now causes your Greater Imp to unleash it's Pestilence.The Imp's unleash effect is equivalent to your own unleash effect for the equivalent Pestilence.
+- Row 9: **Hellstorm** (TE 1, 1 rank) | Create a hellstorm, dealing 77 + 32.04% fire SP + 8% AP Fire damage to up to 8 nearby enemies.Embers then flare every 1 sec for 2 seconds, dealing 28 + 2.5% fire SP + 2.5% AP Fire damage.Duration is increased by 100% for each stack of Demonfire consumed.
+- Row 9: **Ascended Warlock** (TE 1, 1 rank) | Your Skulltaker used with 6 stacks of Demonfire now reduces the cooldown of Doom by -5 seconds.In addition, while Doom is active, your Doomguard will now copy your Skulltaker, dealing reduced damage.
+- Row 9: **Fury of Xoroth** (TE 1, 1 rank) | Infernal Strike now grants you a stack of Xorothian Fury, increasing the chance for your next Skulltaker within 10 seconds to critically strike by 10% per stack, up to 3 stacks.Additionally, using Skulltaker with 6 stacks of Demonfire grants you Xorothian Rage, causing your next Infernal Strike within 10 seconds to be guaranteed to critically strike.
+
+### War (39 nodes)
+
+- Row 0: **Warbringer** (AE 0, 1 rank) | Transforms your Flames of Xoroth into Warbringer.WarbringerSlam the ground, dealing 65% Weapon Damage plus 2 to nearby enemies, reducing the effectiveness of any healing by -50% for 10 seconds.Deals increased damage per Demonfire consumed.
+- Row 0: **Crusher** (AE 0, 1 rank) | Level 10 PassiveDoubles the base Weapon Damage dealt by Infernal Strike and increases all critical damage dealt by 25%.
+- Row 1: **Gore** (TE 1, 1 rank) | 2 Charges, 8 sec rechargeGenerates 1 DemonfireQuickly gore an enemy, dealing 100% Weapon Damage plus 15.
+- Row 2: **Mutilation** (TE 1, 3 rank) | Increases the damage of Gore and Sever by 10%.
+- Row 2: **Gored** (TE 1, 1 rank) | Damage dealt by Gore and Meatsaw now increases your target's damage taken from Skulltaker and Warbringer by 15% for 10 seconds, stacking 2 times.
+- Row 2: **Consuming Blade** (TE 1, 2 rank) | Increases the critical strike chance of Gore by 25% and your expertise by 5.
+- Row 2: **Ripper** (AE 0, 1 rank) | Level 20 PassiveDamaging abilities that spend Demonfire now refresh a charge of Gore.
+- Row 3: **Fiend** (TE 1, 1 rank) | Casting Sever now removes the cost of your next Infernal Strike.
+- Row 3: **Hellfire Striker** (TE 1, 1 rank) | Increases your critical strike and hit chance by 3%.
+- Row 3: **Pestilence of Death** (TE 1, 1 rank) | Emanate a pestilence, increasing your critical damage by 10%.
+- Row 4: **Burning Blade** (TE 1, 1 rank) | Ignite your weapon, causing you to send out searing fire with each melee critical strike, dealing 270 + 32.5% AP Fire damage in a line and increasing your Armor penetration by 30% while active. Lasts for 6 attacks.Lasts for 1 additional attack per Demonfire consumed.
+- Row 4: **Burning Blade** (TE 1, 1 rank) | Your Skulltaker now ignores -25% of the target's Armor.
+- Row 4: **Absolutism** (TE 1, 1 rank) | Damage dealt by Meatsaw now ignores -10% of the target's Armor.
+- Row 4: **Bringer of Destruction** (TE 1, 1 rank) | Critical damage taken now grants you 1 Demonfire and 5 Rage. Can only occur once every 3 sec.
+- Row 4: **Boundless Fury** (TE 1, 1 rank) | Increases the effectiveness of the unleash effect from Pestilence of Death by 30%.
+- Row 4: **Carver** (AE 0, 1 rank) | Level 30 PassiveCritical strikes with Gore now generate 1 additional Demonfire.
+- Row 5: **Murderous Might** (TE 1, 1 rank) | Increases the damage of abilities that spend Demonfire by 25%.
+- Row 5: **Decimation** (TE 1, 1 rank) | Your next Skulltaker or Warbringer is guaranteed to critically strike for 25% increased damage. Lasts 30 seconds.
+- Row 5: **Screamin' Demon** (TE 1, 1 rank) | Reduces the cooldown of Unleash Pestilence by -15 sec.
+- Row 6: **Burning Swings** (TE 1, 1 rank) | Your Burning Blade now affects 4 additional attacks.
+- Row 6: **Hellsmelted** (TE 1, 1 rank) | Increases the critical strike chance and damage of Burning Blade by 30%.
+- Row 6: **Hand of Doom** (TE 1, 1 rank) | Increases the Weapon Damage dealt by Sever by 10%, increased by 10% for each Demonfire you have active.
+- Row 6: **Conqueror's Will** (TE 1, 1 rank) | Increases the critical strike chance of all party and raid members by 3%. Does not stack with similar effects.In addition, Physical critical strikes now increase the target's Physical damage taken by 4% for 8 seconds.
+- Row 6: **Hellborn** (TE 1, 2 rank) | Generating a stack of Demon's Blood now has a 5% chance to unleash your active Pestilence at half of their effectiveness.
+- Row 6: **Chop Shop** (TE 1, 1 rank) | Each stack of Demon's Blood now increases the critical strike chance of Sever and Meatsaw by 1%.
+- Row 6: **Render** (AE 0, 1 rank) | Level 40 PassiveIncreases your melee haste rating by 30% of your Strength.
+- Row 7: **Domination** (TE 1, 1 rank) | Melee critical strikes now reduce the cooldown of Burning Blade by -1 sec.
+- Row 7: **Hook, Line, and Sinker** (TE 1, 1 rank) | Reduces the cooldown of Flesh Hook and Chainwhip by -5 sec.
+- Row 7: **Demonic Frenzy** (TE 1, 1 rank) | Casting Sever now increases your attack speed by 20% for 10 seconds.Casting Gore extends the duration of this effect by 3 sec.
+- Row 7: **Jagged Edge** (TE 1, 1 rank) | Increases your Rage generated from damage dealt by 20%.
+- Row 7: **Knight of Pestilence** (TE 1, 1 rank) | Increases the critical damage of your Pestilences by 50%.
+- Row 8: **The Butcher** (TE 1, 1 rank) | Damage dealt by Meatsaw now increases the damage dealt by subsequent Meatsaws by 10% and reduces its global cooldown by -5% for 10 seconds, stacking 5 times.
+- Row 8: **Brimstone Bludgeon** (TE 1, 1 rank) | Transforms your Sever into Brimstone Bludgeon.Brimstone BludgeonGenerates 1 DemonfireBludgeon an enemy and all nearby enemies, dealing 250% Weapon Damage.Unleashes your active Pestilence to trigger a powerful effect.Scales with modifiers to Sever.
+- Row 8: **Blood Frenzy** (TE 1, 1 rank) | Abilities that spend Demonfire now refund 1 Demonfire when used with at least 4 stacks.
+- Row 8: **Pestilence Unbound** (TE 1, 1 rank) | When you use an ability that consumes Demonfire with 6 stacks, you now unleash your active Pestilence at half of their effectiveness.
+- Row 8: **Knight of the Apocalypse** (AE 0, 1 rank) | Level 50 PassiveUnleash Pestilence now triggers no cooldown on it's first use.Unleash Pestilence can only be reset this way once every 30 sec.
+- Row 9: **Demonic Blade** (TE 1, 1 rank) | Damaging abilities that spend Demonfire now increase the damage and cost of your next 2 Gores by 25% for 12 seconds.At the end of the duration, or when all stacks are consumed, you instantly cast Meatsaw free of cost.
+- Row 9: **Gorged** (TE 1, 1 rank) | Gore now heals you for 50% of the damage dealt over 3 sec and grants a stack of Gorged for 30 seconds.At 3 stacks, your next Sever will consume the stacks to leech an additional 200% of the damage dealt by it from up to 5 enemies within 5 yds.In addition, Sever now strikes an additional time after 1 sec but has a 2 increased cooldown.
+- Row 9: **Hellknight** (TE 1, 1 rank) | While above 75% health, all direct Physical damage dealt will grant a stack of Hellknight.HellknightMovement speed increased and global cooldowns reduced by -5%. Physical Damage and critical strike chance increased by 1%, stacking 5 times. Lasts 20 seconds.
+
+### Defiance (42 nodes)
+
+- Row 0: **Shieldgore** (AE 0, 1 rank) | Transforms your Infernal Strike into Shieldgore.ShieldgoreGenerates 2 DemonfireGore the target with your spiked shield, causing 21 + 35% AP High Threat Fire Damage, scaling with your block value.
+- Row 0: **Brimstone Buckler** (AE 0, 1 rank) | Level 10 PassiveSuccessful blocks now have a 30% chance to summon 1 Hellfire Imp to aid you in battle for 12 seconds. Can only occur once every 3 sec.
+- Row 1: **Call: Hellfire Imp** (TE 1, 1 rank) | Generates 2 DemonfireBeckon 1 Hellfire Imp to aid you in battle for 12 seconds and generate 20 Rage.Threat generated by Hellfire Imps is transferred to you.
+- Row 2: **A Gift from Hell** (TE 1, 1 rank) | Reduces the Rage cost of Infernal Strike, Meatsaw, and Melt by -10.
+- Row 2: **Imp Gang Boss** (TE 1, 1 rank) | Your Call: Hellfire Imp now summons 2 additional imps.
+- Row 2: **Impcaller** (TE 1, 1 rank) | Transforms your Call: Hellfire Imp into Impcaller.Impcaller (Aura)Your Infernal Strike now summons a Hellfire Imp to aid you in combat for 10 seconds, but its Rage cost is increased by 10.In addition, the maximum health of your imps is increased by 30%.
+- Row 2: **Hellsmelted Armor** (TE 1, 2 rank) | Each Hellfire Imp active now increases your chance to block by 1%.
+- Row 2: **Imp Guards** (AE 0, 1 rank) | Level 20 PassiveEach Hellfire Imp now reduces your Physical damage taken by 1%.
+- Row 3: **Bulwark of Xoroth** (TE 1, 1 rank) | Damage dealt by Shieldgore will now apply Torn Flesh, causing the target to bleed for 105 over 15 seconds.
+- Row 3: **Warden of Hellfire** (TE 1, 1 rank) | Increases the damage dealt by Skulltaker and Flames of Xoroth by 20%.
+- Row 3: **Hellfire Forgemaster** (TE 1, 1 rank) | Increases your block value by 20%.
+- Row 3: **Sacrificial Circle** (TE 1, 1 rank) | Sacrifice your Hellfire Imps within 15 yds, healing you 15% of your maximum health, plus an additional amount equal to 25% of each of your Hellfire Imp's maximum health.Hellfire Imps sacrificed in this way leave behind corpses.
+- Row 4: **Demonfire Retaliation** (TE 1, 1 rank) | Grants you a 30% chance to generate a stack of Demonfire when attacked.
+- Row 4: **Hellish Rebuke** (TE 1, 1 rank) | Generating a stack of Demon's Blood now has a 15% chance to trigger a fiery explosion on up to 5 nearby enemies, dealing 96 Fire damage.
+- Row 4: **Implosion** (TE 1, 1 rank) | Explode with hellish fire, dealing 51 + 25% Strength + 50% fire SP + 10% AP Fire damage to nearby enemies, beckoning Hellfire Imps to aid you in battle for 12 seconds, and generating 30 Rage.Deals increased damage and increases the amount of imps summoned by 1 for each Demonfire consumed.
+- Row 4: **Hellfire Reprimand** (TE 1, 1 rank) | Your Hellfire Imps now have a 20% chance on hit to launch a firebolt dealing 40% Strength Fire damage and reducing enemy attack power by 190 for 10 seconds.
+- Row 4: **Soul Furnace** (TE 1, 1 rank) | Sacrificial Circle now grants you a damage absorption shield equal to 15% of the total health of each destroyed imp for 10 sec.
+- Row 4: **Hellfire Resolve** (AE 0, 1 rank) | Level 30 PassiveIncreases your block rating by 15% of your Strength and increases your hit rating by 5% of your Strength.
+- Row 5: **Demon's Breath** (TE 1, 1 rank) | Critical strikes with Shieldgore now unleash an eruption of hellfire, causing 111 + 20% AP Fire damage and generating 1 additional Demonfire.
+- Row 5: **Demonfire Command** (TE 1, 1 rank) | Reduces the cooldown of Implosion by -10 sec and its Rage cost by -5.
+- Row 5: **Infernal Bulwark** (TE 1, 1 rank) | Casting Unleash Pestilence now generates 4 stacks of Demonfire and grants Infernal Bulwark.Infernal Bulwark (Proc)Increases block value by 20% for 18 seconds.
+- Row 6: **Stoke the Flames** (TE 1, 1 rank) | Your Skulltaker and Melt used with 6 Demonfire now refund 2 Demonfire.Skulltaker used with 6 Demonfire now deals an additional 30% Fire damage.
+- Row 6: **Brimstone Knight** (TE 1, 1 rank) | Increases your Fire damage dealt by 3% and dealing Fire damage increases the enemy spell damage taken by 10% for 15 seconds.
+- Row 6: **Speed Demon** (TE 1, 1 rank) | Your Suffuse now increases your movement speed by 20%.
+- Row 6: **Chains of Xoroth** (TE 1, 1 rank) | Create demonic chains at target location that slow enemies inside by -80% for 5 seconds. At the end of the duration, it pulls all affected enemies to it.
+- Row 6: **Pestilent Retaliation** (TE 1, 1 rank) | When you block an attack you now have a 5% chance to unleash your active Pestilence at half of its effectiveness.Can only occur once every 5 sec.
+- Row 6: **Forgefiend's Bulwark** (TE 1, 1 rank) | Successful blocks, parries and dodges now have a 30% chance to Enrage you, increasing your damage dealt by 10% for 10 seconds.
+- Row 6: **Imp Aura** (AE 0, 1 rank) | Level 40 PassiveEach Hellfire Imp now reduces your Magic damage taken by 1%.
+- Row 7: **Hellfire Sieger** (TE 1, 1 rank) | Doubles the absorption of Black Shield while below 35% health.
+- Row 7: **Brimstone Striker** (TE 1, 1 rank) | Damage dealt by Stoke the Flames now reduces the cooldown of Sever and Juggernaut by -4 sec.
+- Row 7: **Demolisher** (TE 1, 1 rank) | Casting Flesh Hook or Chainwhip now taunts the target for 2 seconds and reduces your Physical damage taken by -5% for 10 seconds.
+- Row 7: **Hellfire Bellows** (TE 1, 1 rank) | Transforms your Flames of Xoroth into Hellfire Bellows.Hellfire BellowsBellow fire on all enemies in a 6 yd cone in front of and behind you, dealing 252 + 17.63% AP + 40% fire SP Fire damage and reducing the cooldown of Chains of Xoroth by -4 sec per enemy hit.Cooldown is reduced by -3 sec for each Demonfire consumed.
+- Row 7: **Black Skull Shield** (TE 1, 1 rank) | Reduces the Rage cost of Shieldgore by -5 and increases its damage by 25%.
+- Row 7: **Demonic Grit** (TE 1, 2 rank) | Grant your summons demonic grit, increasing their total health by 15% and reducing their damage taken by by 10%.
+- Row 7: **Fiend of Forges** (TE 1, 1 rank) | Forgefiend's Bulwark now also increases your critical strike chance by 10%.
+- Row 8: **Hellwrath** (TE 1, 1 rank) | Your Demon's Blood can now stack 5 additional times and each stack now increases the absorption amount of Black Shield by 1%.
+- Row 8: **Curse of Xoroth** (TE 1, 1 rank) | Curse an enemy for 15 seconds, dealing 1575 + 100% AP Shadowflame Damage over 15 seconds.Your next Shieldgore within 12 seconds grants you Black Shield, absorbing 860 + 200% Stamina damage for 30 seconds.
+- Row 8: **Fiery Retribution** (TE 1, 1 rank) | Each time a Hellfire Imp dies, you reduce the cooldown of Sacrificial Circle by -2 sec and Implosion by -1 sec.
+- Row 8: **Demonic Bulwark** (AE 0, 1 rank) | Level 50 PassiveYour successful blocks now have a 30% chance to critically block for twice the normal amount.Chance to trigger is increased by 2% for each Hellfire Imp you have active.
+- Row 9: **Call: Hellfire Abyssal** (TE 1, 1 rank) | Call down a Hellfire Abyssal from the sky to crash down upon the targeted 8 yd area, dealing 1500 + 100% SP + 100% AP Fire damage.The abyssal remains to aid you in battle for 15 seconds and emits an aura that reduces the damage taken by party and raid members within 40 yds by -5%.Costs -15 less Rage for each active Hellfire Imp.
+- Row 9: **A Curse from Hell** (TE 1, 1 rank) | Periodic damage dealt now has a 15% chance to reduce the cooldown of Curse of Xoroth by -3 sec.Chance to trigger is increased by 2% for each stack of Demonfire active.
+- Row 9: **Legion's Presence** (TE 1, 1 rank) | Emanate an aura to all party and raid members within 25 yds for 15 seconds, increasing their damage dealt by 10%.Fire damage dealt by Hellfire Imps is increased by 150% and total health increased by 50% while this effect is active on them.
+
+## Guardian
+
+### Vanguard (38 nodes)
+
+- Row 0: **Heavy Blow** (TE 1, 1 rank) | Smash an enemy and enemies behind them in a line, dealing 23 + 45% AP High Threat Physical damage, scaling with defense rating.
+- Row 0: **Footman's Calling** (AE 0, 1 rank) | Level 10 PassiveYour damage taken is reduced by -10% while Tower Formation or Line Formation is active.In addition, your threat generated from Physical Damage dealt is increased significantly while Tower Formation or Line Formation is active.
+- Row 1: **Iron Guardian** (TE 1, 3 rank) | Increases your Stamina by 5%.
+- Row 2: **Heavy Expert** (TE 1, 1 rank) | Increases your chance to parry and dodge by 4% and increase your Armor contribution from mail and plate items by 20%.
+- Row 2: **With Honor** (TE 1, 1 rank) | Reduces the cooldown of Ram by -4 sec.
+- Row 2: **Bulwark** (AE 0, 1 rank) | Level 20 PassiveIncreases your block value by 25% and your hit rating by 5% of your Stamina.
+- Row 3: **Honorbound** (TE 1, 1 rank) | Removes the Energy cost of Shield Challenge.
+- Row 3: **Shieldbound** (TE 1, 1 rank) | Your Shield Challenge no longer has a cooldown, but now costs 10 additional Energy.
+- Row 3: **Knight's Conviction** (TE 1, 2 rank) | Increases the block value provided by Raise Shield by 25% and your block chance by 1%.
+- Row 3: **Footman's Call** (TE 1, 1 rank) | Damage dealt by Pulverize is increased by 15, plus an additional amount scaling with your block value.
+- Row 4: **Seasoned Fighter** (TE 1, 1 rank) | Reduces the Energy cost of Pulverize, Ram, and Broad Sweep by -10%.
+- Row 4: **Vanguard's Might** (TE 1, 1 rank) | Your Heavy Blow now causes you to emanate an aura for 5 seconds that reduces all damage taken by -5% for party members.
+- Row 4: **Bring Down The Hammer!** (TE 1, 1 rank) | Damage dealt by Heavy Blow now deals an additional 20% of the damage dealt every 1 sec for 3 seconds.
+- Row 4: **Iron Barrier** (AE 0, 1 rank) | Level 30 PassiveYour successful blocks now have a 50% chance to critically block for twice the normal amount.
+- Row 5: **Vanguard's Shield** (TE 1, 1 rank) | Blocking an attack or landing an auto attack now grants a stack of Vanguard for 1 minute, stacking 10 times.Vanguard&#39;s ShieldMagic Damage taken reduced by -2%. Whenever you are hit by a spell, you lose 1 stack of this effect.
+- Row 5: **Hold the Line** (TE 1, 1 rank) | Command nearby allies to hold the line, making them immune to incapacitate, disorient, knockback, and grip effects for 15 seconds.
+- Row 5: **Hammer of the Law** (TE 1, 1 rank) | Smash an enemy and enemies behind them in a line, dealing 90 + 100% AP High Threat Physical damage and silencing them for 3.5 seconds.
+- Row 5: **Battle Wary** (TE 1, 1 rank) | Reduces the cooldown of your Advance and Battle Rush by -30%.
+- Row 6: **Retaliation** (TE 1, 1 rank) | Successful blocks now deal 51 + 5% AP Physical damage to the attacker, scaling with defense rating. Can only occur once per sec.
+- Row 6: **Plate Buster** (TE 1, 1 rank) | Critical strikes with Ram now reduces the remaining cooldown of your Challenging Cry and Hold the Line by -4 sec.
+- Row 6: **Stalwart** (TE 1, 2 rank) | Increases your block value by 10% and your expertise by 4.
+- Row 6: **Unscuffable** (TE 1, 1 rank) | Allies within 30 yds now take -10% less Magic damage from area of effect attacks.
+- Row 6: **Order In The Court** (TE 1, 1 rank) | Damage dealt by Hammer of the Law now reduces the damage dealt by affected enemies by -10% for 8 seconds.
+- Row 6: **The Green Tower** (TE 1, 1 rank) | Reduces the Energy cost of your Formations and increases their effectiveness by 25%.
+- Row 6: **Experienced Soldier** (AE 0, 1 rank) | Level 40 PassiveMelee attacks now reduce the cooldown of Brace by -1 sec.
+- Row 7: **Valorous Strikes** (TE 1, 1 rank) | Auto attacks now have a 10% chance to strike an additional time and reduce your target's chance to hit by -3% for 15 seconds.
+- Row 7: **Resilient** (TE 1, 1 rank) | Blocking an attack while Raise Shield is active now increases your maximum health by 308 + 10% Stamina + 11% AP for 15 seconds.
+- Row 7: **Forceful Impact** (TE 1, 1 rank) | Casting Raise Shield and Heavy Blow now extends the duration of your Brace by 1 sec.
+- Row 7: **Lionheart** (TE 1, 1 rank) | Your Shield of Denial now strikes 1 additional enemy.
+- Row 7: **Valiant Knight** (TE 1, 1 rank) | Melee ability critical strikes now cause your next Pulverize within 6 seconds to be free of cost and deal 25% increased damage.
+- Row 7: **Valiant Defender** (TE 1, 1 rank) | Increases your maximum Energy by 15 and increases the damage of Pulverize and Broad Sweep by 10%.
+- Row 8: **King's Guard** (TE 1, 1 rank) | Your Pulverize and Ram now have a 10% chance to reset the cooldown of Raise Shield.
+- Row 8: **Shield Unit** (TE 1, 1 rank) | Each time you take damage, you gain 5% of the damage taken as attack power for 1 minute.
+- Row 8: **Wreck Formation** (TE 1, 1 rank) | Melee critical strikes now have a 50% chance to reset the cooldown of Hammer of the Law.Casting Standard of Valiance now increases your attack power by 10% for 6 seconds.
+- Row 8: **High Guard** (AE 0, 1 rank) | Level 50 PassiveAfter using Raise Shield, Advance or Battle Rush, you are granted High Guard.High Guard (Buff)Your next Heavy Blow within 15 seconds triggers no cooldown.
+- Row 9: **Paragon** (TE 1, 1 rank) | Blocking an attack grants you a stack of Paragon for 10 seconds. Can only occur once every 0.5 sec.At 10 stacks, your Heavy Blow transforms into Paragon Smash for 10 seconds.Paragon Smash (Damage)Deals 144 + 37% AP Physical damage to all nearby enemies.Increases your chance to block by 10% and each block reduces the cooldown of Brace by -2 sec. Lasts for 5 blocks or 10 seconds.Scales with modifiers to Heavy Blow.Casting Heavy Blow instantly grants 3 stacks of this effect.
+- Row 9: **Bastion** (TE 1, 1 rank) | Raise your shield and lead your allies within 12 yds, reducing their damage taken by -40% for 10 seconds.
+- Row 9: **Shieldlord’s Strength** (TE 1, 1 rank) | You may now use two-handed Maces and can now equip two-handed Maces with a shield.Your Heavy Blow and Hammer of the Law now deal additional damage scaling with your Stamina and your Stamina is increased by 15%.
+
+### Inspiration (45 nodes)
+
+- Row 0: **Inspiring Leader** (AE 0, 1 rank) | You pledge to inspire your allies in the midst of battle, transforming your Pulverize and your Broad Sweep into Ballads.
+- Row 0: **Tempo** (AE 0, 1 rank) | Level 10 PassiveCasting Ballads now grants Tempo, stacking 3 times. Upon reaching 3 stacks of Tempo, you consume them to perform a Sound of War, striking all enemies within 8 yds for 71 + 12.74% AP Magic damage.Tempo (Proc)Critical strike chance increased by 2%, stacking 3 times.
+- Row 1: **A Hero's Tale** (TE 1, 2 rank) | Increases your Energy regeneration by 10%.
+- Row 1: **Leading the March** (TE 1, 2 rank) | Increases your attack power and total Armor by 4%.
+- Row 2: **Strength In Unison** (TE 1, 1 rank) | Increases your melee haste by 1% for each ally within 20 yds, up to a maximum of 20%.
+- Row 2: **Veteran of the Third War** (TE 1, 1 rank) | You now restore 3% of your base health whenever you block an attack.
+- Row 2: **Dragonslayer** (TE 1, 1 rank) | Increases your Agility by 5%.
+- Row 2: **Into The Fray** (TE 1, 1 rank) | Triggering a Sound of War now grants you an additional auto attack on your next swing.
+- Row 2: **Banner of Conquest** (AE 0, 1 rank) | Attach a Banner of Conquest to your back, increasing the critical strike chance of party and raid members within 40 yds by 5%.Does not stack with similar effects.
+- Row 2: **Spirit of Battle** (AE 0, 1 rank) | Increases chance to hit with all spells and attacks by 1% for you and party and raid members.Does not stack with similar effects.
+- Row 3: **Battle Bard** (TE 1, 1 rank) | Increases the damage of your Ballads by 15%.
+- Row 3: **Soundwave** (TE 1, 1 rank) | Increases the damage dealt by Sound of War by 15%.
+- Row 4: **Harrowing Melody** (TE 1, 1 rank) | Play a harrowing melody, dealing 191 + 42% AP Magic damage and reducing all healing received by enemies within 10 yds by -30% for 10 seconds.In addition, your next Ballad within 10 seconds is free of cost and deals 50% increased damage.
+- Row 4: **Hero's March** (TE 1, 1 rank) | Beat the drums of war, causing your auto attacks to trigger a Sound of War and increasing your haste by 15% for 15 seconds.In addition, allies within 10 yds of you have a 5% chance to trigger a Sound of War on any damage dealt.
+- Row 4: **Liberation** (TE 1, 1 rank) | Instantly breaks an ally free of any stun, fear, or polymorph effects and grants immunity to such effects for 5 seconds. Dispels 2 harmful magic effects from the ally.Usable while stunned, feared, or polymorphed.
+- Row 4: **Banner of Swiftness** (AE 0, 1 rank) | Attach a Banner of Swiftness to your back, increasing the haste of party and raid members within 40 yds by 5%.Does not stack with similar effects.
+- Row 4: **Knight's Song** (AE 0, 1 rank) | Casting a Ballad now grants allies Knight's Song.Knight&#39;s SongEmanate an aura for 10 seconds that increases the Armor of party and raid members by 400.Does not stack with similar effects.
+- Row 5: **Minstrel** (TE 1, 1 rank) | Casting a Ballad now increases your haste by 3%, stacking 3 times, for 8 seconds.
+- Row 5: **Pied Piper** (TE 1, 1 rank) | Triggering a Sound of War now increases damage of your next Ram by 20% for 15 seconds.
+- Row 5: **Frontliner** (TE 1, 1 rank) | Triggering a Sound of War now increases your movement speed by 40% and allies' within 20 yds movement speed by 20% for 2 seconds.
+- Row 5: **Bard's Manuscript** (TE 1, 1 rank) | Reduces the cooldown of Hero's March by -60 sec.
+- Row 5: **Warbringer's Manuscript** (TE 1, 1 rank) | Critical strikes now reduce the cooldown of Hero's March by -1 sec.
+- Row 5: **Reverberations** (TE 1, 1 rank) | Casting Ram now causes your next 3 melee attacks to deal an additional 30 + 10% AP Magic damage for 10 seconds.
+- Row 5: **Show of Force** (TE 1, 1 rank) | Dealing damage with Ram now dispels 1 magic effect from the target.
+- Row 6: **Powerful Voice** (TE 1, 1 rank) | Increases the critical strike chance of your Ballads by 10%.
+- Row 6: **Little Drummer** (TE 1, 1 rank) | Allies within 20 yds of you now gain 20% chance to resist curses.
+- Row 6: **Elegant Combat** (TE 1, 1 rank) | Casting a Ballad has a 20% chance to remove the cost of the next Ram and increase its critical chance by 10%.
+- Row 6: **Banner Boy** (TE 1, 2 rank) | Increases your haste by 5% and the movement speed granted by Line Formation by 8%.
+- Row 6: **Song of Steel** (AE 0, 1 rank) | Boost the morale of party and raid members, increasing their attack or spell power by 95 for 15 seconds.Does not stack with similar effects.
+- Row 6: **Dissonance** (AE 0, 1 rank) | Damage dealt by Sound of War now has a 25% chance to reduce enemies' resistances by 75 and increases their Magic damage taken by -2% for 8 seconds.
+- Row 7: **War's Muse** (TE 1, 1 rank) | Increases your critical damage by 20%.
+- Row 7: **Stand Your Ground!** (TE 1, 1 rank) | While standing in your Standard of Valiance, your allies' Physical damage taken is reduced by -10%.
+- Row 7: **You Shall Not Fall!** (TE 1, 1 rank) | While standing in your Standard of Valiance, allies have a -20% increased chance to resist stun and grip effects.
+- Row 7: **Battle Drums** (TE 1, 1 rank) | Place down 3 Battle Drums around you for 1 minute. Allies may click on the drums to increase their critical strike chance, haste, damage, and healing done by 10% and causes their damage dealt to trigger a Sound of War for their next 5 instances of damage or 30 seconds.
+- Row 7: **Fearless** (TE 1, 1 rank) | Each nearby enemy within 10 yds now reduces your damage taken by 1%, up to a maximum of 10%.
+- Row 7: **Cavalry Tactics** (TE 1, 1 rank) | Reduces the cooldown of your Cavalry Charge by -30 sec and it now prevents root and slow effects on allies.
+- Row 8: **Legion Commander** (TE 1, 1 rank) | The damage increase of Harrowing Melody now affects an additional 2 Ballad casts and guarantees them to critically strike and deal 100% more damage.
+- Row 8: **Echoes of War** (TE 1, 1 rank) | Triggering a Sound of War now grants Echoes of War to nearby allies for 8 seconds.Echoes of WarNext direct ability or spell deals 15% of their damage as additional Magic Damage.
+- Row 8: **Song of Battle** (TE 1, 1 rank) | Every 2 sec you emanate Sounds of War, dealing 71 + 12.74% AP Physical damage to all enemies within 8 yds. Lasts 15 seconds.Upon expiration, stun all enemies within 8 yds for 4 seconds.
+- Row 8: **Bannerman** (TE 1, 1 rank) | While affected by your Banner of Swiftness or Banner of Conquest, the initial damage dealt by your Standard of Valiance now deals 150% more damage.
+- Row 8: **Inspiring Presence** (AE 0, 1 rank) | Emanate an aura around you for 15 seconds, causing allied players within 100 yds to deal 35% AP additional damage as Holy damage when they deal direct damage.Applies Exhaustion, preventing you from benefiting from similar effects for 1 minute.
+- Row 8: **Champion's Presence** (AE 0, 1 rank) | Enrage all nearby allies, increasing their haste by 30% for 20 seconds.After being affected by this spell, allies cannot benefit from similar effects for 5 minutes.
+- Row 9: **Voice of an Angel** (TE 1, 1 rank) | Sing a beautiful song, instantly resetting the cooldown of Liberation, Harrowing Melody, and Hero's March.
+- Row 9: **War Drums** (TE 1, 1 rank) | Adds 5% to the value of Echoes of War.In addition, performing a Sound of War now has a 40% chance to echo, striking an additional time after 0.5 sec. Can only occur once per sec.
+- Row 9: **Field Commander** (TE 1, 1 rank) | Placing a Standard causes your next Song of Steel to unleash an additional unique effect.SpellwardingIncreases the magic resistance of party and raid members within 100 yds by 20 for 10 seconds.MightReduces the Armor of enemies within 100 yds by -15% for 10 seconds.RallyingIncreases the movement speed of party and raid members within 100 yds by 15% for 10 seconds.RecoveryReduces the melee and ranged attack speed of enemies within 100 yds by -10% for 10 seconds.
+
+### Gladiator (38 nodes)
+
+- Row 0: **Centurion Strike** (TE 1, 1 rank) | Stab an enemy, dealing 110% Weapon Damage plus an additional effect based on your weapon.Sword: Triggers 3 additional auto attacks.Axe: Guaranteed to critically strike for 25% increased damage.Mace: Ignores -50% of your target's Armor.Polearm: Stabs the target and enemies behind them an additional time.
+- Row 0: **Glory** (AE 0, 1 rank) | Level 10 PassiveYour Ram now grants you a stack of Glory for 30 seconds.At 3 stacks, your next Ram within 30 seconds deals 150% increased damage.
+- Row 1: **Might** (TE 1, 2 rank) | Increases your attack power by 5%.
+- Row 1: **Legionnaire** (TE 1, 2 rank) | Increases the critical damage of Centurion Strike and Reprisal by 10%.
+- Row 2: **Sword Training** (TE 1, 3 rank) | While a sword is equipped, your melee haste is increased by 10%.
+- Row 2: **Supremacy** (TE 1, 1 rank) | Casting Centurion Strike now refreshes a charge of Reprisal.
+- Row 2: **Axe Training** (TE 1, 3 rank) | While an axe is equipped, your critical strike chance is increased by 2% and critical damage increased by 5%.
+- Row 2: **Shield Training** (AE 0, 1 rank) | Level 20 PassiveIncreases your block rating by 10% of your Strength.
+- Row 3: **Polearm Training** (TE 1, 3 rank) | Allows you to wield polearms and to wield them with a shield equipped.While a polearm is equipped, your melee abilities have 2 yds increased range.
+- Row 3: **Upper Hand** (TE 1, 1 rank) | Your melee auto attacks now have a 20% chance to strike 2 additional times.
+- Row 3: **Built Different** (TE 1, 1 rank) | Increases your Strength and Stamina by 4%.
+- Row 3: **Mace Training** (TE 1, 3 rank) | While a mace is equipped, your armor penetration is increased by 8%.
+- Row 4: **Double Duty** (TE 1, 1 rank) | Increases your hit chance by 5% and expertise by 4.
+- Row 4: **Champion** (TE 1, 1 rank) | Your Centurion Strike now extends the duration of Raise Shield on you by 3 sec.
+- Row 4: **Crashing Force** (TE 1, 2 rank) | Increases the damage of your Centurion Strike and Reprisal by 15%.
+- Row 4: **Experienced Combatant** (AE 0, 1 rank) | Level 30 PassiveIncreases your attack power by 20% of your Strength.
+- Row 5: **Spear Throw** (TE 1, 1 rank) | Throw a massive spear at an enemy, dealing 45 + 35% AP Physical damage, reducing the effectiveness of any healing by -50% for 10 seconds.
+- Row 5: **Tactical Combat** (TE 1, 2 rank) | Increases your block value by 8% and chance to block by 2%.
+- Row 5: **Heroic Effort** (TE 1, 1 rank) | Casting Centurion Strike now grants 1 stack of Glory.
+- Row 5: **No Escape** (TE 1, 1 rank) | Ram now reduces the cooldown of your Battle Rush by -10 sec when used against a rooted enemy.
+- Row 5: **Bulwark Rush** (TE 1, 1 rank) | Casting Battle Rush increases your block rating by 25% of Strength for 6 seconds.
+- Row 6: **No Retreating!** (TE 1, 1 rank) | While in combat, every 2 sec, increase the range and Energy cost of your next Spear Throw by 1 and its damage dealt by 3%, stacking up to 15 times.
+- Row 6: **Waste No Movement** (TE 1, 1 rank) | Reduces the Energy cost of Broad Sweep, Spear Throw, and Centurion Strike by -5.
+- Row 6: **Overwhelming Presence** (TE 1, 1 rank) | Increases the attack power of all party and raid members 5%. Does not stack with similar effects.In addition, increases your Agility by 10%.
+- Row 6: **Momentum** (TE 1, 1 rank) | Melee damage dealt now reduces the cooldown of your Chivlary by -2 sec.
+- Row 6: **Myrmidon** (TE 1, 1 rank) | Increases the damage of Ram and Broad Sweep by 25%.
+- Row 6: **Shield Combat** (AE 0, 1 rank) | Level 40 PassiveCasting Ram and Pulverize now increases your attack power based on your block rating for 6 seconds.
+- Row 7: **Clinch Brawler** (TE 1, 1 rank) | Centurion Strike is now guaranteed to critically strike against enemies affected by Net Throw.
+- Row 7: **Pinned Down!** (TE 1, 1 rank) | Damage dealt by Spear Throw now refreshes the duration of Net Throw on your target.
+- Row 7: **Deadly Blow** (TE 1, 1 rank) | Your Centurion Strike and Broad Sweep now bleed an additional 15% of the damage dealt over 3 seconds.
+- Row 7: **Retiarius** (TE 1, 1 rank) | Increases your maximum Energy by 25.
+- Row 8: **Close Combat** (TE 1, 1 rank) | Removes the shared cooldown of your Standards and reduces the cooldown of Guard by -10 sec.
+- Row 8: **Heroism** (TE 1, 1 rank) | Whenever you reach 3 stacks of Glory or 20 stacks of Favor, your next 2 Pulverizes or Broad Sweeps within 10 seconds are free of cost.
+- Row 8: **One-Handed Mastery** (TE 1, 1 rank) | Increases your damage dealt by 10% while a one-handed weapon is equipped.
+- Row 8: **Favor** (AE 0, 1 rank) | Level 50 PassiveCritical strikes and killing blows now grant you Favor for 1 minute, stacking 20 times.At 20 stacks, your next auto attack deals an additional 500% Weapon Damage, consuming the stacks.
+- Row 9: **Calculated Strike** (TE 1, 1 rank) | Your Reprisal, Broad Sweep, and Spear Throw now deal an additional 2% Weapon Damage for each Energy point you have upon casting it.
+- Row 9: **Final Verdict** (TE 1, 1 rank) | Give the final verdict to your target, dealing 1195 + 100% AP Physical damage and healing you for 15% of your maximum health.Only usable on enemies below 20% health. Killing blows reset the cooldown of this ability.
+- Row 9: **Earthsplitter** (TE 1, 1 rank) | Casting Broad Sweep now increases the amount of enemies struck by your next Broad Sweep by 1 and reduces its Energy cost by -10% for 6 seconds, stacking 3 times.
+
+## Templar
+
+### Zealot (40 nodes)
+
+- Row 0: **Vindication** (TE 1, 1 rank) | Strike an enemy with zeal, dealing 31 + 28.5% AP + 35% SP Physical damage, triggering Zealotry, and granting an Oath.Oath: Your damaging abilities have a 10% chance to trigger Zealotry.Zealotry (Proc)Deals 40% off-hand Weapon Damage as Holy Damage.
+- Row 0: **Zealotry** (AE 0, 1 rank) | Level 10 PassiveYour off-hand auto attacks now trigger Zealotry.Zealotry (Proc)Deals 40% off-hand Weapon Damage as Holy Damage.
+- Row 1: **Righteous Upheaval** (TE 1, 1 rank) | Unleash a dominating Oath Breaker, dealing 31 + 45% AP + 45% SP Physical damage, increased by 3% for each time you triggered Zealotry during your Oath Chain.Consumes your Oaths, dealing additional damage for each consumed.
+- Row 2: **Solemn Soldier** (TE 1, 2 rank) | Increases your melee haste by 5% and expertise by 5.
+- Row 2: **Combat Training** (TE 1, 1 rank) | Increases the effectiveness of Oaths by 20%.
+- Row 2: **Calm Combatant** (AE 0, 1 rank) | Level 20 PassiveIncreases your Holy spell damage by 30% of your attack power.
+- Row 3: **Oath Flow** (TE 1, 1 rank) | Increases the duration of Oath Chain by 2 sec.
+- Row 3: **Radiance** (TE 1, 1 rank) | Reduces the Energy cost of Vindication by -5.
+- Row 3: **Upheave!** (TE 1, 1 rank) | Increases the critical damage of Righteous Upheaval by 20%.
+- Row 3: **Battle Hardened** (TE 1, 1 rank) | Reduces the cooldown of Righteous Upheaval by -5 sec.
+- Row 3: **Martial Paladin** (TE 1, 2 rank) | Increases your Agility by 5% and your chance to hit by 3%.
+- Row 4: **Bursting Impact** (TE 1, 1 rank) | Increases your off-hand weapon damage by 25%.
+- Row 4: **Libram of Zeal** (TE 1, 1 rank) | Read from your Libram of Mortal Abdication, increasing your melee haste by 20% and causes your damaging abilities to reduce the cooldown of Righteous Upheaval by -2 sec for 20 seconds.
+- Row 4: **Chakra of Power** (TE 1, 1 rank) | Melee attacks now restore 1 Energy, plus an additional 2 Energy when they critically strike.
+- Row 4: **Holy Upheaval** (AE 0, 1 rank) | Level 30 PassiveIncreases the effectiveness Righteous Upheaval gains per trigger of Zealotry by 100%.
+- Row 5: **Light's Guidance** (TE 1, 1 rank) | Healing with Benediction now causes your next Benediction to heal for 25% more for 30 seconds.
+- Row 5: **Holy Light** (TE 1, 1 rank) | Your Benediction now has a 1.5 sec cast time, but now heals for 100% more.
+- Row 5: **Blade Sermon** (TE 1, 2 rank) | Increases the Weapon Damage dealt by Zealotry by 10%.
+- Row 5: **Priest Training** (TE 1, 1 rank) | Triggering Zealotry now also heals you for 3% of your missing health.Zealotry (Proc)Deals 40% off-hand Weapon Damage as Holy Damage.
+- Row 5: **Paladin Training** (TE 1, 1 rank) | Triggering Zealotry now has an 8% chance to grant you an additional auto attack on your next strike.Zealotry (Proc)Deals 40% off-hand Weapon Damage as Holy Damage.
+- Row 5: **One-Punch Man** (TE 1, 1 rank) | Increases the the damage of Oath Breakers and Titanstrike by 20%.
+- Row 5: **Chakra of Light** (TE 1, 2 rank) | Reduces the cooldown of Testaments by -30 sec and Oath Breakers now heal allies around the target for 20 + 35% SP.
+- Row 6: **Force of Golganneth** (TE 1, 1 rank) | Explode with holy power, dealing 310 + 25% AP + 25% holy SP Holy damage and triggering Zealotry every 1 sec to nearby enemies for 5 seconds.Zealotry (Proc)Deals 40% off-hand Weapon Damage as Holy Damage.While active, your Temple Guardian spell has its Energy cost reduced by -50%.
+- Row 6: **Deliverance** (TE 1, 1 rank) | Critically striking with Vindication or Righteous Lunge now deals 50% additional Physical damage.
+- Row 6: **Condemnation** (TE 1, 1 rank) | Increases the critical strike chance gained through Condemn by 3%.
+- Row 6: **Iron Penance** (TE 1, 1 rank) | Dealing damage with Zealotry now applies Iron Penance to the target, increasing their Physical damage taken by you by 1% for 3 seconds, stacking 10 times.
+- Row 6: **Divine Fury** (AE 0, 1 rank) | Level 40 PassiveTriggering Zealotry 10 times now transforms your Chastise into Divine Fury. Divine FuryUnleash divine fury, dealing 91 + 45% holy SP + 25% AP Holy damage to an enemy and up to 4 nearby enemies and reduces their armor by -5% for 20 seconds, stacking 5 times.
+- Row 7: **Pious Sweep** (TE 1, 1 rank) | Increases the damage of Chastise by 25% on enemies above 75% health or affected by Tranquil Circle.
+- Row 7: **Heaven's Finest** (TE 1, 1 rank) | Damaging abilities now grant Heaven's Finest for 12 seconds, stacking 6 times.Heaven&#39;s FinestIncreases your movement speed by 5%.At 6 stacks, increases your Energy regeneration by 100% for 8 seconds.Additional applications do not refresh the duration.
+- Row 7: **Transcending Strikes** (TE 1, 1 rank) | Your Divine Force will now trigger a -30 sec reduced cooldown when used on enemies affected by Blade of Faith.
+- Row 7: **Devotion of Khaz'goroth** (TE 1, 1 rank) | Increases all party and raid member's melee and ranged haste by 10%. Does not stack with similar effects.Damage dealt with auto attacks reduce the cooldown of Libram spells by -0.5 sec.
+- Row 7: **Fervent Castigation** (TE 1, 1 rank) | Casting Righteous Upheaval or Blade of Faith now grants you Oath: Retribution and starts your Oath Chain.Oath: RetributionCritical damage increased by 5%.
+- Row 7: **Condemnation** (TE 1, 1 rank) | Dealing damage with Condemn, Holy Cleave, or Blade of Faith now has a 15% chance to trigger Zealotry if you are within melee range of your target.Zealotry (Proc)Deals 40% off-hand Weapon Damage as Holy Damage.
+- Row 8: **One With The Light** (TE 1, 1 rank) | Casting Oath Breakers now triggers Zealotry on your target and reduces the cooldown of Librams, Force of Golganneth, and Mortal Abdication by -1 sec.Zealotry (Proc)Deals 40% off-hand Weapon Damage as Holy Damage.
+- Row 8: **Might of Aggramar** (TE 1, 1 rank) | Physical damage dealt now has a 25% chance to increase the tick rate and reduce cooldown of your next Blade of Faith by -10%, stacking 5 times.
+- Row 8: **Blessing of Eonar** (TE 1, 1 rank) | Using Libram spells now increases your damage dealt and healing done by 10% for 15 seconds.
+- Row 8: **Unbroken Creed** (AE 0, 1 rank) | Level 50 PassiveDamaging abilities now grants you Unbroken Creed for 15 seconds, stacking up to 3 times.When you use a damaging Oath Breaker or Divine Fury you now consume the stacks and auto attack your target an amount of times equal to your stack count.
+- Row 9: **Norgannon's Wrath** (TE 1, 1 rank) | Target an enemy and leap into the air. After a short delay, you blast them with immense holy force, dealing 1506 + 100% holy SP + 100% AP Holy damage to up to 10 enemies within 5 yds and reduces their damage and healing done by -10% for 5 seconds.Damage dealt pierces all immunities, resistances, and damage absorption effects.Scales with modifiers to Chastise.
+- Row 9: **Blessing of Aggramar** (TE 1, 1 rank) | Righteous Lunge now has a 25% chance to generate an additional stack of Oath: Righteous Lunge.
+- Row 9: **Fury of Aggramar** (TE 1, 1 rank) | Increases the damage dealt by Libram of Consecration by 100% and the effectiveness of your Librams by 25%.
+
+### Oathkeeper (41 nodes)
+
+- Row 0: **Sacred Swing** (TE 1, 1 rank) | Swing at enemies in front of you, dealing 125% High Threat Weapon Damage plus 9, slowing their attack and movement speed by -20% for 10 seconds.Only usable after avoiding an attack.
+- Row 0: **Keeping the Oath** (AE 0, 1 rank) | Level 10 PassiveYou now delay 40% of direct damage taken, instead taking it over 8 seconds.In addition, you no longer consume your Oaths with Oath Breakers.
+- Row 1: **Blessed Padding** (TE 1, 2 rank) | Increases your Armor contribution from mail items by 50% and reduces damage taken from area of effect attacks by -10%.
+- Row 1: **Staffguard** (TE 1, 1 rank) | Casting Sacred Swing now grants you Staffguard, absorbing 125 + 30% Stamina damage, scaling with Stamina, parry and dodge rating, for 8 seconds.
+- Row 2: **Paragon** (TE 1, 1 rank) | Increases your Stamina by 10, plus an additional amount equal to 10% of your Agility.
+- Row 2: **Reckoning** (TE 1, 1 rank) | Unleash a powerful Oath Breaker, dealing 27 + 17.5% AP + 50% Stamina Holy damage and restoring 15 Energy for each enemy struck.Consumes your Oaths, dealing additional damage for each consumed.
+- Row 2: **Bells of Light** (TE 1, 2 rank) | Increases your Agility, Intellect, and hit chance by 3%
+- Row 2: **Graceful Fighter** (AE 0, 1 rank) | Level 20 PassiveIncreases your parry rating by 20% of Agility and your dodge rating by 20% of Intellect.
+- Row 3: **Sacred Oath** (TE 1, 1 rank) | Critical strikes now remove 1 sec from the duration of Oathkeeper when used.Oathkeeper40% of damage taken is now delayed and dealt to you over 8 seconds.
+- Row 3: **Sacred Resistance** (TE 1, 1 rank) | Casting Reckoning now increases your Armor by 15% for 15 seconds.
+- Row 3: **Grace of Aman'thul** (TE 1, 1 rank) | Reduces the Energy cost of Righteous Lunge by -5 and Sacred Swing by -10.
+- Row 4: **Faith Guard** (TE 1, 1 rank) | While a Libram is active, your Chastise will now unleash a line of holy power, dealing 112 + 25% AP High Threat Holy damage.
+- Row 4: **Absolution** (TE 1, 1 rank) | Taunt all enemies within 8 yds for 4 seconds and increase your movement speed by 50% for 4 seconds.
+- Row 4: **Conviction** (TE 1, 1 rank) | Casting Sacred Swing now increases your melee haste by 5% for 15 seconds, stacking 4 times.
+- Row 4: **Holy Books** (AE 0, 1 rank) | Level 30 PassiveUsing a Libram now removes 70% of the delayed damage from Oathkeeper.Oathkeeper40% of damage taken is now delayed and dealt to you over 8 seconds.
+- Row 5: **Disciplined Mind** (TE 1, 2 rank) | Increases the healing of Benediction by 15% and causes it to dispel 1 poison and disease effect.
+- Row 5: **Disciplined Blows** (TE 1, 1 rank) | Your healing done triggers a holy pulse around healed targets, dealing 89 + 5% AP + 20% Agility Holy damage to nearby enemies.Cnly occur once every 0.5 sec.
+- Row 5: **Call of the Monastery** (TE 1, 1 rank) | Increases the attack power of all party and raid members 5%. Does not stack with similar effects.In addition, increases your attack power by 5%.
+- Row 5: **Fortified Body** (TE 1, 1 rank) | Allies within 40 yds receive 6% more healing. Does not stack with similar effects.Additionally, increases your maximum health by 6%.
+- Row 5: **Way of the Monk** (TE 1, 1 rank) | Damage dealt by Sacred Swing and Reckoning now reduces casting speed by -10% for 10 seconds, stacking 2 times.
+- Row 5: **Holy Warstaff** (TE 1, 1 rank) | Increases the damage of Reckoning by 20%.
+- Row 5: **Parry Dance** (TE 1, 1 rank) | When you critically strike with auto attacks or parry an attack, your chance to parry is now increased by 3% for 5 seconds, stacking 5 times.
+- Row 6: **Justicar of the Light** (TE 1, 1 rank) | Removes the cooldown from Benediction, but increases its Energy cost by 10.
+- Row 6: **Guardian of the Light** (TE 1, 1 rank) | Casting Benediction now reduces the cost of your next Temple Guardian by -50% for 6 seconds.
+- Row 6: **Barrier of Light** (TE 1, 1 rank) | Emit saving light, increasing the healing received by nearby party and raid members by 40% for 15 seconds.For the duration, threat generated by your allies is redirected to you.
+- Row 6: **Duty Calls** (TE 1, 1 rank) | Casting abilities that grant an Oath now increases your damage dealt and movement speed by 2% for 15 seconds, stacking 5 times.
+- Row 6: **Lorescribe** (AE 0, 1 rank) | Level 40 PassiveCasting Oath Breaker abilities now reduce the cooldown of Librams by -4 sec.
+- Row 7: **Spiritual Abdicator** (TE 1, 1 rank) | Your Testament of Hope now reduces damage taken by an additional 0% per copy.
+- Row 7: **Untainted** (TE 1, 1 rank) | Effectively healing yourself now reduces your Physical damage taken by -10 + 10% Stamina for 8 seconds.Can only occur every 15 sec.
+- Row 7: **Patience** (TE 1, 1 rank) | Increases the duration of Interdict by 2 sec and its cooldown by -5 sec.
+- Row 7: **Justice** (TE 1, 1 rank) | Your Interdict now strikes 1 additional nearby target.
+- Row 7: **Uther's Legacy** (TE 1, 1 rank) | Your Condemn now heals you for 75% of the damage dealt.
+- Row 7: **Transcendent Guardian** (TE 1, 1 rank) | Charging to an ally with Temple Guardian now has a 40% chance to refresh a charge.
+- Row 7: **Armor of Faith** (TE 1, 1 rank) | Whenever the absorption shield from Staffguard breaks, inflict 207 + 20% AP + 50% holy SP High Threat Holy damage to nearby enemies.
+- Row 8: **Eternal Blessing** (TE 1, 1 rank) | Increases your Holy damage and healing done by 15% for 30 seconds.While active, Oath Breakers deal an additional 141 + 12% AP Holy damage to nearby enemies.
+- Row 8: **Mending Ward** (TE 1, 1 rank) | Oath Breakers now grant you a stack of Mending Ward for 15 seconds, stacking 3 times.Mending WardNext instance of direct damage taken while below 35% maximum health will consume these stacks to heal you for 395 + 25% Stamina. Healing scales with your Stamina and parry rating.
+- Row 8: **Battlepriest** (TE 1, 1 rank) | While above 80% health or below 20% health, you now take 20% reduced Magic damage.
+- Row 8: **Light's Ward** (AE 0, 1 rank) | Level 50 PassiveIncreases all magic resistances equal to 10% of your dodge rating and reduces your damage taken from periodic effects by -15%.
+- Row 9: **Eternally Devoted** (TE 1, 1 rank) | Damage dealt through Eternal Blessing now reduces the cooldown of Libram spells by -4 sec.
+- Row 9: **Tome of Light** (TE 1, 1 rank) | Grants a shield equal to 100% of your maximum health for 30 seconds, resets the cooldown of Barrier of Light and Tranquil Circle, and grants an additional effect for each.Tome of Light: Barrier of LightYour next Barrier of Light within 30 seconds removes the Oathkeeper stagger debuff.Tome of Light: Tranquil CircleYour next Tranquil Circle within 30 seconds triggers instantly.
+- Row 9: **Lightkeeper** (TE 1, 1 rank) | Periodic damage dealt by Condemn now has a 15% chance to increase your parry chance by 2% for 8 seconds, stacking 3 times.Periodic damage dealt by Condemn also has a 15% chance to burst, dealing 100 + 22% AP Holy damage to up to 5 enemies within 5 yds of the target.
+
+### Crusader (38 nodes)
+
+- Row 0: **Righteous Tempest** (TE 1, 1 rank) | Unleash a whirling Oath Breaker, dealing Weapon Damage plus 71u+SP*0.25 damage to nearby enemies, scaling with spell power, every 1 sec for 3 seconds.Consumes your Oaths, dealing additional damage for each consumed.
+- Row 0: **Scourgebane** (AE 0, 1 rank) | Level 10 PassiveDirect damage dealt now has a 20% chance to strike an enemy with Scourgebane, dealing an additional 162 + 25% SP + 15% AP Holyflame Damage.
+- Row 1: **Argent Blade** (TE 1, 1 rank) | Crush an enemy with argent fervor, dealing 160% Weapon Damage plus 15 + 35% AP + 100% holy SP, healing you equal to the damage dealt, and extending the duration of your Oath Chain by 3 sec.
+- Row 2: **Aggramar's Rage** (TE 1, 2 rank) | Increases your Holy critical strike chance by 3% and your expertise by 5.
+- Row 2: **Pure Focus** (TE 1, 2 rank) | Increases the chance to trigger Scourgebane by 5% and your chance to hit by 2%.
+- Row 2: **Light's Chosen** (AE 0, 1 rank) | Level 20 PassiveIncreases your spell power by 30% of your Agility and your critical strike rating by 15% of your Intellect.
+- Row 3: **Warrior of Tyr** (TE 1, 1 rank) | Periodic damage dealt now has a 10% chance to generate 5 Energy.
+- Row 3: **Chivalric** (TE 1, 1 rank) | Increases your critical damage with Holy spells and abilities by 15%.
+- Row 3: **Warrior of Dawn** (TE 1, 1 rank) | Melee damage dealt now has a 10% chance to reset the cooldown and reduce the Energy cost of your next Argent Blade by -50%.
+- Row 3: **Righteousness** (TE 1, 1 rank) | Your Chastise now always triggers Scourgebane on your target.
+- Row 3: **Paladin Training** (TE 1, 1 rank) | Increases the damage of Righteous Lunge and Argent Blade by 20%.
+- Row 4: **Scarlet Secrets** (TE 1, 1 rank) | Every 2nd cast of Argent Blade now grants you Oath: Retribution.Oath: RetributionCritical damage increased by 5%.
+- Row 4: **Teachings of the Cathedral** (TE 1, 1 rank) | Your Oath: Condemn now provides 5% additional critical strike chance.
+- Row 4: **Scourge-Defense Training** (TE 1, 1 rank) | Warrior of Dawn now also increases the damage and critical strike chance of your next Argent Blade by 20%.
+- Row 4: **Whirling Tempest** (TE 1, 1 rank) | While Righteous Tempest is active you gain 20% increased movement speed.
+- Row 4: **Holy Tempest** (TE 1, 1 rank) | Damage dealt by Righteous Tempest now spreads Condemn on affected enemies to a nearby enemy.
+- Row 4: **Scarlet Training** (AE 0, 1 rank) | Level 30 PassiveCasting Argent Blade while Warrior of Dawn is active now transforms your next Chastise into Scarlet Hammer.Scarlet HammerDrop a scarlet hammer on an enemy for 155% Weapon Damage plus 35 as Holy Damage, causing the Templar's attacks to ignore 10% of their Armor and giving each auto attack a chance to heal the Templar for 2% of their maximum health for 30 seconds.
+- Row 5: **Tyr's Blessing** (TE 1, 1 rank) | Condemn now stacks 1 additional time.
+- Row 5: **Retribution** (TE 1, 1 rank) | Melee damage dealt now has a 20% chance to strike 2 additional times for 30% of the damage dealt as Holy Damage.
+- Row 5: **Judgement** (TE 1, 1 rank) | Increases the damage of Scourgebane, Scarlet Hammer, and Titanstrike by 25% on enemies below 20% health.
+- Row 5: **Focused** (TE 1, 1 rank) | Increases the damage of Blade of Faith and Righteous Tempest by 25%.
+- Row 6: **Templar's Might** (TE 1, 1 rank) | Your Righteous Lunge and Chastise used on enemies affected by your Condemn now deal 6% increased damage per stack.
+- Row 6: **Crusader's Brand** (TE 1, 1 rank) | Brand an enemy for 20 seconds, preventing them from mounting, fleeing, or increasing their movement speed above normal movement speed and when they deal direct damage they take 243 + 27.5% holy SP + 18.5% AP Holy Damage.While marked enemies can always be seen by the Crusader even while stealthed or invisible.
+- Row 6: **Light's Echo** (TE 1, 2 rank) | Argent Blade now has a 10% chance to strike an additional time.
+- Row 6: **Divine Charge** (TE 1, 1 rank) | You and your party members leap upon a divine steed, increasing their movement speed by 100% and causing them to trample nearby enemies for 119 + 20% AP + 40% holy SP Holy Damage every 1 sec for 15 seconds.While active, casting does not dismount you or your allies. Can only be used outdoors.
+- Row 6: **Radiant Blade** (TE 1, 2 rank) | Increases the effectiveness of Oath: Righteous Lunge by 25%.
+- Row 6: **Improved Scarlet Hammer** (AE 0, 1 rank) | Level 40 PassiveCasting Scarlet Hammer now generates 30 Energy.
+- Row 7: **Holy Edge** (TE 1, 2 rank) | Damage dealt by Scourgebane and Scarlet Hammer now strikes 1 additional nearby enemy.
+- Row 7: **Holy Combatant** (TE 1, 1 rank) | Your Argent Blade now also extends the duration of Interdict on your target by 1 sec.
+- Row 7: **Serendipity** (TE 1, 1 rank) | Increases the all damage dealt by party and raid members by 3%. Does not stack with similar effects.In addition, reduces the cost of your spells and abilities by -5%.
+- Row 7: **Divine Strikes** (TE 1, 1 rank) | Damage dealt by Scourgebane now increases the damage of Argent Blade by 5% for 6 seconds, stacking 10 times.
+- Row 8: **Argent Knight** (TE 1, 1 rank) | Increases the damage dealt by Righteous Tempest and Condemn by 30%.Additionally, Righteous Tempest now reduces all damage taken by -20% while active.
+- Row 8: **Testament of Strength** (TE 1, 1 rank) | Your next 3 Titanstrikes are usable regardless of your target's health percentage and deal 25% increased damage. Lasts 1 minute.Applies Sacred Restraint for 1 minute.Sacred RestraintCannot be targeted by Testaments.
+- Row 8: **Legacy of the Silver Hand** (TE 1, 1 rank) | Casting Argent Blade or Scarlet Hammer now guarantees your next 2 instances of damage dealt by Scourgebane to critically strike.Increases the critical damage of Scourgebane by 15%.
+- Row 8: **Martial Training** (AE 0, 1 rank) | Level 50 PassiveYour Chastise now deals an additional 50% Weapon Damage.
+- Row 9: **Templar Rituals** (TE 1, 1 rank) | Damage dealt by Righteous Tempest now deals an additional 35 + 10% holy SP + 8.5% AP Holy damage, and upon dealing damage, you pull enemies within 15 yds towards you.
+- Row 9: **Titanfall** (TE 1, 1 rank) | Your Titanstrike now heals you for twice the damage dealt.
+- Row 9: **Scarlet Champion** (TE 1, 1 rank) | Your damaging critical strikes now increase your Holy damage dealt by 2% for 20 seconds. stacking 5 times. Can only occur once per sec.At 5 stacks, you are granted High General.High GeneralYour next Chastise consumes all stacks of Scarlet Champion to deal 25% increased direct damage, and be guaranteed to critically strike.
+
+## Bloodmage
+
+### Sanguine (40 nodes)
+
+- Row 0: **Transgression** (AE 0, 1 rank) | Transforms your Blood Curse into Transgression.Transgression (Cursed Form)Enter a unique Cursed Form for 30 seconds that does not disable the use of Mortal Form abilities and casts a free Vampiric Fang on your target.While active, direct spell damage triggers a Vampiric Feast, dealing 20% additional Shadow damage to enemies, healing you equal to 50% of the damage dealt.
+- Row 0: **Vampiric Fang** (AE 0, 1 rank) | Expends Thirst StacksSteal 36 + 34% SP health from an enemy.Damage increased by 10% for each Thirst stack. Clears Insatiable and Thirst stacks.
+- Row 0: **Thirst** (AE 0, 1 rank) | Level 10 PassiveSpells that cost health now grant Thirst.Reaching 10 stacks makes you Insatiable, reducing your damage dealt by -30% every 3 sec until Thirst ends.ThirstGenerates 5 Rage and then increases the health costs of your spells by 5% and increases their damage by 3%. Stacks 10 times.
+- Row 1: **Valanar's Vengeance** (TE 1, 1 rank) | Requires Mortal FormLaunch a powerful blood bolt at an enemy, dealing 188 + 127.75% SP Shadow damage.Each stack of Thirst reduces the cast time of this ability and increases its damage.
+- Row 2: **Atherann's Wickedness** (TE 1, 2 rank) | Increases your Shadow damage dealt by 4% and increases your hit chance by 3%.
+- Row 2: **Fearmonger** (TE 1, 1 rank) | Increases the tick rate and cost of Taldaram's Torment by -30%.
+- Row 2: **Cunning of Atherann** (AE 0, 1 rank) | Level 20 PassiveIncreases your spell damage by 25% of your Stamina and Spirit.
+- Row 3: **Blood Constructor** (TE 1, 1 rank) | Increases the duration of Animated Blood by 1 sec per stack of Thirst.
+- Row 3: **Aneurysm** (TE 1, 1 rank) | Counter the enemy's spellcast, preventing any spell from that school of magic from being cast for 4 seconds. Successfully interrupting an enemy heals you for 5% of your maximum health.
+- Row 3: **Darkfallen's Embrace** (TE 1, 2 rank) | Increases your spell haste by 3% and increases the range of your Sanguine spells and Bloodbolt by 5 yds.
+- Row 3: **Blood Banquet** (TE 1, 2 rank) | Increases the damage of Valanar's Vengeance and Taldaram's Torment by 15%.
+- Row 4: **The Cup Runneth Over** (TE 1, 1 rank) | Increases the spell power scaling of Bloodmoon Blast, Taldaram's Torment and Bloodbolt by 20%.
+- Row 4: **Lifedrinker** (TE 1, 1 rank) | Increases the damage of your Vampiric Fang by 25%.
+- Row 4: **Essence Harvester** (TE 1, 1 rank) | Being struck by an enemy while below 35% health instantly resets the cooldown of your Vampiric Fang and grants you Wretched.Can only occur once per minute.WretchedGenerates 10 Rage and 1 stack of Thirst every 1 sec for 10 seconds. Vampiric Fang removes this effect.
+- Row 4: **Night Feast** (TE 1, 1 rank) | Each point of Rage now increases the damage of Bloodbolt by 1%, but its Rage cost is increased by 10.
+- Row 4: **Swarm of Flies** (TE 1, 1 rank) | Your Bloodbolt now refreshes the duration of Taldaram's Torment.
+- Row 4: **Blood Prince's Command** (TE 1, 1 rank) | Your Bloodbolt is now guaranteed to critically strike on enemies affected by Taldaram's Torment.
+- Row 4: **Bloodsores** (AE 0, 1 rank) | Level 30 PassivePeriodic damage dealt now has a 20% chance to apply a Bloodsore to your target for 8 seconds, stacking 5 times.BloodsoreIncreases the damage of your next Sanguine Rupture and Bloodmoon Blast against the target by 10% for 8 seconds, stacking 5 times.
+- Row 5: **Malediction** (TE 1, 1 rank) | Condemn an enemy, dealing 248 + 77.33% shadow SP Shadow damage over 12 seconds and increasing the damage they take from your next 5 direct damage spells by 20%.
+- Row 5: **Atherann's Anguish** (TE 1, 1 rank) | Unleash a hemoplague upon the target area, accumulating 30% of the damage you deal to affected enemies for 10 seconds, and then exploding for that amount of Shadow damage.Damage caused by this ability cannot critically strike.
+- Row 5: **Keleseth's Calamity** (TE 1, 1 rank) | Requires Mortal FormBend blood in an area, dealing 177 + 69% shadow SP Shadow damage to enemies.Each stack of Thirst reduces the cast time of this ability and increases its damage.
+- Row 6: **Hematoma** (TE 1, 2 rank) | Your Bloodbolt now heals for an additional 20% of the damage dealt.
+- Row 6: **Dominion of Blood** (TE 1, 1 rank) | Your Vampiric Fang now heals you for an additional 50% of the damage dealt.
+- Row 6: **Dark Presence** (TE 1, 1 rank) | Increases spell haste of all party and raid members by 3%. Does not stack with similar effects.In addition, increases your spell haste by 3%.
+- Row 6: **Twisted Magic** (TE 1, 1 rank) | Your direct harmful critical strikes increase the target's Shadow damage taken from you by 2%, stacking up to 5 times, for 12 seconds.
+- Row 6: **Cursed Ground** (TE 1, 1 rank) | Increases the cast time of Sanguine Rupture by 2 sec, but now when you strike at least 5 enemies it causes them to bleed out, dealing an additional 352 Shadow damage over 2 seconds.
+- Row 6: **Bloodwell Eruption** (TE 1, 1 rank) | Increases the radius of Sanguine Rupture by 5 yds and its critical strike chance by 10%.
+- Row 6: **Blood Parasites** (TE 1, 1 rank) | Your Taldaram's Torment now generates 3 additional Rage per tick and increases spell critical strike chance against the target by 3% for 15 seconds.
+- Row 6: **Reckless Abandon** (AE 0, 1 rank) | Level 40 PassiveEach stack of Thirst now increases your critical strike chance by 1%.
+- Row 7: **Blood Craving** (TE 1, 1 rank) | Requires Mortal FormYou crave blood for 12 seconds, for the duration you cannot be interrupted or silenced, and you regain 5% of your maximum health and 15% of your missing Rage every 2 sec.
+- Row 7: **Vampyr Lord** (TE 1, 1 rank) | Increases the damage dealt by your Animated Blood by 35%.
+- Row 7: **Enthraller** (TE 1, 1 rank) | Increases the critical strike chance of Valanar's Vengeance and Keleseth's Calamity by 10%.
+- Row 7: **Blood Lord** (TE 1, 2 rank) | Grants your Bloodsore a -15% chance to provide its benefits without being consumed.
+- Row 8: **Cardiac Arrest** (TE 1, 1 rank) | Your Valanar's Vengeance now deals an additional 50% of its initial damage dealt over 10 seconds, healing you for 50% of the damage dealt.
+- Row 8: **Agonizing Pain** (TE 1, 1 rank) | Damage dealt by your Atherann's Anguish now causes enemies hit to bleed, dealing 1405 + 100% shadow SP Shadow damage over 10 seconds.
+- Row 8: **Crimson Terror** (TE 1, 1 rank) | Your Transgression now grants spell damage equal to 50% of your Spirit for the duration.
+- Row 8: **Thirst for Blood** (AE 0, 1 rank) | Level 50 PassiveReceive a bonus based on your Thirst level.Between 1-5 stacks of Thirst: You become Sated.Between 6-10 stacks of Thirst: You become Ravenous.SatedSpell haste increased by 10%.RavenousSpell critical damage increased by 100%.
+- Row 9: **The Council Assembled** (TE 1, 1 rank) | Atherann's Anguish now costs -25 less Rage.Taldaram's Torment now increases the damage of your next Valanar's Vengeance or Keleseth's Calamity by 3% per tick for 10 seconds, stacking 5 times.Valanar's Vengeance and Keleseth's Calamity now reduce the cooldown of Malediction by -5 sec.
+- Row 9: **Sacrificial Rite** (TE 1, 1 rank) | Requires Mortal FormInvoke a dark ritual, increasing your haste by 20% for 15 seconds.While active, attackers are afflicted with Cursed Blood. Can only occur once per sec.At the end of the duration, your healing done is increased by 15% and you are healed for 795 + 150% SP over 15 seconds.
+- Row 9: **Torture** (TE 1, 1 rank) | Increases the leech of Vampiric Feast by 50%.Consuming at least 9 stacks of Thirst with Vampiric Fang now extends the duration of Transgression by 5 sec.
+
+### Accursed (43 nodes)
+
+- Row 0: **Accursed Form** (AE 0, 1 rank) | Transforms your Blood Curse into Accursed Form.Accursed Form (Cursed Form)Embrace your demonic curse for 30 seconds, entering an improved Cursed Form, increasing your attack power by 50% of your Agility and causing your melee attacks to reduce all healing done to the target by -20% for 10 seconds, stacking 2 times.
+- Row 0: **Unchained** (AE 0, 1 rank) | Level 10 PassiveYour damaging Mortal Form spells can now be cast while moving.
+- Row 1: **Reave** (TE 1, 1 rank) | Lacerate an enemy, dealing 125% Weapon Damage plus 26.If the enemy is bleeding, below 35% health, or if you are behind them, deal 100% additional Shadow damage for each condition met.
+- Row 2: **Puncturing Fangs** (TE 1, 1 rank) | Your Bloodmoon Blast now generates 3 additional Rage per hit.
+- Row 2: **Fang Over Fang** (TE 1, 1 rank) | Casting Bloodfang Bite now has a 20% chance to reset the cooldown of Reave.
+- Row 2: **Barely Human** (TE 1, 2 rank) | Increases your armor penetration and the damage of spells that cost health by 15%.
+- Row 2: **Forbidden Power** (AE 0, 1 rank) | Level 20 PassiveIncreases your spell critical strike rating by 30% of your Agility and spell hit rating by 5% of your Agility.
+- Row 3: **Veinburst** (TE 1, 1 rank) | Requires Mortal FormBlast an enemy, dealing 123 + 25% AP + 85% shadow SP Shadow damage.Deals 25% increased damage to bleeding targets.
+- Row 3: **Shadow Pact** (TE 1, 1 rank) | Increases the effectiveness of your Shields by 50%.
+- Row 3: **Blood Pact** (TE 1, 1 rank) | Increases your maximum Rage by 20 and you now regenerate 4 Rage every 5 sec.
+- Row 3: **Rage** (TE 1, 2 rank) | Increases your spell damage by 15% of your attack power and the damage dealt by Reave by 10%.
+- Row 3: **Aortic Assault** (TE 1, 1 rank) | Extend the duration of your active Cursed Form by 3 sec and strike nearby enemies every 1 sec for 3 seconds, each strike causing 20 + 12% AP Physical damage.
+- Row 4: **Terrorizer** (TE 1, 1 rank) | Increases the damage of Veinburst, Bloodfang Bite, and Claw Sweep on enemies below 35% health by 25%.
+- Row 4: **Sanguine Scripture** (TE 1, 1 rank) | Upon exiting Accursed Form, you gain 70% movement speed and spell haste for 5 seconds.
+- Row 4: **Dark Hunt** (TE 1, 1 rank) | Increases your Shadow damage dealt by 10% against bleeding targets.
+- Row 4: **Gore Tome** (TE 1, 1 rank) | For the first 5 sec after activating a Cursed Form, your Bloodfang Bite is now guaranteed to critically strike.
+- Row 4: **Leeching Tome** (TE 1, 1 rank) | Your Bloodbolt now leeches 50% more health, but it now costs 5 additional Rage.
+- Row 4: **Dark Intent** (TE 1, 1 rank) | When you Lunge at an enemy you now heal for 5% of your maximum health.
+- Row 4: **Cruel Intent** (TE 1, 1 rank) | When you Lunge at an enemy you now strike them 3 times with auto attacks.
+- Row 4: **Blood Shards** (AE 0, 1 rank) | Level 30 PassiveShadow Damage dealt now generates 1 Blood Shard, plus 1 additional if it critically strikes, for 10 minutes, up to 8.Dealing damage with Veinburst will now expend all stacks of Blood Shards, each dealing 18 + 9% AP + 15% SP Arcane damage to your target.
+- Row 5: **Corrupted Blood** (TE 1, 1 rank) | When you use Taldaram's Torment on a Humanoid or Beast it now corrupts their blood, increasing your damage dealt against them by 10%.
+- Row 5: **Cursed Blood** (TE 1, 1 rank) | Damage dealt by Taldaram's Torment now has a 20% chance to internally rupture, causing it to deal its damage an additional time to all enemies near the target.
+- Row 5: **Bloodsurge** (TE 1, 1 rank) | Requires Mortal FormEnter a bloodsurge, enraging you and increasing your Shadow damage dealt and your spell critical strike chance by 20% for 20 seconds.At the end of the duration, or whenever you trigger Accursed Form, gain Bloodchaser instead.BloodchaserEnrage, increasing your Physical Damage dealt by 20% for 30 secondsWhile active, Bloodfang Bite now launches 1 Blood Shard, dealing 18 + 15% AP + 35% SP Shadow Damage to your target.
+- Row 5: **Dark Sigil** (TE 1, 1 rank) | Increases critical strike chance of all party and raid members by 3%. Does not stack with similar effects.In addition, you now heal for 15% of all critical damage dealt.
+- Row 5: **Gore Barrage** (TE 1, 1 rank) | Reduces the cost of spells that cost health and Animated Blood by -30%.
+- Row 5: **Crimson Expedition** (TE 1, 1 rank) | Increases the critical strike chance of your Bloodbolt, Blood Shards, and Aortic Assault by 10%.
+- Row 6: **Killer Instinct** (TE 1, 1 rank) | Each point of Rage now increases the critical strike chance of Veinburst and Reave by 0.5%, up to a maximum of 50%.
+- Row 6: **Crimson Feast** (TE 1, 1 rank) | Every 5 second you remain in a Cursed Form now reduces the cooldown of your Bloodsurge by -5 sec.
+- Row 6: **Endure the Curse** (TE 1, 1 rank) | Reduce all damage taken by -30% for 10 seconds.While active, taking damage that would reduce your health below 10% will instantly heal you for 30% of your maximum health. Can only occur once.
+- Row 6: **Dark Frenzy** (TE 1, 1 rank) | Increases spell haste of all party and raid members by 3%. Does not stack with similar effects.In addition, while a Cursed Form is active, your global cooldowns are reduced by -25%.
+- Row 6: **Clotting** (TE 1, 1 rank) | At the end of Aortic Assault's duration, all enemies in a 10 yd frontal cone suffer 600 + 50% AP Physical damage.Damage dealt by this effect is increased by 25% against bleeding targets.
+- Row 6: **Relentless** (AE 0, 1 rank) | Level 40 PassivePhysical critical strikes now reduce the cooldown of Aortic Assault by -1 sec and grant you Relentless.Relentless (Proc)Your Aortic Assault channels -10% faster for 10 seconds, stacking 5 times, and each strike now extends the duration of Taldaram's Torment by 2 sec.
+- Row 7: **Everlasting Hunt** (TE 1, 1 rank) | Damage dealt by Blood Shards now reduces the cooldown of Veinburst and Reave by -1.5 sec.
+- Row 7: **One Man's Curse...** (TE 1, 1 rank) | Removes the health cost of Accursed Form and entering it now instantly restores 15% of your maximum health.
+- Row 7: **Battleweaver** (TE 1, 1 rank) | Casting Cursed Form abilities now has a 50% chance to generate 1 Blood Shard for 10 minutes, up to 8.Dealing damage with Bloodbolt will launch 1 Blood Shard, dealing 18 + 15% AP + 35% SP Arcane damage to your target.
+- Row 7: **Inhumane** (TE 1, 1 rank) | Dealing damage with Aortic Assault will now launch 1 Blood Shard, dealing 18 + 15% AP + 35% SP Arcane damage to your target.
+- Row 8: **Night Hunter** (TE 1, 1 rank) | Your Veinburst now has a 40% chance to not trigger a cooldown when cast.Your Bloodbolt now has a 40% chance to refund half of its Rage cost when cast.
+- Row 8: **Blood Scent** (TE 1, 1 rank) | While in Accursed Form, you now deal 15% increased damage to targets below 35% maximum health.Dealing direct damage to enemies below 35% maximum health now leeches health equal to 10% of the damage dealt.
+- Row 8: **Ultra Instinct** (TE 1, 1 rank) | Direct ability critical strikes now increase your spell and ability critical strike chance and critical damage by 3% for 10 sec.Each additional critical strike increases this by an additional 3%, but reduces its duration by -1 sec.
+- Row 8: **The Hunter and the Hunted** (AE 0, 1 rank) | Level 50 PassiveWhen you activate a Cursed Form you now charge to your target if they are within 20 yds. If they're an enemy you root them for 2 seconds.Upon expiration, your Accursed Form can be reactivated to cause you to erupt in a burst of blood magic, leeching 364 + 33% shadow SP + 12.5% AP health from nearby enemies and teleporting you backwards.
+- Row 9: **Hemoburst** (TE 1, 1 rank) | Requires Mortal FormUnleash a powerful burst of blood at an enemy, dealing 1480 + 65% AP + 50% SP Shadow damage. This ability is guaranteed to critically strike against bleeding targets.Extends the duration of your next Cursed Form by 5 sec for 30 seconds, stacking 2 times.
+- Row 9: **Final Embrace** (TE 1, 1 rank) | Requires Mortal FormGorge on blood magic, entering a dramatically improved Cursed Form for 20 seconds, transforming your Bloodfang Bite into Crimson Maw, but draining your health over time.While active, every 1 sec you curse enemies within 8 yds, applying Hematoma for 6 seconds.Hematoma (Shadow Damage)Deals 55 + 15% shadow SP + 10% AP Shadow Damage and increases the damage the target takes from subsequent applications of Hematoma by 3%, stacking 10 times. Generates Rage based on damage dealt.
+- Row 9: **Darkcasting** (TE 1, 1 rank) | Critical strikes with abilities now spawn a Blood Orb near you for 15 seconds.Blood Orb (Spawn)When you run over this, restore 3% of your missing health and 5 Rage and gain a stack of Darkcasting for 1 minute, stacking 10 times.Darkcasting (Buff)Gaining a stack reduces the cooldown of Animated Blood by 1 sec and causes your next Animated Blood to spawn 1 blood worm to attack your enemies.
+
+### Eternal (41 nodes)
+
+- Row 0: **Rotclaw** (TE 1, 1 rank) | 2 Charges, 6 sec rechargeRavage all nearby enemies, dealing 28 + 10% AP Shadow damage, generating Rage and infecting their wounds, causing them to bleed for 24 + 46% AP Shadow damage over 4 seconds.
+- Row 0: **Eternal Curse** (AE 0, 1 rank) | Level 10 PassiveTeaches you Eternal Curse.Eternal Curse (Cursed Form)Embrace your eternal curse, entering a Cursed Form, reducing your damage dealt by -10% and increasing your threat generated by 80%, plus an additional 50% from damage dealt by spells that cost health.While active your armor contribution from items is increased by 400% and your total Stamina is increased by 25%.
+- Row 1: **Heightened Reflexes** (TE 1, 2 rank) | Increases your chance to dodge by 4% and your expertise by 5.
+- Row 1: **Thick Pelt** (TE 1, 1 rank) | Physical damage taken now reduces the Physical damage taken from the next attack within 10 seconds by -15 + 20% AP. Can only occur once every 5 sec.
+- Row 2: **Eternal Hunt** (TE 1, 1 rank) | Increases your maximum health and reduces the cost of your spells and abilities by 5%.
+- Row 2: **Enduring** (TE 1, 1 rank) | Increases the damage of Bloodbolt by 25%, plus an additional 25% while below 35% health.
+- Row 2: **Eternal Resolve** (TE 1, 1 rank) | Activate your eternal resolve for 30 seconds, sending you into a feral frenzy, increasing your melee attack speed, maximum health, and healing received by 50%.
+- Row 2: **Uncanny Movement** (AE 0, 1 rank) | Level 20 PassiveIncreases your Agility by 25% and your hit rating by 5% of your Agility.In addition, Claw Sweep now generates additional threat.
+- Row 3: **Blood Howl** (TE 1, 1 rank) | Taunts nearby enemies within 10 yds, forcing them to attack you for 5 seconds.
+- Row 3: **Coated In Darkness** (TE 1, 1 rank) | Casting Bloodbolt or Bloodfang Bite now reduces the cooldown of your Blood Pact by -0.5 sec.
+- Row 3: **Coated In Blood** (TE 1, 1 rank) | Increases the effectiveness of Blood Pact by 50%.
+- Row 3: **Bloodguard** (TE 1, 1 rank) | Increases the duration of Blood Pact by 4 sec.
+- Row 4: **Packleader** (TE 1, 1 rank) | Casting Howl spell now enrages your summons, increasing their damage dealt by 10% for 8 seconds.
+- Row 4: **Vitality** (TE 1, 1 rank) | Increases your Stamina while in Eternal Curse by an additional 10%.
+- Row 4: **Monstrous Hunger** (TE 1, 1 rank) | Enrage for 10 seconds, causing the next 6 Bloodfang Bites to have a -50% reduced global cooldown and cost and to trigger Call of the Darkwing.Call of the DarkwingCalls 1 to 2 Shadow Bats to appear from the shadows and strike the target for 28 + 40% SP + 20% AP Physical Damage, healing you equal to the damage dealt.
+- Row 4: **Blood Moon** (TE 1, 1 rank) | While below 75% health, you now heal for 3% of all damage you deal.
+- Row 4: **Shadows In The Night** (TE 1, 1 rank) | While above 75% health, your damage taken is reduced by -5%.
+- Row 4: **Uncanny Speed** (TE 1, 1 rank) | Increases your melee haste by 5% and your movement speed and mounted movement speed by 20%.
+- Row 4: **Feral Strength** (AE 0, 1 rank) | Level 30 PassiveWhile in Eternal Curse, you now gain 50% more attack power from Agility and Strength.
+- Row 5: **Night Hunter's Howl** (TE 1, 1 rank) | Howl into the souls of nearby enemies, dealing 71 + 28.5% AP Shadow damage and slowing their movement speed by -60% for 6 seconds.
+- Row 5: **Blood Plague** (TE 1, 1 rank) | Increases the critical strike chance and critical damage of Ravenous Strike and Claw Sweep by 10% against Diseased targets.
+- Row 5: **Festering Maw** (TE 1, 1 rank) | Healing with Bite Wound now reduces the cooldown of Lunge by 1 sec.
+- Row 5: **No Mercy** (TE 1, 1 rank) | Allows your Thick Pelt to affect an additional hit.
+- Row 6: **Petrified Legions** (TE 1, 1 rank) | Physical damage you deal or take now has a 10% chance to trigger a Call of the Darkwing.Call of the DarkwingCalls 1 to 2 Shadow Bats to appear from the shadows and strike the target for 28 + 40% SP + 20% AP Physical Damage, healing you equal to the damage dealt.
+- Row 6: **Rabid** (TE 1, 1 rank) | Reduces the cooldown of Howl spells by -25%.
+- Row 6: **Appetite for Blood** (TE 1, 1 rank) | Increases the damage dealt by Bloodfang Bite and Claw Sweep by 20% against Humanoids and Beasts.
+- Row 6: **Dark Mark** (TE 1, 1 rank) | Reduces the chance to hit for enemies within 5 yds of you by -3%.
+- Row 6: **Blood Mark** (TE 1, 1 rank) | Increases the Physical damage taken by enemies within 5 yds of you by 3%.
+- Row 6: **Cursed Strikes** (TE 1, 2 rank) | Increases the duration of Rotclaw and Hypovolemic Shock by 50%.
+- Row 6: **Enraging Wounds** (AE 0, 1 rank) | Level 40 PassiveMelee critical strikes now leech 46 + 18.5% Stamina health from the target, scaling with your Stamina.
+- Row 7: **Grim Omen** (TE 1, 1 rank) | Critical strikes with Ravenous Strike or Bloodfang Bite, or using Howl spells, now triggers Call of the Darkwing.Call of the DarkwingCalls 1 to 2 Shadow Bats to appear from the shadows and strike the target for 28 + 40% SP + 20% AP Physical Damage, healing you equal to the damage dealt.
+- Row 7: **Eternal Presence** (TE 1, 1 rank) | Increases the attack power of party and raid members by 5%. Does not stack with similar effects.In addition, you now gain attack power equal to 15% of the damage taken for 10 seconds. Can only occur once every 10 sec.
+- Row 7: **Rejuvenating Shadows** (TE 1, 1 rank) | Nearby party and raid members receive 6% more healing. Does not stack with similar effects.In addition, increases the health leeched by Bloodbolt by 50%.
+- Row 7: **Infection** (TE 1, 1 rank) | Auto attacking a bleeding target will now infect the wound, increasing their chance to be critically struck from you by 1% for 6 seconds, stacking 10 times.
+- Row 8: **Screech of the Darkwing** (TE 1, 1 rank) | Your effects that trigger Call of the Darkwing now trigger an additional Call of the Darkwing.Can only occur once per sec.
+- Row 8: **Enraging Howls** (TE 1, 1 rank) | Casting Howl spells now increases the damage dealt and reduces damage taken by nearby party members by 5% for 10 seconds.
+- Row 8: **Iron Claws** (TE 1, 1 rank) | Allows Rotclaw's periodic effect to stack up 2 additional times for 50% longer duration and cause you to ignore 3% of the target's armor per stack.
+- Row 8: **Bloodmoon Power** (AE 0, 1 rank) | Level 50 PassivePeriodic damage dealt by Rotclaw now hits -50% more often and your Bloodfang Bite, Claw Sweep, and Bloodbolt additionally scales with dodge rating.
+- Row 9: **Eyes In The Night** (TE 1, 1 rank) | Allies within 20 yds are protected by Shadow Colony, giving them a 40% chance to trigger a Call of the Darkwing when they take direct damage. Can only occur once every 5 sec.If allies have less health than you when this occurs, generate a large amount of threat against the enemy that triggered it.
+- Row 9: **Shadow Strength** (TE 1, 1 rank) | Casting Howl spells now deal 65 + 25% Stamina + 25% Agility + 10% AP Shadow damage to all nearby enemies and triggering Call of the Darkwing now reduces the cooldown of all Howl spells by -1 sec.Can only occur once per sec.
+- Row 9: **Bloody Claws** (TE 1, 1 rank) | You now generate 20% increased Rage from damage dealt and critical strikes with auto attacks now reduces the cooldown of Animated Blood, Blood Veil, and Blood Pact by 1 sec.
+
+### Fleshweaver (44 nodes)
+
+- Row 0: **Sanguine Essence** (AE 0, 1 rank) | Transforms your Blood Curse into Sanguine Essence.Sanguine Essence (Cursed Form)Enter a unique Cursed Form that does not disable Mortal Form abilties, coalescing a blood orb that will float beside you.While active, you replicate 20% of healing or damage done by Sanguine Mend and Bloodmoon Blast on the target every 1 sec for 3 seconds.
+- Row 0: **Pooled Vitality** (AE 0, 1 rank) | Level 10 PassiveSpells that cost health now grant a stack of Pooled Vitality, stacking 10 times.Mortal Form spells that cost Rage consume 10 stacks of Pooled Vitality to become empowered.
+- Row 1: **Consolidation** (TE 1, 1 rank) | Increases your haste by 5%.
+- Row 1: **Raging Hunger** (TE 1, 1 rank) | Triggering Pooled Vitality now also generates 3 Rage.
+- Row 2: **Dark Liturgy** (TE 1, 1 rank) | Requires Mortal FormForm a blood bond, healing a friendly target for 77 + 35% SP + 25% Spirit and applying Blood Rituals to them, bouncing to up to 10 nearby allies, healing for less for each target struck.Blood RitualsCauses Bloodmoon Blast to heal marked allies for 178 + 7% healing + 8.5% Stamina.
+- Row 2: **Gift of Lana'thel** (TE 1, 2 rank) | Become blessed by Lana'thel, increasing your spell power by 25% of your Spirit and your hit rating by 4% of your Spirit.
+- Row 2: **Vampyr's Kiss** (TE 1, 1 rank) | Curse an enemy, causing them to bleed for 174 Shadow damage over 30 seconds.All periodic damage dealt to an enemy affected by Vampyr's Kiss is replicated on them equal to 25% of the value.
+- Row 2: **Fleshbending** (AE 0, 1 rank) | Your critical strikes now increase the critical strike chance of all party and raid members by 5% for 10 seconds.Does not stack with similar effects.
+- Row 2: **Invigorated Flesh** (AE 0, 1 rank) | Increases chance to hit with all spells and attacks by 1% for you and party and raid members.Does not stack with similar effects.
+- Row 3: **Dark Blood** (TE 1, 2 rank) | Reduces the cost of your abilities that require Cursed Form and increases the healing done by Blood Rituals by -25%.
+- Row 3: **Organ Orbs** (TE 1, 1 rank) | Each stack of Pooled Vitality now increases your Spirit by 3%.
+- Row 3: **Lingering Essence** (TE 1, 1 rank) | Periodic damage and healing done now has a 50% chance to reduce the cooldown of Vampyr's Kiss by -1 sec.
+- Row 4: **Dark Essence** (TE 1, 1 rank) | Casting Cursed Form abilities or Bloodbolt will now heal allies affected by Blood Rituals for 114 + 10% healing every 1 sec for 3 seconds.
+- Row 4: **Infuse** (TE 1, 1 rank) | Accumulates 10% of all damage dealt to the target and unleashes it after 10 seconds, dealing Shadow damage and absorbing healing done to the target equal to the damage done for 10 seconds.
+- Row 4: **Gruesome Rituals** (TE 1, 1 rank) | Your damage dealt is now increased by 1% for each stack of Pooled Vitality.
+- Row 4: **Crimson Tide** (TE 1, 1 rank) | Requires Mortal FormCreate a pool of blood beneath up to 10 enemies within 10 yds of you, causing them to bleed for 165 + 140% SP Shadow damage over 15 seconds.Empowered: Radius increased by 5 yds and costs -100% less Rage.
+- Row 4: **Black Heart** (TE 1, 1 rank) | Your Vampyr's Kiss now regenerates 20% of your maximum Rage.
+- Row 4: **Blood-Cursed Weapons** (AE 0, 1 rank) | Casting Crimson Tide now additionally increases the haste of all party and raid members by 5% for 15 seconds.Does not stack with similar effects.
+- Row 4: **Blood-Cursed Armor** (AE 0, 1 rank) | You now emanate an aura around you, increasing the Armor of party and raid members by 390.Does not stack with similar effects.
+- Row 5: **Hemal Excision** (TE 1, 1 rank) | Cut into an ally's vital essence, siphoning all curse effects from them. You may reactivate this ability again within 10 seconds to place these curse effects on an enemy.
+- Row 5: **Acquired Taste** (TE 1, 1 rank) | Casting Infuse or Vampyr's Kiss now generates 2 additional stacks of Pooled Vitality.
+- Row 5: **Universal Donor** (TE 1, 1 rank) | Casting Infuse or Vampyr's Kiss now increases the healing received by all allies by 6% for 10 seconds.
+- Row 5: **Aortic Aegis** (TE 1, 1 rank) | Your Blood Veil now applies to the party members of the target.
+- Row 5: **Sovereignty** (TE 1, 1 rank) | Damage dealt by Crimson Tide now grants you Sovereignty.SovereigntyReduces the cost of your next Bloodbolt within 12 seconds by -10% and causes it to strike 1 additional nearby enemy for each target damaged, stacking up to 5 times.
+- Row 5: **Arterial Bind** (TE 1, 1 rank) | Place a pool of blood on the ground, instantly silencing all enemies for 4 seconds and healing allies for 203 + 33% healing every 1 sec for 4 seconds.
+- Row 6: **Dissipation** (TE 1, 2 rank) | Reduces the cooldown of Fleshcraft and the duration of the Sated debuff by -60 sec.
+- Row 6: **Heart Rupturer** (TE 1, 1 rank) | Increases the damage of Claw Sweep, Sanguine Rupture, Ravenous Strike and Bloodmoon Blast by 20%.
+- Row 6: **Vitality For Later** (TE 1, 1 rank) | Consuming Pooled Vitality now heals up to 10 allies within 30 yds for 176 + 25% SP + 50% Spirit, scaling with Spirit and healing power.
+- Row 6: **Waves of Blood** (TE 1, 1 rank) | Each tick of Crimson Tide now has a 10% chance to heal a nearby ally for 25% of the damage dealt.
+- Row 6: **Spice of Life** (TE 1, 1 rank) | Your periodic damage and healing now has a 10% chance to grant a stack of Pooled Vitality.
+- Row 6: **Cursed Blood** (AE 0, 1 rank) | Increases the damage dealt and spell power scaling of Bloodbolt, Bloodmoon Blast, and Crimson Tide by 20%.In addition, damage dealt by Bloodbolt now reduces all resistances by 75 and increases the target's Magic damage taken by 2% for 10 seconds.
+- Row 6: **Heartbreak** (AE 0, 1 rank) | Unleash a powerful surge of blood, dealing 172 + 50% shadow SP + 100% Spirit Shadow damage to an enemy, and healing 12 allies within 20 yds of the target for 162 + 30% healing + 100% Spirit.Empowered: Increases your party and raid members attack or spell power by 95 for 20 seconds, plus an additional 95 for you, scaling with level.
+- Row 7: **Blood Redistribution** (TE 1, 1 rank) | Increases the maximum health restored by Fleshcraft by 25%.
+- Row 7: **Sanguine Scion** (TE 1, 1 rank) | Increases the critical strike chance of Sanguine Mend and Bloodbolt by 10%.
+- Row 7: **Crimson Scion** (TE 1, 1 rank) | Direct damage dealt now has a 10% chance to make your next Sanguine Mend within 10 seconds instant cast.
+- Row 7: **Excess Blood** (TE 1, 1 rank) | Your healing done now has a 10% chance to heal the target for an additional 240 + 3% healing over 6 seconds.
+- Row 8: **Flesh Foundry** (TE 1, 1 rank) | Your critical strikes now reduce the cooldown of Fleshcraft and the duration of Sated on the target by -4 sec.In addition, increases your critical strike rating by 15% of your Spirit.
+- Row 8: **Gorge** (TE 1, 1 rank) | Instantly gain 10 stacks of Pooled Vitality every 5 sec for 15 seconds.
+- Row 8: **Darkfallen Lament** (TE 1, 1 rank) | Chant a sinister ritual, healing up to 12 allies affected by Blood Rituals for 648 + 80% healing over 8 seconds and leeching 684 + 800% healing health from enemies within 10 yds over 8 seconds.While active, you are immune to silence and interrupt effects, but cannot move.
+- Row 8: **Red Thirst** (AE 0, 1 rank) | Enrage allies within 40 yds, increasing haste by 30% for 20 seconds.After being affected by this spell, allies cannot benefit from similar effects for 5 minutes.
+- Row 8: **Purify Blood** (AE 0, 1 rank) | Emanate an aura for 15 seconds, causing allied players to deal 70% shadow SP additional damage as Shadow damage when they deal direct damage.Applies Exhaustion, preventing you from benefiting from similar effects for 1 minute.
+- Row 9: **Hemoglobe** (TE 1, 1 rank) | Coalesce a powerful sanguine orb above you, healing up to 12 allies within 20 yds for 4247 + 84.38% healing + 337.5% Spirit + 262.5% Stamina over 15 seconds.Generates 2 stacks of Pooled Vitality, and 150 Rage every 2 sec.
+- Row 9: **Adrenaline Boost** (TE 1, 1 rank) | Increases the critical strike chance of abilities that require Cursed Form on enemies above 75% or below 35% health by 20%.In addition, melee critical strikes now have a 50% chance to make your next Dark Liturgy or Bloodmoon Blast instant cast.
+- Row 9: **Bloodcraft** (TE 1, 1 rank) | Your damage dealt by Darkfallen Lament now applies Bloodcraft to affected enemies, reducing damage dealt by -2% for 5 seconds, stacking 4 times.
+
+## Ranger
+
+### Farstrider (45 nodes)
+
+- Row 0: **Falconstrike** (TE 1, 1 rank) | Every 5th Quick Shot within 15 seconds transforms into Falconstrike.Using a Horn instantly transforms Quick Shot into Falconstrike.Falconstrike (Transform)Generates 2 AdvantageCall a cast of falcons to strike an enemy, dealing 121% Ranged Weapon Damage plus 10 Nature damage and calling 1 War Falcon to your aid for 6 seconds.
+- Row 0: **Dream Flowers** (AE 0, 1 rank) | Level 10 PassiveYour damaging critical strikes now spawn a green Dream Flower at a random location within 15 yds of you. Dream Flower (Spawner)When an ally runs over the flower, they consume it to heal for 3% maximum health and gain 40% increased movement speed for 5 seconds.Can only occur once per sec.
+- Row 1: **Cunning** (TE 1, 2 rank) | Increases your Focus regeneration by 15%.
+- Row 1: **Blow the Horns!** (TE 1, 2 rank) | Reduces the cooldown of Horn spells by -25%.
+- Row 2: **Falcon's Call** (TE 1, 1 rank) | Call down war falcons upon a targeted area, slowing up to 8 enemies within the area by -60% for 5 seconds.A Falcon is summoned for each enemy affected for 12 seconds.
+- Row 2: **Backstep** (TE 1, 1 rank) | Leap backwards up to 10 yds.
+- Row 2: **Woodland Arrow** (TE 1, 1 rank) | Shoot a magical arrow, dealing 38 + 35% ranged AP Physical damage and reducing the cooldown of active Horn spells by -15 sec.Damage increased for each stack of Advantage.
+- Row 2: **Horn of War** (AE 0, 1 rank) | Generates 1 AdvantageEmanate an aura for 30 seconds that grants 5% increased critical strike chance to party and raid members. Does not stack with similar effects.While active, you generate 3 Focus every 1 sec.
+- Row 2: **Battle Prowess** (AE 0, 1 rank) | Increases chance to hit with all spells and attacks by 1% for you and party and raid members.Does not stack with similar effects.
+- Row 3: **Falcon Charmer** (TE 1, 1 rank) | Increases the duration of War Falcons by 3 sec.
+- Row 3: **Survivalist** (TE 1, 1 rank) | Reduces the cooldown of Survival Potion by -25%.
+- Row 3: **Quel'dorei Poison** (TE 1, 1 rank) | Damage dealt by Woodland Arrow and Emerald Arrow now poison enemies for 3 seconds, dealing 91 + 10% ranged AP Nature damage every 1 sec.
+- Row 4: **War Falconer** (TE 1, 1 rank) | Reduces the cooldowns of Falcon's Call by -30 sec.
+- Row 4: **Aerial Assault** (TE 1, 1 rank) | Removes the Focus cost of Falcon's Call, allows it to strike 2 additional targets, and increases its range by 10 yds.
+- Row 4: **Falcon Guide** (TE 1, 1 rank) | Falconstrike and Battle Screech now increase your movement speed by 30% for 3 seconds.
+- Row 4: **Scavenger** (TE 1, 1 rank) | Increases the duration of Battle Screech and reduces the cooldown of Snapseed by 5 sec.
+- Row 4: **Falcon Diving** (TE 1, 1 rank) | Killing an enemy that yields experience or honor now summons a War Falcon to aid you in combat for 12 seconds. Can only occur once every 4 sec.
+- Row 4: **Emerald Arrow** (TE 1, 1 rank) | Set up a powerful magical arrow and then shoot it, dealing 10 + 20% ranged AP Nature damage to the target, increased for each stack of Advantage.Creates an enchanted flare on the ground, causing nearby enemies to take 224 + 20% ranged AP Nature damage every 2 sec, lasting 2 sec for each stack of Advantage.
+- Row 4: **Forest Fighter** (TE 1, 1 rank) | Your Skullpiercers or Emerald Arrows used with 5 stacks of Advantage now reduce the cooldown of Woodland Arrow by -5 sec.
+- Row 4: **Gutpiercer** (AE 0, 1 rank) | Damage dealt by War Falcons and Dragonhawks now has a 15% chance to reduce the enemy's resistances by 75 and increase their Magic damage taken by -2% for 15 seconds.
+- Row 4: **Battle Screech** (AE 0, 1 rank) | Empower party and raid members within 40 yds, increasing their attack or spell power by 65 for 15 seconds.Does not stack with similar effects.
+- Row 5: **Dragonhawk Tamer** (TE 1, 1 rank) | Using a Horn now summons a Dragonhawk to assist you in combat for 15 seconds.
+- Row 5: **Windrunner's Reach** (TE 1, 2 rank) | Increases the range of your ranged abilities by 5 yds.In addition, your critical strike chance against Undead, Beasts, and Dragonkin is increased by 2%.
+- Row 5: **Forest Herald** (TE 1, 1 rank) | Casting Toxic Dart and abilities that spend stacks of Advantage now have a 20% chance to spawn a green Dreamflower at a random location nearby within 15 yds of you.Dream Flower (Spawner)When an ally runs over the flower, they consume it to heal for 3% maximum health and gain 40% increased movement speed for 5 seconds.
+- Row 6: **Wingman** (TE 1, 1 rank) | Reduces all damage taken by -2% for each War Falcon or Dragonhawk you have active.
+- Row 6: **Guidance** (TE 1, 1 rank) | Increases your Physical and Nature damage dealt by 1% for each War Falcon or Dragonhawk you have active.
+- Row 6: **Venom-Coated Seeds** (TE 1, 1 rank) | Damage dealt by Snapseed now reduces the enemy's chance to hit by -15% for 10 seconds.
+- Row 6: **Freedom** (TE 1, 1 rank) | Free up to 10 nearby allies within 15 yds of you for 8 seconds, causing them to become immune to roots and snares, and allowing their critical strikes to increase their movement speed by 30% for 5 seconds.
+- Row 6: **Falcon's Aid** (TE 1, 1 rank) | Periodic damage dealt now has a 10% chance to summon a War Falcon to aid you in battle for 6 seconds.
+- Row 6: **Highlander** (TE 1, 1 rank) | Each time you spawn a green Dreamflower you are granted 1 stack of Highlander.Highlander (Stacks)At 3 stacks, your next Falconstrike within 10 seconds deals 25% increased damage and reduces the enemy's healing received by -40% for 8 seconds.
+- Row 6: **Horn of Alacrity** (AE 0, 1 rank) | Generates 1 AdvantageEmanate an aura for 30 seconds that grants 5% increased haste to party and raid members. Does not stack with similar effects.While active, you generate 3 Focus every 1 sec.
+- Row 6: **Defense of the Ancients** (AE 0, 1 rank) | You now emanate an aura around you, increasing the Armor of party and raid members by 390.Does not stack with similar effects.
+- Row 7: **Phoenix Plumes** (TE 1, 1 rank) | Your Skullpiercers and Woodland Arrows used with 5 stacks of Advantage now restore 3% Focus and summon a War Falcon for 6 seconds.
+- Row 7: **Razorquills** (TE 1, 1 rank) | Increases the tick rate of Toxic Dart and Emerald Arrows by -20%.
+- Row 7: **Thread The Needle** (TE 1, 1 rank) | Critical strikes with Quick Shot or Falconstrike now reduce the cast time and cost of your next ability that consumes Advantage by -34% for 15 seconds, stacking 3 times.
+- Row 7: **To The Skies!** (TE 1, 1 rank) | Reduces the cooldown of Bushcraft Glider by -30 sec.
+- Row 7: **Hunting Tactics** (TE 1, 1 rank) | Damage dealt by Skullpiercer is increased by 30% against Poisoned targets.
+- Row 8: **Pecking** (TE 1, 1 rank) | Your War Falcons and Dragonhawks now have a 25% chance to deal additional Physical damage to 3 nearby enemies.
+- Row 8: **Plumes of War** (TE 1, 1 rank) | Increases the critical strike chance of Falconstrike and Emerald Arrow by 15%.In addition, critical strikes with Falconstrike now increase the damage of subsequent Falconstrikes by 5% for 15 seconds, stacking 5 times.
+- Row 8: **Whipvine Arrow** (TE 1, 1 rank) | Launch an arrow with magical vines attached to it at your target, dealing 78 + 33% ranged AP Nature damage and rooting them for 40 seconds (8 sec vs players). Damage caused may interrupt the effect.Hits 1 additional nearby target per stack of Advantage.
+- Row 8: **Command Aura** (AE 0, 1 rank) | Emanate an aura for 15 seconds, causing allied players to deal 35% ranged AP additional damage as Stormstrike Damage when they deal direct damage.Applies Exhaustion, preventing you from benefiting from similar effects for 1 minute.
+- Row 8: **Frenzy** (AE 0, 1 rank) | Enrage all nearby allies, increasing their haste by 30% for 20 seconds.After being affected by this spell, allies cannot benefit from similar effects for 5 minutes.
+- Row 9: **Coordination** (TE 1, 1 rank) | Your War Falcons and Dragonhawks now grant you a stack of Coordination when they deal damage.Coordination (Proc)Increases your critical strike chance and critical damage by 1% for 15 seconds, stacking 10 times.
+- Row 9: **Thalassian Brand** (TE 1, 1 rank) | Mark an enemy for total destruction, increasing your allies ranged attack power against the target by 300 and dealing 1120 Nature damage every 3 sec for 15 seconds.The marked target can always be seen by the Ranger whether it stealths or turns invisible
+- Row 9: **Petalkeeper** (TE 1, 1 rank) | Woodland Arrow now spawns a rare red Dream Flower at a random location near you for 30 seconds.Critical strikes will apply a stack of Petals to red Dream Flowers. PetalsAt 10 stacks, your next Ranger Horn will cause the flower to burst, granting a buff to allies within 20 yards that causes damage dealt to heal them for 10% of the damage dealt and preventing their movement speed from being reduced below 100% of normal speed, for 8 seconds.
+
+### Archery (40 nodes)
+
+- Row 0: **Precision Shot** (TE 1, 1 rank) | Precisely shoot an enemy from a great distance, inflicting 38 + 48.5% ranged AP Physical damage.Damage increased for each stack of Advantage.Usable while in Elude.
+- Row 0: **Skirmisher** (AE 0, 1 rank) | Level 10 PassiveIncreases the damage and tick rate of Toxic Dart by -30%, but reduces the duration of its damaging effect by -30%.
+- Row 1: **Devastating Shots** (TE 1, 2 rank) | Increases your critical strike chance by 2% and your hit chance by 1%.
+- Row 1: **Deadeye** (TE 1, 1 rank) | Increases the range of your ranged abilities and Auto Shot by 5 yds.
+- Row 2: **Improved Serrated Shot** (TE 1, 1 rank) | Increases the damage of Serrated Shot by 30%.
+- Row 2: **Swiftshot** (TE 1, 1 rank) | Damage dealt by Precision Shot now increases enemy Physical damage taken by 11% for 10 seconds.
+- Row 2: **Superb Shot** (TE 1, 1 rank) | Damage dealt by Auto Shot now restores 4 Focus.
+- Row 2: **Sniper's Focus** (AE 0, 1 rank) | Consuming Advantage now has a 20% chance per Archery Point spent to refund 20 Focus.
+- Row 3: **Boots of Elvenkind** (TE 1, 1 rank) | Increases your Agility by 5% and reduces the duration of movement slowing effects on you by -20%.
+- Row 3: **Studded Arrows** (TE 1, 2 rank) | Increases the ranged weapon damage dealt by Quick Shot by 10%.
+- Row 4: **Hunting Shot** (TE 1, 1 rank) | Fire a shot that ricochets between 3 enemies, dealing Ranged Weapon Damage plus 6 to each enemy.Generates 1 stack of Advantage for each enemy hit.
+- Row 4: **A Quick Demise** (TE 1, 1 rank) | Auto shots now have a 20% chance to extend the duration of your Serrated Shot by 2 sec.
+- Row 4: **Skirmish** (TE 1, 1 rank) | Increases your critical strike chance by 15% and reduces your Focus costs by -25%.Lasts 4 sec for each stack of Advantage.
+- Row 4: **Deadshot** (TE 1, 1 rank) | Generates 2 AdvantageShoot a powerful arrow at the target dealing 250% Ranged Weapon Damage plus 20.1.Only usable on enemies below 20% health.
+- Row 4: **Neurotoxin Arrow** (TE 1, 1 rank) | Shoot at an enemy's throat with a toxin-laced arrow, dealing 25 + 36.07% ranged AP Nature damage and silencing them for 1 seconds.Duration increased by 1 sec per stack of Advantage.
+- Row 4: **Nimble** (AE 0, 1 rank) | Level 30 PassiveIncreases your ranged haste by 20% of your Agility.
+- Row 5: **Hunting with Precision** (TE 1, 1 rank) | Your Hunting Shot now deals 25% increased damage for each subsequent target it ricochets to.
+- Row 5: **Serrations** (TE 1, 2 rank) | Increases your damage against bleeding or Poisoned targets by 5%.
+- Row 5: **Maximum Power** (TE 1, 1 rank) | Abilities used with 5 stacks of Advantage now refresh the duration of your active Skirmish by 5 sec.
+- Row 5: **Corrosive Poison** (TE 1, 1 rank) | Your ranged abilities against Poisoned targets now ignores 25% of enemy armor.
+- Row 5: **Opportunist** (TE 1, 1 rank) | Increases the critical strike chance of Precision Shot by 50% on enemies above 80% health.
+- Row 6: **Lethal Wounds** (TE 1, 1 rank) | Increases the tick rate of your periodic damage effects by -20%.
+- Row 6: **Mortal Shots** (TE 1, 1 rank) | Reduces the cooldown of Crippling Shot by -4 sec.
+- Row 6: **An Arrow for Everything** (TE 1, 1 rank) | Increases the effectiveness of Quivers by 25%.
+- Row 6: **New-Age Archery** (TE 1, 1 rank) | Increases the damage of Skullpiercer and Precision Shot by 20%.
+- Row 6: **Bleeding Edge** (AE 0, 1 rank) | Level 40 PassiveAllows the periodic damage dealt by Serrated Shot to critically strike.
+- Row 7: **Hawkeye** (TE 1, 1 rank) | You now fire an arrow every 3 sec at enemies within 30 yds affected by your Hunting Shot, dealing 75% Ranged Weapon Damage.Scales with Hunting Shot modifiers.
+- Row 7: **Strike Where It Hurts** (TE 1, 1 rank) | Your ability critical strikes now increase the damage the target takes from bleeds by 30% for 15 seconds.
+- Row 7: **Archery Master** (TE 1, 1 rank) | Critical strikes with Quick Shot now generate an additional stack of Advantage.
+- Row 7: **Masterful Archery** (TE 1, 1 rank) | While in Elude, gain a stack of Masterful Archery every 2 sec.Masterful Archery (Aura)Your next Precision Shot now deals 10% increased damage for 10 seconds, stacking up to 5 times.
+- Row 7: **Light Arrows** (TE 1, 1 rank) | Increases the damage of Precision Shot by 20% when used from 40 yds or further away from your target.
+- Row 7: **Pierced** (TE 1, 1 rank) | Critical strikes with Skullpiercer and Precision Shot cause the enemy to bleed for an additional 50% damage of the damage dealt over 4 seconds.
+- Row 8: **Incendiary Shot** (TE 1, 1 rank) | Shoot a burning arrow dealing 791 + 35% ranged AP + 45% fire SP Fire damage to an enemy and up to 5 enemies within 6 yds, and causing your next 3 direct damage Advantage spenders to deal 50% of their damage to nearby enemies.Direct damage increased by 20% for each stack of Advantage.
+- Row 8: **Pathfinder** (TE 1, 1 rank) | Your Adrenaline Rush now incurs a -90% reduced cooldown when used while Elude is active.
+- Row 8: **Headshots Only** (TE 1, 1 rank) | Periodic damage dealt with Serrated Shot and Toxic Dart now increases the damage of your next Precision Shot within 8 seconds by 10%, stacking 10 times.
+- Row 8: **Sharpshooter** (AE 0, 1 rank) | Level 50 PassiveAdds 25% to the bonuses that your stacks of Advantage provide.
+- Row 9: **Elven Enchantments** (TE 1, 1 rank) | Increases the damage dealt by your Searing and Poison Quivers by 25%.In addition, dealing damage with Searing or Poison Quiver now grants a stack of Elven Enchantments.Elven EnchantmentsCast time of the next Incendiary Shot within 10 seconds is reduced by -10% and critical strike chance increased by 10%, stacking 10 times.
+- Row 9: **One Shot, One Kill** (TE 1, 1 rank) | Increases the damage of Deadshot by 75%.
+- Row 9: **Silent, But Deadly** (TE 1, 1 rank) | Direct Physical damage dealt now has an 8% chance to allow you to use Deadshot regardless of the targets health for 8 seconds.
+- Row 9: **Brutal Shot** (TE 1, 1 rank) | Fire a volley of powerful shots that pierce through Armor, dealing 450% Ranged Weapon Damage plus 300 to all targets in a 40 yd line.While Skirmish is active this ability is guaranteed to critically strike.
+
+### Brigand (40 nodes)
+
+- Row 0: **Ravage** (TE 1, 1 rank) | Generates 1 AdvantageRavage an enemy, causing them to bleed out dealing 112 + 23.72% AP Physical damage over 12 seconds.
+- Row 0: **Ravager** (AE 0, 1 rank) | Level 10 PassiveYour Wild Strike now generates 1 additional Advantage.Removes the minimum range of your ranged abilities.
+- Row 1: **Banditry** (TE 1, 2 rank) | Increases your critical strike chance by 2% and Focus regeneration by 15%.
+- Row 1: **Knuckleduster** (TE 1, 1 rank) | Periodic damage dealt now generates 5 Focus.
+- Row 2: **Jagged Cuts** (TE 1, 1 rank) | Increases the damage and duration of Toxic Dart and Ravage by 25%.
+- Row 2: **Assassin** (TE 1, 1 rank) | Increases the duration of Knockout and Crippling Shot by 1 sec.
+- Row 2: **Excessive But Necessary** (TE 1, 1 rank) | Reduces the cooldown of Elude and Knockout by -4 sec.
+- Row 2: **Close Quarters** (TE 1, 2 rank) | Increases your attack power and Agility by 3%.
+- Row 2: **Beatdown** (AE 0, 1 rank) | Level 20 PassiveAuto attacks now have a 5% chance to reveal a fault in the enemy's defenses, causing your next instance of Physical ability damage to ignore Armor.Chance increased by 15% while wielding a polearm.
+- Row 3: **Assault** (TE 1, 1 rank) | Assault a low health enemy, dealing 100% Weapon Damage (175% with a dagger equipped) plus an additional 8 + 100% AP Physical damage. If the target is bleeding, this deals 50% increased damage.Damage increased for each stack of Advantage.Only usable on enemies below 20% health.
+- Row 3: **Dirty Blades** (TE 1, 1 rank) | For 4 seconds, your melee auto attacks deal an additional 30% (doubled with a dagger equipped) of the damage dealt as Nature damage and reduces your target's healing received by -20% for 8 seconds, stacking 2 times.Duration increased by 4 sec for each stack of Advantage.Usable while in Elude.
+- Row 4: **Bounty Hunter** (TE 1, 1 rank) | Damage dealt by Flank and Rusty Shiv now increases the target's damage taken from your Advantage spenders by 25% for 8 seconds.
+- Row 4: **Dice Games** (TE 1, 1 rank) | Increases the critical strike chance of Wild Strike and Assault by 5%.
+- Row 4: **Hookshot** (TE 1, 1 rank) | Launch a hook at a target attempting to lodge it into an open wound, dealing 66 + 100% AP Physical damage. If the target is bleeding, you can reactivate this to pull yourself to them, dealing 150% Weapon Damage and generating 2 Advantage
+- Row 4: **Highwayman** (TE 1, 1 rank) | Direct critical strikes while behind your target increase your haste by 15% for 5 seconds, or for your next 2 attacks.
+- Row 4: **Ambuscade** (TE 1, 1 rank) | Increases the damage of Skullpiercer and Flank by 20%, plus an additional 35% if you have a polearm equipped.
+- Row 4: **Rub It In** (AE 0, 1 rank) | Level 30 PassiveEach stack of Advantage spent now gives you a 20% chance to refund 1 stack of Advantage.
+- Row 5: **Throatpunch** (TE 1, 1 rank) | Punch an enemy in the throat, interrupting the enemy's spellcast, preventing any spell from that school of magic from being cast for 2 seconds.
+- Row 5: **Trueshot Lodge Training** (TE 1, 2 rank) | Increases your off-hand weapon damage by 25%.While wielding a polearm, your Physical damage dealt is increased by 3%.
+- Row 5: **Wild Man** (TE 1, 1 rank) | Your Wild Strike now strikes 2 additional nearby enemies, but deals reduced damage with each enemy struck.
+- Row 5: **Focused Fighter** (TE 1, 1 rank) | Reduces the Focus cost of Flank, Blackjack, and Wild Strike by -10%.
+- Row 5: **Assassin** (TE 1, 1 rank) | Increases the effectiveness of Instinct by 25%.
+- Row 6: **Stalker** (TE 1, 1 rank) | Reduces the cooldown of Cutthroat by -15 sec, but reduces the range of Cutthroat by -10 yds.
+- Row 6: **'Tactical' Advantage** (TE 1, 1 rank) | Knockout and Bushwhack now increases your damage dealt against the target by 10% for 5 seconds.
+- Row 6: **Quills** (TE 1, 1 rank) | Launch darts at up to 5 nearby enemies, dealing 15 + 30% AP Ranged Physical damage.Damage increased and strikes 1 additional target for each stack of Advantage.
+- Row 6: **Underhanded** (TE 1, 2 rank) | Increases the attack power scaling of Skullpiercer by 15%.
+- Row 6: **Pilfering** (TE 1, 1 rank) | Adds 10% to the damage dealt by Dirty Blades and causes its damage dealt to heal you equal to 50% of the value.
+- Row 6: **Polearm Craft** (TE 1, 1 rank) | While a polearm is equipped, your chance to trigger your Weapon Crafts and their damage dealt is increased by 25%.
+- Row 6: **Lacerations** (AE 0, 1 rank) | Level 40 PassiveAllows the periodic damage dealt by Ravage to critically strike.
+- Row 7: **Quick-Witted** (TE 1, 1 rank) | Avoiding an attack now causes you to quickly stab an enemy with one of the arrows from your quiver, dealing 1 + 100% AP Physical damage and reducing their attack speed by -20% for 8 seconds.
+- Row 7: **Marked for Death** (TE 1, 1 rank) | While you have daggers equipped, direct critical strikes on enemies below 35% health now have a chance to allow the use of abilities as if you were in Elude for 5 sec.
+- Row 7: **Tip of the Spear** (TE 1, 1 rank) | While you have a polearm equipped, your Wild Strike now has a 15% chance to strike 3 additional times.
+- Row 7: **Guile of the Cutthroat** (TE 1, 1 rank) | Increases party and raid member's melee and ranged attack power by 5%. Does not stack with similar effects.In addition, increases your damage dealt by 3%.
+- Row 8: **Dirty Fighter** (TE 1, 1 rank) | Every 2nd critical strike with Skullpiercer or Assault within 30 seconds now transforms your next Assault within 15 seconds into Sucker Punch. Sucker PunchSucker punch an enemy, dealing 291 + 35% AP Physical damage and generating 5 stacks of Advantage. Scales with modifiers to Assault.For 8 seconds, the critical strike chance of Assault is increased by 10%.
+- Row 8: **Outmaneuver** (TE 1, 1 rank) | Teleport to an enemy, summon a decoy beneath them, and mark them for 8 seconds. Dealing melee damage to them adds a stack to this effect, up to 20 stacks.Reactivating this ability within 8 seconds deals 1 + 55% AP Physical damage to your target, increased by 20% for each stack on the target, and then teleports you back to your decoy.Usable while in Elude.
+- Row 8: **Stonemason's Secret** (TE 1, 1 rank) | Your Skullpiercer used with 5 stacks of Advantage now extends the duration of Dirty Blades by 6 sec.
+- Row 8: **Dastardly** (AE 0, 1 rank) | Level 50 PassiveIncreases your critical damage dealt by 15% on enemies above 80% health or below 20% health.
+- Row 9: **Viper's Bite** (TE 1, 1 rank) | Generates 2 AdvantageUnleash 4 quick strikes over 1 seconds to an enemy, each dealing 85% Weapon Damage.If the target is bleeding, each strike deals an additional 400 + 25% AP Physical damage.If the target is poisoned, each strike deals Nature damage instead of Physical damage.
+- Row 9: **Instinctual Combatant** (TE 1, 1 rank) | Casting Instinct now also restores 40 extra Focus and guarantees your next 3 Skullpiercers or Assaults within 20 seconds to critically strike.In addition, Instinct now grants you an additional 10% of your Agility as melee attack power.
+- Row 9: **Barbed Quills** (TE 1, 1 rank) | Damage dealt by Wild Strike and Quills will now tear into enemies, causing them to bleed for 78 Physical damage over 9 seconds, stacking 4 times.Damage dealt by Quills now spreads your periodic effects to 5 enemies within 10 yds and extends their duration by 2 sec.
+
+## Chronomancer
+
+### Infinite (39 nodes)
+
+- Row 0: **Timerend** (AE 0, 1 rank) | Transforms your Wand of Time into Timerend.TimerendRend the fabric of time, dealing 36 Chromatic Damage over 6 seconds.
+- Row 0: **Infinite Power** (AE 0, 1 rank) | Level 10 PassiveCasting damaging spells now reduces your damaging spell cooldowns by 10% of their remaining cooldown.
+- Row 1: **Melt Reality** (TE 1, 1 rank) | Melt the target's reality, dealing cond(gt(SPFR, SPS), 48+0+SPFR*0.23, 48+0+SPS*0.23) Chromatic Damage every 3 sec for 30 seconds.While active, periodic damage dealt to the target is replicated for 20% of the value to all enemies near them.
+- Row 2: **Anomaly Spikes** (TE 1, 2 rank) | Periodic damage dealt now has a 8% chance to launch an Anomaly Spike at your target.Anomaly SpikeDeals cond(gt(SPA, SPS), 161*1+SPA*0.25, 161*1+SPS*0.25) Chromatic Damage.
+- Row 2: **Mind Melt** (TE 1, 1 rank) | Damage dealt by Melt Reality now also reduces the target's primary attributes by -3% for 15 sec, stacking 5 times.
+- Row 2: **Gift of the Infinite Dragonflight** (AE 0, 1 rank) | Level 20 PassiveIncreases your spell damage by 40% of your Spirit and your spell hit rating by 3% of your Spirit.
+- Row 3: **Chromatic Shard** (TE 1, 1 rank) | Fling a shard of chaos at an enemy, dealing 209 + 150% SP Chromatic Damage, piercing immunities and resistances.Dealing damage with Anomaly Spikes reduces the cast time of this ability by -10% for 30 seconds, stacking 10 times.
+- Row 3: **Deconstruction** (TE 1, 2 rank) | Increases the critical strike chance of Unmake by 5%.
+- Row 3: **Warpstriker** (TE 1, 2 rank) | Reduces the cost of your spells by -5% and the chance for your spells to be dispelled by 10%.
+- Row 3: **Chronological** (TE 1, 1 rank) | Every 20 sec, your next Discordance within 10 seconds is instant cast.
+- Row 4: **Unearthed Power** (TE 1, 1 rank) | Damage dealt by Anomaly Spikes now also increases your damage and critical strike chance with Chromatic Shard by 6% per stack.
+- Row 4: **Time Means Nothing** (TE 1, 1 rank) | Damage dealt by Chromatic Shard now increases the target's spell damage taken by 10% for 30 seconds.
+- Row 4: **Hourglass of Eternity** (TE 1, 1 rank) | Periodic damage dealt now has a 5% chance to grant you 25% increased haste for 5 seconds.
+- Row 4: **Excruciating Discord** (TE 1, 1 rank) | Your Discordances used with Chronological are now guaranteed to critically strike.
+- Row 4: **Timelost Power** (TE 1, 1 rank) | Your Discordance now strikes 3 additional enemies.
+- Row 4: **Warping Reality** (AE 0, 1 rank) | Level 30 PassiveCasting Waves of Time now grants you Warped Reality for 10 seconds.Warped Reality (Proc)Allows you to cast Unmake and Melt Reality while moving for 10 seconds.
+- Row 5: **Incarnation of Chaos** (TE 1, 1 rank) | Transform into an Incarnate of Chaos, instantly resetting the cooldown of Chromatic Shard and causing your next cast to not incur a cooldown.In addition, your damage dealt is increased by 15% for 15 seconds.
+- Row 5: **Infinity Crash** (TE 1, 1 rank) | Increases the critical damage of Discordance and Chromatic Shard by 50%.
+- Row 5: **Destabilize Time** (TE 1, 1 rank) | Reduces enemy casting speed by -10% for 20 seconds, increasing by -10% every time they cast.Gaining stacks does not extend the duration of the spell.
+- Row 6: **Black Hole** (TE 1, 1 rank) | Increases the damage of Chromatic Shard, Melt Reality and Unmake by 15% against slowed enemies.
+- Row 6: **Chaos Fusion** (TE 1, 1 rank) | While Incarnation of Chaos is active, you may now cast Chromatic Shard while moving, but the duration of Incarnation of Chaos is reduced by -3 sec.
+- Row 6: **Pure Chaos** (TE 1, 1 rank) | While Incarnation of Chaos is active, all damage dealt now has a 10% chance to lock yourself in a time loop for 3 seconds, making you unable to cast any spells other than Chromatic Shard.While active, you cast Chromatic Shard free of cost, repeating every 1 sec.
+- Row 6: **Paradox** (TE 1, 1 rank) | Casting Melt Reality now causes your next Unmake or Reverse Wound within 6 seconds to become instant and cost -50% less mana.
+- Row 6: **Slipstream** (TE 1, 1 rank) | Target an enemy and slip them into a pocket dimension for 5 seconds, banishing them and making them immune to damage.Activate this ability again before the duration expires to choose a new location to place that enemy within 20 yds.
+- Row 6: **Gift of the Timeways** (TE 1, 1 rank) | Casting Melt Reality now causes your Timerend and Unmake's periodic damage to benefit from haste for 10 seconds.
+- Row 6: **Eternity** (TE 1, 1 rank) | Your Clasp of Infinity now increases your damage dealt to the target by 15%.
+- Row 6: **End of Time** (TE 1, 1 rank) | At the end of the duration of Clasp of Infinity, you launch an Anomaly Spike at affected enemies and their damage dealt is reduced by -10% for 4 seconds.Anomaly SpikeDeals cond(gt(SPA, SPS), 161*1+SPA*0.25, 161*1+SPS*0.25) Chromatic Damage.
+- Row 6: **Distorted Time** (TE 1, 1 rank) | Reduces the cooldown of Timerend by -2 sec and increases the duration of Decomposition by 3 sec.
+- Row 6: **Infinite Guard** (AE 0, 1 rank) | Level 40 PassiveIncreases the effectiveness of your Temporal Resilience, Temporal Swiftness, and Temporal Restoration spells by 100%.
+- Row 7: **Shifting Chaos** (TE 1, 1 rank) | Your Chromatic Shard and Anomaly Spikes now deal an additional 20% their damage dealt as Chromatic Damage all nearby enemies.
+- Row 7: **Crown of Power** (TE 1, 1 rank) | Increases the tick rate of Melt Reality by -25%.
+- Row 7: **Infinite Horizon** (TE 1, 1 rank) | Increases the all damage dealt by party and raid members by 3%. Does not stack with similar effects.In addition, your Unmake and Timerend gain an additional 20% bonus spell scaling.
+- Row 7: **Magic Erosion** (TE 1, 1 rank) | Your Decomposition now applies Magic Erosion to the target, increasing attackers chance to hit the target with spells by 3% for 30 seconds.
+- Row 8: **Erasion** (TE 1, 1 rank) | Increases the chance to trigger Anomaly Spikes by 5% and their damage by 20%.
+- Row 8: **Aeon Rend** (TE 1, 1 rank) | Your Chromatic Shard now has a 25% chance to strike again and incur no cooldown.
+- Row 8: **End of Time** (AE 0, 1 rank) | Level 50 PassiveMind Melt now also increases the target's periodic damage taken from you by 6% per stack.
+- Row 9: **Null Orbs** (TE 1, 1 rank) | Periodic critical damage dealt now has a 20% chance to grant Null Orbs for 15 seconds.Null Orbs (Proc)Increases the critical damage of Chromatic Shard and Anomaly Spikes based on your spell critical strike rating.Critically striking with Chromatic Shard removes your Null Orbs.
+- Row 9: **Chaotic Time** (TE 1, 1 rank) | While Incarnation of Chaos is active, your Melt Reality deals 30% increased damage and replicates an additional 20% In addition, periodic damage dealt now has a 5% chance to reduce the cooldown of Incarnation of Chaos by -1 sec.
+- Row 9: **Infinite Keeper** (TE 1, 1 rank) | Using Unmake on an enemy affected by your Timerend now causes the enemy to erupt in a vortex of sand, dealing 81 Chromatic Damage every 1 sec to up to 8 enemies for 6 seconds in an 8 yd radius.
+
+### Artificer (41 nodes)
+
+- Row 0: **Shatter Echo** (AE 0, 1 rank) | Distortion SpellLaunch a distorted echo from your wand at an enemy, dealing 90% Ranged Weapon damage plus cond(gt(SPA, SPH), 4+0+SPA*0.3, 4+0+SPH*0.3) Arcane damage.Damage increased by 40% for each Echo Fragment consumed.
+- Row 0: **Artificer's Wand** (AE 0, 1 rank) | Transforms your Unmake into Artificer's Wand.Artificer&#39;s WandFocus to unleash 2 wand attacks dealing Ranged Weapon damage plus 5 over 1 seconds.Generates 1 Echo Fragment.
+- Row 0: **Echo Fragments** (AE 0, 1 rank) | Level 10 PassiveWand of Time now generates an Echo Fragment, which can be used to unleash Distortion and Continuum spells.Decomposition is now a Distortion spell, dealing increased damage based on how many Echo Fragments you have.
+- Row 1: **Caverns of Time** (TE 1, 1 rank) | Your Discordance now generates 1 Echo Fragment.
+- Row 2: **Artificer's Empowerment** (TE 1, 3 rank) | Increases your Spirit by 8%.
+- Row 2: **Wand Master** (TE 1, 2 rank) | Increases the damage of Wand of Time and Artificer's Wand by 10%.
+- Row 2: **Wand Expert** (AE 0, 1 rank) | Level 20 PassiveIncreases your ranged attack power by 100% of your Spirit.
+- Row 3: **Discovery** (TE 1, 1 rank) | Casting Artificers's Wand and Wand of Time now grants Discovery for 30 seconds, stacking 4 times. DiscoveryAt 3 stacks, your next Wand of Time or Artificer's Wand causes an additional 1 + 21.2% arcane SP + 25% Spirit + 10% ranged AP Arcane Damage, scaling with Spirit.
+- Row 3: **Concentrated Fate** (TE 1, 1 rank) | Increases the effectiveness of your Echo Fragments by 20%.
+- Row 3: **Bronze Echoes** (TE 1, 1 rank) | Reduces the cast time of Artificer's Wand by -0.2 sec.
+- Row 3: **Singularity Core** (TE 1, 1 rank) | Continuum SpellEmpower your Wand attacks to deal an additional 50% Ranged Weapon Damage plus 2 + 25% SP + 12% ranged AP additional Arcane damage for 3 sec plus 5 sec per Echo Fragment.Can only have 1 Continuum spell active at a time.
+- Row 4: **Archaeology** (TE 1, 1 rank) | Your Discovery now also generates 3% of your base mana and health.
+- Row 4: **Hyperwand** (TE 1, 1 rank) | Increases the damage and critical damage of your Shatter Echo by 30%.
+- Row 4: **Elder Wand** (TE 1, 1 rank) | Your Wand attacks now have a 30% chance to increase the damage of Artificer's Wand against the target by 3% for 15 seconds, stacking 10 times.
+- Row 4: **Temporal Convergence** (TE 1, 1 rank) | Your Wand of Time now has a 40% chance to reset its own cooldown.
+- Row 4: **Conduction Burst** (TE 1, 1 rank) | Your Shatter Echo now deals 20% additional damage while a Continuum spell is active.
+- Row 4: **Crystal Cannon** (AE 0, 1 rank) | Level 30 PassiveCasting Discordance now unleashes the Crystal Cannon, launching 2 quick lesser Wand attacks at the enemy over 1 seconds, scaling with Spirit.
+- Row 5: **Unstable Chronoglass** (TE 1, 1 rank) | Place an Unstable Chronoglass at target location for 30 seconds that will redirect the next 3 offensive enemy spell casts onto itself.
+- Row 5: **Clocked In** (TE 1, 1 rank) | Casting Discordance now makes your next Artificer's Wand within 10 seconds instant cast and causes it to generate an additional Echo Fragment.
+- Row 5: **Flux Emitter** (TE 1, 1 rank) | Continuum SpellEmpower Wand attacks to affect up to 2 additional nearby enemies for 3 sec plus 5 sec per Echo Fragment. Affected attacks deal less damage per additional enemy hit.Can only have 1 Continuum spell active at a time.
+- Row 5: **Hands of Time** (TE 1, 1 rank) | Increases the effectiveness of your Accelerate and Decelerate spells by 25%.
+- Row 5: **Paradox Cannon** (TE 1, 1 rank) | Continuum SpellGenerate 1 Echo Fragment every 3 sec for 5 seconds, plus an additional 5 sec per Echo Fragment consumed.Can only have 1 Continuum spell active at a time.
+- Row 6: **Borrowed Time** (TE 1, 1 rank) | Taking Physical damage now heals you equal to 10% of the damage dealt. Can only occur once per sec.
+- Row 6: **Sporadic Incantations** (TE 1, 1 rank) | Your Flux Emitter now strikes 1 additional enemy.
+- Row 6: **Tamed Incantations** (TE 1, 1 rank) | Increases the duration of Continuum spells per Echo Fragment consumed by 0.5 sec.
+- Row 6: **Erode Armaments** (TE 1, 1 rank) | Your Wand attacks now reduce enemy attack power by 208 for 5 seconds.
+- Row 6: **Reverse Engineering** (TE 1, 1 rank) | Periodic damage and healing now has a 15% chance to increase your haste by 15% for 6 seconds and grant allies Replenishment.ReplenishmentRestores 1% maximum mana every 5 sec to allies within 100 yds for 15 seconds.
+- Row 6: **Time Is A Circle** (AE 0, 1 rank) | Level 40 PassiveCasting Wand of Time now extends the duration of your Continuum spells by 3 sec.Continuum spells cannot be extended beyond their maximum duration.
+- Row 7: **Fate Twister** (TE 1, 1 rank) | Reduces the cooldown of Unstable Chronoglass by -30 sec.
+- Row 7: **Magic Sensitivity** (TE 1, 1 rank) | Critical strikes with Shatter Echo now increases the enemy's damage taken from you by 10% for 8 seconds.
+- Row 7: **Infinity Stone** (TE 1, 1 rank) | Increases the critical strike chance of all party and raid members by 3%. Does not stack with similar effects.In addition, increases your critical strike chance by 3%.
+- Row 7: **Splitting Time** (TE 1, 1 rank) | Your Crystal Cannon now strikes 2 additional nearby enemies.
+- Row 7: **Resonance** (TE 1, 1 rank) | Casting Artificer's Wand or Crystal Cannon now has a 35% chance to reduce the cooldown of Hasten by -1 sec.
+- Row 7: **Timemage** (TE 1, 1 rank) | Reduces the duration of harmful magic effects on you by -30%.
+- Row 8: **Aether Compression** (TE 1, 1 rank) | Continuum SpellArtificer's Wand and Reverse Wound can be cast while moving for 5 seconds.Duration increased by 5 sec per Echo Fragment.Can only have 1 Continuum spell active at a time.
+- Row 8: **Arc Collision** (TE 1, 1 rank) | Distortion SpellCreate a timestorm around an enemy that causes them and up to 2 nearby enemies to take 270 + 24% SP Arcane damage, repeating over 4 seconds. Duration increased by 2 sec for each Echo Fragment consumed.
+- Row 8: **Pulse Driver** (TE 1, 1 rank) | Singularity Core now increases the damage of Shatter Echo while its active by 30% and allows Shatter Echo to trigger its damage.
+- Row 8: **Intuition** (AE 0, 1 rank) | Level 50 PassiveIncreases your critical damage by 25%.
+- Row 9: **Cheating Time** (TE 1, 1 rank) | Casting Shatter Echo now extends the duration of your Flux Emitter by 4 sec.Cannot be extended beyond maximum duration.
+- Row 9: **Threads of Eternity** (TE 1, 1 rank) | Damage dealt by Discordance now applies Thread of Eternity to enemies.Thread of EternityMarked for 6 seconds. Damage taken from Wand of Time is increased by 30%.You may consume this debuff with Wand of Time to gain an additional effect based on your active Continuum Spell.Singularity Core: Triggers 3 instances of Singularity Core damage.Flux Emitter: Explodes on the enemy, dealing 50% of the damage dealt to all enemies within 8 yds.Paradox Cannon: Increases the damage of your next Shatter Echo within 6 sec by 25%.
+- Row 9: **Wand Mastery** (TE 1, 1 rank) | Wand of Time and Shatter Echo now have a 25% chance to unleash Crystal Cannon, launching 2 quick lesser Wand auto attacks at the enemy over 1 seconds, scaling with Spirit.While Paradox Cannon is active, the chance to trigger this effect is increased by 10%.
+
+### Time (39 nodes)
+
+- Row 0: **Ripple** (TE 1, 1 rank) | Channel for up to 5 seconds. When the channel ends, if you channeled for at least 1.5 sec, allies within 40 yds are healed based on the duration of the channel.While channeling, you are immune to stun effects.
+- Row 0: **Aeon of Resilience** (AE 0, 1 rank) | Level 10 PassiveTeaches you Aeon of Resilience.Aeon of ResilienceReduces Epoch's cast time by -25% and it's mana cost by -10%, and healing done by it now reduces the target's damage taken by -5% for 6 seconds.
+- Row 1: **Sands of Life** (TE 1, 2 rank) | Increases your healing power by 25% of your Spirit.
+- Row 1: **Endless Sands** (TE 1, 1 rank) | Casting Epoch now grants you Endless Sands.Endless SandsCast time of your next Reverse Wounds within 15 seconds is reduced by -20%, stacking up to 5 times.
+- Row 2: **Correct the Mistake** (TE 1, 1 rank) | Retell the fate of party members within 30 yds, healing them for 91 + 68.57% healing.
+- Row 2: **Aeon of Protection** (AE 0, 1 rank) | Increases Epoch's cast time by 15%, healing done by 15%, and causes it to apply a damage absorption shield equal to 30% of the amount healed for 8 seconds.
+- Row 3: **Time Wizard** (TE 1, 2 rank) | Increases the critical strike chance of your Reverse Wound, Epoch, and Correct the Mistake by 8%.
+- Row 3: **Keep Accelerating** (TE 1, 1 rank) | Your Accelerated Recovery now applies to an additional nearby target.
+- Row 3: **Time Beacon** (TE 1, 2 rank) | Increases the duration of effects applied by your Aeons by 4 sec.
+- Row 4: **Cadence of Time** (TE 1, 1 rank) | Your critical strikes with Epoch now grant Cadence of Time, increasing the healing of Ripple by 10% for 15 seconds. Stacks 5 times.
+- Row 4: **Carbon Dating** (TE 1, 1 rank) | Each stack of Sands of Time now also increases the healing of your Epoch by 10%.
+- Row 4: **Timeless** (TE 1, 1 rank) | While Endless Sands is active, the mana costs of your spells and abilities is reduced by -3% per stack.
+- Row 4: **Fabric of Time** (TE 1, 1 rank) | Alter the fabric of time, healing an ally for 158 + 64% healing.Your next Aeon used within 8 seconds will trigger with no cooldown or cost.
+- Row 4: **Aeon of Renewal** (AE 0, 1 rank) | Reduces Epoch's healing by -30%, but causes it to heal for an additional 50% of the amount healed over 3 seconds.
+- Row 5: **A Ripple In Time** (TE 1, 1 rank) | Your damaging and healing critical strikes now reduce the remaining cooldown of Ripple by -1 sec.
+- Row 5: **Ideal Time** (TE 1, 1 rank) | Every 30 sec, your next ability is guaranteed to critically strike.
+- Row 5: **Continuum Restoration** (TE 1, 1 rank) | Restore the continuum at target location for all allies and enemies, removing all beneficial magic effects from enemies and harmful magic effects from allies.This dispel is potent enough to remove magic effects that are normally undispellable
+- Row 5: **Time Skip** (TE 1, 1 rank) | Your Roll Back now removes 1 additional harmful effect.
+- Row 5: **Orderly Protector** (TE 1, 1 rank) | Healing done by your Epoch now increases the healing of Fabric of Time by 10% for 10 seconds, stacking 10 times.Each stack gives you a 2% chance when you cast Fabric of Time to reset its own cooldown.
+- Row 6: **Displacement** (TE 1, 1 rank) | Displaces a party or raid member and pulls them to you, dispelling root and snare effects from them.
+- Row 6: **Mark of Order** (TE 1, 1 rank) | Healing done by Fortify Timeline now applies Mark of Order.Mark of OrderIncreases the healing of your next Reverse Wound on the target by 10% for 20 seconds. Every 1 sec for the duration, they gain an additional stack of this effect, up to 5.
+- Row 6: **Cycling Aeons** (TE 1, 1 rank) | Reduces the cooldown of your Aeons by -50%.
+- Row 6: **Shimmering Shard** (TE 1, 1 rank) | Activating Aeon spells now grants you 4% increased damage and healing for 20 seconds, stacking 3 times.
+- Row 6: **Aeon of Oblivion** (AE 0, 1 rank) | Increases Epoch's mana cost by 30%, critical strike chance by 10%, and healing done by 15%. In addition, healing with Epoch now increases the target's damage dealt by 3% for 15 seconds.
+- Row 7: **Nozdormu's Gaze** (TE 1, 1 rank) | Your Time Out! now regenerates -2% less mana per tick, but casting it now instantly restores 15% of your maximum mana.
+- Row 7: **Titan's Gaze** (TE 1, 1 rank) | Your Time Out! no longer breaks on damage, but now only reduces damage taken by 15%.
+- Row 7: **Overcorrection** (TE 1, 1 rank) | Overhealing done by Correct the Mistake now applies a heal over time effect to the ally equal to 30% of the healing done over 5 seconds.
+- Row 7: **Bronze Timeways** (TE 1, 1 rank) | Casting Correct the Mistake now grants 2 stacks of Endless Sands.Endless SandsCast time of your next Reverse Wounds within 15 seconds is reduced by -20%, stacking up to 5 times.
+- Row 7: **Wonders of Time** (TE 1, 1 rank) | Increases the spell haste of all party and raid members by 3%.Does not stack with similar effects.Additionally, all healing done now has a 10% chance to grant you Endless Sands.Endless SandsCast time of your next Reverse Wounds within 15 seconds is reduced by -20%, stacking up to 5 times.
+- Row 7: **Through The Aeons** (TE 1, 1 rank) | Activating an Aeon now increases your mana regeneration from Spirit by 100% for 8 seconds.
+- Row 7: **Chronicler** (TE 1, 1 rank) | Casting Fortify Timeline now extends the duration of Accelerated Recovery on all targets within 40 yds by an additional 10 sec.
+- Row 7: **Timeline Tether** (TE 1, 1 rank) | Your periodic damage and healing reduces the cooldown of your Fortify Timeline by -1 sec.
+- Row 8: **Shield of the Ages** (TE 1, 1 rank) | When hit by a damaging critical strike, your damage taken is reduced by -3%, and healing received is increased by 5% for 3 seconds, stacking 3 times.
+- Row 8: **Converge the Infinite** (TE 1, 1 rank) | Casting Fortify Timeline now grants you Converge the Infinite.Converge the InfiniteYour next Correct the Mistake has a 1 sec increased cast time, but heals for 30% more and is guaranteed to critically strike.Successfully healing an ally in this way reduces the cooldown of Fortify Timeline by 8%.
+- Row 8: **Epic Recovery** (TE 1, 1 rank) | When you cast Epoch you now also cast a Rank 1 Epoch on up to 5 allies affected by Accelerated Recovery.
+- Row 8: **Eternity Warper** (AE 0, 1 rank) | Level 50 PassiveYour Ripple channel performs a unique effect based on your active Aeon:Rippling RenewalRipple periodically heals allies within 0 yds for 71 + 12.5% SP every 1 sec.Rippling OblivionRipple deals periodic damage to enemies within 25 yds for 156 + 38.5% SP every 1 sec.Rippling ProtectionRipple now places a damage absorb for 420 + 75% healing on allies within 15 yds for the duration of its channel.Rippling ResilienceRipple now delays 30% of incoming direct Physical Damage to allies within 15 yds for it's duration, instead taking it over 5 seconds.
+- Row 9: **Timeblender** (TE 1, 1 rank) | Guarantees healing done by Fabric of Time to critically strike and gives it an additional charge.Fabric of Time (Timeblender)2 Charges, 15 sec rechargeAlter the fabric of time, healing an ally for 529 + 64% healing.Your next Aeon used within 8 seconds will trigger with no cooldown.
+- Row 9: **The Vast Infinite** (TE 1, 1 rank) | All party and raid members become one, equally sharing 25% of all damage dealt to them for 10 seconds, up to a maximum of 100% of their total health.At the end of the duration, all affected allies are healed equal to the total damage shared split evenly amongst all allies.
+- Row 9: **Buy Time** (TE 1, 1 rank) | Put all enemies and allies in an 8 yd radius in target area into a stasis, banishing them for 6 seconds, making them invulnerable to all effects but unable to move.Casting Unmake on a target will remove this effect.
+
+## Necromancer
+
+### Death (39 nodes)
+
+- Row 0: **Flesh to Worms** (TE 1, 1 rank) | Disease an enemy, dealing 15 + 11.06% shadow SP Plague damage and generating Runic Power every 3 sec for 18 seconds.
+- Row 0: **Crypt Plague** (AE 0, 1 rank) | Level 10 PassiveDamage dealt by Crypt Swarm now applies 1 stack of Crypt Plague and Lichfrost applies 2 stacks.Crypt Plague (Damage)Deals 2 + 6% SP Plague Damage every 2 sec for 10 seconds, stacking 10 times.Additional applications do not refresh duration.
+- Row 1: **Cycle of Death** (TE 1, 1 rank) | Increases your spell haste by 5%.
+- Row 1: **Master of Death** (TE 1, 1 rank) | Casting Command spells on an enemy now applies Crypt Plague.
+- Row 2: **Rotting Flesh** (TE 1, 1 rank) | Increases the damage of Flesh to Worms by 25% and allows its periodic damage to scale with your spell haste.
+- Row 2: **Swarmer** (TE 1, 1 rank) | Increases the Runic Power generated by Crypt Swarm by 2 per tick.
+- Row 2: **Damnation** (TE 1, 2 rank) | Increases your Shadow damage by 5%, doubled against enemies below 35% health.
+- Row 2: **Plague Science** (AE 0, 1 rank) | Level 20 PassiveYour diseases and Crypt Swarm now deal 100% increased damage to enemies below 20% health.
+- Row 3: **Plague of Undeath** (TE 1, 1 rank) | Disease an enemy dealing 32 + 25% shadow SP Plague damage every 3 sec and reduces the targets Holy healing received by -40% for 20 seconds.If Plague of Undeath is dispelled, the enemy takes 456 + 125% shadow SP Plague damage and is stunned for 5 seconds.
+- Row 3: **Creeping Crypt** (TE 1, 1 rank) | Increases the critical strike chance of Flesh to Worms by 25% against enemies below 35% maximum health.
+- Row 3: **Dark Harvester** (TE 1, 1 rank) | Increases your critical strike and hit chance by 3%.
+- Row 4: **Expunge** (TE 1, 1 rank) | Casting Command spells on an enemy now applies Expunge if they are Diseased.Expunge (Talent)Increases the target's damage taken from your Necromancer diseases by 10% for 10 seconds, stacking 2 times.
+- Row 4: **Virulency** (TE 1, 1 rank) | Reinvigorate your diseases, refreshing all diseases on the target enemy and copying them, preserving their power and duration.You may use this abilty again within 10 sec to Infest another target, applying the copied diseases.
+- Row 4: **Foul Contagion** (TE 1, 1 rank) | Applying Crypt Plague now extends the duration of Flesh to Worms on the target by 1 sec.
+- Row 4: **Necrosis** (TE 1, 1 rank) | Increases the duration of your diseases by 25%.
+- Row 4: **Rotting Flesh** (AE 0, 1 rank) | Level 30 PassiveApplying Crypt Plague to an enemy now additionally adds Rotting Flesh to your Undead minions, increasing their damage dealt by 2% per stack for 5 sec.
+- Row 5: **Touch of Death** (TE 1, 1 rank) | Allows Expunge to stack an additional time and increases the range of your Death spells by 20%.
+- Row 5: **Crypt Explosion** (TE 1, 1 rank) | Casting Command spells on an enemy now applies Crypt Plague to 3 enemies near the primary target.
+- Row 5: **Creeping Plagues** (TE 1, 1 rank) | You may now Infest an additional target after using Virulency.
+- Row 5: **Pandemic** (TE 1, 1 rank) | Damage dealt by your Undead minions now reduces the cooldown of Virulency by -1 sec.
+- Row 5: **Festering Decay** (TE 1, 1 rank) | Reduces the cost of Command spells by -15% and causes them to increase the target's spell damage taken by 10% for 15 seconds.
+- Row 5: **Unholy Runes** (TE 1, 1 rank) | Increases the damage of Crypt Swarm by 15%.
+- Row 6: **Expediting Death** (TE 1, 1 rank) | Each stack of Expunge now increases the target's damage taken from your Plague of Undeath by an additional 5%.
+- Row 6: **Mutation** (TE 1, 1 rank) | For the next 15 seconds your diseases mutate causing them to act with accelerated lethality, allowing your freshly applied diseases to tick -50% faster.
+- Row 6: **Plague Revenant** (TE 1, 1 rank) | Critical strikes now apply a stack of Crypt Plague.
+- Row 6: **Withering** (AE 0, 1 rank) | Level 40 PassiveAllows Crypt Plague to stack 5 additional times.
+- Row 7: **Parasite Plague** (TE 1, 1 rank) | Damage dealt now has a 5% chance to apply Parasites for 8 seconds.ParasitesYour Undead minions feast upon the parasites on hit, leeching 15% of their damage dealt as Plague Damage to the target.
+- Row 7: **Fleshcrafting** (TE 1, 1 rank) | Increases the duration Unholy Frenzy by 5 sec and casting Command spells now reduces its cooldown by -1 sec.
+- Row 7: **Apothecary's Cauldron** (TE 1, 1 rank) | Increases the spell haste of all party and raid members by 3%. Does not stack with similar effects.In addition, increases your Magic damage dealt by 3%.
+- Row 7: **Death Commander** (TE 1, 1 rank) | Periodic damage dealt now has a 10% chance to increase your and your Undead minion's haste by 20% for 8 seconds.
+- Row 7: **Fiend** (TE 1, 1 rank) | Increases the damage and critical damage of Lichfrost by 20% against diseased targets.
+- Row 7: **Putricide's Formula** (TE 1, 2 rank) | Damage dealt by Undead minions has a 10% chance to blast up to 3 nearby enemies for 71 + 30% SP Plague damage.
+- Row 8: **Lichplague** (TE 1, 1 rank) | Disease an enemy, dealing 151 + 22% SP Plague damage every 3 sec for 18 seconds. Damage increased by 4% for each Necromancer disease on the enemy.
+- Row 8: **Rot Fetishist** (TE 1, 1 rank) | Your Virulency now applies Rot Fetishist for 10 seconds, causing you to replicate 20% of your periodic damage dealt as direct damage.
+- Row 8: **Wormfood** (TE 1, 1 rank) | Upon fully channeling Crypt Swarm, you summon a Rotling that will run towards the enemy and explode after 5 sec for 320 + 33.5% SP Plague damage.
+- Row 8: **Unholy Erosion** (AE 0, 1 rank) | Level 50 PassiveIncreases your spell penetration by 50, scaling with your level.
+- Row 9: **Waking Crypts** (TE 1, 1 rank) | Increases the damage of Crypt Plague by 50% and Crypt Swarm now deals 4% more damage for each Necromancer disease you have on the target.
+- Row 9: **Raise: Gargoyle** (TE 1, 1 rank) | Raise a fallen Gargoyle to aid you in combat, occupying 3 Life Force. Command: Shoots necrotic bile at an enemy, dealing 73 + 65% SP Plague damage, dealing 50% increased damage for each of your diseases on the target.
+- Row 9: **Muck Summoner** (TE 1, 1 rank) | Periodic damage dealt now has an 5% chance to summon 2 to 3 Rotlings that will run towards the enemy and explode after 5 sec for 320 + 33.5% SP Plague damage.
+
+### Rime (41 nodes)
+
+- Row 0: **Ice Barrage** (TE 1, 1 rank) | Unleash a relentless volley of glacial shards, dealing 19 + 35% SP Frost damage every 0 sec for 1 seconds.At the end of the duration, you entomb your target in ice, freezing them for 4 seconds.
+- Row 0: **Tundra Warriors** (AE 0, 1 rank) | Level 10 PassiveCasting any spell now has a 25% chance to grant you Tundra Warriors.Tundra Warriors (Proc)For 10 seconds, the critical strike chance of your Undead minions is increased by 4%, stacking 3 times.
+- Row 1: **Refreshing Chill** (TE 1, 1 rank) | Casting Command spells now has a 20% chance to reset the cooldown of Ice Barrage and make your cast next within 15 seconds free of cost.
+- Row 2: **Piercing Icicles** (TE 1, 1 rank) | Increases the damage of Ice Barrage by 20%.
+- Row 2: **Frigid Winds** (TE 1, 1 rank) | Increases the chance to trigger Refreshing Chill by 5%.
+- Row 2: **Glacial Impact** (TE 1, 1 rank) | Requires Frozen TargetCall down icy boulders onto a Frozen enemy, dealing 84 + 100% frost SP Frost damage.
+- Row 2: **Ice Mastery** (AE 0, 1 rank) | Level 20 PassiveIncreases your spell power by 30% of your Intellect.
+- Row 3: **Bone Legion** (TE 1, 2 rank) | Increases the damage of Lichfrost by 10% and its Runic Power generated by 25%.
+- Row 3: **Curse of the Lich** (TE 1, 1 rank) | Increases the range of your Rime spells by 6 yds and increases the Frost critical strike chance of you and your summons by 3%.
+- Row 3: **Runic Reservoir** (TE 1, 2 rank) | Increases your Frost damage by 5% and your maximum Runic Power by 15.
+- Row 3: **Hoarfrost Hands** (TE 1, 1 rank) | Increases the duration of Lichfrost's movement speed slow by 4 sec and your hit chance by 4%.
+- Row 3: **Frigid Death** (TE 1, 1 rank) | Increases the damage of Glacial Impact by 20%.
+- Row 3: **Freeze Dry** (TE 1, 1 rank) | Your Glacial Impact now generates 20 Runic Power.
+- Row 4: **Heartchill** (TE 1, 1 rank) | Chill an enemy's heart, interrupting their current spell cast.Successfully interrupting a spell also reduces their movement speed and haste by -80% for 3 seconds.
+- Row 4: **Necrotic Chains** (TE 1, 1 rank) | Every 3rd Command spell now freezes the target in place for 5 seconds. Damage dealt may end this effect.
+- Row 4: **Ner'zhul's Blessing** (TE 1, 1 rank) | Every 3rd Command spell now makes your next Lichfrost within 10 seconds guaranteed to critically strike.
+- Row 4: **Giant Bones** (TE 1, 1 rank) | Casting Unholy Frenzy now summons a Rotting Frost Giant to aid you in combat for the duration.
+- Row 4: **Glacier Lord** (TE 1, 1 rank) | Your Glacial Impact is now guaranteed to critically strike against Frozen targets.
+- Row 4: **Icecrown** (TE 1, 1 rank) | Your Frost damage dealt now increases your allies' critical strike chance against the enemy by 1% for 10 seconds, stacking 3 times.
+- Row 4: **Frozen Power** (AE 0, 1 rank) | Level 30 PassiveIncreases your critical damage with Frost spells by 50%.
+- Row 5: **Raise: Skeletal Mage** (TE 1, 1 rank) | Raise a Skeletal Mage to aid you in combat, occupying 2 Life Force.Command: Unleashes ice at your target and enemies within 6 yds, dealing 51 + 80% frost SP Frost damage.
+- Row 5: **Dominion of Frost** (TE 1, 1 rank) | Critical strikes dealt by your Undead minions now reduce the cooldown of Unholy Frenzy by -3 sec.
+- Row 5: **Frigidness** (TE 1, 2 rank) | Increases your critical damage by 50% against Frozen targets.
+- Row 5: **Frigid Power** (TE 1, 1 rank) | Increases the spell power scaling of Lichfrost and Ice Barrage by 20%.
+- Row 6: **Command: Bonefreeze** (TE 1, 1 rank) | Command your Skeletal Mages to freeze enemies at target location for 40 seconds (8 sec vs players). Damage taken may end the effect.
+- Row 6: **Blood and Ice** (TE 1, 1 rank) | Each Skeletal Warrior or Skeletal Rogue now increases the damage of your Ice Barrage by 8%.
+- Row 6: **Death and Ice** (TE 1, 1 rank) | While a Skeletal Mage is active the critical strike chance of your Undead minions is now increased by 10%.
+- Row 6: **Frozen Bodies** (TE 1, 1 rank) | When you kill an enemy that yields experience or honor or critically strike with Frost damage you now gain a stack of Frozen Bodies.Frozen BodiesIncreases the damage of your next Glacial Impact by 3% for 20 seconds, stacking 10 times.Reaching 10 stacks causes your next Glacial Impact within until cancelled to critically strike for 50% increased damage.
+- Row 6: **Permafrost** (TE 1, 1 rank) | Gives your spells a 15% chance to grant you the Permafrost, which treats your next 2 spells cast as if the target were Frozen. Lasts 12 seconds.
+- Row 6: **Deathly Chill** (TE 1, 1 rank) | Reduces the channel and cast time of Ice Barrage by -25%.
+- Row 6: **Lich Form** (AE 0, 1 rank) | Transform into a Lich, becoming Undead increasing your Frost damage dealt by 10%.While active you generate 3 Runic Power every 5 sec.
+- Row 7: **Crown's Call** (TE 1, 2 rank) | Increases your Intellect by 5% and the Frost damage dealt by your Undead minions by 10%.
+- Row 7: **Chilling Presence** (TE 1, 1 rank) | Increases critical strike chance of all party and raid members by 3%. Does not stack with similar effects.In addition, increases the critical strike chance of Ice Barrage by 20% against Frozen targets.
+- Row 7: **Arch Lich** (TE 1, 1 rank) | Critical strikes with Frost spells now refund 3% of your maximum mana.
+- Row 8: **Raising the Kirin Tor** (TE 1, 1 rank) | Your Command spells now have a 40% chance to refund a portion of their Runic Power cost.
+- Row 8: **Harrowing Winds** (TE 1, 1 rank) | Damage dealt by Glacial Impact now deals an additional 50% of the damage dealt as Frost damage to enemies within 6 yds of the primary target.
+- Row 8: **Soulfreeze** (TE 1, 1 rank) | All Frost damage you deal to Frozen targets now has a 25% chance to unleash Soulfreeze on them.SoulfreezeLaunch a chain of frost at an enemy, dealing 354 + 35% frost SP Frost Damage every 1 sec for 3 seconds.Each tick generates 3 to 8 Runic Power.
+- Row 8: **Champion of Kel'thuzad** (AE 0, 1 rank) | Level 50 PassiveWhile your Lich Form is active, your Champion spells will now cooldown faster.
+- Row 9: **Champion of Kel'Thuzad** (TE 1, 1 rank) | Your Skeletal Mages now only cost 1 Life Force.
+- Row 9: **Army of the North** (TE 1, 1 rank) | Chant a powerful ritual that brings forth 1 Rotting Frost Giant near you to aid you in combat for 30 seconds and generate 30 Runic Power, repeating every 3 sec for 15 seconds.For the duration, your Undead minions are guaranteed to critically strike.
+- Row 9: **Master Lich** (TE 1, 1 rank) | Soulfreeze now increases the enemy's Frost damage taken by you by 5% per tick for 8 sec, stacking 3 times.
+
+### Animation (42 nodes)
+
+- Row 0: **Animate: Skeletal Archer** (TE 1, 1 rank) | Animate 3 Skeletal Archers to aid you in combat for 15 seconds.
+- Row 0: **Summoning Adept** (AE 0, 1 rank) | Level 10 PassiveIncreases your maximum Life Force by 1.
+- Row 1: **Bone King** (TE 1, 1 rank) | Casting Command spells now has a 15% chance to make your next Lichfrost or Blight free of cost and instant cast.
+- Row 1: **Graverobber** (TE 1, 1 rank) | Reduces the mana cost and cast time of your Raise and Animate spells by -30%.
+- Row 2: **Summoning Prodigy** (TE 1, 1 rank) | Increases the duration of Skeletal Archers by 3 sec.
+- Row 2: **Sepulchral Might** (TE 1, 2 rank) | Increases your Stamina by 5%.Increases your spell damage by an amount equal to 15% of the total of your Raised minion's Stamina.
+- Row 2: **Forbidden Technique** (TE 1, 1 rank) | Casting Command spells now reduces the cooldown of your Animates by -1 sec.
+- Row 2: **Deadly Bond** (AE 0, 1 rank) | Level 20 PassiveCasting Command spells now has a 30% chance to cause their next use within 6 seconds to be free of cost.
+- Row 3: **Scourge Disciple** (TE 1, 1 rank) | Each active Skeletal Archer now increases your haste by 5%.
+- Row 3: **Raise: Ghoul** (TE 1, 1 rank) | Raise a Ghoul to aid you in combat occupying 1 Life Force. Its auto attacks restore 21 + 3.53% Intellect + 3.53% SP health to you.Command: Expels leeching plague that strikes up to 5 nearby enemies, dealing 30 + 15.68% Intellect + 15.68% SP Plague damage, and healing you for 35 + 22% SP + 50% Intellect for each Ghoul.
+- Row 3: **Runic Animation** (TE 1, 1 rank) | Reduces the cooldown of Animate: Skeletal Archers and Command: Hook by -20%.
+- Row 4: **Summoner** (TE 1, 1 rank) | Reduces the mana cost and cooldown of Sacrifice Undead by -20%.
+- Row 4: **Animate: Tomb King** (TE 1, 1 rank) | Animate a Tomb King to aid you in combat for 15 seconds.While active, all of your Undead minion's attacks deal an additional 10% of the damage dealt as Plague damage.
+- Row 4: **Animate: Bone Wraith** (TE 1, 1 rank) | Animate a Bone Wraith to aid you in combat for 15 seconds.While active, it will periodically unleash a Bonestorm, striking up to 5 nearby enemies for 30 + 40% SP Physical damage every 1 sec for 5 seconds.
+- Row 4: **Ghoul Mastery** (TE 1, 1 rank) | Damage dealt by your Ghouls now has a 15% chance to transform them into a Frenzied Ghoul.Frenzied Ghoul (Proc)Transformed into a Frenzied Ghoul, increasing haste by 40% for 10 seconds. Immune to movement slowing effects.
+- Row 4: **Skeletal Artillery** (TE 1, 2 rank) | Your Animate: Skeletal Archers now summons 1 additional Skeletal Archer.
+- Row 4: **Putrifier** (TE 1, 1 rank) | Increases the durations of Ghoulify and Mass Grave by 25%.
+- Row 4: **Summoning Expert** (AE 0, 1 rank) | Level 30 PassiveIncreases your maximum Life Force by 1 and your Undead minion's Stamina by 10%.
+- Row 5: **Unrelenting Army** (TE 1, 2 rank) | Damage dealt by Harvest Plague now has a 20% chance to summon a Lesser Zombie to aid you in combat for 15 seconds.
+- Row 5: **Animate: Plaguefather** (TE 1, 1 rank) | Animate a Plaguefather to aid you in combat for 15 seconds. Damage dealt by this minion will emit Zombie Plague, dealing 79 + 10% SP Plague damage to nearby enemies, and reducing their attack power by 223.
+- Row 5: **March of the Dead** (TE 1, 1 rank) | Beckon the restless dead to rise and march forward.When they reach an enemy they explode, dealing 700 + 75% SP Plague damage to nearby enemies and slowing their movement speed by -70% for 3 seconds.
+- Row 6: **Mindless Fury** (TE 1, 1 rank) | Casting Animate or Command spells now increases your haste by 1% for 10 seconds, stacking 5 times.
+- Row 6: **Depravity** (TE 1, 1 rank) | Increases the melee haste of your Undead minions by 5% and gives their critical melee auto attacks an 50% chance to trigger Bone Club, dealing 40% of the damage dealt as Shadow Damage.
+- Row 6: **Crypt Keeper** (TE 1, 1 rank) | Your Crypt Swarm now bounces to 2 additional nearby enemies, at 30% reduced value per enemy struck.
+- Row 6: **Unrelenting** (TE 1, 1 rank) | Reduces the channel time of your Crypt Swarm by -25%.
+- Row 6: **Unstoppable Frenzy** (TE 1, 1 rank) | Reduces the cooldown of your Unholy Frenzy by -60 sec.
+- Row 6: **Army of the Dead** (TE 1, 1 rank) | While only 1 Abomination is active, the critical strike chance of your Ghouls is increased by 10% and haste by 10%.
+- Row 6: **Lich's Prodigy** (TE 1, 1 rank) | Your Glacial Tap now generates an additional 20 Runic Power, but its cost is increased by 25%.
+- Row 6: **Diabolical** (AE 0, 1 rank) | Level 40 PassiveCasting spells now grants you 1 stack of Diabolical, stacking up to 15 times, for 20 seconds.Damage dealt by your Crypt Swarm will consume a stack to deal 10% increased damage per stack.
+- Row 7: **Anti-Magic Shell** (TE 1, 1 rank) | When you summon a Raised minion, it now raises with a shield absorbing Magic damage equal to 40% of their maximum health.
+- Row 7: **Summoning Ritual** (TE 1, 1 rank) | Summon a ritual circle at your location for 1 minute. While active, you may cast Ritual Return to return to it.Ritual ReturnTeleport back to the position of your Scourge Transporter and remove all movement slowing effects from you.
+- Row 7: **Corpse Wagon** (TE 1, 1 rank) | Increases all damage dealt by party and raid members by 3%. Does not stack with similar effects.In addition, increases the damage of Corpse Explosion by 25%.
+- Row 7: **Plague Protection** (TE 1, 2 rank) | Increases the effectiveness of your Wards by 25%.
+- Row 7: **Fetid Mark** (TE 1, 1 rank) | Dealing Shadow damage now increases the damage the target takes from your Skeletal Warriors by 1% for 10 seconds, stacking 10 times.
+- Row 7: **Chomp** (TE 1, 1 rank) | Critical strikes dealt by your Abominations and Decaying Collosi now Chomp your target, dealing 150 + 112.5% SP damage to them.
+- Row 8: **Flesh Symbiosis** (TE 1, 1 rank) | Each Abomination or Decaying Colossus active now increases your total Armor and magic resistance by 30% and causes you to periodically regenerate 2% maximum health every 5 sec.
+- Row 8: **Plague Horde** (TE 1, 1 rank) | Damage dealt by your Undead minions now has a 10% chance to cast Plague Horde on themselves for 5 seconds and emit Zombie Plague, dealing 79 + 10% SP Plague damage to their target.Plague HordeEnrage for 5 seconds, increasing their critical strike chance by 10%.
+- Row 8: **Long March** (TE 1, 1 rank) | Removes the cooldown from March of the Dead, but gives it a 1 sec cast time.
+- Row 8: **Grave Mastery** (AE 0, 1 rank) | Level 50 PassiveReduces the cost of all Animates, Raises, and Command spells by -20%.
+- Row 9: **Master Animator** (TE 1, 1 rank) | Increases your maximum Life Force by 1.
+- Row 9: **Underking** (TE 1, 1 rank) | Casting Command spells now grants you a stack of Underking for 20 seconds.At 10 stacks, the cooldown of Animate: Tomb King, Animate: Bone Wraith or Animate: Plaguefather is reduced by -15 sec at random.
+- Row 9: **Animate: Bone Construct** (TE 1, 1 rank) | Animate a Bone Construct to aid you in combat for 20 seconds.It moves at a slow speed, but upon reaching an enemy, deals 1560 + 200% SP + 50% AP Shadow damage, piercing all invulnerabilities, resistances, and immunities.
+
+## Pyromancer
+
+### Flameweaving (40 nodes)
+
+- Row 0: **Phoenix Egg** (TE 1, 1 rank) | Summon a Phoenix for 1 minute at the target location that heals nearby party members for 117 + 15% healing every 5 sec.You may only have 1 Phoenix active at a time.
+- Row 0: **Spirit of the Phoenix** (AE 0, 1 rank) | Level 10 PassiveUpon taking damage that would otherwise kill you, you are instead transformed into the Spirit of the Phoenix for 15 seconds.While transformed, your spells have no mana cost and your Spirit is increased by 100%. At the end of the duration, you will be reborn. Can only occur once every 10 min.
+- Row 1: **Phoenix Dive** (TE 1, 1 rank) | Command your Phoenix to swoop to the target ally and shield allies in their path with fire, absorbing 175 + 50% SP + 100% Spirit damage for 30 seconds, scaling with your Spirit.
+- Row 1: **Cleansing Flames** (TE 1, 1 rank) | Generates 10 Heat Each TickSpread cleansing flames on 5 allies and enemies in front of you, damaging or healing for 87 + 44.4% SP over 3 seconds.
+- Row 2: **Soothing Flames** (TE 1, 1 rank) | Healing done by Kindle and Cinderheart now additionally heals the target for 30% of the healing done over 3 seconds.
+- Row 2: **Ember Charm** (TE 1, 1 rank) | Reduces the cast time of Cinderheart and Kindle by -15%.
+- Row 2: **Flame Bonding** (AE 0, 1 rank) | Level 20 PassiveYour Inferno Barrier now triggers a -15 sec reduced cooldown when used on an ally other than yourself.
+- Row 3: **Spirit of Fire** (TE 1, 2 rank) | Increases the effectiveness of your absorption effects by 20%.
+- Row 3: **From The Ashes** (TE 1, 1 rank) | Increases your healing done to allies below 35% health by 25%.
+- Row 3: **Scorching Spirit** (TE 1, 2 rank) | Increases your Spirit by 10%.
+- Row 3: **Concentrated Fire** (TE 1, 1 rank) | Increases the damage and healing of Cleansing Flames by 20%.
+- Row 3: **Unfathomably Hot!** (TE 1, 1 rank) | Each tick of Cleansing Flames now generates 5 additional Heat.
+- Row 4: **Kael's Command** (TE 1, 1 rank) | Generates 50 HeatCommand your Phoenix to go dormant for 10 seconds. While dormant, it radiates healing to nearby allies for 611 + 100% healing every 2 sec.
+- Row 4: **Sunstrider Array** (TE 1, 1 rank) | For 15 seconds, you generate 1 Ember every 3 sec and your Cinderheart generates double the amount of Heat with each cast.
+- Row 4: **Burning Crescendo** (TE 1, 1 rank) | Increases the tick rate of your Phoenix Egg by -2 sec.
+- Row 4: **Ashen Priest** (AE 0, 1 rank) | Level 30 PassiveYour critical heals now grant allies Replenishment.In addition, 20% of your mana regeneration continues while in combat. ReplenishmentRestores 1% maximum mana every 5 sec to allies within 100 yds for 15 seconds.
+- Row 5: **Rekindle** (TE 1, 1 rank) | Healing done by Kindle now increases your healing done on the target 5% for 20 seconds, stacking 2 times.
+- Row 5: **Lucifron's Rage** (TE 1, 1 rank) | Effective healing done by your Phoenix now causes allies to deal additional Fire damage with all attacks for 6 seconds.
+- Row 5: **Lifebinder's Fire** (TE 1, 1 rank) | Generating an Ember now increases your healing done by 3% for 8 seconds, stacking 5 times.
+- Row 5: **Offering of Executus** (TE 1, 1 rank) | When your Phoenix dies or expires, it now heals all allies within 30 yds equal to its maximum health.
+- Row 5: **Living Flame** (TE 1, 1 rank) | Increases the critical strike chance of Ember Touch by 10%.
+- Row 6: **Neltharion's Resolve** (TE 1, 1 rank) | Place Neltharion's resolve on all party members, warding them against fear. The next fear effect used against the target will fail, using up the ward. Lasts 1 minute.
+- Row 6: **Warmth** (TE 1, 1 rank) | You now radiate warmth to nearby allies, healing the lowest health nearby ally equal to 25% of your periodic damage dealt.
+- Row 6: **Sageweaving** (TE 1, 1 rank) | Consuming an Ember now reduces the cast time of your next Cinderheart or Kindle by -15% for 12 seconds, stacking 2 times.
+- Row 6: **Burn Impurities** (TE 1, 1 rank) | Burn away 1 harmful magic effect and 1 disease effect from an ally.
+- Row 6: **Fiery Faith** (AE 0, 1 rank) | Level 40 PassiveIncreases your spell critical strike rating by 15% of your Spirit.
+- Row 7: **Touched by Fire** (TE 1, 2 rank) | Your Cinderheart, Ember Touch, and Kindle now gains an additional 15% of your bonus healing spell power.
+- Row 7: **Invigoration** (TE 1, 1 rank) | Healing done by your Phoenix now generates you 5 Heat.
+- Row 7: **Cauterizing Wounds** (TE 1, 1 rank) | Healing done by Ember Touch now grants you Flamecasting.FlamecastingIncreases your spell haste by 5% for 15 seconds. Stacks 5 times.Additional applications do not refresh duration.
+- Row 7: **Brilliance** (TE 1, 1 rank) | Flamecasting can now stack 2 additional times.FlamecastingIncreases your spell haste by 5% for 15 seconds. Stacks 5 times.Additional applications do not refresh duration.
+- Row 7: **Tender Touch** (TE 1, 2 rank) | Effective healing done by Ember Touch now heals up to 3 of the lowest health allies near your target for an additional 15% of the amount healed.
+- Row 7: **Shielded by Flames** (TE 1, 1 rank) | Healing critical strikes now apply an absorption shield to allies equal to 30% of the healing done for 8 seconds.
+- Row 8: **Roaring Pyre** (TE 1, 1 rank) | Conjure a Roaring Pyre at the target location for 20 seconds. Allies within 30 yds of the bonfire are healed for 35 + 10% healing + 50% Spirit, scaling with your Spirit and healing spell power, every 2 sec and their Spirit is increased by 10%.
+- Row 8: **Veins of Fire** (TE 1, 1 rank) | Flamecasting now also grants 3% increased Spirit per stack.
+- Row 8: **Inferno** (TE 1, 1 rank) | Direct healing critical strikes have a 50% chance to create an Inferno around the target. Can only occur once every 5 sec.InfernoEngulf an ally in cleansing flames for 5 seconds, healing them for 161 and party and raid members within 40 yds of them for 91 every 1 sec.At the end of the duration, party and raid members are healed for 383 to 403.
+- Row 8: **Burning Passion** (AE 0, 1 rank) | Level 50 PassiveEffective healing critical strikes now generate 10 Heat.
+- Row 9: **Fueling the Fire** (TE 1, 1 rank) | Using Ember Touch on your Roaring Pyre or Phoenix will cause them to erupt in flames, healing 12 allies within 30 yds for 232 + 100% Spirit, additionally scaling with Spirit.Allied Pyromancers can also fuel the fire with your Roaring Pyre and Phoenix.
+- Row 9: **Emberheart** (TE 1, 1 rank) | Instantly gain 5 stacks of Flamecasting and then empower all nearby allies with magical fire, increasing their movement speed by 30% for 15 seconds.While under the effects of Emberheart direct damage dealt by allies deals 119 + 35% fire SP additional Fire damage.FlamecastingIncreases your spell haste by 5% for 15 seconds. Stacks 5 times.Additional applications do not refresh duration.
+- Row 9: **Scepter of Fire** (TE 1, 1 rank) | Increases the duration of Inferno by 5 sec, causing its end of duration explosion of healing to trigger every 5 sec instead.
+- Row 9: **Blessing of the Inferno** (TE 1, 1 rank) | Reduces the healing done by Inferno by -20%, but increases its chance to trigger by 50%.
+
+### Incineration (38 nodes)
+
+- Row 0: **Ignite** (TE 1, 1 rank) | Generates 10 Heat Per TickBurn an enemy, inflicting 119 Fire damage over 21 seconds. If Ignite is dispelled it will cause 816 + 150% fire SP Fire damage to the dispeller.Castable while moving.
+- Row 0: **Infernus** (AE 0, 1 rank) | Damage dealt by Lava Shard now applies Infernus, causing enemies to Burn, dealing an additional 1122 + 72% SP Fire damage over 18 seconds.
+- Row 1: **Combustion** (TE 1, 1 rank) | Damage dealt by Explode is now increased by 15% for each of your Pyromancer periodic effects on the target.
+- Row 2: **Residual Power** (TE 1, 1 rank) | Each active Ember now reduces the cast time of Explode by -8%.
+- Row 2: **Arsonist** (TE 1, 1 rank) | Increases the critical damage of your Ember spenders by 10%.
+- Row 2: **Magnitude 10** (TE 1, 2 rank) | Increases the critical strike chance of Flare Bolt by 5%.
+- Row 2: **Scorched** (AE 0, 1 rank) | Level 20 PassiveDirect critical strikes with Ember spenders now Scorch the target, Burning them for an additional 30% of the damage dealt over 3 seconds.
+- Row 3: **Cataclysmic Power** (TE 1, 3 rank) | Increases the damage of Flare Bolt by 3% for each periodic effect you have on the target.
+- Row 3: **Embrace the Fire** (TE 1, 1 rank) | Increases the damage of Blaze and Ignite by 20%.
+- Row 3: **Fired Up!** (TE 1, 1 rank) | Your Ember spenders are now instant and have a 30% chance to refund their cost and increases your chance to critically strike by 20% for 15 seconds.
+- Row 4: **Searing Power** (TE 1, 1 rank) | Increases the spell power scaling of Flare Bolt by 20%.
+- Row 4: **Pillar of Flame** (TE 1, 1 rank) | Generates 20 Heat Per TargetCreate a pillar of lava beneath an enemy, dealing 36 + 31.24% fire SP Fire damage.Deals an additional 92 + 34.36% fire SP Fire damage to enemies near the primary target.
+- Row 4: **Wreath of Flames** (TE 1, 1 rank) | Periodic Fire damage now has a 10% chance to grant a stack of Flamecasting, or 2 stacks if they critically strike.FlamecastingIncreases your spell haste by 5% for 15 seconds. Stacks 5 times.Additional applications do not refresh duration.
+- Row 4: **Flamespiller** (TE 1, 1 rank) | Critical strikes with Explode or Flames of Neltharion now extend the duration of Fired Up by 0.5 sec.
+- Row 4: **Melting Point** (TE 1, 1 rank) | Critical strikes with Fire spells now increases the chance for the enemy to by critically hit with spells by 3% for 12 seconds.
+- Row 4: **Lighting the Fuse** (AE 0, 1 rank) | Level 30 PassiveAllows your periodic effects to critically strike and increases your spell critical strike chance by 15% of your Intellect.
+- Row 5: **Magmatic** (TE 1, 1 rank) | After casting Pillar of Flame, all periodic damage dealt now gives you a 10% chance to cast Pillar of Flame on the target free of cost for 5 seconds.Pillar of FlameGenerates 20 Heat Per TargetCreate a pillar of lava beneath an enemy, dealing 36 + 31.24% fire SP Fire damage.Deals an additional 92 + 34.36% fire SP Fire damage to enemies near the primary target.
+- Row 5: **Molten Storm** (TE 1, 1 rank) | Increases the critical strike chance and damage of Lava Shard by 10%.
+- Row 5: **To Ashes** (TE 1, 1 rank) | Damaging critical strikes now generate 10 Heat and restore 3% of your base mana.
+- Row 5: **Roasted Alive** (TE 1, 1 rank) | Increases the chance to trigger Fired Up by 20%.
+- Row 6: **Pyromantic Accelerants** (TE 1, 1 rank) | Your Flames of Neltharion and Explode now deal 15% increased damage to Burning targets.
+- Row 6: **Explosive** (TE 1, 2 rank) | Increases the tick rate of Blaze and Ignite by -10%.
+- Row 6: **Sizzle** (TE 1, 1 rank) | When Flamecasting expires your active Pyromancer periodic effects flare up to 12 nearby enemies, instantly striking them with Flare Bolts.Flare BoltGenerates 20 HeatInvoke flames upon an enemy, dealing 19 + 57.1% fire SP Fire damage.
+- Row 6: **Fiery Passion** (TE 1, 1 rank) | Increases the spell haste of all party and raid members by 3%. Does not stack with similar effects.In addition, your spell haste is increased by 3%.
+- Row 6: **Incinerator** (AE 0, 1 rank) | Level 40 PassiveIncreases your spell penetration by 30, scaling with your level.
+- Row 7: **Rapid Incineration** (TE 1, 1 rank) | Consuming Embers now reduces the cooldown of Lava Shard and Pillar of Flame by 10%.
+- Row 7: **Pyromaniac** (TE 1, 1 rank) | Increases the critical strike chance of Ember spenders by 5%.
+- Row 7: **Flames of Focus** (TE 1, 1 rank) | Adds 1 additional stack to Flamecasting and increases its duration by 5 sec.
+- Row 7: **Stoke** (TE 1, 1 rank) | Critical strikes with Ignite and Infernus now extend their own duration on the target by 3 sec, up to a maximum of 12 sec.
+- Row 7: **Dark Iron Legacy** (TE 1, 1 rank) | Targets affected by the disorient from Meteor take an additional 40% increased damage from the next Explode or Lava Shard.
+- Row 7: **Destroyer's Legacy** (TE 1, 1 rank) | Damage dealt by Lava Shard on enemies affected by Blaze now blasts nearby enemies for 20% of the damage dealt as Fire damage.
+- Row 8: **Pyroclastic Flow** (TE 1, 1 rank) | Flare Bolt now increases the damage of subsequent Flare Bolts by 3% for 10 seconds, stacking 5 times.Flames of Neltharion and Explode now increase the damage of subsequent Explodes or Flames of Neltharion by 3% for 5 seconds, stacking 5 times.
+- Row 8: **Heat Wave** (TE 1, 1 rank) | Flamecasting stacks now also increase the damage of Explode and Flames of Neltharion by 4% per stack.
+- Row 8: **Pyroclasm** (TE 1, 1 rank) | Consumes 1 EmberCreate a pyroclasm instantly consuming your Burning effects on a target to deal the two times total periodic damage plus an additional 2100 to 2220 over 10 seconds, piercing absorption effects and resistances.
+- Row 8: **Burned** (AE 0, 1 rank) | Level 50 PassiveDirect Fire damage dealt now applies Burned to the target for 15 seconds.Burned (Proc)Increases the targets damage taken from your periodic effects by 3% stacking 5 times.
+- Row 9: **Flames of the Firelord** (TE 1, 1 rank) | Your periodic damage dealt now has a 5% chance to grant you Eruption for 5 sec.
+- Row 9: **Sulfuron Harbinger** (TE 1, 1 rank) | Increases the critical strike chance of Blaze and Ignite by 5% and increases their tick rate by -20% and reduces their durations by -25%.Periodic critical strikes apply Sulfur Fumes.Sulfur Fumes (Proc)Flare Bolt, Explode, or Flames of Neltharion will detonate the Sulfur Fumes to cause a Sulfuron Blast, dealing 263 Fire Damage to the target and extending the duration of Blaze on them by 1 sec.
+- Row 9: **Legacy of Ragnaros** (TE 1, 1 rank) | Pyroclasm now causes your next 3 Lava Shards within 12 seconds to trigger no cooldown and be free of cost.
+
+### Draconic (41 nodes)
+
+- Row 0: **Echo of Nozdormu** (AE 0, 1 rank) | Transforms your Explode into Echo of Nozdormu.Echo of NozdormuObliterate an enemy, dealing 120 + 105% SP Chromatic Damage and reducing all spell and ability cooldowns by 5%.
+- Row 0: **Dragon's Edge** (AE 0, 1 rank) | Level 10 PassiveDirect critical strikes now generate an additional 20 Heat.
+- Row 1: **Alexstrasza's Gift** (TE 1, 1 rank) | Increases the damage and healing of your Ember spenders by 15%.
+- Row 2: **Agonizing Burns** (TE 1, 1 rank) | Increases the duration of Blaze by 20% and allows it to benefit from your spell haste.
+- Row 2: **Aspect's Blessing** (TE 1, 1 rank) | Your next Echo of Nozdormu or Flames of Neltharion is guaranteed to critically strike and triggers Aspect of Time, casting an additional time for 30% of the damage dealt. Lasts 15 seconds.Damage dealt in this way can trigger up to 3 additional times.
+- Row 2: **Critical Pressure** (TE 1, 2 rank) | Increases your Intellect and critical strike chance by 3%.
+- Row 2: **Aspect of Time** (AE 0, 1 rank) | Level 20 PassiveDamage dealt by Echo of Nozdormu and Flames of Neltharion now has a 33% chance to cast an additional time for 30% of the damage dealt.Damage dealt in this way can trigger this effect up to 3 additional times.
+- Row 3: **Firefall** (TE 1, 1 rank) | Generates 10 Heat Per TargetCall down streaks of fire upon an enemy and up to 8 enemies within 15 yds of them, dealing 79 + 31.24% fire SP Fire damage.
+- Row 3: **Lifebringer's Blessing** (TE 1, 1 rank) | Damage dealt by Aspect of Time now heals you equal to 200% of the damage dealt.
+- Row 3: **Flames of Fate** (TE 1, 1 rank) | Your Aspect's Blessing now affects 2 additional casts of Echo of Nozdormu, but its cooldown is doubled, and its mana cost is increased by 50%.
+- Row 3: **Destroyer's Maw** (TE 1, 1 rank) | Generates 30 HeatUnleash a vicious draconic maw on an enemy, dealing 103 + 100% fire SP Fire damage that cannot be resisted.
+- Row 4: **Cinderstorm** (TE 1, 1 rank) | Reduces all threat generated by Firefall by -25% and increases its critical strike chance by 10%.
+- Row 4: **Overwhelming Flames** (TE 1, 1 rank) | Your Lava Shard now spreads Blaze to up to 1 additional enemy within 8 yds of the primary target.
+- Row 4: **Timed Attacks** (TE 1, 2 rank) | Increases your spell haste by 4%.
+- Row 4: **Searing Flames** (TE 1, 1 rank) | Increases the spell bonus scaling of Lava Shard by 30%.
+- Row 4: **Mad Aspect's Scepter** (TE 1, 2 rank) | Increases the damage of Destroyer's Maw by 20%.
+- Row 4: **Flames of the Aspects** (TE 1, 1 rank) | Casting Destroyer's Maw now grants 2 stacks of Flamecasting.FlamecastingIncreases your spell haste by 5% for 15 seconds. Stacks 5 times.Additional applications do not refresh duration.
+- Row 4: **Draconic Aspect** (AE 0, 1 rank) | Level 30 PassiveTeaches you Draconic Aspect.Draconic AspectUnleash your Draconic Aspect, increasing your spell damage by 30% of your Intellect and your critical damage with spells by 50%.While active, dealing direct damage to an enemy inflicts the target with Dragon's Wrath.Dragon&#39;s Wrath (Damage)Unleash your wrath, dealing 9 + 30% fire SP Fire Damage to your target, piercing all resistances and absorption effects.
+- Row 5: **Ascender** (TE 1, 1 rank) | Reduces the cooldown of Dragon Leap by -5 sec.
+- Row 5: **Draconic Invocation** (TE 1, 1 rank) | Invoke all of the Dragon Aspects, instantly generating 5 Embers.
+- Row 5: **Fire and Brimstone** (TE 1, 1 rank) | Generating an Ember now increases the damage and healing of Ember spenders by 1% for 10 seconds, stacking 5 times.
+- Row 6: **Earthwarder** (TE 1, 1 rank) | Being struck by a melee attack while Draconic Aspect is active now has a 20% chance to make your next Flare Bolt within 8 seconds instant cast.
+- Row 6: **Expediting Power** (TE 1, 1 rank) | Your Echo of Nozdormu now reduces the cooldown of Aspect's Blessing by an additional 5%.
+- Row 6: **Perpetual Burning** (TE 1, 1 rank) | The duration of Blaze is now increased by 1 sec for each Ember you have when you cast it.
+- Row 6: **Flames of Execution** (TE 1, 1 rank) | Damage dealt by Blaze is increased by 25% on enemies below 35% of their maximum health.
+- Row 6: **Blackrock Mountaineer** (TE 1, 1 rank) | Reduces the cooldown of Eruption by -30 sec.
+- Row 6: **Molten Fury** (TE 1, 1 rank) | Increases the damage and healing provided by Eruption by 15%, but reduces its duration by -50%.
+- Row 6: **Draconic Tempest** (TE 1, 1 rank) | Your Dragon's Wrath now melts enemies, increasing their chance to be hit by spells by 3% for 10 seconds.
+- Row 6: **Soul of the Dragon** (TE 1, 1 rank) | Casting Flare Bolt now has a 15% chance to cast it again free of cost.
+- Row 6: **Inner Flame** (TE 1, 1 rank) | Increases critical strike chance of all party and raid members by 3%.Does not stack with similar effects.
+- Row 6: **Legacy of Deathwing** (AE 0, 1 rank) | Level 40 PassiveConsuming Embers now has a 30% chance to reset the cooldown of Destroyer's Maw and Firefall and grant you Legacy of Deathwing.Legacy of DeathwingYour next Destroyer's Maw or Firefall within 10 seconds is instant cast and free of cost.
+- Row 7: **Breath of Neltharion** (TE 1, 1 rank) | Breath superheated flames in a cone in front of you that melts the weapons of affected enemies, disarming their melee and ranged weapons for 6 seconds.
+- Row 7: **Black Magic** (TE 1, 1 rank) | Generating Heat now reduces the cooldown of Draconic Invocation and Essence of Malygos by 3%. Can only occur once per sec.
+- Row 7: **Draconic Rage** (TE 1, 1 rank) | Consuming Embers now has a 25% chance to trigger Dragon's Wrath on all enemies affected by Blaze.
+- Row 8: **Invocation of Flames** (TE 1, 1 rank) | Your Draconic Invocation now grants 5 stacks of Flamecasting.In addition, allows Flamecasting to stack 5 additional times and increases its duration by 5 sec.
+- Row 8: **Death From Above** (TE 1, 1 rank) | Root enemies in a 40 yd line for 3.5 seconds and then soar forward in a blaze of glory, dealing 676 + 100% fire SP Fire damage every 1 sec to enemies beneath you for 10 seconds.
+- Row 8: **Wild Magic** (TE 1, 1 rank) | Damage dealt by Dragon's Wrath now has a 50% chance to become unstable, dealing 50 + 16.5% Intellect% additional damage as Magic damage, but burning 85 + 40% Intellect mana.Both the damage dealt and mana burned scale with your Intellect.
+- Row 8: **Blackflight Resurgence** (AE 0, 1 rank) | Level 50 PassiveLegacy of Deathwing now also increases the damage of your next Destroyer's Maw or Firefall by 25%.
+- Row 9: **Aspect of Eternity** (TE 1, 1 rank) | Allows the periodic damage of Blaze to critically strike.In addition, damage dealt by Echo of Nozdormu or Aspect of Time now has a 20% chance to guarantee your next Blaze within 8 seconds to critically strike and increase its critical damage by 100% and duration by 25%.
+- Row 9: **Aspect of Earth** (TE 1, 1 rank) | Casting Flames of Neltharion or Echo of Nozdormu now grants a stack of Aspect of Earth for 15 seconds, stacking 3 times. Aspect of Earth (Stacker)At 3 stacks, the stacks are consumed to create a volcano beneath the primary target that erupts in an 8 yd radius dealing 1188 Fire Damage over 8 seconds.Damage dealt by the volcano generates 1 Heat and 1% of your missing mana.
+- Row 9: **Aspect of Magic** (TE 1, 1 rank) | Damage dealt by Dragon's Wrath now increases your Intellect by 3% for 20 seconds, stacking 10 times.Consuming an Ember now increases your critical strike chance by 2% and your critical damage by 4% for 20 seconds, stacking 5 times.
+
+## Cultist
+
+### Godblade (37 nodes)
+
+- Row 0: **Rift** (TE 1, 1 rank) | Apply a dark boon to yourself for 15 seconds, causing your next Hammer of Twilight to deal an additional 80% of its damage dealt as Shadow damage.Creates a rift that absorbs the next 690 + 150% AP healing taken by enemies that step inside and reduces their periodic healing received by -50% for 10 seconds while inside.
+- Row 0: **Obliteration** (AE 0, 1 rank) | Level 10 PassiveYour Gaze of C'Thun now gains an additional 15 base damage and healing.
+- Row 1: **Hand of N'Zoth** (TE 1, 1 rank) | Your Hammer of Twilight, Entropic Slam, and Gaze of C'Thun now refreshes a charge of Blade of the Empire.
+- Row 2: **Voidforged Edge** (TE 1, 3 rank) | Your auto attacks now deal an additional 10% of the damage dealt as Shadow damage.
+- Row 2: **Abyssal Edge** (TE 1, 2 rank) | Increases the critical strike chance of Blade of the Empire by 2% and reduces its mana cost by -25%.
+- Row 2: **Shadow of the Void** (AE 0, 1 rank) | Level 20 PassiveWhile above 40 Insanity, melee attacks and abilities trigger Shadow of the Void.Shadow of the VoidRestores 5% of your maximum mana and increases your Shadow Damage dealt by 10% for 8 seconds.
+- Row 3: **Shadow Strikes** (TE 1, 1 rank) | Blade of the Empire now has a 30% chance to cause your next auto attack to hit twice.
+- Row 3: **Netherstrike** (TE 1, 1 rank) | Generates 10 InsanityStrike an enemy quickly for 125% Weapon Damage plus 48 Shadow damage, purging 1 beneficial magic effect from them.Only usable on enemies below 35% health.
+- Row 3: **Warrior of the Old Gods** (TE 1, 1 rank) | Increases the Weapon Damage dealt by Hammer of Twilight and Entropic Slam by 20%.
+- Row 4: **Residual Energy** (TE 1, 1 rank) | Doubles the duration of Shadow of the Void.
+- Row 4: **Hysterical Momentum** (TE 1, 1 rank) | Damage dealt by Blade of the Empire increases your melee haste by 3% for 8 seconds, stacking 3 times.
+- Row 4: **Voidseeker** (TE 1, 1 rank) | Melee attacks now have a 10% chance to reset the cooldown of your Netherstrike, allowing the next use regardless of the target's health for 8 seconds.
+- Row 4: **Touch of the Void** (TE 1, 1 rank) | Increases your Magic damage dealt by 3% and Hammer of Twilight now increases the target's spell damage taken by 10% for 15 seconds.
+- Row 4: **Encroaching Presence** (TE 1, 1 rank) | Your melee critical strikes reduce the cooldown of Rift and Gaze of C'Thun by -3 sec.
+- Row 4: **Twilight's Call** (AE 0, 1 rank) | Level 30 PassiveCritical strikes with Hammer of Twilight now refund 20 Insanity.
+- Row 5: **Teachings of Mythrax** (TE 1, 1 rank) | Increases the duration of Presence of N'Zoth and Presence of Y'Shaarj by 25%.
+- Row 5: **Empire's Grasp** (TE 1, 1 rank) | Teleport an enemy to your position and slow their movement speed by -60% for 4 seconds.
+- Row 5: **God Blade** (TE 1, 1 rank) | Your Rift now guarantees your next Hammer of Twilight to critically strike.
+- Row 6: **Abyssal Cleave** (TE 1, 2 rank) | Your Gaze of C'Thun now strikes 1 additional nearby enemy.
+- Row 6: **Tentacle of N'Zoth** (TE 1, 1 rank) | Target an enemy and summon a Tentacle of N'Zoth on the ground near them that will silence them and deal 117 + 75% SP Shadow damage every 2 sec for 8 seconds. If your target runs out of range, the tentacle will seek a new target.The tentacle gains health based on your Stamina. If the tentacle dies, the silence effect will end.
+- Row 6: **Seething Void** (TE 1, 1 rank) | Reduces the cooldown of Empire's Grasp by -5 sec.
+- Row 6: **End Times** (TE 1, 1 rank) | Increases the range of Blade of the Empire, Netherstrike, and Hammer of Twilight by 25 yds and reduces their mana costs by -50% for 15 seconds.
+- Row 6: **Oblivion's Embrace** (TE 1, 1 rank) | Increases the critical damage of your Hammer of Twilight by 25%.
+- Row 6: **Void Strength** (AE 0, 1 rank) | Level 40 PassiveIncreases your Shadow spell damage by 50% of your Strength and your spell hit chance by 5% of your Strength.
+- Row 7: **Eye of N'zoth** (TE 1, 1 rank) | Increases the critical strike chance and critical damage of your Tentacles by 10%.
+- Row 7: **Netherborne** (TE 1, 1 rank) | Increases the critical damage of Netherstrike by 25%.
+- Row 7: **Who Needs Sanity?** (TE 1, 1 rank) | Each stack of Insanity increases the critical damage of your Netherstrike by 1%.
+- Row 7: **Instilling Fear** (TE 1, 1 rank) | While above 60 Insanity, your Netherstrike and Gaze of C'Thun now gain 10% increased critical strike chance.
+- Row 7: **Void Rage** (TE 1, 1 rank) | Increases the Shadow damage increased through Shadow of the Void by 5%.
+- Row 7: **Glory to N'Zoth** (TE 1, 1 rank) | While Shadow of the Void is active, you now take -15% reduced damage.
+- Row 8: **Eldritch Obelisk** (TE 1, 1 rank) | Create an Eldritch Obelisk beneath you for 20 seconds, increasing the damage of your Tentacles by 100% and the movement speed of allies by 40% while near it.
+- Row 8: **Nutcase** (TE 1, 1 rank) | Your Shadow of the Void now also increases your critical damage dealt by 10%.
+- Row 8: **Voidborne** (TE 1, 1 rank) | Tap into your inner voidborne rage, increasing your damage dealt and critical strike chance by 25%, and granting you immunity to stun effects for 15 seconds.Generates 1 Insanity every 1 sec.
+- Row 8: **Blessing of N'Zoth** (AE 0, 1 rank) | Level 50 PassiveIncreases your attack power by 100% of your Intellect.
+- Row 9: **Twilight Domination** (TE 1, 1 rank) | Damage dealt by your Tentacles reduces the cooldown of Eldritch Obelisk by -2 sec.In addition, increases the effectiveness of Eldritch Obelisk by 25%.
+- Row 9: **Book of N'Zoth** (TE 1, 1 rank) | Your Shadow of the Void now stacks 1 additional time.
+- Row 9: **Shadow Fiend** (TE 1, 1 rank) | Reduces the cooldown of your Voidborne by -90 sec and increases its duration by 5 sec.
+
+### Corruption (39 nodes)
+
+- Row 0: **Darkwither** (TE 1, 1 rank) | Generates 10 InsanityWither an enemy, dealing 135 Shadow damage over 15 seconds. Each instance of damage reduces their periodic healing taken by -5%, stacking up to 4 times.
+- Row 0: **Corrupting Whispers** (AE 0, 1 rank) | Damage dealt has a 15% chance to grant you Corrupting Whispers.Corrupting Whispers (Aura)Increases your Magic Damage dealt by 20% and reduces your mana costs by -30% for 8 seconds.
+- Row 1: **Absolute Horror** (TE 1, 1 rank) | Reduces the cast time of Horrorbolt and Wrath of the Black Empire by 0.3 sec.
+- Row 1: **Feeding Darkness** (TE 1, 2 rank) | Increases the range of your Corruption spells by 3 yds and their chance to critically strike by 2%.
+- Row 2: **Moment of Clarity** (TE 1, 2 rank) | Reduces spell pushback suffered from damaging attacks by 35% and increases mana generated by Sanity Tap by 5%.
+- Row 2: **Call of C'Thun** (TE 1, 1 rank) | Your Darkwither's healing reduction now stacks 3 additional times and its tick rate is increased by -25%.
+- Row 2: **Call of N'Zoth** (TE 1, 1 rank) | Increases the duration of Darkwither by 9 sec.
+- Row 2: **Servant of C'Thun** (TE 1, 1 rank) | Casting Gaze of C'thun now always triggers your Presence of C'Thun while it is active.Presence of C&#39;Thun (Buff)Increases your haste by 20% for 6 seconds.
+- Row 2: **Dark Magician** (AE 0, 1 rank) | Level 20 PassiveIncreases your critical damage dealt by 50% and your spell power by 30% of your Intellect.
+- Row 3: **Eldritch Devastation** (TE 1, 1 rank) | Channel upon an enemy, chaining to nearby enemies, dealing 60 + 132% shadow SP Shadow damage over 6 seconds, dealing less damage with each enemy struck.
+- Row 3: **Obliteration Beam** (TE 1, 1 rank) | Generates 10 InsanityUnleash a beam of eldritch energy, dealing 126 + 65% shadow SP Shadow damage to an enemy and all nearby enemies.While above 60 Insanity, deals 20% more damage.
+- Row 4: **Unrelenting Void** (TE 1, 1 rank) | Periodic or channeled damage now increases the damage the enemy takes from you by 2% for 10 seconds, stacking 10 times.
+- Row 4: **Mind Rot** (TE 1, 1 rank) | Periodic or channeled damage dealt now has a 25% chance to curse your target, applying Mind Rot.Mind Rot (Trigger)Increases the chance for allies to hit with all spells against the afflicted enemy by 3% for 10 seconds.If this effect is dispelled, your critical strike chance is increased by 30% for 5 seconds.
+- Row 4: **Cunning Nature** (TE 1, 2 rank) | Increases your chance to hit by 3% and reduces threat generated by Shadow damage spells by -15%.
+- Row 4: **Dark Revelation** (TE 1, 1 rank) | Grants your Horrorbolt and Wrath of the Black Empire a 20% chance to reset the cooldown of Gaze of C'thun.
+- Row 4: **Whispers of C'Thun** (AE 0, 1 rank) | Level 30 PassiveYour Gaze of C'Thun now generates 10 Insanity.
+- Row 5: **Corruptor's Gaze** (TE 1, 1 rank) | Increases the damage of your Tentacles by 20%.
+- Row 5: **Dread** (TE 1, 1 rank) | Increases the damage of Darkwither by 30%.
+- Row 5: **Visions** (TE 1, 1 rank) | Increases the spell haste of all party and raid members by 3%. Does not stack with similar effects.In addition, your Shadow damage is increased by 3%.
+- Row 5: **Worrysome Idol** (TE 1, 1 rank) | Increases your spell haste by 4% and causes you to regenerate mana equal to 1% of your missing mana every 10 sec.
+- Row 5: **Horrific Visions** (TE 1, 1 rank) | While above 40 Insanity, your chance to trigger Dark Revelation is now increased by 10%.
+- Row 6: **Foulness** (TE 1, 1 rank) | Increases the damage bonus provided by your Corrupting Whispers by 5%.
+- Row 6: **Terror** (TE 1, 1 rank) | Increases the spell damage bonus of Horrorbolt by 10% and Wrath of the Empire by 20%.
+- Row 6: **Psychic Suppression** (TE 1, 1 rank) | Lift an enemy into the air, stunning them and dealing 30 + 55% shadow SP + 10% AP Shadow damage every 1 sec for 5 seconds. The target takes 15% more spell damage from all sources while you are channeling this spell.
+- Row 6: **Inner Turmoil** (TE 1, 1 rank) | Increases the damage of Wrath of the Black Empire by 25%.
+- Row 6: **Glimpse of Madness** (TE 1, 2 rank) | Reduces the cooldown of Obliteration Beam by -20% and it now applies Madness to all targets struck. MadnessYour Gaze of C'thun causes 3% increased damage, stacks up to 5 times.
+- Row 6: **Dark Revelation** (AE 0, 1 rank) | Level 40 PassiveGrants all periodic damage and damage dealt a 6% chance to reset the cooldown of Gaze of C'Thun and generate 5 Insanity.
+- Row 7: **Yawning Decay** (TE 1, 1 rank) | Every 3rd Horrorbolt cast causes your next successful Horrorbolt to deal an additional 50% of the initial damage to the target over 3 seconds.
+- Row 7: **Embrace the Void** (TE 1, 1 rank) | Reaching 60 Insanity increases your damage dealt by 10% for 10 seconds.
+- Row 7: **Misery** (TE 1, 1 rank) | Casting Gaze of C'Thun now reduces the cooldown of Psychic Suppression and Grasp of Zek'voz by -1 sec.
+- Row 7: **Occultism** (TE 1, 1 rank) | Increases the critical strike chance of Wrath of the Black Empire by 10%.
+- Row 7: **Depths of Madness** (TE 1, 1 rank) | Damage dealt by Gaze of C'Thun now has a 15% to chance to spawn a void portal that casts either Gaze of C'thun, Horrorbolt, or Obliteration Beam before disappearing.
+- Row 8: **Dark Whispers** (TE 1, 1 rank) | Casting Horrorbolt now grants Inspired Malice for 12 seconds.Inspired MaliceYour next Gaze of C'thun, Darkwither or Wrath of the Black Empire will be empowered.Gaze of C'thun: Critical strike chance increased by 20%.Darkwither: Shadow damage dealt increased by 5% and damage of Darkwither by an additional 15% for 10 seconds.Wrath of the Black Empire: Deals 25% increased damage.
+- Row 8: **Abyssal Destruction** (TE 1, 1 rank) | Periodic or channeled damage dealt now reduces the cooldown of your Obliteration Beam by -1 sec and grants 1 stack of Abyssal Destruction.Abyssal DestructionIncreases the damage dealt of your next Obliteration Beam by 5%, stacking 10 times, for 15 seconds.
+- Row 8: **Apocalyptic Skies** (TE 1, 1 rank) | Casting Wrath of the Black Empire now spawns a void portal that casts either Gaze of C'thun, Horrorbolt, or Obliteration Beam before disappearing.
+- Row 8: **Blessing of C'Thun** (AE 0, 1 rank) | Level 50 PassiveYour Darkwither can now critically strike and your spell hit rating is increased by 5% of your Intellect.
+- Row 9: **Horrorbolt Volley** (TE 1, 1 rank) | After casting 3 Horrorbolts, it transforms into Horrorbolt Volley for 15 seconds.Horrorbolt VolleyGenerates 10 InsanityInflict sheer horror on up to 5 enemies, dealing 607 + 28% shadow SP Shadow damage.
+- Row 9: **Ancient Curse** (TE 1, 1 rank) | Generates 20 InsanityCurse an enemy, dealing 326 + 100% SP Shadow damage and increasing all Shadow damage they take from you by 10% for 10 seconds.Upon expiration, it deals an additional 1233 + 100% shadow SP Shadow damage to the target.
+- Row 9: **Sunderer of Realities** (TE 1, 1 rank) | Casting Wrath of the Black Empire now causes your subsequent Wraths of the Black Empire, within 15 seconds, to deal 15% more damage each and unleash Apocalyptic Skies upon the enemy.Apocalyptic SkiesSpawns a void portal that casts either Gaze of C'thun, Horrorbolt, or Obliteration Beam before disappearing.
+
+### Heretic (42 nodes)
+
+- Row 0: **Malevolence** (TE 1, 1 rank) | Generates 10 InsanitySmash an enemy with eldritch force, dealing 40 + 10% AP + 52% SP Shadow damage and applying Black Blood to 5 nearby allies, healing them for 25 + 10% AP, repeating every 3 sec for 15 seconds.Usable while moving.Additional applications of Black Blood do not refresh the duration.
+- Row 0: **Herald of the Depths** (AE 0, 1 rank) | Level 10 PassiveReaching 100 Insanity no longer causes Total Madness.Teaches you Herald of the Depths.Herald of the DepthsTransform into a Herald of the Depths for 20 seconds, increasing damage and healing done by 15% and the duration of absorption and healing over time effects by 100%.At the end of the duration, your Insanity is reduced to 0.
+- Row 1: **Blade of Yogg-Saron** (TE 1, 2 rank) | Damage dealt by Blade of the Empire now heals the lowest health ally for 35% of the damage dealt plus 198 + 20% healing + 5% AP.
+- Row 1: **Shadow Pennant** (TE 1, 2 rank) | You now heal the lowest health ally affected by Black Blood for 50% of your auto attack damage.
+- Row 2: **Malevolent Power** (TE 1, 1 rank) | Every 3rd melee ability you cast now causes your next Eldritch Mending to become instant cast and cost -20% less mana.
+- Row 2: **Abyssal Covenant** (TE 1, 1 rank) | Link yourself to an ally for 30 minutes, transfering 10% of all damage taken by them to you and causing 20% of all damage you deal to be converted into healing for them.Can only be applied to 1 ally at a time.
+- Row 2: **Twisted Sanity** (TE 1, 1 rank) | Allies affected by your Black Blood are now healed for 30% of the damage dealt by your Tentacles.
+- Row 2: **Shadow Training** (AE 0, 1 rank) | Level 20 PassiveIncreases the healing done by Eldritch Mending by 50% and Gaze of C'Thun by 100%.In addition, you are now unable to miss your attacks and you cannot be parried or dodged.
+- Row 3: **Eldritch Eye** (TE 1, 1 rank) | Invoke the Old Gods for 15 seconds, removing the cast time of your next 3 Eldritch Mendings or Malevolences and causing them to critically strike.
+- Row 3: **Dark Protection** (TE 1, 1 rank) | Allies affected by Abyssal Covenant now also take 20% increased healing from you.
+- Row 3: **Lead the Covenant** (TE 1, 1 rank) | 50% of all healing done to allies through Abyssal Covenant is now replicated to you.
+- Row 3: **Forbidden Ritual** (TE 1, 1 rank) | Chant a forbidden ritual that places a shield on all nearby party and raid members that absorbs 225 + 50% healing damage for 10 seconds.
+- Row 4: **Saronite Mind** (TE 1, 2 rank) | Your Eldritch Eye now has 1 additional charge.
+- Row 4: **As The Prophecy Foretold** (TE 1, 1 rank) | Melee critical strikes now refresh a charge of Blade of the Empire and restore 5% of your base mana.
+- Row 4: **Prophetic Compulsion** (TE 1, 1 rank) | While Black Blood is active on an ally, healing done to them by your Gaze of C'Thun has a 15% increased chance to critically strike.
+- Row 4: **Void-Touched** (AE 0, 1 rank) | Level 30 PassiveDirect healing done now applies Void-Touched.Void-Touched (Stacks)Marks the ally for 30 seconds, stacking 10 times.When you cast Gaze of C'Thun, all stacks are consumed to heal all allies affected by Void-Touched for 304 + 35% healing, increased based on how many stacks were on them.
+- Row 5: **Protection From Light** (TE 1, 1 rank) | Reduces all damage taken by party and raid members by -3%.In addition, your Holy damage taken is reduced by -10%.
+- Row 5: **Dark Rites** (TE 1, 1 rank) | While Herald of the Depths is active, your movement speed cannot be reduced below 100% of normal value.
+- Row 5: **Dark Matter** (TE 1, 1 rank) | Channeling Satiate now heals all allies within 30 yds for 208 + 20% healing every 1 sec for 10 seconds.
+- Row 5: **Persistent Prayers** (TE 1, 2 rank) | Increases the duration and absorption amount of Void Shield and Forbidden Ritual by 25%.
+- Row 5: **Yogg-Saron's Embrace** (TE 1, 1 rank) | Increases your attack power and your maximum mana by 10%.
+- Row 5: **Forbidden Resilience** (TE 1, 1 rank) | While Herald of the Depths is active, you now take -15% less damage and have a 25% increased chance to resist dispel effects.
+- Row 5: **Forbidden Strength** (TE 1, 1 rank) | While Herald of the Depths is active, the critical strike chance of Blade of the Empire is increased by 10%.
+- Row 5: **Blade of the Depths** (TE 1, 1 rank) | While Herald of the Depths is active, your Forbidden Ritual will cooldown faster.
+- Row 6: **Dark Infusion** (TE 1, 1 rank) | 3 Charges, 30 sec rechargeInfuse an ally with dark energy, healing them for 44 the next time they take damage. When the heal occurs, Dark Infusion is consumed and expands to the two lowest-health nearby party or raid members. Each secondary infusion heals when triggered, then expands to three nearby allies.
+- Row 6: **Dark Veil** (TE 1, 1 rank) | Channel a shield of void energies upon an ally, causing both you and them to absorb 875 + 100% healing + 25% AP damage, stacking 5 times, every 1 sec for 5 seconds.At the end of the duration, if the shield holds, you teleport to them.While channeling you are immune to stuns and silences.
+- Row 6: **Saronite Cube** (TE 1, 1 rank) | Melee ability damage now reduces the duration of Wracked Mind by -1 sec on all allies within 30 yds.
+- Row 6: **Devour Curse** (TE 1, 1 rank) | Devour dark magic on an ally, dispelling 2 curse effects from them and healing you for 90 + 65% SP.
+- Row 6: **Void Power** (AE 0, 1 rank) | Your healing power is increased based on your main-hand weapon damage.
+- Row 7: **Ancient Rituals** (TE 1, 1 rank) | Casting Satiate now refreshes the duration of Black Blood on all allies within 30 yds.Dark Infusion bounces one additional time after its third infusion, expanding to the three lowest-health nearby party or raid members.
+- Row 7: **Dark Reservoir** (TE 1, 1 rank) | Increases the bonus healing power scaling of Eldritch Mending by 25%.
+- Row 7: **Tales of Woe** (TE 1, 1 rank) | Your Dark Veil now performs its effect -50% faster.
+- Row 7: **Corrupt Fate** (TE 1, 1 rank) | Reduces the cooldown of Dark Veil by -60 sec.
+- Row 7: **Visions of the Empire** (TE 1, 1 rank) | Increases the damage converted into healing through Abyssal Covenant by 10%.
+- Row 7: **Dark Chants** (TE 1, 1 rank) | Reduces the cast time of Forbidden Ritual by 1 sec and allows Black Blood to stack up to 2 times.
+- Row 8: **Saronite Blessing** (TE 1, 1 rank) | Melee critical strikes now apply Saronite Blessing to you.Saronite Blessing (Buff)Your melee attack speed is increased by 25% and your melee auto attacks heal the lowest health ally for an additional 100% of the damage dealt. Lasts for 15 seconds or 10 attacks.
+- Row 8: **Hand of Yogg-Saron** (TE 1, 1 rank) | Tether yourself to an ally for 15 seconds, increasing all damage they deal and reducing all damage they take by 15%.
+- Row 8: **Void Barrier** (TE 1, 1 rank) | Casting Herald of the Depths now increases the absorption of your next Void Shield within 10 seconds by 100%.
+- Row 8: **Blessing of Yogg-Saron** (AE 0, 1 rank) | Level 50 PassiveIncreases your attack power by an amount equal to 3 times your spell critical strike rating.
+- Row 9: **Blessing of Yogg-Saron** (TE 1, 1 rank) | While Herald of the Depths is active, you now transform into a Faceless Monstrosity, increasing your critical healing and critical strike chance by 20%, but reducing its duration by -5 sec.In addition, while active you are now immune to fear, horrify, and polymorph effects.
+- Row 9: **Horrific Revelations** (TE 1, 1 rank) | Every 1 sec while Hand of Yogg-Saron is active, you now trigger a Horrific Revelation on the target and generate 5 Insanity.Horrific RevelationHeals a friendly target for 144 + 67.85% SP, scaling with Insanity, and increases their critical strike chance by 1%, stacking 15 times, for 15 seconds.
+- Row 9: **Dark Prophet** (TE 1, 1 rank) | Healing done by Abyssal Covenant now heals 5 of the lowest health nearby allies and healing done by Black Blood can now critically strike.
+
+### Dreadnought (38 nodes)
+
+- Row 0: **Twilight Shieldtoss** (TE 1, 1 rank) | Hurl a cursed shield, dealing 40 Shadow damage to up to 3 enemies, reduced by 20% with each jump.Damage increased by 1% for each stack of Insanity.
+- Row 0: **Dreadnought** (AE 0, 1 rank) | Level 10 PassiveReaching 100 Insanity no longer causes Total Madness.Teaches you Dreadnought.DreadnoughtAbsorbs 150 + 300% Stamina + 300% Intellect damage, scaling with Intellect and Stamina. Protects movement speed from going below 80% of normal speed. Lasts 20 seconds.Depletes all Insanity upon expiration.
+- Row 1: **Adaptive Combatant** (TE 1, 2 rank) | Increases your parry chance by 3% and dodge chance by 2%.
+- Row 1: **Malignant Armor** (TE 1, 1 rank) | Increases your attack power by 2 for every 100 armor value you have.
+- Row 1: **Boon of Y'shaarj** (TE 1, 2 rank) | You now gain an additional 2 mana per point of Intellect.
+- Row 2: **Bulwark of Horror** (TE 1, 1 rank) | Avoiding an attack now has a 40% chance to refresh a charge of Blade of the Empire.
+- Row 2: **Strength of the Sha** (AE 0, 1 rank) | Level 20 PassiveIncreases your spell damage by 25% of your Strength and your spell hit rating by 6% of your Intellect.
+- Row 3: **Bulwark of Y'shaarj** (TE 1, 1 rank) | Increases your block chance by 5%, plus an additional 10% while above 40 Insanity.
+- Row 3: **Y'Shaarj's Enforcer** (TE 1, 1 rank) | Increases the damage dealt by your Twilight Shieldtoss by 100% but it to no longer bounces.
+- Row 3: **Bouncing Thoughts** (TE 1, 1 rank) | Your Twilight Shieldtoss now hits an additional enemy for every 20 Insanity you have.
+- Row 3: **Tentacle of Y'shaarj** (TE 1, 1 rank) | Summon a Tentacle of Y'shaarj near you for 30 seconds.When summoned and whenever Gaze of C'thun is used, it slams the ground dealing Physical damage, scaling with Stamina, to all enemies in a 10 yd frontal cone.
+- Row 4: **Entropic Retaliation** (TE 1, 1 rank) | Blocking an attack now increases your critical strike chance by 2% for 6 seconds, stacking up to 5 times.
+- Row 4: **Inner Darkness** (TE 1, 1 rank) | Blocking an attack now generates 3 Insanity.
+- Row 4: **Twilight Incarnate** (TE 1, 1 rank) | Damage dealt by Twilight Shieldtoss now generates 3 Insanity.
+- Row 4: **Everpresent** (TE 1, 1 rank) | Increases the chance to trigger Presences by 10%.
+- Row 4: **Eldritch Strength** (TE 1, 1 rank) | Increases the damage of Hammer of Twilight and Entropic Slam by 25% and they now generates a large amount of threat.
+- Row 4: **Deep Secrets** (AE 0, 1 rank) | Level 30 PassiveEach point of Insanity now reduces mana costs of your instant cast spells and abilities by 1%.
+- Row 5: **Dreadfall** (TE 1, 1 rank) | Raise your shield and charge towards an enemy, dealing 50% AP Shadow damage to enemies you pass through, generating additional threat.
+- Row 5: **Wavering Hope** (TE 1, 1 rank) | While above 60 Insanity, the cooldown of your Twilight Shieldtoss and Gaze of C'thun is reduced by -25%.
+- Row 5: **Eldritch Bastion** (TE 1, 2 rank) | Increases your Armor contribution from your shield by 15%.
+- Row 5: **Crushing Dissonance** (TE 1, 1 rank) | Unleash a wave of maddening resonance, interrupting the current spell cast of all enemies around you and preventing any spell in that school from being cast for 2 seconds.
+- Row 6: **Void-Enhanced Shield** (TE 1, 1 rank) | Increases your block value by 20%.While above 60 Insanity, the value of this effect is doubled.
+- Row 6: **Void Reaver** (TE 1, 1 rank) | Avoiding or absorbing an attack now has a 20% chance to make your next Blade of the Empire deal 20% more damage and hit an additional nearby enemy.
+- Row 6: **Voidwarding** (TE 1, 1 rank) | Reduces damage taken by party and raid members by -3%. Does not stack with similar effects.In addition, increases all of your resistances by 5, scaling with level.
+- Row 6: **In And Out of Insanity** (TE 1, 1 rank) | Increases the effectiveness of your damage absorption effects by 20%.
+- Row 6: **Bulwark of Shadow** (TE 1, 1 rank) | While above 80 Insanity, your Void Shield has 30% increased value.
+- Row 6: **Strength of the Black Empire** (AE 0, 1 rank) | Level 40 PassiveDreadnought now sheds your mortal form, transforming you into a void monstrosity, reducing your damage taken by -10%
+- Row 7: **Shadowy Symbiosis** (TE 1, 1 rank) | Your successful blocks now have a 20% chance to critically block for twice the normal amount.This effect is doubled while above 60 Insanity.
+- Row 7: **Void Strikes** (TE 1, 1 rank) | Damage dealt by Blade of the Empire and Entropic Slam is now increased based on your defense rating.
+- Row 7: **General of Y'shaarj** (TE 1, 1 rank) | Dealing damage with Twilight Shieldtoss now heals you for 10% of the damage dealt.
+- Row 7: **Eldritch Entities** (TE 1, 1 rank) | Critical strikes with abilities now summon a Manifestation of Y'shaarj for 10 seconds, which will attack enemies and heal you for 2% of your base health.
+- Row 8: **Dreadful** (TE 1, 1 rank) | Increases your critical strike rating equal to your block rating.In addition, critical strikes now reduce the cooldown of Dreadfall and Dreadnought by 1 sec.
+- Row 8: **Twilight Guardian** (TE 1, 1 rank) | The first instance of damage dealt by Twilight Shieldtoss now shields you for 100% of the damage dealt for 8 seconds.
+- Row 8: **Void Tolerance** (TE 1, 1 rank) | Reduces the cooldown of Abyssal Ward by -30 sec.
+- Row 8: **Blessing of Y'Shaarj** (AE 0, 1 rank) | Level 50 PassiveWhile transformed into a void monstrosity your damage dealt is now also increased by 20%.
+- Row 9: **Eldritch Force** (TE 1, 1 rank) | Every 5th critical strike with abilities now transforms your next Gaze of C'Thun into Eldritch Force.Eldritch ForceGenerates 30 InsanitySend out a wave of force, dealing 631 + 76.26% SP + 12.5% AP Shadow damage to enemies in front of you and reducing their movement speed by -30% for 10 seconds.
+- Row 9: **Void Augmentation** (TE 1, 1 rank) | While Dreadnought is active, your Twilight Shieldtoss has a -3 sec reduced cooldown.
+- Row 9: **Embodiment of Y'shaarj** (TE 1, 1 rank) | Increases the amount that Void Shield absorbs by 100%.Absorbing damage grants you 20% of the absorbed value as spell power for 8 seconds.
+
+## Starcaller
+
+### Moon Guard (36 nodes)
+
+- Row 0: **Starburst** (TE 1, 1 rank) | Applies 1 Scattered Star Per HitSmash up to 8 enemies, dealing 2 + 30% arcane SP + 15% AP Arcane damage, scaling with block value and maximum mana and reducing their attack speed by -20% for 10 seconds.Consuming a Scattered Star reduces the remaining cooldown of Starburst by -2 sec.
+- Row 0: **Moon Guard** (AE 0, 1 rank) | Level 10 PassiveYou now gain Intellect equal to your Strength.
+- Row 1: **Blanket of Stars** (TE 1, 1 rank) | Cover your shield in a blanket of stars for 8 seconds, increasing your block chance and block value by 100%.
+- Row 1: **Starsweep** (TE 1, 1 rank) | Consumes Scattered StarsSweep an enemy and all nearby enemies with your astral blade, dealing 30 + 30% AP + 35% SP Arcane damage.Every Scattered Star consumed reduces the cooldown of this spell by -3 sec.Consume Scattered StarsDeals 7 + 18.22% SP Arcane Damage and restores 8% maximum mana for each Scattered Star.
+- Row 2: **Improved Eclipse of Fury** (TE 1, 1 rank) | Increases the effectiveness of Eclipse of Fury by 40%.
+- Row 2: **Moonstone Hilt** (TE 1, 2 rank) | Increases your parry chance by 2% and block value by 15%.
+- Row 2: **Nebula** (TE 1, 1 rank) | Blocking enemy attacks now applies Scattered Stars to the attacker.
+- Row 2: **Asteroid Belt** (AE 0, 1 rank) | Level 20 PassiveEvery 15 sec, you now gain Asteroid Belt.In addition, your hit rating is increased by 5% of your Intellect and your expertise is increased by 8.Asteroid BeltBlock rating, parry rating, and block value increased based on how much mana you had when this was applied for 15 seconds.
+- Row 3: **Dance In The Starlight** (TE 1, 1 rank) | Reduces the cooldown of Blanket of Stars by -10 sec.
+- Row 3: **Starlit Finesse** (TE 1, 1 rank) | Increases your hit and critical strike chance by 3%.
+- Row 3: **Celestial Divination** (TE 1, 1 rank) | Increases your chance to dodge by 5%.
+- Row 4: **Tyrande's Guidance** (TE 1, 1 rank) | Increases the critical strike chance of your Starburst by 10%.
+- Row 4: **Astral Reconstitution** (TE 1, 1 rank) | Surround yourself with lunar light, causing 30% of damage taken to be converted into mana for 10 seconds.
+- Row 4: **Moonflares** (TE 1, 1 rank) | Avoiding melee attacks will call down a Moonflare at the attacker, dealing 66 Arcane damage.Can occur only once per second.
+- Row 4: **Crystal Shield** (AE 0, 1 rank) | Level 30 PassiveIncreases your Stamina by 10% and increases your spell damage by 25% of your attack power.
+- Row 5: **Starcovered Night** (TE 1, 1 rank) | Increases the duration of Blanket of Stars by 4 sec.
+- Row 5: **Pulsar Explosion** (TE 1, 2 rank) | Increases the damage of Celestial Cleave by 10% and allows it to affect 1 additional enemies.
+- Row 5: **Shrouded Stars** (TE 1, 1 rank) | Reduces damage taken by all party and raid members by -3%.Does not stack with similar effects.
+- Row 5: **Moonveil Screen** (TE 1, 1 rank) | Increases the damage of Starsunder and Moonflare by 20%.
+- Row 5: **Blade of the Moon** (TE 1, 1 rank) | Consuming Scattered Stars now has a 15% chance to transform Celestial Strike into Moonblade for 8 seconds.MoonbladeDevastate an enemy, dealing 130% Weapon Damage plus 100% Intellect Arcane damage and regenerating 15% missing mana.
+- Row 6: **Starburst Invigoration** (TE 1, 1 rank) | Increases your Energy regeneration by 15%.
+- Row 6: **Cosmic Crown** (TE 1, 2 rank) | Increases the duration of Aegis spells by 3 sec.
+- Row 6: **Enduring Moon** (TE 1, 1 rank) | Critical strikes now increase the target's spell damage taken by 10% for 15 seconds.
+- Row 6: **Vengeful Inspiration** (TE 1, 1 rank) | Increases your attack speed by 10% and causes critical strikes with melee attacks to apply a Scattered Star.
+- Row 6: **Celestial Guard** (AE 0, 1 rank) | Level 40 PassiveIncreases the effectiveness of consuming Scattered Stars by 50%.
+- Row 7: **Will of Elune** (TE 1, 1 rank) | Damage dealt by Aspect of the Stars now strikes 2 additional nearby enemies.
+- Row 7: **Starbound** (TE 1, 1 rank) | Increases your healing done and received by 10%, doubled while below 20% health.
+- Row 7: **Enchanted Aegis** (TE 1, 1 rank) | Your successful blocks now have a 50% chance to critically block for twice the normal amount.
+- Row 7: **Starlight Duelist** (TE 1, 1 rank) | Blocking or parrying an attack now increases your damage dealt by 10% for 6 seconds.
+- Row 8: **Coalesced Resilience** (TE 1, 1 rank) | Reduces your damage taken by an amount equal to 1% of your maximum mana.
+- Row 8: **Font of Magic** (TE 1, 1 rank) | Each time you spend a cumulative 100% of your maximum mana, you heal for 4% of your maximum health.
+- Row 8: **Lunar Knight** (TE 1, 1 rank) | Increases the damage of your Moonblade and Starsweep by 50% and their chance to critically strike by 20%.
+- Row 8: **Dancing in the Moonlight** (AE 0, 1 rank) | Level 50 PassiveParrying an attack now regenerates 15 of your Energy and deals 65% Weapon Damage to the attacker.
+- Row 9: **Chosen of the Moon** (TE 1, 1 rank) | Become the chosen of the moon, reducing all Physical damage taken by -60% and taunting all enemies within 8 yds for 10 seconds.
+- Row 9: **Moonlit Bulwark** (TE 1, 1 rank) | Grants you a shield for an amount equal to your maximum mana for 10 seconds. Usable while stunned.
+- Row 9: **Mooncharged Blades** (TE 1, 1 rank) | Blocking an attack allows your next Starsunder to hit an additional nearby enemy and cost -30% less mana.
+
+### Moon Priest (39 nodes)
+
+- Row 0: **Aspect of the Goddess** (TE 1, 1 rank) | While active, your healing done is increased by 10% and your spells and abilities will not be able to miss.In addition, consuming Scattered Stars now heals up to 5 allies around the target for 73 + 14.97% healing.
+- Row 0: **Moon Priest** (AE 0, 1 rank) | Level 10 PassiveYour Huntress Shot now has a Lunar Eclipse effect.Huntress Shot: Applies 2 additional Scattered Stars.
+- Row 1: **Moonflow** (TE 1, 1 rank) | Send forth moonwell waters to all nearby party and raid members, healing them for 49 + 22.86% healing.Lunar Eclipse: Triggers with no cooldown and consumes Scattered Stars from enemies you are in combat with within 40 yds.Consume Scattered StarsDeals 7 + 18.22% SP Arcane Damage and restores 8% maximum mana for each Scattered Star.
+- Row 1: **Lunar Blessing** (TE 1, 2 rank) | Increases your healing done by 3%, plus an additional 3% on Poisoned or Diseased targets.
+- Row 1: **Prayer of Elune** (TE 1, 1 rank) | Say a prayer to Elune, healing up to 12 allies within 40 yds for 77 + 27.57% healing, and dispel 1 harmful magic effect from them.
+- Row 2: **Lunar Resplendence** (TE 1, 1 rank) | Increases your healing done to allies below 20% health by 30%.
+- Row 2: **Celestial Mind** (AE 0, 1 rank) | Level 20 PassiveYou now passively gain 1 stack of Lunar Phase 1 sec faster.
+- Row 3: **Lunar Swiftness** (TE 1, 1 rank) | Moon Arrow now reduces the cast time of the next Hand of Elune within 8 seconds by -20%, stacking 5 times.
+- Row 3: **Eclipsing Arrows** (TE 1, 1 rank) | Healing done by Hand of Elune or Touch of Moonlight now marks allies for 20 seconds.Casting Huntress Shot now heals marked allies for 235 + 30% SP.
+- Row 3: **Enchanted Water** (TE 1, 2 rank) | Increases the healing of Touch of Moonlight by 10% and reduces spell pushback suffered from damaging attacks by 35%.
+- Row 4: **Moonlit Slumber** (TE 1, 1 rank) | Put an enemy to sleep for 30 seconds (6 sec vs players). Damage dealt will end the effect.While sleeping, you drain 98 mana from them every 3 sec.
+- Row 4: **Lunar Revelation** (TE 1, 1 rank) | Increases the critical strike chance of Moonflow by 10%.
+- Row 4: **Stellar Convergence** (TE 1, 1 rank) | Applies Eclipsing Arrows to all party and raid members within 40 yds.
+- Row 4: **Goddess Watch Over** (TE 1, 1 rank) | Increases the effectiveness of Aspect of the Goddess by 25%.
+- Row 4: **Cycle of the Moon** (TE 1, 1 rank) | Every 10 seconds, you cycle between Full Moon and New Moon.Full MoonIncreases your critical strike chance by 5%.New MoonDamage dealt has a 25% chance to apply Scattered Stars.
+- Row 4: **Moonwell Acuity** (AE 0, 1 rank) | Level 30 PassiveThe Lunar Eclipse effect of Moonwell Splash now causes it to affect 3 targets.
+- Row 5: **Tear Drops** (TE 1, 1 rank) | Healing through Aspect of the Goddess now increases the target's healing taken from you by 1% for 10 sec, stacking up to 10 times.
+- Row 5: **Rapid Cycle** (TE 1, 1 rank) | Lunar Phase now increases your ranged haste by 4% per stack.
+- Row 5: **Last Prayer** (TE 1, 1 rank) | Casting Stellar Convergence now resets the cooldown of Prayer of Elune.
+- Row 5: **Mending Surge** (TE 1, 1 rank) | Reduces the cooldown of Stellar Convergence by -30 sec.
+- Row 5: **Lunar Prophecy** (TE 1, 1 rank) | Casting Moon Arrow now reduces the cooldown of Prayer of Elune by -3 sec.
+- Row 5: **Teachings of Elune** (TE 1, 2 rank) | Increases the healing of Hand of Elune and Moonflow by 10%.
+- Row 6: **Blessed By The Stars** (TE 1, 1 rank) | Your ranged damage dealt now has a 15% chance to unleash a Scattered Star.
+- Row 6: **Elune's Grace** (TE 1, 1 rank) | Critical heals with Hand of Elune now increase the target's armor by 10% for 10 seconds.
+- Row 6: **Healing Prayers** (TE 1, 1 rank) | Prayer of Elune gains an additional 20% of your bonus healing effects.
+- Row 6: **Phase Guider** (TE 1, 1 rank) | Increases the bonus healing scaling of Moonwell Splash and the healing done through Aspect of the Goddess by 20%.
+- Row 6: **Full Cycle** (TE 1, 1 rank) | Hand of Elune gains the following Full Moon and New Moon effects.Full Moon: Healing increased by 10%.New Moon: Cost reduced by -10%.
+- Row 6: **Moon Gazing** (AE 0, 1 rank) | Level 40 PassiveYour critical strikes now generate a stack of Lunar Phase. Can only occur once per sec.
+- Row 7: **Elune's Favor** (TE 1, 1 rank) | Hand of Elune and Touch of Moonlight now heal for an additional 50% of their value over 10 seconds.
+- Row 7: **Enchanted Stream** (TE 1, 1 rank) | Increases the critical healing of Hand of Elune and Moonflow by 15%.
+- Row 7: **Flow of Waters** (TE 1, 1 rank) | Increases critical strike chance of all party and raid members by 3%. Does not stack with similar effects.In addition, increases your critical strike chance by 3%.
+- Row 7: **Final Prayer** (TE 1, 1 rank) | Your Prayer of Elune now dispels 1 additional effect.
+- Row 8: **Cosmic Shift** (TE 1, 1 rank) | Shift the target ally out of the physical plane, granting improved stealth for 10 seconds.Does not break on damage taken.
+- Row 8: **Rampaging Waters** (TE 1, 1 rank) | Damage dealt by Scattered Stars now increases your healing by 1% and critical strike chance by 1% for 10 seconds, stacking 10 times.
+- Row 8: **Lunar Cascade** (TE 1, 1 rank) | Critical strikes with Moonflow and Prayer of Elune now apply Eclipsing Arrows to the target for 20 seconds.Casting Huntress Shot heals marked allies for 235 + 30% SP.
+- Row 8: **Elune's Blessing** (AE 0, 1 rank) | Level 50 PassiveYour Hand of Elune now gains an additional 30% of your bonus healing.
+- Row 9: **Lunar Phasing** (TE 1, 1 rank) | Cosmic Shift now dispels all harmful effects from the target.
+- Row 9: **Celestial Form** (TE 1, 1 rank) | Ascend into a celestial form for 15 seconds, increasing your critical strike chance by 10%.While active, critical strikes now reduce the remaining cooldown of all healing spells by 10% and apply a Scattered Star to your target and up to 4 enemies within 5 yds of them.
+- Row 9: **Rippling Moonwater** (TE 1, 1 rank) | Your healing effects now apply Moonwater to the target, stacking 5 times.MoonwaterDealing damage will consume a stack to heal you.
+
+### Sentinel (38 nodes)
+
+- Row 0: **Starfire Shot** (TE 1, 1 rank) | Consumes Scattered StarsFire an enchanted arrow, dealing 100% Ranged Weapon Damage plus 62+66+POWER1*0.01 Arcane damage, scaling further based on your maximum mana.Consume Scattered StarsDeals 7 + 18.22% SP Arcane Damage and restores 8% maximum mana for each Scattered Star.
+- Row 0: **Huntress Training** (AE 0, 1 rank) | Level 10 PassiveIncreases your haste rating by 8% of your Intellect.
+- Row 1: **Huntress of Elune** (TE 1, 2 rank) | Increases your damage dealt by 5% on enemies further than 30 yds.
+- Row 1: **Starcrash** (TE 1, 2 rank) | Increases the damage dealt by consuming Scattered Stars by 10%.
+- Row 2: **Drawstring of Elune** (TE 1, 1 rank) | Huntress Shot and Starcall apply an additional stack of Scattered Stars and your ranged ability attack range is increased to 50 yds for 20 seconds.
+- Row 2: **Starcall** (TE 1, 1 rank) | Blast the target enemy and all enemies near them with lunar fire that deals 70 + 33% arcane SP Arcane damage, applying Scattered Stars.Consuming a Scattered Star reduces the remaining cooldown by -1.5 sec.Scattered StarsCan be consumed by spells to deal additional Arcane Damage. Lasts 30 seconds, stacking 4 times.
+- Row 2: **Astral Lancer** (AE 0, 1 rank) | Level 20 PassiveIncreases the critical damage of Lunar Lance by 50%.
+- Row 3: **Tyrande's Training** (TE 1, 1 rank) | Increases the critical strike chance and critical damage of Starfire Shot by 10% against Burning targets.
+- Row 3: **Exemplary Draw** (TE 1, 1 rank) | Moon Arrow deals 20% more damage and increases the target's spell damage taken by 10% for 12 seconds.
+- Row 3: **Cascade** (TE 1, 1 rank) | Every 8th Scattered Star you consume increases the damage of your next Starcall by 50%.
+- Row 4: **Sentinel's Focus** (TE 1, 1 rank) | Starfire Shot now has a 20% chance to fire a free Huntress Shot at the target.
+- Row 4: **Tyrande's Vigilance** (TE 1, 1 rank) | Reduces the cast time of Starfire Shot by -0.5 sec.Reduces the pushback suffered from damaging attacks while casting ranged abilities by 75%.
+- Row 4: **Elune's Blessing** (TE 1, 1 rank) | Increases party and raid member's melee and ranged haste by 10%.Does not stack with similar effects.
+- Row 4: **Eye of Elune** (TE 1, 1 rank) | Increases your critical strike chance by 5%.
+- Row 4: **Ishnu-alah** (TE 1, 1 rank) | Moon Arrow restores an additional 4% of your maximum mana.
+- Row 4: **Explosive Moonlight** (AE 0, 1 rank) | Level 30 PassiveIncreases your ranged attack power by 30% of your Intellect and your hit rating by 3% of your Intellect.
+- Row 5: **Hunter's Sight** (TE 1, 1 rank) | Aspect of the Huntress now increases your chance to hit by 3%.
+- Row 5: **Tyrande's Guidance** (TE 1, 1 rank) | Increases the critical damage dealt by Starfire Shot by 20%.
+- Row 5: **Trueshot** (TE 1, 1 rank) | Drains 20% Maximum Mana2 Charges, 18 sec rechargeConsumes Scattered StarsFire at your target and enemies near them, dealing Ranged Weapon Damage plus POWER1*0.03+SPA*0.185+40 Arcane damage, scaling with maximum mana.Consume Scattered StarsDeals 7 + 18.22% SP Arcane Damage and restores 8% maximum mana for each Scattered Star.
+- Row 5: **Omnipresent Moon** (TE 1, 1 rank) | Your Lunar Lances now strikes an additional nearby enemy.
+- Row 5: **Moon Runner** (TE 1, 1 rank) | Increases the movement slowing effect of Aspect of the Cosmos by -5% per stack.
+- Row 5: **Cosmic Strides** (TE 1, 1 rank) | Aspect of the Cosmos no longer slows enemy movement speed. Instead, your melee and ranged attacks now grant you 5% increased movement speed for 4 seconds, stacking 3 times.
+- Row 6: **Enduring Hunt** (TE 1, 2 rank) | Reduces the mana cost of Huntress Shot and Trueshot by -15%.
+- Row 6: **Star-Guided Arrows** (TE 1, 1 rank) | Damage dealt by Scattered Stars now has a 25% chance to refresh a charge of Trueshot.
+- Row 6: **Celestial Prowess** (TE 1, 2 rank) | Increases the critical strike chance of Lunar Lance and Starfire Shot by 5%.
+- Row 6: **Celestial Shot** (AE 0, 1 rank) | Level 40 PassiveIncreases the effectiveness of consuming Scattered Stars by 40%.
+- Row 7: **Shattered Stars** (TE 1, 1 rank) | Increases the range of Starshatter by 10 yds.
+- Row 7: **On The Hunt** (TE 1, 1 rank) | Starfire Shot now increases the damage the enemy takes from your Huntress Shot by 10% for 8 seconds, stacking 2 times.
+- Row 7: **Arrows In The Night** (TE 1, 1 rank) | Your Huntress Shots now strike 3 additional enemies and explode with astral energy for 10 seconds, dealing 30 + 8.14% arcane SP + 3% ranged AP Arcane damage.Damage dealt by Starcall reduces the cooldown of this ability by -2 sec.
+- Row 7: **Lunar Splinters** (TE 1, 1 rank) | Increases the damage of consuming Scattered Stars by 10%.
+- Row 7: **Moonmancer** (TE 1, 1 rank) | Reduces the cooldown of Starcall by -50%.
+- Row 8: **Starfire Power** (TE 1, 1 rank) | Casting Starfire Shot now has a 20% chance to grant you Drawstring of Elune for 5 sec.Drawstring of Elune (SLS)Huntress Shot and Starcall apply an additional stack of Scattered Stars and your ranged ability attack range is increased to 50 yds.
+- Row 8: **Night Hunter** (TE 1, 1 rank) | Reduces the cooldown of Huntress Saber by -60 sec.
+- Row 8: **Lunar Amplification** (TE 1, 1 rank) | Increases the damage of Trueshot by 25%.
+- Row 8: **Lo'sho Amplification** (AE 0, 1 rank) | Level 50 PassiveScattered Stars now burn enemy mana equal to 10% of the damage dealt.
+- Row 9: **Starfire Barrage** (TE 1, 1 rank) | Every 3rd Starfire Shot transforms Starfire Shot into Starfire Barrage.Starfire BarrageFire an enchanted arrow, dealing 100% Ranged Weapon Damage plus 50 + 40% arcane SP Arcane damage on impact, and an additional 50 + 7.5% arcane SP Arcane damage that applies a Scattered Star every 1 sec for 3 seconds. Scales with modifiers to Starfire Shot.Usable while moving.
+- Row 9: **Arrow of the Goddess** (TE 1, 1 rank) | Fire a star-infused arrow hitting enemies in a line, dealing 400% Ranged Weapon Damage plus POWER1*0.25 Arcane damage, scaling with maximum mana and applying Scattered Stars to them.Scattered StarsCan be consumed by spells to deal additional Arcane Damage. Lasts 30 seconds, stacking 4 times.
+- Row 9: **Unleashed Wisps** (TE 1, 1 rank) | Dealing damage with Scattered Stars has a 30% chance to launch a Wisp at your target, dealing 80 + 13.5% arcane SP Arcane damage to nearby enemies.
+
+### Warden (40 nodes)
+
+- Row 0: **Fan of Knives** (TE 1, 1 rank) | Applies 1 Scattered Star Per HitUnleash hidden blades upon nearby enemies, dealing 10 + 30% SP Arcane damage scaling with maximum mana.Consuming a Scattered Star reduces the remaining cooldown of Fan of Knives by -2 sec.Scattered StarsCan be consumed by spells to deal additional Arcane Damage. Lasts 30 seconds, stacking 4 times.
+- Row 0: **Warden Training** (AE 0, 1 rank) | Level 10 PassiveCritically striking with Starsunder now applies an additional stack of Scattered Stars.Scattered StarsCan be consumed by spells to deal additional Arcane Damage. Lasts 30 seconds, stacking 4 times.
+- Row 1: **Astral Blade** (TE 1, 1 rank) | Drains 25% Maximum ManaStrike an enemy with precision, dealing 106 + 100% SP + 100% AP Arcane damage, increased further based on your maximum mana.Increases your dealt to the enemy by 15% for 5 seconds.
+- Row 2: **Fury of the Stars** (TE 1, 2 rank) | Increases the damage of Astral Blade by 10%.
+- Row 2: **Lethal Pursuit** (TE 1, 1 rank) | Reduces the cooldown of Fan of Knives by -5 sec.
+- Row 2: **Moonlit Impaler** (TE 1, 2 rank) | Increases your Arcane damage by 5% and your hit chance by 2%.
+- Row 2: **Maiev's Discipline** (AE 0, 1 rank) | Level 20 PassiveIncreases your critical strike rating by 12% of your Intellect and your expertise by 10% of your Intellect.
+- Row 3: **Astral Finesse** (TE 1, 1 rank) | Reduces the cooldown of Astral Blade by -4 sec.
+- Row 3: **Astral Onslaught** (TE 1, 1 rank) | Increases the duration of Astral Blade by 7 sec.
+- Row 3: **Umbral Blade** (TE 1, 1 rank) | Consumes Scattered StarsSlash an enemy, dealing 97 + 63.5% arcane SP + 20% AP Arcane damage to them and nearby enemies. Each additional enemy beyond the first takes 20% less damage.
+- Row 3: **Sentinel Glaive** (TE 1, 1 rank) | Throw a sentinel glaive at an enemy, dealing Weapon Damage plus 53 as Arcane damage, increased further based on your maximum mana, and increasing their resource costs by 15% for 8 seconds.
+- Row 4: **Halt** (TE 1, 1 rank) | Teleport to a target location, silencing all enemies around you for 4 seconds.
+- Row 4: **Moonstone** (TE 1, 1 rank) | Increases the damage of Lunar Lance by 20%.
+- Row 4: **Celestial Surge** (TE 1, 1 rank) | Increases the damage dealt by consuming Scattered Stars by 10%.
+- Row 4: **Warden Training** (TE 1, 1 rank) | Reduces the cooldown of Warden's Blade by -25%.
+- Row 4: **Rally The Sentinels** (TE 1, 1 rank) | Sentinel Glaive now restores 20% of your maximum mana and applies a Scattered Star to the enemy.
+- Row 4: **Celestial Glaives** (AE 0, 1 rank) | Level 30 PassiveYour Scattered Stars can now stack 2 additional times.
+- Row 5: **Star Pupil** (TE 1, 1 rank) | Your damaging critical strikes now grant you a stack of Star Pupil.Star PupilReduces the cast time of Moonwell Splash by -25% for 8 seconds, stacking 4 times.While this is active, Moonwell Splash is castable while moving.
+- Row 5: **Maiev's Guard** (TE 1, 1 rank) | Critical strikes with Astral Blade now strike 2 additional times, one for 40% of the damage dealt and the other for 20% of the damage dealt.
+- Row 5: **Astral Combatant** (TE 1, 1 rank) | Lunar Lance and Umbral Blade increase the enemy damage taken from Scattered Stars by 10% for 10 seconds.
+- Row 5: **Bonds of Justice** (TE 1, 1 rank) | Send forth bonds of justice to an enemy, tethering them to you for 8 seconds.If the tether is broken through expiration or the target runs at least 10 yds from you, they are gripped back towards you, taking 441 + 120% arcane SP Arcane damage.
+- Row 5: **Aspect Mastery** (TE 1, 2 rank) | Increases the effectiveness of your Aspects by 10% and their chance to trigger by 5%.
+- Row 5: **Wrath of Elune** (TE 1, 1 rank) | Reduces the cooldown of Sentinel Glaive by -5 sec.
+- Row 6: **Vigil of the Watchers** (TE 1, 1 rank) | Increases critical strike chance of all party and raid members by 3%.Does not stack with similar effects.
+- Row 6: **Stellar Amplification** (TE 1, 1 rank) | Dealing damage with Scattered Stars now has a 15% chance to make your next Astral Blade free of cost.
+- Row 6: **Scattering Blades** (TE 1, 1 rank) | Your Warden's Blade now increases the chance to trigger Aspect of the Warden by 10% for 8 seconds.
+- Row 6: **Warrior of Elune** (TE 1, 1 rank) | Increases your melee haste by 5% and movement speed by 10%.Movement speed granted by this talent stacks with Moonwalk.
+- Row 6: **Lunar Combatant** (AE 0, 1 rank) | Level 40 PassiveIncreases the effectiveness of consuming Scattered Stars by 50%.
+- Row 7: **Lunar Charge** (TE 1, 1 rank) | After using Shooting Star, your next Celestial Strike, Starsunder or auto attack ends the effect to deal 87 + 28.75% arcane SP + 4.65% AP Arcane damage, increased based on distance travelled.
+- Row 7: **Wrath of the Moon** (TE 1, 1 rank) | Increases your Arcane critical damage dealt by 20%.
+- Row 7: **Infused Blades** (TE 1, 1 rank) | Your Astral Blade now has a 30% chance to reset its own cooldown and refund its maximum mana cost.
+- Row 7: **Warden's Precision** (TE 1, 1 rank) | Your Warden's Blade now launches an additional 2 blades at the target, dealing 49 + 24.5% SP Spellstrike Damage.
+- Row 7: **Pierce The Night** (TE 1, 1 rank) | Your Fan of Knives now applies an additional stack of Scattered Stars to each enemy struck.
+- Row 8: **Moontouched Weapons** (TE 1, 1 rank) | Increases the damage of Aspect of the Warden by POWER1*0.01, scaling with maximum mana.
+- Row 8: **Spirit of Vengeance** (TE 1, 1 rank) | Fan of Knives now marks enemies with Vengeance for 10 seconds. Successfully marking an enemy increases the range of your next Astral Blade by 25 yards.Casting Astral Blade on a marked enemy causes it to deal 30% more damage.
+- Row 8: **Shadowsong's Mandate** (TE 1, 1 rank) | Increases your critical strike chance by 15% for 10 seconds.While active, your damaging critical strikes have a 40% chance to trigger Warden's Blade.
+- Row 8: **Astral Blessing** (AE 0, 1 rank) | Level 50 PassiveDamaging critical strikes now reduce the cooldown of Warden's Blade by -1 sec.
+- Row 9: **Pulverizing Blade** (TE 1, 1 rank) | Casting Warden's Blade now grants you Pulverizing Blade.Pulverizing BladeNext 5 Starsunders within 20 seconds deal increasing damage, scaling with 10% of Intellect, with each subsequent use, stacking 5 times.
+- Row 9: **Avatar of Vengeance** (TE 1, 1 rank) | Transform into an Avatar of Vengeance, teleporting to your target and increasing your Intellect by 25% for 30 seconds. For the duration, the range of Astral Blade is increased by 30 yards and will teleport you to your target.If your target is an enemy, you strike them dealing 50 + 22% Intellect + 6.5% arcane SP Arcane damage per 1 sec for 8 seconds, scaling with Intellect.
+- Row 9: **Highest Order** (TE 1, 1 rank) | Reduces the cooldown of Shadowsong's Mandate by -25% and increases the chance to trigger Warden's Blade by 60%.
+
+## Sun Cleric
+
+### Piety (39 nodes)
+
+- Row 0: **Dawnsear** (AE 0, 1 rank) | Blast an enemy with burning light, dealing 88 + 100% fire SP Fire damage.
+- Row 0: **Sunrise and Sunset** (AE 0, 1 rank) | Level 10 PassiveAfter activating Dawn, casting a Holy spell grants Sunrise or casting a Fire spell grants Sunset.Entering Sunrise or Sunset prevents you from entering the other until you enter the next.SunriseIncreases all Holy Damage dealt by 20% for 2 minutes.SunsetIncreases your critical strike chance with Fire spells by 20% and Fire Damage by 10% for 2 minutes.
+- Row 1: **Radiant Flame** (TE 1, 1 rank) | Launch radiant spheres at an enemy each dealing 31 + 20.69% SP Holyflame Damage, repeating every 1 sec for 4 seconds.
+- Row 2: **Scorch Marks** (TE 1, 1 rank) | Casting Dawnsear and Sunflare now have a 40% chance to grant Scorch Marks for 10 seconds.Scorch MarksYour next Radiant Flame has no mana cost, ticks -50% faster, and its duration is reduced by -50%.
+- Row 2: **Solar Conduit** (TE 1, 1 rank) | Reduces the cast time of Dawnsear by -20% while Dawn is active.
+- Row 2: **Fire from the Heavens** (AE 0, 1 rank) | Level 20 PassiveDamage dealt by Radiant Flame now has a 10% chance to launch a Solar Flare at your target.Solar Flare (Damage)Deals 137 + 26% SP Holyflame Damage and reduces the target's chance to hit by -3% for 10 seconds.
+- Row 3: **Burning Cascade** (TE 1, 2 rank) | Reduces the cast time and mana cost of Dawnsear and Sunflare by -10%.
+- Row 3: **Rapture** (TE 1, 1 rank) | Call down a streak of sun light to smite your target, dealing 111 + 200% fire SP Fire damage to them and nearby enemies, piercing all immunities, but dealing less damage with each enemy struck.
+- Row 3: **Photosynthetic** (TE 1, 3 rank) | Increases your spell haste by 3%, plus an additional 1% during the day.
+- Row 4: **Purgation** (TE 1, 1 rank) | Dealing damage with Radiant Flame now increases the target's Holy and Fire damage taken from you by 1% for 8 seconds, stacking 8 times.
+- Row 4: **Solar Champion** (TE 1, 1 rank) | Increases the range of your Piety spells by 20% and reduces the threat generated by them by -20%.
+- Row 4: **Solar Concord** (TE 1, 1 rank) | Resets the cooldown of Horusath Blast while in Sunrise and Rapture while in Sunset and causes their damage dealt to launch a Solar Flare. Lasts 15 seconds.Solar Flare (Damage)Deals 137 + 26% SP Holyflame Damage and reduces the target's chance to hit by -3% for 10 seconds.
+- Row 4: **Wrath of God** (TE 1, 2 rank) | Increases the critical strike chance of Sunflare and Dawnsear by 3% and reduces spell pushback suffered from damaging attacks by 50%.
+- Row 4: **Sun's Hope** (TE 1, 1 rank) | Damage dealt by Solar Flares now grants you 1 Solar Power and increase the targets chance to be critically struck by spells by 3% for 8 seconds.Solar Flare (Damage)Deals 137 + 26% SP Holyflame Damage and reduces the target's chance to hit by -3% for 10 seconds.
+- Row 4: **Struck by the Sun** (AE 0, 1 rank) | Level 30 PassiveIncreases your Holy and Fire spell damage by 30% and your spell hit rating by 6% of your Intellect.
+- Row 5: **Sun Gate** (TE 1, 1 rank) | Shift 25 yds forward at light speed, removing all root effects.This leaves behind a Sun Gate for 15 seconds that allies can interact with to blink themselves the same distance forward. Allies can only use Sun Gate every 90 seconds.
+- Row 5: **City of Light** (TE 1, 1 rank) | Damage dealt by Radiant Flame now restores 3% of your missing health and mana.
+- Row 5: **Radiant Fury** (TE 1, 1 rank) | Damage dealt by Radiant Flame is now increased by 10% on enemies below 35% health.
+- Row 5: **Lights of Absolution** (TE 1, 1 rank) | Damage dealt by Horusath Blast now grants you Light of Absolution for 10 seconds.Lights of AbsolutionDamage dealt by Solar Flares now restores 2% missing health, Energy, Focus, Runic Power, and Rage to allies within 40 yds. Can only occur once every 0.5 sec.
+- Row 5: **Flames of Absolution** (TE 1, 1 rank) | Damage dealt by Horusath Blast now launches a Solar Flare at up to 5 enemies within 5 yds of your target.Solar Flare (Damage)Deals 137 + 26% SP Holyflame Damage and reduces the target's chance to hit by -3% for 10 seconds.
+- Row 5: **Sunwell** (TE 1, 1 rank) | Become an embodiment of the sun for 30 seconds that periodically dispels fear, sleep, and charm effects every 3 sec from allies within 40 yds.
+- Row 6: **Holy Fervor** (TE 1, 1 rank) | Increases the effectiveness of Sunrise and Sunset by 20%.
+- Row 6: **Flames of the Father** (TE 1, 1 rank) | Your Fire damage dealt is increased by 10% against Burning targets.
+- Row 6: **Grace** (TE 1, 1 rank) | Increases the spell damage bonus of Dawnsear by 20% and Sunflare by 10%.
+- Row 6: **Pious** (AE 0, 1 rank) | Level 40 PassiveIncreases your critical damage dealt by 150% and your critical strikes grant allies Replenishment.ReplenishmentRestores 1% maximum mana every 5 sec to allies within 100 yds for 15 seconds.
+- Row 7: **A Pious Life** (TE 1, 2 rank) | Increases the damage of Horusath Blast and Rapture by 15%.
+- Row 7: **Harsh Lessons** (TE 1, 1 rank) | Casting Dawn now grants Scorch Marks.Scorch MarksYour next Radiant Flame has no mana cost, ticks -50% faster, and its duration is reduced by -50%.
+- Row 7: **Sunburn** (TE 1, 1 rank) | Reduces the cast time of Rapture by -0.5 sec.
+- Row 7: **The Coming Dawn** (TE 1, 1 rank) | While Dawn is active, damage dealt by Radiant Flame now reduces the cooldown of Dawnfall and Solar Concord by -1 sec.
+- Row 7: **Adjudication** (TE 1, 1 rank) | Casting Rapture now causes your next Dawnsear within 10 seconds to strike your target twice and launch a Solar Flare at the target.Solar Flare (Damage)Deals 137 + 26% SP Holyflame Damage and reduces the target's chance to hit by -3% for 10 seconds.
+- Row 7: **Learning Light** (TE 1, 1 rank) | Entering Sunset or Sunrise increases your spell haste by 20%. Lasts for 10 seconds or 3 casts.
+- Row 7: **Soul of Light** (TE 1, 1 rank) | Reduces the cooldown of An'she's Blessing by -60 sec.
+- Row 8: **Spears of Glory** (TE 1, 1 rank) | Damage dealt by Radiant Flame now has an 15% chance to grant you Spears of Glory.Spears of GloryYour next Dawnsear within 10 seconds is instant cast and deals 25% increased damage.
+- Row 8: **Burn The Heretics** (TE 1, 1 rank) | Increases your damage and healing by 10% against targets below 35% health.Additionally, when Scorch Marks are consumed you now gain 10% increased Magic damage for 8 seconds.
+- Row 8: **Moment of Triumph** (TE 1, 1 rank) | Horusath Blast or Rapture now have a 20% chance to not incur a cooldown on cast.
+- Row 8: **Day Cycles** (AE 0, 1 rank) | Level 50 PassiveWhile in Sunrise, the remaining cooldown of Horusath Blast is reduced by 10% every 1 sec.While in Sunset, the remaining cooldown of Rapture is reduced by 10% every 1 sec.
+- Row 9: **Burning Heat** (TE 1, 1 rank) | Casting Sunflare now has a 30% chance to transform your next Sunflare into Sun Ray.Casting Horusath Blast is now guaranteed to transform your next Sunflare into Sun Ray.Sun RayShine the light of the sun on an enemy, dealing 773 + 100% holy SP Holy Damage and granting you Scorch Marks.Scorch MarksYour next Radiant Flame has no mana cost, ticks -50% faster, and its duration is reduced by -50%.
+- Row 9: **Sun Down** (TE 1, 1 rank) | Bring the wrath of the sun down upon an enemy after 2 seconds, dealing 1180 + 130% SP Holyflame Damage and scorching the earth beneath them for 9 seconds. While inside, enemies are struck by a Solar Flare every 3 sec and take 15% increased damage from Rapture and Horusath Blast.Solar Flare (Damage)Deals 137 + 26% SP Holyflame Damage and reduces the target's chance to hit by -3% for 10 seconds.
+- Row 9: **Duality of Light** (TE 1, 1 rank) | While in Sunset, your Holy damage dealt grants Twin Flame.Twin Flames (Fire)Your next Rapture within 15 seconds strikes again for 8% of the damage dealt, stacking 10 times.While in Sunrise, your Fire damage dealt grants Sun PowerSun Power (Holy)Your next Horusath Blast within 15 seconds strikes again for 8% of the damage dealt, stacking 10 times.
+
+### Blessings (41 nodes)
+
+- Row 0: **Bless** (TE 1, 1 rank) | Bless an ally, restoring 5% of their maximum health every 10 sec for 5 minutes.Can only affect 1 ally at a time.
+- Row 0: **Sunlight** (AE 0, 1 rank) | Level 10 PassiveFulfilling your Vow now unleashes Sunlight restoring 25 + 15% healing health to up to 5 allies within 40 yds, prioritizing the lowest health allies.
+- Row 1: **An'she's Guidance** (TE 1, 2 rank) | Increases your Holy critical strike chance by 2% and reduces spell pushback suffered from damaging attacks by 50%.
+- Row 1: **Angelic** (TE 1, 2 rank) | Reduces the cast time of Illumination by 0.25 sec.
+- Row 2: **Sanctified** (TE 1, 1 rank) | Healing a target affected by Bless refunds 25% of the mana cost of the spell.
+- Row 2: **Blessing of Absolution** (TE 1, 1 rank) | Empower a Blessed ally to unleash a burst of holy energy in front of them, dealing 32 + 150% healing Holy damage enemies in a 10 yd frontal cone and generating additional threat.
+- Row 2: **Faith** (TE 1, 1 rank) | Direct healing done now increases the target's Armor by 10% for 20 seconds.
+- Row 2: **Sun Worship** (AE 0, 1 rank) | Level 20 PassiveIncreases your healing power by 15% of your Intellect and your spell haste rating by 25% of your Intellect.
+- Row 3: **Daybreak** (TE 1, 1 rank) | Make a prayer, healing an ally for 155 + 59.5% healing.
+- Row 3: **Divine Vision** (TE 1, 2 rank) | Increases your Holy damage and healing done by 4%.
+- Row 4: **Hot Spot** (TE 1, 1 rank) | Casting Daybreak now causes your next 2 Shines within 10 seconds to have a -25% reduced cast time.
+- Row 4: **Gleaming Light** (TE 1, 1 rank) | Increases healing of Illumination and Daybreak by 10%.
+- Row 4: **Blessing of Purity** (TE 1, 1 rank) | Protect a Blessed ally, making them immune to all damage for 4 seconds but reducing their damage and healing done by -25%.
+- Row 4: **Savior** (TE 1, 1 rank) | Increases your healing on targets below 20% health by 30%.
+- Row 4: **Hope** (TE 1, 1 rank) | Your critical heals now reduce the cooldown of Solar Invocation spells by -1 sec.Can occur only once per sec.
+- Row 4: **Holy Form** (AE 0, 1 rank) | Ascend into a holy form, increasing your healing done by 10%, increasing your Holy critical strike chance by 5%, and reducing your threat generated by -50%.
+- Row 5: **Ancient Rites** (TE 1, 3 rank) | Increases your Intellect by 2% and causes you to regenerate mana equal to 1% of your maximum mana every 20 sec.
+- Row 5: **Lightward** (TE 1, 1 rank) | Increases the duration of Blessing of Purity by 2 sec.
+- Row 5: **Pure Heart** (TE 1, 1 rank) | Removes the damage penalty provided by Blessing of Purity.
+- Row 5: **Stalwart** (TE 1, 1 rank) | Melee critical strikes against you prevent you from being critically struck again for 4 seconds.
+- Row 6: **Everglow** (TE 1, 1 rank) | Your Radiant Cascade now bounces to 2 additional allies.
+- Row 6: **Sun Strength** (TE 1, 1 rank) | Radiant Cascade is now guaranteed to critically strike on allies affected by Bless.
+- Row 6: **Heat Wave** (TE 1, 1 rank) | Healing with Illumination and Shine now additionally heals the target's nearby allies for 10% of the value.
+- Row 6: **Blessing of Retribution** (TE 1, 1 rank) | Guard a Blessed ally, deflecting the next harmful spell cast on them within 1 minute.
+- Row 6: **Mercy** (TE 1, 1 rank) | Grant mercy to an ally, abolishing 2 disease effects, repeating every 3 sec for 12 seconds.
+- Row 6: **Glaring Rays** (TE 1, 1 rank) | Increases the spell haste of all party and raid members by 3% and your spell haste by an additional 3%.Does not stack with similar effects.
+- Row 6: **Heaven’s Appraisal** (AE 0, 1 rank) | Level 40 PassiveIncreases the effectiveness of your Fulfillment effects by 25%.In addition, the Fulfillment effect granted by Vow of Dawn now triples the amount of targets struck.
+- Row 7: **Sunbeams** (TE 1, 1 rank) | Reduces the cast time of Radiant Cascade by -15%.
+- Row 7: **Improved Radiant Cascade** (TE 1, 1 rank) | Increases the healing done and reduces the mana cost of Radiant Cascade by -15%.
+- Row 7: **Blazing Chariot** (TE 1, 1 rank) | Increases the healing and damage of Radiance by 125%.
+- Row 7: **Gateway to Heaven** (TE 1, 1 rank) | Whenever you use Dawn you now apply Radiance to yourself for 6 sec.RadianceEvery 2 sec you burst with light, healing nearby allies for 36 + 20% SP + 10% AP and damaging nearby enemies for 37 + 40% SP + 15% AP. Lasts 10 seconds.
+- Row 7: **Harmonious Bells** (TE 1, 1 rank) | Your Mercy now affects 4 additional allies near the primary target.
+- Row 7: **Blightbreaker** (TE 1, 1 rank) | Increases the tick rate of Mercy by -50%, but increases its mana cost by 100%.
+- Row 7: **Touch of Light** (TE 1, 1 rank) | Enemies struck by Blessing of Absolution now deal -20% reduced damage for 5 seconds.
+- Row 8: **Solar Invigoration** (TE 1, 1 rank) | For 15 seconds, your allies take 20% increased healing and their direct damage dealt now causes them to cast Shine. Can only occur once every 2 sec.Shine (Rank 8)Shine holy light upon an ally, healing for 511 + 29.47% SP.
+- Row 8: **Lead Me Not Astray** (TE 1, 1 rank) | Doubles the healing done by Bless.
+- Row 8: **Cultivate Divinity** (TE 1, 1 rank) | Effectively healing with Radiant Cascade has a 20% chance to increase the healing of your next Illumination by 20%. Effectively healing with Illumination has a 40% chance to increase the healing of your next Radiant Cascade by 20%.
+- Row 8: **The Redeemer** (AE 0, 1 rank) | Level 50 PassiveWhen you critically heal your target, they will be healed for 30% of the amount originally healed the next time they take damage. Lasts 15 seconds.
+- Row 9: **Solar Priest** (TE 1, 1 rank) | Reduces the cooldown of Solar Invigoration by -30 sec.In addition, whenever allies effectively heal with Shine they now cast Illumination. Can only occur once every 6 sec.Illumination (Rank 11)Illuminate an ally, healing them for 1373 + 68% healing.
+- Row 9: **Blessing of Triumph** (TE 1, 1 rank) | Redeem a Blessed ally for 20 seconds, granting 25% increased haste and 10% increased damage.If the ally falls below 35% maximum health they are healed for 10% of their direct damage dealt for the remaining duration.
+- Row 9: **Empowered Holy Form** (TE 1, 1 rank) | Doubles the effectiveness of your Holy Form.
+
+### Seraphim (41 nodes)
+
+- Row 0: **Dawnbreak** (TE 1, 1 rank) | Radiate holy light from your shield on enemies in front of you, dealing 23 + 25% SP + 10% AP Holyfire Damage, scaling with your block value.
+- Row 0: **Angelic Presence** (AE 0, 1 rank) | Level 10 PassiveAvoiding an attack now has a 20% chance to grant you Angelic Presence.Angelic PresenceYour next Illumination within 15 seconds is instant cast and free of cost.
+- Row 1: **The Chosen** (TE 1, 1 rank) | Your Illumination now shields you for 30% of the amount healed.
+- Row 1: **Shining Shield** (TE 1, 1 rank) | Activating Dawn now grants Shining Shield for 8 seconds.Shining ShieldIncreases your Armor contribution from your shield by 50%.
+- Row 2: **Hammer of Kings** (TE 1, 1 rank) | Become anointed by the light, summoning a blessed hammer that encircles you dealing 43 + 12% AP + 22% holy SP Holyfire Damage to nearby enemies every 3 sec for 12 seconds.
+- Row 2: **Blessed Bulwark** (TE 1, 1 rank) | Avoiding an attack now has a 25% chance to regenerate 5% of your base mana.
+- Row 2: **Seraphic Bulwark** (TE 1, 1 rank) | 2 Charges, 25 sec rechargeRaise your blessed shield, increasing your block value by 100%. Lasts for 5 blocks or 10 seconds.
+- Row 2: **Sun-Touched Armor** (AE 0, 1 rank) | Level 20 PassiveIncreases your Armor by 150% of your Strength and Intellect and increases your total Stamina by 15%.
+- Row 3: **Hope** (TE 1, 1 rank) | When the absorption shield from The Chosen is depleted, it explodes for 80 + 25% AP + 45% holy SP Holy damage, split between enemies within 8 yds.
+- Row 3: **Divine Right** (TE 1, 2 rank) | Increases your chance to critically strike and to parry attacks by 2% and your spell hit chance by 5%.
+- Row 3: **Blessed One** (TE 1, 1 rank) | Increases your chance to block by 5% and reduces the duration of movement slowing effects by -20%.
+- Row 4: **Protector of the Flame** (TE 1, 1 rank) | Avoiding an attack now also deals 648% fire SP + 3% AP Fire damage to the attacker.Can only occur once per sec.
+- Row 4: **Dawnguard** (TE 1, 1 rank) | Fulfilling a Vow now increases your block chance by 2% for 15 seconds, stacking 5 times.
+- Row 4: **Solar Eclipse** (TE 1, 1 rank) | Dawnbreak now unleashes a burst of holy energy after a 1 seconds delay, dealing 22 + 12.5% holy SP + 10% AP Holy damage to nearby enemies.
+- Row 4: **Holy Strength** (AE 0, 1 rank) | Level 30 PassiveIncreases your spell power by 100% of your Strength.
+- Row 5: **Grace** (TE 1, 1 rank) | Increases your chance to dodge by 5%.
+- Row 5: **The Chosen King** (TE 1, 1 rank) | Casting Hammer of Kings now also increases your critical strike chance by 10% for 10 seconds.
+- Row 5: **Sun Warrior's Guidance** (TE 1, 1 rank) | Increases the critical strike chance of Gavels and Dawnbreak by 5%.
+- Row 5: **Solar Nova** (TE 1, 1 rank) | Emit a powerful holy light in an 8 yd radius, dealing 93 + 50% holy SP + 5.06% AP Holy damage to all nearby enemies. Reduces the cooldown of your Solar Invocation spells by -1 sec for each target struck.This ability is guaranteed to critically strike against Undead or Demons.
+- Row 5: **Heat Death** (TE 1, 1 rank) | Your Solar Eclipse now reduces the enemies chance to hit by -3% for 15 sec.
+- Row 5: **Paying The Tithe** (TE 1, 2 rank) | Increases the critical strike chance of Dawnbreak by 10% and your Seraphic Bulwark now lasts for 2 additional blocks.
+- Row 6: **Blessing of Kings** (TE 1, 1 rank) | Critical strikes now reduce the cooldown of Hammer of Kings and Solar Prayer by -1.
+- Row 6: **Sunflare Aegis** (TE 1, 1 rank) | Blocking attacks now has a 30% chance to grant you Hammer of Kings for 4 sec. If Hammer of Kings is already active, you increase the duration by 4 sec.Hammer of KingsBecome anointed by the light, summoning a blessed hammer that encircles you dealing 43 + 12% AP + 22% holy SP Holyfire Damage to nearby enemies every 3 sec for 12 seconds.
+- Row 6: **Bastion of Hope** (TE 1, 1 rank) | Critical strikes now bless you, regenerating 41 + 15% SP mana and increasing all of your primary stats by 10% for 5 seconds.
+- Row 6: **Valiance** (TE 1, 1 rank) | Increases your melee attack speed by 15% and your first auto attack on a target hits twice.
+- Row 6: **Gleaming Armor** (TE 1, 1 rank) | Reduces your spell damage taken by -5%, plus an additional -5% while above 80% health.
+- Row 6: **Glorious Defender** (TE 1, 1 rank) | Increases the effectiveness of Gavels by 25%.
+- Row 6: **Luminary Mendicant** (TE 1, 1 rank) | Increases the mana restored by Vow of Grace by 100%.
+- Row 6: **Solar Discernment** (AE 0, 1 rank) | Level 40 PassiveIncreases your critical strike rating and expertise rating by 12% of your Intellect.
+- Row 7: **Dawn's Arrival** (TE 1, 1 rank) | Casting Dawnbreak now has a 40% chance to reset the cooldown of Gavels and causes the next one to not incur a cooldown.
+- Row 7: **Stand Against Darkness** (TE 1, 1 rank) | During the day you now deal -10% more Holy damage and take -10% reduced periodic damage.
+- Row 7: **Calm** (TE 1, 1 rank) | Calm an enemy, disarming their melee and ranged weapons for 6 seconds.If your target is an Undead or Demon, they are also unable to attack or move for 6 seconds. Enemies that are immune to silence effects cannot be affected by this.
+- Row 7: **Judgement** (TE 1, 1 rank) | Increases the critical damage of Gavels by 15% and they are now guaranteed to critically strike against Undead enemies.
+- Row 7: **Sun Disc** (TE 1, 1 rank) | You now emit an aura that causes all nearby allies to receive 6% increased healing. Does not stack with similar effects.In addition, the healing done by Illumination is increased by 20%.
+- Row 8: **Justicar's Wrath** (TE 1, 1 rank) | Bring holy wrath down upon an enemy, dealing 508 + 55% SP + 25% AP High Threat Holy damage and increasing the target's spell damage taken by 10% for 15 seconds.
+- Row 8: **Together In Conquest** (TE 1, 1 rank) | Your Solar Invocation spells now causes your Illumination to heal an additional nearby ally at 70% effectiveness for 10 seconds.In addition, Illumination now reduces the cooldown of Solar Invocation spells by -1 sec.
+- Row 8: **Sacred Vessel** (TE 1, 1 rank) | Expending Angelic Presence increases your critical strike chance and healing by 1% for 20 seconds, stacking up to 10 times.Additional applications do not refresh the duration.
+- Row 8: **Clarity of the Heavens** (AE 0, 1 rank) | Level 50 PassiveIncreases your block value by 50% of your Intellect.
+- Row 9: **Adjudicator** (TE 1, 1 rank) | Your Justicar's Wrath now deals an additional 50% of its damage dealt to the target and enemies around them, healing you for 10% of the damage dealt.
+- Row 9: **Scroll of Hope** (TE 1, 1 rank) | Read from a scroll of hope, reducing Magic damage taken by party and raid members within 15 yds by -30% for 10 seconds.If any ally falls below 35% of their maximum health while this is active they are instantly healed once for 15% of their maximum health.
+- Row 9: **Sun Strider** (TE 1, 1 rank) | Critical strikes with Gavels or Dawnbreak now increases the healing of your next Illumination within 20 seconds by 15%, stacking up to 3 times.Consuming the stacks increases your critical block chance and movement speed by 10% for 8 seconds.
+
+### Valkyrie (42 nodes)
+
+- Row 0: **Glorious Execution** (TE 1, 1 rank) | Strike with both weapons dealing Weapon Damage plus 8 Physical damage and regenerate mana equal to 5% of the damage dealt.
+- Row 0: **Valkyr's Grip** (AE 0, 1 rank) | Level 10 PassiveAllows you to dual wield and to wield a Two-Handed Mace, Sword, or Polearm in each hand and your chance to hit is increased by 6%.
+- Row 1: **Odyn's Vanguard** (TE 1, 1 rank) | Melee attacks now have a 20% chance to reset the cooldown of Glorious Execution.
+- Row 2: **Sunslam** (TE 1, 1 rank) | Slam an enemy every 1 sec with the might of the sun, dealing 28 + 15.94% AP Holy damage and stunning them for 1 seconds. Lasts 4 seconds.Only usable while Dawn is active. Usable while moving.
+- Row 2: **Sunsworn** (TE 1, 1 rank) | Increases your Physical damage dealt by 6% and auto attacks now have a 10% chance to restore 3% of your maximum mana.
+- Row 2: **Valorous Champion** (AE 0, 1 rank) | Level 20 PassiveIncreases your attack power by 25% and your spell hit rating by 5% of your Strength.
+- Row 3: **Radiant Marks** (TE 1, 1 rank) | Reduces the channel time of Sunslam by 1 sec.
+- Row 3: **Valkyr's Grip** (TE 1, 2 rank) | Increases your off-hand Weapon Damage dealt by 20% and reduces the duration of disarm effects by -15%.
+- Row 3: **Light of the Sun** (TE 1, 1 rank) | Parrying an attack now restores 3% of your maximum health and increases your chance to parry the next attack by 30%.
+- Row 3: **Justice** (TE 1, 1 rank) | Spin and strike with both weapons dealing 40% Weapon Damage plus 6 + 20% fire SP to up to 5 enemies within 5 yds.Your main-hand strike will deal Fire damage and your off-hand strike will deal Physical damage.
+- Row 4: **Fervor of the Sun** (TE 1, 1 rank) | Fulfilling a Vow now increases the damage of your Sunslam by 10% for 1 minute, stacking 5 times.
+- Row 4: **Champion of the Sun** (TE 1, 1 rank) | Become a champion of An'she, causing your melee auto attacks to deal an additional 50% of the damage dealt as Holy damage. Lasts 20 seconds.
+- Row 4: **Fanaticism** (TE 1, 1 rank) | Increases the effectiveness of Gavels and Horusath Blast and reduces their mana cost by -20%.
+- Row 4: **Sun's Gift** (AE 0, 1 rank) | Level 30 PassiveYour Horusath Blast now deals additional damage scaling with your attack power and grants allies Replenishment.ReplenishmentRestores 1% maximum mana every 5 sec to allies within 100 yds for 15 seconds.
+- Row 5: **Gift of the Sun** (TE 1, 1 rank) | Increases your critical strike chance with Holy spells and abilities by 50% on enemies above 80% health.
+- Row 5: **Atone, Or Else** (TE 1, 1 rank) | Fervor of the Sun now stacks up to 3 additional times.
+- Row 5: **It's Always Sunny** (TE 1, 1 rank) | Activating Dawn now reduces the cooldowns of Radiance, Valkyr's Calling, and Sunslam by 10%.
+- Row 5: **Impartial** (TE 1, 2 rank) | Increases your Strength and maximum mana by 5% and your expertise by 5.
+- Row 5: **Champion's Arrival** (TE 1, 1 rank) | Increases the duration of Champion of the Sun and Chains of Light by 5 sec.
+- Row 5: **Arbiter of Light** (TE 1, 1 rank) | While Vow of Light is active, your Gavel of Light now restores an additional 100% health equal to the damage dealt.
+- Row 5: **Arbiter of Grace** (TE 1, 1 rank) | While Vow of Grace is active, your Glorious Execution now regenerates an additional 15% mana equal to the damage dealt.
+- Row 5: **Judgement of the Valkyrie** (TE 1, 1 rank) | Reduces the cooldown of Judgement Day by -15 sec.
+- Row 5: **Leap of the Valkyrie** (TE 1, 1 rank) | Reduces the cooldown of Sun Stride by -4 sec.
+- Row 5: **Herald of Purity** (TE 1, 1 rank) | Damage dealt by Justice now has an 8% chance to reset its own cooldown.
+- Row 6: **Trial of Valor** (TE 1, 1 rank) | Fulfilling a Vow now reduces the cooldown of Horusath Blast by -2 sec.
+- Row 6: **Blessed Hammer** (TE 1, 1 rank) | Reduces the cooldown of Solar Invocation spells by -10 sec.
+- Row 6: **Valkyr's Calling** (TE 1, 1 rank) | Target an enemy and leap into the air, becoming immune to all physical attacks and spells for 2 seconds. At the end of the duration, you charge back down, dealing 428 + 100% AP + 22.5% SP Holy damage to all enemies within 8 yds.
+- Row 6: **March of the Valkyr** (TE 1, 1 rank) | Increases the all damage dealt by party and raid members by 3%. Does not stack with similar effects.In addition, your chance to parry is increased by 5%.
+- Row 6: **Sunwalker** (TE 1, 1 rank) | Dealing melee damage now generates a stack of Sunwalker.SunwalkerReduces the cast time and mana cost of your next Shine by -20% for 30 seconds, stacking 5 times.
+- Row 6: **Vow of the Valkyr** (AE 0, 1 rank) | Auto attacks generate 1 Solar Power and deal 10% increased damage.Fulfillment: Melee ability damage triggers an auto attack with each weapon.Only 1 Vow can be active at a time.
+- Row 7: **Blessed Magic** (TE 1, 1 rank) | Casting Horusath Blast now resets the cooldown of Glorious Execution.
+- Row 7: **Last Call** (TE 1, 1 rank) | Increases the duration of Valkyr's Calling by 1 sec.
+- Row 7: **By The Light** (TE 1, 1 rank) | Increases the critical strike chance of Valkyr's Calling by 50%.
+- Row 7: **Vindicator** (TE 1, 2 rank) | Your Glorious Execution now ignores -10% of the target's armor while Vow of the Valkyr is active.
+- Row 7: **Radiant Power** (TE 1, 1 rank) | Each stack of Sunwalker now increases the critical strike chance of Shine by 3%.
+- Row 8: **Pendant of the Sun** (TE 1, 1 rank) | Activate your pendant of the sun, refreshing the duration and all charges of Dawn.
+- Row 8: **Radiant Halberd** (TE 1, 1 rank) | Direct Physical damage dealt now reduces the cooldown of Champion of the Sun by -1 sec.
+- Row 8: **Solar Empowerment** (TE 1, 1 rank) | Fulfilling your Vow now unleashes a chain of light at your target, dealing 91 + 23% holy SP + 10% AP Holy damage and then bouncing to up to 5 additional enemies, dealing reduced damage with each strike.
+- Row 8: **Holy Giant** (AE 0, 1 rank) | Level 50 PassiveDoubles the effectiveness of Vow of the Valkyr.
+- Row 9: **Light's Blessing** (TE 1, 1 rank) | Casting Sunslam now reduces the cooldown of Pendant of the Sun by -10 sec.
+- Row 9: **Knight of Dawn** (TE 1, 1 rank) | Your Glorious Execution now has a 20% chance to strike 1 additional time.
+- Row 9: **Divine Retribution** (TE 1, 1 rank) | Accumulates 25% of your damage dealt to on the target and unleashes it after 8 seconds, damaging enemies within 10 yds as Holy damage.
+
+## Tinker
+
+### Demolition (40 nodes)
+
+- Row 0: **Bomb Toss** (TE 1, 1 rank) | Lob a bomb at an enemy, dealing 36 + 30% ranged AP + 50% fire SP Fire damage and reducing their armor by -5% for 15 seconds, stacking 4 times.
+- Row 0: **Napalm** (AE 0, 1 rank) | Level 10 PassiveDealing direct Fire damage now applies Napalm to your target.Napalm (Damage)Fire Damage taken by you is increased and healing received reduced by -3% for 8 seconds. Stacks 10 times.
+- Row 1: **Rocket Launcher** (TE 1, 1 rank) | Fire a powerful rocket at an enemy that deals 126 + 35% ranged AP + 35% fire SP Fire damage.
+- Row 2: **Build: Spider Bomb** (TE 1, 1 rank) | Build a Spider Bomb that will immediately run towards your target and detonate dealing 250 + 30% ranged AP Fire damage in an 8 yd radius.Using Scrap Shot will redirect the Spider Bombs to your new target.
+- Row 2: **Incendiary Bullets** (TE 1, 2 rank) | Increases the damage of Scrap Shot by 15% and increases your chance to hit by 2%.
+- Row 2: **Sparked and Ready!** (AE 0, 1 rank) | Level 20 PassiveFire damage dealt has a 5% chance to grant you Sparked and Ready!.Sparked and Ready!Causes your next Rocket Launcher, within 10 seconds, to be instant cast and deal 20% increased damage.
+- Row 3: **I Need More Explosions!** (TE 1, 1 rank) | Increases the damage of Sticky Bomb Explosions by 15%.
+- Row 3: **Target Acquired** (TE 1, 1 rank) | Your Sticky Bomb Explosions and Spider Bomb now deal 30% increased damage when it strikes only 1 target.
+- Row 3: **Boom Hour** (TE 1, 1 rank) | Increases the critical strike chance of Bomb Toss and Firepot Drone by 10%.
+- Row 3: **Build: Firepot Drone** (TE 1, 1 rank) | 3 Charges, 10 sec rechargeBuild a Firepot Drone that flies towards your target, dropping a bomb along its path and exploding upon landing, dealing 182 + 17.5% ranged AP + 55% fire SP Fire damage in a 5 yd radius, leaving oil on the ground for 6 seconds that slows enemies within by -30%.
+- Row 4: **Duobombers** (TE 1, 1 rank) | Build: Spider Bomb now creates an additional Spider Bomb that rushes towards your target.
+- Row 4: **Aftermath** (TE 1, 1 rank) | Casting Sticky Bomb now causes your next 2 Scrap Shots within 10 seconds to cast -50% faster and deal 25% increased damage.
+- Row 4: **Explosives Expert** (TE 1, 1 rank) | Direct harmful ability critical strikes from you or your summons now restores 4% of your maximum mana.
+- Row 4: **Drone Striker** (TE 1, 1 rank) | Firepot Drone and Scrap Shot now deal 2% increased damage for each stack of Napalm on the enemy.Napalm (Damage)Fire Damage taken by you is increased and healing received reduced by -3% for 8 seconds. Stacks 10 times.
+- Row 4: **Grenadier** (TE 1, 1 rank) | When you reach 5 stacks of Napalm on a target you refresh 1 charge of Build: Firepot Drone.
+- Row 4: **Bombastic** (AE 0, 1 rank) | Level 30 PassiveCasting Build: Spider Bomb now resets the cooldown of Bomb Toss and causes your next Bomb Toss within 15 seconds to trigger no cooldown, global cooldown, or cost.
+- Row 5: **Flamethrowing** (TE 1, 1 rank) | When you Bomb Toss, your Sentry Turret unleashes flames on your target, dealing 89+18+ranged AP*0.12+SPFI*0.4. Fire damage to enemies in a 30 yd line.
+- Row 5: **War Crimes** (TE 1, 1 rank) | Damage dealt by Explosive Augmentation and Tracer Augmentation now has a 50% chance to apply an additional stack of Napalm to enemies.Napalm (Damage)Fire Damage taken by you is increased and healing received reduced by -3% for 8 seconds. Stacks 10 times.
+- Row 5: **Tank Buster** (TE 1, 1 rank) | Your Scrap Shot now ignores 25% of the target's Armor when damaging Burning targets.
+- Row 5: **Build: Oil-Spill Pylon** (TE 1, 1 rank) | Build an Oil-Spill Pylon at target location for 10 seconds, spilling oil in an 8 yd radius that reduces enemies movement speed by -60% and increases their Fire damage taken by you by 15%.Sticky Bomb Explosions and Firepot Drone deal 20% increased damage to enemies inside.
+- Row 5: **Surprise Launch!** (TE 1, 1 rank) | When Rocket Launcher is used on enemies affected by Sticky Bomb it is now guaranteed to critically strike.
+- Row 5: **Bomb Builder** (TE 1, 1 rank) | Increases your and your summons Fire Damage dealt by 5%.
+- Row 6: **Tracer Augmentation** (TE 1, 1 rank) | Add a Tracer Augmentation to your gun for 1 hour, causing your ranged attacks to mark enemies for 5 seconds, stacking 5 times. After the duration they explode for 80 + 8% ranged AP + 15% fire SP Fire damage, increased based on stacks.Marked enemies are prevented from entering stealth or invisibility for 20 seconds.
+- Row 6: **Buster Scope** (TE 1, 1 rank) | Increases the critical damage of Rocket Launcher by 10%.
+- Row 6: **Mega Scope** (TE 1, 1 rank) | Increases the range of Rocket Launcher by 10 yds.
+- Row 6: **The BIG Guns!** (TE 1, 1 rank) | Increases the attack power of all party and raid members 5%. Does not stack with similar effects.In addition, increases your ranged attack power by 3%.
+- Row 6: **Rockadier** (TE 1, 1 rank) | Empowers the next 6 Scrap Shots or Rocket Launchers within 30 seconds deal additional Fire damage equal to 100% of the damage dealt to up to 10 enemies around the target.
+- Row 6: **Bomb Squad** (AE 0, 1 rank) | Level 40 PassiveIncreases your Fire spell power by 50% of Agility.
+- Row 7: **Machine Synergy** (TE 1, 1 rank) | Casting Scrap Shot now adds a stack of Machine Synergy to your active pet and Sentry Turret.Machine SynergyIncreases damage dealt by 5% and haste by 3%, stacking 3 times, for 6 seconds.
+- Row 7: **Rocket Engineering** (TE 1, 1 rank) | Direct harmful ability critical strikes now apply an additional stack of Tracer Augmentation to the target while active on the enemy.
+- Row 7: **Gazlowe's Wisdom** (TE 1, 1 rank) | You now spawn 2 Shrapnel Mines under your target when Sticky Bomb explodes.Shrapnel MineWhen you use Remote Detonation, deal 264 + 25% AP + 38.5% SP Physical damage to up to 5 enemies within 10 yds. The mine lasts 1 minute.
+- Row 7: **Rocket Pack** (TE 1, 1 rank) | Fire critical strikes now reduce the remaining cooldown of Rockadier by -3 sec.
+- Row 7: **Boomshot** (TE 1, 1 rank) | Every 4th Scrap Shot now causes your next Scrap Shot within 15 seconds to deal 25% increased damage.
+- Row 8: **Short Fuse** (TE 1, 1 rank) | Sparked and Ready now also increases the critical strike chance of Rocket Launcher by 20%.
+- Row 8: **Build: Spider Bomb Factory** (TE 1, 1 rank) | Build a Spider Bomb Factory in front of you for 20 seconds.For the duration, Bomb Toss and Rocket Launcher will summon 3 Spider Bombs, that will immediately run towards your target and detonate dealing 250 + 30% ranged AP Fire damage.Using Scrap Shot will redirect the Spider Bombs to your new target.
+- Row 8: **Rocket Turrets** (TE 1, 1 rank) | Allows Machine Synergy to stack 2 additional times and using Rocket Launcher now causes your Sentry Turret to also cast Rocket Launcher.Machine SynergyIncreases damage dealt by 5% and haste by 3%, stacking 3 times, for 6 seconds.
+- Row 8: **Bomber Man** (AE 0, 1 rank) | Level 30 PassiveWhile Bombastic is active, your Bomb Tosses will additionally reduce the cooldown of Sticky Bomb by -1 sec.
+- Row 9: **Rocket Barrage** (TE 1, 1 rank) | Increases the amount of stacks of Tracer Augmentation by 5, and its duration by 7 sec, and causes damage dealt by Bomb Toss on enemies with 10 stacks to launch a Rocket Barrage at their location.Rocket Barrage (Damage)Deals 1290 + 17.5% AP + 11% fire SP Fire Damage to nearby enemies after 5 seconds.
+- Row 9: **Explosive Inventor** (TE 1, 1 rank) | Spider Bomb Factory now also summons a Heavy Spider Bomb.Heavy Spider Bombs move slowly, and deal 1231 + 55% ranged AP Fire damage when they reach their target and slow their movement speed by -70% for 2 seconds.
+- Row 9: **Hyperblast Barrage** (TE 1, 1 rank) | Unleash a barrage of shrapnel, dealing 831 + 36% ranged AP + 55% fire SP Fire damage to enemies in a line, applying a lesser Sticky Bomb to each target struck that deals 297 + 10% fire SP + 50% AP Fire damage after 3 sec.After 3 seconds, your active Sentry Turret will also fire a Hyperblast Barrage.
+
+### Invention (39 nodes)
+
+- Row 0: **Build: Restorative Beacon** (TE 1, 1 rank) | 3 Charges, 15 sec rechargeThrow down a restorative beacon for 15 seconds which projects a field that heals raid and party members in the area for 92 + 12% SP every 3 sec.
+- Row 0: **Build: ZIGGI-6K** (AE 0, 1 rank) | Level 10 PassiveTeaches you Build: ZIGGI-6K.Build: ZIGGI-6KBuild ZIGGI-6K, the latest in regenerative technology, to aid you in healing allies until dismissed.
+- Row 1: **Over-Repaired** (TE 1, 2 rank) | Increases the healing done by Repair Shot by 15%.
+- Row 1: **Field Medic** (TE 1, 1 rank) | Increases your and your summons critical strike chance by 5%.
+- Row 2: **Master Builder** (TE 1, 1 rank) | Reduces the mana cost of all Build abilities by -25%.
+- Row 2: **Stim Augmentation** (TE 1, 1 rank) | Add a Stim Augmentation to your gun for 1 hour, causing your direct healing abilities to heal up to 3 nearby friendly players for an additional 20% of the amount healed.
+- Row 2: **Technician** (TE 1, 2 rank) | Reduces spell pushback suffered from damaging attacks by 35% and increases your critical healing by 10%.
+- Row 2: **Scientific Nature** (AE 0, 1 rank) | Level 20 PassiveIncreases your healing power by 20% of your Intellect and your critical strike rating by 15% of your Intellect.
+- Row 3: **Macro Designer** (TE 1, 1 rank) | Increases the duration of your Beacons by 5 sec and Med Pack by 3 sec.
+- Row 3: **Inventor's Tool Belt** (TE 1, 1 rank) | Increases your and your pet's Intellect by 10% and you are both now unable to miss your attacks.
+- Row 3: **Eureka!** (TE 1, 1 rank) | Direct healing critical strikes now increase the healing done by your next Repair Shot or Emergency Heal by 30% for 10 seconds.
+- Row 4: **Nanobot Swarm** (TE 1, 1 rank) | Send Nanobots to an ally, dealing 15 + 17.1% SP damage to nearby enemies every 4 sec for 1 minute. All threat generated by you is redirected to the target.Nanobot Swarm can only be sent to 1 target at time and cannot be dispelled.
+- Row 4: **Stim Pack** (TE 1, 1 rank) | Effective healing with Stim Augmentation now reduces the cooldown of Med Pack by -3 sec.
+- Row 4: **Stim Shots** (TE 1, 1 rank) | Your Stim Augmentation now heals for an additional 10% of the amount healed.
+- Row 4: **Bandage Gun** (TE 1, 1 rank) | Healing from Stim Augmentation now affects 2 additional allies near the primary target.
+- Row 4: **Improved Emergency Heal** (TE 1, 1 rank) | Increases the healing and reduces the mana cost of Emergency Heal by -20%.
+- Row 4: **Beacon Charging** (AE 0, 1 rank) | Level 30 PassiveTeaches Overcharge and Beacons now have Overcharge effects which can be activated by healing them with Repair Shot or using Overcharge.OverchargeOvercharge all active Beacons, unleashing their unique effects.Refer to individual Beacons for their Overcharge effects.Active Beacons can only be Overcharged once.
+- Row 5: **Healing Radiator** (TE 1, 1 rank) | Periodic healing done by Nanobot Reconstruction now restores 27 + 4.03% healing health to 5 allied players within 10 yds of the affected target.
+- Row 5: **Fine Tuning** (TE 1, 1 rank) | Increases critical strike chance of all party and raid members by 3%.Does not stack with similar effects.In addition, not critically healing now increases your critical strike chance by 1%, stacking 10 times, until your next effective critical heal.
+- Row 5: **Zap!** (TE 1, 1 rank) | Fires a long range zap of electricity that heals an ally for 254 + 150% healing.Scales with modifiers to Repair Shot.
+- Row 6: **J27 Upgrade** (TE 1, 1 rank) | Reduces the mana cost of your Nanobots by -10% and they now last 10 additional sec.
+- Row 6: **Electromagnetic Resistors** (TE 1, 1 rank) | Nanobots now grant a 30% chance to resist movement impairing effects for 15 seconds.
+- Row 6: **Cybernetic Revivification** (TE 1, 1 rank) | All nearby allies receive 6% more healing. Does not stack with similar effects.In addition, your Alarm Beacon now dispels fear, charm, and sleep effects from 1 additional ally.
+- Row 6: **Build: Battery Recharge Station** (TE 1, 1 rank) | Build a Battery Recharge Station for 30 seconds that allies can interact with once to replenish 15% maximum health and mana, and 50% maximum Rage, Energy, Focus, and Runic Power.Applies Depleting Battery to party and raid members within 40 yds.Depleting BatteryMovement speed increased by 10% for 30 seconds. Run to the Battery Recharge Station and charge your battery!Charged BatteryMovement speed increased by 30% for 12 seconds.
+- Row 6: **Build: Noise Box** (TE 1, 1 rank) | Build a Noise Box for 15 seconds that periodically unleashes screeching noise on nearby enemies, interrupting spellcasts and preventing spells of that school from being cast for 3 seconds.
+- Row 6: **Rejuvenating Gadget** (TE 1, 1 rank) | Critical strikes with Zap! now apply Rejuvenating Gas to up to 12 allies within 8 yards of your target that restores 15% of the value of the shot as health every 2 sec for 10 seconds.
+- Row 6: **Trust the Science!** (TE 1, 1 rank) | Reduces the cooldown of Zap! by -5 sec.
+- Row 6: **Graftbolts** (AE 0, 1 rank) | Level 40 PassiveEffective healing done now has a 25% chance to grant your mechanical pet GraftboltsGraftboltsRestores 15% maximum mana to your pet and increases the damage and healing done by your summons by a percentage equal to 10% of your healing spell power for 6 seconds..
+- Row 7: **Nanobot Cleanser** (TE 1, 1 rank) | Send Nanobots to an ally removing 1 poison and disease effect every 3 sec for up to 15 seconds.Nanobot Cleanser can only be sent to 1 target at a time and can't be dispelled.
+- Row 7: **Rapid Fire Healing** (TE 1, 1 rank) | Casting Repair Shot or Emergency Heal now has a 15% chance to refresh a charge of Beacons.
+- Row 7: **Mana Capacitors** (TE 1, 2 rank) | Reduces the cost of Overcharge by -15% and reduces its cooldown by -10%.
+- Row 7: **Resourceful Tech** (TE 1, 1 rank) | Your Zap! is now guaranteed to critically strike allies affected by Nanobots.
+- Row 8: **My Greatest Invention!** (TE 1, 1 rank) | Show off your Greatest Invention, healing party and raid members in a 30 yd radius for 823 + 65% healing every 2 sec for 9 seconds.
+- Row 8: **Self-Sustaining Technology** (TE 1, 1 rank) | Damage or healing done by your pet or summons now heals you equal to 15% of the value. In addition, damage or healing done by you now restores health and mana to your pet equal to 15% of the value. Each of these effects can only occur once per sec.
+- Row 8: **Emergency Circumvented** (TE 1, 1 rank) | Increases the critical strike chance of Emergency Heal by 15% and allows the periodic healing done by Med Pack to critically strike.
+- Row 8: **Improved Graftbolts** (AE 0, 1 rank) | Level 50 PassiveYour Graftbolts now stacks 2 additional times.
+- Row 9: **Epiphany!** (TE 1, 1 rank) | Casting Beacon abilities now reduces the cooldown of My Greatest Invention! by -20 sec.
+- Row 9: **Combat Symbiosis** (TE 1, 1 rank) | Electrify an allies' body, increasing their haste by 20% and causing damage dealt by them to heal nearby allies for 15% of the value. Lasts for 15 seconds, or 20 attacks.
+- Row 9: **Emergency Enhancer** (TE 1, 1 rank) | Zap! now causes your active Build abilities to zap the lowest health nearby ally, healing them for 490 + 90% healing.
+
+### Mechanics (43 nodes)
+
+- Row 0: **Makeshift Dynamite** (TE 1, 1 rank) | 2 Charges, 8 sec rechargeGenerates 10 ScrapLoad dynamite into your gun and launch it at an enemy, dealing 100% Ranged Weapon Damage plus 12 as Fire damage.Usable while moving.
+- Row 0: **Build: Mechsuit** (AE 0, 1 rank) | Level 10 PassiveTeaches you Build: Mechsuit.You can now generate Scrap to build your Mechsuit and Scrap Shot and Sticky Bomb now generate Scrap. Build: MechsuitActivate your Mechsuit, draining 5 Scrap every sec, increasing damage dealt by 10%, your armor by 800, and your movement speed by 15%.If you run out of Scrap while active, you are ejected from the Mechsuit.While active, your Scrap Shot is transformed into Gatling Gun.
+- Row 1: **Mechsuit: Laser Beam** (TE 1, 1 rank) | Blast an enemy with a laser, dealing 100% Ranged Weapon Damage plus 18 as Fire Damage and forcing your pet to charge to the enemy for 24 Physical Damage.
+- Row 1: **Slam the Cogs!** (TE 1, 2 rank) | Increases the damage dealt by you and your summons by 4%.
+- Row 2: **Sprocket Loaded** (TE 1, 1 rank) | Casting Makeshift Dynamite now resets the cooldown of your Mechsuit abilities.
+- Row 2: **Mechanical Synergy** (TE 1, 2 rank) | Increases the damage of Sticky Bomb Explosion and Mechsuit abilities by 15%.
+- Row 2: **Bombs? BOMBS!** (TE 1, 1 rank) | Increases the detonation speed of Sticky Bomb by -1 sec and reduces its cooldown by -2 sec.
+- Row 2: **Combat Crafter** (AE 0, 1 rank) | Level 20 PassiveWhile in your Mechsuit, damage dealt by your summons now has a 20% chance to grant you 5 Scrap and 2% of your maximum mana.
+- Row 3: **Mechsuit: Combustion** (TE 1, 1 rank) | Launch a massive ball of fire at an enemy that also damages nearby enemies, dealing 70 + 20% ranged AP Fire damage.Usable while moving.
+- Row 3: **Fine Tuned** (TE 1, 1 rank) | Increases the critical strike and hit chance of you and your summons by 4%.
+- Row 4: **Mechsuit: Activate Jets** (TE 1, 1 rank) | Launch forward and slow your falling speed. When you hit the ground you blast nearby enemies for 275 Fire damage based on time in the air.
+- Row 4: **Flak Guns** (TE 1, 1 rank) | Your Mechsuit: Combustion now has 10% increased critical strike chance and 15% increased critical damage.
+- Row 4: **Turbo Guns** (TE 1, 1 rank) | Reduces the cast time of your Mechsuit: Combustion by 0.25 sec and its damage is increased by 20%.
+- Row 4: **Regeneration Enhancement** (TE 1, 1 rank) | When you enter your Mechsuit, it now refunds 20% of your base mana, repeating every 20 sec while inside.
+- Row 4: **Junker** (TE 1, 1 rank) | Casting Spanner Smash and Scrap Shot now increases your pet's attack power by 5% for 15 seconds, stacking 2 times.
+- Row 4: **Build: Scrapmaw** (TE 1, 1 rank) | Build a Scrapmaw to accompany the Tinker until dismissed.
+- Row 4: **Battle Engineer** (AE 0, 1 rank) | Level 30 PassiveYour ranged damage dealt now has a 20% chance to refresh a charge of Makeshift Dynamite.
+- Row 5: **Overload** (TE 1, 1 rank) | Damage dealt by Mechsuit: Combustion and Mechsuit: Laser Beam now have a 40% chance to strike 2 additional times for 30% of the damage dealt.
+- Row 5: **Scrapper** (TE 1, 1 rank) | Search and rummage through nearby debris, gaining 10 Scrap and 25 mana every 1 sec for 5 seconds.Not usable in combat.
+- Row 5: **Defensive Utility** (TE 1, 1 rank) | Your Mechsuit will now increase your armor by an additional 50%.
+- Row 5: **Offensive Utility** (TE 1, 1 rank) | While in your Mechsuit, casting Sticky Bomb reduces the channel time of your next Gatling Gun within 5 seconds by -30%.
+- Row 6: **Nano-Repair Tech** (TE 1, 1 rank) | You and your pet now regenerate 3% of your maximum health every 8 sec.
+- Row 6: **Augmechtation** (TE 1, 1 rank) | Your Mechsuit now increases your damage by an additional 10% while active.
+- Row 6: **Engine Augmentation** (TE 1, 1 rank) | For 8 seconds after activating your Mechsuit, all damage dealt will now generate 3 Scrap.
+- Row 6: **Mechanical Extender** (TE 1, 1 rank) | Casting Scrap Shot and Mechsuit abilities now increases the chance to trigger Overload by 3% for 10 seconds, stacking 10 times.When Overload triggers, all stacks are consumed.
+- Row 6: **Mechanical Enhancements** (TE 1, 1 rank) | Increases all party and raid member's melee and ranged haste by 10%. Does not stack with similar effects.In addition, the range of your offensive ranged abilities and Auto Shot is increased by 10 yds.
+- Row 6: **Upgrade!** (TE 1, 1 rank) | Upgrade nearby Sentry Turrets to a Molten Grenade Turret for 1 minute.Molten Grenade TurretUpgrades the Sentry Turret to fire grenades, increasing its attack speed significantly and causing it to deal 133 Fire Damage in an 8 yd radius, plus an additional 95 + 15% fire SP + 8.5% AP Fire Damage over 1.5 seconds.
+- Row 6: **Master Builder** (TE 1, 1 rank) | Reduces the cast time of Build abilities by -50%.
+- Row 6: **Arclight Core** (TE 1, 1 rank) | Makeshift Dynamite now marks enemies for 6 seconds. The next damaging ability used on this target by your pet consumes the mark to deal 491 + 20% fire SP + 20% ranged AP Fire damage.
+- Row 6: **Turbo Upgrade!** (AE 0, 1 rank) | Level 40 PassiveIncreases the effectiveness of your Mechsuit by 100%.
+- Row 7: **Arclight Adept** (TE 1, 1 rank) | Increases the critical damage of your Mechsuit abilities by 15%.
+- Row 7: **Cogmaster** (TE 1, 1 rank) | Increases your critical strike chance by 2% and gives ranged critical strikes a 50% chance to generate 3 Scrap.
+- Row 7: **Junkyard Loiter** (TE 1, 1 rank) | When you deal damage with Mechsuit: Laser Beam or Mechsuit: Combustion you now launch a Lesser Sticky Bomb on each target struck.Lesser Sticky BombThrows a bomb that sticks to the enemy for 3 sec.At the end of the duration the bomb will explode, dealing 17 + 5% fire SP + 2.5% AP Fire Damage to the target.
+- Row 7: **Augmentor** (TE 1, 1 rank) | While Piercing Augmentation or Aether Augmentation is active, your ranged haste is increased by 10%.
+- Row 7: **Hacking the Enemy** (TE 1, 1 rank) | Your Piercing Augmentation now ignores an additional 10% of your target's armor and grants you -10 increased spell penetration.
+- Row 7: **Turret Upgrade Z-15** (TE 1, 1 rank) | Damage dealt by Sentry Turrets now has a 30% chance to cause 47 + 20% AP additional Nature damage and increase critical strike chance of the turret by 1%, stacking 5 times, for 8 seconds.
+- Row 8: **Flame Jets** (TE 1, 1 rank) | While inside your Mechsuit, damage dealt by your Scrap Shot and Makeshift Dynamite now applies Living Flame to the target.Living Flame (Damage)Deals 32 Fire Damage every 2 sec and increases the damage the target takes from your Mechsuit: Combustion by 10% for 4.5 seconds, stacking 5 times.
+- Row 8: **Master Technician** (TE 1, 1 rank) | Scrap Shot and Mechsuit abilities now grants your Sentry Turret a stack of Master Technician, stacking 10 times.At 10 stacks, your Sentry Turret will unleash a beam dealing 725 + 75% fire SP + 40% AP Fire damage in a 25 yd line, piercing invulnerabilities.
+- Row 8: **Overclocked Machine** (TE 1, 1 rank) | Overclock your pet for for 20 seconds, increasing its damage dealt by 20% and allowing it's attacks to trigger Hardwired Haymaker on the target enemy. Additionally, your pet will trigger Overclocked Smash every 5 sec.
+- Row 8: **Gear Grind** (AE 0, 1 rank) | Level 50 PassiveDamage dealt by Scrap Shot now has a 30% chance to transform your next Makeshift Dynamite into Gear Grind for 8 seconds.Gear GrindToss gears at an enemy 4 times over 1.5 seconds, each dealing 239 + 16% ranged AP Nature damage and generating 1 Scrap. Increases the damage dealt by your summons by 10% for 8 seconds. Usable while moving. Scales with modifiers to Makeshift Dynamite.
+- Row 9: **Blazewrought Titan** (TE 1, 1 rank) | While inside your Mechsuit, all damage taken is reduced by -10% and dealing damage with Living Flame now grants a stack of Blazewrought Titan.Blazewrought TitanIncreases your magic penetration by -2 for 15 seconds, stacking 15 times. At 15 stacks, your damaging abilties become infused with fire dealing an additional 30% of the damage dealt instantly as Fire Damage and sundering your target and an additional nearby enemy.Blazewrought Sunder (Debuff)Increases your Fire and Nature Damage dealt to this target by 2% for 4 seconds, stacking 5 times.
+- Row 9: **Haywired State!** (TE 1, 1 rank) | Casting Mechsuit abilities now causes your pet to enter a haywired state for 6 seconds.Haywired State!Auto attacks now zap up to 10 nearby enemies for 159 + 35% AP Stormstrike Damage and damaged enemies take 20% increased damage from your summons.
+- Row 9: **Clockwork Guardians** (TE 1, 1 rank) | Dealing ranged ability damage now gives you a 10% chance to instantly build 2 Clockwork Guardians to accompany you for 12 seconds that have a 50% chance to trigger Hardwired Haymaker for 12 seconds.Casting Well-Oiled Machine or Upgrade! instantly builds 2 Clockwork Guardians.Hardwired HaymakerUnleash a devastating haymaker that deals 50 + 15% ranged AP Fire Damage.
+
+## Venomancer
+
+### Venom (39 nodes)
+
+- Row 0: **Wilt** (TE 1, 1 rank) | Wilt the life of an enemy with vile poison, dealing 144 Nature damage over 18 seconds.
+- Row 0: **Rot Lich** (AE 0, 1 rank) | Level 10 PassiveDirect damage dealt now has a 20% chance to reset the cooldown of Serpent's Fang and grant you Rot Lich.Rot Lich (Proc)Your next Serpent's Fang within 15 seconds is free of cost.
+- Row 1: **Spore** (TE 1, 1 rank) | Inject an enemy with parasitic spores, dealing 20 + 17.5% nature SP Shadow damage, plus an additional 231 over 21 seconds.After 10 sec, drop a Mushroom below the target that explodes after 2 sec, dealing 303 + 25% nature SP Nature damage to nearby enemies.
+- Row 2: **Protraction** (TE 1, 2 rank) | Increases the duration of your Venomancer periodic damage effects by 3 sec.
+- Row 2: **Fungal Growth** (TE 1, 1 rank) | Shadow and Nature damage dealt now has a 35% chance to increase periodic damage you deal to the target by 2% for 30 seconds, stacking 10 times.
+- Row 2: **Acid Bolt** (TE 1, 3 rank) | Increases the damage of Venom Bolt by 10% and its critical strike chance by 2%.
+- Row 2: **Shadra's Gift** (AE 0, 1 rank) | Level 20 PassiveIncreases your spell damage by 25% of your Intellect and your haste rating by 20% of your Intellect.
+- Row 3: **Rotting Away** (TE 1, 1 rank) | Your Wilt now has a 15% chance when it deals damage to strike again as Shadow damage.
+- Row 3: **Wilting Away** (TE 1, 1 rank) | Your Wilt now strikes an additional nearby enemy.
+- Row 3: **Mycosis** (TE 1, 1 rank) | Fungus grows throughout the body of an enemy, dealing 153 + 65% nature SP Nature damage and applying a shield that absorbs the next 100 + 200% SP healing done to them for 8 seconds.Deals 20% increased damage for each stack of Fungal Growth on the target.
+- Row 3: **Envenom** (TE 1, 1 rank) | Reduces the cast time of Venom Bolt by -0.3 sec.
+- Row 4: **Lethargy** (TE 1, 1 rank) | Damage dealt by your Wilt now applies Lethargy to affected enemies.Lethargy (Dummy)Reduces an enemy's chance to hit by -3% and increases their Nature Damage taken from you by 5% for 8 seconds.Dispelling this effect increases the dispeller's resource costs by 100% for 5 seconds.
+- Row 4: **Rotpriest** (TE 1, 1 rank) | Increases your spell critical damage by 100%.
+- Row 4: **Captivation** (TE 1, 1 rank) | Increases Mycosis's damage through Fungal Growth stacks by 5%.
+- Row 4: **Serpent's Embrace** (TE 1, 2 rank) | Increases the damage of Serpent's Fang and its spell power scaling by 15%.
+- Row 4: **Blightfang** (TE 1, 1 rank) | Casting Serpent's Fang now spawns a Mushroom below the target that will explode after 2 sec, dealing 303 + 12.5% SP Nature damage to nearby enemies.
+- Row 4: **Weaver Form** (AE 0, 1 rank) | Level 30 PassiveTeaches you Weaver Form.Weaver Form (Shapeshift)Shapeshift into Weaver Form, allowing your periodic effects to benefit from spell haste, reducing spell pushback suffered from damaging attacks by 70%, and giving periodic damage dealt a 5% chance to restore 5% of your missing mana.Cannot use healing spells while in Weaver Form.
+- Row 5: **Decay** (TE 1, 1 rank) | Apply Wilt to up to 5 enemies at target location and drop a Mushroom that will explode after 2 sec, dealing 303 + 25% nature SP Nature damage to nearby enemies.
+- Row 5: **Necessary Preparations** (TE 1, 1 rank) | Increases the damage of Wilt by 20% and it now increases the chance to hit the target with spells by 3% for 20 seconds.
+- Row 5: **Sepsis Bloom** (TE 1, 1 rank) | Create pustules that swell and then burst, disorienting a target enemy for 6 seconds.All of your Venomancer poison effects are purged from the target, dealing damage equal to their remaining duration at the end of the duration.
+- Row 5: **A Pit of Snakes** (TE 1, 1 rank) | Serpent's Fang now increases the damage of subsequent Serpent's Fangs by 15% for 8 seconds, stacking up to 3 times.
+- Row 5: **Fungal Assailant** (TE 1, 1 rank) | Summon a Fungarian to attack an enemy, dealing 226 + 65% SP Nature damage, and instantly apply Debilitating Venom to your target. Lasts 20 seconds.Debilitating Venom (Slow)Movement speed slowed by -40% for 8 seconds.Can be used in any form.
+- Row 6: **Limb Decayer** (TE 1, 1 rank) | Reduces the cast time and increases the mana cost of Decay by 50%.
+- Row 6: **Septic Trauma** (TE 1, 1 rank) | Harmful critical strikes now increase the duration of Wilt by 2 sec.
+- Row 6: **Venom Saturation** (TE 1, 1 rank) | Increases the damage of your poison effects by 25% against enemies above 50% health.
+- Row 6: **Infestation** (TE 1, 1 rank) | Periodic damage dealt now has a 10% chance to reduce the cooldown of Serpent's Fang and Fungal Assailant by 20% of the remaining cooldown.
+- Row 6: **Venoxis Rage** (TE 1, 1 rank) | Your Mycosis now enrages your Fungarians for 6 seconds, increasing its damage and attack speed by 30% for 6 seconds.
+- Row 6: **Intoxicating Venoms** (AE 0, 1 rank) | Level 40 PassiveMycosis is now enhanced based on your currently active Venom.Debilitating Venom: Reduces the cast time by -20%.Blight Venom: Extends the duration of Spore on the target by 4 sec.Adrenal Venom: Strikes 1 additional nearby target.
+- Row 7: **From Death Comes Life** (TE 1, 1 rank) | Damage dealt by Spore now reduces the cooldown of Decay by -1 sec.
+- Row 7: **Fungal Link** (TE 1, 1 rank) | Increases the spell haste of all party and raid members by 3%. Does not stack with similar effects.In addition, the range of your Rot spells is increased by 20% and the threat they generate is reduced by -20%.
+- Row 7: **Sporelord** (TE 1, 1 rank) | Fungal Assailant now spawns 3 Mushrooms below the target.Mushroom (dmg)Drop a Mushroom near the target that explodes after 2 sec, dealing 303 + 35% SP Plague Damage to all nearby enemies.
+- Row 8: **Fungic** (TE 1, 1 rank) | You now apply Fungic to enemies affected by Lethargy, dealing an additional 20% of the damage dealt by your Venom Bolt or Serpent's Fang as Nature damage over 3 seconds, stacking up to 2 times.
+- Row 8: **Prophetic Speaker** (TE 1, 1 rank) | Each time you spawn a Mushroom, you now reduce the cooldown of Decay by -1 sec.
+- Row 8: **Suffocating Coils** (TE 1, 1 rank) | Periodic damage now has a 5% chance to cause you to launch webs at your target, wrapping them in a Suffocating Coil.Suffocating CoilLaunch a beam of webbing at an enemy, inflicting 91 + 12% nature SP Nature damage every 1 sec for 4 seconds.After 4 seconds, if Spore is active on the target, drop a Mushroom below them that will explode after 2 sec, dealing 303 + 12.5% nature SP Nature damage to all enemies within 5 yds.
+- Row 8: **Serpent Lord's Ring** (TE 1, 1 rank) | Draw power from the Serpent Lord's Ring instantly regenerating 20% of your maximum mana and causing your Mycosiss to trigger no cooldown and be free of cost for 15 seconds.
+- Row 8: **Cycle of Decay** (AE 0, 1 rank) | Level 50 PassiveWhen you cast any spell you now have a 20% chance to gain Cycle of Decay.Cycle of Decay (Proc)Your Venom Bolt is now castable while moving and casts -30% faster for 6 seconds.
+- Row 9: **Mycelial Ring** (TE 1, 1 rank) | Create an 8 yd ring beneath you for 10 seconds that deals 59 Nature damage every 1 sec to enemies inside and immediately grows 12 Mushrooms in a circle around you.At the end of the duration, up to 15 allies inside are healed for 845 + 65% nature SP.Can be used in any form.
+- Row 9: **From Life Comes Death** (TE 1, 1 rank) | For 20 seconds, when you kill an enemy that yields experience or honor they now spawn a Mushroom beneath them. Can only occur once per sec.Mushroom (dmg)Drop a Mushroom near the target that explodes after 2 sec, dealing 303 + 35% SP Plague Damage to all nearby enemies.
+- Row 9: **Fungal Allies** (TE 1, 1 rank) | Fungal Assailant now summons 2 additional Fungarians.
+
+### Stalking (42 nodes)
+
+- Row 0: **Widowmaker** (AE 0, 1 rank) | Requires Spider FormConsumes Brood MarksInject shadow venom into an enemy, dealing Shadow damage and reducing their healing received by 50% for 8 seconds. 1 Mark: 55 + 56.25% shadow SP Shadow damage. 2 Marks: 70 + 72% shadow SP Shadow damage. 3 Marks: 90 + 92.25% shadow SP Shadow damage. 4 Marks: 114 + 117% shadow SP Shadow damage. 5 Marks: 154 + 157.5% shadow SP Shadow damage.
+- Row 0: **Brood Marks** (AE 0, 1 rank) | Level 10 PassiveYour Venom Fang now applies a Brood Mark for 15 seconds, stacking 5 times. Some abilities will consume them for an additional effect.
+- Row 1: **Widow's Kiss** (TE 1, 1 rank) | Every 3rd Venom Fang becomes Widow's Kiss, dealing increased damage and granting you increased haste.Widow&#39;s Kiss (Transform)Applies 1 Brood MarkBite an enemy for 91 + 50% shadow SP + 30% AP Shadow damage, increasing your haste by 20% for 4 seconds. Scales with modifiers to Venom Fang.
+- Row 2: **Withering Venom** (TE 1, 1 rank) | Inject an enemy with a devastating venom, dealing 16 + 20% nature SP Nature damage every 3 sec for 21 seconds. Damage is dealt slowly at first, and builds up over time.
+- Row 2: **Nerubian Sting** (TE 1, 1 rank) | Applies 1 Brood MarkSting an enemy, dealing 26 + 25% shadow SP Shadow damage and an additional 20 + 50% shadow SP over 15 seconds, stacking up to 3 times.
+- Row 2: **Prowler** (AE 0, 1 rank) | Level 20 PassiveIncreases your spell damage by 25% of your Intellect and your hit rating by 3% of your Intellect.
+- Row 3: **Vile Fangs** (TE 1, 1 rank) | Periodic damage dealt now has a 10% chance to generate a Brood Mark.
+- Row 3: **Venomagus** (TE 1, 2 rank) | Increases the damage of Blight Venom by 20%.
+- Row 3: **Virulent Resonance** (TE 1, 1 rank) | Increases the effectiveness of Brood Marks by 10% and your hit chance by 5%.
+- Row 3: **Boding Dread** (TE 1, 2 rank) | Increases your Shadow damage dealt and your critical strike chance with Shadow spells by 3%.
+- Row 3: **Glory To Shadra!** (TE 1, 1 rank) | Increases the critical strike chance of Venom Fang and Nerubian Sting by 10%.
+- Row 4: **Withered** (TE 1, 1 rank) | Increases the spell power scaling of Withering Venom by 15%.
+- Row 4: **Corrosive Toxin** (TE 1, 1 rank) | Withering Venom now deals an additional 1 + 125% shadow SP Shadow damage at the end of its duration.
+- Row 4: **Potency** (TE 1, 1 rank) | Increases the damage dealt by Venom Fang by 15% and causes it to increase the target's chance to be critically struck by spells by 3% for 15 seconds.
+- Row 4: **Essence of Decay** (TE 1, 1 rank) | Critical strikes with Widow's Kiss now apply 1 additional Brood Mark.
+- Row 4: **Rotfang** (TE 1, 1 rank) | Requires Spider FormConsumes Brood MarksInject venom into an enemy that rots them from the inside out, dealing Plague damage over 24 seconds. 1 Mark: 240 + 220% SP Plague damage. 2 Marks: 307 + 281.6% SP Plague damage. 3 Marks: 394 + 360.8% SP Plague damage. 4 Marks: 499 + 457.6% SP Plague damage. 5 Marks: 672 + 616% SP Plague damage.Damage dealt pierces absorption effects and resistances.
+- Row 4: **Acidfang** (AE 0, 1 rank) | Level 30 PassivePeriodic damage dealt now has a 40% chance, and critical strikes a 100% chance, to grant a stack of Acidfang.AcidfangThe next Rotfang, Withering Venom, or Facemelter within 15 seconds has -1% reduced duration and ticks -2% faster, stacking 10 times.
+- Row 5: **Facemelter** (TE 1, 1 rank) | Requires Spider FormConsumes Brood MarksSpray poison upon an enemy and nearby enemies, dealing Nature damage over 15 seconds. 1 Mark: 88 + 93.75% nature SP Nature damage. 2 Marks: 112 + 120% nature SP Nature damage. 3 Marks: 144 + 153.75% nature SP Nature damage. 4 Marks: 182 + 195% nature SP Nature damage. 5 Marks: 245 + 262.5% nature SP Nature damage.
+- Row 5: **Death Spray** (TE 1, 1 rank) | Periodic damage dealt now has a 5% chance to remove the Energy cost from your next Venom Fang or Widow's Kiss within 8 seconds and increase its damage by 20%.Can occur only once every 2 sec.
+- Row 5: **Noxious Empowerment** (TE 1, 1 rank) | Enrage for 12 seconds, increasing your chance to trigger Venoms by 50%, your Energy regeneration by 100%, and increasing your damage dealt by 20% for 12 seconds.
+- Row 5: **Blistering Fangs** (TE 1, 1 rank) | Casting spells that consume Brood Marks now refunds 30 Energy when used with at least 5 Brood Marks on your target.
+- Row 5: **Rotting Sores** (TE 1, 1 rank) | Increases the tick rate of Rotfang by -20% and allows its periodic damage dealt to critically strike.
+- Row 6: **Shadra's Seance** (TE 1, 1 rank) | Facemelter now ticks -20% faster and the duration is increased by 6 sec.
+- Row 6: **Virulent Opening** (TE 1, 1 rank) | Increases the periodic damage dealt by your Facemelter and Rotfang by 30% while the enemy is above 75% health.
+- Row 6: **Caustic** (TE 1, 1 rank) | Reduces the cooldown of Noxious Empowerment by -60 sec.
+- Row 6: **Black Widow** (TE 1, 1 rank) | Damage dealt to enemies below 35% health now reduces the cooldown of Noxious Empowerment by -2 sec.In addition, your Widowmaker now deals 20% increased damage to enemies below 35% health.
+- Row 6: **Deadly Kiss** (TE 1, 1 rank) | Increases critical damage dealt by Widow's Kiss, Widowmaker and Venom Fang by 50% against Poisoned targets.
+- Row 6: **Lethality** (TE 1, 1 rank) | Increases the critical strike chance of Widow's Kiss on Diseased targets by 30%.
+- Row 6: **Vulnerability** (AE 0, 1 rank) | Level 40 PassiveWhile Blight Venom is active, your auto attacks now have a 10% chance to apply it.In addition, your offensive critical strikes now increase the target's spell damage taken by 10% for 15 seconds.
+- Row 7: **Corrosive Bile** (TE 1, 1 rank) | After using Facemelter, your next Widowmaker within 15 seconds now deals 20% increased damage and strikes 2 additional nearby enemies.
+- Row 7: **Contagion** (TE 1, 1 rank) | For 15 seconds, all periodic damage dealt now has a 30% chance to burst dealing 92 + 20% shadow SP Shadow damage to 8 enemies within 8 yds.
+- Row 7: **Bile Eruption** (TE 1, 1 rank) | Triggering a Venom now has a 25% chance to generate you 5 Energy.
+- Row 7: **Tunneler** (TE 1, 1 rank) | Your Spindlebind now has 2 charges, a 25 sec cooldown, and deals increased damage.Spindlebind (Tunneler)2 Charges, 25 sec rechargeCommand a tunnel beetle to attack your target from below, inflicting 159 + 65% nature SP Nature damage and rooting them for 4 seconds.
+- Row 7: **Bugging** (TE 1, 1 rank) | Harmful spells cast out of Skulk increase the damage you deal to the enemy by 30% for 4 seconds.
+- Row 7: **Nature Against Nature** (TE 1, 1 rank) | Each stack of Nerubian Sting now increases the damage dealt to the target by your Widowmaker and Venom Fang by 8%.
+- Row 8: **Venomous Bite** (TE 1, 1 rank) | Increases the amount of times Brood Marks can stack by 2.
+- Row 8: **One Man's Poison...** (TE 1, 1 rank) | Casting spells that consume Brood Marks now has a -25% chance to refund their Brood Mark cost.
+- Row 8: **Deadly Neurotoxins** (TE 1, 1 rank) | Critical strikes with Venom Fang and Nerubian Sting now deals an additional 25% of their direct damage instantly as Nature damage.Damage dealt in this way has a 40% chance to extend the duration of Rotfang by 1 sec.
+- Row 8: **Widow's Fang** (AE 0, 1 rank) | Level 50 PassiveYour Venom Fang now costs -20% less Energy when while Widow's Kiss is active.
+- Row 9: **Serpent Lord** (TE 1, 1 rank) | Augments Spider Form into a Serpent Lord, giving some of your Spider Form abilities a 1 second cast time and 10 yds of increased range.Damage is increased when attacking an enemy past 10 yds by 30% and spell pushback from enemy attacks is reduced by 50%.Increases the damage of Withering Venom by 50% and causes it to create a Miasma.Miasma (Talent)Create an 8 yd cloud of poison at a location for 12 seconds, causing 57 + 12.5% nature SP Nature Damage to 8 enemies within it every 2 sec.
+- Row 9: **Brood Lord** (TE 1, 1 rank) | Augments Spider Form into a Brood Lord, causing your Brood Mark spenders to launch webs at the target, sticking to them for 10 seconds.Each webbed target has their movement speed slowed by -25%.Critically striking an enemy who is webbed summons 1 to 2 Spiderlings to aid you in combat for 8 seconds.
+- Row 9: **Cunning of the Nerub'ar** (TE 1, 1 rank) | Augments your Spider Form, increasing your damage dealt by 10% and causing it to allow your Nerubian Sting to stack 1 additional time.
+
+### Fortitude (43 nodes)
+
+- Row 0: **Expulsion** (AE 0, 1 rank) | Clears Exposed Flesh stacks to poison nearby enemies for 5 seconds, and an additional 1 sec per cleared stack, dealing 15 + 10% nature SP + 5% AP Nature damage every 1 sec.
+- Row 0: **Exposed Flesh** (AE 0, 1 rank) | Level 10 PassiveHostile attacks against you now have a 50% chance to grant a stack of Exposed Flesh.Exposed FleshGenerates 10 Rage and increases your Physical Damage taken 3% for 20 seconds, stacking 10 times.
+- Row 1: **Carapace Regeneration** (TE 1, 1 rank) | 3 Charges, 20 sec rechargeRegenerate your carapace, reducing your Physical damage taken by -4% and restoring 1% maximum health every 1 sec, draining 10 Rage every tick to remain active, stacking 3 times.
+- Row 2: **Reinforced Exoskeleton** (TE 1, 2 rank) | Increases your maximum health and your dodge chance by 3%.
+- Row 2: **Vile Fury** (TE 1, 2 rank) | Reduces the Rage cost of Hivebreak and Carapace Crash by -3 and increases your chance to hit by 2%.
+- Row 2: **Enchanted Chitin** (TE 1, 2 rank) | Increases your Armor contribution from mail by 25%.
+- Row 2: **Magic Shell** (AE 0, 1 rank) | Level 20 PassiveIncreases all primary attributes by 15% while in Beetle Form.In addition, increases your hit rating by 3% of all primary attributes.
+- Row 3: **Agitation** (TE 1, 1 rank) | Dodging an attack now generates 3 Rage.
+- Row 3: **Regrow Exoskeleton** (TE 1, 1 rank) | Clears Exposed Flesh stacks to reduce your damage taken by -20% for 5 seconds and an additional 1 sec per stack.
+- Row 3: **Venomtip Poison** (TE 1, 1 rank) | Spray poison on an enemy and all enemies near them, dealing 30 + 11% nature SP + 10% AP Nature damage and reducing their attack speed by -20% for 15 seconds.
+- Row 4: **Slimy** (TE 1, 1 rank) | Direct damage taken now has a 20% chance to create a pool of Beetle Slime under the enemy.Beetle SlimeDeals 49 Nature Damage to up to 10 enemies within 5 yds every 2 sec for 8 seconds.Can only occur once every 3 sec.
+- Row 4: **Slimy Stingers** (TE 1, 1 rank) | Carapace Crash now creates a pool of Beetle Slime under each enemy struck.Beetle SlimeDeals 49 Nature Damage to up to 10 enemies within 5 yds every 2 sec for 8 seconds.
+- Row 4: **Pendo's Charm** (TE 1, 1 rank) | Increases the rage generated by your damage dealt by 15%.
+- Row 4: **Catalyst** (TE 1, 1 rank) | Generates 15 Rage plus 5 every 1 sec and reduces the cost of all of your spells and abilities by -25% for 10 seconds.Prevents out of combat Rage decay for its duration.
+- Row 4: **Empowered Exoskeleton** (TE 1, 1 rank) | Removes the Rage cost of Chitin Rush and increases its range by 5 yds.
+- Row 4: **Chitinous Surge** (TE 1, 1 rank) | Reduces the cooldown of Chitin Rush by -3 sec and increases its damage by 15%.
+- Row 4: **Natural Weapons** (TE 1, 1 rank) | Increases the critical strike chance of all Beetle Form abilities by 10%.
+- Row 4: **Drown In Poison** (TE 1, 1 rank) | Increases the damage of Venomtip Poison by 30%.
+- Row 4: **Poison for Everyone!** (TE 1, 1 rank) | Reduces the Rage cost of Venomtip Poison by -10.
+- Row 4: **Reformed** (AE 0, 1 rank) | Level 30 PassiveClearing Exposed Flesh stacks inside Beetle Form now restores health based on stacks cleared.
+- Row 5: **Deadly Sting** (TE 1, 1 rank) | Dealing periodic damage now has a 10% chance to make your next Hivebreak within 8 seconds free of cost and deal 50% increased damage.
+- Row 5: **Charmed Plating** (TE 1, 1 rank) | Reduces damage taken by all party and raid members by -3%. Does not stack with similar effects.In addition, reduces your chance to be hit by spells by -2%.
+- Row 5: **Wicked Poison** (TE 1, 1 rank) | Critical strikes with Chitin Rush, Carapace Crash, and Hivebreak now apply Wicked Poison.Wicked PoisonDeals 60 + 5.67% shadow SP + 3.2% AP Shadow Damage every 2 sec for 6 seconds.
+- Row 5: **Barbed Stinger** (TE 1, 1 rank) | Clears Exposed Flesh stacks and flings a Barbed Stinger into an enemy for 10 seconds, plus an additional 1 sec per cleared stack.Recasting this ability on the same target will rip the stinger out, pulling them to you and dealing Nature damage, scaling based on how long the stinger was left in them.
+- Row 6: **Potent Expulsion** (TE 1, 1 rank) | Increases the damage dealt by Expulsion by 20%.
+- Row 6: **Charm of Warding** (TE 1, 1 rank) | When a stack of Exposed Flesh is applied you are now healed for 1% of your maximum health.
+- Row 6: **Alacrity** (TE 1, 1 rank) | Damage dealt by Chitin Rush now increases your dodge chance by 1% for 5 seconds, stacking 8 times.
+- Row 6: **Cunning** (TE 1, 1 rank) | Increases the critical strike chance of Chitin Rush by 20% and its critical damage by 10%.
+- Row 6: **Impale** (TE 1, 1 rank) | Fire spikes through the floor impaling all enemies in a 15 yd line for 83 + 51.07% shadow SP Shadow damage and stunning them for 3.5 seconds.
+- Row 6: **Beetle Poison** (TE 1, 1 rank) | Allows Wicked Poison to stack an additional time.
+- Row 6: **Wicked Barbs** (TE 1, 1 rank) | Your Barbed Stinger and Chitin Rush now applies Wicked Poison.Wicked PoisonDeals 60 + 5.67% shadow SP + 3.2% AP Shadow Damage every 2 sec for 6 seconds.
+- Row 6: **Toxic Expulsion** (TE 1, 1 rank) | Hivebreak now consumes -2 sec of Venomtip Poison's duration to gush toxic slime, dealing 20 Nature damage to 5 enemies within 5 yds.
+- Row 6: **Poisonous** (AE 0, 1 rank) | Level 40 PassiveIncreases your spell damage by 30% of your attack power and allows periodic damage dealt by Expulsion to critically strike.
+- Row 7: **Venomics** (TE 1, 1 rank) | Increases the effectiveness of your Venoms by 30%.
+- Row 7: **Cover** (TE 1, 1 rank) | Casting Harden now clears Exposed Flesh.
+- Row 7: **Shadra's Gift** (TE 1, 1 rank) | Dealing damage with Barbed Stinger now increases the target's Nature damage taken by 5% for 12 seconds.
+- Row 8: **Unbreakable** (TE 1, 1 rank) | Allows Exposed Flesh to stack 5 additional times and increase your Physical damage taken by -1% less.
+- Row 8: **Locust Swarm** (TE 1, 1 rank) | Leeches 67 + 10% SP + 3% AP health from nearby enemies every 2 sec for 10 seconds.
+- Row 8: **Reconstructive Carapace** (TE 1, 1 rank) | Reduces the amount of Rage drained by Carapace Regeneration by -3.
+- Row 8: **Protogenesis** (AE 0, 1 rank) | Level 50 PassiveCritical strikes dealt with direct damage now apply Protogenesis to you, stacking 10 times.ProtogenesisHeals for 20 over 10 seconds.At 10 stacks, all stacks are consumed and the cooldown of Expulsion is reduced by -3 sec.
+- Row 9: **Molt** (TE 1, 1 rank) | Shatters your exoskeleton, instantly applying 15 stacks of Exposed Flesh and increasing your movement speed by 30% for 8 seconds.
+- Row 9: **Spider Lord** (TE 1, 1 rank) | Augments Beetle Form into a Spider Lord, reducing damage taken by -5%, and while Locust Swarm is active your summons now gain 30% increased haste and damage.Casting Hivebreak now has a 40% chance, and melee auto attacks now have a 5% chance, to summon 1 Scarab to aid you in combat for 12 seconds.
+- Row 9: **Regenerative Properties** (TE 1, 1 rank) | Reduces all damage taken by -5%, but damage taken now has a 10% chance to shatter your exoskeleton, removing this damage reduction effect.When your exoskeleton shatters you regenerate 12% of your maximum health over 12 seconds, after this duration your exoskeleton regenerates.
+
+### Vizier (40 nodes)
+
+- Row 0: **Alkahest** (TE 1, 1 rank) | 2 Charges, 12 sec rechargeBless an ally with Shadra's grace, healing them for 85 + 31.44% healing and extending the duration of Shadra's Prayer on them by 9 sec.
+- Row 0: **Shadra's Vigil** (AE 0, 1 rank) | Level 10 PassiveHealing done by Serpent's Fang now applies Shadra's Vigil to allies.Shadra&#39;s VigilThe next 5 instances of periodic healing by you on this target will heal them for an additional 10% of the value.
+- Row 1: **Mycelial Healing** (TE 1, 1 rank) | All effective healing done now increases your periodic healing done to an ally by 1% for 30 seconds, stacking 8 times.
+- Row 2: **Mending Mist** (TE 1, 1 rank) | Spread a precarious mist to up to 8 allies within 30 yds, healing them for 9 + 15% healing every 1 sec for 7 seconds.After 1.69 sec, all allies within 30 yds are healed for an additional 104 + 23.1% healing.
+- Row 2: **Shadra's Gift** (TE 1, 2 rank) | Reduces the cast time of Shadra's Prayer by -10% and your spell pushback suffered from damaging attacks by 35%.
+- Row 2: **Spiritual Healing** (AE 0, 1 rank) | Level 20 PassiveIncreases your spell critical strike rating and your healing power by 20% of your Intellect.
+- Row 3: **Venom Glands** (TE 1, 1 rank) | Increases your healing done by 15% on allies below 35% health or if they are Poisoned.
+- Row 3: **Fang Blessing** (TE 1, 2 rank) | Increases your critical strike chance by 3%.
+- Row 3: **Fangbinder** (TE 1, 1 rank) | Increases the healing of Serpent's Fang by 50% and Serpent's Fang can no longer miss.
+- Row 3: **Ritualistic** (TE 1, 1 rank) | Casting Green Salve now also refunds you 20% of your base mana.
+- Row 4: **The Antidote** (TE 1, 1 rank) | Increases the duration of Rejuvenating Venom by 2 sec and increases its tick rate by -30%.
+- Row 4: **Good Venom** (TE 1, 1 rank) | Rejuvenating Venom will now affect 1 additional nearby ally.
+- Row 4: **Soothing Venoms** (TE 1, 2 rank) | Increases the critical healing of Shadra's Prayer by 25%.
+- Row 4: **Lifemender** (TE 1, 1 rank) | Your Serpent's Fang now heals up to 5 additional nearby allies and Alkahest now heals an additional nearby target.
+- Row 4: **Melioration** (TE 1, 1 rank) | Your Serpent's Fang now refreshes a charge of Alkahest.
+- Row 4: **Book of Shadra** (TE 1, 1 rank) | Doubles the duration, cooldown, and healing of Green Salve.In addition, it now seeks another nearby ally to heal every 6 sec, instead of at the end of the duration.
+- Row 4: **Venomcult Scrolls** (TE 1, 1 rank) | Reduces the cooldown of Green Salve by -2 sec and increases the healing done at the end of the duration by 50%.
+- Row 4: **Vizier Form** (AE 0, 1 rank) | Level 30 PassiveTeaches you Vizier Form.Vizier Form (Shapeshift)Shapeshift into Vizier Form, allowing you to cast Shadra's Prayer while moving and causing your periodic healing to have a 20% chance to grant allies Replenishment. Allows your heal over time effects to critically strike.ReplenishmentRestores 1% maximum mana every 5 sec to allies within 100 yds for 15 seconds.
+- Row 5: **Spirit of the Jungle** (TE 1, 1 rank) | Increases the proc chance of Rejuvenating Venom by 10%.
+- Row 5: **Worship** (TE 1, 1 rank) | Allows all critical heals to increase periodic healing the target receives from you by 10% for 5 seconds.
+- Row 5: **Mycelial Replenishment** (TE 1, 1 rank) | Increases your critical strike chance and critical healing done by 20% for 20 seconds and instantly restore 30% of your maximum mana, but consumes all stacks of Mycelial Healing on all nearby allies.While active, all periodic critical strikes heal for an additional 20% of the healing done.
+- Row 5: **Sage** (TE 1, 1 rank) | Direct healing done by Alkahest now spreads an active Shadra's Balm from the primary target to a nearby ally.
+- Row 5: **Bountiful Gifts** (TE 1, 2 rank) | Increases the healing of Shadra's Prayer, Green Salve, and Alkahest by 10%.
+- Row 6: **Advisor's Perfidy** (TE 1, 2 rank) | Increases the bonus healing scaling of Serpent's Fang, Mending Mist, and Shadra's Balm by 10%.
+- Row 6: **Toxic Communion** (TE 1, 1 rank) | Extend the duration of Shadra's Balm and Mending Mist by 15 sec on all allies within 30 yds.
+- Row 6: **Shadra's Presence** (TE 1, 1 rank) | Allies within 100 yds receive 6% more healing. Does not stack with similar effects.In addition, your Antivenom now dispels 1 additional effect.
+- Row 6: **Blight Antidote** (TE 1, 1 rank) | Inject an ally with a powerful magic antidote, dispelling 2 curse effects from them.
+- Row 6: **Widow's Watch** (TE 1, 1 rank) | Allies affected by Shadra's Balm now have a 20% increased chance to resist poison and curse effects.
+- Row 6: **Occultist** (AE 0, 1 rank) | Level 40 PassiveCasting Green Salve or Serpent's Fang now has a 30% chance to refresh a charge of Alkahest.
+- Row 7: **Ophidian Renewal** (TE 1, 1 rank) | Increases the duration of Shadra's Balm and Mending Mist and Shadra's Prayer by 3 sec.
+- Row 7: **Extraction** (TE 1, 1 rank) | For 15 seconds, your Intellect and Spirit are doubled and all critical periodic healing done by you restores 5% of your missing mana.
+- Row 7: **Sublime Extraction** (TE 1, 1 rank) | Casting Green Salve now resets the cooldown of Serpent's Fang and removes the cost of your next Serpent's Fang for 8 seconds.
+- Row 7: **Venom Fanatic** (TE 1, 1 rank) | Your Serpent's Fang now strikes 2 additional nearby enemies.
+- Row 8: **Shadra's Aid** (TE 1, 1 rank) | Envelop an ally in Shadra's grace, reducing all damage taken by -20% and causing direct damage taken to restore 3% maximum health for 15 seconds.
+- Row 8: **Venom Weaving** (TE 1, 1 rank) | Your Serpent's Fang now increases the healing of your next 2 Alkahests by 25%.
+- Row 8: **Serpent Lord's Amulet** (TE 1, 1 rank) | Draw power from the Serpent Lord's Amulet, increasing your spell haste by 20% and reduces your mana costs by -50% for 15 seconds.
+- Row 8: **Ritual Healing** (AE 0, 1 rank) | Level 50 PassiveEvery 9 sec, your Shadra's Prayer will now restore 1% of the target's maximum mana, 8 Energy or Focus, 4 Rage and 4 Runic Power.
+- Row 9: **Mycelial Synchronization** (TE 1, 1 rank) | Casting Shadra's Aid on an ally now also casts it on yourself.
+- Row 9: **Cycle of Rebirth** (TE 1, 1 rank) | Effective periodic healing with Shadra's Balm now has a 10% chance to make your next Alkahest within 8 seconds is free and instant.
+- Row 9: **Serpent Lord's Ritual** (TE 1, 1 rank) | Direct healing done now has a 5% chance to grant you 5 sec of Serpent Lord's Amulet.Serpent Lord&#39;s AmuletDraw power from the Serpent Lord's Amulet, increasing your spell haste by 20% and reduces your mana costs by -50% for 15 seconds.
+
+## Reaper
+
+### Harvest (40 nodes)
+
+- Row 0: **Doomrend** (TE 1, 1 rank) | Rend an enemy dealing 140% Weapon Damage plus 17 + 35% AP, causing you to apply a dark shield to them that absorbs the next 75 + 100% Strength healing done to them for 5 seconds, and generates Runic Power.
+- Row 0: **Harvester** (AE 0, 1 rank) | Level 10 PassiveYou now heal yourself equal to 15% of all damage dealt.
+- Row 1: **Maw Knight** (TE 1, 2 rank) | Increases the critical strike chance of Doomrend by 5%.
+- Row 1: **Bountiful Harvest** (TE 1, 1 rank) | Increases the damage of Reap and Murder by 25%.
+- Row 2: **Crow's Harvest** (TE 1, 1 rank) | Strike all nearby enemies for 65% Weapon Damage plus 6.Damage dealt harvests a Soul Fragment, up to a maximum of 3.
+- Row 2: **Slaughter** (TE 1, 1 rank) | Generates 1 Reaped SoulEradicate an enemy with your scythe, dealing 130% Weapon Damage plus 14.Only usable on enemies below 35% health.
+- Row 2: **Haunter** (TE 1, 1 rank) | Increases the duration of Soulrend by 10 sec.
+- Row 2: **Extinction** (AE 0, 1 rank) | Level 20 PassiveDirect Physical damage dealt now has a 5% chance to grant you Extinction for 10 seconds.Chance to trigger this effect is increased by 10% for each Reaped Soul active.ExtinctionYour next Slaughter is usable regardless of the target's health and costs -10 less Runic Power.
+- Row 3: **Dark Fate** (TE 1, 1 rank) | Reduces the cost of Crow's Harvest by -10 Runic Power.
+- Row 3: **Red Wake** (TE 1, 1 rank) | Direct damage critical strikes now generate an additional Soul Fragment.
+- Row 3: **Crimson Death** (TE 1, 1 rank) | Your Slaughter now has a 20% chance to cast an additional time free of cost.
+- Row 3: **Callous Soul** (TE 1, 1 rank) | Increases the amount of armor Soulrend causes you to ignore by 10%.
+- Row 4: **Hungering Scythe** (TE 1, 1 rank) | Increases the duration of Deathwind by 4 sec and Crow's Harvest now deals 15% additional damage to enemies inside.
+- Row 4: **Blood Fueled** (TE 1, 1 rank) | Increases the healing absorbed by Doomrend by 30%.
+- Row 4: **Genocide** (TE 1, 1 rank) | Increases the critical damage and critical strike chance of Slaughter by 10%.
+- Row 4: **Hemorrhage** (TE 1, 1 rank) | Increases the damage and critical strike chance of your abilities by 10% against enemies below 35% health.
+- Row 4: **Sanguine Harvester** (TE 1, 2 rank) | Increases your melee haste by 10%.
+- Row 4: **Mortal's End** (AE 0, 1 rank) | Level 30 PassiveAllows Extinction to stack an additional time and allows Wraithblade to grant you Extinction.ExtinctionYour next Slaughter is usable regardless of the target's health and costs -10 less Runic Power.
+- Row 5: **Crimson Wraith** (TE 1, 2 rank) | Increases your critical stike damage by 10%.
+- Row 5: **Harvest Time** (TE 1, 1 rank) | Increases your damage and critical strike chance by 15% and gives your spells that require Soul Infusion a -50% to not consume the effect for 15 seconds.
+- Row 5: **Souls for the Slaughter** (TE 1, 1 rank) | Critical strikes with Slaughter now cause your auto attacks to deal an additional 85% Shadow damage for 5 seconds.
+- Row 6: **Harvesting Grounds** (TE 1, 1 rank) | Create a harvesting ground at the target location for 10 seconds, enemies inside have their melee and ranged haste and movement speed reduced by -20%For the duration, enemies that try to exit the harvesting ground will be pulled back to its center.
+- Row 6: **Blood Harvester** (TE 1, 1 rank) | Increases critical strike chance of all party and raid members by 3%.Does not stack with similar effects.
+- Row 6: **The Time Has Come** (TE 1, 1 rank) | Your abilities now deal 10% more damage against slowed targets.
+- Row 6: **Sever** (TE 1, 1 rank) | Attempt to drain an enemies vitals, leeching 22 + 31.03% AP health, interrupting casting and preventing any spell from that school from being cast for 3 seconds.
+- Row 6: **Executioner** (AE 0, 1 rank) | Level 40 PassiveIncreases your critical strike rating by 20% of your Strength.In addition, increases your Armor penetration by 30% against enemies below 35% health.
+- Row 7: **Blood Knight** (TE 1, 1 rank) | Critical strikes with Doomrend now refund a Reaped Soul.
+- Row 7: **Blood Wraith** (TE 1, 1 rank) | Wraithblade now deals an additional 100% Weapon Damage and its Runic Power cost is reduced by -20.
+- Row 7: **Doomer** (TE 1, 1 rank) | Increases the damage of Doomrend and Slaughter by 30%.
+- Row 7: **Unbound** (TE 1, 1 rank) | Your Reliquary of the Lost is now guaranteed to critically strike for 25% increased damage on enemies below 20% health.
+- Row 7: **The Grim Reaper** (TE 1, 1 rank) | Your Ghost Claw transforms into Wraith Claw and now has 2 charges.Wraith Claw2 Charges,15 sec rechargeChill an enemy with a ghostly claw, slowing and stealing -50% of their movement speed for 8 seconds.Whenever you kill an enemy, refund a charge of this ability. Scales with modifiers to Ghost Claw.
+- Row 7: **Ravenous Thirst** (TE 1, 1 rank) | Reduces the Runic Power cost of Ghastly Screech and Soul Strike by -10.
+- Row 8: **Darkrend Scythe** (TE 1, 1 rank) | Damage dealt by Doomrend and Crow's Harvest now applies a bleed, dealing 56 + 8.5% AP Physical damage every 2 sec for 10 seconds, stacking 5 times.Additional applications do not refresh the duration.
+- Row 8: **Blood Frenzy** (TE 1, 1 rank) | Casting Harvest Time with an enemy targeted within 20 yds of you now unleashes a Blood Frenzy.Blood FrenzyDeals 1 + 36% AP Shadow Damage to your target every 0.75 sec for 7.5 seconds. At the end of the duration, the target takes an additional 457 + 45% AP Shadow Damage.
+- Row 8: **Ruin** (TE 1, 1 rank) | Damage dealt by Murder now applies Ruin to enemies for 10 seconds.RuinIncreases damage taken by Doomrend and Slaughter by 25% for 10 seconds.Using Doomrend on a target afflicted by Ruin will increase your haste by 15% for 5 seconds.
+- Row 8: **This Is My Domain** (AE 0, 1 rank) | Level 50 PassiveIncreases the amount healed through the Harvest - Level 10 Passive by 10% and causes being in your Harvesting Grounds to increase this effect by an additional 25%.
+- Row 9: **Redshade** (TE 1, 1 rank) | Using Reap now transforms your Reap into Thresh for 10 sec.ThreshGenerates 1 Soul Fragment Strike enemies around you, dealing 110% Weapon Damage and generating Runic Power.Upon cast, this ability transforms into Bloodshatter for 10 sec.BloodshatterGenerates 1 Soul Fragment Strike enemies in front of you, dealing 329 + 20% AP Shadow damage and generating Runic Power.Your next Reliquary of the Lost within 10 seconds now triggers a -25% reduced cooldown.
+- Row 9: **Deathbringer** (TE 1, 1 rank) | Increases the duration of Blood Frenzy and Harvest Time by 100%.
+- Row 9: **Shudder Scythe** (TE 1, 1 rank) | Your Murder is transformed into Shudder Scythe, which costs additional Runic Power but deals increased damage and generates Soul Fragments.Shudder Scythe (Transform)Strike an enemy 5 times, each dealing 30% Weapon Damage, scaling with level, and granting you a Soul Fragment with each strike.
+- Row 9: **Crimson Thirst** (TE 1, 1 rank) | Your Physical damage dealt to enemies now grants Crimson Thirst for 20 seconds, stacking 5 times.Crimson Thirst (Stacks)Your next Murder within 15 seconds deals 10% increased damage and costs -10% less Runic Power per stack. At 5 stacks, it also heals you equal to 50% of the damage dealt.
+
+### Soul (39 nodes)
+
+- Row 0: **Deathchaser** (TE 1, 1 rank) | Force death upon an enemy, dealing 13 + 8% AP Shadowfrost Damage, repeating every 0 sec for 1 seconds, and generates Runic Power.
+- Row 0: **Weakened Souls** (AE 0, 1 rank) | Level 10 PassiveYour Soulrend now also applies Weakened Soul, increasing the target's Shadow and Frost damage taken from you by 10%.
+- Row 1: **Soulforged Weaponry** (TE 1, 2 rank) | Increases your off-hand weapon damage by 25%.While dual-wielding, your auto attacks now have a 8% chance to make your next Murder free of cost.
+- Row 1: **Mark of Death** (TE 1, 1 rank) | Increases the damage dealt by Deathchaser by 15% and your hit chance by 3%.
+- Row 2: **Dirge** (TE 1, 1 rank) | Generates 2 Soul FragmentsStrike the enemy with both weapons, dealing 70% (130% if a dagger is equipped) Weapon Damage as Shadowfrost Damage with each, and generates Runic Power.
+- Row 2: **Ghostly Weapon** (TE 1, 1 rank) | 2 Charges, 40 sec rechargeImbue your weapon with ghostly power for 15 seconds, causing melee attacks to deal 25% additional damage as Frost damage.
+- Row 2: **Shattered Souls** (TE 1, 1 rank) | Your Wraithblade now deals double damage to enemies affected by Soulrend.
+- Row 2: **Spirit Render** (AE 0, 1 rank) | Level 20 PassiveIncreases your spell penetration by 20, scaling with your level.
+- Row 3: **Soul Generator** (TE 1, 1 rank) | Critical strikes with Dirge now generate 10 Runic Power.Critical strikes with Murder now generate 1 additional Reaped Soul.
+- Row 3: **Lamenting** (TE 1, 1 rank) | Damage dealt by Ghostly Weapon now heals for 50% of the damage dealt.
+- Row 3: **Death Dealer** (TE 1, 1 rank) | Increases the duration of Ghostly Weapon and Soulrend by 5 sec.
+- Row 3: **Deathwail** (TE 1, 1 rank) | Reduces the Runic Power cost of Wraithblade by -50%.
+- Row 4: **Ghostly Magic** (TE 1, 2 rank) | Increases the damage of Reap, Dirge, and Reliquary of the Lost by 10%.
+- Row 4: **Ghastly Hilt** (TE 1, 1 rank) | Ghostly Weapon now causes your melee abilities to strike up to 2 additional targets near the primary target.
+- Row 4: **Soulbender** (TE 1, 1 rank) | Significantly increases the Runic Power generated by Deathchaser.
+- Row 4: **Spectre** (AE 0, 1 rank) | Level 30 PassiveReduces the cooldown of Underwalk by -10 sec.In addition, Withering Touch will now always apply Ghost Claw to the target.Ghost Claw (Speed)Chill an enemy with a ghostly claw, slowing and stealing -50% of their movement speed for 8 seconds.
+- Row 5: **Anima Ambusher** (TE 1, 1 rank) | Spectre Stride now deals an additional 125% of its damage dealt over 5 seconds.
+- Row 5: **Fleeting Soul** (TE 1, 1 rank) | Reduces the cooldown of Soulslam by -15 sec.
+- Row 5: **Soul Piercer** (TE 1, 1 rank) | Striking at least 1 enemy with Soulslam now refunds its Reaped Souls.
+- Row 5: **Reaver** (TE 1, 1 rank) | Reduces the cooldown of Deathstalker, Soul Shear, and Soulstone Lure by -50%.
+- Row 5: **Essence Harvest** (TE 1, 1 rank) | Increases the additional Frost damage dealt by Ghostly Weapon by 10%.
+- Row 5: **Chasing Death** (TE 1, 1 rank) | Deathchaser used against a target below 20% health will now reapply itself at the end of its duration until they die or until 5 seconds passes.
+- Row 5: **Spirit Chaser** (TE 1, 1 rank) | Increases the critical strike chance and critical damage of Reap, Deathchaser, and Wraithblade by 10%.
+- Row 6: **Apparition** (TE 1, 1 rank) | Increases the damage of Spectre Stride by 30% and reduces the chance for enemies to see you while stealthed.
+- Row 6: **Shade** (TE 1, 1 rank) | Become a shade, entering an improved stealth mode for 10 seconds and entering Underwalk. Removes all movement impairing effects.
+- Row 6: **Purgatory** (TE 1, 1 rank) | When you gain Soul Infusion, the damage of your Soulrend and Reliquary of the Lost is increased by 20% for 6 seconds, stacking 2 times.
+- Row 6: **Soul Bane** (TE 1, 1 rank) | Reduces the cooldown of Reliquary of the Lost by -5 sec.
+- Row 6: **Beyond the Veil** (AE 0, 1 rank) | Level 40 PassiveEntering Underwalk now grants you Beyond the Veil, increasing movement speed by 30% and allowing you to walk on water.
+- Row 7: **The Jailer's Call** (TE 1, 1 rank) | Attacks against enemies below 20% health deal an additional 140 + 18% AP Shadow damage.
+- Row 7: **Spiritual Reflexes** (TE 1, 1 rank) | While below 35% maximum health, your chance to dodge attacks is increased by 25% and dodging an attack unleashes Soul Harvest on the target.Soul Harvest (Damage)Blasts your target for 1 + 5% AP + 10% shadow SP Shadow Damage, healing for 100% of the damage dealt.
+- Row 7: **Death's Presence** (TE 1, 1 rank) | Increases all damage dealt by party and raid members by 3%.Does not stack with similar effects.
+- Row 7: **Spectre's Call** (TE 1, 2 rank) | Increases the damage of Deathwind, Murder, and Soul Strike by 15%.
+- Row 8: **Endbringer** (TE 1, 1 rank) | Become an Endbringer for 15 seconds, increasing the damage of Dirge by 30%, the range by 20 yds, and causes it to generate 3 Reaped Souls.For the duration, Dirge will heal you for 75% of its damage dealt.
+- Row 8: **The End Is Near** (TE 1, 1 rank) | Wraithblade now creates a spectral version of yourself for 12 seconds that casts Dirge and Murder on enemies.
+- Row 8: **Lord of Death** (TE 1, 1 rank) | Abilities affected by Ghostly Weapon now deal 25% more damage per additional target.
+- Row 8: **Sepulchral Renewal** (AE 0, 1 rank) | Resets the cooldown of Limbo, Soulslam, and Shade.Usable while stealthed.
+- Row 9: **Gravesite** (TE 1, 1 rank) | Casting Endbringer now marks the ground beneath you as your Gravesite for 15 seconds.Direct critical strikes made against enemies within a Gravesite now deals 530 + 36% AP Shadow damage.
+- Row 9: **Soulrot** (TE 1, 1 rank) | Damage dealt by Deathchaser now applies Soulrot.SoulrotRot the soul of your target, cursing them for 15 seconds. At the end of the duration the enemy will take damage based on the number of stacks accrued. Each instance of damage from Deathchaser adds 1 stack to this effect, up to 20 stacks. Dispelling this effect causes the dispeller to instantly take 1200 + 200% AP Shadow Damage.
+- Row 9: **Beyond Death** (TE 1, 1 rank) | Dealing damage with Reliquary of the Lost now has a 8% chance to launch an additional Soul Bolt.
+
+### Domination (39 nodes)
+
+- Row 0: **Dreadwake** (TE 1, 1 rank) | Generates 1 Reaped SoulUnleash a wave of souls upon enemies in a 12 yd cone, causing 80% Weapon Damage plus 5 Frost damage.
+- Row 0: **Tormentor** (AE 0, 1 rank) | Level 10 PassiveConsuming Soul Infusion now reduces the cooldown of Tormented Souls by -3 sec.
+- Row 1: **Empyrean Fortitude** (TE 1, 1 rank) | Increases your parry chance by 5% and parrying an attack now generates 2 Runic Power.
+- Row 1: **Dark Soldier** (TE 1, 2 rank) | Increases your hit chance by 3% and reduces your Magic damage taken by -2%.
+- Row 2: **Soultaker** (TE 1, 1 rank) | Damage dealt with Dreadwake now reduces the cooldown of Tormented Souls by -1 sec.
+- Row 2: **Requiem** (TE 1, 1 rank) | Swing at enemies around you in a fury of souls, dealing 67 + 40% AP Shadowfrost Damage, reducing their melee and ranged attack speed by -20% for 15 seconds, and generating Runic Power.
+- Row 2: **Dominator** (TE 1, 1 rank) | Reduces the Runic Power cost of Soul Strike by $/10s;s1.
+- Row 2: **Lifestealer** (TE 1, 1 rank) | Increases the missing health generated by Soul Strike by 3%.
+- Row 2: **Behemoth** (AE 0, 1 rank) | Level 20 PassiveIncreases your Stamina by 20% and your Armor penetration by 10% of your Strength.
+- Row 3: **Bolstered Form** (TE 1, 1 rank) | Assume a bolstered form for 15 seconds, generating 30 Runic Power, increasing your Armor by 25%, and increasing your parry chance by 25%.
+- Row 3: **Dreadknight** (TE 1, 2 rank) | Increases your armor contribution from mail and plate items by 20% and reduces the chance for spells to hit you by -2%.
+- Row 3: **Spectral Scythe** (TE 1, 1 rank) | Summons 1 Spectral Scythe for each Reaped Soul active which attack a nearby enemy for 20 seconds.Striking enemies with Soul Strike causes the Spectral Scythe to attack that enemy and 5 nearby enemies. Consumes Reaped Souls and Soul Infusion.
+- Row 4: **Intimidating Presence** (TE 1, 1 rank) | Bolstered Form now increases the damage nearby enemies take from you by 15% for 15 seconds.
+- Row 4: **Essence Binder** (TE 1, 1 rank) | Soul Strike now steals some of the target's health and Strength for 12 seconds, granting it to you at increased value.
+- Row 4: **Soulsight** (TE 1, 1 rank) | Increases critical strike chance of all party and raid members by 3%. Does not stack with similar effects.In addition, dealing direct damage now has a 15% chance to generate a Soul Fragment.
+- Row 4: **Well of Eternity** (TE 1, 1 rank) | Increases the duration of your Spectral Scythes by 10 sec.
+- Row 4: **Well of Souls** (TE 1, 1 rank) | Damage dealt by Soul Strike and Murder now reduces the cooldown of Spectral Scythe by -1 sec.
+- Row 4: **Soul Slip** (AE 0, 1 rank) | Level 30 PassiveAvoiding attacks now has a 50% chance to harvest a Soul Fragment from the attacker.
+- Row 5: **Harnessed Life** (TE 1, 1 rank) | Your Tormented Souls now has a -25% chance to not consume a stack from damage taken.
+- Row 5: **Ethereal Guard** (TE 1, 1 rank) | Reduces the damage taken by party and raid members by -3%. Does not stack with similar effects.In addition, increases your melee haste by 10%.
+- Row 5: **Fatesealer** (TE 1, 1 rank) | Generating a Reaped Soul now reduces damage taken by -2% for 15 seconds, stacking 3 times.
+- Row 5: **Jailer's Will** (TE 1, 1 rank) | Soul Strike now deals 30% Strength increased damage, scaling with Strength.
+- Row 6: **To The Shadowlands** (TE 1, 1 rank) | Increases the duration of Soulslam by 1 sec.
+- Row 6: **Spirit Realm** (TE 1, 1 rank) | Your Deathwind now also increases your healing taken by 10% while you stand within its radius.
+- Row 6: **Spectral Warden** (TE 1, 1 rank) | Summon a spectral guardian to fight along side you for 20 seconds and apply an absorption shield to up to 8 allies within 20 yds, absorbing 199 + 150% Stamina damage.
+- Row 6: **Dark Soul** (AE 0, 1 rank) | Level 40 PassiveIncreases your Stamina equal to your Armor penetration rating.
+- Row 7: **Hard Bargain** (TE 1, 1 rank) | While Tormented Souls is active on you, your melee attack speed is increased by 30% and your Dreadwake costs -5 less Runic Power.
+- Row 7: **Final Requiem** (TE 1, 2 rank) | Increases your critical strike chance with abilities that deal Shadow damage by 15% against enemies below 20% health.
+- Row 7: **Soulstorm** (TE 1, 1 rank) | Requiem and Soulrend now have a 40% chance to refund a Reaped Soul.
+- Row 7: **Spirit Army** (TE 1, 1 rank) | Your Spectral Warden now causes you to summon 2 additional Spectral Wardens, but their duration is reduced by -8 sec.In addition, increases the amount absorbed by the shield granted by Spectral Warden by 100%.
+- Row 7: **Life Tap** (TE 1, 1 rank) | Reduces the cooldown of Spectral Warden by -60 sec and it now heals you equal to 200% of the damage it deals.
+- Row 7: **Soul Splinters** (TE 1, 1 rank) | Erupt with ghastly force whenever you harvest a Reaped Soul, dealing 47 + 10.5% Stamina + 15% AP Spellshadow Damage to nearby enemies over 6 seconds.
+- Row 8: **Soul Knight** (TE 1, 1 rank) | Your successful parries and dodges increase all healing you receive by 2% and reduce all Magic damage taken by -2% for 10 seconds, stacking 5 times.
+- Row 8: **Warden of the Lost** (TE 1, 1 rank) | Damage dealt by Spectral Scythes and Spectral Wardens now reduces the cooldown of Spectral Warden by -0.5 sec.
+- Row 8: **Siphon Anima** (TE 1, 1 rank) | When you summon a Spectral Scythe, you now heal for 5% of your damage dealt for 10 seconds.
+- Row 8: **Decimation** (AE 0, 1 rank) | Level 50 PassiveEvery 6th cast of Reap transforms your next Reap into Decimate for 15 sec.DecimateSmash the ground infront of you, dealing 117% Weapon Damage plus 22 Physical damage in an 8 yd frontal cone to 10 enemies.Generates 1 Soul Fragment and 5 Runic Power per enemy hit.
+- Row 9: **Painmail** (TE 1, 1 rank) | Dealing damage with Reap, Dreadwake and Soul Strike now grants a stack of Painmail for 15 seconds, stacking up to 8 times. Additional applications do not refresh the effect.When Painmail stacks expire naturally, you are healed for 2% of your maximum health and reduce the cooldown of Bolstered Form by -0.5 sec for each stack.
+- Row 9: **Spirit Culling** (TE 1, 1 rank) | For the duration of Spectral Scythe, the damage of Soul Strike is increased by 20%.In addition, generating a Reaped Soul now has a 10% chance to summon a Spectral Scythe to fight alongside you for 10 sec.
+- Row 9: **Eater of Souls** (TE 1, 1 rank) | Reaching 3 Reaped Souls now reduces your Physical damage taken by -10% and you regain 1% of your maximum health every 2 sec for 10 seconds. This will not trigger while already active.In addition, the healing done by Deathwind is increased by 10%.
+
+## Primalist
+
+### Primal (40 nodes)
+
+- Row 0: **Rylak's Bite** (TE 1, 1 rank) | 2 Charges, 10 sec rechargeYou and your pet rush towards an enemy and strike them, dealing 120% Weapon Damage plus 8.
+- Row 0: **Spirit Beast Master** (AE 0, 1 rank) | Level 10 PassiveYou may now tame beasts in Azeroth to aid you as a companion.
+- Row 1: **Fury of the Wild** (TE 1, 1 rank) | When you cast a Boon, you cast the same Boon on your pet at 50% effectiveness.
+- Row 2: **Totemic Smash** (TE 1, 1 rank) | Smash an enemy for 140% Weapon Damage plus 20.Deals an additional 10 + 35% AP damage to up to 5 enemies within 8 yds.
+- Row 2: **Primal Shred** (TE 1, 1 rank) | Command your pet to shred up to 5 enemies within 8 yds, causing them to bleed, dealing 53 + 35% AP Physical damage over 21 seconds.
+- Row 2: **Primal Weapons** (AE 0, 1 rank) | Level 20 PassiveTeaches you Primal Weapons which when used will grant you a bonus based on whether you use one-handed weapons or two-handed weapons.Primal Weapon: Bestial MightWhile wielding a one-handed weapon, your Physical critical strikes enrage you and any active pet for 8 seconds, increasing the haste of your next 2 attacks by 10% and their next 2 attacks by 80%.Primal Weapon: Primal MightWhile wielding a two-handed weapon, your attack power is increased by 10%, you generate 3 Rage every 5 sec, and the damage you deal with Wildclaw is increased by 25%.
+- Row 3: **Pulverize** (TE 1, 2 rank) | Increases the critical strike chance of Totemic Smash by 10%.
+- Row 3: **Wild At Heart** (TE 1, 1 rank) | Reduces the global cooldown of Wildclaw by 0.-25 sec.
+- Row 3: **Raptor Talons** (TE 1, 2 rank) | Increases your Strength by 5% and your expertise by 4.
+- Row 3: **Torn to Shreds** (TE 1, 1 rank) | Totemic Smash and Rylak's Bite now causes enemies to bleed for 155 + 4.5% AP over 12 seconds, stacking 2 times.
+- Row 4: **Pulverize** (TE 1, 1 rank) | Critical strikes with Totemic Smash now trigger the area of effect portion of its damage an additional time.
+- Row 4: **Rips and Tears** (TE 1, 1 rank) | Periodic damage dealt by you or your pet now generates 2 Rage for you and 5 Focus for your pet.
+- Row 4: **Primal Resurgence** (TE 1, 1 rank) | Seismic Crash now generates an additional 10 Rage and Seismic Spike now generates 3 additional Rage.
+- Row 4: **Wild Rage** (TE 1, 1 rank) | Removes the Rage cost of Rylak's Bite.
+- Row 4: **Primal Rage** (TE 1, 1 rank) | Casting Totemic Smash now refreshes a charge of Rylak's Bite.
+- Row 4: **Bring Me Their Bones** (TE 1, 1 rank) | Mark an enemy for 15 seconds, causing damage dealt by your pet's abilities to the target to add a stack of Bring Me Their Bones.At 5 stacks, your pet consumes this buff to deal 310 + 50% AP damage to the target, ignoring Armor.
+- Row 4: **Lacerations** (TE 1, 1 rank) | Melee critical strikes now increase the effectiveness of bleed effects on the target by 30% for 15 seconds.Does not stack with similar effects.
+- Row 4: **Tremors** (AE 0, 1 rank) | Level 30 PassivePeriodic damage now has a 10% chance to reset the cooldown of your Seismic abilties and cause your next cast within 10 seconds to be free of cost.
+- Row 5: **Elemental Berserker** (TE 1, 1 rank) | Increases the area damage dealt by Totemic Smash by 30%, but it now costs 5 additional Rage.
+- Row 5: **Earthshaker** (TE 1, 1 rank) | Increases the damage dealt by Seismic abilities by 10% and allows their periodic damage to critically strike.
+- Row 5: **Savage Frenzy** (TE 1, 1 rank) | Enrage you and your pet for 18 seconds, increasing damage dealt by 20%, and attack speed and movement speed by 30%.
+- Row 5: **Wild Rampage** (TE 1, 2 rank) | Increases your attack power by 5% and your chance to hit by 2%.
+- Row 5: **Spiritual Frenzy** (TE 1, 1 rank) | Casting Primal Shred now empowers your pet, causing its auto attacks to strike up to 4 nearby enemies for 21 seconds.
+- Row 6: **Throat Clamp** (TE 1, 1 rank) | Command your pet to dash forward a short distance towards your target, interrupting spellcasting and preventing any spell in that school from being cast for 3 seconds.
+- Row 6: **Sharpened Claws** (TE 1, 1 rank) | Your direct critical strikes now increase your and your pet's Armor penetration by 5% for 10 seconds, stacking 3 times.
+- Row 6: **Bloody Claws** (TE 1, 1 rank) | Damage dealt by your pet now reduces the enemies periodic healing received by -10% for 15 seconds, stacking 3 times.
+- Row 6: **Wild Carnage** (TE 1, 1 rank) | Seismic Spike now causes your Wildclaws to strike up to 4 additional nearby targets, dealing reduced damage with each additional enemy struck. Lasts 6 seconds.
+- Row 6: **Spinebreaker** (TE 1, 1 rank) | Your Seismic Grasp now roots enemies for 3.5 seconds.
+- Row 6: **Rush of the Hunt** (TE 1, 1 rank) | Increases the damage of Wildclaw and Rylak's Bite by 15% against bleeding enemies.
+- Row 6: **Spirit Stable** (AE 0, 1 rank) | Call forth a stabled animal spirit to replace your current one. Lasts 10 seconds.
+- Row 7: **Killer's Path** (TE 1, 1 rank) | Increases the attack power of party and raid members by 5%. Does not stack with similar effects.In addition, increases your critical strike chance by 3%.
+- Row 7: **Bestial Wrath** (TE 1, 1 rank) | When you critically strike, your pet restores 10 Focus. When your pet critically strikes, you restore 2% maximum mana and increase the target's Physical damage taken by 4% for 10 seconds.
+- Row 7: **Rylak's Blessing** (TE 1, 1 rank) | Damage dealt by Rylak's Bite now increases your pet's damage and critical strike chance by 2%, stacking 2 times, for 10 seconds.
+- Row 8: **Totem Warrior** (TE 1, 1 rank) | While you have Boon of the Bear active, Wildclaw will now strike an additional time for 40% of the damage dealt with both weapons.
+- Row 8: **Totemic Echoes** (TE 1, 1 rank) | Totemic Smash now applies Totemic Crash to an enemy for 2 seconds.At the end of the duration, if you are within 5 yds of the target, you cast Totemic Smash against them for free.
+- Row 8: **Frenzied Roar** (TE 1, 1 rank) | Roar with bestial fervor, generating 20 Rage and granting you 20% increased attack speed for 15 seconds.
+- Row 8: **Rexxar's Might** (TE 1, 1 rank) | Your physical critical strikes now cause your pet's next attack to apply a bleed, dealing 93 + 15% AP Physical damage every 2 sec for 6 seconds.
+- Row 8: **Empowered Boons** (AE 0, 1 rank) | Level 50 PassiveYour Totemic Smash now applies an Empowered Boon based on your currently active Boon.Empowered Boon of the BearIncreases the damage of Wildclaw and Rylak's Bite by 10% for 8 seconds.Empowered Boon of the TurtleReduces damage taken by -10% for 8 seconds.Empowered Boon of the HawkRegenerates 15% missing health and mana.Empowered Boon of the WolfRemoves 1 movement impairing effect.Empowered Boon of the LionRegenerates 50 Focus for your pet.
+- Row 9: **Son of Ursoc** (TE 1, 1 rank) | Your Savage Frenzy now transforms you into a feast beast, freeing you of all movement impairing effects.In addition, increases the effectiveness of Savage Frenzy by 50%, and reduces its cooldown by -60 sec.
+- Row 9: **Legacy of Rexxar** (TE 1, 1 rank) | Critical strikes with Primal Shred grant you and your pet Misha's Rage for 12 seconds, causing auto attacks to deal an additional 85 + 12.5% AP Physical damage.Critical strikes with Rylak's Bite grant you and your pet Leokk's Fury, increasing melee haste by 2% for 12 seconds, stacking 3 times.Critical strikes with Wildclaw grant you and your pet Huffer's Speed, increasing movement speed by 8% for 12 seconds, stacking 3 times.
+
+### Geomancy (40 nodes)
+
+- Row 0: **Seismic Tremor** (TE 1, 1 rank) | Send a tremor through the earth at an enemy, dealing 54 + 50% nature SP Physical damage, plus an additional 336 over 24 seconds. Damage is dealt slowly at first, and builds up over time.Damage dealt generates 1 Rage. Generates 2 stacks of Earthshaping.
+- Row 0: **Earthshaping** (AE 0, 1 rank) | Level 10 PassiveCasting Geode Barrage and your Seismic abilities now generate Earthshaping.EarthshapingEmpowers some of your abilities and increases your spell haste by 1% for 20 seconds, stacking 15 times.Additional applications do not refresh duration.
+- Row 1: **Whispers of the Earth** (TE 1, 1 rank) | Reduces the cast time of Geode Barrage and Stoneshard by 0.3 sec.
+- Row 1: **Gaze of Therazane** (TE 1, 2 rank) | Increases the range of your Geomancy spells by 10% and of Seismic spells by 8 yds.
+- Row 2: **Stoneskin** (TE 1, 2 rank) | Increases your Armor by 200% of your Intellect.
+- Row 2: **Terrasurge** (TE 1, 1 rank) | Unleash a massive globule of earth at an enemy, dealing 140 + 130% nature SP Physical damage and reducing their Armor by -50% for 10 sec.Pierces through absorption, deflection, and reflection effects.Deals 5% additional damage for each Earthshaping stack.
+- Row 2: **Cataclysm** (TE 1, 1 rank) | Generating Earthshaping or casting Stoneshard now has a 10% chance to reset the cooldown of your Seismic abilities.
+- Row 2: **Lithic Lance** (AE 0, 1 rank) | Level 20 PassiveGenerating Earthshaping now has a 20% chance to transform your next Geode Barrage within 8 seconds into Lithic Lance.Lithic LanceLaunch a beam of earthen energy at an enemy, dealing 263 + 80% nature SP Physical damage, generating 20 Rage and 2 stacks of Earthshaping.Scales with modifiers to Geode Barrage.
+- Row 3: **Primal Shaman's Mask** (TE 1, 1 rank) | Direct damage dealt now has a 10% chance to launch a Geode at the enemyGeodeHurl an enchanted stone at the target, dealing 173 + 34.9% SP + 8.5% AP Physical Damage and generating 5 Rage..
+- Row 3: **Rockslide** (TE 1, 1 rank) | Stoneshard now has a 15% chance to cast an additional time. This effect can trigger itself.
+- Row 3: **One With The Earth** (TE 1, 1 rank) | Increases the damage of Stoneshard and Geode Barrage by 20% and Stoneshard now restores 4% of your maximum mana.
+- Row 4: **Volcanic Blast** (TE 1, 2 rank) | Your Physical or Nature damaging critical strikes now deal an additional 10% of the damage dealt as Fire damage to the target and enemies nearby.
+- Row 4: **Dream** (TE 1, 1 rank) | Generating Earthshaping while at or above 10 stacks now grants Dream.DreamIncreases the critical strike chance of your Seismic abilities and Lithic Lance by 10% for 3 seconds.
+- Row 4: **Golem Form** (TE 1, 1 rank) | Transform into a being made of stone and earth for 20 seconds, increasing your haste by 20% and your Armor by 50%, and allowing you to cast damaging spells while moving.
+- Row 4: **Nature's Will** (TE 1, 1 rank) | Casting Seismic spells now extends the duration of Earthshaping by 4 sec.
+- Row 4: **Therazane's Might** (TE 1, 1 rank) | Your Terrasurge will now always critically strike against targets affected by your Seismic Tremor.
+- Row 4: **Cave Dweller** (AE 0, 1 rank) | Level 30 PassiveIncreases your armor penetration rating by 50% of your Intellect.
+- Row 5: **Cracking the Earth** (TE 1, 1 rank) | Striking at least 5 enemies with Volcanic Blast now grants you Cracking the Earth for 10 seconds.Cracking the Earth (Proc)Your Seismic Spike strikes 1 additional enemy. Stacks 5 times.
+- Row 5: **Stone Tosser** (TE 1, 1 rank) | Increases spell bonus damage scaling of Geode Barrage, Stoneshard, and Seismic Crash by 25%.
+- Row 5: **Earth Pummeling** (TE 1, 1 rank) | Damage dealt by Geode Barrage and Geodes to increase the chance for the enemy to be critically hit with spells by 3% for 12 seconds.
+- Row 5: **Trembling Rage** (TE 1, 1 rank) | Increases the amount of Rage generated by Seismic Tremor by 2.
+- Row 5: **Everlasting Rage** (TE 1, 1 rank) | Increases the duration of Seismic Tremor by 5 sec and its tick rate by -10%.
+- Row 6: **Earth's Embrace** (TE 1, 1 rank) | Encapsulate your body in amber, becoming immune to all Physical attacks and spells for 8 seconds, and healing you for 300 + 50% SP every 2 sec, but making you unable to move or act.Usable while stunned, feared, or polymorphed.
+- Row 6: **Molten Fervor** (TE 1, 1 rank) | Increases the spell haste of all party and raid members by 3%. Does not stack with similar effects.In addition, increases your spell haste by 5%.
+- Row 6: **Magma Fissure** (TE 1, 1 rank) | Stomp the ground and unleash a wave of earth and stone in a 20 yd line that knocks all enemies to the side and deals cond(gt(SPFI, SPN), 684+0+SPFI*1, 684+0+SPN*1) Fire damage, piercing absorption effects.Your next spell within 6 seconds is instant cast.
+- Row 6: **Crushing the Earth** (AE 0, 1 rank) | Level 40 PassiveYou now gain spell power equal to 50% of your armor penetration rating.
+- Row 7: **Tectonic Resonance** (TE 1, 1 rank) | Increases the amount that Earthquake slows enemies by -30%.
+- Row 7: **Tectonic Power** (TE 1, 1 rank) | Increases the duration Earthquake by 3 sec and increases its damage dealt by 25%.
+- Row 7: **Embraced By Earth!** (TE 1, 1 rank) | At the end of the duration of Earth's Embrace, you now disorient all nearby enemies for 6 seconds. Damage dealt will end the effect.
+- Row 7: **Cragforming** (TE 1, 1 rank) | Increases the duration of Earth's Embrace by 4 sec.
+- Row 7: **Cave In** (TE 1, 1 rank) | Cave in your target, interrupting spellcasting and preventing any spell in that school from being cast for 4 seconds.Successfully interrupting a target generates 1 stack of Earthshaping.
+- Row 7: **Cave Dweller** (TE 1, 2 rank) | Increases your maximum Rage by 15 and reduces spell pushback suffered from damaging attacks by 50%.
+- Row 7: **Blessing of Therazane** (TE 1, 1 rank) | Each stack of Earthshaping now increases your critical damage dealt by 5%.
+- Row 8: **Eruption** (TE 1, 1 rank) | Launch 1 Magma Geode at your target every 0 sec for 0.2 seconds, dealing cond(gt(SPFI, SPN), 58+200+SPFI*0.2, 58+200+SPN*0.2) Firestorm Damage. Duration increased by 0.2 sec for each stack of Earthshaping.
+- Row 8: **Journey To The Core** (TE 1, 1 rank) | Damage dealt by Seismic Tremor now has a 20% chance to form a crag beneath your target that explodes after 3 seconds.Can only occur once every 3 sec.Crag (Damage)Deals 173 + 35% nature SP Physical Damage to up to 5 enemies within 5 yds and increases the damage they take from your Earthquake by 20% for 5 seconds.
+- Row 8: **Geomolding** (TE 1, 1 rank) | Periodic damage dealt by Seismic Tremor now grants Geomolding for 15 seconds.Geomolding (Proc)Your next Terrasurge costs 2 additional Rage and deals 3% increased damage. Stacks 20 times.
+- Row 8: **Therazane's Blessing** (AE 0, 1 rank) | Level 50 PassiveAllows the periodic damage dealt by Seismic Tremor, Seismic Crash, and Earthquake to critically strike.
+- Row 9: **Magmatism** (TE 1, 1 rank) | Reduces the cooldown of Eruption by -15 sec and causes Magma Geodes to deal 30% more damage to enemies above 75% health.
+- Row 9: **Heavy Earth** (TE 1, 1 rank) | Your Terrasurge now consumes all stacks of Earthshaping to refresh the duration of Golem Form and grant you Heavy Earth.Heavy Earth (Proc)Each stack of Earthshaping consumed grants you 5% additional damage dealt with Stoneshard and Geode Barrage as Nature Damage while this is active. Lasts 8 seconds.While active you cannot generate Earthshaping.
+- Row 9: **Rupturer** (TE 1, 1 rank) | Damage dealt by Seismic Spike or Seismic Crash now generates a stack of Geomolding. Critically striking with Seismic Spike or Seismic Crash now generates an additional stack of Geomolding plus a stack of Earthshaping.Casting Lithic Lance now reduces the cooldown of Terrasurge by -4 sec.
+
+### Life (46 nodes)
+
+- Row 0: **Hammer of Life** (TE 1, 1 rank) | Your melee attacks and abilities now heal nearby allies and damage nearby enemies equal to 20% of the damage dealt.
+- Row 0: **Grove Training** (AE 0, 1 rank) | Level 10 PassiveAll melee damage, or healing done, now has a 10% chance to grant you Aftershock for 15 seconds.AftershockYour next Geode Barrage or Earthquake within 15 seconds is now instant cast and costs -75% less.
+- Row 1: **Seismic Wave** (TE 1, 1 rank) | Create a seismic wave of healing water around you, healing for 27 + 60% healing + 28% AP health to up to 8 allies and dealing 47 + 28% AP + 30% healing Nature damage to enemies in a 25 yd radius.
+- Row 1: **Spirit Charge** (TE 1, 1 rank) | Charge to an ally's aid, healing them for 53 + 20% healing + 20% AP and dealing 67 + 20% healing + 20% AP Nature damage to enemies within 5 yds of them.
+- Row 2: **Tranquil Mind** (TE 1, 2 rank) | Increases your damage and healing done by 4%.
+- Row 2: **Nature's Fury** (TE 1, 1 rank) | Auto attacks now have a 20% chance to deal Weapon Damage and restore 5% of your maximum mana.
+- Row 2: **Spiritual Warrior** (TE 1, 1 rank) | Increases the critical strike chance of Spirit Charge by 25%.
+- Row 2: **Grovekeeper's Presence** (AE 0, 1 rank) | Increases chance to hit with all spells and attacks by 1% for you and party and raid members.Does not stack with similar effects.
+- Row 2: **Vitality Surge** (AE 0, 1 rank) | All effective healing done now has a 25% chance to increase the haste of party and raid members by 5% for 20 seconds.Does not stack with similar effects.
+- Row 3: **Hand of a God** (TE 1, 1 rank) | Reduces the Rage cost of Hand of the Earthmother by -5.
+- Row 3: **Blessing of Neptulon** (TE 1, 1 rank) | Your Hand of the Earthmother now bounces to 1 ally near the primary target.
+- Row 3: **Power Hammer** (TE 1, 1 rank) | You now generate 10% more Rage from damage dealt, increased by 15% while a two-handed weapon is equipped.
+- Row 3: **Ancient Power** (TE 1, 2 rank) | Increases your Strength by 5% and your hit chance by 3%.
+- Row 4: **Battleweaver** (TE 1, 1 rank) | Effective healing now increases your melee haste and damage by 2% for 5 seconds, stacking 3 times.
+- Row 4: **Elemental Cascade** (TE 1, 1 rank) | Critical strikes with Wildclaw now unleash an Elemental Cascade.Elemental CascadeRestores 32 + 10% AP + 10% healing health to allies in a 12 yd radius around you.
+- Row 4: **Thorns** (TE 1, 1 rank) | Physical damage dealt or taken now has a 10% chance to unleash Thorns on an enemy.Thorns (Talent)Create thorns around an enemy, rooting them and dealing 270 Nature Damage over 6 seconds.Direct damage taken may end this effect.
+- Row 4: **Earth's Guidance** (TE 1, 1 rank) | Damage and healing done by Seismic spells now has a 20% chance to reduce the cooldown of all Seismic spells by -1 sec.
+- Row 4: **Crashing Out** (TE 1, 1 rank) | Increases the damage of Seismic Crash by 30%.
+- Row 4: **Tears of the Earthmother** (TE 1, 1 rank) | Increases the amount of targets hit by Seismic Spike by 4.
+- Row 4: **Protector's Hand** (AE 0, 1 rank) | You now emanate an aura around you, increasing the Armor of party and raid members by 390.Does not stack with similar effects.
+- Row 4: **Infused With Power** (AE 0, 1 rank) | Effectively healing allies with Hammer of Life or Hand of the Earthmother now has a 20% chance to apply Infused With Power.Infused With PowerIncreases the critical strike chance of all party and raid members by 5% for 10 seconds.Does not stack with similar effects.
+- Row 5: **Primal Power** (TE 1, 1 rank) | Casting Seismic Wave now causes your next Hand of the Earthmother within 8 seconds to cost -50% less Rage.
+- Row 5: **Ring of Life** (TE 1, 1 rank) | Allies within 40 yds receive 6% increased healing. Does not stack with similar effects.In addition, your Magic damage taken is reduced by -10%.
+- Row 5: **Sacred Grove** (TE 1, 1 rank) | Create a Sacred Grove in a 15 yd radius around you for 16 seconds, instantly healing all nearby party and raid members for 2002 + 100% AP.While active, up to 12 allies in the grove receive 25% increased healing, and regain 3% of their missing health, Rage, and mana every 2 sec.
+- Row 5: **Keeper of the Grove** (TE 1, 1 rank) | Reduces the cooldown of Bramblepatch by -30 sec.
+- Row 5: **Running on Instinct** (TE 1, 1 rank) | Passing through allies with Primal Rush now heals up to 5 of them for 166 + 25% AP + 35% SP and grants a stack of Running on Instinct.Running on Instinct (Proc)Damage of Wildclaw and Seismic spells is increased by 5% for 20 seconds, stacking 5 times.
+- Row 6: **Earthmother's Binding** (TE 1, 1 rank) | Envelop a target in the Earthmother's love, healing them for 501 + 100% healing + 100% AP. If used on an ally, 30% of their damage taken is redirected to you for 6 seconds.
+- Row 6: **Verdant Warrior** (TE 1, 2 rank) | Increases the damage of Wildclaw by 15%.
+- Row 6: **Earthmother's Warden** (TE 1, 1 rank) | Reduces the cooldown of your Seismic abilities by -2 sec.
+- Row 6: **Grove Tender** (TE 1, 1 rank) | While inside your Bramblepatch your Seismic abilities now have a -80% reduced cooldown.In addition, the duration of Bramblepatch is doubled.
+- Row 6: **Flourishing Growth** (AE 0, 1 rank) | Empower party and raid members within 40 yds with verdant strength, increasing their attack or spell power by 95 for 20 seconds.Does not stack with similar effects.
+- Row 6: **Douse** (AE 0, 1 rank) | Striking an enemy with Seismic spells now deals an additional 1 + 8% AP Frost damage and reduces all resistances by 75 and increases their Magic damage taken by -2% for 10 seconds.
+- Row 7: **Nature's Blessing** (TE 1, 1 rank) | Healing allies with Seismic Wave now heals them for an additional 20% of the healing done every 3 sec for 9 sec.
+- Row 7: **Ride the Wave** (TE 1, 1 rank) | Seismic Wave now increases the movement speed of affected allies by 30% for 4 seconds.
+- Row 7: **Infusion of Neptulon** (TE 1, 1 rank) | Critically healing an ally now increases your attack power by 15% for your next 3 attacks. Lasts 12 seconds.
+- Row 7: **Earthmother's Roar** (TE 1, 1 rank) | Your Protective Roar now also heals allies equal to 20% of their missing health.
+- Row 7: **Earthmother's Empowerment** (TE 1, 1 rank) | Hand of the Earthmother now increases the target's dodge chance by 15% for 5 seconds.
+- Row 7: **Druid Training** (TE 1, 1 rank) | Your Geode Barrage now heals all allies within 20 yds equal to 10% of the damage dealt.
+- Row 7: **Shaman Training** (TE 1, 1 rank) | Damage dealt by Wildclaw now reduces the enemy's armor by -4% for 20 seconds, stacking up to 5 times.
+- Row 8: **Primordial Earth** (TE 1, 1 rank) | Critical strikes with melee attacks now summon 1 Spirit of Life that immediately casts a lesser Spirit Charge on a nearby ally, healing them for 397 + 20% nature SP + 20% AP and dealing 404 + 20% nature SP + 20% AP Nature damage to nearby enemies.
+- Row 8: **Verdant Chase** (TE 1, 1 rank) | Your Spirit Charge and Primal Rush now cooldown faster.
+- Row 8: **Neptulon's Wrath** (AE 0, 1 rank) | Emanate an aura for 15 seconds, causing allied players to deal 35% AP additional damage as Froststorm Damage when they deal direct damage.Applies Exhaustion, preventing you from benefiting from similar effects for 1 minute.
+- Row 8: **Primal Awakening** (AE 0, 1 rank) | Enrage all nearby allies, increasing their haste by 30% for 20 seconds.After being affected by this spell, allies cannot benefit from similar effects for 5 minutes.
+- Row 9: **Ancient of War** (TE 1, 1 rank) | Funnel nature's fury into yourself, transforming into an Ancient of War for 20 seconds.While active, your Hammer of Life effectiveness is increased by 30% and nearby party members have their critical strike chance increased by 20%.While transformed, your movement speed is reduced by -30%.
+- Row 9: **Ancient of Lore** (TE 1, 1 rank) | Funnel nature's energies into yourself, transforming into an Ancient of Lore for 20 seconds.While active, your stats are increased by 20% and nearby party members have their costs reduced by -30%.While transformed, your movement speed is reduced by -30%.
+- Row 9: **Eternally Chosen** (TE 1, 1 rank) | Spirit Charge and Primal Rush now summons 2 Spirits of Life that immediately cast a lesser Spirit Charge on the nearest ally, healing them for 397 + 20% nature SP + 20% AP and dealing 404 + 20% nature SP + 20% AP Nature damage to nearby enemies.
+
+### Mountain King (40 nodes)
+
+- Row 0: **Quake** (TE 1, 1 rank) | 2 Charges, 8 sec rechargeStomp the ground, dealing Weapon Damage plus 13 + 20% nature SP + 10% AP Nature damage to enemies within 8 yds and reduces their melee and ranged haste by -20% for 10 seconds.
+- Row 0: **Mountain Giant** (AE 0, 1 rank) | Level 10 PassiveAuto attacks now have a 20% chance to grant you Aftershock.AftershockYour next Geode Barrage or Earthquake within 15 seconds is now instant cast and costs -75% less.
+- Row 1: **Unyielding Form** (TE 1, 2 rank) | Increases your parry and dodge chance by 3% and your Armor contribution from mail and plate by 25%.
+- Row 2: **Seismically Efficient** (TE 1, 1 rank) | Increases the Rage generated from Seismic Crash by 5 and Seismic Spike by 2.
+- Row 2: **Stone Soldier** (TE 1, 2 rank) | Increases the damage of your off hand weapon by 30% and your chance to hit by 3%.
+- Row 2: **King of the Mountain** (AE 0, 1 rank) | Level 20 PassiveIncreases your parry, dodge, and haste rating by 15% of your Strength.
+- Row 3: **Spiritbound** (TE 1, 1 rank) | Avoiding attacks now grants you 5 Rage and reduces the cooldown of your Seismic abilities by -1 sec.
+- Row 3: **Mountain Hammer** (TE 1, 1 rank) | Throw a hammer at an enemy dealing 49 + 35.5% nature SP + 15.5% AP Physical damage and stunning them for 5 seconds.
+- Row 3: **Blessed by the Earth** (TE 1, 1 rank) | Damage dealt by Primal Rush and Quake now grant Earth's Rage.Earth&#39;s RageIncreases movement speed by 4% and haste by 2% for 8 seconds, stacking 5 times.
+- Row 4: **Bash** (TE 1, 1 rank) | Your auto attacks have a 30% chance to deal 50% Weapon Damage and stun them for 1 seconds.
+- Row 4: **Everythings A Nail** (TE 1, 1 rank) | Increases the damage of Mountain Hammer by 50%.
+- Row 4: **Hammer Time!** (TE 1, 1 rank) | Your Mountain Hammer now strikes up to 5 enemies.
+- Row 4: **Thane's Guidance** (TE 1, 1 rank) | Auto attacks now reduce the cooldown of Mountain Hammer by -1 sec.
+- Row 4: **Stonebound** (TE 1, 1 rank) | Increases the effectiveness of Boon of the Turtle and Earth's Rage by 50%.
+- Row 4: **Stone Skin** (AE 0, 1 rank) | Level 30 PassiveYou are now immune to bleeds and your Geode Barrage and Seismic ability damage now additionally scales with your parry rating.
+- Row 5: **Tilling the Earth** (TE 1, 2 rank) | Increases the chance to trigger Bash by 3% and increases your expertise by 5.
+- Row 5: **Raging Earth** (TE 1, 1 rank) | Your Quake now creates a fissure beneath you that deals an additional 73 + 8% AP Nature damage every 2 sec for 6 seconds.
+- Row 5: **Earthen Avatar** (TE 1, 1 rank) | Become an avatar of the earth, increasing your damage dealt and reducing your damage taken by 15%, and increasing your melee haste by 20% for 20 seconds.Immune to stuns, roots, and snares for the duration.Usable while stunned.
+- Row 5: **Terrasmash** (TE 1, 1 rank) | Damage dealt by your off hand weapon now has a 30% chance to launch a Geode at the enemy.GeodeHurl an enchanted stone at the target, dealing 173 + 34.9% SP + 8.5% AP Physical Damage and generating 5 Rage.
+- Row 5: **Mountain Thane** (TE 1, 2 rank) | Increases your Stamina by 5% and causes Earth's Rage to stack 1 additional time.
+- Row 6: **Earthbreaker** (TE 1, 1 rank) | Increases your melee haste by 10%.
+- Row 6: **Primal Guardian** (TE 1, 1 rank) | When Earthen Avatar, Bearskin or Rock Barrier is removed or expires, you now gain 10% melee haste and parry chance for 15 seconds.
+- Row 6: **Earthenforged Barrier** (TE 1, 1 rank) | Increases the Armor provided by Rock Barrier by 50% and it now reduces the cost of your spells and abilities by -25% for the duration.
+- Row 6: **Rock Solid** (TE 1, 1 rank) | Increases the amount of charges of Rock Barrier by 5.
+- Row 6: **Call of the Mountain** (AE 0, 1 rank) | Level 40 PassiveReaching 5 stacks of Earth's Rage now grants Call of the Mountain.Call of the MountainIncreases your parry chance by 5% and reduces damage taken by -5%.
+- Row 7: **Quakeformer** (TE 1, 1 rank) | Casting Wildclaw and Seismic abilities now has a 25% chance to refresh a charge of Quake.
+- Row 7: **Resources of the Earth** (TE 1, 1 rank) | Critical strikes now grant allies Replenishment.ReplenishmentRestores 1% maximum mana every 5 sec to allies within 100 yds for 15 seconds.
+- Row 7: **Mountain Mover** (TE 1, 1 rank) | Avoiding an attack grants a stack of Mountain Mover for 10 seconds, stacking 5 times.Wildclaw consumes Mountain Mover stacks to cost -10% less Rage per stack.
+- Row 7: **Improved Ursoc's Bellow** (TE 1, 1 rank) | Increases the effectiveness of Ursoc's Bellow by 40%.
+- Row 7: **Fury of the Earthmother** (TE 1, 1 rank) | Damage dealt by Geode Barrage or Geodes now generates increased threat and have a 15% chance to add 1 charge to an active Rock Barrier and extend its duration by 1 sec.
+- Row 7: **Earthmother's Protection** (TE 1, 1 rank) | While your Rock Barrier is active, the Rage cost of Hand of the Earthmother is reduced by -50%.
+- Row 8: **Judgement of The Three Hammers** (TE 1, 1 rank) | While active, dealing direct damage has a 20% chance to hurl 3 hammers over 2 seconds, each dealing 100 + 32.5% SP + 27.8% AP Physical damage. Lasts for 15 seconds. Damage scales with modifiers to Mountain Hammer.
+- Row 8: **Legacy of the Bronzebeards** (TE 1, 1 rank) | Increases the effectiveness of Earthen Avatar by 100%.
+- Row 8: **Mountain Fury** (TE 1, 1 rank) | Move the earth, dealing 502 + 65% SP + 17% AP + 125% Stamina Physical damage to up to 12 enemies in a 10 yd frontal cone, pulling them toward you, repeating every 2 sec for 4 seconds.Each time an enemy is pulled toward you, you gain -2% reduced damage taken for 3 seconds, stacking 5 times.
+- Row 8: **Mountain Avatar** (AE 0, 1 rank) | Level 50 PassiveDamage dealt by Geode Barrage or Geodes now has a 5% chance to grant you Earthen Avatar for 5 sec.If Earthen Avatar is already active triggering this effect will instead extend the duration by 5 sec.Earthen AvatarBecome an avatar of the earth, increasing your damage dealt and reducing your damage taken by 15%, and increasing your melee haste by 20% for 20 seconds.Immune to stuns, roots, and snares for the duration.Usable while stunned.
+- Row 9: **Shattering** (TE 1, 1 rank) | Damage dealt by each hammer triggered by Judgment of The Three Hammers now grants you 1% increased critical strike chance and damage for 10 seconds, stacking up to 10 times.
+- Row 9: **Seismic Smash** (TE 1, 1 rank) | Raise the earth in a line in front of you with molten fury, dealing 94 + 22% AP + 50% Stamina Physical damage and granting you Thane's Rage and Aftershock.Thane&#39;s RageIncreases your attack power by 20% of your Stamina and your Stamina by 10% of your Strength for 15 seconds.AftershockYour next Geode Barrage or Earthquake within 15 seconds is now instant cast and costs -75% less.
+- Row 9: **Quaking Thane** (TE 1, 1 rank) | Striking at least 5 enemies with Quake or casting Mountain Hammer now grants you Thane's Rage.Thane&#39;s RageIncreases your attack power by 20% of your Stamina and your Stamina by 10% of your Strength for 15 seconds.
+- Row 9: **Earthmaker** (TE 1, 1 rank) | Damage dealt by Seismic abilities and Quake now reduces the cooldown of Earthen Avatar by -1 sec.Additionally, the cooldown of Seismic abilities is reduced by -3 sec.
+- Row 9: **Earth Destroyer** (TE 1, 1 rank) | Reduces the cooldown of Mountain Fury by -20 sec and increases the duration by 4 sec.
+
+## Runemaster
+
+### Runic (41 nodes)
+
+- Row 0: **Runic Brand** (TE 1, 1 rank) | Brand an enemy, dealing 10 + 26% AP Fire damage with each weapon, and marking the enemy for 8 seconds.Marked: Runic BrandYour next Runeblade on the enemy causes a Runic Explosion, dealing an additional 121 + 18.5% AP Spellfire Damage to nearby enemies.
+- Row 0: **Fists of Power** (AE 0, 1 rank) | Level 10 PassiveRuneblade now strikes your target an additional time for 50% of the damage dealt with your offhand weapon.
+- Row 1: **Eternal Magic** (TE 1, 1 rank) | Reduces the cooldown of Primordial Blast by -4 sec and it now refreshes 3 charges of Runeblade.
+- Row 1: **Leystone Springs** (TE 1, 1 rank) | Your melee auto attacks now have a 15% chance to restore 49 + 5% AP mana. While Runic Tattoos: Water is active, the mana restored is increased by 200%.
+- Row 2: **Graceful** (TE 1, 2 rank) | Increases your haste by 5%.
+- Row 2: **Fist of the Ancients** (TE 1, 1 rank) | Smash an enemy and 1 nearby enemy with your rune-engraved fists, dealing 40 + 40% AP Elemental Damage and triggering your Weapon Engraving.
+- Row 2: **Alteration** (TE 1, 2 rank) | Increases the effectiveness of your Runic Tattoos by 25%.
+- Row 2: **Primordial Strength** (AE 0, 1 rank) | Level 20 PassiveIncreases your spell damage by 25% of your attack power, your chance to hit by 3% of your Agility and your spell hit rating by 3% of your Agility.
+- Row 3: **Elemental Mastery** (TE 1, 1 rank) | Damage dealt by Runic Brand now has a 33% chance to transform your Primordial Blast into a random unique elemental version of itself.
+- Row 3: **Ancient Warrior** (TE 1, 1 rank) | Reduces the cooldown of Fist of the Ancients by -2 sec whenever you use Runeblade or Primordial Blast.
+- Row 3: **Elemental Strikes** (TE 1, 1 rank) | Increases your critical strike chance with Fire, Frost, and Nature spells by 3% and your expertise by 4.
+- Row 4: **Leyborn** (TE 1, 1 rank) | Your Marked: Runic Brand now stacks 3 times.
+- Row 4: **Uncovered Engravings** (TE 1, 1 rank) | Using Fist of the Ancients now increases your chance to trigger Weapon Engravings by 20% for 5 sec.
+- Row 4: **Tempo** (TE 1, 1 rank) | Increases the damage of Runeblade by 20%.
+- Row 4: **Elemental Carvings** (AE 0, 1 rank) | Level 30 PassiveFist of the Ancients now unleashes an elemental carving at random.Fire Carving: Increases your Armor penetration by 15% for 6 seconds.Water Carving: Restores 306 mana over 6 seconds.Earth Carving: Restores 3% missing health every 1 sec for 6 seconds.Air Carving: Increases your melee haste by 10% for 6 seconds.
+- Row 5: **Mark of Strength** (TE 1, 1 rank) | Increases the spell power scaling of Primordial Blast by 30%.
+- Row 5: **Brandmaster** (TE 1, 1 rank) | Increases your critical strike chance with Runic Brand's explosion effect by 10%.
+- Row 5: **Guarding Rune** (TE 1, 1 rank) | Inscribe a defensive rune beneath you in a 10 yd radius, summoning a barrier that causes allies within the radius to take -40% reduced Magic damage. Lasts 15 seconds.
+- Row 5: **Volcanic Etching** (TE 1, 1 rank) | Increases the chance to trigger Weapon Engraving: Fire and Weapon Engraving: Earth by 5%.
+- Row 5: **Flowing Rivers** (TE 1, 1 rank) | Increases the chance to trigger Replenishment with Weapon Engravement: Water by 10% and the mana restored by Runic Tattoos: Water by 25%.
+- Row 5: **Wind Surge** (TE 1, 1 rank) | Your Weapon Engraving: Air will now strike 2 additional enemies near its target.
+- Row 6: **Devastating Flames** (TE 1, 1 rank) | Increases the damage dealt of Weapon Engraving: Fire by 20%.
+- Row 6: **Granite Shield** (TE 1, 1 rank) | While Runic Tattoos: Earth is active, you now periodically gain Granite Shield every 20 sec.Granite ShieldAbsorbs 780 + 10% AP + 30% SP damage for 20 seconds.
+- Row 6: **Leyline Disturbance** (TE 1, 1 rank) | Increases melee and ranged haste of party and raid members within 100 yds by 10%.Does not stack with similar effects.Additionally, the duration of stun effects on you is reduced by -20%.
+- Row 6: **Protective Warding** (TE 1, 1 rank) | Critical damage taken reduces the cooldown of Rune of Guarding by 10%.
+- Row 6: **Runebound Surge** (TE 1, 1 rank) | Casting Runeshroud now increases your movement speed by 75% for 3 seconds.
+- Row 6: **Earth, Wind, and Fire** (TE 1, 1 rank) | Striking at least 5 enemies with Runic Explosion now unleashes Wild Steam.Wild Steam (Transform)Stomp the ground in a 5 yd radius around you and release steam, dealing 128 + 25% AP Frostfire Damage to nearby enemies.
+- Row 6: **Forbidden Engraving** (TE 1, 1 rank) | Increases the effectiveness of your Weapon Engravings by 20%.
+- Row 6: **Power Overwhelming** (AE 0, 1 rank) | Level 40 PassiveYour Runeblade and Primordial Blast now have a 35% chance to grant you Power Overwhelming, resetting the cooldown of Runic Brand.
+- Row 7: **Explosive Runes** (TE 1, 1 rank) | Your Weapon Engraving: Fire now detonates after 2 sec and its critical damage is increased by 10%.
+- Row 7: **Magic Etchings** (TE 1, 1 rank) | Dealing damage with Primordial Blast now reduces the affected target's armor by -4% for 12 seconds, stacking 5 times.
+- Row 7: **Symbols of Power** (TE 1, 2 rank) | Increases the damage of Fist of the Ancients while you have Weapon Engraving: Fire active by 15%.
+- Row 7: **Sky and Stone** (TE 1, 1 rank) | Damage dealt by Weapon Engraving: Air and Weapon Engraving: Earth now have a 10% chance to increase the melee attack speed of your next 10 attacks within 10 seconds by 10%.
+- Row 8: **Echoes of Eternity** (TE 1, 1 rank) | Your Zenith now has 2 charges.Zenith2 Charges, 45 sec rechargeFor 6 seconds, your runic tattoos flare up, increasing your chance to trigger your Weapon Engravings by 100%.
+- Row 8: **Runic Tempest** (TE 1, 1 rank) | Harness the power of your runic tattoos, resetting the cooldown of Fist of the Ancients and allowing the use of abilities that require Runeshroud and making them able to be cast while moving for 8 seconds.
+- Row 8: **Fists of Power** (TE 1, 1 rank) | Engrave your fists for 15 seconds, causing auto attacks to grant Earthen Fists for 10 seconds, increasing melee haste by 3% and the chance to trigger Weapon Engraving: Earth by 10%, stacking 5 times.
+- Row 8: **Branded** (AE 0, 1 rank) | Level 50 PassiveGaining Power Overwhelming now also guarantees your next Runic Brand to critically strike.
+- Row 9: **Runelord** (TE 1, 1 rank) | After activating Zenith, deal 900 + 33% AP Elemental Damage to your target and increase the damage dealt by your Runic Brand and Weapon Engravings by 30% for 8 seconds.
+- Row 9: **Ley Power** (TE 1, 1 rank) | Divert ley energy into your weapons, drawing power from enemies within 20 yds of you. For each enemy in the radius, your damage dealt deals an additional 10% of the damage as Arcane damage, up to 100%, for 15 seconds.While active, melee attacks and abilities grant you Harnessed Leylines.Harnessed Leylines (Proc)Increases the damage of your Runeblade and Elemental Burst by 3%, stacking up to 10 times.Additional applications do not refresh the effect.
+- Row 9: **Steam Conjurer** (TE 1, 1 rank) | Damage dealt by Weapon Engraving: Earth now has a 5% chance to cast Wild Steam. Can only occur once every 3 sec.Wild Steam (Transform)Stomp the ground in a 5 yd radius around you and release steam, dealing 128 + 25% AP Frostfire Damage to nearby enemies.
+- Row 9: **Stone Savant** (TE 1, 1 rank) | While Earthen Fists is active, critical strikes with Weapon Engraving: Earth now causes you to strike twice with your next auto attack.
+
+### Arcane (41 nodes)
+
+- Row 0: **Glyphic Ruin** (AE 0, 1 rank) | Unleash your active Glyph effect on an enemy and deal 82 + 100% SP Elemental Damage.
+- Row 0: **Frost Glyph** (AE 0, 1 rank) | Level 10 PassiveUsing Elemental Burst and Primordial Blast now grants you Frost Glyph. Frost GlyphUnleash: Deals 437 Frost Damage and slows movement speed by -30% for 4 seconds.
+- Row 1: **Flame Glyph** (TE 1, 1 rank) | Using Elemental Burst or Primordial Blast while Frost Glyph is active now grants you a Flame Glyph.Flame GlyphUnleash: Deals 250 + 65% fire SP Fire Damage and an additional 750 + 30% SP Fire Damage over 6 seconds.
+- Row 2: **Focusing Crystals** (TE 1, 2 rank) | Increases your Magic Damage dealt by 3% and allows 30% of your mana regeneration to continue while in combat.
+- Row 2: **Arcane Glyph** (TE 1, 1 rank) | Using Elemental Burst or Primordial Blast while Flame Glyph is active now grants you Arcane Glyph.Arcane GlyphUnleash: Deals 276 + 18% arcane SP Arcane Damage to up to 0 enemies near the primary target.
+- Row 2: **Expert Elementalist** (TE 1, 1 rank) | Reduces the cast time of Elemental Burst and Glyphic Ruin by 0.5 sec and increases your chance to hit by 3%.
+- Row 2: **Ley Magician** (AE 0, 1 rank) | Level 20 PassiveIncreases your spell damage by 30% of Spirit and 10% of your Intellect, and spell hit rating by 6% of your Spirit.
+- Row 3: **Frigid Blast** (TE 1, 1 rank) | Blast an enemy with frigid runic magic, dealing cond(gt(SPFR, SPA), 40+0+SPFR*0.65, 40+0+SPA*0.65) Frost damage and applying Frigid Fusion. Frigid Fusion (Aura)Accumulate 20% of your damage dealt to the target over 6 seconds.After the duration, deal it as Frost Damage to the target.
+- Row 3: **Glyphic Overload** (TE 1, 1 rank) | Instantly generate Frost Glyph, Flame Glyph, and Arcane Glyph on yourself and overload, granting all active Glyphs an additional effect the next time you unleash them on an enemy. Lasts 15 seconds.Usable while stealthed.Overloaded Arcane GlyphDeals 100% increased damage.Overloaded Flame GlyphFlame Glyph now affects 2 additional enemies, and deals an additional 475 + 200% fire SP Fire Damage over 5 seconds.Overloaded Frost GlyphFreeze an enemy in place for 3 seconds. At the end of this duration, their movement speed is reduced by -50% for 5 seconds. Does not break on damage taken.
+- Row 3: **Concentrated Magic** (TE 1, 2 rank) | Increases your Spirit by 5% and reduces spell pushback suffered from damaging attacks by 35%.
+- Row 4: **Frigid Elements** (TE 1, 1 rank) | Increases the spell power scaling of Frigid Blast by 50%, but the cast time is increased by 1 sec.Additionally, Frigid Fusion now accumulates 10% more damage on the target.
+- Row 4: **Cold Elements** (TE 1, 1 rank) | Damage dealt with Elemental Burst and Primordial Blast now has a 20% chance to reset the cooldown of Frigid Blast and make its next use within 10 seconds instant cast.
+- Row 4: **Primordial Power** (TE 1, 1 rank) | Increases the duration of Frigid Fusion by 2 sec.
+- Row 4: **Wizardry** (TE 1, 1 rank) | Increases your Intellect by 10% and increases the mana gained for each point of Intellect by 10%.
+- Row 4: **Runeslinger** (TE 1, 1 rank) | Direct damage dealt has a 5% chance to increase your spell haste by 20% for 5 seconds.
+- Row 4: **Primordial Salvos** (TE 1, 1 rank) | Unleashing a Glyph now deals an additional 115 + 6% SP damage of the same magic school to all enemies within 8 yds of the target.
+- Row 4: **Primordial Pulse** (TE 1, 1 rank) | Inscribe an area with runes for 2 seconds, dealing 23 + 30% SP Elemental Damage every 0 sec to up to 5 enemies inside.
+- Row 4: **Unleashed Tattoos** (AE 0, 1 rank) | Level 30 PassiveWhile Runic Tattoos: Fire is active, your Glyphic Ruin now has 30% increased critical damage.While Runic Tattoos: Water is active, the cost of your Glyphic Ruin is now reduced by -50%.
+- Row 5: **Advanced Magi** (TE 1, 1 rank) | Increases the spell power scaling of Elemental Burst by 25%.
+- Row 5: **Silencing Rune** (TE 1, 1 rank) | Inscribe a rune in a 5 yd radius at target location that activates after 1 sec, silencing all enemies within for 6 seconds.
+- Row 5: **Thaumaturgy** (TE 1, 1 rank) | Blast an enemy for 67 + 41% arcane SP + 10% AP Arcane damage and unleash your active Glyph effect.
+- Row 5: **Terraglyphs** (TE 1, 1 rank) | Increases the chance to trigger Weapon Engraving: Earth by 4%.
+- Row 5: **Leyline Magician** (TE 1, 1 rank) | Casting Primordial Blast now reduces the cooldown of Primordial Pulse by -5 sec.
+- Row 6: **Glyphic Destruction** (TE 1, 1 rank) | Increases the damage of Glyphic Ruin by 100% against Frozen targets.
+- Row 6: **Arcane Student** (TE 1, 1 rank) | While Glyphic Overload is active, your Glyphic Ruin is guaranteed to critically strike.
+- Row 6: **Phase Rush** (TE 1, 1 rank) | Casting Thaumaturgy now grants you 25% increased movement speed for 5 seconds.
+- Row 6: **Runes of Quickness** (TE 1, 1 rank) | Increases the spell haste of all party and raid members by 3%. Does not stack with similar effects.In addition, the range of your Glyphic spells is increased by 6 yds.
+- Row 6: **Bursting Pulses** (TE 1, 1 rank) | Each weapon enchanted by Weapon Engraving: Earth now reduces the cooldown of Primordial Pulse by -4 sec and increases it's damage by 15%.
+- Row 6: **Unleashed Power** (AE 0, 1 rank) | Level 40 PassiveIncreases the spell power scaling of your Unleashed Glyphs by 10%.In addition, dealing damage with Elemental Burst now increases the target's spell damage taken by 10% for 12 seconds.
+- Row 7: **Glyph Seeker** (TE 1, 1 rank) | Increases the damage of Primordial Blast and Thaumaturgy by 20%.
+- Row 7: **Cryomagi** (TE 1, 1 rank) | Increases the range of Cryobrand by 10 yds.
+- Row 7: **Ley Walker** (TE 1, 1 rank) | Casting or reactivating Warpdagger now removes all root and snare effects from you.
+- Row 7: **Harnessing Leylines** (TE 1, 1 rank) | You now gain a stack of Harnessed Leylines every 1 sec for until cancelled. After the duration, the stacks reset.Harnessed Leylines (Proc)Increases the damage of your Runeblade and Elemental Burst by 3%, stacking up to 10 times.Additional applications do not refresh the effect.
+- Row 7: **Burned Etching** (TE 1, 1 rank) | While Weapon Engraving: Fire is active, your Elemental Burst now deals 10% increased damage as Fire damage and your chance to trigger Weapon Engraving: Fire is increased by 5%.
+- Row 8: **Eye of the Beholder** (TE 1, 1 rank) | Increases your spell critical strike chance by 25% for 15 seconds.While active, the damage of your Glyphic Ruin and Primordial Blast is increased by 25%.
+- Row 8: **Glyph God** (TE 1, 1 rank) | Reduces the cooldown of Glyphic Overload by -15 sec.
+- Row 8: **Scroll of Magic** (TE 1, 1 rank) | Unleashing a Glyph increases the damage of your Unleashed Glyphs by 5% for 15 seconds, stacking 3 times.
+- Row 8: **Runic Obliteration** (AE 0, 1 rank) | Level 50 PassiveUsing Elemental Burst now has a 20% chance to transform your next Primordial Blast into Runic Obliteration for 10 seconds.Runic Obliteration (Spell)Hurl powerful elemental missiles at an enemy, dealing 250 + 44% SP Elemental Damage every 0 sec for 1 seconds. Each missile grants you a Glyph.Scales with modifiers to Primordial Blast.
+- Row 9: **Kirin Tor Agent** (TE 1, 1 rank) | Casting Eye of the Beholder now rapidly reduces the coldown of your Rune spells and Phase Out for the duration.
+- Row 9: **Manuscription** (TE 1, 1 rank) | Send manuscriptions to envelop an enemy and enemies around them, dealing 1620 + 190% SP Arcane damage over 5 seconds.When you cast this ability, you are granted Transcribing for 5 seconds.TranscribingWhile active, your next Thaumaturgy or Glyphic Ruin will now grant you a Chapter of the same school as your active Attunement, causing your next 10 direct spell casts to deal additional school damage to nearby enemies, reduced by 20% for each target hit past the initial.
+- Row 9: **Glyph Master** (TE 1, 1 rank) | Scroll of Magic now also increases the critical damage and critical strike chance of Unleashed Glyphs by 5% for 15 seconds, stacking 3 times.
+
+### Riftblade (41 nodes)
+
+- Row 0: **Smolder** (TE 1, 1 rank) | Ignite your blade and strike an enemy, dealing 140% Weapon Damage plus 19 Fire Damage.
+- Row 0: **Riftblade** (AE 0, 1 rank) | Level 10 PassiveYour Primordial Blast and Smolder now refresh a charge of Runeblade.In addition, every 3rd Runeblade now restores 388 + 30% AP mana, increased by 20% while Runic Tattoos: Water is active.
+- Row 1: **Runic Omen** (TE 1, 1 rank) | Every 3rd cast of Runeblade now deals 30% increased damage.
+- Row 1: **Unbound Energy** (TE 1, 2 rank) | Increases your critical strike chance by 3% and your expertise by 4.
+- Row 2: **Hurricane** (TE 1, 1 rank) | Strike an enemy 5 times over 2 seconds, each strike dealing 125% Weapon Damage as Nature Damage, scaling with level.While striking your target, your chance to dodge is increased by 100%, but you cannot use any spells or abilities.
+- Row 2: **Melting Runes** (TE 1, 1 rank) | Weapon Engraving: Fire now deals 25% increased damage against Frozen enemies.
+- Row 2: **Cinderstorm Runes** (TE 1, 1 rank) | Hurricane and Smolder now deal 50% more damage against enemies below 20% maximum health.
+- Row 2: **Hoarfrost** (TE 1, 1 rank) | Slash in a frozen fury in front of you, dealing 7 + 33% AP Frost Damage to up to 3 nearby enemies, plus an additional 7 + 33% AP every 3 sec for 21 seconds.Enemies hit by the initial strike are frozen in place for 3 seconds.
+- Row 2: **Elemental Assassin** (AE 0, 1 rank) | Level 20 PassiveIncreases your spell damage by 20% of your Agility, your spell critical strike chance by 10% of your Agility, and your hit rating by 5% of your Agility.
+- Row 3: **Spellblade** (TE 1, 2 rank) | Increases your Agility and Intellect by 5%.
+- Row 3: **Frozen Earth** (TE 1, 1 rank) | Increases the duration of Ice Rune and the stun effect from Palm Sigil: Earth by 1 sec.
+- Row 3: **Runic Invocation** (TE 1, 1 rank) | Increases the critical strike chance of Hoarfrost by 10% and allows its periodic damage to critically strike.
+- Row 4: **Wind Runes** (TE 1, 1 rank) | Increases the duration of Hurricane by 1 sec, allowing it to strike 2 additional times.
+- Row 4: **Water Runes** (TE 1, 1 rank) | Each strike from Hurricane is now guaranteed to apply Weapon Engraving: Water or Weapon Engraving: Ice to your target while they are active.
+- Row 4: **Residual Power** (TE 1, 1 rank) | Increases the damage replicated by Weapon Engraving: Air by 15%.
+- Row 4: **Rift Clones** (TE 1, 1 rank) | Casting Phase Out now summons 10 clones of yourself that run in a random direction for 5 seconds.Rift Clones periodically explode dealing 1 + 19.5% AP Arcane damage to all enemies within 5 yds of them.
+- Row 4: **Phaser** (TE 1, 1 rank) | Reduces the cooldown of Phase Out by -30 sec and removes its mana cost.
+- Row 4: **Frost Spectre** (TE 1, 2 rank) | Increases the critical strike chance and critical damage of Smolder and Primordial Blast against Frozen targets by 25%.
+- Row 4: **Leyfrost** (TE 1, 1 rank) | Critical strikes with Hoarfrost now cause your next spell within 15 seconds to cast as if the target were Frozen.
+- Row 4: **Windsage** (AE 0, 1 rank) | Level 30 PassiveSmolder now envelops you in wind, causing your next 3 Runeblades to strike an additional time equal to 30% of the damage dealt as Nature damage.
+- Row 5: **Echo Rune** (TE 1, 1 rank) | Mark your current location with an echo rune for 20 seconds.At the end of the duration or upon reactivation, warp back to the marked location and heal for 880 + 150% AP health.
+- Row 5: **Primordial Fury** (TE 1, 1 rank) | Your runic tattoos flare up for 15 seconds, causing Runeblade to strike up to 5 additional enemies.For the duration, your Runic Tattoos have 100% increased effectiveness.
+- Row 5: **Elements, Heed My Call!** (TE 1, 1 rank) | Increases the critical damage of Smolder, Hurricane, and Hoarfrost by 15%.
+- Row 6: **Battle Engravings** (TE 1, 1 rank) | Removes the cast time from Ley Lock, but reduces its duration by 0.5 sec.
+- Row 6: **Windbreaker** (TE 1, 1 rank) | While Weapon Engraving: Air is active, the damage of each strike of your Hurricane is increased by 30%.
+- Row 6: **Magebreaker** (TE 1, 1 rank) | Dealing damage with Hurricane now also reduces the targets Magic damage dealt by -15% for 8 seconds and dispels 1 harmful magic effect from you with each strike.
+- Row 6: **Elemental Acuity** (TE 1, 1 rank) | Increases all Fire, Frost, and Nature damage dealt by 10%.
+- Row 6: **Primordial Echoes** (TE 1, 1 rank) | Your critical strikes dealt with Primordial Blast now have a 40% chance to strike an additional time.
+- Row 6: **Earthen Codex** (TE 1, 1 rank) | When you active a Palm Sigil, you are now guaranteed to critically strike for 20% increased critical damage for 10 seconds or your next 3 attacks.
+- Row 6: **Glyph of Disappearance** (AE 0, 1 rank) | Level 40 PassiveYour Phase Out can now be used 1 additional time within 15 seconds before incurring a cooldown.
+- Row 7: **Swift Etching** (TE 1, 1 rank) | After Hurricane ends, your melee attack speed is increased by 15% and critical strike chance by 10% for 10 seconds.
+- Row 7: **Runic Power** (TE 1, 1 rank) | Increases the all damage dealt by party and raid members by 3%. Does not stack with similar effects.In addition, critical strikes now increase the chance for the target to be critically struck by your spells by 3% for 10 seconds.
+- Row 7: **Frostburn** (TE 1, 1 rank) | Removes the cast time of Glacial Rune and Permafrost Rune.
+- Row 7: **Freezing Codex** (TE 1, 1 rank) | Reduces the cooldown of Ice Rune by -20 sec and increases the mana cost by 50%, but reduces its range by -10 yds.
+- Row 8: **Fracture** (TE 1, 1 rank) | Strike an enemy with frozen fury, dealing 921 + 100% AP Frost damage and burning 25 + 35% AP of the target's mana.Damage dealt is guaranteed to critically strike against frozen targets.
+- Row 8: **Spellfire Runes** (TE 1, 1 rank) | Your Runeblade now has a 20% chance, and Warpdagger a 100% chance, to reset the cooldown of Smolder, and increase the damage of your next Smolder by 20%.
+- Row 8: **Elemental Inscription** (TE 1, 1 rank) | Casting Smolder now reduces the cooldown of Primordial Fury by -10 sec and Zenith by -5 sec.
+- Row 8: **Surging Slash** (AE 0, 1 rank) | Level 50 PassiveEvery 3rd cast of Runeblade now transforms your next Runeblade within 15 seconds into Surging Slash.Surging Slash (Transform)Strike an enemy with a rune-infused weapon, dealing 110% Weapon Damage plus 60 Elemental Damage, bouncing to up to 4 additional enemies, dealing less damage with each bounce.
+- Row 9: **Waveforged** (TE 1, 1 rank) | After Hurricane ends, you may now use abilties that require Runeshroud for 4 seconds.
+- Row 9: **Genesis** (TE 1, 1 rank) | Apply a runic brand to an enemy for 8 seconds, accumulating 50% of your damage dealt, and unleashing after 8 seconds as Elemental Damage.When this deals damage, it triggers your Weapon Engraving.
+- Row 9: **Turbulence** (TE 1, 1 rank) | Send out a gust of wind from your weapon that strikes nearby enemies in a 6 yd radius for 200% Weapon Damage as Nature damage every 1 sec for 3 seconds.While active, you leave behind a Turbulent Spiral every 1 sec for 6 seconds.Turbulent Spiral (Damage)Enemies in the area take an additional 97 + 13.5% AP Nature Damage every 1 sec.

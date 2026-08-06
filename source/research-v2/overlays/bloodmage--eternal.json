@@ -1,0 +1,952 @@
+{
+  "baseline": "bloodmage--eternal.json",
+  "set": {
+    "identity": {
+      "fantasy": "An immortal night-beast tank that survives through avoidance, thick hide, infected wounds, marks, howls, and relentless life theft.",
+      "primary_family": "strategists",
+      "also_fits": [
+        "sequencers"
+      ],
+      "playstyle_tags": [
+        "avoidance-sustain-tank",
+        "leech-tank",
+        "form-tank"
+      ],
+      "one_line": "A durable beast tank built on high avoidance, thick pelt, marks, howls, infections, and constant self-recovery. It turns being in the fight into healing and mitigation, and recent builds consistently label it a dungeon and raid tank.",
+      "claim_ids": [
+        "observed:bloodmage/eternal:weapon-loop",
+        "inference:bloodmage/eternal:contact-dependence",
+        "observed:bloodmage/eternal:leveling",
+        "talent:bloodmage/eternal:20-53-4-0",
+        "talent:bloodmage/eternal:20-53-3-1",
+        "talent:bloodmage/eternal:20-53-5-1",
+        "observed:bloodmage/eternal:representation",
+        "talent:bloodmage/eternal:20-53-7-7"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "Use Rotclaw as the stable attack, maintain Eternal Curse and the chosen mark, generate frequent weapon and bat procs through fast attacks, and layer Blood Howl, Blood Moon, infections, avoidance, and leech so incoming pressure continuously feeds recovery.",
+      "single_target": "Fast dual-wield attacks are currently recommended to drive leech, bat, and enchant procs while Rotclaw and marks maintain threat.",
+      "aoe": "Blood Plague, Festering Maw, howls, and infection effects spread threat and recovery, though the strongest recent weapon discussion focuses on single-target proc frequency.",
+      "movement_and_target_switching": "Uncanny Movement and Speed, howls, and form mobility help connect pulls; personal survival states transfer more cleanly than target-specific marks.",
+      "defense_and_control": "Heightened Reflexes, Thick Pelt, Eternal Resolve, Bloodguard, Rejuvenating Shadows, and constant leech form a layered avoidance-and-recovery defense.",
+      "group_utility": "Howls, marks, and durable threat control support the group, but the specialization's primary contribution is staying alive without monopolizing healer attention.",
+      "failure_modes": [
+        {
+          "text": "Losing attack uptime cuts both damage and proc-driven healing, so avoidance alone cannot replace active contact.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence"
+          ]
+        },
+        {
+          "text": "Movement or a target swap can interrupt the intended payoff: uncanny movement and speed, howls, and form mobility help connect pulls; personal survival states transfer more cleanly than target-specific marks.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1"
+          ]
+        },
+        {
+          "text": "Spending recovery or control too early leaves less protection for the next pressure event: heightened reflexes, thick pelt, eternal resolve, bloodguard, rejuvenating shadows, and constant leech form a layered avoidance-and-recovery defense.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "observed:bloodmage/eternal:weapon-loop",
+        "inference:bloodmage/eternal:contact-dependence",
+        "observed:bloodmage/eternal:leveling",
+        "talent:bloodmage/eternal:20-53-4-0",
+        "talent:bloodmage/eternal:20-53-3-1",
+        "talent:bloodmage/eternal:20-53-5-1",
+        "observed:bloodmage/eternal:representation",
+        "talent:bloodmage/eternal:20-53-7-7"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "A durable form tank that starts with Rotclaw, avoidance, and thick hide, then gains howls and blood coating.",
+        "strengths": [
+          "Early mitigation identity",
+          "No fragile caster setup"
+        ],
+        "cautions": [
+          "Recent players still call pre-20 Bloodmage slow",
+          "Damage and healing depend on staying engaged"
+        ],
+        "claim_ids": [
+          "observed:bloodmage/eternal:leveling",
+          "talent:bloodmage/eternal:20-53-4-0",
+          "talent:bloodmage/eternal:20-53-3-1",
+          "talent:bloodmage/eternal:20-53-5-1",
+          "observed:bloodmage/eternal:weapon-loop",
+          "inference:bloodmage/eternal:contact-dependence",
+          "observed:bloodmage/eternal:representation",
+          "talent:bloodmage/eternal:20-53-7-7"
+        ]
+      },
+      "level_50_60": {
+        "feel": "A mature proc-and-leech tank with marks, infection, howls, and late claw or bat interactions layered over a simple Rotclaw core.",
+        "strengths": [
+          "High current Mythic representation",
+          "Strong self-healing reports",
+          "Multiple defensive layers"
+        ],
+        "cautions": [
+          "One-button descriptions understate gearing and survival choices",
+          "Weapon advice is current but anecdotal"
+        ],
+        "claim_ids": [
+          "observed:bloodmage/eternal:weapon-loop",
+          "observed:bloodmage/eternal:representation",
+          "talent:bloodmage/eternal:20-53-7-7",
+          "inference:bloodmage/eternal:contact-dependence",
+          "observed:bloodmage/eternal:leveling",
+          "talent:bloodmage/eternal:20-53-4-0",
+          "talent:bloodmage/eternal:20-53-3-1",
+          "talent:bloodmage/eternal:20-53-5-1"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "By levels 30-49, use rotclaw as the stable attack, maintain eternal curse and the chosen mark, generate frequent weapon and bat procs through fast attacks, and layer blood howl, blood moon, infections, avoidance, and leech so incoming pressure continuously feeds recovery.",
+        "strengths": [
+          "Core engine is online",
+          "More complete target coverage"
+        ],
+        "cautions": [
+          "Late talents still change the ceiling",
+          "Uncanny Movement and Speed, howls, and form mobility help connect pulls; personal survival states transfer more cleanly than target-specific marks"
+        ],
+        "claim_ids": [
+          "observed:bloodmage/eternal:weapon-loop",
+          "inference:bloodmage/eternal:contact-dependence",
+          "observed:bloodmage/eternal:leveling",
+          "talent:bloodmage/eternal:20-53-4-0",
+          "talent:bloodmage/eternal:20-53-3-1",
+          "talent:bloodmage/eternal:20-53-5-1",
+          "observed:bloodmage/eternal:representation",
+          "talent:bloodmage/eternal:20-53-7-7"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, fast dual-wield attacks are currently recommended to drive leech, bat, and enchant procs while rotclaw and marks maintain threat.",
+        "strengths": [
+          "Durable targets preserve the full loop",
+          "Cooldowns can be planned"
+        ],
+        "cautions": [
+          "Movement can break setup",
+          "Repeated errors remain visible"
+        ],
+        "claim_ids": [
+          "observed:bloodmage/eternal:weapon-loop",
+          "inference:bloodmage/eternal:contact-dependence",
+          "observed:bloodmage/eternal:leveling",
+          "talent:bloodmage/eternal:20-53-4-0",
+          "talent:bloodmage/eternal:20-53-3-1",
+          "talent:bloodmage/eternal:20-53-5-1",
+          "observed:bloodmage/eternal:representation",
+          "talent:bloodmage/eternal:20-53-7-7"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, blood plague, festering maw, howls, and infection effects spread threat and recovery, though the strongest recent weapon discussion focuses on single-target proc frequency.",
+        "strengths": [
+          "Pack tools express the spec clearly",
+          "Group utility has regular value"
+        ],
+        "cautions": [
+          "Short-lived targets can erase setup",
+          "Tank movement changes the plan"
+        ],
+        "claim_ids": [
+          "observed:bloodmage/eternal:weapon-loop",
+          "inference:bloodmage/eternal:contact-dependence",
+          "observed:bloodmage/eternal:leveling",
+          "talent:bloodmage/eternal:20-53-4-0",
+          "talent:bloodmage/eternal:20-53-3-1",
+          "talent:bloodmage/eternal:20-53-5-1",
+          "observed:bloodmage/eternal:representation",
+          "talent:bloodmage/eternal:20-53-7-7"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, uncanny movement and speed, howls, and form mobility help connect pulls; personal survival states transfer more cleanly than target-specific marks. Heightened Reflexes, Thick Pelt, Eternal Resolve, Bloodguard, Rejuvenating Shadows, and constant leech form a layered avoidance-and-recovery defense.",
+        "strengths": [
+          "Control and utility create options",
+          "Target swaps can reward flexibility"
+        ],
+        "cautions": [
+          "Disruption makes the loop less predictable",
+          "Defensive timing is punishable"
+        ],
+        "claim_ids": [
+          "observed:bloodmage/eternal:weapon-loop",
+          "inference:bloodmage/eternal:contact-dependence",
+          "observed:bloodmage/eternal:leveling",
+          "talent:bloodmage/eternal:20-53-4-0",
+          "talent:bloodmage/eternal:20-53-3-1",
+          "talent:bloodmage/eternal:20-53-5-1",
+          "observed:bloodmage/eternal:representation",
+          "talent:bloodmage/eternal:20-53-7-7"
+        ]
+      }
+    },
+    "complexity": {
+      "core_actions": {
+        "dungeon_aoe": {
+          "value": "low-moderate",
+          "reason": "Rotclaw anchors the loop, with howls, marks, infection tools, and defensives added by pull conditions.",
+          "claim_ids": [
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-1-3",
+            "talent:bloodmage/eternal:20-53-7-7",
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Use Rotclaw as the stable attack, maintain Eternal Curse and the chosen mark, generate frequent weapon and bat procs through fast attacks, and layer Blood Howl, Blood Moon, infections, avoidance, and leech so incoming pressure continuously feeds recovery. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Use Rotclaw as the stable attack, maintain Eternal Curse and the chosen mark, generate frequent weapon and bat procs through fast attacks, and layer Blood Howl, Blood Moon, infections, avoidance, and leech so incoming pressure continuously feeds recovery. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        },
+        "level_50_60": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Use Rotclaw as the stable attack, maintain Eternal Curse and the chosen mark, generate frequent weapon and bat procs through fast attacks, and layer Blood Howl, Blood Moon, infections, avoidance, and leech so incoming pressure continuously feeds recovery. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        },
+        "boss": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Use Rotclaw as the stable attack, maintain Eternal Curse and the chosen mark, generate frequent weapon and bat procs through fast attacks, and layer Blood Howl, Blood Moon, infections, avoidance, and leech so incoming pressure continuously feeds recovery. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Use Rotclaw as the stable attack, maintain Eternal Curse and the chosen mark, generate frequent weapon and bat procs through fast attacks, and layer Blood Howl, Blood Moon, infections, avoidance, and leech so incoming pressure continuously feeds recovery. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "dungeon_aoe": {
+          "value": "moderate-high",
+          "reason": "The tank chooses marks, howls, and defensive layers according to incoming physical pressure and healing flow.",
+          "claim_ids": [
+            "talent:bloodmage/eternal:20-53-7-6a",
+            "talent:bloodmage/eternal:20-53-7-6b",
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Target count, incoming pressure, and movement change the next action; heightened reflexes, thick pelt, eternal resolve, bloodguard, rejuvenating shadows, and constant leech form a layered avoidance-and-recovery defense. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Target count, incoming pressure, and movement change the next action; heightened reflexes, thick pelt, eternal resolve, bloodguard, rejuvenating shadows, and constant leech form a layered avoidance-and-recovery defense. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "Target count, incoming pressure, and movement change the next action; heightened reflexes, thick pelt, eternal resolve, bloodguard, rejuvenating shadows, and constant leech form a layered avoidance-and-recovery defense. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Target count, incoming pressure, and movement change the next action; heightened reflexes, thick pelt, eternal resolve, bloodguard, rejuvenating shadows, and constant leech form a layered avoidance-and-recovery defense. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Target count, incoming pressure, and movement change the next action; heightened reflexes, thick pelt, eternal resolve, bloodguard, rejuvenating shadows, and constant leech form a layered avoidance-and-recovery defense. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        }
+      },
+      "failure_cost": {
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Losing contact or overlapping recovery poorly can collapse the leech engine during a large pull.",
+          "claim_ids": [
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:weapon-loop",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "Losing attack uptime cuts both damage and proc-driven healing, so avoidance alone cannot replace active contact. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Losing attack uptime cuts both damage and proc-driven healing, so avoidance alone cannot replace active contact. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Losing attack uptime cuts both damage and proc-driven healing, so avoidance alone cannot replace active contact. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "Losing attack uptime cuts both damage and proc-driven healing, so avoidance alone cannot replace active contact. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Losing attack uptime cuts both damage and proc-driven healing, so avoidance alone cannot replace active contact. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        }
+      },
+      "state_tracking": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Fast dual-wield attacks are currently recommended to drive leech, bat, and enchant procs while Rotclaw and marks maintain threat. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Fast dual-wield attacks are currently recommended to drive leech, bat, and enchant procs while Rotclaw and marks maintain threat. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Fast dual-wield attacks are currently recommended to drive leech, bat, and enchant procs while Rotclaw and marks maintain threat. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Fast dual-wield attacks are currently recommended to drive leech, bat, and enchant procs while Rotclaw and marks maintain threat. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Fast dual-wield attacks are currently recommended to drive leech, bat, and enchant procs while Rotclaw and marks maintain threat. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        },
+        "pvp": {
+          "value": "low",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Fast dual-wield attacks are currently recommended to drive leech, bat, and enchant procs while Rotclaw and marks maintain threat. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Blood Plague, Festering Maw, howls, and infection effects spread threat and recovery, though the strongest recent weapon discussion focuses on single-target proc frequency. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Blood Plague, Festering Maw, howls, and infection effects spread threat and recovery, though the strongest recent weapon discussion focuses on single-target proc frequency. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Blood Plague, Festering Maw, howls, and infection effects spread threat and recovery, though the strongest recent weapon discussion focuses on single-target proc frequency. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Blood Plague, Festering Maw, howls, and infection effects spread threat and recovery, though the strongest recent weapon discussion focuses on single-target proc frequency. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Blood Plague, Festering Maw, howls, and infection effects spread threat and recovery, though the strongest recent weapon discussion focuses on single-target proc frequency. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        },
+        "pvp": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Blood Plague, Festering Maw, howls, and infection effects spread threat and recovery, though the strongest recent weapon discussion focuses on single-target proc frequency. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Uncanny Movement and Speed, howls, and form mobility help connect pulls; personal survival states transfer more cleanly than target-specific marks. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Uncanny Movement and Speed, howls, and form mobility help connect pulls; personal survival states transfer more cleanly than target-specific marks. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Uncanny Movement and Speed, howls, and form mobility help connect pulls; personal survival states transfer more cleanly than target-specific marks. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Uncanny Movement and Speed, howls, and form mobility help connect pulls; personal survival states transfer more cleanly than target-specific marks. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Uncanny Movement and Speed, howls, and form mobility help connect pulls; personal survival states transfer more cleanly than target-specific marks. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "Execution is constrained by positioning and swaps: Uncanny Movement and Speed, howls, and form mobility help connect pulls; personal survival states transfer more cleanly than target-specific marks. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1",
+            "talent:bloodmage/eternal:20-53-5-1",
+            "observed:bloodmage/eternal:representation",
+            "talent:bloodmage/eternal:20-53-7-7"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You want a tank whose offense continuously drives avoidance, leech, and regeneration.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:identity"
+          ]
+        },
+        {
+          "text": "You enjoy the spec's core cadence: use rotclaw as the stable attack, maintain eternal curse and the chosen mark, generate frequent weapon and bat procs through fast attacks, and layer blood howl, blood moon, infections, avoidance, and leech so incoming pressure continuously feeds recovery.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You dislike permanent beast-form aesthetics or want every defensive to be a large manually timed shield.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:leveling"
+          ]
+        },
+        {
+          "text": "You dislike the positioning or swap constraint that uncanny movement and speed, howls, and form mobility help connect pulls; personal survival states transfer more cleanly than target-specific marks.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:weapon-loop",
+            "inference:bloodmage/eternal:contact-dependence",
+            "observed:bloodmage/eternal:leveling",
+            "talent:bloodmage/eternal:20-53-4-0",
+            "talent:bloodmage/eternal:20-53-3-1"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Recent Bloodmage advice recommends Eternal for solo leveling, and current gearing discussion emphasizes very high self-healing from fast dual wielding.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:leveling",
+            "observed:bloodmage/eternal:weapon-loop"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Some players call the dungeon loop overly simple and dislike remaining in beast form.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:leveling"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "The simple Rotclaw surface conflicts with the more nuanced weapon, mark, proc, and defensive management described by current tank players.",
+          "claim_ids": [
+            "observed:bloodmage/eternal:leveling",
+            "observed:bloodmage/eternal:weapon-loop"
+          ]
+        }
+      ]
+    },
+    "performance_signal_ids": [
+      "observed:bloodmage/eternal:representation"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "moderate",
+      "performance": "representation_and_offrole_only",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium-high",
+      "gaps": [
+        "No controlled mitigation comparison.",
+        "Current dual-wield advice needs encounter-specific verification."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "A durable form tank that starts with Rotclaw, avoidance, and thick hide, then gains howls and blood coating.",
+      "observed_changes": [
+        "Recent players still call pre-20 Bloodmage slow",
+        "Damage and healing depend on staying engaged"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "By levels 30-49, use rotclaw as the stable attack, maintain eternal curse and the chosen mark, generate frequent weapon and bat procs through fast attacks, and layer blood howl, blood moon, infections, avoidance, and leech so incoming pressure continuously feeds recovery.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Uncanny Movement and Speed, howls, and form mobility help connect pulls; personal survival states transfer more cleanly than target-specific marks"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "A mature proc-and-leech tank with marks, infection, howls, and late claw or bat interactions layered over a simple Rotclaw core.",
+      "observed_changes": [
+        "One-button descriptions understate gearing and survival choices",
+        "Weapon advice is current but anecdotal"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "A durable form tank that starts with Rotclaw, avoidance, and thick hide, then gains howls and blood coating.",
+      "observed_changes": [
+        "Recent players still call pre-20 Bloodmage slow",
+        "Damage and healing depend on staying engaged"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "By levels 30-49, use rotclaw as the stable attack, maintain eternal curse and the chosen mark, generate frequent weapon and bat procs through fast attacks, and layer blood howl, blood moon, infections, avoidance, and leech so incoming pressure continuously feeds recovery.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Uncanny Movement and Speed, howls, and form mobility help connect pulls; personal survival states transfer more cleanly than target-specific marks"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:bloodmage/eternal:leveling",
+      "kind": "observed",
+      "text": "A July 30 Bloodmage leveling discussion recommends Eternal over Accursed for solo play, while another level-60 player characterizes its dungeon loop as heavily centered on Rotclaw and notes the permanent beast-form aesthetic.",
+      "source_ids": [
+        "reddit:bloodmage-leveling-2026-07-30"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "solo_leveling",
+          "dungeon"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "Subjective descriptions from a small thread."
+    },
+    {
+      "id": "observed:bloodmage/eternal:weapon-loop",
+      "kind": "observed",
+      "text": "An August tank-weapon discussion argues that Eternal should dual wield fast one-handed weapons because extra attacks and two agility proc enchants substantially increase leech, bat procs, and single-target self-healing compared with a two-hander.",
+      "source_ids": [
+        "reddit:tank-weapons-2026-08-01"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "dungeon_tanking"
+        ],
+        "build_or_mode": [
+          "dual_wield"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "Anecdotal target-dummy and dungeon experience, not controlled mitigation testing."
+    },
+    {
+      "id": "observed:bloodmage/eternal:representation",
+      "kind": "observed",
+      "text": "The August Mythic inventory lists 120 Eternal records. The DPS compilation's 2,580 value is explicitly an Eternal DPS/off-role signal and is not a tank-performance measure.",
+      "source_ids": [
+        "reddit:class-statistics-2026-08-02",
+        "reddit:dps-aggregate-2026-07-25"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "mythic_dungeons"
+        ],
+        "build_or_mode": [
+          "tank",
+          "offrole_dps"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "Representation and off-role damage cannot establish mitigation strength."
+    },
+    {
+      "id": "inference:bloodmage/eternal:identity",
+      "kind": "inference",
+      "text": "Eternal is an avoidance-and-leech tank whose survival engine depends on maintaining offensive contact rather than pausing behind purely passive mitigation.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:bloodmage/eternal:20-53-4-0",
+        "talent:bloodmage/eternal:20-53-3-1",
+        "talent:bloodmage/eternal:20-53-7-7"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "tank"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Playstyle classification."
+    },
+    {
+      "id": "inference:bloodmage/eternal:contact-dependence",
+      "kind": "inference",
+      "text": "Because many Eternal recovery effects are triggered or sustained through attacks, forced downtime reduces both threat and self-healing at once.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:bloodmage/eternal:20-53-4-0",
+        "talent:bloodmage/eternal:20-53-7-7",
+        "observed:bloodmage/eternal:weapon-loop"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "boss",
+          "dungeon_aoe"
+        ],
+        "build_or_mode": [
+          "tank"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The sensitivity to downtime is not quantified."
+    }
+  ]
+}

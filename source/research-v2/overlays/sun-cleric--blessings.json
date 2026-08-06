@@ -1,0 +1,970 @@
+{
+  "baseline": "sun-cleric--blessings.json",
+  "set": {
+    "identity": {
+      "fantasy": "A radiant healer who combines direct Sunlight and Cascade recovery with Vows and Blessings that turn allies into healing or damage engines.",
+      "one_line": "Keep Bless on the priority ally, use Illumination, Shine and Daybreak for triage, and fulfill Vows for mana and amplification.",
+      "primary_family": "strategists",
+      "also_fits": [
+        "marksmen"
+      ],
+      "playstyle_tags": [
+        "buff-rich-direct-healer",
+        "approachable-healer",
+        "ally-engine-support"
+      ],
+      "claim_ids": [
+        "talent:sun-cleric/blessings:27-71-4-0",
+        "talent:sun-cleric/blessings:27-71-10-0",
+        "talent:sun-cleric/blessings:27-71-2-1",
+        "talent:sun-cleric/blessings:27-71-6-1",
+        "observed:sun-cleric/blessings:basic-priority",
+        "observed:sun-cleric/blessings:mana-breakpoint",
+        "inference:sun-cleric/blessings:playstyle-identity"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "A conventional but buff-rich healer. Bless, Vows, Sunlight, Illumination, and Radiant Cascade cover steady and burst healing, while Solar Invigoration and Blessing of Triumph turn allies into healing or damage engines. Its core loop is more approachable than CoA's mode-switching healers.",
+      "single_target": "On durable targets, the structural path grows from Bless, Sunlight, An'she's Guidance toward Solar Priest, Blessing of Triumph, Empowered Holy Form. A precise priority remains limited to the captured build and community evidence.",
+      "aoe": "For multiple targets, Keep Bless on the priority ally, use Illumination, Shine and Daybreak for triage, and fulfill Vows for mana and amplification. The current evidence particularly constrains this through: Players report rough early mana and major improvement near 30 from Blessed-target refunds.",
+      "movement_and_target_switching": "Hybrid range and conventional healing tools make movement relatively forgiving.",
+      "defense_and_control": "Its structural defensive package includes Bless, Sunlight, Sanctified, Blessing of Absolution, Faith.",
+      "group_utility": "Group or control tools include Bless, Blessing of Absolution, Daybreak, Blessing of Purity, Stalwart.",
+      "failure_modes": [
+        {
+          "text": "Putting Triumph or another major Blessing on the wrong ally can waste more value than a missed filler heal.",
+          "claim_ids": [
+            "inference:sun-cleric/blessings:failure-cost",
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1"
+          ]
+        },
+        {
+          "text": "Losing setup before payoff forces another recovery cycle.",
+          "claim_ids": [
+            "inference:sun-cleric/blessings:failure-cost",
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1"
+          ]
+        },
+        {
+          "text": "Losing setup before payoff forces another recovery cycle.",
+          "claim_ids": [
+            "inference:sun-cleric/blessings:failure-cost",
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "talent:sun-cleric/blessings:27-71-4-0",
+        "talent:sun-cleric/blessings:27-71-10-0",
+        "talent:sun-cleric/blessings:27-71-2-1",
+        "talent:sun-cleric/blessings:27-71-6-1",
+        "talent:sun-cleric/blessings:27-71-1-2",
+        "talent:sun-cleric/blessings:27-71-4-2",
+        "observed:sun-cleric/blessings:basic-priority",
+        "observed:sun-cleric/blessings:mana-breakpoint",
+        "observed:sun-cleric/blessings:buff-layer",
+        "observed:sun-cleric/blessings:build-practice",
+        "inference:sun-cleric/blessings:playstyle-identity"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "Early healing is simple but mana constrained.",
+        "strengths": [
+          "Core identity",
+          "Readable payoff"
+        ],
+        "cautions": [
+          "Incomplete kit",
+          "Sparse guidance"
+        ],
+        "claim_ids": [
+          "talent:sun-cleric/blessings:27-71-4-0",
+          "talent:sun-cleric/blessings:27-71-10-0",
+          "talent:sun-cleric/blessings:27-71-2-1",
+          "talent:sun-cleric/blessings:27-71-6-1",
+          "observed:sun-cleric/blessings:basic-priority",
+          "observed:sun-cleric/blessings:mana-breakpoint",
+          "observed:sun-cleric/blessings:buff-layer",
+          "inference:sun-cleric/blessings:playstyle-identity"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "The Blessed refund creates the sustain transition.",
+        "strengths": [
+          "Complete engine",
+          "Better coverage"
+        ],
+        "cautions": [
+          "More states",
+          "Unlock dependent"
+        ],
+        "claim_ids": [
+          "talent:sun-cleric/blessings:27-71-4-0",
+          "talent:sun-cleric/blessings:27-71-10-0",
+          "talent:sun-cleric/blessings:27-71-2-1",
+          "talent:sun-cleric/blessings:27-71-6-1",
+          "observed:sun-cleric/blessings:basic-priority",
+          "observed:sun-cleric/blessings:mana-breakpoint",
+          "observed:sun-cleric/blessings:buff-layer",
+          "inference:sun-cleric/blessings:playstyle-identity"
+        ]
+      },
+      "level_50_60": {
+        "feel": "Late Blessings adds buffs without losing its conventional core.",
+        "strengths": [
+          "Late package",
+          "Higher ceiling"
+        ],
+        "cautions": [
+          "Unsettled priority",
+          "Tracking"
+        ],
+        "claim_ids": [
+          "talent:sun-cleric/blessings:27-71-4-0",
+          "talent:sun-cleric/blessings:27-71-10-0",
+          "talent:sun-cleric/blessings:27-71-2-1",
+          "talent:sun-cleric/blessings:27-71-6-1",
+          "observed:sun-cleric/blessings:basic-priority",
+          "observed:sun-cleric/blessings:mana-breakpoint",
+          "observed:sun-cleric/blessings:buff-layer",
+          "inference:sun-cleric/blessings:playstyle-identity"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, On durable targets, the structural path grows from Bless, Sunlight, An'she's Guidance toward Solar Priest, Blessing of Triumph, Empowered Holy Form. A precise priority remains limited to the captured build and community evidence.",
+        "strengths": [
+          "Durable payoff",
+          "Repeatable loop"
+        ],
+        "cautions": [
+          "Movement",
+          "Repeated errors"
+        ],
+        "claim_ids": [
+          "talent:sun-cleric/blessings:27-71-4-0",
+          "talent:sun-cleric/blessings:27-71-10-0",
+          "talent:sun-cleric/blessings:27-71-2-1",
+          "talent:sun-cleric/blessings:27-71-6-1",
+          "observed:sun-cleric/blessings:basic-priority",
+          "observed:sun-cleric/blessings:mana-breakpoint",
+          "observed:sun-cleric/blessings:buff-layer",
+          "inference:sun-cleric/blessings:playstyle-identity"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, For multiple targets, Keep Bless on the priority ally, use Illumination, Shine and Daybreak for triage, and fulfill Vows for mana and amplification. The current evidence particularly constrains this through: Players report rough early mana and major improvement near 30 from Blessed-target refunds.",
+        "strengths": [
+          "Pack tools",
+          "Utility"
+        ],
+        "cautions": [
+          "Short packs",
+          "Position"
+        ],
+        "claim_ids": [
+          "talent:sun-cleric/blessings:27-71-4-0",
+          "talent:sun-cleric/blessings:27-71-10-0",
+          "talent:sun-cleric/blessings:27-71-2-1",
+          "talent:sun-cleric/blessings:27-71-6-1",
+          "observed:sun-cleric/blessings:basic-priority",
+          "observed:sun-cleric/blessings:mana-breakpoint",
+          "observed:sun-cleric/blessings:buff-layer",
+          "inference:sun-cleric/blessings:playstyle-identity"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, Hybrid range and conventional healing tools make movement relatively forgiving. Its structural defensive package includes Bless, Sunlight, Sanctified, Blessing of Absolution, Faith.",
+        "strengths": [
+          "Control",
+          "Pressure"
+        ],
+        "cautions": [
+          "Disruption",
+          "Defense"
+        ],
+        "claim_ids": [
+          "talent:sun-cleric/blessings:27-71-4-0",
+          "talent:sun-cleric/blessings:27-71-10-0",
+          "talent:sun-cleric/blessings:27-71-2-1",
+          "talent:sun-cleric/blessings:27-71-6-1",
+          "observed:sun-cleric/blessings:basic-priority",
+          "observed:sun-cleric/blessings:mana-breakpoint",
+          "observed:sun-cleric/blessings:buff-layer",
+          "inference:sun-cleric/blessings:playstyle-identity"
+        ]
+      }
+    },
+    "complexity": {
+      "core_actions": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "The active bar follows this loop: A conventional but buff-rich healer. Bless, Vows, Sunlight, Illumination, and Radiant Cascade cover steady and burst healing, while Solar Invigoration and Blessing of Triumph turn allies into healing or damage engines. Its core loop is more approachable than CoA's mode-switching healers. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "The active bar follows this loop: A conventional but buff-rich healer. Bless, Vows, Sunlight, Illumination, and Radiant Cascade cover steady and burst healing, while Solar Invigoration and Blessing of Triumph turn allies into healing or damage engines. Its core loop is more approachable than CoA's mode-switching healers. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "The active bar follows this loop: A conventional but buff-rich healer. Bless, Vows, Sunlight, Illumination, and Radiant Cascade cover steady and burst healing, while Solar Invigoration and Blessing of Triumph turn allies into healing or damage engines. Its core loop is more approachable than CoA's mode-switching healers. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "The active bar follows this loop: A conventional but buff-rich healer. Bless, Vows, Sunlight, Illumination, and Radiant Cascade cover steady and burst healing, while Solar Invigoration and Blessing of Triumph turn allies into healing or damage engines. Its core loop is more approachable than CoA's mode-switching healers. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "The active bar follows this loop: A conventional but buff-rich healer. Bless, Vows, Sunlight, Illumination, and Radiant Cascade cover steady and burst healing, while Solar Invigoration and Blessing of Triumph turn allies into healing or damage engines. Its core loop is more approachable than CoA's mode-switching healers. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "The active bar follows this loop: A conventional but buff-rich healer. Bless, Vows, Sunlight, Illumination, and Radiant Cascade cover steady and burst healing, while Solar Invigoration and Blessing of Triumph turn allies into healing or damage engines. Its core loop is more approachable than CoA's mode-switching healers. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        }
+      },
+      "state_tracking": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Bless, Sunlight, An'she's Guidance toward Solar Priest, Blessing of Triumph, Empowered Holy Form. A precise priority remains limited to the captured build and community evidence. must be tracked. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Bless, Sunlight, An'she's Guidance toward Solar Priest, Blessing of Triumph, Empowered Holy Form. A precise priority remains limited to the captured build and community evidence. must be tracked. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Bless, Sunlight, An'she's Guidance toward Solar Priest, Blessing of Triumph, Empowered Holy Form. A precise priority remains limited to the captured build and community evidence. must be tracked. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Bless, Sunlight, An'she's Guidance toward Solar Priest, Blessing of Triumph, Empowered Holy Form. A precise priority remains limited to the captured build and community evidence. must be tracked. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Bless, Sunlight, An'she's Guidance toward Solar Priest, Blessing of Triumph, Empowered Holy Form. A precise priority remains limited to the captured build and community evidence. must be tracked. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Resources and target conditions from On durable targets, the structural path grows from Bless, Sunlight, An'she's Guidance toward Solar Priest, Blessing of Triumph, Empowered Holy Form. A precise priority remains limited to the captured build and community evidence. must be tracked. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Keep Bless on the priority ally, use Illumination, Shine and Daybreak for triage, and fulfill Vows for mana and amplification. The current evidence particularly constrains this through: Players report rough early mana and major improvement near 30 from Blessed-target refunds. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Keep Bless on the priority ally, use Illumination, Shine and Daybreak for triage, and fulfill Vows for mana and amplification. The current evidence particularly constrains this through: Players report rough early mana and major improvement near 30 from Blessed-target refunds. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Keep Bless on the priority ally, use Illumination, Shine and Daybreak for triage, and fulfill Vows for mana and amplification. The current evidence particularly constrains this through: Players report rough early mana and major improvement near 30 from Blessed-target refunds. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Keep Bless on the priority ally, use Illumination, Shine and Daybreak for triage, and fulfill Vows for mana and amplification. The current evidence particularly constrains this through: Players report rough early mana and major improvement near 30 from Blessed-target refunds. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Keep Bless on the priority ally, use Illumination, Shine and Daybreak for triage, and fulfill Vows for mana and amplification. The current evidence particularly constrains this through: Players report rough early mana and major improvement near 30 from Blessed-target refunds. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Keep Bless on the priority ally, use Illumination, Shine and Daybreak for triage, and fulfill Vows for mana and amplification. The current evidence particularly constrains this through: Players report rough early mana and major improvement near 30 from Blessed-target refunds. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Target count, movement and pressure alter the next action. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Target count, movement and pressure alter the next action. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Target count, movement and pressure alter the next action. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Target count, movement and pressure alter the next action. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Target count, movement and pressure alter the next action. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Target count, movement and pressure alter the next action. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Execution depends on Hybrid range and conventional healing tools make movement relatively forgiving. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Execution depends on Hybrid range and conventional healing tools make movement relatively forgiving. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Execution depends on Hybrid range and conventional healing tools make movement relatively forgiving. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Execution depends on Hybrid range and conventional healing tools make movement relatively forgiving. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Execution depends on Hybrid range and conventional healing tools make movement relatively forgiving. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Execution depends on Hybrid range and conventional healing tools make movement relatively forgiving. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        }
+      },
+      "failure_cost": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Putting Triumph or another major Blessing on the wrong ally can waste more value than a missed filler heal. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Putting Triumph or another major Blessing on the wrong ally can waste more value than a missed filler heal. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Putting Triumph or another major Blessing on the wrong ally can waste more value than a missed filler heal. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Putting Triumph or another major Blessing on the wrong ally can waste more value than a missed filler heal. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Putting Triumph or another major Blessing on the wrong ally can waste more value than a missed filler heal. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Putting Triumph or another major Blessing on the wrong ally can waste more value than a missed filler heal. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0",
+            "talent:sun-cleric/blessings:27-71-2-1",
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You want this exact fantasy and decision loop.",
+          "claim_ids": [
+            "inference:sun-cleric/blessings:playstyle-identity",
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0"
+          ]
+        },
+        {
+          "text": "You enjoy a cadence that changes with late talents.",
+          "claim_ids": [
+            "inference:sun-cleric/blessings:playstyle-identity",
+            "talent:sun-cleric/blessings:27-71-4-0",
+            "talent:sun-cleric/blessings:27-71-10-0"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You want the complete rotation immediately.",
+          "claim_ids": [
+            "inference:sun-cleric/blessings:failure-cost",
+            "observed:sun-cleric/blessings:basic-priority"
+          ]
+        },
+        {
+          "text": "You dislike setup loss to movement.",
+          "claim_ids": [
+            "inference:sun-cleric/blessings:failure-cost",
+            "observed:sun-cleric/blessings:basic-priority"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "It is recommended as a clear conventional healer.",
+          "claim_ids": [
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "observed:sun-cleric/blessings:build-practice"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Early mana and background buffs surprise.",
+          "claim_ids": [
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "inference:sun-cleric/blessings:failure-cost"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "Power anecdotes, popularity and subjective fun remain separate evidence.",
+          "claim_ids": [
+            "observed:sun-cleric/blessings:basic-priority",
+            "observed:sun-cleric/blessings:mana-breakpoint",
+            "observed:sun-cleric/blessings:buff-layer",
+            "observed:sun-cleric/blessings:performance-context"
+          ]
+        }
+      ]
+    },
+    "performance_signal_ids": [
+      "observed:sun-cleric/blessings:performance-context"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "manual_recent_source_review",
+      "performance": "limited_uncontrolled",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium",
+      "gaps": [
+        "No verified current full-rotation video.",
+        "Priority breakpoints remain unverified."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "Early healing is simple but mana constrained.",
+      "observed_changes": [
+        "Incomplete kit",
+        "Sparse guidance"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "Early healing is simple but mana constrained.",
+      "observed_changes": [
+        "Incomplete kit",
+        "Sparse guidance"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "The Blessed refund creates the sustain transition.",
+      "observed_changes": [
+        "More states",
+        "Unlock dependent"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "The Blessed refund creates the sustain transition.",
+      "observed_changes": [
+        "More states",
+        "Unlock dependent"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "Late Blessings adds buffs without losing its conventional core.",
+      "observed_changes": [
+        "Unsettled priority",
+        "Tracking"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:sun-cleric/blessings:basic-priority",
+      "kind": "observed",
+      "text": "Advice names Illumination as large, Shine as fast, Daybreak as instant and Bless as the tank anchor.",
+      "source_ids": [
+        "reddit:sun-cleric-questions-2026-07-18",
+        "reddit:easy-specs-roster-2026-08-03"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:sun-cleric/blessings:mana-breakpoint",
+      "kind": "observed",
+      "text": "Players report rough early mana and major improvement near 30 from Blessed-target refunds.",
+      "source_ids": [
+        "reddit:sun-cleric-questions-2026-07-18",
+        "reddit:easy-specs-roster-2026-08-03"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:sun-cleric/blessings:buff-layer",
+      "kind": "observed",
+      "text": "The direct-heal floor is easy while Vows and ally amplification add ceiling.",
+      "source_ids": [
+        "reddit:sun-cleric-questions-2026-07-18",
+        "reddit:easy-specs-roster-2026-08-03"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:sun-cleric/blessings:build-practice",
+      "kind": "observed",
+      "text": "The captured dungeon build documents direct healing.",
+      "source_ids": [
+        "buildhub-builds-2026-08-05",
+        "buildhub:e8ee75b8-8e51-4d3a-af1b-a47d6c4d13b7"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "community_build_snapshot"
+        ],
+        "build_or_mode": [
+          "documented_build"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The guide documents one current way to play; it is not treated as proof of optimality."
+    },
+    {
+      "id": "observed:sun-cleric/blessings:performance-context",
+      "kind": "observed",
+      "text": "No healer DPS; 130 records show use only.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "uncontrolled_performance_signals"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "low",
+      "conflicts_with": [],
+      "notes": "Do not convert this into a tier ranking."
+    },
+    {
+      "id": "inference:sun-cleric/blessings:playstyle-identity",
+      "kind": "inference",
+      "text": "A radiant healer who combines direct Sunlight and Cascade recovery with Vows and Blessings that turn allies into healing or damage engines.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:sun-cleric/blessings:27-71-4-0",
+        "talent:sun-cleric/blessings:27-71-10-0",
+        "talent:sun-cleric/blessings:27-71-2-1",
+        "talent:sun-cleric/blessings:27-71-6-1",
+        "observed:sun-cleric/blessings:basic-priority",
+        "observed:sun-cleric/blessings:mana-breakpoint"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Descriptive playstyle classification, not an official label."
+    },
+    {
+      "id": "inference:sun-cleric/blessings:failure-cost",
+      "kind": "inference",
+      "text": "Putting Triumph or another major Blessing on the wrong ally can waste more value than a missed filler heal.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:sun-cleric/blessings:27-71-4-0",
+        "talent:sun-cleric/blessings:27-71-10-0",
+        "talent:sun-cleric/blessings:27-71-2-1",
+        "talent:sun-cleric/blessings:27-71-6-1",
+        "talent:sun-cleric/blessings:27-71-1-2",
+        "observed:sun-cleric/blessings:basic-priority",
+        "observed:sun-cleric/blessings:mana-breakpoint",
+        "observed:sun-cleric/blessings:buff-layer"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Direction is supported; exact throughput cost is not measured."
+    }
+  ]
+}

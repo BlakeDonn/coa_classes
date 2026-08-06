@@ -1,0 +1,1537 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "reaper/domination",
+    "class": "Reaper",
+    "name": "Domination",
+    "roles": [
+      "Tank"
+    ],
+    "range": [
+      "Hybrid"
+    ]
+  },
+  "identity": {
+    "fantasy": "",
+    "one_line": "A spectral knight that generates souls through Dreadwake, summons wardens and scythes, and converts avoidance and soul states into healing and mitigation. Painmail and Eater of Souls reward staying active in packs, while Bolstered Form supplies the main defensive cycle.",
+    "primary_family": "",
+    "also_fits": [],
+    "claim_ids": [
+      "talent:reaper/domination:30-81-4-0",
+      "talent:reaper/domination:30-81-10-0",
+      "talent:reaper/domination:30-81-2-1",
+      "talent:reaper/domination:30-81-6-1",
+      "talent:reaper/domination:30-81-1-2",
+      "talent:reaper/domination:30-81-4-2",
+      "talent:reaper/domination:30-81-7-2a",
+      "talent:reaper/domination:30-81-7-2b",
+      "talent:reaper/domination:30-81-10-2",
+      "talent:reaper/domination:30-81-1-3",
+      "talent:reaper/domination:30-81-4-3",
+      "talent:reaper/domination:30-81-7-3",
+      "talent:reaper/domination:30-81-0-4",
+      "talent:reaper/domination:30-81-3-4",
+      "talent:reaper/domination:30-81-5-4",
+      "talent:reaper/domination:30-81-8-4a",
+      "talent:reaper/domination:30-81-8-4b",
+      "talent:reaper/domination:30-81-10-4",
+      "talent:reaper/domination:30-81-1-5",
+      "talent:reaper/domination:30-81-3-5",
+      "talent:reaper/domination:30-81-5-5",
+      "talent:reaper/domination:30-81-7-5",
+      "talent:reaper/domination:30-81-2-6",
+      "talent:reaper/domination:30-81-4-6",
+      "talent:reaper/domination:30-81-6-6",
+      "talent:reaper/domination:30-81-10-6",
+      "talent:reaper/domination:30-81-0-7",
+      "talent:reaper/domination:30-81-2-7",
+      "talent:reaper/domination:30-81-4-7",
+      "talent:reaper/domination:30-81-6-7a",
+      "talent:reaper/domination:30-81-6-7b",
+      "talent:reaper/domination:30-81-8-7",
+      "talent:reaper/domination:30-81-2-8",
+      "talent:reaper/domination:30-81-4-8",
+      "talent:reaper/domination:30-81-6-8",
+      "talent:reaper/domination:30-81-10-8",
+      "talent:reaper/domination:30-81-2-9",
+      "talent:reaper/domination:30-81-4-9",
+      "talent:reaper/domination:30-81-6-9"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "A spectral knight that generates souls through Dreadwake, summons wardens and scythes, and converts avoidance and soul states into healing and mitigation. Painmail and Eater of Souls reward staying active in packs, while Bolstered Form supplies the main defensive cycle.",
+    "resources": [
+      "Runic Power",
+      "Soul Fragment"
+    ],
+    "builders": [
+      {
+        "name": "Dreadwake",
+        "claim_ids": [
+          "talent:reaper/domination:30-81-4-0"
+        ]
+      },
+      {
+        "name": "Empyrean Fortitude",
+        "claim_ids": [
+          "talent:reaper/domination:30-81-2-1"
+        ]
+      },
+      {
+        "name": "Soulsight",
+        "claim_ids": [
+          "talent:reaper/domination:30-81-5-4"
+        ]
+      },
+      {
+        "name": "Decimation",
+        "claim_ids": [
+          "talent:reaper/domination:30-81-10-8"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Dominator",
+        "claim_ids": [
+          "talent:reaper/domination:30-81-7-2a"
+        ]
+      },
+      {
+        "name": "Spectral Scythe",
+        "claim_ids": [
+          "talent:reaper/domination:30-81-7-3"
+        ]
+      },
+      {
+        "name": "Harnessed Life",
+        "claim_ids": [
+          "talent:reaper/domination:30-81-1-5"
+        ]
+      },
+      {
+        "name": "Hard Bargain",
+        "claim_ids": [
+          "talent:reaper/domination:30-81-0-7"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Spirit Realm",
+        "claim_ids": [
+          "talent:reaper/domination:30-81-4-6"
+        ]
+      },
+      {
+        "name": "Spectral Warden",
+        "claim_ids": [
+          "talent:reaper/domination:30-81-6-6"
+        ]
+      },
+      {
+        "name": "Hard Bargain",
+        "claim_ids": [
+          "talent:reaper/domination:30-81-0-7"
+        ]
+      },
+      {
+        "name": "Decimation",
+        "claim_ids": [
+          "talent:reaper/domination:30-81-10-8"
+        ]
+      },
+      {
+        "name": "Spirit Culling",
+        "claim_ids": [
+          "talent:reaper/domination:30-81-4-9"
+        ]
+      },
+      {
+        "name": "Eater of Souls",
+        "claim_ids": [
+          "talent:reaper/domination:30-81-6-9"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Bolstered Form",
+        "claim_ids": [
+          "talent:reaper/domination:30-81-1-3"
+        ],
+        "structural_description": "Assume a bolstered form for 15 seconds, generating 30 Runic Power, increasing your Armor by 25%, and increasing your parry chance by 25%."
+      },
+      {
+        "name": "Intimidating Presence",
+        "claim_ids": [
+          "talent:reaper/domination:30-81-0-4"
+        ],
+        "structural_description": "Bolstered Form now increases the damage nearby enemies take from you by 15% for 15 seconds."
+      },
+      {
+        "name": "Decimation",
+        "claim_ids": [
+          "talent:reaper/domination:30-81-10-8"
+        ],
+        "structural_description": "Level 50 PassiveEvery 6th cast of Reap transforms your next Reap into Decimate for 15 sec.DecimateSmash the ground infront of you, dealing 117% Weapon Damage plus 22 Physical damage in an 8 yd frontal cone to 10 enemies.Generates 1 Soul Fragment and 5 Runic Power per enemy hit."
+      },
+      {
+        "name": "Painmail",
+        "claim_ids": [
+          "talent:reaper/domination:30-81-2-9"
+        ],
+        "structural_description": "Dealing damage with Reap, Dreadwake and Soul Strike now grants a stack of Painmail for 15 seconds, stacking up to 8 times. Additional applications do not refresh the effect.When Painmail stacks expire naturally, you are healed for 2% of your maximum health and reduce the cooldown of Bolstered Form by -0.5 sec for each stack."
+      }
+    ],
+    "single_target": "",
+    "aoe": "",
+    "movement_and_target_switching": "",
+    "defense_and_control": "",
+    "group_utility": "",
+    "failure_modes": [],
+    "claim_ids": [
+      "talent:reaper/domination:30-81-4-0",
+      "talent:reaper/domination:30-81-10-0",
+      "talent:reaper/domination:30-81-2-1",
+      "talent:reaper/domination:30-81-6-1",
+      "talent:reaper/domination:30-81-1-2",
+      "talent:reaper/domination:30-81-4-2",
+      "talent:reaper/domination:30-81-7-2a",
+      "talent:reaper/domination:30-81-7-2b",
+      "talent:reaper/domination:30-81-10-2",
+      "talent:reaper/domination:30-81-1-3",
+      "talent:reaper/domination:30-81-4-3",
+      "talent:reaper/domination:30-81-7-3",
+      "talent:reaper/domination:30-81-0-4",
+      "talent:reaper/domination:30-81-3-4",
+      "talent:reaper/domination:30-81-5-4",
+      "talent:reaper/domination:30-81-8-4a",
+      "talent:reaper/domination:30-81-8-4b",
+      "talent:reaper/domination:30-81-10-4",
+      "talent:reaper/domination:30-81-1-5",
+      "talent:reaper/domination:30-81-3-5",
+      "talent:reaper/domination:30-81-5-5",
+      "talent:reaper/domination:30-81-7-5",
+      "talent:reaper/domination:30-81-2-6",
+      "talent:reaper/domination:30-81-4-6",
+      "talent:reaper/domination:30-81-6-6",
+      "talent:reaper/domination:30-81-10-6",
+      "talent:reaper/domination:30-81-0-7",
+      "talent:reaper/domination:30-81-2-7",
+      "talent:reaper/domination:30-81-4-7",
+      "talent:reaper/domination:30-81-6-7a",
+      "talent:reaper/domination:30-81-6-7b",
+      "talent:reaper/domination:30-81-8-7",
+      "talent:reaper/domination:30-81-2-8",
+      "talent:reaper/domination:30-81-4-8",
+      "talent:reaper/domination:30-81-6-8",
+      "talent:reaper/domination:30-81-10-8",
+      "talent:reaper/domination:30-81-2-9",
+      "talent:reaper/domination:30-81-4-9",
+      "talent:reaper/domination:30-81-6-9"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Dreadwake",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-0"
+          ]
+        },
+        {
+          "name": "Tormentor",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-10-0"
+          ]
+        },
+        {
+          "name": "Empyrean Fortitude",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-2-1"
+          ]
+        },
+        {
+          "name": "Dark Soldier",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-6-1"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:reaper/domination:30-81-4-0",
+        "talent:reaper/domination:30-81-10-0",
+        "talent:reaper/domination:30-81-2-1",
+        "talent:reaper/domination:30-81-6-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Soultaker",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-1-2"
+          ]
+        },
+        {
+          "name": "Requiem",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-2"
+          ]
+        },
+        {
+          "name": "Dominator",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-7-2a"
+          ]
+        },
+        {
+          "name": "Lifestealer",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-7-2b"
+          ]
+        },
+        {
+          "name": "Behemoth",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-10-2"
+          ]
+        },
+        {
+          "name": "Bolstered Form",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-1-3"
+          ]
+        },
+        {
+          "name": "Dreadknight",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-3"
+          ]
+        },
+        {
+          "name": "Spectral Scythe",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-7-3"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:reaper/domination:30-81-1-2",
+        "talent:reaper/domination:30-81-4-2",
+        "talent:reaper/domination:30-81-7-2a",
+        "talent:reaper/domination:30-81-7-2b",
+        "talent:reaper/domination:30-81-10-2",
+        "talent:reaper/domination:30-81-1-3",
+        "talent:reaper/domination:30-81-4-3",
+        "talent:reaper/domination:30-81-7-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Intimidating Presence",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-0-4"
+          ]
+        },
+        {
+          "name": "Essence Binder",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-3-4"
+          ]
+        },
+        {
+          "name": "Soulsight",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-5-4"
+          ]
+        },
+        {
+          "name": "Well of Eternity",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-8-4a"
+          ]
+        },
+        {
+          "name": "Well of Souls",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-8-4b"
+          ]
+        },
+        {
+          "name": "Soul Slip",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-10-4"
+          ]
+        },
+        {
+          "name": "Harnessed Life",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-1-5"
+          ]
+        },
+        {
+          "name": "Ethereal Guard",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-3-5"
+          ]
+        },
+        {
+          "name": "Fatesealer",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-5-5"
+          ]
+        },
+        {
+          "name": "Jailer's Will",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-7-5"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:reaper/domination:30-81-0-4",
+        "talent:reaper/domination:30-81-3-4",
+        "talent:reaper/domination:30-81-5-4",
+        "talent:reaper/domination:30-81-8-4a",
+        "talent:reaper/domination:30-81-8-4b",
+        "talent:reaper/domination:30-81-10-4",
+        "talent:reaper/domination:30-81-1-5",
+        "talent:reaper/domination:30-81-3-5",
+        "talent:reaper/domination:30-81-5-5",
+        "talent:reaper/domination:30-81-7-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "To The Shadowlands",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-2-6"
+          ]
+        },
+        {
+          "name": "Spirit Realm",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-6"
+          ]
+        },
+        {
+          "name": "Spectral Warden",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-6-6"
+          ]
+        },
+        {
+          "name": "Dark Soul",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-10-6"
+          ]
+        },
+        {
+          "name": "Hard Bargain",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-0-7"
+          ]
+        },
+        {
+          "name": "Final Requiem",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-2-7"
+          ]
+        },
+        {
+          "name": "Soulstorm",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-7"
+          ]
+        },
+        {
+          "name": "Spirit Army",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-6-7a"
+          ]
+        },
+        {
+          "name": "Life Tap",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-6-7b"
+          ]
+        },
+        {
+          "name": "Soul Splinters",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-8-7"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:reaper/domination:30-81-2-6",
+        "talent:reaper/domination:30-81-4-6",
+        "talent:reaper/domination:30-81-6-6",
+        "talent:reaper/domination:30-81-10-6",
+        "talent:reaper/domination:30-81-0-7",
+        "talent:reaper/domination:30-81-2-7",
+        "talent:reaper/domination:30-81-4-7",
+        "talent:reaper/domination:30-81-6-7a",
+        "talent:reaper/domination:30-81-6-7b",
+        "talent:reaper/domination:30-81-8-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Soul Knight",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-2-8"
+          ]
+        },
+        {
+          "name": "Warden of the Lost",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-8"
+          ]
+        },
+        {
+          "name": "Siphon Anima",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-6-8"
+          ]
+        },
+        {
+          "name": "Decimation",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-10-8"
+          ]
+        },
+        {
+          "name": "Painmail",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-2-9"
+          ]
+        },
+        {
+          "name": "Spirit Culling",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-4-9"
+          ]
+        },
+        {
+          "name": "Eater of Souls",
+          "claim_ids": [
+            "talent:reaper/domination:30-81-6-9"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:reaper/domination:30-81-2-8",
+        "talent:reaper/domination:30-81-4-8",
+        "talent:reaper/domination:30-81-6-8",
+        "talent:reaper/domination:30-81-10-8",
+        "talent:reaper/domination:30-81-2-9",
+        "talent:reaper/domination:30-81-4-9",
+        "talent:reaper/domination:30-81-6-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "leveling_30_49": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "level_50_60": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "boss": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "dungeon_aoe": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "pvp": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [],
+    "avoid_if": []
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [],
+  "sentiment": {
+    "praise": [],
+    "frustrations": [],
+    "contested": []
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 2,
+    "latest_update": "2026-07-21T22:44:52.863+00:00",
+    "top_title": "Reaper Tank Dungs/Raid/Hit/Parry/ST",
+    "top_url": "https://coabuildhub.com/build/88596de6-f880-4259-81d5-df050640d357",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:88596de6-f880-4259-81d5-df050640d357"
+    ]
+  },
+  "coverage": {
+    "mechanical": "structural_baseline",
+    "community": "indexed",
+    "performance": "missing",
+    "video": "missing",
+    "overall_confidence": "low",
+    "gaps": [
+      "Effective core loop needs recent guide or player cross-check.",
+      "Contextual complexity values are not yet researched.",
+      "Recent performance, sentiment, issues, and video evidence are not yet reconciled."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:reaper/domination:30-81-4-0",
+      "kind": "structural",
+      "text": "Dreadwake: Generates 1 Reaped SoulUnleash a wave of souls upon enemies in a 12 yd cone, causing 80% Weapon Damage plus 5 Frost damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-10-0",
+      "kind": "structural",
+      "text": "Tormentor: Level 10 PassiveConsuming Soul Infusion now reduces the cooldown of Tormented Souls by -3 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-2-1",
+      "kind": "structural",
+      "text": "Empyrean Fortitude: Increases your parry chance by 5% and parrying an attack now generates 2 Runic Power.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-6-1",
+      "kind": "structural",
+      "text": "Dark Soldier: Increases your hit chance by 3% and reduces your Magic damage taken by -2%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-1-2",
+      "kind": "structural",
+      "text": "Soultaker: Damage dealt with Dreadwake now reduces the cooldown of Tormented Souls by -1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-4-2",
+      "kind": "structural",
+      "text": "Requiem: Swing at enemies around you in a fury of souls, dealing 67 + 40% AP Shadowfrost Damage, reducing their melee and ranged attack speed by -20% for 15 seconds, and generating Runic Power.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-7-2a",
+      "kind": "structural",
+      "text": "Dominator: Reduces the Runic Power cost of Soul Strike by $/10s;s1.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-7-2b",
+      "kind": "structural",
+      "text": "Lifestealer: Increases the missing health generated by Soul Strike by 3%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-10-2",
+      "kind": "structural",
+      "text": "Behemoth: Level 20 PassiveIncreases your Stamina by 20% and your Armor penetration by 10% of your Strength.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-1-3",
+      "kind": "structural",
+      "text": "Bolstered Form: Assume a bolstered form for 15 seconds, generating 30 Runic Power, increasing your Armor by 25%, and increasing your parry chance by 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-4-3",
+      "kind": "structural",
+      "text": "Dreadknight: Increases your armor contribution from mail and plate items by 20% and reduces the chance for spells to hit you by -2%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-7-3",
+      "kind": "structural",
+      "text": "Spectral Scythe: Summons 1 Spectral Scythe for each Reaped Soul active which attack a nearby enemy for 20 seconds.Striking enemies with Soul Strike causes the Spectral Scythe to attack that enemy and 5 nearby enemies. Consumes Reaped Souls and Soul Infusion.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-0-4",
+      "kind": "structural",
+      "text": "Intimidating Presence: Bolstered Form now increases the damage nearby enemies take from you by 15% for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-3-4",
+      "kind": "structural",
+      "text": "Essence Binder: Soul Strike now steals some of the target's health and Strength for 12 seconds, granting it to you at increased value.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-5-4",
+      "kind": "structural",
+      "text": "Soulsight: Increases critical strike chance of all party and raid members by 3%. Does not stack with similar effects.In addition, dealing direct damage now has a 15% chance to generate a Soul Fragment.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-8-4a",
+      "kind": "structural",
+      "text": "Well of Eternity: Increases the duration of your Spectral Scythes by 10 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-8-4b",
+      "kind": "structural",
+      "text": "Well of Souls: Damage dealt by Soul Strike and Murder now reduces the cooldown of Spectral Scythe by -1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-10-4",
+      "kind": "structural",
+      "text": "Soul Slip: Level 30 PassiveAvoiding attacks now has a 50% chance to harvest a Soul Fragment from the attacker.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-1-5",
+      "kind": "structural",
+      "text": "Harnessed Life: Your Tormented Souls now has a -25% chance to not consume a stack from damage taken.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-3-5",
+      "kind": "structural",
+      "text": "Ethereal Guard: Reduces the damage taken by party and raid members by -3%. Does not stack with similar effects.In addition, increases your melee haste by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-5-5",
+      "kind": "structural",
+      "text": "Fatesealer: Generating a Reaped Soul now reduces damage taken by -2% for 15 seconds, stacking 3 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-7-5",
+      "kind": "structural",
+      "text": "Jailer's Will: Soul Strike now deals 30% Strength increased damage, scaling with Strength.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-2-6",
+      "kind": "structural",
+      "text": "To The Shadowlands: Increases the duration of Soulslam by 1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-4-6",
+      "kind": "structural",
+      "text": "Spirit Realm: Your Deathwind now also increases your healing taken by 10% while you stand within its radius.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-6-6",
+      "kind": "structural",
+      "text": "Spectral Warden: Summon a spectral guardian to fight along side you for 20 seconds and apply an absorption shield to up to 8 allies within 20 yds, absorbing 199 + 150% Stamina damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-10-6",
+      "kind": "structural",
+      "text": "Dark Soul: Level 40 PassiveIncreases your Stamina equal to your Armor penetration rating.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-0-7",
+      "kind": "structural",
+      "text": "Hard Bargain: While Tormented Souls is active on you, your melee attack speed is increased by 30% and your Dreadwake costs -5 less Runic Power.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-2-7",
+      "kind": "structural",
+      "text": "Final Requiem: Increases your critical strike chance with abilities that deal Shadow damage by 15% against enemies below 20% health.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-4-7",
+      "kind": "structural",
+      "text": "Soulstorm: Requiem and Soulrend now have a 40% chance to refund a Reaped Soul.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-6-7a",
+      "kind": "structural",
+      "text": "Spirit Army: Your Spectral Warden now causes you to summon 2 additional Spectral Wardens, but their duration is reduced by -8 sec.In addition, increases the amount absorbed by the shield granted by Spectral Warden by 100%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-6-7b",
+      "kind": "structural",
+      "text": "Life Tap: Reduces the cooldown of Spectral Warden by -60 sec and it now heals you equal to 200% of the damage it deals.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-8-7",
+      "kind": "structural",
+      "text": "Soul Splinters: Erupt with ghastly force whenever you harvest a Reaped Soul, dealing 47 + 10.5% Stamina + 15% AP Spellshadow Damage to nearby enemies over 6 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-2-8",
+      "kind": "structural",
+      "text": "Soul Knight: Your successful parries and dodges increase all healing you receive by 2% and reduce all Magic damage taken by -2% for 10 seconds, stacking 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-4-8",
+      "kind": "structural",
+      "text": "Warden of the Lost: Damage dealt by Spectral Scythes and Spectral Wardens now reduces the cooldown of Spectral Warden by -0.5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-6-8",
+      "kind": "structural",
+      "text": "Siphon Anima: When you summon a Spectral Scythe, you now heal for 5% of your damage dealt for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-10-8",
+      "kind": "structural",
+      "text": "Decimation: Level 50 PassiveEvery 6th cast of Reap transforms your next Reap into Decimate for 15 sec.DecimateSmash the ground infront of you, dealing 117% Weapon Damage plus 22 Physical damage in an 8 yd frontal cone to 10 enemies.Generates 1 Soul Fragment and 5 Runic Power per enemy hit.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-2-9",
+      "kind": "structural",
+      "text": "Painmail: Dealing damage with Reap, Dreadwake and Soul Strike now grants a stack of Painmail for 15 seconds, stacking up to 8 times. Additional applications do not refresh the effect.When Painmail stacks expire naturally, you are healed for 2% of your maximum health and reduce the cooldown of Bolstered Form by -0.5 sec for each stack.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-4-9",
+      "kind": "structural",
+      "text": "Spirit Culling: For the duration of Spectral Scythe, the damage of Soul Strike is increased by 20%.In addition, generating a Reaped Soul now has a 10% chance to summon a Spectral Scythe to fight alongside you for 10 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/domination:30-81-6-9",
+      "kind": "structural",
+      "text": "Eater of Souls: Reaching 3 Reaped Souls now reduces your Physical damage taken by -10% and you regain 1% of your maximum health every 2 sec for 10 seconds. This will not trigger while already active.In addition, the healing done by Deathwind is increased by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    }
+  ]
+}

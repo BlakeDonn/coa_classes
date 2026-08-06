@@ -1,0 +1,1423 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "stormbringer/lightning",
+    "class": "Stormbringer",
+    "name": "Lightning",
+    "roles": [
+      "Damage"
+    ],
+    "range": [
+      "Ranged"
+    ]
+  },
+  "identity": {
+    "fantasy": "",
+    "one_line": "A direct-damage lightning caster that builds Static, marks targets with Volt, and spends on Arm of Thorim, Call Lightning, and Electrocute. Standing still builds Electrical Charge toward a no-depletion window, so it rewards planned turret phases while retaining a lightning dash for repositioning.",
+    "primary_family": "",
+    "also_fits": [],
+    "claim_ids": [
+      "talent:stormbringer/lightning:16-42-4-0",
+      "talent:stormbringer/lightning:16-42-10-0",
+      "talent:stormbringer/lightning:16-42-4-1",
+      "talent:stormbringer/lightning:16-42-2-2",
+      "talent:stormbringer/lightning:16-42-6-2",
+      "talent:stormbringer/lightning:16-42-10-2",
+      "talent:stormbringer/lightning:16-42-1-3",
+      "talent:stormbringer/lightning:16-42-4-3",
+      "talent:stormbringer/lightning:16-42-7-3",
+      "talent:stormbringer/lightning:16-42-2-4",
+      "talent:stormbringer/lightning:16-42-3-4",
+      "talent:stormbringer/lightning:16-42-5-4a",
+      "talent:stormbringer/lightning:16-42-5-4b",
+      "talent:stormbringer/lightning:16-42-6-4",
+      "talent:stormbringer/lightning:16-42-10-4",
+      "talent:stormbringer/lightning:16-42-0-5",
+      "talent:stormbringer/lightning:16-42-2-5",
+      "talent:stormbringer/lightning:16-42-4-5",
+      "talent:stormbringer/lightning:16-42-6-5",
+      "talent:stormbringer/lightning:16-42-8-5",
+      "talent:stormbringer/lightning:16-42-1-6",
+      "talent:stormbringer/lightning:16-42-2-6",
+      "talent:stormbringer/lightning:16-42-4-6",
+      "talent:stormbringer/lightning:16-42-6-6",
+      "talent:stormbringer/lightning:16-42-7-6",
+      "talent:stormbringer/lightning:16-42-10-6",
+      "talent:stormbringer/lightning:16-42-1-7",
+      "talent:stormbringer/lightning:16-42-3-7",
+      "talent:stormbringer/lightning:16-42-5-7",
+      "talent:stormbringer/lightning:16-42-7-7",
+      "talent:stormbringer/lightning:16-42-2-8",
+      "talent:stormbringer/lightning:16-42-4-8",
+      "talent:stormbringer/lightning:16-42-6-8",
+      "talent:stormbringer/lightning:16-42-10-8",
+      "talent:stormbringer/lightning:16-42-2-9",
+      "talent:stormbringer/lightning:16-42-4-9",
+      "talent:stormbringer/lightning:16-42-6-9"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "A direct-damage lightning caster that builds Static, marks targets with Volt, and spends on Arm of Thorim, Call Lightning, and Electrocute. Standing still builds Electrical Charge toward a no-depletion window, so it rewards planned turret phases while retaining a lightning dash for repositioning.",
+    "resources": [],
+    "builders": [
+      {
+        "name": "Forked Lightning",
+        "claim_ids": [
+          "talent:stormbringer/lightning:16-42-2-2"
+        ]
+      },
+      {
+        "name": "Volt",
+        "claim_ids": [
+          "talent:stormbringer/lightning:16-42-6-2"
+        ]
+      },
+      {
+        "name": "Fast as Lightning",
+        "claim_ids": [
+          "talent:stormbringer/lightning:16-42-10-4"
+        ]
+      },
+      {
+        "name": "Lightning Cage",
+        "claim_ids": [
+          "talent:stormbringer/lightning:16-42-4-5"
+        ]
+      }
+    ],
+    "spenders": [],
+    "windows": [
+      {
+        "name": "Thorim's Gift",
+        "claim_ids": [
+          "talent:stormbringer/lightning:16-42-1-3"
+        ]
+      },
+      {
+        "name": "Storm Barrier",
+        "claim_ids": [
+          "talent:stormbringer/lightning:16-42-4-6"
+        ]
+      },
+      {
+        "name": "Flux Arc",
+        "claim_ids": [
+          "talent:stormbringer/lightning:16-42-2-8"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Ride the Lightning",
+        "claim_ids": [
+          "talent:stormbringer/lightning:16-42-4-9"
+        ],
+        "structural_description": "Depletes 40 StaticInfuse yourself with lightning and blink forward a long distance, dealing 540 + 50% SP Nature damage to all enemies in your path.Scales with modifiers to Discharge"
+      },
+      {
+        "name": "Thunder Wave",
+        "claim_ids": [
+          "talent:stormbringer/lightning:16-42-6-9"
+        ],
+        "structural_description": "Damage dealt by Forked Lightning has a 5% chance to transform it into Thunder Wave.Thunder Wave (Spell)Bring lightning down upon an enemy and nearby enemies, dealing 206 + 65% arcane SP Spellstorm Damage and refreshing the duration of Volt on enemies struck.Deals 30% increased damage to enemies affected by Volt."
+      }
+    ],
+    "single_target": "",
+    "aoe": "",
+    "movement_and_target_switching": "",
+    "defense_and_control": "",
+    "group_utility": "",
+    "failure_modes": [],
+    "claim_ids": [
+      "talent:stormbringer/lightning:16-42-4-0",
+      "talent:stormbringer/lightning:16-42-10-0",
+      "talent:stormbringer/lightning:16-42-4-1",
+      "talent:stormbringer/lightning:16-42-2-2",
+      "talent:stormbringer/lightning:16-42-6-2",
+      "talent:stormbringer/lightning:16-42-10-2",
+      "talent:stormbringer/lightning:16-42-1-3",
+      "talent:stormbringer/lightning:16-42-4-3",
+      "talent:stormbringer/lightning:16-42-7-3",
+      "talent:stormbringer/lightning:16-42-2-4",
+      "talent:stormbringer/lightning:16-42-3-4",
+      "talent:stormbringer/lightning:16-42-5-4a",
+      "talent:stormbringer/lightning:16-42-5-4b",
+      "talent:stormbringer/lightning:16-42-6-4",
+      "talent:stormbringer/lightning:16-42-10-4",
+      "talent:stormbringer/lightning:16-42-0-5",
+      "talent:stormbringer/lightning:16-42-2-5",
+      "talent:stormbringer/lightning:16-42-4-5",
+      "talent:stormbringer/lightning:16-42-6-5",
+      "talent:stormbringer/lightning:16-42-8-5",
+      "talent:stormbringer/lightning:16-42-1-6",
+      "talent:stormbringer/lightning:16-42-2-6",
+      "talent:stormbringer/lightning:16-42-4-6",
+      "talent:stormbringer/lightning:16-42-6-6",
+      "talent:stormbringer/lightning:16-42-7-6",
+      "talent:stormbringer/lightning:16-42-10-6",
+      "talent:stormbringer/lightning:16-42-1-7",
+      "talent:stormbringer/lightning:16-42-3-7",
+      "talent:stormbringer/lightning:16-42-5-7",
+      "talent:stormbringer/lightning:16-42-7-7",
+      "talent:stormbringer/lightning:16-42-2-8",
+      "talent:stormbringer/lightning:16-42-4-8",
+      "talent:stormbringer/lightning:16-42-6-8",
+      "talent:stormbringer/lightning:16-42-10-8",
+      "talent:stormbringer/lightning:16-42-2-9",
+      "talent:stormbringer/lightning:16-42-4-9",
+      "talent:stormbringer/lightning:16-42-6-9"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Arm of Thorim",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-4-0"
+          ]
+        },
+        {
+          "name": "Electrocutioner",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-10-0"
+          ]
+        },
+        {
+          "name": "Superconductor",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-4-1"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:stormbringer/lightning:16-42-4-0",
+        "talent:stormbringer/lightning:16-42-10-0",
+        "talent:stormbringer/lightning:16-42-4-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Forked Lightning",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-2-2"
+          ]
+        },
+        {
+          "name": "Volt",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-6-2"
+          ]
+        },
+        {
+          "name": "Thunderous",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-10-2"
+          ]
+        },
+        {
+          "name": "Thorim's Gift",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-1-3"
+          ]
+        },
+        {
+          "name": "Titanic Thunderbolt",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-4-3"
+          ]
+        },
+        {
+          "name": "Fulmination",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-7-3"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:stormbringer/lightning:16-42-2-2",
+        "talent:stormbringer/lightning:16-42-6-2",
+        "talent:stormbringer/lightning:16-42-10-2",
+        "talent:stormbringer/lightning:16-42-1-3",
+        "talent:stormbringer/lightning:16-42-4-3",
+        "talent:stormbringer/lightning:16-42-7-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Improved Forked Lightning",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-2-4"
+          ]
+        },
+        {
+          "name": "Electric Energy",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-3-4"
+          ]
+        },
+        {
+          "name": "Electrifying Aura",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-5-4a"
+          ]
+        },
+        {
+          "name": "Tome of Lightning",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-5-4b"
+          ]
+        },
+        {
+          "name": "Wicked Storms",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-6-4"
+          ]
+        },
+        {
+          "name": "Fast as Lightning",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-10-4"
+          ]
+        },
+        {
+          "name": "Stormy Days",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-0-5"
+          ]
+        },
+        {
+          "name": "Invoking Storms",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-2-5"
+          ]
+        },
+        {
+          "name": "Lightning Cage",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-4-5"
+          ]
+        },
+        {
+          "name": "Never Strikes Twice?",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-6-5"
+          ]
+        },
+        {
+          "name": "Jolt",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-8-5"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:stormbringer/lightning:16-42-2-4",
+        "talent:stormbringer/lightning:16-42-3-4",
+        "talent:stormbringer/lightning:16-42-5-4a",
+        "talent:stormbringer/lightning:16-42-5-4b",
+        "talent:stormbringer/lightning:16-42-6-4",
+        "talent:stormbringer/lightning:16-42-10-4",
+        "talent:stormbringer/lightning:16-42-0-5",
+        "talent:stormbringer/lightning:16-42-2-5",
+        "talent:stormbringer/lightning:16-42-4-5",
+        "talent:stormbringer/lightning:16-42-6-5",
+        "talent:stormbringer/lightning:16-42-8-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Lightning Rod",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-1-6"
+          ]
+        },
+        {
+          "name": "Thundershocker",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-2-6"
+          ]
+        },
+        {
+          "name": "Storm Barrier",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-4-6"
+          ]
+        },
+        {
+          "name": "Critical Circuit",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-6-6"
+          ]
+        },
+        {
+          "name": "Sparks",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-7-6"
+          ]
+        },
+        {
+          "name": "Piercing Lightning",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-10-6"
+          ]
+        },
+        {
+          "name": "High Voltage",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-1-7"
+          ]
+        },
+        {
+          "name": "Voltaic Bursts",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-3-7"
+          ]
+        },
+        {
+          "name": "Titanstorm",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-5-7"
+          ]
+        },
+        {
+          "name": "Dark Skies",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-7-7"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:stormbringer/lightning:16-42-1-6",
+        "talent:stormbringer/lightning:16-42-2-6",
+        "talent:stormbringer/lightning:16-42-4-6",
+        "talent:stormbringer/lightning:16-42-6-6",
+        "talent:stormbringer/lightning:16-42-7-6",
+        "talent:stormbringer/lightning:16-42-10-6",
+        "talent:stormbringer/lightning:16-42-1-7",
+        "talent:stormbringer/lightning:16-42-3-7",
+        "talent:stormbringer/lightning:16-42-5-7",
+        "talent:stormbringer/lightning:16-42-7-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Flux Arc",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-2-8"
+          ]
+        },
+        {
+          "name": "Crackling Devastation",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-4-8"
+          ]
+        },
+        {
+          "name": "Electrical Charge",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-6-8"
+          ]
+        },
+        {
+          "name": "Ascension",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-10-8"
+          ]
+        },
+        {
+          "name": "Lord of Lightning",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-2-9"
+          ]
+        },
+        {
+          "name": "Ride the Lightning",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-4-9"
+          ]
+        },
+        {
+          "name": "Thunder Wave",
+          "claim_ids": [
+            "talent:stormbringer/lightning:16-42-6-9"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:stormbringer/lightning:16-42-2-8",
+        "talent:stormbringer/lightning:16-42-4-8",
+        "talent:stormbringer/lightning:16-42-6-8",
+        "talent:stormbringer/lightning:16-42-10-8",
+        "talent:stormbringer/lightning:16-42-2-9",
+        "talent:stormbringer/lightning:16-42-4-9",
+        "talent:stormbringer/lightning:16-42-6-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "leveling_30_49": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "level_50_60": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "boss": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "dungeon_aoe": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "pvp": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [],
+    "avoid_if": []
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [],
+  "sentiment": {
+    "praise": [],
+    "frustrations": [],
+    "contested": []
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 1,
+    "latest_update": "2026-07-25T18:09:59.688+00:00",
+    "top_title": "Lightning Stormbringer Leveling",
+    "top_url": "https://coabuildhub.com/build/96c001c3-21f3-432d-8028-e9a6cac7f103",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:96c001c3-21f3-432d-8028-e9a6cac7f103"
+    ]
+  },
+  "coverage": {
+    "mechanical": "structural_baseline",
+    "community": "indexed",
+    "performance": "missing",
+    "video": "missing",
+    "overall_confidence": "low",
+    "gaps": [
+      "Effective core loop needs recent guide or player cross-check.",
+      "Contextual complexity values are not yet researched.",
+      "Recent performance, sentiment, issues, and video evidence are not yet reconciled."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:stormbringer/lightning:16-42-4-0",
+      "kind": "structural",
+      "text": "Arm of Thorim: Depletes All StaticCall down a terrible beam of lightning upon an enemy, dealing 135 + 120% nature SP Nature damage and stunning them for 1 seconds.Damage and cast time increased based on Static level.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-10-0",
+      "kind": "structural",
+      "text": "Electrocutioner: Level 10 PassiveDealing spell damage now has a 5% chance to grant you Electrocutioner.Electrocutioner (Proc)Resets the cooldown of Electrocute and makes your next usable regardless of the target's health percentage.Chance increases based on Static level.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-4-1",
+      "kind": "structural",
+      "text": "Superconductor: Increases the damage of your Arm of Thorim by an additional 1% per Static depleted.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-2-2",
+      "kind": "structural",
+      "text": "Forked Lightning: Shoot lightning at an enemy, dealing 69 + 49% SP Nature damage, bouncing to up to 4 enemies.Generates 5 Static for each enemy struck.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-6-2",
+      "kind": "structural",
+      "text": "Volt: Fuse lightning into an enemy, dealing 150 + 114% nature SP Nature damage over 18 seconds and slowing them by -40%.Generates 2 Static per tick.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-10-2",
+      "kind": "structural",
+      "text": "Thunderous: Level 20 PassiveIncreases the critical damage of your spells by 150%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-1-3",
+      "kind": "structural",
+      "text": "Thorim's Gift: Your Arm of Thorim now leaves unstable electricity beneath the target, dealing damage equal to 10% of its damage dealt to enemies within every 1 sec for 3 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-4-3",
+      "kind": "structural",
+      "text": "Titanic Thunderbolt: Increases the critical strike chance of Shock, Conjure Storm, and Eye of the Storm by 4%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-7-3",
+      "kind": "structural",
+      "text": "Fulmination: Increases the critical strike chance of Call Lightning and Arm of Thorim by 15% against targets affected by your Volt.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-2-4",
+      "kind": "structural",
+      "text": "Improved Forked Lightning: Your Forked Lightning now affects 1 additional enemy.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-3-4",
+      "kind": "structural",
+      "text": "Electric Energy: Increases the damage of your Shock, Call Lightning, and Arm of Thorim by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-5-4a",
+      "kind": "structural",
+      "text": "Electrifying Aura: Increases critical strike chance of all party and raid members by 3%.Does not stack with similar effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-5-4b",
+      "kind": "structural",
+      "text": "Tome of Lightning: Increases your critical strike chance by 2% and reduces the duration of interrupt and silence effects against you by -20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-6-4",
+      "kind": "structural",
+      "text": "Wicked Storms: Increases your Nature damage dealt by 5%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-10-4",
+      "kind": "structural",
+      "text": "Fast as Lightning: Level 30 PassiveWhile Electrocutioner is active, your Electrocute now gains 20% increased damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-0-5",
+      "kind": "structural",
+      "text": "Stormy Days: Increases the tick rate of Conjure Storm by -25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-2-5",
+      "kind": "structural",
+      "text": "Invoking Storms: Increases the spell power scaling of Shock, Call Lightning, and Arm of Thorim by 15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-4-5",
+      "kind": "structural",
+      "text": "Lightning Cage: Generates 50 StaticAscend into the air and cage yourself in lightning for 30 seconds, locking yourself in place.While inside the cage, damaging spells generate 20 Static and their range is doubled.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-6-5",
+      "kind": "structural",
+      "text": "Never Strikes Twice?: Your Electrocute now has a 25% chance to strike again.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-8-5",
+      "kind": "structural",
+      "text": "Jolt: Increases the damage and critical strike chance of Electrocute by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-1-6",
+      "kind": "structural",
+      "text": "Lightning Rod: Damage dealt by Forked Lightning now has a 20% chance to spread an active Volt on your target to each affected enemy.Chance increases based on Static level.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-2-6",
+      "kind": "structural",
+      "text": "Thundershocker: While rooted by Eye of the Storm, affected enemies now take 30% increased damage from you.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-4-6",
+      "kind": "structural",
+      "text": "Storm Barrier: While Lightning Cage is active your Magic Damage taken is now reduced by -25% and you are unable to be hit by ranged attacks.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-6-6",
+      "kind": "structural",
+      "text": "Critical Circuit: Direct critical strikes with Static spenders now refund 10 Static.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-7-6",
+      "kind": "structural",
+      "text": "Sparks: Damage dealt by Electrocute and Arm of Thorim now increase the target's chance to be critically hit by spells by 3% for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-10-6",
+      "kind": "structural",
+      "text": "Piercing Lightning: Level 40 PassiveIncreases your Nature spell penetration by 20, scaling with your level.In addition, Stormbreaker now dispels 1 additional magic effect.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-1-7",
+      "kind": "structural",
+      "text": "High Voltage: Increases the duration of Arm of Thorim's stun effect by 1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-3-7",
+      "kind": "structural",
+      "text": "Voltaic Bursts: Increases the periodic damage of Shock by 50%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-5-7",
+      "kind": "structural",
+      "text": "Titanstorm: Casting Call Lightning or Electrocute now reduces the cooldown of Arm of Thorim and Lightning Cage by -1.5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-7-7",
+      "kind": "structural",
+      "text": "Dark Skies: When your direct damage spells fail to critically strike, your critical strike chance is increased by 2% for 10 seconds, stacking up to 5 times.Critically striking removes this effect.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-2-8",
+      "kind": "structural",
+      "text": "Flux Arc: Your Forked Lightning and Arm of Thorim now marks enemies for 6 sec. Your Call Lightning against marked enemies deals an additional 15% of its damage to them and nearby enemies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-4-8",
+      "kind": "structural",
+      "text": "Crackling Devastation: Increases the critical damage of Electrocute by 30%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-6-8",
+      "kind": "structural",
+      "text": "Electrical Charge: Standing still grants you Electrical Charge every second, increasing your haste by 1%. Upon reaching 20 stacks, your spells dont deplete Static for 10 seconds, after which the charges are depleted.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-10-8",
+      "kind": "structural",
+      "text": "Ascension: Level 50 PassiveIncreases the duration of your Storm Ascendance by 10 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-2-9",
+      "kind": "structural",
+      "text": "Lord of Lightning: Storm Ascendance now additionally grants you Lord of Lightning for 20 seconds.Lord of LightningIncreases the damage dealt by Forked Lightning, Call Lightning, and Electrocute by an additional 30% and allows Electrocute to strike 3 additional enemies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-4-9",
+      "kind": "structural",
+      "text": "Ride the Lightning: Depletes 40 StaticInfuse yourself with lightning and blink forward a long distance, dealing 540 + 50% SP Nature damage to all enemies in your path.Scales with modifiers to Discharge",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/lightning:16-42-6-9",
+      "kind": "structural",
+      "text": "Thunder Wave: Damage dealt by Forked Lightning has a 5% chance to transform it into Thunder Wave.Thunder Wave (Spell)Bring lightning down upon an enemy and nearby enemies, dealing 206 + 65% arcane SP Spellstorm Damage and refreshing the duration of Volt on enemies struck.Deals 30% increased damage to enemies affected by Volt.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    }
+  ]
+}

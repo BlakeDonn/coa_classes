@@ -1,0 +1,924 @@
+{
+  "baseline": "runemaster--arcane.json",
+  "set": {
+    "identity": {
+      "fantasy": "A glyphic elementalist who writes Frost, Flame, and Arcane effects in sequence, then releases them through Glyphic Ruin and larger manuscript windows.",
+      "primary_family": "sequencers",
+      "also_fits": [
+        "planners"
+      ],
+      "playstyle_tags": [
+        "ordered-builder-spender-caster",
+        "burst-sequence-caster",
+        "multi-school-caster"
+      ],
+      "one_line": "A Glyph builder/spender. Elemental spells grant Frost, Flame, and Arcane Glyphs; Glyphic Ruin unleashes the active effect; Overload, Manuscription, and Chapters create larger multi-school sequences. It has flexible control and AoE, but the correct order of attunements and Glyph releases matters.",
+      "claim_ids": [
+        "observed:runemaster/arcane:current-guide",
+        "inference:runemaster/arcane:order-cost",
+        "talent:runemaster/arcane:32-11-4-0",
+        "talent:runemaster/arcane:32-11-4-2",
+        "talent:runemaster/arcane:32-11-4-3",
+        "observed:runemaster/arcane:performance",
+        "talent:runemaster/arcane:32-11-10-8",
+        "observed:runemaster/arcane:community-shift"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "Choose tattoos and weapon runes before combat, generate the required glyph count with Elemental Blast and Primordial Blast, consume it with Glyphic Ruin or Thaumaturgy, keep Primordial Pulse moving, and empty charges before Runic Obliteration rebuilds and resets the sequence.",
+      "single_target": "The documented build generates two glyphs, prioritizes Glyphic Ruin during Zenith, extends proc-based Frigid Blast near expiry, and avoids hard-casting it outside the Warpdagger setup.",
+      "aoe": "The AoE sequence generates and consumes three glyphs, uses Primordial Pulse on cooldown, and groups Zenith, Glyphic Overload, and Manuscription into a repeatable burst window.",
+      "movement_and_target_switching": "Runeshroud, Phase Out, Warpdagger macros, and cursor runes support repositioning, but the ordered glyph sequence still rewards planned casts.",
+      "defense_and_control": "Glacial, Silencing, resonance, invisibility, and leyline tools provide broad caster control; the captured build deliberately chooses offense over defense.",
+      "group_utility": "Control runes, dispel support, interrupts, and threat redirection add utility around the damage cycle.",
+      "failure_modes": [
+        {
+          "text": "Consuming the wrong glyph count, using Runic Obliteration before emptying charges, or entering the burst macro with the wrong tattoo and rune setup wastes resets and elemental releases.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost"
+          ]
+        },
+        {
+          "text": "Movement or a target swap can interrupt the intended payoff: runeshroud, phase out, warpdagger macros, and cursor runes support repositioning, but the ordered glyph sequence still rewards planned casts.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3"
+          ]
+        },
+        {
+          "text": "Spending recovery or control too early leaves less protection for the next pressure event: glacial, silencing, resonance, invisibility, and leyline tools provide broad caster control; the captured build deliberately chooses offense over defense.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "observed:runemaster/arcane:current-guide",
+        "inference:runemaster/arcane:order-cost",
+        "talent:runemaster/arcane:32-11-4-0",
+        "talent:runemaster/arcane:32-11-4-2",
+        "talent:runemaster/arcane:32-11-4-3",
+        "observed:runemaster/arcane:performance",
+        "talent:runemaster/arcane:32-11-10-8",
+        "observed:runemaster/arcane:community-shift"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "A readable elemental glyph builder that gains its third glyph and first overload tools early.",
+        "strengths": [
+          "Clear builder-spender premise",
+          "Flexible elemental effects",
+          "Useful control"
+        ],
+        "cautions": [
+          "Correct release order matters",
+          "Mana begins shaping tattoo choices"
+        ],
+        "claim_ids": [
+          "talent:runemaster/arcane:32-11-4-0",
+          "talent:runemaster/arcane:32-11-4-2",
+          "talent:runemaster/arcane:32-11-4-3",
+          "observed:runemaster/arcane:current-guide",
+          "inference:runemaster/arcane:order-cost",
+          "observed:runemaster/arcane:performance",
+          "talent:runemaster/arcane:32-11-10-8",
+          "observed:runemaster/arcane:community-shift"
+        ]
+      },
+      "level_50_60": {
+        "feel": "A rehearsed multi-stage caster whose AoE and single-target scripts diverge, with Runic Obliteration adding charge-reset planning.",
+        "strengths": [
+          "79 Mythic records",
+          "Strong current written guide",
+          "Distinct AoE and boss sequences"
+        ],
+        "cautions": [
+          "Pre-pull setup matters",
+          "Burst macros can hide a demanding state machine",
+          "The guide is PvE-only"
+        ],
+        "claim_ids": [
+          "observed:runemaster/arcane:current-guide",
+          "observed:runemaster/arcane:performance",
+          "talent:runemaster/arcane:32-11-10-8",
+          "inference:runemaster/arcane:order-cost",
+          "talent:runemaster/arcane:32-11-4-0",
+          "talent:runemaster/arcane:32-11-4-2",
+          "talent:runemaster/arcane:32-11-4-3",
+          "observed:runemaster/arcane:community-shift"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "By levels 30-49, choose tattoos and weapon runes before combat, generate the required glyph count with elemental blast and primordial blast, consume it with glyphic ruin or thaumaturgy, keep primordial pulse moving, and empty charges before runic obliteration rebuilds and resets the sequence.",
+        "strengths": [
+          "Core engine is online",
+          "More complete target coverage"
+        ],
+        "cautions": [
+          "Late talents still change the ceiling",
+          "Runeshroud, Phase Out, Warpdagger macros, and cursor runes support repositioning, but the ordered glyph sequence still rewards planned casts"
+        ],
+        "claim_ids": [
+          "observed:runemaster/arcane:current-guide",
+          "inference:runemaster/arcane:order-cost",
+          "talent:runemaster/arcane:32-11-4-0",
+          "talent:runemaster/arcane:32-11-4-2",
+          "talent:runemaster/arcane:32-11-4-3",
+          "observed:runemaster/arcane:performance",
+          "talent:runemaster/arcane:32-11-10-8",
+          "observed:runemaster/arcane:community-shift"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, the documented build generates two glyphs, prioritizes glyphic ruin during zenith, extends proc-based frigid blast near expiry, and avoids hard-casting it outside the warpdagger setup.",
+        "strengths": [
+          "Durable targets preserve the full loop",
+          "Cooldowns can be planned"
+        ],
+        "cautions": [
+          "Movement can break setup",
+          "Repeated errors remain visible"
+        ],
+        "claim_ids": [
+          "observed:runemaster/arcane:current-guide",
+          "inference:runemaster/arcane:order-cost",
+          "talent:runemaster/arcane:32-11-4-0",
+          "talent:runemaster/arcane:32-11-4-2",
+          "talent:runemaster/arcane:32-11-4-3",
+          "observed:runemaster/arcane:performance",
+          "talent:runemaster/arcane:32-11-10-8",
+          "observed:runemaster/arcane:community-shift"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, the aoe sequence generates and consumes three glyphs, uses primordial pulse on cooldown, and groups zenith, glyphic overload, and manuscription into a repeatable burst window.",
+        "strengths": [
+          "Pack tools express the spec clearly",
+          "Group utility has regular value"
+        ],
+        "cautions": [
+          "Short-lived targets can erase setup",
+          "Tank movement changes the plan"
+        ],
+        "claim_ids": [
+          "observed:runemaster/arcane:current-guide",
+          "inference:runemaster/arcane:order-cost",
+          "talent:runemaster/arcane:32-11-4-0",
+          "talent:runemaster/arcane:32-11-4-2",
+          "talent:runemaster/arcane:32-11-4-3",
+          "observed:runemaster/arcane:performance",
+          "talent:runemaster/arcane:32-11-10-8",
+          "observed:runemaster/arcane:community-shift"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, runeshroud, phase out, warpdagger macros, and cursor runes support repositioning, but the ordered glyph sequence still rewards planned casts. Glacial, Silencing, resonance, invisibility, and leyline tools provide broad caster control; the captured build deliberately chooses offense over defense.",
+        "strengths": [
+          "Control and utility create options",
+          "Target swaps can reward flexibility"
+        ],
+        "cautions": [
+          "Disruption makes the loop less predictable",
+          "Defensive timing is punishable"
+        ],
+        "claim_ids": [
+          "observed:runemaster/arcane:current-guide",
+          "inference:runemaster/arcane:order-cost",
+          "talent:runemaster/arcane:32-11-4-0",
+          "talent:runemaster/arcane:32-11-4-2",
+          "talent:runemaster/arcane:32-11-4-3",
+          "observed:runemaster/arcane:performance",
+          "talent:runemaster/arcane:32-11-10-8",
+          "observed:runemaster/arcane:community-shift"
+        ]
+      }
+    },
+    "complexity": {
+      "core_actions": {
+        "boss": {
+          "value": "high",
+          "reason": "The documented loop separates pre-pull setup, glyph generation, ordered consumption, proc extension, pulse resets, and burst windows.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "The practical action set follows the authored loop: Choose tattoos and weapon runes before combat, generate the required glyph count with Elemental Blast and Primordial Blast, consume it with Glyphic Ruin or Thaumaturgy, keep Primordial Pulse moving, and empty charges before Runic Obliteration rebuilds and resets the sequence. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "The practical action set follows the authored loop: Choose tattoos and weapon runes before combat, generate the required glyph count with Elemental Blast and Primordial Blast, consume it with Glyphic Ruin or Thaumaturgy, keep Primordial Pulse moving, and empty charges before Runic Obliteration rebuilds and resets the sequence. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "The practical action set follows the authored loop: Choose tattoos and weapon runes before combat, generate the required glyph count with Elemental Blast and Primordial Blast, consume it with Glyphic Ruin or Thaumaturgy, keep Primordial Pulse moving, and empty charges before Runic Obliteration rebuilds and resets the sequence. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "The practical action set follows the authored loop: Choose tattoos and weapon runes before combat, generate the required glyph count with Elemental Blast and Primordial Blast, consume it with Glyphic Ruin or Thaumaturgy, keep Primordial Pulse moving, and empty charges before Runic Obliteration rebuilds and resets the sequence. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "The practical action set follows the authored loop: Choose tattoos and weapon runes before combat, generate the required glyph count with Elemental Blast and Primordial Blast, consume it with Glyphic Ruin or Thaumaturgy, keep Primordial Pulse moving, and empty charges before Runic Obliteration rebuilds and resets the sequence. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        }
+      },
+      "state_tracking": {
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Glyph count, Primordial Pulse, Zenith, Runic Obliteration, mana, tattoos, runes, and Warpdagger buffs overlap.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: The documented build generates two glyphs, prioritizes Glyphic Ruin during Zenith, extends proc-based Frigid Blast near expiry, and avoids hard-casting it outside the Warpdagger setup. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: The documented build generates two glyphs, prioritizes Glyphic Ruin during Zenith, extends proc-based Frigid Blast near expiry, and avoids hard-casting it outside the Warpdagger setup. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: The documented build generates two glyphs, prioritizes Glyphic Ruin during Zenith, extends proc-based Frigid Blast near expiry, and avoids hard-casting it outside the Warpdagger setup. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: The documented build generates two glyphs, prioritizes Glyphic Ruin during Zenith, extends proc-based Frigid Blast near expiry, and avoids hard-casting it outside the Warpdagger setup. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: The documented build generates two glyphs, prioritizes Glyphic Ruin during Zenith, extends proc-based Frigid Blast near expiry, and avoids hard-casting it outside the Warpdagger setup. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        }
+      },
+      "setup_burden": {
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Tattoo, weapon rune, invisibility, palm sigil, and Warpdagger setup precede the damage sequence.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "The payoff depends on establishing the conditions described by: The AoE sequence generates and consumes three glyphs, uses Primordial Pulse on cooldown, and groups Zenith, Glyphic Overload, and Manuscription into a repeatable burst window. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "The payoff depends on establishing the conditions described by: The AoE sequence generates and consumes three glyphs, uses Primordial Pulse on cooldown, and groups Zenith, Glyphic Overload, and Manuscription into a repeatable burst window. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "The payoff depends on establishing the conditions described by: The AoE sequence generates and consumes three glyphs, uses Primordial Pulse on cooldown, and groups Zenith, Glyphic Overload, and Manuscription into a repeatable burst window. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "moderate-high",
+          "reason": "The payoff depends on establishing the conditions described by: The AoE sequence generates and consumes three glyphs, uses Primordial Pulse on cooldown, and groups Zenith, Glyphic Overload, and Manuscription into a repeatable burst window. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        },
+        "pvp": {
+          "value": "moderate-high",
+          "reason": "The payoff depends on establishing the conditions described by: The AoE sequence generates and consumes three glyphs, uses Primordial Pulse on cooldown, and groups Zenith, Glyphic Overload, and Manuscription into a repeatable burst window. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        }
+      },
+      "failure_cost": {
+        "boss": {
+          "value": "high",
+          "reason": "Wrong glyph consumption or poor reset ordering can invalidate several linked steps.",
+          "claim_ids": [
+            "inference:runemaster/arcane:order-cost",
+            "observed:runemaster/arcane:current-guide",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "Consuming the wrong glyph count, using Runic Obliteration before emptying charges, or entering the burst macro with the wrong tattoo and rune setup wastes resets and. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Consuming the wrong glyph count, using Runic Obliteration before emptying charges, or entering the burst macro with the wrong tattoo and rune setup wastes resets and. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Consuming the wrong glyph count, using Runic Obliteration before emptying charges, or entering the burst macro with the wrong tattoo and rune setup wastes resets and. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Consuming the wrong glyph count, using Runic Obliteration before emptying charges, or entering the burst macro with the wrong tattoo and rune setup wastes resets and. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Consuming the wrong glyph count, using Runic Obliteration before emptying charges, or entering the burst macro with the wrong tattoo and rune setup wastes resets and. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; glacial, silencing, resonance, invisibility, and leyline tools provide broad caster control; the captured build deliberately chooses offense over defense. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low-moderate",
+          "reason": "Target count, incoming pressure, and movement change the next action; glacial, silencing, resonance, invisibility, and leyline tools provide broad caster control; the captured build deliberately chooses offense over defense. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        },
+        "level_50_60": {
+          "value": "low-moderate",
+          "reason": "Target count, incoming pressure, and movement change the next action; glacial, silencing, resonance, invisibility, and leyline tools provide broad caster control; the captured build deliberately chooses offense over defense. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        },
+        "boss": {
+          "value": "low-moderate",
+          "reason": "Target count, incoming pressure, and movement change the next action; glacial, silencing, resonance, invisibility, and leyline tools provide broad caster control; the captured build deliberately chooses offense over defense. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low-moderate",
+          "reason": "Target count, incoming pressure, and movement change the next action; glacial, silencing, resonance, invisibility, and leyline tools provide broad caster control; the captured build deliberately chooses offense over defense. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        },
+        "pvp": {
+          "value": "moderate",
+          "reason": "Target count, incoming pressure, and movement change the next action; glacial, silencing, resonance, invisibility, and leyline tools provide broad caster control; the captured build deliberately chooses offense over defense. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Runeshroud, Phase Out, Warpdagger macros, and cursor runes support repositioning, but the ordered glyph sequence still rewards planned casts. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Runeshroud, Phase Out, Warpdagger macros, and cursor runes support repositioning, but the ordered glyph sequence still rewards planned casts. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Runeshroud, Phase Out, Warpdagger macros, and cursor runes support repositioning, but the ordered glyph sequence still rewards planned casts. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Runeshroud, Phase Out, Warpdagger macros, and cursor runes support repositioning, but the ordered glyph sequence still rewards planned casts. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Runeshroud, Phase Out, Warpdagger macros, and cursor runes support repositioning, but the ordered glyph sequence still rewards planned casts. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "Execution is constrained by positioning and swaps: Runeshroud, Phase Out, Warpdagger macros, and cursor runes support repositioning, but the ordered glyph sequence still rewards planned casts. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3",
+            "observed:runemaster/arcane:performance",
+            "talent:runemaster/arcane:32-11-10-8",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You enjoy scripted elemental sequences, resource-state puzzles, and having distinct AoE and single-target plans.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide"
+          ]
+        },
+        {
+          "text": "You enjoy the spec's core cadence: choose tattoos and weapon runes before combat, generate the required glyph count with elemental blast and primordial blast, consume it with glyphic ruin or thaumaturgy, keep primordial pulse moving, and empty charges before runic obliteration rebuilds and resets the sequence.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You want a reactive free-casting rotation with little pre-pull setup or state tracking.",
+          "claim_ids": [
+            "inference:runemaster/arcane:order-cost"
+          ]
+        },
+        {
+          "text": "You dislike the positioning or swap constraint that runeshroud, phase out, warpdagger macros, and cursor runes support repositioning, but the ordered glyph sequence still rewards planned casts.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "inference:runemaster/arcane:order-cost",
+            "talent:runemaster/arcane:32-11-4-0",
+            "talent:runemaster/arcane:32-11-4-2",
+            "talent:runemaster/arcane:32-11-4-3"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Current players describe Glyphic as powerful and flexible once its level-50 tools and sequencing come together.",
+          "claim_ids": [
+            "observed:runemaster/arcane:current-guide",
+            "observed:runemaster/arcane:community-shift"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Players report substantial APM and survivability concerns, while the detailed guide relies on alerts and macros for its many linked states.",
+          "claim_ids": [
+            "observed:runemaster/arcane:community-shift"
+          ]
+        }
+      ],
+      "contested": []
+    },
+    "performance_signal_ids": [
+      "observed:runemaster/arcane:performance"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "strong_single_guide",
+      "performance": "limited_uncontrolled",
+      "video": "searched_none_verified",
+      "overall_confidence": "high",
+      "gaps": [
+        "No equivalent current PvP guide.",
+        "Weapon configuration and gear thresholds may change tattoo cadence."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "A readable elemental glyph builder that gains its third glyph and first overload tools early.",
+      "observed_changes": [
+        "Correct release order matters",
+        "Mana begins shaping tattoo choices"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "A rehearsed multi-stage caster whose AoE and single-target scripts diverge, with Runic Obliteration adding charge-reset planning.",
+      "observed_changes": [
+        "Pre-pull setup matters",
+        "Burst macros can hide a demanding state machine",
+        "The guide is PvE-only"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "A readable elemental glyph builder that gains its third glyph and first overload tools early.",
+      "observed_changes": [
+        "Correct release order matters",
+        "Mana begins shaping tattoo choices"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "By levels 30-49, choose tattoos and weapon runes before combat, generate the required glyph count with elemental blast and primordial blast, consume it with glyphic ruin or thaumaturgy, keep primordial pulse moving, and empty charges before runic obliteration rebuilds and resets the sequence.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Runeshroud, Phase Out, Warpdagger macros, and cursor runes support repositioning, but the ordered glyph sequence still rewards planned casts"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "By levels 30-49, choose tattoos and weapon runes before combat, generate the required glyph count with elemental blast and primordial blast, consume it with glyphic ruin or thaumaturgy, keep primordial pulse moving, and empty charges before runic obliteration rebuilds and resets the sequence.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Runeshroud, Phase Out, Warpdagger macros, and cursor runes support repositioning, but the ordered glyph sequence still rewards planned casts"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:runemaster/arcane:current-guide",
+      "kind": "observed",
+      "text": "The July Glyphic guide documents separate AoE and single-target sequences, pre-pull tattoo and weapon-rune choices, Warpdagger buff macros, two-glyph versus three-glyph consumption, Zenith priority, Primordial Pulse resets, Frigid Blast proc extension, and emptying charges before Runic Obliteration. It explicitly covers PvE rather than PvP.",
+      "source_ids": [
+        "buildhub:8c73e1e4-17b0-4a02-aae9-db2be4d5a4ea"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "dungeons",
+          "raids",
+          "pve"
+        ],
+        "build_or_mode": [
+          "documented_pve_build"
+        ]
+      },
+      "confidence": "high",
+      "conflicts_with": [],
+      "notes": "The source is Portuguese; mechanics were normalized without copying its prose."
+    },
+    {
+      "id": "observed:runemaster/arcane:community-shift",
+      "kind": "observed",
+      "text": "Recent Runemaster discussion describes high APM and survivability pressure, while also reporting that the Glyphic version changes materially and feels stronger once level-50 tools arrive.",
+      "source_ids": [
+        "reddit:runemaster-status-2026-07-19"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "pve",
+          "solo_leveling"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Community naming Glyphic maps to current dataset name Arcane."
+    },
+    {
+      "id": "observed:runemaster/arcane:performance",
+      "kind": "observed",
+      "text": "The July DPS compilation reports Glyphic at 3,993, and the August Mythic inventory lists 79 Arcane or Glyphic records.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "pve_unspecified",
+          "mythic_dungeons"
+        ],
+        "build_or_mode": [
+          "unspecified"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "Arcane is the dataset label; Glyphic is the community label. Sources are unnormalized."
+    },
+    {
+      "id": "inference:runemaster/arcane:order-cost",
+      "kind": "inference",
+      "text": "Arcane Runemaster's difficulty comes from preserving an ordered state machine rather than merely pressing many spells: glyph counts, releases, resets, tattoos, and burst windows can invalidate one another when sequenced poorly.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "observed:runemaster/arcane:current-guide",
+        "talent:runemaster/arcane:32-11-4-0",
+        "talent:runemaster/arcane:32-11-10-8"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "pve"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "high",
+      "conflicts_with": [],
+      "notes": "Playstyle classification from the documented rotations."
+    }
+  ]
+}

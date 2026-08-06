@@ -1,0 +1,1488 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "reaper/soul",
+    "class": "Reaper",
+    "name": "Soul",
+    "roles": [
+      "Damage"
+    ],
+    "range": [
+      "Melee"
+    ]
+  },
+  "identity": {
+    "fantasy": "",
+    "one_line": "A ghostly skirmisher using Deathchaser, Soulrend, Dirge, Wraithblade, shades, Limbo, and delayed Soulrot. It moves in and out of spectral states, marks an area as a Gravesite, and rewards managing Reaped Souls and debuff timing.",
+    "primary_family": "",
+    "also_fits": [],
+    "claim_ids": [
+      "talent:reaper/soul:30-80-4-0",
+      "talent:reaper/soul:30-80-10-0",
+      "talent:reaper/soul:30-80-2-1",
+      "talent:reaper/soul:30-80-6-1",
+      "talent:reaper/soul:30-80-1-2",
+      "talent:reaper/soul:30-80-4-2",
+      "talent:reaper/soul:30-80-7-2",
+      "talent:reaper/soul:30-80-10-2",
+      "talent:reaper/soul:30-80-2-3",
+      "talent:reaper/soul:30-80-4-3a",
+      "talent:reaper/soul:30-80-4-3b",
+      "talent:reaper/soul:30-80-6-3",
+      "talent:reaper/soul:30-80-2-4",
+      "talent:reaper/soul:30-80-4-4",
+      "talent:reaper/soul:30-80-6-4",
+      "talent:reaper/soul:30-80-10-4",
+      "talent:reaper/soul:30-80-0-5",
+      "talent:reaper/soul:30-80-2-5a",
+      "talent:reaper/soul:30-80-2-5b",
+      "talent:reaper/soul:30-80-3-5",
+      "talent:reaper/soul:30-80-5-5",
+      "talent:reaper/soul:30-80-6-5",
+      "talent:reaper/soul:30-80-8-5",
+      "talent:reaper/soul:30-80-1-6",
+      "talent:reaper/soul:30-80-3-6",
+      "talent:reaper/soul:30-80-5-6",
+      "talent:reaper/soul:30-80-7-6",
+      "talent:reaper/soul:30-80-10-6",
+      "talent:reaper/soul:30-80-2-7",
+      "talent:reaper/soul:30-80-4-7a",
+      "talent:reaper/soul:30-80-4-7b",
+      "talent:reaper/soul:30-80-6-7",
+      "talent:reaper/soul:30-80-2-8",
+      "talent:reaper/soul:30-80-4-8",
+      "talent:reaper/soul:30-80-6-8",
+      "talent:reaper/soul:30-80-10-8",
+      "talent:reaper/soul:30-80-2-9",
+      "talent:reaper/soul:30-80-4-9",
+      "talent:reaper/soul:30-80-6-9"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "A ghostly skirmisher using Deathchaser, Soulrend, Dirge, Wraithblade, shades, Limbo, and delayed Soulrot. It moves in and out of spectral states, marks an area as a Gravesite, and rewards managing Reaped Souls and debuff timing.",
+    "resources": [
+      "Reaped Souls",
+      "Runic Power",
+      "Soul Infusion"
+    ],
+    "builders": [
+      {
+        "name": "Deathchaser",
+        "claim_ids": [
+          "talent:reaper/soul:30-80-4-0"
+        ]
+      },
+      {
+        "name": "Dirge",
+        "claim_ids": [
+          "talent:reaper/soul:30-80-1-2"
+        ]
+      },
+      {
+        "name": "Soul Generator",
+        "claim_ids": [
+          "talent:reaper/soul:30-80-2-3"
+        ]
+      },
+      {
+        "name": "Purgatory",
+        "claim_ids": [
+          "talent:reaper/soul:30-80-5-6"
+        ]
+      },
+      {
+        "name": "Endbringer",
+        "claim_ids": [
+          "talent:reaper/soul:30-80-2-8"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Soulforged Weaponry",
+        "claim_ids": [
+          "talent:reaper/soul:30-80-2-1"
+        ]
+      },
+      {
+        "name": "Deathwail",
+        "claim_ids": [
+          "talent:reaper/soul:30-80-6-3"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Gravesite",
+        "claim_ids": [
+          "talent:reaper/soul:30-80-2-9"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Shade",
+        "claim_ids": [
+          "talent:reaper/soul:30-80-3-6"
+        ],
+        "structural_description": "Become a shade, entering an improved stealth mode for 10 seconds and entering Underwalk. Removes all movement impairing effects."
+      },
+      {
+        "name": "Soulrot",
+        "claim_ids": [
+          "talent:reaper/soul:30-80-4-9"
+        ],
+        "structural_description": "Damage dealt by Deathchaser now applies Soulrot.SoulrotRot the soul of your target, cursing them for 15 seconds. At the end of the duration the enemy will take damage based on the number of stacks accrued. Each instance of damage from Deathchaser adds 1 stack to this effect, up to 20 stacks. Dispelling this effect causes the dispeller to instantly take 1200 + 200% AP Shadow Damage."
+      }
+    ],
+    "single_target": "",
+    "aoe": "",
+    "movement_and_target_switching": "",
+    "defense_and_control": "",
+    "group_utility": "",
+    "failure_modes": [],
+    "claim_ids": [
+      "talent:reaper/soul:30-80-4-0",
+      "talent:reaper/soul:30-80-10-0",
+      "talent:reaper/soul:30-80-2-1",
+      "talent:reaper/soul:30-80-6-1",
+      "talent:reaper/soul:30-80-1-2",
+      "talent:reaper/soul:30-80-4-2",
+      "talent:reaper/soul:30-80-7-2",
+      "talent:reaper/soul:30-80-10-2",
+      "talent:reaper/soul:30-80-2-3",
+      "talent:reaper/soul:30-80-4-3a",
+      "talent:reaper/soul:30-80-4-3b",
+      "talent:reaper/soul:30-80-6-3",
+      "talent:reaper/soul:30-80-2-4",
+      "talent:reaper/soul:30-80-4-4",
+      "talent:reaper/soul:30-80-6-4",
+      "talent:reaper/soul:30-80-10-4",
+      "talent:reaper/soul:30-80-0-5",
+      "talent:reaper/soul:30-80-2-5a",
+      "talent:reaper/soul:30-80-2-5b",
+      "talent:reaper/soul:30-80-3-5",
+      "talent:reaper/soul:30-80-5-5",
+      "talent:reaper/soul:30-80-6-5",
+      "talent:reaper/soul:30-80-8-5",
+      "talent:reaper/soul:30-80-1-6",
+      "talent:reaper/soul:30-80-3-6",
+      "talent:reaper/soul:30-80-5-6",
+      "talent:reaper/soul:30-80-7-6",
+      "talent:reaper/soul:30-80-10-6",
+      "talent:reaper/soul:30-80-2-7",
+      "talent:reaper/soul:30-80-4-7a",
+      "talent:reaper/soul:30-80-4-7b",
+      "talent:reaper/soul:30-80-6-7",
+      "talent:reaper/soul:30-80-2-8",
+      "talent:reaper/soul:30-80-4-8",
+      "talent:reaper/soul:30-80-6-8",
+      "talent:reaper/soul:30-80-10-8",
+      "talent:reaper/soul:30-80-2-9",
+      "talent:reaper/soul:30-80-4-9",
+      "talent:reaper/soul:30-80-6-9"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Deathchaser",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-4-0"
+          ]
+        },
+        {
+          "name": "Weakened Souls",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-10-0"
+          ]
+        },
+        {
+          "name": "Soulforged Weaponry",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-2-1"
+          ]
+        },
+        {
+          "name": "Mark of Death",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-6-1"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:reaper/soul:30-80-4-0",
+        "talent:reaper/soul:30-80-10-0",
+        "talent:reaper/soul:30-80-2-1",
+        "talent:reaper/soul:30-80-6-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Dirge",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-1-2"
+          ]
+        },
+        {
+          "name": "Ghostly Weapon",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-4-2"
+          ]
+        },
+        {
+          "name": "Shattered Souls",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-7-2"
+          ]
+        },
+        {
+          "name": "Spirit Render",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-10-2"
+          ]
+        },
+        {
+          "name": "Soul Generator",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-2-3"
+          ]
+        },
+        {
+          "name": "Lamenting",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-4-3a"
+          ]
+        },
+        {
+          "name": "Death Dealer",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-4-3b"
+          ]
+        },
+        {
+          "name": "Deathwail",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-6-3"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:reaper/soul:30-80-1-2",
+        "talent:reaper/soul:30-80-4-2",
+        "talent:reaper/soul:30-80-7-2",
+        "talent:reaper/soul:30-80-10-2",
+        "talent:reaper/soul:30-80-2-3",
+        "talent:reaper/soul:30-80-4-3a",
+        "talent:reaper/soul:30-80-4-3b",
+        "talent:reaper/soul:30-80-6-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Ghostly Magic",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-2-4"
+          ]
+        },
+        {
+          "name": "Ghastly Hilt",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-4-4"
+          ]
+        },
+        {
+          "name": "Soulbender",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-6-4"
+          ]
+        },
+        {
+          "name": "Spectre",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-10-4"
+          ]
+        },
+        {
+          "name": "Anima Ambusher",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-0-5"
+          ]
+        },
+        {
+          "name": "Fleeting Soul",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-2-5a"
+          ]
+        },
+        {
+          "name": "Soul Piercer",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-2-5b"
+          ]
+        },
+        {
+          "name": "Reaver",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-3-5"
+          ]
+        },
+        {
+          "name": "Essence Harvest",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-5-5"
+          ]
+        },
+        {
+          "name": "Chasing Death",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-6-5"
+          ]
+        },
+        {
+          "name": "Spirit Chaser",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-8-5"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:reaper/soul:30-80-2-4",
+        "talent:reaper/soul:30-80-4-4",
+        "talent:reaper/soul:30-80-6-4",
+        "talent:reaper/soul:30-80-10-4",
+        "talent:reaper/soul:30-80-0-5",
+        "talent:reaper/soul:30-80-2-5a",
+        "talent:reaper/soul:30-80-2-5b",
+        "talent:reaper/soul:30-80-3-5",
+        "talent:reaper/soul:30-80-5-5",
+        "talent:reaper/soul:30-80-6-5",
+        "talent:reaper/soul:30-80-8-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Apparition",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-1-6"
+          ]
+        },
+        {
+          "name": "Shade",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-3-6"
+          ]
+        },
+        {
+          "name": "Purgatory",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-5-6"
+          ]
+        },
+        {
+          "name": "Soul Bane",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-7-6"
+          ]
+        },
+        {
+          "name": "Beyond the Veil",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-10-6"
+          ]
+        },
+        {
+          "name": "The Jailer's Call",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-2-7"
+          ]
+        },
+        {
+          "name": "Spiritual Reflexes",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-4-7a"
+          ]
+        },
+        {
+          "name": "Death's Presence",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-4-7b"
+          ]
+        },
+        {
+          "name": "Spectre's Call",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-6-7"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:reaper/soul:30-80-1-6",
+        "talent:reaper/soul:30-80-3-6",
+        "talent:reaper/soul:30-80-5-6",
+        "talent:reaper/soul:30-80-7-6",
+        "talent:reaper/soul:30-80-10-6",
+        "talent:reaper/soul:30-80-2-7",
+        "talent:reaper/soul:30-80-4-7a",
+        "talent:reaper/soul:30-80-4-7b",
+        "talent:reaper/soul:30-80-6-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Endbringer",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-2-8"
+          ]
+        },
+        {
+          "name": "The End Is Near",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-4-8"
+          ]
+        },
+        {
+          "name": "Lord of Death",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-6-8"
+          ]
+        },
+        {
+          "name": "Sepulchral Renewal",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-10-8"
+          ]
+        },
+        {
+          "name": "Gravesite",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-2-9"
+          ]
+        },
+        {
+          "name": "Soulrot",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-4-9"
+          ]
+        },
+        {
+          "name": "Beyond Death",
+          "claim_ids": [
+            "talent:reaper/soul:30-80-6-9"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:reaper/soul:30-80-2-8",
+        "talent:reaper/soul:30-80-4-8",
+        "talent:reaper/soul:30-80-6-8",
+        "talent:reaper/soul:30-80-10-8",
+        "talent:reaper/soul:30-80-2-9",
+        "talent:reaper/soul:30-80-4-9",
+        "talent:reaper/soul:30-80-6-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "leveling_30_49": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "level_50_60": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "boss": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "dungeon_aoe": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "pvp": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [],
+    "avoid_if": []
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [],
+  "sentiment": {
+    "praise": [],
+    "frustrations": [],
+    "contested": []
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 2,
+    "latest_update": "2026-08-01T05:00:31.119+00:00",
+    "top_title": "Reaper PVP BIS",
+    "top_url": "https://coabuildhub.com/build/2c5d077a-6cec-4793-a39a-6b872ea55690",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:2c5d077a-6cec-4793-a39a-6b872ea55690"
+    ]
+  },
+  "coverage": {
+    "mechanical": "structural_baseline",
+    "community": "indexed",
+    "performance": "missing",
+    "video": "missing",
+    "overall_confidence": "low",
+    "gaps": [
+      "Effective core loop needs recent guide or player cross-check.",
+      "Contextual complexity values are not yet researched.",
+      "Recent performance, sentiment, issues, and video evidence are not yet reconciled."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:reaper/soul:30-80-4-0",
+      "kind": "structural",
+      "text": "Deathchaser: Force death upon an enemy, dealing 13 + 8% AP Shadowfrost Damage, repeating every 0 sec for 1 seconds, and generates Runic Power.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-10-0",
+      "kind": "structural",
+      "text": "Weakened Souls: Level 10 PassiveYour Soulrend now also applies Weakened Soul, increasing the target's Shadow and Frost damage taken from you by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-2-1",
+      "kind": "structural",
+      "text": "Soulforged Weaponry: Increases your off-hand weapon damage by 25%.While dual-wielding, your auto attacks now have a 8% chance to make your next Murder free of cost.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-6-1",
+      "kind": "structural",
+      "text": "Mark of Death: Increases the damage dealt by Deathchaser by 15% and your hit chance by 3%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-1-2",
+      "kind": "structural",
+      "text": "Dirge: Generates 2 Soul FragmentsStrike the enemy with both weapons, dealing 70% (130% if a dagger is equipped) Weapon Damage as Shadowfrost Damage with each, and generates Runic Power.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-4-2",
+      "kind": "structural",
+      "text": "Ghostly Weapon: 2 Charges, 40 sec rechargeImbue your weapon with ghostly power for 15 seconds, causing melee attacks to deal 25% additional damage as Frost damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-7-2",
+      "kind": "structural",
+      "text": "Shattered Souls: Your Wraithblade now deals double damage to enemies affected by Soulrend.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-10-2",
+      "kind": "structural",
+      "text": "Spirit Render: Level 20 PassiveIncreases your spell penetration by 20, scaling with your level.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-2-3",
+      "kind": "structural",
+      "text": "Soul Generator: Critical strikes with Dirge now generate 10 Runic Power.Critical strikes with Murder now generate 1 additional Reaped Soul.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-4-3a",
+      "kind": "structural",
+      "text": "Lamenting: Damage dealt by Ghostly Weapon now heals for 50% of the damage dealt.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-4-3b",
+      "kind": "structural",
+      "text": "Death Dealer: Increases the duration of Ghostly Weapon and Soulrend by 5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-6-3",
+      "kind": "structural",
+      "text": "Deathwail: Reduces the Runic Power cost of Wraithblade by -50%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-2-4",
+      "kind": "structural",
+      "text": "Ghostly Magic: Increases the damage of Reap, Dirge, and Reliquary of the Lost by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-4-4",
+      "kind": "structural",
+      "text": "Ghastly Hilt: Ghostly Weapon now causes your melee abilities to strike up to 2 additional targets near the primary target.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-6-4",
+      "kind": "structural",
+      "text": "Soulbender: Significantly increases the Runic Power generated by Deathchaser.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-10-4",
+      "kind": "structural",
+      "text": "Spectre: Level 30 PassiveReduces the cooldown of Underwalk by -10 sec.In addition, Withering Touch will now always apply Ghost Claw to the target.Ghost Claw (Speed)Chill an enemy with a ghostly claw, slowing and stealing -50% of their movement speed for 8 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-0-5",
+      "kind": "structural",
+      "text": "Anima Ambusher: Spectre Stride now deals an additional 125% of its damage dealt over 5 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-2-5a",
+      "kind": "structural",
+      "text": "Fleeting Soul: Reduces the cooldown of Soulslam by -15 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-2-5b",
+      "kind": "structural",
+      "text": "Soul Piercer: Striking at least 1 enemy with Soulslam now refunds its Reaped Souls.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-3-5",
+      "kind": "structural",
+      "text": "Reaver: Reduces the cooldown of Deathstalker, Soul Shear, and Soulstone Lure by -50%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-5-5",
+      "kind": "structural",
+      "text": "Essence Harvest: Increases the additional Frost damage dealt by Ghostly Weapon by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-6-5",
+      "kind": "structural",
+      "text": "Chasing Death: Deathchaser used against a target below 20% health will now reapply itself at the end of its duration until they die or until 5 seconds passes.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-8-5",
+      "kind": "structural",
+      "text": "Spirit Chaser: Increases the critical strike chance and critical damage of Reap, Deathchaser, and Wraithblade by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-1-6",
+      "kind": "structural",
+      "text": "Apparition: Increases the damage of Spectre Stride by 30% and reduces the chance for enemies to see you while stealthed.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-3-6",
+      "kind": "structural",
+      "text": "Shade: Become a shade, entering an improved stealth mode for 10 seconds and entering Underwalk. Removes all movement impairing effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-5-6",
+      "kind": "structural",
+      "text": "Purgatory: When you gain Soul Infusion, the damage of your Soulrend and Reliquary of the Lost is increased by 20% for 6 seconds, stacking 2 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-7-6",
+      "kind": "structural",
+      "text": "Soul Bane: Reduces the cooldown of Reliquary of the Lost by -5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-10-6",
+      "kind": "structural",
+      "text": "Beyond the Veil: Level 40 PassiveEntering Underwalk now grants you Beyond the Veil, increasing movement speed by 30% and allowing you to walk on water.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-2-7",
+      "kind": "structural",
+      "text": "The Jailer's Call: Attacks against enemies below 20% health deal an additional 140 + 18% AP Shadow damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-4-7a",
+      "kind": "structural",
+      "text": "Spiritual Reflexes: While below 35% maximum health, your chance to dodge attacks is increased by 25% and dodging an attack unleashes Soul Harvest on the target.Soul Harvest (Damage)Blasts your target for 1 + 5% AP + 10% shadow SP Shadow Damage, healing for 100% of the damage dealt.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-4-7b",
+      "kind": "structural",
+      "text": "Death's Presence: Increases all damage dealt by party and raid members by 3%.Does not stack with similar effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-6-7",
+      "kind": "structural",
+      "text": "Spectre's Call: Increases the damage of Deathwind, Murder, and Soul Strike by 15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-2-8",
+      "kind": "structural",
+      "text": "Endbringer: Become an Endbringer for 15 seconds, increasing the damage of Dirge by 30%, the range by 20 yds, and causes it to generate 3 Reaped Souls.For the duration, Dirge will heal you for 75% of its damage dealt.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-4-8",
+      "kind": "structural",
+      "text": "The End Is Near: Wraithblade now creates a spectral version of yourself for 12 seconds that casts Dirge and Murder on enemies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-6-8",
+      "kind": "structural",
+      "text": "Lord of Death: Abilities affected by Ghostly Weapon now deal 25% more damage per additional target.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-10-8",
+      "kind": "structural",
+      "text": "Sepulchral Renewal: Resets the cooldown of Limbo, Soulslam, and Shade.Usable while stealthed.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-2-9",
+      "kind": "structural",
+      "text": "Gravesite: Casting Endbringer now marks the ground beneath you as your Gravesite for 15 seconds.Direct critical strikes made against enemies within a Gravesite now deals 530 + 36% AP Shadow damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-4-9",
+      "kind": "structural",
+      "text": "Soulrot: Damage dealt by Deathchaser now applies Soulrot.SoulrotRot the soul of your target, cursing them for 15 seconds. At the end of the duration the enemy will take damage based on the number of stacks accrued. Each instance of damage from Deathchaser adds 1 stack to this effect, up to 20 stacks. Dispelling this effect causes the dispeller to instantly take 1200 + 200% AP Shadow Damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:reaper/soul:30-80-6-9",
+      "kind": "structural",
+      "text": "Beyond Death: Dealing damage with Reliquary of the Lost now has a 8% chance to launch an additional Soul Bolt.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    }
+  ]
+}

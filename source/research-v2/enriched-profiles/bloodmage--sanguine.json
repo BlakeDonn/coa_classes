@@ -1,0 +1,2118 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "bloodmage/sanguine",
+    "class": "Bloodmage",
+    "name": "Sanguine",
+    "roles": [
+      "Damage"
+    ],
+    "range": [
+      "Ranged"
+    ]
+  },
+  "identity": {
+    "fantasy": "A vampiric blood caster who spends health to seed suffering, builds Thirst through repeated ruptures, and cashes the bank into curses, eruptions, parasites, or a Blood Lord transformation.",
+    "one_line": "A blood-and-Shadow caster that layers Transgression, diseases, blood eruptions, parasites, and vampiric cooldowns. It leeches and harvests essence while building toward Blood Lord and sacrificial burst windows, giving it strong sustain but substantial DoT and proc tracking.",
+    "primary_family": "planners",
+    "also_fits": [
+      "sequencers"
+    ],
+    "claim_ids": [
+      "observed:bloodmage/sanguine:rotation",
+      "observed:bloodmage/sanguine:pvp-health-cost",
+      "inference:bloodmage/sanguine:ramp-cost",
+      "observed:bloodmage/sanguine:leveling",
+      "talent:bloodmage/sanguine:20-26-10-0",
+      "talent:bloodmage/sanguine:20-26-4-9",
+      "talent:bloodmage/sanguine:20-26-7-5",
+      "observed:bloodmage/sanguine:performance"
+    ],
+    "playstyle_tags": [
+      "ramp-caster",
+      "health-cost-caster",
+      "dot-burst"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "Apply Transgression, build Thirst with the appropriate single-target or AoE generator, begin the dump near seven stacks so multi-cast payoffs land around ten, use Vampiric Fang to reset or harvest the sequence, and align Blood Lord or Sacrificial Rite with targets that will survive the ramp.",
+    "resources": [],
+    "builders": [
+      {
+        "name": "Blood Parasites",
+        "claim_ids": [
+          "talent:bloodmage/sanguine:20-26-8-6"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Thirst",
+        "claim_ids": [
+          "talent:bloodmage/sanguine:20-26-10-0"
+        ]
+      },
+      {
+        "name": "Fearmonger",
+        "claim_ids": [
+          "talent:bloodmage/sanguine:20-26-6-2"
+        ]
+      },
+      {
+        "name": "Night Feast",
+        "claim_ids": [
+          "talent:bloodmage/sanguine:20-26-6-4"
+        ]
+      },
+      {
+        "name": "The Council Assembled",
+        "claim_ids": [
+          "talent:bloodmage/sanguine:20-26-2-9"
+        ]
+      }
+    ],
+    "windows": [],
+    "modes": [
+      {
+        "name": "Transgression",
+        "claim_ids": [
+          "talent:bloodmage/sanguine:20-26-3-0"
+        ],
+        "structural_description": "Transform: s your Blood Curse into Transgression.Transgression (Cursed Form)Enter a unique Cursed Form for 30 seconds that does not disable the use of Mortal Form abilities and casts a free Vampiric Fang on your target.While active, direct spell damage triggers a Vampiric Feast, dealing 20% additional Shadow damage to enemies, healing you equal to 50% of the damage dealt."
+      },
+      {
+        "name": "Valanar's Vengeance",
+        "claim_ids": [
+          "talent:bloodmage/sanguine:20-26-4-1"
+        ],
+        "structural_description": "Requires Mortal FormLaunch a powerful blood bolt at an enemy, dealing 188 + 127.75% SP Shadow damage.Each stack of Thirst reduces the cast time of this ability and increases its damage."
+      },
+      {
+        "name": "Keleseth's Calamity",
+        "claim_ids": [
+          "talent:bloodmage/sanguine:20-26-7-5"
+        ],
+        "structural_description": "Requires Mortal FormBend blood in an area, dealing 177 + 69% shadow SP Shadow damage to enemies.Each stack of Thirst reduces the cast time of this ability and increases its damage."
+      },
+      {
+        "name": "Blood Craving",
+        "claim_ids": [
+          "talent:bloodmage/sanguine:20-26-1-7"
+        ],
+        "structural_description": "Requires Mortal FormYou crave blood for 12 seconds, for the duration you cannot be interrupted or silenced, and you regain 5% of your maximum health and 15% of your missing Rage every 2 sec."
+      },
+      {
+        "name": "Sacrificial Rite",
+        "claim_ids": [
+          "talent:bloodmage/sanguine:20-26-4-9"
+        ],
+        "structural_description": "Requires Mortal FormInvoke a dark ritual, increasing your haste by 20% for 15 seconds.While active, attackers are afflicted with Cursed Blood. Can only occur once per sec.At the end of the duration, your healing done is increased by 15% and you are healed for 795 + 150% SP over 15 seconds."
+      }
+    ],
+    "single_target": "Current players describe Transgression into Bloodmoon Blast stacks, Bloodbolt and Malediction setup, repeated Valanar's Vengeance, then Vampiric Fang after the final hit connects.",
+    "aoe": "Recent guidance builds roughly seven Thirst with Rupture, casts Keleseth's Calamity repeatedly, adds Atherann's Anguish when available, then uses Rupture and Vampiric Fang to reset; later cursed ground and parasites deepen the pack package.",
+    "movement_and_target_switching": "Long effects and delayed projectiles punish rapid target turnover, while hard casts and health costs make forced movement more expensive than on a mobile weapon spec.",
+    "defense_and_control": "Vampiric Fang, Lifedrinker, Blood Banquet, Blood Cocoon, and later leech or lord effects return health, but the caster is deliberately spending the same health pool opponents attack.",
+    "group_utility": "Fear, control, and Bloodmage off-healing remain available, though the specialization's distinctive group tension is managing self-damage without creating avoidable healer load.",
+    "failure_modes": [
+      {
+        "text": "Sitting at maximum Thirst or mistiming Vampiric Fang wastes the ramp; in PvP, health-cost casts can make the caster easier to kill before the payoff lands.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost"
+        ]
+      },
+      {
+        "text": "Movement or a target swap can interrupt the intended payoff: long effects and delayed projectiles punish rapid target turnover, while hard casts and health costs make forced movement more expensive than on a mobile weapon spec.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0"
+        ]
+      },
+      {
+        "text": "Spending recovery or control too early leaves less protection for the next pressure event: vampiric fang, lifedrinker, blood banquet, blood cocoon, and later leech or lord effects return health, but the caster is deliberately spending the same health pool opponents attack.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0"
+        ]
+      }
+    ],
+    "claim_ids": [
+      "observed:bloodmage/sanguine:rotation",
+      "observed:bloodmage/sanguine:pvp-health-cost",
+      "inference:bloodmage/sanguine:ramp-cost",
+      "observed:bloodmage/sanguine:leveling",
+      "talent:bloodmage/sanguine:20-26-10-0",
+      "talent:bloodmage/sanguine:20-26-4-9",
+      "talent:bloodmage/sanguine:20-26-7-5",
+      "observed:bloodmage/sanguine:performance"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Transgression",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-3-0"
+          ]
+        },
+        {
+          "name": "Vampiric Fang",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-5-0"
+          ]
+        },
+        {
+          "name": "Thirst",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-10-0"
+          ]
+        },
+        {
+          "name": "Valanar's Vengeance",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-4-1"
+          ]
+        }
+      ],
+      "observed_loop": "A health-spending caster that gains a much clearer rhythm after level 20 scaling and the Bloodbolt critical interaction become available.",
+      "observed_changes": [
+        "Current players report a rough pre-20 curve",
+        "Health costs magnify mistakes"
+      ],
+      "claim_ids": [
+        "talent:bloodmage/sanguine:20-26-3-0",
+        "talent:bloodmage/sanguine:20-26-5-0",
+        "talent:bloodmage/sanguine:20-26-10-0",
+        "talent:bloodmage/sanguine:20-26-4-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Atherann's Wickedness",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-2-2"
+          ]
+        },
+        {
+          "name": "Fearmonger",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-6-2"
+          ]
+        },
+        {
+          "name": "Cunning of Atherann",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-10-2"
+          ]
+        },
+        {
+          "name": "Blood Constructor",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-1-3"
+          ]
+        },
+        {
+          "name": "Aneurysm",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-3-3"
+          ]
+        },
+        {
+          "name": "Darkfallen's Embrace",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-5-3"
+          ]
+        },
+        {
+          "name": "Blood Banquet",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-7-3"
+          ]
+        }
+      ],
+      "observed_loop": "A health-spending caster that gains a much clearer rhythm after level 20 scaling and the Bloodbolt critical interaction become available.",
+      "observed_changes": [
+        "Current players report a rough pre-20 curve",
+        "Health costs magnify mistakes"
+      ],
+      "claim_ids": [
+        "talent:bloodmage/sanguine:20-26-2-2",
+        "talent:bloodmage/sanguine:20-26-6-2",
+        "talent:bloodmage/sanguine:20-26-10-2",
+        "talent:bloodmage/sanguine:20-26-1-3",
+        "talent:bloodmage/sanguine:20-26-3-3",
+        "talent:bloodmage/sanguine:20-26-5-3",
+        "talent:bloodmage/sanguine:20-26-7-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "The Cup Runneth Over",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-0-4"
+          ]
+        },
+        {
+          "name": "Lifedrinker",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-2-4"
+          ]
+        },
+        {
+          "name": "Essence Harvester",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-4-4"
+          ]
+        },
+        {
+          "name": "Night Feast",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-6-4"
+          ]
+        },
+        {
+          "name": "Swarm of Flies",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-8-4a"
+          ]
+        },
+        {
+          "name": "Blood Prince's Command",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-8-4b"
+          ]
+        },
+        {
+          "name": "Bloodsores",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-10-4"
+          ]
+        },
+        {
+          "name": "Malediction",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-1-5"
+          ]
+        },
+        {
+          "name": "Atherann's Anguish",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-4-5"
+          ]
+        },
+        {
+          "name": "Keleseth's Calamity",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-7-5"
+          ]
+        }
+      ],
+      "observed_loop": "By levels 30-49, apply transgression, build thirst with the appropriate single-target or aoe generator, begin the dump near seven stacks so multi-cast payoffs land around ten, use vampiric fang to reset or harvest the sequence, and align blood lord or sacrificial rite with targets that will survive the ramp.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Long effects and delayed projectiles punish rapid target turnover, while hard casts and health costs make forced movement more expensive than on a mobile weapon spec"
+      ],
+      "claim_ids": [
+        "talent:bloodmage/sanguine:20-26-0-4",
+        "talent:bloodmage/sanguine:20-26-2-4",
+        "talent:bloodmage/sanguine:20-26-4-4",
+        "talent:bloodmage/sanguine:20-26-6-4",
+        "talent:bloodmage/sanguine:20-26-8-4a",
+        "talent:bloodmage/sanguine:20-26-8-4b",
+        "talent:bloodmage/sanguine:20-26-10-4",
+        "talent:bloodmage/sanguine:20-26-1-5",
+        "talent:bloodmage/sanguine:20-26-4-5",
+        "talent:bloodmage/sanguine:20-26-7-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Hematoma",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-0-6"
+          ]
+        },
+        {
+          "name": "Dominion of Blood",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-2-6"
+          ]
+        },
+        {
+          "name": "Dark Presence",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-3-6"
+          ]
+        },
+        {
+          "name": "Twisted Magic",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-5-6"
+          ]
+        },
+        {
+          "name": "Cursed Ground",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-6-6a"
+          ]
+        },
+        {
+          "name": "Bloodwell Eruption",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-6-6b"
+          ]
+        },
+        {
+          "name": "Blood Parasites",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-8-6"
+          ]
+        },
+        {
+          "name": "Reckless Abandon",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-10-6"
+          ]
+        },
+        {
+          "name": "Blood Craving",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-1-7"
+          ]
+        },
+        {
+          "name": "Vampyr Lord",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-3-7"
+          ]
+        },
+        {
+          "name": "Enthraller",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-5-7"
+          ]
+        },
+        {
+          "name": "Blood Lord",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-7-7"
+          ]
+        }
+      ],
+      "observed_loop": "By levels 30-49, apply transgression, build thirst with the appropriate single-target or aoe generator, begin the dump near seven stacks so multi-cast payoffs land around ten, use vampiric fang to reset or harvest the sequence, and align blood lord or sacrificial rite with targets that will survive the ramp.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Long effects and delayed projectiles punish rapid target turnover, while hard casts and health costs make forced movement more expensive than on a mobile weapon spec"
+      ],
+      "claim_ids": [
+        "talent:bloodmage/sanguine:20-26-0-6",
+        "talent:bloodmage/sanguine:20-26-2-6",
+        "talent:bloodmage/sanguine:20-26-3-6",
+        "talent:bloodmage/sanguine:20-26-5-6",
+        "talent:bloodmage/sanguine:20-26-6-6a",
+        "talent:bloodmage/sanguine:20-26-6-6b",
+        "talent:bloodmage/sanguine:20-26-8-6",
+        "talent:bloodmage/sanguine:20-26-10-6",
+        "talent:bloodmage/sanguine:20-26-1-7",
+        "talent:bloodmage/sanguine:20-26-3-7",
+        "talent:bloodmage/sanguine:20-26-5-7",
+        "talent:bloodmage/sanguine:20-26-7-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Cardiac Arrest",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-2-8"
+          ]
+        },
+        {
+          "name": "Agonizing Pain",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-4-8"
+          ]
+        },
+        {
+          "name": "Crimson Terror",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-6-8"
+          ]
+        },
+        {
+          "name": "Thirst for Blood",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-10-8"
+          ]
+        },
+        {
+          "name": "The Council Assembled",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-2-9"
+          ]
+        },
+        {
+          "name": "Sacrificial Rite",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-4-9"
+          ]
+        },
+        {
+          "name": "Torture",
+          "claim_ids": [
+            "talent:bloodmage/sanguine:20-26-6-9"
+          ]
+        }
+      ],
+      "observed_loop": "A high-overlap ramp caster with DoTs, delayed hits, Thirst timing, transformation choices, and self-health management.",
+      "observed_changes": [
+        "Recent PvP reports call health costs severely undertuned",
+        "Substantial timer and proc tracking"
+      ],
+      "claim_ids": [
+        "talent:bloodmage/sanguine:20-26-2-8",
+        "talent:bloodmage/sanguine:20-26-4-8",
+        "talent:bloodmage/sanguine:20-26-6-8",
+        "talent:bloodmage/sanguine:20-26-10-8",
+        "talent:bloodmage/sanguine:20-26-2-9",
+        "talent:bloodmage/sanguine:20-26-4-9",
+        "talent:bloodmage/sanguine:20-26-6-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "A health-spending caster that gains a much clearer rhythm after level 20 scaling and the Bloodbolt critical interaction become available.",
+      "strengths": [
+        "Early Thirst payoff identity",
+        "Built-in vampiric recovery"
+      ],
+      "cautions": [
+        "Current players report a rough pre-20 curve",
+        "Health costs magnify mistakes"
+      ],
+      "claim_ids": [
+        "observed:bloodmage/sanguine:leveling",
+        "talent:bloodmage/sanguine:20-26-10-0",
+        "observed:bloodmage/sanguine:rotation",
+        "observed:bloodmage/sanguine:pvp-health-cost",
+        "inference:bloodmage/sanguine:ramp-cost",
+        "talent:bloodmage/sanguine:20-26-4-9",
+        "talent:bloodmage/sanguine:20-26-7-5",
+        "observed:bloodmage/sanguine:performance"
+      ]
+    },
+    "leveling_30_49": {
+      "feel": "By levels 30-49, apply transgression, build thirst with the appropriate single-target or aoe generator, begin the dump near seven stacks so multi-cast payoffs land around ten, use vampiric fang to reset or harvest the sequence, and align blood lord or sacrificial rite with targets that will survive the ramp.",
+      "strengths": [
+        "Core engine is online",
+        "More complete target coverage"
+      ],
+      "cautions": [
+        "Late talents still change the ceiling",
+        "Long effects and delayed projectiles punish rapid target turnover, while hard casts and health costs make forced movement more expensive than on a mobile weapon spec"
+      ],
+      "claim_ids": [
+        "observed:bloodmage/sanguine:rotation",
+        "observed:bloodmage/sanguine:pvp-health-cost",
+        "inference:bloodmage/sanguine:ramp-cost",
+        "observed:bloodmage/sanguine:leveling",
+        "talent:bloodmage/sanguine:20-26-10-0",
+        "talent:bloodmage/sanguine:20-26-4-9",
+        "talent:bloodmage/sanguine:20-26-7-5",
+        "observed:bloodmage/sanguine:performance"
+      ]
+    },
+    "level_50_60": {
+      "feel": "A high-overlap ramp caster with DoTs, delayed hits, Thirst timing, transformation choices, and self-health management.",
+      "strengths": [
+        "Documented ST and AoE sequences",
+        "Strong late AoE reports",
+        "Distinct sacrificial fantasy"
+      ],
+      "cautions": [
+        "Recent PvP reports call health costs severely undertuned",
+        "Substantial timer and proc tracking"
+      ],
+      "claim_ids": [
+        "observed:bloodmage/sanguine:rotation",
+        "observed:bloodmage/sanguine:pvp-health-cost",
+        "talent:bloodmage/sanguine:20-26-4-9",
+        "inference:bloodmage/sanguine:ramp-cost",
+        "observed:bloodmage/sanguine:leveling",
+        "talent:bloodmage/sanguine:20-26-10-0",
+        "talent:bloodmage/sanguine:20-26-7-5",
+        "observed:bloodmage/sanguine:performance"
+      ]
+    },
+    "boss": {
+      "feel": "On bosses, current players describe transgression into bloodmoon blast stacks, bloodbolt and malediction setup, repeated valanar's vengeance, then vampiric fang after the final hit connects.",
+      "strengths": [
+        "Durable targets preserve the full loop",
+        "Cooldowns can be planned"
+      ],
+      "cautions": [
+        "Movement can break setup",
+        "Repeated errors remain visible"
+      ],
+      "claim_ids": [
+        "observed:bloodmage/sanguine:rotation",
+        "observed:bloodmage/sanguine:pvp-health-cost",
+        "inference:bloodmage/sanguine:ramp-cost",
+        "observed:bloodmage/sanguine:leveling",
+        "talent:bloodmage/sanguine:20-26-10-0",
+        "talent:bloodmage/sanguine:20-26-4-9",
+        "talent:bloodmage/sanguine:20-26-7-5",
+        "observed:bloodmage/sanguine:performance"
+      ]
+    },
+    "dungeon_aoe": {
+      "feel": "In dungeons, recent guidance builds roughly seven thirst with rupture, casts keleseth's calamity repeatedly, adds atherann's anguish when available, then uses rupture and vampiric fang to reset; later cursed ground and parasites deepen the pack package.",
+      "strengths": [
+        "Pack tools express the spec clearly",
+        "Group utility has regular value"
+      ],
+      "cautions": [
+        "Short-lived targets can erase setup",
+        "Tank movement changes the plan"
+      ],
+      "claim_ids": [
+        "observed:bloodmage/sanguine:rotation",
+        "observed:bloodmage/sanguine:pvp-health-cost",
+        "inference:bloodmage/sanguine:ramp-cost",
+        "observed:bloodmage/sanguine:leveling",
+        "talent:bloodmage/sanguine:20-26-10-0",
+        "talent:bloodmage/sanguine:20-26-4-9",
+        "talent:bloodmage/sanguine:20-26-7-5",
+        "observed:bloodmage/sanguine:performance"
+      ]
+    },
+    "pvp": {
+      "feel": "In PvP, long effects and delayed projectiles punish rapid target turnover, while hard casts and health costs make forced movement more expensive than on a mobile weapon spec. Vampiric Fang, Lifedrinker, Blood Banquet, Blood Cocoon, and later leech or lord effects return health, but the caster is deliberately spending the same health pool opponents attack.",
+      "strengths": [
+        "Control and utility create options",
+        "Target swaps can reward flexibility"
+      ],
+      "cautions": [
+        "Disruption makes the loop less predictable",
+        "Defensive timing is punishable"
+      ],
+      "claim_ids": [
+        "observed:bloodmage/sanguine:rotation",
+        "observed:bloodmage/sanguine:pvp-health-cost",
+        "inference:bloodmage/sanguine:ramp-cost",
+        "observed:bloodmage/sanguine:leveling",
+        "talent:bloodmage/sanguine:20-26-10-0",
+        "talent:bloodmage/sanguine:20-26-4-9",
+        "talent:bloodmage/sanguine:20-26-7-5",
+        "observed:bloodmage/sanguine:performance"
+      ]
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "low",
+        "reason": "The practical action set follows the authored loop: Apply Transgression, build Thirst with the appropriate single-target or AoE generator, begin the dump near seven stacks so multi-cast payoffs land around ten, use Vampiric Fang to reset or harvest the sequence, and align Blood Lord or Sacrificial Rite with targets that will survive the ramp. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "low",
+        "reason": "The practical action set follows the authored loop: Apply Transgression, build Thirst with the appropriate single-target or AoE generator, begin the dump near seven stacks so multi-cast payoffs land around ten, use Vampiric Fang to reset or harvest the sequence, and align Blood Lord or Sacrificial Rite with targets that will survive the ramp. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      },
+      "level_50_60": {
+        "value": "low",
+        "reason": "The practical action set follows the authored loop: Apply Transgression, build Thirst with the appropriate single-target or AoE generator, begin the dump near seven stacks so multi-cast payoffs land around ten, use Vampiric Fang to reset or harvest the sequence, and align Blood Lord or Sacrificial Rite with targets that will survive the ramp. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      },
+      "boss": {
+        "value": "low",
+        "reason": "The practical action set follows the authored loop: Apply Transgression, build Thirst with the appropriate single-target or AoE generator, begin the dump near seven stacks so multi-cast payoffs land around ten, use Vampiric Fang to reset or harvest the sequence, and align Blood Lord or Sacrificial Rite with targets that will survive the ramp. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "low",
+        "reason": "The practical action set follows the authored loop: Apply Transgression, build Thirst with the appropriate single-target or AoE generator, begin the dump near seven stacks so multi-cast payoffs land around ten, use Vampiric Fang to reset or harvest the sequence, and align Blood Lord or Sacrificial Rite with targets that will survive the ramp. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      },
+      "pvp": {
+        "value": "low",
+        "reason": "The practical action set follows the authored loop: Apply Transgression, build Thirst with the appropriate single-target or AoE generator, begin the dump near seven stacks so multi-cast payoffs land around ten, use Vampiric Fang to reset or harvest the sequence, and align Blood Lord or Sacrificial Rite with targets that will survive the ramp. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "moderate-high",
+        "reason": "The player must preserve the resources, effects, or target states implied by: Current players describe Transgression into Bloodmoon Blast stacks, Bloodbolt and Malediction setup, repeated Valanar's Vengeance, then Vampiric Fang after the final hit connects. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "high",
+        "reason": "The player must preserve the resources, effects, or target states implied by: Current players describe Transgression into Bloodmoon Blast stacks, Bloodbolt and Malediction setup, repeated Valanar's Vengeance, then Vampiric Fang after the final hit connects. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "The player must preserve the resources, effects, or target states implied by: Current players describe Transgression into Bloodmoon Blast stacks, Bloodbolt and Malediction setup, repeated Valanar's Vengeance, then Vampiric Fang after the final hit connects. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      },
+      "boss": {
+        "value": "high",
+        "reason": "The player must preserve the resources, effects, or target states implied by: Current players describe Transgression into Bloodmoon Blast stacks, Bloodbolt and Malediction setup, repeated Valanar's Vengeance, then Vampiric Fang after the final hit connects. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "Thirst, pack DoTs, Atherann's Anguish, Keleseth casts, reset timing, health, and mana or cooldown states overlap.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "The player must preserve the resources, effects, or target states implied by: Current players describe Transgression into Bloodmoon Blast stacks, Bloodbolt and Malediction setup, repeated Valanar's Vengeance, then Vampiric Fang after the final hit connects. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "low",
+        "reason": "Target count, incoming pressure, and movement change the next action; vampiric fang, lifedrinker, blood banquet, blood cocoon, and later leech or lord effects return health, but the caster is deliberately spending the same health pool opponents attack. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "low",
+        "reason": "Target count, incoming pressure, and movement change the next action; vampiric fang, lifedrinker, blood banquet, blood cocoon, and later leech or lord effects return health, but the caster is deliberately spending the same health pool opponents attack. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      },
+      "level_50_60": {
+        "value": "low",
+        "reason": "Target count, incoming pressure, and movement change the next action; vampiric fang, lifedrinker, blood banquet, blood cocoon, and later leech or lord effects return health, but the caster is deliberately spending the same health pool opponents attack. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      },
+      "boss": {
+        "value": "low",
+        "reason": "Target count, incoming pressure, and movement change the next action; vampiric fang, lifedrinker, blood banquet, blood cocoon, and later leech or lord effects return health, but the caster is deliberately spending the same health pool opponents attack. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "low",
+        "reason": "Target count, incoming pressure, and movement change the next action; vampiric fang, lifedrinker, blood banquet, blood cocoon, and later leech or lord effects return health, but the caster is deliberately spending the same health pool opponents attack. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      },
+      "pvp": {
+        "value": "low-moderate",
+        "reason": "Target count, incoming pressure, and movement change the next action; vampiric fang, lifedrinker, blood banquet, blood cocoon, and later leech or lord effects return health, but the caster is deliberately spending the same health pool opponents attack. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "low",
+        "reason": "Execution is constrained by positioning and swaps: Long effects and delayed projectiles punish rapid target turnover, while hard casts and health costs make forced movement more expensive than on a mobile weapon spec. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "low",
+        "reason": "Execution is constrained by positioning and swaps: Long effects and delayed projectiles punish rapid target turnover, while hard casts and health costs make forced movement more expensive than on a mobile weapon spec. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      },
+      "level_50_60": {
+        "value": "low",
+        "reason": "Execution is constrained by positioning and swaps: Long effects and delayed projectiles punish rapid target turnover, while hard casts and health costs make forced movement more expensive than on a mobile weapon spec. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      },
+      "boss": {
+        "value": "low",
+        "reason": "Execution is constrained by positioning and swaps: Long effects and delayed projectiles punish rapid target turnover, while hard casts and health costs make forced movement more expensive than on a mobile weapon spec. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "low",
+        "reason": "Execution is constrained by positioning and swaps: Long effects and delayed projectiles punish rapid target turnover, while hard casts and health costs make forced movement more expensive than on a mobile weapon spec. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      },
+      "pvp": {
+        "value": "low-moderate",
+        "reason": "Execution is constrained by positioning and swaps: Long effects and delayed projectiles punish rapid target turnover, while hard casts and health costs make forced movement more expensive than on a mobile weapon spec. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "moderate-high",
+        "reason": "Sitting at maximum Thirst or mistiming Vampiric Fang wastes the ramp; in PvP, health-cost casts can make the caster easier to kill before the payoff lands. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "high",
+        "reason": "Sitting at maximum Thirst or mistiming Vampiric Fang wastes the ramp; in PvP, health-cost casts can make the caster easier to kill before the payoff lands. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "Sitting at maximum Thirst or mistiming Vampiric Fang wastes the ramp; in PvP, health-cost casts can make the caster easier to kill before the payoff lands. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      },
+      "boss": {
+        "value": "high",
+        "reason": "Sitting at maximum Thirst or mistiming Vampiric Fang wastes the ramp; in PvP, health-cost casts can make the caster easier to kill before the payoff lands. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "Sitting at maximum Thirst or mistiming Vampiric Fang wastes the ramp; in PvP, health-cost casts can make the caster easier to kill before the payoff lands. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "The caster pays health before long effects finish, so disruption can lose the damage payoff while retaining the survival cost.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      }
+    },
+    "setup_burden": {
+      "leveling_10_29": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Recent guidance builds roughly seven Thirst with Rupture, casts Keleseth's Calamity repeatedly, adds Atherann's Anguish when available, then uses Rupture and Vampiric Fang to reset; later cursed ground and parasites deepen the pack package. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Recent guidance builds roughly seven Thirst with Rupture, casts Keleseth's Calamity repeatedly, adds Atherann's Anguish when available, then uses Rupture and Vampiric Fang to reset; later cursed ground and parasites deepen the pack package. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      },
+      "level_50_60": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Recent guidance builds roughly seven Thirst with Rupture, casts Keleseth's Calamity repeatedly, adds Atherann's Anguish when available, then uses Rupture and Vampiric Fang to reset; later cursed ground and parasites deepen the pack package. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      },
+      "boss": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Recent guidance builds roughly seven Thirst with Rupture, casts Keleseth's Calamity repeatedly, adds Atherann's Anguish when available, then uses Rupture and Vampiric Fang to reset; later cursed ground and parasites deepen the pack package. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Recent guidance builds roughly seven Thirst with Rupture, casts Keleseth's Calamity repeatedly, adds Atherann's Anguish when available, then uses Rupture and Vampiric Fang to reset; later cursed ground and parasites deepen the pack package. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      },
+      "pvp": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Recent guidance builds roughly seven Thirst with Rupture, casts Keleseth's Calamity repeatedly, adds Atherann's Anguish when available, then uses Rupture and Vampiric Fang to reset; later cursed ground and parasites deepen the pack package. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0",
+          "talent:bloodmage/sanguine:20-26-4-9",
+          "talent:bloodmage/sanguine:20-26-7-5",
+          "observed:bloodmage/sanguine:performance"
+        ]
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [
+      {
+        "text": "You enjoy deliberate ramp sequences where health, stacks, delayed hits, and a transformation payoff all interact.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation"
+        ]
+      },
+      {
+        "text": "You enjoy the spec's core cadence: apply transgression, build thirst with the appropriate single-target or aoe generator, begin the dump near seven stacks so multi-cast payoffs land around ten, use vampiric fang to reset or harvest the sequence, and align blood lord or sacrificial rite with targets that will survive the ramp.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0"
+        ]
+      }
+    ],
+    "avoid_if": [
+      {
+        "text": "You dislike self-damage, long setup, or depending on a target living until delayed effects finish.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost"
+        ]
+      },
+      {
+        "text": "You dislike the positioning or swap constraint that long effects and delayed projectiles punish rapid target turnover, while hard casts and health costs make forced movement more expensive than on a mobile weapon spec.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost",
+          "inference:bloodmage/sanguine:ramp-cost",
+          "observed:bloodmage/sanguine:leveling",
+          "talent:bloodmage/sanguine:20-26-10-0"
+        ]
+      }
+    ]
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [
+    "observed:bloodmage/sanguine:performance"
+  ],
+  "sentiment": {
+    "praise": [
+      {
+        "theme": "Players call the fantasy and ramp loop fun, and current rotation advice reports strong later-level AoE when Thirst is dumped correctly.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:pvp-health-cost"
+        ]
+      }
+    ],
+    "frustrations": [
+      {
+        "theme": "Recent PvP players describe extreme self-damage, weak compensation, hard-cast vulnerability, and unwanted healer pressure.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:pvp-health-cost"
+        ]
+      }
+    ],
+    "contested": [
+      {
+        "theme": "The spec has a documented functioning PvE rotation and moderate DPS signal while current PvP sentiment calls it effectively unplayable; those contexts must remain separate.",
+        "claim_ids": [
+          "observed:bloodmage/sanguine:rotation",
+          "observed:bloodmage/sanguine:performance",
+          "observed:bloodmage/sanguine:pvp-health-cost"
+        ]
+      }
+    ]
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 1,
+    "latest_update": "2026-07-18T13:19:31.967+00:00",
+    "top_title": "Bloodmage Sanguine Dps",
+    "top_url": "https://coabuildhub.com/build/c35a6064-eaec-4765-98dd-8a70b9eb9b93",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:c35a6064-eaec-4765-98dd-8a70b9eb9b93"
+    ]
+  },
+  "coverage": {
+    "mechanical": "manual_talent_and_build_interpretation",
+    "community": "moderate-high",
+    "performance": "limited_uncontrolled",
+    "video": "searched_none_verified",
+    "overall_confidence": "medium-high",
+    "gaps": [
+      "PvP health-cost numbers need independent reproduction after subsequent patches.",
+      "No controlled stat weights or encounter-normalized level-60 study."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:bloodmage/sanguine:20-26-3-0",
+      "kind": "structural",
+      "text": "Transgression: Transform: s your Blood Curse into Transgression.Transgression (Cursed Form)Enter a unique Cursed Form for 30 seconds that does not disable the use of Mortal Form abilities and casts a free Vampiric Fang on your target.While active, direct spell damage triggers a Vampiric Feast, dealing 20% additional Shadow damage to enemies, healing you equal to 50% of the damage dealt.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-5-0",
+      "kind": "structural",
+      "text": "Vampiric Fang: Expends Thirst StacksSteal 36 + 34% SP health from an enemy.Damage increased by 10% for each Thirst stack. Clears Insatiable and Thirst stacks.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-10-0",
+      "kind": "structural",
+      "text": "Thirst: Level 10 PassiveSpells that cost health now grant Thirst.Reaching 10 stacks makes you Insatiable, reducing your damage dealt by -30% every 3 sec until Thirst ends.ThirstGenerates 5 Rage and then increases the health costs of your spells by 5% and increases their damage by 3%. Stacks 10 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-4-1",
+      "kind": "structural",
+      "text": "Valanar's Vengeance: Requires Mortal FormLaunch a powerful blood bolt at an enemy, dealing 188 + 127.75% SP Shadow damage.Each stack of Thirst reduces the cast time of this ability and increases its damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-2-2",
+      "kind": "structural",
+      "text": "Atherann's Wickedness: Increases your Shadow damage dealt by 4% and increases your hit chance by 3%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-6-2",
+      "kind": "structural",
+      "text": "Fearmonger: Increases the tick rate and cost of Taldaram's Torment by -30%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-10-2",
+      "kind": "structural",
+      "text": "Cunning of Atherann: Level 20 PassiveIncreases your spell damage by 25% of your Stamina and Spirit.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-1-3",
+      "kind": "structural",
+      "text": "Blood Constructor: Increases the duration of Animated Blood by 1 sec per stack of Thirst.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-3-3",
+      "kind": "structural",
+      "text": "Aneurysm: Counter the enemy's spellcast, preventing any spell from that school of magic from being cast for 4 seconds. Successfully interrupting an enemy heals you for 5% of your maximum health.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-5-3",
+      "kind": "structural",
+      "text": "Darkfallen's Embrace: Increases your spell haste by 3% and increases the range of your Sanguine spells and Bloodbolt by 5 yds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-7-3",
+      "kind": "structural",
+      "text": "Blood Banquet: Increases the damage of Valanar's Vengeance and Taldaram's Torment by 15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-0-4",
+      "kind": "structural",
+      "text": "The Cup Runneth Over: Increases the spell power scaling of Bloodmoon Blast, Taldaram's Torment and Bloodbolt by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-2-4",
+      "kind": "structural",
+      "text": "Lifedrinker: Increases the damage of your Vampiric Fang by 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-4-4",
+      "kind": "structural",
+      "text": "Essence Harvester: Being struck by an enemy while below 35% health instantly resets the cooldown of your Vampiric Fang and grants you Wretched.Can only occur once per minute.WretchedGenerates 10 Rage and 1 stack of Thirst every 1 sec for 10 seconds. Vampiric Fang removes this effect.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-6-4",
+      "kind": "structural",
+      "text": "Night Feast: Each point of Rage now increases the damage of Bloodbolt by 1%, but its Rage cost is increased by 10.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-8-4a",
+      "kind": "structural",
+      "text": "Swarm of Flies: Your Bloodbolt now refreshes the duration of Taldaram's Torment.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-8-4b",
+      "kind": "structural",
+      "text": "Blood Prince's Command: Your Bloodbolt is now guaranteed to critically strike on enemies affected by Taldaram's Torment.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-10-4",
+      "kind": "structural",
+      "text": "Bloodsores: Level 30 PassivePeriodic damage dealt now has a 20% chance to apply a Bloodsore to your target for 8 seconds, stacking 5 times.BloodsoreIncreases the damage of your next Sanguine Rupture and Bloodmoon Blast against the target by 10% for 8 seconds, stacking 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-1-5",
+      "kind": "structural",
+      "text": "Malediction: Condemn an enemy, dealing 248 + 77.33% shadow SP Shadow damage over 12 seconds and increasing the damage they take from your next 5 direct damage spells by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-4-5",
+      "kind": "structural",
+      "text": "Atherann's Anguish: Unleash a hemoplague upon the target area, accumulating 30% of the damage you deal to affected enemies for 10 seconds, and then exploding for that amount of Shadow damage.Damage caused by this ability cannot critically strike.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-7-5",
+      "kind": "structural",
+      "text": "Keleseth's Calamity: Requires Mortal FormBend blood in an area, dealing 177 + 69% shadow SP Shadow damage to enemies.Each stack of Thirst reduces the cast time of this ability and increases its damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-0-6",
+      "kind": "structural",
+      "text": "Hematoma: Your Bloodbolt now heals for an additional 20% of the damage dealt.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-2-6",
+      "kind": "structural",
+      "text": "Dominion of Blood: Your Vampiric Fang now heals you for an additional 50% of the damage dealt.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-3-6",
+      "kind": "structural",
+      "text": "Dark Presence: Increases spell haste of all party and raid members by 3%. Does not stack with similar effects.In addition, increases your spell haste by 3%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-5-6",
+      "kind": "structural",
+      "text": "Twisted Magic: Your direct harmful critical strikes increase the target's Shadow damage taken from you by 2%, stacking up to 5 times, for 12 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-6-6a",
+      "kind": "structural",
+      "text": "Cursed Ground: Increases the cast time of Sanguine Rupture by 2 sec, but now when you strike at least 5 enemies it causes them to bleed out, dealing an additional 352 Shadow damage over 2 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-6-6b",
+      "kind": "structural",
+      "text": "Bloodwell Eruption: Increases the radius of Sanguine Rupture by 5 yds and its critical strike chance by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-8-6",
+      "kind": "structural",
+      "text": "Blood Parasites: Your Taldaram's Torment now generates 3 additional Rage per tick and increases spell critical strike chance against the target by 3% for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-10-6",
+      "kind": "structural",
+      "text": "Reckless Abandon: Level 40 PassiveEach stack of Thirst now increases your critical strike chance by 1%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-1-7",
+      "kind": "structural",
+      "text": "Blood Craving: Requires Mortal FormYou crave blood for 12 seconds, for the duration you cannot be interrupted or silenced, and you regain 5% of your maximum health and 15% of your missing Rage every 2 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-3-7",
+      "kind": "structural",
+      "text": "Vampyr Lord: Increases the damage dealt by your Animated Blood by 35%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-5-7",
+      "kind": "structural",
+      "text": "Enthraller: Increases the critical strike chance of Valanar's Vengeance and Keleseth's Calamity by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-7-7",
+      "kind": "structural",
+      "text": "Blood Lord: Grants your Bloodsore a -15% chance to provide its benefits without being consumed.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-2-8",
+      "kind": "structural",
+      "text": "Cardiac Arrest: Your Valanar's Vengeance now deals an additional 50% of its initial damage dealt over 10 seconds, healing you for 50% of the damage dealt.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-4-8",
+      "kind": "structural",
+      "text": "Agonizing Pain: Damage dealt by your Atherann's Anguish now causes enemies hit to bleed, dealing 1405 + 100% shadow SP Shadow damage over 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-6-8",
+      "kind": "structural",
+      "text": "Crimson Terror: Your Transgression now grants spell damage equal to 50% of your Spirit for the duration.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-10-8",
+      "kind": "structural",
+      "text": "Thirst for Blood: Level 50 PassiveReceive a bonus based on your Thirst level.Between 1-5 stacks of Thirst: You become Sated.Between 6-10 stacks of Thirst: You become Ravenous.SatedSpell haste increased by 10%.RavenousSpell critical damage increased by 100%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-2-9",
+      "kind": "structural",
+      "text": "The Council Assembled: Atherann's Anguish now costs -25 less Rage.Taldaram's Torment now increases the damage of your next Valanar's Vengeance or Keleseth's Calamity by 3% per tick for 10 seconds, stacking 5 times.Valanar's Vengeance and Keleseth's Calamity now reduce the cooldown of Malediction by -5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-4-9",
+      "kind": "structural",
+      "text": "Sacrificial Rite: Requires Mortal FormInvoke a dark ritual, increasing your haste by 20% for 15 seconds.While active, attackers are afflicted with Cursed Blood. Can only occur once per sec.At the end of the duration, your healing done is increased by 15% and you are healed for 795 + 150% SP over 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:bloodmage/sanguine:20-26-6-9",
+      "kind": "structural",
+      "text": "Torture: Increases the leech of Vampiric Feast by 50%.Consuming at least 9 stacks of Thirst with Vampiric Fang now extends the duration of Transgression by 5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "observed:bloodmage/sanguine:leveling",
+      "kind": "observed",
+      "text": "A July 30 Bloodmage leveling discussion says the class begins functioning better around level 20 when Stamina and Spirit scaling arrive; Sanguine players specifically praise the talent making Bloodbolt critically interact with Transgression and the resulting healing.",
+      "source_ids": [
+        "reddit:bloodmage-leveling-2026-07-30"
+      ],
+      "scope": {
+        "levels": "leveling_10_29",
+        "content": [
+          "solo_leveling"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "Small leveling sample."
+    },
+    {
+      "id": "observed:bloodmage/sanguine:rotation",
+      "kind": "observed",
+      "text": "A current Sanguine discussion describes building about seven Thirst before a multi-cast dump, then timing Vampiric Fang after the final payoff lands. For AoE it proposes Rupture into repeated Keleseth's Calamity, with Atherann's Anguish before the dump when available.",
+      "source_ids": [
+        "reddit:sanguine-rotation-2026-07-14"
+      ],
+      "scope": {
+        "levels": "leveling_30_60",
+        "content": [
+          "single_target",
+          "dungeon_aoe"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Community sequence, not proven optimal."
+    },
+    {
+      "id": "observed:bloodmage/sanguine:pvp-health-cost",
+      "kind": "observed",
+      "text": "A July 31 PvP report describes Sanguine as a fun ramping health-cost caster but argues its self-damage, hard casts, and insufficient sustained recovery make it extremely weak in PvP; replies broadly agree while noting context dependence with dedicated healing.",
+      "source_ids": [
+        "reddit:bloodmage-sanguine-pvp-2026-07-31"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "pvp"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [
+        "observed:bloodmage/sanguine:performance"
+      ],
+      "notes": "Strong mode-specific sentiment, not a PvE conclusion."
+    },
+    {
+      "id": "observed:bloodmage/sanguine:performance",
+      "kind": "observed",
+      "text": "The July community DPS compilation reports Sanguine at 4,315, and the August Mythic inventory lists 67 Sanguine records.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "pve_unspecified",
+          "mythic_dungeons"
+        ],
+        "build_or_mode": [
+          "unspecified"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [
+        "observed:bloodmage/sanguine:pvp-health-cost"
+      ],
+      "notes": "PvE signal cannot resolve the PvP complaint; methodology and sample composition remain incomplete."
+    },
+    {
+      "id": "inference:bloodmage/sanguine:ramp-cost",
+      "kind": "inference",
+      "text": "Sanguine pays a compounded penalty when a target dies, moves, or disrupts the caster before delayed effects and the Thirst reset complete, because both setup time and self-health were already spent.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:bloodmage/sanguine:20-26-3-0",
+        "talent:bloodmage/sanguine:20-26-10-0",
+        "observed:bloodmage/sanguine:rotation",
+        "observed:bloodmage/sanguine:pvp-health-cost"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Magnitude varies by target lifetime and build."
+    }
+  ]
+}

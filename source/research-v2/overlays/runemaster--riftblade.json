@@ -1,0 +1,934 @@
+{
+  "baseline": "runemaster--riftblade.json",
+  "set": {
+    "identity": {
+      "fantasy": "A low-global elemental assassin who keeps Zenith and Smolder rolling while throwing Warpdaggers, cycling engravings, and cutting through targets with Runeblade.",
+      "primary_family": "duelists",
+      "also_fits": [
+        "sequencers"
+      ],
+      "playstyle_tags": [
+        "high-apm-elemental-melee",
+        "proc-priority-melee",
+        "mobile-assassin"
+      ],
+      "one_line": "A mobile elemental assassin using Smolder, Runeblade, Warpdagger, Echo Rune, Runeshroud, and short-lived codices. It alternates Fire, Frost, Wind, and Water interactions and can place a Genesis damage-storage mark. Current players specifically call out Warpdagger and Echo Rune management on a low global cooldown.",
+      "claim_ids": [
+        "observed:runemaster/riftblade:current-guide",
+        "inference:runemaster/riftblade:uptime-cost",
+        "talent:runemaster/riftblade:32-86-4-0",
+        "talent:runemaster/riftblade:32-86-10-0",
+        "talent:runemaster/riftblade:32-86-1-2",
+        "observed:runemaster/riftblade:performance",
+        "talent:runemaster/riftblade:32-86-4-9",
+        "observed:runemaster/riftblade:community-shift"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "Keep Zenith active, throw Warpdagger on cooldown for upgraded Smolder without necessarily teleporting, prioritize Hoarfrost, Smolder, Primordial Blast, and Hurricane, then use Runeblade as filler while aligning Primordial Fury with Zenith on bosses.",
+      "single_target": "Use Air weapon engraving, maintain Zenith and Smolder, and align Primordial Fury rather than spending it immediately.",
+      "aoe": "Switch to Earth engraving with Primordial Fury, then use the same fast priority around Smolder, Hurricane, and elemental effects.",
+      "movement_and_target_switching": "Warpdagger, Phaser, clones, codices, and Surging Slash make it highly mobile, although the dagger may be thrown only for its buff rather than teleportation.",
+      "defense_and_control": "Runeshroud, disappearance, elemental codices, freezes, and assassin mobility provide avoidance-oriented defense.",
+      "group_utility": "Elemental control and Runemaster utility supplement a damage-first melee role.",
+      "failure_modes": [
+        {
+          "text": "Letting Zenith fall, delaying Warpdagger's upgraded Smolder, or using the wrong engraving for the encounter loses several overlapping multipliers on a very fast global cadence.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost"
+          ]
+        },
+        {
+          "text": "Movement or a target swap can interrupt the intended payoff: warpdagger, phaser, clones, codices, and surging slash make it highly mobile, although the dagger may be thrown only for its buff rather than teleportation.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2"
+          ]
+        },
+        {
+          "text": "Spending recovery or control too early leaves less protection for the next pressure event: runeshroud, disappearance, elemental codices, freezes, and assassin mobility provide avoidance-oriented defense.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "observed:runemaster/riftblade:current-guide",
+        "inference:runemaster/riftblade:uptime-cost",
+        "talent:runemaster/riftblade:32-86-4-0",
+        "talent:runemaster/riftblade:32-86-10-0",
+        "talent:runemaster/riftblade:32-86-1-2",
+        "observed:runemaster/riftblade:performance",
+        "talent:runemaster/riftblade:32-86-4-9",
+        "observed:runemaster/riftblade:community-shift"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "A fast elemental melee spec with Smolder, Hurricane, Runeblade, and early engraving choices.",
+        "strengths": [
+          "Immediate elemental-assassin fantasy",
+          "Mobile melee pressure",
+          "Hybrid school coverage"
+        ],
+        "cautions": [
+          "Low global encourages high APM",
+          "Defensive comfort is disputed"
+        ],
+        "claim_ids": [
+          "talent:runemaster/riftblade:32-86-4-0",
+          "talent:runemaster/riftblade:32-86-10-0",
+          "talent:runemaster/riftblade:32-86-1-2",
+          "observed:runemaster/riftblade:current-guide",
+          "inference:runemaster/riftblade:uptime-cost",
+          "observed:runemaster/riftblade:performance",
+          "talent:runemaster/riftblade:32-86-4-9",
+          "observed:runemaster/riftblade:community-shift"
+        ]
+      },
+      "level_50_60": {
+        "feel": "A frantic priority melee whose current best-documented build rejects the flashy capstones for near-continuous Zenith and Smolder uptime.",
+        "strengths": [
+          "51 Mythic records",
+          "Strong reported damage",
+          "Clear current priority guide"
+        ],
+        "cautions": [
+          "Very high input rate",
+          "Capstone fantasy and optimized build currently diverge",
+          "Gear advice was still being tested"
+        ],
+        "claim_ids": [
+          "observed:runemaster/riftblade:current-guide",
+          "observed:runemaster/riftblade:performance",
+          "talent:runemaster/riftblade:32-86-4-9",
+          "inference:runemaster/riftblade:uptime-cost",
+          "talent:runemaster/riftblade:32-86-4-0",
+          "talent:runemaster/riftblade:32-86-10-0",
+          "talent:runemaster/riftblade:32-86-1-2",
+          "observed:runemaster/riftblade:community-shift"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "By levels 30-49, keep zenith active, throw warpdagger on cooldown for upgraded smolder without necessarily teleporting, prioritize hoarfrost, smolder, primordial blast, and hurricane, then use runeblade as filler while aligning primordial fury with zenith on bosses.",
+        "strengths": [
+          "Core engine is online",
+          "More complete target coverage"
+        ],
+        "cautions": [
+          "Late talents still change the ceiling",
+          "Warpdagger, Phaser, clones, codices, and Surging Slash make it highly mobile, although the dagger may be thrown only for its buff rather than teleportation"
+        ],
+        "claim_ids": [
+          "observed:runemaster/riftblade:current-guide",
+          "inference:runemaster/riftblade:uptime-cost",
+          "talent:runemaster/riftblade:32-86-4-0",
+          "talent:runemaster/riftblade:32-86-10-0",
+          "talent:runemaster/riftblade:32-86-1-2",
+          "observed:runemaster/riftblade:performance",
+          "talent:runemaster/riftblade:32-86-4-9",
+          "observed:runemaster/riftblade:community-shift"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, use air weapon engraving, maintain zenith and smolder, and align primordial fury rather than spending it immediately.",
+        "strengths": [
+          "Durable targets preserve the full loop",
+          "Cooldowns can be planned"
+        ],
+        "cautions": [
+          "Movement can break setup",
+          "Repeated errors remain visible"
+        ],
+        "claim_ids": [
+          "observed:runemaster/riftblade:current-guide",
+          "inference:runemaster/riftblade:uptime-cost",
+          "talent:runemaster/riftblade:32-86-4-0",
+          "talent:runemaster/riftblade:32-86-10-0",
+          "talent:runemaster/riftblade:32-86-1-2",
+          "observed:runemaster/riftblade:performance",
+          "talent:runemaster/riftblade:32-86-4-9",
+          "observed:runemaster/riftblade:community-shift"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, switch to earth engraving with primordial fury, then use the same fast priority around smolder, hurricane, and elemental effects.",
+        "strengths": [
+          "Pack tools express the spec clearly",
+          "Group utility has regular value"
+        ],
+        "cautions": [
+          "Short-lived targets can erase setup",
+          "Tank movement changes the plan"
+        ],
+        "claim_ids": [
+          "observed:runemaster/riftblade:current-guide",
+          "inference:runemaster/riftblade:uptime-cost",
+          "talent:runemaster/riftblade:32-86-4-0",
+          "talent:runemaster/riftblade:32-86-10-0",
+          "talent:runemaster/riftblade:32-86-1-2",
+          "observed:runemaster/riftblade:performance",
+          "talent:runemaster/riftblade:32-86-4-9",
+          "observed:runemaster/riftblade:community-shift"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, warpdagger, phaser, clones, codices, and surging slash make it highly mobile, although the dagger may be thrown only for its buff rather than teleportation. Runeshroud, disappearance, elemental codices, freezes, and assassin mobility provide avoidance-oriented defense.",
+        "strengths": [
+          "Control and utility create options",
+          "Target swaps can reward flexibility"
+        ],
+        "cautions": [
+          "Disruption makes the loop less predictable",
+          "Defensive timing is punishable"
+        ],
+        "claim_ids": [
+          "observed:runemaster/riftblade:current-guide",
+          "inference:runemaster/riftblade:uptime-cost",
+          "talent:runemaster/riftblade:32-86-4-0",
+          "talent:runemaster/riftblade:32-86-10-0",
+          "talent:runemaster/riftblade:32-86-1-2",
+          "observed:runemaster/riftblade:performance",
+          "talent:runemaster/riftblade:32-86-4-9",
+          "observed:runemaster/riftblade:community-shift"
+        ]
+      }
+    },
+    "complexity": {
+      "core_actions": {
+        "boss": {
+          "value": "moderate",
+          "reason": "The current priority list is compact, but every action repeats quickly and supports strict uptime goals.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Keep Zenith active, throw Warpdagger on cooldown for upgraded Smolder without necessarily teleporting, prioritize Hoarfrost, Smolder, Primordial Blast, and Hurricane, then use Runeblade as filler while aligning Primordial Fury with Zenith on bosses. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate",
+          "reason": "The practical action set follows the authored loop: Keep Zenith active, throw Warpdagger on cooldown for upgraded Smolder without necessarily teleporting, prioritize Hoarfrost, Smolder, Primordial Blast, and Hurricane, then use Runeblade as filler while aligning Primordial Fury with Zenith on bosses. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate",
+          "reason": "The practical action set follows the authored loop: Keep Zenith active, throw Warpdagger on cooldown for upgraded Smolder without necessarily teleporting, prioritize Hoarfrost, Smolder, Primordial Blast, and Hurricane, then use Runeblade as filler while aligning Primordial Fury with Zenith on bosses. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "moderate",
+          "reason": "The practical action set follows the authored loop: Keep Zenith active, throw Warpdagger on cooldown for upgraded Smolder without necessarily teleporting, prioritize Hoarfrost, Smolder, Primordial Blast, and Hurricane, then use Runeblade as filler while aligning Primordial Fury with Zenith on bosses. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        },
+        "pvp": {
+          "value": "moderate",
+          "reason": "The practical action set follows the authored loop: Keep Zenith active, throw Warpdagger on cooldown for upgraded Smolder without necessarily teleporting, prioritize Hoarfrost, Smolder, Primordial Blast, and Hurricane, then use Runeblade as filler while aligning Primordial Fury with Zenith on bosses. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        }
+      },
+      "state_tracking": {
+        "boss": {
+          "value": "high",
+          "reason": "Zenith, Smolder, Warpdagger, engraving, Primordial Fury, tattoos, and elemental procs overlap.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "observed:runemaster/riftblade:community-shift",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Use Air weapon engraving, maintain Zenith and Smolder, and align Primordial Fury rather than spending it immediately. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Use Air weapon engraving, maintain Zenith and Smolder, and align Primordial Fury rather than spending it immediately. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Use Air weapon engraving, maintain Zenith and Smolder, and align Primordial Fury rather than spending it immediately. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Use Air weapon engraving, maintain Zenith and Smolder, and align Primordial Fury rather than spending it immediately. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Use Air weapon engraving, maintain Zenith and Smolder, and align Primordial Fury rather than spending it immediately. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        }
+      },
+      "execution": {
+        "boss": {
+          "value": "high",
+          "reason": "Players specifically call out Warpdagger and Echo Rune management on a low global cooldown.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:community-shift",
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "Execution is constrained by positioning and swaps: Warpdagger, Phaser, clones, codices, and Surging Slash make it highly mobile, although the dagger may be thrown only for its buff rather than teleportation. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Execution is constrained by positioning and swaps: Warpdagger, Phaser, clones, codices, and Surging Slash make it highly mobile, although the dagger may be thrown only for its buff rather than teleportation. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Execution is constrained by positioning and swaps: Warpdagger, Phaser, clones, codices, and Surging Slash make it highly mobile, although the dagger may be thrown only for its buff rather than teleportation. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Execution is constrained by positioning and swaps: Warpdagger, Phaser, clones, codices, and Surging Slash make it highly mobile, although the dagger may be thrown only for its buff rather than teleportation. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Execution is constrained by positioning and swaps: Warpdagger, Phaser, clones, codices, and Surging Slash make it highly mobile, although the dagger may be thrown only for its buff rather than teleportation. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        }
+      },
+      "failure_cost": {
+        "boss": {
+          "value": "moderate-high",
+          "reason": "A missed maintenance action weakens several following globals, but the priority loop can recover quickly.",
+          "claim_ids": [
+            "inference:runemaster/riftblade:uptime-cost",
+            "observed:runemaster/riftblade:current-guide",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Letting Zenith fall, delaying Warpdagger's upgraded Smolder, or using the wrong engraving for the encounter loses several overlapping multipliers on a very fast global. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Letting Zenith fall, delaying Warpdagger's upgraded Smolder, or using the wrong engraving for the encounter loses several overlapping multipliers on a very fast global. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "Letting Zenith fall, delaying Warpdagger's upgraded Smolder, or using the wrong engraving for the encounter loses several overlapping multipliers on a very fast global. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "moderate-high",
+          "reason": "Letting Zenith fall, delaying Warpdagger's upgraded Smolder, or using the wrong engraving for the encounter loses several overlapping multipliers on a very fast global. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Letting Zenith fall, delaying Warpdagger's upgraded Smolder, or using the wrong engraving for the encounter loses several overlapping multipliers on a very fast global. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Switch to Earth engraving with Primordial Fury, then use the same fast priority around Smolder, Hurricane, and elemental effects. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Switch to Earth engraving with Primordial Fury, then use the same fast priority around Smolder, Hurricane, and elemental effects. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Switch to Earth engraving with Primordial Fury, then use the same fast priority around Smolder, Hurricane, and elemental effects. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Switch to Earth engraving with Primordial Fury, then use the same fast priority around Smolder, Hurricane, and elemental effects. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Switch to Earth engraving with Primordial Fury, then use the same fast priority around Smolder, Hurricane, and elemental effects. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        },
+        "pvp": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Switch to Earth engraving with Primordial Fury, then use the same fast priority around Smolder, Hurricane, and elemental effects. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; runeshroud, disappearance, elemental codices, freezes, and assassin mobility provide avoidance-oriented defense. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; runeshroud, disappearance, elemental codices, freezes, and assassin mobility provide avoidance-oriented defense. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; runeshroud, disappearance, elemental codices, freezes, and assassin mobility provide avoidance-oriented defense. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; runeshroud, disappearance, elemental codices, freezes, and assassin mobility provide avoidance-oriented defense. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; runeshroud, disappearance, elemental codices, freezes, and assassin mobility provide avoidance-oriented defense. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "Target count, incoming pressure, and movement change the next action; runeshroud, disappearance, elemental codices, freezes, and assassin mobility provide avoidance-oriented defense. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2",
+            "observed:runemaster/riftblade:performance",
+            "talent:runemaster/riftblade:32-86-4-9",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You want a very fast elemental melee priority with assassin mobility and nearly constant maintenance decisions.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide"
+          ]
+        },
+        {
+          "text": "You enjoy the spec's core cadence: keep zenith active, throw warpdagger on cooldown for upgraded smolder without necessarily teleporting, prioritize hoarfrost, smolder, primordial blast, and hurricane, then use runeblade as filler while aligning primordial fury with zenith on bosses.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You dislike high APM, short-lived states, or optimized builds that may skip thematic capstones.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide"
+          ]
+        },
+        {
+          "text": "You dislike the positioning or swap constraint that warpdagger, phaser, clones, codices, and surging slash make it highly mobile, although the dagger may be thrown only for its buff rather than teleportation.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "inference:runemaster/riftblade:uptime-cost",
+            "talent:runemaster/riftblade:32-86-4-0",
+            "talent:runemaster/riftblade:32-86-10-0",
+            "talent:runemaster/riftblade:32-86-1-2"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Recent discussion and the current build describe Riftblade as powerful, mobile, and capable of strong damage with sustained Zenith and Smolder uptime.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Players emphasize its intense APM and fragile feel, and the current guide dismisses its capstones in favor of lower-row uptime talents.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "observed:runemaster/riftblade:community-shift"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "The talent tree advertises Genesis and other capstone payoffs, while the current PvE guide says the optimized build avoids them.",
+          "claim_ids": [
+            "observed:runemaster/riftblade:current-guide",
+            "talent:runemaster/riftblade:32-86-4-9"
+          ]
+        }
+      ]
+    },
+    "performance_signal_ids": [
+      "observed:runemaster/riftblade:performance"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "strong_single_guide",
+      "performance": "limited_uncontrolled",
+      "video": "searched_none_verified",
+      "overall_confidence": "high",
+      "gaps": [
+        "Capstone balance may change after the snapshot.",
+        "No detailed current PvP sequence despite the assassin toolkit."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "A fast elemental melee spec with Smolder, Hurricane, Runeblade, and early engraving choices.",
+      "observed_changes": [
+        "Low global encourages high APM",
+        "Defensive comfort is disputed"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "A frantic priority melee whose current best-documented build rejects the flashy capstones for near-continuous Zenith and Smolder uptime.",
+      "observed_changes": [
+        "Very high input rate",
+        "Capstone fantasy and optimized build currently diverge",
+        "Gear advice was still being tested"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "A fast elemental melee spec with Smolder, Hurricane, Runeblade, and early engraving choices.",
+      "observed_changes": [
+        "Low global encourages high APM",
+        "Defensive comfort is disputed"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "By levels 30-49, keep zenith active, throw warpdagger on cooldown for upgraded smolder without necessarily teleporting, prioritize hoarfrost, smolder, primordial blast, and hurricane, then use runeblade as filler while aligning primordial fury with zenith on bosses.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Warpdagger, Phaser, clones, codices, and Surging Slash make it highly mobile, although the dagger may be thrown only for its buff rather than teleportation"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "By levels 30-49, keep zenith active, throw warpdagger on cooldown for upgraded smolder without necessarily teleporting, prioritize hoarfrost, smolder, primordial blast, and hurricane, then use runeblade as filler while aligning primordial fury with zenith on bosses.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Warpdagger, Phaser, clones, codices, and Surging Slash make it highly mobile, although the dagger may be thrown only for its buff rather than teleportation"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:runemaster/riftblade:current-guide",
+      "kind": "observed",
+      "text": "The August Riftblade PvE guide prioritizes Hoarfrost, Smolder, Primordial Blast, Hurricane, then Runeblade filler; it calls for near-continuous Zenith, Warpdagger on cooldown for upgraded Smolder without requiring the teleport, Air engraving for single target, Earth plus Primordial Fury for AoE, and boss alignment of Primordial Fury with Zenith. It says the current optimized build skips Riftblade capstones for Spellfire Runes and Elemental Inscription.",
+      "source_ids": [
+        "buildhub:9c593168-2745-4972-aa1f-23266e0999f9"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "dungeons",
+          "raids",
+          "pve"
+        ],
+        "build_or_mode": [
+          "documented_pve_build"
+        ]
+      },
+      "confidence": "high",
+      "conflicts_with": [],
+      "notes": "The author says best weapon testing was still in progress."
+    },
+    {
+      "id": "observed:runemaster/riftblade:community-shift",
+      "kind": "observed",
+      "text": "Recent players describe Riftblade as very high APM and explicitly call out Warpdagger and Echo Rune management on a low global cooldown, alongside strong damage but survivability pressure.",
+      "source_ids": [
+        "reddit:runemaster-status-2026-07-19"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "pve",
+          "solo_leveling"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Small discussion with unnormalized performance impressions."
+    },
+    {
+      "id": "observed:runemaster/riftblade:performance",
+      "kind": "observed",
+      "text": "The July DPS compilation reports Riftblade at 4,370, and the August Mythic inventory lists 51 Riftblade records.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "pve_unspecified",
+          "mythic_dungeons"
+        ],
+        "build_or_mode": [
+          "unspecified"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "The sources are unnormalized and do not establish a tier rank."
+    },
+    {
+      "id": "inference:runemaster/riftblade:uptime-cost",
+      "kind": "inference",
+      "text": "Riftblade has a compact priority but high execution cost because short globals and multiple upkeep states make missed actions compound across Zenith, Smolder, engravings, and elemental cooldowns.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "observed:runemaster/riftblade:current-guide",
+        "observed:runemaster/riftblade:community-shift",
+        "talent:runemaster/riftblade:32-86-1-5"
+      ],
+      "scope": {
+        "levels": "level_30_60",
+        "content": [
+          "pve",
+          "pvp"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "high",
+      "conflicts_with": [],
+      "notes": "Input rate and state density are separate from raw button count."
+    }
+  ]
+}

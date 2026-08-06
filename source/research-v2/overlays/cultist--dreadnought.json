@@ -1,0 +1,973 @@
+{
+  "baseline": "cultist--dreadnought.json",
+  "set": {
+    "identity": {
+      "fantasy": "An eldritch shield tank who holds a dangerous Insanity floor, ricochets Twilight Shieldtoss through packs, and layers block retaliation with large temporary void absorbs.",
+      "one_line": "Establish threat with Shieldtoss and Gaze, climb above roughly 60 Insanity for defensive talents, tap only enough Sanity to recover mana, and rotate Dreadnought or Void shields before damage lands.",
+      "primary_family": "strategists",
+      "also_fits": [
+        "commanders",
+        "sequencers"
+      ],
+      "playstyle_tags": [
+        "insanity-shield-tank",
+        "block-tank",
+        "summon-tank"
+      ],
+      "claim_ids": [
+        "talent:cultist/dreadnought:25-88-4-0",
+        "talent:cultist/dreadnought:25-88-10-0",
+        "talent:cultist/dreadnought:25-88-8-6",
+        "talent:cultist/dreadnought:25-88-7-3",
+        "observed:cultist/dreadnought:early-mana-pressure",
+        "observed:cultist/dreadnought:resource-practice",
+        "inference:cultist/dreadnought:playstyle-identity"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "Open with Twilight Shieldtoss and C'Thun pressure, build Insanity into the range that powers defensive talents, then alternate active shields and block-driven retaliation. Use Sanity Tap frequently enough to sustain mana without falling through the useful Insanity floor.",
+      "single_target": "On one target, preserve threat through Shieldtoss, Gaze, and retaliation while aligning the larger absorb forms with predictable hits; damage is secondary to keeping the resource cycle stable.",
+      "aoe": "Shieldtoss, Gaze, summoned entities, and being struck by many enemies create strong pack feedback, but each extra target also increases the punishment for missing a shield window.",
+      "movement_and_target_switching": "Ranged Shieldtoss helps initiate and reconnect. Summons and ground effects are less responsive to moving packs, and the tank must avoid tapping resources while relocating under pressure.",
+      "defense_and_control": "Block scaling, retaliation, Dreadnought Shield, Void Shield, absorbs, and summoned defenses form an active layered kit rather than passive armor alone.",
+      "group_utility": "Cultist grips, fears, ranged pickup tools, and eldritch summons supply unusual tank control and visual presence.",
+      "failure_modes": [
+        {
+          "text": "Tapping below the useful Insanity threshold sacrifices defensive bonuses and can start a mana-versus-survival spiral.",
+          "claim_ids": [
+            "inference:cultist/dreadnought:failure-cost",
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6"
+          ]
+        },
+        {
+          "text": "Spamming every available button early drains mana; current players recommend a compact Shieldtoss-and-Gaze base until later passives arrive.",
+          "claim_ids": [
+            "inference:cultist/dreadnought:failure-cost",
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6"
+          ]
+        },
+        {
+          "text": "Using a large absorb after the hit wastes the spec's strongest mitigation and leaves the next event uncovered.",
+          "claim_ids": [
+            "inference:cultist/dreadnought:failure-cost",
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "talent:cultist/dreadnought:25-88-4-0",
+        "talent:cultist/dreadnought:25-88-10-0",
+        "talent:cultist/dreadnought:25-88-8-6",
+        "talent:cultist/dreadnought:25-88-7-3",
+        "talent:cultist/dreadnought:25-88-1-3",
+        "observed:cultist/dreadnought:early-mana-pressure",
+        "observed:cultist/dreadnought:resource-practice",
+        "observed:cultist/dreadnought:late-resource-tools",
+        "observed:cultist/dreadnought:build-practice",
+        "inference:cultist/dreadnought:playstyle-identity"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "A flavorful but resource-starved shield tank; current level-20 players report drinking after only a few enemies even while attempting Sanity Tap.",
+        "strengths": [
+          "Clear shield-toss identity",
+          "Good early pack pickup"
+        ],
+        "cautions": [
+          "Severe mana pressure",
+          "Defensive Insanity talents are incomplete"
+        ],
+        "claim_ids": [
+          "talent:cultist/dreadnought:25-88-4-0",
+          "talent:cultist/dreadnought:25-88-10-0",
+          "talent:cultist/dreadnought:25-88-8-6",
+          "talent:cultist/dreadnought:25-88-7-3",
+          "observed:cultist/dreadnought:early-mana-pressure",
+          "observed:cultist/dreadnought:resource-practice",
+          "observed:cultist/dreadnought:late-resource-tools",
+          "inference:cultist/dreadnought:playstyle-identity"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "Mana passives and lower instant costs begin to stabilize the cycle, making the intended high-Insanity tank loop more practical.",
+        "strengths": [
+          "Better sustained pulls",
+          "More complete absorb rotation"
+        ],
+        "cautions": [
+          "Still requires disciplined tapping",
+          "Cannot spam the entire kit"
+        ],
+        "claim_ids": [
+          "talent:cultist/dreadnought:25-88-4-0",
+          "talent:cultist/dreadnought:25-88-10-0",
+          "talent:cultist/dreadnought:25-88-8-6",
+          "talent:cultist/dreadnought:25-88-7-3",
+          "observed:cultist/dreadnought:early-mana-pressure",
+          "observed:cultist/dreadnought:resource-practice",
+          "observed:cultist/dreadnought:late-resource-tools",
+          "inference:cultist/dreadnought:playstyle-identity"
+        ]
+      },
+      "level_50_60": {
+        "feel": "A resource-sensitive active tank that keeps Insanity high, taps down only as needed, and plans several absorbs around incoming damage.",
+        "strengths": [
+          "Strong thematic mitigation",
+          "Good pack tools"
+        ],
+        "cautions": [
+          "Mana complaints persist for some players",
+          "Low off-role damage"
+        ],
+        "claim_ids": [
+          "talent:cultist/dreadnought:25-88-4-0",
+          "talent:cultist/dreadnought:25-88-10-0",
+          "talent:cultist/dreadnought:25-88-8-6",
+          "talent:cultist/dreadnought:25-88-7-3",
+          "observed:cultist/dreadnought:early-mana-pressure",
+          "observed:cultist/dreadnought:resource-practice",
+          "observed:cultist/dreadnought:late-resource-tools",
+          "inference:cultist/dreadnought:playstyle-identity"
+        ]
+      },
+      "boss": {
+        "feel": "Maintain the resource floor and pre-shield large hits while Shieldtoss and retaliation preserve threat.",
+        "strengths": [
+          "Predictable active mitigation",
+          "Ranged reconnect"
+        ],
+        "cautions": [
+          "Late shield timing is costly",
+          "Few detailed raid reports"
+        ],
+        "claim_ids": [
+          "talent:cultist/dreadnought:25-88-4-0",
+          "talent:cultist/dreadnought:25-88-10-0",
+          "talent:cultist/dreadnought:25-88-8-6",
+          "talent:cultist/dreadnought:25-88-7-3",
+          "observed:cultist/dreadnought:early-mana-pressure",
+          "observed:cultist/dreadnought:resource-practice",
+          "observed:cultist/dreadnought:late-resource-tools",
+          "inference:cultist/dreadnought:playstyle-identity"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "Many attackers feed block and retaliation effects, creating a satisfying pack loop once threat and mana are stable.",
+        "strengths": [
+          "Strong visual AoE tanking",
+          "Multiple control tools"
+        ],
+        "cautions": [
+          "Large pulls accelerate mana errors",
+          "Summons may lag moving packs"
+        ],
+        "claim_ids": [
+          "talent:cultist/dreadnought:25-88-4-0",
+          "talent:cultist/dreadnought:25-88-10-0",
+          "talent:cultist/dreadnought:25-88-8-6",
+          "talent:cultist/dreadnought:25-88-7-3",
+          "observed:cultist/dreadnought:early-mana-pressure",
+          "observed:cultist/dreadnought:resource-practice",
+          "observed:cultist/dreadnought:late-resource-tools",
+          "inference:cultist/dreadnought:playstyle-identity"
+        ]
+      },
+      "pvp": {
+        "feel": "A durable disruption tank with grips, fears, shields, and ranged pickup, but a resource mistake can be exploited immediately.",
+        "strengths": [
+          "Control-rich frontline",
+          "Large absorb swings"
+        ],
+        "cautions": [
+          "Mana and Insanity are vulnerable to pressure",
+          "Limited current PvP evidence"
+        ],
+        "claim_ids": [
+          "talent:cultist/dreadnought:25-88-4-0",
+          "talent:cultist/dreadnought:25-88-10-0",
+          "talent:cultist/dreadnought:25-88-8-6",
+          "talent:cultist/dreadnought:25-88-7-3",
+          "observed:cultist/dreadnought:early-mana-pressure",
+          "observed:cultist/dreadnought:resource-practice",
+          "observed:cultist/dreadnought:late-resource-tools",
+          "inference:cultist/dreadnought:playstyle-identity"
+        ]
+      }
+    },
+    "complexity": {
+      "core_actions": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "The tank combines Shieldtoss, Gaze, retaliation, summons, Sanity Tap, several absorbs, and broad Cultist control. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "The tank combines Shieldtoss, Gaze, retaliation, summons, Sanity Tap, several absorbs, and broad Cultist control. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "The tank combines Shieldtoss, Gaze, retaliation, summons, Sanity Tap, several absorbs, and broad Cultist control. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "The tank combines Shieldtoss, Gaze, retaliation, summons, Sanity Tap, several absorbs, and broad Cultist control. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "The tank combines Shieldtoss, Gaze, retaliation, summons, Sanity Tap, several absorbs, and broad Cultist control. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "The tank combines Shieldtoss, Gaze, retaliation, summons, Sanity Tap, several absorbs, and broad Cultist control. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        }
+      },
+      "state_tracking": {
+        "leveling_10_29": {
+          "value": "high",
+          "reason": "Mana, Insanity floor, shield durations, block-driven effects, threat, and summon state must be monitored together. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Mana, Insanity floor, shield durations, block-driven effects, threat, and summon state must be monitored together. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Mana, Insanity floor, shield durations, block-driven effects, threat, and summon state must be monitored together. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "Mana, Insanity floor, shield durations, block-driven effects, threat, and summon state must be monitored together. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Mana, Insanity floor, shield durations, block-driven effects, threat, and summon state must be monitored together. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Mana, Insanity floor, shield durations, block-driven effects, threat, and summon state must be monitored together. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Defensive value depends on entering damage with sufficient Insanity and an absorb already active. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Defensive value depends on entering damage with sufficient Insanity and an absorb already active. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Defensive value depends on entering damage with sufficient Insanity and an absorb already active. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "Defensive value depends on entering damage with sufficient Insanity and an absorb already active. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Defensive value depends on entering damage with sufficient Insanity and an absorb already active. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Defensive value depends on entering damage with sufficient Insanity and an absorb already active. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "The player continually decides whether the next global should recover mana, add threat, control a target, or prepare mitigation. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "The player continually decides whether the next global should recover mana, add threat, control a target, or prepare mitigation. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "The player continually decides whether the next global should recover mana, add threat, control a target, or prepare mitigation. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "The player continually decides whether the next global should recover mana, add threat, control a target, or prepare mitigation. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "The player continually decides whether the next global should recover mana, add threat, control a target, or prepare mitigation. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "The player continually decides whether the next global should recover mana, add threat, control a target, or prepare mitigation. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Shield timing and economical button use matter more than a long damage rotation. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Shield timing and economical button use matter more than a long damage rotation. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Shield timing and economical button use matter more than a long damage rotation. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "Shield timing and economical button use matter more than a long damage rotation. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Shield timing and economical button use matter more than a long damage rotation. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Shield timing and economical button use matter more than a long damage rotation. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        }
+      },
+      "failure_cost": {
+        "leveling_10_29": {
+          "value": "high",
+          "reason": "Falling low on both mana and Insanity can remove threat, mitigation, and recovery at the same time. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Falling low on both mana and Insanity can remove threat, mitigation, and recovery at the same time. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Falling low on both mana and Insanity can remove threat, mitigation, and recovery at the same time. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "Falling low on both mana and Insanity can remove threat, mitigation, and recovery at the same time. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Falling low on both mana and Insanity can remove threat, mitigation, and recovery at the same time. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Falling low on both mana and Insanity can remove threat, mitigation, and recovery at the same time. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0",
+            "talent:cultist/dreadnought:25-88-8-6",
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You enjoy active shield timing and a tank resource that must be deliberately kept in a beneficial band.",
+          "claim_ids": [
+            "inference:cultist/dreadnought:playstyle-identity",
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0"
+          ]
+        },
+        {
+          "text": "You want a sword-and-board tank with eldritch summons and ranged pack pickup.",
+          "claim_ids": [
+            "inference:cultist/dreadnought:playstyle-identity",
+            "talent:cultist/dreadnought:25-88-4-0",
+            "talent:cultist/dreadnought:25-88-10-0"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You want carefree early-level mana or a purely passive mitigation model.",
+          "claim_ids": [
+            "inference:cultist/dreadnought:failure-cost",
+            "observed:cultist/dreadnought:early-mana-pressure"
+          ]
+        },
+        {
+          "text": "You dislike trimming buttons from a rotation to protect resource stability.",
+          "claim_ids": [
+            "inference:cultist/dreadnought:failure-cost",
+            "observed:cultist/dreadnought:early-mana-pressure"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Fans praise the Void shield fantasy and the satisfying block-and-retaliation loop once later resource tools arrive.",
+          "claim_ids": [
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "observed:cultist/dreadnought:build-practice"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "The dominant concrete complaint is mana, especially before the level-30-to-40 cost talents, along with low damage anecdotes.",
+          "claim_ids": [
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "inference:cultist/dreadnought:failure-cost"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "Some players call the spec durable and enjoyable while comparison threads call it underrepresented or inferior; the evidence is too sparse to resolve a tank ranking.",
+          "claim_ids": [
+            "observed:cultist/dreadnought:early-mana-pressure",
+            "observed:cultist/dreadnought:resource-practice",
+            "observed:cultist/dreadnought:late-resource-tools",
+            "observed:cultist/dreadnought:performance-context"
+          ]
+        }
+      ]
+    },
+    "performance_signal_ids": [
+      "observed:cultist/dreadnought:performance-context"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "manual_recent_source_review",
+      "performance": "limited_uncontrolled",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium",
+      "gaps": [
+        "No current detailed endgame tank guide.",
+        "Mitigation uptime and mana stability need direct level-60 log or video verification."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "A flavorful but resource-starved shield tank; current level-20 players report drinking after only a few enemies even while attempting Sanity Tap.",
+      "observed_changes": [
+        "Severe mana pressure",
+        "Defensive Insanity talents are incomplete"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "A flavorful but resource-starved shield tank; current level-20 players report drinking after only a few enemies even while attempting Sanity Tap.",
+      "observed_changes": [
+        "Severe mana pressure",
+        "Defensive Insanity talents are incomplete"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "Mana passives and lower instant costs begin to stabilize the cycle, making the intended high-Insanity tank loop more practical.",
+      "observed_changes": [
+        "Still requires disciplined tapping",
+        "Cannot spam the entire kit"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "Mana passives and lower instant costs begin to stabilize the cycle, making the intended high-Insanity tank loop more practical.",
+      "observed_changes": [
+        "Still requires disciplined tapping",
+        "Cannot spam the entire kit"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "A resource-sensitive active tank that keeps Insanity high, taps down only as needed, and plans several absorbs around incoming damage.",
+      "observed_changes": [
+        "Mana complaints persist for some players",
+        "Low off-role damage"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:cultist/dreadnought:early-mana-pressure",
+      "kind": "observed",
+      "text": "Multiple current Dreadnought players report severe early mana pressure; one beta tester says a level-30 passive helps but does not remove the underlying management problem.",
+      "source_ids": [
+        "reddit:dreadnought-mana-2026-07-23",
+        "reddit:cultist-dreadnought-2026-07-20",
+        "reddit:tank-weapons-2026-08-01"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:cultist/dreadnought:resource-practice",
+      "kind": "observed",
+      "text": "Current advice is to build near 100 Insanity, use Sanity Tap down toward roughly 60 for mana, and avoid unnecessary abilities so the tank retains talent bonuses while sustaining the pull.",
+      "source_ids": [
+        "reddit:dreadnought-mana-2026-07-23",
+        "reddit:cultist-dreadnought-2026-07-20",
+        "reddit:tank-weapons-2026-08-01"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:cultist/dreadnought:late-resource-tools",
+      "kind": "observed",
+      "text": "Players identify later talents that lower instant-cast costs or scale costs with Insanity, so the level-20 experience should not be projected unchanged onto level 60.",
+      "source_ids": [
+        "reddit:dreadnought-mana-2026-07-23",
+        "reddit:cultist-dreadnought-2026-07-20",
+        "reddit:tank-weapons-2026-08-01"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:cultist/dreadnought:build-practice",
+      "kind": "observed",
+      "text": "The leading captured Dreadnought build supplies a talent configuration and WeakAura but almost no rotation prose, so it is useful for build presence and tracked states rather than priority claims.",
+      "source_ids": [
+        "buildhub-builds-2026-08-05",
+        "buildhub:54cb9a25-8641-49be-badc-e4ee4aa1ade7"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "community_build_snapshot"
+        ],
+        "build_or_mode": [
+          "documented_build"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The guide documents one current way to play; it is not treated as proof of optimality."
+    },
+    {
+      "id": "observed:cultist/dreadnought:performance-context",
+      "kind": "observed",
+      "text": "The compilation's 1,032 tank/off-role DPS and 51 Mythic records are not a tank-quality score and should not be compared directly with damage specs.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "uncontrolled_performance_signals"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "low",
+      "conflicts_with": [],
+      "notes": "Do not convert this into a tier ranking."
+    },
+    {
+      "id": "inference:cultist/dreadnought:playstyle-identity",
+      "kind": "inference",
+      "text": "An eldritch shield tank who holds a dangerous Insanity floor, ricochets Twilight Shieldtoss through packs, and layers block retaliation with large temporary void absorbs.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:cultist/dreadnought:25-88-4-0",
+        "talent:cultist/dreadnought:25-88-10-0",
+        "talent:cultist/dreadnought:25-88-8-6",
+        "talent:cultist/dreadnought:25-88-7-3",
+        "observed:cultist/dreadnought:early-mana-pressure",
+        "observed:cultist/dreadnought:resource-practice"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Descriptive playstyle classification, not an official label."
+    },
+    {
+      "id": "inference:cultist/dreadnought:failure-cost",
+      "kind": "inference",
+      "text": "Tapping below the useful Insanity threshold sacrifices defensive bonuses and can start a mana-versus-survival spiral.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:cultist/dreadnought:25-88-4-0",
+        "talent:cultist/dreadnought:25-88-10-0",
+        "talent:cultist/dreadnought:25-88-8-6",
+        "talent:cultist/dreadnought:25-88-7-3",
+        "talent:cultist/dreadnought:25-88-1-3",
+        "observed:cultist/dreadnought:early-mana-pressure",
+        "observed:cultist/dreadnought:resource-practice",
+        "observed:cultist/dreadnought:late-resource-tools"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Direction is supported; exact throughput cost is not measured."
+    }
+  ]
+}

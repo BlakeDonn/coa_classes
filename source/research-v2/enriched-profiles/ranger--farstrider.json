@@ -1,0 +1,2259 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "ranger/farstrider",
+    "class": "Ranger",
+    "name": "Farstrider",
+    "roles": [
+      "Damage",
+      "Support"
+    ],
+    "range": [
+      "Ranged"
+    ]
+  },
+  "identity": {
+    "fantasy": "A mobile elven field captain who cycles magical arrows and horns while falcons, dragonhawks, flowers, and allied attackers turn positioning into shared pressure.",
+    "one_line": "A falcon and Dragonhawk commander that generates Advantage, cycles magical arrows and Horns, and creates Dream Flowers allies can collect. Command Aura, Frenzy, Thalassian Brand, and Petalkeeper make it valuable support. A recent player describes the spec as demanding because positioning, Horn timing, arrows, pets, and teammate reach all matter.",
+    "primary_family": "strategists",
+    "also_fits": [
+      "commanders"
+    ],
+    "claim_ids": [
+      "observed:ranger/farstrider:support-build",
+      "inference:ranger/farstrider:group-window",
+      "talent:ranger/farstrider:21-2-1-5",
+      "observed:ranger/farstrider:representation",
+      "talent:ranger/farstrider:21-2-10-8a",
+      "talent:ranger/farstrider:21-2-10-8b",
+      "talent:ranger/farstrider:21-2-4-9",
+      "observed:ranger/farstrider:recent-manual-review"
+    ],
+    "playstyle_tags": [
+      "support-marksman",
+      "proc-ranged",
+      "position-support"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "Use Quick Shot and Horns to create Falconstrikes and Advantage, spend Advantage on magical arrows such as Emerald Arrow, collect or exploit Dream Flower effects, and choose party buffs or burst support appropriate to the group.",
+    "resources": [
+      "Focus"
+    ],
+    "builders": [
+      {
+        "name": "Falconstrike",
+        "claim_ids": [
+          "talent:ranger/farstrider:21-2-4-0"
+        ]
+      },
+      {
+        "name": "Dream Flowers",
+        "claim_ids": [
+          "talent:ranger/farstrider:21-2-10-0"
+        ]
+      },
+      {
+        "name": "Horn of War",
+        "claim_ids": [
+          "talent:ranger/farstrider:21-2-10-2a"
+        ]
+      },
+      {
+        "name": "Forest Herald",
+        "claim_ids": [
+          "talent:ranger/farstrider:21-2-7-5"
+        ]
+      },
+      {
+        "name": "Horn of Alacrity",
+        "claim_ids": [
+          "talent:ranger/farstrider:21-2-10-6a"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Dream Flowers",
+        "claim_ids": [
+          "talent:ranger/farstrider:21-2-10-0"
+        ]
+      },
+      {
+        "name": "Aerial Assault",
+        "claim_ids": [
+          "talent:ranger/farstrider:21-2-0-4b"
+        ]
+      },
+      {
+        "name": "Forest Herald",
+        "claim_ids": [
+          "talent:ranger/farstrider:21-2-7-5"
+        ]
+      },
+      {
+        "name": "Thread The Needle",
+        "claim_ids": [
+          "talent:ranger/farstrider:21-2-4-7"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Falconstrike",
+        "claim_ids": [
+          "talent:ranger/farstrider:21-2-4-0"
+        ]
+      },
+      {
+        "name": "Dream Flowers",
+        "claim_ids": [
+          "talent:ranger/farstrider:21-2-10-0"
+        ]
+      },
+      {
+        "name": "Falcon's Call",
+        "claim_ids": [
+          "talent:ranger/farstrider:21-2-1-2"
+        ]
+      },
+      {
+        "name": "Battle Screech",
+        "claim_ids": [
+          "talent:ranger/farstrider:21-2-10-4b"
+        ]
+      },
+      {
+        "name": "Forest Herald",
+        "claim_ids": [
+          "talent:ranger/farstrider:21-2-7-5"
+        ]
+      },
+      {
+        "name": "Freedom",
+        "claim_ids": [
+          "talent:ranger/farstrider:21-2-4-6"
+        ]
+      },
+      {
+        "name": "Highlander",
+        "claim_ids": [
+          "talent:ranger/farstrider:21-2-7-6"
+        ]
+      },
+      {
+        "name": "Petalkeeper",
+        "claim_ids": [
+          "talent:ranger/farstrider:21-2-6-9"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Falconstrike",
+        "claim_ids": [
+          "talent:ranger/farstrider:21-2-4-0"
+        ],
+        "structural_description": "Every 5th Quick Shot within 15 seconds transforms into Falconstrike.Using a Horn instantly transforms Quick Shot into Falconstrike.Falconstrike (Transform)Generates 2 AdvantageCall a cast of falcons to strike an enemy, dealing 121% Ranged Weapon Damage plus 10 Nature damage and calling 1 War Falcon to your aid for 6 seconds."
+      },
+      {
+        "name": "Gutpiercer",
+        "claim_ids": [
+          "talent:ranger/farstrider:21-2-10-4a"
+        ],
+        "structural_description": "Damage dealt by War Falcons and Dragonhawks now has a 15% chance to reduce the enemy's resistances by 75 and increase their Magic damage taken by -2% for 15 seconds."
+      }
+    ],
+    "single_target": "Build Advantage, accelerate its spender through Thread the Needle, and align Falconstrike, Emerald Arrow, Thalassian Brand, or Command Aura with the group's damage window.",
+    "aoe": "Pet and arrow effects contribute cleave, but the strongest documented identity is ranged group support rather than raw pack damage.",
+    "movement_and_target_switching": "Falconstrike and Battle Screech can grant movement speed, but Dream Flowers and teammate reach create positional constraints that do not appear in a target-dummy rotation.",
+    "defense_and_control": "Ranger movement and pet tools aid repositioning; Farstrider primarily prevents pressure by fighting at range and accelerating the group.",
+    "group_utility": "Horn of War, Horn of Alacrity, Command Aura, Frenzy, Thalassian Brand, and Dream Flowers make party amplification the core purpose rather than a side bonus.",
+    "failure_modes": [
+      {
+        "text": "Buffing when allies cannot reach or exploit the window loses much more value than a small personal rotation error.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window"
+        ]
+      },
+      {
+        "text": "Movement or a target swap can interrupt the intended payoff: falconstrike and battle screech can grant movement speed, but dream flowers and teammate reach create positional constraints that do not appear in a target-dummy rotation.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a"
+        ]
+      },
+      {
+        "text": "Spending recovery or control too early leaves less protection for the next pressure event: ranger movement and pet tools aid repositioning; farstrider primarily prevents pressure by fighting at range and accelerating the group.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a"
+        ]
+      }
+    ],
+    "claim_ids": [
+      "observed:ranger/farstrider:support-build",
+      "inference:ranger/farstrider:group-window",
+      "talent:ranger/farstrider:21-2-1-5",
+      "observed:ranger/farstrider:representation",
+      "talent:ranger/farstrider:21-2-10-8a",
+      "talent:ranger/farstrider:21-2-10-8b",
+      "talent:ranger/farstrider:21-2-4-9",
+      "observed:ranger/farstrider:recent-manual-review"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Falconstrike",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-4-0"
+          ]
+        },
+        {
+          "name": "Dream Flowers",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-10-0"
+          ]
+        },
+        {
+          "name": "Cunning",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-2-1"
+          ]
+        },
+        {
+          "name": "Blow the Horns!",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-6-1"
+          ]
+        }
+      ],
+      "observed_loop": "Early play establishes the spec's central loop: use quick shot and horns to create falconstrikes and advantage, spend advantage on magical arrows such as emerald arrow, collect or exploit dream flower effects, and.",
+      "observed_changes": [
+        "Later interactions are still missing",
+        "Recovery tools are incomplete"
+      ],
+      "claim_ids": [
+        "talent:ranger/farstrider:21-2-4-0",
+        "talent:ranger/farstrider:21-2-10-0",
+        "talent:ranger/farstrider:21-2-2-1",
+        "talent:ranger/farstrider:21-2-6-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Falcon's Call",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-1-2"
+          ]
+        },
+        {
+          "name": "Backstep",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-4-2"
+          ]
+        },
+        {
+          "name": "Woodland Arrow",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-7-2"
+          ]
+        },
+        {
+          "name": "Horn of War",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-10-2a"
+          ]
+        },
+        {
+          "name": "Battle Prowess",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-10-2b"
+          ]
+        },
+        {
+          "name": "Falcon Charmer",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-1-3"
+          ]
+        },
+        {
+          "name": "Survivalist",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-4-3"
+          ]
+        },
+        {
+          "name": "Quel'dorei Poison",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-7-3"
+          ]
+        }
+      ],
+      "observed_loop": "Early play establishes the spec's central loop: use quick shot and horns to create falconstrikes and advantage, spend advantage on magical arrows such as emerald arrow, collect or exploit dream flower effects, and.",
+      "observed_changes": [
+        "Later interactions are still missing",
+        "Recovery tools are incomplete"
+      ],
+      "claim_ids": [
+        "talent:ranger/farstrider:21-2-1-2",
+        "talent:ranger/farstrider:21-2-4-2",
+        "talent:ranger/farstrider:21-2-7-2",
+        "talent:ranger/farstrider:21-2-10-2a",
+        "talent:ranger/farstrider:21-2-10-2b",
+        "talent:ranger/farstrider:21-2-1-3",
+        "talent:ranger/farstrider:21-2-4-3",
+        "talent:ranger/farstrider:21-2-7-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "War Falconer",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-0-4a"
+          ]
+        },
+        {
+          "name": "Aerial Assault",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-0-4b"
+          ]
+        },
+        {
+          "name": "Falcon Guide",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-3-4a"
+          ]
+        },
+        {
+          "name": "Scavenger",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-3-4b"
+          ]
+        },
+        {
+          "name": "Falcon Diving",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-5-4a"
+          ]
+        },
+        {
+          "name": "Emerald Arrow",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-5-4b"
+          ]
+        },
+        {
+          "name": "Forest Fighter",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-8-4"
+          ]
+        },
+        {
+          "name": "Gutpiercer",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-10-4a"
+          ]
+        },
+        {
+          "name": "Battle Screech",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-10-4b"
+          ]
+        },
+        {
+          "name": "Dragonhawk Tamer",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-1-5"
+          ]
+        },
+        {
+          "name": "Windrunner's Reach",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-4-5"
+          ]
+        },
+        {
+          "name": "Forest Herald",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-7-5"
+          ]
+        }
+      ],
+      "observed_loop": "By levels 30-49, use quick shot and horns to create falconstrikes and advantage, spend advantage on magical arrows such as emerald arrow, collect or exploit dream flower effects, and choose party buffs or burst support appropriate to the group.",
+      "observed_changes": [
+        "Solo play undervalues support buttons",
+        "Dream Flowers create positional friction"
+      ],
+      "claim_ids": [
+        "talent:ranger/farstrider:21-2-0-4a",
+        "talent:ranger/farstrider:21-2-0-4b",
+        "talent:ranger/farstrider:21-2-3-4a",
+        "talent:ranger/farstrider:21-2-3-4b",
+        "talent:ranger/farstrider:21-2-5-4a",
+        "talent:ranger/farstrider:21-2-5-4b",
+        "talent:ranger/farstrider:21-2-8-4",
+        "talent:ranger/farstrider:21-2-10-4a",
+        "talent:ranger/farstrider:21-2-10-4b",
+        "talent:ranger/farstrider:21-2-1-5",
+        "talent:ranger/farstrider:21-2-4-5",
+        "talent:ranger/farstrider:21-2-7-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Wingman",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-1-6a"
+          ]
+        },
+        {
+          "name": "Guidance",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-1-6b"
+          ]
+        },
+        {
+          "name": "Venom-Coated Seeds",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-3-6"
+          ]
+        },
+        {
+          "name": "Freedom",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-4-6"
+          ]
+        },
+        {
+          "name": "Falcon's Aid",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-5-6"
+          ]
+        },
+        {
+          "name": "Highlander",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-7-6"
+          ]
+        },
+        {
+          "name": "Horn of Alacrity",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-10-6a"
+          ]
+        },
+        {
+          "name": "Defense of the Ancients",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-10-6b"
+          ]
+        },
+        {
+          "name": "Phoenix Plumes",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-0-7"
+          ]
+        },
+        {
+          "name": "Razorquills",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-2-7"
+          ]
+        },
+        {
+          "name": "Thread The Needle",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-4-7"
+          ]
+        },
+        {
+          "name": "To The Skies!",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-6-7"
+          ]
+        },
+        {
+          "name": "Hunting Tactics",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-8-7"
+          ]
+        }
+      ],
+      "observed_loop": "By levels 30-49, use quick shot and horns to create falconstrikes and advantage, spend advantage on magical arrows such as emerald arrow, collect or exploit dream flower effects, and choose party buffs or burst support appropriate to the group.",
+      "observed_changes": [
+        "Solo play undervalues support buttons",
+        "Dream Flowers create positional friction"
+      ],
+      "claim_ids": [
+        "talent:ranger/farstrider:21-2-1-6a",
+        "talent:ranger/farstrider:21-2-1-6b",
+        "talent:ranger/farstrider:21-2-3-6",
+        "talent:ranger/farstrider:21-2-4-6",
+        "talent:ranger/farstrider:21-2-5-6",
+        "talent:ranger/farstrider:21-2-7-6",
+        "talent:ranger/farstrider:21-2-10-6a",
+        "talent:ranger/farstrider:21-2-10-6b",
+        "talent:ranger/farstrider:21-2-0-7",
+        "talent:ranger/farstrider:21-2-2-7",
+        "talent:ranger/farstrider:21-2-4-7",
+        "talent:ranger/farstrider:21-2-6-7",
+        "talent:ranger/farstrider:21-2-8-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Pecking",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-2-8"
+          ]
+        },
+        {
+          "name": "Plumes of War",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-4-8"
+          ]
+        },
+        {
+          "name": "Whipvine Arrow",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-6-8"
+          ]
+        },
+        {
+          "name": "Command Aura",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-10-8a"
+          ]
+        },
+        {
+          "name": "Frenzy",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-10-8b"
+          ]
+        },
+        {
+          "name": "Coordination",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-2-9"
+          ]
+        },
+        {
+          "name": "Thalassian Brand",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-4-9"
+          ]
+        },
+        {
+          "name": "Petalkeeper",
+          "claim_ids": [
+            "talent:ranger/farstrider:21-2-6-9"
+          ]
+        }
+      ],
+      "observed_loop": "A timing-focused support marksman whose late tools ask when and where the party can exploit a brand, aura, frenzy, or flower payoff.",
+      "observed_changes": [
+        "Very low current log representation",
+        "Level-60 optimization is not settled"
+      ],
+      "claim_ids": [
+        "talent:ranger/farstrider:21-2-2-8",
+        "talent:ranger/farstrider:21-2-4-8",
+        "talent:ranger/farstrider:21-2-6-8",
+        "talent:ranger/farstrider:21-2-10-8a",
+        "talent:ranger/farstrider:21-2-10-8b",
+        "talent:ranger/farstrider:21-2-2-9",
+        "talent:ranger/farstrider:21-2-4-9",
+        "talent:ranger/farstrider:21-2-6-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "Early play establishes the spec's central loop: use quick shot and horns to create falconstrikes and advantage, spend advantage on magical arrows such as emerald arrow, collect or exploit dream flower effects, and.",
+      "strengths": [
+        "Core identity appears early",
+        "Basic loop is readable"
+      ],
+      "cautions": [
+        "Later interactions are still missing",
+        "Recovery tools are incomplete"
+      ],
+      "claim_ids": [
+        "observed:ranger/farstrider:support-build",
+        "inference:ranger/farstrider:group-window",
+        "talent:ranger/farstrider:21-2-1-5",
+        "observed:ranger/farstrider:representation",
+        "talent:ranger/farstrider:21-2-10-8a",
+        "talent:ranger/farstrider:21-2-10-8b",
+        "talent:ranger/farstrider:21-2-4-9",
+        "observed:ranger/farstrider:recent-manual-review"
+      ]
+    },
+    "leveling_30_49": {
+      "feel": "By levels 30-49, use quick shot and horns to create falconstrikes and advantage, spend advantage on magical arrows such as emerald arrow, collect or exploit dream flower effects, and choose party buffs or burst support appropriate to the group.",
+      "strengths": [
+        "Mobile ranged cadence",
+        "Falcon and dragonhawk flavor",
+        "Several party buffs"
+      ],
+      "cautions": [
+        "Solo play undervalues support buttons",
+        "Dream Flowers create positional friction"
+      ],
+      "claim_ids": [
+        "observed:ranger/farstrider:support-build",
+        "talent:ranger/farstrider:21-2-1-5",
+        "inference:ranger/farstrider:group-window",
+        "observed:ranger/farstrider:representation",
+        "talent:ranger/farstrider:21-2-10-8a",
+        "talent:ranger/farstrider:21-2-10-8b",
+        "talent:ranger/farstrider:21-2-4-9",
+        "observed:ranger/farstrider:recent-manual-review"
+      ]
+    },
+    "level_50_60": {
+      "feel": "A timing-focused support marksman whose late tools ask when and where the party can exploit a brand, aura, frenzy, or flower payoff.",
+      "strengths": [
+        "Distinct ranged support niche",
+        "Multiple group window choices"
+      ],
+      "cautions": [
+        "Very low current log representation",
+        "Level-60 optimization is not settled"
+      ],
+      "claim_ids": [
+        "observed:ranger/farstrider:representation",
+        "talent:ranger/farstrider:21-2-10-8a",
+        "talent:ranger/farstrider:21-2-10-8b",
+        "talent:ranger/farstrider:21-2-4-9",
+        "observed:ranger/farstrider:support-build",
+        "inference:ranger/farstrider:group-window",
+        "talent:ranger/farstrider:21-2-1-5",
+        "observed:ranger/farstrider:recent-manual-review"
+      ]
+    },
+    "boss": {
+      "feel": "On bosses, build advantage, accelerate its spender through thread the needle, and align falconstrike, emerald arrow, thalassian brand, or command aura with the group's damage window.",
+      "strengths": [
+        "Durable targets preserve the full loop",
+        "Cooldowns can be planned"
+      ],
+      "cautions": [
+        "Movement can break setup",
+        "Repeated errors remain visible"
+      ],
+      "claim_ids": [
+        "observed:ranger/farstrider:support-build",
+        "inference:ranger/farstrider:group-window",
+        "talent:ranger/farstrider:21-2-1-5",
+        "observed:ranger/farstrider:representation",
+        "talent:ranger/farstrider:21-2-10-8a",
+        "talent:ranger/farstrider:21-2-10-8b",
+        "talent:ranger/farstrider:21-2-4-9",
+        "observed:ranger/farstrider:recent-manual-review"
+      ]
+    },
+    "dungeon_aoe": {
+      "feel": "In dungeons, pet and arrow effects contribute cleave, but the strongest documented identity is ranged group support rather than raw pack damage.",
+      "strengths": [
+        "Pack tools express the spec clearly",
+        "Group utility has regular value"
+      ],
+      "cautions": [
+        "Short-lived targets can erase setup",
+        "Tank movement changes the plan"
+      ],
+      "claim_ids": [
+        "observed:ranger/farstrider:support-build",
+        "inference:ranger/farstrider:group-window",
+        "talent:ranger/farstrider:21-2-1-5",
+        "observed:ranger/farstrider:representation",
+        "talent:ranger/farstrider:21-2-10-8a",
+        "talent:ranger/farstrider:21-2-10-8b",
+        "talent:ranger/farstrider:21-2-4-9",
+        "observed:ranger/farstrider:recent-manual-review"
+      ]
+    },
+    "pvp": {
+      "feel": "In PvP, falconstrike and battle screech can grant movement speed, but dream flowers and teammate reach create positional constraints that do not appear in a target-dummy rotation. Ranger movement and pet tools aid repositioning; Farstrider primarily prevents pressure by fighting at range and accelerating the group.",
+      "strengths": [
+        "Control and utility create options",
+        "Target swaps can reward flexibility"
+      ],
+      "cautions": [
+        "Disruption makes the loop less predictable",
+        "Defensive timing is punishable"
+      ],
+      "claim_ids": [
+        "observed:ranger/farstrider:support-build",
+        "inference:ranger/farstrider:group-window",
+        "talent:ranger/farstrider:21-2-1-5",
+        "observed:ranger/farstrider:representation",
+        "talent:ranger/farstrider:21-2-10-8a",
+        "talent:ranger/farstrider:21-2-10-8b",
+        "talent:ranger/farstrider:21-2-4-9",
+        "observed:ranger/farstrider:recent-manual-review"
+      ]
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "moderate",
+        "reason": "The practical action set follows the authored loop: Use Quick Shot and Horns to create Falconstrikes and Advantage, spend Advantage on magical arrows such as Emerald Arrow, collect or exploit Dream Flower effects, and choose party buffs or burst support appropriate to the group. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "moderate-high",
+        "reason": "The practical action set follows the authored loop: Use Quick Shot and Horns to create Falconstrikes and Advantage, spend Advantage on magical arrows such as Emerald Arrow, collect or exploit Dream Flower effects, and choose party buffs or burst support appropriate to the group. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      },
+      "level_50_60": {
+        "value": "moderate-high",
+        "reason": "The practical action set follows the authored loop: Use Quick Shot and Horns to create Falconstrikes and Advantage, spend Advantage on magical arrows such as Emerald Arrow, collect or exploit Dream Flower effects, and choose party buffs or burst support appropriate to the group. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      },
+      "boss": {
+        "value": "moderate-high",
+        "reason": "The personal arrow loop is joined by several mutually useful group buffs and target debuffs.",
+        "claim_ids": [
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "moderate-high",
+        "reason": "The practical action set follows the authored loop: Use Quick Shot and Horns to create Falconstrikes and Advantage, spend Advantage on magical arrows such as Emerald Arrow, collect or exploit Dream Flower effects, and choose party buffs or burst support appropriate to the group. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      },
+      "pvp": {
+        "value": "moderate-high",
+        "reason": "The practical action set follows the authored loop: Use Quick Shot and Horns to create Falconstrikes and Advantage, spend Advantage on magical arrows such as Emerald Arrow, collect or exploit Dream Flower effects, and choose party buffs or burst support appropriate to the group. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "low",
+        "reason": "The player must preserve the resources, effects, or target states implied by: Build Advantage, accelerate its spender through Thread the Needle, and align Falconstrike, Emerald Arrow, Thalassian Brand, or Command Aura with the group's damage window. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "low",
+        "reason": "The player must preserve the resources, effects, or target states implied by: Build Advantage, accelerate its spender through Thread the Needle, and align Falconstrike, Emerald Arrow, Thalassian Brand, or Command Aura with the group's damage window. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      },
+      "level_50_60": {
+        "value": "low",
+        "reason": "The player must preserve the resources, effects, or target states implied by: Build Advantage, accelerate its spender through Thread the Needle, and align Falconstrike, Emerald Arrow, Thalassian Brand, or Command Aura with the group's damage window. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      },
+      "boss": {
+        "value": "low",
+        "reason": "The player must preserve the resources, effects, or target states implied by: Build Advantage, accelerate its spender through Thread the Needle, and align Falconstrike, Emerald Arrow, Thalassian Brand, or Command Aura with the group's damage window. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "low",
+        "reason": "The player must preserve the resources, effects, or target states implied by: Build Advantage, accelerate its spender through Thread the Needle, and align Falconstrike, Emerald Arrow, Thalassian Brand, or Command Aura with the group's damage window. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      },
+      "pvp": {
+        "value": "low",
+        "reason": "The player must preserve the resources, effects, or target states implied by: Build Advantage, accelerate its spender through Thread the Needle, and align Falconstrike, Emerald Arrow, Thalassian Brand, or Command Aura with the group's damage window. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "moderate-high",
+        "reason": "Target count, incoming pressure, and movement change the next action; ranger movement and pet tools aid repositioning; farstrider primarily prevents pressure by fighting at range and accelerating the group. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "high",
+        "reason": "Target count, incoming pressure, and movement change the next action; ranger movement and pet tools aid repositioning; farstrider primarily prevents pressure by fighting at range and accelerating the group. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "Target count, incoming pressure, and movement change the next action; ranger movement and pet tools aid repositioning; farstrider primarily prevents pressure by fighting at range and accelerating the group. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      },
+      "boss": {
+        "value": "high",
+        "reason": "The right support action depends on party composition, ally cooldowns, positioning, and the encounter window.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "Target count, incoming pressure, and movement change the next action; ranger movement and pet tools aid repositioning; farstrider primarily prevents pressure by fighting at range and accelerating the group. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "Target count, incoming pressure, and movement change the next action; ranger movement and pet tools aid repositioning; farstrider primarily prevents pressure by fighting at range and accelerating the group. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "low",
+        "reason": "Execution is constrained by positioning and swaps: Falconstrike and Battle Screech can grant movement speed, but Dream Flowers and teammate reach create positional constraints that do not appear in a target-dummy rotation. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "low",
+        "reason": "Execution is constrained by positioning and swaps: Falconstrike and Battle Screech can grant movement speed, but Dream Flowers and teammate reach create positional constraints that do not appear in a target-dummy rotation. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      },
+      "level_50_60": {
+        "value": "low",
+        "reason": "Execution is constrained by positioning and swaps: Falconstrike and Battle Screech can grant movement speed, but Dream Flowers and teammate reach create positional constraints that do not appear in a target-dummy rotation. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      },
+      "boss": {
+        "value": "low",
+        "reason": "Execution is constrained by positioning and swaps: Falconstrike and Battle Screech can grant movement speed, but Dream Flowers and teammate reach create positional constraints that do not appear in a target-dummy rotation. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "low",
+        "reason": "Execution is constrained by positioning and swaps: Falconstrike and Battle Screech can grant movement speed, but Dream Flowers and teammate reach create positional constraints that do not appear in a target-dummy rotation. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      },
+      "pvp": {
+        "value": "low-moderate",
+        "reason": "Execution is constrained by positioning and swaps: Falconstrike and Battle Screech can grant movement speed, but Dream Flowers and teammate reach create positional constraints that do not appear in a target-dummy rotation. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "moderate",
+        "reason": "Buffing when allies cannot reach or exploit the window loses much more value than a small personal rotation error. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "moderate-high",
+        "reason": "Buffing when allies cannot reach or exploit the window loses much more value than a small personal rotation error. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      },
+      "level_50_60": {
+        "value": "moderate-high",
+        "reason": "Buffing when allies cannot reach or exploit the window loses much more value than a small personal rotation error. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      },
+      "boss": {
+        "value": "moderate-high",
+        "reason": "A mistimed party amplifier loses shared value even if the personal shot loop continues normally.",
+        "claim_ids": [
+          "inference:ranger/farstrider:group-window",
+          "observed:ranger/farstrider:support-build",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "moderate-high",
+        "reason": "Buffing when allies cannot reach or exploit the window loses much more value than a small personal rotation error. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "Buffing when allies cannot reach or exploit the window loses much more value than a small personal rotation error. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      }
+    },
+    "setup_burden": {
+      "leveling_10_29": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Pet and arrow effects contribute cleave, but the strongest documented identity is ranged group support rather than raw pack damage. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Pet and arrow effects contribute cleave, but the strongest documented identity is ranged group support rather than raw pack damage. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      },
+      "level_50_60": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Pet and arrow effects contribute cleave, but the strongest documented identity is ranged group support rather than raw pack damage. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      },
+      "boss": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Pet and arrow effects contribute cleave, but the strongest documented identity is ranged group support rather than raw pack damage. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Pet and arrow effects contribute cleave, but the strongest documented identity is ranged group support rather than raw pack damage. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      },
+      "pvp": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Pet and arrow effects contribute cleave, but the strongest documented identity is ranged group support rather than raw pack damage. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a",
+          "talent:ranger/farstrider:21-2-10-8b",
+          "talent:ranger/farstrider:21-2-4-9",
+          "observed:ranger/farstrider:recent-manual-review"
+        ]
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [
+      {
+        "text": "You want a ranged damage rotation whose most important choices are about helping the whole group hit harder.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build"
+        ]
+      },
+      {
+        "text": "You enjoy the spec's core cadence: use quick shot and horns to create falconstrikes and advantage, spend advantage on magical arrows such as emerald arrow, collect or exploit dream flower effects, and choose party buffs or burst support appropriate to the group.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a"
+        ]
+      }
+    ],
+    "avoid_if": [
+      {
+        "text": "You judge a spec mainly by personal meter position or dislike coordinating group windows.",
+        "claim_ids": [
+          "observed:ranger/farstrider:representation",
+          "inference:ranger/farstrider:group-window"
+        ]
+      },
+      {
+        "text": "You dislike the positioning or swap constraint that falconstrike and battle screech can grant movement speed, but dream flowers and teammate reach create positional constraints that do not appear in a target-dummy rotation.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "inference:ranger/farstrider:group-window",
+          "talent:ranger/farstrider:21-2-1-5",
+          "observed:ranger/farstrider:representation",
+          "talent:ranger/farstrider:21-2-10-8a"
+        ]
+      }
+    ]
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [],
+  "sentiment": {
+    "praise": [
+      {
+        "theme": "The current build material presents an unusual mobile ranged-support identity with pets, magical arrows, and group buffs.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build"
+        ]
+      }
+    ],
+    "frustrations": [
+      {
+        "theme": "The current evidence base is exceptionally thin, and even the recent build author is uncertain about level-60 optimization.",
+        "claim_ids": [
+          "observed:ranger/farstrider:support-build",
+          "observed:ranger/farstrider:representation"
+        ]
+      }
+    ],
+    "contested": []
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 1,
+    "latest_update": "2026-07-20T09:59:42.797+00:00",
+    "top_title": "Farstrider Ranger Support Dps",
+    "top_url": "https://coabuildhub.com/build/40b1536a-eca5-456f-813c-b50de9ee2540",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:40b1536a-eca5-456f-813c-b50de9ee2540"
+    ]
+  },
+  "coverage": {
+    "mechanical": "manual_talent_and_build_interpretation",
+    "community": "manual_recent_source_review",
+    "performance": "representation_only",
+    "video": "searched_none_verified",
+    "overall_confidence": "medium-low",
+    "gaps": [
+      "Only a tiny current log sample is reported.",
+      "No settled level-60 rotation or verified current video."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:ranger/farstrider:21-2-4-0",
+      "kind": "structural",
+      "text": "Falconstrike: Every 5th Quick Shot within 15 seconds transforms into Falconstrike.Using a Horn instantly transforms Quick Shot into Falconstrike.Falconstrike (Transform)Generates 2 AdvantageCall a cast of falcons to strike an enemy, dealing 121% Ranged Weapon Damage plus 10 Nature damage and calling 1 War Falcon to your aid for 6 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-10-0",
+      "kind": "structural",
+      "text": "Dream Flowers: Level 10 PassiveYour damaging critical strikes now spawn a green Dream Flower at a random location within 15 yds of you. Dream Flower (Spawner)When an ally runs over the flower, they consume it to heal for 3% maximum health and gain 40% increased movement speed for 5 seconds.Can only occur once per sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-2-1",
+      "kind": "structural",
+      "text": "Cunning: Increases your Focus regeneration by 15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-6-1",
+      "kind": "structural",
+      "text": "Blow the Horns!: Reduces the cooldown of Horn spells by -25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-1-2",
+      "kind": "structural",
+      "text": "Falcon's Call: Call down war falcons upon a targeted area, slowing up to 8 enemies within the area by -60% for 5 seconds.A Falcon is summoned for each enemy affected for 12 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-4-2",
+      "kind": "structural",
+      "text": "Backstep: Leap backwards up to 10 yds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-7-2",
+      "kind": "structural",
+      "text": "Woodland Arrow: Shoot a magical arrow, dealing 38 + 35% ranged AP Physical damage and reducing the cooldown of active Horn spells by -15 sec.Damage increased for each stack of Advantage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-10-2a",
+      "kind": "structural",
+      "text": "Horn of War: Generates 1 AdvantageEmanate an aura for 30 seconds that grants 5% increased critical strike chance to party and raid members. Does not stack with similar effects.While active, you generate 3 Focus every 1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-10-2b",
+      "kind": "structural",
+      "text": "Battle Prowess: Increases chance to hit with all spells and attacks by 1% for you and party and raid members.Does not stack with similar effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-1-3",
+      "kind": "structural",
+      "text": "Falcon Charmer: Increases the duration of War Falcons by 3 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-4-3",
+      "kind": "structural",
+      "text": "Survivalist: Reduces the cooldown of Survival Potion by -25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-7-3",
+      "kind": "structural",
+      "text": "Quel'dorei Poison: Damage dealt by Woodland Arrow and Emerald Arrow now poison enemies for 3 seconds, dealing 91 + 10% ranged AP Nature damage every 1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-0-4a",
+      "kind": "structural",
+      "text": "War Falconer: Reduces the cooldowns of Falcon's Call by -30 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-0-4b",
+      "kind": "structural",
+      "text": "Aerial Assault: Removes the Focus cost of Falcon's Call, allows it to strike 2 additional targets, and increases its range by 10 yds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-3-4a",
+      "kind": "structural",
+      "text": "Falcon Guide: Falconstrike and Battle Screech now increase your movement speed by 30% for 3 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-3-4b",
+      "kind": "structural",
+      "text": "Scavenger: Increases the duration of Battle Screech and reduces the cooldown of Snapseed by 5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-5-4a",
+      "kind": "structural",
+      "text": "Falcon Diving: Killing an enemy that yields experience or honor now summons a War Falcon to aid you in combat for 12 seconds. Can only occur once every 4 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-5-4b",
+      "kind": "structural",
+      "text": "Emerald Arrow: Set up a powerful magical arrow and then shoot it, dealing 10 + 20% ranged AP Nature damage to the target, increased for each stack of Advantage.Creates an enchanted flare on the ground, causing nearby enemies to take 224 + 20% ranged AP Nature damage every 2 sec, lasting 2 sec for each stack of Advantage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-8-4",
+      "kind": "structural",
+      "text": "Forest Fighter: Your Skullpiercers or Emerald Arrows used with 5 stacks of Advantage now reduce the cooldown of Woodland Arrow by -5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-10-4a",
+      "kind": "structural",
+      "text": "Gutpiercer: Damage dealt by War Falcons and Dragonhawks now has a 15% chance to reduce the enemy's resistances by 75 and increase their Magic damage taken by -2% for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-10-4b",
+      "kind": "structural",
+      "text": "Battle Screech: Empower party and raid members within 40 yds, increasing their attack or spell power by 65 for 15 seconds.Does not stack with similar effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-1-5",
+      "kind": "structural",
+      "text": "Dragonhawk Tamer: Using a Horn now summons a Dragonhawk to assist you in combat for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-4-5",
+      "kind": "structural",
+      "text": "Windrunner's Reach: Increases the range of your ranged abilities by 5 yds.In addition, your critical strike chance against Undead, Beasts, and Dragonkin is increased by 2%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-7-5",
+      "kind": "structural",
+      "text": "Forest Herald: Casting Toxic Dart and abilities that spend stacks of Advantage now have a 20% chance to spawn a green Dreamflower at a random location nearby within 15 yds of you.Dream Flower (Spawner)When an ally runs over the flower, they consume it to heal for 3% maximum health and gain 40% increased movement speed for 5 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-1-6a",
+      "kind": "structural",
+      "text": "Wingman: Reduces all damage taken by -2% for each War Falcon or Dragonhawk you have active.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-1-6b",
+      "kind": "structural",
+      "text": "Guidance: Increases your Physical and Nature damage dealt by 1% for each War Falcon or Dragonhawk you have active.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-3-6",
+      "kind": "structural",
+      "text": "Venom-Coated Seeds: Damage dealt by Snapseed now reduces the enemy's chance to hit by -15% for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-4-6",
+      "kind": "structural",
+      "text": "Freedom: Free up to 10 nearby allies within 15 yds of you for 8 seconds, causing them to become immune to roots and snares, and allowing their critical strikes to increase their movement speed by 30% for 5 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-5-6",
+      "kind": "structural",
+      "text": "Falcon's Aid: Periodic damage dealt now has a 10% chance to summon a War Falcon to aid you in battle for 6 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-7-6",
+      "kind": "structural",
+      "text": "Highlander: Each time you spawn a green Dreamflower you are granted 1 stack of Highlander.Highlander (Stacks)At 3 stacks, your next Falconstrike within 10 seconds deals 25% increased damage and reduces the enemy's healing received by -40% for 8 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-10-6a",
+      "kind": "structural",
+      "text": "Horn of Alacrity: Generates 1 AdvantageEmanate an aura for 30 seconds that grants 5% increased haste to party and raid members. Does not stack with similar effects.While active, you generate 3 Focus every 1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-10-6b",
+      "kind": "structural",
+      "text": "Defense of the Ancients: You now emanate an aura around you, increasing the Armor of party and raid members by 390.Does not stack with similar effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-0-7",
+      "kind": "structural",
+      "text": "Phoenix Plumes: Your Skullpiercers and Woodland Arrows used with 5 stacks of Advantage now restore 3% Focus and summon a War Falcon for 6 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-2-7",
+      "kind": "structural",
+      "text": "Razorquills: Increases the tick rate of Toxic Dart and Emerald Arrows by -20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-4-7",
+      "kind": "structural",
+      "text": "Thread The Needle: Critical strikes with Quick Shot or Falconstrike now reduce the cast time and cost of your next ability that consumes Advantage by -34% for 15 seconds, stacking 3 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-6-7",
+      "kind": "structural",
+      "text": "To The Skies!: Reduces the cooldown of Bushcraft Glider by -30 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-8-7",
+      "kind": "structural",
+      "text": "Hunting Tactics: Damage dealt by Skullpiercer is increased by 30% against Poisoned targets.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-2-8",
+      "kind": "structural",
+      "text": "Pecking: Your War Falcons and Dragonhawks now have a 25% chance to deal additional Physical damage to 3 nearby enemies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-4-8",
+      "kind": "structural",
+      "text": "Plumes of War: Increases the critical strike chance of Falconstrike and Emerald Arrow by 15%.In addition, critical strikes with Falconstrike now increase the damage of subsequent Falconstrikes by 5% for 15 seconds, stacking 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-6-8",
+      "kind": "structural",
+      "text": "Whipvine Arrow: Launch an arrow with magical vines attached to it at your target, dealing 78 + 33% ranged AP Nature damage and rooting them for 40 seconds (8 sec vs players). Damage caused may interrupt the effect.Hits 1 additional nearby target per stack of Advantage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-10-8a",
+      "kind": "structural",
+      "text": "Command Aura: Emanate an aura for 15 seconds, causing allied players to deal 35% ranged AP additional damage as Stormstrike Damage when they deal direct damage.Applies Exhaustion, preventing you from benefiting from similar effects for 1 minute.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-10-8b",
+      "kind": "structural",
+      "text": "Frenzy: Enrage all nearby allies, increasing their haste by 30% for 20 seconds.After being affected by this spell, allies cannot benefit from similar effects for 5 minutes.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-2-9",
+      "kind": "structural",
+      "text": "Coordination: Your War Falcons and Dragonhawks now grant you a stack of Coordination when they deal damage.Coordination (Proc)Increases your critical strike chance and critical damage by 1% for 15 seconds, stacking 10 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-4-9",
+      "kind": "structural",
+      "text": "Thalassian Brand: Mark an enemy for total destruction, increasing your allies ranged attack power against the target by 300 and dealing 1120 Nature damage every 3 sec for 15 seconds.The marked target can always be seen by the Ranger whether it stealths or turns invisible",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:ranger/farstrider:21-2-6-9",
+      "kind": "structural",
+      "text": "Petalkeeper: Woodland Arrow now spawns a rare red Dream Flower at a random location near you for 30 seconds.Critical strikes will apply a stack of Petals to red Dream Flowers. PetalsAt 10 stacks, your next Ranger Horn will cause the flower to burst, granting a buff to allies within 20 yards that causes damage dealt to heal them for 10% of the damage dealt and preventing their movement speed from being reduced below 100% of normal speed, for 8 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "observed:ranger/farstrider:support-build",
+      "kind": "observed",
+      "text": "A July 20 current Build Hub leveling build describes Farstrider as support DPS using Falcons, Dragonhawks, Emerald Arrow, an Elude opener, and Agility, while explicitly remaining uncertain about level-60 optimization.",
+      "source_ids": [
+        "buildhub:40b1536a-eca5-456f-813c-b50de9ee2540"
+      ],
+      "scope": {
+        "levels": "leveling_10_59",
+        "content": [
+          "pve_general"
+        ],
+        "build_or_mode": [
+          "support_leveling"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Useful current play description, not a finished endgame guide."
+    },
+    {
+      "id": "observed:ranger/farstrider:representation",
+      "kind": "observed",
+      "text": "An August support discussion reports extremely low current Farstrider log representation and weak apparent results, while also showing uncertainty about whether the cited runs were Mythic 0 or Mythic+.",
+      "source_ids": [
+        "reddit:support-advice-2026-08-03"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "dungeon_pve"
+        ],
+        "build_or_mode": [
+          "unspecified"
+        ]
+      },
+      "confidence": "low",
+      "conflicts_with": [],
+      "notes": "Representation is a signal of evidence scarcity, not proof of spec power."
+    },
+    {
+      "id": "inference:ranger/farstrider:group-window",
+      "kind": "inference",
+      "text": "Farstrider complexity is coordination-heavy: party reach, cooldown timing, and target lifetime determine the value of its major support buttons.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:ranger/farstrider:21-2-10-8a",
+        "talent:ranger/farstrider:21-2-10-8b",
+        "talent:ranger/farstrider:21-2-4-9",
+        "observed:ranger/farstrider:support-build"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "group_pve"
+        ],
+        "build_or_mode": [
+          "support"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Group-value magnitude is not quantified."
+    },
+    {
+      "id": "observed:ranger/farstrider:recent-manual-review",
+      "kind": "observed",
+      "text": "Recent discussion treats Farstrider primarily as Ranger's team-support option; battleground value, personal damage, and the effect of later unlocks are all disputed.",
+      "source_ids": [
+        "reddit:ranger-intro-2026-07-21"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually reviewed on 2026-08-06; anecdotal evidence is not treated as a power ranking."
+    }
+  ]
+}

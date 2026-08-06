@@ -1,0 +1,2087 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "starcaller/moon-priest",
+    "class": "Starcaller",
+    "name": "Moon Priest",
+    "roles": [
+      "Healer"
+    ],
+    "range": [
+      "Hybrid"
+    ]
+  },
+  "identity": {
+    "fantasy": "A lunar battle-priest who turns star generation and consumption into nearby healing, flowing between attacks, Moonwater, prayers, and celestial phases.",
+    "one_line": "A damage-assisted healer in which consuming Scattered Stars heals nearby allies. Moonflow, Prayer of Elune, Moonwater, Lunar Cascade, and Celestial Form form a mobile critical-healing loop. It can intentionally mix attacks into healing rather than treating damage as incidental.",
+    "primary_family": "strategists",
+    "also_fits": [
+      "planners"
+    ],
+    "claim_ids": [
+      "observed:starcaller/moon-priest:dungeon-conflict",
+      "inference:starcaller/moon-priest:target-lifetime-cost",
+      "talent:starcaller/moon-priest:26-68-10-0",
+      "observed:starcaller/moon-priest:performance",
+      "talent:starcaller/moon-priest:26-68-6-8",
+      "talent:starcaller/moon-priest:26-68-4-9",
+      "talent:starcaller/moon-priest:26-68-2-1",
+      "talent:starcaller/moon-priest:26-68-8-4"
+    ],
+    "playstyle_tags": [
+      "damage-assisted-healer",
+      "mana-cycle-healer",
+      "mobile-healer"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "Generate Scattered Stars with the appropriate ranged or melee attacks, consume them to heal nearby allies, maintain Moonflow and Moonwater effects, use Prayer of Elune and Mending Surge for direct recovery, and manage mana so short-lived targets do not die before their stars can be consumed.",
+    "resources": [],
+    "builders": [
+      {
+        "name": "Celestial Mind",
+        "claim_ids": [
+          "talent:starcaller/moon-priest:26-68-10-2"
+        ]
+      },
+      {
+        "name": "Healing Prayers",
+        "claim_ids": [
+          "talent:starcaller/moon-priest:26-68-4-6"
+        ]
+      },
+      {
+        "name": "Full Cycle",
+        "claim_ids": [
+          "talent:starcaller/moon-priest:26-68-8-6"
+        ]
+      },
+      {
+        "name": "Moon Gazing",
+        "claim_ids": [
+          "talent:starcaller/moon-priest:26-68-10-6"
+        ]
+      },
+      {
+        "name": "Elune's Blessing",
+        "claim_ids": [
+          "talent:starcaller/moon-priest:26-68-10-8"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Moonflow",
+        "claim_ids": [
+          "talent:starcaller/moon-priest:26-68-2-1"
+        ]
+      },
+      {
+        "name": "Full Cycle",
+        "claim_ids": [
+          "talent:starcaller/moon-priest:26-68-8-6"
+        ]
+      },
+      {
+        "name": "Rippling Moonwater",
+        "claim_ids": [
+          "talent:starcaller/moon-priest:26-68-6-9"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Moonflow",
+        "claim_ids": [
+          "talent:starcaller/moon-priest:26-68-2-1"
+        ]
+      },
+      {
+        "name": "Prayer of Elune",
+        "claim_ids": [
+          "talent:starcaller/moon-priest:26-68-6-1"
+        ]
+      },
+      {
+        "name": "Lunar Swiftness",
+        "claim_ids": [
+          "talent:starcaller/moon-priest:26-68-1-3"
+        ]
+      },
+      {
+        "name": "Stellar Convergence",
+        "claim_ids": [
+          "talent:starcaller/moon-priest:26-68-4-4"
+        ]
+      },
+      {
+        "name": "Tear Drops",
+        "claim_ids": [
+          "talent:starcaller/moon-priest:26-68-1-5"
+        ]
+      },
+      {
+        "name": "Celestial Form",
+        "claim_ids": [
+          "talent:starcaller/moon-priest:26-68-4-9"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Celestial Form",
+        "claim_ids": [
+          "talent:starcaller/moon-priest:26-68-4-9"
+        ],
+        "structural_description": "Ascend into a celestial form for 15 seconds, increasing your critical strike chance by 10%.While active, critical strikes now reduce the remaining cooldown of all healing spells by 10% and apply a Scattered Star to your target and up to 4 enemies within 5 yds of them."
+      }
+    ],
+    "single_target": "Build stars and use direct prayers or Moonwater while converting damage into local healing.",
+    "aoe": "Star consumption, Moonflow, Prayer of Elune, Lunar Cascade, and Rippling Moonwater provide group coverage, but target death before consumption can deny mana and healing value.",
+    "movement_and_target_switching": "Several instant and flowing lunar tools support mobility, yet star marks live on enemies and must be consumed before those targets disappear.",
+    "defense_and_control": "Goddess Watch Over, Lunar Swiftness, slumber, movement healing, and Starcaller defensive tools support a mobile healer.",
+    "group_utility": "Damage, healing, mana cycling, movement support, and Starcaller control make Moon Priest an active hybrid rather than a stationary heal turret.",
+    "failure_modes": [
+      {
+        "text": "If enemies die before their accumulated stars are consumed, the healer can lose both the expected recovery and the mana cycle needed for the next pull.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost"
+        ]
+      },
+      {
+        "text": "Movement or a target swap can interrupt the intended payoff: several instant and flowing lunar tools support mobility, yet star marks live on enemies and must be consumed before those targets disappear.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8"
+        ]
+      },
+      {
+        "text": "Spending recovery or control too early leaves less protection for the next pressure event: goddess watch over, lunar swiftness, slumber, movement healing, and starcaller defensive tools support a mobile healer.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8"
+        ]
+      }
+    ],
+    "claim_ids": [
+      "observed:starcaller/moon-priest:dungeon-conflict",
+      "inference:starcaller/moon-priest:target-lifetime-cost",
+      "talent:starcaller/moon-priest:26-68-10-0",
+      "observed:starcaller/moon-priest:performance",
+      "talent:starcaller/moon-priest:26-68-6-8",
+      "talent:starcaller/moon-priest:26-68-4-9",
+      "talent:starcaller/moon-priest:26-68-2-1",
+      "talent:starcaller/moon-priest:26-68-8-4"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Aspect of the Goddess",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-4-0"
+          ]
+        },
+        {
+          "name": "Moon Priest",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-10-0"
+          ]
+        },
+        {
+          "name": "Moonflow",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-2-1"
+          ]
+        },
+        {
+          "name": "Lunar Blessing",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-4-1"
+          ]
+        },
+        {
+          "name": "Prayer of Elune",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-6-1"
+          ]
+        }
+      ],
+      "observed_loop": "An engaging attack-and-heal spec whose star and mana cycle can feel clunky before later tools and in groups that kill targets too quickly.",
+      "observed_changes": [
+        "Smart target choice required",
+        "Early dungeon reports conflict"
+      ],
+      "claim_ids": [
+        "talent:starcaller/moon-priest:26-68-4-0",
+        "talent:starcaller/moon-priest:26-68-10-0",
+        "talent:starcaller/moon-priest:26-68-2-1",
+        "talent:starcaller/moon-priest:26-68-4-1",
+        "talent:starcaller/moon-priest:26-68-6-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Lunar Resplendence",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-4-2"
+          ]
+        },
+        {
+          "name": "Celestial Mind",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-10-2"
+          ]
+        },
+        {
+          "name": "Lunar Swiftness",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-1-3"
+          ]
+        },
+        {
+          "name": "Eclipsing Arrows",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-4-3"
+          ]
+        },
+        {
+          "name": "Enchanted Water",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-7-3"
+          ]
+        }
+      ],
+      "observed_loop": "An engaging attack-and-heal spec whose star and mana cycle can feel clunky before later tools and in groups that kill targets too quickly.",
+      "observed_changes": [
+        "Smart target choice required",
+        "Early dungeon reports conflict"
+      ],
+      "claim_ids": [
+        "talent:starcaller/moon-priest:26-68-4-2",
+        "talent:starcaller/moon-priest:26-68-10-2",
+        "talent:starcaller/moon-priest:26-68-1-3",
+        "talent:starcaller/moon-priest:26-68-4-3",
+        "talent:starcaller/moon-priest:26-68-7-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Moonlit Slumber",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-0-4"
+          ]
+        },
+        {
+          "name": "Lunar Revelation",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-2-4"
+          ]
+        },
+        {
+          "name": "Stellar Convergence",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-4-4"
+          ]
+        },
+        {
+          "name": "Goddess Watch Over",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-6-4"
+          ]
+        },
+        {
+          "name": "Cycle of the Moon",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-8-4"
+          ]
+        },
+        {
+          "name": "Moonwell Acuity",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-10-4"
+          ]
+        },
+        {
+          "name": "Tear Drops",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-1-5"
+          ]
+        },
+        {
+          "name": "Rapid Cycle",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-2-5"
+          ]
+        },
+        {
+          "name": "Last Prayer",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-4-5a"
+          ]
+        },
+        {
+          "name": "Mending Surge",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-4-5b"
+          ]
+        },
+        {
+          "name": "Lunar Prophecy",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-6-5"
+          ]
+        },
+        {
+          "name": "Teachings of Elune",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-7-5"
+          ]
+        }
+      ],
+      "observed_loop": "By levels 30-49, generate scattered stars with the appropriate ranged or melee attacks, consume them to heal nearby allies, maintain moonflow and moonwater effects, use prayer of elune and mending surge for direct recovery, and manage mana so short-lived targets do not die before their stars can be consumed.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Several instant and flowing lunar tools support mobility, yet star marks live on enemies and must be consumed before those targets disappear"
+      ],
+      "claim_ids": [
+        "talent:starcaller/moon-priest:26-68-0-4",
+        "talent:starcaller/moon-priest:26-68-2-4",
+        "talent:starcaller/moon-priest:26-68-4-4",
+        "talent:starcaller/moon-priest:26-68-6-4",
+        "talent:starcaller/moon-priest:26-68-8-4",
+        "talent:starcaller/moon-priest:26-68-10-4",
+        "talent:starcaller/moon-priest:26-68-1-5",
+        "talent:starcaller/moon-priest:26-68-2-5",
+        "talent:starcaller/moon-priest:26-68-4-5a",
+        "talent:starcaller/moon-priest:26-68-4-5b",
+        "talent:starcaller/moon-priest:26-68-6-5",
+        "talent:starcaller/moon-priest:26-68-7-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Blessed By The Stars",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-0-6"
+          ]
+        },
+        {
+          "name": "Elune's Grace",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-2-6"
+          ]
+        },
+        {
+          "name": "Healing Prayers",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-4-6"
+          ]
+        },
+        {
+          "name": "Phase Guider",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-6-6"
+          ]
+        },
+        {
+          "name": "Full Cycle",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-8-6"
+          ]
+        },
+        {
+          "name": "Moon Gazing",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-10-6"
+          ]
+        },
+        {
+          "name": "Elune's Favor",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-1-7"
+          ]
+        },
+        {
+          "name": "Enchanted Stream",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-3-7"
+          ]
+        },
+        {
+          "name": "Flow of Waters",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-5-7"
+          ]
+        },
+        {
+          "name": "Final Prayer",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-7-7"
+          ]
+        }
+      ],
+      "observed_loop": "By levels 30-49, generate scattered stars with the appropriate ranged or melee attacks, consume them to heal nearby allies, maintain moonflow and moonwater effects, use prayer of elune and mending surge for direct recovery, and manage mana so short-lived targets do not die before their stars can be consumed.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Several instant and flowing lunar tools support mobility, yet star marks live on enemies and must be consumed before those targets disappear"
+      ],
+      "claim_ids": [
+        "talent:starcaller/moon-priest:26-68-0-6",
+        "talent:starcaller/moon-priest:26-68-2-6",
+        "talent:starcaller/moon-priest:26-68-4-6",
+        "talent:starcaller/moon-priest:26-68-6-6",
+        "talent:starcaller/moon-priest:26-68-8-6",
+        "talent:starcaller/moon-priest:26-68-10-6",
+        "talent:starcaller/moon-priest:26-68-1-7",
+        "talent:starcaller/moon-priest:26-68-3-7",
+        "talent:starcaller/moon-priest:26-68-5-7",
+        "talent:starcaller/moon-priest:26-68-7-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Cosmic Shift",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-2-8"
+          ]
+        },
+        {
+          "name": "Rampaging Waters",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-4-8"
+          ]
+        },
+        {
+          "name": "Lunar Cascade",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-6-8"
+          ]
+        },
+        {
+          "name": "Elune's Blessing",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-10-8"
+          ]
+        },
+        {
+          "name": "Lunar Phasing",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-2-9"
+          ]
+        },
+        {
+          "name": "Celestial Form",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-4-9"
+          ]
+        },
+        {
+          "name": "Rippling Moonwater",
+          "claim_ids": [
+            "talent:starcaller/moon-priest:26-68-6-9"
+          ]
+        }
+      ],
+      "observed_loop": "A fuller lunar cycle healer with Lunar Cascade, Celestial Form, and Rippling Moonwater expanding group recovery and phase management.",
+      "observed_changes": [
+        "Not a low-attention healer",
+        "Group pace can disrupt resource recovery"
+      ],
+      "claim_ids": [
+        "talent:starcaller/moon-priest:26-68-2-8",
+        "talent:starcaller/moon-priest:26-68-4-8",
+        "talent:starcaller/moon-priest:26-68-6-8",
+        "talent:starcaller/moon-priest:26-68-10-8",
+        "talent:starcaller/moon-priest:26-68-2-9",
+        "talent:starcaller/moon-priest:26-68-4-9",
+        "talent:starcaller/moon-priest:26-68-6-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "An engaging attack-and-heal spec whose star and mana cycle can feel clunky before later tools and in groups that kill targets too quickly.",
+      "strengths": [
+        "Damage contributes to healing",
+        "Mobile and visually distinct"
+      ],
+      "cautions": [
+        "Smart target choice required",
+        "Early dungeon reports conflict"
+      ],
+      "claim_ids": [
+        "observed:starcaller/moon-priest:dungeon-conflict",
+        "talent:starcaller/moon-priest:26-68-10-0",
+        "inference:starcaller/moon-priest:target-lifetime-cost",
+        "observed:starcaller/moon-priest:performance",
+        "talent:starcaller/moon-priest:26-68-6-8",
+        "talent:starcaller/moon-priest:26-68-4-9",
+        "talent:starcaller/moon-priest:26-68-2-1",
+        "talent:starcaller/moon-priest:26-68-8-4"
+      ]
+    },
+    "leveling_30_49": {
+      "feel": "By levels 30-49, generate scattered stars with the appropriate ranged or melee attacks, consume them to heal nearby allies, maintain moonflow and moonwater effects, use prayer of elune and mending surge for direct recovery, and manage mana so short-lived targets do not die before their stars can be consumed.",
+      "strengths": [
+        "Core engine is online",
+        "More complete target coverage"
+      ],
+      "cautions": [
+        "Late talents still change the ceiling",
+        "Several instant and flowing lunar tools support mobility, yet star marks live on enemies and must be consumed before those targets disappear"
+      ],
+      "claim_ids": [
+        "observed:starcaller/moon-priest:dungeon-conflict",
+        "inference:starcaller/moon-priest:target-lifetime-cost",
+        "talent:starcaller/moon-priest:26-68-10-0",
+        "observed:starcaller/moon-priest:performance",
+        "talent:starcaller/moon-priest:26-68-6-8",
+        "talent:starcaller/moon-priest:26-68-4-9",
+        "talent:starcaller/moon-priest:26-68-2-1",
+        "talent:starcaller/moon-priest:26-68-8-4"
+      ]
+    },
+    "level_50_60": {
+      "feel": "A fuller lunar cycle healer with Lunar Cascade, Celestial Form, and Rippling Moonwater expanding group recovery and phase management.",
+      "strengths": [
+        "85 Mythic records",
+        "Broad mobile group healing",
+        "Active damage contribution"
+      ],
+      "cautions": [
+        "Not a low-attention healer",
+        "Group pace can disrupt resource recovery"
+      ],
+      "claim_ids": [
+        "observed:starcaller/moon-priest:performance",
+        "talent:starcaller/moon-priest:26-68-6-8",
+        "talent:starcaller/moon-priest:26-68-4-9",
+        "observed:starcaller/moon-priest:dungeon-conflict",
+        "inference:starcaller/moon-priest:target-lifetime-cost",
+        "talent:starcaller/moon-priest:26-68-10-0",
+        "talent:starcaller/moon-priest:26-68-2-1",
+        "talent:starcaller/moon-priest:26-68-8-4"
+      ]
+    },
+    "boss": {
+      "feel": "On bosses, build stars and use direct prayers or moonwater while converting damage into local healing.",
+      "strengths": [
+        "Durable targets preserve the full loop",
+        "Cooldowns can be planned"
+      ],
+      "cautions": [
+        "Movement can break setup",
+        "Repeated errors remain visible"
+      ],
+      "claim_ids": [
+        "observed:starcaller/moon-priest:dungeon-conflict",
+        "inference:starcaller/moon-priest:target-lifetime-cost",
+        "talent:starcaller/moon-priest:26-68-10-0",
+        "observed:starcaller/moon-priest:performance",
+        "talent:starcaller/moon-priest:26-68-6-8",
+        "talent:starcaller/moon-priest:26-68-4-9",
+        "talent:starcaller/moon-priest:26-68-2-1",
+        "talent:starcaller/moon-priest:26-68-8-4"
+      ]
+    },
+    "dungeon_aoe": {
+      "feel": "In dungeons, star consumption, moonflow, prayer of elune, lunar cascade, and rippling moonwater provide group coverage, but target death before consumption can deny mana and healing value.",
+      "strengths": [
+        "Pack tools express the spec clearly",
+        "Group utility has regular value"
+      ],
+      "cautions": [
+        "Short-lived targets can erase setup",
+        "Tank movement changes the plan"
+      ],
+      "claim_ids": [
+        "observed:starcaller/moon-priest:dungeon-conflict",
+        "inference:starcaller/moon-priest:target-lifetime-cost",
+        "talent:starcaller/moon-priest:26-68-10-0",
+        "observed:starcaller/moon-priest:performance",
+        "talent:starcaller/moon-priest:26-68-6-8",
+        "talent:starcaller/moon-priest:26-68-4-9",
+        "talent:starcaller/moon-priest:26-68-2-1",
+        "talent:starcaller/moon-priest:26-68-8-4"
+      ]
+    },
+    "pvp": {
+      "feel": "In PvP, several instant and flowing lunar tools support mobility, yet star marks live on enemies and must be consumed before those targets disappear. Goddess Watch Over, Lunar Swiftness, slumber, movement healing, and Starcaller defensive tools support a mobile healer.",
+      "strengths": [
+        "Control and utility create options",
+        "Target swaps can reward flexibility"
+      ],
+      "cautions": [
+        "Disruption makes the loop less predictable",
+        "Defensive timing is punishable"
+      ],
+      "claim_ids": [
+        "observed:starcaller/moon-priest:dungeon-conflict",
+        "inference:starcaller/moon-priest:target-lifetime-cost",
+        "talent:starcaller/moon-priest:26-68-10-0",
+        "observed:starcaller/moon-priest:performance",
+        "talent:starcaller/moon-priest:26-68-6-8",
+        "talent:starcaller/moon-priest:26-68-4-9",
+        "talent:starcaller/moon-priest:26-68-2-1",
+        "talent:starcaller/moon-priest:26-68-8-4"
+      ]
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "low",
+        "reason": "The practical action set follows the authored loop: Generate Scattered Stars with the appropriate ranged or melee attacks, consume them to heal nearby allies, maintain Moonflow and Moonwater effects, use Prayer of Elune and Mending Surge for direct recovery, and manage mana so short-lived targets do not die before their stars can be consumed. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "low-moderate",
+        "reason": "The practical action set follows the authored loop: Generate Scattered Stars with the appropriate ranged or melee attacks, consume them to heal nearby allies, maintain Moonflow and Moonwater effects, use Prayer of Elune and Mending Surge for direct recovery, and manage mana so short-lived targets do not die before their stars can be consumed. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      },
+      "level_50_60": {
+        "value": "low-moderate",
+        "reason": "The practical action set follows the authored loop: Generate Scattered Stars with the appropriate ranged or melee attacks, consume them to heal nearby allies, maintain Moonflow and Moonwater effects, use Prayer of Elune and Mending Surge for direct recovery, and manage mana so short-lived targets do not die before their stars can be consumed. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      },
+      "boss": {
+        "value": "low-moderate",
+        "reason": "The practical action set follows the authored loop: Generate Scattered Stars with the appropriate ranged or melee attacks, consume them to heal nearby allies, maintain Moonflow and Moonwater effects, use Prayer of Elune and Mending Surge for direct recovery, and manage mana so short-lived targets do not die before their stars can be consumed. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "low-moderate",
+        "reason": "The practical action set follows the authored loop: Generate Scattered Stars with the appropriate ranged or melee attacks, consume them to heal nearby allies, maintain Moonflow and Moonwater effects, use Prayer of Elune and Mending Surge for direct recovery, and manage mana so short-lived targets do not die before their stars can be consumed. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      },
+      "pvp": {
+        "value": "low-moderate",
+        "reason": "The practical action set follows the authored loop: Generate Scattered Stars with the appropriate ranged or melee attacks, consume them to heal nearby allies, maintain Moonflow and Moonwater effects, use Prayer of Elune and Mending Surge for direct recovery, and manage mana so short-lived targets do not die before their stars can be consumed. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "moderate",
+        "reason": "The player must preserve the resources, effects, or target states implied by: Build stars and use direct prayers or Moonwater while converting damage into local healing. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "moderate-high",
+        "reason": "The player must preserve the resources, effects, or target states implied by: Build stars and use direct prayers or Moonwater while converting damage into local healing. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      },
+      "level_50_60": {
+        "value": "moderate-high",
+        "reason": "The player must preserve the resources, effects, or target states implied by: Build stars and use direct prayers or Moonwater while converting damage into local healing. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      },
+      "boss": {
+        "value": "moderate-high",
+        "reason": "Stars, mana, Moonflow, Moonwater, prayer cycles, and later Celestial Form overlap.",
+        "claim_ids": [
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "moderate-high",
+        "reason": "The player must preserve the resources, effects, or target states implied by: Build stars and use direct prayers or Moonwater while converting damage into local healing. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      },
+      "pvp": {
+        "value": "moderate-high",
+        "reason": "The player must preserve the resources, effects, or target states implied by: Build stars and use direct prayers or Moonwater while converting damage into local healing. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "moderate-high",
+        "reason": "Target count, incoming pressure, and movement change the next action; goddess watch over, lunar swiftness, slumber, movement healing, and starcaller defensive tools support a mobile healer. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "high",
+        "reason": "Target count, incoming pressure, and movement change the next action; goddess watch over, lunar swiftness, slumber, movement healing, and starcaller defensive tools support a mobile healer. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "Target count, incoming pressure, and movement change the next action; goddess watch over, lunar swiftness, slumber, movement healing, and starcaller defensive tools support a mobile healer. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      },
+      "boss": {
+        "value": "high",
+        "reason": "Target count, incoming pressure, and movement change the next action; goddess watch over, lunar swiftness, slumber, movement healing, and starcaller defensive tools support a mobile healer. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "The healer chooses attack target, star consumption timing, direct prayer, Moonwater, and mana recovery against rapidly changing target lifetime.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "Target count, incoming pressure, and movement change the next action; goddess watch over, lunar swiftness, slumber, movement healing, and starcaller defensive tools support a mobile healer. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "low",
+        "reason": "Execution is constrained by positioning and swaps: Several instant and flowing lunar tools support mobility, yet star marks live on enemies and must be consumed before those targets disappear. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "low",
+        "reason": "Execution is constrained by positioning and swaps: Several instant and flowing lunar tools support mobility, yet star marks live on enemies and must be consumed before those targets disappear. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      },
+      "level_50_60": {
+        "value": "low",
+        "reason": "Execution is constrained by positioning and swaps: Several instant and flowing lunar tools support mobility, yet star marks live on enemies and must be consumed before those targets disappear. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      },
+      "boss": {
+        "value": "low",
+        "reason": "Execution is constrained by positioning and swaps: Several instant and flowing lunar tools support mobility, yet star marks live on enemies and must be consumed before those targets disappear. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "low",
+        "reason": "Execution is constrained by positioning and swaps: Several instant and flowing lunar tools support mobility, yet star marks live on enemies and must be consumed before those targets disappear. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      },
+      "pvp": {
+        "value": "low-moderate",
+        "reason": "Execution is constrained by positioning and swaps: Several instant and flowing lunar tools support mobility, yet star marks live on enemies and must be consumed before those targets disappear. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "moderate-high",
+        "reason": "If enemies die before their accumulated stars are consumed, the healer can lose both the expected recovery and the mana cycle needed for the next pull. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "high",
+        "reason": "If enemies die before their accumulated stars are consumed, the healer can lose both the expected recovery and the mana cycle needed for the next pull. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "If enemies die before their accumulated stars are consumed, the healer can lose both the expected recovery and the mana cycle needed for the next pull. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      },
+      "boss": {
+        "value": "high",
+        "reason": "If enemies die before their accumulated stars are consumed, the healer can lose both the expected recovery and the mana cycle needed for the next pull. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "A dead marked target can remove both the healing payoff and mana return before the next pack.",
+        "claim_ids": [
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "If enemies die before their accumulated stars are consumed, the healer can lose both the expected recovery and the mana cycle needed for the next pull. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      }
+    },
+    "setup_burden": {
+      "leveling_10_29": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Star consumption, Moonflow, Prayer of Elune, Lunar Cascade, and Rippling Moonwater provide group coverage, but target death before consumption can deny mana and healing value. The early kit exposes only part of this demand.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Star consumption, Moonflow, Prayer of Elune, Lunar Cascade, and Rippling Moonwater provide group coverage, but target death before consumption can deny mana and healing value. Mid-level talents make the interaction regular.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      },
+      "level_50_60": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Star consumption, Moonflow, Prayer of Elune, Lunar Cascade, and Rippling Moonwater provide group coverage, but target death before consumption can deny mana and healing value. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      },
+      "boss": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Star consumption, Moonflow, Prayer of Elune, Lunar Cascade, and Rippling Moonwater provide group coverage, but target death before consumption can deny mana and healing value. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Star consumption, Moonflow, Prayer of Elune, Lunar Cascade, and Rippling Moonwater provide group coverage, but target death before consumption can deny mana and healing value. Pack size, lifetime, and tank movement add constraints.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      },
+      "pvp": {
+        "value": "low",
+        "reason": "The payoff depends on establishing the conditions described by: Star consumption, Moonflow, Prayer of Elune, Lunar Cascade, and Rippling Moonwater provide group coverage, but target death before consumption can deny mana and healing value. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8",
+          "talent:starcaller/moon-priest:26-68-4-9",
+          "talent:starcaller/moon-priest:26-68-2-1",
+          "talent:starcaller/moon-priest:26-68-8-4"
+        ]
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [
+      {
+        "text": "You want an active healer that attacks, moves, manages mana, and turns stars into group recovery.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict"
+        ]
+      },
+      {
+        "text": "You enjoy the spec's core cadence: generate scattered stars with the appropriate ranged or melee attacks, consume them to heal nearby allies, maintain moonflow and moonwater effects, use prayer of elune and mending surge for direct recovery, and manage mana so short-lived targets do not die before their stars can be consumed.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8"
+        ]
+      }
+    ],
+    "avoid_if": [
+      {
+        "text": "You want brain-off direct healing or dislike depending on enemy target lifetime.",
+        "claim_ids": [
+          "inference:starcaller/moon-priest:target-lifetime-cost"
+        ]
+      },
+      {
+        "text": "You dislike the positioning or swap constraint that several instant and flowing lunar tools support mobility, yet star marks live on enemies and must be consumed before those targets disappear.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict",
+          "inference:starcaller/moon-priest:target-lifetime-cost",
+          "talent:starcaller/moon-priest:26-68-10-0",
+          "observed:starcaller/moon-priest:performance",
+          "talent:starcaller/moon-priest:26-68-6-8"
+        ]
+      }
+    ]
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [
+    "observed:starcaller/moon-priest:performance"
+  ],
+  "sentiment": {
+    "praise": [
+      {
+        "theme": "Players call Moon Priest engaging, fun, visually strong, capable of meaningful damage, and rewarding when smart choices land.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict"
+        ]
+      }
+    ],
+    "frustrations": [
+      {
+        "theme": "Other players call it poor in leveling dungeons because mobs die before marks can be consumed, causing mana problems.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict"
+        ]
+      }
+    ],
+    "contested": [
+      {
+        "theme": "The same thread describes the spec as both engaging and terrible in dungeons, suggesting group pace and player understanding materially change the experience.",
+        "claim_ids": [
+          "observed:starcaller/moon-priest:dungeon-conflict"
+        ]
+      }
+    ]
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 2,
+    "latest_update": "2026-08-04T01:58:18.419+00:00",
+    "top_title": "Live, Laugh, Love Lunar Eclipse -> Moonflow",
+    "top_url": "https://coabuildhub.com/build/9e756564-15a6-455e-a39f-59be9592f5a8",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:9e756564-15a6-455e-a39f-59be9592f5a8"
+    ]
+  },
+  "coverage": {
+    "mechanical": "manual_talent_and_build_interpretation",
+    "community": "manual_recent_source_review",
+    "performance": "representation_only",
+    "video": "searched_none_verified",
+    "overall_confidence": "medium",
+    "gaps": [
+      "No normalized healer comparison.",
+      "Level-60 mana cycle and target-lifetime sensitivity need current guide evidence."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:starcaller/moon-priest:26-68-4-0",
+      "kind": "structural",
+      "text": "Aspect of the Goddess: While active, your healing done is increased by 10% and your spells and abilities will not be able to miss.In addition, consuming Scattered Stars now heals up to 5 allies around the target for 73 + 14.97% healing.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-10-0",
+      "kind": "structural",
+      "text": "Moon Priest: Level 10 PassiveYour Huntress Shot now has a Lunar Eclipse effect.Huntress Shot: Applies 2 additional Scattered Stars.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-2-1",
+      "kind": "structural",
+      "text": "Moonflow: Send forth moonwell waters to all nearby party and raid members, healing them for 49 + 22.86% healing.Lunar Eclipse: Triggers with no cooldown and consumes Scattered Stars from enemies you are in combat with within 40 yds.Consume Scattered StarsDeals 7 + 18.22% SP Arcane Damage and restores 8% maximum mana for each Scattered Star.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-4-1",
+      "kind": "structural",
+      "text": "Lunar Blessing: Increases your healing done by 3%, plus an additional 3% on Poisoned or Diseased targets.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-6-1",
+      "kind": "structural",
+      "text": "Prayer of Elune: Say a prayer to Elune, healing up to 12 allies within 40 yds for 77 + 27.57% healing, and dispel 1 harmful magic effect from them.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-4-2",
+      "kind": "structural",
+      "text": "Lunar Resplendence: Increases your healing done to allies below 20% health by 30%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-10-2",
+      "kind": "structural",
+      "text": "Celestial Mind: Level 20 PassiveYou now passively gain 1 stack of Lunar Phase 1 sec faster.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-1-3",
+      "kind": "structural",
+      "text": "Lunar Swiftness: Moon Arrow now reduces the cast time of the next Hand of Elune within 8 seconds by -20%, stacking 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-4-3",
+      "kind": "structural",
+      "text": "Eclipsing Arrows: Healing done by Hand of Elune or Touch of Moonlight now marks allies for 20 seconds.Casting Huntress Shot now heals marked allies for 235 + 30% SP.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-7-3",
+      "kind": "structural",
+      "text": "Enchanted Water: Increases the healing of Touch of Moonlight by 10% and reduces spell pushback suffered from damaging attacks by 35%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-0-4",
+      "kind": "structural",
+      "text": "Moonlit Slumber: Put an enemy to sleep for 30 seconds (6 sec vs players). Damage dealt will end the effect.While sleeping, you drain 98 mana from them every 3 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-2-4",
+      "kind": "structural",
+      "text": "Lunar Revelation: Increases the critical strike chance of Moonflow by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-4-4",
+      "kind": "structural",
+      "text": "Stellar Convergence: Applies Eclipsing Arrows to all party and raid members within 40 yds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-6-4",
+      "kind": "structural",
+      "text": "Goddess Watch Over: Increases the effectiveness of Aspect of the Goddess by 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-8-4",
+      "kind": "structural",
+      "text": "Cycle of the Moon: Every 10 seconds, you cycle between Full Moon and New Moon.Full MoonIncreases your critical strike chance by 5%.New MoonDamage dealt has a 25% chance to apply Scattered Stars.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-10-4",
+      "kind": "structural",
+      "text": "Moonwell Acuity: Level 30 PassiveThe Lunar Eclipse effect of Moonwell Splash now causes it to affect 3 targets.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-1-5",
+      "kind": "structural",
+      "text": "Tear Drops: Healing through Aspect of the Goddess now increases the target's healing taken from you by 1% for 10 sec, stacking up to 10 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-2-5",
+      "kind": "structural",
+      "text": "Rapid Cycle: Lunar Phase now increases your ranged haste by 4% per stack.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-4-5a",
+      "kind": "structural",
+      "text": "Last Prayer: Casting Stellar Convergence now resets the cooldown of Prayer of Elune.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-4-5b",
+      "kind": "structural",
+      "text": "Mending Surge: Reduces the cooldown of Stellar Convergence by -30 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-6-5",
+      "kind": "structural",
+      "text": "Lunar Prophecy: Casting Moon Arrow now reduces the cooldown of Prayer of Elune by -3 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-7-5",
+      "kind": "structural",
+      "text": "Teachings of Elune: Increases the healing of Hand of Elune and Moonflow by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-0-6",
+      "kind": "structural",
+      "text": "Blessed By The Stars: Your ranged damage dealt now has a 15% chance to unleash a Scattered Star.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-2-6",
+      "kind": "structural",
+      "text": "Elune's Grace: Critical heals with Hand of Elune now increase the target's armor by 10% for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-4-6",
+      "kind": "structural",
+      "text": "Healing Prayers: Prayer of Elune gains an additional 20% of your bonus healing effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-6-6",
+      "kind": "structural",
+      "text": "Phase Guider: Increases the bonus healing scaling of Moonwell Splash and the healing done through Aspect of the Goddess by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-8-6",
+      "kind": "structural",
+      "text": "Full Cycle: Hand of Elune gains the following Full Moon and New Moon effects.Full Moon: Healing increased by 10%.New Moon: Cost reduced by -10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-10-6",
+      "kind": "structural",
+      "text": "Moon Gazing: Level 40 PassiveYour critical strikes now generate a stack of Lunar Phase. Can only occur once per sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-1-7",
+      "kind": "structural",
+      "text": "Elune's Favor: Hand of Elune and Touch of Moonlight now heal for an additional 50% of their value over 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-3-7",
+      "kind": "structural",
+      "text": "Enchanted Stream: Increases the critical healing of Hand of Elune and Moonflow by 15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-5-7",
+      "kind": "structural",
+      "text": "Flow of Waters: Increases critical strike chance of all party and raid members by 3%. Does not stack with similar effects.In addition, increases your critical strike chance by 3%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-7-7",
+      "kind": "structural",
+      "text": "Final Prayer: Your Prayer of Elune now dispels 1 additional effect.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-2-8",
+      "kind": "structural",
+      "text": "Cosmic Shift: Shift the target ally out of the physical plane, granting improved stealth for 10 seconds.Does not break on damage taken.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-4-8",
+      "kind": "structural",
+      "text": "Rampaging Waters: Damage dealt by Scattered Stars now increases your healing by 1% and critical strike chance by 1% for 10 seconds, stacking 10 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-6-8",
+      "kind": "structural",
+      "text": "Lunar Cascade: Critical strikes with Moonflow and Prayer of Elune now apply Eclipsing Arrows to the target for 20 seconds.Casting Huntress Shot heals marked allies for 235 + 30% SP.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-10-8",
+      "kind": "structural",
+      "text": "Elune's Blessing: Level 50 PassiveYour Hand of Elune now gains an additional 30% of your bonus healing.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-2-9",
+      "kind": "structural",
+      "text": "Lunar Phasing: Cosmic Shift now dispels all harmful effects from the target.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-4-9",
+      "kind": "structural",
+      "text": "Celestial Form: Ascend into a celestial form for 15 seconds, increasing your critical strike chance by 10%.While active, critical strikes now reduce the remaining cooldown of all healing spells by 10% and apply a Scattered Star to your target and up to 4 enemies within 5 yds of them.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:starcaller/moon-priest:26-68-6-9",
+      "kind": "structural",
+      "text": "Rippling Moonwater: Your healing effects now apply Moonwater to the target, stacking 5 times.MoonwaterDealing damage will consume a stack to heal you.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "observed:starcaller/moon-priest:dungeon-conflict",
+      "kind": "observed",
+      "text": "A July Moon Priest discussion calls the spec engaging and fun, requiring smart choices and mana management while contributing damage. Another experienced reply calls it poor in leveling dungeons because enemies often die before their stars can be consumed, leaving the healer out of mana unless the group understands the mechanic.",
+      "source_ids": [
+        "reddit:starcaller-moon-priest-2026-07-21"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "dungeon_healing",
+          "solo_leveling"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Conflicting reports are preserved because group kill speed plausibly changes the resource cycle."
+    },
+    {
+      "id": "observed:starcaller/moon-priest:performance",
+      "kind": "observed",
+      "text": "The August Mythic inventory lists 85 Moon Priest records; the community DPS compilation does not list healers and therefore supplies no DPS value.",
+      "source_ids": [
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "mythic_dungeons"
+        ],
+        "build_or_mode": [
+          "healer"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "Upload count is not healing strength."
+    },
+    {
+      "id": "inference:starcaller/moon-priest:target-lifetime-cost",
+      "kind": "inference",
+      "text": "Moon Priest is unusually sensitive to enemy target lifetime because unconsumed stars can withhold both nearby healing and the mana cycle needed for continued casting.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:starcaller/moon-priest:26-68-10-0",
+        "observed:starcaller/moon-priest:dungeon-conflict"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "dungeon_healing"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Exact resource return requires live verification."
+    },
+    {
+      "id": "observed:starcaller/moon-priest:recent-manual-review",
+      "kind": "observed",
+      "text": "Moon Priest is described as engaging and mana-conscious, but short-lived dungeon targets can die before its marked payoff and produce severe mana pressure without team coordination.",
+      "source_ids": [
+        "reddit:starcaller-moon-priest-2026-07-21"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually reviewed on 2026-08-06; anecdotal evidence is not treated as a power ranking."
+    }
+  ]
+}

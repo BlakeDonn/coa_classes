@@ -1,0 +1,900 @@
+{
+  "baseline": "witch-doctor--brewing.json",
+  "set": {
+    "identity": {
+      "fantasy": "A battlefield alchemist who combines Ingredients, Bases, and Mojos to change what every Cauldron and Potion Toss does.",
+      "primary_family": "strategists",
+      "also_fits": [
+        "planners"
+      ],
+      "playstyle_tags": [
+        "modular-alchemist-healer",
+        "prepared-healer",
+        "utility-support"
+      ],
+      "one_line": "A battlefield alchemist who combines Ingredients, Bases, and Mojos to change what every Cauldron and Potion Toss does. The defining decision is contextual: Movement, triage, and utility side effects change Potion Toss and ward decisions.",
+      "claim_ids": [
+        "talent:witch-doctor/brewing:13-35-3-0",
+        "talent:witch-doctor/brewing:13-35-5-0",
+        "talent:witch-doctor/brewing:13-35-10-0",
+        "talent:witch-doctor/brewing:13-35-2-9",
+        "observed:witch-doctor/brewing:community-practice",
+        "observed:witch-doctor/brewing:sentiment-context",
+        "inference:witch-doctor/brewing:identity"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "A modular alchemist healer. Ingredients, Bases, and Mojos change the effects of the Cauldron and Potion Toss, so the player prepares the right brew for steady healing, shields, raid healing, or damage support. It is flexible and utility-rich, but less plug-and-play than a conventional direct healer.",
+      "single_target": "Maintain the selected Ingredient, Base, and Mojo recipe, place Cauldron where allies can use it, and Potion Toss the moving tank while contributing damage when healing is stable.",
+      "aoe": "Use Cauldron and recipe effects for group coverage, but account for slow effigy behavior and the Stasis Ward stun. Current healers describe both passive ease and meaningful recipe nuance.",
+      "movement_and_target_switching": "Hybrid range and throwable tools support movement, while persistent devices reward planned placement.",
+      "defense_and_control": "Its structural defensive package includes Ingredient, Potion Toss, Potent Mixes, Spirit Healer, Splash Potion.",
+      "group_utility": "Group or control tools include Ingredient, Mixologist, Ingredient, Ingredient, Loa's Blessing.",
+      "failure_modes": [
+        {
+          "text": "The wrong recipe, poor Cauldron placement, a slow effigy, or an unnoticed Stasis Ward stun can make the prepared toolkit answer the wrong emergency.",
+          "claim_ids": [
+            "inference:witch-doctor/brewing:failure-cost",
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0"
+          ]
+        },
+        {
+          "text": "A Cauldron placed behind a moving group cannot deliver the recipe selected for the pull.",
+          "claim_ids": [
+            "inference:witch-doctor/brewing:failure-cost",
+            "observed:witch-doctor/brewing:community-practice"
+          ]
+        },
+        {
+          "text": "Ignoring an effigy's travel time or Stasis Ward's stun can make a nominally available tool arrive too late or disrupt the wrong moment.",
+          "claim_ids": [
+            "inference:witch-doctor/brewing:failure-cost",
+            "observed:witch-doctor/brewing:community-practice"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "talent:witch-doctor/brewing:13-35-3-0",
+        "talent:witch-doctor/brewing:13-35-5-0",
+        "talent:witch-doctor/brewing:13-35-10-0",
+        "talent:witch-doctor/brewing:13-35-2-9",
+        "observed:witch-doctor/brewing:community-practice",
+        "observed:witch-doctor/brewing:build-practice",
+        "observed:witch-doctor/brewing:sentiment-context",
+        "inference:witch-doctor/brewing:identity"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "Ingredient, Potion Toss, and Cauldron teach the recipe framework; early ease reports do not cover later utility interactions.",
+        "strengths": [
+          "A battlefield alchemist who combines Ingredients, Bases, and Mojos to change what every Cauldron and Potion Toss does.",
+          "Players appreciate flexible recipes, mobile Potion Toss healing, and the ability to contribute damage between recovery needs."
+        ],
+        "cautions": [
+          "The spec is called both passive and nuanced, suggesting a low floor but a larger optimization gap than the easy label implies.",
+          "Do not project the mature priority backward."
+        ],
+        "claim_ids": [
+          "talent:witch-doctor/brewing:13-35-3-0",
+          "talent:witch-doctor/brewing:13-35-5-0",
+          "talent:witch-doctor/brewing:13-35-10-0",
+          "talent:witch-doctor/brewing:13-35-2-9",
+          "observed:witch-doctor/brewing:community-practice",
+          "observed:witch-doctor/brewing:build-practice",
+          "observed:witch-doctor/brewing:sentiment-context",
+          "inference:witch-doctor/brewing:identity"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "The middle bands connect the foundational kit to the mature loop: A modular alchemist healer. Exact level-by-level priority remains bounded by the available evidence.",
+        "strengths": [
+          "A modular alchemist healer.",
+          "More of the state and payoff loop is available."
+        ],
+        "cautions": [
+          "The wrong recipe, poor Cauldron placement, a slow effigy, or an unnoticed Stasis Ward stun can make the prepared toolkit answer the wrong emergency.",
+          "Source levels and gear are not normalized."
+        ],
+        "claim_ids": [
+          "talent:witch-doctor/brewing:13-35-3-0",
+          "talent:witch-doctor/brewing:13-35-5-0",
+          "talent:witch-doctor/brewing:13-35-10-0",
+          "talent:witch-doctor/brewing:13-35-2-9",
+          "observed:witch-doctor/brewing:community-practice",
+          "observed:witch-doctor/brewing:build-practice",
+          "observed:witch-doctor/brewing:sentiment-context",
+          "inference:witch-doctor/brewing:identity"
+        ]
+      },
+      "level_50_60": {
+        "feel": "Master Mixologist, Tiki Splash, effigies, wards, and damage contribution widen the gap between basic and optimized Brewing.",
+        "strengths": [
+          "Players appreciate flexible recipes, mobile Potion Toss healing, and the ability to contribute damage between recovery needs.",
+          "The full talent interaction is available."
+        ],
+        "cautions": [
+          "The spec is called both passive and nuanced, suggesting a low floor but a larger optimization gap than the easy label implies.",
+          "The wrong recipe, poor Cauldron placement, a slow effigy, or an unnoticed Stasis Ward stun can make the prepared toolkit answer the wrong emergency."
+        ],
+        "claim_ids": [
+          "talent:witch-doctor/brewing:13-35-3-0",
+          "talent:witch-doctor/brewing:13-35-5-0",
+          "talent:witch-doctor/brewing:13-35-10-0",
+          "talent:witch-doctor/brewing:13-35-2-9",
+          "observed:witch-doctor/brewing:community-practice",
+          "observed:witch-doctor/brewing:build-practice",
+          "observed:witch-doctor/brewing:sentiment-context",
+          "inference:witch-doctor/brewing:identity"
+        ]
+      },
+      "boss": {
+        "feel": "Maintain the selected Ingredient, Base, and Mojo recipe, place Cauldron where allies can use it, and Potion Toss the moving tank while contributing damage when healing is stable.",
+        "strengths": [
+          "Maintain the selected Ingredient, Base, and Mojo recipe, place Cauldron where allies can use it, and Potion Toss the moving tank while contributing damage when healing is stable.",
+          "Durable targets allow the documented cycle to complete."
+        ],
+        "cautions": [
+          "The wrong recipe, poor Cauldron placement, a slow effigy, or an unnoticed Stasis Ward stun can make the prepared toolkit answer the wrong emergency.",
+          "No controlled ranking is asserted."
+        ],
+        "claim_ids": [
+          "talent:witch-doctor/brewing:13-35-3-0",
+          "talent:witch-doctor/brewing:13-35-5-0",
+          "talent:witch-doctor/brewing:13-35-10-0",
+          "talent:witch-doctor/brewing:13-35-2-9",
+          "observed:witch-doctor/brewing:community-practice",
+          "observed:witch-doctor/brewing:build-practice",
+          "observed:witch-doctor/brewing:sentiment-context",
+          "inference:witch-doctor/brewing:identity"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "Use Cauldron and recipe effects for group coverage, but account for slow effigy behavior and the Stasis Ward stun. Current healers describe both passive ease and meaningful recipe nuance.",
+        "strengths": [
+          "Use Cauldron and recipe effects for group coverage, but account for slow effigy behavior and the Stasis Ward stun.",
+          "Pack play exposes the spec's target-count decisions."
+        ],
+        "cautions": [
+          "The wrong recipe, poor Cauldron placement, a slow effigy, or an unnoticed Stasis Ward stun can make the prepared toolkit answer the wrong emergency.",
+          "Pull size, lifespan, and tank pace are uncontrolled."
+        ],
+        "claim_ids": [
+          "talent:witch-doctor/brewing:13-35-3-0",
+          "talent:witch-doctor/brewing:13-35-5-0",
+          "talent:witch-doctor/brewing:13-35-10-0",
+          "talent:witch-doctor/brewing:13-35-2-9",
+          "observed:witch-doctor/brewing:community-practice",
+          "observed:witch-doctor/brewing:build-practice",
+          "observed:witch-doctor/brewing:sentiment-context",
+          "inference:witch-doctor/brewing:identity"
+        ]
+      },
+      "pvp": {
+        "feel": "Mobile Potion Toss, wards, and recipe utility can support PvP groups, but no captured source establishes a mode-specific healing sequence.",
+        "strengths": [
+          "Mobile Potion Toss, wards, and recipe utility can support PvP groups, but no captured source establishes a mode-specific healing sequence.",
+          "Control and disruption change the normal loop."
+        ],
+        "cautions": [
+          "The wrong recipe, poor Cauldron placement, a slow effigy, or an unnoticed Stasis Ward stun can make the prepared toolkit answer the wrong emergency.",
+          "No normalized matchup or bracket comparison is available."
+        ],
+        "claim_ids": [
+          "talent:witch-doctor/brewing:13-35-3-0",
+          "talent:witch-doctor/brewing:13-35-5-0",
+          "talent:witch-doctor/brewing:13-35-10-0",
+          "talent:witch-doctor/brewing:13-35-2-9",
+          "observed:witch-doctor/brewing:community-practice",
+          "observed:witch-doctor/brewing:build-practice",
+          "observed:witch-doctor/brewing:sentiment-context",
+          "inference:witch-doctor/brewing:identity"
+        ]
+      }
+    },
+    "complexity": {
+      "core_actions": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Healing, recipe selection, Cauldron, wards, effigies, and optional damage create a wide bar. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Healing, recipe selection, Cauldron, wards, effigies, and optional damage create a wide bar. Middle talents make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "Healing, recipe selection, Cauldron, wards, effigies, and optional damage create a wide bar. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Healing, recipe selection, Cauldron, wards, effigies, and optional damage create a wide bar. A durable target makes repeated timing and resource discipline matter.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Healing, recipe selection, Cauldron, wards, effigies, and optional damage create a wide bar. Changing pack size, lifespan, and tank movement add another constraint.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "moderate-high",
+          "reason": "Healing, recipe selection, Cauldron, wards, effigies, and optional damage create a wide bar. Enemy disruption and an active opponent make the same task less predictable.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        }
+      },
+      "state_tracking": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Recipe components, ally health, Cauldron position, wards, and mana need monitoring. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Recipe components, ally health, Cauldron position, wards, and mana need monitoring. Middle talents make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "Recipe components, ally health, Cauldron position, wards, and mana need monitoring. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Recipe components, ally health, Cauldron position, wards, and mana need monitoring. A durable target makes repeated timing and resource discipline matter.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Recipe components, ally health, Cauldron position, wards, and mana need monitoring. Changing pack size, lifespan, and tank movement add another constraint.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Recipe components, ally health, Cauldron position, wards, and mana need monitoring. Enemy disruption and an active opponent make the same task less predictable.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "The chosen Ingredient, Base, and Mojo determine what the kit can answer before combat. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "The chosen Ingredient, Base, and Mojo determine what the kit can answer before combat. Middle talents make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "The chosen Ingredient, Base, and Mojo determine what the kit can answer before combat. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "The chosen Ingredient, Base, and Mojo determine what the kit can answer before combat. A durable target makes repeated timing and resource discipline matter.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "moderate-high",
+          "reason": "The chosen Ingredient, Base, and Mojo determine what the kit can answer before combat. Changing pack size, lifespan, and tank movement add another constraint.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "The chosen Ingredient, Base, and Mojo determine what the kit can answer before combat. Enemy disruption and an active opponent make the same task less predictable.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Movement, triage, and utility side effects change Potion Toss and ward decisions. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Movement, triage, and utility side effects change Potion Toss and ward decisions. Middle talents make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "Movement, triage, and utility side effects change Potion Toss and ward decisions. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Movement, triage, and utility side effects change Potion Toss and ward decisions. A durable target makes repeated timing and resource discipline matter.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Movement, triage, and utility side effects change Potion Toss and ward decisions. Changing pack size, lifespan, and tank movement add another constraint.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Movement, triage, and utility side effects change Potion Toss and ward decisions. Enemy disruption and an active opponent make the same task less predictable.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "low-moderate",
+          "reason": "Ground placement and moving-target Tosses create moderate spatial execution. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate",
+          "reason": "Ground placement and moving-target Tosses create moderate spatial execution. Middle talents make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate",
+          "reason": "Ground placement and moving-target Tosses create moderate spatial execution. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate",
+          "reason": "Ground placement and moving-target Tosses create moderate spatial execution. A durable target makes repeated timing and resource discipline matter.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "moderate-high",
+          "reason": "Ground placement and moving-target Tosses create moderate spatial execution. Changing pack size, lifespan, and tank movement add another constraint.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "moderate-high",
+          "reason": "Ground placement and moving-target Tosses create moderate spatial execution. Enemy disruption and an active opponent make the same task less predictable.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        }
+      },
+      "failure_cost": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "A wrong recipe or misplaced Cauldron can leave no matching answer to group damage. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "A wrong recipe or misplaced Cauldron can leave no matching answer to group damage. Middle talents make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "A wrong recipe or misplaced Cauldron can leave no matching answer to group damage. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "A wrong recipe or misplaced Cauldron can leave no matching answer to group damage. A durable target makes repeated timing and resource discipline matter.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "A wrong recipe or misplaced Cauldron can leave no matching answer to group damage. Changing pack size, lifespan, and tank movement add another constraint.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "A wrong recipe or misplaced Cauldron can leave no matching answer to group damage. Enemy disruption and an active opponent make the same task less predictable.",
+          "claim_ids": [
+            "talent:witch-doctor/brewing:13-35-3-0",
+            "talent:witch-doctor/brewing:13-35-5-0",
+            "talent:witch-doctor/brewing:13-35-10-0",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You want a flexible healer whose preparation changes healing, shielding, damage, and utility.",
+          "claim_ids": [
+            "inference:witch-doctor/brewing:identity"
+          ]
+        },
+        {
+          "text": "You enjoy a loop where this state matters: Recipe components, ally health, Cauldron position, wards, and mana need monitoring.",
+          "claim_ids": [
+            "inference:witch-doctor/brewing:identity",
+            "observed:witch-doctor/brewing:community-practice"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You want direct plug-and-play healing without recipe or placement decisions.",
+          "claim_ids": [
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        },
+        {
+          "text": "You want mistakes to be cheap; here, the wrong recipe, poor Cauldron placement, a slow effigy, or an unnoticed Stasis Ward stun can make the prepared toolkit answer the wrong emergency.",
+          "claim_ids": [
+            "inference:witch-doctor/brewing:failure-cost",
+            "observed:witch-doctor/brewing:community-practice"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Players appreciate flexible recipes, mobile Potion Toss healing, and the ability to contribute damage between recovery needs.",
+          "claim_ids": [
+            "observed:witch-doctor/brewing:sentiment-context",
+            "observed:witch-doctor/brewing:community-practice",
+            "observed:witch-doctor/brewing:build-practice"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "The wrong recipe, poor Cauldron placement, a slow effigy, or an unnoticed Stasis Ward stun can make the prepared toolkit answer the wrong emergency.",
+          "claim_ids": [
+            "observed:witch-doctor/brewing:sentiment-context",
+            "inference:witch-doctor/brewing:failure-cost"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "The spec is called both passive and nuanced, suggesting a low floor but a larger optimization gap than the easy label implies.",
+          "claim_ids": [
+            "observed:witch-doctor/brewing:sentiment-context",
+            "observed:witch-doctor/brewing:community-practice"
+          ]
+        }
+      ]
+    },
+    "performance_signal_ids": [
+      "observed:witch-doctor/brewing:performance"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "manual_recent_source_review",
+      "performance": "limited_uncontrolled",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium",
+      "gaps": [
+        "No verified current full-encounter rotation video.",
+        "Any priority or mode not supported above remains an explicit gap rather than an inferred optimum."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "Ingredient, Potion Toss, and Cauldron teach the recipe framework; early ease reports do not cover later utility interactions.",
+      "observed_changes": [
+        "The spec is called both passive and nuanced, suggesting a low floor but a larger optimization gap than the easy label implies.",
+        "Do not project the mature priority backward."
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "Ingredient, Potion Toss, and Cauldron teach the recipe framework; early ease reports do not cover later utility interactions.",
+      "observed_changes": [
+        "The spec is called both passive and nuanced, suggesting a low floor but a larger optimization gap than the easy label implies.",
+        "Do not project the mature priority backward."
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "The middle bands connect the foundational kit to the mature loop: A modular alchemist healer. Exact level-by-level priority remains bounded by the available evidence.",
+      "observed_changes": [
+        "The wrong recipe, poor Cauldron placement, a slow effigy, or an unnoticed Stasis Ward stun can make the prepared toolkit answer the wrong emergency.",
+        "Source levels and gear are not normalized."
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "The middle bands connect the foundational kit to the mature loop: A modular alchemist healer. Exact level-by-level priority remains bounded by the available evidence.",
+      "observed_changes": [
+        "The wrong recipe, poor Cauldron placement, a slow effigy, or an unnoticed Stasis Ward stun can make the prepared toolkit answer the wrong emergency.",
+        "Source levels and gear are not normalized."
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "Master Mixologist, Tiki Splash, effigies, wards, and damage contribution widen the gap between basic and optimized Brewing.",
+      "observed_changes": [
+        "The spec is called both passive and nuanced, suggesting a low floor but a larger optimization gap than the easy label implies.",
+        "The wrong recipe, poor Cauldron placement, a slow effigy, or an unnoticed Stasis Ward stun can make the prepared toolkit answer the wrong emergency."
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:witch-doctor/brewing:community-practice",
+      "kind": "observed",
+      "text": "Healer discussion describes Potion Toss on moving tanks, slow effigy behavior, Stasis Ward's stun, and room for DoT or nuke contribution. Players split between calling Brewing chill and warning that average play leaves substantial output unused; the leading build has no prose.",
+      "source_ids": [
+        "reddit:easy-specs-roster-2026-08-03",
+        "reddit:brewing-healer-2026-07-08",
+        "reddit:witch-doctor-regret-2026-07-26"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_contexts"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Manual source reading; reported play remains bounded to the author's level, build, mode, and stated limitations.",
+      "derived_from_claim_ids": []
+    },
+    {
+      "id": "observed:witch-doctor/brewing:build-practice",
+      "kind": "observed",
+      "text": "Five builds are captured, but the leading 'WD Brewing' entry has no written guide and cannot resolve recipe priority.",
+      "source_ids": [
+        "buildhub-builds-2026-08-05",
+        "buildhub:fd4e200d-cfe4-45dc-b0a2-366e8971591d"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "community_build_snapshot"
+        ],
+        "build_or_mode": [
+          "documented_builds"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The captured build documents one contributor's practice; missing prose remains an explicit rotation gap.",
+      "derived_from_claim_ids": []
+    },
+    {
+      "id": "observed:witch-doctor/brewing:performance",
+      "kind": "observed",
+      "text": "The July community compilation supplies no DPS value for this role, and the August Mythic inventory lists 126 record(s). Neither signal is normalized for gear, encounter, role contribution, or player selection.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "pve_unspecified",
+          "mythic_dungeons"
+        ],
+        "build_or_mode": [
+          "healer_not_listed"
+        ]
+      },
+      "confidence": "low",
+      "conflicts_with": [],
+      "notes": "Performance context is incomplete; do not use as a tier rank.",
+      "derived_from_claim_ids": []
+    },
+    {
+      "id": "observed:witch-doctor/brewing:sentiment-context",
+      "kind": "observed",
+      "text": "Praise: Players appreciate flexible recipes, mobile Potion Toss healing, and the ability to contribute damage between recovery needs. Contested evidence: The spec is called both passive and nuanced, suggesting a low floor but a larger optimization gap than the easy label implies.",
+      "source_ids": [
+        "reddit:easy-specs-roster-2026-08-03",
+        "reddit:brewing-healer-2026-07-08",
+        "reddit:witch-doctor-regret-2026-07-26"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_sentiment"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Sentiment is reported by source and context, not averaged into a universal verdict.",
+      "derived_from_claim_ids": []
+    },
+    {
+      "id": "inference:witch-doctor/brewing:identity",
+      "kind": "inference",
+      "text": "A battlefield alchemist who combines Ingredients, Bases, and Mojos to change what every Cauldron and Potion Toss does.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:witch-doctor/brewing:13-35-3-0",
+        "talent:witch-doctor/brewing:13-35-5-0",
+        "talent:witch-doctor/brewing:13-35-10-0",
+        "talent:witch-doctor/brewing:13-35-2-9",
+        "talent:witch-doctor/brewing:13-35-4-9",
+        "talent:witch-doctor/brewing:13-35-6-9",
+        "observed:witch-doctor/brewing:community-practice",
+        "observed:witch-doctor/brewing:sentiment-context"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Descriptive playstyle classification from talent structure and manually reviewed current practice, not an official label."
+    },
+    {
+      "id": "inference:witch-doctor/brewing:failure-cost",
+      "kind": "inference",
+      "text": "The wrong recipe, poor Cauldron placement, a slow effigy, or an unnoticed Stasis Ward stun can make the prepared toolkit answer the wrong emergency.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "observed:witch-doctor/brewing:community-practice",
+        "inference:witch-doctor/brewing:identity"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Failure-mode interpretation; exact thresholds require live verification."
+    }
+  ]
+}

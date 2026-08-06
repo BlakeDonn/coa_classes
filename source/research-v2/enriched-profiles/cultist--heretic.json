@@ -1,0 +1,2230 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "cultist/heretic",
+    "class": "Cultist",
+    "name": "Heretic",
+    "roles": [
+      "Healer",
+      "Support"
+    ],
+    "range": [
+      "Melee"
+    ]
+  },
+  "identity": {
+    "fantasy": "A Yogg-Saron battle healer who marks allies with Black Blood, converts melee aggression into healing, and shifts between sustained damage-healing and large forbidden rituals.",
+    "one_line": "Keep Black Blood active, bind Abyssal Covenant to the ally who needs your damage conversion, maintain melee ability flow for free Mending and Dark Prophet healing, then use Herald or Forbidden Ritual for planned danger.",
+    "primary_family": "strategists",
+    "also_fits": [
+      "duelists"
+    ],
+    "claim_ids": [
+      "talent:cultist/heretic:25-66-4-0",
+      "talent:cultist/heretic:25-66-4-2",
+      "talent:cultist/heretic:25-66-6-9",
+      "talent:cultist/heretic:25-66-6-3",
+      "observed:cultist/heretic:melee-healing-engine",
+      "observed:cultist/heretic:black-blood-refresh",
+      "inference:cultist/heretic:playstyle-identity"
+    ],
+    "playstyle_tags": [
+      "melee-damage-healer",
+      "single-ally-support",
+      "hybrid-healer"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "Apply Malevolence to damage enemies and place Black Blood on allies, select the tank or priority ally with Abyssal Covenant, then cycle melee abilities so every third one grants instant Eldritch Mending while Dark Prophet and damage conversion carry background healing. Refresh Black Blood deliberately because duration behavior matters.",
+    "resources": [
+      "Insanity"
+    ],
+    "builders": [
+      {
+        "name": "Malevolence",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0"
+        ]
+      },
+      {
+        "name": "Horrific Revelations",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-9"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Malevolent Power",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-2-2"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Prophetic Compulsion",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-7-4"
+        ]
+      },
+      {
+        "name": "Dark Rites",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-0-5b"
+        ]
+      },
+      {
+        "name": "Dark Matter",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-2-5"
+        ]
+      },
+      {
+        "name": "Forbidden Resilience",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-6-5a"
+        ]
+      },
+      {
+        "name": "Forbidden Strength",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-6-5b"
+        ]
+      },
+      {
+        "name": "Blade of the Depths",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-8-5"
+        ]
+      },
+      {
+        "name": "Saronite Cube",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-7-6a"
+        ]
+      },
+      {
+        "name": "Ancient Rituals",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-1-7"
+        ]
+      },
+      {
+        "name": "Void Barrier",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-6-8"
+        ]
+      },
+      {
+        "name": "Blessing of Yogg-Saron",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-2-9"
+        ]
+      },
+      {
+        "name": "Horrific Revelations",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-9"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Herald of the Depths",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-10-0"
+        ],
+        "structural_description": "Level 10 PassiveReaching 100 Insanity no longer causes Total Madness.Teaches you Herald of the Depths.Herald of the DepthsTransform into a Herald of the Depths for 20 seconds, increasing damage and healing done by 15% and the duration of absorption and healing over time effects by 100%.At the end of the duration, your Insanity is reduced to 0."
+      },
+      {
+        "name": "Tales of Woe",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-7a"
+        ],
+        "structural_description": "Your Dark Veil now performs its effect -50% faster."
+      },
+      {
+        "name": "Blessing of Yogg-Saron",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-2-9"
+        ],
+        "structural_description": "While Herald of the Depths is active, you now transform into a Faceless Monstrosity, increasing your critical healing and critical strike chance by 20%, but reducing its duration by -5 sec.In addition, while active you are now immune to fear, horrify, and polymorph effects."
+      }
+    ],
+    "single_target": "Blade of the Empire is a priority strike; use Entropic Slam on larger packs and Hammer of Twilight on one target, while managing Sanity for Malevolence, utility, and Herald preparation.",
+    "aoe": "Malevolence reaches the party, Yogg summons and damage conversion scale with active enemies, and Forbidden Ritual plus Void Shield supplies a planned group-protection answer.",
+    "movement_and_target_switching": "The melee build loses healing when separated from enemies. A caster-oriented PvP build trades some conversion output for plate, shield, and reliable access while being kited.",
+    "defense_and_control": "Void Shield, Dark Veil, Hand of Yogg-Saron, Forbidden Ritual, and Cultist control provide several emergency layers rather than one conventional heal cooldown.",
+    "group_utility": "Black Blood coverage, Hand of Yogg-Saron, Abyssal Covenant, presence choices, shields, and damage contribution make Heretic a high-agency group healer.",
+    "failure_modes": [
+      {
+        "text": "Allowing Black Blood to expire removes a major healing layer; the captured guide warns that normal applications do not simply refresh it.",
+        "claim_ids": [
+          "inference:cultist/heretic:failure-cost",
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9"
+        ]
+      },
+      {
+        "text": "Losing melee uptime starves damage conversion and the every-third-ability Mending cadence.",
+        "claim_ids": [
+          "inference:cultist/heretic:failure-cost",
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9"
+        ]
+      },
+      {
+        "text": "Entering a heavy-damage pull without Sanity banked for Herald, shields, or ritual leaves the healer with weaker recovery options.",
+        "claim_ids": [
+          "inference:cultist/heretic:failure-cost",
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9"
+        ]
+      }
+    ],
+    "claim_ids": [
+      "talent:cultist/heretic:25-66-4-0",
+      "talent:cultist/heretic:25-66-4-2",
+      "talent:cultist/heretic:25-66-6-9",
+      "talent:cultist/heretic:25-66-6-3",
+      "talent:cultist/heretic:25-66-10-0",
+      "talent:cultist/heretic:25-66-4-8",
+      "observed:cultist/heretic:melee-healing-engine",
+      "observed:cultist/heretic:black-blood-refresh",
+      "observed:cultist/heretic:pvp-build-split",
+      "observed:cultist/heretic:build-practice",
+      "inference:cultist/heretic:playstyle-identity"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Malevolence",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-4-0"
+          ]
+        },
+        {
+          "name": "Herald of the Depths",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-10-0"
+          ]
+        },
+        {
+          "name": "Blade of Yogg-Saron",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-2-1"
+          ]
+        },
+        {
+          "name": "Shadow Pennant",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-6-1"
+          ]
+        }
+      ],
+      "observed_loop": "An unusually aggressive healer whose early damage and bubbles can feel powerful, though the complete conversion engine is not yet online.",
+      "observed_changes": [
+        "Resource habits are unfamiliar",
+        "Melee access can be inconsistent"
+      ],
+      "claim_ids": [
+        "talent:cultist/heretic:25-66-4-0",
+        "talent:cultist/heretic:25-66-10-0",
+        "talent:cultist/heretic:25-66-2-1",
+        "talent:cultist/heretic:25-66-6-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Malevolent Power",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-2-2"
+          ]
+        },
+        {
+          "name": "Abyssal Covenant",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-4-2"
+          ]
+        },
+        {
+          "name": "Twisted Sanity",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-6-2"
+          ]
+        },
+        {
+          "name": "Shadow Training",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-10-2"
+          ]
+        },
+        {
+          "name": "Eldritch Eye",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-2-3"
+          ]
+        },
+        {
+          "name": "Dark Protection",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-4-3a"
+          ]
+        },
+        {
+          "name": "Lead the Covenant",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-4-3b"
+          ]
+        },
+        {
+          "name": "Forbidden Ritual",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-6-3"
+          ]
+        }
+      ],
+      "observed_loop": "An unusually aggressive healer whose early damage and bubbles can feel powerful, though the complete conversion engine is not yet online.",
+      "observed_changes": [
+        "Resource habits are unfamiliar",
+        "Melee access can be inconsistent"
+      ],
+      "claim_ids": [
+        "talent:cultist/heretic:25-66-2-2",
+        "talent:cultist/heretic:25-66-4-2",
+        "talent:cultist/heretic:25-66-6-2",
+        "talent:cultist/heretic:25-66-10-2",
+        "talent:cultist/heretic:25-66-2-3",
+        "talent:cultist/heretic:25-66-4-3a",
+        "talent:cultist/heretic:25-66-4-3b",
+        "talent:cultist/heretic:25-66-6-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Saronite Mind",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-1-4"
+          ]
+        },
+        {
+          "name": "As The Prophecy Foretold",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-4-4"
+          ]
+        },
+        {
+          "name": "Prophetic Compulsion",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-7-4"
+          ]
+        },
+        {
+          "name": "Void-Touched",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-10-4"
+          ]
+        },
+        {
+          "name": "Protection From Light",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-0-5a"
+          ]
+        },
+        {
+          "name": "Dark Rites",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-0-5b"
+          ]
+        },
+        {
+          "name": "Dark Matter",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-2-5"
+          ]
+        },
+        {
+          "name": "Persistent Prayers",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-3-5"
+          ]
+        },
+        {
+          "name": "Yogg-Saron's Embrace",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-5-5"
+          ]
+        },
+        {
+          "name": "Forbidden Resilience",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-6-5a"
+          ]
+        },
+        {
+          "name": "Forbidden Strength",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-6-5b"
+          ]
+        },
+        {
+          "name": "Blade of the Depths",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-8-5"
+          ]
+        }
+      ],
+      "observed_loop": "Black Blood, Covenant, Dark Prophet, and free Mending turn the spec into a genuine melee-healing rotation.",
+      "observed_changes": [
+        "Buff duration must be learned",
+        "Group movement can break uptime"
+      ],
+      "claim_ids": [
+        "talent:cultist/heretic:25-66-1-4",
+        "talent:cultist/heretic:25-66-4-4",
+        "talent:cultist/heretic:25-66-7-4",
+        "talent:cultist/heretic:25-66-10-4",
+        "talent:cultist/heretic:25-66-0-5a",
+        "talent:cultist/heretic:25-66-0-5b",
+        "talent:cultist/heretic:25-66-2-5",
+        "talent:cultist/heretic:25-66-3-5",
+        "talent:cultist/heretic:25-66-5-5",
+        "talent:cultist/heretic:25-66-6-5a",
+        "talent:cultist/heretic:25-66-6-5b",
+        "talent:cultist/heretic:25-66-8-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Dark Infusion",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-1-6"
+          ]
+        },
+        {
+          "name": "Dark Veil",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-4-6"
+          ]
+        },
+        {
+          "name": "Saronite Cube",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-7-6a"
+          ]
+        },
+        {
+          "name": "Devour Curse",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-7-6b"
+          ]
+        },
+        {
+          "name": "Void Power",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-10-6"
+          ]
+        },
+        {
+          "name": "Ancient Rituals",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-1-7"
+          ]
+        },
+        {
+          "name": "Dark Reservoir",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-3-7"
+          ]
+        },
+        {
+          "name": "Tales of Woe",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-4-7a"
+          ]
+        },
+        {
+          "name": "Corrupt Fate",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-4-7b"
+          ]
+        },
+        {
+          "name": "Visions of the Empire",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-5-7"
+          ]
+        },
+        {
+          "name": "Dark Chants",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-7-7"
+          ]
+        }
+      ],
+      "observed_loop": "Black Blood, Covenant, Dark Prophet, and free Mending turn the spec into a genuine melee-healing rotation.",
+      "observed_changes": [
+        "Buff duration must be learned",
+        "Group movement can break uptime"
+      ],
+      "claim_ids": [
+        "talent:cultist/heretic:25-66-1-6",
+        "talent:cultist/heretic:25-66-4-6",
+        "talent:cultist/heretic:25-66-7-6a",
+        "talent:cultist/heretic:25-66-7-6b",
+        "talent:cultist/heretic:25-66-10-6",
+        "talent:cultist/heretic:25-66-1-7",
+        "talent:cultist/heretic:25-66-3-7",
+        "talent:cultist/heretic:25-66-4-7a",
+        "talent:cultist/heretic:25-66-4-7b",
+        "talent:cultist/heretic:25-66-5-7",
+        "talent:cultist/heretic:25-66-7-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Saronite Blessing",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-2-8"
+          ]
+        },
+        {
+          "name": "Hand of Yogg-Saron",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-4-8"
+          ]
+        },
+        {
+          "name": "Void Barrier",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-6-8"
+          ]
+        },
+        {
+          "name": "Blessing of Yogg-Saron",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-10-8"
+          ]
+        },
+        {
+          "name": "Blessing of Yogg-Saron",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-2-9"
+          ]
+        },
+        {
+          "name": "Horrific Revelations",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-4-9"
+          ]
+        },
+        {
+          "name": "Dark Prophet",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-6-9"
+          ]
+        }
+      ],
+      "observed_loop": "A layered battle healer managing party-wide Black Blood, one priority Covenant target, presence choice, Sanity, Herald, and ritual windows.",
+      "observed_changes": [
+        "Many interacting systems",
+        "PvP may favor a different caster setup"
+      ],
+      "claim_ids": [
+        "talent:cultist/heretic:25-66-2-8",
+        "talent:cultist/heretic:25-66-4-8",
+        "talent:cultist/heretic:25-66-6-8",
+        "talent:cultist/heretic:25-66-10-8",
+        "talent:cultist/heretic:25-66-2-9",
+        "talent:cultist/heretic:25-66-4-9",
+        "talent:cultist/heretic:25-66-6-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "An unusually aggressive healer whose early damage and bubbles can feel powerful, though the complete conversion engine is not yet online.",
+      "strengths": [
+        "Strong solo sustain",
+        "Damage while supporting allies"
+      ],
+      "cautions": [
+        "Resource habits are unfamiliar",
+        "Melee access can be inconsistent"
+      ],
+      "claim_ids": [
+        "talent:cultist/heretic:25-66-4-0",
+        "talent:cultist/heretic:25-66-4-2",
+        "talent:cultist/heretic:25-66-6-9",
+        "talent:cultist/heretic:25-66-6-3",
+        "observed:cultist/heretic:melee-healing-engine",
+        "observed:cultist/heretic:black-blood-refresh",
+        "observed:cultist/heretic:pvp-build-split",
+        "inference:cultist/heretic:playstyle-identity"
+      ]
+    },
+    "leveling_30_49": {
+      "feel": "Black Blood, Covenant, Dark Prophet, and free Mending turn the spec into a genuine melee-healing rotation.",
+      "strengths": [
+        "Active dungeon healing",
+        "Useful damage contribution"
+      ],
+      "cautions": [
+        "Buff duration must be learned",
+        "Group movement can break uptime"
+      ],
+      "claim_ids": [
+        "talent:cultist/heretic:25-66-4-0",
+        "talent:cultist/heretic:25-66-4-2",
+        "talent:cultist/heretic:25-66-6-9",
+        "talent:cultist/heretic:25-66-6-3",
+        "observed:cultist/heretic:melee-healing-engine",
+        "observed:cultist/heretic:black-blood-refresh",
+        "observed:cultist/heretic:pvp-build-split",
+        "inference:cultist/heretic:playstyle-identity"
+      ]
+    },
+    "level_50_60": {
+      "feel": "A layered battle healer managing party-wide Black Blood, one priority Covenant target, presence choice, Sanity, Herald, and ritual windows.",
+      "strengths": [
+        "Broad healing toolkit",
+        "High hybrid ceiling"
+      ],
+      "cautions": [
+        "Many interacting systems",
+        "PvP may favor a different caster setup"
+      ],
+      "claim_ids": [
+        "talent:cultist/heretic:25-66-4-0",
+        "talent:cultist/heretic:25-66-4-2",
+        "talent:cultist/heretic:25-66-6-9",
+        "talent:cultist/heretic:25-66-6-3",
+        "observed:cultist/heretic:melee-healing-engine",
+        "observed:cultist/heretic:black-blood-refresh",
+        "observed:cultist/heretic:pvp-build-split",
+        "inference:cultist/heretic:playstyle-identity"
+      ]
+    },
+    "boss": {
+      "feel": "Sustain Black Blood and the melee conversion engine, then reserve Herald or ritual tools for predictable damage rather than panic-casting them late.",
+      "strengths": [
+        "Excellent active sustain",
+        "Damage and healing share actions"
+      ],
+      "cautions": [
+        "Downtime reduces both outputs",
+        "Buff-refresh errors accumulate"
+      ],
+      "claim_ids": [
+        "talent:cultist/heretic:25-66-4-0",
+        "talent:cultist/heretic:25-66-4-2",
+        "talent:cultist/heretic:25-66-6-9",
+        "talent:cultist/heretic:25-66-6-3",
+        "observed:cultist/heretic:melee-healing-engine",
+        "observed:cultist/heretic:black-blood-refresh",
+        "observed:cultist/heretic:pvp-build-split",
+        "inference:cultist/heretic:playstyle-identity"
+      ]
+    },
+    "dungeon_aoe": {
+      "feel": "Damage the pack to heal the group, use Malevolence for coverage, and choose between continued aggression and a shield or ritual response.",
+      "strengths": [
+        "Strong multi-target conversion",
+        "Flexible emergency layers"
+      ],
+      "cautions": [
+        "Requires safe melee access",
+        "High visual and state load"
+      ],
+      "claim_ids": [
+        "talent:cultist/heretic:25-66-4-0",
+        "talent:cultist/heretic:25-66-4-2",
+        "talent:cultist/heretic:25-66-6-9",
+        "talent:cultist/heretic:25-66-6-3",
+        "observed:cultist/heretic:melee-healing-engine",
+        "observed:cultist/heretic:black-blood-refresh",
+        "observed:cultist/heretic:pvp-build-split",
+        "inference:cultist/heretic:playstyle-identity"
+      ]
+    },
+    "pvp": {
+      "feel": "Usually choose between a safer caster shield setup and the riskier melee engine; control, absorbs, and Black Blood can produce large swing moments.",
+      "strengths": [
+        "Excellent utility",
+        "Can contribute pressure while healing"
+      ],
+      "cautions": [
+        "Melee version is kiteable",
+        "Caster and melee gearing advice diverges"
+      ],
+      "claim_ids": [
+        "talent:cultist/heretic:25-66-4-0",
+        "talent:cultist/heretic:25-66-4-2",
+        "talent:cultist/heretic:25-66-6-9",
+        "talent:cultist/heretic:25-66-6-3",
+        "observed:cultist/heretic:melee-healing-engine",
+        "observed:cultist/heretic:black-blood-refresh",
+        "observed:cultist/heretic:pvp-build-split",
+        "inference:cultist/heretic:playstyle-identity"
+      ]
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "moderate",
+        "reason": "The healer uses damage abilities, Malevolence, Covenant, Mending, shields, ritual tools, presence choices, and conventional utility. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "high",
+        "reason": "The healer uses damage abilities, Malevolence, Covenant, Mending, shields, ritual tools, presence choices, and conventional utility. The middle talent rows make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "The healer uses damage abilities, Malevolence, Covenant, Mending, shields, ritual tools, presence choices, and conventional utility. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "high",
+        "reason": "The healer uses damage abilities, Malevolence, Covenant, Mending, shields, ritual tools, presence choices, and conventional utility. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "The healer uses damage abilities, Malevolence, Covenant, Mending, shields, ritual tools, presence choices, and conventional utility. Changing pack size and lifetime add another constraint.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "The healer uses damage abilities, Malevolence, Covenant, Mending, shields, ritual tools, presence choices, and conventional utility. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "moderate",
+        "reason": "Black Blood coverage and remaining duration, every-third-melee cadence, Covenant target, Sanity, Herald, presence, and defensive timers all matter. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "high",
+        "reason": "Black Blood coverage and remaining duration, every-third-melee cadence, Covenant target, Sanity, Herald, presence, and defensive timers all matter. The middle talent rows make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "Black Blood coverage and remaining duration, every-third-melee cadence, Covenant target, Sanity, Herald, presence, and defensive timers all matter. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "high",
+        "reason": "Black Blood coverage and remaining duration, every-third-melee cadence, Covenant target, Sanity, Herald, presence, and defensive timers all matter. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "Black Blood coverage and remaining duration, every-third-melee cadence, Covenant target, Sanity, Herald, presence, and defensive timers all matter. Changing pack size and lifetime add another constraint.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "Black Blood coverage and remaining duration, every-third-melee cadence, Covenant target, Sanity, Herald, presence, and defensive timers all matter. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "moderate",
+        "reason": "The correct answer can be more damage, a free Mending, a shield, Hand, ritual, or a change in presence depending on incoming damage. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "high",
+        "reason": "The correct answer can be more damage, a free Mending, a shield, Hand, ritual, or a change in presence depending on incoming damage. The middle talent rows make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "The correct answer can be more damage, a free Mending, a shield, Hand, ritual, or a change in presence depending on incoming damage. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "high",
+        "reason": "The correct answer can be more damage, a free Mending, a shield, Hand, ritual, or a change in presence depending on incoming damage. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "The correct answer can be more damage, a free Mending, a shield, Hand, ritual, or a change in presence depending on incoming damage. Changing pack size and lifetime add another constraint.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "The correct answer can be more damage, a free Mending, a shield, Hand, ritual, or a change in presence depending on incoming damage. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "moderate",
+        "reason": "The melee version must maintain contact and precise buff refreshes while still performing healer triage. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "high",
+        "reason": "The melee version must maintain contact and precise buff refreshes while still performing healer triage. The middle talent rows make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "The melee version must maintain contact and precise buff refreshes while still performing healer triage. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "high",
+        "reason": "The melee version must maintain contact and precise buff refreshes while still performing healer triage. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "The melee version must maintain contact and precise buff refreshes while still performing healer triage. Changing pack size and lifetime add another constraint.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "The melee version must maintain contact and precise buff refreshes while still performing healer triage. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "moderate",
+        "reason": "A missed Black Blood refresh or broken melee chain can remove several healing sources at once. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "high",
+        "reason": "A missed Black Blood refresh or broken melee chain can remove several healing sources at once. The middle talent rows make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "A missed Black Blood refresh or broken melee chain can remove several healing sources at once. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "high",
+        "reason": "A missed Black Blood refresh or broken melee chain can remove several healing sources at once. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "A missed Black Blood refresh or broken melee chain can remove several healing sources at once. Changing pack size and lifetime add another constraint.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "A missed Black Blood refresh or broken melee chain can remove several healing sources at once. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      }
+    },
+    "setup_burden": {
+      "leveling_10_29": {
+        "value": "moderate",
+        "reason": "Reliable healing begins with Black Blood and Covenant assignment before the damage loop or emergency window. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "high",
+        "reason": "Reliable healing begins with Black Blood and Covenant assignment before the damage loop or emergency window. The middle talent rows make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "Reliable healing begins with Black Blood and Covenant assignment before the damage loop or emergency window. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "high",
+        "reason": "Reliable healing begins with Black Blood and Covenant assignment before the damage loop or emergency window. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "Reliable healing begins with Black Blood and Covenant assignment before the damage loop or emergency window. Changing pack size and lifetime add another constraint.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "Reliable healing begins with Black Blood and Covenant assignment before the damage loop or emergency window. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2",
+          "talent:cultist/heretic:25-66-6-9",
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [
+      {
+        "text": "You want healing to come from an actual melee damage rotation rather than passive atonement alone.",
+        "claim_ids": [
+          "inference:cultist/heretic:playstyle-identity",
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2"
+        ]
+      },
+      {
+        "text": "You enjoy assigning buffs and selecting among several emergency layers.",
+        "claim_ids": [
+          "inference:cultist/heretic:playstyle-identity",
+          "talent:cultist/heretic:25-66-4-0",
+          "talent:cultist/heretic:25-66-4-2"
+        ]
+      }
+    ],
+    "avoid_if": [
+      {
+        "text": "You want a low-tracking reactive healer.",
+        "claim_ids": [
+          "inference:cultist/heretic:failure-cost",
+          "observed:cultist/heretic:melee-healing-engine"
+        ]
+      },
+      {
+        "text": "You dislike losing healing because a boss moves out of melee or an ally buff expires.",
+        "claim_ids": [
+          "inference:cultist/heretic:failure-cost",
+          "observed:cultist/heretic:melee-healing-engine"
+        ]
+      }
+    ]
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [
+    "observed:cultist/heretic:performance-context"
+  ],
+  "sentiment": {
+    "praise": [
+      {
+        "theme": "Players repeatedly praise Heretic's theme, solo durability, serviceable damage, and fistweaver-like group healing.",
+        "claim_ids": [
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "observed:cultist/heretic:build-practice"
+        ]
+      }
+    ],
+    "frustrations": [
+      {
+        "theme": "Its resource load and requirement for cooperation or melee uptime make it harder than its raw early strength suggests.",
+        "claim_ids": [
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "inference:cultist/heretic:failure-cost"
+        ]
+      }
+    ],
+    "contested": [
+      {
+        "theme": "Some PvP reports describe enormous damage and absorb output, while others emphasize kite vulnerability; build and content explain much of the disagreement.",
+        "claim_ids": [
+          "observed:cultist/heretic:melee-healing-engine",
+          "observed:cultist/heretic:black-blood-refresh",
+          "observed:cultist/heretic:pvp-build-split",
+          "observed:cultist/heretic:performance-context"
+        ]
+      }
+    ]
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 7,
+    "latest_update": "2026-08-02T20:06:07.57+00:00",
+    "top_title": "Cultist Healer M+ Ready",
+    "top_url": "https://coabuildhub.com/build/5ba4e749-4871-4e36-aeeb-52c0678bc26c",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:5ba4e749-4871-4e36-aeeb-52c0678bc26c"
+    ]
+  },
+  "coverage": {
+    "mechanical": "manual_talent_and_build_interpretation",
+    "community": "manual_recent_source_review",
+    "performance": "limited_uncontrolled",
+    "video": "searched_none_verified",
+    "overall_confidence": "medium",
+    "gaps": [
+      "No controlled healing-log breakdown across the melee and caster variants.",
+      "Some build-described effects need live verification after recent patches."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:cultist/heretic:25-66-4-0",
+      "kind": "structural",
+      "text": "Malevolence: Generates 10 InsanitySmash an enemy with eldritch force, dealing 40 + 10% AP + 52% SP Shadow damage and applying Black Blood to 5 nearby allies, healing them for 25 + 10% AP, repeating every 3 sec for 15 seconds.Usable while moving.Additional applications of Black Blood do not refresh the duration.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-10-0",
+      "kind": "structural",
+      "text": "Herald of the Depths: Level 10 PassiveReaching 100 Insanity no longer causes Total Madness.Teaches you Herald of the Depths.Herald of the DepthsTransform into a Herald of the Depths for 20 seconds, increasing damage and healing done by 15% and the duration of absorption and healing over time effects by 100%.At the end of the duration, your Insanity is reduced to 0.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-2-1",
+      "kind": "structural",
+      "text": "Blade of Yogg-Saron: Damage dealt by Blade of the Empire now heals the lowest health ally for 35% of the damage dealt plus 198 + 20% healing + 5% AP.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-6-1",
+      "kind": "structural",
+      "text": "Shadow Pennant: You now heal the lowest health ally affected by Black Blood for 50% of your auto attack damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-2-2",
+      "kind": "structural",
+      "text": "Malevolent Power: Every 3rd melee ability you cast now causes your next Eldritch Mending to become instant cast and cost -20% less mana.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-4-2",
+      "kind": "structural",
+      "text": "Abyssal Covenant: Link yourself to an ally for 30 minutes, transfering 10% of all damage taken by them to you and causing 20% of all damage you deal to be converted into healing for them.Can only be applied to 1 ally at a time.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-6-2",
+      "kind": "structural",
+      "text": "Twisted Sanity: Allies affected by your Black Blood are now healed for 30% of the damage dealt by your Tentacles.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-10-2",
+      "kind": "structural",
+      "text": "Shadow Training: Level 20 PassiveIncreases the healing done by Eldritch Mending by 50% and Gaze of C'Thun by 100%.In addition, you are now unable to miss your attacks and you cannot be parried or dodged.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-2-3",
+      "kind": "structural",
+      "text": "Eldritch Eye: Invoke the Old Gods for 15 seconds, removing the cast time of your next 3 Eldritch Mendings or Malevolences and causing them to critically strike.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-4-3a",
+      "kind": "structural",
+      "text": "Dark Protection: Allies affected by Abyssal Covenant now also take 20% increased healing from you.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-4-3b",
+      "kind": "structural",
+      "text": "Lead the Covenant: 50% of all healing done to allies through Abyssal Covenant is now replicated to you.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-6-3",
+      "kind": "structural",
+      "text": "Forbidden Ritual: Chant a forbidden ritual that places a shield on all nearby party and raid members that absorbs 225 + 50% healing damage for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-1-4",
+      "kind": "structural",
+      "text": "Saronite Mind: Your Eldritch Eye now has 1 additional charge.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-4-4",
+      "kind": "structural",
+      "text": "As The Prophecy Foretold: Melee critical strikes now refresh a charge of Blade of the Empire and restore 5% of your base mana.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-7-4",
+      "kind": "structural",
+      "text": "Prophetic Compulsion: While Black Blood is active on an ally, healing done to them by your Gaze of C'Thun has a 15% increased chance to critically strike.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-10-4",
+      "kind": "structural",
+      "text": "Void-Touched: Level 30 PassiveDirect healing done now applies Void-Touched.Void-Touched (Stacks)Marks the ally for 30 seconds, stacking 10 times.When you cast Gaze of C'Thun, all stacks are consumed to heal all allies affected by Void-Touched for 304 + 35% healing, increased based on how many stacks were on them.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-0-5a",
+      "kind": "structural",
+      "text": "Protection From Light: Reduces all damage taken by party and raid members by -3%.In addition, your Holy damage taken is reduced by -10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-0-5b",
+      "kind": "structural",
+      "text": "Dark Rites: While Herald of the Depths is active, your movement speed cannot be reduced below 100% of normal value.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-2-5",
+      "kind": "structural",
+      "text": "Dark Matter: Channeling Satiate now heals all allies within 30 yds for 208 + 20% healing every 1 sec for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-3-5",
+      "kind": "structural",
+      "text": "Persistent Prayers: Increases the duration and absorption amount of Void Shield and Forbidden Ritual by 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-5-5",
+      "kind": "structural",
+      "text": "Yogg-Saron's Embrace: Increases your attack power and your maximum mana by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-6-5a",
+      "kind": "structural",
+      "text": "Forbidden Resilience: While Herald of the Depths is active, you now take -15% less damage and have a 25% increased chance to resist dispel effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-6-5b",
+      "kind": "structural",
+      "text": "Forbidden Strength: While Herald of the Depths is active, the critical strike chance of Blade of the Empire is increased by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-8-5",
+      "kind": "structural",
+      "text": "Blade of the Depths: While Herald of the Depths is active, your Forbidden Ritual will cooldown faster.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-1-6",
+      "kind": "structural",
+      "text": "Dark Infusion: 3 Charges, 30 sec rechargeInfuse an ally with dark energy, healing them for 44 the next time they take damage. When the heal occurs, Dark Infusion is consumed and expands to the two lowest-health nearby party or raid members. Each secondary infusion heals when triggered, then expands to three nearby allies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-4-6",
+      "kind": "structural",
+      "text": "Dark Veil: Channel a shield of void energies upon an ally, causing both you and them to absorb 875 + 100% healing + 25% AP damage, stacking 5 times, every 1 sec for 5 seconds.At the end of the duration, if the shield holds, you teleport to them.While channeling you are immune to stuns and silences.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-7-6a",
+      "kind": "structural",
+      "text": "Saronite Cube: Melee ability damage now reduces the duration of Wracked Mind by -1 sec on all allies within 30 yds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-7-6b",
+      "kind": "structural",
+      "text": "Devour Curse: Devour dark magic on an ally, dispelling 2 curse effects from them and healing you for 90 + 65% SP.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-10-6",
+      "kind": "structural",
+      "text": "Void Power: Your healing power is increased based on your main-hand weapon damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-1-7",
+      "kind": "structural",
+      "text": "Ancient Rituals: Casting Satiate now refreshes the duration of Black Blood on all allies within 30 yds.Dark Infusion bounces one additional time after its third infusion, expanding to the three lowest-health nearby party or raid members.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-3-7",
+      "kind": "structural",
+      "text": "Dark Reservoir: Increases the bonus healing power scaling of Eldritch Mending by 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-4-7a",
+      "kind": "structural",
+      "text": "Tales of Woe: Your Dark Veil now performs its effect -50% faster.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-4-7b",
+      "kind": "structural",
+      "text": "Corrupt Fate: Reduces the cooldown of Dark Veil by -60 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-5-7",
+      "kind": "structural",
+      "text": "Visions of the Empire: Increases the damage converted into healing through Abyssal Covenant by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-7-7",
+      "kind": "structural",
+      "text": "Dark Chants: Reduces the cast time of Forbidden Ritual by 1 sec and allows Black Blood to stack up to 2 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-2-8",
+      "kind": "structural",
+      "text": "Saronite Blessing: Melee critical strikes now apply Saronite Blessing to you.Saronite Blessing (Buff)Your melee attack speed is increased by 25% and your melee auto attacks heal the lowest health ally for an additional 100% of the damage dealt. Lasts for 15 seconds or 10 attacks.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-4-8",
+      "kind": "structural",
+      "text": "Hand of Yogg-Saron: Tether yourself to an ally for 15 seconds, increasing all damage they deal and reducing all damage they take by 15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-6-8",
+      "kind": "structural",
+      "text": "Void Barrier: Casting Herald of the Depths now increases the absorption of your next Void Shield within 10 seconds by 100%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-10-8",
+      "kind": "structural",
+      "text": "Blessing of Yogg-Saron: Level 50 PassiveIncreases your attack power by an amount equal to 3 times your spell critical strike rating.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-2-9",
+      "kind": "structural",
+      "text": "Blessing of Yogg-Saron: While Herald of the Depths is active, you now transform into a Faceless Monstrosity, increasing your critical healing and critical strike chance by 20%, but reducing its duration by -5 sec.In addition, while active you are now immune to fear, horrify, and polymorph effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-4-9",
+      "kind": "structural",
+      "text": "Horrific Revelations: Every 1 sec while Hand of Yogg-Saron is active, you now trigger a Horrific Revelation on the target and generate 5 Insanity.Horrific RevelationHeals a friendly target for 144 + 67.85% SP, scaling with Insanity, and increases their critical strike chance by 1%, stacking 15 times, for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-6-9",
+      "kind": "structural",
+      "text": "Dark Prophet: Healing done by Abyssal Covenant now heals 5 of the lowest health nearby allies and healing done by Black Blood can now critically strike.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "observed:cultist/heretic:melee-healing-engine",
+      "kind": "observed",
+      "text": "The captured Mythic-plus guide attributes a large share of healing to Dark Prophet, keeps Black Blood on the party, binds Abyssal Covenant to the tank, and uses damage to drive healing rather than treating attacks as downtime filler.",
+      "source_ids": [
+        "reddit:cultist-heretic-2026-07-29",
+        "reddit:cultist-pvp-2026-08-01",
+        "reddit:easy-specs-roster-2026-08-03"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:cultist/heretic:black-blood-refresh",
+      "kind": "observed",
+      "text": "The guide explicitly warns that Black Blood duration does not refresh normally: it recommends stacking Malevolence and reapplying shortly before expiration, making buff timing a real failure point.",
+      "source_ids": [
+        "reddit:cultist-heretic-2026-07-29",
+        "reddit:cultist-pvp-2026-08-01",
+        "reddit:easy-specs-roster-2026-08-03"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:cultist/heretic:pvp-build-split",
+      "kind": "observed",
+      "text": "Current PvP advice distinguishes a melee healer that requires enemy uptime from a caster-oriented plate-and-shield setup that gives up some aggression for more reliable battleground healing.",
+      "source_ids": [
+        "reddit:cultist-heretic-2026-07-29",
+        "reddit:cultist-pvp-2026-08-01",
+        "reddit:easy-specs-roster-2026-08-03"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:cultist/heretic:build-practice",
+      "kind": "observed",
+      "text": "The captured Cultist Healer M+ Ready guide provides a full dungeon loop, presence choices, emergency tools, Sanity guidance, and Crit then Strength or attack-power gearing; it is the strongest direct Heretic source in the snapshot.",
+      "source_ids": [
+        "buildhub-builds-2026-08-05",
+        "buildhub:5ba4e749-4871-4e36-aeeb-52c0678bc26c"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "community_build_snapshot"
+        ],
+        "build_or_mode": [
+          "documented_build"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The guide documents one current way to play; it is not treated as proof of optimality."
+    },
+    {
+      "id": "observed:cultist/heretic:performance-context",
+      "kind": "observed",
+      "text": "Healers are absent from the DPS compilation; 275 Mythic records indicate comparatively substantial representation but do not measure healing quality.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "uncontrolled_performance_signals"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "low",
+      "conflicts_with": [],
+      "notes": "Do not convert this into a tier ranking."
+    },
+    {
+      "id": "inference:cultist/heretic:playstyle-identity",
+      "kind": "inference",
+      "text": "A Yogg-Saron battle healer who marks allies with Black Blood, converts melee aggression into healing, and shifts between sustained damage-healing and large forbidden rituals.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:cultist/heretic:25-66-4-0",
+        "talent:cultist/heretic:25-66-4-2",
+        "talent:cultist/heretic:25-66-6-9",
+        "talent:cultist/heretic:25-66-6-3",
+        "observed:cultist/heretic:melee-healing-engine",
+        "observed:cultist/heretic:black-blood-refresh"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Descriptive playstyle classification, not an official label."
+    },
+    {
+      "id": "inference:cultist/heretic:failure-cost",
+      "kind": "inference",
+      "text": "Allowing Black Blood to expire removes a major healing layer; the captured guide warns that normal applications do not simply refresh it.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:cultist/heretic:25-66-4-0",
+        "talent:cultist/heretic:25-66-4-2",
+        "talent:cultist/heretic:25-66-6-9",
+        "talent:cultist/heretic:25-66-6-3",
+        "talent:cultist/heretic:25-66-10-0",
+        "observed:cultist/heretic:melee-healing-engine",
+        "observed:cultist/heretic:black-blood-refresh",
+        "observed:cultist/heretic:pvp-build-split"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Direction is supported; exact throughput cost is not measured."
+    }
+  ]
+}

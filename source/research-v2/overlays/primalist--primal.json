@@ -1,0 +1,920 @@
+{
+  "baseline": "primalist--primal.json",
+  "set": {
+    "identity": {
+      "fantasy": "A Rexxar-like beast fighter who fights shoulder to shoulder with a tameable companion, chaining claws, totems, boons, and shared frenzies.",
+      "primary_family": "commanders",
+      "also_fits": [
+        "duelists"
+      ],
+      "playstyle_tags": [
+        "pet-brawler",
+        "proc-melee",
+        "forgiving-leveler"
+      ],
+      "one_line": "A Rexxar-like beast fighter with a tameable companion. Rylak's Bite, Wildclaw, Primal Shred, Totemic Smash, and animal Boons coordinate player and pet attacks. It is a forgiving leveler because the pet can hold enemies and the base class has self-healing.",
+      "claim_ids": [
+        "observed:primalist/primal:leveling",
+        "inference:primalist/primal:pair-cost",
+        "talent:primalist/primal:31-82-10-0",
+        "observed:primalist/primal:performance",
+        "talent:primalist/primal:31-82-1-8",
+        "talent:primalist/primal:31-82-6-9",
+        "talent:primalist/primal:31-82-4-0",
+        "talent:primalist/primal:31-82-2-2"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "Let the companion hold or pressure the target, use Rylak's Bite and melee attacks to drive pet synergy, weave Totemic Smash and Primal Shred, maintain bleeds and rage, then align Savage Frenzy, Bestial Wrath, or late Totem Warrior and Rexxar payoffs with durable targets.",
+      "single_target": "Coordinate Rylak's Bite, Primal Shred, pet attacks, bleeds, and shared frenzy windows for sustained melee pressure.",
+      "aoe": "Totemic Smash, Pulverize, Tremors, Earthshaker, and pet cleave support dungeon packs; a current Build Hub build is specifically AoE-focused.",
+      "movement_and_target_switching": "The pet maintains pressure while the player moves, and Boulder Dash or Rush of the Hunt help reconnect or escape.",
+      "defense_and_control": "Plate armor, rage-based healing, pet tanking, Throat Clamp, Boulder Dash, and boons make it one of the more forgiving non-tank levelers.",
+      "group_utility": "Totems, boons, pet control, and Primalist group tools add utility without replacing the damage role.",
+      "failure_modes": [
+        {
+          "text": "Allowing the pet to lose contact or desynchronizing shared frenzy and boon windows lowers both sides of the paired damage engine.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost"
+          ]
+        },
+        {
+          "text": "Movement or a target swap can interrupt the intended payoff: the pet maintains pressure while the player moves, and boulder dash or rush of the hunt help reconnect or escape.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8"
+          ]
+        },
+        {
+          "text": "Spending recovery or control too early leaves less protection for the next pressure event: plate armor, rage-based healing, pet tanking, throat clamp, boulder dash, and boons make it one of the more forgiving non-tank levelers.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "observed:primalist/primal:leveling",
+        "inference:primalist/primal:pair-cost",
+        "talent:primalist/primal:31-82-10-0",
+        "observed:primalist/primal:performance",
+        "talent:primalist/primal:31-82-1-8",
+        "talent:primalist/primal:31-82-6-9",
+        "talent:primalist/primal:31-82-4-0",
+        "talent:primalist/primal:31-82-2-2"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "A forgiving melee-pet leveler with plate armor, rage healing, and a companion that can hold enemies from the beginning.",
+        "strengths": [
+          "Pet protection",
+          "No mana dependence",
+          "Strong escape tool"
+        ],
+        "cautions": [
+          "Pet behavior still matters",
+          "Early rotation is simpler than the capstone version"
+        ],
+        "claim_ids": [
+          "observed:primalist/primal:leveling",
+          "talent:primalist/primal:31-82-10-0",
+          "inference:primalist/primal:pair-cost",
+          "observed:primalist/primal:performance",
+          "talent:primalist/primal:31-82-1-8",
+          "talent:primalist/primal:31-82-6-9",
+          "talent:primalist/primal:31-82-4-0",
+          "talent:primalist/primal:31-82-2-2"
+        ]
+      },
+      "level_50_60": {
+        "feel": "A higher-APM pet brawler coordinating totem echoes, empowered boons, shared frenzy, and Rexxar-style capstones.",
+        "strengths": [
+          "Strong leveling and sustain reports",
+          "101 Mythic records",
+          "Flexible pet-plus-melee pressure"
+        ],
+        "cautions": [
+          "More proc and buff overlap",
+          "Pet contribution depends on uptime"
+        ],
+        "claim_ids": [
+          "observed:primalist/primal:performance",
+          "talent:primalist/primal:31-82-1-8",
+          "talent:primalist/primal:31-82-6-9",
+          "observed:primalist/primal:leveling",
+          "inference:primalist/primal:pair-cost",
+          "talent:primalist/primal:31-82-10-0",
+          "talent:primalist/primal:31-82-4-0",
+          "talent:primalist/primal:31-82-2-2"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "By levels 30-49, let the companion hold or pressure the target, use rylak's bite and melee attacks to drive pet synergy, weave totemic smash and primal shred, maintain bleeds and rage, then align savage frenzy, bestial wrath, or late totem warrior and rexxar payoffs with durable targets.",
+        "strengths": [
+          "Core engine is online",
+          "More complete target coverage"
+        ],
+        "cautions": [
+          "Late talents still change the ceiling",
+          "The pet maintains pressure while the player moves, and Boulder Dash or Rush of the Hunt help reconnect or escape"
+        ],
+        "claim_ids": [
+          "observed:primalist/primal:leveling",
+          "inference:primalist/primal:pair-cost",
+          "talent:primalist/primal:31-82-10-0",
+          "observed:primalist/primal:performance",
+          "talent:primalist/primal:31-82-1-8",
+          "talent:primalist/primal:31-82-6-9",
+          "talent:primalist/primal:31-82-4-0",
+          "talent:primalist/primal:31-82-2-2"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, coordinate rylak's bite, primal shred, pet attacks, bleeds, and shared frenzy windows for sustained melee pressure.",
+        "strengths": [
+          "Durable targets preserve the full loop",
+          "Cooldowns can be planned"
+        ],
+        "cautions": [
+          "Movement can break setup",
+          "Repeated errors remain visible"
+        ],
+        "claim_ids": [
+          "observed:primalist/primal:leveling",
+          "inference:primalist/primal:pair-cost",
+          "talent:primalist/primal:31-82-10-0",
+          "observed:primalist/primal:performance",
+          "talent:primalist/primal:31-82-1-8",
+          "talent:primalist/primal:31-82-6-9",
+          "talent:primalist/primal:31-82-4-0",
+          "talent:primalist/primal:31-82-2-2"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, totemic smash, pulverize, tremors, earthshaker, and pet cleave support dungeon packs; a current build hub build is specifically aoe-focused.",
+        "strengths": [
+          "Pack tools express the spec clearly",
+          "Group utility has regular value"
+        ],
+        "cautions": [
+          "Short-lived targets can erase setup",
+          "Tank movement changes the plan"
+        ],
+        "claim_ids": [
+          "observed:primalist/primal:leveling",
+          "inference:primalist/primal:pair-cost",
+          "talent:primalist/primal:31-82-10-0",
+          "observed:primalist/primal:performance",
+          "talent:primalist/primal:31-82-1-8",
+          "talent:primalist/primal:31-82-6-9",
+          "talent:primalist/primal:31-82-4-0",
+          "talent:primalist/primal:31-82-2-2"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, the pet maintains pressure while the player moves, and boulder dash or rush of the hunt help reconnect or escape. Plate armor, rage-based healing, pet tanking, Throat Clamp, Boulder Dash, and boons make it one of the more forgiving non-tank levelers.",
+        "strengths": [
+          "Control and utility create options",
+          "Target swaps can reward flexibility"
+        ],
+        "cautions": [
+          "Disruption makes the loop less predictable",
+          "Defensive timing is punishable"
+        ],
+        "claim_ids": [
+          "observed:primalist/primal:leveling",
+          "inference:primalist/primal:pair-cost",
+          "talent:primalist/primal:31-82-10-0",
+          "observed:primalist/primal:performance",
+          "talent:primalist/primal:31-82-1-8",
+          "talent:primalist/primal:31-82-6-9",
+          "talent:primalist/primal:31-82-4-0",
+          "talent:primalist/primal:31-82-2-2"
+        ]
+      }
+    },
+    "complexity": {
+      "core_actions": {
+        "leveling_10_29": {
+          "value": "low-moderate",
+          "reason": "The pet absorbs pressure while Rylak's Bite, Totemic Smash, Primal Shred, and healing form a readable core.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Let the companion hold or pressure the target, use Rylak's Bite and melee attacks to drive pet synergy, weave Totemic Smash and Primal Shred, maintain bleeds and rage, then align Savage Frenzy, Bestial Wrath, or late Totem Warrior and Rexxar payoffs with durable targets. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        },
+        "level_50_60": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Let the companion hold or pressure the target, use Rylak's Bite and melee attacks to drive pet synergy, weave Totemic Smash and Primal Shred, maintain bleeds and rage, then align Savage Frenzy, Bestial Wrath, or late Totem Warrior and Rexxar payoffs with durable targets. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        },
+        "boss": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Let the companion hold or pressure the target, use Rylak's Bite and melee attacks to drive pet synergy, weave Totemic Smash and Primal Shred, maintain bleeds and rage, then align Savage Frenzy, Bestial Wrath, or late Totem Warrior and Rexxar payoffs with durable targets. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Let the companion hold or pressure the target, use Rylak's Bite and melee attacks to drive pet synergy, weave Totemic Smash and Primal Shred, maintain bleeds and rage, then align Savage Frenzy, Bestial Wrath, or late Totem Warrior and Rexxar payoffs with durable targets. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "The practical action set follows the authored loop: Let the companion hold or pressure the target, use Rylak's Bite and melee attacks to drive pet synergy, weave Totemic Smash and Primal Shred, maintain bleeds and rage, then align Savage Frenzy, Bestial Wrath, or late Totem Warrior and Rexxar payoffs with durable targets. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        }
+      },
+      "state_tracking": {
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "Pet state, bleeds, Rage, totem echoes, boons, Savage Frenzy, and Bestial Wrath overlap.",
+          "claim_ids": [
+            "talent:primalist/primal:31-82-4-5",
+            "talent:primalist/primal:31-82-4-7",
+            "talent:primalist/primal:31-82-3-8",
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Coordinate Rylak's Bite, Primal Shred, pet attacks, bleeds, and shared frenzy windows for sustained melee pressure. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Coordinate Rylak's Bite, Primal Shred, pet attacks, bleeds, and shared frenzy windows for sustained melee pressure. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Coordinate Rylak's Bite, Primal Shred, pet attacks, bleeds, and shared frenzy windows for sustained melee pressure. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "moderate-high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Coordinate Rylak's Bite, Primal Shred, pet attacks, bleeds, and shared frenzy windows for sustained melee pressure. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        },
+        "pvp": {
+          "value": "moderate-high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Coordinate Rylak's Bite, Primal Shred, pet attacks, bleeds, and shared frenzy windows for sustained melee pressure. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        }
+      },
+      "failure_cost": {
+        "boss": {
+          "value": "moderate",
+          "reason": "Pet damage continues through small player errors, but desynchronized shared windows reduce the paired payoff.",
+          "claim_ids": [
+            "inference:primalist/primal:pair-cost",
+            "observed:primalist/primal:leveling",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "low-moderate",
+          "reason": "Allowing the pet to lose contact or desynchronizing shared frenzy and boon windows lowers both sides of the paired damage engine. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate",
+          "reason": "Allowing the pet to lose contact or desynchronizing shared frenzy and boon windows lowers both sides of the paired damage engine. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate",
+          "reason": "Allowing the pet to lose contact or desynchronizing shared frenzy and boon windows lowers both sides of the paired damage engine. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "moderate",
+          "reason": "Allowing the pet to lose contact or desynchronizing shared frenzy and boon windows lowers both sides of the paired damage engine. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        },
+        "pvp": {
+          "value": "moderate-high",
+          "reason": "Allowing the pet to lose contact or desynchronizing shared frenzy and boon windows lowers both sides of the paired damage engine. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Totemic Smash, Pulverize, Tremors, Earthshaker, and pet cleave support dungeon packs; a current Build Hub build is specifically AoE-focused. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Totemic Smash, Pulverize, Tremors, Earthshaker, and pet cleave support dungeon packs; a current Build Hub build is specifically AoE-focused. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Totemic Smash, Pulverize, Tremors, Earthshaker, and pet cleave support dungeon packs; a current Build Hub build is specifically AoE-focused. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Totemic Smash, Pulverize, Tremors, Earthshaker, and pet cleave support dungeon packs; a current Build Hub build is specifically AoE-focused. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Totemic Smash, Pulverize, Tremors, Earthshaker, and pet cleave support dungeon packs; a current Build Hub build is specifically AoE-focused. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        },
+        "pvp": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Totemic Smash, Pulverize, Tremors, Earthshaker, and pet cleave support dungeon packs; a current Build Hub build is specifically AoE-focused. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; plate armor, rage-based healing, pet tanking, throat clamp, boulder dash, and boons make it one of the more forgiving non-tank levelers. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; plate armor, rage-based healing, pet tanking, throat clamp, boulder dash, and boons make it one of the more forgiving non-tank levelers. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; plate armor, rage-based healing, pet tanking, throat clamp, boulder dash, and boons make it one of the more forgiving non-tank levelers. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; plate armor, rage-based healing, pet tanking, throat clamp, boulder dash, and boons make it one of the more forgiving non-tank levelers. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "Target count, incoming pressure, and movement change the next action; plate armor, rage-based healing, pet tanking, throat clamp, boulder dash, and boons make it one of the more forgiving non-tank levelers. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "Target count, incoming pressure, and movement change the next action; plate armor, rage-based healing, pet tanking, throat clamp, boulder dash, and boons make it one of the more forgiving non-tank levelers. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: The pet maintains pressure while the player moves, and Boulder Dash or Rush of the Hunt help reconnect or escape. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: The pet maintains pressure while the player moves, and Boulder Dash or Rush of the Hunt help reconnect or escape. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: The pet maintains pressure while the player moves, and Boulder Dash or Rush of the Hunt help reconnect or escape. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: The pet maintains pressure while the player moves, and Boulder Dash or Rush of the Hunt help reconnect or escape. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: The pet maintains pressure while the player moves, and Boulder Dash or Rush of the Hunt help reconnect or escape. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "Execution is constrained by positioning and swaps: The pet maintains pressure while the player moves, and Boulder Dash or Rush of the Hunt help reconnect or escape. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8",
+            "talent:primalist/primal:31-82-6-9",
+            "talent:primalist/primal:31-82-4-0",
+            "talent:primalist/primal:31-82-2-2"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You want a durable Rexxar-style melee hunter with a meaningful tameable companion.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling"
+          ]
+        },
+        {
+          "text": "You enjoy the spec's core cadence: let the companion hold or pressure the target, use rylak's bite and melee attacks to drive pet synergy, weave totemic smash and primal shred, maintain bleeds and rage, then align savage frenzy, bestial wrath, or late totem warrior and rexxar payoffs with durable targets.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You dislike pet dependence or want a purely personal melee rotation.",
+          "claim_ids": [
+            "inference:primalist/primal:pair-cost"
+          ]
+        },
+        {
+          "text": "You dislike the positioning or swap constraint that the pet maintains pressure while the player moves, and boulder dash or rush of the hunt help reconnect or escape.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling",
+            "inference:primalist/primal:pair-cost",
+            "talent:primalist/primal:31-82-10-0",
+            "observed:primalist/primal:performance",
+            "talent:primalist/primal:31-82-1-8"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Players repeatedly call Wildwalker smooth, forgiving, durable, and strong for solo leveling because the pet tanks and healing costs Rage rather than mana.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Some players find the higher-level Enhancement-like proc cadence APM intensive or do not gel with the pet-brawler loop.",
+          "claim_ids": [
+            "observed:primalist/primal:leveling"
+          ]
+        }
+      ],
+      "contested": []
+    },
+    "performance_signal_ids": [
+      "observed:primalist/primal:performance"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "manual_recent_source_review",
+      "performance": "limited_uncontrolled",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium-high",
+      "gaps": [
+        "No current detailed level-60 single-target guide.",
+        "Pet species and boon optimization are not compared."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "A forgiving melee-pet leveler with plate armor, rage healing, and a companion that can hold enemies from the beginning.",
+      "observed_changes": [
+        "Pet behavior still matters",
+        "Early rotation is simpler than the capstone version"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "By levels 30-49, let the companion hold or pressure the target, use rylak's bite and melee attacks to drive pet synergy, weave totemic smash and primal shred, maintain bleeds and rage, then align savage frenzy, bestial wrath, or late totem warrior and rexxar payoffs with durable targets.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "The pet maintains pressure while the player moves, and Boulder Dash or Rush of the Hunt help reconnect or escape"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "A higher-APM pet brawler coordinating totem echoes, empowered boons, shared frenzy, and Rexxar-style capstones.",
+      "observed_changes": [
+        "More proc and buff overlap",
+        "Pet contribution depends on uptime"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "A forgiving melee-pet leveler with plate armor, rage healing, and a companion that can hold enemies from the beginning.",
+      "observed_changes": [
+        "Pet behavior still matters",
+        "Early rotation is simpler than the capstone version"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "By levels 30-49, let the companion hold or pressure the target, use rylak's bite and melee attacks to drive pet synergy, weave totemic smash and primal shred, maintain bleeds and rage, then align savage frenzy, bestial wrath, or late totem warrior and rexxar payoffs with durable targets.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "The pet maintains pressure while the player moves, and Boulder Dash or Rush of the Hunt help reconnect or escape"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:primalist/primal:leveling",
+      "kind": "observed",
+      "text": "Recent players describe Wildwalker as a smooth, forgiving Rexxar-like leveler: the pet tanks, plate armor reduces pressure, healing costs Rage rather than mana, and Boulder Dash provides a strong escape. Higher-level reports compare it to an APM-intensive Enhancement Shaman with a pet.",
+      "source_ids": [
+        "reddit:primalist-leveling-2026-07-22"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "solo_leveling",
+          "dungeon",
+          "pvp"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Community label Wildwalker maps to current dataset name Primal."
+    },
+    {
+      "id": "observed:primalist/primal:performance",
+      "kind": "observed",
+      "text": "The July DPS compilation reports Wildwalker at 3,997, and the August Mythic inventory lists 101 Wildwalker records.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "pve_unspecified",
+          "mythic_dungeons"
+        ],
+        "build_or_mode": [
+          "unspecified"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "Community label Wildwalker maps to current dataset name Primal; performance methodology is incomplete."
+    },
+    {
+      "id": "inference:primalist/primal:pair-cost",
+      "kind": "inference",
+      "text": "Primal's output is split between player and companion, so pet downtime or mismatched shared frenzy and boon windows reduce the total engine even when the player's buttons continue normally.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:primalist/primal:31-82-10-0",
+        "talent:primalist/primal:31-82-4-5",
+        "talent:primalist/primal:31-82-4-7"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Pet share is not quantified."
+    },
+    {
+      "id": "observed:primalist/primal:recent-manual-review",
+      "kind": "observed",
+      "text": "Current players describe Primal as an easy PvE leveler whose companion tanks, self-healing stabilizes pulls, and AoE works in dungeons, while battleground performance is reported weaker.",
+      "source_ids": [
+        "reddit:primalist-builds-2026-07-27"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually reviewed on 2026-08-06; anecdotal evidence is not treated as a power ranking."
+    }
+  ]
+}

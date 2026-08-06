@@ -1,0 +1,1611 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "cultist/heretic",
+    "class": "Cultist",
+    "name": "Heretic",
+    "roles": [
+      "Healer",
+      "Support"
+    ],
+    "range": [
+      "Melee"
+    ]
+  },
+  "identity": {
+    "fantasy": "",
+    "one_line": "A Yogg-Saron battle healer. Malevolence damages enemies while placing Black Blood healing on allies; melee crits trigger healing attacks; Herald of the Depths amplifies both damage and healing. Hand of Yogg-Saron provides powerful single-ally support. Current builds usually treat Heretic as a healer, though hybrid DPS builds also exist.",
+    "primary_family": "",
+    "also_fits": [],
+    "claim_ids": [
+      "talent:cultist/heretic:25-66-4-0",
+      "talent:cultist/heretic:25-66-10-0",
+      "talent:cultist/heretic:25-66-2-1",
+      "talent:cultist/heretic:25-66-6-1",
+      "talent:cultist/heretic:25-66-2-2",
+      "talent:cultist/heretic:25-66-4-2",
+      "talent:cultist/heretic:25-66-6-2",
+      "talent:cultist/heretic:25-66-10-2",
+      "talent:cultist/heretic:25-66-2-3",
+      "talent:cultist/heretic:25-66-4-3a",
+      "talent:cultist/heretic:25-66-4-3b",
+      "talent:cultist/heretic:25-66-6-3",
+      "talent:cultist/heretic:25-66-1-4",
+      "talent:cultist/heretic:25-66-4-4",
+      "talent:cultist/heretic:25-66-7-4",
+      "talent:cultist/heretic:25-66-10-4",
+      "talent:cultist/heretic:25-66-0-5a",
+      "talent:cultist/heretic:25-66-0-5b",
+      "talent:cultist/heretic:25-66-2-5",
+      "talent:cultist/heretic:25-66-3-5",
+      "talent:cultist/heretic:25-66-5-5",
+      "talent:cultist/heretic:25-66-6-5a",
+      "talent:cultist/heretic:25-66-6-5b",
+      "talent:cultist/heretic:25-66-8-5",
+      "talent:cultist/heretic:25-66-1-6",
+      "talent:cultist/heretic:25-66-4-6",
+      "talent:cultist/heretic:25-66-7-6a",
+      "talent:cultist/heretic:25-66-7-6b",
+      "talent:cultist/heretic:25-66-10-6",
+      "talent:cultist/heretic:25-66-1-7",
+      "talent:cultist/heretic:25-66-3-7",
+      "talent:cultist/heretic:25-66-4-7a",
+      "talent:cultist/heretic:25-66-4-7b",
+      "talent:cultist/heretic:25-66-5-7",
+      "talent:cultist/heretic:25-66-7-7",
+      "talent:cultist/heretic:25-66-2-8",
+      "talent:cultist/heretic:25-66-4-8",
+      "talent:cultist/heretic:25-66-6-8",
+      "talent:cultist/heretic:25-66-10-8",
+      "talent:cultist/heretic:25-66-2-9",
+      "talent:cultist/heretic:25-66-4-9",
+      "talent:cultist/heretic:25-66-6-9"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "A Yogg-Saron battle healer. Malevolence damages enemies while placing Black Blood healing on allies; melee crits trigger healing attacks; Herald of the Depths amplifies both damage and healing. Hand of Yogg-Saron provides powerful single-ally support. Current builds usually treat Heretic as a healer, though hybrid DPS builds also exist.",
+    "resources": [
+      "Insanity"
+    ],
+    "builders": [
+      {
+        "name": "Malevolence",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-0"
+        ]
+      },
+      {
+        "name": "Horrific Revelations",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-9"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Malevolent Power",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-2-2"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Prophetic Compulsion",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-7-4"
+        ]
+      },
+      {
+        "name": "Dark Rites",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-0-5b"
+        ]
+      },
+      {
+        "name": "Dark Matter",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-2-5"
+        ]
+      },
+      {
+        "name": "Forbidden Resilience",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-6-5a"
+        ]
+      },
+      {
+        "name": "Forbidden Strength",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-6-5b"
+        ]
+      },
+      {
+        "name": "Blade of the Depths",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-8-5"
+        ]
+      },
+      {
+        "name": "Saronite Cube",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-7-6a"
+        ]
+      },
+      {
+        "name": "Ancient Rituals",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-1-7"
+        ]
+      },
+      {
+        "name": "Void Barrier",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-6-8"
+        ]
+      },
+      {
+        "name": "Blessing of Yogg-Saron",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-2-9"
+        ]
+      },
+      {
+        "name": "Horrific Revelations",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-9"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Herald of the Depths",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-10-0"
+        ],
+        "structural_description": "Level 10 PassiveReaching 100 Insanity no longer causes Total Madness.Teaches you Herald of the Depths.Herald of the DepthsTransform into a Herald of the Depths for 20 seconds, increasing damage and healing done by 15% and the duration of absorption and healing over time effects by 100%.At the end of the duration, your Insanity is reduced to 0."
+      },
+      {
+        "name": "Tales of Woe",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-4-7a"
+        ],
+        "structural_description": "Your Dark Veil now performs its effect -50% faster."
+      },
+      {
+        "name": "Blessing of Yogg-Saron",
+        "claim_ids": [
+          "talent:cultist/heretic:25-66-2-9"
+        ],
+        "structural_description": "While Herald of the Depths is active, you now transform into a Faceless Monstrosity, increasing your critical healing and critical strike chance by 20%, but reducing its duration by -5 sec.In addition, while active you are now immune to fear, horrify, and polymorph effects."
+      }
+    ],
+    "single_target": "",
+    "aoe": "",
+    "movement_and_target_switching": "",
+    "defense_and_control": "",
+    "group_utility": "",
+    "failure_modes": [],
+    "claim_ids": [
+      "talent:cultist/heretic:25-66-4-0",
+      "talent:cultist/heretic:25-66-10-0",
+      "talent:cultist/heretic:25-66-2-1",
+      "talent:cultist/heretic:25-66-6-1",
+      "talent:cultist/heretic:25-66-2-2",
+      "talent:cultist/heretic:25-66-4-2",
+      "talent:cultist/heretic:25-66-6-2",
+      "talent:cultist/heretic:25-66-10-2",
+      "talent:cultist/heretic:25-66-2-3",
+      "talent:cultist/heretic:25-66-4-3a",
+      "talent:cultist/heretic:25-66-4-3b",
+      "talent:cultist/heretic:25-66-6-3",
+      "talent:cultist/heretic:25-66-1-4",
+      "talent:cultist/heretic:25-66-4-4",
+      "talent:cultist/heretic:25-66-7-4",
+      "talent:cultist/heretic:25-66-10-4",
+      "talent:cultist/heretic:25-66-0-5a",
+      "talent:cultist/heretic:25-66-0-5b",
+      "talent:cultist/heretic:25-66-2-5",
+      "talent:cultist/heretic:25-66-3-5",
+      "talent:cultist/heretic:25-66-5-5",
+      "talent:cultist/heretic:25-66-6-5a",
+      "talent:cultist/heretic:25-66-6-5b",
+      "talent:cultist/heretic:25-66-8-5",
+      "talent:cultist/heretic:25-66-1-6",
+      "talent:cultist/heretic:25-66-4-6",
+      "talent:cultist/heretic:25-66-7-6a",
+      "talent:cultist/heretic:25-66-7-6b",
+      "talent:cultist/heretic:25-66-10-6",
+      "talent:cultist/heretic:25-66-1-7",
+      "talent:cultist/heretic:25-66-3-7",
+      "talent:cultist/heretic:25-66-4-7a",
+      "talent:cultist/heretic:25-66-4-7b",
+      "talent:cultist/heretic:25-66-5-7",
+      "talent:cultist/heretic:25-66-7-7",
+      "talent:cultist/heretic:25-66-2-8",
+      "talent:cultist/heretic:25-66-4-8",
+      "talent:cultist/heretic:25-66-6-8",
+      "talent:cultist/heretic:25-66-10-8",
+      "talent:cultist/heretic:25-66-2-9",
+      "talent:cultist/heretic:25-66-4-9",
+      "talent:cultist/heretic:25-66-6-9"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Malevolence",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-4-0"
+          ]
+        },
+        {
+          "name": "Herald of the Depths",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-10-0"
+          ]
+        },
+        {
+          "name": "Blade of Yogg-Saron",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-2-1"
+          ]
+        },
+        {
+          "name": "Shadow Pennant",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-6-1"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:cultist/heretic:25-66-4-0",
+        "talent:cultist/heretic:25-66-10-0",
+        "talent:cultist/heretic:25-66-2-1",
+        "talent:cultist/heretic:25-66-6-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Malevolent Power",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-2-2"
+          ]
+        },
+        {
+          "name": "Abyssal Covenant",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-4-2"
+          ]
+        },
+        {
+          "name": "Twisted Sanity",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-6-2"
+          ]
+        },
+        {
+          "name": "Shadow Training",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-10-2"
+          ]
+        },
+        {
+          "name": "Eldritch Eye",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-2-3"
+          ]
+        },
+        {
+          "name": "Dark Protection",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-4-3a"
+          ]
+        },
+        {
+          "name": "Lead the Covenant",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-4-3b"
+          ]
+        },
+        {
+          "name": "Forbidden Ritual",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-6-3"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:cultist/heretic:25-66-2-2",
+        "talent:cultist/heretic:25-66-4-2",
+        "talent:cultist/heretic:25-66-6-2",
+        "talent:cultist/heretic:25-66-10-2",
+        "talent:cultist/heretic:25-66-2-3",
+        "talent:cultist/heretic:25-66-4-3a",
+        "talent:cultist/heretic:25-66-4-3b",
+        "talent:cultist/heretic:25-66-6-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Saronite Mind",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-1-4"
+          ]
+        },
+        {
+          "name": "As The Prophecy Foretold",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-4-4"
+          ]
+        },
+        {
+          "name": "Prophetic Compulsion",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-7-4"
+          ]
+        },
+        {
+          "name": "Void-Touched",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-10-4"
+          ]
+        },
+        {
+          "name": "Protection From Light",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-0-5a"
+          ]
+        },
+        {
+          "name": "Dark Rites",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-0-5b"
+          ]
+        },
+        {
+          "name": "Dark Matter",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-2-5"
+          ]
+        },
+        {
+          "name": "Persistent Prayers",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-3-5"
+          ]
+        },
+        {
+          "name": "Yogg-Saron's Embrace",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-5-5"
+          ]
+        },
+        {
+          "name": "Forbidden Resilience",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-6-5a"
+          ]
+        },
+        {
+          "name": "Forbidden Strength",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-6-5b"
+          ]
+        },
+        {
+          "name": "Blade of the Depths",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-8-5"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:cultist/heretic:25-66-1-4",
+        "talent:cultist/heretic:25-66-4-4",
+        "talent:cultist/heretic:25-66-7-4",
+        "talent:cultist/heretic:25-66-10-4",
+        "talent:cultist/heretic:25-66-0-5a",
+        "talent:cultist/heretic:25-66-0-5b",
+        "talent:cultist/heretic:25-66-2-5",
+        "talent:cultist/heretic:25-66-3-5",
+        "talent:cultist/heretic:25-66-5-5",
+        "talent:cultist/heretic:25-66-6-5a",
+        "talent:cultist/heretic:25-66-6-5b",
+        "talent:cultist/heretic:25-66-8-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Dark Infusion",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-1-6"
+          ]
+        },
+        {
+          "name": "Dark Veil",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-4-6"
+          ]
+        },
+        {
+          "name": "Saronite Cube",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-7-6a"
+          ]
+        },
+        {
+          "name": "Devour Curse",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-7-6b"
+          ]
+        },
+        {
+          "name": "Void Power",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-10-6"
+          ]
+        },
+        {
+          "name": "Ancient Rituals",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-1-7"
+          ]
+        },
+        {
+          "name": "Dark Reservoir",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-3-7"
+          ]
+        },
+        {
+          "name": "Tales of Woe",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-4-7a"
+          ]
+        },
+        {
+          "name": "Corrupt Fate",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-4-7b"
+          ]
+        },
+        {
+          "name": "Visions of the Empire",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-5-7"
+          ]
+        },
+        {
+          "name": "Dark Chants",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-7-7"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:cultist/heretic:25-66-1-6",
+        "talent:cultist/heretic:25-66-4-6",
+        "talent:cultist/heretic:25-66-7-6a",
+        "talent:cultist/heretic:25-66-7-6b",
+        "talent:cultist/heretic:25-66-10-6",
+        "talent:cultist/heretic:25-66-1-7",
+        "talent:cultist/heretic:25-66-3-7",
+        "talent:cultist/heretic:25-66-4-7a",
+        "talent:cultist/heretic:25-66-4-7b",
+        "talent:cultist/heretic:25-66-5-7",
+        "talent:cultist/heretic:25-66-7-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Saronite Blessing",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-2-8"
+          ]
+        },
+        {
+          "name": "Hand of Yogg-Saron",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-4-8"
+          ]
+        },
+        {
+          "name": "Void Barrier",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-6-8"
+          ]
+        },
+        {
+          "name": "Blessing of Yogg-Saron",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-10-8"
+          ]
+        },
+        {
+          "name": "Blessing of Yogg-Saron",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-2-9"
+          ]
+        },
+        {
+          "name": "Horrific Revelations",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-4-9"
+          ]
+        },
+        {
+          "name": "Dark Prophet",
+          "claim_ids": [
+            "talent:cultist/heretic:25-66-6-9"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:cultist/heretic:25-66-2-8",
+        "talent:cultist/heretic:25-66-4-8",
+        "talent:cultist/heretic:25-66-6-8",
+        "talent:cultist/heretic:25-66-10-8",
+        "talent:cultist/heretic:25-66-2-9",
+        "talent:cultist/heretic:25-66-4-9",
+        "talent:cultist/heretic:25-66-6-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "leveling_30_49": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "level_50_60": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "boss": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "dungeon_aoe": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "pvp": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [],
+    "avoid_if": []
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [],
+  "sentiment": {
+    "praise": [],
+    "frustrations": [],
+    "contested": []
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 7,
+    "latest_update": "2026-08-02T20:06:07.57+00:00",
+    "top_title": "Cultist Healer M+ Ready",
+    "top_url": "https://coabuildhub.com/build/5ba4e749-4871-4e36-aeeb-52c0678bc26c",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:5ba4e749-4871-4e36-aeeb-52c0678bc26c"
+    ]
+  },
+  "coverage": {
+    "mechanical": "structural_baseline",
+    "community": "indexed",
+    "performance": "missing",
+    "video": "missing",
+    "overall_confidence": "low",
+    "gaps": [
+      "Effective core loop needs recent guide or player cross-check.",
+      "Contextual complexity values are not yet researched.",
+      "Recent performance, sentiment, issues, and video evidence are not yet reconciled."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:cultist/heretic:25-66-4-0",
+      "kind": "structural",
+      "text": "Malevolence: Generates 10 InsanitySmash an enemy with eldritch force, dealing 40 + 10% AP + 52% SP Shadow damage and applying Black Blood to 5 nearby allies, healing them for 25 + 10% AP, repeating every 3 sec for 15 seconds.Usable while moving.Additional applications of Black Blood do not refresh the duration.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-10-0",
+      "kind": "structural",
+      "text": "Herald of the Depths: Level 10 PassiveReaching 100 Insanity no longer causes Total Madness.Teaches you Herald of the Depths.Herald of the DepthsTransform into a Herald of the Depths for 20 seconds, increasing damage and healing done by 15% and the duration of absorption and healing over time effects by 100%.At the end of the duration, your Insanity is reduced to 0.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-2-1",
+      "kind": "structural",
+      "text": "Blade of Yogg-Saron: Damage dealt by Blade of the Empire now heals the lowest health ally for 35% of the damage dealt plus 198 + 20% healing + 5% AP.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-6-1",
+      "kind": "structural",
+      "text": "Shadow Pennant: You now heal the lowest health ally affected by Black Blood for 50% of your auto attack damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-2-2",
+      "kind": "structural",
+      "text": "Malevolent Power: Every 3rd melee ability you cast now causes your next Eldritch Mending to become instant cast and cost -20% less mana.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-4-2",
+      "kind": "structural",
+      "text": "Abyssal Covenant: Link yourself to an ally for 30 minutes, transfering 10% of all damage taken by them to you and causing 20% of all damage you deal to be converted into healing for them.Can only be applied to 1 ally at a time.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-6-2",
+      "kind": "structural",
+      "text": "Twisted Sanity: Allies affected by your Black Blood are now healed for 30% of the damage dealt by your Tentacles.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-10-2",
+      "kind": "structural",
+      "text": "Shadow Training: Level 20 PassiveIncreases the healing done by Eldritch Mending by 50% and Gaze of C'Thun by 100%.In addition, you are now unable to miss your attacks and you cannot be parried or dodged.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-2-3",
+      "kind": "structural",
+      "text": "Eldritch Eye: Invoke the Old Gods for 15 seconds, removing the cast time of your next 3 Eldritch Mendings or Malevolences and causing them to critically strike.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-4-3a",
+      "kind": "structural",
+      "text": "Dark Protection: Allies affected by Abyssal Covenant now also take 20% increased healing from you.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-4-3b",
+      "kind": "structural",
+      "text": "Lead the Covenant: 50% of all healing done to allies through Abyssal Covenant is now replicated to you.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-6-3",
+      "kind": "structural",
+      "text": "Forbidden Ritual: Chant a forbidden ritual that places a shield on all nearby party and raid members that absorbs 225 + 50% healing damage for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-1-4",
+      "kind": "structural",
+      "text": "Saronite Mind: Your Eldritch Eye now has 1 additional charge.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-4-4",
+      "kind": "structural",
+      "text": "As The Prophecy Foretold: Melee critical strikes now refresh a charge of Blade of the Empire and restore 5% of your base mana.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-7-4",
+      "kind": "structural",
+      "text": "Prophetic Compulsion: While Black Blood is active on an ally, healing done to them by your Gaze of C'Thun has a 15% increased chance to critically strike.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-10-4",
+      "kind": "structural",
+      "text": "Void-Touched: Level 30 PassiveDirect healing done now applies Void-Touched.Void-Touched (Stacks)Marks the ally for 30 seconds, stacking 10 times.When you cast Gaze of C'Thun, all stacks are consumed to heal all allies affected by Void-Touched for 304 + 35% healing, increased based on how many stacks were on them.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-0-5a",
+      "kind": "structural",
+      "text": "Protection From Light: Reduces all damage taken by party and raid members by -3%.In addition, your Holy damage taken is reduced by -10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-0-5b",
+      "kind": "structural",
+      "text": "Dark Rites: While Herald of the Depths is active, your movement speed cannot be reduced below 100% of normal value.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-2-5",
+      "kind": "structural",
+      "text": "Dark Matter: Channeling Satiate now heals all allies within 30 yds for 208 + 20% healing every 1 sec for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-3-5",
+      "kind": "structural",
+      "text": "Persistent Prayers: Increases the duration and absorption amount of Void Shield and Forbidden Ritual by 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-5-5",
+      "kind": "structural",
+      "text": "Yogg-Saron's Embrace: Increases your attack power and your maximum mana by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-6-5a",
+      "kind": "structural",
+      "text": "Forbidden Resilience: While Herald of the Depths is active, you now take -15% less damage and have a 25% increased chance to resist dispel effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-6-5b",
+      "kind": "structural",
+      "text": "Forbidden Strength: While Herald of the Depths is active, the critical strike chance of Blade of the Empire is increased by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-8-5",
+      "kind": "structural",
+      "text": "Blade of the Depths: While Herald of the Depths is active, your Forbidden Ritual will cooldown faster.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-1-6",
+      "kind": "structural",
+      "text": "Dark Infusion: 3 Charges, 30 sec rechargeInfuse an ally with dark energy, healing them for 44 the next time they take damage. When the heal occurs, Dark Infusion is consumed and expands to the two lowest-health nearby party or raid members. Each secondary infusion heals when triggered, then expands to three nearby allies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-4-6",
+      "kind": "structural",
+      "text": "Dark Veil: Channel a shield of void energies upon an ally, causing both you and them to absorb 875 + 100% healing + 25% AP damage, stacking 5 times, every 1 sec for 5 seconds.At the end of the duration, if the shield holds, you teleport to them.While channeling you are immune to stuns and silences.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-7-6a",
+      "kind": "structural",
+      "text": "Saronite Cube: Melee ability damage now reduces the duration of Wracked Mind by -1 sec on all allies within 30 yds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-7-6b",
+      "kind": "structural",
+      "text": "Devour Curse: Devour dark magic on an ally, dispelling 2 curse effects from them and healing you for 90 + 65% SP.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-10-6",
+      "kind": "structural",
+      "text": "Void Power: Your healing power is increased based on your main-hand weapon damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-1-7",
+      "kind": "structural",
+      "text": "Ancient Rituals: Casting Satiate now refreshes the duration of Black Blood on all allies within 30 yds.Dark Infusion bounces one additional time after its third infusion, expanding to the three lowest-health nearby party or raid members.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-3-7",
+      "kind": "structural",
+      "text": "Dark Reservoir: Increases the bonus healing power scaling of Eldritch Mending by 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-4-7a",
+      "kind": "structural",
+      "text": "Tales of Woe: Your Dark Veil now performs its effect -50% faster.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-4-7b",
+      "kind": "structural",
+      "text": "Corrupt Fate: Reduces the cooldown of Dark Veil by -60 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-5-7",
+      "kind": "structural",
+      "text": "Visions of the Empire: Increases the damage converted into healing through Abyssal Covenant by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-7-7",
+      "kind": "structural",
+      "text": "Dark Chants: Reduces the cast time of Forbidden Ritual by 1 sec and allows Black Blood to stack up to 2 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-2-8",
+      "kind": "structural",
+      "text": "Saronite Blessing: Melee critical strikes now apply Saronite Blessing to you.Saronite Blessing (Buff)Your melee attack speed is increased by 25% and your melee auto attacks heal the lowest health ally for an additional 100% of the damage dealt. Lasts for 15 seconds or 10 attacks.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-4-8",
+      "kind": "structural",
+      "text": "Hand of Yogg-Saron: Tether yourself to an ally for 15 seconds, increasing all damage they deal and reducing all damage they take by 15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-6-8",
+      "kind": "structural",
+      "text": "Void Barrier: Casting Herald of the Depths now increases the absorption of your next Void Shield within 10 seconds by 100%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-10-8",
+      "kind": "structural",
+      "text": "Blessing of Yogg-Saron: Level 50 PassiveIncreases your attack power by an amount equal to 3 times your spell critical strike rating.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-2-9",
+      "kind": "structural",
+      "text": "Blessing of Yogg-Saron: While Herald of the Depths is active, you now transform into a Faceless Monstrosity, increasing your critical healing and critical strike chance by 20%, but reducing its duration by -5 sec.In addition, while active you are now immune to fear, horrify, and polymorph effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-4-9",
+      "kind": "structural",
+      "text": "Horrific Revelations: Every 1 sec while Hand of Yogg-Saron is active, you now trigger a Horrific Revelation on the target and generate 5 Insanity.Horrific RevelationHeals a friendly target for 144 + 67.85% SP, scaling with Insanity, and increases their critical strike chance by 1%, stacking 15 times, for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:cultist/heretic:25-66-6-9",
+      "kind": "structural",
+      "text": "Dark Prophet: Healing done by Abyssal Covenant now heals 5 of the lowest health nearby allies and healing done by Black Blood can now critically strike.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    }
+  ]
+}

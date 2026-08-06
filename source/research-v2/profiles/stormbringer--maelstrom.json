@@ -1,0 +1,1445 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "stormbringer/maelstrom",
+    "class": "Stormbringer",
+    "name": "Maelstrom",
+    "roles": [
+      "Damage"
+    ],
+    "range": [
+      "Ranged"
+    ]
+  },
+  "identity": {
+    "fantasy": "",
+    "one_line": "A Frost/Nature caster that builds Conductive stacks with Brine and cashes them out through Torrential Wrath and Conduction. Thunder Orbs, Power Spheres, elementals, Drown, and Stormcloud add layered target setup. It has burst and battlefield activity, but more object and stack tracking than Lightning.",
+    "primary_family": "",
+    "also_fits": [],
+    "claim_ids": [
+      "talent:stormbringer/maelstrom:16-44-4-0",
+      "talent:stormbringer/maelstrom:16-44-10-0",
+      "talent:stormbringer/maelstrom:16-44-4-1",
+      "talent:stormbringer/maelstrom:16-44-2-2",
+      "talent:stormbringer/maelstrom:16-44-4-2",
+      "talent:stormbringer/maelstrom:16-44-6-2",
+      "talent:stormbringer/maelstrom:16-44-10-2",
+      "talent:stormbringer/maelstrom:16-44-1-3a",
+      "talent:stormbringer/maelstrom:16-44-1-3b",
+      "talent:stormbringer/maelstrom:16-44-4-3",
+      "talent:stormbringer/maelstrom:16-44-7-3",
+      "talent:stormbringer/maelstrom:16-44-1-4",
+      "talent:stormbringer/maelstrom:16-44-3-4",
+      "talent:stormbringer/maelstrom:16-44-5-4",
+      "talent:stormbringer/maelstrom:16-44-7-4",
+      "talent:stormbringer/maelstrom:16-44-10-4",
+      "talent:stormbringer/maelstrom:16-44-0-5",
+      "talent:stormbringer/maelstrom:16-44-2-5",
+      "talent:stormbringer/maelstrom:16-44-4-5a",
+      "talent:stormbringer/maelstrom:16-44-4-5b",
+      "talent:stormbringer/maelstrom:16-44-6-5",
+      "talent:stormbringer/maelstrom:16-44-8-5",
+      "talent:stormbringer/maelstrom:16-44-2-6",
+      "talent:stormbringer/maelstrom:16-44-4-6",
+      "talent:stormbringer/maelstrom:16-44-6-6",
+      "talent:stormbringer/maelstrom:16-44-10-6",
+      "talent:stormbringer/maelstrom:16-44-1-7",
+      "talent:stormbringer/maelstrom:16-44-3-7",
+      "talent:stormbringer/maelstrom:16-44-5-7",
+      "talent:stormbringer/maelstrom:16-44-7-7",
+      "talent:stormbringer/maelstrom:16-44-2-8",
+      "talent:stormbringer/maelstrom:16-44-4-8",
+      "talent:stormbringer/maelstrom:16-44-6-8",
+      "talent:stormbringer/maelstrom:16-44-10-8",
+      "talent:stormbringer/maelstrom:16-44-2-9",
+      "talent:stormbringer/maelstrom:16-44-4-9",
+      "talent:stormbringer/maelstrom:16-44-6-9"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "A Frost/Nature caster that builds Conductive stacks with Brine and cashes them out through Torrential Wrath and Conduction. Thunder Orbs, Power Spheres, elementals, Drown, and Stormcloud add layered target setup. It has burst and battlefield activity, but more object and stack tracking than Lightning.",
+    "resources": [
+      "Conductive",
+      "Static"
+    ],
+    "builders": [
+      {
+        "name": "Drown",
+        "claim_ids": [
+          "talent:stormbringer/maelstrom:16-44-4-3"
+        ]
+      },
+      {
+        "name": "Thunder Ward",
+        "claim_ids": [
+          "talent:stormbringer/maelstrom:16-44-4-6"
+        ]
+      },
+      {
+        "name": "Binder of Storms",
+        "claim_ids": [
+          "talent:stormbringer/maelstrom:16-44-2-8"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Conductive",
+        "claim_ids": [
+          "talent:stormbringer/maelstrom:16-44-10-0"
+        ]
+      },
+      {
+        "name": "Stormcaller",
+        "claim_ids": [
+          "talent:stormbringer/maelstrom:16-44-2-5"
+        ]
+      },
+      {
+        "name": "Kinetic Energy",
+        "claim_ids": [
+          "talent:stormbringer/maelstrom:16-44-6-6"
+        ]
+      },
+      {
+        "name": "Shockingly Powerful",
+        "claim_ids": [
+          "talent:stormbringer/maelstrom:16-44-6-9"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Static Electricity",
+        "claim_ids": [
+          "talent:stormbringer/maelstrom:16-44-3-7"
+        ]
+      },
+      {
+        "name": "Stormfury",
+        "claim_ids": [
+          "talent:stormbringer/maelstrom:16-44-6-8"
+        ]
+      },
+      {
+        "name": "Spheres of Power",
+        "claim_ids": [
+          "talent:stormbringer/maelstrom:16-44-2-9"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Tempest Sovereign",
+        "claim_ids": [
+          "talent:stormbringer/maelstrom:16-44-4-0"
+        ],
+        "structural_description": "Enhances some of your spells with the power of the maelstrom, transforming your Shock into Brine and Call Lightning into Torrential Wrath.BrineGenerates 25 StaticDouse an enemy, dealing cond(gt(SPFR, SPN), 89+0+SPFR*0.571, 89+0+SPN*0.871) Frost damage, scaling with your critical strike rating.Scales with modifiers to Shock.Torrential WrathDepletes 50 StaticBlast an enemy, dealing cond(gt(SPFR, SPN), 111+0+SPFR*1, 111+0+SPN*1.5) Frost damage, scaling with your haste rating."
+      },
+      {
+        "name": "Spheres of Power",
+        "claim_ids": [
+          "talent:stormbringer/maelstrom:16-44-2-9"
+        ],
+        "structural_description": "Your direct damage dealt now has a 25% chance to summon a Power Sphere that will move towards your target. Can only have 1 Power Sphere up at a time.Power Sphere will redirect its movement towards enemies you cast Stormflow on.Upon reaching the target, it deals cond(gt(SPA, SPN), 697+33+SPA*0.485, 697+33+SPN*0.485) Spellstorm Damage to them and enemies within 5 yds."
+      }
+    ],
+    "single_target": "",
+    "aoe": "",
+    "movement_and_target_switching": "",
+    "defense_and_control": "",
+    "group_utility": "",
+    "failure_modes": [],
+    "claim_ids": [
+      "talent:stormbringer/maelstrom:16-44-4-0",
+      "talent:stormbringer/maelstrom:16-44-10-0",
+      "talent:stormbringer/maelstrom:16-44-4-1",
+      "talent:stormbringer/maelstrom:16-44-2-2",
+      "talent:stormbringer/maelstrom:16-44-4-2",
+      "talent:stormbringer/maelstrom:16-44-6-2",
+      "talent:stormbringer/maelstrom:16-44-10-2",
+      "talent:stormbringer/maelstrom:16-44-1-3a",
+      "talent:stormbringer/maelstrom:16-44-1-3b",
+      "talent:stormbringer/maelstrom:16-44-4-3",
+      "talent:stormbringer/maelstrom:16-44-7-3",
+      "talent:stormbringer/maelstrom:16-44-1-4",
+      "talent:stormbringer/maelstrom:16-44-3-4",
+      "talent:stormbringer/maelstrom:16-44-5-4",
+      "talent:stormbringer/maelstrom:16-44-7-4",
+      "talent:stormbringer/maelstrom:16-44-10-4",
+      "talent:stormbringer/maelstrom:16-44-0-5",
+      "talent:stormbringer/maelstrom:16-44-2-5",
+      "talent:stormbringer/maelstrom:16-44-4-5a",
+      "talent:stormbringer/maelstrom:16-44-4-5b",
+      "talent:stormbringer/maelstrom:16-44-6-5",
+      "talent:stormbringer/maelstrom:16-44-8-5",
+      "talent:stormbringer/maelstrom:16-44-2-6",
+      "talent:stormbringer/maelstrom:16-44-4-6",
+      "talent:stormbringer/maelstrom:16-44-6-6",
+      "talent:stormbringer/maelstrom:16-44-10-6",
+      "talent:stormbringer/maelstrom:16-44-1-7",
+      "talent:stormbringer/maelstrom:16-44-3-7",
+      "talent:stormbringer/maelstrom:16-44-5-7",
+      "talent:stormbringer/maelstrom:16-44-7-7",
+      "talent:stormbringer/maelstrom:16-44-2-8",
+      "talent:stormbringer/maelstrom:16-44-4-8",
+      "talent:stormbringer/maelstrom:16-44-6-8",
+      "talent:stormbringer/maelstrom:16-44-10-8",
+      "talent:stormbringer/maelstrom:16-44-2-9",
+      "talent:stormbringer/maelstrom:16-44-4-9",
+      "talent:stormbringer/maelstrom:16-44-6-9"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Tempest Sovereign",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-4-0"
+          ]
+        },
+        {
+          "name": "Conductive",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-10-0"
+          ]
+        },
+        {
+          "name": "Stormflow",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-4-1"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:stormbringer/maelstrom:16-44-4-0",
+        "talent:stormbringer/maelstrom:16-44-10-0",
+        "talent:stormbringer/maelstrom:16-44-4-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Torrential Rage",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-2-2"
+          ]
+        },
+        {
+          "name": "Conduit",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-4-2"
+          ]
+        },
+        {
+          "name": "Disciple of Thorim",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-6-2"
+          ]
+        },
+        {
+          "name": "Whirling Maelstrom",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-10-2"
+          ]
+        },
+        {
+          "name": "Blessing of Lei Shen",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-1-3a"
+          ]
+        },
+        {
+          "name": "Prodigy of Lei Shen",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-1-3b"
+          ]
+        },
+        {
+          "name": "Drown",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-4-3"
+          ]
+        },
+        {
+          "name": "Raining and Pouring",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-7-3"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:stormbringer/maelstrom:16-44-2-2",
+        "talent:stormbringer/maelstrom:16-44-4-2",
+        "talent:stormbringer/maelstrom:16-44-6-2",
+        "talent:stormbringer/maelstrom:16-44-10-2",
+        "talent:stormbringer/maelstrom:16-44-1-3a",
+        "talent:stormbringer/maelstrom:16-44-1-3b",
+        "talent:stormbringer/maelstrom:16-44-4-3",
+        "talent:stormbringer/maelstrom:16-44-7-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Deluge",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-1-4"
+          ]
+        },
+        {
+          "name": "Flow of Wrath",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-3-4"
+          ]
+        },
+        {
+          "name": "Undertow",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-5-4"
+          ]
+        },
+        {
+          "name": "Mystic Thunder",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-7-4"
+          ]
+        },
+        {
+          "name": "Unbridled Flow",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-10-4"
+          ]
+        },
+        {
+          "name": "Voltaic Mastery",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-0-5"
+          ]
+        },
+        {
+          "name": "Stormcaller",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-2-5"
+          ]
+        },
+        {
+          "name": "Washed Away",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-4-5a"
+          ]
+        },
+        {
+          "name": "Bursting",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-4-5b"
+          ]
+        },
+        {
+          "name": "Cloudsurfer",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-6-5"
+          ]
+        },
+        {
+          "name": "Lethal Current",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-8-5"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:stormbringer/maelstrom:16-44-1-4",
+        "talent:stormbringer/maelstrom:16-44-3-4",
+        "talent:stormbringer/maelstrom:16-44-5-4",
+        "talent:stormbringer/maelstrom:16-44-7-4",
+        "talent:stormbringer/maelstrom:16-44-10-4",
+        "talent:stormbringer/maelstrom:16-44-0-5",
+        "talent:stormbringer/maelstrom:16-44-2-5",
+        "talent:stormbringer/maelstrom:16-44-4-5a",
+        "talent:stormbringer/maelstrom:16-44-4-5b",
+        "talent:stormbringer/maelstrom:16-44-6-5",
+        "talent:stormbringer/maelstrom:16-44-8-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Unstable",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-2-6"
+          ]
+        },
+        {
+          "name": "Thunder Ward",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-4-6"
+          ]
+        },
+        {
+          "name": "Kinetic Energy",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-6-6"
+          ]
+        },
+        {
+          "name": "Storm Synergy",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-10-6"
+          ]
+        },
+        {
+          "name": "Amped Flow",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-1-7"
+          ]
+        },
+        {
+          "name": "Static Electricity",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-3-7"
+          ]
+        },
+        {
+          "name": "Conductor In Charge",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-5-7"
+          ]
+        },
+        {
+          "name": "Hydro Powered",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-7-7"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:stormbringer/maelstrom:16-44-2-6",
+        "talent:stormbringer/maelstrom:16-44-4-6",
+        "talent:stormbringer/maelstrom:16-44-6-6",
+        "talent:stormbringer/maelstrom:16-44-10-6",
+        "talent:stormbringer/maelstrom:16-44-1-7",
+        "talent:stormbringer/maelstrom:16-44-3-7",
+        "talent:stormbringer/maelstrom:16-44-5-7",
+        "talent:stormbringer/maelstrom:16-44-7-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Binder of Storms",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-2-8"
+          ]
+        },
+        {
+          "name": "Electrified Waters",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-4-8"
+          ]
+        },
+        {
+          "name": "Stormfury",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-6-8"
+          ]
+        },
+        {
+          "name": "Hydromatic",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-10-8"
+          ]
+        },
+        {
+          "name": "Spheres of Power",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-2-9"
+          ]
+        },
+        {
+          "name": "Stormcloud",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-4-9"
+          ]
+        },
+        {
+          "name": "Shockingly Powerful",
+          "claim_ids": [
+            "talent:stormbringer/maelstrom:16-44-6-9"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:stormbringer/maelstrom:16-44-2-8",
+        "talent:stormbringer/maelstrom:16-44-4-8",
+        "talent:stormbringer/maelstrom:16-44-6-8",
+        "talent:stormbringer/maelstrom:16-44-10-8",
+        "talent:stormbringer/maelstrom:16-44-2-9",
+        "talent:stormbringer/maelstrom:16-44-4-9",
+        "talent:stormbringer/maelstrom:16-44-6-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "leveling_30_49": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "level_50_60": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "boss": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "dungeon_aoe": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "pvp": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [],
+    "avoid_if": []
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [],
+  "sentiment": {
+    "praise": [],
+    "frustrations": [],
+    "contested": []
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 1,
+    "latest_update": "2026-07-29T06:08:01.209+00:00",
+    "top_title": "Maelstrom Leveling Stormbringer",
+    "top_url": "https://coabuildhub.com/build/c036bc4b-65a0-4982-8d65-6c7499f44813",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:c036bc4b-65a0-4982-8d65-6c7499f44813"
+    ]
+  },
+  "coverage": {
+    "mechanical": "structural_baseline",
+    "community": "indexed",
+    "performance": "missing",
+    "video": "missing",
+    "overall_confidence": "low",
+    "gaps": [
+      "Effective core loop needs recent guide or player cross-check.",
+      "Contextual complexity values are not yet researched.",
+      "Recent performance, sentiment, issues, and video evidence are not yet reconciled."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-4-0",
+      "kind": "structural",
+      "text": "Tempest Sovereign: Enhances some of your spells with the power of the maelstrom, transforming your Shock into Brine and Call Lightning into Torrential Wrath.BrineGenerates 25 StaticDouse an enemy, dealing cond(gt(SPFR, SPN), 89+0+SPFR*0.571, 89+0+SPN*0.871) Frost damage, scaling with your critical strike rating.Scales with modifiers to Shock.Torrential WrathDepletes 50 StaticBlast an enemy, dealing cond(gt(SPFR, SPN), 111+0+SPFR*1, 111+0+SPN*1.5) Frost damage, scaling with your haste rating.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-10-0",
+      "kind": "structural",
+      "text": "Conductive: Level 10 PassiveShock now grants Conductive for 1 minute, stacking 6 times.Torrential Wrath consumes all stacks of Conductive to trigger Conduction.Conduction (Damage)Deals cond(gt(SPFR, SPN), 202*1+SPFR*0.585, 202*1+SPN*0.35) Frost Damage, increased by 25% for each stack of Conductive consumed.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-4-1",
+      "kind": "structural",
+      "text": "Stormflow: Depletes 20 StaticChannel a storm beam upon an enemy, dealing 112 + 160% SP Frost Damage over 8 seconds, scaling with your spell haste.Shock can be instantly cast while channeling.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-2-2",
+      "kind": "structural",
+      "text": "Torrential Rage: Increases the damage of Torrential Wrath and Stormflow by 15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-4-2",
+      "kind": "structural",
+      "text": "Conduit: Dealing Frost damage now has a 60% chance to increase the damage the target takes from Electrocute by 15% for 10 seconds, stacking up to 4 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-6-2",
+      "kind": "structural",
+      "text": "Disciple of Thorim: Reduces the cast time of your Torrential Wrath by -0.2 sec and increases your hit chance by 2%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-10-2",
+      "kind": "structural",
+      "text": "Whirling Maelstrom: Level 20 PassiveIncreases your spell haste by 20% of your Intellect.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-1-3a",
+      "kind": "structural",
+      "text": "Blessing of Lei Shen: Damage dealt by Stormflow now heals you equal to the damage dealt.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-1-3b",
+      "kind": "structural",
+      "text": "Prodigy of Lei Shen: Allows your Stormflow to critically strike.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-4-3",
+      "kind": "structural",
+      "text": "Drown: Attempt to drown an enemy, reducing their healing received by -20% for 8 seconds. At the end of the duration, unleash a creature from the depths dealing cond(gt(SPFR, SPN), 83+0+SPFR*1, 83+0+SPN*1) Frost Damage.Each time you generate a stack of Conductive you increase their damage taken from this effect, stacking up to 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-7-3",
+      "kind": "structural",
+      "text": "Raining and Pouring: Increases the critical damage of your Torrential Wrath and Electrocute by 30%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-1-4",
+      "kind": "structural",
+      "text": "Deluge: Depletes 50 StaticConsumes ConductiveEnvelop enemies in the target area in water, dealing cond(gt(SPFR, SPN), 106+0+SPFR*0.3, 106+0+SPN*0.3) Frost damage, triggering Conduction and reducing their attack power by -24 for 10 seconds.Conduction (Damage)Deals cond(gt(SPFR, SPN), 202*1+SPFR*0.585, 202*1+SPN*0.35) Frost Damage, increased by 25% for each stack of Conductive consumed.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-3-4",
+      "kind": "structural",
+      "text": "Flow of Wrath: Increases your critical strike chance by 15% against enemies affected by Drown.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-5-4",
+      "kind": "structural",
+      "text": "Undertow: Increases the critical strike chance of Drown by 25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-7-4",
+      "kind": "structural",
+      "text": "Mystic Thunder: Interrupt the target's current spell cast and then mark them for 5 seconds.If they cast again while marked they are silenced for 3 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-10-4",
+      "kind": "structural",
+      "text": "Unbridled Flow: Level 30 PassiveDamage dealt by Shock is now increased by 15% while channeling Stormflow.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-0-5",
+      "kind": "structural",
+      "text": "Voltaic Mastery: Damage dealt by Deluge is increased by 5% for each stack of Conductive.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-2-5",
+      "kind": "structural",
+      "text": "Stormcaller: Reduces the cooldown and mana cost of Eye of the Storm by -15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-4-5a",
+      "kind": "structural",
+      "text": "Washed Away: Reduces the cooldown of Drown by -15 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-4-5b",
+      "kind": "structural",
+      "text": "Bursting: Increases the stack value of Drowning by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-6-5",
+      "kind": "structural",
+      "text": "Cloudsurfer: Increases the damage of Shock by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-8-5",
+      "kind": "structural",
+      "text": "Lethal Current: Increases the critical strike chance of Electrocute by 30% against enemies below 20% health.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-2-6",
+      "kind": "structural",
+      "text": "Unstable: Your direct damage critical strikes cause your Stormflow to tick -20% faster for 3 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-4-6",
+      "kind": "structural",
+      "text": "Thunder Ward: Depletes All StaticEncase yourself in an electrical shield, removing and making you immune to all physical attacks and spells for 10 seconds.Cannot generate Static for the duration.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-6-6",
+      "kind": "structural",
+      "text": "Kinetic Energy: Casting a spell that consumes Conductive now grants you a stack of Kinetic Energy.Kinetic EnergyCritical strike chance increased by 2%, stacking 3 times, for 10 seconds.Additional applications do not refresh the duration.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-10-6",
+      "kind": "structural",
+      "text": "Storm Synergy: Level 40 PassiveYour Electrocute can now be used while channeling Stormflow.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-1-7",
+      "kind": "structural",
+      "text": "Amped Flow: While channeling Stormflow, your Shock now strikes 1 additional target at 75% value.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-3-7",
+      "kind": "structural",
+      "text": "Static Electricity: Critical strikes with Torrential Wrath now spawn an Electrified Water Elemental to aid you in combat for 20 sec.When an Electrified Water Elemental dissipates, the cooldown of your Drown is reduced by -1.5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-5-7",
+      "kind": "structural",
+      "text": "Conductor In Charge: Increases all damage dealt by party and raid members by 3% and your Frost damage dealt by 5%.Does not stack with similar effects.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-7-7",
+      "kind": "structural",
+      "text": "Hydro Powered: Increases your spell critical damage by 35%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-2-8",
+      "kind": "structural",
+      "text": "Binder of Storms: Damage dealt by Conduction now has a 60% chance to summon a Thunder Orb.Summon: Thunder OrbSummon a Thunder Orb at the target location for 16 seconds that triggers an Orb Shock and generates 10 Static.Orb ShockDeals 16 + 4% nature SP Nature Damage to up to 3 enemies and increases damage taken from Thunder Orbs and Spheres of Power for 8 seconds, stacking 6 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-4-8",
+      "kind": "structural",
+      "text": "Electrified Waters: Your direct critical strikes against an enemy affected by Drown spawn an Electrified Water Elemental to aid you in combat for 20 seconds.When an Electrified Water Elemental dissipates, the cooldown of your Drown is reduced by -1.5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-6-8",
+      "kind": "structural",
+      "text": "Stormfury: Depletes 50 StaticSummon a flurry of rain, wind, and lightning from the sky for 20 seconds. Every 2 sec, enemies within 30 yds of the caster are zapped with lightning, dealing 540 + 55% nature SP Nature damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-10-8",
+      "kind": "structural",
+      "text": "Hydromatic: Level 50 PassiveYour Electrocute is now affected by Conductive, increasing its damage by 10% per stack.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-2-9",
+      "kind": "structural",
+      "text": "Spheres of Power: Your direct damage dealt now has a 25% chance to summon a Power Sphere that will move towards your target. Can only have 1 Power Sphere up at a time.Power Sphere will redirect its movement towards enemies you cast Stormflow on.Upon reaching the target, it deals cond(gt(SPA, SPN), 697+33+SPA*0.485, 697+33+SPN*0.485) Spellstorm Damage to them and enemies within 5 yds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-4-9",
+      "kind": "structural",
+      "text": "Stormcloud: Summon a cloud above an enemy target's head for 15 seconds, causing them to take 20% additional damage from your spells.Using Torrential Wrath on an enemy affected by Stormcloud causes a Geyser to erupt beneath them, dealing 571 + 25% frost SP Frost damage and knocking them up slightly.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:stormbringer/maelstrom:16-44-6-9",
+      "kind": "structural",
+      "text": "Shockingly Powerful: Your Conduction now has a -25% chance to not consume Conductive.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    }
+  ]
+}

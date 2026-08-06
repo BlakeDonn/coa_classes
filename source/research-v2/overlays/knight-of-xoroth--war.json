@@ -1,0 +1,966 @@
+{
+  "baseline": "knight-of-xoroth--war.json",
+  "set": {
+    "identity": {
+      "fantasy": "A two-handed demonic executioner who stacks wounds with Gore and Mutilation, changes Pestilence for the matchup, and cashes six stacks into Skulltaker.",
+      "one_line": "Build six wound or frenzy stacks, preserve Sever when its heal matters, then choose Skulltaker for immediate pressure or Meatsaw for sustained PvE payoff.",
+      "primary_family": "marksmen",
+      "also_fits": [
+        "planners"
+      ],
+      "playstyle_tags": [
+        "two-handed-wound-bruiser",
+        "bleed-melee",
+        "heavy-cleaver"
+      ],
+      "claim_ids": [
+        "talent:knight-of-xoroth/war:17-45-4-1",
+        "talent:knight-of-xoroth/war:17-45-2-2",
+        "talent:knight-of-xoroth/war:17-45-4-2",
+        "talent:knight-of-xoroth/war:17-45-6-3",
+        "observed:knight-of-xoroth/war:six-stack-priority",
+        "observed:knight-of-xoroth/war:content-finisher-split",
+        "inference:knight-of-xoroth/war:playstyle-identity"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "Apply Gore and the chosen wound tools, reach six stacks, and use Skulltaker; Pestilence and Unleash are adjusted for damage, healing or anti-heal needs.",
+      "single_target": "Skulltaker is the practical burst finisher; Meatsaw gains value when the target lives long enough for the channel or repeated damage.",
+      "aoe": "Bleeds, Burning Blade and cleaving finishers reward stable packs, though the loop remains more direct than Hellfire.",
+      "movement_and_target_switching": "Mounted Combat, chains and snare tools help connect, but current PvP players say many classes can reapply slows or escape.",
+      "defense_and_control": "Hellborn self-healing, Sever and Unleash can be reserved for survival rather than spent automatically.",
+      "group_utility": "Pestilence can switch toward healing pressure or anti-heal, and chains create pickup utility.",
+      "failure_modes": [
+        {
+          "text": "Spending stacks on the wrong finisher loses either immediate kill pressure or durable-target value.",
+          "claim_ids": [
+            "inference:knight-of-xoroth/war:failure-cost",
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2"
+          ]
+        },
+        {
+          "text": "Using Sever or Unleash before incoming damage removes important self-healing.",
+          "claim_ids": [
+            "inference:knight-of-xoroth/war:failure-cost",
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2"
+          ]
+        },
+        {
+          "text": "Failing to swap Pestilence for a healer matchup wastes a core utility advantage.",
+          "claim_ids": [
+            "inference:knight-of-xoroth/war:failure-cost",
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "talent:knight-of-xoroth/war:17-45-4-1",
+        "talent:knight-of-xoroth/war:17-45-2-2",
+        "talent:knight-of-xoroth/war:17-45-4-2",
+        "talent:knight-of-xoroth/war:17-45-6-3",
+        "talent:knight-of-xoroth/war:17-45-5-6",
+        "observed:knight-of-xoroth/war:six-stack-priority",
+        "observed:knight-of-xoroth/war:content-finisher-split",
+        "observed:knight-of-xoroth/war:pestilence-choice",
+        "observed:knight-of-xoroth/war:build-practice",
+        "inference:knight-of-xoroth/war:playstyle-identity"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "A straightforward wound builder and heavy finisher appears early.",
+        "strengths": [
+          "Clear heavy hits",
+          "Simple builder-finisher"
+        ],
+        "cautions": [
+          "Limited early sustain",
+          "Melee reach"
+        ],
+        "claim_ids": [
+          "talent:knight-of-xoroth/war:17-45-4-1",
+          "talent:knight-of-xoroth/war:17-45-2-2",
+          "talent:knight-of-xoroth/war:17-45-4-2",
+          "talent:knight-of-xoroth/war:17-45-6-3",
+          "observed:knight-of-xoroth/war:six-stack-priority",
+          "observed:knight-of-xoroth/war:content-finisher-split",
+          "observed:knight-of-xoroth/war:pestilence-choice",
+          "inference:knight-of-xoroth/war:playstyle-identity"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "More Pestilence and survival choices make the priority situational.",
+        "strengths": [
+          "Strong dungeon cleave",
+          "More self-healing"
+        ],
+        "cautions": [
+          "Stack economy matters",
+          "Can be slowed"
+        ],
+        "claim_ids": [
+          "talent:knight-of-xoroth/war:17-45-4-1",
+          "talent:knight-of-xoroth/war:17-45-2-2",
+          "talent:knight-of-xoroth/war:17-45-4-2",
+          "talent:knight-of-xoroth/war:17-45-6-3",
+          "observed:knight-of-xoroth/war:six-stack-priority",
+          "observed:knight-of-xoroth/war:content-finisher-split",
+          "observed:knight-of-xoroth/war:pestilence-choice",
+          "inference:knight-of-xoroth/war:playstyle-identity"
+        ]
+      },
+      "level_50_60": {
+        "feel": "At 60 the core remains readable, but matchup-specific spender and healing decisions deepen it.",
+        "strengths": [
+          "Large finisher payoff",
+          "Useful mode choices"
+        ],
+        "cautions": [
+          "Melee dependent",
+          "Builds diverge"
+        ],
+        "claim_ids": [
+          "talent:knight-of-xoroth/war:17-45-4-1",
+          "talent:knight-of-xoroth/war:17-45-2-2",
+          "talent:knight-of-xoroth/war:17-45-4-2",
+          "talent:knight-of-xoroth/war:17-45-6-3",
+          "observed:knight-of-xoroth/war:six-stack-priority",
+          "observed:knight-of-xoroth/war:content-finisher-split",
+          "observed:knight-of-xoroth/war:pestilence-choice",
+          "inference:knight-of-xoroth/war:playstyle-identity"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, Skulltaker is the practical burst finisher; Meatsaw gains value when the target lives long enough for the channel or repeated damage.",
+        "strengths": [
+          "Stable wound ramp",
+          "Heavy boss finishers"
+        ],
+        "cautions": [
+          "Meatsaw needs uptime",
+          "Forced movement delays stacks"
+        ],
+        "claim_ids": [
+          "talent:knight-of-xoroth/war:17-45-4-1",
+          "talent:knight-of-xoroth/war:17-45-2-2",
+          "talent:knight-of-xoroth/war:17-45-4-2",
+          "talent:knight-of-xoroth/war:17-45-6-3",
+          "observed:knight-of-xoroth/war:six-stack-priority",
+          "observed:knight-of-xoroth/war:content-finisher-split",
+          "observed:knight-of-xoroth/war:pestilence-choice",
+          "inference:knight-of-xoroth/war:playstyle-identity"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, Bleeds, Burning Blade and cleaving finishers reward stable packs, though the loop remains more direct than Hellfire.",
+        "strengths": [
+          "Good cleave",
+          "Fast execute cycles"
+        ],
+        "cautions": [
+          "Short packs reduce ramp",
+          "Target swaps lose wounds"
+        ],
+        "claim_ids": [
+          "talent:knight-of-xoroth/war:17-45-4-1",
+          "talent:knight-of-xoroth/war:17-45-2-2",
+          "talent:knight-of-xoroth/war:17-45-4-2",
+          "talent:knight-of-xoroth/war:17-45-6-3",
+          "observed:knight-of-xoroth/war:six-stack-priority",
+          "observed:knight-of-xoroth/war:content-finisher-split",
+          "observed:knight-of-xoroth/war:pestilence-choice",
+          "inference:knight-of-xoroth/war:playstyle-identity"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, Mounted Combat, chains and snare tools help connect, but current PvP players say many classes can reapply slows or escape. Hellborn self-healing, Sever and Unleash can be reserved for survival rather than spent automatically.",
+        "strengths": [
+          "2-3k finisher anecdotes",
+          "Anti-heal option"
+        ],
+        "cautions": [
+          "Kiteable",
+          "Must reserve heals"
+        ],
+        "claim_ids": [
+          "talent:knight-of-xoroth/war:17-45-4-1",
+          "talent:knight-of-xoroth/war:17-45-2-2",
+          "talent:knight-of-xoroth/war:17-45-4-2",
+          "talent:knight-of-xoroth/war:17-45-6-3",
+          "observed:knight-of-xoroth/war:six-stack-priority",
+          "observed:knight-of-xoroth/war:content-finisher-split",
+          "observed:knight-of-xoroth/war:pestilence-choice",
+          "inference:knight-of-xoroth/war:playstyle-identity"
+        ]
+      }
+    },
+    "complexity": {
+      "core_actions": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "The core damage bar is compact, but Pestilence, healing reserves and alternate finishers add situational buttons. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "The core damage bar is compact, but Pestilence, healing reserves and alternate finishers add situational buttons. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "The core damage bar is compact, but Pestilence, healing reserves and alternate finishers add situational buttons. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "The core damage bar is compact, but Pestilence, healing reserves and alternate finishers add situational buttons. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "The core damage bar is compact, but Pestilence, healing reserves and alternate finishers add situational buttons. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "The core damage bar is compact, but Pestilence, healing reserves and alternate finishers add situational buttons. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        }
+      },
+      "state_tracking": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Wound stacks, bleeds, Pestilence mode and self-heal availability are the main states. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Wound stacks, bleeds, Pestilence mode and self-heal availability are the main states. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Wound stacks, bleeds, Pestilence mode and self-heal availability are the main states. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Wound stacks, bleeds, Pestilence mode and self-heal availability are the main states. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Wound stacks, bleeds, Pestilence mode and self-heal availability are the main states. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Wound stacks, bleeds, Pestilence mode and self-heal availability are the main states. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "War needs stacks before its named finisher but little ground setup. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "War needs stacks before its named finisher but little ground setup. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "War needs stacks before its named finisher but little ground setup. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "War needs stacks before its named finisher but little ground setup. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "War needs stacks before its named finisher but little ground setup. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "War needs stacks before its named finisher but little ground setup. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "The next spender changes with target lifetime, healer presence and incoming damage. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "The next spender changes with target lifetime, healer presence and incoming damage. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "The next spender changes with target lifetime, healer presence and incoming damage. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "The next spender changes with target lifetime, healer presence and incoming damage. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "The next spender changes with target lifetime, healer presence and incoming damage. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "The next spender changes with target lifetime, healer presence and incoming damage. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Melee uptime and landing Skulltaker at six stacks are the principal execution checks. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Melee uptime and landing Skulltaker at six stacks are the principal execution checks. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Melee uptime and landing Skulltaker at six stacks are the principal execution checks. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Melee uptime and landing Skulltaker at six stacks are the principal execution checks. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Melee uptime and landing Skulltaker at six stacks are the principal execution checks. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Melee uptime and landing Skulltaker at six stacks are the principal execution checks. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        }
+      },
+      "failure_cost": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "A premature finisher or wasted self-heal costs an entire stack cycle. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "A premature finisher or wasted self-heal costs an entire stack cycle. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "A premature finisher or wasted self-heal costs an entire stack cycle. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "A premature finisher or wasted self-heal costs an entire stack cycle. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "A premature finisher or wasted self-heal costs an entire stack cycle. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "A premature finisher or wasted self-heal costs an entire stack cycle. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2",
+            "talent:knight-of-xoroth/war:17-45-4-2",
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You want KoX flavor with the clearest conventional melee loop.",
+          "claim_ids": [
+            "inference:knight-of-xoroth/war:playstyle-identity",
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2"
+          ]
+        },
+        {
+          "text": "You enjoy saving offensive-looking buttons for survival or matchup utility.",
+          "claim_ids": [
+            "inference:knight-of-xoroth/war:playstyle-identity",
+            "talent:knight-of-xoroth/war:17-45-4-1",
+            "talent:knight-of-xoroth/war:17-45-2-2"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You dislike stack builders or melee uptime.",
+          "claim_ids": [
+            "inference:knight-of-xoroth/war:failure-cost",
+            "observed:knight-of-xoroth/war:six-stack-priority"
+          ]
+        },
+        {
+          "text": "You want summons and transformation to dominate the rotation.",
+          "claim_ids": [
+            "inference:knight-of-xoroth/war:failure-cost",
+            "observed:knight-of-xoroth/war:six-stack-priority"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Players praise the dopamine of large Skulltaker crits and report solid PvE and battleground damage.",
+          "claim_ids": [
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "observed:knight-of-xoroth/war:build-practice"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Chains and mounted tools do not fully solve kiting at 60.",
+          "claim_ids": [
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "inference:knight-of-xoroth/war:failure-cost"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "War's positive anecdotes do not settle broader claims that KoX scales poorly after 50.",
+          "claim_ids": [
+            "observed:knight-of-xoroth/war:six-stack-priority",
+            "observed:knight-of-xoroth/war:content-finisher-split",
+            "observed:knight-of-xoroth/war:pestilence-choice",
+            "observed:knight-of-xoroth/war:performance-context"
+          ]
+        }
+      ]
+    },
+    "performance_signal_ids": [
+      "observed:knight-of-xoroth/war:performance-context"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "manual_recent_source_review",
+      "performance": "limited_uncontrolled",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium",
+      "gaps": [
+        "No controlled War priority comparison.",
+        "Exact finisher breakpoints need logs."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "A straightforward wound builder and heavy finisher appears early.",
+      "observed_changes": [
+        "Limited early sustain",
+        "Melee reach"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "A straightforward wound builder and heavy finisher appears early.",
+      "observed_changes": [
+        "Limited early sustain",
+        "Melee reach"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "More Pestilence and survival choices make the priority situational.",
+      "observed_changes": [
+        "Stack economy matters",
+        "Can be slowed"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "More Pestilence and survival choices make the priority situational.",
+      "observed_changes": [
+        "Stack economy matters",
+        "Can be slowed"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "At 60 the core remains readable, but matchup-specific spender and healing decisions deepen it.",
+      "observed_changes": [
+        "Melee dependent",
+        "Builds diverge"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:knight-of-xoroth/war:six-stack-priority",
+      "kind": "observed",
+      "text": "A level-60 War player describes using Gore and related attacks to reach six stacks, then prioritizing Skulltaker, especially in short PvP fights.",
+      "source_ids": [
+        "reddit:kox-question-2026-07-11"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:knight-of-xoroth/war:content-finisher-split",
+      "kind": "observed",
+      "text": "The same player largely reserves Meatsaw for PvE and saves Sever or Unleash for healing in PvP, demonstrating content-specific priorities.",
+      "source_ids": [
+        "reddit:kox-question-2026-07-11"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:knight-of-xoroth/war:pestilence-choice",
+      "kind": "observed",
+      "text": "Current advice normally uses the healing Pestilence but swaps to the death or healing-absorb option against healers and Cultists.",
+      "source_ids": [
+        "reddit:kox-question-2026-07-11"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:knight-of-xoroth/war:build-practice",
+      "kind": "observed",
+      "text": "The captured single-target boss build confirms a dedicated durable-target War setup rather than the PvP-only Skulltaker priority.",
+      "source_ids": [
+        "buildhub-builds-2026-08-05",
+        "buildhub:16aefab4-2a88-41af-8656-8aa348c8c19e"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "community_build_snapshot"
+        ],
+        "build_or_mode": [
+          "documented_build"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The guide documents one current way to play; it is not treated as proof of optimality."
+    },
+    {
+      "id": "observed:knight-of-xoroth/war:performance-context",
+      "kind": "observed",
+      "text": "The July list reports 4,198 DPS and 209 Mythic records; neither controls gear or encounter.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "uncontrolled_performance_signals"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "low",
+      "conflicts_with": [],
+      "notes": "Do not convert this into a tier ranking."
+    },
+    {
+      "id": "inference:knight-of-xoroth/war:playstyle-identity",
+      "kind": "inference",
+      "text": "A two-handed demonic executioner who stacks wounds with Gore and Mutilation, changes Pestilence for the matchup, and cashes six stacks into Skulltaker.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:knight-of-xoroth/war:17-45-4-1",
+        "talent:knight-of-xoroth/war:17-45-2-2",
+        "talent:knight-of-xoroth/war:17-45-4-2",
+        "talent:knight-of-xoroth/war:17-45-6-3",
+        "observed:knight-of-xoroth/war:six-stack-priority",
+        "observed:knight-of-xoroth/war:content-finisher-split"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Descriptive playstyle classification, not an official label."
+    },
+    {
+      "id": "inference:knight-of-xoroth/war:failure-cost",
+      "kind": "inference",
+      "text": "Spending stacks on the wrong finisher loses either immediate kill pressure or durable-target value.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:knight-of-xoroth/war:17-45-4-1",
+        "talent:knight-of-xoroth/war:17-45-2-2",
+        "talent:knight-of-xoroth/war:17-45-4-2",
+        "talent:knight-of-xoroth/war:17-45-6-3",
+        "talent:knight-of-xoroth/war:17-45-5-6",
+        "observed:knight-of-xoroth/war:six-stack-priority",
+        "observed:knight-of-xoroth/war:content-finisher-split",
+        "observed:knight-of-xoroth/war:pestilence-choice"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Direction is supported; exact throughput cost is not measured."
+    }
+  ]
+}

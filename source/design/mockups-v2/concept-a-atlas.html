@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Concept A — Playstyle Atlas · CoA mockups v2</title>
+<link rel="stylesheet" href="shared/base.css">
+<style>
+  .family { margin: 46px 0 0; scroll-margin-top: 80px; }
+  .family-head { padding: 20px 24px; border: 1px solid var(--line); border-radius: var(--radius); background: linear-gradient(105deg,#141826,#10131a 65%); }
+  .family-head h2 { margin: 2px 0 6px; font-size: clamp(24px,3vw,34px); letter-spacing: -.035em; }
+  .family-head .tagline { margin: 0; color: #a0a8b6; font-size: 14px; }
+  .family-head .feels { max-width: 900px; margin: 10px 0 0; color: var(--muted); font-size: 13px; }
+  .shelf { display: grid; grid-template-columns: repeat(auto-fill,minmax(280px,1fr)); gap: 12px; margin-top: 12px; }
+  .spec-mini { cursor: pointer; }
+  .mini-traits { display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0 0; color: var(--dim); font-size: 10px; }
+  .mini-traits span { display: inline-flex; align-items: center; gap: 5px; }
+  .mini-foot { display: flex; justify-content: space-between; align-items: center; margin-top: 13px; padding-top: 11px; border-top: 1px solid var(--line-soft); }
+  .family-nav { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 20px; }
+  .compare-view { display: grid; gap: 0; overflow-x: auto; }
+  .cmp-grid { display: grid; min-width: 560px; }
+  .cmp-grid > div { padding: 9px 12px; border-bottom: 1px solid var(--line-soft); font-size: 12.5px; }
+  .cmp-rowlabel { color: var(--dim); font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; align-self: center; }
+  .cmp-head { font-weight: 850; font-size: 15px !important; }
+  .unprofiled { margin-top: 46px; border: 1px dashed var(--line); border-radius: var(--radius); padding: 20px 24px; color: var(--dim); font-size: 13px; }
+</style>
+</head>
+<body>
+<header class="mock-topbar">
+  <a class="logo" href="index.html"><span>COA</span> Playstyle Atlas</a>
+  <span class="mock-badge">Concept A · Mockup</span>
+  <a class="back" href="index.html">← Back to mockup hub</a>
+</header>
+
+<main class="wrap">
+  <section style="padding:46px 0 8px">
+    <p class="eyebrow">Concept A · Atlas first, tray second</p>
+    <h1 class="page-title">Find specs by how they <span style="color:var(--gold)">feel.</span></h1>
+    <p class="page-copy">Six feel-families group specs by temperament, not by class or role.
+      Read the family that sounds like you, open a spec for the full profile, and add up to three to the tray to compare.</p>
+    <div class="family-nav" id="familyNav"></div>
+  </section>
+
+  <div id="shelves"></div>
+
+  <section class="unprofiled">
+    <strong style="color:var(--muted)">Prototype coverage:</strong> 12 of 70 specs are deeply profiled here.
+    In production every spec joins exactly one primary family, with a "also fits" cross-link when it straddles two.
+    Family membership is an editorial inference and is labeled as such.
+  </section>
+
+  <section class="concept-notes">
+    <h2>About this concept</h2>
+    <div class="notes-grid">
+      <div class="note-card"><h3>Decision flow</h3>
+        <p>Recognize yourself in a family → browse that shelf → open spec profiles → shortlist up to three in the tray → compare side by side → follow the evidence links out.</p></div>
+      <div class="note-card"><h3>What it does best</h3>
+        <p>Cold-start discovery by temperament. A player who knows "I like planning, I hate being punished" lands in the right neighborhood in one scroll, without knowing any CoA vocabulary.</p></div>
+      <div class="note-card"><h3>Main tradeoff</h3>
+        <p>The families are themselves our inference. Specs that straddle groups (Farstrider is both commander and strategist) get flattened into one shelf, and comparison is a second step rather than the default view.</p></div>
+      <div class="note-card"><h3>Still needs research</h3>
+        <ul><li>Validate family assignments against more player reports.</li>
+        <li>Decide primary family for all 58 unprofiled specs.</li>
+        <li>Test whether six families is the right count.</li></ul></div>
+    </div>
+  </section>
+</main>
+
+<div class="tray" id="tray" hidden>
+  <span class="tray-label">Compare</span>
+  <div class="tray-slots" id="traySlots"></div>
+  <button class="btn btn-gold" id="compareBtn" disabled>Compare</button>
+</div>
+
+<dialog class="mock-dialog" id="specDialog">
+  <button class="dlg-close" id="specClose" aria-label="Close">×</button>
+  <div id="specBody"></div>
+</dialog>
+
+<dialog class="mock-dialog" id="cmpDialog" style="width:min(1050px,calc(100vw - 24px))">
+  <button class="dlg-close" id="cmpClose" aria-label="Close">×</button>
+  <div style="padding:28px 30px" id="cmpBody"></div>
+</dialog>
+
+<script src="shared/profiles.js"></script>
+<script src="shared/render.js"></script>
+<script>
+(() => {
+  "use strict";
+  const { P, esc, srcBadge, facetRow, detailHTML, makeTray, TRAIT_NAMES, FACET_NAMES } = MockUI;
+
+  const el = id => document.getElementById(id);
+
+  function miniCard(spec) {
+    const t = spec.traits;
+    return `<article class="p-card spec-mini" style="--accent:${spec.color}" data-open="${spec.id}" tabindex="0" role="button">
+      <div style="display:flex;justify-content:space-between;gap:10px;align-items:start">
+        <div><div class="p-kicker">${esc(spec.klass)}</div><h3>${esc(spec.name)}</h3></div>
+        <span class="pill pill-accent">${esc(spec.role)}</span>
+      </div>
+      <p class="p-oneliner">${esc(spec.oneLiner)}</p>
+      <div class="mini-traits">
+        <span>PACE ${MockUI.meter5(t.pace.v)}</span>
+        <span>SETUP ${MockUI.meter5(t.setup.v)}</span>
+        <span>PUNISH ${MockUI.meter5(spec.complexity.punishment.v)}</span>
+      </div>
+      <div class="mini-foot">
+        <span style="color:var(--dim);font-size:11px">${spec.evidence.builds ? spec.evidence.builds + " recent builds" : "no builds captured"}</span>
+        <button class="btn" data-tray="${spec.id}">+ Compare</button>
+      </div>
+    </article>`;
+  }
+
+  function render() {
+    el("familyNav").innerHTML = P.families.map(f =>
+      `<a class="pill" style="text-decoration:none" href="#fam-${f.id}">${esc(f.name)}</a>`).join("");
+    el("shelves").innerHTML = P.families.map(f => `
+      <section class="family" id="fam-${f.id}">
+        <header class="family-head">
+          <div class="p-kicker" style="color:var(--gold)">${f.specIds.length} of ${P.totalSpecs} specs profiled here ${srcBadge("inference")}</div>
+          <h2>${esc(f.name)}</h2>
+          <p class="tagline">${esc(f.tagline)}</p>
+          <p class="feels">${esc(f.feels)}</p>
+        </header>
+        <div class="shelf">${f.specIds.map(id => miniCard(P.specs[id])).join("")}</div>
+      </section>`).join("");
+  }
+
+  const tray = makeTray(ids => {
+    el("tray").hidden = ids.length === 0;
+    el("traySlots").innerHTML = ids.map(id => {
+      const s = P.specs[id];
+      return `<span class="tray-chip" style="--accent:${s.color}">${esc(s.name)}<button data-remove="${id}" aria-label="Remove">×</button></span>`;
+    }).join("") || `<span class="tray-empty">Pick up to three specs</span>`;
+    el("compareBtn").disabled = ids.length < 2;
+    el("compareBtn").textContent = ids.length < 2 ? "Compare" : `Compare ${ids.length}`;
+  });
+
+  function compareHTML(ids) {
+    const specs = ids.map(id => P.specs[id]);
+    const cols = `140px repeat(${specs.length},minmax(150px,1fr))`;
+    const row = (label, cells) =>
+      `<div class="cmp-rowlabel">${esc(label)}</div>` + cells.join("");
+    let html = `<h2 style="margin:0 0 4px;font-size:26px;letter-spacing:-.03em">Side by side</h2>
+      <p style="color:var(--dim);font-size:12px;margin:0 0 18px">Descriptive positions, not rankings. Hover any evidence tag for its meaning.</p>
+      <div class="compare-view"><div class="cmp-grid" style="grid-template-columns:${cols}">`;
+    html += row("", specs.map(s => `<div class="cmp-head" style="color:${s.color}">${esc(s.name)}<br><span style="font-size:10px;color:var(--dim);font-weight:600">${esc(s.klass)} · ${esc(s.role)}</span></div>`));
+    html += row("Feels like", specs.map(s => `<div style="color:var(--muted)">${esc(s.oneLiner)}</div>`));
+    for (const [k, label] of Object.entries(TRAIT_NAMES))
+      html += row(label, specs.map(s => `<div style="--accent:${s.color}">${MockUI.meter5(s.traits[k].v)} ${srcBadge(s.traits[k].s)}</div>`));
+    for (const [k, label] of Object.entries(FACET_NAMES))
+      html += row("Cx: " + label, specs.map(s => `<div style="--accent:${s.color}">${MockUI.meter5(s.complexity[k].v)} ${srcBadge(s.complexity[k].s)}</div>`));
+    html += row("Higher levels", specs.map(s => `<div style="color:var(--muted);font-size:11.5px">${esc(s.shift.t)} ${srcBadge(s.shift.s)}</div>`));
+    html += row("Evidence", specs.map(s => `<div style="font-size:11.5px;color:var(--muted)">${s.evidence.builds ? s.evidence.builds + ` builds · <a style="color:var(--gold)" target="_blank" rel="noreferrer" href="${esc(s.evidence.topUrl)}">top build ↗</a>` : "no builds captured"}</div>`));
+    html += row("Video", specs.map(s => `<div style="font-size:11.5px;color:var(--dim)">${s.video === null ? "None verified — honest gap" : "verified"}</div>`));
+    html += `</div></div>`;
+    return html;
+  }
+
+  document.addEventListener("click", e => {
+    const trayBtn = e.target.closest("[data-tray]");
+    if (trayBtn) { e.stopPropagation(); tray.toggle(trayBtn.dataset.tray); return; }
+    const rm = e.target.closest("[data-remove]");
+    if (rm) { tray.remove(rm.dataset.remove); return; }
+    const card = e.target.closest("[data-open]");
+    if (card) { el("specBody").innerHTML = detailHTML(P.specs[card.dataset.open]); el("specDialog").showModal(); }
+  });
+  el("compareBtn").addEventListener("click", () => {
+    el("cmpBody").innerHTML = compareHTML(tray.ids);
+    el("cmpDialog").showModal();
+  });
+  el("specClose").addEventListener("click", () => el("specDialog").close());
+  el("cmpClose").addEventListener("click", () => el("cmpDialog").close());
+  for (const d of ["specDialog","cmpDialog"])
+    el(d).addEventListener("click", e => { if (e.target === el(d)) el(d).close(); });
+
+  render();
+})();
+</script>
+</body>
+</html>

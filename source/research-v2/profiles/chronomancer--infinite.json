@@ -1,0 +1,1509 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "chronomancer/infinite",
+    "class": "Chronomancer",
+    "name": "Infinite",
+    "roles": [
+      "Damage"
+    ],
+    "range": [
+      "Ranged"
+    ]
+  },
+  "identity": {
+    "fantasy": "",
+    "one_line": "Timerend and other periodic effects constantly reduce the remaining cooldowns of damaging spells. The spec stacks Mind Melt, triggers Anomaly Spikes and Chromatic Shards, and enters Incarnation of Chaos for a volatile burst phase. Recent players describe it as almost entirely DoT-based and note that late talents materially change its form loop.",
+    "primary_family": "",
+    "also_fits": [],
+    "claim_ids": [
+      "talent:chronomancer/infinite:22-56-4-0",
+      "talent:chronomancer/infinite:22-56-10-0",
+      "talent:chronomancer/infinite:22-56-4-1",
+      "talent:chronomancer/infinite:22-56-2-2",
+      "talent:chronomancer/infinite:22-56-6-2",
+      "talent:chronomancer/infinite:22-56-10-2",
+      "talent:chronomancer/infinite:22-56-1-3",
+      "talent:chronomancer/infinite:22-56-3-3",
+      "talent:chronomancer/infinite:22-56-5-3",
+      "talent:chronomancer/infinite:22-56-7-3",
+      "talent:chronomancer/infinite:22-56-0-4",
+      "talent:chronomancer/infinite:22-56-2-4",
+      "talent:chronomancer/infinite:22-56-4-4",
+      "talent:chronomancer/infinite:22-56-6-4",
+      "talent:chronomancer/infinite:22-56-8-4",
+      "talent:chronomancer/infinite:22-56-10-4",
+      "talent:chronomancer/infinite:22-56-1-5",
+      "talent:chronomancer/infinite:22-56-4-5",
+      "talent:chronomancer/infinite:22-56-7-5",
+      "talent:chronomancer/infinite:22-56-0-6",
+      "talent:chronomancer/infinite:22-56-1-6a",
+      "talent:chronomancer/infinite:22-56-1-6b",
+      "talent:chronomancer/infinite:22-56-2-6",
+      "talent:chronomancer/infinite:22-56-4-6",
+      "talent:chronomancer/infinite:22-56-6-6",
+      "talent:chronomancer/infinite:22-56-7-6a",
+      "talent:chronomancer/infinite:22-56-7-6b",
+      "talent:chronomancer/infinite:22-56-8-6",
+      "talent:chronomancer/infinite:22-56-10-6",
+      "talent:chronomancer/infinite:22-56-1-7",
+      "talent:chronomancer/infinite:22-56-3-7",
+      "talent:chronomancer/infinite:22-56-5-7",
+      "talent:chronomancer/infinite:22-56-7-7",
+      "talent:chronomancer/infinite:22-56-3-8",
+      "talent:chronomancer/infinite:22-56-5-8",
+      "talent:chronomancer/infinite:22-56-10-8",
+      "talent:chronomancer/infinite:22-56-2-9",
+      "talent:chronomancer/infinite:22-56-4-9",
+      "talent:chronomancer/infinite:22-56-6-9"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "Timerend and other periodic effects constantly reduce the remaining cooldowns of damaging spells. The spec stacks Mind Melt, triggers Anomaly Spikes and Chromatic Shards, and enters Incarnation of Chaos for a volatile burst phase. Recent players describe it as almost entirely DoT-based and note that late talents materially change its form loop.",
+    "resources": [],
+    "builders": [
+      {
+        "name": "Infinite Horizon",
+        "claim_ids": [
+          "talent:chronomancer/infinite:22-56-5-7"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Warpstriker",
+        "claim_ids": [
+          "talent:chronomancer/infinite:22-56-5-3"
+        ]
+      },
+      {
+        "name": "Pure Chaos",
+        "claim_ids": [
+          "talent:chronomancer/infinite:22-56-1-6b"
+        ]
+      },
+      {
+        "name": "Paradox",
+        "claim_ids": [
+          "talent:chronomancer/infinite:22-56-2-6"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Mind Melt",
+        "claim_ids": [
+          "talent:chronomancer/infinite:22-56-6-2"
+        ]
+      },
+      {
+        "name": "Chronological",
+        "claim_ids": [
+          "talent:chronomancer/infinite:22-56-7-3"
+        ]
+      },
+      {
+        "name": "Chaos Fusion",
+        "claim_ids": [
+          "talent:chronomancer/infinite:22-56-1-6a"
+        ]
+      },
+      {
+        "name": "Pure Chaos",
+        "claim_ids": [
+          "talent:chronomancer/infinite:22-56-1-6b"
+        ]
+      },
+      {
+        "name": "Paradox",
+        "claim_ids": [
+          "talent:chronomancer/infinite:22-56-2-6"
+        ]
+      },
+      {
+        "name": "Slipstream",
+        "claim_ids": [
+          "talent:chronomancer/infinite:22-56-4-6"
+        ]
+      },
+      {
+        "name": "Chaotic Time",
+        "claim_ids": [
+          "talent:chronomancer/infinite:22-56-4-9"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Timerend",
+        "claim_ids": [
+          "talent:chronomancer/infinite:22-56-4-0"
+        ],
+        "structural_description": "Transform: s your Wand of Time into Timerend.TimerendRend the fabric of time, dealing 36 Chromatic Damage over 6 seconds."
+      },
+      {
+        "name": "Chromatic Shard",
+        "claim_ids": [
+          "talent:chronomancer/infinite:22-56-1-3"
+        ],
+        "structural_description": "Fling a shard of chaos at an enemy, dealing 209 + 150% SP Chromatic Damage, piercing immunities and resistances.Dealing damage with Anomaly Spikes reduces the cast time of this ability by -10% for 30 seconds, stacking 10 times."
+      },
+      {
+        "name": "Incarnation of Chaos",
+        "claim_ids": [
+          "talent:chronomancer/infinite:22-56-1-5"
+        ],
+        "structural_description": "Transform: into an Incarnate of Chaos, instantly resetting the cooldown of Chromatic Shard and causing your next cast to not incur a cooldown.In addition, your damage dealt is increased by 15% for 15 seconds."
+      }
+    ],
+    "single_target": "",
+    "aoe": "",
+    "movement_and_target_switching": "",
+    "defense_and_control": "",
+    "group_utility": "",
+    "failure_modes": [],
+    "claim_ids": [
+      "talent:chronomancer/infinite:22-56-4-0",
+      "talent:chronomancer/infinite:22-56-10-0",
+      "talent:chronomancer/infinite:22-56-4-1",
+      "talent:chronomancer/infinite:22-56-2-2",
+      "talent:chronomancer/infinite:22-56-6-2",
+      "talent:chronomancer/infinite:22-56-10-2",
+      "talent:chronomancer/infinite:22-56-1-3",
+      "talent:chronomancer/infinite:22-56-3-3",
+      "talent:chronomancer/infinite:22-56-5-3",
+      "talent:chronomancer/infinite:22-56-7-3",
+      "talent:chronomancer/infinite:22-56-0-4",
+      "talent:chronomancer/infinite:22-56-2-4",
+      "talent:chronomancer/infinite:22-56-4-4",
+      "talent:chronomancer/infinite:22-56-6-4",
+      "talent:chronomancer/infinite:22-56-8-4",
+      "talent:chronomancer/infinite:22-56-10-4",
+      "talent:chronomancer/infinite:22-56-1-5",
+      "talent:chronomancer/infinite:22-56-4-5",
+      "talent:chronomancer/infinite:22-56-7-5",
+      "talent:chronomancer/infinite:22-56-0-6",
+      "talent:chronomancer/infinite:22-56-1-6a",
+      "talent:chronomancer/infinite:22-56-1-6b",
+      "talent:chronomancer/infinite:22-56-2-6",
+      "talent:chronomancer/infinite:22-56-4-6",
+      "talent:chronomancer/infinite:22-56-6-6",
+      "talent:chronomancer/infinite:22-56-7-6a",
+      "talent:chronomancer/infinite:22-56-7-6b",
+      "talent:chronomancer/infinite:22-56-8-6",
+      "talent:chronomancer/infinite:22-56-10-6",
+      "talent:chronomancer/infinite:22-56-1-7",
+      "talent:chronomancer/infinite:22-56-3-7",
+      "talent:chronomancer/infinite:22-56-5-7",
+      "talent:chronomancer/infinite:22-56-7-7",
+      "talent:chronomancer/infinite:22-56-3-8",
+      "talent:chronomancer/infinite:22-56-5-8",
+      "talent:chronomancer/infinite:22-56-10-8",
+      "talent:chronomancer/infinite:22-56-2-9",
+      "talent:chronomancer/infinite:22-56-4-9",
+      "talent:chronomancer/infinite:22-56-6-9"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Timerend",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-0"
+          ]
+        },
+        {
+          "name": "Infinite Power",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-10-0"
+          ]
+        },
+        {
+          "name": "Melt Reality",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-1"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:chronomancer/infinite:22-56-4-0",
+        "talent:chronomancer/infinite:22-56-10-0",
+        "talent:chronomancer/infinite:22-56-4-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Anomaly Spikes",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-2-2"
+          ]
+        },
+        {
+          "name": "Mind Melt",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-6-2"
+          ]
+        },
+        {
+          "name": "Gift of the Infinite Dragonflight",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-10-2"
+          ]
+        },
+        {
+          "name": "Chromatic Shard",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-1-3"
+          ]
+        },
+        {
+          "name": "Deconstruction",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-3-3"
+          ]
+        },
+        {
+          "name": "Warpstriker",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-5-3"
+          ]
+        },
+        {
+          "name": "Chronological",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-7-3"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:chronomancer/infinite:22-56-2-2",
+        "talent:chronomancer/infinite:22-56-6-2",
+        "talent:chronomancer/infinite:22-56-10-2",
+        "talent:chronomancer/infinite:22-56-1-3",
+        "talent:chronomancer/infinite:22-56-3-3",
+        "talent:chronomancer/infinite:22-56-5-3",
+        "talent:chronomancer/infinite:22-56-7-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Unearthed Power",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-0-4"
+          ]
+        },
+        {
+          "name": "Time Means Nothing",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-2-4"
+          ]
+        },
+        {
+          "name": "Hourglass of Eternity",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-4"
+          ]
+        },
+        {
+          "name": "Excruciating Discord",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-6-4"
+          ]
+        },
+        {
+          "name": "Timelost Power",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-8-4"
+          ]
+        },
+        {
+          "name": "Warping Reality",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-10-4"
+          ]
+        },
+        {
+          "name": "Incarnation of Chaos",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-1-5"
+          ]
+        },
+        {
+          "name": "Infinity Crash",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-5"
+          ]
+        },
+        {
+          "name": "Destabilize Time",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-7-5"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:chronomancer/infinite:22-56-0-4",
+        "talent:chronomancer/infinite:22-56-2-4",
+        "talent:chronomancer/infinite:22-56-4-4",
+        "talent:chronomancer/infinite:22-56-6-4",
+        "talent:chronomancer/infinite:22-56-8-4",
+        "talent:chronomancer/infinite:22-56-10-4",
+        "talent:chronomancer/infinite:22-56-1-5",
+        "talent:chronomancer/infinite:22-56-4-5",
+        "talent:chronomancer/infinite:22-56-7-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Black Hole",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-0-6"
+          ]
+        },
+        {
+          "name": "Chaos Fusion",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-1-6a"
+          ]
+        },
+        {
+          "name": "Pure Chaos",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-1-6b"
+          ]
+        },
+        {
+          "name": "Paradox",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-2-6"
+          ]
+        },
+        {
+          "name": "Slipstream",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-6"
+          ]
+        },
+        {
+          "name": "Gift of the Timeways",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-6-6"
+          ]
+        },
+        {
+          "name": "Eternity",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-7-6a"
+          ]
+        },
+        {
+          "name": "End of Time",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-7-6b"
+          ]
+        },
+        {
+          "name": "Distorted Time",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-8-6"
+          ]
+        },
+        {
+          "name": "Infinite Guard",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-10-6"
+          ]
+        },
+        {
+          "name": "Shifting Chaos",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-1-7"
+          ]
+        },
+        {
+          "name": "Crown of Power",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-3-7"
+          ]
+        },
+        {
+          "name": "Infinite Horizon",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-5-7"
+          ]
+        },
+        {
+          "name": "Magic Erosion",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-7-7"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:chronomancer/infinite:22-56-0-6",
+        "talent:chronomancer/infinite:22-56-1-6a",
+        "talent:chronomancer/infinite:22-56-1-6b",
+        "talent:chronomancer/infinite:22-56-2-6",
+        "talent:chronomancer/infinite:22-56-4-6",
+        "talent:chronomancer/infinite:22-56-6-6",
+        "talent:chronomancer/infinite:22-56-7-6a",
+        "talent:chronomancer/infinite:22-56-7-6b",
+        "talent:chronomancer/infinite:22-56-8-6",
+        "talent:chronomancer/infinite:22-56-10-6",
+        "talent:chronomancer/infinite:22-56-1-7",
+        "talent:chronomancer/infinite:22-56-3-7",
+        "talent:chronomancer/infinite:22-56-5-7",
+        "talent:chronomancer/infinite:22-56-7-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Erasion",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-3-8"
+          ]
+        },
+        {
+          "name": "Aeon Rend",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-5-8"
+          ]
+        },
+        {
+          "name": "End of Time",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-10-8"
+          ]
+        },
+        {
+          "name": "Null Orbs",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-2-9"
+          ]
+        },
+        {
+          "name": "Chaotic Time",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-4-9"
+          ]
+        },
+        {
+          "name": "Infinite Keeper",
+          "claim_ids": [
+            "talent:chronomancer/infinite:22-56-6-9"
+          ]
+        }
+      ],
+      "observed_loop": "",
+      "observed_changes": [],
+      "claim_ids": [
+        "talent:chronomancer/infinite:22-56-3-8",
+        "talent:chronomancer/infinite:22-56-5-8",
+        "talent:chronomancer/infinite:22-56-10-8",
+        "talent:chronomancer/infinite:22-56-2-9",
+        "talent:chronomancer/infinite:22-56-4-9",
+        "talent:chronomancer/infinite:22-56-6-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "leveling_30_49": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "level_50_60": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "boss": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "dungeon_aoe": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    },
+    "pvp": {
+      "feel": "",
+      "strengths": [],
+      "cautions": [],
+      "claim_ids": []
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [],
+    "avoid_if": []
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [],
+  "sentiment": {
+    "praise": [],
+    "frustrations": [],
+    "contested": []
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 1,
+    "latest_update": "2026-07-21T17:19:53.686244+00:00",
+    "top_title": "Chronomancer Inf - PVE leveling to M+",
+    "top_url": "https://coabuildhub.com/build/eb1748d8-859e-4a72-8b91-f89d5aa258c5",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:eb1748d8-859e-4a72-8b91-f89d5aa258c5"
+    ]
+  },
+  "coverage": {
+    "mechanical": "structural_baseline",
+    "community": "indexed",
+    "performance": "missing",
+    "video": "missing",
+    "overall_confidence": "low",
+    "gaps": [
+      "Effective core loop needs recent guide or player cross-check.",
+      "Contextual complexity values are not yet researched.",
+      "Recent performance, sentiment, issues, and video evidence are not yet reconciled."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:chronomancer/infinite:22-56-4-0",
+      "kind": "structural",
+      "text": "Timerend: Transform: s your Wand of Time into Timerend.TimerendRend the fabric of time, dealing 36 Chromatic Damage over 6 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-10-0",
+      "kind": "structural",
+      "text": "Infinite Power: Level 10 PassiveCasting damaging spells now reduces your damaging spell cooldowns by 10% of their remaining cooldown.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-4-1",
+      "kind": "structural",
+      "text": "Melt Reality: Melt the target's reality, dealing cond(gt(SPFR, SPS), 48+0+SPFR*0.23, 48+0+SPS*0.23) Chromatic Damage every 3 sec for 30 seconds.While active, periodic damage dealt to the target is replicated for 20% of the value to all enemies near them.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-2-2",
+      "kind": "structural",
+      "text": "Anomaly Spikes: Periodic damage dealt now has a 8% chance to launch an Anomaly Spike at your target.Anomaly SpikeDeals cond(gt(SPA, SPS), 161*1+SPA*0.25, 161*1+SPS*0.25) Chromatic Damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-6-2",
+      "kind": "structural",
+      "text": "Mind Melt: Damage dealt by Melt Reality now also reduces the target's primary attributes by -3% for 15 sec, stacking 5 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-10-2",
+      "kind": "structural",
+      "text": "Gift of the Infinite Dragonflight: Level 20 PassiveIncreases your spell damage by 40% of your Spirit and your spell hit rating by 3% of your Spirit.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-1-3",
+      "kind": "structural",
+      "text": "Chromatic Shard: Fling a shard of chaos at an enemy, dealing 209 + 150% SP Chromatic Damage, piercing immunities and resistances.Dealing damage with Anomaly Spikes reduces the cast time of this ability by -10% for 30 seconds, stacking 10 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-3-3",
+      "kind": "structural",
+      "text": "Deconstruction: Increases the critical strike chance of Unmake by 5%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-5-3",
+      "kind": "structural",
+      "text": "Warpstriker: Reduces the cost of your spells by -5% and the chance for your spells to be dispelled by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-7-3",
+      "kind": "structural",
+      "text": "Chronological: Every 20 sec, your next Discordance within 10 seconds is instant cast.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-0-4",
+      "kind": "structural",
+      "text": "Unearthed Power: Damage dealt by Anomaly Spikes now also increases your damage and critical strike chance with Chromatic Shard by 6% per stack.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-2-4",
+      "kind": "structural",
+      "text": "Time Means Nothing: Damage dealt by Chromatic Shard now increases the target's spell damage taken by 10% for 30 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-4-4",
+      "kind": "structural",
+      "text": "Hourglass of Eternity: Periodic damage dealt now has a 5% chance to grant you 25% increased haste for 5 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-6-4",
+      "kind": "structural",
+      "text": "Excruciating Discord: Your Discordances used with Chronological are now guaranteed to critically strike.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-8-4",
+      "kind": "structural",
+      "text": "Timelost Power: Your Discordance now strikes 3 additional enemies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-10-4",
+      "kind": "structural",
+      "text": "Warping Reality: Level 30 PassiveCasting Waves of Time now grants you Warped Reality for 10 seconds.Warped Reality (Proc)Allows you to cast Unmake and Melt Reality while moving for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-1-5",
+      "kind": "structural",
+      "text": "Incarnation of Chaos: Transform: into an Incarnate of Chaos, instantly resetting the cooldown of Chromatic Shard and causing your next cast to not incur a cooldown.In addition, your damage dealt is increased by 15% for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-4-5",
+      "kind": "structural",
+      "text": "Infinity Crash: Increases the critical damage of Discordance and Chromatic Shard by 50%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-7-5",
+      "kind": "structural",
+      "text": "Destabilize Time: Reduces enemy casting speed by -10% for 20 seconds, increasing by -10% every time they cast.Gaining stacks does not extend the duration of the spell.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-0-6",
+      "kind": "structural",
+      "text": "Black Hole: Increases the damage of Chromatic Shard, Melt Reality and Unmake by 15% against slowed enemies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-1-6a",
+      "kind": "structural",
+      "text": "Chaos Fusion: While Incarnation of Chaos is active, you may now cast Chromatic Shard while moving, but the duration of Incarnation of Chaos is reduced by -3 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-1-6b",
+      "kind": "structural",
+      "text": "Pure Chaos: While Incarnation of Chaos is active, all damage dealt now has a 10% chance to lock yourself in a time loop for 3 seconds, making you unable to cast any spells other than Chromatic Shard.While active, you cast Chromatic Shard free of cost, repeating every 1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-2-6",
+      "kind": "structural",
+      "text": "Paradox: Casting Melt Reality now causes your next Unmake or Reverse Wound within 6 seconds to become instant and cost -50% less mana.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-4-6",
+      "kind": "structural",
+      "text": "Slipstream: Target an enemy and slip them into a pocket dimension for 5 seconds, banishing them and making them immune to damage.Activate this ability again before the duration expires to choose a new location to place that enemy within 20 yds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-6-6",
+      "kind": "structural",
+      "text": "Gift of the Timeways: Casting Melt Reality now causes your Timerend and Unmake's periodic damage to benefit from haste for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-7-6a",
+      "kind": "structural",
+      "text": "Eternity: Your Clasp of Infinity now increases your damage dealt to the target by 15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-7-6b",
+      "kind": "structural",
+      "text": "End of Time: At the end of the duration of Clasp of Infinity, you launch an Anomaly Spike at affected enemies and their damage dealt is reduced by -10% for 4 seconds.Anomaly SpikeDeals cond(gt(SPA, SPS), 161*1+SPA*0.25, 161*1+SPS*0.25) Chromatic Damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-8-6",
+      "kind": "structural",
+      "text": "Distorted Time: Reduces the cooldown of Timerend by -2 sec and increases the duration of Decomposition by 3 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-10-6",
+      "kind": "structural",
+      "text": "Infinite Guard: Level 40 PassiveIncreases the effectiveness of your Temporal Resilience, Temporal Swiftness, and Temporal Restoration spells by 100%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-1-7",
+      "kind": "structural",
+      "text": "Shifting Chaos: Your Chromatic Shard and Anomaly Spikes now deal an additional 20% their damage dealt as Chromatic Damage all nearby enemies.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-3-7",
+      "kind": "structural",
+      "text": "Crown of Power: Increases the tick rate of Melt Reality by -25%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-5-7",
+      "kind": "structural",
+      "text": "Infinite Horizon: Increases the all damage dealt by party and raid members by 3%. Does not stack with similar effects.In addition, your Unmake and Timerend gain an additional 20% bonus spell scaling.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-7-7",
+      "kind": "structural",
+      "text": "Magic Erosion: Your Decomposition now applies Magic Erosion to the target, increasing attackers chance to hit the target with spells by 3% for 30 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-3-8",
+      "kind": "structural",
+      "text": "Erasion: Increases the chance to trigger Anomaly Spikes by 5% and their damage by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-5-8",
+      "kind": "structural",
+      "text": "Aeon Rend: Your Chromatic Shard now has a 25% chance to strike again and incur no cooldown.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-10-8",
+      "kind": "structural",
+      "text": "End of Time: Level 50 PassiveMind Melt now also increases the target's periodic damage taken from you by 6% per stack.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-2-9",
+      "kind": "structural",
+      "text": "Null Orbs: Periodic critical damage dealt now has a 20% chance to grant Null Orbs for 15 seconds.Null Orbs (Proc)Increases the critical damage of Chromatic Shard and Anomaly Spikes based on your spell critical strike rating.Critically striking with Chromatic Shard removes your Null Orbs.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-4-9",
+      "kind": "structural",
+      "text": "Chaotic Time: While Incarnation of Chaos is active, your Melt Reality deals 30% increased damage and replicates an additional 20% In addition, periodic damage dealt now has a 5% chance to reduce the cooldown of Incarnation of Chaos by -1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:chronomancer/infinite:22-56-6-9",
+      "kind": "structural",
+      "text": "Infinite Keeper: Using Unmake on an enemy affected by your Timerend now causes the enemy to erupt in a vortex of sand, dealing 81 Chromatic Damage every 1 sec to up to 8 enemies for 6 seconds in an 8 yd radius.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    }
+  ]
+}

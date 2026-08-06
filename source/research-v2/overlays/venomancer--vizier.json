@@ -1,0 +1,898 @@
+{
+  "baseline": "venomancer--vizier.json",
+  "set": {
+    "identity": {
+      "fantasy": "A poison-to-medicine healer who builds Mycelial and Mist networks, extracts harmful effects, and enters Vizier Form for sustained recovery.",
+      "primary_family": "strategists",
+      "also_fits": [
+        "planners"
+      ],
+      "playstyle_tags": [
+        "hot-network-healer",
+        "form-healer",
+        "poison-conversion-healer"
+      ],
+      "one_line": "A poison-to-medicine healer who builds Mycelial and Mist networks, extracts harmful effects, and enters Vizier Form for sustained recovery. The defining decision is contextual: Triage, dispels, mana, and form timing continually change priorities.",
+      "claim_ids": [
+        "talent:venomancer/vizier:29-92-4-0",
+        "talent:venomancer/vizier:29-92-10-0",
+        "talent:venomancer/vizier:29-92-4-1",
+        "talent:venomancer/vizier:29-92-2-9",
+        "observed:venomancer/vizier:community-practice",
+        "observed:venomancer/vizier:sentiment-context",
+        "inference:venomancer/vizier:identity"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "A poison-to-medicine healer using Mycelial Healing, Mending Mist, Good Venom, extraction, rituals, and Vizier Form. It specializes in healing-over-time networks and can convert harmful themes into recovery. It also has a battle resurrection, despite at least one recent third-party list omitting it.",
+      "single_target": "Build a healing-over-time network with Mycelial Healing, Mending Mist, and Good Venom, use critical heals and mana regeneration to sustain it, and reserve immediate tools for gaps. No source establishes a universal healing priority.",
+      "aoe": "Spread HoTs and rituals across the party, then use utility, dispels, and the battle resurrection as encounter needs demand. The captured build emphasizes intellect, spell power, spirit, crit heals, and mana regeneration.",
+      "movement_and_target_switching": "Hybrid range and persistent healing aid movement, although form safety is currently disputed.",
+      "defense_and_control": "Its structural defensive package includes Alkahest, Shadra's Vigil, Mycelial Healing, Mending Mist, Spiritual Healing.",
+      "group_utility": "Group or control tools include Alkahest, Mycelial Healing, Good Venom, Book of Shadra, Vizier Form.",
+      "failure_modes": [
+        {
+          "text": "Falling behind the HoT network, exhausting mana, or entering a poorly timed or reportedly bugged form can leave too little immediate recovery.",
+          "claim_ids": [
+            "inference:venomancer/vizier:failure-cost",
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1"
+          ]
+        },
+        {
+          "text": "Allowing several HoTs to expire together forces reactive healing from a kit built to stay ahead.",
+          "claim_ids": [
+            "inference:venomancer/vizier:failure-cost",
+            "observed:venomancer/vizier:community-practice"
+          ]
+        },
+        {
+          "text": "Relying on the reported form behavior without reproducing it can lead to the wrong explanation for weak output.",
+          "claim_ids": [
+            "inference:venomancer/vizier:failure-cost",
+            "observed:venomancer/vizier:community-practice"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "talent:venomancer/vizier:29-92-4-0",
+        "talent:venomancer/vizier:29-92-10-0",
+        "talent:venomancer/vizier:29-92-4-1",
+        "talent:venomancer/vizier:29-92-2-9",
+        "observed:venomancer/vizier:community-practice",
+        "observed:venomancer/vizier:build-practice",
+        "observed:venomancer/vizier:sentiment-context",
+        "inference:venomancer/vizier:identity"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "Alkahest, Shadra's Vigil, and Mycelial Healing establish HoT maintenance before the complete ritual and form toolkit.",
+        "strengths": [
+          "A poison-to-medicine healer who builds Mycelial and Mist networks, extracts harmful effects, and enters Vizier Form for sustained recovery.",
+          "Supporters value HoT coverage, dispels, utility, and the unusual poison-to-medicine identity."
+        ],
+        "cautions": [
+          "Healing output is contested, and the alleged form penalty is a single report rather than a reproduced defect.",
+          "Do not project the mature priority backward."
+        ],
+        "claim_ids": [
+          "talent:venomancer/vizier:29-92-4-0",
+          "talent:venomancer/vizier:29-92-10-0",
+          "talent:venomancer/vizier:29-92-4-1",
+          "talent:venomancer/vizier:29-92-2-9",
+          "observed:venomancer/vizier:community-practice",
+          "observed:venomancer/vizier:build-practice",
+          "observed:venomancer/vizier:sentiment-context",
+          "inference:venomancer/vizier:identity"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "The middle bands connect the foundational kit to the mature loop: A poison-to-medicine healer using Mycelial Healing, Mending Mist, Good Venom, extraction, rituals, and Vizier Form. Exact level-by-level priority remains bounded by the available evidence.",
+        "strengths": [
+          "A poison-to-medicine healer using Mycelial Healing, Mending Mist, Good Venom, extraction, rituals, and Vizier Form.",
+          "More of the state and payoff loop is available."
+        ],
+        "cautions": [
+          "Falling behind the HoT network, exhausting mana, or entering a poorly timed or reportedly bugged form can leave too little immediate recovery.",
+          "Source levels and gear are not normalized."
+        ],
+        "claim_ids": [
+          "talent:venomancer/vizier:29-92-4-0",
+          "talent:venomancer/vizier:29-92-10-0",
+          "talent:venomancer/vizier:29-92-4-1",
+          "talent:venomancer/vizier:29-92-2-9",
+          "observed:venomancer/vizier:community-practice",
+          "observed:venomancer/vizier:build-practice",
+          "observed:venomancer/vizier:sentiment-context",
+          "inference:venomancer/vizier:identity"
+        ]
+      },
+      "level_50_60": {
+        "feel": "Late play adds synchronization, rebirth, rituals, and Vizier Form, increasing party coverage and the cost of falling behind.",
+        "strengths": [
+          "Supporters value HoT coverage, dispels, utility, and the unusual poison-to-medicine identity.",
+          "The full talent interaction is available."
+        ],
+        "cautions": [
+          "Healing output is contested, and the alleged form penalty is a single report rather than a reproduced defect.",
+          "Falling behind the HoT network, exhausting mana, or entering a poorly timed or reportedly bugged form can leave too little immediate recovery."
+        ],
+        "claim_ids": [
+          "talent:venomancer/vizier:29-92-4-0",
+          "talent:venomancer/vizier:29-92-10-0",
+          "talent:venomancer/vizier:29-92-4-1",
+          "talent:venomancer/vizier:29-92-2-9",
+          "observed:venomancer/vizier:community-practice",
+          "observed:venomancer/vizier:build-practice",
+          "observed:venomancer/vizier:sentiment-context",
+          "inference:venomancer/vizier:identity"
+        ]
+      },
+      "boss": {
+        "feel": "Build a healing-over-time network with Mycelial Healing, Mending Mist, and Good Venom, use critical heals and mana regeneration to sustain it, and reserve immediate tools for gaps. No source establishes a universal healing priority.",
+        "strengths": [
+          "Build a healing-over-time network with Mycelial Healing, Mending Mist, and Good Venom, use critical heals and mana regeneration to sustain it, and reserve immediate tools for gaps.",
+          "Durable targets allow the documented cycle to complete."
+        ],
+        "cautions": [
+          "Falling behind the HoT network, exhausting mana, or entering a poorly timed or reportedly bugged form can leave too little immediate recovery.",
+          "No controlled ranking is asserted."
+        ],
+        "claim_ids": [
+          "talent:venomancer/vizier:29-92-4-0",
+          "talent:venomancer/vizier:29-92-10-0",
+          "talent:venomancer/vizier:29-92-4-1",
+          "talent:venomancer/vizier:29-92-2-9",
+          "observed:venomancer/vizier:community-practice",
+          "observed:venomancer/vizier:build-practice",
+          "observed:venomancer/vizier:sentiment-context",
+          "inference:venomancer/vizier:identity"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "Spread HoTs and rituals across the party, then use utility, dispels, and the battle resurrection as encounter needs demand. The captured build emphasizes intellect, spell power, spirit, crit heals, and mana regeneration.",
+        "strengths": [
+          "Spread HoTs and rituals across the party, then use utility, dispels, and the battle resurrection as encounter needs demand.",
+          "Pack play exposes the spec's target-count decisions."
+        ],
+        "cautions": [
+          "Falling behind the HoT network, exhausting mana, or entering a poorly timed or reportedly bugged form can leave too little immediate recovery.",
+          "Pull size, lifespan, and tank pace are uncontrolled."
+        ],
+        "claim_ids": [
+          "talent:venomancer/vizier:29-92-4-0",
+          "talent:venomancer/vizier:29-92-10-0",
+          "talent:venomancer/vizier:29-92-4-1",
+          "talent:venomancer/vizier:29-92-2-9",
+          "observed:venomancer/vizier:community-practice",
+          "observed:venomancer/vizier:build-practice",
+          "observed:venomancer/vizier:sentiment-context",
+          "inference:venomancer/vizier:identity"
+        ]
+      },
+      "pvp": {
+        "feel": "Dispels, utility, HoTs, and battle resurrection are structurally useful in groups, but the captured reports do not provide a PvP healing priority.",
+        "strengths": [
+          "Dispels, utility, HoTs, and battle resurrection are structurally useful in groups, but the captured reports do not provide a PvP healing priority.",
+          "Control and disruption change the normal loop."
+        ],
+        "cautions": [
+          "Falling behind the HoT network, exhausting mana, or entering a poorly timed or reportedly bugged form can leave too little immediate recovery.",
+          "No normalized matchup or bracket comparison is available."
+        ],
+        "claim_ids": [
+          "talent:venomancer/vizier:29-92-4-0",
+          "talent:venomancer/vizier:29-92-10-0",
+          "talent:venomancer/vizier:29-92-4-1",
+          "talent:venomancer/vizier:29-92-2-9",
+          "observed:venomancer/vizier:community-practice",
+          "observed:venomancer/vizier:build-practice",
+          "observed:venomancer/vizier:sentiment-context",
+          "inference:venomancer/vizier:identity"
+        ]
+      }
+    },
+    "complexity": {
+      "core_actions": {
+        "leveling_10_29": {
+          "value": "low-moderate",
+          "reason": "Direct healing, HoTs, extraction, rituals, dispels, and utility create a broad healer bar. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate",
+          "reason": "Direct healing, HoTs, extraction, rituals, dispels, and utility create a broad healer bar. Middle talents make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate",
+          "reason": "Direct healing, HoTs, extraction, rituals, dispels, and utility create a broad healer bar. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate",
+          "reason": "Direct healing, HoTs, extraction, rituals, dispels, and utility create a broad healer bar. A durable target makes repeated timing and resource discipline matter.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "moderate-high",
+          "reason": "Direct healing, HoTs, extraction, rituals, dispels, and utility create a broad healer bar. Changing pack size, lifespan, and tank movement add another constraint.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "moderate",
+          "reason": "Direct healing, HoTs, extraction, rituals, dispels, and utility create a broad healer bar. Enemy disruption and an active opponent make the same task less predictable.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        }
+      },
+      "state_tracking": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Multiple HoTs, mana, crit effects, ally health, and form state require constant tracking. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Multiple HoTs, mana, crit effects, ally health, and form state require constant tracking. Middle talents make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "Multiple HoTs, mana, crit effects, ally health, and form state require constant tracking. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Multiple HoTs, mana, crit effects, ally health, and form state require constant tracking. A durable target makes repeated timing and resource discipline matter.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Multiple HoTs, mana, crit effects, ally health, and form state require constant tracking. Changing pack size, lifespan, and tank movement add another constraint.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Multiple HoTs, mana, crit effects, ally health, and form state require constant tracking. Enemy disruption and an active opponent make the same task less predictable.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "low-moderate",
+          "reason": "The healer must establish coverage before incoming group damage. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate",
+          "reason": "The healer must establish coverage before incoming group damage. Middle talents make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate",
+          "reason": "The healer must establish coverage before incoming group damage. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate",
+          "reason": "The healer must establish coverage before incoming group damage. A durable target makes repeated timing and resource discipline matter.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "moderate",
+          "reason": "The healer must establish coverage before incoming group damage. Changing pack size, lifespan, and tank movement add another constraint.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "moderate-high",
+          "reason": "The healer must establish coverage before incoming group damage. Enemy disruption and an active opponent make the same task less predictable.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "Triage, dispels, mana, and form timing continually change priorities. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "Triage, dispels, mana, and form timing continually change priorities. Middle talents make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "Triage, dispels, mana, and form timing continually change priorities. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "Triage, dispels, mana, and form timing continually change priorities. A durable target makes repeated timing and resource discipline matter.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Triage, dispels, mana, and form timing continually change priorities. Changing pack size, lifespan, and tank movement add another constraint.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Triage, dispels, mana, and form timing continually change priorities. Enemy disruption and an active opponent make the same task less predictable.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "Party-frame targeting and proactive HoT refreshes carry the execution load. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low-moderate",
+          "reason": "Party-frame targeting and proactive HoT refreshes carry the execution load. Middle talents make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "low-moderate",
+          "reason": "Party-frame targeting and proactive HoT refreshes carry the execution load. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "low-moderate",
+          "reason": "Party-frame targeting and proactive HoT refreshes carry the execution load. A durable target makes repeated timing and resource discipline matter.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "moderate",
+          "reason": "Party-frame targeting and proactive HoT refreshes carry the execution load. Changing pack size, lifespan, and tank movement add another constraint.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "moderate",
+          "reason": "Party-frame targeting and proactive HoT refreshes carry the execution load. Enemy disruption and an active opponent make the same task less predictable.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        }
+      },
+      "failure_cost": {
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "If coverage or mana collapses, the kit may lack a fast recovery path. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "If coverage or mana collapses, the kit may lack a fast recovery path. Middle talents make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "If coverage or mana collapses, the kit may lack a fast recovery path. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "If coverage or mana collapses, the kit may lack a fast recovery path. A durable target makes repeated timing and resource discipline matter.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "If coverage or mana collapses, the kit may lack a fast recovery path. Changing pack size, lifespan, and tank movement add another constraint.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "If coverage or mana collapses, the kit may lack a fast recovery path. Enemy disruption and an active opponent make the same task less predictable.",
+          "claim_ids": [
+            "talent:venomancer/vizier:29-92-4-0",
+            "talent:venomancer/vizier:29-92-10-0",
+            "talent:venomancer/vizier:29-92-4-1",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You want healing-over-time networks, unusual poison conversion, utility, and a battle resurrection.",
+          "claim_ids": [
+            "inference:venomancer/vizier:identity"
+          ]
+        },
+        {
+          "text": "You enjoy a loop where this state matters: Multiple HoTs, mana, crit effects, ally health, and form state require constant tracking.",
+          "claim_ids": [
+            "inference:venomancer/vizier:identity",
+            "observed:venomancer/vizier:community-practice"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You want sturdy direct healing or are uncomfortable with a reported form-related fragility bug.",
+          "claim_ids": [
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        },
+        {
+          "text": "You want mistakes to be cheap; here, falling behind the HoT network, exhausting mana, or entering a poorly timed or reportedly bugged form can leave too little immediate recovery.",
+          "claim_ids": [
+            "inference:venomancer/vizier:failure-cost",
+            "observed:venomancer/vizier:community-practice"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Supporters value HoT coverage, dispels, utility, and the unusual poison-to-medicine identity.",
+          "claim_ids": [
+            "observed:venomancer/vizier:sentiment-context",
+            "observed:venomancer/vizier:community-practice",
+            "observed:venomancer/vizier:build-practice"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Falling behind the HoT network, exhausting mana, or entering a poorly timed or reportedly bugged form can leave too little immediate recovery.",
+          "claim_ids": [
+            "observed:venomancer/vizier:sentiment-context",
+            "inference:venomancer/vizier:failure-cost"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "Healing output is contested, and the alleged form penalty is a single report rather than a reproduced defect.",
+          "claim_ids": [
+            "observed:venomancer/vizier:sentiment-context",
+            "observed:venomancer/vizier:community-practice"
+          ]
+        }
+      ]
+    },
+    "performance_signal_ids": [
+      "observed:venomancer/vizier:performance"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "manual_recent_source_review",
+      "performance": "limited_uncontrolled",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium",
+      "gaps": [
+        "No verified current full-encounter rotation video.",
+        "Any priority or mode not supported above remains an explicit gap rather than an inferred optimum."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "Alkahest, Shadra's Vigil, and Mycelial Healing establish HoT maintenance before the complete ritual and form toolkit.",
+      "observed_changes": [
+        "Healing output is contested, and the alleged form penalty is a single report rather than a reproduced defect.",
+        "Do not project the mature priority backward."
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "Alkahest, Shadra's Vigil, and Mycelial Healing establish HoT maintenance before the complete ritual and form toolkit.",
+      "observed_changes": [
+        "Healing output is contested, and the alleged form penalty is a single report rather than a reproduced defect.",
+        "Do not project the mature priority backward."
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "The middle bands connect the foundational kit to the mature loop: A poison-to-medicine healer using Mycelial Healing, Mending Mist, Good Venom, extraction, rituals, and Vizier Form. Exact level-by-level priority remains bounded by the available evidence.",
+      "observed_changes": [
+        "Falling behind the HoT network, exhausting mana, or entering a poorly timed or reportedly bugged form can leave too little immediate recovery.",
+        "Source levels and gear are not normalized."
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "The middle bands connect the foundational kit to the mature loop: A poison-to-medicine healer using Mycelial Healing, Mending Mist, Good Venom, extraction, rituals, and Vizier Form. Exact level-by-level priority remains bounded by the available evidence.",
+      "observed_changes": [
+        "Falling behind the HoT network, exhausting mana, or entering a poorly timed or reportedly bugged form can leave too little immediate recovery.",
+        "Source levels and gear are not normalized."
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "Late play adds synchronization, rebirth, rituals, and Vizier Form, increasing party coverage and the cost of falling behind.",
+      "observed_changes": [
+        "Healing output is contested, and the alleged form penalty is a single report rather than a reproduced defect.",
+        "Falling behind the HoT network, exhausting mana, or entering a poorly timed or reportedly bugged form can leave too little immediate recovery."
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:venomancer/vizier:community-practice",
+      "kind": "observed",
+      "text": "A level-60 player reports low output and an alleged 30-percent form bug, while another praises utility and dispels but calls the spec fragile. The Build Hub guide focuses on mana regeneration, crit heals, HoTs, and intellect/spell-power/spirit gearing; none provides controlled healer comparison.",
+      "source_ids": [
+        "reddit:venomancer-vizier-2026-07-31",
+        "buildhub:6861f8ca-3e80-44c4-9d10-9969d29710f6"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_contexts"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Manual source reading; reported play remains bounded to the author's level, build, mode, and stated limitations.",
+      "derived_from_claim_ids": []
+    },
+    {
+      "id": "observed:venomancer/vizier:build-practice",
+      "kind": "observed",
+      "text": "The leading leveling/dungeon build centers mana regeneration, critical heals, HoTs, and intellect, spell power, and spirit.",
+      "source_ids": [
+        "buildhub-builds-2026-08-05",
+        "buildhub:6861f8ca-3e80-44c4-9d10-9969d29710f6"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "community_build_snapshot"
+        ],
+        "build_or_mode": [
+          "documented_builds"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The captured build documents one contributor's practice; missing prose remains an explicit rotation gap.",
+      "derived_from_claim_ids": []
+    },
+    {
+      "id": "observed:venomancer/vizier:performance",
+      "kind": "observed",
+      "text": "The July community compilation supplies no DPS value for this role, and the August Mythic inventory lists 92 record(s). Neither signal is normalized for gear, encounter, role contribution, or player selection.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "pve_unspecified",
+          "mythic_dungeons"
+        ],
+        "build_or_mode": [
+          "healer_not_listed"
+        ]
+      },
+      "confidence": "low",
+      "conflicts_with": [],
+      "notes": "Performance context is incomplete; do not use as a tier rank.",
+      "derived_from_claim_ids": []
+    },
+    {
+      "id": "observed:venomancer/vizier:sentiment-context",
+      "kind": "observed",
+      "text": "Praise: Supporters value HoT coverage, dispels, utility, and the unusual poison-to-medicine identity. Contested evidence: Healing output is contested, and the alleged form penalty is a single report rather than a reproduced defect.",
+      "source_ids": [
+        "reddit:venomancer-vizier-2026-07-31",
+        "buildhub:6861f8ca-3e80-44c4-9d10-9969d29710f6"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_sentiment"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Sentiment is reported by source and context, not averaged into a universal verdict.",
+      "derived_from_claim_ids": []
+    },
+    {
+      "id": "inference:venomancer/vizier:identity",
+      "kind": "inference",
+      "text": "A poison-to-medicine healer who builds Mycelial and Mist networks, extracts harmful effects, and enters Vizier Form for sustained recovery.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:venomancer/vizier:29-92-4-0",
+        "talent:venomancer/vizier:29-92-10-0",
+        "talent:venomancer/vizier:29-92-4-1",
+        "talent:venomancer/vizier:29-92-2-9",
+        "talent:venomancer/vizier:29-92-4-9",
+        "talent:venomancer/vizier:29-92-6-9",
+        "observed:venomancer/vizier:community-practice",
+        "observed:venomancer/vizier:sentiment-context"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Descriptive playstyle classification from talent structure and manually reviewed current practice, not an official label."
+    },
+    {
+      "id": "inference:venomancer/vizier:failure-cost",
+      "kind": "inference",
+      "text": "Falling behind the HoT network, exhausting mana, or entering a poorly timed or reportedly bugged form can leave too little immediate recovery.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "observed:venomancer/vizier:community-practice",
+        "inference:venomancer/vizier:identity"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Failure-mode interpretation; exact thresholds require live verification."
+    }
+  ]
+}

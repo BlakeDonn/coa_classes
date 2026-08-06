@@ -1,0 +1,903 @@
+{
+  "baseline": "venomancer--fortitude.json",
+  "set": {
+    "identity": {
+      "fantasy": "A living siege beetle that turns incoming blows into Rage, armor states, regeneration, poison pressure, and violent counterattacks.",
+      "primary_family": "strategists",
+      "also_fits": [
+        "commanders"
+      ],
+      "playstyle_tags": [
+        "reactive-tank",
+        "sustain-tank",
+        "aoe-attrition"
+      ],
+      "one_line": "An exoskeleton tank built on Carapace regeneration, Chitin, poison retaliation, Impale, Expulsion, and Molt. It combines high self-repair with AoE poison threat. Recent community builds and discussion consistently identify it as one of the strongest-feeling current dungeon tanks, but that is observational rather than a verified ranking.",
+      "claim_ids": [
+        "observed:venomancer/fortitude:player-guide",
+        "inference:venomancer/fortitude:stack-decision",
+        "talent:venomancer/fortitude:29-78-10-0",
+        "talent:venomancer/fortitude:29-78-4-0",
+        "talent:venomancer/fortitude:29-78-4-1",
+        "observed:venomancer/fortitude:solo-sentiment",
+        "talent:venomancer/fortitude:29-78-4-8",
+        "talent:venomancer/fortitude:29-78-2-9"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "Let incoming attacks build Exposed Flesh, decide whether to clear those stacks through Expulsion, Regrow Exoskeleton, or another effect, maintain a safe amount of Carapace Regeneration, spread Venomtip Poison, and use Impale or kiting to control large packs.",
+      "single_target": "Cycle Exposed Flesh into mitigation or poison pressure, keep survival layers active, and use Barbed Stinger and later sustain effects on durable targets.",
+      "aoe": "Expulsion, Venomtip Poison, Impale, Toxic Expulsion, and Locust Swarm create strong area pressure that scales naturally with being attacked by many enemies.",
+      "movement_and_target_switching": "Most survival state lives on the tank rather than one target; Impale lines, pack grouping, kiting, and Molt movement still require spatial control.",
+      "defense_and_control": "Carapace Regeneration, Regrow Exoskeleton, Reformed, Charm of Warding, Locust Swarm, and later regeneration talents create extensive self-sustain; Impale adds a long line stun.",
+      "group_utility": "Fortitude contributes grouping stability, attack-speed reduction, a line stun, and the ability to survive unusually large pulls while damage-over-time effects work.",
+      "failure_modes": [
+        {
+          "text": "Holding too many Exposed Flesh stacks or using all Carapace Regeneration charges carelessly can turn the spec's survival engine against itself.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision"
+          ]
+        },
+        {
+          "text": "Movement or a target swap can interrupt the intended payoff: most survival state lives on the tank rather than one target; impale lines, pack grouping, kiting, and molt movement still require spatial control.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1"
+          ]
+        },
+        {
+          "text": "Spending recovery or control too early leaves less protection for the next pressure event: carapace regeneration, regrow exoskeleton, reformed, charm of warding, locust swarm, and later regeneration talents create extensive self-sustain; impale adds a long line stun.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "observed:venomancer/fortitude:player-guide",
+        "inference:venomancer/fortitude:stack-decision",
+        "talent:venomancer/fortitude:29-78-10-0",
+        "talent:venomancer/fortitude:29-78-4-0",
+        "talent:venomancer/fortitude:29-78-4-1",
+        "observed:venomancer/fortitude:solo-sentiment",
+        "talent:venomancer/fortitude:29-78-4-8",
+        "talent:venomancer/fortitude:29-78-2-9"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "A reactive attrition tank whose offense and defense both begin with being hit and then choosing how to clear Exposed Flesh.",
+        "strengths": [
+          "Early self-sustain",
+          "Natural multi-target scaling"
+        ],
+        "cautions": [
+          "Stack clearing is an active decision",
+          "Damage intake drives the engine"
+        ],
+        "claim_ids": [
+          "talent:venomancer/fortitude:29-78-10-0",
+          "talent:venomancer/fortitude:29-78-4-0",
+          "talent:venomancer/fortitude:29-78-4-1",
+          "observed:venomancer/fortitude:player-guide",
+          "inference:venomancer/fortitude:stack-decision",
+          "observed:venomancer/fortitude:solo-sentiment",
+          "talent:venomancer/fortitude:29-78-4-8",
+          "talent:venomancer/fortitude:29-78-2-9"
+        ]
+      },
+      "level_50_60": {
+        "feel": "A highly self-sustaining poison tank with additional crit healing, Locust Swarm, Molt, and capstone tradeoffs layered over the original stack-clearing loop.",
+        "strengths": [
+          "Very high reported durability",
+          "Strong AoE attrition",
+          "Large-pull control"
+        ],
+        "cautions": [
+          "Optimization claims are not normalized",
+          "More survival states to avoid overlapping wastefully"
+        ],
+        "claim_ids": [
+          "observed:venomancer/fortitude:solo-sentiment",
+          "talent:venomancer/fortitude:29-78-4-8",
+          "talent:venomancer/fortitude:29-78-2-9",
+          "observed:venomancer/fortitude:player-guide",
+          "inference:venomancer/fortitude:stack-decision",
+          "talent:venomancer/fortitude:29-78-10-0",
+          "talent:venomancer/fortitude:29-78-4-0",
+          "talent:venomancer/fortitude:29-78-4-1"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "By levels 30-49, let incoming attacks build exposed flesh, decide whether to clear those stacks through expulsion, regrow exoskeleton, or another effect, maintain a safe amount of carapace regeneration, spread venomtip poison, and use impale or kiting to control large packs.",
+        "strengths": [
+          "Core engine is online",
+          "More complete target coverage"
+        ],
+        "cautions": [
+          "Late talents still change the ceiling",
+          "Most survival state lives on the tank rather than one target; Impale lines, pack grouping, kiting, and Molt movement still require spatial control"
+        ],
+        "claim_ids": [
+          "observed:venomancer/fortitude:player-guide",
+          "inference:venomancer/fortitude:stack-decision",
+          "talent:venomancer/fortitude:29-78-10-0",
+          "talent:venomancer/fortitude:29-78-4-0",
+          "talent:venomancer/fortitude:29-78-4-1",
+          "observed:venomancer/fortitude:solo-sentiment",
+          "talent:venomancer/fortitude:29-78-4-8",
+          "talent:venomancer/fortitude:29-78-2-9"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, cycle exposed flesh into mitigation or poison pressure, keep survival layers active, and use barbed stinger and later sustain effects on durable targets.",
+        "strengths": [
+          "Durable targets preserve the full loop",
+          "Cooldowns can be planned"
+        ],
+        "cautions": [
+          "Movement can break setup",
+          "Repeated errors remain visible"
+        ],
+        "claim_ids": [
+          "observed:venomancer/fortitude:player-guide",
+          "inference:venomancer/fortitude:stack-decision",
+          "talent:venomancer/fortitude:29-78-10-0",
+          "talent:venomancer/fortitude:29-78-4-0",
+          "talent:venomancer/fortitude:29-78-4-1",
+          "observed:venomancer/fortitude:solo-sentiment",
+          "talent:venomancer/fortitude:29-78-4-8",
+          "talent:venomancer/fortitude:29-78-2-9"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, expulsion, venomtip poison, impale, toxic expulsion, and locust swarm create strong area pressure that scales naturally with being attacked by many enemies.",
+        "strengths": [
+          "Pack tools express the spec clearly",
+          "Group utility has regular value"
+        ],
+        "cautions": [
+          "Short-lived targets can erase setup",
+          "Tank movement changes the plan"
+        ],
+        "claim_ids": [
+          "observed:venomancer/fortitude:player-guide",
+          "inference:venomancer/fortitude:stack-decision",
+          "talent:venomancer/fortitude:29-78-10-0",
+          "talent:venomancer/fortitude:29-78-4-0",
+          "talent:venomancer/fortitude:29-78-4-1",
+          "observed:venomancer/fortitude:solo-sentiment",
+          "talent:venomancer/fortitude:29-78-4-8",
+          "talent:venomancer/fortitude:29-78-2-9"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, most survival state lives on the tank rather than one target; impale lines, pack grouping, kiting, and molt movement still require spatial control. Carapace Regeneration, Regrow Exoskeleton, Reformed, Charm of Warding, Locust Swarm, and later regeneration talents create extensive self-sustain; Impale adds a long line stun.",
+        "strengths": [
+          "Control and utility create options",
+          "Target swaps can reward flexibility"
+        ],
+        "cautions": [
+          "Disruption makes the loop less predictable",
+          "Defensive timing is punishable"
+        ],
+        "claim_ids": [
+          "observed:venomancer/fortitude:player-guide",
+          "inference:venomancer/fortitude:stack-decision",
+          "talent:venomancer/fortitude:29-78-10-0",
+          "talent:venomancer/fortitude:29-78-4-0",
+          "talent:venomancer/fortitude:29-78-4-1",
+          "observed:venomancer/fortitude:solo-sentiment",
+          "talent:venomancer/fortitude:29-78-4-8",
+          "talent:venomancer/fortitude:29-78-2-9"
+        ]
+      }
+    },
+    "complexity": {
+      "state_tracking": {
+        "dungeon_aoe": {
+          "value": "moderate-high",
+          "reason": "Exposed Flesh, Rage, Carapace charges, poison duration, regeneration, and pack control overlap during large pulls.",
+          "claim_ids": [
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Cycle Exposed Flesh into mitigation or poison pressure, keep survival layers active, and use Barbed Stinger and later sustain effects on durable targets. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "moderate-high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Cycle Exposed Flesh into mitigation or poison pressure, keep survival layers active, and use Barbed Stinger and later sustain effects on durable targets. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        },
+        "level_50_60": {
+          "value": "moderate-high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Cycle Exposed Flesh into mitigation or poison pressure, keep survival layers active, and use Barbed Stinger and later sustain effects on durable targets. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        },
+        "boss": {
+          "value": "moderate-high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Cycle Exposed Flesh into mitigation or poison pressure, keep survival layers active, and use Barbed Stinger and later sustain effects on durable targets. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        },
+        "pvp": {
+          "value": "moderate-high",
+          "reason": "The player must preserve the resources, effects, or target states implied by: Cycle Exposed Flesh into mitigation or poison pressure, keep survival layers active, and use Barbed Stinger and later sustain effects on durable targets. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "The tank repeatedly chooses whether incoming-attack stacks should become damage, mitigation, healing, or control time.",
+          "claim_ids": [
+            "inference:venomancer/fortitude:stack-decision",
+            "observed:venomancer/fortitude:player-guide",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "Target count, incoming pressure, and movement change the next action; carapace regeneration, regrow exoskeleton, reformed, charm of warding, locust swarm, and later regeneration talents create extensive self-sustain; impale adds a long line stun. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Target count, incoming pressure, and movement change the next action; carapace regeneration, regrow exoskeleton, reformed, charm of warding, locust swarm, and later regeneration talents create extensive self-sustain; impale adds a long line stun. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Target count, incoming pressure, and movement change the next action; carapace regeneration, regrow exoskeleton, reformed, charm of warding, locust swarm, and later regeneration talents create extensive self-sustain; impale adds a long line stun. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "Target count, incoming pressure, and movement change the next action; carapace regeneration, regrow exoskeleton, reformed, charm of warding, locust swarm, and later regeneration talents create extensive self-sustain; impale adds a long line stun. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Target count, incoming pressure, and movement change the next action; carapace regeneration, regrow exoskeleton, reformed, charm of warding, locust swarm, and later regeneration talents create extensive self-sustain; impale adds a long line stun. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        }
+      },
+      "failure_cost": {
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "A poor stack clear or exhausted defensive layer can be lethal during the large pulls the spec encourages.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        },
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "Holding too many Exposed Flesh stacks or using all Carapace Regeneration charges carelessly can turn the spec's survival engine against itself. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Holding too many Exposed Flesh stacks or using all Carapace Regeneration charges carelessly can turn the spec's survival engine against itself. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Holding too many Exposed Flesh stacks or using all Carapace Regeneration charges carelessly can turn the spec's survival engine against itself. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "Holding too many Exposed Flesh stacks or using all Carapace Regeneration charges carelessly can turn the spec's survival engine against itself. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Holding too many Exposed Flesh stacks or using all Carapace Regeneration charges carelessly can turn the spec's survival engine against itself. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        }
+      },
+      "core_actions": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Let incoming attacks build Exposed Flesh, decide whether to clear those stacks through Expulsion, Regrow Exoskeleton, or another effect, maintain a safe amount of Carapace Regeneration, spread Venomtip Poison, and use Impale or kiting to control large packs. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Let incoming attacks build Exposed Flesh, decide whether to clear those stacks through Expulsion, Regrow Exoskeleton, or another effect, maintain a safe amount of Carapace Regeneration, spread Venomtip Poison, and use Impale or kiting to control large packs. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Let incoming attacks build Exposed Flesh, decide whether to clear those stacks through Expulsion, Regrow Exoskeleton, or another effect, maintain a safe amount of Carapace Regeneration, spread Venomtip Poison, and use Impale or kiting to control large packs. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Let incoming attacks build Exposed Flesh, decide whether to clear those stacks through Expulsion, Regrow Exoskeleton, or another effect, maintain a safe amount of Carapace Regeneration, spread Venomtip Poison, and use Impale or kiting to control large packs. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Let incoming attacks build Exposed Flesh, decide whether to clear those stacks through Expulsion, Regrow Exoskeleton, or another effect, maintain a safe amount of Carapace Regeneration, spread Venomtip Poison, and use Impale or kiting to control large packs. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        },
+        "pvp": {
+          "value": "low",
+          "reason": "The practical action set follows the authored loop: Let incoming attacks build Exposed Flesh, decide whether to clear those stacks through Expulsion, Regrow Exoskeleton, or another effect, maintain a safe amount of Carapace Regeneration, spread Venomtip Poison, and use Impale or kiting to control large packs. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Expulsion, Venomtip Poison, Impale, Toxic Expulsion, and Locust Swarm create strong area pressure that scales naturally with being attacked by many enemies. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Expulsion, Venomtip Poison, Impale, Toxic Expulsion, and Locust Swarm create strong area pressure that scales naturally with being attacked by many enemies. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Expulsion, Venomtip Poison, Impale, Toxic Expulsion, and Locust Swarm create strong area pressure that scales naturally with being attacked by many enemies. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Expulsion, Venomtip Poison, Impale, Toxic Expulsion, and Locust Swarm create strong area pressure that scales naturally with being attacked by many enemies. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Expulsion, Venomtip Poison, Impale, Toxic Expulsion, and Locust Swarm create strong area pressure that scales naturally with being attacked by many enemies. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        },
+        "pvp": {
+          "value": "low",
+          "reason": "The payoff depends on establishing the conditions described by: Expulsion, Venomtip Poison, Impale, Toxic Expulsion, and Locust Swarm create strong area pressure that scales naturally with being attacked by many enemies. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Most survival state lives on the tank rather than one target; Impale lines, pack grouping, kiting, and Molt movement still require spatial control. The early kit exposes only part of this demand.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Most survival state lives on the tank rather than one target; Impale lines, pack grouping, kiting, and Molt movement still require spatial control. Mid-level talents make the interaction regular.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        },
+        "level_50_60": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Most survival state lives on the tank rather than one target; Impale lines, pack grouping, kiting, and Molt movement still require spatial control. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        },
+        "boss": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Most survival state lives on the tank rather than one target; Impale lines, pack grouping, kiting, and Molt movement still require spatial control. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "low",
+          "reason": "Execution is constrained by positioning and swaps: Most survival state lives on the tank rather than one target; Impale lines, pack grouping, kiting, and Molt movement still require spatial control. Pack size, lifetime, and tank movement add constraints.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        },
+        "pvp": {
+          "value": "low-moderate",
+          "reason": "Execution is constrained by positioning and swaps: Most survival state lives on the tank rather than one target; Impale lines, pack grouping, kiting, and Molt movement still require spatial control. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1",
+            "observed:venomancer/fortitude:solo-sentiment",
+            "talent:venomancer/fortitude:29-78-4-8",
+            "talent:venomancer/fortitude:29-78-2-9"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You like tanks whose defense, healing, and AoE damage all emerge from reacting to incoming hits.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide"
+          ]
+        },
+        {
+          "text": "You enjoy the spec's core cadence: let incoming attacks build exposed flesh, decide whether to clear those stacks through expulsion, regrow exoskeleton, or another effect, maintain a safe amount of carapace regeneration, spread venomtip poison, and use impale or kiting to control large packs.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You dislike tracking defensive stacks or making frequent tradeoffs between offense and survival.",
+          "claim_ids": [
+            "inference:venomancer/fortitude:stack-decision"
+          ]
+        },
+        {
+          "text": "You dislike the positioning or swap constraint that most survival state lives on the tank rather than one target; impale lines, pack grouping, kiting, and molt movement still require spatial control.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "inference:venomancer/fortitude:stack-decision",
+            "talent:venomancer/fortitude:29-78-10-0",
+            "talent:venomancer/fortitude:29-78-4-0",
+            "talent:venomancer/fortitude:29-78-4-1"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Recent players consistently praise Fortitude's durability, self-healing, and AoE damage for solo play and large pulls.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide",
+            "observed:venomancer/fortitude:solo-sentiment"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Guidance warns against blindly maximizing Carapace Regeneration and emphasizes clearing Exposed Flesh correctly.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "Current stat advice favors Stamina but mixes Agility, Intellect, armor, and author uncertainty; it is not a verified weight order.",
+          "claim_ids": [
+            "observed:venomancer/fortitude:player-guide"
+          ]
+        }
+      ]
+    },
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "moderate",
+      "performance": "qualitative_only",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium-high",
+      "gaps": [
+        "No normalized tank damage or survival comparison.",
+        "No verified current gameplay video."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "A reactive attrition tank whose offense and defense both begin with being hit and then choosing how to clear Exposed Flesh.",
+      "observed_changes": [
+        "Stack clearing is an active decision",
+        "Damage intake drives the engine"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "A highly self-sustaining poison tank with additional crit healing, Locust Swarm, Molt, and capstone tradeoffs layered over the original stack-clearing loop.",
+      "observed_changes": [
+        "Optimization claims are not normalized",
+        "More survival states to avoid overlapping wastefully"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "A reactive attrition tank whose offense and defense both begin with being hit and then choosing how to clear Exposed Flesh.",
+      "observed_changes": [
+        "Stack clearing is an active decision",
+        "Damage intake drives the engine"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "By levels 30-49, let incoming attacks build exposed flesh, decide whether to clear those stacks through expulsion, regrow exoskeleton, or another effect, maintain a safe amount of carapace regeneration, spread venomtip poison, and use impale or kiting to control large packs.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Most survival state lives on the tank rather than one target; Impale lines, pack grouping, kiting, and Molt movement still require spatial control"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "By levels 30-49, let incoming attacks build exposed flesh, decide whether to clear those stacks through expulsion, regrow exoskeleton, or another effect, maintain a safe amount of carapace regeneration, spread venomtip poison, and use impale or kiting to control large packs.",
+      "observed_changes": [
+        "Late talents still change the ceiling",
+        "Most survival state lives on the tank rather than one target; Impale lines, pack grouping, kiting, and Molt movement still require spatial control"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:venomancer/fortitude:player-guide",
+      "kind": "observed",
+      "text": "A July player guide describes Fortitude as a high-self-healing, physical-damage-resistant AoE DoT tank; it recommends maintaining only one or two Carapace Regeneration stacks, clearing Exposed Flesh deliberately, using taunt for venom interactions, and lining packs for Impale.",
+      "source_ids": [
+        "reddit:fortitude-guide-2026-07-09"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "solo",
+          "dungeon_tanking"
+        ],
+        "build_or_mode": [
+          "guide_build"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Detailed single-author guide from the early-release environment."
+    },
+    {
+      "id": "observed:venomancer/fortitude:solo-sentiment",
+      "kind": "observed",
+      "text": "Several July tank players describe Fortitude as exceptionally durable with strong AoE damage in open-world and dungeon-style pulls.",
+      "source_ids": [
+        "reddit:fortitude-solo-2026-07-12"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "solo",
+          "dungeon"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "low-moderate",
+      "conflicts_with": [],
+      "notes": "Levels, gear, and pull sizes are not normalized."
+    },
+    {
+      "id": "inference:venomancer/fortitude:stack-decision",
+      "kind": "inference",
+      "text": "Fortitude's central skill test is deciding when Exposed Flesh should be converted into damage, mitigation, healing, or control rather than simply clearing it on cooldown.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:venomancer/fortitude:29-78-4-0",
+        "talent:venomancer/fortitude:29-78-4-3",
+        "talent:venomancer/fortitude:29-78-10-4",
+        "observed:venomancer/fortitude:player-guide"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "all"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Exact encounter thresholds remain situational."
+    }
+  ]
+}

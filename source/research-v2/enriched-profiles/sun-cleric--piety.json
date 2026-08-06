@@ -1,0 +1,2142 @@
+{
+  "schema_version": 2,
+  "as_of_date": "2026-08-05",
+  "spec": {
+    "id": "sun-cleric/piety",
+    "class": "Sun Cleric",
+    "name": "Piety",
+    "roles": [
+      "Damage"
+    ],
+    "range": [
+      "Ranged"
+    ]
+  },
+  "identity": {
+    "fantasy": "A sunrise-and-sunset caster who alternates Holy and Fire to build opposing sides, then releases Scorch, Ray, Rapture, and Sun Down payoffs.",
+    "one_line": "Alternate Sunrise and Sunset through Dawn, cast the matching Holy or Fire mini-rotation, then exploit Rapture and Horusath procs.",
+    "primary_family": "sequencers",
+    "also_fits": [
+      "planners"
+    ],
+    "claim_ids": [
+      "talent:sun-cleric/piety:27-70-4-0",
+      "talent:sun-cleric/piety:27-70-10-0",
+      "talent:sun-cleric/piety:27-70-4-1",
+      "talent:sun-cleric/piety:27-70-2-2",
+      "observed:sun-cleric/piety:alternating-schools",
+      "observed:sun-cleric/piety:complexity-growth",
+      "inference:sun-cleric/piety:playstyle-identity"
+    ],
+    "playstyle_tags": [
+      "dual-school-sequence-caster",
+      "stance-caster",
+      "burst-caster"
+    ]
+  },
+  "mechanics": {
+    "core_loop": "A dual-school caster alternating Sunrise and Sunset. Holy spells empower one side, Fire spells the other, while Scorch Marks and Sun Ray feed large Rapture, Horusath Blast, and Sun Down payoffs. It rewards deliberate school sequencing rather than one-school spam.",
+    "resources": [],
+    "builders": [
+      {
+        "name": "Burn The Heretics",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-8"
+        ]
+      }
+    ],
+    "spenders": [
+      {
+        "name": "Scorch Marks",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-2-2"
+        ]
+      },
+      {
+        "name": "Burning Cascade",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-1-3"
+        ]
+      },
+      {
+        "name": "Harsh Lessons",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-1-7"
+        ]
+      },
+      {
+        "name": "Burning Heat",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-1-9"
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "name": "Solar Conduit",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-6-2"
+        ]
+      },
+      {
+        "name": "Lights of Absolution",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-5-5a"
+        ]
+      },
+      {
+        "name": "Flames of Absolution",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-5-5b"
+        ]
+      },
+      {
+        "name": "Sunwell",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-7-5"
+        ]
+      },
+      {
+        "name": "Pious",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-10-6"
+        ]
+      },
+      {
+        "name": "The Coming Dawn",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-7"
+        ]
+      },
+      {
+        "name": "Adjudication",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-5-7"
+        ]
+      },
+      {
+        "name": "Spears of Glory",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-2-8"
+        ]
+      },
+      {
+        "name": "Duality of Light",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-7-9"
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "name": "Sun Gate",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-1-5"
+        ],
+        "structural_description": "Shift 25 yds forward at light speed, removing all root effects.This leaves behind a Sun Gate for 15 seconds that allies can interact with to blink themselves the same distance forward. Allies can only use Sun Gate every 90 seconds."
+      },
+      {
+        "name": "Burning Heat",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-1-9"
+        ],
+        "structural_description": "Casting Sunflare now has a 30% chance to transform your next Sunflare into Sun Ray.Casting Horusath Blast is now guaranteed to transform your next Sunflare into Sun Ray.Sun RayShine the light of the sun on an enemy, dealing 773 + 100% holy SP Holy Damage and granting you Scorch Marks.Scorch MarksYour next Radiant Flame has no mana cost, ticks -50% faster, and its duration is reduced by -50%."
+      }
+    ],
+    "single_target": "On durable targets, the structural path grows from Dawnsear, Sunrise and Sunset, Radiant Flame toward Burning Heat, Sun Down, Duality of Light. A precise priority remains limited to the captured build and community evidence.",
+    "aoe": "For multiple targets, Alternate Sunrise and Sunset through Dawn, cast the matching Holy or Fire mini-rotation, then exploit Rapture and Horusath procs. The current evidence particularly constrains this through: A Piety player needed several WeakAuras before the better-boomkin loop clicked around 40.",
+    "movement_and_target_switching": "Ranged play offers space, but its best sequence may involve hard-cast and school-order commitments.",
+    "defense_and_control": "Its structural defensive package includes Sun Gate, City of Light, Radiant Fury, Lights of Absolution, Burn The Heretics.",
+    "group_utility": "Group or control tools include Sun's Hope, Sun Gate, Sunwell, Burn The Heretics.",
+    "failure_modes": [
+      {
+        "text": "Repeating the wrong school or cashing out before both sides are prepared weakens the entire sunrise-sunset sequence.",
+        "claim_ids": [
+          "inference:sun-cleric/piety:failure-cost",
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1"
+        ]
+      },
+      {
+        "text": "Losing setup before payoff forces another recovery cycle.",
+        "claim_ids": [
+          "inference:sun-cleric/piety:failure-cost",
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1"
+        ]
+      },
+      {
+        "text": "Losing setup before payoff forces another recovery cycle.",
+        "claim_ids": [
+          "inference:sun-cleric/piety:failure-cost",
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1"
+        ]
+      }
+    ],
+    "claim_ids": [
+      "talent:sun-cleric/piety:27-70-4-0",
+      "talent:sun-cleric/piety:27-70-10-0",
+      "talent:sun-cleric/piety:27-70-4-1",
+      "talent:sun-cleric/piety:27-70-2-2",
+      "talent:sun-cleric/piety:27-70-6-2",
+      "talent:sun-cleric/piety:27-70-10-2",
+      "observed:sun-cleric/piety:alternating-schools",
+      "observed:sun-cleric/piety:complexity-growth",
+      "observed:sun-cleric/piety:level60-ramp",
+      "observed:sun-cleric/piety:build-practice",
+      "inference:sun-cleric/piety:playstyle-identity"
+    ]
+  },
+  "level_bands": [
+    {
+      "id": "leveling_10_19",
+      "minimum_level": 10,
+      "maximum_level": 19,
+      "structural_unlocks": [
+        {
+          "name": "Dawnsear",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-4-0"
+          ]
+        },
+        {
+          "name": "Sunrise and Sunset",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-10-0"
+          ]
+        },
+        {
+          "name": "Radiant Flame",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-4-1"
+          ]
+        }
+      ],
+      "observed_loop": "Early alternation precedes proc tools.",
+      "observed_changes": [
+        "Incomplete kit",
+        "Sparse guidance"
+      ],
+      "claim_ids": [
+        "talent:sun-cleric/piety:27-70-4-0",
+        "talent:sun-cleric/piety:27-70-10-0",
+        "talent:sun-cleric/piety:27-70-4-1"
+      ]
+    },
+    {
+      "id": "leveling_20_29",
+      "minimum_level": 20,
+      "maximum_level": 29,
+      "structural_unlocks": [
+        {
+          "name": "Scorch Marks",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-2-2"
+          ]
+        },
+        {
+          "name": "Solar Conduit",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-6-2"
+          ]
+        },
+        {
+          "name": "Fire from the Heavens",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-10-2"
+          ]
+        },
+        {
+          "name": "Burning Cascade",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-1-3"
+          ]
+        },
+        {
+          "name": "Rapture",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-4-3"
+          ]
+        },
+        {
+          "name": "Photosynthetic",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-7-3"
+          ]
+        }
+      ],
+      "observed_loop": "Early alternation precedes proc tools.",
+      "observed_changes": [
+        "Incomplete kit",
+        "Sparse guidance"
+      ],
+      "claim_ids": [
+        "talent:sun-cleric/piety:27-70-2-2",
+        "talent:sun-cleric/piety:27-70-6-2",
+        "talent:sun-cleric/piety:27-70-10-2",
+        "talent:sun-cleric/piety:27-70-1-3",
+        "talent:sun-cleric/piety:27-70-4-3",
+        "talent:sun-cleric/piety:27-70-7-3"
+      ]
+    },
+    {
+      "id": "leveling_30_39",
+      "minimum_level": 30,
+      "maximum_level": 39,
+      "structural_unlocks": [
+        {
+          "name": "Purgation",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-0-4"
+          ]
+        },
+        {
+          "name": "Solar Champion",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-2-4"
+          ]
+        },
+        {
+          "name": "Solar Concord",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-4-4"
+          ]
+        },
+        {
+          "name": "Wrath of God",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-6-4"
+          ]
+        },
+        {
+          "name": "Sun's Hope",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-8-4"
+          ]
+        },
+        {
+          "name": "Struck by the Sun",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-10-4"
+          ]
+        },
+        {
+          "name": "Sun Gate",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-1-5"
+          ]
+        },
+        {
+          "name": "City of Light",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-3-5a"
+          ]
+        },
+        {
+          "name": "Radiant Fury",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-3-5b"
+          ]
+        },
+        {
+          "name": "Lights of Absolution",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-5-5a"
+          ]
+        },
+        {
+          "name": "Flames of Absolution",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-5-5b"
+          ]
+        },
+        {
+          "name": "Sunwell",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-7-5"
+          ]
+        }
+      ],
+      "observed_loop": "Vows turn each stance into a short sequence.",
+      "observed_changes": [
+        "More states",
+        "Unlock dependent"
+      ],
+      "claim_ids": [
+        "talent:sun-cleric/piety:27-70-0-4",
+        "talent:sun-cleric/piety:27-70-2-4",
+        "talent:sun-cleric/piety:27-70-4-4",
+        "talent:sun-cleric/piety:27-70-6-4",
+        "talent:sun-cleric/piety:27-70-8-4",
+        "talent:sun-cleric/piety:27-70-10-4",
+        "talent:sun-cleric/piety:27-70-1-5",
+        "talent:sun-cleric/piety:27-70-3-5a",
+        "talent:sun-cleric/piety:27-70-3-5b",
+        "talent:sun-cleric/piety:27-70-5-5a",
+        "talent:sun-cleric/piety:27-70-5-5b",
+        "talent:sun-cleric/piety:27-70-7-5"
+      ]
+    },
+    {
+      "id": "leveling_40_49",
+      "minimum_level": 40,
+      "maximum_level": 49,
+      "structural_unlocks": [
+        {
+          "name": "Holy Fervor",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-1-6"
+          ]
+        },
+        {
+          "name": "Flames of the Father",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-4-6"
+          ]
+        },
+        {
+          "name": "Grace",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-7-6"
+          ]
+        },
+        {
+          "name": "Pious",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-10-6"
+          ]
+        },
+        {
+          "name": "A Pious Life",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-0-7"
+          ]
+        },
+        {
+          "name": "Harsh Lessons",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-1-7"
+          ]
+        },
+        {
+          "name": "Sunburn",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-3-7"
+          ]
+        },
+        {
+          "name": "The Coming Dawn",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-4-7"
+          ]
+        },
+        {
+          "name": "Adjudication",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-5-7"
+          ]
+        },
+        {
+          "name": "Learning Light",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-7-7"
+          ]
+        },
+        {
+          "name": "Soul of Light",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-8-7"
+          ]
+        }
+      ],
+      "observed_loop": "Vows turn each stance into a short sequence.",
+      "observed_changes": [
+        "More states",
+        "Unlock dependent"
+      ],
+      "claim_ids": [
+        "talent:sun-cleric/piety:27-70-1-6",
+        "talent:sun-cleric/piety:27-70-4-6",
+        "talent:sun-cleric/piety:27-70-7-6",
+        "talent:sun-cleric/piety:27-70-10-6",
+        "talent:sun-cleric/piety:27-70-0-7",
+        "talent:sun-cleric/piety:27-70-1-7",
+        "talent:sun-cleric/piety:27-70-3-7",
+        "talent:sun-cleric/piety:27-70-4-7",
+        "talent:sun-cleric/piety:27-70-5-7",
+        "talent:sun-cleric/piety:27-70-7-7",
+        "talent:sun-cleric/piety:27-70-8-7"
+      ]
+    },
+    {
+      "id": "level_50_60",
+      "minimum_level": 50,
+      "maximum_level": 60,
+      "structural_unlocks": [
+        {
+          "name": "Spears of Glory",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-2-8"
+          ]
+        },
+        {
+          "name": "Burn The Heretics",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-4-8"
+          ]
+        },
+        {
+          "name": "Moment of Triumph",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-6-8"
+          ]
+        },
+        {
+          "name": "Day Cycles",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-10-8"
+          ]
+        },
+        {
+          "name": "Burning Heat",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-1-9"
+          ]
+        },
+        {
+          "name": "Sun Down",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-4-9"
+          ]
+        },
+        {
+          "name": "Duality of Light",
+          "claim_ids": [
+            "talent:sun-cleric/piety:27-70-7-9"
+          ]
+        }
+      ],
+      "observed_loop": "Late Piety is a high-tracking dual-school caster.",
+      "observed_changes": [
+        "Unsettled priority",
+        "Tracking"
+      ],
+      "claim_ids": [
+        "talent:sun-cleric/piety:27-70-2-8",
+        "talent:sun-cleric/piety:27-70-4-8",
+        "talent:sun-cleric/piety:27-70-6-8",
+        "talent:sun-cleric/piety:27-70-10-8",
+        "talent:sun-cleric/piety:27-70-1-9",
+        "talent:sun-cleric/piety:27-70-4-9",
+        "talent:sun-cleric/piety:27-70-7-9"
+      ]
+    }
+  ],
+  "contexts": {
+    "leveling_10_29": {
+      "feel": "Early alternation precedes proc tools.",
+      "strengths": [
+        "Core identity",
+        "Readable payoff"
+      ],
+      "cautions": [
+        "Incomplete kit",
+        "Sparse guidance"
+      ],
+      "claim_ids": [
+        "talent:sun-cleric/piety:27-70-4-0",
+        "talent:sun-cleric/piety:27-70-10-0",
+        "talent:sun-cleric/piety:27-70-4-1",
+        "talent:sun-cleric/piety:27-70-2-2",
+        "observed:sun-cleric/piety:alternating-schools",
+        "observed:sun-cleric/piety:complexity-growth",
+        "observed:sun-cleric/piety:level60-ramp",
+        "inference:sun-cleric/piety:playstyle-identity"
+      ]
+    },
+    "leveling_30_49": {
+      "feel": "Vows turn each stance into a short sequence.",
+      "strengths": [
+        "Complete engine",
+        "Better coverage"
+      ],
+      "cautions": [
+        "More states",
+        "Unlock dependent"
+      ],
+      "claim_ids": [
+        "talent:sun-cleric/piety:27-70-4-0",
+        "talent:sun-cleric/piety:27-70-10-0",
+        "talent:sun-cleric/piety:27-70-4-1",
+        "talent:sun-cleric/piety:27-70-2-2",
+        "observed:sun-cleric/piety:alternating-schools",
+        "observed:sun-cleric/piety:complexity-growth",
+        "observed:sun-cleric/piety:level60-ramp",
+        "inference:sun-cleric/piety:playstyle-identity"
+      ]
+    },
+    "level_50_60": {
+      "feel": "Late Piety is a high-tracking dual-school caster.",
+      "strengths": [
+        "Late package",
+        "Higher ceiling"
+      ],
+      "cautions": [
+        "Unsettled priority",
+        "Tracking"
+      ],
+      "claim_ids": [
+        "talent:sun-cleric/piety:27-70-4-0",
+        "talent:sun-cleric/piety:27-70-10-0",
+        "talent:sun-cleric/piety:27-70-4-1",
+        "talent:sun-cleric/piety:27-70-2-2",
+        "observed:sun-cleric/piety:alternating-schools",
+        "observed:sun-cleric/piety:complexity-growth",
+        "observed:sun-cleric/piety:level60-ramp",
+        "inference:sun-cleric/piety:playstyle-identity"
+      ]
+    },
+    "boss": {
+      "feel": "On bosses, On durable targets, the structural path grows from Dawnsear, Sunrise and Sunset, Radiant Flame toward Burning Heat, Sun Down, Duality of Light. A precise priority remains limited to the captured build and community evidence.",
+      "strengths": [
+        "Durable payoff",
+        "Repeatable loop"
+      ],
+      "cautions": [
+        "Movement",
+        "Repeated errors"
+      ],
+      "claim_ids": [
+        "talent:sun-cleric/piety:27-70-4-0",
+        "talent:sun-cleric/piety:27-70-10-0",
+        "talent:sun-cleric/piety:27-70-4-1",
+        "talent:sun-cleric/piety:27-70-2-2",
+        "observed:sun-cleric/piety:alternating-schools",
+        "observed:sun-cleric/piety:complexity-growth",
+        "observed:sun-cleric/piety:level60-ramp",
+        "inference:sun-cleric/piety:playstyle-identity"
+      ]
+    },
+    "dungeon_aoe": {
+      "feel": "In dungeons, For multiple targets, Alternate Sunrise and Sunset through Dawn, cast the matching Holy or Fire mini-rotation, then exploit Rapture and Horusath procs. The current evidence particularly constrains this through: A Piety player needed several WeakAuras before the better-boomkin loop clicked around 40.",
+      "strengths": [
+        "Pack tools",
+        "Utility"
+      ],
+      "cautions": [
+        "Short packs",
+        "Position"
+      ],
+      "claim_ids": [
+        "talent:sun-cleric/piety:27-70-4-0",
+        "talent:sun-cleric/piety:27-70-10-0",
+        "talent:sun-cleric/piety:27-70-4-1",
+        "talent:sun-cleric/piety:27-70-2-2",
+        "observed:sun-cleric/piety:alternating-schools",
+        "observed:sun-cleric/piety:complexity-growth",
+        "observed:sun-cleric/piety:level60-ramp",
+        "inference:sun-cleric/piety:playstyle-identity"
+      ]
+    },
+    "pvp": {
+      "feel": "In PvP, Ranged play offers space, but its best sequence may involve hard-cast and school-order commitments. Its structural defensive package includes Sun Gate, City of Light, Radiant Fury, Lights of Absolution, Burn The Heretics.",
+      "strengths": [
+        "Control",
+        "Pressure"
+      ],
+      "cautions": [
+        "Disruption",
+        "Defense"
+      ],
+      "claim_ids": [
+        "talent:sun-cleric/piety:27-70-4-0",
+        "talent:sun-cleric/piety:27-70-10-0",
+        "talent:sun-cleric/piety:27-70-4-1",
+        "talent:sun-cleric/piety:27-70-2-2",
+        "observed:sun-cleric/piety:alternating-schools",
+        "observed:sun-cleric/piety:complexity-growth",
+        "observed:sun-cleric/piety:level60-ramp",
+        "inference:sun-cleric/piety:playstyle-identity"
+      ]
+    }
+  },
+  "complexity": {
+    "core_actions": {
+      "leveling_10_29": {
+        "value": "moderate",
+        "reason": "The active bar follows this loop: A dual-school caster alternating Sunrise and Sunset. Holy spells empower one side, Fire spells the other, while Scorch Marks and Sun Ray feed large Rapture, Horusath Blast, and Sun Down payoffs. It rewards deliberate school sequencing rather than one-school spam. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "moderate-high",
+        "reason": "The active bar follows this loop: A dual-school caster alternating Sunrise and Sunset. Holy spells empower one side, Fire spells the other, while Scorch Marks and Sun Ray feed large Rapture, Horusath Blast, and Sun Down payoffs. It rewards deliberate school sequencing rather than one-school spam. The middle talent rows make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "The active bar follows this loop: A dual-school caster alternating Sunrise and Sunset. Holy spells empower one side, Fire spells the other, while Scorch Marks and Sun Ray feed large Rapture, Horusath Blast, and Sun Down payoffs. It rewards deliberate school sequencing rather than one-school spam. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "moderate-high",
+        "reason": "The active bar follows this loop: A dual-school caster alternating Sunrise and Sunset. Holy spells empower one side, Fire spells the other, while Scorch Marks and Sun Ray feed large Rapture, Horusath Blast, and Sun Down payoffs. It rewards deliberate school sequencing rather than one-school spam. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "The active bar follows this loop: A dual-school caster alternating Sunrise and Sunset. Holy spells empower one side, Fire spells the other, while Scorch Marks and Sun Ray feed large Rapture, Horusath Blast, and Sun Down payoffs. It rewards deliberate school sequencing rather than one-school spam. Changing pack size and lifetime add another constraint.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "The active bar follows this loop: A dual-school caster alternating Sunrise and Sunset. Holy spells empower one side, Fire spells the other, while Scorch Marks and Sun Ray feed large Rapture, Horusath Blast, and Sun Down payoffs. It rewards deliberate school sequencing rather than one-school spam. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      }
+    },
+    "state_tracking": {
+      "leveling_10_29": {
+        "value": "moderate",
+        "reason": "Resources and target conditions from On durable targets, the structural path grows from Dawnsear, Sunrise and Sunset, Radiant Flame toward Burning Heat, Sun Down, Duality of Light. A precise priority remains limited to the captured build and community evidence. must be tracked. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "moderate-high",
+        "reason": "Resources and target conditions from On durable targets, the structural path grows from Dawnsear, Sunrise and Sunset, Radiant Flame toward Burning Heat, Sun Down, Duality of Light. A precise priority remains limited to the captured build and community evidence. must be tracked. The middle talent rows make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "Resources and target conditions from On durable targets, the structural path grows from Dawnsear, Sunrise and Sunset, Radiant Flame toward Burning Heat, Sun Down, Duality of Light. A precise priority remains limited to the captured build and community evidence. must be tracked. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "moderate-high",
+        "reason": "Resources and target conditions from On durable targets, the structural path grows from Dawnsear, Sunrise and Sunset, Radiant Flame toward Burning Heat, Sun Down, Duality of Light. A precise priority remains limited to the captured build and community evidence. must be tracked. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "Resources and target conditions from On durable targets, the structural path grows from Dawnsear, Sunrise and Sunset, Radiant Flame toward Burning Heat, Sun Down, Duality of Light. A precise priority remains limited to the captured build and community evidence. must be tracked. Changing pack size and lifetime add another constraint.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "Resources and target conditions from On durable targets, the structural path grows from Dawnsear, Sunrise and Sunset, Radiant Flame toward Burning Heat, Sun Down, Duality of Light. A precise priority remains limited to the captured build and community evidence. must be tracked. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      }
+    },
+    "sequencing": {
+      "leveling_10_29": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "leveling_30_49": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "level_50_60": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "boss": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "dungeon_aoe": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      },
+      "pvp": {
+        "value": "unknown",
+        "reason": "",
+        "claim_ids": []
+      }
+    },
+    "reactive_decisions": {
+      "leveling_10_29": {
+        "value": "moderate",
+        "reason": "Target count, movement and pressure alter the next action. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "moderate-high",
+        "reason": "Target count, movement and pressure alter the next action. The middle talent rows make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "Target count, movement and pressure alter the next action. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "moderate-high",
+        "reason": "Target count, movement and pressure alter the next action. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "Target count, movement and pressure alter the next action. Changing pack size and lifetime add another constraint.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "Target count, movement and pressure alter the next action. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      }
+    },
+    "execution": {
+      "leveling_10_29": {
+        "value": "moderate",
+        "reason": "Execution depends on Ranged play offers space, but its best sequence may involve hard-cast and school-order commitments. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "moderate-high",
+        "reason": "Execution depends on Ranged play offers space, but its best sequence may involve hard-cast and school-order commitments. The middle talent rows make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "Execution depends on Ranged play offers space, but its best sequence may involve hard-cast and school-order commitments. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "moderate-high",
+        "reason": "Execution depends on Ranged play offers space, but its best sequence may involve hard-cast and school-order commitments. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "Execution depends on Ranged play offers space, but its best sequence may involve hard-cast and school-order commitments. Changing pack size and lifetime add another constraint.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "Execution depends on Ranged play offers space, but its best sequence may involve hard-cast and school-order commitments. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      }
+    },
+    "failure_cost": {
+      "leveling_10_29": {
+        "value": "moderate",
+        "reason": "Repeating the wrong school or cashing out before both sides are prepared weakens the entire sunrise-sunset sequence. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "moderate-high",
+        "reason": "Repeating the wrong school or cashing out before both sides are prepared weakens the entire sunrise-sunset sequence. The middle talent rows make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "Repeating the wrong school or cashing out before both sides are prepared weakens the entire sunrise-sunset sequence. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "moderate-high",
+        "reason": "Repeating the wrong school or cashing out before both sides are prepared weakens the entire sunrise-sunset sequence. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "Repeating the wrong school or cashing out before both sides are prepared weakens the entire sunrise-sunset sequence. Changing pack size and lifetime add another constraint.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "Repeating the wrong school or cashing out before both sides are prepared weakens the entire sunrise-sunset sequence. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      }
+    },
+    "setup_burden": {
+      "leveling_10_29": {
+        "value": "moderate",
+        "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Alternate Sunrise and Sunset through Dawn, cast the matching Holy or Fire mini-rotation, then exploit Rapture and Horusath procs. The current evidence particularly constrains this through: A Piety player needed several WeakAuras before the better-boomkin loop clicked around 40. The early kit exposes only part of that demand.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      },
+      "leveling_30_49": {
+        "value": "moderate-high",
+        "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Alternate Sunrise and Sunset through Dawn, cast the matching Holy or Fire mini-rotation, then exploit Rapture and Horusath procs. The current evidence particularly constrains this through: A Piety player needed several WeakAuras before the better-boomkin loop clicked around 40. The middle talent rows make that interaction regular rather than occasional.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      },
+      "level_50_60": {
+        "value": "high",
+        "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Alternate Sunrise and Sunset through Dawn, cast the matching Holy or Fire mini-rotation, then exploit Rapture and Horusath procs. The current evidence particularly constrains this through: A Piety player needed several WeakAuras before the better-boomkin loop clicked around 40. Late talents complete the interaction and raise its ceiling.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      },
+      "boss": {
+        "value": "moderate-high",
+        "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Alternate Sunrise and Sunset through Dawn, cast the matching Holy or Fire mini-rotation, then exploit Rapture and Horusath procs. The current evidence particularly constrains this through: A Piety player needed several WeakAuras before the better-boomkin loop clicked around 40. A durable target makes repeated precision matter.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      },
+      "dungeon_aoe": {
+        "value": "high",
+        "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Alternate Sunrise and Sunset through Dawn, cast the matching Holy or Fire mini-rotation, then exploit Rapture and Horusath procs. The current evidence particularly constrains this through: A Piety player needed several WeakAuras before the better-boomkin loop clicked around 40. Changing pack size and lifetime add another constraint.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      },
+      "pvp": {
+        "value": "high",
+        "reason": "Multi-target payoff follows this evidence-backed pattern: For multiple targets, Alternate Sunrise and Sunset through Dawn, cast the matching Holy or Fire mini-rotation, then exploit Rapture and Horusath procs. The current evidence particularly constrains this through: A Piety player needed several WeakAuras before the better-boomkin loop clicked around 40. Enemy disruption makes the same task less predictable.",
+        "claim_ids": [
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0",
+          "talent:sun-cleric/piety:27-70-4-1",
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      }
+    }
+  },
+  "fit": {
+    "enjoy_if": [
+      {
+        "text": "You want this exact fantasy and decision loop.",
+        "claim_ids": [
+          "inference:sun-cleric/piety:playstyle-identity",
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0"
+        ]
+      },
+      {
+        "text": "You enjoy a cadence that changes with late talents.",
+        "claim_ids": [
+          "inference:sun-cleric/piety:playstyle-identity",
+          "talent:sun-cleric/piety:27-70-4-0",
+          "talent:sun-cleric/piety:27-70-10-0"
+        ]
+      }
+    ],
+    "avoid_if": [
+      {
+        "text": "You want the complete rotation immediately.",
+        "claim_ids": [
+          "inference:sun-cleric/piety:failure-cost",
+          "observed:sun-cleric/piety:alternating-schools"
+        ]
+      },
+      {
+        "text": "You dislike setup loss to movement.",
+        "claim_ids": [
+          "inference:sun-cleric/piety:failure-cost",
+          "observed:sun-cleric/piety:alternating-schools"
+        ]
+      }
+    ]
+  },
+  "stat_and_equipment_hooks": [],
+  "performance_signal_ids": [
+    "observed:sun-cleric/piety:performance-context"
+  ],
+  "sentiment": {
+    "praise": [
+      {
+        "theme": "Rapture impact and theme are praised.",
+        "claim_ids": [
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "observed:sun-cleric/piety:build-practice"
+        ]
+      }
+    ],
+    "frustrations": [
+      {
+        "theme": "Stance, Vow and Dawn tracking reject simplicity.",
+        "claim_ids": [
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "inference:sun-cleric/piety:failure-cost"
+        ]
+      }
+    ],
+    "contested": [
+      {
+        "theme": "Power anecdotes, popularity and subjective fun remain separate evidence.",
+        "claim_ids": [
+          "observed:sun-cleric/piety:alternating-schools",
+          "observed:sun-cleric/piety:complexity-growth",
+          "observed:sun-cleric/piety:level60-ramp",
+          "observed:sun-cleric/piety:performance-context"
+        ]
+      }
+    ]
+  },
+  "known_issue_claim_ids": [],
+  "video_ids": [],
+  "community_build_snapshot": {
+    "count": 1,
+    "latest_update": "2026-07-21T09:24:56.292+00:00",
+    "top_title": "Piety - PvP BLAST THEM",
+    "top_url": "https://coabuildhub.com/build/b574355f-3597-4c59-974c-65ef2272bfe5",
+    "source_ids": [
+      "buildhub-builds-2026-08-05",
+      "buildhub:b574355f-3597-4c59-974c-65ef2272bfe5"
+    ]
+  },
+  "coverage": {
+    "mechanical": "manual_talent_and_build_interpretation",
+    "community": "manual_recent_source_review",
+    "performance": "limited_uncontrolled",
+    "video": "searched_none_verified",
+    "overall_confidence": "medium",
+    "gaps": [
+      "No verified current full-rotation video.",
+      "Priority breakpoints remain unverified."
+    ]
+  },
+  "claims": [
+    {
+      "id": "talent:sun-cleric/piety:27-70-4-0",
+      "kind": "structural",
+      "text": "Dawnsear: Blast an enemy with burning light, dealing 88 + 100% fire SP Fire damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-10-0",
+      "kind": "structural",
+      "text": "Sunrise and Sunset: Level 10 PassiveAfter activating Dawn, casting a Holy spell grants Sunrise or casting a Fire spell grants Sunset.Entering Sunrise or Sunset prevents you from entering the other until you enter the next.SunriseIncreases all Holy Damage dealt by 20% for 2 minutes.SunsetIncreases your critical strike chance with Fire spells by 20% and Fire Damage by 10% for 2 minutes.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-4-1",
+      "kind": "structural",
+      "text": "Radiant Flame: Launch radiant spheres at an enemy each dealing 31 + 20.69% SP Holyflame Damage, repeating every 1 sec for 4 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_10_19",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-2-2",
+      "kind": "structural",
+      "text": "Scorch Marks: Casting Dawnsear and Sunflare now have a 40% chance to grant Scorch Marks for 10 seconds.Scorch MarksYour next Radiant Flame has no mana cost, ticks -50% faster, and its duration is reduced by -50%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-6-2",
+      "kind": "structural",
+      "text": "Solar Conduit: Reduces the cast time of Dawnsear by -20% while Dawn is active.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-10-2",
+      "kind": "structural",
+      "text": "Fire from the Heavens: Level 20 PassiveDamage dealt by Radiant Flame now has a 10% chance to launch a Solar Flare at your target.Solar Flare (Damage)Deals 137 + 26% SP Holyflame Damage and reduces the target's chance to hit by -3% for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-1-3",
+      "kind": "structural",
+      "text": "Burning Cascade: Reduces the cast time and mana cost of Dawnsear and Sunflare by -10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-4-3",
+      "kind": "structural",
+      "text": "Rapture: Call down a streak of sun light to smite your target, dealing 111 + 200% fire SP Fire damage to them and nearby enemies, piercing all immunities, but dealing less damage with each enemy struck.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-7-3",
+      "kind": "structural",
+      "text": "Photosynthetic: Increases your spell haste by 3%, plus an additional 1% during the day.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_20_29",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-0-4",
+      "kind": "structural",
+      "text": "Purgation: Dealing damage with Radiant Flame now increases the target's Holy and Fire damage taken from you by 1% for 8 seconds, stacking 8 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-2-4",
+      "kind": "structural",
+      "text": "Solar Champion: Increases the range of your Piety spells by 20% and reduces the threat generated by them by -20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-4-4",
+      "kind": "structural",
+      "text": "Solar Concord: Resets the cooldown of Horusath Blast while in Sunrise and Rapture while in Sunset and causes their damage dealt to launch a Solar Flare. Lasts 15 seconds.Solar Flare (Damage)Deals 137 + 26% SP Holyflame Damage and reduces the target's chance to hit by -3% for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-6-4",
+      "kind": "structural",
+      "text": "Wrath of God: Increases the critical strike chance of Sunflare and Dawnsear by 3% and reduces spell pushback suffered from damaging attacks by 50%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-8-4",
+      "kind": "structural",
+      "text": "Sun's Hope: Damage dealt by Solar Flares now grants you 1 Solar Power and increase the targets chance to be critically struck by spells by 3% for 8 seconds.Solar Flare (Damage)Deals 137 + 26% SP Holyflame Damage and reduces the target's chance to hit by -3% for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-10-4",
+      "kind": "structural",
+      "text": "Struck by the Sun: Level 30 PassiveIncreases your Holy and Fire spell damage by 30% and your spell hit rating by 6% of your Intellect.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-1-5",
+      "kind": "structural",
+      "text": "Sun Gate: Shift 25 yds forward at light speed, removing all root effects.This leaves behind a Sun Gate for 15 seconds that allies can interact with to blink themselves the same distance forward. Allies can only use Sun Gate every 90 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-3-5a",
+      "kind": "structural",
+      "text": "City of Light: Damage dealt by Radiant Flame now restores 3% of your missing health and mana.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-3-5b",
+      "kind": "structural",
+      "text": "Radiant Fury: Damage dealt by Radiant Flame is now increased by 10% on enemies below 35% health.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-5-5a",
+      "kind": "structural",
+      "text": "Lights of Absolution: Damage dealt by Horusath Blast now grants you Light of Absolution for 10 seconds.Lights of AbsolutionDamage dealt by Solar Flares now restores 2% missing health, Energy, Focus, Runic Power, and Rage to allies within 40 yds. Can only occur once every 0.5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-5-5b",
+      "kind": "structural",
+      "text": "Flames of Absolution: Damage dealt by Horusath Blast now launches a Solar Flare at up to 5 enemies within 5 yds of your target.Solar Flare (Damage)Deals 137 + 26% SP Holyflame Damage and reduces the target's chance to hit by -3% for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-7-5",
+      "kind": "structural",
+      "text": "Sunwell: Become an embodiment of the sun for 30 seconds that periodically dispels fear, sleep, and charm effects every 3 sec from allies within 40 yds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_30_39",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-1-6",
+      "kind": "structural",
+      "text": "Holy Fervor: Increases the effectiveness of Sunrise and Sunset by 20%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-4-6",
+      "kind": "structural",
+      "text": "Flames of the Father: Your Fire damage dealt is increased by 10% against Burning targets.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-7-6",
+      "kind": "structural",
+      "text": "Grace: Increases the spell damage bonus of Dawnsear by 20% and Sunflare by 10%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-10-6",
+      "kind": "structural",
+      "text": "Pious: Level 40 PassiveIncreases your critical damage dealt by 150% and your critical strikes grant allies Replenishment.ReplenishmentRestores 1% maximum mana every 5 sec to allies within 100 yds for 15 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-0-7",
+      "kind": "structural",
+      "text": "A Pious Life: Increases the damage of Horusath Blast and Rapture by 15%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-1-7",
+      "kind": "structural",
+      "text": "Harsh Lessons: Casting Dawn now grants Scorch Marks.Scorch MarksYour next Radiant Flame has no mana cost, ticks -50% faster, and its duration is reduced by -50%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-3-7",
+      "kind": "structural",
+      "text": "Sunburn: Reduces the cast time of Rapture by -0.5 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-4-7",
+      "kind": "structural",
+      "text": "The Coming Dawn: While Dawn is active, damage dealt by Radiant Flame now reduces the cooldown of Dawnfall and Solar Concord by -1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-5-7",
+      "kind": "structural",
+      "text": "Adjudication: Casting Rapture now causes your next Dawnsear within 10 seconds to strike your target twice and launch a Solar Flare at the target.Solar Flare (Damage)Deals 137 + 26% SP Holyflame Damage and reduces the target's chance to hit by -3% for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-7-7",
+      "kind": "structural",
+      "text": "Learning Light: Entering Sunset or Sunrise increases your spell haste by 20%. Lasts for 10 seconds or 3 casts.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-8-7",
+      "kind": "structural",
+      "text": "Soul of Light: Reduces the cooldown of An'she's Blessing by -60 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "leveling_40_49",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-2-8",
+      "kind": "structural",
+      "text": "Spears of Glory: Damage dealt by Radiant Flame now has an 15% chance to grant you Spears of Glory.Spears of GloryYour next Dawnsear within 10 seconds is instant cast and deals 25% increased damage.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-4-8",
+      "kind": "structural",
+      "text": "Burn The Heretics: Increases your damage and healing by 10% against targets below 35% health.Additionally, when Scorch Marks are consumed you now gain 10% increased Magic damage for 8 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-6-8",
+      "kind": "structural",
+      "text": "Moment of Triumph: Horusath Blast or Rapture now have a 20% chance to not incur a cooldown on cast.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-10-8",
+      "kind": "structural",
+      "text": "Day Cycles: Level 50 PassiveWhile in Sunrise, the remaining cooldown of Horusath Blast is reduced by 10% every 1 sec.While in Sunset, the remaining cooldown of Rapture is reduced by 10% every 1 sec.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-1-9",
+      "kind": "structural",
+      "text": "Burning Heat: Casting Sunflare now has a 30% chance to transform your next Sunflare into Sun Ray.Casting Horusath Blast is now guaranteed to transform your next Sunflare into Sun Ray.Sun RayShine the light of the sun on an enemy, dealing 773 + 100% holy SP Holy Damage and granting you Scorch Marks.Scorch MarksYour next Radiant Flame has no mana cost, ticks -50% faster, and its duration is reduced by -50%.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-4-9",
+      "kind": "structural",
+      "text": "Sun Down: Bring the wrath of the sun down upon an enemy after 2 seconds, dealing 1180 + 130% SP Holyflame Damage and scorching the earth beneath them for 9 seconds. While inside, enemies are struck by a Solar Flare every 3 sec and take 15% increased damage from Rapture and Horusath Blast.Solar Flare (Damage)Deals 137 + 26% SP Holyflame Damage and reduces the target's chance to hit by -3% for 10 seconds.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "talent:sun-cleric/piety:27-70-7-9",
+      "kind": "structural",
+      "text": "Duality of Light: While in Sunset, your Holy damage dealt grants Twin Flame.Twin Flames (Fire)Your next Rapture within 15 seconds strikes again for 8% of the damage dealt, stacking 10 times.While in Sunrise, your Fire damage dealt grants Sun PowerSun Power (Holy)Your next Horusath Blast within 15 seconds strikes again for 8% of the damage dealt, stacking 10 times.",
+      "source_ids": [
+        "snapshot-talents-2026-08-05"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": []
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Tooltip structure from a current fan-maintained mirror; verify material behavior in live play or recent reports."
+    },
+    {
+      "id": "observed:sun-cleric/piety:alternating-schools",
+      "kind": "observed",
+      "text": "Players explain Dawn must alternate Sunrise and Sunset, each requiring the matching school.",
+      "source_ids": [
+        "reddit:sun-cleric-questions-2026-07-18",
+        "reddit:sun-cleric-complexity-2026-08-01"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:sun-cleric/piety:complexity-growth",
+      "kind": "observed",
+      "text": "A Piety player needed several WeakAuras before the better-boomkin loop clicked around 40.",
+      "source_ids": [
+        "reddit:sun-cleric-questions-2026-07-18",
+        "reddit:sun-cleric-complexity-2026-08-01"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:sun-cleric/piety:level60-ramp",
+      "kind": "observed",
+      "text": "A level-60 player praises strong, easy ramp once the complete kit exists.",
+      "source_ids": [
+        "reddit:sun-cleric-questions-2026-07-18",
+        "reddit:sun-cleric-complexity-2026-08-01"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:sun-cleric/piety:build-practice",
+      "kind": "observed",
+      "text": "The captured build is PvP burst, not settled PvE.",
+      "source_ids": [
+        "buildhub-builds-2026-08-05",
+        "buildhub:b574355f-3597-4c59-974c-65ef2272bfe5"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "community_build_snapshot"
+        ],
+        "build_or_mode": [
+          "documented_build"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The guide documents one current way to play; it is not treated as proof of optimality."
+    },
+    {
+      "id": "observed:sun-cleric/piety:performance-context",
+      "kind": "observed",
+      "text": "4,458 DPS and 83 records are uncontrolled.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "uncontrolled_performance_signals"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "low",
+      "conflicts_with": [],
+      "notes": "Do not convert this into a tier ranking."
+    },
+    {
+      "id": "inference:sun-cleric/piety:playstyle-identity",
+      "kind": "inference",
+      "text": "A sunrise-and-sunset caster who alternates Holy and Fire to build opposing sides, then releases Scorch, Ray, Rapture, and Sun Down payoffs.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:sun-cleric/piety:27-70-4-0",
+        "talent:sun-cleric/piety:27-70-10-0",
+        "talent:sun-cleric/piety:27-70-4-1",
+        "talent:sun-cleric/piety:27-70-2-2",
+        "observed:sun-cleric/piety:alternating-schools",
+        "observed:sun-cleric/piety:complexity-growth"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Descriptive playstyle classification, not an official label."
+    },
+    {
+      "id": "inference:sun-cleric/piety:failure-cost",
+      "kind": "inference",
+      "text": "Repeating the wrong school or cashing out before both sides are prepared weakens the entire sunrise-sunset sequence.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:sun-cleric/piety:27-70-4-0",
+        "talent:sun-cleric/piety:27-70-10-0",
+        "talent:sun-cleric/piety:27-70-4-1",
+        "talent:sun-cleric/piety:27-70-2-2",
+        "talent:sun-cleric/piety:27-70-6-2",
+        "observed:sun-cleric/piety:alternating-schools",
+        "observed:sun-cleric/piety:complexity-growth",
+        "observed:sun-cleric/piety:level60-ramp"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Direction is supported; exact throughput cost is not measured."
+    }
+  ]
+}

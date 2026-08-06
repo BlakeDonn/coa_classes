@@ -1,0 +1,969 @@
+{
+  "baseline": "knight-of-xoroth--defiance.json",
+  "set": {
+    "identity": {
+      "fantasy": "A block-and-retaliation fire tank whose imps, Abyssal and attackers feed Rage into shields, rebukes and unusually strong self-healing.",
+      "one_line": "Pull with ranged fire and summons, let blocks and hits generate the engine, then spend Rage on mitigation or repeatable healing while commanding pets and keeping threat spread.",
+      "primary_family": "commanders",
+      "also_fits": [
+        "strategists"
+      ],
+      "playstyle_tags": [
+        "summon-retaliation-tank",
+        "block-tank",
+        "fire-tank"
+      ],
+      "claim_ids": [
+        "talent:knight-of-xoroth/defiance:17-47-2-4",
+        "talent:knight-of-xoroth/defiance:17-47-10-0",
+        "talent:knight-of-xoroth/defiance:17-47-2-9",
+        "talent:knight-of-xoroth/defiance:17-47-8-4",
+        "observed:knight-of-xoroth/defiance:self-sustain-kit",
+        "observed:knight-of-xoroth/defiance:priority-feel",
+        "inference:knight-of-xoroth/defiance:playstyle-identity"
+      ]
+    },
+    "mechanics": {
+      "core_loop": "Establish imp and Abyssal pressure, use block-triggered retaliation for threat, and convert Rage into the heal, shield or mitigation needed for the next damage event.",
+      "single_target": "Single-target threat is reported strong; keep the no-cooldown heal and major cooldowns available rather than over-spending Rage.",
+      "aoe": "Many attackers generate abundant Rage, enabling repeated healing and easy fire threat once the pack is gathered.",
+      "movement_and_target_switching": "Mounted Combat and ranged pet or fire actions give better pickup than a purely stationary block tank.",
+      "defense_and_control": "Players report a persistent HoT, a minute heal, a large shield, damage reduction and a nearby-enemy heal that can refill health on large pulls.",
+      "group_utility": "Imps, Abyssal, grips, rebukes and group mitigation make the tank more than a passive shield wall.",
+      "failure_modes": [
+        {
+          "text": "Dumping Rage into damage before a spike removes the resource needed for mitigation or healing.",
+          "claim_ids": [
+            "inference:knight-of-xoroth/defiance:failure-cost",
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9"
+          ]
+        },
+        {
+          "text": "Pet pathing or premature summons can complicate a pull.",
+          "claim_ids": [
+            "inference:knight-of-xoroth/defiance:failure-cost",
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9"
+          ]
+        },
+        {
+          "text": "Small-target encounters generate less attacker-fed Rage than mass pulls.",
+          "claim_ids": [
+            "inference:knight-of-xoroth/defiance:failure-cost",
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9"
+          ]
+        }
+      ],
+      "claim_ids": [
+        "talent:knight-of-xoroth/defiance:17-47-2-4",
+        "talent:knight-of-xoroth/defiance:17-47-10-0",
+        "talent:knight-of-xoroth/defiance:17-47-2-9",
+        "talent:knight-of-xoroth/defiance:17-47-8-4",
+        "talent:knight-of-xoroth/defiance:17-47-4-0",
+        "observed:knight-of-xoroth/defiance:self-sustain-kit",
+        "observed:knight-of-xoroth/defiance:priority-feel",
+        "observed:knight-of-xoroth/defiance:pack-resource-loop",
+        "observed:knight-of-xoroth/defiance:build-practice",
+        "inference:knight-of-xoroth/defiance:playstyle-identity"
+      ]
+    },
+    "contexts": {
+      "leveling_10_29": {
+        "feel": "The block shell appears before its full pet-healing network.",
+        "strengths": [
+          "Readable block tank",
+          "Ranged pull tools"
+        ],
+        "cautions": [
+          "Incomplete sustain",
+          "Pet setup"
+        ],
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "talent:knight-of-xoroth/defiance:17-47-8-4",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:playstyle-identity"
+        ]
+      },
+      "leveling_30_49": {
+        "feel": "More attackers begin to feel like fuel rather than only danger.",
+        "strengths": [
+          "Strong large-pull healing",
+          "Easy AoE threat"
+        ],
+        "cautions": [
+          "Resource varies by attackers",
+          "More buttons"
+        ],
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "talent:knight-of-xoroth/defiance:17-47-8-4",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:playstyle-identity"
+        ]
+      },
+      "level_50_60": {
+        "feel": "Late Defiance becomes a nuanced priority tank with several viable talent packages.",
+        "strengths": [
+          "Exceptional sustain reports",
+          "Flexible talents"
+        ],
+        "cautions": [
+          "Above-average priority load",
+          "Sparse neutral evidence"
+        ],
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "talent:knight-of-xoroth/defiance:17-47-8-4",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:playstyle-identity"
+        ]
+      },
+      "boss": {
+        "feel": "On bosses, Single-target threat is reported strong; keep the no-cooldown heal and major cooldowns available rather than over-spending Rage.",
+        "strengths": [
+          "Strong single-target threat",
+          "Layered cooldowns"
+        ],
+        "cautions": [
+          "Less Rage from one attacker",
+          "Cooldown timing"
+        ],
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "talent:knight-of-xoroth/defiance:17-47-8-4",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:playstyle-identity"
+        ]
+      },
+      "dungeon_aoe": {
+        "feel": "In dungeons, Many attackers generate abundant Rage, enabling repeated healing and easy fire threat once the pack is gathered.",
+        "strengths": [
+          "Attackers fuel healing",
+          "Broad AoE"
+        ],
+        "cautions": [
+          "Overpulls still punish late shields",
+          "Pet placement"
+        ],
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "talent:knight-of-xoroth/defiance:17-47-8-4",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:playstyle-identity"
+        ]
+      },
+      "pvp": {
+        "feel": "In PvP, Mounted Combat and ranged pet or fire actions give better pickup than a purely stationary block tank. Players report a persistent HoT, a minute heal, a large shield, damage reduction and a nearby-enemy heal that can refill health on large pulls.",
+        "strengths": [
+          "Good mobility",
+          "Repeatable sustain"
+        ],
+        "cautions": [
+          "Control can disrupt pets",
+          "Resource denial matters"
+        ],
+        "claim_ids": [
+          "talent:knight-of-xoroth/defiance:17-47-2-4",
+          "talent:knight-of-xoroth/defiance:17-47-10-0",
+          "talent:knight-of-xoroth/defiance:17-47-2-9",
+          "talent:knight-of-xoroth/defiance:17-47-8-4",
+          "observed:knight-of-xoroth/defiance:self-sustain-kit",
+          "observed:knight-of-xoroth/defiance:priority-feel",
+          "observed:knight-of-xoroth/defiance:pack-resource-loop",
+          "inference:knight-of-xoroth/defiance:playstyle-identity"
+        ]
+      }
+    },
+    "complexity": {
+      "core_actions": {
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "Defiance combines threat attacks, pet commands, Rage heals, a HoT, shields, damage reduction, Mounted Combat and control. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Defiance combines threat attacks, pet commands, Rage heals, a HoT, shields, damage reduction, Mounted Combat and control. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Defiance combines threat attacks, pet commands, Rage heals, a HoT, shields, damage reduction, Mounted Combat and control. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "Defiance combines threat attacks, pet commands, Rage heals, a HoT, shields, damage reduction, Mounted Combat and control. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Defiance combines threat attacks, pet commands, Rage heals, a HoT, shields, damage reduction, Mounted Combat and control. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Defiance combines threat attacks, pet commands, Rage heals, a HoT, shields, damage reduction, Mounted Combat and control. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        }
+      },
+      "state_tracking": {
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "Rage, block triggers, pet state, HoT, shield and mitigation timers overlap. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Rage, block triggers, pet state, HoT, shield and mitigation timers overlap. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Rage, block triggers, pet state, HoT, shield and mitigation timers overlap. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "Rage, block triggers, pet state, HoT, shield and mitigation timers overlap. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Rage, block triggers, pet state, HoT, shield and mitigation timers overlap. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Rage, block triggers, pet state, HoT, shield and mitigation timers overlap. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        }
+      },
+      "setup_burden": {
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "Summons and the defensive layer should be established before the pull peaks. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Summons and the defensive layer should be established before the pull peaks. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Summons and the defensive layer should be established before the pull peaks. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "Summons and the defensive layer should be established before the pull peaks. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Summons and the defensive layer should be established before the pull peaks. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Summons and the defensive layer should be established before the pull peaks. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        }
+      },
+      "reactive_decisions": {
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "Rage can become damage, healing or mitigation depending on attacker count and health. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Rage can become damage, healing or mitigation depending on attacker count and health. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Rage can become damage, healing or mitigation depending on attacker count and health. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "Rage can become damage, healing or mitigation depending on attacker count and health. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Rage can become damage, healing or mitigation depending on attacker count and health. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Rage can become damage, healing or mitigation depending on attacker count and health. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        }
+      },
+      "execution": {
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "The priority is smooth but requires timely defensive spending and pet-aware positioning. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "The priority is smooth but requires timely defensive spending and pet-aware positioning. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "The priority is smooth but requires timely defensive spending and pet-aware positioning. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "The priority is smooth but requires timely defensive spending and pet-aware positioning. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "The priority is smooth but requires timely defensive spending and pet-aware positioning. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "The priority is smooth but requires timely defensive spending and pet-aware positioning. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        }
+      },
+      "failure_cost": {
+        "leveling_10_29": {
+          "value": "moderate-high",
+          "reason": "Over-spending Rage can remove several recovery options at once. The early kit exposes only part of that demand.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        },
+        "leveling_30_49": {
+          "value": "high",
+          "reason": "Over-spending Rage can remove several recovery options at once. The middle talent rows make that interaction regular rather than occasional.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        },
+        "level_50_60": {
+          "value": "high",
+          "reason": "Over-spending Rage can remove several recovery options at once. Late talents complete the interaction and raise its ceiling.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        },
+        "boss": {
+          "value": "high",
+          "reason": "Over-spending Rage can remove several recovery options at once. A durable target makes repeated precision matter.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        },
+        "dungeon_aoe": {
+          "value": "high",
+          "reason": "Over-spending Rage can remove several recovery options at once. Changing pack size and lifetime add another constraint.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        },
+        "pvp": {
+          "value": "high",
+          "reason": "Over-spending Rage can remove several recovery options at once. Enemy disruption makes the same task less predictable.",
+          "claim_ids": [
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0",
+            "talent:knight-of-xoroth/defiance:17-47-2-9",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        }
+      }
+    },
+    "fit": {
+      "enjoy_if": [
+        {
+          "text": "You want active self-healing and pets inside a shield-tank loop.",
+          "claim_ids": [
+            "inference:knight-of-xoroth/defiance:playstyle-identity",
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0"
+          ]
+        },
+        {
+          "text": "You enjoy attackers becoming a resource source.",
+          "claim_ids": [
+            "inference:knight-of-xoroth/defiance:playstyle-identity",
+            "talent:knight-of-xoroth/defiance:17-47-2-4",
+            "talent:knight-of-xoroth/defiance:17-47-10-0"
+          ]
+        }
+      ],
+      "avoid_if": [
+        {
+          "text": "You want a pet-free or passive tank.",
+          "claim_ids": [
+            "inference:knight-of-xoroth/defiance:failure-cost",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit"
+          ]
+        },
+        {
+          "text": "You dislike choosing between threat and survival spenders.",
+          "claim_ids": [
+            "inference:knight-of-xoroth/defiance:failure-cost",
+            "observed:knight-of-xoroth/defiance:self-sustain-kit"
+          ]
+        }
+      ]
+    },
+    "sentiment": {
+      "praise": [
+        {
+          "theme": "Recent players are unusually enthusiastic about its smooth priority, sustain and talent flexibility.",
+          "claim_ids": [
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "observed:knight-of-xoroth/defiance:build-practice"
+          ]
+        }
+      ],
+      "frustrations": [
+        {
+          "theme": "Pet management and a larger active bar remain genuine costs.",
+          "claim_ids": [
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "inference:knight-of-xoroth/defiance:failure-cost"
+          ]
+        }
+      ],
+      "contested": [
+        {
+          "theme": "The strong August sustain reports conflict with older comparisons calling Defiance inferior, plausibly because of level and familiarity.",
+          "claim_ids": [
+            "observed:knight-of-xoroth/defiance:self-sustain-kit",
+            "observed:knight-of-xoroth/defiance:priority-feel",
+            "observed:knight-of-xoroth/defiance:pack-resource-loop",
+            "observed:knight-of-xoroth/defiance:performance-context"
+          ]
+        }
+      ]
+    },
+    "performance_signal_ids": [
+      "observed:knight-of-xoroth/defiance:performance-context"
+    ],
+    "coverage": {
+      "mechanical": "manual_talent_and_build_interpretation",
+      "community": "manual_recent_source_review",
+      "performance": "limited_uncontrolled",
+      "video": "searched_none_verified",
+      "overall_confidence": "medium",
+      "gaps": [
+        "No controlled mitigation logs.",
+        "Pet behavior and Rage flow need boss-specific verification."
+      ]
+    }
+  },
+  "level_band_updates": {
+    "leveling_10_19": {
+      "observed_loop": "The block shell appears before its full pet-healing network.",
+      "observed_changes": [
+        "Incomplete sustain",
+        "Pet setup"
+      ]
+    },
+    "leveling_20_29": {
+      "observed_loop": "The block shell appears before its full pet-healing network.",
+      "observed_changes": [
+        "Incomplete sustain",
+        "Pet setup"
+      ]
+    },
+    "leveling_30_39": {
+      "observed_loop": "More attackers begin to feel like fuel rather than only danger.",
+      "observed_changes": [
+        "Resource varies by attackers",
+        "More buttons"
+      ]
+    },
+    "leveling_40_49": {
+      "observed_loop": "More attackers begin to feel like fuel rather than only danger.",
+      "observed_changes": [
+        "Resource varies by attackers",
+        "More buttons"
+      ]
+    },
+    "level_50_60": {
+      "observed_loop": "Late Defiance becomes a nuanced priority tank with several viable talent packages.",
+      "observed_changes": [
+        "Above-average priority load",
+        "Sparse neutral evidence"
+      ]
+    }
+  },
+  "append_claims": [
+    {
+      "id": "observed:knight-of-xoroth/defiance:self-sustain-kit",
+      "kind": "observed",
+      "text": "A current level-57 player reports no dungeon or solo deaths and another lists a persistent HoT, instant heal, shield, reduction cooldown and a heal scaling with nearby enemies.",
+      "source_ids": [
+        "reddit:kox-defiance-2026-08-04",
+        "reddit:tank-weapons-2026-08-01"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:knight-of-xoroth/defiance:priority-feel",
+      "kind": "observed",
+      "text": "A recent tank comparison calls Defiance's priority slightly above average rather than extreme, praising smooth imp interactions and meaningful talent options.",
+      "source_ids": [
+        "reddit:kox-defiance-2026-08-04",
+        "reddit:tank-weapons-2026-08-01"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:knight-of-xoroth/defiance:pack-resource-loop",
+      "kind": "observed",
+      "text": "Current accounts say being hit by many enemies supplies enough Rage for repeated healing, explaining why its large-pull sustain can feel stronger than its single-target resource flow.",
+      "source_ids": [
+        "reddit:kox-defiance-2026-08-04",
+        "reddit:tank-weapons-2026-08-01"
+      ],
+      "scope": {
+        "levels": "leveling_10_60",
+        "content": [
+          "community_reported_play"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "moderate",
+      "conflicts_with": [],
+      "notes": "Manually separated from structural talent evidence; player reports remain anecdotal."
+    },
+    {
+      "id": "observed:knight-of-xoroth/defiance:build-practice",
+      "kind": "observed",
+      "text": "The captured top-logs-based Defiance build documents one current tank setup, but its title is not independent proof that it is optimal.",
+      "source_ids": [
+        "buildhub-builds-2026-08-05",
+        "buildhub:ac11d4c7-9a36-481a-96aa-93b8a7dabb3c"
+      ],
+      "scope": {
+        "levels": "level_50_60",
+        "content": [
+          "community_build_snapshot"
+        ],
+        "build_or_mode": [
+          "documented_build"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "The guide documents one current way to play; it is not treated as proof of optimality."
+    },
+    {
+      "id": "observed:knight-of-xoroth/defiance:performance-context",
+      "kind": "observed",
+      "text": "The 1,704 off-role DPS and 70 Mythic records do not measure tank survivability.",
+      "source_ids": [
+        "reddit:dps-aggregate-2026-07-25",
+        "reddit:class-statistics-2026-08-02"
+      ],
+      "scope": {
+        "levels": "level_60",
+        "content": [
+          "uncontrolled_performance_signals"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "low",
+      "conflicts_with": [],
+      "notes": "Do not convert this into a tier ranking."
+    },
+    {
+      "id": "inference:knight-of-xoroth/defiance:playstyle-identity",
+      "kind": "inference",
+      "text": "A block-and-retaliation fire tank whose imps, Abyssal and attackers feed Rage into shields, rebukes and unusually strong self-healing.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:knight-of-xoroth/defiance:17-47-2-4",
+        "talent:knight-of-xoroth/defiance:17-47-10-0",
+        "talent:knight-of-xoroth/defiance:17-47-2-9",
+        "talent:knight-of-xoroth/defiance:17-47-8-4",
+        "observed:knight-of-xoroth/defiance:self-sustain-kit",
+        "observed:knight-of-xoroth/defiance:priority-feel"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium-high",
+      "conflicts_with": [],
+      "notes": "Descriptive playstyle classification, not an official label."
+    },
+    {
+      "id": "inference:knight-of-xoroth/defiance:failure-cost",
+      "kind": "inference",
+      "text": "Dumping Rage into damage before a spike removes the resource needed for mitigation or healing.",
+      "source_ids": [],
+      "derived_from_claim_ids": [
+        "talent:knight-of-xoroth/defiance:17-47-2-4",
+        "talent:knight-of-xoroth/defiance:17-47-10-0",
+        "talent:knight-of-xoroth/defiance:17-47-2-9",
+        "talent:knight-of-xoroth/defiance:17-47-8-4",
+        "talent:knight-of-xoroth/defiance:17-47-4-0",
+        "observed:knight-of-xoroth/defiance:self-sustain-kit",
+        "observed:knight-of-xoroth/defiance:priority-feel",
+        "observed:knight-of-xoroth/defiance:pack-resource-loop"
+      ],
+      "scope": {
+        "levels": "all",
+        "content": [
+          "all"
+        ],
+        "build_or_mode": [
+          "general"
+        ]
+      },
+      "confidence": "medium",
+      "conflicts_with": [],
+      "notes": "Direction is supported; exact throughput cost is not measured."
+    }
+  ]
+}
