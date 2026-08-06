@@ -9,7 +9,7 @@
     level_50_60: "Level 50–60", boss: "Boss", dungeon_aoe: "Dungeon AoE", pvp: "PvP",
   };
   const AXIS_LABELS = {
-    core_actions: "Core actions", state_tracking: "State tracking", sequencing: "Sequencing",
+    core_actions: "Core actions", state_tracking: "State tracking", setup_burden: "Setup burden",
     reactive_decisions: "Reactive decisions", execution: "Execution", failure_cost: "Failure cost",
   };
   const TIER_LABELS = { data: "Data", players: "Players", inference: "Inference" };
@@ -47,7 +47,7 @@
     `<span class="pips">${[1,2,3,4,5].map(i => `<span class="${i <= n ? "" : "off"}">◆</span>`).join("")}</span>`;
   const cxPips = cell => cell
     ? `${pips(CX_ORDINAL[cell.v] || 0)}`
-    : `<span class="pips-na">unresearched</span>`;
+    : `<span class="pips-na">not rated for this context</span>`;
   const cxCell = (s, axis, ctx = "boss") => (s.complexity[axis] || {})[ctx] || null;
   const bestCtx = s => {
     if (s.contexts.boss || Object.values(s.complexity).some(a => a.boss)) return "boss";
@@ -74,7 +74,7 @@
 
   function cardTemplate(s) {
     const bc = bestCtx(s) || "boss";
-    const rows = [["Sequencing", "sequencing"], ["Tracking", "state_tracking"],
+    const rows = [["Setup burden", "setup_burden"], ["Tracking", "state_tracking"],
                   ["Reactive", "reactive_decisions"], ["Failure cost", "failure_cost"]];
     return `<article class="plate spec-card ${qcls(s)}" tabindex="0" role="button" style="--class-color:${s.color}"
         data-open="${s.id}" aria-label="Open ${esc(s.name)} profile">
@@ -90,7 +90,7 @@
         ${rows.some(([, k]) => cxCell(s, k, bc))
           ? `<div class="pips-grid">${rows.map(([n, k]) =>
               `<span class="pip-row">${n}${cxPips(cxCell(s, k, bc))}</span>`).join("")}</div>`
-          : `<div class="pips-na" style="margin-left:0">complexity not yet researched for this spec</div>`}
+          : `<div class="pips-na" style="margin-left:0">No contextual complexity rating is available for this view.</div>`}
       </div>
       <div class="card-foot">
         <span>${s.community.count ? `${s.community.count} build${s.community.count === 1 ? "" : "s"}` : "no builds"}</span>
