@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="A playstyle atlas for all 21 Conquest of Azeroth classes and 70 specializations, with a three-slot comparison workbench.">
+  <title>CoA Atlas</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="explorer.css">
+</head>
+<body class="atlas">
+  <header class="a-topbar">
+    <a class="a-sigil" href="#top">⚜ COA ATLAS</a>
+    <nav class="a-tabs" aria-label="Site pages">
+      <a class="active" href="index.html">Specs</a>
+      <a href="loot.html">Loot 45+</a>
+    </nav>
+    <label class="a-search" for="searchInput">
+      <span aria-hidden="true" style="color:var(--faint)">⌕</span>
+      <input id="searchInput" type="search" autocomplete="off" placeholder="Search specs, families, abilities…">
+      <kbd>/</kbd>
+    </label>
+    <button class="wb-button" id="wbTopButton" title="Open the comparison workbench">⚖ Workbench<span class="wb-count" id="wbCount" hidden>0</span></button>
+  </header>
+
+  <div class="bar-row" id="top">
+    <h1>Playstyle Families</h1>
+    <span class="counter"><b id="specCount">70</b> specs · <b id="classCount">21</b> classes · <b id="curatedCount">0</b> curated</span>
+    <div class="filters">
+      <span class="stone" data-filter-group="role">
+        <button class="active" data-filter="All">All</button><button data-filter="Damage">Damage</button><button data-filter="Tank">Tank</button><button data-filter="Healer">Healer</button><button data-filter="Support">Support</button>
+      </span>
+      <span class="stone" data-filter-group="range">
+        <button class="active" data-filter="All">All</button><button data-filter="Melee">Melee</button><button data-filter="Ranged">Ranged</button><button data-filter="Hybrid">Hybrid</button>
+      </span>
+      <span class="stone" data-filter-group="research">
+        <button class="active" data-filter="All">All</button><button data-filter="Curated">Curated</button><button data-filter="In progress">In progress</button>
+      </span>
+      <button class="clear-link" id="clearButton">Reset</button>
+    </div>
+  </div>
+
+  <nav class="family-nav" id="familyNav" aria-label="Playstyle families"></nav>
+
+  <main class="a-wrap">
+    <div class="result-meta">
+      <span id="resultCount"></span>
+      <span class="confidence-note"><i></i> Identity guide, not a tier list</span>
+    </div>
+
+    <div id="atlas"></div>
+
+    <div class="empty-state" id="emptyState" hidden>
+      <span>◇</span><h2>No path found</h2><p>Try widening the filters or searching for a different mechanic.</p>
+      <button class="reset-btn" id="emptyResetButton">Reset everything</button>
+    </div>
+  </main>
+
+  <div class="tray plate" id="tray" hidden>
+    <span class="tray-label">Workbench</span>
+    <div class="tray-slots" id="traySlots"></div>
+    <button class="bench-go" id="openBench" disabled>Compare</button>
+  </div>
+
+  <dialog id="profileDialog" class="a-dialog">
+    <button class="d-close" id="profileClose" aria-label="Close specialization profile">×</button>
+    <div id="profileContent"></div>
+  </dialog>
+
+  <dialog id="wbDialog" class="a-dialog wb-dialog" data-diff="0">
+    <button class="d-close" id="wbClose" aria-label="Close workbench">×</button>
+    <div class="wb-body" id="wbBody"></div>
+  </dialog>
+
+  <script src="explorer-data.js"></script>
+  <script src="explorer.js"></script>
+</body>
+</html>

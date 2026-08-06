@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Recommended level 45-60 loot for a damage Chronomancer in Conquest of Azeroth.">
+  <title>CoA Chronomancer Loot 45+</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="loot.css">
+</head>
+<body class="loot-page">
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="logo" href="index.html"><span>COA</span> Field Guide</a>
+    <nav class="site-nav" aria-label="Site pages"><a href="index.html">Specs</a><a class="active" href="loot.html">Loot 45+</a></nav>
+    <label class="search-shell" for="lootSearch"><span aria-hidden="true">⌕</span><input id="lootSearch" type="search" placeholder="Search items, slots, zones, or stats…"><kbd>/</kbd></label>
+  </header>
+
+  <main>
+    <section class="hero loot-hero">
+      <div><p class="eyebrow">Writhkin’s upgrade trail · Levels 45-60</p><h1>Good loot, <span>beautifully sorted.</span></h1>
+        <p class="hero-copy">High-value Chronomancer damage gear from the LootCollector export, ranked for Spell Power, Intellect, Haste, Hit, and Crit. Locations marked fading or stale may have moved.</p></div>
+      <div class="hero-stats"><div><strong id="lootItemCount">0</strong><span>targets</span></div><div><strong>19</strong><span>slots</span></div><div><strong>45-60</strong><span>level range</span></div></div>
+    </section>
+
+    <section class="filter-deck loot-filters" aria-label="Loot filters">
+      <div class="filter-line"><span class="filter-label">Level</span><div class="filter-buttons" data-loot-group="band"><button class="filter-button active" data-filter="All">All 45-60</button><button class="filter-button" data-filter="45-49">45-49</button><button class="filter-button" data-filter="50-54">50-54</button><button class="filter-button" data-filter="55-60">55-60</button></div></div>
+      <div class="filter-line"><span class="filter-label">Priority</span><div class="filter-buttons" data-loot-group="priority"><button class="filter-button active" data-filter="All">All good targets</button><button class="filter-button" data-filter="Top target">Top targets</button><button class="filter-button" data-filter="Strong">Strong</button><button class="filter-button" data-filter="Alternative">Alternatives</button></div></div>
+      <div class="filter-line"><span class="filter-label">Source</span><div class="filter-buttons" data-loot-group="status"><button class="filter-button active" data-filter="All">Any</button><button class="filter-button" data-filter="Confirmed">Confirmed</button><button class="filter-button" data-filter="Fading">Fading</button><button class="filter-button" data-filter="Stale">Stale</button><button class="filter-button" data-filter="Unknown">Unknown</button></div><button class="clear-button" id="lootReset">Reset filters</button></div>
+    </section>
+
+    <div class="loot-layout">
+      <aside class="slot-rail"><div class="rail-heading"><span>Equipment slots</span></div><nav id="slotList"></nav></aside>
+      <section class="loot-results">
+        <div class="result-meta"><span id="lootResultCount"></span><span class="confidence-note"><i></i> Score compares static caster stats</span></div>
+        <div class="loot-callout"><strong>How to read this</strong><span>“Top target” means the highest static-stat candidate in that slot and level band. Trinket effects, hit caps, weapons, sockets, and set bonuses still need manual judgment.</span></div>
+        <div id="lootGrid" class="loot-grid"></div>
+        <div class="empty-state" id="lootEmpty" hidden><span>◇</span><h2>No loot matched</h2><p>Try another slot, band, or source status.</p><button class="surprise-button" id="lootEmptyReset">Reset everything</button></div>
+      </section>
+    </div>
+  </main>
+
+  <dialog id="lootDialog" class="spec-dialog loot-dialog"><button class="dialog-close" id="lootDialogClose" aria-label="Close item details">×</button><div id="lootDialogContent"></div></dialog>
+
+  <footer><div><strong><span>COA</span> Chronomancer Loot 45+</strong><p>Generated from the current local LootCollector export on August 5, 2026.</p></div><div class="footer-links"><a href="index.html">Explore all specs</a><a href="lootcollector-chrono-level45-60.md">Read the loot report</a><a href="lootcollector-chrono-level45-60-complete.csv">Complete 565-item CSV</a></div></footer>
+  <script src="loot-data.js"></script><script src="loot.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+.loot-page { --loot: #79c8ff; }
+.loot-page .ambient-one { background: #1f84be; }
+.loot-page .ambient-two { background: #7c51ce; }
+.loot-hero h1 { max-width: 900px; }
+.loot-layout { display: grid; grid-template-columns: 225px minmax(0,1fr); gap: 26px; margin-top: 32px; align-items: start; }
+.slot-rail { position: sticky; top: 94px; max-height: calc(100vh - 118px); overflow: auto; scrollbar-width: thin; scrollbar-color: #343a46 transparent; }
+.slot-button { width: 100%; padding: 8px 10px; display: flex; justify-content: space-between; gap: 10px; border: 1px solid transparent; border-radius: 8px; background: transparent; color: #a1a9b6; text-align: left; cursor: pointer; }
+.slot-button:hover { background: #ffffff07; color: var(--text); }
+.slot-button.active { color: var(--loot); border-color: #79c8ff38; background: #79c8ff0e; }
+.slot-button small { color: var(--dim); }
+.loot-results { min-width: 0; }
+.loot-callout { margin-bottom: 14px; padding: 13px 15px; display: flex; gap: 12px; border: 1px solid #79c8ff2a; border-radius: 10px; background: #79c8ff09; font-size: 12px; }
+.loot-callout strong { color: var(--loot); white-space: nowrap; }
+.loot-callout span { color: var(--muted); }
+.loot-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(290px,1fr)); gap: 11px; }
+.loot-card { min-height: 236px; position: relative; padding: 17px; display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--line); border-radius: 13px; background: linear-gradient(145deg,#121720,#0d1016); cursor: pointer; transition: transform .17s,border-color .17s,box-shadow .17s; }
+.loot-card::before { content:""; position:absolute; inset:0 auto 0 0; width:3px; background:var(--quality); opacity:.8; }
+.loot-card:hover,.loot-card:focus-visible { transform:translateY(-2px); border-color:color-mix(in srgb,var(--quality) 45%,var(--line)); box-shadow:0 15px 35px #0005; outline:0; }
+.loot-card-top { display:flex; justify-content:space-between; gap:10px; }
+.loot-card h3 { margin:0; color:var(--quality); font-size:17px; line-height:1.25; }
+.loot-level { color:var(--dim); font-size:10px; white-space:nowrap; }
+.loot-slot { margin:5px 0 0; color:#b0b7c3; font-size:11px; }
+.priority-badge { width:max-content; margin:12px 0 9px; padding:3px 7px; border-radius:5px; background:#202630; color:#aab2bf; font-size:9px; font-weight:800; letter-spacing:.06em; text-transform:uppercase; }
+.priority-badge.top-target { color:#17120a; background:var(--gold); }
+.priority-badge.strong { color:#9fe4c2; background:#62d69a18; }
+.stat-row { display:flex; flex-wrap:wrap; gap:5px; }
+.stat-pill { padding:4px 7px; border:1px solid #2a313e; border-radius:6px; background:#171c25; color:#bac2cf; font-size:10px; }
+.stat-pill b { color:#fff; }
+.loot-location { margin-top:auto; padding-top:13px; color:var(--muted); font-size:11px; border-top:1px solid var(--line-soft); }
+.loot-location strong { display:block; color:#b8c0cc; font-weight:650; }
+.source-status { display:inline-flex; align-items:center; gap:5px; margin-top:5px; color:var(--dim); font-size:9px; text-transform:uppercase; letter-spacing:.07em; }
+.source-status i { width:6px; height:6px; border-radius:50%; background:#7d8593; }
+.source-status.confirmed i { background:var(--green); box-shadow:0 0 8px #62d69a; }
+.source-status.fading i { background:var(--gold); }
+.source-status.stale i { background:var(--red); }
+.score-orb { min-width:42px; height:42px; display:grid; place-items:center; border:1px solid #313846; border-radius:10px; background:#0d1118; color:var(--gold); font-weight:850; font-size:12px; }
+.score-orb small { display:block; color:var(--dim); font-size:7px; text-transform:uppercase; }
+.loot-dialog .dialog-hero { --class-color: var(--loot); }
+.loot-dialog .dialog-hero h2 { max-width:570px; color:var(--quality,var(--text)); }
+.loot-detail-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; }
+.loot-detail-grid div { padding:11px; border:1px solid var(--line); border-radius:9px; background:#0d1016; }
+.loot-detail-grid span { display:block; color:var(--dim); font-size:9px; text-transform:uppercase; letter-spacing:.08em; }
+.loot-detail-grid strong { display:block; margin-top:3px; font-size:13px; }
+.location-box { padding:15px; border:1px solid var(--line); border-radius:10px; background:#0d1016; color:#bdc5d1; }
+.location-box .source-status { display:flex; }
+.weight-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:6px; }
+.weight-grid div { padding:8px; border-radius:7px; background:#171c25; text-align:center; }
+.weight-grid strong { display:block; color:var(--gold); }
+.weight-grid span { color:var(--dim); font-size:9px; }
+
+@media (max-width:980px) {
+  .loot-layout { grid-template-columns:1fr; }
+  .slot-rail { position:static; max-height:none; }
+  .slot-rail nav { display:flex; gap:6px; overflow-x:auto; padding-bottom:7px; }
+  .slot-button { width:auto; white-space:nowrap; border-color:var(--line); }
+}
+@media (max-width:650px) {
+  .loot-callout { flex-direction:column; gap:3px; }
+  .loot-grid { grid-template-columns:1fr; }
+  .loot-detail-grid { grid-template-columns:repeat(2,1fr); }
+  .weight-grid { grid-template-columns:repeat(3,1fr); }
+}
