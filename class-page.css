@@ -195,6 +195,30 @@
 .gd-node.active .node-dot { fill: #e1b86d; }
 .gd-node.active .node-name { fill: #f1cb6e; }
 
+/* Witch Hunter: the same slot and interaction, a Rage vial in a hunter's diamond */
+.cd-wh-seal { border-left-color: #4c5c2e80;
+  background: radial-gradient(circle at 50% 46%, #abd47320, transparent 60%); }
+.cd-wh-seal::before { border-color: #6e8a4550; }
+.wh-diamond { fill: none; stroke: #8aab5c; stroke-width: 1; opacity: .4; stroke-dasharray: 2 5; }
+.wh-link { fill: none; stroke: #4c5c2e; stroke-width: 1.2; opacity: .55; }
+.wh-neck { fill: #1a2210; stroke: #8aab5c; stroke-width: 1.2; }
+.wh-cork { stroke: #c9aa71; stroke-width: 2; }
+.wh-body { fill: #141a0c; stroke: #8aab5c; stroke-width: 1.4; }
+.wh-fire { fill: url(#whFire); filter: url(#whGlow); }
+.wh-threshold { fill: #bfd48f; font: 700 8px Arial, sans-serif; letter-spacing: .1em; }
+.wh-center-label { fill: #e8f2d4; font: 700 11px Georgia, serif; letter-spacing: .18em;
+  paint-order: stroke; stroke: #0e1408; stroke-width: 4px; stroke-linejoin: round; }
+.wh-center-sub { fill: #9bbf68; font: 700 6px Arial, sans-serif; letter-spacing: .14em;
+  paint-order: stroke; stroke: #0e1408; stroke-width: 2.5px; stroke-linejoin: round; }
+.wh-legend { fill: #7d9553; font: 700 6px Arial, sans-serif; letter-spacing: .13em; opacity: .75; }
+.wh-node .node-ring { fill: #121708; stroke: #4c5c2e; }
+.wh-node .node-dot { fill: #7fa04c; }
+.wh-node .wh-layer { fill: #9bbf68; font: 700 6.5px Arial, sans-serif; letter-spacing: .06em; }
+.wh-node:hover .node-ring, .wh-node:focus-visible .node-ring,
+.wh-node.active .node-ring { fill: #1d260f; stroke: #cee6ae; stroke-width: 2; filter: url(#whGlow); }
+.wh-node.active .node-dot { fill: #e1b86d; }
+.wh-node.active .node-name { fill: #f1cb6e; }
+
 /* the col engine: the seal claims the masthead's full height at its own aspect ratio.
    --seal-slot marks where the TEXT COLUMN ends; the T1 thumb anchors to it. */
 @media (min-width: 901px) {
@@ -345,6 +369,14 @@ body.ry-glow .rail-card.sel {
 .ry-block .gd-pip { fill: rgba(255,143,56,.4); stroke: #ff8f38; stroke-width: 1.6; }
 .ry-block .gd-burst { fill: none; stroke: #ffb257; stroke-width: 1.6; }
 .ry-block .gd-burst.faint { opacity: .4; stroke-dasharray: 3 4; }
+.ry-block .wh-bolt { fill: rgba(171,212,115,.4); stroke: #abd473; stroke-width: 1.2; }
+.ry-block .wh-window { fill: rgba(171,212,115,.22); stroke: #abd473; stroke-width: 1.8; }
+.ry-block .wh-window-lab { fill: #dcedbe; font-size: 12.5px; font-weight: 700; letter-spacing: .1em; }
+.ry-block .wh-parry { fill: none; stroke: #abd473; stroke-width: 2; stroke-linecap: round; }
+.ry-block .wh-dawn { fill: none; stroke: #d9a441; stroke-width: 1.5; opacity: .85; }
+.ry-block .wh-dusk { fill: none; stroke: #8aab5c; stroke-width: 1.5; opacity: .85; }
+.ry-block .wh-sun { fill: rgba(217,164,65,.5); stroke: #d9a441; stroke-width: 1.2; }
+.ry-block .wh-moon { fill: rgba(138,171,92,.4); stroke: #8aab5c; stroke-width: 1.2; }
 
 /* ================= 5 · phone (≤560px) ================= */
 

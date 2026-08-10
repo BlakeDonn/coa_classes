@@ -333,6 +333,51 @@
     <text class="gd-legend" x="14" y="20">THE LINE HOLDS EVERYONE</text>
     ${GD_PHONE_NODES.map(s => gdNodeSvg(s, 33, 44)).join("")}`;
 
+  // Witch Hunter: one shared Rage vial at the center of a hunter's diamond, four
+  // corner specs each carrying its own layer tag (audited: Rage in all four specs;
+  // Tonics restore it class-wide; the layers are the specs' own marks and stacks).
+  const whNodes = [
+    { id: "witch-hunter/boltslinger", name: "Boltslinger", verb: "UNLOAD", layer: "BOLTS", x: 73, y: 64 },
+    { id: "witch-hunter/houndmaster", name: "Houndmaster", verb: "LOOSE", layer: "HOUNDS", x: 347, y: 64 },
+    { id: "witch-hunter/black-knight", name: "Black Knight", verb: "RIPOSTE", layer: "BRANDS", x: 73, y: 196 },
+    { id: "witch-hunter/inquisition", name: "Inquisition", verb: "BALANCE", layer: "DAWN·DUSK", x: 347, y: 196 },
+  ];
+  const WH_DEFS = `<defs>
+      <radialGradient id="whFire"><stop offset="0" stop-color="#f4e8a0"/><stop offset=".5" stop-color="#abd473"/><stop offset="1" stop-color="#1c2611"/></radialGradient>
+      <filter id="whGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    </defs>`;
+  const whFlask = (cx, cy, s) => `<g transform="translate(${cx} ${cy}) scale(${s})">
+      <rect class="wh-neck" x="-7" y="-34" width="14" height="12" rx="2"/>
+      <line class="wh-cork" x1="-9" y1="-34" x2="9" y2="-34"/>
+      <circle class="wh-body" r="21" cy="2"/>
+      <path class="wh-fire" d="M0 12 C-9 4 -6 -8 0 -16 C6 -8 9 4 0 12 Z"/></g>`;
+  const whNodeSvg = (s, ny, vy) => `<g class="cd-node wh-node" data-cd-spec="${s.id}" role="button" tabindex="0" transform="translate(${s.x} ${s.y})">
+      <circle class="node-ring" r="29"/><circle class="node-dot" r="4"/>
+      <text class="wh-layer" text-anchor="middle" y="18">${s.layer}</text>
+      <text class="node-name" text-anchor="middle" y="${ny}">${s.name}</text>
+      <text class="node-verb" text-anchor="middle" y="${vy}">${s.verb}</text></g>`;
+  const WH_DESKTOP = `<title id="wh-seal-title">One shared Rage beneath four Witch Hunter layers</title>
+    ${WH_DEFS}
+    <path class="wh-diamond" d="M210 42 L338 128 L210 214 L82 128 Z"/>
+    ${whNodes.map(s => `<path class="wh-link" d="M210 128 L${s.x} ${s.y}"/>`).join("")}
+    ${whFlask(210, 118, 1)}
+    <text class="wh-threshold" x="210" y="32" text-anchor="middle">ONE RAGE · SHARED</text>
+    <text class="wh-legend" x="16" y="22">VAULT · TRAP · TONIC</text>
+    <text class="wh-center-label" x="210" y="160" text-anchor="middle">RAGE</text>
+    <text class="wh-center-sub" x="210" y="172" text-anchor="middle">TONICS REFILL IT</text>
+    ${whNodes.map(s => whNodeSvg(s, 42, 54)).join("")}`;
+  const WH_PHONE_NODES = whNodes.map(s => ({ ...s, y: s.y < 100 ? 58 : 172 }));
+  const WH_PHONE = `<title id="wh-seal-title">One shared Rage beneath four Witch Hunter layers</title>
+    ${WH_DEFS}
+    <path class="wh-diamond" d="M210 36 L326 112 L210 188 L94 112 Z"/>
+    ${WH_PHONE_NODES.map(s => `<path class="wh-link" d="M210 112 L${s.x} ${s.y}"/>`).join("")}
+    ${whFlask(210, 104, .85)}
+    <text class="wh-threshold" x="210" y="24" text-anchor="middle">ONE RAGE · SHARED</text>
+    <text class="wh-legend" x="14" y="20">VAULT · TRAP · TONIC</text>
+    <text class="wh-center-label" x="210" y="140" text-anchor="middle">RAGE</text>
+    <text class="wh-center-sub" x="210" y="151" text-anchor="middle">TONICS REFILL IT</text>
+    ${WH_PHONE_NODES.map(s => whNodeSvg(s, 33, 44)).join("")}`;
+
   // Phone: the ruled 420×224 tightened arrangement — ring 46, core .66, rows raised.
   const KOX_PHONE_NODES = [
     { id: "knight-of-xoroth/hellfire", name: "Hellfire", verb: "UNLEASH", x: 73, y: 60 },
@@ -377,6 +422,11 @@
     el("mast").insertAdjacentHTML("beforeend",
       `<div class="cd-stage cd-seal ry-reseal cd-gd-seal" aria-label="Guardian class engine diagram">
         <svg viewBox="0 0 420 260" role="img" aria-labelledby="gd-seal-title">${GD_DESKTOP}</svg></div>`);
+  } else if (cSlug === "witch-hunter") {
+    el("mast").classList.add("cd-with-seal");
+    el("mast").insertAdjacentHTML("beforeend",
+      `<div class="cd-stage cd-seal ry-reseal cd-wh-seal" aria-label="Witch Hunter class engine diagram">
+        <svg viewBox="0 0 420 260" role="img" aria-labelledby="wh-seal-title">${WH_DESKTOP}</svg></div>`);
   } else {
     // G2 · the seat (RULED 2026-08-10). Crests are skipped, so the class glyph holds
     // the slot with the honest caption. Masthead geometry matches the sealed classes.
@@ -398,6 +448,8 @@
     "cultist/godblade": "spike", "cultist/corruption": "wave", "tinker/demolition": "stack",
     "knight-of-xoroth/hellfire": "pips", "knight-of-xoroth/war": "wheel", "knight-of-xoroth/defiance": "bank",
     "guardian/vanguard": "bank", "guardian/inspiration": "wheel", "guardian/gladiator": "wheel",
+    "witch-hunter/boltslinger": "wheel", "witch-hunter/houndmaster": "bank",
+    "witch-hunter/black-knight": "wheel", "witch-hunter/inquisition": "pips",
   };
   function topoGlyph(kind) {
     const art = {
@@ -669,6 +721,94 @@
         "the wheel is short: build three, cash, and again"],
       eyes: "your Glory count · the net window",
     },
+    "witch-hunter/boltslinger": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Boltslinger rhythm: extra shots build Rage, Damnation converts the bar into damage, and Twilight Frenzy is a moving firing channel">
+        <defs><marker id="whArrB" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+        <path class="wh-bolt" d="M120 84 l22 6 l-22 6 Z"/><path class="wh-bolt" d="M154 84 l22 6 l-22 6 Z"/><path class="wh-bolt" d="M188 84 l22 6 l-22 6 Z"/>
+        <text class="ph" x="165" y="118" text-anchor="middle">BUILD</text>
+        <text class="ph2" x="165" y="132" text-anchor="middle">extra shots build Rage</text>
+        <path class="branch" d="M230 78 C 300 44, 390 40, 460 52" marker-end="url(#whArrB)"/>
+        <path class="refresh" d="M477 62 l13 -13 l13 13 l-13 13 Z"/>
+        <text class="ph" x="490" y="100" text-anchor="middle">DAMNATION</text>
+        <text class="ph2" x="490" y="114" text-anchor="middle">the bar becomes damage</text>
+        <path class="branch" d="M518 56 C 580 44, 630 46, 686 58" marker-end="url(#whArrB)"/>
+        <rect class="wh-window" x="696" y="44" width="200" height="64" rx="2"/>
+        <text class="wh-window-lab" x="796" y="70" text-anchor="middle">TWILIGHT FRENZY</text>
+        <text class="ph2" x="796" y="88" text-anchor="middle" fill="#e4f2cd">a firing channel you can move in</text>
+        <path class="branch" d="M796 112 C 700 158, 260 160, 140 100" marker-end="url(#whArrB)"/>
+        <text class="ph2" x="470" y="152" text-anchor="middle">THE HUNT CONTINUES</text>
+      </svg>`,
+      bullets: ["your shots can double-fire, and the extra bolts build Rage",
+        "Damnation turns the whole bar into one hit",
+        "Twilight Frenzy is a firing channel you can move in"],
+      eyes: "your Rage bar · the pack in front of you",
+    },
+    "witch-hunter/houndmaster": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Houndmaster rhythm: the pack fights beside you, Shadowblast feeds it Shadow Rage, and Decimate turns the hounds loose for twenty seconds">
+        <defs><marker id="whArrH" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+        ${impGlyph(130, 86)}${impGlyph(165, 86)}${impGlyph(200, 86)}
+        <text class="ph" x="165" y="118" text-anchor="middle">THE PACK</text>
+        <text class="ph2" x="165" y="132" text-anchor="middle">a Shadowhound is permanent · more can join</text>
+        <path class="branch" d="M230 78 C 300 44, 390 40, 460 52" marker-end="url(#whArrH)"/>
+        <path class="refresh" d="M477 62 l13 -13 l13 13 l-13 13 Z"/>
+        <text class="ph" x="490" y="100" text-anchor="middle">FEED</text>
+        <text class="ph2" x="490" y="114" text-anchor="middle">Shadowblast grants Shadow Rage</text>
+        <path class="branch" d="M518 56 C 580 44, 630 46, 686 58" marker-end="url(#whArrH)"/>
+        <rect class="wh-window" x="696" y="44" width="200" height="64" rx="2"/>
+        <text class="wh-window-lab" x="796" y="70" text-anchor="middle">DECIMATE</text>
+        <text class="ph2" x="796" y="88" text-anchor="middle" fill="#e4f2cd">20 s · the pack turns loose</text>
+        <path class="branch" d="M796 112 C 700 158, 260 160, 140 100" marker-end="url(#whArrH)"/>
+        <text class="ph2" x="470" y="152" text-anchor="middle">THE PACK REGROUPS</text>
+      </svg>`,
+      bullets: ["a Shadowhound fights beside you; more can join the pack",
+        "Shadowblast feeds your hound Shadow Rage",
+        "Decimate turns the pack loose for 20 seconds"],
+      eyes: "your hounds · the target they are on",
+    },
+    "witch-hunter/black-knight": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Black Knight rhythm: parries return health and Rage, an avoided hit unlocks Desecrate, and the brands hold threat">
+        <defs><marker id="whArrK" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+        <path class="wh-parry" d="M140 70 L190 104 M190 70 L140 104"/>
+        <text class="ph" x="165" y="126" text-anchor="middle">PARRY</text>
+        <text class="ph2" x="165" y="140" text-anchor="middle">health and Rage return</text>
+        <path class="branch" d="M225 80 C 300 46, 390 42, 460 54" marker-end="url(#whArrK)"/>
+        <path class="refresh" d="M477 62 l13 -13 l13 13 l-13 13 Z"/>
+        <text class="ph" x="490" y="100" text-anchor="middle">AVOID</text>
+        <text class="ph2" x="490" y="114" text-anchor="middle">a dodged hit opens the door</text>
+        <path class="branch" d="M518 56 C 580 44, 630 46, 686 58" marker-end="url(#whArrK)"/>
+        <rect class="wh-window" x="696" y="44" width="200" height="64" rx="2"/>
+        <text class="wh-window-lab" x="796" y="70" text-anchor="middle">DESECRATE</text>
+        <text class="ph2" x="796" y="88" text-anchor="middle" fill="#e4f2cd">area damage, unlocked by avoidance</text>
+        <path class="branch" d="M796 112 C 700 158, 260 160, 140 108" marker-end="url(#whArrK)"/>
+        <text class="ph2" x="470" y="152" text-anchor="middle">THE BRANDS HOLD THREAT</text>
+      </svg>`,
+      bullets: ["parries hand you health and Rage back",
+        "avoid a hit and Desecrate unlocks",
+        "your ability damage brands the target with high threat"],
+      eyes: "incoming swings · the Desecrate unlock",
+    },
+    "witch-hunter/inquisition": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Inquisition rhythm: fire builds Dawn and physical builds Dusk, both climb to twenty, and Cycle of Despair consumes them for six seconds of power">
+        <line class="thr" x1="14" y1="44" x2="500" y2="44"/><text class="thr-lab" x="14" y="38">20 · both meters</text>
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        <path class="wh-dawn" d="M60 112 L440 52"/>
+        <path class="wh-dusk" d="M60 122 L440 64"/>
+        <circle class="wh-sun" cx="150" cy="98" r="5"/><circle class="wh-sun" cx="260" cy="80" r="5"/><circle class="wh-sun" cx="370" cy="63" r="5"/>
+        <rect class="wh-moon" x="196" y="97" width="8" height="8" rx="1"/><rect class="wh-moon" x="306" y="80" width="8" height="8" rx="1"/><rect class="wh-moon" x="412" y="63" width="8" height="8" rx="1"/>
+        <rect class="wh-window" x="540" y="48" width="220" height="78" rx="2"/>
+        <text class="wh-window-lab" x="650" y="76" text-anchor="middle">CYCLE OF DESPAIR</text>
+        <text class="ph2" x="650" y="94" text-anchor="middle" fill="#e4f2cd">consumes both at 20 · six seconds of power</text>
+        <path class="wh-dawn" d="M800 122 L950 100"/>
+        <path class="wh-dusk" d="M800 126 L950 108"/>
+        <text class="ph" x="250" y="146" text-anchor="middle">BUILD</text>
+        <text class="ph2" x="250" y="160" text-anchor="middle">fire builds Dawn · steel builds Dusk</text>
+        <text class="ph" x="875" y="146" text-anchor="middle">REBUILD</text>
+      </svg>`,
+      bullets: ["fire damage builds Dawn; physical damage builds Dusk",
+        "at 20 of each, Cycle of Despair consumes both for six seconds of power",
+        "keep Flames of Sin burning while you work"],
+      eyes: "both stack counts · the six-second window",
+    },
   };
 
   // Authored-to-fit phone redraws (S2): same topology, fewer labels, no scroll.
@@ -820,6 +960,70 @@
       <text class="ph2" x="128" y="194" text-anchor="middle" fill="#ffe0c2">at three Glory</text>
       <path class="branch" d="M234 183 C 348 176, 366 56, 250 36" marker-end="url(#gdArrGp)"/>
       <text class="ph2" x="190" y="226" text-anchor="middle">the wheel turns again</text>
+    </svg>`,
+    "witch-hunter/boltslinger": `<svg viewBox="0 0 380 250" role="img" aria-label="Boltslinger rhythm, phone ladder: extra shots build Rage, Damnation converts the bar, Twilight Frenzy is the moving channel">
+      <defs><marker id="whArrBp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <path class="wh-bolt" d="M28 42 l20 6 l-20 6 Z"/><path class="wh-bolt" d="M58 42 l20 6 l-20 6 Z"/><path class="wh-bolt" d="M88 42 l20 6 l-20 6 Z"/>
+      <text class="ph" x="185" y="44" text-anchor="start">BUILD</text>
+      <text class="ph2" x="185" y="58" text-anchor="start">extra shots build Rage</text>
+      <path class="branch" d="M44 62 L44 86" marker-end="url(#whArrBp)"/>
+      <path class="refresh" d="M33 108 l11 -11 l11 11 l-11 11 Z"/>
+      <text class="ph" x="185" y="104" text-anchor="start">DAMNATION</text>
+      <text class="ph2" x="185" y="118" text-anchor="start">the bar becomes damage</text>
+      <path class="branch" d="M44 122 L44 146" marker-end="url(#whArrBp)"/>
+      <rect class="wh-window" x="28" y="156" width="200" height="54" rx="2"/>
+      <text class="wh-window-lab" x="128" y="176" text-anchor="middle">TWILIGHT FRENZY</text>
+      <text class="ph2" x="128" y="194" text-anchor="middle" fill="#e4f2cd">a channel you can move in</text>
+      <path class="branch" d="M234 183 C 348 176, 366 56, 250 36" marker-end="url(#whArrBp)"/>
+      <text class="ph2" x="190" y="226" text-anchor="middle">the hunt continues</text>
+    </svg>`,
+    "witch-hunter/houndmaster": `<svg viewBox="0 0 380 250" role="img" aria-label="Houndmaster rhythm, phone ladder: the pack fights beside you, Shadowblast feeds it, Decimate turns the hounds loose">
+      <defs><marker id="whArrHp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      ${impGlyph(38, 48)}${impGlyph(70, 48)}${impGlyph(102, 48)}
+      <text class="ph" x="185" y="44" text-anchor="start">THE PACK</text>
+      <text class="ph2" x="185" y="58" text-anchor="start">more hounds can join</text>
+      <path class="branch" d="M44 62 L44 86" marker-end="url(#whArrHp)"/>
+      <path class="refresh" d="M33 108 l11 -11 l11 11 l-11 11 Z"/>
+      <text class="ph" x="185" y="104" text-anchor="start">FEED</text>
+      <text class="ph2" x="185" y="118" text-anchor="start">Shadowblast · Shadow Rage</text>
+      <path class="branch" d="M44 122 L44 146" marker-end="url(#whArrHp)"/>
+      <rect class="wh-window" x="28" y="156" width="200" height="54" rx="2"/>
+      <text class="wh-window-lab" x="128" y="176" text-anchor="middle">DECIMATE</text>
+      <text class="ph2" x="128" y="194" text-anchor="middle" fill="#e4f2cd">20 s · the pack turns loose</text>
+      <path class="branch" d="M234 183 C 348 176, 366 56, 250 36" marker-end="url(#whArrHp)"/>
+      <text class="ph2" x="190" y="226" text-anchor="middle">the pack regroups</text>
+    </svg>`,
+    "witch-hunter/black-knight": `<svg viewBox="0 0 380 250" role="img" aria-label="Black Knight rhythm, phone ladder: parries return health and Rage, an avoided hit unlocks Desecrate, the brands hold threat">
+      <defs><marker id="whArrKp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <path class="wh-parry" d="M30 38 L60 60 M60 38 L30 60"/>
+      <text class="ph" x="185" y="44" text-anchor="start">PARRY</text>
+      <text class="ph2" x="185" y="58" text-anchor="start">health and Rage return</text>
+      <path class="branch" d="M44 68 L44 90" marker-end="url(#whArrKp)"/>
+      <path class="refresh" d="M33 110 l11 -11 l11 11 l-11 11 Z"/>
+      <text class="ph" x="185" y="106" text-anchor="start">AVOID</text>
+      <text class="ph2" x="185" y="120" text-anchor="start">a dodge opens the door</text>
+      <path class="branch" d="M44 124 L44 146" marker-end="url(#whArrKp)"/>
+      <rect class="wh-window" x="28" y="156" width="200" height="54" rx="2"/>
+      <text class="wh-window-lab" x="128" y="176" text-anchor="middle">DESECRATE</text>
+      <text class="ph2" x="128" y="194" text-anchor="middle" fill="#e4f2cd">unlocked by avoidance</text>
+      <path class="branch" d="M234 183 C 348 176, 366 56, 250 36" marker-end="url(#whArrKp)"/>
+      <text class="ph2" x="190" y="226" text-anchor="middle">the brands hold threat</text>
+    </svg>`,
+    "witch-hunter/inquisition": `<svg viewBox="0 0 380 250" role="img" aria-label="Inquisition rhythm, phone ladder: Dawn and Dusk climb to twenty, Cycle of Despair consumes both for six seconds">
+      <defs><marker id="whArrIp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <path class="wh-dawn" d="M24 62 L146 40"/>
+      <path class="wh-dusk" d="M24 74 L146 52"/>
+      <circle class="wh-sun" cx="70" cy="53" r="4.5"/><rect class="wh-moon" x="100" y="55" width="7" height="7" rx="1"/>
+      <text class="ph" x="185" y="44" text-anchor="start">BUILD</text>
+      <text class="ph2" x="185" y="58" text-anchor="start">fire · Dawn — steel · Dusk</text>
+      <path class="branch" d="M44 86 L44 110" marker-end="url(#whArrIp)"/>
+      <text class="thr-lab" x="34" y="130" text-anchor="start">20 · both</text>
+      <path class="branch" d="M44 136 L44 148" marker-end="url(#whArrIp)"/>
+      <rect class="wh-window" x="28" y="156" width="200" height="54" rx="2"/>
+      <text class="wh-window-lab" x="128" y="176" text-anchor="middle">CYCLE OF DESPAIR</text>
+      <text class="ph2" x="128" y="194" text-anchor="middle" fill="#e4f2cd">consumes both · 6 s of power</text>
+      <path class="branch" d="M234 183 C 348 176, 366 56, 250 36" marker-end="url(#whArrIp)"/>
+      <text class="ph2" x="190" y="226" text-anchor="middle">the meters restart</text>
     </svg>`,
   };
 
@@ -1076,6 +1280,7 @@
     "cultist": { desktop: ["0 0 420 260", CULTIST_DESKTOP], phone: ["0 0 420 224", CULTIST_PHONE] },
     "knight-of-xoroth": { desktop: ["0 0 420 260", KOX_DESKTOP], phone: ["0 0 420 224", KOX_PHONE] },
     "guardian": { desktop: ["0 0 420 260", GD_DESKTOP], phone: ["0 0 420 224", GD_PHONE] },
+    "witch-hunter": { desktop: ["0 0 420 260", WH_DESKTOP], phone: ["0 0 420 224", WH_PHONE] },
   };
   function applySeal() {
     const swap = SEAL_SWAP[cSlug];

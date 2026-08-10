@@ -94,6 +94,11 @@ window.COA_COPY = (() => {
       lede: "Formations set the stance; Energy, Motivation, and per-spec stacks do the work.",
       text: "Each spec builds its own stacks and spends them at its own mark: ten Paragon, three Tempo, or three Glory. Blocks restore Energy, and Motivating Strike grants Motivation that abilities consume for added effects.",
     },
+    "witch-hunter": {
+      label: "The engine — Rage",
+      lede: "Every Hunter runs on Rage; each spec layers its own marks and stacks on top.",
+      text: "Build Rage from your own attacks and spend it on your spec's payoffs; Tonics restore it. The layer on top is the spec's own: Slinging Bolts, Shadowhounds, Shadow Brands, or Dawn and Dusk.",
+    },
   };
 
   // NOTE on the rare ✦ fragments (class-page grammar §1): they are NOT authored copy.
@@ -121,6 +126,10 @@ window.COA_COPY = (() => {
     "guardian/vanguard": ["Block", "Blocks pay you: Energy returns, Paragon stacks toward ten, and High Guard arms a cooldown-free Heavy Blow."],
     "guardian/inspiration": ["Rally", "Your strikes become Ballads; three Tempo casts Sound of War, and nearby allies hit harder."],
     "guardian/gladiator": ["Duel", "Build Glory to three and cash it on Ram; a thrown net sets up Centurion Strike crits."],
+    "witch-hunter/boltslinger": ["Unload", "Extra bolts build Rage; Damnation converts the bar into one payoff hit."],
+    "witch-hunter/houndmaster": ["Loose", "Hounds fight beside you; Shadowblast feeds them Shadow Rage, and Decimate turns them loose."],
+    "witch-hunter/black-knight": ["Riposte", "Defense pays: parries restore health and Rage, and an avoided hit unlocks Desecrate."],
+    "witch-hunter/inquisition": ["Balance", "Fire builds Dawn and steel builds Dusk; at twenty of each, Cycle of Despair consumes both."],
   };
 
   // ---------- authored spec-card copy (class-page grammar §3) ----------
