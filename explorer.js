@@ -7,6 +7,13 @@
   const { data, specById, famById, CTX_LABELS, AXIS_LABELS, CX_ORDINAL,
           esc, slug, glyph, qcls, tierBadges, pips, cxCell, bestCtx } = R;
 
+  // The class icon for a spec card's corner: the class's defining-talent art (same
+  // rule as the class-card medal — the ability-icon fallback while crests await rights).
+  function classIconImg(s) {
+    const ic = data.specs.find(x => x.klass === s.klass && x.media.icons[0])?.media.icons[0];
+    return ic ? `<img src="https://coabuildhub.com/skill-icons/${esc(ic.icon)}.jpg" alt="" loading="lazy">` : glyph(s);
+  }
+
   // Altitude RULED (Atlas grammar §2): a standing Classes ↔ Specs toggle, starting
   // on Classes — 21 cards greet the visitor; the 70 specs are one tap away.
   const state = { view: "classes", search: "", role: "All", range: "All", research: "All" };
@@ -63,7 +70,8 @@
     return `<article class="plate spec-card ${qcls(s)}" tabindex="0" role="button" style="--class-color:${s.color}"
         data-open="${s.id}" aria-label="Open ${esc(s.name)} profile">
       <div class="card-top card-glow">
-        <span class="spec-icon spec-icon-tr" aria-hidden="true">${s.media.icons[0]
+        <span class="spec-icon spec-icon-tr" aria-hidden="true">${classIconImg(s)}</span>
+        <span class="spec-icon">${s.media.icons[0]
           ? `<img src="https://coabuildhub.com/skill-icons/${esc(s.media.icons[0].icon)}.jpg" alt="" loading="lazy">`
           : glyph(s)}</span>
         <div><h3>${esc(s.name)}</h3>
