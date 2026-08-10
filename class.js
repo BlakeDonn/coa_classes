@@ -879,7 +879,7 @@
       <rect class="kx-window" x="28" y="122" width="200" height="56" rx="2"/>
       <text class="kx-window-lab" x="128" y="146" text-anchor="middle">UNLEASH AT SIX</text>
       <text class="ph2" x="128" y="164" text-anchor="middle" fill="#f3cdd4">Rain of Chaos · 9 s — Form 15 s</text>
-      <path class="branch" d="M234 150 C 348 144, 366 58, 250 36" marker-end="url(#kxArrHp)"/>
+      <path class="branch" d="M234 150 C 356 144, 374 58, 250 36" marker-end="url(#kxArrHp)"/>
       <text class="ph2" x="190" y="196" text-anchor="middle">the climb restarts</text>
     </svg>`,
     "knight-of-xoroth/war": `<svg viewBox="0 0 380 250" role="img" aria-label="War rhythm, phone: a ladder — Gore charges build, spending powers up the next Gores, and a free Meatsaw returns the loop to the top">
@@ -895,7 +895,7 @@
       <rect class="kx-window" x="28" y="162" width="200" height="52" rx="2"/>
       <text class="kx-window-lab" x="128" y="184" text-anchor="middle">BOOST WINDOW</text>
       <text class="ph2" x="128" y="202" text-anchor="middle" fill="#f3cdd4">GORES +25% · 12 s</text>
-      <path class="branch" d="M234 189 C 348 182, 366 64, 250 44" marker-end="url(#kxArrWp)"/>
+      <path class="branch" d="M234 189 C 356 182, 374 64, 250 44" marker-end="url(#kxArrWp)"/>
       <text class="ph2" x="190" y="232" text-anchor="middle">free Meatsaw · the bar refills</text>
     </svg>`,
     "knight-of-xoroth/defiance": `<svg viewBox="0 0 380 252" role="img" aria-label="Defiance rhythm, phone ladder: blocks raise imps, standing imps guard you, cashing the guard heals, then the bank refills">
@@ -912,7 +912,7 @@
       <rect class="kx-window" x="28" y="174" width="200" height="54" rx="2"/>
       <text class="kx-window-lab" x="128" y="194" text-anchor="middle">CASH THE GUARD</text>
       <text class="ph2" x="128" y="212" text-anchor="middle" fill="#f3cdd4">imps → healing + a shield</text>
-      <path class="branch" d="M234 201 C 348 194, 366 60, 250 38" marker-end="url(#kxArrDp)"/>
+      <path class="branch" d="M234 201 C 356 194, 374 60, 250 38" marker-end="url(#kxArrDp)"/>
       <text class="ph2" x="190" y="244" text-anchor="middle">the bank refills</text>
     </svg>`,
     "guardian/vanguard": `<svg viewBox="0 0 380 230" role="img" aria-label="Vanguard rhythm, phone ladder: blocks stack Paragon toward ten, Heavy Blow transforms at ten, then the bank rebuilds">
@@ -926,7 +926,7 @@
       <rect class="gd-window" x="28" y="122" width="200" height="56" rx="2"/>
       <text class="gd-window-lab" x="128" y="146" text-anchor="middle">PARAGON SMASH</text>
       <text class="ph2" x="128" y="164" text-anchor="middle" fill="#ffe0c2">Heavy Blow transforms at ten</text>
-      <path class="branch" d="M234 150 C 348 144, 366 58, 250 36" marker-end="url(#gdArrVp)"/>
+      <path class="branch" d="M234 150 C 356 144, 374 58, 250 36" marker-end="url(#gdArrVp)"/>
       <text class="ph2" x="190" y="196" text-anchor="middle">the bank refills</text>
     </svg>`,
     "guardian/inspiration": `<svg viewBox="0 0 380 252" role="img" aria-label="Inspiration rhythm, phone ladder: Ballads build Tempo to three, Sound of War rings, Hero's March keeps it ringing, and the count restarts">
@@ -942,7 +942,7 @@
       <rect class="gd-window" x="28" y="172" width="200" height="54" rx="2"/>
       <text class="gd-window-lab" x="128" y="192" text-anchor="middle">HERO'S MARCH</text>
       <text class="ph2" x="128" y="210" text-anchor="middle" fill="#ffe0c2">15 s · autos keep it ringing</text>
-      <path class="branch" d="M234 199 C 348 192, 366 60, 250 38" marker-end="url(#gdArrIp)"/>
+      <path class="branch" d="M234 199 C 356 192, 374 60, 250 38" marker-end="url(#gdArrIp)"/>
       <text class="ph2" x="190" y="244" text-anchor="middle">the count restarts</text>
     </svg>`,
     "guardian/gladiator": `<svg viewBox="0 0 380 230" role="img" aria-label="Gladiator rhythm, phone ladder: Ram builds Glory to three, the boosted Ram lands, and the wheel turns again">
@@ -958,7 +958,7 @@
       <rect class="gd-window" x="28" y="156" width="200" height="54" rx="2"/>
       <text class="gd-window-lab" x="128" y="176" text-anchor="middle">BOOSTED RAM</text>
       <text class="ph2" x="128" y="194" text-anchor="middle" fill="#ffe0c2">at three Glory</text>
-      <path class="branch" d="M234 183 C 348 176, 366 56, 250 36" marker-end="url(#gdArrGp)"/>
+      <path class="branch" d="M234 183 C 356 176, 374 56, 250 36" marker-end="url(#gdArrGp)"/>
       <text class="ph2" x="190" y="226" text-anchor="middle">the wheel turns again</text>
     </svg>`,
     "witch-hunter/boltslinger": `<svg viewBox="0 0 380 250" role="img" aria-label="Boltslinger rhythm, phone ladder: extra shots build Rage, Damnation converts the bar, Twilight Frenzy is the moving channel">
@@ -974,7 +974,7 @@
       <rect class="wh-window" x="28" y="156" width="200" height="54" rx="2"/>
       <text class="wh-window-lab" x="128" y="176" text-anchor="middle">TWILIGHT FRENZY</text>
       <text class="ph2" x="128" y="194" text-anchor="middle" fill="#e4f2cd">a channel you can move in</text>
-      <path class="branch" d="M234 183 C 348 176, 366 56, 250 36" marker-end="url(#whArrBp)"/>
+      <path class="branch" d="M234 183 C 356 176, 374 56, 250 36" marker-end="url(#whArrBp)"/>
       <text class="ph2" x="190" y="226" text-anchor="middle">the hunt continues</text>
     </svg>`,
     "witch-hunter/houndmaster": `<svg viewBox="0 0 380 250" role="img" aria-label="Houndmaster rhythm, phone ladder: the pack fights beside you, Shadowblast feeds it, Decimate turns the hounds loose">
@@ -990,7 +990,7 @@
       <rect class="wh-window" x="28" y="156" width="200" height="54" rx="2"/>
       <text class="wh-window-lab" x="128" y="176" text-anchor="middle">DECIMATE</text>
       <text class="ph2" x="128" y="194" text-anchor="middle" fill="#e4f2cd">20 s · the pack turns loose</text>
-      <path class="branch" d="M234 183 C 348 176, 366 56, 250 36" marker-end="url(#whArrHp)"/>
+      <path class="branch" d="M234 183 C 356 176, 374 56, 250 36" marker-end="url(#whArrHp)"/>
       <text class="ph2" x="190" y="226" text-anchor="middle">the pack regroups</text>
     </svg>`,
     "witch-hunter/black-knight": `<svg viewBox="0 0 380 250" role="img" aria-label="Black Knight rhythm, phone ladder: parries return health and Rage, an avoided hit unlocks Desecrate, the brands hold threat">
@@ -1006,7 +1006,7 @@
       <rect class="wh-window" x="28" y="156" width="200" height="54" rx="2"/>
       <text class="wh-window-lab" x="128" y="176" text-anchor="middle">DESECRATE</text>
       <text class="ph2" x="128" y="194" text-anchor="middle" fill="#e4f2cd">unlocked by avoidance</text>
-      <path class="branch" d="M234 183 C 348 176, 366 56, 250 36" marker-end="url(#whArrKp)"/>
+      <path class="branch" d="M234 183 C 356 176, 374 56, 250 36" marker-end="url(#whArrKp)"/>
       <text class="ph2" x="190" y="226" text-anchor="middle">the brands hold threat</text>
     </svg>`,
     "witch-hunter/inquisition": `<svg viewBox="0 0 380 250" role="img" aria-label="Inquisition rhythm, phone ladder: Dawn and Dusk climb to twenty, Cycle of Despair consumes both for six seconds">
@@ -1014,15 +1014,16 @@
       <path class="wh-dawn" d="M24 62 L146 40"/>
       <path class="wh-dusk" d="M24 74 L146 52"/>
       <circle class="wh-sun" cx="70" cy="53" r="4.5"/><rect class="wh-moon" x="100" y="55" width="7" height="7" rx="1"/>
-      <text class="ph" x="185" y="44" text-anchor="start">BUILD</text>
-      <text class="ph2" x="185" y="58" text-anchor="start">fire · Dawn — steel · Dusk</text>
+      <text class="ph" x="170" y="40" text-anchor="start">BUILD</text>
+      <text class="ph2" x="170" y="54" text-anchor="start">fire builds Dawn</text>
+      <text class="ph2" x="170" y="67" text-anchor="start">steel builds Dusk</text>
       <path class="branch" d="M44 86 L44 110" marker-end="url(#whArrIp)"/>
       <text class="thr-lab" x="34" y="130" text-anchor="start">20 · both</text>
       <path class="branch" d="M44 136 L44 148" marker-end="url(#whArrIp)"/>
       <rect class="wh-window" x="28" y="156" width="200" height="54" rx="2"/>
       <text class="wh-window-lab" x="128" y="176" text-anchor="middle">CYCLE OF DESPAIR</text>
       <text class="ph2" x="128" y="194" text-anchor="middle" fill="#e4f2cd">consumes both · 6 s of power</text>
-      <path class="branch" d="M234 183 C 348 176, 366 56, 250 36" marker-end="url(#whArrIp)"/>
+      <path class="branch" d="M234 183 C 356 176, 374 56, 250 36" marker-end="url(#whArrIp)"/>
       <text class="ph2" x="190" y="226" text-anchor="middle">the meters restart</text>
     </svg>`,
   };

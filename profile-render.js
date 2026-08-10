@@ -245,7 +245,12 @@ window.COA_RENDER = (() => {
     tipEl = document.createElement("div");
     tipEl.className = "talent-tip";
     tipEl.innerHTML = `<b>${esc(target.dataset.tipname)}</b>${esc(target.dataset.tip || "No tooltip text captured.")}`;
-    document.body.appendChild(tipEl);
+    // A modal <dialog> paints in the browser's top layer, ABOVE any z-index on
+    // body children — a body-parented tip is invisible inside the quick-look.
+    // Parent the tip to the topmost open dialog instead; position:fixed keeps
+    // viewport coordinates (the dialog carries no transform).
+    const dialogs = document.querySelectorAll("dialog[open]");
+    (dialogs[dialogs.length - 1] || document.body).appendChild(tipEl);
     const r = target.getBoundingClientRect();
     const tw = tipEl.offsetWidth, th = tipEl.offsetHeight;
     let x = Math.min(Math.max(8, r.left), window.innerWidth - tw - 8);
