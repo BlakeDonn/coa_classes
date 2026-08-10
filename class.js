@@ -376,6 +376,63 @@
     <text class="wh-center-sub" x="210" y="151" text-anchor="middle">TONICS REFILL IT</text>
     ${WH_PHONE_NODES.map(s => whNodeSvg(s, 33, 44)).join("")}`;
 
+  // Stormbringer: the Static column as a spark gap — a graduated 0–100 column, the
+  // Supercharged band glowing above 70, a barbed cap at 100 where the arc turns on
+  // the caster. Spec taps at their own heights (packet: seal_concept, batch 1).
+  const sbNodes = [
+    { id: "stormbringer/lightning", name: "Lightning", verb: "DISCHARGE", tag: "ALL", x: 73, y: 66 },
+    { id: "stormbringer/maelstrom", name: "Maelstrom", verb: "COMPOUND", tag: "6", x: 347, y: 66 },
+    { id: "stormbringer/wind", name: "Wind", verb: "FEED", tag: "10", x: 347, y: 196 },
+  ];
+  const SB_DEFS = `<defs>
+      <linearGradient id="sbBand" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#bfe0ff"/><stop offset="1" stop-color="#4da2ff"/></linearGradient>
+      <filter id="sbGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    </defs>`;
+  const sbNodeSvg = (s, ny, vy) => `<g class="cd-node sb-node" data-cd-spec="${s.id}" role="button" tabindex="0" transform="translate(${s.x} ${s.y})">
+      <circle class="node-ring" r="29"/><circle class="node-dot" r="4"/>
+      <text class="sb-tag" text-anchor="middle" y="18">${s.tag}</text>
+      <text class="node-name" text-anchor="middle" y="${ny}">${s.name}</text>
+      <text class="node-verb" text-anchor="middle" y="${vy}">${s.verb}</text></g>`;
+  const sbColumn = (x, top, bot, band) => {
+    const ticks = Array.from({ length: 9 }, (_, i) => {
+      const y = bot - (i + 1) * (bot - top) / 10;
+      return `<line class="sb-tick" x1="${x - 9}" y1="${y.toFixed(1)}" x2="${x - 5}" y2="${y.toFixed(1)}"/>`;
+    }).join("");
+    return `<rect class="sb-col" x="${x - 6}" y="${top}" width="12" height="${bot - top}" rx="2"/>
+      <rect class="sb-band" x="${x - 6}" y="${top}" width="12" height="${band - top}" rx="2"/>${ticks}
+      <path class="sb-cap" d="M${x - 12} ${top - 2} L${x - 6} ${top - 9} L${x} ${top - 2} L${x + 6} ${top - 9} L${x + 12} ${top - 2}"/>
+      <path class="sb-bolt" d="M${x} ${bot - 4} L${x - 4} ${bot - 34} L${x + 3} ${bot - 32} L${x - 2} ${bot - 62} L${x + 4} ${bot - 59} L${x - 1} ${bot - 86}"/>`;
+  };
+  const SB_DESKTOP = `<title id="sb-seal-title">Static as a spark gap: supercharged above 70, the storm turns at 100</title>
+    ${SB_DEFS}
+    ${sbColumn(210, 54, 190, 95)}
+    <text class="sb-threshold" x="153" y="46" text-anchor="middle">100 · STUN</text>
+    <text class="sb-threshold" x="153" y="90" text-anchor="middle">70 · SUPERCHARGE</text>
+    <line class="sb-mark" x1="158" y1="95" x2="204" y2="95"/>
+    <path class="sb-tap" d="M204 60 L102 66"/>
+    <path class="sb-tap" d="M216 84 L318 66"/>
+    ${[0, 1, 2, 3, 4, 5].map(i => `<line class="sb-tick" x1="${252 + i * 11}" y1="${79 - i * 2}" x2="${252 + i * 11}" y2="${87 - i * 2}"/>`).join("")}
+    <path class="sb-tap" d="M216 150 C 260 150, 268 178, 318 190"/>
+    <circle class="sb-orb" cx="268" cy="162" r="8"/>
+    <text class="sb-center-label" x="210" y="214" text-anchor="middle">STATIC</text>
+    <text class="sb-center-sub" x="210" y="226" text-anchor="middle">SPEND BEFORE 100</text>
+    ${sbNodes.map(s => sbNodeSvg(s, s.y > 150 ? 42 : 42, s.y > 150 ? 54 : 54)).join("")}`;
+  const SB_PHONE_NODES = sbNodes.map(s => ({ ...s, y: s.y > 150 ? 172 : 58 }));
+  const SB_PHONE = `<title id="sb-seal-title">Static as a spark gap: supercharged above 70, the storm turns at 100</title>
+    ${SB_DEFS}
+    ${sbColumn(210, 44, 158, 78)}
+    <text class="sb-threshold" x="153" y="36" text-anchor="middle">100 · STUN</text>
+    <text class="sb-threshold" x="153" y="72" text-anchor="middle">70 · SUPERCHARGE</text>
+    <line class="sb-mark" x1="160" y1="78" x2="204" y2="78"/>
+    <path class="sb-tap" d="M204 50 L102 58"/>
+    <path class="sb-tap" d="M216 70 L318 58"/>
+    ${[0, 1, 2, 3, 4, 5].map(i => `<line class="sb-tick" x1="${250 + i * 11}" y1="${68 - i * 1.5}" x2="${250 + i * 11}" y2="${75 - i * 1.5}"/>`).join("")}
+    <path class="sb-tap" d="M216 128 C 258 128, 266 156, 318 168"/>
+    <circle class="sb-orb" cx="264" cy="140" r="7"/>
+    <text class="sb-center-label" x="210" y="180" text-anchor="middle">STATIC</text>
+    <text class="sb-center-sub" x="210" y="191" text-anchor="middle">SPEND BEFORE 100</text>
+    ${SB_PHONE_NODES.map(s => sbNodeSvg(s, 33, 44)).join("")}`;
+
   // Phone: the ruled 420×224 tightened arrangement — ring 46, core .66, rows raised.
   const KOX_PHONE_NODES = [
     { id: "knight-of-xoroth/hellfire", name: "Hellfire", verb: "UNLEASH", x: 73, y: 60 },
@@ -425,6 +482,11 @@
     el("mast").insertAdjacentHTML("beforeend",
       `<div class="cd-stage cd-seal ry-reseal cd-wh-seal" aria-label="Witch Hunter class engine diagram">
         <svg viewBox="0 0 420 260" role="img" aria-labelledby="wh-seal-title">${WH_DESKTOP}</svg></div>`);
+  } else if (cSlug === "stormbringer") {
+    el("mast").classList.add("cd-with-seal");
+    el("mast").insertAdjacentHTML("beforeend",
+      `<div class="cd-stage cd-seal ry-reseal cd-sb-seal" aria-label="Stormbringer class engine diagram">
+        <svg viewBox="0 0 420 260" role="img" aria-labelledby="sb-seal-title">${SB_DESKTOP}</svg></div>`);
   } else {
     // G2 · the seat (RULED 2026-08-10). Crests are skipped, so the class glyph holds
     // the slot with the honest caption. Masthead geometry matches the sealed classes.
@@ -448,6 +510,7 @@
     "guardian/vanguard": "bank", "guardian/inspiration": "wheel", "guardian/gladiator": "wheel",
     "witch-hunter/boltslinger": "wheel", "witch-hunter/houndmaster": "bank",
     "witch-hunter/black-knight": "wheel", "witch-hunter/inquisition": "pips",
+    "stormbringer/lightning": "spike", "stormbringer/maelstrom": "pips", "stormbringer/wind": "wheel",
   };
   function topoGlyph(kind) {
     const art = {
@@ -807,6 +870,70 @@
         "keep Flames of Sin burning while you work"],
       eyes: "both stack counts · the six-second window",
     },
+    "stormbringer/lightning": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Lightning rhythm: Static climbs toward 100, supercharged above 70, then Arm of Thorim empties the whole bar before the stun">
+        <line class="thr" x1="14" y1="32" x2="986" y2="32"/><text class="thr-lab" x="14" y="26">100 · stun</text>
+        <line class="thr" x1="14" y1="62" x2="986" y2="62"/><text class="thr-lab" x="14" y="56">70 · supercharge</text>
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        <path class="sb-climb" d="M20 122 L150 104 L180 108 L300 82 L330 86 L450 58 L480 61 L520 48 L520 126 Z"/>
+        <rect class="sb-window" x="560" y="36" width="200" height="90" rx="2"/>
+        <text class="sb-window-lab" x="660" y="66" text-anchor="middle">EMPTY THE BAR</text>
+        <text class="ph2" x="660" y="84" text-anchor="middle" fill="#cfe6ff">Arm of Thorim spends all Static</text>
+        <text class="ph2" x="660" y="98" text-anchor="middle" fill="#cfe6ff">more held · harder it hits</text>
+        <path class="sb-climb" d="M800 122 L900 108 L960 100 L960 126 Z"/>
+        <text class="ph" x="260" y="146" text-anchor="middle">BUILD</text>
+        <text class="ph2" x="260" y="160" text-anchor="middle">Forked Lightning · 5 Static per enemy hit</text>
+        <text class="ph" x="500" y="80" text-anchor="middle">HOLD</text>
+        <text class="ph" x="880" y="146" text-anchor="middle">REBUILD</text>
+      </svg>`,
+      bullets: ["Forked Lightning bounces to four enemies and gives 5 Static for each one hit",
+        "above 70 your spells run Supercharged; at 100 the storm stuns you",
+        "Arm of Thorim empties the whole bar — the more you held, the harder it hits"],
+      eyes: "the Static bar nearing 100 · the cast bar stretching",
+    },
+    "stormbringer/maelstrom": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Maelstrom rhythm: Shock builds Conductive stacks to six beside the Static bar, then Torrential Wrath spends 50 Static to consume all six">
+        <line class="thr" x1="14" y1="44" x2="500" y2="44"/><text class="thr-lab" x="14" y="38">6 · Conductive</text>
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        <path class="sb-climb2" d="M60 118 L440 60"/>
+        ${[0, 1, 2, 3, 4, 5].map(i => `<circle class="sb-pip" cx="${90 + i * 65}" cy="${113 - i * 9.4}" r="6"/>`).join("")}
+        <path class="sb-climb2 dim" d="M60 124 L440 96"/>
+        <rect class="sb-window" x="540" y="48" width="220" height="78" rx="2"/>
+        <text class="sb-window-lab" x="650" y="76" text-anchor="middle">TORRENTIAL WRATH</text>
+        <text class="ph2" x="650" y="94" text-anchor="middle" fill="#cfe6ff">50 Static · consumes all six stacks</text>
+        <path class="sb-climb2" d="M800 122 L950 100"/>
+        <text class="ph" x="250" y="146" text-anchor="middle">BUILD</text>
+        <text class="ph2" x="250" y="160" text-anchor="middle">Shock stacks Conductive · Static climbs beneath</text>
+        <text class="ph" x="875" y="146" text-anchor="middle">REBUILD</text>
+      </svg>`,
+      bullets: ["Shock builds Conductive up to six stacks, each lasting a minute",
+        "Torrential Wrath spends 50 Static and consumes all six at once",
+        "Stormflow drains 20 Static into an eight-second storm beam"],
+      eyes: "your Conductive count · the Static bar under it",
+    },
+    "stormbringer/wind": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Wind rhythm: the Air Elemental feeds Static back, Unshackle spends 50 to empower it, and every later spend extends the window">
+        <defs><marker id="sbArrW" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+        <circle class="sb-orb2" cx="160" cy="80" r="16"/><circle class="sb-orb2 faint" cx="160" cy="80" r="26"/>
+        <text class="ph" x="160" y="126" text-anchor="middle">THE ELEMENTAL</text>
+        <text class="ph2" x="160" y="140" text-anchor="middle">its damage feeds you 2 Static</text>
+        <path class="branch" d="M200 70 C 280 42, 380 38, 460 50" marker-end="url(#sbArrW)"/>
+        <path class="refresh" d="M477 60 l13 -13 l13 13 l-13 13 Z"/>
+        <text class="ph" x="490" y="98" text-anchor="middle">SPEND</text>
+        <text class="ph2" x="490" y="112" text-anchor="middle">shield 40 · haste 20</text>
+        <path class="branch" d="M518 54 C 580 42, 630 44, 686 56" marker-end="url(#sbArrW)"/>
+        <rect class="sb-window" x="696" y="42" width="200" height="64" rx="2"/>
+        <text class="sb-window-lab" x="796" y="68" text-anchor="middle">UNSHACKLE</text>
+        <text class="ph2" x="796" y="86" text-anchor="middle" fill="#cfe6ff">50 Static · +25% pet damage · 15 s</text>
+        <path class="branch" d="M796 110 C 700 158, 260 160, 176 100" marker-end="url(#sbArrW)"/>
+        <text class="ph2" x="310" y="156" text-anchor="middle">EACH LATER SPEND ADDS 3 SECONDS</text>
+      </svg>`,
+      bullets: ["your Air Elemental stacks Invigoration to ten — 3% more pet damage each",
+        "the pet's damage feeds 2 Static back to you",
+        "Unshackle spends 50 Static: the pet hits 25% harder for 15 seconds",
+        "every later Static spend adds 3 seconds to the window"],
+      eyes: "the pet's Invigoration stacks · the Unshackle timer",
+    },
   };
 
   // Authored-to-fit phone redraws (S2): same topology, fewer labels, no scroll.
@@ -1023,6 +1150,46 @@
       <text class="ph2" x="128" y="194" text-anchor="middle" fill="#e4f2cd">consumes both · 6 s of power</text>
       <path class="branch" d="M234 183 C 356 176, 374 56, 250 36" marker-end="url(#whArrIp)"/>
       <text class="ph2" x="190" y="226" text-anchor="middle">the meters restart</text>
+    </svg>`,
+    "stormbringer/lightning": `<svg viewBox="0 0 380 230" role="img" aria-label="Lightning rhythm, phone ladder: Static climbs supercharged toward 100, then Arm of Thorim empties the bar">
+      <defs><marker id="sbArrLp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <path class="sb-climb" d="M20 78 L150 48 L150 80 L20 80 Z"/>
+      <text class="ph" x="165" y="52" text-anchor="start">BUILD · HOLD</text>
+      <text class="ph2" x="165" y="66" text-anchor="start">supercharged above 70</text>
+      <path class="branch" d="M44 90 L44 112" marker-end="url(#sbArrLp)"/>
+      <rect class="sb-window" x="28" y="122" width="200" height="56" rx="2"/>
+      <text class="sb-window-lab" x="128" y="146" text-anchor="middle">EMPTY THE BAR</text>
+      <text class="ph2" x="128" y="164" text-anchor="middle" fill="#cfe6ff">Arm of Thorim · all Static</text>
+      <path class="branch" d="M234 150 C 356 144, 374 58, 250 36" marker-end="url(#sbArrLp)"/>
+      <text class="ph2" x="190" y="196" text-anchor="middle">the climb restarts</text>
+    </svg>`,
+    "stormbringer/maelstrom": `<svg viewBox="0 0 380 230" role="img" aria-label="Maelstrom rhythm, phone ladder: Conductive stacks to six, then Torrential Wrath consumes all of them">
+      <defs><marker id="sbArrMp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      ${[0, 1, 2, 3, 4, 5].map(i => `<circle class="sb-pip" cx="${34 + i * 24}" cy="${64 - i * 3}" r="6"/>`).join("")}
+      <text class="ph" x="200" y="48" text-anchor="start">BUILD</text>
+      <text class="ph2" x="200" y="62" text-anchor="start">Shock · six stacks</text>
+      <path class="branch" d="M44 84 L44 108" marker-end="url(#sbArrMp)"/>
+      <rect class="sb-window" x="28" y="118" width="200" height="56" rx="2"/>
+      <text class="sb-window-lab" x="128" y="142" text-anchor="middle">TORRENTIAL WRATH</text>
+      <text class="ph2" x="128" y="160" text-anchor="middle" fill="#cfe6ff">50 Static · all six at once</text>
+      <path class="branch" d="M234 146 C 356 140, 374 56, 250 36" marker-end="url(#sbArrMp)"/>
+      <text class="ph2" x="190" y="192" text-anchor="middle">the stacks rebuild</text>
+    </svg>`,
+    "stormbringer/wind": `<svg viewBox="0 0 380 250" role="img" aria-label="Wind rhythm, phone ladder: the elemental feeds Static, spends flow back into the pet, Unshackle extends with each spend">
+      <defs><marker id="sbArrWp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <circle class="sb-orb2" cx="44" cy="50" r="12"/><circle class="sb-orb2 faint" cx="44" cy="50" r="20"/>
+      <text class="ph" x="165" y="44" text-anchor="start">THE ELEMENTAL</text>
+      <text class="ph2" x="165" y="58" text-anchor="start">feeds you 2 Static</text>
+      <path class="branch" d="M44 76 L44 98" marker-end="url(#sbArrWp)"/>
+      <path class="refresh" d="M33 120 l11 -11 l11 11 l-11 11 Z"/>
+      <text class="ph" x="165" y="116" text-anchor="start">SPEND</text>
+      <text class="ph2" x="165" y="130" text-anchor="start">shield 40 · haste 20</text>
+      <path class="branch" d="M44 134 L44 156" marker-end="url(#sbArrWp)"/>
+      <rect class="sb-window" x="28" y="166" width="200" height="54" rx="2"/>
+      <text class="sb-window-lab" x="128" y="186" text-anchor="middle">UNSHACKLE</text>
+      <text class="ph2" x="128" y="204" text-anchor="middle" fill="#cfe6ff">+25% pet damage · 15 s</text>
+      <path class="branch" d="M234 193 C 356 186, 374 58, 250 36" marker-end="url(#sbArrWp)"/>
+      <text class="ph2" x="190" y="238" text-anchor="middle">each later spend adds 3 seconds</text>
     </svg>`,
   };
 
@@ -1280,6 +1447,7 @@
     "knight-of-xoroth": { desktop: ["0 0 420 260", KOX_DESKTOP], phone: ["0 0 420 224", KOX_PHONE] },
     "guardian": { desktop: ["0 0 420 260", GD_DESKTOP], phone: ["0 0 420 224", GD_PHONE] },
     "witch-hunter": { desktop: ["0 0 420 260", WH_DESKTOP], phone: ["0 0 420 224", WH_PHONE] },
+    "stormbringer": { desktop: ["0 0 420 260", SB_DESKTOP], phone: ["0 0 420 224", SB_PHONE] },
   };
   function applySeal() {
     const swap = SEAL_SWAP[cSlug];

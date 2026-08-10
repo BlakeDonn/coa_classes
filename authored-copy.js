@@ -99,6 +99,11 @@ window.COA_COPY = (() => {
       lede: "Every Hunter runs on Rage; each spec layers its own marks and stacks on top.",
       text: "Build Rage from your own attacks and spend it on your spec's payoffs; Tonics restore it. The layer on top is the spec's own: Slinging Bolts, Shadowhounds, Shadow Brands, or Dawn and Dusk.",
     },
+    stormbringer: {
+      label: "The engine — Static",
+      lede: "Static climbs as you cast: above 70 your spells supercharge, at 100 the storm turns on you.",
+      text: "Generate Static as you cast, then spend it: Conjure Storm depletes 50 and Arm of Thorim depletes all of it. Stay above 70 for the Supercharged effects, and spend before 100 — reaching it stuns you.",
+    },
   };
 
   // NOTE on the rare ✦ fragments (class-page grammar §1): they are NOT authored copy.
@@ -130,6 +135,9 @@ window.COA_COPY = (() => {
     "witch-hunter/houndmaster": ["Loose", "Hounds fight beside you; Shadowblast feeds them Shadow Rage, and Decimate turns them loose."],
     "witch-hunter/black-knight": ["Riposte", "Defense pays: parries restore health and Rage, and an avoided hit unlocks Desecrate."],
     "witch-hunter/inquisition": ["Balance", "Fire builds Dawn and steel builds Dusk; at twenty of each, Cycle of Despair consumes both."],
+    "stormbringer/lightning": ["Discharge", "Run the bar as high as you dare, then Arm of Thorim empties all of it — damage rising with the Static held."],
+    "stormbringer/maelstrom": ["Compound", "Shock builds Conductive to six; Torrential Wrath spends 50 Static to consume all six at once."],
+    "stormbringer/wind": ["Feed", "Your Air Elemental generates Static as it fights, and you spend it straight back into the pet and the party."],
   };
 
   // ---------- authored spec-card copy (class-page grammar §3) ----------
