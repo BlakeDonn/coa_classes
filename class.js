@@ -235,12 +235,13 @@
     <text class="kx-feed-lab" x="130" y="104" text-anchor="middle">FEED</text>
     <circle class="kx-coreback" cx="210" cy="102" r="24"/>
     ${koxFlame(210, 100, .78)}
-    <text class="kx-center-label" x="210" y="141" text-anchor="middle">DEMONFIRE</text>
-    <text class="kx-center-sub" x="210" y="153" text-anchor="middle">EVERY STACK PAYS</text>
     <text class="kx-threshold" x="210" y="38" text-anchor="middle">6 · UNLEASH</text>
     ${koxPip(210, 164, .85)}${koxPip(165, 138, 1)}${koxPip(255, 138, 1)}
     ${koxPip(165, 86, 1.15)}${koxPip(255, 86, 1.15)}${koxPip(210, 60, 1.5, true)}
     <text class="kx-legend" x="16" y="252">FED BY DEMONS AND BLOOD</text>
+    <rect class="kx-lab-plate" x="158" y="129" width="104" height="26" rx="4"/>
+    <text class="kx-center-label" x="210" y="139" text-anchor="middle">DEMONFIRE</text>
+    <text class="kx-center-sub" x="210" y="151" text-anchor="middle">EVERY STACK PAYS</text>
     ${koxNodes.map(s => nodeSvg(s, s.y > 170 ? 38 : 42, s.y > 170 ? 50 : 54, "kx-node")).join("")}`;
   // Phone: the ruled 420×224 tightened arrangement — ring 46, core .66, rows raised.
   const KOX_PHONE_NODES = [
@@ -258,12 +259,13 @@
     <text class="kx-feed-lab" x="136" y="92" text-anchor="middle">FEED</text>
     <circle class="kx-coreback" cx="210" cy="86" r="20"/>
     ${koxFlame(210, 84, .66)}
-    <text class="kx-center-label" x="210" y="121" text-anchor="middle">DEMONFIRE</text>
-    <text class="kx-center-sub" x="210" y="131" text-anchor="middle">EVERY STACK PAYS</text>
     <text class="kx-threshold" x="210" y="30" text-anchor="middle">6 · UNLEASH</text>
     ${koxPip(210, 140, .75)}${koxPip(170, 117, .85)}${koxPip(250, 117, .85)}
     ${koxPip(170, 71, 1)}${koxPip(250, 71, 1)}${koxPip(210, 48, 1.3, true)}
     <text class="kx-legend" x="14" y="218">FED BY DEMONS AND BLOOD</text>
+    <rect class="kx-lab-plate" x="158" y="110" width="104" height="24" rx="4"/>
+    <text class="kx-center-label" x="210" y="119" text-anchor="middle">DEMONFIRE</text>
+    <text class="kx-center-sub" x="210" y="129" text-anchor="middle">EVERY STACK PAYS</text>
     ${KOX_PHONE_NODES.map(s => nodeSvg(s, s.y > 150 ? 33 : 40, s.y > 150 ? 44 : 52, "kx-node")).join("")}`;
 
   if (cSlug === "cultist") {

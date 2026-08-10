@@ -121,7 +121,9 @@
 .kx-coreback { fill: #1c0d12; stroke: #b8465a; stroke-width: 1.2; }
 .kx-flame { fill: url(#kxCore); filter: url(#kxGlow); }
 .kx-flame-in { fill: #f6cf7f; opacity: .9; }
-/* dark halo so the label reads over the hex outline and pips (user fix, 2026-08-10) */
+/* the label owns the top layer: painted last, on a soft dark plate, with a halo
+   (user fixes, 2026-08-10: "hidden behind the diagram", "needs like z axis") */
+.kx-lab-plate { fill: rgba(10,5,8,.75); }
 .kx-center-label { fill: #f2d9dc; font: 700 11px Georgia, serif; letter-spacing: .18em;
   paint-order: stroke; stroke: #140a0e; stroke-width: 3.5px; stroke-linejoin: round; }
 .kx-center-sub { fill: #d8a05f; font: 700 6px Arial, sans-serif; letter-spacing: .14em;
