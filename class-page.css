@@ -231,6 +231,14 @@ body.ry-glow .rail-card.sel {
 .ry-block svg { width: 100%; height: auto; display: block; }
 .ry-read { margin: 9px 0 0; color: #cdc8bc; font-size: 13px; line-height: 1.55; max-width: 84ch; }
 .ry-read b { color: #c9aa71; font-weight: 600; }
+/* bullet captions (ruled 2026-08-10): plain player words, ≤1 ability name per bullet */
+.ry-bullets-lab { margin: 9px 0 0; font-size: 9.5px; letter-spacing: .16em;
+  text-transform: uppercase; color: #8d8678; }
+.ry-bullets { margin: 3px 0 0; padding: 0; list-style: none; display: grid; gap: 2px; }
+.ry-bullets li { font-size: 12.5px; color: #cdc8bc; line-height: 1.5;
+  padding-left: 14px; position: relative; }
+.ry-bullets li::before { content: "–"; position: absolute; left: 2px; color: #c9aa71; }
+.ry-eyes { margin: 9px 0 0; color: #d8b06a; font-size: 12.5px; line-height: 1.5; }
 /* the honest gap: unauthored specs say so, they never get a placeholder drawing */
 .ry-gap { border-style: dashed; }
 .ry-gap .ry-read { color: #8d8678; margin: 0; }
