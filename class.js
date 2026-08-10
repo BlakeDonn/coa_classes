@@ -2,8 +2,6 @@
    URL contract: class.html?c=<class-slug>[&from=choose|guided]#<spec-slug>
 
    This is the BAKED ruled state — no study switchers, no variant query params.
-   (One exception while the design pass runs: a temporary ?r4= thumb-fallback
-   switcher — hide | card — with ?r4sim=1 simulating a blocked CDN. 2026-08-10.)
    Masthead order: name · tagline (keyword glow) · engine block · plain-text strict
    role line, with the T1 corner video thumb at the text column's right edge.
    Cultist, Tinker and Knight of Xoroth carry their authored seals; the others render
