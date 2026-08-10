@@ -225,6 +225,61 @@
     <text class="cm-legend" x="14" y="218">HANDS DISAGREE · NO SHARED BAR</text>
     ${CM_PHONE_NODES.map(s => cmNodeSvg(s, 33, 44)).join("")}`;
 
+
+  // Starcaller: the empty socket — Scattered Stars never sit with the caster. Four
+  // lances run outward to starred enemy rings, one per spec, each tagged with what
+  // consumption pays back (packet: seal_concept, batch 1).
+  const scNodes = [
+    { id: "starcaller/moon-guard", name: "Moon Guard", verb: "SWEEP", tag: "8", x: 73, y: 64 },
+    { id: "starcaller/moon-priest", name: "Moon Priest", verb: "REAP", tag: "5", x: 347, y: 64 },
+    { id: "starcaller/sentinel", name: "Sentinel", verb: "COUNT", tag: "8TH", x: 73, y: 196 },
+    { id: "starcaller/warden", name: "Warden", verb: "CHAIN", tag: "4→6", x: 347, y: 196 },
+  ];
+  const SC_DEFS = `<defs>
+      <filter id="scGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    </defs>`;
+  const scNodeSvg = (s, ny, vy) => `<g class="cd-node sc-node" data-cd-spec="${s.id}" role="button" tabindex="0" transform="translate(${s.x} ${s.y})">
+      <circle class="node-ring" r="29"/><circle class="node-dot" r="4"/>
+      <text class="sc-tag" text-anchor="middle" y="18">${s.tag}</text>
+      <text class="node-name" text-anchor="middle" y="${ny}">${s.name}</text>
+      <text class="node-verb" text-anchor="middle" y="${vy}">${s.verb}</text></g>`;
+  const scLance = (sx, sy, nx, ny, mx, my) => `<path class="sc-lance" d="M${sx} ${sy} L${nx} ${ny}"/>
+      <circle class="sc-enemy" cx="${mx}" cy="${my}" r="10"/>
+      <g class="sc-star" transform="translate(${{mx}} ${{my}}) scale(1)"><path d="M0 -8 L2.2 -2.2 L8 0 L2.2 2.2 L0 8 L-2.2 2.2 L-8 0 L-2.2 -2.2 Z"/></g>`;
+  const SC_DESKTOP = `<title id="sc-seal-title">Scattered Stars: an empty socket, four lances planted on the enemy and dragged home</title>
+    ${SC_DEFS}
+    <circle class="sc-socket" cx="210" cy="118" r="15"/>
+    ${[0,1,2,3].map(i => {
+      const n = scNodes[i];
+      const mx = 210 + (n.x - 210) * 0.55, my = 118 + (n.y - 118) * 0.55;
+      return `<path class="sc-lance" d="M210 118 L${n.x} ${n.y}"/>
+        <circle class="sc-enemy" cx="${mx}" cy="${my}" r="10"/>
+        <g class="sc-star" transform="translate(${mx} ${my})"><path d="M0 -7 L2 -2 L7 0 L2 2 L0 7 L-2 2 L-7 0 L-2 -2 Z"/></g>`;
+    }).join("")}
+    <text class="sc-threshold" x="210" y="34" text-anchor="middle">4 · THEIRS</text>
+    <text class="sc-threshold" x="210" y="230" text-anchor="middle">SPEND · YOURS</text>
+    <text class="sc-center-label" x="210" y="152" text-anchor="middle">SCATTERED STARS</text>
+    <text class="sc-center-sub" x="210" y="164" text-anchor="middle">SPEND TO BE PAID · 30 s</text>
+    <text class="sc-legend" x="16" y="22">STARS LIVE ON THE ENEMY</text>
+    ${scNodes.map(s => scNodeSvg(s, 42, 54)).join("")}`;
+  const SC_PHONE_NODES = scNodes.map(s => ({ ...s, y: s.y < 150 ? 56 : 167 }));
+  const SC_PHONE = `<title id="sc-seal-title">Scattered Stars: an empty socket, four lances planted on the enemy and dragged home</title>
+    ${SC_DEFS}
+    <circle class="sc-socket" cx="210" cy="110" r="13"/>
+    ${[0,1,2,3].map(i => {
+      const n = SC_PHONE_NODES[i];
+      const mx = 210 + (n.x - 210) * 0.55, my = 110 + (n.y - 110) * 0.55;
+      return `<path class="sc-lance" d="M210 110 L${n.x} ${n.y}"/>
+        <circle class="sc-enemy" cx="${mx}" cy="${my}" r="9"/>
+        <g class="sc-star" transform="translate(${mx} ${my})"><path d="M0 -6 L1.8 -1.8 L6 0 L1.8 1.8 L0 6 L-1.8 1.8 L-6 0 L-1.8 -1.8 Z"/></g>`;
+    }).join("")}
+    <text class="sc-threshold" x="210" y="26" text-anchor="middle">4 · THEIRS</text>
+    <text class="sc-threshold" x="210" y="196" text-anchor="middle">SPEND · YOURS</text>
+    <text class="sc-center-label" x="210" y="138" text-anchor="middle">SCATTERED STARS</text>
+    <text class="sc-center-sub" x="210" y="149" text-anchor="middle">SPEND TO BE PAID · 30 s</text>
+    <text class="sc-legend" x="14" y="20">STARS LIVE ON THE ENEMY</text>
+    ${SC_PHONE_NODES.map(s => scNodeSvg(s, 33, 44)).join("")}`;
+
   // Phone: the ruled 420×224 tightened arrangement — orbits 60/77, eye .66,
   // node rows raised. Nothing removed.
   const CULTIST_PHONE_NODES = [
@@ -571,6 +626,11 @@
     el("mast").insertAdjacentHTML("beforeend",
       `<div class="cd-stage cd-seal ry-reseal cd-wh-seal" aria-label="Witch Hunter class engine diagram">
         <svg viewBox="0 0 420 260" role="img" aria-labelledby="wh-seal-title">${WH_DESKTOP}</svg></div>`);
+  } else if (cSlug === "starcaller") {
+    el("mast").classList.add("cd-with-seal");
+    el("mast").insertAdjacentHTML("beforeend",
+      `<div class="cd-stage cd-seal ry-reseal cd-sc-seal" aria-label="Starcaller class engine diagram">
+        <svg viewBox="0 0 420 260" role="img" aria-labelledby="sc-seal-title">${SC_DESKTOP}</svg></div>`);
   } else if (cSlug === "chronomancer") {
     el("mast").classList.add("cd-with-seal");
     el("mast").insertAdjacentHTML("beforeend",
@@ -612,6 +672,8 @@
     "stormbringer/lightning": "spike", "stormbringer/maelstrom": "pips", "stormbringer/wind": "wheel",
     "reaper/domination": "bank", "reaper/harvest": "spike", "reaper/soul": "wave",
     "chronomancer/infinite": "wave", "chronomancer/artificer": "bank", "chronomancer/time": "pips",
+    "starcaller/moon-guard": "wheel", "starcaller/moon-priest": "bank",
+    "starcaller/sentinel": "pips", "starcaller/warden": "wave",
   };
   function topoGlyph(kind) {
     const art = {
@@ -1163,6 +1225,82 @@
         "Epoch casts stack Endless Sands — each cuts 20% off your next Reverse Wound, up to five"],
       eyes: "which Aeon is active · your Endless Sands stacks",
     },
+    "starcaller/moon-guard": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Moon Guard rhythm: Starburst marks the pack, spending stars pulls Starsweep back three seconds each, and bigger packs spin the loop faster">
+        <defs><marker id="scArrG" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+        ${[0,1,2,3,4].map(i => `<g class="sc-star" transform="translate(${118 + i * 30} 84)"><path d="M0 -6 L1.8 -1.8 L6 0 L1.8 1.8 L0 6 L-1.8 1.8 L-6 0 L-1.8 -1.8 Z"/></g>`).join("")}
+        <text class="ph" x="178" y="116" text-anchor="middle">MARK</text>
+        <text class="ph2" x="178" y="130" text-anchor="middle">Starburst · up to 8 enemies</text>
+        <path class="branch" d="M270 74 C 350 42, 440 40, 520 52" marker-end="url(#scArrG)"/>
+        <path class="refresh" d="M537 62 l13 -13 l13 13 l-13 13 Z"/>
+        <text class="ph" x="550" y="100" text-anchor="middle">SPEND</text>
+        <text class="ph2" x="550" y="114" text-anchor="middle">−3 s Starsweep per star</text>
+        <path class="branch" d="M578 56 C 630 46, 670 48, 716 58" marker-end="url(#scArrG)"/>
+        <rect class="sc-window" x="726" y="44" width="180" height="64" rx="2"/>
+        <text class="sc-window-lab" x="816" y="70" text-anchor="middle">STARSWEEP</text>
+        <text class="ph2" x="816" y="88" text-anchor="middle" fill="#efeaff">back sooner the more you marked</text>
+        <path class="branch" d="M816 112 C 700 158, 280 160, 156 96" marker-end="url(#scArrG)"/>
+        <text class="ph2" x="310" y="156" text-anchor="middle">BIGGER PACKS SPIN IT FASTER</text>
+      </svg>`,
+      bullets: ["every hit lands a star — Starburst marks up to eight enemies at once",
+        "spending stars pulls Starsweep's cooldown down 3 seconds each",
+        "Blanket of Stars doubles block chance and value for 8 seconds"],
+      eyes: "stars on the pack · Starsweep's cooldown",
+    },
+    "starcaller/moon-priest": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Moon Priest rhythm: stars held on enemies become healing on consumption, and the eclipse Moonflow reaps every enemy in forty yards">
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        ${[0,1,2,3].map(i => `<g class="sc-star" transform="translate(${110 + i * 55} ${112 - i * 12})"><path d="M0 -6 L1.8 -1.8 L6 0 L1.8 1.8 L0 6 L-1.8 1.8 L-6 0 L-1.8 -1.8 Z"/></g>`).join("")}
+        <path class="cm-line" d="M85 118 L290 66"/>
+        <text class="ph" x="180" y="146" text-anchor="middle">HOLD THE STARS</text>
+        <text class="ph2" x="180" y="160" text-anchor="middle">Huntress Shot lands two extra</text>
+        <rect class="sc-window" x="440" y="40" width="300" height="86" rx="2"/>
+        <text class="sc-window-lab" x="590" y="66" text-anchor="middle">MOONFLOW ECLIPSE · 40 YD</text>
+        <path class="kx-heal" d="M470 122 C 520 66 660 66 710 122 Z"/>
+        <text class="ph2" x="590" y="86" text-anchor="middle" fill="#efeaff">each star consumed heals up to 5 allies</text>
+        <text class="ph" x="880" y="146" text-anchor="middle">RESEED</text>
+      </svg>`,
+      bullets: ["stars you consume are the heal — up to five allies around the target",
+        "Huntress Shot lands two extra stars, loading several heals at once",
+        "the eclipse Moonflow has no cooldown and reaches 40 yards"],
+      eyes: "stars held on enemies · the eclipse window",
+    },
+    "starcaller/sentinel": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Sentinel rhythm: every star consumed counts up, every third shot becomes a barrage, and the eighth star supercharges Starcall">
+        <line class="thr" x1="14" y1="44" x2="520" y2="44"/><text class="thr-lab" x="14" y="38">the 8th star</text>
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        ${[0,1,2,3,4,5,6,7].map(i => `<circle class="sc-pip${i === 7 ? " lit" : ""}" cx="${80 + i * 52}" cy="${116 - i * 10}" r="6"/>`).join("")}
+        <text class="ph2" x="186" y="70" text-anchor="middle">every 3rd shot → Barrage</text>
+        <rect class="sc-window" x="580" y="48" width="220" height="78" rx="2"/>
+        <text class="sc-window-lab" x="690" y="76" text-anchor="middle">EVERY 8TH STAR</text>
+        <text class="ph2" x="690" y="94" text-anchor="middle" fill="#efeaff">next Starcall +50% · 8% mana per star</text>
+        <text class="ph" x="900" y="146" text-anchor="middle">COUNT AGAIN</text>
+        <text class="ph" x="250" y="146" text-anchor="middle">COUNT</text>
+        <text class="ph2" x="250" y="160" text-anchor="middle">each star also trims Starcall 1.5 s</text>
+      </svg>`,
+      bullets: ["Starfire Shot consumes stars and restores 8% of your mana per star",
+        "every third shot upgrades into Starfire Barrage",
+        "every eighth star makes the next Starcall hit 50% harder"],
+      eyes: "the eighth-star count · the third-shot beat",
+    },
+    "starcaller/warden": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Warden rhythm: apply and consume alternate inside the same seconds, and star damage can make the next Astral Blade free">
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        <path class="sc-churn" d="M40 118 L90 74 L140 118 L190 74 L240 118 L290 74 L340 118 L390 74 L440 118"/>
+        ${[0,1,2,3].map(i => `<g class="sc-star" transform="translate(${90 + i * 100} 74)"><path d="M0 -5 L1.5 -1.5 L5 0 L1.5 1.5 L0 5 L-1.5 1.5 L-5 0 L-1.5 -1.5 Z"/></g>`).join("")}
+        <text class="ph" x="240" y="146" text-anchor="middle">CHURN</text>
+        <text class="ph2" x="240" y="160" text-anchor="middle">build and spend in the same seconds</text>
+        <rect class="sc-window" x="540" y="44" width="250" height="78" rx="2"/>
+        <text class="sc-window-lab" x="665" y="72" text-anchor="middle">FREE ASTRAL BLADE</text>
+        <text class="ph2" x="665" y="90" text-anchor="middle" fill="#efeaff">zeroes a strike that drains 25% max mana</text>
+        <text class="ph2" x="665" y="106" text-anchor="middle" fill="#efeaff">Fan of Knives · −2 s per star spent</text>
+        <text class="ph" x="890" y="146" text-anchor="middle">NO PAUSE</text>
+      </svg>`,
+      bullets: ["critical strikes add stars — a critical Starsunder lands an extra one",
+        "star damage can make your next Astral Blade free, a strike that drains 25% of your mana",
+        "there is no holding phase: you build and spend in the same seconds"],
+      eyes: "stars on the target · the free-blade proc",
+    },
   };
 
   // Authored-to-fit phone redraws (S2): same topology, fewer labels, no scroll.
@@ -1508,6 +1646,62 @@
       <path class="branch" d="M234 146 C 356 140, 374 56, 250 36" marker-end="url(#cmArrTp)"/>
       <text class="ph2" x="190" y="200" text-anchor="middle">retune, and the sands rebuild</text>
     </svg>`,
+    "starcaller/moon-guard": `<svg viewBox="0 0 380 230" role="img" aria-label="Moon Guard rhythm, phone ladder: mark the pack, spend stars, Starsweep returns sooner">
+      <defs><marker id="scArrGp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      ${[0,1,2].map(i => `<g class="sc-star" transform="translate(${36 + i * 28} 52)"><path d="M0 -6 L1.8 -1.8 L6 0 L1.8 1.8 L0 6 L-1.8 1.8 L-6 0 L-1.8 -1.8 Z"/></g>`).join("")}
+      <text class="ph" x="165" y="46" text-anchor="start">MARK</text>
+      <text class="ph2" x="165" y="60" text-anchor="start">Starburst · up to 8</text>
+      <path class="branch" d="M44 72 L44 96" marker-end="url(#scArrGp)"/>
+      <path class="refresh" d="M33 118 l11 -11 l11 11 l-11 11 Z"/>
+      <text class="ph" x="165" y="114" text-anchor="start">SPEND</text>
+      <text class="ph2" x="165" y="128" text-anchor="start">−3 s Starsweep per star</text>
+      <path class="branch" d="M44 132 L44 154" marker-end="url(#scArrGp)"/>
+      <rect class="sc-window" x="28" y="164" width="200" height="54" rx="2"/>
+      <text class="sc-window-lab" x="128" y="184" text-anchor="middle">STARSWEEP</text>
+      <text class="ph2" x="128" y="202" text-anchor="middle" fill="#efeaff">sooner with every mark</text>
+      <path class="branch" d="M234 191 C 356 184, 374 56, 250 36" marker-end="url(#scArrGp)"/>
+      <text class="ph2" x="190" y="228" text-anchor="middle">bigger packs spin it faster</text>
+    </svg>`,
+    "starcaller/moon-priest": `<svg viewBox="0 0 380 230" role="img" aria-label="Moon Priest rhythm, phone ladder: hold stars on enemies, the eclipse reaps them as healing">
+      <defs><marker id="scArrPp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      ${[0,1,2].map(i => `<g class="sc-star" transform="translate(${36 + i * 28} ${56 - i * 5})"><path d="M0 -6 L1.8 -1.8 L6 0 L1.8 1.8 L0 6 L-1.8 1.8 L-6 0 L-1.8 -1.8 Z"/></g>`).join("")}
+      <text class="ph" x="165" y="46" text-anchor="start">HOLD THE STARS</text>
+      <text class="ph2" x="165" y="60" text-anchor="start">Huntress Shot lands two extra</text>
+      <path class="branch" d="M44 76 L44 100" marker-end="url(#scArrPp)"/>
+      <rect class="sc-window" x="28" y="110" width="200" height="66" rx="2"/>
+      <text class="sc-window-lab" x="128" y="130" text-anchor="middle">MOONFLOW ECLIPSE</text>
+      <path class="kx-heal" d="M44 170 C 74 132 154 132 184 170 Z"/>
+      <text class="ph2" x="128" y="146" text-anchor="middle" fill="#efeaff">5 allies healed per star · 40 yd</text>
+      <path class="branch" d="M234 143 C 356 136, 374 54, 250 34" marker-end="url(#scArrPp)"/>
+      <text class="ph2" x="190" y="196" text-anchor="middle">reseed the pack</text>
+    </svg>`,
+    "starcaller/sentinel": `<svg viewBox="0 0 380 230" role="img" aria-label="Sentinel rhythm, phone ladder: count consumed stars to eight, the eighth supercharges Starcall">
+      <defs><marker id="scArrSp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      ${[0,1,2,3,4,5,6,7].map(i => `<circle class="sc-pip${i === 7 ? " lit" : ""}" cx="${28 + i * 17}" cy="${58 - i * 2}" r="5"/>`).join("")}
+      <text class="ph" x="185" y="46" text-anchor="start">COUNT</text>
+      <text class="ph2" x="185" y="60" text-anchor="start">8% mana per star spent</text>
+      <path class="branch" d="M44 76 L44 100" marker-end="url(#scArrSp)"/>
+      <text class="ph2" x="34" y="120" text-anchor="start">every 3rd shot → Barrage</text>
+      <path class="branch" d="M44 128 L44 150" marker-end="url(#scArrSp)"/>
+      <rect class="sc-window" x="28" y="160" width="200" height="54" rx="2"/>
+      <text class="sc-window-lab" x="128" y="180" text-anchor="middle">EVERY 8TH STAR</text>
+      <text class="ph2" x="128" y="198" text-anchor="middle" fill="#efeaff">next Starcall +50%</text>
+      <path class="branch" d="M234 187 C 356 180, 374 56, 250 36" marker-end="url(#scArrSp)"/>
+      <text class="ph2" x="190" y="226" text-anchor="middle">count again</text>
+    </svg>`,
+    "starcaller/warden": `<svg viewBox="0 0 380 230" role="img" aria-label="Warden rhythm, phone ladder: apply and consume in the same seconds; star damage can make the next Astral Blade free">
+      <defs><marker id="scArrWp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <path class="sc-churn" d="M20 66 L48 42 L76 66 L104 42 L132 66"/>
+      <text class="ph" x="165" y="46" text-anchor="start">CHURN</text>
+      <text class="ph2" x="165" y="60" text-anchor="start">build and spend at once</text>
+      <path class="branch" d="M44 80 L44 104" marker-end="url(#scArrWp)"/>
+      <rect class="sc-window" x="28" y="114" width="200" height="60" rx="2"/>
+      <text class="sc-window-lab" x="128" y="136" text-anchor="middle">FREE ASTRAL BLADE</text>
+      <text class="ph2" x="128" y="152" text-anchor="middle" fill="#efeaff">zeroes a 25%-mana strike</text>
+      <text class="ph2" x="128" y="166" text-anchor="middle" fill="#efeaff">Fan of Knives · −2 s per star</text>
+      <path class="branch" d="M234 144 C 356 138, 374 56, 250 36" marker-end="url(#scArrWp)"/>
+      <text class="ph2" x="190" y="196" text-anchor="middle">no pause — the churn continues</text>
+    </svg>`,
   };
 
   // ---------- experimental screen cards ----------
@@ -1767,6 +1961,7 @@
     "stormbringer": { desktop: ["0 0 420 260", SB_DESKTOP], phone: ["0 0 420 224", SB_PHONE] },
     "reaper": { desktop: ["0 0 420 260", RP_DESKTOP], phone: ["0 0 420 224", RP_PHONE] },
     "chronomancer": { desktop: ["0 0 420 260", CM_DESKTOP], phone: ["0 0 420 224", CM_PHONE] },
+    "starcaller": { desktop: ["0 0 420 260", SC_DESKTOP], phone: ["0 0 420 224", SC_PHONE] },
   };
   function applySeal() {
     const swap = SEAL_SWAP[cSlug];

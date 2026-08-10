@@ -99,6 +99,11 @@ window.COA_COPY = (() => {
       lede: "Every Hunter runs on Rage; each spec layers its own marks and stacks on top.",
       text: "Build Rage from your own attacks and spend it on your spec's payoffs; Tonics restore it. The layer on top is the spec's own: Slinging Bolts, Shadowhounds, Shadow Brands, or Dawn and Dusk.",
     },
+    starcaller: {
+      label: "The engine — Scattered Stars",
+      lede: "Every spec pins Scattered Stars onto enemies, then consumes them for its own payoff.",
+      text: "Apply Scattered Stars with your attacks and spells; they stack 4 times and last 30 seconds. Every star consumed pays back mana or cooldown, which feeds the next application.",
+    },
     chronomancer: {
       label: "The engine — three clocks",
       lede: "Each spec runs its own clock — DoT ramps, Echo Fragments, or Aeons — and Rewind is just the safety net.",
@@ -145,6 +150,10 @@ window.COA_COPY = (() => {
     "witch-hunter/houndmaster": ["Loose", "Hounds fight beside you; Shadowblast feeds them Shadow Rage, and Decimate turns them loose."],
     "witch-hunter/black-knight": ["Riposte", "Defense pays: parries restore health and Rage, and an avoided hit unlocks Desecrate."],
     "witch-hunter/inquisition": ["Balance", "Fire builds Dawn and steel builds Dusk; at twenty of each, Cycle of Despair consumes both."],
+    "starcaller/moon-guard": ["Sweep", "Starburst marks up to eight enemies; spending their stars pulls Starsweep back 3 seconds each."],
+    "starcaller/moon-priest": ["Reap", "Stars you consume become healing — up to five allies around the target, every time."],
+    "starcaller/sentinel": ["Count", "Every star consumed restores mana and counts up; the eighth makes Starcall hit 50% harder."],
+    "starcaller/warden": ["Chain", "Build and spend in the same seconds; star damage can make your next Astral Blade free."],
     "chronomancer/infinite": ["Ramp", "Damage-over-time ticks launch spikes, and each spike cuts Chromatic Shard's cast time — ten stacks deep."],
     "chronomancer/artificer": ["Invest", "Wand attacks bank Echo Fragments; every Fragment spent buys more damage or more seconds."],
     "chronomancer/time": ["Tune", "One Aeon is active at a time and rewrites what Epoch does; its casts stack Endless Sands."],

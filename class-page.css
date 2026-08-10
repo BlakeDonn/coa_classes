@@ -295,6 +295,28 @@
 .cm-node.active .node-dot { fill: #e1b86d; }
 .cm-node.active .node-name { fill: #f1cb6e; }
 
+/* Starcaller: the same slot and interaction, the empty socket and four lances */
+.cd-sc-seal { border-left-color: #5b567d80;
+  background: radial-gradient(circle at 50% 46%, #ded9ff1a, transparent 60%); }
+.cd-sc-seal::before { border-color: #7d78a550; }
+.sc-socket { fill: none; stroke: #ded9ff; stroke-width: 1.6; stroke-dasharray: 4 4; opacity: .85; filter: url(#scGlow); }
+.sc-lance { fill: none; stroke: #5b567d; stroke-width: 1.2; opacity: .6; }
+.sc-enemy { fill: none; stroke: #7d78a5; stroke-width: 1; opacity: .55; stroke-dasharray: 2 4; }
+.sc-star path { fill: #ded9ff; opacity: .92; filter: url(#scGlow); }
+.sc-threshold { fill: #c3bde6; font: 700 8px Arial, sans-serif; letter-spacing: .1em; }
+.sc-center-label { fill: #f0edff; font: 700 11px Georgia, serif; letter-spacing: .18em;
+  paint-order: stroke; stroke: #0e0d16; stroke-width: 4px; stroke-linejoin: round; }
+.sc-center-sub { fill: #918bb8; font: 700 6px Arial, sans-serif; letter-spacing: .14em;
+  paint-order: stroke; stroke: #0e0d16; stroke-width: 2.5px; stroke-linejoin: round; }
+.sc-legend { fill: #7d78a5; font: 700 6px Arial, sans-serif; letter-spacing: .13em; opacity: .75; }
+.sc-node .node-ring { fill: #14131f; stroke: #5b567d; }
+.sc-node .node-dot { fill: #9a93c9; }
+.sc-node .sc-tag { fill: #c3bde6; font: 700 7px Arial, sans-serif; letter-spacing: .06em; }
+.sc-node:hover .node-ring, .sc-node:focus-visible .node-ring,
+.sc-node.active .node-ring { fill: #1d1b2e; stroke: #efecff; stroke-width: 2; filter: url(#scGlow); }
+.sc-node.active .node-dot { fill: #e1b86d; }
+.sc-node.active .node-name { fill: #f1cb6e; }
+
 /* the col engine: the seal claims the masthead's full height at its own aspect ratio.
    --seal-slot marks where the TEXT COLUMN ends; the T1 thumb anchors to it. */
 @media (min-width: 901px) {
@@ -477,6 +499,12 @@ body.ry-glow .rail-card.sel {
 .ry-block .cm-dial { fill: none; stroke: #4aa2ba; stroke-width: 1.6; }
 .ry-block .cm-notch { stroke: #7fdff7; stroke-width: 2; }
 .ry-block .cm-notch.lit { stroke: #ffffff; }
+.ry-block .sc-star path { fill: rgba(222,217,255,.85); }
+.ry-block .sc-pip { fill: rgba(222,217,255,.35); stroke: #ded9ff; stroke-width: 1.4; }
+.ry-block .sc-pip.lit { fill: rgba(222,217,255,.85); }
+.ry-block .sc-window { fill: rgba(222,217,255,.14); stroke: #ded9ff; stroke-width: 1.8; }
+.ry-block .sc-window-lab { fill: #efeaff; font-size: 12.5px; font-weight: 700; letter-spacing: .1em; }
+.ry-block .sc-churn { fill: none; stroke: #9a93c9; stroke-width: 1.5; }
 
 /* ================= 5 · phone (≤560px) ================= */
 
