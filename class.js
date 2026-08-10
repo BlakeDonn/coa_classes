@@ -2,8 +2,8 @@
    URL contract: class.html?c=<class-slug>[&from=choose|guided]#<spec-slug>
 
    This is the BAKED ruled state — no study switchers, no variant query params.
-   (One round-1 exception while the design pass runs: a temporary ?n= name-form
-   switcher — fit | small | tight — removed when the user picks. 2026-08-10.)
+   (One exception while the design pass runs: a temporary ?e2= engine-paragraph
+   switcher on Knight of Xoroth, removed when the user picks. 2026-08-10.)
    Masthead order: name · tagline (keyword glow) · engine block · plain-text strict
    role line, with the T1 corner video thumb at the text column's right edge.
    Cultist, Tinker and Knight of Xoroth carry their authored seals; the others render
@@ -65,8 +65,18 @@
     const rare = facts.length
       ? `<ul class="ry-rare">${facts.map(f =>
         `<li data-tipname="${esc(f[0])}" data-tip="${esc(f[1])}"><span class="mark">✦</span>${esc(f[0])}</li>`).join("")}</ul>` : "";
+    // ROUND-2 STUDY (temporary): the engine-paragraph shape bar, ?e2=r1|r2|r3.
+    // The KoX body candidates live HERE, not in authored-copy.js — CLASS_ENGINE
+    // is the seal session's active region; only the picked text lands there.
+    // Each candidate rephrases only landed, already-verified shipped claims.
+    const E2_KOX = {
+      r1: "Strikes feed the bar toward six. The more stacks a payoff burns, the harder it hits.",
+      r2: "Every payoff burns the bar, and a fuller bar pays more. Feed it to six, then unleash.",
+      r3: "Strikes feed the bar toward the sixth ember. Unleash at six and every stack pays out at once.",
+    };
+    const e2 = cSlug === "knight-of-xoroth" ? E2_KOX[params.get("e2")] : null;
     if (full) return `<div class="ry-engine"><span class="lab">${esc(full.label)}</span>
-      <p class="ry-lede">${esc(full.lede)}</p><p>${esc(full.text)}</p>${rare}</div>`;
+      <p class="ry-lede">${esc(full.lede)}</p><p>${esc(e2 || full.text)}</p>${rare}</div>`;
     const blurb = COPY.ENGINES[klass];
     if (!blurb) return "";
     return `<div class="ry-engine"><span class="lab">${esc(blurb.lab)}</span><p>${esc(blurb.p)}</p>${rare}</div>`;
@@ -111,14 +121,12 @@
   fitRoles();
   window.addEventListener("resize", fitRoles);
 
-  // ROUND-1 STUDY (temporary): the one-line class name, ?n=fit|small|tight.
-  // fit = measure the rendered name and scale only the names that overflow,
-  // at any width — the same self-correcting idea as the role-line guard above.
-  const nameForm = params.get("n");
-  if (["fit", "small", "tight"].includes(nameForm)) document.body.classList.add("ry-n-" + nameForm);
+  // One-line name law (RULED 2026-08-10, design-pass round 1): the class name
+  // never wraps, at any width. Measure the rendered name and scale only one
+  // that overflows — the same self-correcting idea as the role-line guard.
   const nameEl = el("mast").querySelector("h1");
   const fitName = () => {
-    if (!document.body.classList.contains("ry-n-fit") || !nameEl) return;
+    if (!nameEl) return;
     nameEl.style.fontSize = "";
     const cs = getComputedStyle(nameEl);
     const avail = nameEl.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
@@ -130,9 +138,12 @@
   };
   fitName();
   window.addEventListener("resize", fitName);
-  // A scrollbar arriving after first paint narrows the h1 without a resize
-  // event; the observer re-fits on any size change and converges in one pass.
+  // The codex fills after this runs, so the scrollbar can arrive late and
+  // narrow the h1 without a resize event. The observer re-fits on any size
+  // change; the frame and load re-checks close the remaining timing window.
   if (window.ResizeObserver) new ResizeObserver(fitName).observe(nameEl);
+  requestAnimationFrame(fitName);
+  window.addEventListener("load", fitName);
 
   // ---------- the seal (Cultist, Tinker) ----------
 
