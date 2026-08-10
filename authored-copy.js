@@ -67,8 +67,8 @@ window.COA_COPY = (() => {
 
   // ---------- full class-page engine paragraphs (class-page grammar §1) ----------
   // The ruled 2–4 sentence shape: serif-italic lede, then the body naming the
-  // resource, the loop, and the class tension. Only the two authored classes exist;
-  // the other 19 fall back to the one-sentence ENGINES blurb above.
+  // resource, the loop, and the class tension. Only authored classes appear here;
+  // the rest fall back to the one-sentence ENGINES blurb above.
   const CLASS_ENGINE = {
     cultist: {
       label: "The engine — Insanity",
@@ -79,6 +79,11 @@ window.COA_COPY = (() => {
       label: "The engine — temporary machines",
       lede: "A Tinker's power stands on the field, not on the action bar.",
       text: "You build machines — bombs, turrets, beacons, a mech — deploy them where the fight will be, and keep them overlapping. The three specs point the same workshop at destruction, repair, or the pilot's seat.",
+    },
+    "knight-of-xoroth": {
+      label: "The engine — Demonfire",
+      lede: "Every Knight runs on Demonfire, fed by demons and blood.",
+      text: "Strikes stack the bar; every payoff burns it, and pays more for each stack consumed. Spend thin and the hit is small. Feed it to six and unleash — each spec keeps a six-stack reward of its own.",
     },
   };
 
@@ -101,6 +106,9 @@ window.COA_COPY = (() => {
     "tinker/demolition": ["Detonate", "Stack explosives and machines, then fire them in one overlapping window."],
     "tinker/invention": ["Restore", "Deploy healing machines where the group will need them."],
     "tinker/mechanics": ["Overclock", "Push your machines and combat suit past their limits."],
+    "knight-of-xoroth/hellfire": ["Unleash", "Bank Demonfire to six and cash it as fire; a full Flames of Xoroth calls down Rain of Chaos."],
+    "knight-of-xoroth/war": ["Cycle", "Spend Demonfire to refresh Gore's charges — stacks turn back into strikes, and the loop keeps turning."],
+    "knight-of-xoroth/defiance": ["Stoke", "Shieldgore and your beckoned imps feed the fire two stacks at a time — defense fills the bar."],
   };
 
   // ---------- authored spec-card copy (class-page grammar §3) ----------

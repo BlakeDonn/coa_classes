@@ -4,8 +4,8 @@
    This is the BAKED ruled state — no study switchers, no variant query params.
    Masthead order: name · tagline (keyword glow) · engine block · plain-text strict
    role line, with the T1 corner video thumb at the text column's right edge.
-   Cultist and Tinker carry their authored seals; the other nineteen render the G2
-   seat with the class glyph and the honest caption "Seal not yet drawn".
+   Cultist, Tinker and Knight of Xoroth carry their authored seals; the others render
+   the G2 seat with the class glyph and the honest caption "Seal not yet drawn".
    Rail cards are the airfam form with verb chips where a verb is authored.
    The codex opens on "The rhythm" — the authored strip, or its honest dashed gap.
 
@@ -30,7 +30,6 @@
   }
   const klass = specs[0].klass;
   const color = specs[0].color;
-  const SEALED = cSlug === "cultist" || cSlug === "tinker";
   document.title = `${klass} — CoA Atlas`;
 
   // ---------- masthead pieces ----------
@@ -124,8 +123,8 @@
     { id: "tinker/mechanics", name: "Mechanics", verb: "OVERCLOCK", x: 210, y: 149, icon: "mech" },
   ];
 
-  const nodeSvg = (s, ny = 42, vy = 54) =>
-    `<g class="cd-node" data-cd-spec="${s.id}" role="button" tabindex="0" transform="translate(${s.x} ${s.y})">
+  const nodeSvg = (s, ny = 42, vy = 54, cls = "") =>
+    `<g class="cd-node${cls ? " " + cls : ""}" data-cd-spec="${s.id}" role="button" tabindex="0" transform="translate(${s.x} ${s.y})">
       <circle class="node-ring" r="29"/><circle class="node-dot" r="4"/>
       <text class="node-name" text-anchor="middle" y="${ny}">${s.name}</text>
       <text class="node-verb" text-anchor="middle" y="${vy}">${s.verb}</text></g>`;
@@ -205,6 +204,68 @@
     <text class="tk-legend right" x="402" y="190" text-anchor="end">BUILD · DEPLOY · ADAPT</text>
     ${tinkerNodes.map(tinkerNodeSvg).join("")}`;
 
+  // Knight of Xoroth: the Demonfire bar drawn as a ring of six embers around a flame
+  // core. The crown ember is the sixth stack — the seal's one tension: FEED / 6 · UNLEASH.
+  // Numbers trace to v3: Demon Heart fills six stacks; spenders pay per stack consumed;
+  // each spec tree keeps a six-stack rider (Rain of Chaos · Pestilence Unbound · refunds).
+  const koxNodes = [
+    { id: "knight-of-xoroth/hellfire", name: "Hellfire", verb: "UNLEASH", x: 73, y: 66 },
+    { id: "knight-of-xoroth/war", name: "War", verb: "CYCLE", x: 347, y: 66 },
+    { id: "knight-of-xoroth/defiance", name: "Defiance", verb: "STOKE", x: 210, y: 206 },
+  ];
+  const KOX_DEFS = `<defs>
+      <radialGradient id="kxEmber"><stop offset="0" stop-color="#ffd98a"/><stop offset=".45" stop-color="#e14f64"/><stop offset="1" stop-color="#3a0f16"/></radialGradient>
+      <radialGradient id="kxCore"><stop offset="0" stop-color="#f6cf7f"/><stop offset=".5" stop-color="#c23f52"/><stop offset="1" stop-color="#1c0a0f"/></radialGradient>
+      <filter id="kxGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      <marker id="kxArr" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L8 4L0 8z" fill="#bfa96e"/></marker>
+    </defs>`;
+  const koxPip = (x, y, s, crown) => `<g class="kx-pip${crown ? " crown" : ""}" transform="translate(${x} ${y}) scale(${s})">
+      <path class="pip-flame" d="M0 5 C-4.5 1 -3 -4 0 -8 C3 -4 4.5 1 0 5 Z"/><circle class="pip-dot" r="1.6" cy="1.5"/></g>`;
+  const koxFlame = (cx, cy, s) => `<g transform="translate(${cx} ${cy}) scale(${s})">
+      <path class="kx-flame" d="M0 18 C-14 6 -10 -14 0 -26 C10 -14 14 6 0 18 Z"/>
+      <path class="kx-flame-in" d="M0 12 C-6 4 -4 -6 0 -14 C4 -6 6 4 0 12 Z"/></g>`;
+  // Desktop: pip ring at radius 52 around (210,112); stacks grow toward the crown.
+  const KOX_DESKTOP = `<title id="kox-seal-title">Demonfire expressed as a six-ember bar: feed it, and unleash at six</title>
+    ${KOX_DEFS}
+    <circle class="kx-orbit" cx="210" cy="112" r="74"/>
+    <path class="kx-hex" d="M210 60 L255 86 L255 138 L210 164 L165 138 L165 86 Z"/>
+    <path class="kx-link" d="M165 86 L73 66"/><path class="kx-link" d="M255 86 L347 66"/>
+    <path class="kx-link" d="M210 164 L210 206"/>
+    <path class="kx-feed" d="M176 152 C146 130 146 92 192 62" marker-end="url(#kxArr)"/>
+    <text class="kx-feed-lab" x="128" y="104" text-anchor="middle">FEED</text>
+    <circle class="kx-coreback" cx="210" cy="102" r="24"/>
+    ${koxFlame(210, 100, .78)}
+    <text class="kx-center-label" x="210" y="141" text-anchor="middle">DEMONFIRE</text>
+    <text class="kx-center-sub" x="210" y="153" text-anchor="middle">EVERY STACK PAYS</text>
+    <text class="kx-threshold" x="210" y="38" text-anchor="middle">6 · UNLEASH</text>
+    ${koxPip(210, 164, .85)}${koxPip(165, 138, 1)}${koxPip(255, 138, 1)}
+    ${koxPip(165, 86, 1.15)}${koxPip(255, 86, 1.15)}${koxPip(210, 60, 1.5, true)}
+    <text class="kx-legend" x="16" y="252">FED BY DEMONS AND BLOOD</text>
+    ${koxNodes.map(s => nodeSvg(s, s.y > 170 ? 38 : 42, s.y > 170 ? 50 : 54, "kx-node")).join("")}`;
+  // Phone: the ruled 420×224 tightened arrangement — ring 46, core .66, rows raised.
+  const KOX_PHONE_NODES = [
+    { id: "knight-of-xoroth/hellfire", name: "Hellfire", verb: "UNLEASH", x: 73, y: 60 },
+    { id: "knight-of-xoroth/war", name: "War", verb: "CYCLE", x: 347, y: 60 },
+    { id: "knight-of-xoroth/defiance", name: "Defiance", verb: "STOKE", x: 210, y: 178 },
+  ];
+  const KOX_PHONE = `<title id="kox-seal-title">Demonfire expressed as a six-ember bar: feed it, and unleash at six</title>
+    ${KOX_DEFS}
+    <circle class="kx-orbit" cx="210" cy="94" r="64"/>
+    <path class="kx-hex" d="M210 48 L250 71 L250 117 L210 140 L170 117 L170 71 Z"/>
+    <path class="kx-link" d="M170 71 L73 60"/><path class="kx-link" d="M250 71 L347 60"/>
+    <path class="kx-link" d="M210 140 L210 178"/>
+    <path class="kx-feed" d="M180 128 C152 110 152 78 194 50" marker-end="url(#kxArr)"/>
+    <text class="kx-feed-lab" x="132" y="92" text-anchor="middle">FEED</text>
+    <circle class="kx-coreback" cx="210" cy="86" r="20"/>
+    ${koxFlame(210, 84, .66)}
+    <text class="kx-center-label" x="210" y="121" text-anchor="middle">DEMONFIRE</text>
+    <text class="kx-center-sub" x="210" y="131" text-anchor="middle">EVERY STACK PAYS</text>
+    <text class="kx-threshold" x="210" y="30" text-anchor="middle">6 · UNLEASH</text>
+    ${koxPip(210, 140, .75)}${koxPip(170, 117, .85)}${koxPip(250, 117, .85)}
+    ${koxPip(170, 71, 1)}${koxPip(250, 71, 1)}${koxPip(210, 48, 1.3, true)}
+    <text class="kx-legend" x="14" y="218">FED BY DEMONS AND BLOOD</text>
+    ${KOX_PHONE_NODES.map(s => nodeSvg(s, s.y > 150 ? 33 : 40, s.y > 150 ? 44 : 52, "kx-node")).join("")}`;
+
   if (cSlug === "cultist") {
     el("mast").classList.add("cd-with-seal");
     el("mast").insertAdjacentHTML("beforeend",
@@ -215,6 +276,11 @@
     el("mast").insertAdjacentHTML("beforeend",
       `<div class="cd-stage cd-seal cd-tinker-seal" aria-label="Tinker class engine diagram">
         <svg viewBox="0 0 420 205" role="img" aria-labelledby="tinker-seal-title">${TINKER_SEAL}</svg></div>`);
+  } else if (cSlug === "knight-of-xoroth") {
+    el("mast").classList.add("cd-with-seal");
+    el("mast").insertAdjacentHTML("beforeend",
+      `<div class="cd-stage cd-seal ry-reseal cd-kox-seal" aria-label="Knight of Xoroth class engine diagram">
+        <svg viewBox="0 0 420 260" role="img" aria-labelledby="kox-seal-title">${KOX_DESKTOP}</svg></div>`);
   } else {
     // G2 · the seat (RULED 2026-08-10). Crests are skipped, so the class glyph holds
     // the slot with the honest caption. Masthead geometry matches the sealed classes.
@@ -232,12 +298,18 @@
   }
 
   // Loop-topology micro-glyphs, only where a strip has been authored. No invented shapes.
-  const TOPO = { "cultist/godblade": "spike", "cultist/corruption": "wave", "tinker/demolition": "stack" };
+  const TOPO = {
+    "cultist/godblade": "spike", "cultist/corruption": "wave", "tinker/demolition": "stack",
+    "knight-of-xoroth/hellfire": "pips", "knight-of-xoroth/war": "wheel", "knight-of-xoroth/defiance": "bank",
+  };
   function topoGlyph(kind) {
     const art = {
       spike: `<path d="M2 15 L26 6 26 15 Z" class="tg-fill"/><rect x="32" y="3" width="12" height="12" class="tg-hot"/><path d="M50 15 L62 10 62 15 Z" class="tg-fill"/>`,
       wave: `<path d="M2 15 Q9 4 16 15 Q23 4 30 15 Q37 4 44 15 Q51 4 58 15" class="tg-line"/>`,
       stack: `<rect x="2" y="12" width="18" height="3" class="tg-fill"/><rect x="5" y="8" width="15" height="3" class="tg-fill"/><rect x="8" y="4" width="12" height="3" class="tg-fill"/><rect x="28" y="3" width="12" height="12" class="tg-hot"/><rect x="46" y="12" width="14" height="3" class="tg-fill"/>`,
+      pips: `<rect x="2" y="13" width="3.4" height="3.4" class="tg-fill"/><rect x="8" y="11.4" width="3.4" height="3.4" class="tg-fill"/><rect x="14" y="9.8" width="3.4" height="3.4" class="tg-fill"/><rect x="20" y="8.2" width="3.4" height="3.4" class="tg-fill"/><rect x="26" y="6.6" width="3.4" height="3.4" class="tg-fill"/><rect x="32" y="5" width="3.4" height="3.4" class="tg-fill"/><rect x="40" y="3" width="12" height="12" class="tg-hot"/><rect x="56" y="13" width="3.4" height="3.4" class="tg-fill"/>`,
+      wheel: `<path class="tg-line" d="M17 5 A7.5 7.5 0 1 0 17 13"/><path class="tg-fill" d="M14 2 L20 5 L14 8 Z"/><rect x="28" y="3" width="12" height="12" class="tg-hot"/><path class="tg-line" d="M56 5 A6.5 6.5 0 1 0 56 13"/>`,
+      bank: `<path class="tg-line" d="M2 15 L9 15 L9 11 L17 11 L17 7 L30 7"/><rect x="34" y="4" width="11" height="11" class="tg-hot"/><path class="tg-line" d="M49 15 L62 15"/>`,
     }[kind];
     return art ? `<svg class="ry-topo" viewBox="0 0 64 18" aria-hidden="true">${art}</svg>` : "";
   }
@@ -666,14 +738,20 @@
       sealPlate.hidden = true;
     }
   }
-  // The cultist drawing swaps to its tightened phone arrangement.
+  // Authored seals with a tightened 420×224 phone arrangement swap drawings here.
+  const SEAL_SWAP = {
+    "cultist": { desktop: ["0 0 420 260", CULTIST_DESKTOP], phone: ["0 0 420 224", CULTIST_PHONE] },
+    "knight-of-xoroth": { desktop: ["0 0 420 260", KOX_DESKTOP], phone: ["0 0 420 224", KOX_PHONE] },
+  };
   function applySeal() {
-    if (cSlug !== "cultist" || !sealStage) return;
+    const swap = SEAL_SWAP[cSlug];
+    if (!swap || !sealStage) return;
     const svg = sealStage.querySelector("svg");
     const wantPhone = phone.matches;
     if (wantPhone === (sealStage.dataset.phone === "1")) return;
-    svg.setAttribute("viewBox", wantPhone ? "0 0 420 224" : "0 0 420 260");
-    svg.innerHTML = wantPhone ? CULTIST_PHONE : CULTIST_DESKTOP;
+    const [viewBox, art] = wantPhone ? swap.phone : swap.desktop;
+    svg.setAttribute("viewBox", viewBox);
+    svg.innerHTML = art;
     sealStage.dataset.phone = wantPhone ? "1" : "0";
     syncActive(el("rail").querySelector(".rail-card.sel")?.dataset.sel);
   }
