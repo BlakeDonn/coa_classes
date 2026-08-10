@@ -366,6 +366,54 @@
 .tp-node.active .node-dot { fill: #e1b86d; }
 .tp-node.active .node-name { fill: #f1cb6e; }
 
+/* Ranger: the same slot and interaction, the drawn bowstring */
+.cd-rg-seal { border-left-color: #55693980;
+  background: radial-gradient(circle at 50% 46%, #aad3721a, transparent 60%); }
+.cd-rg-seal::before { border-color: #7a944f50; }
+.rg-limb { fill: none; stroke: #7a944f; stroke-width: 2.4; opacity: .8; }
+.rg-string { fill: none; stroke: #d7e9bd; stroke-width: 1.3; filter: url(#rgGlow); }
+.rg-notch { stroke: #aad372; stroke-width: 1.6; }
+.rg-notch.full { stroke: #e7f3d2; stroke-width: 2.2; filter: url(#rgGlow); }
+.rg-shaft { fill: none; stroke: #aad372; stroke-width: 1.6; }
+.rg-shaft.long { stroke-dasharray: 6 4; opacity: .85; }
+.rg-sec { stroke: #7a944f; stroke-width: 1; }
+.rg-threshold { fill: #c4dd9a; font: 700 8px Arial, sans-serif; letter-spacing: .1em; }
+.rg-center-label { fill: #eef7de; font: 700 11px Georgia, serif; letter-spacing: .18em;
+  paint-order: stroke; stroke: #0e1408; stroke-width: 4px; stroke-linejoin: round; }
+.rg-center-sub { fill: #8fa963; font: 700 6px Arial, sans-serif; letter-spacing: .14em;
+  paint-order: stroke; stroke: #0e1408; stroke-width: 2.5px; stroke-linejoin: round; }
+.rg-legend { fill: #7a944f; font: 700 6px Arial, sans-serif; letter-spacing: .13em; opacity: .75; }
+.rg-node .node-ring { fill: #131a0c; stroke: #556939; }
+.rg-node .node-dot { fill: #8fb35c; }
+.rg-node .rg-tag { fill: #c4dd9a; font: 700 7px Arial, sans-serif; letter-spacing: .06em; }
+.rg-node:hover .node-ring, .rg-node:focus-visible .node-ring,
+.rg-node.active .node-ring { fill: #1d2812; stroke: #cde7a4; stroke-width: 2; filter: url(#rgGlow); }
+.rg-node.active .node-dot { fill: #e1b86d; }
+.rg-node.active .node-name { fill: #f1cb6e; }
+
+/* Felsworn: the same slot and interaction, crossed glaives and the burning aperture */
+.cd-fs-seal { border-left-color: #5b307a80;
+  background: radial-gradient(circle at 50% 46%, #a95be01c, transparent 60%); }
+.cd-fs-seal::before { border-color: #7d44a550; }
+.fs-glaive { stroke: #7d44a5; stroke-width: 2.6; stroke-linecap: round; opacity: .85; }
+.fs-pair { stroke: #c9a1e8; stroke-width: 1.4; opacity: .85; }
+.fs-eye { fill: url(#fsEye); stroke: #c9a1e8; stroke-width: 1.2; filter: url(#fsGlow); }
+.fs-pupil { fill: #0d0613; }
+.fs-link { fill: none; stroke: #5b307a; stroke-width: 1.2; opacity: .6; }
+.fs-threshold { fill: #c9a1e8; font: 700 8px Arial, sans-serif; letter-spacing: .1em; }
+.fs-center-label { fill: #f2e6fc; font: 700 11px Georgia, serif; letter-spacing: .18em;
+  paint-order: stroke; stroke: #100818; stroke-width: 4px; stroke-linejoin: round; }
+.fs-center-sub { fill: #9a6fc0; font: 700 6px Arial, sans-serif; letter-spacing: .14em;
+  paint-order: stroke; stroke: #100818; stroke-width: 2.5px; stroke-linejoin: round; }
+.fs-legend { fill: #8a63a8; font: 700 6px Arial, sans-serif; letter-spacing: .13em; opacity: .75; }
+.fs-node .node-ring { fill: #150c1d; stroke: #5b307a; }
+.fs-node .node-dot { fill: #9a63c9; }
+.fs-node .fs-tag { fill: #c9a1e8; font: 700 7px Arial, sans-serif; letter-spacing: .06em; }
+.fs-node:hover .node-ring, .fs-node:focus-visible .node-ring,
+.fs-node.active .node-ring { fill: #201230; stroke: #d3a9ef; stroke-width: 2; filter: url(#fsGlow); }
+.fs-node.active .node-dot { fill: #e1b86d; }
+.fs-node.active .node-name { fill: #f1cb6e; }
+
 /* the col engine: the seal claims the masthead's full height at its own aspect ratio.
    --seal-slot marks where the TEXT COLUMN ends; the T1 thumb anchors to it. */
 @media (min-width: 901px) {
@@ -568,6 +616,18 @@ body.ry-glow .rail-card.sel {
 .ry-block .tp-pip.lit { fill: rgba(244,140,186,.85); }
 .ry-block .tp-window { fill: rgba(244,140,186,.16); stroke: #f48cba; stroke-width: 1.8; }
 .ry-block .tp-window-lab { fill: #ffdcec; font-size: 12.5px; font-weight: 700; letter-spacing: .1em; }
+.ry-block .rg-pip { fill: rgba(170,211,114,.35); stroke: #aad372; stroke-width: 1.5; }
+.ry-block .rg-pip.lit { fill: rgba(170,211,114,.85); }
+.ry-block .rg-window { fill: rgba(170,211,114,.15); stroke: #aad372; stroke-width: 1.8; }
+.ry-block .rg-window-lab { fill: #e7f3d2; font-size: 12.5px; font-weight: 700; letter-spacing: .1em; }
+.ry-block .rg-track { stroke-width: 1.3; }
+.ry-block .rg-track.top { fill: rgba(170,211,114,.3); stroke: #aad372; }
+.ry-block .rg-track.bot { fill: rgba(170,211,114,.12); stroke: #7a944f; }
+.ry-block .fs-spair { stroke: #c9a1e8; stroke-width: 2; }
+.ry-block .fs-window { fill: rgba(169,91,224,.18); stroke: #a95be0; stroke-width: 1.8; }
+.ry-block .fs-window-lab { fill: #ecdcf9; font-size: 12.5px; font-weight: 700; letter-spacing: .1em; }
+.ry-block .fs-branchline { fill: none; stroke: #9a63c9; stroke-width: 1.4; }
+.ry-block .fs-bnode { fill: rgba(169,91,224,.4); stroke: #a95be0; stroke-width: 1.3; }
 
 /* ================= 5 · phone (≤560px) ================= */
 

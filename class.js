@@ -387,6 +387,114 @@
     <text class="tp-legend" x="14" y="20">EVERY LINK IS A BUFF YOU WEAR</text>
     ${TP_PHONE_NODES.map(s => tpNodeSvg(s, 33, 44)).join("")}`;
 
+
+  // Ranger: the drawn bowstring — five notches to full draw, where the arrow forks
+  // into a heavy head (harder) and a second-ruled shaft (longer) (packet, batch 2).
+  const rgNodes = [
+    { id: "ranger/farstrider", name: "Farstrider", verb: "CALL", tag: "+2", x: 73, y: 66 },
+    { id: "ranger/archery", name: "Archery", verb: "EXTEND", tag: "4s", x: 347, y: 66 },
+    { id: "ranger/brigand", name: "Brigand", verb: "MARK", tag: "8s", x: 210, y: 206 },
+  ];
+  const RG_DEFS = `<defs>
+      <filter id="rgGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      <marker id="rgArr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#aad372"/></marker>
+    </defs>`;
+  const rgNodeSvg = (s, ny, vy) => `<g class="cd-node rg-node" data-cd-spec="${s.id}" role="button" tabindex="0" transform="translate(${s.x} ${s.y})">
+      <circle class="node-ring" r="29"/><circle class="node-dot" r="4"/>
+      <text class="rg-tag" text-anchor="middle" y="18">${s.tag}</text>
+      <text class="node-name" text-anchor="middle" y="${ny}">${s.name}</text>
+      <text class="node-verb" text-anchor="middle" y="${vy}">${s.verb}</text></g>`;
+  const RG_DESKTOP = `<title id="rg-seal-title">Advantage as a drawn bowstring: five notches to full draw, then harder or longer</title>
+    ${RG_DEFS}
+    <path class="rg-limb" d="M86 82 Q 210 46 334 82"/>
+    <path class="rg-string" d="M86 88 L210 138 L334 88"/>
+    ${[1,2,3,4,5].map(i => {
+      const t = i / 5.5, x = 86 + (210 - 86) * t, y = 88 + (138 - 88) * t;
+      return `<line class="rg-notch${i === 5 ? " full" : ""}" x1="${(x - 4).toFixed(1)}" y1="${(y - 6).toFixed(1)}" x2="${(x + 4).toFixed(1)}" y2="${(y + 2).toFixed(1)}"/>`;
+    }).join("")}
+    <path class="rg-shaft heavy" d="M210 138 L262 106" marker-end="url(#rgArr)"/>
+    <path class="rg-shaft long" d="M210 138 L330 138"/>
+    ${[0,1,2,3].map(i => `<line class="rg-sec" x1="${240 + i * 24}" y1="134" x2="${240 + i * 24}" y2="142"/>`).join("")}
+    <text class="rg-threshold" x="140" y="40" text-anchor="middle">5 · HARDER</text>
+    <text class="rg-threshold" x="286" y="40" text-anchor="middle">5 · LONGER</text>
+    <text class="rg-center-label" x="210" y="170" text-anchor="middle">ADVANTAGE</text>
+    <text class="rg-center-sub" x="210" y="182" text-anchor="middle">FIVE NOTCHES · FULL DRAW</text>
+    <text class="rg-legend" x="16" y="22">EVERY SHOT DRAWS THE STRING</text>
+    ${rgNodes.map(s => rgNodeSvg(s, s.y > 150 ? 38 : 42, s.y > 150 ? 50 : 54)).join("")}`;
+  const RG_PHONE_NODES = rgNodes.map(s => ({ ...s, y: s.y > 150 ? 178 : 58 }));
+  const RG_PHONE = `<title id="rg-seal-title">Advantage as a drawn bowstring: five notches to full draw, then harder or longer</title>
+    ${RG_DEFS}
+    <path class="rg-limb" d="M100 70 Q 210 42 320 70"/>
+    <path class="rg-string" d="M100 76 L210 118 L320 76"/>
+    ${[1,2,3,4,5].map(i => {
+      const t = i / 5.5, x = 100 + (210 - 100) * t, y = 76 + (118 - 76) * t;
+      return `<line class="rg-notch${i === 5 ? " full" : ""}" x1="${(x - 4).toFixed(1)}" y1="${(y - 5).toFixed(1)}" x2="${(x + 4).toFixed(1)}" y2="${(y + 2).toFixed(1)}"/>`;
+    }).join("")}
+    <path class="rg-shaft heavy" d="M210 118 L254 92" marker-end="url(#rgArr)"/>
+    <path class="rg-shaft long" d="M210 118 L316 118"/>
+    ${[0,1,2].map(i => `<line class="rg-sec" x1="${238 + i * 24}" y1="114" x2="${238 + i * 24}" y2="122"/>`).join("")}
+    <text class="rg-threshold" x="140" y="32" text-anchor="middle">5 · HARDER</text>
+    <text class="rg-threshold" x="286" y="32" text-anchor="middle">5 · LONGER</text>
+    <text class="rg-center-label" x="210" y="146" text-anchor="middle">ADVANTAGE</text>
+    <text class="rg-center-sub" x="210" y="157" text-anchor="middle">FIVE NOTCHES · FULL DRAW</text>
+    <text class="rg-legend" x="14" y="20">EVERY SHOT DRAWS THE STRING</text>
+    ${RG_PHONE_NODES.map(s => rgNodeSvg(s, 33, 44)).join("")}`;
+
+  // Felsworn: two crossed glaives, paired notches climbing to six, and the Inner
+  // Demon aperture burning open where the blades cross (packet, batch 2).
+  const fsNodes = [
+    { id: "felsworn/slayer", name: "Slayer", verb: "CLEAVE", tag: "3E", x: 73, y: 66 },
+    { id: "felsworn/infernal", name: "Infernal", verb: "CASCADE", tag: "20E", x: 347, y: 66 },
+    { id: "felsworn/tyrant", name: "Tyrant", verb: "BRACE", tag: "20%", x: 210, y: 206 },
+  ];
+  const FS_DEFS = `<defs>
+      <radialGradient id="fsEye"><stop offset="0" stop-color="#e6ffb0"/><stop offset=".5" stop-color="#a95be0"/><stop offset="1" stop-color="#1d0f28"/></radialGradient>
+      <filter id="fsGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    </defs>`;
+  const fsNodeSvg = (s, ny, vy) => `<g class="cd-node fs-node" data-cd-spec="${s.id}" role="button" tabindex="0" transform="translate(${s.x} ${s.y})">
+      <circle class="node-ring" r="29"/><circle class="node-dot" r="4"/>
+      <text class="fs-tag" text-anchor="middle" y="18">${s.tag}</text>
+      <text class="node-name" text-anchor="middle" y="${ny}">${s.name}</text>
+      <text class="node-verb" text-anchor="middle" y="${vy}">${s.verb}</text></g>`;
+  const fsPairs = (x1, y1, x2, y2) => [0.3, 0.5, 0.7].map(t => {
+    const x = x1 + (x2 - x1) * t, y = y1 + (y2 - y1) * t;
+    const dx = (y2 - y1), dy = -(x2 - x1);
+    const n = Math.hypot(dx, dy), ux = dx / n * 6, uy = dy / n * 6;
+    return `<line class="fs-pair" x1="${(x - ux).toFixed(1)}" y1="${(y - uy).toFixed(1)}" x2="${(x + ux).toFixed(1)}" y2="${(y + uy).toFixed(1)}"/>
+      <line class="fs-pair" x1="${(x - ux + (x2-x1)/n*7).toFixed(1)}" y1="${(y - uy + (y2-y1)/n*7).toFixed(1)}" x2="${(x + ux + (x2-x1)/n*7).toFixed(1)}" y2="${(y + uy + (y2-y1)/n*7).toFixed(1)}"/>`;
+  }).join("");
+  const FS_DESKTOP = `<title id="fs-seal-title">Felfury on crossed glaives: three pairs to six, and Inner Demon burning open at the crossing</title>
+    ${FS_DEFS}
+    <line class="fs-glaive" x1="126" y1="46" x2="294" y2="178"/>
+    <line class="fs-glaive" x1="294" y1="46" x2="126" y2="178"/>
+    ${fsPairs(210, 112, 132, 51)}${fsPairs(210, 112, 288, 51)}
+    <path class="fs-eye" d="M210 88 C 222 100 222 124 210 136 C 198 124 198 100 210 88 Z"/>
+    <circle class="fs-pupil" cx="210" cy="112" r="4"/>
+    <text class="fs-threshold" x="118" y="34" text-anchor="middle">2 · SPEND</text>
+    <text class="fs-threshold" x="302" y="34" text-anchor="middle">6 · OPEN</text>
+    <path class="fs-link" d="M150 65 L102 66"/><path class="fs-link" d="M270 65 L318 66"/>
+    <path class="fs-link" d="M210 168 L210 177"/>
+    <text class="fs-center-label" x="210" y="160" text-anchor="middle">FELFURY</text>
+    <text class="fs-center-sub" x="210" y="172" text-anchor="middle">SIX BANKED OPENS THE DEMON · 50 ENERGY BACK</text>
+    <text class="fs-legend" x="16" y="22">SPEND IN PAIRS · CRITS HOLD IT OPEN</text>
+    ${fsNodes.map(s => fsNodeSvg(s, s.y > 150 ? 38 : 42, s.y > 150 ? 50 : 54)).join("")}`;
+  const FS_PHONE_NODES = fsNodes.map(s => ({ ...s, y: s.y > 150 ? 178 : 58 }));
+  const FS_PHONE = `<title id="fs-seal-title">Felfury on crossed glaives: three pairs to six, and Inner Demon burning open at the crossing</title>
+    ${FS_DEFS}
+    <line class="fs-glaive" x1="140" y1="42" x2="280" y2="152"/>
+    <line class="fs-glaive" x1="280" y1="42" x2="140" y2="152"/>
+    ${fsPairs(210, 97, 146, 47)}${fsPairs(210, 97, 274, 47)}
+    <path class="fs-eye" d="M210 77 C 220 87 220 107 210 117 C 200 107 200 87 210 77 Z"/>
+    <circle class="fs-pupil" cx="210" cy="97" r="3.4"/>
+    <text class="fs-threshold" x="118" y="28" text-anchor="middle">2 · SPEND</text>
+    <text class="fs-threshold" x="302" y="28" text-anchor="middle">6 · OPEN</text>
+    <path class="fs-link" d="M158 60 L102 58"/><path class="fs-link" d="M262 60 L318 58"/>
+    <path class="fs-link" d="M210 140 L210 149"/>
+    <text class="fs-center-label" x="210" y="136" text-anchor="middle">FELFURY</text>
+    <text class="fs-center-sub" x="210" y="147" text-anchor="middle">SIX BANKED OPENS THE DEMON</text>
+    <text class="fs-legend" x="14" y="20">SPEND IN PAIRS · CRITS HOLD IT OPEN</text>
+    ${FS_PHONE_NODES.map(s => fsNodeSvg(s, 33, 44)).join("")}`;
+
   // Phone: the ruled 420×224 tightened arrangement — orbits 60/77, eye .66,
   // node rows raised. Nothing removed.
   const CULTIST_PHONE_NODES = [
@@ -733,6 +841,16 @@
     el("mast").insertAdjacentHTML("beforeend",
       `<div class="cd-stage cd-seal ry-reseal cd-wh-seal" aria-label="Witch Hunter class engine diagram">
         <svg viewBox="0 0 420 260" role="img" aria-labelledby="wh-seal-title">${WH_DESKTOP}</svg></div>`);
+  } else if (cSlug === "ranger") {
+    el("mast").classList.add("cd-with-seal");
+    el("mast").insertAdjacentHTML("beforeend",
+      `<div class="cd-stage cd-seal ry-reseal cd-rg-seal" aria-label="Ranger class engine diagram">
+        <svg viewBox="0 0 420 260" role="img" aria-labelledby="rg-seal-title">${RG_DESKTOP}</svg></div>`);
+  } else if (cSlug === "felsworn") {
+    el("mast").classList.add("cd-with-seal");
+    el("mast").insertAdjacentHTML("beforeend",
+      `<div class="cd-stage cd-seal ry-reseal cd-fs-seal" aria-label="Felsworn class engine diagram">
+        <svg viewBox="0 0 420 260" role="img" aria-labelledby="fs-seal-title">${FS_DESKTOP}</svg></div>`);
   } else if (cSlug === "sun-cleric") {
     el("mast").classList.add("cd-with-seal");
     el("mast").insertAdjacentHTML("beforeend",
@@ -794,6 +912,8 @@
     "sun-cleric/piety": "wheel", "sun-cleric/blessings": "wheel",
     "sun-cleric/seraphim": "stack", "sun-cleric/valkyrie": "wave",
     "templar/crusader": "bank", "templar/oathkeeper": "bank", "templar/zealot": "pips",
+    "ranger/farstrider": "wheel", "ranger/archery": "pips", "ranger/brigand": "wave",
+    "felsworn/slayer": "wheel", "felsworn/infernal": "spike", "felsworn/tyrant": "bank",
   };
   function topoGlyph(kind) {
     const art = {
@@ -1344,6 +1464,125 @@
         "Aeon of Protection is the slow one: 30% of the heal becomes a shield",
         "Epoch casts stack Endless Sands — each cuts 20% off your next Reverse Wound, up to five"],
       eyes: "which Aeon is active · your Endless Sands stacks",
+    },
+    "ranger/farstrider": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Farstrider rhythm: every fifth shot is a Falconstrike, a Horn calls it early, and the party keeps pace">
+        <defs><marker id="rgArrF" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+        ${[0,1,2,3,4].map(i => `<circle class="rg-pip${i === 4 ? " lit" : ""}" cx="${110 + i * 34}" cy="84" r="7"/>`).join("")}
+        <text class="ph" x="178" y="118" text-anchor="middle">COUNT SHOTS</text>
+        <text class="ph2" x="178" y="132" text-anchor="middle">every 5th is a Falconstrike · pays 2 Advantage</text>
+        <path class="branch" d="M280 74 C 360 42, 450 40, 530 52" marker-end="url(#rgArrF)"/>
+        <rect class="rg-window" x="550" y="44" width="240" height="78" rx="2"/>
+        <text class="rg-window-lab" x="670" y="72" text-anchor="middle">FALCONSTRIKE</text>
+        <text class="ph2" x="670" y="90" text-anchor="middle" fill="#e7f3d2">a Horn calls it now, ahead of the count</text>
+        <path class="branch" d="M670 126 C 560 160, 270 160, 186 100" marker-end="url(#rgArrF)"/>
+        <text class="ph2" x="310" y="156" text-anchor="middle">THE COUNT RESTARTS</text>
+      </svg>`,
+      bullets: ["Every fifth Quick Shot inside 15 seconds transforms, and the transformed shot pays 2 Advantage instead of 1",
+        "Blowing a Horn jumps the count straight to that transformed shot and puts a Dragonhawk in the fight for 15 seconds",
+        "Woodland Arrow pulls 15 seconds off that cooldown, so the shortcut comes back sooner",
+        "Battle Screech gives nearby party and raid members attack or spell power for 15 seconds"],
+      eyes: "your shot count toward the fifth, and the Horn cooldown",
+    },
+    "ranger/archery": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Archery rhythm: Advantage stacks buy Skirmish seconds, four per stack, and a full five refresh it further">
+        <line class="thr" x1="14" y1="44" x2="480" y2="44"/><text class="thr-lab" x="14" y="38">5 · full draw</text>
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        <path class="kx-climb" d="M60 122 L400 58"/>
+        ${[0,1,2,3,4].map(i => `<circle class="rg-pip${i === 4 ? " lit" : ""}" cx="${100 + i * 75}" cy="${112 - i * 12}" r="6"/>`).join("")}
+        <rect class="rg-window" x="520" y="48" width="260" height="78" rx="2"/>
+        <text class="rg-window-lab" x="650" y="76" text-anchor="middle">SKIRMISH · 4 s PER STACK</text>
+        <text class="ph2" x="650" y="94" text-anchor="middle" fill="#e7f3d2">15% crit · 25% cheaper Focus · five refresh +5 s</text>
+        <text class="ph" x="250" y="146" text-anchor="middle">DRAW</text>
+        <text class="ph2" x="250" y="160" text-anchor="middle">basic attacks notch the string</text>
+        <text class="ph" x="890" y="146" text-anchor="middle">REDRAW</text>
+      </svg>`,
+      bullets: ["The column on the left is Advantage — Quick Shot adds one stack each time it lands",
+        "Spend the stacks on Skirmish and the window runs 4 seconds longer for every one",
+        "Inside that window you crit 15% more often and every Focus cost drops 25%",
+        "Precision Shot rides the same stacks, hitting harder for each one and firing from a great distance"],
+      eyes: "your stack count, and the time left on Skirmish",
+    },
+    "ranger/brigand": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Brigand rhythm: two tracks on one timeline — the mark runs eight seconds while Advantage spenders land harder inside it">
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        <rect class="rg-track top" x="80" y="62" width="380" height="14" rx="2"/>
+        <text class="ph2" x="270" y="56" text-anchor="middle">THE MARK · 8 s</text>
+        <rect class="rg-track bot" x="120" y="92" width="90" height="14" rx="2"/>
+        <rect class="rg-track bot" x="240" y="92" width="90" height="14" rx="2"/>
+        <rect class="rg-track bot" x="360" y="92" width="90" height="14" rx="2"/>
+        <text class="ph2" x="270" y="120" text-anchor="middle">spenders land inside it · +25%</text>
+        <rect class="rg-window" x="560" y="48" width="230" height="78" rx="2"/>
+        <text class="rg-window-lab" x="675" y="76" text-anchor="middle">MARKED · 8 s</text>
+        <text class="ph2" x="675" y="94" text-anchor="middle" fill="#e7f3d2">in and out before it fades</text>
+        <text class="ph" x="250" y="146" text-anchor="middle">OVERLAP</text>
+        <text class="ph2" x="250" y="160" text-anchor="middle">keep the spend inside the mark</text>
+        <text class="ph" x="890" y="146" text-anchor="middle">REMARK</text>
+      </svg>`,
+      bullets: ["The lower track is Advantage — Wild Strike adds one stack each time it lands",
+        "The band above is the mark, and Flank opens it for 8 seconds",
+        "Anything you spend Advantage on inside that band deals 25% more damage",
+        "Assault reads your stack count on top of that, but only against a low-health target"],
+      eyes: "the 8-second mark, and your stack count",
+    },
+    "felsworn/slayer": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Slayer rhythm: spend Felfury in pairs, crit to keep Inner Demon open, and the refunds keep the wheel turning">
+        <defs><marker id="fsArrS" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+        ${[0,1,2].map(i => `<g transform="translate(${120 + i * 44} 84)"><line class="fs-spair" x1="-5" y1="-8" x2="-5" y2="8"/><line class="fs-spair" x1="5" y1="-8" x2="5" y2="8"/></g>`).join("")}
+        <text class="ph" x="164" y="118" text-anchor="middle">PAIRS</text>
+        <text class="ph2" x="164" y="132" text-anchor="middle">three pairs bank six Felfury</text>
+        <path class="branch" d="M260 74 C 350 42, 440 40, 520 52" marker-end="url(#fsArrS)"/>
+        <rect class="fs-window" x="540" y="44" width="250" height="78" rx="2"/>
+        <text class="fs-window-lab" x="665" y="72" text-anchor="middle">INNER DEMON</text>
+        <text class="ph2" x="665" y="90" text-anchor="middle" fill="#ecdcf9">+10% dodge and crit damage · crits refund 3 Energy</text>
+        <text class="ph2" x="665" y="106" text-anchor="middle" fill="#ecdcf9">spender crits add 1 s each</text>
+        <path class="branch" d="M665 126 C 560 160, 270 160, 172 100" marker-end="url(#fsArrS)"/>
+        <text class="ph2" x="310" y="156" text-anchor="middle">BANK SIX AGAIN</text>
+      </svg>`,
+      bullets: ["Glaive attacks fill the bar, and Annihilan Strike alone pays two Felfury",
+        "Critical strikes do double duty: an extra Felfury, plus off-hand damage on up to five nearby enemies",
+        "Spend two Felfury on Azzinoth's Assault, which has a 30% chance not to consume them",
+        "Inside Inner Demon, every melee critical strike refunds 3 Energy"],
+      eyes: "Felfury reaching two, and whether your last strike crit",
+    },
+    "felsworn/infernal": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Infernal rhythm: one hit branches into more — Fel Fireball adds a Felstrike, and three spells refund twenty Energy each inside Inner Demon">
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        <path class="fs-branchline" d="M80 90 L200 90 M200 90 L280 62 M200 90 L280 90 M200 90 L280 118"/>
+        <circle class="fs-bnode" cx="80" cy="90" r="7"/>
+        <circle class="fs-bnode" cx="280" cy="62" r="5"/><circle class="fs-bnode" cx="280" cy="90" r="5"/><circle class="fs-bnode" cx="280" cy="118" r="5"/>
+        <text class="ph" x="180" y="146" text-anchor="middle">CASCADE</text>
+        <text class="ph2" x="180" y="160" text-anchor="middle">one cast branches into more hits</text>
+        <rect class="fs-window" x="520" y="44" width="260" height="78" rx="2"/>
+        <text class="fs-window-lab" x="650" y="72" text-anchor="middle">INNER DEMON</text>
+        <text class="ph2" x="650" y="90" text-anchor="middle" fill="#ecdcf9">Fel Fireball adds a Felstrike</text>
+        <text class="ph2" x="650" y="106" text-anchor="middle" fill="#ecdcf9">Ruin · Sunder · Felwrath refund 20 Energy each</text>
+        <text class="ph" x="890" y="146" text-anchor="middle">CHAIN ON</text>
+      </svg>`,
+      bullets: ["Damage-over-time ticks and critical strikes both hand back Felfury while you keep casting",
+        "Bane of Chaos pays one Felfury up front, and its ticks can speed up your next three casts",
+        "Ruin consumes two Felfury and deals extra damage while the window is open",
+        "Open Inner Demon and three of your spells start refunding 20 Energy each"],
+      eyes: "Felfury reaching two, and how much Inner Demon time is left",
+    },
+    "felsworn/tyrant": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Tyrant rhythm: bank Felfury behind dodges, then Inner Demon braces you and the leech pays it back">
+        <line class="thr" x1="14" y1="44" x2="480" y2="44"/><text class="thr-lab" x="14" y="38">6 · banked</text>
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        <path class="kx-climb" d="M60 122 L400 58"/>
+        ${[0,1,2].map(i => `<g transform="translate(${140 + i * 90} ${104 - i * 15})"><line class="fs-spair" x1="-5" y1="-8" x2="-5" y2="8"/><line class="fs-spair" x1="5" y1="-8" x2="5" y2="8"/></g>`).join("")}
+        <text class="ph" x="230" y="146" text-anchor="middle">BANK</text>
+        <text class="ph2" x="230" y="160" text-anchor="middle">dodges feed Energy back while it builds</text>
+        <rect class="fs-window" x="520" y="48" width="260" height="78" rx="2"/>
+        <text class="fs-window-lab" x="650" y="76" text-anchor="middle">INNER DEMON · BRACED</text>
+        <text class="ph2" x="650" y="94" text-anchor="middle" fill="#ecdcf9">-10% damage taken · Carve leeches 20%</text>
+        <text class="ph" x="890" y="146" text-anchor="middle">REBANK</text>
+      </svg>`,
+      bullets: ["Felrend pays one Felfury and strikes everything within six yards",
+        "Carve spends two Felfury after a 2.5-second channel, and a longer channel hits harder",
+        "Every Felfury spend pulls three defensive cooldowns 1 second closer",
+        "Burning Hatred instantly hands you six Felfury and leeches melee damage for 15 seconds"],
+      eyes: "the Inner Demon timer, and Felfury reaching two before a channel",
     },
     "sun-cleric/piety": {
       svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Piety rhythm: Sunrise and Sunset alternate, each swap resets the other state's signature cast, and Solar Concord rides the Dawn window">
@@ -1905,6 +2144,84 @@
       <path class="branch" d="M234 146 C 356 140, 374 56, 250 36" marker-end="url(#cmArrTp)"/>
       <text class="ph2" x="190" y="200" text-anchor="middle">retune, and the sands rebuild</text>
     </svg>`,
+    "ranger/farstrider": `<svg viewBox="0 0 380 230" role="img" aria-label="Farstrider rhythm, phone ladder: count to the fifth shot, or a Horn calls the Falconstrike early">
+      <defs><marker id="rgArrFp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      ${[0,1,2,3,4].map(i => `<circle class="rg-pip${i === 4 ? " lit" : ""}" cx="${34 + i * 26}" cy="52" r="6"/>`).join("")}
+      <text class="ph" x="185" y="44" text-anchor="start">COUNT</text>
+      <text class="ph2" x="185" y="58" text-anchor="start">every 5th shot · 2 Advantage</text>
+      <path class="branch" d="M44 70 L44 94" marker-end="url(#rgArrFp)"/>
+      <rect class="rg-window" x="28" y="104" width="200" height="56" rx="2"/>
+      <text class="rg-window-lab" x="128" y="128" text-anchor="middle">FALCONSTRIKE</text>
+      <text class="ph2" x="128" y="146" text-anchor="middle" fill="#e7f3d2">a Horn calls it early</text>
+      <path class="branch" d="M234 132 C 356 126, 374 52, 250 34" marker-end="url(#rgArrFp)"/>
+      <text class="ph2" x="190" y="186" text-anchor="middle">the count restarts</text>
+    </svg>`,
+    "ranger/archery": `<svg viewBox="0 0 380 230" role="img" aria-label="Archery rhythm, phone ladder: stacks buy Skirmish seconds, a full five refresh it further">
+      <defs><marker id="rgArrAp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      ${[0,1,2,3,4].map(i => `<circle class="rg-pip${i === 4 ? " lit" : ""}" cx="${34 + i * 26}" cy="${58 - i * 4}" r="6"/>`).join("")}
+      <text class="ph" x="185" y="44" text-anchor="start">DRAW</text>
+      <text class="ph2" x="185" y="58" text-anchor="start">basic attacks notch it</text>
+      <path class="branch" d="M44 74 L44 98" marker-end="url(#rgArrAp)"/>
+      <rect class="rg-window" x="28" y="108" width="200" height="58" rx="2"/>
+      <text class="rg-window-lab" x="128" y="130" text-anchor="middle">SKIRMISH</text>
+      <text class="ph2" x="128" y="148" text-anchor="middle" fill="#e7f3d2">4 s per stack · five refresh +5 s</text>
+      <path class="branch" d="M234 137 C 356 130, 374 54, 250 34" marker-end="url(#rgArrAp)"/>
+      <text class="ph2" x="190" y="190" text-anchor="middle">redraw</text>
+    </svg>`,
+    "ranger/brigand": `<svg viewBox="0 0 380 230" role="img" aria-label="Brigand rhythm, phone ladder: the mark runs eight seconds, spenders land harder inside it">
+      <defs><marker id="rgArrBp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <rect class="rg-track top" x="20" y="44" width="120" height="10" rx="2"/>
+      <rect class="rg-track bot" x="32" y="60" width="34" height="10" rx="2"/>
+      <rect class="rg-track bot" x="76" y="60" width="34" height="10" rx="2"/>
+      <text class="ph" x="165" y="46" text-anchor="start">OVERLAP</text>
+      <text class="ph2" x="165" y="60" text-anchor="start">spend inside the mark</text>
+      <path class="branch" d="M44 80 L44 104" marker-end="url(#rgArrBp)"/>
+      <rect class="rg-window" x="28" y="114" width="200" height="56" rx="2"/>
+      <text class="rg-window-lab" x="128" y="138" text-anchor="middle">MARKED · 8 s</text>
+      <text class="ph2" x="128" y="156" text-anchor="middle" fill="#e7f3d2">Advantage spenders +25%</text>
+      <path class="branch" d="M234 142 C 356 136, 374 54, 250 34" marker-end="url(#rgArrBp)"/>
+      <text class="ph2" x="190" y="194" text-anchor="middle">in, out, and remark</text>
+    </svg>`,
+    "felsworn/slayer": `<svg viewBox="0 0 380 230" role="img" aria-label="Slayer rhythm, phone ladder: three pairs bank six, Inner Demon opens, crits hold it">
+      <defs><marker id="fsArrSp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      ${[0,1,2].map(i => `<g transform="translate(${40 + i * 32} 52)"><line class="fs-spair" x1="-4" y1="-7" x2="-4" y2="7"/><line class="fs-spair" x1="4" y1="-7" x2="4" y2="7"/></g>`).join("")}
+      <text class="ph" x="165" y="44" text-anchor="start">PAIRS</text>
+      <text class="ph2" x="165" y="58" text-anchor="start">three pairs bank six</text>
+      <path class="branch" d="M44 70 L44 94" marker-end="url(#fsArrSp)"/>
+      <rect class="fs-window" x="28" y="104" width="200" height="60" rx="2"/>
+      <text class="fs-window-lab" x="128" y="126" text-anchor="middle">INNER DEMON</text>
+      <text class="ph2" x="128" y="142" text-anchor="middle" fill="#ecdcf9">crits refund 3 Energy</text>
+      <text class="ph2" x="128" y="156" text-anchor="middle" fill="#ecdcf9">spender crits add 1 s</text>
+      <path class="branch" d="M234 134 C 356 128, 374 52, 250 34" marker-end="url(#fsArrSp)"/>
+      <text class="ph2" x="190" y="188" text-anchor="middle">bank six again</text>
+    </svg>`,
+    "felsworn/infernal": `<svg viewBox="0 0 380 230" role="img" aria-label="Infernal rhythm, phone ladder: casts cascade into more hits, Inner Demon refunds the spells">
+      <defs><marker id="fsArrIp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <path class="fs-branchline" d="M24 54 L70 54 M70 54 L108 40 M70 54 L108 54 M70 54 L108 68"/>
+      <circle class="fs-bnode" cx="24" cy="54" r="5"/>
+      <circle class="fs-bnode" cx="108" cy="40" r="4"/><circle class="fs-bnode" cx="108" cy="54" r="4"/><circle class="fs-bnode" cx="108" cy="68" r="4"/>
+      <text class="ph" x="165" y="44" text-anchor="start">CASCADE</text>
+      <text class="ph2" x="165" y="58" text-anchor="start">one cast branches into more</text>
+      <path class="branch" d="M44 80 L44 104" marker-end="url(#fsArrIp)"/>
+      <rect class="fs-window" x="28" y="114" width="200" height="60" rx="2"/>
+      <text class="fs-window-lab" x="128" y="136" text-anchor="middle">INNER DEMON</text>
+      <text class="ph2" x="128" y="152" text-anchor="middle" fill="#ecdcf9">three spells refund</text>
+      <text class="ph2" x="128" y="166" text-anchor="middle" fill="#ecdcf9">20 Energy each</text>
+      <path class="branch" d="M234 144 C 356 138, 374 54, 250 34" marker-end="url(#fsArrIp)"/>
+      <text class="ph2" x="190" y="196" text-anchor="middle">chain on</text>
+    </svg>`,
+    "felsworn/tyrant": `<svg viewBox="0 0 380 230" role="img" aria-label="Tyrant rhythm, phone ladder: bank six behind dodges, then brace inside Inner Demon">
+      <defs><marker id="fsArrTp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      ${[0,1,2].map(i => `<g transform="translate(${40 + i * 32} ${56 - i * 4})"><line class="fs-spair" x1="-4" y1="-7" x2="-4" y2="7"/><line class="fs-spair" x1="4" y1="-7" x2="4" y2="7"/></g>`).join("")}
+      <text class="ph" x="165" y="44" text-anchor="start">BANK</text>
+      <text class="ph2" x="165" y="58" text-anchor="start">dodges feed Energy back</text>
+      <path class="branch" d="M44 74 L44 98" marker-end="url(#fsArrTp)"/>
+      <rect class="fs-window" x="28" y="108" width="200" height="58" rx="2"/>
+      <text class="fs-window-lab" x="128" y="130" text-anchor="middle">INNER DEMON · BRACED</text>
+      <text class="ph2" x="128" y="148" text-anchor="middle" fill="#ecdcf9">-10% taken · Carve leeches 20%</text>
+      <path class="branch" d="M234 137 C 356 130, 374 54, 250 34" marker-end="url(#fsArrTp)"/>
+      <text class="ph2" x="190" y="190" text-anchor="middle">rebank</text>
+    </svg>`,
     "sun-cleric/piety": `<svg viewBox="0 0 380 230" role="img" aria-label="Piety rhythm, phone ladder: alternate Sunrise and Sunset, Solar Concord rides the window">
       <defs><marker id="suArrPp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
       <path class="su-half lit" d="M24 54 A22 22 0 0 1 68 54 Z"/>
@@ -2316,6 +2633,8 @@
     "starcaller": { desktop: ["0 0 420 260", SC_DESKTOP], phone: ["0 0 420 224", SC_PHONE] },
     "sun-cleric": { desktop: ["0 0 420 260", SU_DESKTOP], phone: ["0 0 420 224", SU_PHONE] },
     "templar": { desktop: ["0 0 420 260", TP_DESKTOP], phone: ["0 0 420 224", TP_PHONE] },
+    "ranger": { desktop: ["0 0 420 260", RG_DESKTOP], phone: ["0 0 420 224", RG_PHONE] },
+    "felsworn": { desktop: ["0 0 420 260", FS_DESKTOP], phone: ["0 0 420 224", FS_PHONE] },
   };
   function applySeal() {
     const swap = SEAL_SWAP[cSlug];
