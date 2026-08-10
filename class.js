@@ -132,19 +132,18 @@
   requestAnimationFrame(fitName);
   window.addEventListener("load", fitName);
 
-  // ROUND-4 STUDY (temporary): the blocked-CDN thumb fallback, ?r4=hide|card.
-  // Managed networks block i.ytimg.com; a failed thumb img is the trigger.
-  // ?r4sim=1 simulates the block by pointing every thumb at a dead host, so
-  // both fallback states render for the pick from any network. The error
-  // wiring is the real mechanism; the sim flag never ships past the pick.
-  const r4 = params.get("r4");
-  if (["hide", "card"].includes(r4)) document.body.classList.add("ry-r4-" + r4);
+  // Blocked-CDN fallback (RULED 2026-08-10, design-pass round 4): managed
+  // networks block i.ytimg.com, so a thumb whose image fails marks its anchor
+  // .noimg and class-page.css renders it as a labeled link instead. A load
+  // error can fire before this wiring runs; complete-but-broken imgs
+  // (naturalWidth 0) are caught by the explicit check.
   const wireThumbs = () => document.querySelectorAll(
     ".ry-thumb img, .ph-thumb img, .guide-row img").forEach(img => {
-    if (img.dataset.r4) return;
-    img.dataset.r4 = "1";
-    img.addEventListener("error", () => img.closest("a").classList.add("noimg"));
-    if (params.get("r4sim")) img.src = "https://coa-blocked.invalid/x.jpg";
+    if (img.dataset.fb) return;
+    img.dataset.fb = "1";
+    const fail = () => img.closest("a").classList.add("noimg");
+    img.addEventListener("error", fail);
+    if (img.complete && img.naturalWidth === 0) fail();
   });
   wireThumbs();
   new MutationObserver(wireThumbs).observe(el("codex"), { childList: true, subtree: true });
