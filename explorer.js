@@ -63,8 +63,7 @@
     return `<article class="plate spec-card ${qcls(s)}" tabindex="0" role="button" style="--class-color:${s.color}"
         data-open="${s.id}" aria-label="Open ${esc(s.name)} profile">
       <div class="card-top card-glow">
-        <span class="card-glyphmark" aria-hidden="true">${glyph(s)}</span>
-        <span class="spec-icon">${s.media.icons[0]
+        <span class="spec-icon spec-icon-tr" aria-hidden="true">${s.media.icons[0]
           ? `<img src="https://coabuildhub.com/skill-icons/${esc(s.media.icons[0].icon)}.jpg" alt="" loading="lazy">`
           : glyph(s)}</span>
         <div><h3>${esc(s.name)}</h3>

@@ -20,7 +20,7 @@ window.COA_SLIM = (() => {
   function exitHTML(s) {
     return `<a class="slim-exit-chip" href="${classHref(s)}"
       data-tipname="${esc(s.klass)}" data-tip="The full class page — engine, specializations, evidence.">
-      <span class="slim-crest" aria-hidden="true">${glyph(s)}</span>View class page<span class="arr">⇢</span></a>`;
+      <span class="slim-crest" aria-hidden="true">${glyph(s)}</span>Class page<span class="arr">⇢</span></a>`;
   }
 
   function slimHTML(s) {

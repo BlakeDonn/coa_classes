@@ -117,13 +117,20 @@ window.COA_CARDS = (() => {
       `<span class="${kwCls}">${esc(tag.kw)}</span>`)}</div>`;
   }
 
+  // A real class icon for the medal: the class's first defining-talent art (the recorded
+  // ability-icon fallback while crests await rights). Glyph only when no icon exists.
+  function classIcon(c) {
+    const ic = c.specs.find(s => s.media.icons[0])?.media.icons[0];
+    return ic ? `<img src="https://coabuildhub.com/skill-icons/${esc(ic.icon)}.jpg" alt="" loading="lazy">` : c.glyph;
+  }
+
   // ---------- the card ----------
   function composeCard(c) {
     const eng = COPY.ENGINES[c.name];
     const facts = factsFor(c);
     const hasThumb = !!videoId(c);
     return `<article class="plate cl-card${hasThumb ? " has-thumb" : ""}" style="--class-color:${c.color}">
-      <div class="cl-top"><span class="cl-medal">${c.glyph}</span>
+      <div class="cl-top"><span class="cl-medal">${classIcon(c)}</span>
         <div><h3>${esc(c.name)}</h3>${subLines(c)}</div>
         ${cornerHTML(c)}</div>
       ${taglineHTML(c.name)}
