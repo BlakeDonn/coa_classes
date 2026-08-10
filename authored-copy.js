@@ -80,10 +80,14 @@ window.COA_COPY = (() => {
       lede: "A Tinker's power stands on the field, not on the action bar.",
       text: "You build machines — bombs, turrets, beacons, a mech — deploy them where the fight will be, and keep them overlapping. The three specs point the same workshop at destruction, repair, or the pilot's seat.",
     },
+    // Body RULED 2026-08-10 (design-pass round 2, the shape-bar exemplar):
+    // lede + two sentences, game words first (build/spend/stacks). Facts trace
+    // to the landed digest, including duration scaling ("Lasts 3 sec for each
+    // Demonfire consumed"; Suffuse +2s per stack) and the three 6-stack riders.
     "knight-of-xoroth": {
       label: "The engine — Demonfire",
       lede: "Every Knight runs on Demonfire, fed by demons and blood.",
-      text: "Strikes stack the bar; every payoff burns it, and pays more for each stack consumed. Spend thin and the hit is small. Feed it to six and unleash — each spec keeps a six-stack reward of its own.",
+      text: "Build Demonfire stacks, then spend them to increase an ability's damage or duration. At six stacks, certain abilities trigger an additional effect.",
     },
   };
 

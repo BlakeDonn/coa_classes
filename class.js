@@ -2,8 +2,8 @@
    URL contract: class.html?c=<class-slug>[&from=choose|guided]#<spec-slug>
 
    This is the BAKED ruled state — no study switchers, no variant query params.
-   (One exception while the design pass runs: a temporary ?e2= engine-paragraph
-   switcher on Knight of Xoroth, removed when the user picks. 2026-08-10.)
+   (One exception while the design pass runs: a temporary ?r3= role-line
+   switcher — dim | two — removed when the user picks. 2026-08-10.)
    Masthead order: name · tagline (keyword glow) · engine block · plain-text strict
    role line, with the T1 corner video thumb at the text column's right edge.
    Cultist, Tinker and Knight of Xoroth carry their authored seals; the others render
@@ -44,8 +44,19 @@
       .filter(r => r !== "Support" || !s.roles.includes("Healer"))
       .forEach(r => { counts[r] = (counts[r] || 0) + 1; }));
     const ranges = [...new Set(specs.flatMap(s => s.range))];
-    return [...Object.entries(counts).map(([r, n]) => n > 1 ? `${r} ×${n}` : r), ...ranges]
-      .map(t => `<span>${esc(t)}</span>`).join("");
+    const jobs = Object.entries(counts).map(([r, n]) => n > 1 ? `${r} ×${n}` : r);
+    // ROUND-3 STUDY (temporary): jobs vs ranges distinction, ?r3=dim|two.
+    // dim keeps the ruled one-line law, ranges inline but fainter. two is the
+    // Atlas card's S1 echo: jobs line, ranges on their own fainter line — it
+    // would EDIT the one-line law and retire the Sun Cleric tight guard.
+    const form = params.get("r3");
+    if (form === "two") {
+      const ordered = ["Melee", "Hybrid", "Ranged"].filter(r => ranges.includes(r));
+      return `${jobs.map(t => `<span>${esc(t)}</span>`).join("")}
+      </div><div class="cp-roles cp-ranges">${esc(ordered.join(ordered.length > 2 ? " · " : " & "))}`;
+    }
+    return [...jobs.map(t => `<span>${esc(t)}</span>`),
+      ...ranges.map(t => `<span${form === "dim" ? ' class="rg"' : ""}>${esc(t)}</span>`)].join("");
   }
 
   function taglineHTML() {
@@ -65,20 +76,8 @@
     const rare = facts.length
       ? `<ul class="ry-rare">${facts.map(f =>
         `<li data-tipname="${esc(f[0])}" data-tip="${esc(f[1])}"><span class="mark">✦</span>${esc(f[0])}</li>`).join("")}</ul>` : "";
-    // ROUND-2 STUDY (temporary): the engine-paragraph shape bar, ?e2=r4|r5|r6.
-    // The KoX body candidates live HERE, not in authored-copy.js — CLASS_ENGINE
-    // is the seal session's active region; only the picked text lands there.
-    // Re-mocked after the user's vocabulary verdict on r1–r3; this set follows
-    // the Sol-xhigh vocabulary rule (game words first: stacks, build, spend,
-    // consume) and every fact traces to the landed digest claims.
-    const E2_KOX = {
-      r4: "Build Demonfire stacks, then spend them to increase an ability's damage or duration. At six stacks, certain abilities trigger an additional effect.",
-      r5: "Build Demonfire, then use a spending ability to consume every stack. More stacks mean more damage or duration; at six, certain abilities add another effect.",
-      r6: "Feed Demonfire by building stacks; unleash it with a spending ability. Each stack consumed increases damage or duration; at six, certain abilities add another effect.",
-    };
-    const e2 = cSlug === "knight-of-xoroth" ? E2_KOX[params.get("e2")] : null;
     if (full) return `<div class="ry-engine"><span class="lab">${esc(full.label)}</span>
-      <p class="ry-lede">${esc(full.lede)}</p><p>${esc(e2 || full.text)}</p>${rare}</div>`;
+      <p class="ry-lede">${esc(full.lede)}</p><p>${esc(full.text)}</p>${rare}</div>`;
     const blurb = COPY.ENGINES[klass];
     if (!blurb) return "";
     return `<div class="ry-engine"><span class="lab">${esc(blurb.lab)}</span><p>${esc(blurb.p)}</p>${rare}</div>`;
@@ -114,12 +113,11 @@
   document.body.classList.add("ry-e-col", "ry-v-t1", "ry-glow", "ry-k-airfam");
   // One-line law guard: a role line that would clip (Sun Cleric at 390px) tightens
   // instead — the ruled look everywhere else stays untouched.
-  const rolesEl = el("mast").querySelector(".cp-roles");
-  const fitRoles = () => {
-    if (!rolesEl) return;
-    rolesEl.classList.remove("tight");
-    if (rolesEl.scrollWidth > rolesEl.clientWidth) rolesEl.classList.add("tight");
-  };
+  const roleEls = el("mast").querySelectorAll(".cp-roles");
+  const fitRoles = () => roleEls.forEach(r => {
+    r.classList.remove("tight");
+    if (r.scrollWidth > r.clientWidth) r.classList.add("tight");
+  });
   fitRoles();
   window.addEventListener("resize", fitRoles);
 
