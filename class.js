@@ -231,8 +231,8 @@
     <path class="kx-hex" d="M210 60 L255 86 L255 138 L210 164 L165 138 L165 86 Z"/>
     <path class="kx-link" d="M165 86 L73 66"/><path class="kx-link" d="M255 86 L347 66"/>
     <path class="kx-link" d="M210 164 L210 206"/>
-    <path class="kx-feed" d="M176 152 C146 130 146 92 192 62" marker-end="url(#kxArr)"/>
-    <text class="kx-feed-lab" x="128" y="104" text-anchor="middle">FEED</text>
+    <path class="kx-feed" d="M197 159 C152 140 152 84 197 63" marker-end="url(#kxArr)"/>
+    <text class="kx-feed-lab" x="130" y="104" text-anchor="middle">FEED</text>
     <circle class="kx-coreback" cx="210" cy="102" r="24"/>
     ${koxFlame(210, 100, .78)}
     <text class="kx-center-label" x="210" y="141" text-anchor="middle">DEMONFIRE</text>
@@ -254,8 +254,8 @@
     <path class="kx-hex" d="M210 48 L250 71 L250 117 L210 140 L170 117 L170 71 Z"/>
     <path class="kx-link" d="M170 71 L73 60"/><path class="kx-link" d="M250 71 L347 60"/>
     <path class="kx-link" d="M210 140 L210 178"/>
-    <path class="kx-feed" d="M180 128 C152 110 152 78 194 50" marker-end="url(#kxArr)"/>
-    <text class="kx-feed-lab" x="132" y="92" text-anchor="middle">FEED</text>
+    <path class="kx-feed" d="M198 135 C158 118 158 68 198 53" marker-end="url(#kxArr)"/>
+    <text class="kx-feed-lab" x="136" y="92" text-anchor="middle">FEED</text>
     <circle class="kx-coreback" cx="210" cy="86" r="20"/>
     ${koxFlame(210, 84, .66)}
     <text class="kx-center-label" x="210" y="121" text-anchor="middle">DEMONFIRE</text>

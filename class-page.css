@@ -121,8 +121,11 @@
 .kx-coreback { fill: #1c0d12; stroke: #b8465a; stroke-width: 1.2; }
 .kx-flame { fill: url(#kxCore); filter: url(#kxGlow); }
 .kx-flame-in { fill: #f6cf7f; opacity: .9; }
-.kx-center-label { fill: #f2d9dc; font: 700 11px Georgia, serif; letter-spacing: .18em; }
-.kx-center-sub { fill: #d8a05f; font: 700 6px Arial, sans-serif; letter-spacing: .14em; }
+/* dark halo so the label reads over the hex outline and pips (user fix, 2026-08-10) */
+.kx-center-label { fill: #f2d9dc; font: 700 11px Georgia, serif; letter-spacing: .18em;
+  paint-order: stroke; stroke: #140a0e; stroke-width: 3.5px; stroke-linejoin: round; }
+.kx-center-sub { fill: #d8a05f; font: 700 6px Arial, sans-serif; letter-spacing: .14em;
+  paint-order: stroke; stroke: #140a0e; stroke-width: 2.5px; stroke-linejoin: round; }
 .kx-threshold { fill: #e8b871; font: 700 8px Arial, sans-serif; letter-spacing: .1em; }
 .kx-feed { fill: none; stroke: #bfa96e; stroke-width: 1.1; opacity: .6; stroke-dasharray: 4 4; }
 .kx-feed-lab { fill: #bfa96e; font: 700 8px Arial, sans-serif; letter-spacing: .16em; }
