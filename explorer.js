@@ -11,7 +11,7 @@
   // rule as the class-card medal — the ability-icon fallback while crests await rights).
   function classIconImg(s) {
     const ic = data.specs.find(x => x.klass === s.klass && x.media.icons[0])?.media.icons[0];
-    return ic ? `<img src="https://coabuildhub.com/skill-icons/${esc(ic.icon)}.jpg" alt="" loading="lazy">` : glyph(s);
+    return ic ? `<img src="generated-assets/skill-icons/${esc(ic.icon)}.jpg" alt="" loading="lazy">` : glyph(s);
   }
 
   // Altitude RULED (Atlas grammar §2): a standing Classes ↔ Specs toggle, starting
@@ -72,7 +72,7 @@
       <div class="card-top card-glow">
         <span class="spec-icon spec-icon-tr" aria-hidden="true">${classIconImg(s)}</span>
         <span class="spec-icon">${s.media.icons[0]
-          ? `<img src="https://coabuildhub.com/skill-icons/${esc(s.media.icons[0].icon)}.jpg" alt="" loading="lazy">`
+          ? `<img src="generated-assets/skill-icons/${esc(s.media.icons[0].icon)}.jpg" alt="" loading="lazy">`
           : glyph(s)}</span>
         <div><h3>${esc(s.name)}</h3>
           <div class="sub">${esc(s.klass)} · ${[...s.roles, ...s.range].map(esc).join(" · ")}</div></div>

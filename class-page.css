@@ -174,6 +174,29 @@ body.ry-r4-card .guide-row.noimg::before { content: "▶"; flex: 0 0 92px; heigh
 .kx-node.active .node-dot { fill: #e1b86d; }
 .kx-node.active .node-name { fill: #f1cb6e; }
 
+/* Guardian: the same slot and interaction, a war-banner between two stances */
+.cd-gd-seal { border-left-color: #7a4a1e80;
+  background: radial-gradient(circle at 50% 42%, #ff8f3822, transparent 60%); }
+.cd-gd-seal::before { border-color: #b0662a50; }
+.gd-axis { stroke: #d8a05f; stroke-width: 1; opacity: .45; stroke-dasharray: 2 5; }
+.gd-pole { stroke: #b0662a; stroke-width: 3; stroke-linecap: round; }
+.gd-pennant { fill: url(#gdBanner); stroke: #ffb257; stroke-width: 1; filter: url(#gdGlow); }
+.gd-dot { fill: #ffb257; opacity: .85; }
+.gd-link { fill: none; stroke: #8a5426; stroke-width: 1.2; opacity: .5; }
+.gd-threshold { fill: #e8b871; font: 700 8px Arial, sans-serif; letter-spacing: .1em; }
+.gd-center-label { fill: #ffe4c8; font: 700 11px Georgia, serif; letter-spacing: .18em;
+  paint-order: stroke; stroke: #170d06; stroke-width: 4px; stroke-linejoin: round; }
+.gd-center-sub { fill: #d8a05f; font: 700 6px Arial, sans-serif; letter-spacing: .14em;
+  paint-order: stroke; stroke: #170d06; stroke-width: 2.5px; stroke-linejoin: round; }
+.gd-legend { fill: #a3764a; font: 700 6px Arial, sans-serif; letter-spacing: .13em; opacity: .75; }
+.gd-node .node-ring { fill: #1a120a; stroke: #7a4a1e; }
+.gd-node .node-dot { fill: #c9752e; }
+.gd-node .gd-meter { fill: #d8a05f; font: 700 8px Arial, sans-serif; }
+.gd-node:hover .node-ring, .gd-node:focus-visible .node-ring,
+.gd-node.active .node-ring { fill: #2b1c0e; stroke: #ffbe8c; stroke-width: 2; filter: url(#gdGlow); }
+.gd-node.active .node-dot { fill: #e1b86d; }
+.gd-node.active .node-name { fill: #f1cb6e; }
+
 /* the col engine: the seal claims the masthead's full height at its own aspect ratio.
    --seal-slot marks where the TEXT COLUMN ends; the T1 thumb anchors to it. */
 @media (min-width: 901px) {
@@ -317,6 +340,13 @@ body.ry-glow .rail-card.sel {
 .ry-block .kx-impg .imp-horn { fill: none; stroke: #d99b52; stroke-width: 1.2; }
 .ry-block .kx-heal { fill: rgba(127,201,138,.2); stroke: #7fc98a; stroke-width: 1.4; }
 .ry-block .kx-line { fill: none; stroke: #a3803e; stroke-width: 1.3; }
+.ry-block .gd-line { fill: none; stroke: #b0662a; stroke-width: 1.3; }
+.ry-block .gd-shield { fill: rgba(255,143,56,.3); stroke: #ff8f38; stroke-width: 1.2; }
+.ry-block .gd-window { fill: rgba(255,143,56,.26); stroke: #ff8f38; stroke-width: 1.8; }
+.ry-block .gd-window-lab { fill: #ffd9b3; font-size: 12.5px; font-weight: 700; letter-spacing: .1em; }
+.ry-block .gd-pip { fill: rgba(255,143,56,.4); stroke: #ff8f38; stroke-width: 1.6; }
+.ry-block .gd-burst { fill: none; stroke: #ffb257; stroke-width: 1.6; }
+.ry-block .gd-burst.faint { opacity: .4; stroke-dasharray: 3 4; }
 
 /* ================= 5 · phone (≤560px) ================= */
 

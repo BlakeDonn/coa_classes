@@ -89,6 +89,11 @@ window.COA_COPY = (() => {
       lede: "Every Knight runs on Demonfire, fed by demons and blood.",
       text: "Build Demonfire stacks, then spend them to increase an ability's damage or duration. At six stacks, certain abilities trigger an additional effect.",
     },
+    guardian: {
+      label: "The engine — formations",
+      lede: "Formations set the stance; Energy, Motivation, and per-spec stacks do the work.",
+      text: "Each spec builds its own stacks and spends them at its own mark: ten Paragon, three Tempo, or three Glory. Blocks restore Energy, and Motivating Strike grants Motivation that abilities consume for added effects.",
+    },
   };
 
   // NOTE on the rare ✦ fragments (class-page grammar §1): they are NOT authored copy.
@@ -113,6 +118,9 @@ window.COA_COPY = (() => {
     "knight-of-xoroth/hellfire": ["Unleash", "Bank Demonfire to six and cash it as fire; a full Flames of Xoroth calls down Rain of Chaos."],
     "knight-of-xoroth/war": ["Cycle", "Spend Demonfire to refresh Gore's charges — stacks turn back into strikes, and the loop keeps turning."],
     "knight-of-xoroth/defiance": ["Stoke", "Shieldgore and your beckoned imps feed the fire two stacks at a time — defense fills the bar."],
+    "guardian/vanguard": ["Block", "Blocks pay you: Energy returns, Paragon stacks toward ten, and High Guard arms a cooldown-free Heavy Blow."],
+    "guardian/inspiration": ["Rally", "Your strikes become Ballads; three Tempo casts Sound of War, and nearby allies hit harder."],
+    "guardian/gladiator": ["Duel", "Build Glory to three and cash it on Ram; a thrown net sets up Centurion Strike crits."],
   };
 
   // ---------- authored spec-card copy (class-page grammar §3) ----------

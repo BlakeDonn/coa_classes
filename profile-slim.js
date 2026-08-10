@@ -19,7 +19,7 @@ window.COA_SLIM = (() => {
   // Icon: the class icon (same defining-talent-art rule as the card medals), glyph fallback.
   function classIconImg(s) {
     const ic = data.specs.find(x => x.klass === s.klass && x.media.icons[0])?.media.icons[0];
-    return ic ? `<img src="https://coabuildhub.com/skill-icons/${esc(ic.icon)}.jpg" alt="" loading="lazy">` : glyph(s);
+    return ic ? `<img src="generated-assets/skill-icons/${esc(ic.icon)}.jpg" alt="" loading="lazy">` : glyph(s);
   }
   function exitHTML(s) {
     return `<a class="slim-exit-chip" href="${classHref(s)}"
@@ -38,7 +38,7 @@ window.COA_SLIM = (() => {
     const yes = s.fit.enjoy.slice(0, 2).map(i => i.t);
     const no = s.fit.avoid.slice(0, 2).map(i => i.t);
     const icons = s.media.icons.length ? `<div class="icon-strip">${s.media.icons.map(i =>
-      `<img src="https://coabuildhub.com/skill-icons/${esc(i.icon)}.jpg" alt="${esc(i.name)}" loading="lazy"
+      `<img src="generated-assets/skill-icons/${esc(i.icon)}.jpg" alt="${esc(i.name)}" loading="lazy"
          data-tipname="${esc(i.name)}" data-tip="${esc(i.tip)}">`).join("")}
       <span class="cap">Defining talents — hover or tap to read</span></div>` : "";
     return `<div class="slim" style="--class-color:${s.color}">

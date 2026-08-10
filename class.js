@@ -282,6 +282,58 @@
     <text class="kx-center-label" x="210" y="139" text-anchor="middle">DEMONFIRE</text>
     <text class="kx-center-sub" x="210" y="151" text-anchor="middle">EVERY STACK PAYS</text>
     ${koxNodes.map(s => nodeSvg(s, s.y > 170 ? 38 : 42, s.y > 170 ? 50 : 54, "kx-node")).join("")}`;
+  // Guardian: formations as a war-banner between two stances — a tight TOWER grid
+  // and a spread LINE rank — with the three specs standing in formation below.
+  // No shared class bar: each node carries its own meter mark (10 · 3 · 3, from v3).
+  const gdNodes = [
+    { id: "guardian/vanguard", name: "Vanguard", verb: "BLOCK", meter: "10", x: 73, y: 200 },
+    { id: "guardian/inspiration", name: "Inspiration", verb: "RALLY", meter: "3", x: 210, y: 200 },
+    { id: "guardian/gladiator", name: "Gladiator", verb: "DUEL", meter: "3", x: 347, y: 200 },
+  ];
+  const GD_DEFS = `<defs>
+      <linearGradient id="gdBanner" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffb257"/><stop offset=".6" stop-color="#c96a1c"/><stop offset="1" stop-color="#5c2f0e"/></linearGradient>
+      <filter id="gdGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    </defs>`;
+  const gdDots = (cx, cy, kind, gap) => kind === "tower"
+    ? [-1, 0, 1].flatMap(r => [-1, 0, 1].map(c =>
+        `<circle class="gd-dot" cx="${cx + c * gap}" cy="${cy + r * gap}" r="2.6"/>`)).join("")
+    : [-2, -1, 0, 1, 2].map(c =>
+        `<circle class="gd-dot" cx="${cx + c * gap}" cy="${cy}" r="2.6"/>`).join("");
+  const gdNodeSvg = (s, ny, vy) => `<g class="cd-node gd-node" data-cd-spec="${s.id}" role="button" tabindex="0" transform="translate(${s.x} ${s.y})">
+      <circle class="node-ring" r="29"/><circle class="node-dot" r="4"/>
+      <text class="gd-meter" text-anchor="middle" y="18">${s.meter}</text>
+      <text class="node-name" text-anchor="middle" y="${ny}">${s.name}</text>
+      <text class="node-verb" text-anchor="middle" y="${vy}">${s.verb}</text></g>`;
+  const GD_DESKTOP = `<title id="gd-seal-title">Formations between Tower and Line, with each Guardian spec running its own meter</title>
+    ${GD_DEFS}
+    <line class="gd-axis" x1="96" y1="96" x2="324" y2="96"/>
+    <path class="gd-pole" d="M210 52 L210 132"/>
+    <path class="gd-pennant" d="M210 54 L258 67 L210 82 Z"/>
+    <path class="gd-link" d="M210 134 L73 200"/><path class="gd-link" d="M210 134 L210 200"/>
+    <path class="gd-link" d="M210 134 L347 200"/>
+    ${gdDots(118, 96, "tower", 11)}${gdDots(302, 96, "line", 11)}
+    <text class="gd-threshold" x="118" y="132" text-anchor="middle">TOWER · GUARD</text>
+    <text class="gd-threshold" x="302" y="132" text-anchor="middle">LINE · MARCH</text>
+    <text class="gd-center-label" x="210" y="156" text-anchor="middle">FORMATIONS</text>
+    <text class="gd-center-sub" x="210" y="168" text-anchor="middle">EACH SPEC ITS OWN METER</text>
+    <text class="gd-legend" x="16" y="22">THE LINE HOLDS EVERYONE</text>
+    ${gdNodes.map(s => gdNodeSvg(s, 42, 54)).join("")}`;
+  const GD_PHONE_NODES = gdNodes.map(s => ({ ...s, y: 174 }));
+  const GD_PHONE = `<title id="gd-seal-title">Formations between Tower and Line, with each Guardian spec running its own meter</title>
+    ${GD_DEFS}
+    <line class="gd-axis" x1="100" y1="76" x2="320" y2="76"/>
+    <path class="gd-pole" d="M210 36 L210 110"/>
+    <path class="gd-pennant" d="M210 38 L248 48 L210 61 Z"/>
+    <path class="gd-link" d="M210 112 L73 174"/><path class="gd-link" d="M210 112 L210 174"/>
+    <path class="gd-link" d="M210 112 L347 174"/>
+    ${gdDots(118, 76, "tower", 10)}${gdDots(302, 76, "line", 10)}
+    <text class="gd-threshold" x="118" y="110" text-anchor="middle">TOWER · GUARD</text>
+    <text class="gd-threshold" x="302" y="110" text-anchor="middle">LINE · MARCH</text>
+    <text class="gd-center-label" x="210" y="130" text-anchor="middle">FORMATIONS</text>
+    <text class="gd-center-sub" x="210" y="141" text-anchor="middle">EACH SPEC ITS OWN METER</text>
+    <text class="gd-legend" x="14" y="20">THE LINE HOLDS EVERYONE</text>
+    ${GD_PHONE_NODES.map(s => gdNodeSvg(s, 33, 44)).join("")}`;
+
   // Phone: the ruled 420×224 tightened arrangement — ring 46, core .66, rows raised.
   const KOX_PHONE_NODES = [
     { id: "knight-of-xoroth/hellfire", name: "Hellfire", verb: "UNLEASH", x: 73, y: 60 },
@@ -321,6 +373,11 @@
     el("mast").insertAdjacentHTML("beforeend",
       `<div class="cd-stage cd-seal ry-reseal cd-kox-seal" aria-label="Knight of Xoroth class engine diagram">
         <svg viewBox="0 0 420 260" role="img" aria-labelledby="kox-seal-title">${KOX_DESKTOP}</svg></div>`);
+  } else if (cSlug === "guardian") {
+    el("mast").classList.add("cd-with-seal");
+    el("mast").insertAdjacentHTML("beforeend",
+      `<div class="cd-stage cd-seal ry-reseal cd-gd-seal" aria-label="Guardian class engine diagram">
+        <svg viewBox="0 0 420 260" role="img" aria-labelledby="gd-seal-title">${GD_DESKTOP}</svg></div>`);
   } else {
     // G2 · the seat (RULED 2026-08-10). Crests are skipped, so the class glyph holds
     // the slot with the honest caption. Masthead geometry matches the sealed classes.
@@ -341,6 +398,7 @@
   const TOPO = {
     "cultist/godblade": "spike", "cultist/corruption": "wave", "tinker/demolition": "stack",
     "knight-of-xoroth/hellfire": "pips", "knight-of-xoroth/war": "wheel", "knight-of-xoroth/defiance": "bank",
+    "guardian/vanguard": "bank", "guardian/inspiration": "wheel", "guardian/gladiator": "wheel",
   };
   function topoGlyph(kind) {
     const art = {
@@ -547,6 +605,71 @@
         "sacrifice them and they become healing plus a shield"],
       eyes: "your imp count · the damage coming in",
     },
+    "guardian/vanguard": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Vanguard rhythm: blocks stack Paragon toward ten, Heavy Blow transforms into Paragon Smash, then the bank rebuilds">
+        <line class="thr" x1="14" y1="44" x2="500" y2="44"/><text class="thr-lab" x="14" y="38">10 · the mark</text>
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        <path class="gd-line" d="M40 124 L120 124 L120 108 L210 108 L210 90 L310 90 L310 72 L470 72"/>
+        <path class="gd-shield" d="M154 96 h14 v9 a7 7 0 0 1 -14 0 Z"/>
+        <path class="gd-shield" d="M248 78 h14 v9 a7 7 0 0 1 -14 0 Z"/>
+        <path class="gd-shield" d="M356 60 h14 v9 a7 7 0 0 1 -14 0 Z"/><path class="gd-shield" d="M382 60 h14 v9 a7 7 0 0 1 -14 0 Z"/>
+        <rect class="gd-window" x="560" y="48" width="200" height="78" rx="2"/>
+        <text class="gd-window-lab" x="660" y="76" text-anchor="middle">PARAGON SMASH</text>
+        <text class="ph2" x="660" y="94" text-anchor="middle" fill="#ffe0c2">Heavy Blow transforms at ten</text>
+        <path class="gd-line" d="M800 124 L860 124 L860 110 L930 110 L930 96 L965 96"/>
+        <text class="ph" x="230" y="146" text-anchor="middle">BUILD</text>
+        <text class="ph2" x="230" y="160" text-anchor="middle">blocks stack Paragon · Energy returns</text>
+        <text class="ph" x="880" y="146" text-anchor="middle">REBUILD</text>
+      </svg>`,
+      bullets: ["every block stacks Paragon and hands Energy back",
+        "at ten stacks, Heavy Blow transforms into Paragon Smash",
+        "raising your shield arms a cooldown-free Heavy Blow"],
+      eyes: "your Paragon count · the next hit to block",
+    },
+    "guardian/inspiration": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Inspiration rhythm: Ballads build Tempo to three, Sound of War rings for nearby allies, Hero's March keeps it ringing, and the count restarts">
+        <defs><marker id="gdArrI" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+        <circle class="gd-pip" cx="120" cy="88" r="7"/><circle class="gd-pip" cx="150" cy="88" r="7"/><circle class="gd-pip" cx="180" cy="88" r="7"/>
+        <text class="ph" x="150" y="118" text-anchor="middle">BUILD</text>
+        <text class="ph2" x="150" y="132" text-anchor="middle">Ballads · Tempo ×3</text>
+        <path class="branch" d="M200 78 C 270 46, 350 42, 420 54" marker-end="url(#gdArrI)"/>
+        <circle class="gd-burst" cx="465" cy="70" r="14"/><circle class="gd-burst faint" cx="465" cy="70" r="24"/>
+        <text class="ph" x="465" y="112" text-anchor="middle">SOUND OF WAR</text>
+        <text class="ph2" x="465" y="126" text-anchor="middle">allies' next hit gains magic damage</text>
+        <path class="branch" d="M495 60 C 560 44, 620 46, 680 58" marker-end="url(#gdArrI)"/>
+        <rect class="gd-window" x="690" y="44" width="200" height="64" rx="2"/>
+        <text class="gd-window-lab" x="790" y="70" text-anchor="middle">HERO'S MARCH</text>
+        <text class="ph2" x="790" y="88" text-anchor="middle" fill="#ffe0c2">15 s · your autos keep it ringing</text>
+        <path class="branch" d="M790 112 C 700 158, 260 160, 136 100" marker-end="url(#gdArrI)"/>
+        <text class="ph2" x="470" y="152" text-anchor="middle">THE COUNT RESTARTS</text>
+      </svg>`,
+      bullets: ["your strikes become Ballads, and Ballads build Tempo",
+        "three Tempo casts Sound of War — nearby allies' next hit gains magic damage",
+        "Hero's March keeps the song ringing for 15 seconds"],
+      eyes: "your Tempo count · who is standing near you",
+    },
+    "guardian/gladiator": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Gladiator rhythm: Ram builds Glory to three, the next Ram hits harder, and the short wheel turns again; a net sets up Centurion Strike crits">
+        <defs><marker id="gdArrG" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+        <circle class="gd-pip" cx="130" cy="84" r="7"/><circle class="gd-pip" cx="160" cy="84" r="7"/><circle class="gd-pip" cx="190" cy="84" r="7"/>
+        <text class="ph" x="160" y="114" text-anchor="middle">BUILD</text>
+        <text class="ph2" x="160" y="128" text-anchor="middle">Ram builds Glory · ×3</text>
+        <path class="branch" d="M210 74 C 300 40, 400 38, 480 50" marker-end="url(#gdArrG)"/>
+        <path class="refresh" d="M497 60 l13 -13 l13 13 l-13 13 Z"/>
+        <text class="ph" x="510" y="100" text-anchor="middle">NET</text>
+        <text class="ph2" x="510" y="114" text-anchor="middle">Centurion Strike crits</text>
+        <path class="branch" d="M538 54 C 600 42, 650 44, 706 56" marker-end="url(#gdArrG)"/>
+        <rect class="gd-window" x="716" y="42" width="180" height="64" rx="2"/>
+        <text class="gd-window-lab" x="806" y="68" text-anchor="middle">BOOSTED RAM</text>
+        <text class="ph2" x="806" y="86" text-anchor="middle" fill="#ffe0c2">at three Glory</text>
+        <path class="branch" d="M806 110 C 710 158, 270 158, 146 98" marker-end="url(#gdArrG)"/>
+        <text class="ph2" x="470" y="152" text-anchor="middle">BUILD THREE · CASH · AGAIN</text>
+      </svg>`,
+      bullets: ["Ram builds Glory — at three, the next Ram hits harder",
+        "a thrown net makes Centurion Strike crit",
+        "the wheel is short: build three, cash, and again"],
+      eyes: "your Glory count · the net window",
+    },
   };
 
   // Authored-to-fit phone redraws (S2): same topology, fewer labels, no scroll.
@@ -655,6 +778,55 @@
       <path class="branch" d="M288 200 C 352 170, 352 56, 262 36" marker-end="url(#kxArrDp)"/>
       <text class="ph2" x="344" y="100" text-anchor="end">REBUILD</text>
       <text class="ph2" x="344" y="113" text-anchor="end">the bank refills</text>
+    </svg>`,
+    "guardian/vanguard": `<svg viewBox="0 0 380 230" role="img" aria-label="Vanguard rhythm, phone ladder: blocks stack Paragon toward ten, Heavy Blow transforms at ten, then the bank rebuilds">
+      <defs><marker id="gdArrVp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <path class="gd-line" d="M20 76 L58 76 L58 64 L98 64 L98 52 L136 52"/>
+      <path class="gd-shield" d="M71 52 h12 v8 a6 6 0 0 1 -12 0 Z"/>
+      <path class="gd-shield" d="M110 40 h12 v8 a6 6 0 0 1 -12 0 Z"/>
+      <text class="ph" x="185" y="56" text-anchor="start">BUILD</text>
+      <text class="ph2" x="185" y="70" text-anchor="start">blocks stack Paragon · to ten</text>
+      <path class="branch" d="M44 88 L44 112" marker-end="url(#gdArrVp)"/>
+      <rect class="gd-window" x="28" y="122" width="254" height="56" rx="2"/>
+      <text class="gd-window-lab" x="155" y="146" text-anchor="middle">PARAGON SMASH</text>
+      <text class="ph2" x="155" y="164" text-anchor="middle" fill="#ffe0c2">Heavy Blow transforms at ten</text>
+      <path class="branch" d="M288 150 C 352 122, 352 52, 262 34" marker-end="url(#gdArrVp)"/>
+      <text class="ph2" x="344" y="92" text-anchor="end">REBUILD</text>
+      <text class="ph2" x="344" y="105" text-anchor="end">the bank refills</text>
+    </svg>`,
+    "guardian/inspiration": `<svg viewBox="0 0 380 252" role="img" aria-label="Inspiration rhythm, phone ladder: Ballads build Tempo to three, Sound of War rings, Hero's March keeps it ringing, and the count restarts">
+      <defs><marker id="gdArrIp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <circle class="gd-pip" cx="36" cy="48" r="7"/><circle class="gd-pip" cx="64" cy="48" r="7"/><circle class="gd-pip" cx="92" cy="48" r="7"/>
+      <text class="ph" x="185" y="44" text-anchor="start">BUILD</text>
+      <text class="ph2" x="185" y="58" text-anchor="start">Ballads · Tempo ×3</text>
+      <path class="branch" d="M44 62 L44 86" marker-end="url(#gdArrIp)"/>
+      <circle class="gd-burst" cx="44" cy="112" r="11"/><circle class="gd-burst faint" cx="44" cy="112" r="19"/>
+      <text class="ph" x="185" y="108" text-anchor="start">SOUND OF WAR</text>
+      <text class="ph2" x="185" y="122" text-anchor="start">allies' next hit gains magic</text>
+      <path class="branch" d="M44 138 L44 162" marker-end="url(#gdArrIp)"/>
+      <rect class="gd-window" x="28" y="172" width="254" height="54" rx="2"/>
+      <text class="gd-window-lab" x="155" y="192" text-anchor="middle">HERO'S MARCH</text>
+      <text class="ph2" x="155" y="210" text-anchor="middle" fill="#ffe0c2">15 s · autos keep it ringing</text>
+      <path class="branch" d="M288 198 C 352 168, 352 56, 262 36" marker-end="url(#gdArrIp)"/>
+      <text class="ph2" x="344" y="100" text-anchor="end">RESTART</text>
+      <text class="ph2" x="344" y="113" text-anchor="end">the count returns</text>
+    </svg>`,
+    "guardian/gladiator": `<svg viewBox="0 0 380 230" role="img" aria-label="Gladiator rhythm, phone ladder: Ram builds Glory to three, the boosted Ram lands, and the wheel turns again">
+      <defs><marker id="gdArrGp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <circle class="gd-pip" cx="36" cy="48" r="7"/><circle class="gd-pip" cx="64" cy="48" r="7"/><circle class="gd-pip" cx="92" cy="48" r="7"/>
+      <text class="ph" x="185" y="44" text-anchor="start">BUILD</text>
+      <text class="ph2" x="185" y="58" text-anchor="start">Ram builds Glory · ×3</text>
+      <path class="branch" d="M44 62 L44 86" marker-end="url(#gdArrGp)"/>
+      <path class="refresh" d="M33 108 l11 -11 l11 11 l-11 11 Z"/>
+      <text class="ph" x="185" y="104" text-anchor="start">NET</text>
+      <text class="ph2" x="185" y="118" text-anchor="start">Centurion Strike crits</text>
+      <path class="branch" d="M44 122 L44 146" marker-end="url(#gdArrGp)"/>
+      <rect class="gd-window" x="28" y="156" width="254" height="54" rx="2"/>
+      <text class="gd-window-lab" x="155" y="176" text-anchor="middle">BOOSTED RAM</text>
+      <text class="ph2" x="155" y="194" text-anchor="middle" fill="#ffe0c2">at three Glory</text>
+      <path class="branch" d="M288 182 C 352 154, 352 52, 262 34" marker-end="url(#gdArrGp)"/>
+      <text class="ph2" x="344" y="96" text-anchor="end">AGAIN</text>
+      <text class="ph2" x="344" y="109" text-anchor="end">the wheel turns</text>
     </svg>`,
   };
 
@@ -910,6 +1082,7 @@
   const SEAL_SWAP = {
     "cultist": { desktop: ["0 0 420 260", CULTIST_DESKTOP], phone: ["0 0 420 224", CULTIST_PHONE] },
     "knight-of-xoroth": { desktop: ["0 0 420 260", KOX_DESKTOP], phone: ["0 0 420 224", KOX_PHONE] },
+    "guardian": { desktop: ["0 0 420 260", GD_DESKTOP], phone: ["0 0 420 224", GD_PHONE] },
   };
   function applySeal() {
     const swap = SEAL_SWAP[cSlug];

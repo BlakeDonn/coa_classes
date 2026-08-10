@@ -176,7 +176,7 @@ window.COA_RENDER = (() => {
           No verified current ${esc(s.name)}-specific video. We say so rather than surfacing a stale or unrelated upload.</div>` : "");
     const icons = m.icons.length ? `
       <div class="icon-strip">${m.icons.map(i =>
-        `<img src="https://coabuildhub.com/skill-icons/${esc(i.icon)}.jpg" alt="${esc(i.name)}" loading="lazy"
+        `<img src="generated-assets/skill-icons/${esc(i.icon)}.jpg" alt="${esc(i.name)}" loading="lazy"
            data-tipname="${esc(i.name)}" data-tip="${esc(i.tip)}">`).join("")}
         <span class="cap">Defining talents — hover or tap to read, from the current snapshot</span></div>` : "";
     return strip + guides + icons;

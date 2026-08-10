@@ -121,7 +121,7 @@ window.COA_CARDS = (() => {
   // ability-icon fallback while crests await rights). Glyph only when no icon exists.
   function classIcon(c) {
     const ic = c.specs.find(s => s.media.icons[0])?.media.icons[0];
-    return ic ? `<img src="https://coabuildhub.com/skill-icons/${esc(ic.icon)}.jpg" alt="" loading="lazy">` : c.glyph;
+    return ic ? `<img src="generated-assets/skill-icons/${esc(ic.icon)}.jpg" alt="" loading="lazy">` : c.glyph;
   }
 
   // ---------- the card ----------
