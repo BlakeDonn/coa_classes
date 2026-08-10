@@ -703,6 +703,103 @@
     <text class="pr-legend" x="14" y="20">ONE BOON AT A TIME</text>
     ${PR_PHONE_NODES.map(s => prNodeSvg(s, 33, 44)).join("")}`;
 
+
+  // Pyromancer: a brazier in cross-section — countable Ember coals in the bowl,
+  // Heat rising as ticks that never fall back (packet, final batch).
+  const pyNodes = [
+    { id: "pyromancer/flameweaving", name: "Flameweaving", verb: "RESERVE", tag: "BANK", x: 73, y: 66 },
+    { id: "pyromancer/incineration", name: "Incineration", verb: "RIPEN", tag: "BURNS", x: 347, y: 66 },
+    { id: "pyromancer/draconic", name: "Draconic", verb: "INVOKE", tag: "×5", x: 210, y: 206 },
+  ];
+  const PY_DEFS = `<defs>
+      <radialGradient id="pyCoal"><stop offset="0" stop-color="#ffd1a3"/><stop offset=".55" stop-color="#ff6638"/><stop offset="1" stop-color="#391309"/></radialGradient>
+      <filter id="pyGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    </defs>`;
+  const pyNodeSvg = (s, ny, vy) => `<g class="cd-node py-node" data-cd-spec="${s.id}" role="button" tabindex="0" transform="translate(${s.x} ${s.y})">
+      <circle class="node-ring" r="29"/><circle class="node-dot" r="4"/>
+      <text class="py-tag" text-anchor="middle" y="18">${s.tag}</text>
+      <text class="node-name" text-anchor="middle" y="${ny}">${s.name}</text>
+      <text class="node-verb" text-anchor="middle" y="${vy}">${s.verb}</text></g>`;
+  const pyHeat = (cx, base, n) => Array.from({ length: n }, (_, i) =>
+    `<line class="py-heat" x1="${cx - 8 + (i % 2) * 16}" y1="${base - i * 11}" x2="${cx + 2 + (i % 2) * 16 - 10}" y2="${base - i * 11}"
+      transform="rotate(${(i % 2 ? 8 : -8)} ${cx} ${base - i * 11})"/>`).join("");
+  const PY_DESKTOP = `<title id="py-seal-title">The brazier: countable Embers in the bowl, Heat rising and never falling back</title>
+    ${PY_DEFS}
+    <path class="py-bowl" d="M158 128 A 52 40 0 0 0 262 128 L252 148 A 60 30 0 0 1 168 148 Z"/>
+    ${[0,1,2,3,4].map(i => `<circle class="py-coal" cx="${182 + i * 14}" cy="${132 + (i % 2) * 6}" r="6"/>`).join("")}
+    ${pyHeat(210, 108, 5)}
+    <text class="py-threshold" x="118" y="34" text-anchor="middle">1 · EMBER OUT</text>
+    <text class="py-threshold" x="302" y="34" text-anchor="middle">25% · HEAT IN</text>
+    <path class="py-link" d="M164 110 L102 72"/><path class="py-link" d="M256 110 L318 72"/>
+    <path class="py-link" d="M210 152 L210 177"/>
+    <text class="py-center-label" x="210" y="176" text-anchor="middle">EMBERS · HEAT</text>
+    <text class="py-center-sub" x="210" y="188" text-anchor="middle">SPEND ONE · THE OTHER RISES</text>
+    <text class="py-legend" x="16" y="22">FLAMECASTING · 5% HASTE ×5</text>
+    ${pyNodes.map(s => pyNodeSvg(s, s.y > 150 ? 38 : 42, s.y > 150 ? 50 : 54)).join("")}`;
+  const PY_PHONE_NODES = pyNodes.map(s => ({ ...s, y: s.y > 150 ? 178 : 58 }));
+  const PY_PHONE = `<title id="py-seal-title">The brazier: countable Embers in the bowl, Heat rising and never falling back</title>
+    ${PY_DEFS}
+    <path class="py-bowl" d="M166 112 A 44 32 0 0 0 254 112 L246 128 A 50 24 0 0 1 174 128 Z"/>
+    ${[0,1,2,3,4].map(i => `<circle class="py-coal" cx="${186 + i * 12}" cy="${115 + (i % 2) * 5}" r="5"/>`).join("")}
+    ${pyHeat(210, 94, 4)}
+    <text class="py-threshold" x="118" y="28" text-anchor="middle">1 · EMBER OUT</text>
+    <text class="py-threshold" x="302" y="28" text-anchor="middle">25% · HEAT IN</text>
+    <path class="py-link" d="M172 96 L102 62"/><path class="py-link" d="M248 96 L318 62"/>
+    <path class="py-link" d="M210 132 L210 149"/>
+    <text class="py-center-label" x="210" y="152" text-anchor="middle">EMBERS · HEAT</text>
+    <text class="py-center-sub" x="210" y="163" text-anchor="middle">SPEND ONE · THE OTHER RISES</text>
+    <text class="py-legend" x="14" y="20">FLAMECASTING · 5% HASTE ×5</text>
+    ${PY_PHONE_NODES.map(s => pyNodeSvg(s, 33, 44)).join("")}`;
+
+  // Runemaster: the chisel on the blade — a sword laid flat, the chisel at its
+  // fuller, struck sparks scattering unevenly (packet, final batch).
+  const rmNodes = [
+    { id: "runemaster/runic", name: "Runic", verb: "BRAND", tag: "BRAND", x: 73, y: 66 },
+    { id: "runemaster/arcane", name: "Arcane", verb: "ESCALATE", tag: "GLYPH ×3", x: 347, y: 66 },
+    { id: "runemaster/riftblade", name: "Riftblade", verb: "BEAT", tag: "3RD", x: 210, y: 206 },
+  ];
+  const RM_DEFS = `<defs>
+      <filter id="rmGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    </defs>`;
+  const rmNodeSvg = (s, ny, vy) => `<g class="cd-node rm-node" data-cd-spec="${s.id}" role="button" tabindex="0" transform="translate(${s.x} ${s.y})">
+      <circle class="node-ring" r="29"/><circle class="node-dot" r="4"/>
+      <text class="rm-tag" text-anchor="middle" y="18">${s.tag}</text>
+      <text class="node-name" text-anchor="middle" y="${ny}">${s.name}</text>
+      <text class="node-verb" text-anchor="middle" y="${vy}">${s.verb}</text></g>`;
+  const rmSparks = (cx, cy) => [[-26,-18,3],[14,-26,2.5],[30,-10,3],[-14,-30,2],[38,-24,2],[-34,-6,2.5],[8,-38,2.5]].map(([dx,dy,r]) =>
+    `<circle class="rm-spark" cx="${cx + dx}" cy="${cy + dy}" r="${r}"/>`).join("");
+  const RM_DESKTOP = `<title id="rm-seal-title">The chisel on the blade: engravings struck as scattered sparks, never an even ring</title>
+    ${RM_DEFS}
+    <path class="rm-blade" d="M96 132 L306 132 L330 138 L306 144 L96 144 Z"/>
+    <line class="rm-fuller" x1="106" y1="138" x2="300" y2="138"/>
+    <path class="rm-chisel" d="M210 132 L258 76"/>
+    <path class="rm-chiselhead" d="M252 68 L266 82"/>
+    ${rmSparks(210, 128)}
+    <text class="rm-threshold" x="118" y="34" text-anchor="middle">−10% · ALWAYS</text>
+    <text class="rm-threshold" x="302" y="34" text-anchor="middle">+100% · 6 SEC</text>
+    <path class="rm-link" d="M140 118 L102 72"/><path class="rm-link" d="M280 118 L318 72"/>
+    <path class="rm-link" d="M210 148 L210 177"/>
+    <text class="rm-center-label" x="210" y="168" text-anchor="middle">ENGRAVINGS</text>
+    <text class="rm-center-sub" x="210" y="180" text-anchor="middle">A CHANCE YOU BUY UP · ZENITH ×2</text>
+    <text class="rm-legend" x="16" y="22">WRITE FIRST · RELEASE SECOND</text>
+    ${rmNodes.map(s => rmNodeSvg(s, s.y > 150 ? 38 : 42, s.y > 150 ? 50 : 54)).join("")}`;
+  const RM_PHONE_NODES = rmNodes.map(s => ({ ...s, y: s.y > 150 ? 178 : 58 }));
+  const RM_PHONE = `<title id="rm-seal-title">The chisel on the blade: engravings struck as scattered sparks, never an even ring</title>
+    ${RM_DEFS}
+    <path class="rm-blade" d="M110 114 L296 114 L318 120 L296 126 L110 126 Z"/>
+    <line class="rm-fuller" x1="120" y1="120" x2="292" y2="120"/>
+    <path class="rm-chisel" d="M210 114 L252 66"/>
+    <path class="rm-chiselhead" d="M246 59 L258 71"/>
+    ${rmSparks(210, 110)}
+    <text class="rm-threshold" x="118" y="28" text-anchor="middle">−10% · ALWAYS</text>
+    <text class="rm-threshold" x="302" y="28" text-anchor="middle">+100% · 6 SEC</text>
+    <path class="rm-link" d="M148 102 L102 62"/><path class="rm-link" d="M272 102 L318 62"/>
+    <path class="rm-link" d="M210 128 L210 149"/>
+    <text class="rm-center-label" x="210" y="146" text-anchor="middle">ENGRAVINGS</text>
+    <text class="rm-center-sub" x="210" y="157" text-anchor="middle">A CHANCE YOU BUY UP · ZENITH ×2</text>
+    <text class="rm-legend" x="14" y="20">WRITE FIRST · RELEASE SECOND</text>
+    ${RM_PHONE_NODES.map(s => rmNodeSvg(s, 33, 44)).join("")}`;
+
   // Phone: the ruled 420×224 tightened arrangement — orbits 60/77, eye .66,
   // node rows raised. Nothing removed.
   const CULTIST_PHONE_NODES = [
@@ -1049,6 +1146,16 @@
     el("mast").insertAdjacentHTML("beforeend",
       `<div class="cd-stage cd-seal ry-reseal cd-wh-seal" aria-label="Witch Hunter class engine diagram">
         <svg viewBox="0 0 420 260" role="img" aria-labelledby="wh-seal-title">${WH_DESKTOP}</svg></div>`);
+  } else if (cSlug === "pyromancer") {
+    el("mast").classList.add("cd-with-seal");
+    el("mast").insertAdjacentHTML("beforeend",
+      `<div class="cd-stage cd-seal ry-reseal cd-py-seal" aria-label="Pyromancer class engine diagram">
+        <svg viewBox="0 0 420 260" role="img" aria-labelledby="py-seal-title">${PY_DESKTOP}</svg></div>`);
+  } else if (cSlug === "runemaster") {
+    el("mast").classList.add("cd-with-seal");
+    el("mast").insertAdjacentHTML("beforeend",
+      `<div class="cd-stage cd-seal ry-reseal cd-rm-seal" aria-label="Runemaster class engine diagram">
+        <svg viewBox="0 0 420 260" role="img" aria-labelledby="rm-seal-title">${RM_DESKTOP}</svg></div>`);
   } else if (cSlug === "necromancer") {
     el("mast").classList.add("cd-with-seal");
     el("mast").insertAdjacentHTML("beforeend",
@@ -1146,6 +1253,8 @@
     "bloodmage/sanguine": "bank", "bloodmage/accursed": "pips", "bloodmage/eternal": "wheel", "bloodmage/fleshweaver": "bank",
     "necromancer/animation": "wheel", "necromancer/death": "stack", "necromancer/rime": "wheel",
     "primalist/primal": "wheel", "primalist/geomancy": "bank", "primalist/life": "wave", "primalist/mountain-king": "pips",
+    "pyromancer/flameweaving": "bank", "pyromancer/incineration": "wave", "pyromancer/draconic": "wheel",
+    "runemaster/runic": "wheel", "runemaster/arcane": "pips", "runemaster/riftblade": "wheel",
   };
   function topoGlyph(kind) {
     const art = {
@@ -1696,6 +1805,116 @@
         "Aeon of Protection is the slow one: 30% of the heal becomes a shield",
         "Epoch casts stack Endless Sands — each cuts 20% off your next Reverse Wound, up to five"],
       eyes: "which Aeon is active · your Endless Sands stacks",
+    },
+    "pyromancer/flameweaving": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Flameweaving rhythm: the Array banks an Ember every three seconds while Cinderheart doubles the Heat">
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        ${[0,1,2,3].map(i => `<circle class="py-pip" cx="${100 + i * 50}" cy="${112 - i * 12}" r="6"/>`).join("")}
+        <text class="ph" x="190" y="146" text-anchor="middle">RESERVE</text>
+        <text class="ph2" x="190" y="160" text-anchor="middle">the bank fills while you heal</text>
+        <rect class="py-window" x="480" y="44" width="300" height="82" rx="2"/>
+        <text class="py-window-lab" x="630" y="72" text-anchor="middle">SUNSTRIDER ARRAY · 15 s</text>
+        <text class="ph2" x="630" y="90" text-anchor="middle" fill="#ffdcc9">1 Ember every 3 s · Cinderheart Heat doubled</text>
+        <text class="ph" x="890" y="146" text-anchor="middle">RESERVE AGAIN</text>
+      </svg>`,
+      bullets: ["Embers sit in a bank until something goes wrong, and there is no fixed order to spend them in",
+        "Ember Touch on a planted fire erupts it, healing 12 allies within 30 yards",
+        "Healing feeds Heat as much as damage does — your Phoenix alone generates 5 Heat when it heals",
+        "Sunstrider Array hands you an Ember every 3 seconds for 15 seconds, which is the window to overspend"],
+      eyes: "your Ember count and the Phoenix's remaining minute",
+    },
+    "pyromancer/incineration": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Incineration rhythm: let the burns mature, then Fired Up makes the spenders instant while the refunds flow">
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        <path class="wave" d="M80 126 Q 160 66 240 126 Z"/>
+        <path class="wave" d="M260 126 Q 340 66 420 126 Z"/>
+        <text class="ph" x="250" y="146" text-anchor="middle">RIPEN</text>
+        <text class="ph2" x="250" y="160" text-anchor="middle">the burns mature on the target</text>
+        <rect class="py-window" x="500" y="44" width="290" height="82" rx="2"/>
+        <text class="py-window-lab" x="645" y="72" text-anchor="middle">FIRED UP · 15 s</text>
+        <text class="ph2" x="645" y="90" text-anchor="middle" fill="#ffdcc9">spenders instant · 30% cost refund · +20% crit</text>
+        <text class="ph" x="890" y="146" text-anchor="middle">REPLANT THE BURNS</text>
+      </svg>`,
+      bullets: ["Your burns do the storing — Ignite runs 21 seconds and generates 10 Heat on every tick",
+        "Pyroclasm spends one Ember and eats every burn on the target for double their total periodic damage",
+        "The take scales with how long those burns have already been running, so the wait is the decision",
+        "Fired Up makes Ember spenders instant for 15 seconds and refunds their cost 30% of the time"],
+      eyes: "how long the burns have run, and whether you are holding an Ember",
+    },
+    "pyromancer/draconic": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Draconic rhythm: five Embers call the Invocation, and every Heat generated pulls its cooldown closer">
+        <defs><marker id="pyArrD" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+        ${[0,1,2,3,4].map(i => `<circle class="py-pip${i === 4 ? " lit" : ""}" cx="${110 + i * 32}" cy="84" r="7"/>`).join("")}
+        <text class="ph" x="174" y="118" text-anchor="middle">FIVE EMBERS</text>
+        <text class="ph2" x="174" y="132" text-anchor="middle">every Heat pulls the cooldown 3% closer</text>
+        <path class="branch" d="M280 74 C 370 42, 460 40, 540 52" marker-end="url(#pyArrD)"/>
+        <rect class="py-window" x="560" y="44" width="240" height="82" rx="2"/>
+        <text class="py-window-lab" x="680" y="72" text-anchor="middle">DRACONIC INVOCATION</text>
+        <text class="ph2" x="680" y="90" text-anchor="middle" fill="#ffdcc9">the dragon takes the field</text>
+        <path class="branch" d="M680 126 C 570 160, 250 160, 160 100" marker-end="url(#pyArrD)"/>
+        <text class="ph2" x="310" y="156" text-anchor="middle">GATHER FIVE AGAIN</text>
+      </svg>`,
+      bullets: ["Generating Heat shaves 3% off Draconic Invocation's cooldown, once per second",
+        "That cooldown pays out 5 Embers at once instead of one at a time",
+        "Consuming Embers has a 30% chance to reset two big attacks and make the next one instant and free for 10 seconds",
+        "Draconic Aspect raises spell damage and critical damage, and marks everything you hit while it runs"],
+      eyes: "Draconic Invocation's cooldown and your Ember count",
+    },
+    "runemaster/runic": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Runic rhythm: brand the target for eight seconds, and the next Runeblade erupts onto everyone nearby">
+        <defs><marker id="rmArrR" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+        <path class="refresh" d="M130 84 l13 -13 l13 13 l-13 13 Z"/>
+        <text class="ph" x="143" y="122" text-anchor="middle">BRAND</text>
+        <text class="ph2" x="143" y="136" text-anchor="middle">the mark opens · 8 s</text>
+        <path class="branch" d="M210 70 C 310 40, 430 38, 530 50" marker-end="url(#rmArrR)"/>
+        <rect class="rm-window" x="550" y="44" width="250" height="82" rx="2"/>
+        <text class="rm-window-lab" x="675" y="72" text-anchor="middle">MARKED · 8 s</text>
+        <text class="ph2" x="675" y="90" text-anchor="middle" fill="#d7e2ff">the next Runeblade erupts onto the pack</text>
+        <path class="branch" d="M675 126 C 560 160, 250 160, 150 100" marker-end="url(#rmArrR)"/>
+        <text class="ph2" x="310" y="156" text-anchor="middle">BRAND AGAIN</text>
+      </svg>`,
+      bullets: ["Runic Brand marks one target for 8 seconds",
+        "The next Runeblade on that target explodes for 121 + 18.5% attack power to nearby enemies",
+        "Primordial Blast restores three charges, so the spend side rarely runs dry",
+        "A 35% chance on your casts resets the brand, letting you mark again before the window ends"],
+      eyes: "the 8-second mark, and your charge count",
+    },
+    "runemaster/arcane": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Arcane rhythm: sequence three glyphs upward, then Glyphic Ruin releases the active one">
+        <line class="thr" x1="14" y1="44" x2="480" y2="44"/><text class="thr-lab" x="14" y="38">3 · the sequence</text>
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        ${[0,1,2].map(i => `<rect class="rm-glyph" x="${120 + i * 90}" y="${100 - i * 22}" width="20" height="20" rx="3"/>`).join("")}
+        <text class="ph" x="240" y="146" text-anchor="middle">ESCALATE</text>
+        <text class="ph2" x="240" y="160" text-anchor="middle">glyph on glyph, in order</text>
+        <rect class="rm-window" x="520" y="48" width="270" height="78" rx="2"/>
+        <text class="rm-window-lab" x="655" y="76" text-anchor="middle">RELEASE · ACTIVE GLYPH</text>
+        <text class="ph2" x="655" y="94" text-anchor="middle" fill="#d7e2ff">Glyphic Ruin adds full spell power on top</text>
+        <text class="ph" x="890" y="146" text-anchor="middle">RESEQUENCE</text>
+      </svg>`,
+      bullets: ["Either of your two builder casts starts the ladder with a Frost glyph",
+        "Casting again while a glyph is up steps you to Flame, then to Arcane",
+        "Glyphic Ruin spends the active glyph and adds 82 + 100% spell power of its own",
+        "Thaumaturgy releases the same glyph, so the ladder has two exits"],
+      eyes: "which glyph is active, and your release cast",
+    },
+    "runemaster/riftblade": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Riftblade rhythm: count the beat — every third Runeblade lands harder and transforms the next cast">
+        <defs><marker id="rmArrB" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+        ${[0,1,2].map(i => `<circle class="rm-pip${i === 2 ? " lit" : ""}" cx="${130 + i * 40}" cy="84" r="8"/>`).join("")}
+        <text class="ph" x="170" y="118" text-anchor="middle">THE BEAT</text>
+        <text class="ph2" x="170" y="132" text-anchor="middle">one · two · THREE</text>
+        <path class="branch" d="M250 74 C 350 42, 450 40, 540 52" marker-end="url(#rmArrB)"/>
+        <rect class="rm-window" x="560" y="44" width="250" height="82" rx="2"/>
+        <text class="rm-window-lab" x="685" y="72" text-anchor="middle">EVERY 3RD RUNEBLADE</text>
+        <text class="ph2" x="685" y="90" text-anchor="middle" fill="#d7e2ff">+30% damage · the next cast transforms · 15 s</text>
+        <path class="branch" d="M685 126 C 570 160, 250 160, 158 100" marker-end="url(#rmArrB)"/>
+        <text class="ph2" x="310" y="156" text-anchor="middle">COUNT AGAIN</text>
+      </svg>`,
+      bullets: ["Two of your other casts refresh a Runeblade charge, so the count keeps moving",
+        "Smolder makes your next three swings strike an extra time for 30% of the damage dealt",
+        "Every third Runeblade deals 30% more damage and returns 388 + 30% attack power as mana",
+        "That third cast also transforms your next one into Surging Slash if you use it within 15 seconds"],
+      eyes: "your place in the count of three, and the 15-second transform window",
     },
     "necromancer/animation": {
       svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Animation rhythm: fill the roster, command it, and Deadly Bond can make the next Command free">
@@ -2653,6 +2872,81 @@
       <path class="branch" d="M234 146 C 356 140, 374 56, 250 36" marker-end="url(#cmArrTp)"/>
       <text class="ph2" x="190" y="200" text-anchor="middle">retune, and the sands rebuild</text>
     </svg>`,
+    "pyromancer/flameweaving": `<svg viewBox="0 0 380 230" role="img" aria-label="Flameweaving rhythm, phone ladder: the Array banks Embers while Cinderheart doubles Heat">
+      <defs><marker id="pyArrFp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      ${[0,1,2,3].map(i => `<circle class="py-pip" cx="${34 + i * 26}" cy="${56 - i * 3}" r="5.5"/>`).join("")}
+      <text class="ph" x="165" y="44" text-anchor="start">RESERVE</text>
+      <text class="ph2" x="165" y="58" text-anchor="start">the bank fills as you heal</text>
+      <path class="branch" d="M44 72 L44 96" marker-end="url(#pyArrFp)"/>
+      <rect class="py-window" x="28" y="106" width="200" height="60" rx="2"/>
+      <text class="py-window-lab" x="128" y="128" text-anchor="middle">SUNSTRIDER ARRAY</text>
+      <text class="ph2" x="128" y="144" text-anchor="middle" fill="#ffdcc9">1 Ember / 3 s · 15 s</text>
+      <text class="ph2" x="128" y="158" text-anchor="middle" fill="#ffdcc9">Cinderheart Heat doubled</text>
+      <path class="branch" d="M234 136 C 356 130, 374 52, 250 34" marker-end="url(#pyArrFp)"/>
+      <text class="ph2" x="190" y="188" text-anchor="middle">reserve again</text>
+    </svg>`,
+    "pyromancer/incineration": `<svg viewBox="0 0 380 230" role="img" aria-label="Incineration rhythm, phone ladder: ripen the burns, then Fired Up makes everything instant">
+      <defs><marker id="pyArrIp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <path class="wave" d="M20 66 Q 50 38 80 66 Z"/>
+      <path class="wave" d="M88 66 Q 118 38 148 66 Z"/>
+      <text class="ph" x="165" y="44" text-anchor="start">RIPEN</text>
+      <text class="ph2" x="165" y="58" text-anchor="start">the burns mature</text>
+      <path class="branch" d="M44 78 L44 102" marker-end="url(#pyArrIp)"/>
+      <rect class="py-window" x="28" y="112" width="200" height="60" rx="2"/>
+      <text class="py-window-lab" x="128" y="134" text-anchor="middle">FIRED UP · 15 s</text>
+      <text class="ph2" x="128" y="150" text-anchor="middle" fill="#ffdcc9">instant spenders · 30% refund</text>
+      <text class="ph2" x="128" y="164" text-anchor="middle" fill="#ffdcc9">+20% crit</text>
+      <path class="branch" d="M234 142 C 356 136, 374 54, 250 34" marker-end="url(#pyArrIp)"/>
+      <text class="ph2" x="190" y="194" text-anchor="middle">replant the burns</text>
+    </svg>`,
+    "pyromancer/draconic": `<svg viewBox="0 0 380 230" role="img" aria-label="Draconic rhythm, phone ladder: five Embers call the Invocation, Heat pulls it closer">
+      <defs><marker id="pyArrDp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      ${[0,1,2,3,4].map(i => `<circle class="py-pip${i === 4 ? " lit" : ""}" cx="${34 + i * 26}" cy="52" r="6"/>`).join("")}
+      <text class="ph" x="185" y="44" text-anchor="start">FIVE EMBERS</text>
+      <text class="ph2" x="185" y="58" text-anchor="start">Heat pulls it 3% closer</text>
+      <path class="branch" d="M44 70 L44 94" marker-end="url(#pyArrDp)"/>
+      <rect class="py-window" x="28" y="104" width="200" height="58" rx="2"/>
+      <text class="py-window-lab" x="128" y="126" text-anchor="middle">DRACONIC INVOCATION</text>
+      <text class="ph2" x="128" y="144" text-anchor="middle" fill="#ffdcc9">the dragon takes the field</text>
+      <path class="branch" d="M234 133 C 356 126, 374 52, 250 34" marker-end="url(#pyArrDp)"/>
+      <text class="ph2" x="190" y="186" text-anchor="middle">gather five again</text>
+    </svg>`,
+    "runemaster/runic": `<svg viewBox="0 0 380 230" role="img" aria-label="Runic rhythm, phone ladder: brand the target, the next Runeblade erupts">
+      <defs><marker id="rmArrRp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <path class="refresh" d="M33 52 l11 -11 l11 11 l-11 11 Z"/>
+      <text class="ph" x="165" y="44" text-anchor="start">BRAND</text>
+      <text class="ph2" x="165" y="58" text-anchor="start">the mark opens · 8 s</text>
+      <path class="branch" d="M44 72 L44 96" marker-end="url(#rmArrRp)"/>
+      <rect class="rm-window" x="28" y="106" width="200" height="58" rx="2"/>
+      <text class="rm-window-lab" x="128" y="128" text-anchor="middle">MARKED · 8 s</text>
+      <text class="ph2" x="128" y="146" text-anchor="middle" fill="#d7e2ff">the next Runeblade erupts</text>
+      <path class="branch" d="M234 135 C 356 128, 374 52, 250 34" marker-end="url(#rmArrRp)"/>
+      <text class="ph2" x="190" y="188" text-anchor="middle">brand again</text>
+    </svg>`,
+    "runemaster/arcane": `<svg viewBox="0 0 380 230" role="img" aria-label="Arcane rhythm, phone ladder: three glyphs in sequence, then release the active one">
+      <defs><marker id="rmArrAp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      ${[0,1,2].map(i => `<rect class="rm-glyph" x="${28 + i * 34}" y="${52 - i * 6}" width="16" height="16" rx="3"/>`).join("")}
+      <text class="ph" x="165" y="44" text-anchor="start">ESCALATE</text>
+      <text class="ph2" x="165" y="58" text-anchor="start">glyph on glyph, in order</text>
+      <path class="branch" d="M44 76 L44 100" marker-end="url(#rmArrAp)"/>
+      <rect class="rm-window" x="28" y="110" width="200" height="58" rx="2"/>
+      <text class="rm-window-lab" x="128" y="132" text-anchor="middle">RELEASE</text>
+      <text class="ph2" x="128" y="150" text-anchor="middle" fill="#d7e2ff">Glyphic Ruin · full spell power</text>
+      <path class="branch" d="M234 139 C 356 132, 374 54, 250 34" marker-end="url(#rmArrAp)"/>
+      <text class="ph2" x="190" y="192" text-anchor="middle">resequence</text>
+    </svg>`,
+    "runemaster/riftblade": `<svg viewBox="0 0 380 230" role="img" aria-label="Riftblade rhythm, phone ladder: count the beat to the third Runeblade">
+      <defs><marker id="rmArrBp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      ${[0,1,2].map(i => `<circle class="rm-pip${i === 2 ? " lit" : ""}" cx="${38 + i * 30}" cy="52" r="7"/>`).join("")}
+      <text class="ph" x="165" y="44" text-anchor="start">THE BEAT</text>
+      <text class="ph2" x="165" y="58" text-anchor="start">one · two · THREE</text>
+      <path class="branch" d="M44 72 L44 96" marker-end="url(#rmArrBp)"/>
+      <rect class="rm-window" x="28" y="106" width="200" height="58" rx="2"/>
+      <text class="rm-window-lab" x="128" y="128" text-anchor="middle">EVERY 3RD RUNEBLADE</text>
+      <text class="ph2" x="128" y="146" text-anchor="middle" fill="#d7e2ff">+30% · the next cast transforms</text>
+      <path class="branch" d="M234 135 C 356 128, 374 52, 250 34" marker-end="url(#rmArrBp)"/>
+      <text class="ph2" x="190" y="188" text-anchor="middle">count again</text>
+    </svg>`,
     "necromancer/animation": `<svg viewBox="0 0 380 250" role="img" aria-label="Animation rhythm, phone ladder: fill the roster, command it, Deadly Bond can make one free">
       <defs><marker id="ncArrAp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
       <rect class="nc-slot" x="24" y="44" width="14" height="11" rx="2"/>
@@ -3332,6 +3626,8 @@
     "bloodmage": { desktop: ["0 0 420 260", BM_DESKTOP], phone: ["0 0 420 224", BM_PHONE] },
     "necromancer": { desktop: ["0 0 420 260", NC_DESKTOP], phone: ["0 0 420 224", NC_PHONE] },
     "primalist": { desktop: ["0 0 420 260", PR_DESKTOP], phone: ["0 0 420 224", PR_PHONE] },
+    "pyromancer": { desktop: ["0 0 420 260", PY_DESKTOP], phone: ["0 0 420 224", PY_PHONE] },
+    "runemaster": { desktop: ["0 0 420 260", RM_DESKTOP], phone: ["0 0 420 224", RM_PHONE] },
   };
   function applySeal() {
     const swap = SEAL_SWAP[cSlug];

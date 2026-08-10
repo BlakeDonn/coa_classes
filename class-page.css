@@ -506,6 +506,52 @@
 .pr-node.active .node-dot { fill: #e1b86d; }
 .pr-node.active .node-name { fill: #f1cb6e; }
 
+/* Pyromancer: the same slot and interaction, the brazier in cross-section */
+.cd-py-seal { border-left-color: #8a3a2080;
+  background: radial-gradient(circle at 50% 46%, #ff66381e, transparent 60%); }
+.cd-py-seal::before { border-color: #b8532e50; }
+.py-bowl { fill: #1c0d07; stroke: #b8532e; stroke-width: 1.6; filter: url(#pyGlow); }
+.py-coal { fill: url(#pyCoal); stroke: #ff6638; stroke-width: .8; }
+.py-heat { stroke: #ff9d70; stroke-width: 1.6; opacity: .75; stroke-linecap: round; }
+.py-link { fill: none; stroke: #8a3a20; stroke-width: 1.2; opacity: .6; }
+.py-threshold { fill: #ffb494; font: 700 8px Arial, sans-serif; letter-spacing: .1em; }
+.py-center-label { fill: #ffe9dd; font: 700 11px Georgia, serif; letter-spacing: .18em;
+  paint-order: stroke; stroke: #170a05; stroke-width: 4px; stroke-linejoin: round; }
+.py-center-sub { fill: #cc7a52; font: 700 6px Arial, sans-serif; letter-spacing: .14em;
+  paint-order: stroke; stroke: #170a05; stroke-width: 2.5px; stroke-linejoin: round; }
+.py-legend { fill: #b06a45; font: 700 6px Arial, sans-serif; letter-spacing: .13em; opacity: .75; }
+.py-node .node-ring { fill: #1c0e08; stroke: #8a3a20; }
+.py-node .node-dot { fill: #d06238; }
+.py-node .py-tag { fill: #ffb494; font: 700 7px Arial, sans-serif; letter-spacing: .06em; }
+.py-node:hover .node-ring, .py-node:focus-visible .node-ring,
+.py-node.active .node-ring { fill: #2b150b; stroke: #ffb08a; stroke-width: 2; filter: url(#pyGlow); }
+.py-node.active .node-dot { fill: #e1b86d; }
+.py-node.active .node-name { fill: #f1cb6e; }
+
+/* Runemaster: the same slot and interaction, the chisel on the blade */
+.cd-rm-seal { border-left-color: #35478a80;
+  background: radial-gradient(circle at 50% 46%, #668cff1c, transparent 60%); }
+.cd-rm-seal::before { border-color: #4a63b850; }
+.rm-blade { fill: #10141f; stroke: #668cff; stroke-width: 1.4; }
+.rm-fuller { stroke: #35478a; stroke-width: 1; opacity: .8; }
+.rm-chisel { stroke: #9db4ff; stroke-width: 3; stroke-linecap: round; filter: url(#rmGlow); }
+.rm-chiselhead { stroke: #9db4ff; stroke-width: 4; stroke-linecap: round; }
+.rm-spark { fill: #cdd9ff; opacity: .85; filter: url(#rmGlow); }
+.rm-link { fill: none; stroke: #35478a; stroke-width: 1.2; opacity: .6; }
+.rm-threshold { fill: #a9bdfc; font: 700 8px Arial, sans-serif; letter-spacing: .1em; }
+.rm-center-label { fill: #e8eeff; font: 700 11px Georgia, serif; letter-spacing: .18em;
+  paint-order: stroke; stroke: #0a0e1a; stroke-width: 4px; stroke-linejoin: round; }
+.rm-center-sub { fill: #7a90d4; font: 700 6px Arial, sans-serif; letter-spacing: .14em;
+  paint-order: stroke; stroke: #0a0e1a; stroke-width: 2.5px; stroke-linejoin: round; }
+.rm-legend { fill: #6c81c4; font: 700 6px Arial, sans-serif; letter-spacing: .13em; opacity: .75; }
+.rm-node .node-ring { fill: #10131f; stroke: #35478a; }
+.rm-node .node-dot { fill: #5a77d4; }
+.rm-node .rm-tag { fill: #a9bdfc; font: 700 6.5px Arial, sans-serif; letter-spacing: .06em; }
+.rm-node:hover .node-ring, .rm-node:focus-visible .node-ring,
+.rm-node.active .node-ring { fill: #17203a; stroke: #b3c6ff; stroke-width: 2; filter: url(#rmGlow); }
+.rm-node.active .node-dot { fill: #e1b86d; }
+.rm-node.active .node-name { fill: #f1cb6e; }
+
 /* the col engine: the seal claims the masthead's full height at its own aspect ratio.
    --seal-slot marks where the TEXT COLUMN ends; the T1 thumb anchors to it. */
 @media (min-width: 901px) {
@@ -738,6 +784,15 @@ body.ry-glow .rail-card.sel {
 .ry-block .pr-window { fill: rgba(188,120,76,.16); stroke: #bc784c; stroke-width: 1.8; }
 .ry-block .pr-window-lab { fill: #f2ddca; font-size: 12.5px; font-weight: 700; letter-spacing: .1em; }
 .ry-block .pr-splitline { fill: none; stroke: #b0763f; stroke-width: 1.4; }
+.ry-block .py-pip { fill: rgba(255,102,56,.35); stroke: #ff6638; stroke-width: 1.5; }
+.ry-block .py-pip.lit { fill: rgba(255,102,56,.85); }
+.ry-block .py-window { fill: rgba(255,102,56,.15); stroke: #ff6638; stroke-width: 1.8; }
+.ry-block .py-window-lab { fill: #ffdcc9; font-size: 12.5px; font-weight: 700; letter-spacing: .1em; }
+.ry-block .rm-pip { fill: rgba(102,140,255,.35); stroke: #668cff; stroke-width: 1.5; }
+.ry-block .rm-pip.lit { fill: rgba(102,140,255,.85); }
+.ry-block .rm-glyph { fill: rgba(102,140,255,.2); stroke: #668cff; stroke-width: 1.5; }
+.ry-block .rm-window { fill: rgba(102,140,255,.15); stroke: #668cff; stroke-width: 1.8; }
+.ry-block .rm-window-lab { fill: #d7e2ff; font-size: 12.5px; font-weight: 700; letter-spacing: .1em; }
 
 /* ================= 5 · phone (≤560px) ================= */
 
