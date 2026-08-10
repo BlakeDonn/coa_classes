@@ -14,6 +14,11 @@
     return ic ? `<img src="generated-assets/skill-icons/${esc(ic.icon)}.jpg" alt="" loading="lazy">` : glyph(s);
   }
 
+  // ATLAS ROUND STUDY (temporary, design dialogue 2026-08-10): desktop
+  // expansion, ?d=wide|big|zoom. Baseline unchanged; removed on the pick.
+  const dForm = new URLSearchParams(location.search).get("d");
+  if (["wide", "big", "zoom"].includes(dForm)) document.body.classList.add("ry-d-" + dForm);
+
   // Altitude RULED (Atlas grammar §2): a standing Classes ↔ Specs toggle, starting
   // on Classes — 21 cards greet the visitor; the 70 specs are one tap away.
   const state = { view: "classes", search: "", role: "All", range: "All", research: "All" };
