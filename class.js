@@ -873,8 +873,8 @@
       ${stripEmber(28, 76, .7)}${stripEmber(52, 71, .78)}${stripEmber(76, 66, .86)}
       ${stripEmber(100, 61, .94)}${stripEmber(124, 56, 1.02)}${stripEmber(148, 51, 1.2, true)}
       <text class="ph2" x="148" y="72" text-anchor="middle">6</text>
-      <text class="ph" x="185" y="56" text-anchor="start">BUILD</text>
-      <text class="ph2" x="185" y="70" text-anchor="start">+1 a strike</text>
+      <text class="ph" x="165" y="56" text-anchor="start">BUILD</text>
+      <text class="ph2" x="165" y="70" text-anchor="start">+1 a strike</text>
       <path class="branch" d="M44 88 L44 112" marker-end="url(#kxArrHp)"/>
       <rect class="kx-window" x="28" y="122" width="200" height="56" rx="2"/>
       <text class="kx-window-lab" x="128" y="146" text-anchor="middle">UNLEASH AT SIX</text>
@@ -902,12 +902,12 @@
       <defs><marker id="kxArrDp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
       <path class="kx-line" d="M20 70 L58 70 L58 60 L98 60 L98 50 L136 50"/>
       ${impGlyph(78, 52)}${impGlyph(117, 42)}
-      <text class="ph" x="185" y="54" text-anchor="start">BUILD</text>
-      <text class="ph2" x="185" y="68" text-anchor="start">blocks raise imps</text>
+      <text class="ph" x="165" y="54" text-anchor="start">BUILD</text>
+      <text class="ph2" x="165" y="68" text-anchor="start">blocks raise imps</text>
       <path class="branch" d="M44 82 L44 106" marker-end="url(#kxArrDp)"/>
       ${impGlyph(38, 124)}${impGlyph(70, 124)}${impGlyph(102, 124)}${impGlyph(134, 124)}
-      <text class="ph" x="185" y="120" text-anchor="start">HOLD</text>
-      <text class="ph2" x="185" y="134" text-anchor="start">standing imps soak damage</text>
+      <text class="ph" x="165" y="120" text-anchor="start">HOLD</text>
+      <text class="ph2" x="165" y="134" text-anchor="start">standing imps soak damage</text>
       <path class="branch" d="M44 140 L44 164" marker-end="url(#kxArrDp)"/>
       <rect class="kx-window" x="28" y="174" width="200" height="54" rx="2"/>
       <text class="kx-window-lab" x="128" y="194" text-anchor="middle">CASH THE GUARD</text>
@@ -920,8 +920,8 @@
       <path class="gd-line" d="M20 76 L58 76 L58 64 L98 64 L98 52 L136 52"/>
       <path class="gd-shield" d="M71 52 h12 v8 a6 6 0 0 1 -12 0 Z"/>
       <path class="gd-shield" d="M110 40 h12 v8 a6 6 0 0 1 -12 0 Z"/>
-      <text class="ph" x="185" y="56" text-anchor="start">BUILD</text>
-      <text class="ph2" x="185" y="70" text-anchor="start">blocks stack Paragon</text>
+      <text class="ph" x="165" y="56" text-anchor="start">BUILD</text>
+      <text class="ph2" x="165" y="70" text-anchor="start">blocks stack Paragon</text>
       <path class="branch" d="M44 88 L44 112" marker-end="url(#gdArrVp)"/>
       <rect class="gd-window" x="28" y="122" width="200" height="56" rx="2"/>
       <text class="gd-window-lab" x="128" y="146" text-anchor="middle">PARAGON SMASH</text>
@@ -932,12 +932,12 @@
     "guardian/inspiration": `<svg viewBox="0 0 380 252" role="img" aria-label="Inspiration rhythm, phone ladder: Ballads build Tempo to three, Sound of War rings, Hero's March keeps it ringing, and the count restarts">
       <defs><marker id="gdArrIp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
       <circle class="gd-pip" cx="36" cy="48" r="7"/><circle class="gd-pip" cx="64" cy="48" r="7"/><circle class="gd-pip" cx="92" cy="48" r="7"/>
-      <text class="ph" x="185" y="44" text-anchor="start">BUILD</text>
-      <text class="ph2" x="185" y="58" text-anchor="start">Ballads · Tempo ×3</text>
+      <text class="ph" x="165" y="44" text-anchor="start">BUILD</text>
+      <text class="ph2" x="165" y="58" text-anchor="start">Ballads · Tempo ×3</text>
       <path class="branch" d="M44 62 L44 86" marker-end="url(#gdArrIp)"/>
       <circle class="gd-burst" cx="44" cy="112" r="11"/><circle class="gd-burst faint" cx="44" cy="112" r="19"/>
-      <text class="ph" x="185" y="108" text-anchor="start">SOUND OF WAR</text>
-      <text class="ph2" x="185" y="122" text-anchor="start">allies hit harder</text>
+      <text class="ph" x="165" y="108" text-anchor="start">SOUND OF WAR</text>
+      <text class="ph2" x="165" y="122" text-anchor="start">allies hit harder</text>
       <path class="branch" d="M44 138 L44 162" marker-end="url(#gdArrIp)"/>
       <rect class="gd-window" x="28" y="172" width="200" height="54" rx="2"/>
       <text class="gd-window-lab" x="128" y="192" text-anchor="middle">HERO'S MARCH</text>
@@ -948,12 +948,12 @@
     "guardian/gladiator": `<svg viewBox="0 0 380 230" role="img" aria-label="Gladiator rhythm, phone ladder: Ram builds Glory to three, the boosted Ram lands, and the wheel turns again">
       <defs><marker id="gdArrGp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
       <circle class="gd-pip" cx="36" cy="48" r="7"/><circle class="gd-pip" cx="64" cy="48" r="7"/><circle class="gd-pip" cx="92" cy="48" r="7"/>
-      <text class="ph" x="185" y="44" text-anchor="start">BUILD</text>
-      <text class="ph2" x="185" y="58" text-anchor="start">Ram builds Glory · ×3</text>
+      <text class="ph" x="165" y="44" text-anchor="start">BUILD</text>
+      <text class="ph2" x="165" y="58" text-anchor="start">Ram builds Glory · ×3</text>
       <path class="branch" d="M44 62 L44 86" marker-end="url(#gdArrGp)"/>
       <path class="refresh" d="M33 108 l11 -11 l11 11 l-11 11 Z"/>
-      <text class="ph" x="185" y="104" text-anchor="start">NET</text>
-      <text class="ph2" x="185" y="118" text-anchor="start">Centurion Strike crits</text>
+      <text class="ph" x="165" y="104" text-anchor="start">NET</text>
+      <text class="ph2" x="165" y="118" text-anchor="start">Centurion Strike crits</text>
       <path class="branch" d="M44 122 L44 146" marker-end="url(#gdArrGp)"/>
       <rect class="gd-window" x="28" y="156" width="200" height="54" rx="2"/>
       <text class="gd-window-lab" x="128" y="176" text-anchor="middle">BOOSTED RAM</text>
@@ -964,12 +964,12 @@
     "witch-hunter/boltslinger": `<svg viewBox="0 0 380 250" role="img" aria-label="Boltslinger rhythm, phone ladder: extra shots build Rage, Damnation converts the bar, Twilight Frenzy is the moving channel">
       <defs><marker id="whArrBp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
       <path class="wh-bolt" d="M28 42 l20 6 l-20 6 Z"/><path class="wh-bolt" d="M58 42 l20 6 l-20 6 Z"/><path class="wh-bolt" d="M88 42 l20 6 l-20 6 Z"/>
-      <text class="ph" x="185" y="44" text-anchor="start">BUILD</text>
-      <text class="ph2" x="185" y="58" text-anchor="start">extra shots build Rage</text>
+      <text class="ph" x="165" y="44" text-anchor="start">BUILD</text>
+      <text class="ph2" x="165" y="58" text-anchor="start">extra shots build Rage</text>
       <path class="branch" d="M44 62 L44 86" marker-end="url(#whArrBp)"/>
       <path class="refresh" d="M33 108 l11 -11 l11 11 l-11 11 Z"/>
-      <text class="ph" x="185" y="104" text-anchor="start">DAMNATION</text>
-      <text class="ph2" x="185" y="118" text-anchor="start">the bar becomes damage</text>
+      <text class="ph" x="165" y="104" text-anchor="start">DAMNATION</text>
+      <text class="ph2" x="165" y="118" text-anchor="start">the bar becomes damage</text>
       <path class="branch" d="M44 122 L44 146" marker-end="url(#whArrBp)"/>
       <rect class="wh-window" x="28" y="156" width="200" height="54" rx="2"/>
       <text class="wh-window-lab" x="128" y="176" text-anchor="middle">TWILIGHT FRENZY</text>
@@ -980,12 +980,12 @@
     "witch-hunter/houndmaster": `<svg viewBox="0 0 380 250" role="img" aria-label="Houndmaster rhythm, phone ladder: the pack fights beside you, Shadowblast feeds it, Decimate turns the hounds loose">
       <defs><marker id="whArrHp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
       ${impGlyph(38, 48)}${impGlyph(70, 48)}${impGlyph(102, 48)}
-      <text class="ph" x="185" y="44" text-anchor="start">THE PACK</text>
-      <text class="ph2" x="185" y="58" text-anchor="start">more hounds can join</text>
+      <text class="ph" x="165" y="44" text-anchor="start">THE PACK</text>
+      <text class="ph2" x="165" y="58" text-anchor="start">more hounds can join</text>
       <path class="branch" d="M44 62 L44 86" marker-end="url(#whArrHp)"/>
       <path class="refresh" d="M33 108 l11 -11 l11 11 l-11 11 Z"/>
-      <text class="ph" x="185" y="104" text-anchor="start">FEED</text>
-      <text class="ph2" x="185" y="118" text-anchor="start">Shadowblast · Shadow Rage</text>
+      <text class="ph" x="165" y="104" text-anchor="start">FEED</text>
+      <text class="ph2" x="165" y="118" text-anchor="start">Shadowblast · Shadow Rage</text>
       <path class="branch" d="M44 122 L44 146" marker-end="url(#whArrHp)"/>
       <rect class="wh-window" x="28" y="156" width="200" height="54" rx="2"/>
       <text class="wh-window-lab" x="128" y="176" text-anchor="middle">DECIMATE</text>
@@ -996,12 +996,12 @@
     "witch-hunter/black-knight": `<svg viewBox="0 0 380 250" role="img" aria-label="Black Knight rhythm, phone ladder: parries return health and Rage, an avoided hit unlocks Desecrate, the brands hold threat">
       <defs><marker id="whArrKp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
       <path class="wh-parry" d="M30 38 L60 60 M60 38 L30 60"/>
-      <text class="ph" x="185" y="44" text-anchor="start">PARRY</text>
-      <text class="ph2" x="185" y="58" text-anchor="start">health and Rage return</text>
+      <text class="ph" x="165" y="44" text-anchor="start">PARRY</text>
+      <text class="ph2" x="165" y="58" text-anchor="start">health and Rage return</text>
       <path class="branch" d="M44 68 L44 90" marker-end="url(#whArrKp)"/>
       <path class="refresh" d="M33 110 l11 -11 l11 11 l-11 11 Z"/>
-      <text class="ph" x="185" y="106" text-anchor="start">AVOID</text>
-      <text class="ph2" x="185" y="120" text-anchor="start">a dodge opens the door</text>
+      <text class="ph" x="165" y="106" text-anchor="start">AVOID</text>
+      <text class="ph2" x="165" y="120" text-anchor="start">a dodge opens the door</text>
       <path class="branch" d="M44 124 L44 146" marker-end="url(#whArrKp)"/>
       <rect class="wh-window" x="28" y="156" width="200" height="54" rx="2"/>
       <text class="wh-window-lab" x="128" y="176" text-anchor="middle">DESECRATE</text>
@@ -1014,9 +1014,9 @@
       <path class="wh-dawn" d="M24 62 L146 40"/>
       <path class="wh-dusk" d="M24 74 L146 52"/>
       <circle class="wh-sun" cx="70" cy="53" r="4.5"/><rect class="wh-moon" x="100" y="55" width="7" height="7" rx="1"/>
-      <text class="ph" x="170" y="40" text-anchor="start">BUILD</text>
-      <text class="ph2" x="170" y="54" text-anchor="start">fire builds Dawn</text>
-      <text class="ph2" x="170" y="67" text-anchor="start">steel builds Dusk</text>
+      <text class="ph" x="165" y="40" text-anchor="start">BUILD</text>
+      <text class="ph2" x="165" y="54" text-anchor="start">fire builds Dawn</text>
+      <text class="ph2" x="165" y="67" text-anchor="start">steel builds Dusk</text>
       <path class="branch" d="M44 86 L44 110" marker-end="url(#whArrIp)"/>
       <text class="thr-lab" x="34" y="130" text-anchor="start">20 · both</text>
       <path class="branch" d="M44 136 L44 148" marker-end="url(#whArrIp)"/>
