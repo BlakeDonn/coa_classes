@@ -49,7 +49,7 @@ window.COA_COPY = (() => {
     "Knight of Xoroth": { lab: "The engine — Demonfire", p: "Every Knight runs on Demonfire, fed by demons and blood." },
     "Barbarian": { lab: "The engine — Energy", p: "Every Barbarian runs on Energy; Enrage speeds the whole kit up." },
     "Bloodmage": { lab: "The engine — blood", p: "The spells cost blood; spent health returns as Thirst and Rage." },
-    "Chronomancer": { lab: "The engine — Timewalking", p: "Timewalking stores a past self, and Rewind returns you to it." },
+    "Chronomancer": { lab: "The engine — three clocks", p: "Each spec runs its own clock — DoT ramps, Echo Fragments, or Aeons — and Rewind is just the safety net." },
     "Felsworn": { lab: "The engine — Felfury", p: "Build Felfury, spend it in pairs, and bank six to unleash Inner Demon." },
     "Necromancer": { lab: "The engine — Life Force", p: "Life Force raises your undead; Runic Power gives them their orders." },
     "Primalist": { lab: "The engine — Rage", p: "Every Primalist runs on Rage; one active Boon tunes how you earn and spend it." },

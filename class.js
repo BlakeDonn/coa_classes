@@ -99,6 +99,16 @@
     ${thumbsHTML()}`;
   el("mast").style.setProperty("--class-color", color);
   document.body.classList.add("ry-e-col", "ry-v-t1", "ry-glow", "ry-k-airfam");
+  // One-line law guard: a role line that would clip (Sun Cleric at 390px) tightens
+  // instead — the ruled look everywhere else stays untouched.
+  const rolesEl = el("mast").querySelector(".cp-roles");
+  const fitRoles = () => {
+    if (!rolesEl) return;
+    rolesEl.classList.remove("tight");
+    if (rolesEl.scrollWidth > rolesEl.clientWidth) rolesEl.classList.add("tight");
+  };
+  fitRoles();
+  window.addEventListener("resize", fitRoles);
 
   // ---------- the seal (Cultist, Tinker) ----------
 
