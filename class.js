@@ -354,6 +354,13 @@
   const corrTicks = Array.from({ length: 36 }, (_, i) =>
     `<line class="tick" x1="${30 + i * 22}" y1="118" x2="${30 + i * 22}" y2="126"/>`).join("");
 
+  // Knight of Xoroth strip furniture: Demonfire embers and Defiance's banked imps.
+  const stripEmber = (x, y, s, lit) => `<g class="kx-sember${lit ? " lit" : ""}" transform="translate(${x} ${y}) scale(${s})">
+      <path class="pip-flame" d="M0 6 C-5.5 1 -3.5 -5 0 -10 C3.5 -5 5.5 1 0 6 Z"/></g>`;
+  const impGlyph = (x, y) => `<g class="kx-impg" transform="translate(${x} ${y})">
+      <path class="imp-body" d="M-6 6 h12 v-6 a6 6 0 0 0 -12 0 Z"/>
+      <path class="imp-horn" d="M-4 -5 l-2.5 -4 M4 -5 l2.5 -4"/></g>`;
+
   const STRIPS = {
     "cultist/godblade": {
       svg: `<svg viewBox="0 0 1000 158" role="img" aria-label="Godblade rhythm: build, hold at 60, one burst window at 100 that also endangers you, then rebuild">
@@ -428,6 +435,81 @@
       read: "You assemble layers before the fight matters, fire everything in one overlap, then rebuild. Layers only pay off if they hit the same pack.",
       eyes: "the ground your machines cover, and the pack the tank is stacking into them.",
     },
+    "knight-of-xoroth/hellfire": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Hellfire rhythm: Demonfire stacks climb to six, one unleash window with Rain of Chaos and Hellfire Form, then the climb restarts">
+        <text class="strip-note" x="986" y="18" text-anchor="end">the shape of the loop · not a rotation</text>
+        <line class="thr" x1="14" y1="44" x2="986" y2="44"/><text class="thr-lab" x="14" y="38">6 · the full bar</text>
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        <path class="kx-climb" d="M70 122 L420 56"/>
+        ${stripEmber(90, 118, .8)}${stripEmber(155, 106, .9)}${stripEmber(220, 94, 1)}
+        ${stripEmber(285, 82, 1.1)}${stripEmber(350, 69, 1.2)}${stripEmber(415, 56, 1.4, true)}
+        <rect class="kx-window" x="460" y="48" width="240" height="78" rx="2"/>
+        <text class="kx-window-lab" x="580" y="74" text-anchor="middle">UNLEASH</text>
+        <text class="ph2" x="580" y="92" text-anchor="middle" fill="#f3cdd4">Flames of Xoroth → Rain of Chaos · 9 s</text>
+        <text class="ph2" x="580" y="106" text-anchor="middle" fill="#f3cdd4">Hellfire Form 15 s · Seeking Flame free</text>
+        <path class="kx-climb" d="M760 122 L950 92"/>
+        ${stripEmber(790, 117, .8)}${stripEmber(855, 106, .9)}${stripEmber(920, 95, 1)}
+        <text class="ph" x="250" y="146" text-anchor="middle">BUILD</text>
+        <text class="ph2" x="250" y="160" text-anchor="middle">Seeking Flame stacks Demonfire · +1 each, faster in Form</text>
+        <text class="ph" x="855" y="146" text-anchor="middle">…REBUILD</text>
+      </svg>`,
+      read: "Stacks climb one strike at a time toward six, then the whole bar goes out in one unleash. Rain of Chaos needs the full six — a thin spend never calls it.",
+      eyes: "the Demonfire count, then the Form timer; the number six matters more than the target.",
+    },
+    "knight-of-xoroth/war": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="War rhythm: a short repeating loop — Gore charges build Demonfire, spending boosts the next Gores for twelve seconds, a free Meatsaw restocks the bar, and the wheel turns again">
+        <defs><marker id="kxArrW" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+        <text class="strip-note" x="986" y="18" text-anchor="end">the shape of the loop · not a rotation</text>
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        <circle class="kx-charge" cx="70" cy="112" r="7"/><circle class="kx-charge" cx="102" cy="112" r="7"/>
+        <text class="ph2" x="86" y="92" text-anchor="middle">Gore ×2 · 8 s</text>
+        <path class="refresh" d="M140 104 l10 -10 l10 10 l-10 10 Z"/><text class="refresh-lab" x="150" y="80" text-anchor="middle">spend</text>
+        <rect class="kx-window" x="180" y="58" width="140" height="68" rx="2"/>
+        <text class="kx-window-lab" x="250" y="82" text-anchor="middle">GORES +25%</text>
+        <text class="ph2" x="250" y="100" text-anchor="middle" fill="#f3cdd4">12 s → free Meatsaw</text>
+        ${stripEmber(350, 100, 1)}
+        <path class="branch" d="M355 112 C 375 128, 395 128, 412 118" marker-end="url(#kxArrW)"/>
+        <circle class="kx-charge" cx="420" cy="112" r="7"/><circle class="kx-charge" cx="452" cy="112" r="7"/>
+        <path class="refresh" d="M490 104 l10 -10 l10 10 l-10 10 Z"/>
+        <rect class="kx-window" x="530" y="58" width="140" height="68" rx="2"/>
+        <text class="kx-window-lab" x="600" y="82" text-anchor="middle">GORES +25%</text>
+        <text class="ph2" x="600" y="100" text-anchor="middle" fill="#f3cdd4">wounds stack · 10 s</text>
+        ${stripEmber(700, 100, 1)}
+        <path class="branch" d="M705 112 C 725 128, 745 128, 762 118" marker-end="url(#kxArrW)"/>
+        <circle class="kx-charge" cx="770" cy="112" r="7"/><circle class="kx-charge" cx="802" cy="112" r="7"/>
+        <path class="refresh" d="M840 104 l10 -10 l10 10 l-10 10 Z"/>
+        <rect class="kx-window" x="880" y="58" width="106" height="68" rx="2"/>
+        <text class="ph" x="205" y="146" text-anchor="middle">SPEND &amp; RELOAD</text>
+        <text class="ph2" x="205" y="160" text-anchor="middle">spending Demonfire hands Gore a charge back</text>
+        <text class="ph" x="555" y="146" text-anchor="middle">…AND TURN AGAIN</text>
+        <text class="ph2" x="555" y="160" text-anchor="middle">the free Meatsaw restocks the bar for the next turn</text>
+      </svg>`,
+      read: "There is no long climb — just a short wheel that keeps turning. Spending Demonfire hands Gore a charge back and ends in a free Meatsaw, so every payoff reloads the loop that feeds the next one.",
+      eyes: "Gore's two charges and the 12-second boost timer; the wound stacks on your target come second.",
+    },
+    "knight-of-xoroth/defiance": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Defiance rhythm: blocks bank imps, active imps guard you, sacrificing them cashes the guard into healing and an absorb, then the bank rebuilds">
+        <text class="strip-note" x="986" y="18" text-anchor="end">the shape of the loop · not a rotation</text>
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        <path class="kx-line" d="M40 124 L120 124 L120 110 L200 110 L200 96 L280 96 L280 82 L560 82"/>
+        ${impGlyph(160, 102)}${impGlyph(240, 88)}
+        ${impGlyph(320, 74)}${impGlyph(370, 74)}${impGlyph(420, 74)}${impGlyph(470, 74)}
+        <text class="ph" x="420" y="40" text-anchor="middle">HOLD</text>
+        <text class="ph2" x="420" y="54" text-anchor="middle">active imps blunt Physical &amp; Magic damage · crit blocks rise</text>
+        <rect class="kx-window" x="580" y="48" width="180" height="78" rx="2"/>
+        <text class="kx-window-lab" x="670" y="64" text-anchor="middle">CASH THE GUARD</text>
+        <text class="ph2" x="670" y="78" text-anchor="middle" fill="#f3cdd4">imps become healing + an absorb</text>
+        <path class="kx-line" d="M560 82 L596 82 L640 124 L760 124"/>
+        <path class="kx-heal" d="M610 124 C640 84 706 84 736 124 Z"/>
+        <path class="kx-line" d="M790 124 L850 124 L850 110 L920 110 L920 96 L960 96"/>
+        ${impGlyph(885, 102)}
+        <text class="ph" x="170" y="146" text-anchor="middle">BUILD</text>
+        <text class="ph2" x="170" y="160" text-anchor="middle">a block can raise an imp · Shieldgore feeds the bar two at a time</text>
+        <text class="ph" x="875" y="146" text-anchor="middle">…REBUILD</text>
+      </svg>`,
+      read: "Blocks bank imps, and standing imps are your armor. Sacrificial Circle cashes them out as healing — so you are always choosing between keeping the guard and spending it.",
+      eyes: "your imp count and the damage coming in — you time the sacrifice off both.",
+    },
   };
 
   // Authored-to-fit phone redraws (S2): same topology, fewer labels, no scroll.
@@ -488,6 +570,58 @@
       <text class="ph2" x="85" y="184" text-anchor="middle">layers must hit the same pack</text>
       <text class="ph" x="210" y="170" text-anchor="middle">SPARKED &amp; READY</text>
       <text class="ph" x="332" y="170" text-anchor="middle">REBUILD</text>
+    </svg>`,
+    "knight-of-xoroth/hellfire": `<svg viewBox="0 0 380 206" role="img" aria-label="Hellfire rhythm, phone: Demonfire stacks climb to six, one unleash window with Rain of Chaos and Hellfire Form, then the climb restarts">
+      <text class="strip-note" x="372" y="14" text-anchor="end">shape, not rotation</text>
+      <line class="thr" x1="8" y1="44" x2="372" y2="44"/><text class="thr-lab" x="8" y="37">6 · full bar</text>
+      <line class="ax" x1="8" y1="150" x2="372" y2="150"/>
+      <path class="kx-climb" d="M20 146 L200 60"/>
+      ${stripEmber(35, 139, .7)}${stripEmber(68, 123, .8)}${stripEmber(101, 107, .9)}
+      ${stripEmber(134, 92, 1)}${stripEmber(167, 76, 1.1)}${stripEmber(197, 61, 1.25, true)}
+      <rect class="kx-window" x="215" y="48" width="110" height="102" rx="2"/>
+      <text class="kx-window-lab" x="270" y="76" text-anchor="middle">UNLEASH</text>
+      <text class="ph2" x="270" y="94" text-anchor="middle" fill="#f3cdd4">Rain of Chaos · 9 s</text>
+      <text class="ph2" x="270" y="108" text-anchor="middle" fill="#f3cdd4">Form 15 s</text>
+      <text class="ph2" x="270" y="122" text-anchor="middle" fill="#f3cdd4">builder runs free</text>
+      <path class="kx-climb" d="M340 146 L372 132"/>
+      ${stripEmber(358, 138, .8)}
+      <text class="ph" x="110" y="170" text-anchor="middle">BUILD</text>
+      <text class="ph2" x="110" y="184" text-anchor="middle">Seeking Flame · +1 each</text>
+      <text class="ph2" x="270" y="170" text-anchor="middle">at six, the whole bar goes out</text>
+    </svg>`,
+    "knight-of-xoroth/war": `<svg viewBox="0 0 380 206" role="img" aria-label="War rhythm, phone: a short repeating loop — Gore charges build Demonfire, spending boosts the next Gores, a free Meatsaw restocks the bar">
+      <defs><marker id="kxArrWp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <text class="strip-note" x="372" y="14" text-anchor="end">shape, not rotation</text>
+      <line class="ax" x1="8" y1="150" x2="372" y2="150"/>
+      <circle class="kx-charge" cx="48" cy="118" r="7"/><circle class="kx-charge" cx="76" cy="118" r="7"/>
+      <text class="ph2" x="62" y="96" text-anchor="middle">Gore ×2 · 8 s</text>
+      <path class="refresh" d="M110 110 l9 -9 l9 9 l-9 9 Z"/><text class="refresh-lab" x="119" y="86" text-anchor="middle">spend</text>
+      <rect class="kx-window" x="148" y="54" width="118" height="72" rx="2"/>
+      <text class="kx-window-lab" x="207" y="82" text-anchor="middle">GORES +25%</text>
+      <text class="ph2" x="207" y="100" text-anchor="middle" fill="#f3cdd4">12 s</text>
+      ${stripEmber(292, 104, 1)}
+      <text class="ph2" x="302" y="84" text-anchor="middle">free Meatsaw</text>
+      <path class="branch" d="M300 116 C 260 156, 110 156, 52 130" marker-end="url(#kxArrWp)"/>
+      <text class="ph" x="150" y="180" text-anchor="middle">SPEND &amp; RELOAD</text>
+      <text class="ph2" x="150" y="194" text-anchor="middle">every payoff reloads the loop</text>
+      <text class="ph2" x="300" y="180" text-anchor="middle">…and again</text>
+    </svg>`,
+    "knight-of-xoroth/defiance": `<svg viewBox="0 0 380 206" role="img" aria-label="Defiance rhythm, phone: blocks bank imps, imps guard you, sacrificing them cashes the guard into healing, then the bank rebuilds">
+      <text class="strip-note" x="372" y="14" text-anchor="end">shape, not rotation</text>
+      <line class="ax" x1="8" y1="150" x2="372" y2="150"/>
+      <path class="kx-line" d="M16 148 L60 148 L60 136 L106 136 L106 124 L152 124 L152 112 L210 112"/>
+      ${impGlyph(83, 128)}${impGlyph(129, 116)}${impGlyph(175, 104)}${impGlyph(200, 104)}
+      <text class="ph" x="150" y="84" text-anchor="middle">HOLD</text>
+      <rect class="kx-window" x="222" y="56" width="110" height="94" rx="2"/>
+      <text class="kx-window-lab" x="277" y="80" text-anchor="middle">CASH</text>
+      <text class="ph2" x="277" y="96" text-anchor="middle" fill="#f3cdd4">imps become healing</text>
+      <text class="ph2" x="277" y="110" text-anchor="middle" fill="#f3cdd4">+ an absorb</text>
+      <path class="kx-line" d="M210 112 L222 112 L246 148 L332 148"/>
+      <path class="kx-heal" d="M232 148 C252 106 302 106 322 148 Z"/>
+      <path class="kx-line" d="M344 148 L362 148 L362 136 L376 136"/>
+      <text class="ph" x="100" y="170" text-anchor="middle">BUILD</text>
+      <text class="ph2" x="100" y="184" text-anchor="middle">blocks raise imps</text>
+      <text class="ph2" x="190" y="200" text-anchor="middle">keep the guard, or spend it</text>
     </svg>`,
   };
 

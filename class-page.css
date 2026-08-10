@@ -108,6 +108,32 @@
 .tk-node.active .tk-icon-line { stroke: #ffe09a; }
 .tk-node.active .node-name { fill: #f4cf7d; }
 
+/* Knight of Xoroth: the same slot and interaction, a six-ember Demonfire bar */
+.cd-kox-seal { border-left-color: #6d324080;
+  background: radial-gradient(circle at 50% 46%, #e14f6426, transparent 62%); }
+.cd-kox-seal::before { border-color: #a3455550; }
+.kx-orbit { fill: none; stroke: #a03a4c; stroke-width: 1; opacity: .3; }
+.kx-hex { fill: none; stroke: #d8a05f; stroke-width: 1; opacity: .5; stroke-dasharray: 2 5; }
+.kx-link { fill: none; stroke: #7c3644; stroke-width: 1.2; opacity: .55; }
+.kx-pip .pip-flame { fill: url(#kxEmber); stroke: #e14f64; stroke-width: .8; opacity: .92; }
+.kx-pip .pip-dot { fill: #ffd98a; opacity: .8; }
+.kx-pip.crown .pip-flame { stroke: #f5c96e; filter: url(#kxGlow); }
+.kx-coreback { fill: #1c0d12; stroke: #b8465a; stroke-width: 1.2; }
+.kx-flame { fill: url(#kxCore); filter: url(#kxGlow); }
+.kx-flame-in { fill: #f6cf7f; opacity: .9; }
+.kx-center-label { fill: #f2d9dc; font: 700 11px Georgia, serif; letter-spacing: .18em; }
+.kx-center-sub { fill: #d8a05f; font: 700 6px Arial, sans-serif; letter-spacing: .14em; }
+.kx-threshold { fill: #e8b871; font: 700 8px Arial, sans-serif; letter-spacing: .1em; }
+.kx-feed { fill: none; stroke: #bfa96e; stroke-width: 1.1; opacity: .6; stroke-dasharray: 4 4; }
+.kx-feed-lab { fill: #bfa96e; font: 700 8px Arial, sans-serif; letter-spacing: .16em; }
+.kx-legend { fill: #a3695f; font: 700 6px Arial, sans-serif; letter-spacing: .13em; opacity: .75; }
+.kx-node .node-ring { fill: #191014; stroke: #6d3240; }
+.kx-node .node-dot { fill: #b34a5c; }
+.kx-node:hover .node-ring, .kx-node:focus-visible .node-ring,
+.kx-node.active .node-ring { fill: #2b151b; stroke: #ed99a5; stroke-width: 2; filter: url(#kxGlow); }
+.kx-node.active .node-dot { fill: #e1b86d; }
+.kx-node.active .node-name { fill: #f1cb6e; }
+
 /* the col engine: the seal claims the masthead's full height at its own aspect ratio.
    --seal-slot marks where the TEXT COLUMN ends; the T1 thumb anchors to it. */
 @media (min-width: 901px) {
@@ -233,6 +259,16 @@ body.ry-glow .rail-card.sel {
 .ry-block .dm-window { fill: rgba(217,164,65,.36); stroke: #d9a441; stroke-width: 1.8; }
 .ry-block .dm-window-lab { fill: #f2dcae; font-size: 12.5px; font-weight: 700; letter-spacing: .1em; }
 .ry-block .idle { fill: none; stroke: #4d4030; stroke-width: 1; stroke-dasharray: 3 4; }
+.ry-block .kx-climb { fill: none; stroke: #a03a4c; stroke-width: 1.4; opacity: .8; }
+.ry-block .kx-sember .pip-flame { fill: rgba(225,79,100,.5); stroke: #e14f64; stroke-width: 1.1; }
+.ry-block .kx-sember.lit .pip-flame { fill: rgba(240,176,96,.7); stroke: #f0b060; }
+.ry-block .kx-window { fill: rgba(225,79,100,.3); stroke: #e14f64; stroke-width: 1.8; }
+.ry-block .kx-window-lab { fill: #f6ccd3; font-size: 12.5px; font-weight: 700; letter-spacing: .1em; }
+.ry-block .kx-charge { fill: rgba(216,160,95,.4); stroke: #d8a05f; stroke-width: 1.6; }
+.ry-block .kx-impg .imp-body { fill: rgba(240,176,96,.28); stroke: #d99b52; stroke-width: 1.2; }
+.ry-block .kx-impg .imp-horn { fill: none; stroke: #d99b52; stroke-width: 1.2; }
+.ry-block .kx-heal { fill: rgba(127,201,138,.2); stroke: #7fc98a; stroke-width: 1.4; }
+.ry-block .kx-line { fill: none; stroke: #a3803e; stroke-width: 1.3; }
 
 /* ================= 5 · phone (≤560px) ================= */
 
