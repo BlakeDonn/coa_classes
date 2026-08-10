@@ -244,6 +244,31 @@
 .sb-node.active .node-dot { fill: #e1b86d; }
 .sb-node.active .node-name { fill: #f1cb6e; }
 
+/* Reaper: the same slot and interaction, the scythe-ring soul ladder */
+.cd-rp-seal { border-left-color: #45505a80;
+  background: radial-gradient(circle at 50% 46%, #93a2b21c, transparent 60%); }
+.cd-rp-seal::before { border-color: #5d6b7750; }
+.rp-haft { stroke: #6b5a44; stroke-width: 3; stroke-linecap: round; opacity: .8; }
+.rp-ring { fill: none; stroke: #93a2b2; stroke-width: 2.4; filter: url(#rpGlow); }
+.rp-notch { stroke: #93a2b2; stroke-width: 1.2; opacity: .8; }
+.rp-band { fill: none; stroke: #5d6b77; stroke-width: 1; opacity: .5; stroke-dasharray: 2 5; }
+.rp-soul { fill: #c0c9d2; opacity: .9; filter: url(#rpGlow); }
+.rp-halo { fill: none; stroke: #dfe6ec; stroke-width: 2; opacity: .75; filter: url(#rpGlow); }
+.rp-link { fill: none; stroke: #45505a; stroke-width: 1.2; opacity: .6; }
+.rp-threshold { fill: #aeb9c4; font: 700 8px Arial, sans-serif; letter-spacing: .1em; }
+.rp-center-label { fill: #e8edf2; font: 700 11px Georgia, serif; letter-spacing: .18em;
+  paint-order: stroke; stroke: #0b0e11; stroke-width: 4px; stroke-linejoin: round; }
+.rp-center-sub { fill: #7f8d99; font: 700 6px Arial, sans-serif; letter-spacing: .14em;
+  paint-order: stroke; stroke: #0b0e11; stroke-width: 2.5px; stroke-linejoin: round; }
+.rp-legend { fill: #77828d; font: 700 6px Arial, sans-serif; letter-spacing: .13em; opacity: .75; }
+.rp-node .node-ring { fill: #14181d; stroke: #45505a; }
+.rp-node .node-dot { fill: #7f8d99; }
+.rp-node .rp-tag { fill: #aeb9c4; font: 700 7px Arial, sans-serif; letter-spacing: .06em; }
+.rp-node:hover .node-ring, .rp-node:focus-visible .node-ring,
+.rp-node.active .node-ring { fill: #1d232a; stroke: #c0c9d2; stroke-width: 2; filter: url(#rpGlow); }
+.rp-node.active .node-dot { fill: #e1b86d; }
+.rp-node.active .node-name { fill: #f1cb6e; }
+
 /* the col engine: the seal claims the masthead's full height at its own aspect ratio.
    --seal-slot marks where the TEXT COLUMN ends; the T1 thumb anchors to it. */
 @media (min-width: 901px) {
@@ -410,6 +435,13 @@ body.ry-glow .rail-card.sel {
 .ry-block .sb-window-lab { fill: #cfe6ff; font-size: 12.5px; font-weight: 700; letter-spacing: .1em; }
 .ry-block .sb-orb2 { fill: none; stroke: #98c9ff; stroke-width: 1.6; }
 .ry-block .sb-orb2.faint { opacity: .4; stroke-dasharray: 3 4; }
+.ry-block .rp-line { fill: none; stroke: #7f8d99; stroke-width: 1.4; }
+.ry-block .rp-line.dim { opacity: .45; }
+.ry-block .rp-souldmk { fill: rgba(192,201,210,.7); stroke: #c0c9d2; stroke-width: 1; }
+.ry-block .rp-window { fill: rgba(147,162,178,.2); stroke: #93a2b2; stroke-width: 1.8; }
+.ry-block .rp-window-lab { fill: #dde4ea; font-size: 12.5px; font-weight: 700; letter-spacing: .1em; }
+.ry-block .rp-gate { stroke: #c96a5f; stroke-width: 1.4; stroke-dasharray: 5 4; }
+.ry-block .rp-wave { fill: rgba(147,162,178,.16); stroke: #93a2b2; stroke-width: 1.5; }
 
 /* ================= 5 · phone (≤560px) ================= */
 

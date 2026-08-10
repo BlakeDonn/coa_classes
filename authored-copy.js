@@ -99,6 +99,11 @@ window.COA_COPY = (() => {
       lede: "Every Hunter runs on Rage; each spec layers its own marks and stacks on top.",
       text: "Build Rage from your own attacks and spend it on your spec's payoffs; Tonics restore it. The layer on top is the spec's own: Slinging Bolts, Shadowhounds, Shadow Brands, or Dawn and Dusk.",
     },
+    reaper: {
+      label: "The engine — the soul ladder",
+      lede: "Every Reaper climbs the same ladder: three Fragments to a Soul, three Souls to an Infusion.",
+      text: "Reap generates a Soul Fragment and Runic Power; the ladder converts three and three upward. The rungs pay on their own: holding three Souls guards you, and Spectral Scythe spends them.",
+    },
     stormbringer: {
       label: "The engine — Static",
       lede: "Static climbs as you cast: above 70 your spells supercharge, at 100 the storm turns on you.",
@@ -135,6 +140,9 @@ window.COA_COPY = (() => {
     "witch-hunter/houndmaster": ["Loose", "Hounds fight beside you; Shadowblast feeds them Shadow Rage, and Decimate turns them loose."],
     "witch-hunter/black-knight": ["Riposte", "Defense pays: parries restore health and Rage, and an avoided hit unlocks Desecrate."],
     "witch-hunter/inquisition": ["Balance", "Fire builds Dawn and steel builds Dusk; at twenty of each, Cycle of Despair consumes both."],
+    "reaper/domination": ["Muster", "Bank Reaped Souls to three: the bank guards you while it stands, and Spectral Scythe spends it all."],
+    "reaper/harvest": ["Execute", "Slaughter earns Souls only below 35% health; Extinction lifts that gate for ten seconds."],
+    "reaper/soul": ["Flood", "Dirge feeds the ladder two Fragments a swing; inside Endbringer it pours whole Souls instead."],
     "stormbringer/lightning": ["Discharge", "Run the bar as high as you dare, then Arm of Thorim empties all of it — damage rising with the Static held."],
     "stormbringer/maelstrom": ["Compound", "Shock builds Conductive to six; Torrential Wrath spends 50 Static to consume all six at once."],
     "stormbringer/wind": ["Feed", "Your Air Elemental generates Static as it fights, and you spend it straight back into the pet and the party."],

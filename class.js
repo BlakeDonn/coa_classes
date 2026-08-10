@@ -187,6 +187,7 @@
     <text class="cd-threshold" x="210" y="232" text-anchor="middle">100 · CROSS</text>
     ${cultistNodes.map(s => nodeSvg(s)).join("")}`;
 
+
   // Phone: the ruled 420×224 tightened arrangement — orbits 60/77, eye .66,
   // node rows raised. Nothing removed.
   const CULTIST_PHONE_NODES = [
@@ -433,6 +434,57 @@
     <text class="sb-center-sub" x="210" y="191" text-anchor="middle">SPEND BEFORE 100</text>
     ${SB_PHONE_NODES.map(s => sbNodeSvg(s, 33, 44)).join("")}`;
 
+
+  // Reaper: the scythe-ring soul ladder — a broken blade ring with nine notches in
+  // three arcs, a middle band of three soul marks, and the Infusion halo crowning
+  // the gap (packet: seal_concept, batch 1).
+  const rpNodes = [
+    { id: "reaper/harvest", name: "Harvest", verb: "EXECUTE", tag: "35%", x: 73, y: 66 },
+    { id: "reaper/soul", name: "Soul", verb: "FLOOD", tag: "2 FRAG", x: 347, y: 66 },
+    { id: "reaper/domination", name: "Domination", verb: "MUSTER", tag: "3 SOULS", x: 210, y: 206 },
+  ];
+  const RP_DEFS = `<defs>
+      <filter id="rpGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    </defs>`;
+  const rpNodeSvg = (s, ny, vy) => `<g class="cd-node rp-node" data-cd-spec="${s.id}" role="button" tabindex="0" transform="translate(${s.x} ${s.y})">
+      <circle class="node-ring" r="29"/><circle class="node-dot" r="4"/>
+      <text class="rp-tag" text-anchor="middle" y="18">${s.tag}</text>
+      <text class="node-name" text-anchor="middle" y="${ny}">${s.name}</text>
+      <text class="node-verb" text-anchor="middle" y="${vy}">${s.verb}</text></g>`;
+  const RP_DESKTOP = `<title id="rp-seal-title">The soul ladder: nine notches, three souls, one Infusion crown</title>
+    ${RP_DEFS}
+    <line class="rp-haft" x1="162" y1="196" x2="258" y2="28"/>
+    <path class="rp-ring" d="M231.2 53.7 A62 62 0 1 1 188.8 53.7"/>
+    <line class="rp-notch" x1="252.9" y1="76.0" x2="257.5" y2="72.1"/><line class="rp-notch" x1="265.8" y1="107.1" x2="271.8" y2="106.6"/><line class="rp-notch" x1="258.5" y1="140.0" x2="263.7" y2="143.0"/><line class="rp-notch" x1="229.2" y1="164.6" x2="231.2" y2="170.3"/><line class="rp-notch" x1="195.5" y1="166.1" x2="194.0" y2="171.9"/><line class="rp-notch" x1="167.1" y1="148.0" x2="162.5" y2="151.9"/><line class="rp-notch" x1="154.0" y1="112.0" x2="148.0" y2="112.0"/><line class="rp-notch" x1="164.1" y1="79.9" x2="159.2" y2="76.4"/><line class="rp-notch" x1="190.8" y1="59.4" x2="188.8" y2="53.7"/>
+    <circle class="rp-band" cx="210" cy="112" r="40"/>
+    <path class="rp-soul" d="M244.6 126.0 L249.6 132.0 L244.6 138.0 L239.6 132.0 Z"/><path class="rp-soul" d="M175.4 126.0 L180.4 132.0 L175.4 138.0 L170.4 132.0 Z"/><path class="rp-soul" d="M210.0 66.0 L215.0 72.0 L210.0 78.0 L205.0 72.0 Z"/>
+    <path class="rp-halo" d="M162.4 55.3 A74 74 0 0 1 257.6 55.3"/>
+    <path class="rp-link" d="M160 90 L102 70"/><path class="rp-link" d="M260 90 L318 70"/>
+    <path class="rp-link" d="M210 174 L210 177"/>
+    <text class="rp-threshold" x="140" y="34" text-anchor="middle">3 · HOLD</text>
+    <text class="rp-threshold" x="280" y="34" text-anchor="middle">3 · SPEND</text>
+    <text class="rp-center-label" x="210" y="108" text-anchor="middle">SOUL LADDER</text>
+    <text class="rp-center-sub" x="210" y="121" text-anchor="middle">FRAGMENTS → SOULS → INFUSION</text>
+    <text class="rp-legend" x="16" y="22">REAP · CONVERT · CROWN</text>
+    ${rpNodes.map(s => rpNodeSvg(s, s.y > 150 ? 38 : 42, s.y > 150 ? 50 : 54)).join("")}`;
+  const RP_PHONE_NODES = rpNodes.map(s => ({ ...s, y: s.y > 150 ? 178 : 58 }));
+  const RP_PHONE = `<title id="rp-seal-title">The soul ladder: nine notches, three souls, one Infusion crown</title>
+    ${RP_DEFS}
+    <line class="rp-haft" x1="168" y1="168" x2="252" y2="26"/>
+    <path class="rp-ring" d="M227.8 47.1 A52 52 0 1 1 192.2 47.1"/>
+    <line class="rp-notch" x1="245.2" y1="66.4" x2="249.8" y2="62.6"/><line class="rp-notch" x1="255.8" y1="92.0" x2="261.8" y2="91.5"/><line class="rp-notch" x1="249.8" y1="119.0" x2="255.0" y2="122.0"/><line class="rp-notch" x1="225.7" y1="139.2" x2="227.8" y2="144.9"/><line class="rp-notch" x1="198.1" y1="140.4" x2="196.5" y2="146.2"/><line class="rp-notch" x1="174.8" y1="125.6" x2="170.2" y2="129.4"/><line class="rp-notch" x1="164.0" y1="96.0" x2="158.0" y2="96.0"/><line class="rp-notch" x1="172.3" y1="69.6" x2="167.4" y2="66.2"/><line class="rp-notch" x1="194.3" y1="52.8" x2="192.2" y2="47.1"/>
+    <circle class="rp-band" cx="210" cy="96" r="33"/>
+    <path class="rp-soul" d="M238.6 106.5 L243.6 112.5 L238.6 118.5 L233.6 112.5 Z"/><path class="rp-soul" d="M181.4 106.5 L186.4 112.5 L181.4 118.5 L176.4 112.5 Z"/><path class="rp-soul" d="M210.0 57.0 L215.0 63.0 L210.0 69.0 L205.0 63.0 Z"/>
+    <path class="rp-halo" d="M170.1 48.5 A62 62 0 0 1 249.9 48.5"/>
+    <path class="rp-link" d="M164 78 L102 62"/><path class="rp-link" d="M256 78 L318 62"/>
+    <path class="rp-link" d="M210 148 L210 149"/>
+    <text class="rp-threshold" x="140" y="26" text-anchor="middle">3 · HOLD</text>
+    <text class="rp-threshold" x="280" y="26" text-anchor="middle">3 · SPEND</text>
+    <text class="rp-center-label" x="210" y="93" text-anchor="middle">SOUL LADDER</text>
+    <text class="rp-center-sub" x="210" y="105" text-anchor="middle">FRAGMENTS → SOULS → INFUSION</text>
+    <text class="rp-legend" x="14" y="20">REAP · CONVERT · CROWN</text>
+    ${RP_PHONE_NODES.map(s => rpNodeSvg(s, 33, 44)).join("")}`;
+
   // Phone: the ruled 420×224 tightened arrangement — ring 46, core .66, rows raised.
   const KOX_PHONE_NODES = [
     { id: "knight-of-xoroth/hellfire", name: "Hellfire", verb: "UNLEASH", x: 73, y: 60 },
@@ -482,6 +534,11 @@
     el("mast").insertAdjacentHTML("beforeend",
       `<div class="cd-stage cd-seal ry-reseal cd-wh-seal" aria-label="Witch Hunter class engine diagram">
         <svg viewBox="0 0 420 260" role="img" aria-labelledby="wh-seal-title">${WH_DESKTOP}</svg></div>`);
+  } else if (cSlug === "reaper") {
+    el("mast").classList.add("cd-with-seal");
+    el("mast").insertAdjacentHTML("beforeend",
+      `<div class="cd-stage cd-seal ry-reseal cd-rp-seal" aria-label="Reaper class engine diagram">
+        <svg viewBox="0 0 420 260" role="img" aria-labelledby="rp-seal-title">${RP_DESKTOP}</svg></div>`);
   } else if (cSlug === "stormbringer") {
     el("mast").classList.add("cd-with-seal");
     el("mast").insertAdjacentHTML("beforeend",
@@ -511,6 +568,7 @@
     "witch-hunter/boltslinger": "wheel", "witch-hunter/houndmaster": "bank",
     "witch-hunter/black-knight": "wheel", "witch-hunter/inquisition": "pips",
     "stormbringer/lightning": "spike", "stormbringer/maelstrom": "pips", "stormbringer/wind": "wheel",
+    "reaper/domination": "bank", "reaper/harvest": "spike", "reaper/soul": "wave",
   };
   function topoGlyph(kind) {
     const art = {
@@ -934,6 +992,68 @@
         "every later Static spend adds 3 seconds to the window"],
       eyes: "the pet's Invigoration stacks · the Unshackle timer",
     },
+    "reaper/domination": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Domination rhythm: Reaped Souls bank to three, the held bank guards you, then Spectral Scythe spends it all">
+        <line class="thr" x1="14" y1="44" x2="480" y2="44"/><text class="thr-lab" x="14" y="38">3 · souls held</text>
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        <path class="rp-line" d="M40 124 L130 124 L130 98 L250 98 L250 70 L460 70"/>
+        <path class="rp-souldmk" d="M190 92 L196 98 L190 104 L184 98 Z"/>
+        <path class="rp-souldmk" d="M310 64 L316 70 L310 76 L304 70 Z"/>
+        <path class="rp-souldmk" d="M370 64 L376 70 L370 76 L364 70 Z"/>
+        <text class="ph" x="180" y="146" text-anchor="middle">BANK</text>
+        <text class="ph2" x="180" y="160" text-anchor="middle">Dreadwake hands you a whole Soul</text>
+        <text class="ph" x="380" y="48" text-anchor="middle">HOLD · GUARDED</text>
+        <rect class="rp-window" x="560" y="48" width="210" height="78" rx="2"/>
+        <text class="rp-window-lab" x="665" y="76" text-anchor="middle">SPECTRAL SCYTHE</text>
+        <text class="ph2" x="665" y="94" text-anchor="middle" fill="#dde4ea">one scythe per Soul held · 20 s</text>
+        <path class="rp-line" d="M810 124 L890 124 L890 108 L960 108"/>
+        <text class="ph" x="880" y="146" text-anchor="middle">REBUILD</text>
+      </svg>`,
+      bullets: ["Dreadwake skips the fragment step — a whole Reaped Soul per cast",
+        "holding three Souls cuts physical damage 10% and heals 1% every 2 seconds",
+        "Spectral Scythe spends the whole bank: one scythe per Soul, for 20 seconds"],
+      eyes: "your Soul count · the ten-second guard window",
+    },
+    "reaper/harvest": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Harvest rhythm: Slaughter only fires below 35% target health; Extinction lifts that gate for ten seconds">
+        <defs><marker id="rpArrH" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        <line class="rp-gate" x1="470" y1="40" x2="470" y2="126"/>
+        <text class="thr-lab" x="470" y="32" text-anchor="middle">35% · the gate</text>
+        <path class="rp-line dim" d="M40 100 L440 100"/>
+        <text class="ph" x="230" y="146" text-anchor="middle">BUILD</text>
+        <text class="ph2" x="230" y="160" text-anchor="middle">fragments tick · Slaughter stays locked</text>
+        <rect class="rp-window" x="510" y="48" width="230" height="78" rx="2"/>
+        <text class="rp-window-lab" x="625" y="76" text-anchor="middle">EXECUTE</text>
+        <text class="ph2" x="625" y="94" text-anchor="middle" fill="#dde4ea">Slaughter earns a Soul per strike</text>
+        <path class="branch" d="M310 84 C 380 44, 470 40, 540 44" marker-end="url(#rpArrH)"/>
+        <text class="ph2" x="420" y="56" text-anchor="middle">EXTINCTION · 10 s lifts the gate</text>
+        <text class="ph" x="860" y="146" text-anchor="middle">…AND THE LADDER CLIMBS</text>
+      </svg>`,
+      bullets: ["Slaughter earns Souls, but only on a target below 35% health",
+        "Extinction lifts that rule for ten seconds",
+        "Crow's Harvest takes up to three Fragments off one swing"],
+      eyes: "the target's health bar · whether Extinction is up",
+    },
+    "reaper/soul": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Soul rhythm: stalk quietly, then Endbringer floods the ladder with whole Souls for fifteen seconds">
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        <path class="rp-line dim" d="M40 110 L360 110"/>
+        <text class="ph" x="190" y="146" text-anchor="middle">STALK</text>
+        <text class="ph2" x="190" y="160" text-anchor="middle">Dirge · 2 Fragments a swing</text>
+        <rect class="rp-window" x="420" y="40" width="280" height="86" rx="2"/>
+        <text class="rp-window-lab" x="560" y="68" text-anchor="middle">ENDBRINGER · 15 s</text>
+        <path class="rp-wave" d="M440 122 Q 500 60 560 122 Q 620 60 680 122"/>
+        <text class="ph2" x="560" y="88" text-anchor="middle" fill="#dde4ea">Dirge pours 3 Souls a cast · +30% · heals 75%</text>
+        <path class="rp-line dim" d="M760 110 L960 110"/>
+        <text class="ph" x="860" y="146" text-anchor="middle">RESET</text>
+        <text class="ph2" x="860" y="160" text-anchor="middle">Shade slips away</text>
+      </svg>`,
+      bullets: ["Dirge feeds the ladder double: two Fragments a swing",
+        "Endbringer runs 15 seconds — Dirge pours three whole Souls per cast",
+        "a critical Murder tops the ladder with an extra Soul"],
+      eyes: "the Endbringer timer · your Fragment count",
+    },
   };
 
   // Authored-to-fit phone redraws (S2): same topology, fewer labels, no scroll.
@@ -1190,6 +1310,49 @@
       <text class="ph2" x="128" y="204" text-anchor="middle" fill="#cfe6ff">+25% pet damage · 15 s</text>
       <path class="branch" d="M234 193 C 356 186, 374 58, 250 36" marker-end="url(#sbArrWp)"/>
       <text class="ph2" x="190" y="238" text-anchor="middle">each later spend adds 3 seconds</text>
+    </svg>`,
+    "reaper/domination": `<svg viewBox="0 0 380 230" role="img" aria-label="Domination rhythm, phone ladder: bank three Souls, the bank guards you, Spectral Scythe spends it all">
+      <defs><marker id="rpArrDp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <path class="rp-souldmk" d="M36 48 L43 55 L36 62 L29 55 Z"/>
+      <path class="rp-souldmk" d="M66 48 L73 55 L66 62 L59 55 Z"/>
+      <path class="rp-souldmk" d="M96 48 L103 55 L96 62 L89 55 Z"/>
+      <text class="ph" x="165" y="46" text-anchor="start">BANK · HOLD</text>
+      <text class="ph2" x="165" y="60" text-anchor="start">three Souls guard you</text>
+      <path class="branch" d="M44 76 L44 100" marker-end="url(#rpArrDp)"/>
+      <rect class="rp-window" x="28" y="110" width="200" height="56" rx="2"/>
+      <text class="rp-window-lab" x="128" y="134" text-anchor="middle">SPECTRAL SCYTHE</text>
+      <text class="ph2" x="128" y="152" text-anchor="middle" fill="#dde4ea">one scythe per Soul · 20 s</text>
+      <path class="branch" d="M234 138 C 356 132, 374 54, 250 34" marker-end="url(#rpArrDp)"/>
+      <text class="ph2" x="190" y="184" text-anchor="middle">the bank refills</text>
+    </svg>`,
+    "reaper/harvest": `<svg viewBox="0 0 380 230" role="img" aria-label="Harvest rhythm, phone ladder: the 35% gate, Extinction lifts it, Slaughter executes">
+      <defs><marker id="rpArrHp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <line class="rp-gate" x1="44" y1="36" x2="44" y2="64"/>
+      <text class="ph" x="165" y="44" text-anchor="start">THE GATE</text>
+      <text class="ph2" x="165" y="58" text-anchor="start">Slaughter needs 35% health</text>
+      <path class="branch" d="M44 76 L44 100" marker-end="url(#rpArrHp)"/>
+      <path class="refresh" d="M33 122 l11 -11 l11 11 l-11 11 Z"/>
+      <text class="ph" x="165" y="118" text-anchor="start">EXTINCTION</text>
+      <text class="ph2" x="165" y="132" text-anchor="start">lifts the gate · 10 s</text>
+      <path class="branch" d="M44 136 L44 158" marker-end="url(#rpArrHp)"/>
+      <rect class="rp-window" x="28" y="168" width="200" height="54" rx="2"/>
+      <text class="rp-window-lab" x="128" y="188" text-anchor="middle">EXECUTE</text>
+      <text class="ph2" x="128" y="206" text-anchor="middle" fill="#dde4ea">a Soul per Slaughter</text>
+      <path class="branch" d="M234 195 C 356 188, 374 56, 250 36" marker-end="url(#rpArrHp)"/>
+      <text class="ph2" x="300" y="226" text-anchor="middle">the ladder climbs</text>
+    </svg>`,
+    "reaper/soul": `<svg viewBox="0 0 380 230" role="img" aria-label="Soul rhythm, phone ladder: stalk, then Endbringer floods the ladder for fifteen seconds">
+      <defs><marker id="rpArrSp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <path class="rp-line dim" d="M20 52 L140 52"/>
+      <text class="ph" x="165" y="44" text-anchor="start">STALK</text>
+      <text class="ph2" x="165" y="58" text-anchor="start">Dirge · 2 Fragments a swing</text>
+      <path class="branch" d="M44 68 L44 92" marker-end="url(#rpArrSp)"/>
+      <rect class="rp-window" x="28" y="102" width="200" height="66" rx="2"/>
+      <text class="rp-window-lab" x="128" y="124" text-anchor="middle">ENDBRINGER · 15 s</text>
+      <path class="rp-wave" d="M44 162 Q 86 122 128 162 Q 170 122 212 162"/>
+      <text class="ph2" x="128" y="142" text-anchor="middle" fill="#dde4ea">3 Souls a cast · +30%</text>
+      <path class="branch" d="M234 135 C 356 128, 374 54, 250 34" marker-end="url(#rpArrSp)"/>
+      <text class="ph2" x="190" y="190" text-anchor="middle">Shade slips away · reset</text>
     </svg>`,
   };
 
@@ -1448,6 +1611,7 @@
     "guardian": { desktop: ["0 0 420 260", GD_DESKTOP], phone: ["0 0 420 224", GD_PHONE] },
     "witch-hunter": { desktop: ["0 0 420 260", WH_DESKTOP], phone: ["0 0 420 224", WH_PHONE] },
     "stormbringer": { desktop: ["0 0 420 260", SB_DESKTOP], phone: ["0 0 420 224", SB_PHONE] },
+    "reaper": { desktop: ["0 0 420 260", RP_DESKTOP], phone: ["0 0 420 224", RP_PHONE] },
   };
   function applySeal() {
     const swap = SEAL_SWAP[cSlug];
