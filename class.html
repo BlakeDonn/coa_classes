@@ -4,18 +4,29 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
-  <meta name="description" content="A Conquest of Azeroth class page: every specialization side by side, with the full researched profile inline.">
+  <meta name="description" content="A Conquest of Azeroth class page: the engine, every specialization side by side, and the full researched profile inline.">
   <title>Class — CoA Atlas</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="explorer.css">
+  <link rel="stylesheet" href="guided.css">
+  <link rel="stylesheet" href="chrome.css">
+  <link rel="stylesheet" href="class-page.css">
 </head>
 <body class="atlas class-page">
   <header class="a-topbar">
-    <a class="a-sigil" href="index.html">⚜ COA ATLAS</a>
+    <a class="a-sigil" href="index.html">⚜<span class="sg-word"> COA ATLAS</span></a>
     <nav class="a-tabs" aria-label="Site pages">
       <a href="index.html">Atlas</a>
       <a href="choose.html">Choose</a>
+      <a href="guided.html">Guided · pilot</a>
       <a href="loot.html">Loot 45+</a>
+    </nav>
+    <a class="ph-search" href="index.html" aria-label="Search the Atlas">⌕&nbsp;&nbsp;Search specs, abilities…</a>
+    <nav class="ph-icons" aria-label="Site pages">
+      <a href="index.html" aria-label="Atlas">⚜<span class="tl">Atlas</span></a>
+      <a href="choose.html" aria-label="Choose">◈<span class="tl">Choose</span></a>
+      <a href="guided.html" aria-label="Guided">✦<span class="tl">Guided</span></a>
+      <a href="loot.html" aria-label="Loot 45+">⚔<span class="tl">Loot</span></a>
     </nav>
   </header>
 
@@ -23,10 +34,15 @@
     <header class="plate cp-mast" id="mast"></header>
     <div class="rail" id="rail" role="tablist" aria-label="Specializations"></div>
     <article class="plate codex" id="codex" role="tabpanel"></article>
+    <section id="engine-room" class="plate" hidden></section>
   </main>
 
   <script src="explorer-data.js"></script>
   <script src="profile-render.js"></script>
+  <script src="authored-copy.js"></script>
+  <script src="atlas-cards.js"></script>
   <script src="class.js"></script>
+  <script src="guided-data.js"></script>
+  <script src="guided-render.js"></script>
 </body>
 </html>

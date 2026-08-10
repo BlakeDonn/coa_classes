@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Preset-scenario Guided pilot verdicts for three Conquest of Azeroth classes.">
+  <title>Guided pilot — CoA Atlas</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="explorer.css">
+  <link rel="stylesheet" href="guided.css">
+  <link rel="stylesheet" href="chrome.css">
+</head>
+<body class="atlas guided-page">
+  <header class="a-topbar">
+    <a class="a-sigil" href="index.html">⚜<span class="sg-word"> COA ATLAS</span></a>
+    <nav class="a-tabs" aria-label="Site pages">
+      <a href="index.html">Atlas</a>
+      <a href="choose.html">Choose</a>
+      <a class="active" href="guided.html">Guided · pilot</a>
+      <a href="loot.html">Loot 45+</a>
+    </nav>
+    <nav class="ph-icons" aria-label="Site pages">
+      <a href="index.html" aria-label="Atlas">⚜<span class="tl">Atlas</span></a>
+      <a href="choose.html" aria-label="Choose">◈<span class="tl">Choose</span></a>
+      <a class="active" href="guided.html" aria-label="Guided">✦<span class="tl">Guided</span></a>
+      <a href="loot.html" aria-label="Loot 45+">⚔<span class="tl">Loot</span></a>
+    </nav>
+  </header>
+
+  <main class="a-wrap guided-wrap">
+    <header class="plate guided-intro">
+      <span class="guided-kicker">Evidence-graded pilot</span>
+      <h1>Guided Verdict</h1>
+      <p>This pilot covers only Guardian, Chronomancer, and Sun Cleric. For all 70 paths, use the <a href="index.html">Atlas</a> or the interactive <a href="choose.html">Choose questionnaire</a>.</p>
+    </header>
+
+    <section class="guided-section" aria-labelledby="guided-verdict-title">
+      <div class="guided-section-heading"><div><span class="guided-kicker">Primary surface</span><h2 id="guided-verdict-title">Guided Verdict</h2></div><p id="scenario-title"></p></div>
+      <p class="guided-section-note">One panel grammar — the lit panel is the Guided Verdict; the unlit panel is the Class Ledger.</p>
+      <p class="guided-kicker">Preset scenarios — pick the one closest to you</p>
+      <div class="guided-scenario-bar" id="scenario-bar" aria-label="Preset scenarios"></div>
+      <div id="guided-verdict" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <script src="explorer-data.js"></script>
+  <script src="profile-render.js"></script>
+  <script src="guided-data.js"></script>
+  <script src="guided-render.js"></script>
+</body>
+</html>

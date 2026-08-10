@@ -13,7 +13,8 @@ window.COA_CHOOSE = (() => {
   "use strict";
 
   const R = window.COA_RENDER;
-  const { data, famById, esc, glyph, classSlug } = R;
+  const CARDS = window.COA_CARDS, SLIM = window.COA_SLIM;
+  const { data, specById, famById, esc, glyph, classSlug } = R;
 
   // ---------- Questions ----------
 
@@ -190,39 +191,79 @@ window.COA_CHOOSE = (() => {
     } catch {}
   }
 
+  // ---------- B · honest icons (Choose grammar §2, RULED 2026-08-07) ----------
+  // Art only where a true mapping exists: the ruled queue icons lead the role
+  // question, demand pips render the load and mistake-cost targets, and range,
+  // payoff and the vignette stay text. Nothing is invented.
+  const LFG = n => `generated-assets/lfg-${n}.png`;
+  const imgs = (srcs, sm) => `<span class="qc-art${sm ? " sm" : ""}">${srcs.map(s =>
+    `<img src="${s}" alt="">`).join("")}</span>`;
+  function artFor(qid, c) {
+    if (qid === "role") {
+      if (c.v === "Damage") return imgs([LFG("damage")]);
+      if (c.v === "Tank") return imgs([LFG("tank")]);
+      if (c.v === "HealerSupport") return imgs([LFG("healer"), LFG("flag")]);
+      return imgs([LFG("damage"), LFG("tank"), LFG("healer"), LFG("flag")], true);
+    }
+    if ((qid === "load" || qid === "cost") && typeof c.v === "number")
+      return `<span class="q-pips">${R.pips(Math.round(c.v))}</span>`;
+    return "";
+  }
+  function choicesHTML(qq) {
+    return qq.choices.map((c, i) => {
+      const art = artFor(qq.id, c);
+      const trailing = art.startsWith(`<span class="q-pips"`);
+      return `<button class="qc-iconrow" data-i="${i}">${trailing ? "" : art}<span class="qc-body"><b>${esc(c.t)}</b>${esc(c.d)}</span>${trailing ? art : ""}</button>`;
+    }).join("");
+  }
+
   function drawQ() {
     const root = el("oracle");
     if (step >= QUESTIONS.length) return drawResults();
-    const { scene, q, hint, choices } = QUESTIONS[step];
+    const qq = QUESTIONS[step];
     root.innerHTML = `
       <div class="prog">${QUESTIONS.map((_, i) => `<span class="${i < step ? "done" : ""}"></span>`).join("")}</div>
       <p class="stepline">Question ${step + 1} of ${QUESTIONS.length}</p>
-      ${scene ? `<div class="scene">Opening vignette · ${scene}</div>` : ""}
-      <h2>${esc(q)}</h2><p class="hint">${esc(hint)}</p>
-      <div class="choices">${choices.map((c, i) =>
-        `<button data-i="${i}"><b>${esc(c.t)}</b>${esc(c.d)}</button>`).join("")}</div>
+      ${qq.scene ? `<div class="scene">Opening vignette · ${qq.scene}</div>` : ""}
+      <h2>${esc(qq.q)}</h2><p class="hint">${esc(qq.hint)}</p>
+      <div class="choices">${choicesHTML(qq)}</div>
       <div class="navrow">${step > 0 ? `<button data-nav="back">← Back</button>` : ""}
         <button data-nav="skip">Skip — no preference</button></div>`;
     root.scrollIntoView({ block: "nearest" });
   }
 
+  // ---------- M2 · the class result card (Choose grammar §1, RULED 2026-08-07) ----------
+  // Today's engine recommends CLASSES (best spec per class), so the class register
+  // ships: the full Atlas card under a band carrying the tier, the probable spec,
+  // and the honest matched / trade-off / confidence lines. The probable spec's
+  // door is lit on the card below.
   function resultCard(p) {
     const s = p.s;
     const tierCls = p.tier === "Strong match" ? "t-strong" : p.tier === "Wildcard" ? "t-wild" : "t-plaus";
-    const reasons = reasonsFor(s, answers, p);
     const covPct = Math.round(p.coverage * 100);
     const conf = p.tier === "Wildcard"
       ? `Confidence: low — thinner research for this spec, so it is shown as a wildcard, not ranked down.`
       : `Confidence: ${p.confidence.toLowerCase()} — ${covPct}% of your scored axes are researched for this spec.`;
-    return `<div class="rcard" style="--class-color:${s.color}">
-      <span class="rtier ${tierCls}">${p.tier}</span>
-      <a class="rname" href="class.html?c=${classSlug(s)}&from=choose#${s.id.split("/")[1]}">
-        <span class="rglyph">${glyph(s)}</span>${esc(s.klass)}, led by ${esc(s.name)}</a>
-      <div class="m-sub">${[...s.roles, ...s.range].map(esc).join(" · ")} · ${esc(famById[s.atlas].name)}</div>
-      <p class="why"><em>Matched:</em> ${reasons.map(esc).join("; ")}.</p>
-      <p class="trade"><em>Trade-off:</em> ${esc(tradeoffFor(s))}</p>
-      <p class="conf">${conf}</p>
+    const guidedPilot = window.COA_GUIDED && window.COA_GUIDED.pilots.some(pilot => pilot.id === classSlug(s));
+    const c = CARDS.classByName[s.klass];
+    return `<div class="cs-c${p.tier === "Strong match" ? " cs-lead" : ""}" data-match="${s.id}"
+        style="--class-color:${s.color}">
+      <div class="cs-band"><span class="rtier ${tierCls}">${p.tier}</span>
+        <p class="cs-prob">You will probably like <b>${esc(s.name)}</b>.</p>
+        <p class="why"><em>Matched:</em> ${reasonsFor(s, answers, p).map(esc).join("; ")}.</p>
+        <p class="trade"><em>Trade-off:</em> ${esc(tradeoffFor(s))}</p>
+        <p class="conf">${conf}</p>
+        ${guidedPilot ? `<p class="conf"><a href="guided.html">This class is in the evidence-graded Guided pilot — preset-scenario verdicts, not your answers above.</a></p>` : ""}
+      </div>
+      ${CARDS.composeCard(c)}
     </div>`;
+  }
+
+  function markMatches(scope) {
+    scope.querySelectorAll(".cs-c").forEach(w => {
+      const b = w.querySelector(`[data-open="${w.dataset.match}"]`);
+      if (b) b.classList.add("cs-matched");
+    });
   }
 
   function chipGroups() {
@@ -243,10 +284,20 @@ window.COA_CHOOSE = (() => {
       <p class="stepline">The Atlas has read you</p>
       <h2>${picks.length ? "Three paths fit your answers" : "No spec fits those constraints"}</h2>
       <p class="hint">Scored on the researched demand axes · Boss (single-target) endgame context · relative among researched CoA specs · missing research shown, never guessed</p>
-      <div class="result-list" id="results">${picks.map(resultCard).join("")
+      <div class="result-list cs-list" id="results">${picks.map(resultCard).join("")
         || `<p class="hint">Loosen role or range below and the shortlist returns.</p>`}</div>
       <div class="adjust"><span class="adjhead">Adjust your answers — results update live</span>${chipGroups()}</div>
       <div class="navrow"><button data-nav="again">Ask again from the start</button></div>`;
+    markMatches(el("oracle"));
+  }
+
+  // Spec doors on the result cards open the LOCKED slim modal.
+  function openSlim(id) {
+    const s = specById[id];
+    if (!s) return;
+    el("profileContent").innerHTML = SLIM.slimHTML(s);
+    el("profileDialog").showModal();
+    el("profileDialog").scrollTop = 0;
   }
 
   function init() {
@@ -261,6 +312,9 @@ window.COA_CHOOSE = (() => {
         answers[qq.id] = c.v !== undefined ? c.v : +chip.dataset.chipi;
         save(); drawResults(); return;
       }
+      if (CARDS.isNotDoor(e.target)) return; // tooltips and the video corner, not doors
+      const door = e.target.closest("[data-open]");
+      if (door) { openSlim(door.dataset.open); return; }
       const b = e.target.closest("button");
       if (!b) return;
       if (b.dataset.nav === "back") { step--; save(); return drawQ(); }
@@ -277,6 +331,10 @@ window.COA_CHOOSE = (() => {
         step++; save(); drawQ();
       }
     });
+    el("profileClose").addEventListener("click", () => el("profileDialog").close());
+    el("profileDialog").addEventListener("click", e => {
+      if (e.target === el("profileDialog")) el("profileDialog").close();
+    });
     if (location.hash === "#results" && step >= QUESTIONS.length) drawResults();
     else drawQ();
   }
@@ -284,5 +342,7 @@ window.COA_CHOOSE = (() => {
   if (typeof document !== "undefined" && document.readyState !== "loading") init();
   else if (typeof document !== "undefined") document.addEventListener("DOMContentLoaded", init);
 
-  return { QUESTIONS, scoreSpec, recommend, reasonsFor, tradeoffFor };
+  return { QUESTIONS, scoreSpec, recommend, reasonsFor, tradeoffFor,
+    // Pure renderers, exposed so the node smoke test can exercise every path.
+    __render: { choicesHTML, artFor, resultCard, setAnswers: a => { answers = a; } } };
 })();

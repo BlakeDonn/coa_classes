@@ -8,13 +8,16 @@
   <title>CoA Atlas</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="explorer.css">
+  <link rel="stylesheet" href="chrome.css">
+  <link rel="stylesheet" href="cards.css">
 </head>
 <body class="atlas">
   <header class="a-topbar">
-    <a class="a-sigil" href="#top">⚜ COA ATLAS</a>
+    <a class="a-sigil" href="#top">⚜<span class="sg-word"> COA ATLAS</span></a>
     <nav class="a-tabs" aria-label="Site pages">
       <a class="active" href="index.html">Atlas</a>
       <a href="choose.html">Choose</a>
+      <a href="guided.html">Guided · pilot</a>
       <a href="loot.html">Loot 45+</a>
     </nav>
     <label class="a-search" for="searchInput">
@@ -22,6 +25,12 @@
       <input id="searchInput" type="search" autocomplete="off" placeholder="Search specs, families, abilities…">
       <kbd>/</kbd>
     </label>
+    <nav class="ph-icons" aria-label="Site pages">
+      <a class="active" href="index.html" aria-label="Atlas">⚜<span class="tl">Atlas</span></a>
+      <a href="choose.html" aria-label="Choose">◈<span class="tl">Choose</span></a>
+      <a href="guided.html" aria-label="Guided">✦<span class="tl">Guided</span></a>
+      <a href="loot.html" aria-label="Loot 45+">⚔<span class="tl">Loot</span></a>
+    </nav>
     <button class="wb-button" id="wbTopButton" title="Open the comparison workbench">⚖ Workbench<span class="wb-count" id="wbCount" hidden>0</span></button>
   </header>
 
@@ -38,7 +47,10 @@
   </header>
 
   <div class="bar-row" id="top">
-    <h1>Playstyle Families</h1>
+    <h1 id="viewHeading">The 21 Classes</h1>
+    <span class="st-lens" id="lens" role="group" aria-label="Browsing altitude">
+      <button data-view="classes" class="active">21 Classes</button><button data-view="specs">70 Specs</button>
+    </span>
     <span class="counter"><b id="specCount">70</b> specs · <b id="classCount">21</b> classes · <b id="curatedCount">0</b> curated</span>
     <button class="filter-toggle" id="filterToggle" aria-controls="top">Filters</button>
     <div class="filters">
@@ -87,6 +99,9 @@
 
   <script src="explorer-data.js"></script>
   <script src="profile-render.js"></script>
+  <script src="authored-copy.js"></script>
+  <script src="atlas-cards.js"></script>
+  <script src="profile-slim.js"></script>
   <script src="explorer.js"></script>
 </body>
 </html>

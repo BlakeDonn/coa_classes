@@ -1,0 +1,293 @@
+/* The class page, as ruled (class-page-grammar.md). Ported from the design lab
+   under the site-adoption slice, 2026-08-10. Builds on explorer.css.
+   Sections: 1 masthead · 2 seal · 3 spec cards · 4 rhythm block · 5 phone. */
+
+/* ================= 1 · masthead ================= */
+
+/* the ruled tagline, with the styled keyword (decoration, never information) */
+.cp-mast .cp-tagline { margin: 0 0 2px; color: #b4b8b1; font-size: 13.5px; max-width: 68ch; }
+.ry-tagword { font-style: normal; font-weight: 600;
+  color: color-mix(in srgb, var(--class-color, #c9aa71) 58%, white 42%);
+  text-shadow: 0 0 14px color-mix(in srgb, var(--class-color, #c9aa71) 70%, transparent),
+    0 0 4px color-mix(in srgb, var(--class-color, #c9aa71) 45%, transparent); }
+
+/* the engine block: label, serif-italic lede, body, and the ✦ rare-part list */
+.ry-engine { border-left: 2px solid var(--class-color, #c9aa71); padding: 5px 12px 6px;
+  margin: 10px 0 2px; max-width: 62ch; }
+.ry-engine .lab { display: flex; align-items: center; gap: 8px; font-size: 10px; letter-spacing: .16em;
+  text-transform: uppercase; color: #8d8678; margin-bottom: 3px; }
+.ry-engine .lab::after { content: ""; flex: 1; height: 1px;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--class-color, #c9aa71) 30%, transparent), transparent); }
+.ry-engine p { margin: 0; color: #cdc8bc; font-size: 13.5px; line-height: 1.55; }
+.ry-engine .ry-lede { margin: 0 0 3px; font: italic 13.5px Georgia, "Palatino Linotype", serif; color: #d8c99b; }
+.ry-rare { margin: 8px 0 0; padding: 7px 0 0; list-style: none; display: grid; gap: 3px;
+  border-top: 1px solid color-mix(in srgb, var(--class-color, #c9aa71) 18%, transparent); }
+.ry-rare li { color: #e8c88a; font-size: 12.5px; cursor: help; }
+.ry-rare .mark { color: #c9aa71; margin-right: 6px; }
+
+/* the strict role line: one plain-text line at EVERY width (ruled 2026-08-09) */
+.cp-roles { display: block; margin-top: 10px; white-space: nowrap; overflow: hidden; }
+.cp-roles span { display: inline; border: 0; background: none; padding: 0; color: #9a9483;
+  font-size: 12px; letter-spacing: 0; text-transform: none; }
+.cp-roles span + span::before { content: " · "; color: #565b62; }
+
+/* T1 · the corner video thumb, at the TEXT COLUMN's right edge (the seal owns the far right) */
+.ry-thumb { display: none; }
+@media (min-width: 561px) {
+  .ry-thumb { position: absolute; z-index: 2; display: block; width: 112px; height: 63px;
+    border: 1px solid #6b5a35; border-radius: 3px; overflow: hidden;
+    top: 16px; right: calc(var(--seal-slot, 24px) + 16px); }
+  .ry-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .ry-thumb .play { position: absolute; inset: 0; display: grid; place-items: center;
+    color: #ecd7a8; font-size: 14px; text-shadow: 0 0 8px #000; }
+  .ry-thumb .cap { position: absolute; left: 0; right: 0; bottom: 0; padding: 2px 4px 3px;
+    background: linear-gradient(transparent, #000d); color: #c9aa71; font-size: 7.5px;
+    letter-spacing: .12em; text-transform: uppercase; text-align: center; }
+  .ry-thumb:hover { border-color: #c9aa71; }
+  body.ry-v-t1 .cp-mast .crumb, body.ry-v-t1 .cp-mast .kick { padding-right: 140px; }
+}
+
+/* ================= 2 · the seal, and the G2 seat where none is drawn ================= */
+
+.cd-stage { color: #d8d2df; }
+.cd-stage svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.cd-link { fill: none; stroke: #6f477f; stroke-width: 1.2; opacity: .52; }
+.cd-orbit { fill: none; stroke: #825097; stroke-width: 1; opacity: .34; }
+.cd-orbit.threshold { stroke: #d8b367; opacity: .55; stroke-dasharray: 2 5; }
+.cd-tendril { fill: none; stroke: #512f63; stroke-width: 5; opacity: .28; stroke-linecap: round; }
+.cd-eye-shell { fill: #21122d; stroke: #aa6acb; stroke-width: 2; filter: url(#cdGlow); }
+.cd-eye-lid { fill: none; stroke: #bd80dd; stroke-width: 3; stroke-linecap: round; }
+.cd-pupil { fill: #09070c; stroke: #d8b367; stroke-width: 1.25; }
+.cd-iris { fill: url(#cdIris); opacity: .95; }
+.cd-center-label { fill: #e7d7ee; font: 700 11px Georgia, serif; letter-spacing: .18em; }
+.cd-threshold { fill: #bfa96e; font: 700 8px Arial, sans-serif; letter-spacing: .1em; }
+.cd-node { cursor: pointer; outline: none; }
+.cd-node .node-ring { fill: #151118; stroke: #644172; stroke-width: 1.1; transition: .18s ease; }
+.cd-node .node-dot { fill: #8551a0; transition: .18s ease; }
+.cd-node .node-name { fill: #d7b55e; font: 700 12px Georgia, serif; letter-spacing: .03em; }
+.cd-node .node-verb { fill: #8f8796; font: 700 7px Arial, sans-serif; letter-spacing: .16em; }
+.cd-node:hover .node-ring, .cd-node:focus-visible .node-ring,
+.cd-node.active .node-ring { fill: #291833; stroke: #d3a3ef; stroke-width: 2; filter: url(#cdGlow); }
+.cd-node.active .node-dot { fill: #e1b86d; }
+.cd-node.active .node-name { fill: #f1cb6e; }
+
+.cp-mast.cd-with-seal { min-height: 224px; padding-right: 440px; }
+.cp-mast.cd-with-seal > .glyph { display: none; }
+.cd-seal { position: absolute; z-index: 1; right: 16px; top: 12px; width: 410px; height: 200px;
+  border-left: 1px solid #49355380; background: radial-gradient(circle at 50% 50%, #5a2d7230, transparent 67%); }
+.cd-seal::before { content: ""; position: absolute; inset: 8px 4px 8px 18px; pointer-events: none;
+  border: 1px solid #754c8545; clip-path: polygon(12px 0,100% 0,100% calc(100% - 12px),calc(100% - 12px) 100%,0 100%,0 12px); }
+
+/* Tinker: the same slot and interaction, its own blueprint grammar */
+.cd-tinker-seal { border-left-color: #6f593b80;
+  background: radial-gradient(circle at 50% 46%, #d99b3630, transparent 48%), linear-gradient(115deg, #1b181480, transparent 62%); }
+.cd-tinker-seal::before { border-color: #b88b4250; }
+.cd-tinker-seal svg { overflow: hidden; }
+.tk-grid { fill: url(#tkGrid); stroke: #846a4438; }
+.tk-trace { fill: none; stroke: #493f31; stroke-width: 7; stroke-linecap: round; }
+.tk-trace-hot { stroke: #d5a24d; stroke-width: 1.25; opacity: .66; stroke-dasharray: 3 5; }
+.tk-orbit { fill: none; stroke: #9f7a3f; stroke-width: 1; opacity: .44; }
+.tk-orbit.dashed { stroke: #73b9b2; opacity: .38; stroke-dasharray: 2 5; }
+.tk-gear { fill: url(#tkMetal); stroke: #d3a65b; stroke-width: 1.2; filter: drop-shadow(0 0 9px #d98a2b33); }
+.tk-core { fill: url(#tkCore); stroke: #f1cb76; stroke-width: 1.2; filter: url(#tkGlow); }
+.tk-core-ring { fill: #181712; stroke: #6fbbb3; stroke-width: 1; opacity: .88; }
+.tk-center-label { fill: #f2d487; font: 800 9px Arial, sans-serif; letter-spacing: .18em; }
+.tk-center-sub { fill: #75bbb4; font: 700 6px Arial, sans-serif; letter-spacing: .12em; }
+.tk-legend { fill: #9a8054; font: 700 6px Arial, sans-serif; letter-spacing: .13em; opacity: .72; }
+.tk-legend.right { fill: #668d88; }
+.tk-node .node-ring { fill: #181713; stroke: #806641; }
+.tk-node .tk-bolt { fill: none; stroke: #4e9b97; stroke-width: .8; stroke-dasharray: 2 3; opacity: .65; }
+.tk-node .tk-icon-line { fill: none; stroke: #d5aa59; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.tk-node .tk-signal { fill: none; stroke: #67b8b1; stroke-width: 1; opacity: .85; }
+.tk-node .node-name { fill: #e0bb70; }
+.tk-node .node-verb { fill: #75aaa6; }
+.tk-node:hover .node-ring, .tk-node:focus-visible .node-ring,
+.tk-node.active .node-ring { fill: #292319; stroke: #f0c16b; filter: url(#tkGlow); }
+.tk-node.active .tk-bolt { stroke: #8ee6dd; opacity: 1; }
+.tk-node.active .tk-icon-line { stroke: #ffe09a; }
+.tk-node.active .node-name { fill: #f4cf7d; }
+
+/* the col engine: the seal claims the masthead's full height at its own aspect ratio.
+   --seal-slot marks where the TEXT COLUMN ends; the T1 thumb anchors to it. */
+@media (min-width: 901px) {
+  .cp-mast.cd-with-seal { --seal-slot: clamp(440px, 45%, 640px); padding-right: var(--seal-slot); }
+  .cd-seal { top: 12px; height: calc(100% - 24px); width: auto;
+    aspect-ratio: 420 / 205; max-width: calc(clamp(440px, 45%, 640px) - 40px); }
+  .cd-seal.ry-reseal { aspect-ratio: 420 / 260; }
+}
+
+/* G2 · the seat (RULED 2026-08-10). Crests are skipped, so the class glyph holds the
+   slot with the honest caption. Masthead geometry matches the sealed classes. */
+.ry-gap-slot { --seal-slot: 460px; min-height: 208px; padding-right: 460px; }
+.ry-gap-slot > .glyph { display: none; }
+.ry-sealgap { position: absolute; right: 26px; top: 50%; transform: translateY(-50%);
+  width: 410px; display: grid; place-items: center; gap: 9px; text-align: center; }
+.ry-sealgap .cap { font-size: 9px; font-weight: 800; letter-spacing: .16em;
+  text-transform: uppercase; color: var(--dim); }
+.ry-seatglyph { display: grid; place-items: center; width: 132px; height: 132px; font-size: 78px;
+  line-height: 1; color: color-mix(in srgb, var(--class-color) 62%, #fff);
+  text-shadow: 0 0 26px color-mix(in srgb, var(--class-color) 45%, transparent); }
+
+@media (max-width: 900px) {
+  .cp-mast.cd-with-seal { padding-right: 24px; padding-bottom: 218px; }
+  .cd-seal { left: 12px; right: 12px; top: auto; bottom: 8px; width: auto; height: 200px;
+    border-left: 0; border-top: 1px solid #49355380; }
+  .ry-gap-slot { min-height: 0; padding-right: 24px; --seal-slot: 24px; }
+  .ry-sealgap { display: none; }
+}
+
+/* ================= 3 · spec rail cards (the airfam form) ================= */
+
+.rail-card { position: relative; }
+.ry-card2 { display: flex; flex-direction: column; gap: 4px; }
+.ry-card3 { gap: 6px; }
+.ry-card2 .rc-top { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+.ry-card2 .rc-top b { font-family: Georgia, serif; font-size: 16.5px; color: #e8c88a; }
+.ry-card2 .ry-verb-chip { position: static; flex: 0 0 auto; }
+.ry-card2 .rc-role { font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: #8d8678; }
+.ry-card2 .rc-family { display: flex; align-items: center; gap: 7px; font-size: 10.5px; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--class-color, #c9aa71); margin-top: 2px; cursor: help; }
+.ry-topo { width: 52px; height: 15px; flex: 0 0 auto; }
+.tg-fill { fill: color-mix(in srgb, var(--class-color, #c9aa71) 45%, transparent); }
+.tg-hot { fill: color-mix(in srgb, var(--class-color, #c9aa71) 85%, white 6%); }
+.tg-line { fill: none; stroke: var(--class-color, #c9aa71); stroke-width: 1.6; }
+.ry-card2 .rc-fantasy { font-style: italic; color: #b7b0a2; font-size: 12.5px; line-height: 1.5; margin: 3px 0;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.ry-card2 .rc-yes { color: #7fc98a; font-size: 12px; line-height: 1.45; margin: 0; }
+.ry-card2 .rc-no { color: #c96a5f; font-size: 12px; line-height: 1.45; margin: 0; }
+.ry-card3 .rc-line { font-style: italic; color: #c6beac; font-size: 12.5px; line-height: 1.55; margin: 2px 0 0; }
+.ry-card3 .rc-div { border-top: 1px solid #27221b; margin: 5px 0 3px; }
+.ry-card3 .rc-mark { display: grid; grid-template-columns: 15px 1fr; gap: 5px; font-size: 12px; line-height: 1.45; }
+.ry-card3 .rc-mark.yes { color: #7fc98a; }
+.ry-card3 .rc-mark.no { color: #c96a5f; }
+
+/* the verb chip: class-colored, uppercase, gloss on hover */
+.ry-verb-chip { font-size: 9.5px; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--class-color, #c9aa71); border: 1px solid;
+  border-color: color-mix(in srgb, var(--class-color, #c9aa71) 45%, transparent);
+  padding: 2px 7px; border-radius: 3px; opacity: .85; cursor: help; }
+.rail-card.sel .ry-verb-chip { opacity: 1; background: color-mix(in srgb, var(--class-color, #c9aa71) 14%, transparent); }
+
+/* the selected card glows like the seal's active node — the same lightened tone */
+body.ry-glow .rail-card.sel {
+  border-color: color-mix(in srgb, var(--class-color, #c9aa71) 58%, white 42%);
+  box-shadow: 0 0 0 1px color-mix(in srgb, color-mix(in srgb, var(--class-color, #c9aa71) 58%, white 42%) 50%, transparent),
+    0 0 22px color-mix(in srgb, var(--class-color, #c9aa71) 30%, transparent);
+  background: linear-gradient(180deg, color-mix(in srgb, var(--class-color, #c9aa71) 9%, transparent), transparent 58%); }
+
+/* defining talents in the spec header, sized to invite the click */
+[data-spec-root] .d-head { position: relative; }
+.ry-head-talents { position: absolute; top: 50%; transform: translateY(-50%); right: 22px; display: flex; gap: 9px; }
+.ry-head-talents img { width: 46px; height: 46px; border-radius: 4px; border: 1px solid #3d3447;
+  display: block; cursor: pointer; transition: border-color .15s, transform .15s; }
+.ry-head-talents img:hover { border-color: #c9aa71; transform: translateY(-2px); }
+@media (max-width: 900px) { .ry-head-talents { position: static; transform: none; margin-top: 8px; } }
+
+/* pips carry their tooltip affordance */
+.d-stats .stat[data-tipname] { cursor: help; border-bottom: 1px dotted #4d4030; }
+
+/* ================= 4 · the rhythm block ================= */
+
+.ry-block { border: 1px solid #2e2637; background: rgba(0,0,0,.28); border-radius: 4px;
+  padding: 12px 14px 10px; margin: 14px 0 4px; }
+.fold-body .ry-block { margin: 4px 0; }
+.ry-lab { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px;
+  font-size: 10.5px; letter-spacing: .16em; text-transform: uppercase; color: #8d8678; margin-bottom: 6px; }
+.ry-block svg { width: 100%; height: auto; display: block; }
+.ry-read { margin: 9px 0 0; color: #cdc8bc; font-size: 13px; line-height: 1.55; max-width: 84ch; }
+.ry-read b { color: #c9aa71; font-weight: 600; }
+/* the honest gap: unauthored specs say so, they never get a placeholder drawing */
+.ry-gap { border-style: dashed; }
+.ry-gap .ry-read { color: #8d8678; margin: 0; }
+.ry-reads { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 26px; }
+@media (max-width: 900px) { .ry-reads { grid-template-columns: 1fr; } }
+
+.ry-eye-btn { margin-left: 10px; background: none; border: 1px dashed #63512f; border-radius: 3px;
+  color: #d8b06a; font: 11px/1 "Segoe UI", sans-serif; letter-spacing: .06em; padding: 3px 8px; cursor: pointer; }
+.ry-eye-btn.on, .ry-eye-btn:hover { background: #2a2115; border-style: solid; }
+.ry-screen { margin-top: 10px; }
+.ry-screen svg { max-width: 560px; border-radius: 4px; }
+.ry-warn { color: #c96a5f; font-size: 12px; font-style: italic; margin: 0 0 8px; }
+
+/* strip internals, scoped to the block */
+.ry-block svg text { font-family: "Segoe UI", system-ui, sans-serif; }
+.ry-block .ax { stroke: #332d24; stroke-width: 1; }
+.ry-block .thr { stroke: #4d4030; stroke-width: 1; stroke-dasharray: 5 5; }
+.ry-block .thr-lab { fill: #8d8678; font-size: 11px; letter-spacing: .08em; }
+.ry-block .ph { fill: #a89f8e; font-size: 11.5px; letter-spacing: .1em; font-weight: 600; }
+.ry-block .ph2 { fill: #736c5e; font-size: 11px; }
+.ry-block .strip-note { fill: #736c5e; font-size: 11px; letter-spacing: .06em; }
+.ry-block .gb-climb { fill: rgba(179,92,255,.14); stroke: #8e4fb2; stroke-width: 1.6; }
+.ry-block .gb-window { fill: rgba(179,92,255,.34); stroke: #b35cff; stroke-width: 1.8; }
+.ry-block .gb-window-lab { fill: #e6ccff; font-size: 12.5px; font-weight: 700; letter-spacing: .1em; }
+.ry-block .hazard { fill: rgba(201,106,95,.35); }
+.ry-block .hazard-lab { fill: #c96a5f; font-size: 10.5px; letter-spacing: .08em; }
+.ry-block .tick { stroke: rgba(179,92,255,.5); stroke-width: 2; }
+.ry-block .wave { fill: rgba(179,92,255,.16); stroke: #8e4fb2; stroke-width: 1.6; }
+.ry-block .refresh { fill: none; stroke: #c9aa71; stroke-width: 1.4; }
+.ry-block .refresh-lab { fill: #c9aa71; font-size: 10.5px; letter-spacing: .06em; }
+.ry-block .branch { stroke: #8d8678; stroke-width: 1.2; fill: none; }
+.ry-block .brick { fill: rgba(217,164,65,.16); stroke: #a3803e; stroke-width: 1.2; }
+.ry-block .brick-lab { fill: #d9c396; font-size: 10.5px; letter-spacing: .04em; }
+.ry-block .dm-window { fill: rgba(217,164,65,.36); stroke: #d9a441; stroke-width: 1.8; }
+.ry-block .dm-window-lab { fill: #f2dcae; font-size: 12.5px; font-weight: 700; letter-spacing: .1em; }
+.ry-block .idle { fill: none; stroke: #4d4030; stroke-width: 1; stroke-dasharray: 3 4; }
+
+/* ================= 5 · phone (≤560px) ================= */
+
+.ph-thumb, .ph-seal-plate { display: none; }
+
+@media (max-width: 560px) {
+  /* the class-highlight thumbnail returns to the masthead's top-right corner */
+  .cp-mast .crumb, .cp-mast .kick, .cp-mast h1 { padding-right: 104px; }
+  .ph-thumb { position: absolute; top: 14px; right: 14px; z-index: 2; display: block;
+    width: 96px; height: 54px; border: 1px solid #6b5a35; border-radius: 3px; overflow: hidden; }
+  .ph-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .ph-thumb .play { position: absolute; inset: 0; display: grid; place-items: center;
+    color: #ecd7a8; font-size: 13px; text-shadow: 0 0 8px #000; }
+  .ph-thumb .cap { position: absolute; left: 0; right: 0; bottom: 0; padding: 2px 4px 3px;
+    background: linear-gradient(transparent, #000d); color: #c9aa71; font-size: 7.5px;
+    letter-spacing: .12em; text-transform: uppercase; text-align: center; }
+
+  /* the seal sits DETACHED in its own plate directly below the masthead */
+  .cp-mast.cd-with-seal { padding-right: 24px; padding-bottom: 18px; min-height: 0; }
+  .ph-seal-plate { display: block; margin: 12px 0 14px; padding: 10px 8px 6px; }
+  .ph-seal-plate[hidden] { display: none; }
+  .ph-seal-plate .cd-seal { position: static; width: 100%; height: auto; margin: 0;
+    border-left: 0; padding: 0; }
+  .ph-seal-plate .cd-seal svg { height: auto; aspect-ratio: 420 / 224; }
+  .ph-seal-plate .cd-seal.cd-tinker-seal svg { aspect-ratio: 420 / 205; }
+
+  /* the quick-look card: only the selected spec, standalone on its own plate */
+  .rail { display: block; overflow: visible; padding-bottom: 0; }
+  .rail .rail-card { display: none; }
+  .rail .rail-card.sel { display: flex; flex: none; width: 100%; }
+  .rail-card.sel::after { display: none; }
+
+  .ph-all-btn { display: block; width: 100%; margin: 8px 0 0; padding: 11px;
+    border: 1px solid #3a3325; border-radius: 3px;
+    background: linear-gradient(#1c1a15, #131210); color: #9a9483;
+    font: 800 10px Arial, sans-serif; letter-spacing: .12em; text-transform: uppercase;
+    cursor: pointer; }
+  .ph-all-btn:focus-visible { outline: 1px solid #c9aa71; }
+}
+@media (min-width: 561px) { .ph-all-btn, .ph-sheet, .ph-backdrop { display: none !important; } }
+
+.ph-backdrop { position: fixed; inset: 0; z-index: 70; background: #050505c9;
+  opacity: 0; pointer-events: none; transition: opacity .2s; }
+.ph-sheet { position: fixed; left: 0; right: 0; bottom: 0; z-index: 71;
+  transform: translateY(102%); transition: transform .24s;
+  border-top: 1px solid #6b5a35; border-radius: 10px 10px 0 0; background: #131210;
+  padding: 10px 12px calc(18px + env(safe-area-inset-bottom)); max-height: 80vh; overflow-y: auto; }
+body.ph-sheet-open .ph-sheet { transform: none; }
+body.ph-sheet-open .ph-backdrop { opacity: 1; pointer-events: auto; }
+.ph-sheet .grip { width: 38px; height: 4px; border-radius: 2px; background: #3a3325; margin: 0 auto 10px; }
+.ph-sheet h4 { margin: 0 0 8px; font: 800 10px Arial, sans-serif; letter-spacing: .18em;
+  text-transform: uppercase; color: #83888f; text-align: center; }
+.ph-sheet .rail-card { display: flex !important; width: 100%; margin-bottom: 8px;
+  border: 1px solid var(--edge-out); border-radius: 3px; background: #131418; padding: 11px 13px;
+  text-align: left; cursor: pointer; }
+.ph-sheet .rail-card.active {
+  border-color: color-mix(in srgb, var(--class-color, #c9aa71) 58%, white 42%);
+  box-shadow: 0 0 18px color-mix(in srgb, var(--class-color, #c9aa71) 30%, transparent); }
+@media (prefers-reduced-motion: reduce) { .ph-sheet, .ph-backdrop { transition: none; } }

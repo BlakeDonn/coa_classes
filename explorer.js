@@ -1,12 +1,15 @@
 (() => {
   "use strict";
 
-  const R = window.COA_RENDER;
+  const R = window.COA_RENDER, CARDS = window.COA_CARDS, SLIM = window.COA_SLIM;
   if (!R) throw new Error("profile-render.js must load before explorer.js");
+  if (!CARDS || !SLIM) throw new Error("atlas-cards.js and profile-slim.js must load before explorer.js");
   const { data, specById, famById, CTX_LABELS, AXIS_LABELS, CX_ORDINAL,
-          esc, slug, glyph, qcls, tierBadges, pips, cxCell, bestCtx, profileHTML } = R;
+          esc, slug, glyph, qcls, tierBadges, pips, cxCell, bestCtx } = R;
 
-  const state = { search: "", role: "All", range: "All", research: "All" };
+  // Altitude RULED (Atlas grammar §2): a standing Classes ↔ Specs toggle, starting
+  // on Classes — 21 cards greet the visitor; the 70 specs are one tap away.
+  const state = { view: "classes", search: "", role: "All", range: "All", research: "All" };
   const tray = [];
   let wbCtx = "boss";
 
@@ -17,10 +20,12 @@
   function readUrlState() {
     const p = new URLSearchParams(location.search);
     state.search = p.get("q") || "";
+    if (p.get("view") === "specs") state.view = "specs";
     for (const k of ["role", "range", "research"]) state[k] = p.get(k) || "All";
   }
   function writeUrlState() {
     const p = new URLSearchParams();
+    if (state.view === "specs") p.set("view", "specs");
     if (state.search) p.set("q", state.search);
     for (const k of ["role", "range", "research"]) if (state[k] !== "All") p.set(k, state[k]);
     const qs = p.toString();
@@ -71,7 +76,13 @@
           <div class="axhead">Relative demand · ${CTX_LABELS[bc]}</div>
           ${rows.map(([n, k]) => {
             const c = cxCell(s, k, bc);
-            return c ? `<span class="pip-row">${n}${pips(CX_ORDINAL[c.v] || 0)}</span>` : "";
+            // Ruled pip tooltips: title = "<axis> — <value>", body = the researched
+            // reason for THAT value (the generated boilerplate tail is a data bug).
+            if (!c) return "";
+            const why = (c.why || "").replace(/\s*A durable target makes repeated precision matter\.?\s*$/, "");
+            return `<span class="pip-row${why ? " tipped" : ""}"${why
+              ? ` data-tipname="${esc(AXIS_LABELS[k])} — ${esc(c.v)}" data-tip="${esc(why)}"` : ""
+              }>${n}${pips(CX_ORDINAL[c.v] || 0)}</span>`;
           }).filter(Boolean).join("")}
         </div>`
         : `<div class="card-axes"><div class="pips-na" style="margin-left:0">complexity not yet researched for this spec</div></div>`}
@@ -84,7 +95,25 @@
     </article>`;
   }
 
+  // A class matches the search when its own name or any of its spec names does.
+  const classMatches = c => {
+    const q = state.search.trim().toLowerCase();
+    return !q || [c.name, ...c.specs.map(s => s.name)].join(" ").toLowerCase().includes(q);
+  };
+
   function render() {
+    const classesView = state.view === "classes";
+    el("viewHeading").textContent = classesView ? "The 21 Classes" : "Playstyle Families";
+    document.querySelector(".bar-row").classList.toggle("classes-view", classesView);
+    if (classesView) {
+      const vis = CARDS.classes.filter(classMatches);
+      el("atlas").innerHTML = `<div class="class-grid">${vis.map(CARDS.composeCard).join("")}</div>`;
+      el("resultCount").textContent = vis.length === CARDS.classes.length
+        ? `Showing all ${CARDS.classes.length} classes`
+        : `Showing ${vis.length} of ${CARDS.classes.length} classes`;
+      el("emptyState").hidden = vis.length !== 0;
+      return;
+    }
     const visible = data.specs.filter(matches);
     const byFamily = new Map(data.families.map(f => [f.id, []]));
     visible.forEach(s => byFamily.get(s.atlas).push(s));
@@ -112,10 +141,12 @@
     el("emptyState").hidden = count !== 0;
   }
 
+  // The modal register is the LOCKED P1 slim quick-look (Choose grammar §4).
+  // The full nine-fold profile lives on the class page, which the chip sells.
   function openProfile(id) {
     const s = specById[id];
     if (!s) return;
-    el("profileContent").innerHTML = profileHTML(s);
+    el("profileContent").innerHTML = SLIM.slimHTML(s);
     el("profileDialog").showModal();
     el("profileDialog").scrollTop = 0;
     history.replaceState(null, "", location.search + "#spec=" + slug(id));
@@ -246,8 +277,20 @@
     const untray = e.target.closest("[data-untray]");
     if (untray) { toggleTray(untray.dataset.untray); return; }
     if (e.target.closest(".fold-head") || e.target.closest(".ctx-tab")) return; // shared handler owns these
+    if (CARDS.isNotDoor(e.target)) return; // tooltips and the video corner, not doors
     const card = e.target.closest("[data-open]");
     if (card && !e.target.closest("a")) openProfile(card.dataset.open);
+  });
+
+  // ---------- the altitude lens ----------
+  el("lens").addEventListener("click", e => {
+    const b = e.target.closest("button[data-view]");
+    if (!b) return;
+    state.view = b.dataset.view;
+    el("lens").querySelectorAll("button").forEach(x => x.classList.toggle("active", x === b));
+    document.querySelector(".bar-row").classList.remove("filters-open");
+    writeUrlState();
+    render();
   });
 
   document.addEventListener("keydown", e => {
@@ -313,6 +356,8 @@
   el("specCount").textContent = data.specCount;
   el("curatedCount").textContent = data.enrichedCount;
   readUrlState();
+  el("lens").querySelectorAll("button").forEach(b =>
+    b.classList.toggle("active", b.dataset.view === state.view));
   syncFilterButtons();
   syncFilterToggle();
   render();

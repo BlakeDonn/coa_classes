@@ -1,0 +1,138 @@
+/* The ruled class card, the altitude lens, the Choose result band, and the LOCKED
+   slim modal. Ported from the design lab under the site-adoption slice, 2026-08-10.
+   Everything here builds on explorer.css's world (plate, stones, dialog). */
+
+/* ---------- the altitude lens (Atlas grammar §2: a standing Classes ↔ Specs toggle) ---------- */
+.st-lens { display: inline-flex; border: 1px solid #3a3325; border-radius: 4px; overflow: hidden;
+  box-shadow: inset 0 1px 0 #ffffff10, 0 2px 5px #0007; }
+.st-lens button { border: 0; border-right: 1px solid #00000080; background: linear-gradient(#22201a, #161511);
+  padding: 8px 14px; font: 800 10px var(--sans); letter-spacing: .09em; text-transform: uppercase;
+  color: #9a9483; cursor: pointer; white-space: nowrap; }
+.st-lens button:last-child { border-right: 0; }
+.st-lens button.active { background: linear-gradient(#0f0d09, #191509); color: #ecd7a8; box-shadow: inset 0 2px 6px #000c; }
+
+/* The standing lens is a new permanent control in the bar row, so the row wraps
+   instead of scrolling sideways once the spec filters join it. */
+.bar-row { flex-wrap: wrap; row-gap: 10px; overflow-x: visible; }
+
+/* the spec filters belong to the spec altitude only */
+.bar-row.classes-view .filters, .bar-row.classes-view #filterToggle { display: none; }
+
+/* ---------- the class grid ---------- */
+.class-grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
+
+/* ---------- the class card ---------- */
+.cl-card { padding: 0; cursor: default; }
+.cl-top { position: relative; display: flex; gap: 12px; align-items: center; padding: 12px 14px 10px;
+  background: radial-gradient(340px 120px at 12% 0%, color-mix(in srgb, var(--class-color) 26%, transparent), transparent 75%); }
+.cl-card.has-thumb .cl-top { padding-right: 100px; }
+.cl-medal { width: 44px; height: 44px; flex: 0 0 44px; display: grid; place-items: center; font-size: 22px;
+  border: 1px solid #6b5a35; border-radius: 3px; color: color-mix(in srgb, var(--class-color) 70%, #fff);
+  background: radial-gradient(circle at 35% 30%, color-mix(in srgb, var(--class-color) 45%, #000), #0a0a0a 75%);
+  box-shadow: inset 0 0 8px #000; }
+.cl-top h3 { margin: 0; font: 700 17px/1.1 var(--serif); letter-spacing: .03em;
+  color: color-mix(in srgb, var(--class-color) 75%, #fff); }
+
+/* ruled sub lines (round 7): jobs under the name, range on its own fainter line */
+.cl-sub { color: #83888f; font-size: 9.5px; text-transform: uppercase; letter-spacing: .08em; margin-top: 2px; }
+.cl-sub-range { color: #565b62; margin-top: 1px; }
+
+/* the tagline slot, with the ruled styled-keyword glow */
+.cl-tagline { margin: 7px 14px 0; font: italic 12.5px Georgia, "Palatino Linotype", serif; color: #b4b8b1; }
+.cl-tagline .kw { font-style: normal; font-weight: 600;
+  color: color-mix(in srgb, var(--class-color) 58%, white 42%);
+  text-shadow: 0 0 14px color-mix(in srgb, var(--class-color) 70%, transparent),
+    0 0 4px color-mix(in srgb, var(--class-color) 45%, transparent); }
+
+/* E1 engine blurb */
+.cl-engine { margin: 8px 14px 0; padding: 6px 10px; border-left: 3px solid var(--class-color);
+  background: #131118; border-radius: 0 3px 3px 0; }
+.cl-engine .lab { display: block; font-size: 8px; font-weight: 800; letter-spacing: .16em;
+  text-transform: uppercase; color: color-mix(in srgb, var(--class-color) 58%, white 42%); margin-bottom: 2px; }
+.cl-engine p { margin: 0; color: #a9ada7; font-size: 11.5px; }
+
+/* ✦ computed facts — every one traces to a roster fact; hover for the fact */
+.cl-rare { margin: 8px 14px 0; padding: 6px 0 0; list-style: none; display: grid; gap: 2px;
+  border-top: 1px solid color-mix(in srgb, var(--class-color) 18%, transparent); }
+.cl-rare li { color: #e8c88a; font-size: 11.5px; cursor: help; }
+.cl-rare .mark { color: #c9aa71; margin-right: 5px; }
+
+.cl-div { height: 1px; margin: 10px 14px 0; background: linear-gradient(90deg, #6b5a35, transparent 70%); }
+
+/* doors: queue icon · name · archetype tag · range */
+.cl-specrows { display: grid; gap: 5px; padding: 9px 14px 13px; }
+.cl-specrows button { display: flex; align-items: center; gap: 8px; width: 100%; text-align: left;
+  border: 1px solid #2c2a22; border-radius: 3px; padding: 6px 10px; cursor: pointer;
+  background: linear-gradient(#191815, #121110); color: inherit; font: inherit; }
+.cl-specrows button:hover { border-color: color-mix(in srgb, var(--class-color) 58%, white 42%); }
+.cl-specrows .rimg { display: inline-flex; gap: 3px; flex: 0 0 auto; cursor: help; }
+.cl-specrows .rimg img { width: 16px; height: 16px; display: block; }
+.cl-specrows .nm { font: 600 12px var(--sans); color: color-mix(in srgb, var(--class-color) 72%, #fff); }
+.cl-specrows .mid { color: #6e695c; font-size: 10px; white-space: nowrap; overflow: hidden;
+  text-overflow: ellipsis; min-width: 0; }
+.cl-specrows .rs { margin-left: auto; color: #83888f; font-size: 9px; text-transform: uppercase;
+  letter-spacing: .07em; white-space: nowrap; flex: 0 0 auto; }
+
+/* V1 video corner */
+.cl-thumb { position: absolute; top: 10px; right: 10px; width: 84px; height: 48px;
+  border: 1px solid #6b5a35; border-radius: 3px; overflow: hidden; display: block; }
+.cl-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.cl-thumb .play { position: absolute; inset: 0; display: grid; place-items: center;
+  color: #ecd7a8; font-size: 12px; text-shadow: 0 0 8px #000; }
+.cl-thumb .cap { position: absolute; left: 0; right: 0; bottom: 0; padding: 2px 3px;
+  background: linear-gradient(transparent, #000d); color: #c9aa71; font-size: 6.5px;
+  letter-spacing: .1em; text-transform: uppercase; text-align: center; }
+
+/* spec-card pip rows carry the ruled tooltip affordance */
+.pip-row.tipped { border-bottom: 1px dotted #3a3d42; cursor: help; }
+
+/* ---------- Choose · M2 result cards (Choose grammar §1) ---------- */
+.cs-c { max-width: 460px; width: 100%; }
+.cs-band { border: 1px solid var(--edge-out); border-bottom: 0; border-radius: 3px 3px 0 0;
+  background: #131418; padding: 9px 12px 7px; }
+.cs-band .rtier { float: right; margin-left: 8px; }
+.cs-band .cs-prob { margin: 0 0 5px; font-size: 12px; color: #b9bdb4; }
+.cs-band .cs-prob b { color: color-mix(in srgb, var(--class-color) 72%, #fff); font-weight: 600; }
+.cs-band .why, .cs-band .trade { margin: 0 0 4px; font-size: 12px; color: #b9bdb4; }
+.cs-band .why em { color: #8fd6a0; font-style: normal; }
+.cs-band .trade em { color: var(--red-soft); font-style: normal; }
+.cs-band .conf { margin: 0 0 3px; color: var(--faint); font-size: 10.5px; }
+.cs-c .cl-card { border-radius: 0 0 3px 3px; }
+/* the probable spec's door is lit */
+.cs-c .cl-specrows button.cs-matched { border-color: color-mix(in srgb, var(--class-color) 58%, white 42%);
+  box-shadow: 0 0 9px color-mix(in srgb, var(--class-color) 30%, transparent); }
+/* the ruled lightened-class-color glow marks the Strong match */
+.cs-lead .cl-card { border-color: color-mix(in srgb, var(--class-color) 58%, white 42%);
+  box-shadow: 0 0 12px color-mix(in srgb, var(--class-color) 26%, transparent); }
+.cs-list { justify-items: center; }
+
+/* ---------- Choose · B honest-icon questions (Choose grammar §2) ---------- */
+.qc-art { display: inline-flex; gap: 4px; flex: 0 0 auto; }
+.qc-art img { width: 22px; height: 22px; display: block; }
+.qc-art.sm img { width: 15px; height: 15px; }
+.choices button.qc-iconrow { display: flex; align-items: center; gap: 11px; text-align: left; }
+.choices .qc-body { flex: 1 1 auto; min-width: 0; }
+.q-pips { flex: 0 0 auto; margin-left: auto; }
+
+/* ---------- the LOCKED slim modal (Choose grammar §4) ---------- */
+.slim-tag { display: inline-block; margin-top: 5px; color: #8d8678; font-size: 10.5px;
+  border: 1px dotted #4a463c; border-radius: 3px; padding: 2px 7px; }
+.slim-foot { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
+  margin-top: 10px; padding-top: 8px; border-top: 1px solid #26282d; }
+.slim-foot span { color: var(--faint); font-size: 10px; }
+/* the emphasized class-page exit: chip beside the spec name, 7px gap under the row */
+.slim-h2row { display: flex; align-items: center; gap: 8px 10px; flex-wrap: wrap; margin-bottom: 7px; }
+.slim-h2row h2 { margin: 0; flex: 1 1 auto; min-width: 0; }
+.slim-crest { display: grid; place-items: center; flex: 0 0 auto; width: 20px; height: 20px;
+  overflow: hidden; font-size: 13px; line-height: 1;
+  border: 1px solid color-mix(in srgb, var(--class-color) 40%, #3a3427); border-radius: 3px;
+  background: #0d0c0a; color: color-mix(in srgb, var(--class-color) 72%, #fff); }
+.slim-exit-chip { display: inline-flex; align-items: center; gap: 7px; flex: 0 0 auto;
+  padding: 4px 9px; border: 1px solid color-mix(in srgb, var(--class-color) 58%, white 42%);
+  border-radius: 3px; background: #0f1013; text-decoration: none;
+  font: 600 12.5px var(--serif); color: color-mix(in srgb, var(--class-color) 72%, #fff);
+  box-shadow: 0 0 9px color-mix(in srgb, var(--class-color) 20%, transparent); }
+.slim-exit-chip .arr { color: var(--gold); }
+.slim-exit-chip:hover { filter: brightness(1.12); }
+/* in the dialog the header row must clear the absolute × close button */
+.a-dialog .slim-h2row { padding-right: 34px; }
