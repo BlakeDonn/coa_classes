@@ -2,8 +2,6 @@
    URL contract: class.html?c=<class-slug>[&from=choose|guided]#<spec-slug>
 
    This is the BAKED ruled state — no study switchers, no variant query params.
-   (One exception while the design pass runs: a temporary ?r3= role-line
-   switcher — dim | two — removed when the user picks. 2026-08-10.)
    Masthead order: name · tagline (keyword glow) · engine block · plain-text strict
    role line, with the T1 corner video thumb at the text column's right edge.
    Cultist, Tinker and Knight of Xoroth carry their authored seals; the others render
@@ -38,25 +36,19 @@
 
   // Strict true-support counting (ruled 2026-08-09): class-level Support counts only
   // specs that support WITHOUT healing. Spec-level roles are untouched.
-  function roleLine() {
+  // The two-register role lines (RULED 2026-08-10, design-pass round 3): the
+  // Atlas card's S1 form arrives here — jobs line, then ranges on their own
+  // fainter line, card order and card join. Amends the one-line law to one
+  // line PER register; the Sun Cleric tight guard retires (jobs fit at 390).
+  function roleLines() {
     const counts = {};
     specs.forEach(s => s.roles
       .filter(r => r !== "Support" || !s.roles.includes("Healer"))
       .forEach(r => { counts[r] = (counts[r] || 0) + 1; }));
-    const ranges = [...new Set(specs.flatMap(s => s.range))];
     const jobs = Object.entries(counts).map(([r, n]) => n > 1 ? `${r} ×${n}` : r);
-    // ROUND-3 STUDY (temporary): jobs vs ranges distinction, ?r3=dim|two.
-    // dim keeps the ruled one-line law, ranges inline but fainter. two is the
-    // Atlas card's S1 echo: jobs line, ranges on their own fainter line — it
-    // would EDIT the one-line law and retire the Sun Cleric tight guard.
-    const form = params.get("r3");
-    if (form === "two") {
-      const ordered = ["Melee", "Hybrid", "Ranged"].filter(r => ranges.includes(r));
-      return `${jobs.map(t => `<span>${esc(t)}</span>`).join("")}
-      </div><div class="cp-roles cp-ranges">${esc(ordered.join(ordered.length > 2 ? " · " : " & "))}`;
-    }
-    return [...jobs.map(t => `<span>${esc(t)}</span>`),
-      ...ranges.map(t => `<span${form === "dim" ? ' class="rg"' : ""}>${esc(t)}</span>`)].join("");
+    const ranges = ["Melee", "Hybrid", "Ranged"].filter(r => specs.some(s => s.range.includes(r)));
+    return `<div class="cp-roles">${jobs.map(t => `<span>${esc(t)}</span>`).join("")}</div>
+      <div class="cp-roles cp-ranges">${esc(ranges.join(ranges.length > 2 ? " · " : " & "))}</div>`;
   }
 
   function taglineHTML() {
@@ -107,19 +99,12 @@
     <h1>${esc(klass)}</h1>
     ${taglineHTML()}
     ${engineHTML()}
-    <div class="cp-roles">${roleLine()}</div>
+    ${roleLines()}
     ${thumbsHTML()}`;
   el("mast").style.setProperty("--class-color", color);
   document.body.classList.add("ry-e-col", "ry-v-t1", "ry-glow", "ry-k-airfam");
-  // One-line law guard: a role line that would clip (Sun Cleric at 390px) tightens
-  // instead — the ruled look everywhere else stays untouched.
-  const roleEls = el("mast").querySelectorAll(".cp-roles");
-  const fitRoles = () => roleEls.forEach(r => {
-    r.classList.remove("tight");
-    if (r.scrollWidth > r.clientWidth) r.classList.add("tight");
-  });
-  fitRoles();
-  window.addEventListener("resize", fitRoles);
+  // (The Sun Cleric tight guard retired with the two-register lines, 2026-08-10:
+  // the jobs line alone fits full-size at 390 for every class.)
 
   // One-line name law (RULED 2026-08-10, design-pass round 1): the class name
   // never wraps, at any width. Measure the rendered name and scale only one
