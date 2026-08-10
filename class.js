@@ -2,6 +2,8 @@
    URL contract: class.html?c=<class-slug>[&from=choose|guided]#<spec-slug>
 
    This is the BAKED ruled state — no study switchers, no variant query params.
+   (One round-1 exception while the design pass runs: a temporary ?n= name-form
+   switcher — fit | small | tight — removed when the user picks. 2026-08-10.)
    Masthead order: name · tagline (keyword glow) · engine block · plain-text strict
    role line, with the T1 corner video thumb at the text column's right edge.
    Cultist, Tinker and Knight of Xoroth carry their authored seals; the others render
@@ -108,6 +110,29 @@
   };
   fitRoles();
   window.addEventListener("resize", fitRoles);
+
+  // ROUND-1 STUDY (temporary): the one-line class name, ?n=fit|small|tight.
+  // fit = measure the rendered name and scale only the names that overflow,
+  // at any width — the same self-correcting idea as the role-line guard above.
+  const nameForm = params.get("n");
+  if (["fit", "small", "tight"].includes(nameForm)) document.body.classList.add("ry-n-" + nameForm);
+  const nameEl = el("mast").querySelector("h1");
+  const fitName = () => {
+    if (!document.body.classList.contains("ry-n-fit") || !nameEl) return;
+    nameEl.style.fontSize = "";
+    const cs = getComputedStyle(nameEl);
+    const avail = nameEl.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+    const range = document.createRange();
+    range.selectNodeContents(nameEl);
+    const text = range.getBoundingClientRect().width;
+    if (text > avail) nameEl.style.fontSize =
+      Math.max(15, parseFloat(cs.fontSize) * avail / text - 0.3) + "px";
+  };
+  fitName();
+  window.addEventListener("resize", fitName);
+  // A scrollbar arriving after first paint narrows the h1 without a resize
+  // event; the observer re-fits on any size change and converges in one pass.
+  if (window.ResizeObserver) new ResizeObserver(fitName).observe(nameEl);
 
   // ---------- the seal (Cultist, Tinker) ----------
 

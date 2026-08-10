@@ -25,6 +25,19 @@
 .ry-rare li { color: #e8c88a; font-size: 12.5px; cursor: help; }
 .ry-rare .mark { color: #c9aa71; margin-right: 6px; }
 
+/* ---- ROUND-1 STUDY (temporary, design pass 2026-08-10): the one-line class name.
+   ?n=fit — per-name width scaling (JS guard, same idea as the role-line guard).
+   ?n=small — one smaller fixed phone size for every class.
+   ?n=tight — tracking/condensed styling at today's sizes.
+   Baseline (no param) keeps the shipped wrap. Removed when the user picks. ---- */
+body[class*="ry-n-"] .cp-mast h1 { white-space: nowrap; }
+body.ry-n-tight .cp-mast h1 { letter-spacing: 0; }
+@media (max-width: 560px) {
+  body.ry-n-small .cp-mast h1 { font-size: 20px; }
+  body.ry-n-tight .cp-mast h1 { letter-spacing: -.01em;
+    transform: scaleX(.93); transform-origin: 0 50%; }
+}
+
 /* the strict role line: one plain-text line at EVERY width (ruled 2026-08-09) */
 .cp-roles { display: block; margin-top: 10px; white-space: nowrap; overflow: hidden; }
 .cp-roles.tight span { font-size: 11px; letter-spacing: -0.15px; }
