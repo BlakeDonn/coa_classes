@@ -596,6 +596,113 @@
     <text class="bm-legend" x="14" y="20">ONE CURSE · A FORM PER SPEC</text>
     ${BM_PHONE_NODES.map(s => bmNodeSvg(s, 33, 44)).join("")}`;
 
+
+  // Necromancer: the crypt floor from above — a ring of grave niches (1, 2, and 3
+  // slots wide) around the sunken center; the roster IS the resource (packet, final batch).
+  const ncNodes = [
+    { id: "necromancer/death", name: "Death", verb: "CULTIVATE", tag: "15", x: 73, y: 66 },
+    { id: "necromancer/rime", name: "Rime", verb: "FREEZE", tag: "FROZEN", x: 347, y: 66 },
+    { id: "necromancer/animation", name: "Animation", verb: "MARSHAL", tag: "+3 LF", x: 210, y: 206 },
+  ];
+  const NC_DEFS = `<defs>
+      <filter id="ncGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    </defs>`;
+  const ncNodeSvg = (s, ny, vy) => `<g class="cd-node nc-node" data-cd-spec="${s.id}" role="button" tabindex="0" transform="translate(${s.x} ${s.y})">
+      <circle class="node-ring" r="29"/><circle class="node-dot" r="4"/>
+      <text class="nc-tag" text-anchor="middle" y="18">${s.tag}</text>
+      <text class="node-name" text-anchor="middle" y="${ny}">${s.name}</text>
+      <text class="node-verb" text-anchor="middle" y="${vy}">${s.verb}</text></g>`;
+  const ncNiches = (cx, cy, r) => {
+    const widths = [1, 2, 1, 3, 1, 2, 1, 1];
+    let a = -90;
+    return widths.map(w => {
+      const span = w * 16, mid = a + span / 2;
+      a += span + 14;
+      const rad = mid * Math.PI / 180;
+      const x = cx + r * Math.cos(rad), y = cy + r * Math.sin(rad);
+      return `<rect class="nc-niche w${w}" x="${(x - w * 5).toFixed(1)}" y="${(y - 6).toFixed(1)}" width="${w * 10}" height="12" rx="2"
+        transform="rotate(${(mid + 90).toFixed(1)} ${x.toFixed(1)} ${y.toFixed(1)})"/>`;
+    }).join("");
+  };
+  const NC_DESKTOP = `<title id="nc-seal-title">The crypt floor: grave niches one, two, and three slots wide around the sunken center</title>
+    ${NC_DEFS}
+    <circle class="nc-floor" cx="210" cy="114" r="52"/>
+    <circle class="nc-center" cx="210" cy="114" r="24"/>
+    ${ncNiches(210, 114, 52)}
+    <text class="nc-threshold" x="112" y="34" text-anchor="middle">LIFE FORCE · HELD</text>
+    <text class="nc-threshold" x="306" y="34" text-anchor="middle">RUNIC POWER · SPENT</text>
+    <path class="nc-link" d="M164 88 L102 72"/><path class="nc-link" d="M256 88 L318 72"/>
+    <path class="nc-link" d="M210 166 L210 177"/>
+    <text class="nc-center-label" x="210" y="110" text-anchor="middle">LIFE FORCE</text>
+    <text class="nc-center-sub" x="210" y="122" text-anchor="middle">GHOUL 1 · MAGE 2 · GARGOYLE 3</text>
+    <text class="nc-legend" x="16" y="22">THE ROSTER IS THE RESOURCE</text>
+    ${ncNodes.map(s => ncNodeSvg(s, s.y > 150 ? 38 : 42, s.y > 150 ? 50 : 54)).join("")}`;
+  const NC_PHONE_NODES = ncNodes.map(s => ({ ...s, y: s.y > 150 ? 178 : 58 }));
+  const NC_PHONE = `<title id="nc-seal-title">The crypt floor: grave niches one, two, and three slots wide around the sunken center</title>
+    ${NC_DEFS}
+    <circle class="nc-floor" cx="210" cy="98" r="42"/>
+    <circle class="nc-center" cx="210" cy="98" r="19"/>
+    ${ncNiches(210, 98, 42)}
+    <text class="nc-threshold" x="112" y="26" text-anchor="middle">LIFE FORCE · HELD</text>
+    <text class="nc-threshold" x="306" y="26" text-anchor="middle">RUNIC POWER · SPENT</text>
+    <path class="nc-link" d="M172 76 L102 62"/><path class="nc-link" d="M248 76 L318 62"/>
+    <path class="nc-link" d="M210 140 L210 149"/>
+    <text class="nc-center-label" x="210" y="94" text-anchor="middle">LIFE FORCE</text>
+    <text class="nc-center-sub" x="210" y="106" text-anchor="middle">GHOUL 1 · MAGE 2 · GARGOYLE 3</text>
+    <text class="nc-legend" x="14" y="20">THE ROSTER IS THE RESOURCE</text>
+    ${NC_PHONE_NODES.map(s => ncNodeSvg(s, 33, 44)).join("")}`;
+
+  // Primalist: a split geode filled to a Rage line, one fault running edge to edge —
+  // the shared Seismic cooldown — with a fissure per spec (packet, final batch).
+  const prNodes = [
+    { id: "primalist/primal", name: "Primal", verb: "REND", tag: "2", x: 73, y: 64 },
+    { id: "primalist/geomancy", name: "Geomancy", verb: "AMASS", tag: "15", x: 347, y: 64 },
+    { id: "primalist/life", name: "Life", verb: "SPLIT", tag: "20%", x: 73, y: 196 },
+    { id: "primalist/mountain-king", name: "Mountain King", verb: "DEFLECT", tag: "5", x: 347, y: 196 },
+  ];
+  const PR_DEFS = `<defs>
+      <linearGradient id="prRage" x1="0" y1="1" x2="0" y2="0"><stop stop-color="#bc784c"/><stop offset="1" stop-color="#e8b489"/></linearGradient>
+      <filter id="prGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    </defs>`;
+  const prNodeSvg = (s, ny, vy) => `<g class="cd-node pr-node" data-cd-spec="${s.id}" role="button" tabindex="0" transform="translate(${s.x} ${s.y})">
+      <circle class="node-ring" r="29"/><circle class="node-dot" r="4"/>
+      <text class="pr-tag" text-anchor="middle" y="18">${s.tag}</text>
+      <text class="node-name" text-anchor="middle" y="${ny}">${s.name}</text>
+      <text class="node-verb" text-anchor="middle" y="${vy}">${s.verb}</text></g>`;
+  const PR_DESKTOP = `<title id="pr-seal-title">A split geode filled to the Rage line, one Seismic fault through it, a fissure per spec</title>
+    ${PR_DEFS}
+    <path class="pr-fault" d="M115 116 L305 116"/>
+    <path class="pr-geode" d="M170 78 L250 78 L278 106 L266 148 L210 160 L154 148 L142 106 Z"/>
+    <path class="pr-ragefill" d="M150 122 L270 122 L266 148 L210 160 L154 148 Z"/>
+    <path class="pr-facet" d="M170 78 L210 116 L250 78 M142 106 L210 116 L278 106"/>
+    <path class="pr-fissure" d="M142 112 C 120 96, 112 84, 100 74"/>
+    <path class="pr-fissure" d="M278 112 C 300 96, 308 84, 320 74"/>
+    <path class="pr-fissure" d="M148 124 C 124 146, 114 160, 102 172"/>
+    <path class="pr-fissure" d="M272 124 C 296 146, 306 160, 318 172"/>
+    <text class="pr-threshold" x="118" y="34" text-anchor="middle">BEAR · STRIKE</text>
+    <text class="pr-threshold" x="302" y="34" text-anchor="middle">HAWK · CAST</text>
+    <text class="pr-center-label" x="210" y="188" text-anchor="middle">RAGE</text>
+    <text class="pr-center-sub" x="210" y="200" text-anchor="middle">ONE FAULT · EVERY SPEC BENDS IT</text>
+    <text class="pr-legend" x="16" y="22">ONE BOON AT A TIME</text>
+    ${prNodes.map(s => prNodeSvg(s, 42, 54)).join("")}`;
+  const PR_PHONE_NODES = prNodes.map(s => ({ ...s, y: s.y < 150 ? 56 : 167 }));
+  const PR_PHONE = `<title id="pr-seal-title">A split geode filled to the Rage line, one Seismic fault through it, a fissure per spec</title>
+    ${PR_DEFS}
+    <path class="pr-fault" d="M118 102 L302 102"/>
+    <path class="pr-geode" d="M178 68 L242 68 L266 92 L256 128 L210 138 L164 128 L154 92 Z"/>
+    <path class="pr-ragefill" d="M160 108 L260 108 L256 128 L210 138 L164 128 Z"/>
+    <path class="pr-facet" d="M178 68 L210 102 L242 68 M154 92 L210 102 L266 92"/>
+    <path class="pr-fissure" d="M154 98 C 132 84, 124 74, 108 66"/>
+    <path class="pr-fissure" d="M266 98 C 288 84, 296 74, 312 66"/>
+    <path class="pr-fissure" d="M160 110 C 136 130, 126 142, 110 152"/>
+    <path class="pr-fissure" d="M260 110 C 284 130, 294 142, 310 152"/>
+    <text class="pr-threshold" x="118" y="26" text-anchor="middle">BEAR · STRIKE</text>
+    <text class="pr-threshold" x="302" y="26" text-anchor="middle">HAWK · CAST</text>
+    <text class="pr-center-label" x="210" y="160" text-anchor="middle">RAGE</text>
+    <text class="pr-center-sub" x="210" y="171" text-anchor="middle">ONE FAULT · EVERY SPEC BENDS IT</text>
+    <text class="pr-legend" x="14" y="20">ONE BOON AT A TIME</text>
+    ${PR_PHONE_NODES.map(s => prNodeSvg(s, 33, 44)).join("")}`;
+
   // Phone: the ruled 420×224 tightened arrangement — orbits 60/77, eye .66,
   // node rows raised. Nothing removed.
   const CULTIST_PHONE_NODES = [
@@ -942,6 +1049,16 @@
     el("mast").insertAdjacentHTML("beforeend",
       `<div class="cd-stage cd-seal ry-reseal cd-wh-seal" aria-label="Witch Hunter class engine diagram">
         <svg viewBox="0 0 420 260" role="img" aria-labelledby="wh-seal-title">${WH_DESKTOP}</svg></div>`);
+  } else if (cSlug === "necromancer") {
+    el("mast").classList.add("cd-with-seal");
+    el("mast").insertAdjacentHTML("beforeend",
+      `<div class="cd-stage cd-seal ry-reseal cd-nc-seal" aria-label="Necromancer class engine diagram">
+        <svg viewBox="0 0 420 260" role="img" aria-labelledby="nc-seal-title">${NC_DESKTOP}</svg></div>`);
+  } else if (cSlug === "primalist") {
+    el("mast").classList.add("cd-with-seal");
+    el("mast").insertAdjacentHTML("beforeend",
+      `<div class="cd-stage cd-seal ry-reseal cd-pr-seal" aria-label="Primalist class engine diagram">
+        <svg viewBox="0 0 420 260" role="img" aria-labelledby="pr-seal-title">${PR_DESKTOP}</svg></div>`);
   } else if (cSlug === "barbarian") {
     el("mast").classList.add("cd-with-seal");
     el("mast").insertAdjacentHTML("beforeend",
@@ -1027,6 +1144,8 @@
     "felsworn/slayer": "wheel", "felsworn/infernal": "spike", "felsworn/tyrant": "bank",
     "barbarian/brutality": "bank", "barbarian/headhunting": "wheel", "barbarian/ancestry": "stack",
     "bloodmage/sanguine": "bank", "bloodmage/accursed": "pips", "bloodmage/eternal": "wheel", "bloodmage/fleshweaver": "bank",
+    "necromancer/animation": "wheel", "necromancer/death": "stack", "necromancer/rime": "wheel",
+    "primalist/primal": "wheel", "primalist/geomancy": "bank", "primalist/life": "wave", "primalist/mountain-king": "pips",
   };
   function topoGlyph(kind) {
     const art = {
@@ -1577,6 +1696,146 @@
         "Aeon of Protection is the slow one: 30% of the heal becomes a shield",
         "Epoch casts stack Endless Sands — each cuts 20% off your next Reverse Wound, up to five"],
       eyes: "which Aeon is active · your Endless Sands stacks",
+    },
+    "necromancer/animation": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Animation rhythm: fill the roster, command it, and Deadly Bond can make the next Command free">
+        <defs><marker id="ncArrA" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+        <rect class="nc-slot" x="110" y="76" width="18" height="14" rx="2"/>
+        <rect class="nc-slot" x="134" y="76" width="34" height="14" rx="2"/>
+        <rect class="nc-slot" x="174" y="76" width="50" height="14" rx="2"/>
+        <text class="ph" x="168" y="118" text-anchor="middle">FILL THE ROSTER</text>
+        <text class="ph2" x="168" y="132" text-anchor="middle">Ghoul 1 · Mage 2 · Gargoyle 3</text>
+        <path class="branch" d="M260 74 C 350 42, 440 40, 520 52" marker-end="url(#ncArrA)"/>
+        <path class="refresh" d="M537 62 l13 -13 l13 13 l-13 13 Z"/>
+        <text class="ph" x="550" y="100" text-anchor="middle">COMMAND</text>
+        <text class="ph2" x="550" y="114" text-anchor="middle">Runic Power spends here</text>
+        <path class="branch" d="M578 56 C 630 46, 670 48, 716 58" marker-end="url(#ncArrA)"/>
+        <rect class="nc-window" x="726" y="44" width="190" height="78" rx="2"/>
+        <text class="nc-window-lab" x="821" y="72" text-anchor="middle">DEADLY BOND · 6 s</text>
+        <text class="ph2" x="821" y="90" text-anchor="middle" fill="#dfe8cd">30% chance the next Command is free</text>
+        <path class="branch" d="M821 126 C 700 160, 270 160, 158 100" marker-end="url(#ncArrA)"/>
+        <text class="ph2" x="310" y="156" text-anchor="middle">THE ARMY MARCHES ON</text>
+      </svg>`,
+      bullets: ["Life Force is a standing budget, not a bar that refills. Raise: Ghoul occupies 1 of it and the largest undead occupy 3",
+        "Commands are the button the whole spec pays off on. Deadly Bond gives a 30% chance your next Command within 6 seconds is free",
+        "Everything gets cheaper as you go: Grave Mastery cuts the cost of Animate, Raise, and Command spells by 20%",
+        "March of the Dead sends the undead forward to explode on contact and slows survivors by 70% for 3 seconds"],
+      eyes: "your Life Force budget and the free-Command proc",
+    },
+    "necromancer/death": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Death rhythm: grow the diseases toward fifteen, and below twenty percent they hit twice as hard">
+        <line class="thr" x1="14" y1="44" x2="480" y2="44"/><text class="thr-lab" x="14" y="38">15 · diseases</text>
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        <rect class="brick" x="60" y="112" width="200" height="12" rx="1"/>
+        <rect class="brick" x="90" y="98" width="170" height="12" rx="1"/>
+        <rect class="brick" x="120" y="84" width="140" height="12" rx="1"/>
+        <rect class="brick" x="150" y="70" width="110" height="12" rx="1"/>
+        <text class="ph" x="160" y="146" text-anchor="middle">CULTIVATE</text>
+        <text class="ph2" x="160" y="160" text-anchor="middle">the garden of rot grows</text>
+        <rect class="nc-window" x="520" y="44" width="270" height="82" rx="2"/>
+        <text class="nc-window-lab" x="655" y="72" text-anchor="middle">TARGET BELOW 20%</text>
+        <text class="ph2" x="655" y="90" text-anchor="middle" fill="#dfe8cd">diseases and Crypt Swarm deal 100% more</text>
+        <text class="ph" x="890" y="146" text-anchor="middle">REPLANT</text>
+      </svg>`,
+      bullets: ["Crypt Plague is the stack you grow: 10 at first, and a later passive allows 5 more",
+        "Casting a Command on a diseased enemy applies Expunge, which raises your disease damage on that target by 10% and stacks twice",
+        "Virulency refreshes and copies every disease on the target, and you can use it again within 10 seconds to infest a second enemy",
+        "The payoff is late, not early: your diseases deal 100% more damage to enemies below 20% health"],
+      eyes: "your Crypt Plague stack count and the target's health bar",
+    },
+    "necromancer/rime": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Rime rhythm: freeze the target for four seconds, land Glacial Impact, and the Runic Power comes back">
+        <defs><marker id="ncArrR" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+        <path class="refresh" d="M130 84 l13 -13 l13 13 l-13 13 Z"/>
+        <text class="ph" x="143" y="122" text-anchor="middle">FREEZE</text>
+        <text class="ph2" x="143" y="136" text-anchor="middle">the gate opens for 4 seconds</text>
+        <path class="branch" d="M210 70 C 310 40, 430 38, 530 50" marker-end="url(#ncArrR)"/>
+        <rect class="nc-window" x="550" y="44" width="250" height="82" rx="2"/>
+        <text class="nc-window-lab" x="675" y="72" text-anchor="middle">FROZEN · 4 s</text>
+        <text class="ph2" x="675" y="90" text-anchor="middle" fill="#dfe8cd">Glacial Impact lands · 20 Runic Power back</text>
+        <path class="branch" d="M675 126 C 560 160, 250 160, 150 100" marker-end="url(#ncArrR)"/>
+        <text class="ph2" x="310" y="156" text-anchor="middle">FREEZE AGAIN</text>
+      </svg>`,
+      bullets: ["Frozen is the gate. Glacial Impact will not fire unless the target is Frozen",
+        "Ice Barrage entombs the target for 4 seconds when it finishes, which is how you open that gate",
+        "Commands feed the freeze back, with a 20% chance to reset Ice Barrage and make your next cast free within 15 seconds",
+        "The payoff pays you back, generating 20 Runic Power so the loop can start again"],
+      eyes: "the Frozen timer and your Runic Power bar",
+    },
+    "primalist/primal": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Primal rhythm: keep the two-stack bleed running, and claws and rushes hit harder while it holds">
+        <defs><marker id="prArrP" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+        <circle class="pr-pip" cx="130" cy="84" r="7"/><circle class="pr-pip" cx="162" cy="84" r="7"/>
+        <text class="ph" x="146" y="118" text-anchor="middle">REND</text>
+        <text class="ph2" x="146" y="132" text-anchor="middle">the 2-stack bleed · 12 s</text>
+        <path class="branch" d="M230 74 C 330 42, 450 40, 540 52" marker-end="url(#prArrP)"/>
+        <rect class="pr-window" x="560" y="44" width="240" height="82" rx="2"/>
+        <text class="pr-window-lab" x="680" y="72" text-anchor="middle">BLEEDING TARGET</text>
+        <text class="ph2" x="680" y="90" text-anchor="middle" fill="#f2ddca">+15% claw and rush damage while it holds</text>
+        <path class="branch" d="M680 126 C 570 160, 250 160, 152 100" marker-end="url(#prArrP)"/>
+        <text class="ph2" x="310" y="156" text-anchor="middle">KEEP IT OPEN</text>
+      </svg>`,
+      bullets: ["Two of your weapon attacks apply the same bleed, and it stacks twice on the target for 12 seconds",
+        "Rylak's Bite holds 2 charges on a 10-second recharge, and your smash refreshes one of them, so the wheel keeps turning",
+        "Against a bleeding target your claw and rush attacks deal 15% more damage — the bleed is the gate, not the payoff",
+        "The pet holds enemy attention while you heal yourself, which is why players call this the forgiving leveling route"],
+      eyes: "the bleed on your target and your Rylak's Bite charges",
+    },
+    "primalist/geomancy": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Geomancy rhythm: bank fifteen Earthshaping, then Terrasurge consumes the whole bank">
+        <line class="thr" x1="14" y1="44" x2="480" y2="44"/><text class="thr-lab" x="14" y="38">15 · Earthshaping</text>
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        <path class="kx-climb" d="M60 122 L400 58"/>
+        <text class="ph" x="230" y="146" text-anchor="middle">AMASS</text>
+        <text class="ph2" x="230" y="160" text-anchor="middle">stone on stone</text>
+        <rect class="pr-window" x="520" y="48" width="270" height="78" rx="2"/>
+        <text class="pr-window-lab" x="655" y="76" text-anchor="middle">TERRASURGE</text>
+        <text class="ph2" x="655" y="94" text-anchor="middle" fill="#f2ddca">consumes the bank · +5% stone damage after</text>
+        <text class="ph" x="890" y="146" text-anchor="middle">REBANK</text>
+      </svg>`,
+      bullets: ["Casting your earth spells adds stacks; the bank climbs to 15 and each stack adds 1% spell haste for 20 seconds",
+        "Every Seismic cast pushes that 20-second timer back by 4 seconds, so the bank rarely empties mid-fight",
+        "Terrasurge spends the whole bank at once — the fuller the bank, the bigger the payout, at 5% per stack",
+        "A 10% chance on stack generation resets your earth cooldown early, so the window can arrive off-schedule"],
+      eyes: "your Earthshaping count and the 20-second stack timer",
+    },
+    "primalist/life": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Life rhythm: one wave splits into damage and healing, and the next Hand costs half for eight seconds">
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        <path class="pr-splitline" d="M80 90 L200 90 M200 90 L290 62 M200 90 L290 118"/>
+        <circle class="pr-pip" cx="80" cy="90" r="7"/>
+        <text class="ph2" x="330" y="58" text-anchor="middle">the hurt</text>
+        <text class="ph2" x="330" y="124" text-anchor="middle">the heal</text>
+        <text class="ph" x="185" y="146" text-anchor="middle">SPLIT</text>
+        <text class="ph2" x="185" y="160" text-anchor="middle">one action, two outputs</text>
+        <rect class="pr-window" x="520" y="48" width="280" height="78" rx="2"/>
+        <text class="pr-window-lab" x="660" y="76" text-anchor="middle">AFTER THE WAVE</text>
+        <text class="ph2" x="660" y="94" text-anchor="middle" fill="#f2ddca">next Hand of the Earthmother −50% Rage · 8 s</text>
+        <text class="ph" x="890" y="146" text-anchor="middle">WAVE AGAIN</text>
+      </svg>`,
+      bullets: ["Your melee swings pay twice: 20% of the damage you deal lands as healing on nearby allies",
+        "Seismic Wave is the group beat — it heals up to 8 allies and damages enemies in a 25-yard radius",
+        "Casting that wave makes your next Hand of the Earthmother cost 50% less Rage, for 8 seconds",
+        "Grovekeeper's Presence adds 1% chance to hit for the whole party and raid, so the seat pays even between heals"],
+      eyes: "your Rage bar and the 8-second discount after the wave",
+    },
+    "primalist/mountain-king": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Mountain King rhythm: hold five Earth's Rage, and Call of the Mountain pays parry and reduction while it stands">
+        <line class="thr" x1="14" y1="44" x2="480" y2="44"/><text class="thr-lab" x="14" y="38">5 · Earth's Rage</text>
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        ${[0,1,2,3,4].map(i => `<circle class="pr-pip${i === 4 ? " lit" : ""}" cx="${100 + i * 70}" cy="${112 - i * 14}" r="6"/>`).join("")}
+        <text class="ph" x="240" y="146" text-anchor="middle">HOLD</text>
+        <text class="ph2" x="240" y="160" text-anchor="middle">the mountain gathers</text>
+        <rect class="pr-window" x="540" y="48" width="260" height="78" rx="2"/>
+        <text class="pr-window-lab" x="670" y="76" text-anchor="middle">CALL OF THE MOUNTAIN</text>
+        <text class="ph2" x="670" y="94" text-anchor="middle" fill="#f2ddca">+5% parry · −5% damage taken while held</text>
+        <text class="ph" x="890" y="146" text-anchor="middle">HOLD FAST</text>
+      </svg>`,
+      bullets: ["Getting missed feeds you: each avoided attack returns 5 Rage and shaves 1 second off your earth cooldown",
+        "Quake holds 2 charges on an 8-second recharge, so you can double up on a fresh pull",
+        "Stacks climb to 5 and then hold there; the fifth grants Call of the Mountain, +5% parry and -5% damage taken",
+        "Unyielding Form adds 3% parry and 3% dodge, and raises your Armor from mail and plate by 25%"],
+      eyes: "your Quake charges and the 5-stack gate",
     },
     "barbarian/brutality": {
       svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Brutality rhythm: hoard a doubled Energy pool, then below 35% health Decapitate spends up to one hundred of it">
@@ -2394,6 +2653,99 @@
       <path class="branch" d="M234 146 C 356 140, 374 56, 250 36" marker-end="url(#cmArrTp)"/>
       <text class="ph2" x="190" y="200" text-anchor="middle">retune, and the sands rebuild</text>
     </svg>`,
+    "necromancer/animation": `<svg viewBox="0 0 380 250" role="img" aria-label="Animation rhythm, phone ladder: fill the roster, command it, Deadly Bond can make one free">
+      <defs><marker id="ncArrAp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <rect class="nc-slot" x="24" y="44" width="14" height="11" rx="2"/>
+      <rect class="nc-slot" x="44" y="44" width="26" height="11" rx="2"/>
+      <rect class="nc-slot" x="76" y="44" width="38" height="11" rx="2"/>
+      <text class="ph" x="165" y="42" text-anchor="start">FILL</text>
+      <text class="ph2" x="165" y="56" text-anchor="start">Ghoul 1 · Mage 2 · Gargoyle 3</text>
+      <path class="branch" d="M44 64 L44 88" marker-end="url(#ncArrAp)"/>
+      <path class="refresh" d="M33 110 l11 -11 l11 11 l-11 11 Z"/>
+      <text class="ph" x="165" y="106" text-anchor="start">COMMAND</text>
+      <text class="ph2" x="165" y="120" text-anchor="start">Runic Power spends here</text>
+      <path class="branch" d="M44 124 L44 148" marker-end="url(#ncArrAp)"/>
+      <rect class="nc-window" x="28" y="158" width="200" height="56" rx="2"/>
+      <text class="nc-window-lab" x="128" y="182" text-anchor="middle">DEADLY BOND · 6 s</text>
+      <text class="ph2" x="128" y="200" text-anchor="middle" fill="#dfe8cd">30% chance: next one free</text>
+      <path class="branch" d="M234 186 C 356 180, 374 56, 250 36" marker-end="url(#ncArrAp)"/>
+      <text class="ph2" x="190" y="238" text-anchor="middle">the army marches on</text>
+    </svg>`,
+    "necromancer/death": `<svg viewBox="0 0 380 230" role="img" aria-label="Death rhythm, phone ladder: grow the diseases, then below twenty percent they double">
+      <defs><marker id="ncArrDp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <rect class="brick" x="20" y="58" width="100" height="9" rx="1"/>
+      <rect class="brick" x="34" y="46" width="72" height="9" rx="1"/>
+      <rect class="brick" x="48" y="34" width="44" height="9" rx="1"/>
+      <text class="ph" x="165" y="44" text-anchor="start">CULTIVATE</text>
+      <text class="ph2" x="165" y="58" text-anchor="start">15 diseases, growing</text>
+      <path class="branch" d="M44 76 L44 100" marker-end="url(#ncArrDp)"/>
+      <rect class="nc-window" x="28" y="110" width="200" height="58" rx="2"/>
+      <text class="nc-window-lab" x="128" y="132" text-anchor="middle">TARGET BELOW 20%</text>
+      <text class="ph2" x="128" y="150" text-anchor="middle" fill="#dfe8cd">they deal 100% more</text>
+      <path class="branch" d="M234 139 C 356 132, 374 54, 250 34" marker-end="url(#ncArrDp)"/>
+      <text class="ph2" x="190" y="192" text-anchor="middle">replant</text>
+    </svg>`,
+    "necromancer/rime": `<svg viewBox="0 0 380 230" role="img" aria-label="Rime rhythm, phone ladder: freeze for four seconds, land the impact, the power comes back">
+      <defs><marker id="ncArrRp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <path class="refresh" d="M33 52 l11 -11 l11 11 l-11 11 Z"/>
+      <text class="ph" x="165" y="44" text-anchor="start">FREEZE</text>
+      <text class="ph2" x="165" y="58" text-anchor="start">the gate opens · 4 s</text>
+      <path class="branch" d="M44 72 L44 96" marker-end="url(#ncArrRp)"/>
+      <rect class="nc-window" x="28" y="106" width="200" height="58" rx="2"/>
+      <text class="nc-window-lab" x="128" y="128" text-anchor="middle">FROZEN · 4 s</text>
+      <text class="ph2" x="128" y="146" text-anchor="middle" fill="#dfe8cd">Glacial Impact · 20 RP back</text>
+      <path class="branch" d="M234 135 C 356 128, 374 52, 250 34" marker-end="url(#ncArrRp)"/>
+      <text class="ph2" x="190" y="188" text-anchor="middle">freeze again</text>
+    </svg>`,
+    "primalist/primal": `<svg viewBox="0 0 380 230" role="img" aria-label="Primal rhythm, phone ladder: keep the bleed running, claws hit harder while it holds">
+      <defs><marker id="prArrPp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <circle class="pr-pip" cx="36" cy="50" r="6"/><circle class="pr-pip" cx="62" cy="50" r="6"/>
+      <text class="ph" x="165" y="44" text-anchor="start">REND</text>
+      <text class="ph2" x="165" y="58" text-anchor="start">2-stack bleed · 12 s</text>
+      <path class="branch" d="M44 68 L44 92" marker-end="url(#prArrPp)"/>
+      <rect class="pr-window" x="28" y="102" width="200" height="58" rx="2"/>
+      <text class="pr-window-lab" x="128" y="124" text-anchor="middle">BLEEDING TARGET</text>
+      <text class="ph2" x="128" y="142" text-anchor="middle" fill="#f2ddca">+15% claws and rushes</text>
+      <path class="branch" d="M234 131 C 356 124, 374 52, 250 34" marker-end="url(#prArrPp)"/>
+      <text class="ph2" x="190" y="184" text-anchor="middle">keep it open</text>
+    </svg>`,
+    "primalist/geomancy": `<svg viewBox="0 0 380 230" role="img" aria-label="Geomancy rhythm, phone ladder: bank fifteen Earthshaping, Terrasurge consumes it">
+      <defs><marker id="prArrGp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <path class="kx-climb" d="M20 72 L140 46"/>
+      <text class="ph" x="165" y="44" text-anchor="start">AMASS</text>
+      <text class="ph2" x="165" y="58" text-anchor="start">to fifteen</text>
+      <path class="branch" d="M44 84 L44 108" marker-end="url(#prArrGp)"/>
+      <rect class="pr-window" x="28" y="118" width="200" height="56" rx="2"/>
+      <text class="pr-window-lab" x="128" y="142" text-anchor="middle">TERRASURGE</text>
+      <text class="ph2" x="128" y="160" text-anchor="middle" fill="#f2ddca">the whole bank at once</text>
+      <path class="branch" d="M234 146 C 356 140, 374 54, 250 34" marker-end="url(#prArrGp)"/>
+      <text class="ph2" x="190" y="196" text-anchor="middle">rebank</text>
+    </svg>`,
+    "primalist/life": `<svg viewBox="0 0 380 230" role="img" aria-label="Life rhythm, phone ladder: the wave splits into hurt and heal, and the next Hand costs half">
+      <defs><marker id="prArrLp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <path class="pr-splitline" d="M20 54 L66 54 M66 54 L104 40 M66 54 L104 68"/>
+      <circle class="pr-pip" cx="20" cy="54" r="5"/>
+      <text class="ph" x="165" y="44" text-anchor="start">SPLIT</text>
+      <text class="ph2" x="165" y="58" text-anchor="start">one action, two outputs</text>
+      <path class="branch" d="M44 80 L44 104" marker-end="url(#prArrLp)"/>
+      <rect class="pr-window" x="28" y="114" width="200" height="58" rx="2"/>
+      <text class="pr-window-lab" x="128" y="136" text-anchor="middle">AFTER THE WAVE</text>
+      <text class="ph2" x="128" y="154" text-anchor="middle" fill="#f2ddca">next Hand −50% Rage · 8 s</text>
+      <path class="branch" d="M234 143 C 356 136, 374 54, 250 34" marker-end="url(#prArrLp)"/>
+      <text class="ph2" x="190" y="196" text-anchor="middle">wave again</text>
+    </svg>`,
+    "primalist/mountain-king": `<svg viewBox="0 0 380 230" role="img" aria-label="Mountain King rhythm, phone ladder: hold five Earth's Rage and the mountain pays you">
+      <defs><marker id="prArrMp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      ${[0,1,2,3,4].map(i => `<circle class="pr-pip${i === 4 ? " lit" : ""}" cx="${34 + i * 26}" cy="${58 - i * 4}" r="5.5"/>`).join("")}
+      <text class="ph" x="185" y="44" text-anchor="start">HOLD</text>
+      <text class="ph2" x="185" y="58" text-anchor="start">five Earth's Rage</text>
+      <path class="branch" d="M44 74 L44 98" marker-end="url(#prArrMp)"/>
+      <rect class="pr-window" x="28" y="108" width="200" height="58" rx="2"/>
+      <text class="pr-window-lab" x="128" y="130" text-anchor="middle">CALL OF THE MOUNTAIN</text>
+      <text class="ph2" x="128" y="148" text-anchor="middle" fill="#f2ddca">+5% parry · −5% taken</text>
+      <path class="branch" d="M234 137 C 356 130, 374 54, 250 34" marker-end="url(#prArrMp)"/>
+      <text class="ph2" x="190" y="190" text-anchor="middle">hold fast</text>
+    </svg>`,
     "barbarian/brutality": `<svg viewBox="0 0 380 230" role="img" aria-label="Brutality rhythm, phone ladder: hoard the doubled pool, then Decapitate spends it below 35%">
       <defs><marker id="baArrBp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
       <path class="kx-climb" d="M20 72 L140 46"/>
@@ -2978,6 +3330,8 @@
     "felsworn": { desktop: ["0 0 420 260", FS_DESKTOP], phone: ["0 0 420 224", FS_PHONE] },
     "barbarian": { desktop: ["0 0 420 260", BA_DESKTOP], phone: ["0 0 420 224", BA_PHONE] },
     "bloodmage": { desktop: ["0 0 420 260", BM_DESKTOP], phone: ["0 0 420 224", BM_PHONE] },
+    "necromancer": { desktop: ["0 0 420 260", NC_DESKTOP], phone: ["0 0 420 224", NC_PHONE] },
+    "primalist": { desktop: ["0 0 420 260", PR_DESKTOP], phone: ["0 0 420 224", PR_PHONE] },
   };
   function applySeal() {
     const swap = SEAL_SWAP[cSlug];

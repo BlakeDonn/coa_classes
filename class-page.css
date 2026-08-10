@@ -459,6 +459,53 @@
 .bm-node.active .node-dot { fill: #e1b86d; }
 .bm-node.active .node-name { fill: #f1cb6e; }
 
+/* Necromancer: the same slot and interaction, the crypt floor from above */
+.cd-nc-seal { border-left-color: #4b573180;
+  background: radial-gradient(circle at 50% 46%, #8ca05b1c, transparent 60%); }
+.cd-nc-seal::before { border-color: #6d7d4650; }
+.nc-floor { fill: none; stroke: #6d7d46; stroke-width: 1; opacity: .5; stroke-dasharray: 2 5; }
+.nc-center { fill: #12160b; stroke: #8ca05b; stroke-width: 1.2; filter: url(#ncGlow); }
+.nc-niche { fill: rgba(140,160,91,.2); stroke: #8ca05b; stroke-width: 1.1; }
+.nc-niche.w2 { fill: rgba(140,160,91,.32); }
+.nc-niche.w3 { fill: rgba(140,160,91,.45); }
+.nc-link { fill: none; stroke: #4b5731; stroke-width: 1.2; opacity: .6; }
+.nc-threshold { fill: #b7c68c; font: 700 8px Arial, sans-serif; letter-spacing: .1em; }
+.nc-center-label { fill: #eef2e0; font: 700 11px Georgia, serif; letter-spacing: .18em;
+  paint-order: stroke; stroke: #0e1108; stroke-width: 4px; stroke-linejoin: round; }
+.nc-center-sub { fill: #93a468; font: 700 6px Arial, sans-serif; letter-spacing: .12em;
+  paint-order: stroke; stroke: #0e1108; stroke-width: 2.5px; stroke-linejoin: round; }
+.nc-legend { fill: #7d8d54; font: 700 6px Arial, sans-serif; letter-spacing: .13em; opacity: .75; }
+.nc-node .node-ring { fill: #131608; stroke: #4b5731; }
+.nc-node .node-dot { fill: #7d9350; }
+.nc-node .nc-tag { fill: #b7c68c; font: 700 7px Arial, sans-serif; letter-spacing: .06em; }
+.nc-node:hover .node-ring, .nc-node:focus-visible .node-ring,
+.nc-node.active .node-ring { fill: #1d2410; stroke: #c2d1a0; stroke-width: 2; filter: url(#ncGlow); }
+.nc-node.active .node-dot { fill: #e1b86d; }
+.nc-node.active .node-name { fill: #f1cb6e; }
+
+/* Primalist: the same slot and interaction, the split geode on its fault */
+.cd-pr-seal { border-left-color: #6e472c80;
+  background: radial-gradient(circle at 50% 46%, #bc784c1c, transparent 60%); }
+.cd-pr-seal::before { border-color: #96603a50; }
+.pr-fault { stroke: #bc784c; stroke-width: 1.6; opacity: .7; stroke-dasharray: 8 5; }
+.pr-geode { fill: #180f09; stroke: #bc784c; stroke-width: 1.6; filter: url(#prGlow); }
+.pr-ragefill { fill: url(#prRage); opacity: .5; }
+.pr-facet { fill: none; stroke: #96603a; stroke-width: .9; opacity: .7; }
+.pr-fissure { fill: none; stroke: #96603a; stroke-width: 1.3; opacity: .7; }
+.pr-threshold { fill: #dcab84; font: 700 8px Arial, sans-serif; letter-spacing: .1em; }
+.pr-center-label { fill: #f7e8dc; font: 700 11px Georgia, serif; letter-spacing: .18em;
+  paint-order: stroke; stroke: #150d07; stroke-width: 4px; stroke-linejoin: round; }
+.pr-center-sub { fill: #b08157; font: 700 6px Arial, sans-serif; letter-spacing: .14em;
+  paint-order: stroke; stroke: #150d07; stroke-width: 2.5px; stroke-linejoin: round; }
+.pr-legend { fill: #96744f; font: 700 6px Arial, sans-serif; letter-spacing: .13em; opacity: .75; }
+.pr-node .node-ring { fill: #170f0a; stroke: #6e472c; }
+.pr-node .node-dot { fill: #b0763f; }
+.pr-node .pr-tag { fill: #dcab84; font: 700 7px Arial, sans-serif; letter-spacing: .06em; }
+.pr-node:hover .node-ring, .pr-node:focus-visible .node-ring,
+.pr-node.active .node-ring { fill: #251710; stroke: #dcab84; stroke-width: 2; filter: url(#prGlow); }
+.pr-node.active .node-dot { fill: #e1b86d; }
+.pr-node.active .node-name { fill: #f1cb6e; }
+
 /* the col engine: the seal claims the masthead's full height at its own aspect ratio.
    --seal-slot marks where the TEXT COLUMN ends; the T1 thumb anchors to it. */
 @media (min-width: 901px) {
@@ -683,6 +730,14 @@ body.ry-glow .rail-card.sel {
 .ry-block .bm-window.hot { fill: rgba(153,154,240,.28); }
 .ry-block .bm-window-lab { fill: #e2e2fb; font-size: 12.5px; font-weight: 700; letter-spacing: .1em; }
 .ry-block .bm-stretch { stroke: #999af0; stroke-width: 1.4; opacity: .6; stroke-dasharray: 3 3; }
+.ry-block .nc-slot { fill: rgba(140,160,91,.25); stroke: #8ca05b; stroke-width: 1.3; }
+.ry-block .nc-window { fill: rgba(140,160,91,.16); stroke: #8ca05b; stroke-width: 1.8; }
+.ry-block .nc-window-lab { fill: #dfe8cd; font-size: 12.5px; font-weight: 700; letter-spacing: .1em; }
+.ry-block .pr-pip { fill: rgba(188,120,76,.35); stroke: #bc784c; stroke-width: 1.5; }
+.ry-block .pr-pip.lit { fill: rgba(188,120,76,.85); }
+.ry-block .pr-window { fill: rgba(188,120,76,.16); stroke: #bc784c; stroke-width: 1.8; }
+.ry-block .pr-window-lab { fill: #f2ddca; font-size: 12.5px; font-weight: 700; letter-spacing: .1em; }
+.ry-block .pr-splitline { fill: none; stroke: #b0763f; stroke-width: 1.4; }
 
 /* ================= 5 · phone (≤560px) ================= */
 
