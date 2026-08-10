@@ -601,22 +601,21 @@
       <text class="ph" x="210" y="170" text-anchor="middle">SPARKED &amp; READY</text>
       <text class="ph" x="332" y="170" text-anchor="middle">REBUILD</text>
     </svg>`,
-    "knight-of-xoroth/hellfire": `<svg viewBox="0 0 380 206" role="img" aria-label="Hellfire rhythm, phone: Demonfire stacks climb to six, one unleash window with Rain of Chaos and Hellfire Form, then the climb restarts">
-      <line class="thr" x1="8" y1="44" x2="372" y2="44"/><text class="thr-lab" x="8" y="37">6 · full bar</text>
-      <line class="ax" x1="8" y1="150" x2="372" y2="150"/>
-      <path class="kx-climb" d="M20 146 L200 60"/>
-      ${stripEmber(35, 139, .7)}${stripEmber(68, 123, .8)}${stripEmber(101, 107, .9)}
-      ${stripEmber(134, 92, 1)}${stripEmber(167, 76, 1.1)}${stripEmber(197, 61, 1.25, true)}
-      <rect class="kx-window" x="215" y="48" width="110" height="102" rx="2"/>
-      <text class="kx-window-lab" x="270" y="76" text-anchor="middle">UNLEASH</text>
-      <text class="ph2" x="270" y="94" text-anchor="middle" fill="#f3cdd4">Rain of Chaos · 9 s</text>
-      <text class="ph2" x="270" y="108" text-anchor="middle" fill="#f3cdd4">Form 15 s</text>
-      <text class="ph2" x="270" y="122" text-anchor="middle" fill="#f3cdd4">builder runs free</text>
-      <path class="kx-climb" d="M340 146 L372 132"/>
-      ${stripEmber(358, 138, .8)}
-      <text class="ph" x="110" y="170" text-anchor="middle">BUILD</text>
-      <text class="ph2" x="110" y="184" text-anchor="middle">Seeking Flame · +1 each</text>
-      <text class="ph2" x="270" y="170" text-anchor="middle">at six, the whole bar goes out</text>
+    "knight-of-xoroth/hellfire": `<svg viewBox="0 0 380 230" role="img" aria-label="Hellfire rhythm, phone ladder: embers climb to six, a full-width unleash window, then the climb restarts">
+      <defs><marker id="kxArrHp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <path class="kx-climb" d="M20 78 L152 50"/>
+      ${stripEmber(28, 76, .7)}${stripEmber(52, 71, .78)}${stripEmber(76, 66, .86)}
+      ${stripEmber(100, 61, .94)}${stripEmber(124, 56, 1.02)}${stripEmber(148, 51, 1.2, true)}
+      <text class="ph2" x="148" y="72" text-anchor="middle">6</text>
+      <text class="ph" x="185" y="56" text-anchor="start">BUILD</text>
+      <text class="ph2" x="185" y="70" text-anchor="start">+1 a strike · six is full</text>
+      <path class="branch" d="M44 88 L44 112" marker-end="url(#kxArrHp)"/>
+      <rect class="kx-window" x="28" y="122" width="254" height="56" rx="2"/>
+      <text class="kx-window-lab" x="155" y="146" text-anchor="middle">UNLEASH AT SIX</text>
+      <text class="ph2" x="155" y="164" text-anchor="middle" fill="#f3cdd4">Rain of Chaos · 9 s — Form 15 s</text>
+      <path class="branch" d="M288 150 C 352 122, 352 52, 262 34" marker-end="url(#kxArrHp)"/>
+      <text class="ph2" x="344" y="92" text-anchor="end">REBUILD</text>
+      <text class="ph2" x="344" y="105" text-anchor="end">climb restarts</text>
     </svg>`,
     "knight-of-xoroth/war": `<svg viewBox="0 0 380 250" role="img" aria-label="War rhythm, phone: a ladder — Gore charges build, spending powers up the next Gores, and a free Meatsaw returns the loop to the top">
       <defs><marker id="kxArrWp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
@@ -635,21 +634,23 @@
       <text class="ph2" x="330" y="112" text-anchor="middle">FREE MEATSAW</text>
       <text class="ph2" x="330" y="125" text-anchor="middle">restocks</text>
     </svg>`,
-    "knight-of-xoroth/defiance": `<svg viewBox="0 0 380 206" role="img" aria-label="Defiance rhythm, phone: blocks bank imps, imps guard you, sacrificing them cashes the guard into healing, then the bank rebuilds">
-      <line class="ax" x1="8" y1="150" x2="372" y2="150"/>
-      <path class="kx-line" d="M16 148 L60 148 L60 136 L106 136 L106 124 L152 124 L152 112 L210 112"/>
-      ${impGlyph(83, 128)}${impGlyph(129, 116)}${impGlyph(175, 104)}${impGlyph(200, 104)}
-      <text class="ph" x="150" y="84" text-anchor="middle">HOLD</text>
-      <rect class="kx-window" x="222" y="56" width="110" height="94" rx="2"/>
-      <text class="kx-window-lab" x="277" y="80" text-anchor="middle">CASH</text>
-      <text class="ph2" x="277" y="96" text-anchor="middle" fill="#f3cdd4">imps become healing</text>
-      <text class="ph2" x="277" y="110" text-anchor="middle" fill="#f3cdd4">+ an absorb</text>
-      <path class="kx-line" d="M210 112 L222 112 L246 148 L332 148"/>
-      <path class="kx-heal" d="M232 148 C252 106 302 106 322 148 Z"/>
-      <path class="kx-line" d="M344 148 L362 148 L362 136 L376 136"/>
-      <text class="ph" x="100" y="170" text-anchor="middle">BUILD</text>
-      <text class="ph2" x="100" y="184" text-anchor="middle">blocks raise imps</text>
-      <text class="ph2" x="190" y="200" text-anchor="middle">keep the guard, or spend it</text>
+    "knight-of-xoroth/defiance": `<svg viewBox="0 0 380 252" role="img" aria-label="Defiance rhythm, phone ladder: blocks raise imps, standing imps guard you, cashing the guard heals, then the bank refills">
+      <defs><marker id="kxArrDp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <path class="kx-line" d="M20 70 L58 70 L58 60 L98 60 L98 50 L136 50"/>
+      ${impGlyph(78, 52)}${impGlyph(117, 42)}
+      <text class="ph" x="185" y="54" text-anchor="start">BUILD</text>
+      <text class="ph2" x="185" y="68" text-anchor="start">blocks raise imps</text>
+      <path class="branch" d="M44 82 L44 106" marker-end="url(#kxArrDp)"/>
+      ${impGlyph(38, 124)}${impGlyph(70, 124)}${impGlyph(102, 124)}${impGlyph(134, 124)}
+      <text class="ph" x="185" y="120" text-anchor="start">HOLD</text>
+      <text class="ph2" x="185" y="134" text-anchor="start">standing imps soak damage</text>
+      <path class="branch" d="M44 140 L44 164" marker-end="url(#kxArrDp)"/>
+      <rect class="kx-window" x="28" y="174" width="254" height="54" rx="2"/>
+      <text class="kx-window-lab" x="155" y="194" text-anchor="middle">CASH THE GUARD</text>
+      <text class="ph2" x="155" y="212" text-anchor="middle" fill="#f3cdd4">imps → healing + a shield</text>
+      <path class="branch" d="M288 200 C 352 170, 352 56, 262 36" marker-end="url(#kxArrDp)"/>
+      <text class="ph2" x="344" y="100" text-anchor="end">REBUILD</text>
+      <text class="ph2" x="344" y="113" text-anchor="end">the bank refills</text>
     </svg>`,
   };
 
