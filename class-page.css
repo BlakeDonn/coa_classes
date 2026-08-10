@@ -552,6 +552,53 @@
 .rm-node.active .node-dot { fill: #e1b86d; }
 .rm-node.active .node-name { fill: #f1cb6e; }
 
+/* Venomancer: the same slot and interaction, two fangs and four segmented ducts */
+.cd-vn-seal { border-left-color: #2c73305a;
+  background: radial-gradient(circle at 50% 46%, #58e65f14, transparent 60%); }
+.cd-vn-seal::before { border-color: #3f9c4550; }
+.vn-fang { fill: #eef7ee; stroke: #58e65f; stroke-width: .8; filter: url(#vnGlow); }
+.vn-ductline { fill: none; stroke: #2c7330; stroke-width: 1.1; opacity: .55; }
+.vn-seg { fill: rgba(88,230,95,.5); stroke: #58e65f; stroke-width: .8; }
+.vn-threshold { fill: #9fe8a3; font: 700 8px Arial, sans-serif; letter-spacing: .1em; }
+.vn-center-label { fill: #e9fbe9; font: 700 11px Georgia, serif; letter-spacing: .18em;
+  paint-order: stroke; stroke: #081408; stroke-width: 4px; stroke-linejoin: round; }
+.vn-center-sub { fill: #6fbf74; font: 700 6px Arial, sans-serif; letter-spacing: .12em;
+  paint-order: stroke; stroke: #081408; stroke-width: 2.5px; stroke-linejoin: round; }
+.vn-legend { fill: #58a25c; font: 700 6px Arial, sans-serif; letter-spacing: .13em; opacity: .75; }
+.vn-node .node-ring { fill: #0c170c; stroke: #2c7330; }
+.vn-node .node-dot { fill: #46b34c; }
+.vn-node .vn-tag { fill: #9fe8a3; font: 700 6.5px Arial, sans-serif; letter-spacing: .06em; }
+.vn-node:hover .node-ring, .vn-node:focus-visible .node-ring,
+.vn-node.active .node-ring { fill: #12240f; stroke: #a5efa9; stroke-width: 2; filter: url(#vnGlow); }
+.vn-node.active .node-dot { fill: #e1b86d; }
+.vn-node.active .node-name { fill: #f1cb6e; }
+
+/* Witch Doctor: the same slot and interaction, the loa mask and its fetish cord */
+.cd-wd-seal { border-left-color: #1f7a5480;
+  background: radial-gradient(circle at 50% 46%, #39d99418, transparent 60%); }
+.cd-wd-seal::before { border-color: #2ba87250; }
+.wd-mask { fill: #0d1a14; stroke: #39d994; stroke-width: 1.6; filter: url(#wdGlow); }
+.wd-maskeye { fill: #071009; stroke: #7fe8bd; stroke-width: 1; }
+.wd-maskline { stroke: #2ba872; stroke-width: 1.4; }
+.wd-cord { fill: none; stroke: #2ba872; stroke-width: 1.4; opacity: .8; }
+.wd-cordlet { stroke: #2ba872; stroke-width: 1; opacity: .7; }
+.wd-wisp { fill: rgba(57,217,148,.28); stroke: #39d994; stroke-width: 1.2; }
+.wd-wisp.lit { fill: rgba(57,217,148,.85); filter: url(#wdGlow); }
+.wd-link { fill: none; stroke: #1f7a54; stroke-width: 1.2; opacity: .6; }
+.wd-threshold { fill: #8ce7c2; font: 700 8px Arial, sans-serif; letter-spacing: .1em; }
+.wd-center-label { fill: #e4fbf1; font: 700 11px Georgia, serif; letter-spacing: .18em;
+  paint-order: stroke; stroke: #07130d; stroke-width: 4px; stroke-linejoin: round; }
+.wd-center-sub { fill: #5fc39a; font: 700 6px Arial, sans-serif; letter-spacing: .14em;
+  paint-order: stroke; stroke: #07130d; stroke-width: 2.5px; stroke-linejoin: round; }
+.wd-legend { fill: #4fae87; font: 700 6px Arial, sans-serif; letter-spacing: .13em; opacity: .75; }
+.wd-node .node-ring { fill: #0b1711; stroke: #1f7a54; }
+.wd-node .node-dot { fill: #35b381; }
+.wd-node .wd-tag { fill: #8ce7c2; font: 700 6.5px Arial, sans-serif; letter-spacing: .06em; }
+.wd-node:hover .node-ring, .wd-node:focus-visible .node-ring,
+.wd-node.active .node-ring { fill: #10241a; stroke: #96ecc9; stroke-width: 2; filter: url(#wdGlow); }
+.wd-node.active .node-dot { fill: #e1b86d; }
+.wd-node.active .node-name { fill: #f1cb6e; }
+
 /* the col engine: the seal claims the masthead's full height at its own aspect ratio.
    --seal-slot marks where the TEXT COLUMN ends; the T1 thumb anchors to it. */
 @media (min-width: 901px) {
@@ -793,6 +840,15 @@ body.ry-glow .rail-card.sel {
 .ry-block .rm-glyph { fill: rgba(102,140,255,.2); stroke: #668cff; stroke-width: 1.5; }
 .ry-block .rm-window { fill: rgba(102,140,255,.15); stroke: #668cff; stroke-width: 1.8; }
 .ry-block .rm-window-lab { fill: #d7e2ff; font-size: 12.5px; font-weight: 700; letter-spacing: .1em; }
+.ry-block .vn-pip { fill: rgba(88,230,95,.3); stroke: #58e65f; stroke-width: 1.5; }
+.ry-block .vn-pip.lit { fill: rgba(88,230,95,.8); }
+.ry-block .vn-window { fill: rgba(88,230,95,.12); stroke: #58e65f; stroke-width: 1.8; }
+.ry-block .vn-window-lab { fill: #d9f7db; font-size: 12.5px; font-weight: 700; letter-spacing: .1em; }
+.ry-block .vn-debt { fill: rgba(88,230,95,.12); stroke: #3f9c45; stroke-width: 1.4; }
+.ry-block .wd-pip { fill: rgba(57,217,148,.3); stroke: #39d994; stroke-width: 1.5; }
+.ry-block .wd-window { fill: rgba(57,217,148,.13); stroke: #39d994; stroke-width: 1.8; }
+.ry-block .wd-window-lab { fill: #d2f5e6; font-size: 12.5px; font-weight: 700; letter-spacing: .1em; }
+.ry-block .wd-thread { fill: none; stroke: #39d994; stroke-width: 1.5; opacity: .85; }
 
 /* ================= 5 · phone (≤560px) ================= */
 

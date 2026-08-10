@@ -800,6 +800,109 @@
     <text class="rm-legend" x="14" y="20">WRITE FIRST · RELEASE SECOND</text>
     ${RM_PHONE_NODES.map(s => rmNodeSvg(s, 33, 44)).join("")}`;
 
+
+  // Venomancer: two fang punctures — the only shared thing — with four segmented
+  // venom ducts running outward, one per form (packet, final batch).
+  const vnNodes = [
+    { id: "venomancer/venom", name: "Venom", verb: "FESTER", tag: "GROWTH 10", x: 73, y: 64 },
+    { id: "venomancer/stalking", name: "Stalking", verb: "STALK", tag: "MARKS 5", x: 347, y: 64 },
+    { id: "venomancer/fortitude", name: "Fortitude", verb: "SHED", tag: "FLESH 10", x: 73, y: 196 },
+    { id: "venomancer/vizier", name: "Vizier", verb: "PRIME", tag: "VIGIL 5", x: 347, y: 196 },
+  ];
+  const VN_DEFS = `<defs>
+      <filter id="vnGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    </defs>`;
+  const vnNodeSvg = (s, ny, vy) => `<g class="cd-node vn-node" data-cd-spec="${s.id}" role="button" tabindex="0" transform="translate(${s.x} ${s.y})">
+      <circle class="node-ring" r="29"/><circle class="node-dot" r="4"/>
+      <text class="vn-tag" text-anchor="middle" y="18">${s.tag}</text>
+      <text class="node-name" text-anchor="middle" y="${ny}">${s.name}</text>
+      <text class="node-verb" text-anchor="middle" y="${vy}">${s.verb}</text></g>`;
+  const vnDuct = (x1, y1, x2, y2, n) => Array.from({ length: n }, (_, i) => {
+    const t = 0.25 + (i * 0.6) / n;
+    const x = x1 + (x2 - x1) * t, y = y1 + (y2 - y1) * t;
+    return `<circle class="vn-seg" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.6"/>`;
+  }).join("") + `<path class="vn-ductline" d="M${x1} ${y1} L${x2} ${y2}"/>`;
+  const VN_DESKTOP = `<title id="vn-seal-title">Two fangs, four venom ducts: each form counts its own segments outward</title>
+    ${VN_DEFS}
+    <path class="vn-fang" d="M198 92 C 194 108 198 122 206 132 C 204 116 204 102 208 94 Z"/>
+    <path class="vn-fang" d="M222 92 C 226 108 222 122 214 132 C 216 116 216 102 212 94 Z"/>
+    ${vnDuct(196, 104, 104, 70, 5)}${vnDuct(224, 104, 316, 70, 5)}
+    ${vnDuct(198, 122, 104, 190, 5)}${vnDuct(222, 122, 316, 190, 5)}
+    <text class="vn-threshold" x="118" y="34" text-anchor="middle">2 VENOMS · SHARED</text>
+    <text class="vn-threshold" x="300" y="34" text-anchor="middle">EACH FORM · ITS OWN</text>
+    <text class="vn-center-label" x="210" y="162" text-anchor="middle">FORMS · STACKS</text>
+    <text class="vn-center-sub" x="210" y="174" text-anchor="middle">THE FANGS ARE THE ONLY SHARED THING</text>
+    <text class="vn-legend" x="16" y="22">TWO VENOMS · ALWAYS ON</text>
+    ${vnNodes.map(s => vnNodeSvg(s, 42, 54)).join("")}`;
+  const VN_PHONE_NODES = vnNodes.map(s => ({ ...s, y: s.y < 150 ? 56 : 167 }));
+  const VN_PHONE = `<title id="vn-seal-title">Two fangs, four venom ducts: each form counts its own segments outward</title>
+    ${VN_DEFS}
+    <path class="vn-fang" d="M200 80 C 196 94 200 106 206 114 C 205 100 205 88 209 82 Z"/>
+    <path class="vn-fang" d="M220 80 C 224 94 220 106 214 114 C 215 100 215 88 211 82 Z"/>
+    ${vnDuct(198, 90, 106, 62, 4)}${vnDuct(222, 90, 314, 62, 4)}
+    ${vnDuct(200, 106, 106, 162, 4)}${vnDuct(220, 106, 314, 162, 4)}
+    <text class="vn-threshold" x="118" y="28" text-anchor="middle">2 VENOMS · SHARED</text>
+    <text class="vn-threshold" x="300" y="28" text-anchor="middle">EACH FORM · ITS OWN</text>
+    <text class="vn-center-label" x="210" y="140" text-anchor="middle">FORMS · STACKS</text>
+    <text class="vn-center-sub" x="210" y="151" text-anchor="middle">THE FANGS ARE THE SHARED THING</text>
+    <text class="vn-legend" x="14" y="20">TWO VENOMS · ALWAYS ON</text>
+    ${VN_PHONE_NODES.map(s => vnNodeSvg(s, 33, 44)).join("")}`;
+
+  // Witch Doctor: the loa mask with five spirit-wisps on one cord — a fetish
+  // necklace, the fifth wisp lit as the cap (packet, final batch).
+  const wdNodes = [
+    { id: "witch-doctor/voodoo", name: "Voodoo", verb: "SNAP", tag: "THREADS", x: 73, y: 66 },
+    { id: "witch-doctor/shadowhunting", name: "Shadowhunting", verb: "GATHER", tag: "HUNGER", x: 347, y: 66 },
+    { id: "witch-doctor/brewing", name: "Brewing", verb: "MIX", tag: "CAULDRON", x: 210, y: 206 },
+  ];
+  const WD_DEFS = `<defs>
+      <filter id="wdGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    </defs>`;
+  const wdNodeSvg = (s, ny, vy) => `<g class="cd-node wd-node" data-cd-spec="${s.id}" role="button" tabindex="0" transform="translate(${s.x} ${s.y})">
+      <circle class="node-ring" r="29"/><circle class="node-dot" r="4"/>
+      <text class="wd-tag" text-anchor="middle" y="18">${s.tag}</text>
+      <text class="node-name" text-anchor="middle" y="${ny}">${s.name}</text>
+      <text class="node-verb" text-anchor="middle" y="${vy}">${s.verb}</text></g>`;
+  const wdWisps = (cx, cy, spread) => [0,1,2,3,4].map(i => {
+    const x = cx - spread * 2 + i * spread;
+    const y = cy + Math.abs(i - 2) * -6 + 12;
+    return `<line class="wd-cordlet" x1="${x}" y1="${y - 8}" x2="${x}" y2="${y}"/>
+      <circle class="wd-wisp${i === 4 ? " lit" : ""}" cx="${x}" cy="${y + 6}" r="${5 + i * 0.7}"/>`;
+  }).join("");
+  const WD_DESKTOP = `<title id="wd-seal-title">The loa mask and its fetish cord: five spirit-wisps, the fifth lit as the cap</title>
+    ${WD_DEFS}
+    <path class="wd-mask" d="M186 50 C 178 76 180 96 210 108 C 240 96 242 76 234 50 C 222 42 198 42 186 50 Z"/>
+    <ellipse class="wd-maskeye" cx="199" cy="72" rx="5" ry="7"/>
+    <ellipse class="wd-maskeye" cx="221" cy="72" rx="5" ry="7"/>
+    <line class="wd-maskline" x1="210" y1="84" x2="210" y2="98"/>
+    <path class="wd-cord" d="M162 112 Q 210 142 258 112"/>
+    ${wdWisps(210, 118, 22)}
+    <text class="wd-threshold" x="118" y="34" text-anchor="middle">HOLD · IT SCALES</text>
+    <text class="wd-threshold" x="302" y="34" text-anchor="middle">5 · UNLEASH</text>
+    <path class="wd-link" d="M172 78 L102 70"/><path class="wd-link" d="M248 78 L318 70"/>
+    <path class="wd-link" d="M210 146 L210 177"/>
+    <text class="wd-center-label" x="210" y="162" text-anchor="middle">SPIRITS</text>
+    <text class="wd-center-sub" x="210" y="173" text-anchor="middle">EACH ONE FEEDS YOU · 12 s</text>
+    <text class="wd-legend" x="16" y="22">A SECOND VALUE BESIDE THE STACK</text>
+    ${wdNodes.map(s => wdNodeSvg(s, s.y > 150 ? 38 : 42, s.y > 150 ? 50 : 54)).join("")}`;
+  const WD_PHONE_NODES = wdNodes.map(s => ({ ...s, y: s.y > 150 ? 178 : 58 }));
+  const WD_PHONE = `<title id="wd-seal-title">The loa mask and its fetish cord: five spirit-wisps, the fifth lit as the cap</title>
+    ${WD_DEFS}
+    <path class="wd-mask" d="M190 38 C 183 60 185 78 210 88 C 235 78 237 60 230 38 C 220 31 200 31 190 38 Z"/>
+    <ellipse class="wd-maskeye" cx="201" cy="56" rx="4" ry="6"/>
+    <ellipse class="wd-maskeye" cx="219" cy="56" rx="4" ry="6"/>
+    <line class="wd-maskline" x1="210" y1="66" x2="210" y2="78"/>
+    <path class="wd-cord" d="M168 92 Q 210 118 252 92"/>
+    ${wdWisps(210, 96, 19)}
+    <text class="wd-threshold" x="118" y="28" text-anchor="middle">HOLD · IT SCALES</text>
+    <text class="wd-threshold" x="302" y="28" text-anchor="middle">5 · UNLEASH</text>
+    <path class="wd-link" d="M178 64 L102 60"/><path class="wd-link" d="M242 64 L318 60"/>
+    <path class="wd-link" d="M210 128 L210 149"/>
+    <text class="wd-center-label" x="210" y="136" text-anchor="middle">SPIRITS</text>
+    <text class="wd-center-sub" x="210" y="147" text-anchor="middle">EACH ONE FEEDS YOU · 12 s</text>
+    <text class="wd-legend" x="14" y="20">A SECOND VALUE BESIDE THE STACK</text>
+    ${WD_PHONE_NODES.map(s => wdNodeSvg(s, 33, 44)).join("")}`;
+
   // Phone: the ruled 420×224 tightened arrangement — orbits 60/77, eye .66,
   // node rows raised. Nothing removed.
   const CULTIST_PHONE_NODES = [
@@ -1146,6 +1249,16 @@
     el("mast").insertAdjacentHTML("beforeend",
       `<div class="cd-stage cd-seal ry-reseal cd-wh-seal" aria-label="Witch Hunter class engine diagram">
         <svg viewBox="0 0 420 260" role="img" aria-labelledby="wh-seal-title">${WH_DESKTOP}</svg></div>`);
+  } else if (cSlug === "venomancer") {
+    el("mast").classList.add("cd-with-seal");
+    el("mast").insertAdjacentHTML("beforeend",
+      `<div class="cd-stage cd-seal ry-reseal cd-vn-seal" aria-label="Venomancer class engine diagram">
+        <svg viewBox="0 0 420 260" role="img" aria-labelledby="vn-seal-title">${VN_DESKTOP}</svg></div>`);
+  } else if (cSlug === "witch-doctor") {
+    el("mast").classList.add("cd-with-seal");
+    el("mast").insertAdjacentHTML("beforeend",
+      `<div class="cd-stage cd-seal ry-reseal cd-wd-seal" aria-label="Witch Doctor class engine diagram">
+        <svg viewBox="0 0 420 260" role="img" aria-labelledby="wd-seal-title">${WD_DESKTOP}</svg></div>`);
   } else if (cSlug === "pyromancer") {
     el("mast").classList.add("cd-with-seal");
     el("mast").insertAdjacentHTML("beforeend",
@@ -1255,6 +1368,8 @@
     "primalist/primal": "wheel", "primalist/geomancy": "bank", "primalist/life": "wave", "primalist/mountain-king": "pips",
     "pyromancer/flameweaving": "bank", "pyromancer/incineration": "wave", "pyromancer/draconic": "wheel",
     "runemaster/runic": "wheel", "runemaster/arcane": "pips", "runemaster/riftblade": "wheel",
+    "venomancer/venom": "pips", "venomancer/stalking": "bank", "venomancer/fortitude": "bank", "venomancer/vizier": "pips",
+    "witch-doctor/voodoo": "bank", "witch-doctor/shadowhunting": "pips", "witch-doctor/brewing": "wheel",
   };
   function topoGlyph(kind) {
     const art = {
@@ -1805,6 +1920,133 @@
         "Aeon of Protection is the slow one: 30% of the heal becomes a shield",
         "Epoch casts stack Endless Sands — each cuts 20% off your next Reverse Wound, up to five"],
       eyes: "which Aeon is active · your Endless Sands stacks",
+    },
+    "venomancer/venom": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Venom rhythm: grow Fungal Growth to ten, and Mycosis lands harder for every stack">
+        <line class="thr" x1="14" y1="44" x2="480" y2="44"/><text class="thr-lab" x="14" y="38">10 · Fungal Growth</text>
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        <path class="kx-climb" d="M60 122 L400 58"/>
+        ${[0,1,2,3,4].map(i => `<circle class="vn-pip" cx="${100 + i * 75}" cy="${112 - i * 12}" r="6"/>`).join("")}
+        <text class="ph" x="230" y="146" text-anchor="middle">FESTER</text>
+        <text class="ph2" x="230" y="160" text-anchor="middle">+2% periodic damage each</text>
+        <rect class="vn-window" x="520" y="48" width="270" height="78" rx="2"/>
+        <text class="vn-window-lab" x="655" y="76" text-anchor="middle">10 FUNGAL GROWTH</text>
+        <text class="ph2" x="655" y="94" text-anchor="middle" fill="#d9f7db">Mycosis hits 20% harder per stack</text>
+        <text class="ph" x="890" y="146" text-anchor="middle">REGROW</text>
+      </svg>`,
+      bullets: ["Your Shadow and Nature damage grows fungus on the target: 35% chance per hit, up to ten stacks",
+        "Each stack adds 2% to your periodic damage there, and it falls off after 30 seconds",
+        "Mycosis is the payoff: it deals 20% more damage for every stack sitting on the target",
+        "Area comes on a delay: Decay hits up to five enemies at a spot and drops a mushroom that blows 2 seconds later"],
+      eyes: "the fungus stack on your target and your poison timers",
+    },
+    "venomancer/stalking": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Stalking rhythm: bank five Brood Marks in Spider Form, then spend them before they fall away">
+        <line class="thr" x1="14" y1="44" x2="480" y2="44"/><text class="thr-lab" x="14" y="38">5 · Brood Marks</text>
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        ${[0,1,2,3,4].map(i => `<circle class="vn-pip${i === 4 ? " lit" : ""}" cx="${100 + i * 70}" cy="${112 - i * 14}" r="6"/>`).join("")}
+        <text class="ph" x="240" y="146" text-anchor="middle">STALK</text>
+        <text class="ph2" x="240" y="160" text-anchor="middle">the web fills, mark by mark</text>
+        <rect class="vn-window" x="540" y="48" width="260" height="78" rx="2"/>
+        <text class="vn-window-lab" x="670" y="76" text-anchor="middle">5 MARKS · SPIDER FORM</text>
+        <text class="ph2" x="670" y="94" text-anchor="middle" fill="#d9f7db">Facemelter and Widowmaker scale per mark</text>
+        <text class="ph" x="890" y="146" text-anchor="middle">RESPIN</text>
+      </svg>`,
+      bullets: ["Basic bites build the bank: Venom Fang leaves a mark for 15 seconds, up to five",
+        "Finishers only work in Spider Form, and they consume the marks — more marks, bigger hit",
+        "Widowmaker also cuts the target's incoming healing by 50% for 8 seconds",
+        "Serpent Lord is the reach option: it adds 10 yards to some of those finishers"],
+      eyes: "your Brood Mark count and the 15-second timer",
+    },
+    "venomancer/fortitude": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Fortitude rhythm: carry Exposed Flesh to ten, and the shed pays protection for as long as it held">
+        <line class="thr" x1="14" y1="44" x2="480" y2="44"/><text class="thr-lab" x="14" y="38">10 · Exposed Flesh</text>
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        <path class="vn-debt" d="M60 122 L420 60 L420 126 L60 126 Z"/>
+        <text class="ph" x="230" y="146" text-anchor="middle">CARRY</text>
+        <text class="ph2" x="230" y="160" text-anchor="middle">the wound ledger fills</text>
+        <rect class="vn-window" x="540" y="48" width="250" height="78" rx="2"/>
+        <text class="vn-window-lab" x="665" y="76" text-anchor="middle">CLEAR AT 10</text>
+        <text class="ph2" x="665" y="94" text-anchor="middle" fill="#d9f7db">−20% damage taken · up to 15 s at full</text>
+        <text class="ph" x="890" y="146" text-anchor="middle">CARRY AGAIN</text>
+      </svg>`,
+      bullets: ["Getting hit fills the bar: each hostile attack has a 50% chance to add Exposed Flesh, and each stack hands you 10 Rage",
+        "Holding stacks costs you 3% more physical damage taken each, up to ten",
+        "Regrow Exoskeleton clears the whole bar for −20% damage taken, 5 seconds plus 1 per stack",
+        "Expulsion is the other exit: the same stacks become poison damage around you instead"],
+      eyes: "your Exposed Flesh count and your Rage",
+    },
+    "venomancer/vizier": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Vizier rhythm: prime the Vigil across five heals, each one landing stronger">
+        <line class="thr" x1="14" y1="44" x2="480" y2="44"/><text class="thr-lab" x="14" y="38">5 heals · 2 charges</text>
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        ${[0,1,2,3,4].map(i => `<circle class="vn-pip" cx="${100 + i * 70}" cy="${112 - i * 12}" r="6"/>`).join("")}
+        <text class="ph" x="240" y="146" text-anchor="middle">PRIME</text>
+        <text class="ph2" x="240" y="160" text-anchor="middle">the countdown runs as you heal</text>
+        <rect class="vn-window" x="540" y="48" width="260" height="78" rx="2"/>
+        <text class="vn-window-lab" x="670" y="76" text-anchor="middle">SHADRA'S VIGIL</text>
+        <text class="ph2" x="670" y="94" text-anchor="middle" fill="#d9f7db">+10% to each of five heals · Alkahest +9 s</text>
+        <text class="ph" x="890" y="146" text-anchor="middle">REPRIME</text>
+      </svg>`,
+      bullets: ["Prime before you heal: Serpent's Fang adds 10% to the target's next five periodic heals",
+        "Alkahest holds two charges on a 12-second recharge; each one heals and adds 9 seconds to a running heal-over-time",
+        "Mending Mist reaches up to eight allies within 30 yards — one player reported it out-healed most of their other heals"],
+      eyes: "your two Alkahest charges and the time left on Shadra's Prayer",
+    },
+    "witch-doctor/voodoo": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Voodoo rhythm: store ten seconds of damage in the Threads, then Hexfire snaps it all at once">
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        <path class="wd-thread" d="M60 110 C 140 90 220 122 300 96 C 340 84 380 92 420 84"/>
+        <text class="ph" x="230" y="146" text-anchor="middle">STORE</text>
+        <text class="ph2" x="230" y="160" text-anchor="middle">the Threads hold 10 seconds of damage</text>
+        <rect class="wd-window" x="540" y="48" width="250" height="78" rx="2"/>
+        <text class="wd-window-lab" x="665" y="76" text-anchor="middle">HEXFIRE SNAP</text>
+        <text class="ph2" x="665" y="94" text-anchor="middle" fill="#d2f5e6">it all lands at once · +1 Spirit</text>
+        <text class="ph" x="890" y="146" text-anchor="middle">RESTRING</text>
+      </svg>`,
+      bullets: ["your damage leaves Threads on the enemy that quietly store part of it for 10 seconds",
+        "Hexfire snaps the Threads early — the stored damage lands at once and you collect a Spirit",
+        "every Spirit you hold adds 5% crit chance to Bad Juju, so the stack is worth keeping between snaps"],
+      eyes: "the Thread timer · your Spirit count",
+    },
+    "witch-doctor/shadowhunting": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Shadowhunting rhythm: Spirits and Hunger climb side by side toward the Eclipse">
+        <line class="thr" x1="14" y1="44" x2="480" y2="44"/><text class="thr-lab" x="14" y="38">5 · the cap</text>
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        <path class="wh-dawn" d="M60 112 L440 52"/>
+        <path class="wh-dusk" d="M60 122 L440 64"/>
+        ${[0,1,2].map(i => `<circle class="wd-pip" cx="${150 + i * 110}" cy="${98 - i * 17}" r="5"/>`).join("")}
+        <text class="ph" x="250" y="146" text-anchor="middle">GATHER</text>
+        <text class="ph2" x="250" y="160" text-anchor="middle">Spirits held · Hunger beside them</text>
+        <rect class="wd-window" x="540" y="48" width="250" height="78" rx="2"/>
+        <text class="wd-window-lab" x="665" y="76" text-anchor="middle">SPIRIT ECLIPSE</text>
+        <text class="ph2" x="665" y="94" text-anchor="middle" fill="#d2f5e6">unleashes every held Spirit · five is the cap</text>
+        <text class="ph" x="890" y="146" text-anchor="middle">GATHER AGAIN</text>
+      </svg>`,
+      bullets: ["Reclamation collects a Spirit and can be cast while you move, so the stack grows on the run",
+        "Spirit Eclipse unleashes every Spirit you hold — five is the cap",
+        "each active Spirit adds 5% to Malefic Arrow's damage",
+        "going stealth stacks Voodoo Hunger, up to ten, for your next arrow"],
+      eyes: "your Spirit count · the stealth window",
+    },
+    "witch-doctor/brewing": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Brewing rhythm: mix the Ingredients, and the Cauldron makes the party's healing land stronger">
+        <defs><marker id="wdArrB" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+        ${[0,1,2].map(i => `<circle class="wd-pip" cx="${120 + i * 40}" cy="84" r="7"/>`).join("")}
+        <text class="ph" x="160" y="118" text-anchor="middle">MIX</text>
+        <text class="ph2" x="160" y="132" text-anchor="middle">brewed Ingredients, ready to pour</text>
+        <path class="branch" d="M240 74 C 340 42, 450 40, 540 52" marker-end="url(#wdArrB)"/>
+        <rect class="wd-window" x="560" y="44" width="250" height="82" rx="2"/>
+        <text class="wd-window-lab" x="685" y="72" text-anchor="middle">VOODOO CAULDRON · 15 s</text>
+        <text class="ph2" x="685" y="90" text-anchor="middle" fill="#d2f5e6">allies' healing received +20%</text>
+        <path class="branch" d="M685 126 C 570 160, 250 160, 148 100" marker-end="url(#wdArrB)"/>
+        <text class="ph2" x="310" y="156" text-anchor="middle">BREW THE NEXT POT</text>
+      </svg>`,
+      bullets: ["you prepare Ingredients in a Cauldron first — only one of each can be active",
+        "Potion Toss changes its effect to match whatever Ingredients are brewed",
+        "Voodoo Cauldron drops a healing area for 15 seconds and raises allies' healing received by 20%",
+        "healing with Loa's Brew shaves a second off your potion cooldowns"],
+      eyes: "your active Ingredients · where the Cauldron sits",
     },
     "pyromancer/flameweaving": {
       svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Flameweaving rhythm: the Array banks an Ember every three seconds while Cinderheart doubles the Heat">
@@ -2872,6 +3114,91 @@
       <path class="branch" d="M234 146 C 356 140, 374 56, 250 36" marker-end="url(#cmArrTp)"/>
       <text class="ph2" x="190" y="200" text-anchor="middle">retune, and the sands rebuild</text>
     </svg>`,
+    "venomancer/venom": `<svg viewBox="0 0 380 230" role="img" aria-label="Venom rhythm, phone ladder: grow the rot to ten, Mycosis scales with it">
+      <defs><marker id="vnArrVp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      ${[0,1,2,3,4].map(i => `<circle class="vn-pip" cx="${34 + i * 26}" cy="${58 - i * 4}" r="5.5"/>`).join("")}
+      <text class="ph" x="185" y="44" text-anchor="start">FESTER</text>
+      <text class="ph2" x="185" y="58" text-anchor="start">+2% periodic each</text>
+      <path class="branch" d="M44 74 L44 98" marker-end="url(#vnArrVp)"/>
+      <rect class="vn-window" x="28" y="108" width="200" height="58" rx="2"/>
+      <text class="vn-window-lab" x="128" y="130" text-anchor="middle">10 FUNGAL GROWTH</text>
+      <text class="ph2" x="128" y="148" text-anchor="middle" fill="#d9f7db">Mycosis +20% per stack</text>
+      <path class="branch" d="M234 137 C 356 130, 374 54, 250 34" marker-end="url(#vnArrVp)"/>
+      <text class="ph2" x="190" y="190" text-anchor="middle">regrow</text>
+    </svg>`,
+    "venomancer/stalking": `<svg viewBox="0 0 380 230" role="img" aria-label="Stalking rhythm, phone ladder: five marks in Spider Form, spent before they fade">
+      <defs><marker id="vnArrSp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      ${[0,1,2,3,4].map(i => `<circle class="vn-pip${i === 4 ? " lit" : ""}" cx="${34 + i * 26}" cy="${58 - i * 4}" r="5.5"/>`).join("")}
+      <text class="ph" x="185" y="44" text-anchor="start">STALK</text>
+      <text class="ph2" x="185" y="58" text-anchor="start">mark by mark</text>
+      <path class="branch" d="M44 74 L44 98" marker-end="url(#vnArrSp)"/>
+      <rect class="vn-window" x="28" y="108" width="200" height="58" rx="2"/>
+      <text class="vn-window-lab" x="128" y="130" text-anchor="middle">5 MARKS · SPIDER FORM</text>
+      <text class="ph2" x="128" y="148" text-anchor="middle" fill="#d9f7db">spenders scale per mark</text>
+      <path class="branch" d="M234 137 C 356 130, 374 54, 250 34" marker-end="url(#vnArrSp)"/>
+      <text class="ph2" x="190" y="190" text-anchor="middle">respin the web</text>
+    </svg>`,
+    "venomancer/fortitude": `<svg viewBox="0 0 380 230" role="img" aria-label="Fortitude rhythm, phone ladder: carry the Flesh to ten, and the shed protects you">
+      <defs><marker id="vnArrFp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <path class="vn-debt" d="M20 66 L140 44 L140 68 L20 68 Z"/>
+      <text class="ph" x="165" y="44" text-anchor="start">CARRY</text>
+      <text class="ph2" x="165" y="58" text-anchor="start">the ledger fills to ten</text>
+      <path class="branch" d="M44 80 L44 104" marker-end="url(#vnArrFp)"/>
+      <rect class="vn-window" x="28" y="114" width="200" height="58" rx="2"/>
+      <text class="vn-window-lab" x="128" y="136" text-anchor="middle">CLEAR AT 10</text>
+      <text class="ph2" x="128" y="154" text-anchor="middle" fill="#d9f7db">−20% taken · up to 15 s</text>
+      <path class="branch" d="M234 143 C 356 136, 374 54, 250 34" marker-end="url(#vnArrFp)"/>
+      <text class="ph2" x="190" y="196" text-anchor="middle">carry again</text>
+    </svg>`,
+    "venomancer/vizier": `<svg viewBox="0 0 380 230" role="img" aria-label="Vizier rhythm, phone ladder: prime the Vigil across five heals">
+      <defs><marker id="vnArrZp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      ${[0,1,2,3,4].map(i => `<circle class="vn-pip" cx="${34 + i * 26}" cy="${58 - i * 4}" r="5.5"/>`).join("")}
+      <text class="ph" x="185" y="44" text-anchor="start">PRIME</text>
+      <text class="ph2" x="185" y="58" text-anchor="start">five heals · two charges</text>
+      <path class="branch" d="M44 74 L44 98" marker-end="url(#vnArrZp)"/>
+      <rect class="vn-window" x="28" y="108" width="200" height="58" rx="2"/>
+      <text class="vn-window-lab" x="128" y="130" text-anchor="middle">SHADRA'S VIGIL</text>
+      <text class="ph2" x="128" y="148" text-anchor="middle" fill="#d9f7db">+10% to each heal</text>
+      <path class="branch" d="M234 137 C 356 130, 374 54, 250 34" marker-end="url(#vnArrZp)"/>
+      <text class="ph2" x="190" y="190" text-anchor="middle">reprime</text>
+    </svg>`,
+    "witch-doctor/voodoo": `<svg viewBox="0 0 380 230" role="img" aria-label="Voodoo rhythm, phone ladder: store the damage in the Threads, then snap it">
+      <defs><marker id="wdArrVp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <path class="wd-thread" d="M20 58 C 55 46 90 62 125 50"/>
+      <text class="ph" x="165" y="44" text-anchor="start">STORE</text>
+      <text class="ph2" x="165" y="58" text-anchor="start">10 seconds in the Threads</text>
+      <path class="branch" d="M44 74 L44 98" marker-end="url(#wdArrVp)"/>
+      <rect class="wd-window" x="28" y="108" width="200" height="58" rx="2"/>
+      <text class="wd-window-lab" x="128" y="130" text-anchor="middle">HEXFIRE SNAP</text>
+      <text class="ph2" x="128" y="148" text-anchor="middle" fill="#d2f5e6">it all lands at once · +1 Spirit</text>
+      <path class="branch" d="M234 137 C 356 130, 374 54, 250 34" marker-end="url(#wdArrVp)"/>
+      <text class="ph2" x="190" y="190" text-anchor="middle">restring</text>
+    </svg>`,
+    "witch-doctor/shadowhunting": `<svg viewBox="0 0 380 230" role="img" aria-label="Shadowhunting rhythm, phone ladder: Spirits and Hunger climb together toward the Eclipse">
+      <defs><marker id="wdArrSp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <path class="wh-dawn" d="M20 60 L140 42"/>
+      <path class="wh-dusk" d="M20 70 L140 52"/>
+      <text class="ph" x="165" y="44" text-anchor="start">GATHER</text>
+      <text class="ph2" x="165" y="58" text-anchor="start">Spirits · Hunger beside them</text>
+      <path class="branch" d="M44 82 L44 106" marker-end="url(#wdArrSp)"/>
+      <rect class="wd-window" x="28" y="116" width="200" height="58" rx="2"/>
+      <text class="wd-window-lab" x="128" y="138" text-anchor="middle">SPIRIT ECLIPSE</text>
+      <text class="ph2" x="128" y="156" text-anchor="middle" fill="#d2f5e6">every held Spirit · cap five</text>
+      <path class="branch" d="M234 145 C 356 138, 374 54, 250 34" marker-end="url(#wdArrSp)"/>
+      <text class="ph2" x="190" y="198" text-anchor="middle">gather again</text>
+    </svg>`,
+    "witch-doctor/brewing": `<svg viewBox="0 0 380 230" role="img" aria-label="Brewing rhythm, phone ladder: mix the Ingredients, the Cauldron strengthens the party's healing">
+      <defs><marker id="wdArrBp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      ${[0,1,2].map(i => `<circle class="wd-pip" cx="${38 + i * 30}" cy="52" r="6.5"/>`).join("")}
+      <text class="ph" x="165" y="44" text-anchor="start">MIX</text>
+      <text class="ph2" x="165" y="58" text-anchor="start">Ingredients, ready to pour</text>
+      <path class="branch" d="M44 70 L44 94" marker-end="url(#wdArrBp)"/>
+      <rect class="wd-window" x="28" y="104" width="200" height="58" rx="2"/>
+      <text class="wd-window-lab" x="128" y="126" text-anchor="middle">VOODOO CAULDRON</text>
+      <text class="ph2" x="128" y="144" text-anchor="middle" fill="#d2f5e6">healing received +20% · 15 s</text>
+      <path class="branch" d="M234 133 C 356 126, 374 52, 250 34" marker-end="url(#wdArrBp)"/>
+      <text class="ph2" x="190" y="186" text-anchor="middle">brew the next pot</text>
+    </svg>`,
     "pyromancer/flameweaving": `<svg viewBox="0 0 380 230" role="img" aria-label="Flameweaving rhythm, phone ladder: the Array banks Embers while Cinderheart doubles Heat">
       <defs><marker id="pyArrFp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
       ${[0,1,2,3].map(i => `<circle class="py-pip" cx="${34 + i * 26}" cy="${56 - i * 3}" r="5.5"/>`).join("")}
@@ -3628,6 +3955,8 @@
     "primalist": { desktop: ["0 0 420 260", PR_DESKTOP], phone: ["0 0 420 224", PR_PHONE] },
     "pyromancer": { desktop: ["0 0 420 260", PY_DESKTOP], phone: ["0 0 420 224", PY_PHONE] },
     "runemaster": { desktop: ["0 0 420 260", RM_DESKTOP], phone: ["0 0 420 224", RM_PHONE] },
+    "venomancer": { desktop: ["0 0 420 260", VN_DESKTOP], phone: ["0 0 420 224", VN_PHONE] },
+    "witch-doctor": { desktop: ["0 0 420 260", WD_DESKTOP], phone: ["0 0 420 224", WD_PHONE] },
   };
   function applySeal() {
     const swap = SEAL_SWAP[cSlug];
