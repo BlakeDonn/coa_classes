@@ -734,14 +734,13 @@
       ${stripEmber(100, 61, .94)}${stripEmber(124, 56, 1.02)}${stripEmber(148, 51, 1.2, true)}
       <text class="ph2" x="148" y="72" text-anchor="middle">6</text>
       <text class="ph" x="185" y="56" text-anchor="start">BUILD</text>
-      <text class="ph2" x="185" y="70" text-anchor="start">+1 a strike · six is full</text>
+      <text class="ph2" x="185" y="70" text-anchor="start">+1 a strike</text>
       <path class="branch" d="M44 88 L44 112" marker-end="url(#kxArrHp)"/>
-      <rect class="kx-window" x="28" y="122" width="254" height="56" rx="2"/>
-      <text class="kx-window-lab" x="155" y="146" text-anchor="middle">UNLEASH AT SIX</text>
-      <text class="ph2" x="155" y="164" text-anchor="middle" fill="#f3cdd4">Rain of Chaos · 9 s — Form 15 s</text>
-      <path class="branch" d="M288 150 C 352 122, 352 52, 262 34" marker-end="url(#kxArrHp)"/>
-      <text class="ph2" x="344" y="92" text-anchor="end">REBUILD</text>
-      <text class="ph2" x="344" y="105" text-anchor="end">climb restarts</text>
+      <rect class="kx-window" x="28" y="122" width="200" height="56" rx="2"/>
+      <text class="kx-window-lab" x="128" y="146" text-anchor="middle">UNLEASH AT SIX</text>
+      <text class="ph2" x="128" y="164" text-anchor="middle" fill="#f3cdd4">Rain of Chaos · 9 s — Form 15 s</text>
+      <path class="branch" d="M234 150 C 348 144, 366 58, 250 36" marker-end="url(#kxArrHp)"/>
+      <text class="ph2" x="190" y="196" text-anchor="middle">the climb restarts</text>
     </svg>`,
     "knight-of-xoroth/war": `<svg viewBox="0 0 380 250" role="img" aria-label="War rhythm, phone: a ladder — Gore charges build, spending powers up the next Gores, and a free Meatsaw returns the loop to the top">
       <defs><marker id="kxArrWp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
@@ -753,12 +752,11 @@
       <text class="ph" x="96" y="106" text-anchor="start">SPEND</text>
       <text class="ph2" x="96" y="120" text-anchor="start">a Gore charge returns</text>
       <path class="branch" d="M56 126 L56 152" marker-end="url(#kxArrWp)"/>
-      <rect class="kx-window" x="30" y="162" width="252" height="52" rx="2"/>
-      <text class="kx-window-lab" x="156" y="184" text-anchor="middle">BOOST WINDOW</text>
-      <text class="ph2" x="156" y="202" text-anchor="middle" fill="#f3cdd4">GORES +25% · 12 s</text>
-      <path class="branch" d="M288 188 C 344 156, 344 74, 246 46" marker-end="url(#kxArrWp)"/>
-      <text class="ph2" x="330" y="112" text-anchor="middle">FREE MEATSAW</text>
-      <text class="ph2" x="330" y="125" text-anchor="middle">restocks</text>
+      <rect class="kx-window" x="28" y="162" width="200" height="52" rx="2"/>
+      <text class="kx-window-lab" x="128" y="184" text-anchor="middle">BOOST WINDOW</text>
+      <text class="ph2" x="128" y="202" text-anchor="middle" fill="#f3cdd4">GORES +25% · 12 s</text>
+      <path class="branch" d="M234 189 C 348 182, 366 64, 250 44" marker-end="url(#kxArrWp)"/>
+      <text class="ph2" x="190" y="232" text-anchor="middle">free Meatsaw · the bar refills</text>
     </svg>`,
     "knight-of-xoroth/defiance": `<svg viewBox="0 0 380 252" role="img" aria-label="Defiance rhythm, phone ladder: blocks raise imps, standing imps guard you, cashing the guard heals, then the bank refills">
       <defs><marker id="kxArrDp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
@@ -771,12 +769,11 @@
       <text class="ph" x="185" y="120" text-anchor="start">HOLD</text>
       <text class="ph2" x="185" y="134" text-anchor="start">standing imps soak damage</text>
       <path class="branch" d="M44 140 L44 164" marker-end="url(#kxArrDp)"/>
-      <rect class="kx-window" x="28" y="174" width="254" height="54" rx="2"/>
-      <text class="kx-window-lab" x="155" y="194" text-anchor="middle">CASH THE GUARD</text>
-      <text class="ph2" x="155" y="212" text-anchor="middle" fill="#f3cdd4">imps → healing + a shield</text>
-      <path class="branch" d="M288 200 C 352 170, 352 56, 262 36" marker-end="url(#kxArrDp)"/>
-      <text class="ph2" x="344" y="100" text-anchor="end">REBUILD</text>
-      <text class="ph2" x="344" y="113" text-anchor="end">the bank refills</text>
+      <rect class="kx-window" x="28" y="174" width="200" height="54" rx="2"/>
+      <text class="kx-window-lab" x="128" y="194" text-anchor="middle">CASH THE GUARD</text>
+      <text class="ph2" x="128" y="212" text-anchor="middle" fill="#f3cdd4">imps → healing + a shield</text>
+      <path class="branch" d="M234 201 C 348 194, 366 60, 250 38" marker-end="url(#kxArrDp)"/>
+      <text class="ph2" x="190" y="244" text-anchor="middle">the bank refills</text>
     </svg>`,
     "guardian/vanguard": `<svg viewBox="0 0 380 230" role="img" aria-label="Vanguard rhythm, phone ladder: blocks stack Paragon toward ten, Heavy Blow transforms at ten, then the bank rebuilds">
       <defs><marker id="gdArrVp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
@@ -784,14 +781,13 @@
       <path class="gd-shield" d="M71 52 h12 v8 a6 6 0 0 1 -12 0 Z"/>
       <path class="gd-shield" d="M110 40 h12 v8 a6 6 0 0 1 -12 0 Z"/>
       <text class="ph" x="185" y="56" text-anchor="start">BUILD</text>
-      <text class="ph2" x="185" y="70" text-anchor="start">blocks stack Paragon · to ten</text>
+      <text class="ph2" x="185" y="70" text-anchor="start">blocks stack Paragon</text>
       <path class="branch" d="M44 88 L44 112" marker-end="url(#gdArrVp)"/>
-      <rect class="gd-window" x="28" y="122" width="254" height="56" rx="2"/>
-      <text class="gd-window-lab" x="155" y="146" text-anchor="middle">PARAGON SMASH</text>
-      <text class="ph2" x="155" y="164" text-anchor="middle" fill="#ffe0c2">Heavy Blow transforms at ten</text>
-      <path class="branch" d="M288 150 C 352 122, 352 52, 262 34" marker-end="url(#gdArrVp)"/>
-      <text class="ph2" x="344" y="92" text-anchor="end">REBUILD</text>
-      <text class="ph2" x="344" y="105" text-anchor="end">the bank refills</text>
+      <rect class="gd-window" x="28" y="122" width="200" height="56" rx="2"/>
+      <text class="gd-window-lab" x="128" y="146" text-anchor="middle">PARAGON SMASH</text>
+      <text class="ph2" x="128" y="164" text-anchor="middle" fill="#ffe0c2">Heavy Blow transforms at ten</text>
+      <path class="branch" d="M234 150 C 348 144, 366 58, 250 36" marker-end="url(#gdArrVp)"/>
+      <text class="ph2" x="190" y="196" text-anchor="middle">the bank refills</text>
     </svg>`,
     "guardian/inspiration": `<svg viewBox="0 0 380 252" role="img" aria-label="Inspiration rhythm, phone ladder: Ballads build Tempo to three, Sound of War rings, Hero's March keeps it ringing, and the count restarts">
       <defs><marker id="gdArrIp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
@@ -801,14 +797,13 @@
       <path class="branch" d="M44 62 L44 86" marker-end="url(#gdArrIp)"/>
       <circle class="gd-burst" cx="44" cy="112" r="11"/><circle class="gd-burst faint" cx="44" cy="112" r="19"/>
       <text class="ph" x="185" y="108" text-anchor="start">SOUND OF WAR</text>
-      <text class="ph2" x="185" y="122" text-anchor="start">allies' next hit gains magic</text>
+      <text class="ph2" x="185" y="122" text-anchor="start">allies hit harder</text>
       <path class="branch" d="M44 138 L44 162" marker-end="url(#gdArrIp)"/>
-      <rect class="gd-window" x="28" y="172" width="254" height="54" rx="2"/>
-      <text class="gd-window-lab" x="155" y="192" text-anchor="middle">HERO'S MARCH</text>
-      <text class="ph2" x="155" y="210" text-anchor="middle" fill="#ffe0c2">15 s · autos keep it ringing</text>
-      <path class="branch" d="M288 198 C 352 168, 352 56, 262 36" marker-end="url(#gdArrIp)"/>
-      <text class="ph2" x="344" y="100" text-anchor="end">RESTART</text>
-      <text class="ph2" x="344" y="113" text-anchor="end">the count returns</text>
+      <rect class="gd-window" x="28" y="172" width="200" height="54" rx="2"/>
+      <text class="gd-window-lab" x="128" y="192" text-anchor="middle">HERO'S MARCH</text>
+      <text class="ph2" x="128" y="210" text-anchor="middle" fill="#ffe0c2">15 s · autos keep it ringing</text>
+      <path class="branch" d="M234 199 C 348 192, 366 60, 250 38" marker-end="url(#gdArrIp)"/>
+      <text class="ph2" x="190" y="244" text-anchor="middle">the count restarts</text>
     </svg>`,
     "guardian/gladiator": `<svg viewBox="0 0 380 230" role="img" aria-label="Gladiator rhythm, phone ladder: Ram builds Glory to three, the boosted Ram lands, and the wheel turns again">
       <defs><marker id="gdArrGp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
@@ -820,12 +815,11 @@
       <text class="ph" x="185" y="104" text-anchor="start">NET</text>
       <text class="ph2" x="185" y="118" text-anchor="start">Centurion Strike crits</text>
       <path class="branch" d="M44 122 L44 146" marker-end="url(#gdArrGp)"/>
-      <rect class="gd-window" x="28" y="156" width="254" height="54" rx="2"/>
-      <text class="gd-window-lab" x="155" y="176" text-anchor="middle">BOOSTED RAM</text>
-      <text class="ph2" x="155" y="194" text-anchor="middle" fill="#ffe0c2">at three Glory</text>
-      <path class="branch" d="M288 182 C 352 154, 352 52, 262 34" marker-end="url(#gdArrGp)"/>
-      <text class="ph2" x="344" y="96" text-anchor="end">AGAIN</text>
-      <text class="ph2" x="344" y="109" text-anchor="end">the wheel turns</text>
+      <rect class="gd-window" x="28" y="156" width="200" height="54" rx="2"/>
+      <text class="gd-window-lab" x="128" y="176" text-anchor="middle">BOOSTED RAM</text>
+      <text class="ph2" x="128" y="194" text-anchor="middle" fill="#ffe0c2">at three Glory</text>
+      <path class="branch" d="M234 183 C 348 176, 366 56, 250 36" marker-end="url(#gdArrGp)"/>
+      <text class="ph2" x="190" y="226" text-anchor="middle">the wheel turns again</text>
     </svg>`,
   };
 
