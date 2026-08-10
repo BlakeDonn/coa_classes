@@ -71,9 +71,15 @@ window.COA_CARDS = (() => {
   // Support = the texture's green flag, matching the gold-rim style.
   const ROLE_ICON = { Damage: "generated-assets/lfg-damage.png", Tank: "generated-assets/lfg-tank.png",
     Healer: "generated-assets/lfg-healer.png", Support: "generated-assets/lfg-flag.png" };
-  const roleImgs = roles => `<span class="rimg" data-tipname="${esc(roles.join(" + "))}"
-    data-tip="${esc("Role" + (roles.length > 1 ? "s" : "") + ": " + roles.join(", "))}">${roles.map(r =>
+  // Icon economy (user ruling 2026-08-10): a healer's Support flag stays off the
+  // row — the two-icon pair overflowed class-card spec rows. Same spirit as the
+  // strict true-support counting. The tooltip still names every role.
+  const roleImgs = roles => {
+    const shown = roles.includes("Healer") ? roles.filter(r => r !== "Support") : roles;
+    return `<span class="rimg" data-tipname="${esc(roles.join(" + "))}"
+    data-tip="${esc("Role" + (roles.length > 1 ? "s" : "") + ": " + roles.join(", "))}">${shown.map(r =>
     `<img src="${ROLE_ICON[r]}" alt="${esc(r)}">`).join("")}</span>`;
+  };
 
   // ---------- doors ----------
   function doorHTML(s) {

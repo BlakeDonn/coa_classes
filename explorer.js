@@ -14,10 +14,10 @@
     return ic ? `<img src="generated-assets/skill-icons/${esc(ic.icon)}.jpg" alt="" loading="lazy">` : glyph(s);
   }
 
-  // ATLAS ROUND STUDY (temporary, design dialogue 2026-08-10): desktop
-  // expansion, ?d=wide|big|zoom. Baseline unchanged; removed on the pick.
-  const dForm = new URLSearchParams(location.search).get("d");
-  if (["wide", "big", "zoom"].includes(dForm)) document.body.classList.add("ry-d-" + dForm);
+  // Desktop expansion (RULED 2026-08-10, "zoom is good"): the Atlas scales up
+  // in steps on big screens instead of pooling dead margin past the 1400px cap.
+  // Scoped to this page — only index.html loads explorer.js.
+  document.body.classList.add("ry-zoom");
 
   // Altitude RULED (Atlas grammar §2): a standing Classes ↔ Specs toggle, starting
   // on Classes — 21 cards greet the visitor; the 70 specs are one tap away.
