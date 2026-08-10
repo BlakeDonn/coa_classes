@@ -2,6 +2,8 @@
    URL contract: class.html?c=<class-slug>[&from=choose|guided]#<spec-slug>
 
    This is the BAKED ruled state — no study switchers, no variant query params.
+   (One exception while the design pass runs: a temporary ?r4= thumb-fallback
+   switcher — hide | card — with ?r4sim=1 simulating a blocked CDN. 2026-08-10.)
    Masthead order: name · tagline (keyword glow) · engine block · plain-text strict
    role line, with the T1 corner video thumb at the text column's right edge.
    Cultist, Tinker and Knight of Xoroth carry their authored seals; the others render
@@ -129,6 +131,23 @@
   if (window.ResizeObserver) new ResizeObserver(fitName).observe(nameEl);
   requestAnimationFrame(fitName);
   window.addEventListener("load", fitName);
+
+  // ROUND-4 STUDY (temporary): the blocked-CDN thumb fallback, ?r4=hide|card.
+  // Managed networks block i.ytimg.com; a failed thumb img is the trigger.
+  // ?r4sim=1 simulates the block by pointing every thumb at a dead host, so
+  // both fallback states render for the pick from any network. The error
+  // wiring is the real mechanism; the sim flag never ships past the pick.
+  const r4 = params.get("r4");
+  if (["hide", "card"].includes(r4)) document.body.classList.add("ry-r4-" + r4);
+  const wireThumbs = () => document.querySelectorAll(
+    ".ry-thumb img, .ph-thumb img, .guide-row img").forEach(img => {
+    if (img.dataset.r4) return;
+    img.dataset.r4 = "1";
+    img.addEventListener("error", () => img.closest("a").classList.add("noimg"));
+    if (params.get("r4sim")) img.src = "https://coa-blocked.invalid/x.jpg";
+  });
+  wireThumbs();
+  new MutationObserver(wireThumbs).observe(el("codex"), { childList: true, subtree: true });
 
   // ---------- the seal (Cultist, Tinker) ----------
 

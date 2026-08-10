@@ -54,6 +54,36 @@
   body.ry-v-t1 .cp-mast .crumb, body.ry-v-t1 .cp-mast .kick { padding-right: 140px; }
 }
 
+/* ---- ROUND-4 STUDY (temporary, design pass 2026-08-10): blocked-CDN fallback.
+   ?r4=hide — a failed thumb disappears; guide rows keep their text.
+   ?r4=card — the masthead thumb becomes a plain link chip; guide rows a ▶ tile.
+   Removed when the user picks; the .noimg error wiring stays as the mechanism. ---- */
+body.ry-r4-hide .ry-thumb.noimg, body.ry-r4-hide .ph-thumb.noimg { display: none !important; }
+body.ry-r4-hide .guide-row.noimg img { display: none; }
+@media (min-width: 561px) {
+  body.ry-r4-card .ry-thumb.noimg { width: auto; height: auto; display: inline-flex;
+    align-items: center; gap: 6px; padding: 5px 9px; background: #131210; overflow: visible; }
+  body.ry-r4-card .ry-thumb.noimg img { display: none; }
+  body.ry-r4-card .ry-thumb.noimg .play { position: static; display: block;
+    font-size: 11px; text-shadow: none; }
+  body.ry-r4-card .ry-thumb.noimg .cap { position: static; background: none;
+    padding: 0; font-size: 8px; }
+}
+@media (max-width: 560px) {
+  body.ry-r4-card .ph-thumb.noimg { width: auto; height: auto; display: inline-flex;
+    align-items: center; gap: 6px; padding: 5px 9px; background: #131210; overflow: visible; }
+  body.ry-r4-card .ph-thumb.noimg img { display: none; }
+  body.ry-r4-card .ph-thumb.noimg .play { position: static; display: block;
+    font-size: 11px; text-shadow: none; }
+  body.ry-r4-card .ph-thumb.noimg .cap { position: static; background: none;
+    padding: 0; font-size: 8px; }
+}
+body.ry-r4-card .guide-row.noimg img { display: none; }
+body.ry-r4-card .guide-row.noimg::before { content: "▶"; flex: 0 0 92px; height: 52px;
+  display: grid; place-items: center; border-radius: 2px; border: 1px solid #000;
+  background: radial-gradient(circle at 50% 45%, #241f16, #0c0b09 80%);
+  color: #c9aa71; font-size: 16px; }
+
 /* ================= 2 · the seal, and the G2 seat where none is drawn ================= */
 
 .cd-stage { color: #d8d2df; }
