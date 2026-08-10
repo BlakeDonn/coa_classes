@@ -11,16 +11,20 @@ window.COA_SLIM = (() => {
 
   const R = window.COA_RENDER, COPY = window.COA_COPY;
   if (!R || !COPY) throw new Error("profile-render.js and authored-copy.js must load first");
-  const { esc, famById, classSlug, glyph } = R;
+  const { data, esc, famById, classSlug, glyph } = R;
 
   const classHref = s => `class.html?c=${classSlug(s)}#${s.id.split("/")[1]}`;
 
-  // The emphasized class-page exit — RULED form: crest + "View class page" in text.
-  // The crest slot falls back to the class glyph while crests are skipped.
+  // The emphasized class-page exit — RULED form, chip words "Class page" (user 2026-08-10).
+  // Icon: the class icon (same defining-talent-art rule as the card medals), glyph fallback.
+  function classIconImg(s) {
+    const ic = data.specs.find(x => x.klass === s.klass && x.media.icons[0])?.media.icons[0];
+    return ic ? `<img src="https://coabuildhub.com/skill-icons/${esc(ic.icon)}.jpg" alt="" loading="lazy">` : glyph(s);
+  }
   function exitHTML(s) {
     return `<a class="slim-exit-chip" href="${classHref(s)}"
       data-tipname="${esc(s.klass)}" data-tip="The full class page — engine, specializations, evidence.">
-      <span class="slim-crest" aria-hidden="true">${glyph(s)}</span>Class page<span class="arr">⇢</span></a>`;
+      <span class="slim-crest" aria-hidden="true">${classIconImg(s)}</span>Class page<span class="arr">⇢</span></a>`;
   }
 
   function slimHTML(s) {
