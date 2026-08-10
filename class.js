@@ -239,7 +239,6 @@
     ${koxPip(210, 164, .85)}${koxPip(165, 138, 1)}${koxPip(255, 138, 1)}
     ${koxPip(165, 86, 1.15)}${koxPip(255, 86, 1.15)}${koxPip(210, 60, 1.5, true)}
     <text class="kx-legend" x="16" y="252">FED BY DEMONS AND BLOOD</text>
-    <rect class="kx-lab-plate" x="158" y="129" width="104" height="26" rx="4"/>
     <text class="kx-center-label" x="210" y="139" text-anchor="middle">DEMONFIRE</text>
     <text class="kx-center-sub" x="210" y="151" text-anchor="middle">EVERY STACK PAYS</text>
     ${koxNodes.map(s => nodeSvg(s, s.y > 170 ? 38 : 42, s.y > 170 ? 50 : 54, "kx-node")).join("")}`;
@@ -263,7 +262,6 @@
     ${koxPip(210, 140, .75)}${koxPip(170, 117, .85)}${koxPip(250, 117, .85)}
     ${koxPip(170, 71, 1)}${koxPip(250, 71, 1)}${koxPip(210, 48, 1.3, true)}
     <text class="kx-legend" x="14" y="218">FED BY DEMONS AND BLOOD</text>
-    <rect class="kx-lab-plate" x="158" y="110" width="104" height="24" rx="4"/>
     <text class="kx-center-label" x="210" y="119" text-anchor="middle">DEMONFIRE</text>
     <text class="kx-center-sub" x="210" y="129" text-anchor="middle">EVERY STACK PAYS</text>
     ${KOX_PHONE_NODES.map(s => nodeSvg(s, s.y > 150 ? 33 : 40, s.y > 150 ? 44 : 52, "kx-node")).join("")}`;
