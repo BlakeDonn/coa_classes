@@ -65,14 +65,16 @@
     const rare = facts.length
       ? `<ul class="ry-rare">${facts.map(f =>
         `<li data-tipname="${esc(f[0])}" data-tip="${esc(f[1])}"><span class="mark">✦</span>${esc(f[0])}</li>`).join("")}</ul>` : "";
-    // ROUND-2 STUDY (temporary): the engine-paragraph shape bar, ?e2=r1|r2|r3.
+    // ROUND-2 STUDY (temporary): the engine-paragraph shape bar, ?e2=r4|r5|r6.
     // The KoX body candidates live HERE, not in authored-copy.js — CLASS_ENGINE
     // is the seal session's active region; only the picked text lands there.
-    // Each candidate rephrases only landed, already-verified shipped claims.
+    // Re-mocked after the user's vocabulary verdict on r1–r3; this set follows
+    // the Sol-xhigh vocabulary rule (game words first: stacks, build, spend,
+    // consume) and every fact traces to the landed digest claims.
     const E2_KOX = {
-      r1: "Strikes feed the bar toward six. The more stacks a payoff burns, the harder it hits.",
-      r2: "Every payoff burns the bar, and a fuller bar pays more. Feed it to six, then unleash.",
-      r3: "Strikes feed the bar toward the sixth ember. Unleash at six and every stack pays out at once.",
+      r4: "Build Demonfire stacks, then spend them to increase an ability's damage or duration. At six stacks, certain abilities trigger an additional effect.",
+      r5: "Build Demonfire, then use a spending ability to consume every stack. More stacks mean more damage or duration; at six, certain abilities add another effect.",
+      r6: "Feed Demonfire by building stacks; unleash it with a spending ability. Each stack consumed increases damage or duration; at six, certain abilities add another effect.",
     };
     const e2 = cSlug === "knight-of-xoroth" ? E2_KOX[params.get("e2")] : null;
     if (full) return `<div class="ry-engine"><span class="lab">${esc(full.label)}</span>
