@@ -317,6 +317,55 @@
 .sc-node.active .node-dot { fill: #e1b86d; }
 .sc-node.active .node-name { fill: #f1cb6e; }
 
+/* Sun Cleric: the same slot and interaction, a sun cut by the horizon rule */
+.cd-su-seal { border-left-color: #7a5c1480;
+  background: radial-gradient(circle at 50% 46%, #ffd54f1c, transparent 60%); }
+.cd-su-seal::before { border-color: #b8933650; }
+.su-horizon { stroke: #d8b367; stroke-width: 1.4; opacity: .7; }
+.su-upper { fill: url(#suSun); filter: url(#suGlow); }
+.su-lower { fill: #2a2110; stroke: #7a5c14; stroke-width: 1; opacity: .9; }
+.su-ray { stroke: #ffd54f; stroke-width: 1.6; opacity: .85; stroke-linecap: round; }
+.su-link { fill: none; stroke: #7a5c14; stroke-width: 1.2; opacity: .6; }
+.su-threshold { fill: #e9c568; font: 700 8px Arial, sans-serif; letter-spacing: .1em; }
+.su-center-label { fill: #fff3d4; font: 700 11px Georgia, serif; letter-spacing: .18em;
+  paint-order: stroke; stroke: #171106; stroke-width: 4px; stroke-linejoin: round; }
+.su-center-sub { fill: #c19b45; font: 700 6px Arial, sans-serif; letter-spacing: .14em;
+  paint-order: stroke; stroke: #171106; stroke-width: 2.5px; stroke-linejoin: round; }
+.su-legend { fill: #a3823f; font: 700 6px Arial, sans-serif; letter-spacing: .13em; opacity: .75; }
+.su-node .node-ring { fill: #1c160a; stroke: #7a5c14; }
+.su-node .node-dot { fill: #c19b45; }
+.su-node .su-tag { fill: #e9c568; font: 700 6.5px Arial, sans-serif; letter-spacing: .06em; }
+.su-node:hover .node-ring, .su-node:focus-visible .node-ring,
+.su-node.active .node-ring { fill: #2b2210; stroke: #ffe699; stroke-width: 2; filter: url(#suGlow); }
+.su-node.active .node-dot { fill: #e1b86d; }
+.su-node.active .node-name { fill: #f1cb6e; }
+
+/* Templar: the same slot and interaction, the Oath Chain clock */
+.cd-tp-seal { border-left-color: #7a3d5c80;
+  background: radial-gradient(circle at 50% 46%, #f48cba1a, transparent 60%); }
+.cd-tp-seal::before { border-color: #a8557e50; }
+.tp-link { fill: none; stroke: #d787ae; stroke-width: 2; opacity: .8; }
+.tp-link.open { stroke: #ffd6e9; filter: url(#tpGlow); }
+.tp-link.weld { stroke: #f48cba; stroke-width: 2.6; opacity: 1; }
+.tp-weldbar { stroke: #ffd6e9; stroke-width: 1.6; }
+.tp-spill { stroke: #ffd6e9; stroke-width: 1.2; opacity: .7; stroke-dasharray: 2 3; }
+.tp-hand { stroke: #ffd6e9; stroke-width: 1.8; stroke-linecap: round; filter: url(#tpGlow); }
+.tp-hub { fill: #1d0f16; stroke: #f48cba; stroke-width: 1.2; }
+.tp-linkline { fill: none; stroke: #7a3d5c; stroke-width: 1.2; opacity: .6; }
+.tp-threshold { fill: #e6a8c7; font: 700 8px Arial, sans-serif; letter-spacing: .1em; }
+.tp-center-label { fill: #ffe9f3; font: 700 11px Georgia, serif; letter-spacing: .18em;
+  paint-order: stroke; stroke: #160a10; stroke-width: 4px; stroke-linejoin: round; }
+.tp-center-sub { fill: #c07a9d; font: 700 6px Arial, sans-serif; letter-spacing: .14em;
+  paint-order: stroke; stroke: #160a10; stroke-width: 2.5px; stroke-linejoin: round; }
+.tp-legend { fill: #a86a8b; font: 700 6px Arial, sans-serif; letter-spacing: .13em; opacity: .75; }
+.tp-node .node-ring { fill: #1a0f15; stroke: #7a3d5c; }
+.tp-node .node-dot { fill: #c06a95; }
+.tp-node .tp-tag { fill: #e6a8c7; font: 700 7px Arial, sans-serif; letter-spacing: .06em; }
+.tp-node:hover .node-ring, .tp-node:focus-visible .node-ring,
+.tp-node.active .node-ring { fill: #2a1721; stroke: #f9c0da; stroke-width: 2; filter: url(#tpGlow); }
+.tp-node.active .node-dot { fill: #e1b86d; }
+.tp-node.active .node-name { fill: #f1cb6e; }
+
 /* the col engine: the seal claims the masthead's full height at its own aspect ratio.
    --seal-slot marks where the TEXT COLUMN ends; the T1 thumb anchors to it. */
 @media (min-width: 901px) {
@@ -505,6 +554,20 @@ body.ry-glow .rail-card.sel {
 .ry-block .sc-window { fill: rgba(222,217,255,.14); stroke: #ded9ff; stroke-width: 1.8; }
 .ry-block .sc-window-lab { fill: #efeaff; font-size: 12.5px; font-weight: 700; letter-spacing: .1em; }
 .ry-block .sc-churn { fill: none; stroke: #9a93c9; stroke-width: 1.5; }
+.ry-block .su-half { fill: rgba(255,213,79,.16); stroke: #b89336; stroke-width: 1.3; }
+.ry-block .su-half.lit { fill: rgba(255,213,79,.45); stroke: #ffd54f; }
+.ry-block .su-hub { fill: rgba(255,213,79,.35); stroke: #ffd54f; stroke-width: 1.5; }
+.ry-block .su-relay { stroke: #b89336; stroke-width: 1.2; opacity: .8; }
+.ry-block .su-ally { fill: none; stroke: #ffd54f; stroke-width: 1.4; }
+.ry-block .su-pip { fill: rgba(255,213,79,.4); stroke: #ffd54f; stroke-width: 1.5; }
+.ry-block .su-window { fill: rgba(255,213,79,.16); stroke: #ffd54f; stroke-width: 1.8; }
+.ry-block .su-window-lab { fill: #ffedbe; font-size: 12.5px; font-weight: 700; letter-spacing: .1em; }
+.ry-block .tp-slink { fill: none; stroke: #f48cba; stroke-width: 1.8; opacity: .85; }
+.ry-block .tp-debt { fill: rgba(244,140,186,.14); stroke: #c06a95; stroke-width: 1.4; }
+.ry-block .tp-pip { fill: rgba(244,140,186,.35); stroke: #f48cba; stroke-width: 1.4; }
+.ry-block .tp-pip.lit { fill: rgba(244,140,186,.85); }
+.ry-block .tp-window { fill: rgba(244,140,186,.16); stroke: #f48cba; stroke-width: 1.8; }
+.ry-block .tp-window-lab { fill: #ffdcec; font-size: 12.5px; font-weight: 700; letter-spacing: .1em; }
 
 /* ================= 5 · phone (≤560px) ================= */
 

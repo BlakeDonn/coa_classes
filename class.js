@@ -280,6 +280,113 @@
     <text class="sc-legend" x="14" y="20">STARS LIVE ON THE ENEMY</text>
     ${SC_PHONE_NODES.map(s => scNodeSvg(s, 33, 44)).join("")}`;
 
+
+  // Sun Cleric: a sun on the horizon rule — Solar Power builds below the line, the
+  // Dawn window burns above it, ten rays as the Fulfillment counter (packet, batch 2).
+  const suNodes = [
+    { id: "sun-cleric/piety", name: "Piety", verb: "ALTERNATE", tag: "2 STATES", x: 73, y: 64 },
+    { id: "sun-cleric/blessings", name: "Blessings", verb: "RELAY", tag: "5 ALLIES", x: 347, y: 64 },
+    { id: "sun-cleric/seraphim", name: "Seraphim", verb: "HARDEN", tag: "5 × 2%", x: 73, y: 196 },
+    { id: "sun-cleric/valkyrie", name: "Valkyrie", verb: "DOUBLE", tag: "5 × 10%", x: 347, y: 196 },
+  ];
+  const SU_DEFS = `<defs>
+      <radialGradient id="suSun"><stop offset="0" stop-color="#fff3c9"/><stop offset=".55" stop-color="#ffd54f"/><stop offset="1" stop-color="#7a5c14"/></radialGradient>
+      <filter id="suGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    </defs>`;
+  const suNodeSvg = (s, ny, vy) => `<g class="cd-node su-node" data-cd-spec="${s.id}" role="button" tabindex="0" transform="translate(${s.x} ${s.y})">
+      <circle class="node-ring" r="29"/><circle class="node-dot" r="4"/>
+      <text class="su-tag" text-anchor="middle" y="18">${s.tag}</text>
+      <text class="node-name" text-anchor="middle" y="${ny}">${s.name}</text>
+      <text class="node-verb" text-anchor="middle" y="${vy}">${s.verb}</text></g>`;
+  const suRays = (cx, cy, r1, r2) => Array.from({ length: 10 }, (_, i) => {
+    const a = Math.PI * (1.08 + (i * 0.86) / 9);
+    const x1 = cx + r1 * Math.cos(a), y1 = cy + r1 * Math.sin(a);
+    const x2 = cx + r2 * Math.cos(a), y2 = cy + r2 * Math.sin(a);
+    return `<line class="su-ray" x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}"/>`;
+  }).join("");
+  const suSun = (cx, cy, r) => `
+    <path class="su-upper" d="M${cx - r} ${cy} A${r} ${r} 0 0 1 ${cx + r} ${cy} Z"/>
+    <path class="su-lower" d="M${cx - r} ${cy} A${r} ${r} 0 0 0 ${cx + r} ${cy} Z"/>`;
+  const SU_DESKTOP = `<title id="su-seal-title">Dawn on the horizon: Solar Power builds below the line, ten Fulfillments burn above it</title>
+    ${SU_DEFS}
+    <line class="su-horizon" x1="120" y1="118" x2="300" y2="118"/>
+    ${suSun(210, 118, 34)}${suRays(210, 118, 40, 52)}
+    <text class="su-threshold" x="130" y="98" text-anchor="middle">SOLAR · BUILD</text>
+    <text class="su-threshold" x="290" y="44" text-anchor="middle">10 · FULFILL</text>
+    <path class="su-link" d="M176 96 L102 72"/><path class="su-link" d="M244 96 L318 72"/>
+    <path class="su-link" d="M176 140 L102 188"/><path class="su-link" d="M244 140 L318 188"/>
+    <text class="su-center-label" x="210" y="168" text-anchor="middle">DAWN</text>
+    <text class="su-center-sub" x="210" y="180" text-anchor="middle">ONE VOW · TEN FULFILLMENTS · 1 MIN</text>
+    <text class="su-legend" x="16" y="22">THE LINE IS WHERE BUILDING STOPS</text>
+    ${suNodes.map(s => suNodeSvg(s, 42, 54)).join("")}`;
+  const SU_PHONE_NODES = suNodes.map(s => ({ ...s, y: s.y < 150 ? 56 : 167 }));
+  const SU_PHONE = `<title id="su-seal-title">Dawn on the horizon: Solar Power builds below the line, ten Fulfillments burn above it</title>
+    ${SU_DEFS}
+    <line class="su-horizon" x1="130" y1="106" x2="290" y2="106"/>
+    ${suSun(210, 106, 28)}${suRays(210, 106, 33, 44)}
+    <text class="su-threshold" x="136" y="88" text-anchor="middle">SOLAR · BUILD</text>
+    <text class="su-threshold" x="286" y="42" text-anchor="middle">10 · FULFILL</text>
+    <path class="su-link" d="M182 88 L102 64"/><path class="su-link" d="M238 88 L318 64"/>
+    <path class="su-link" d="M182 124 L102 160"/><path class="su-link" d="M238 124 L318 160"/>
+    <text class="su-center-label" x="210" y="148" text-anchor="middle">DAWN</text>
+    <text class="su-center-sub" x="210" y="159" text-anchor="middle">ONE VOW · TEN FULFILLMENTS</text>
+    <text class="su-legend" x="14" y="20">THE LINE IS WHERE BUILDING STOPS</text>
+    ${SU_PHONE_NODES.map(s => suNodeSvg(s, 33, 44)).join("")}`;
+
+  // Templar: the Oath Chain as a clock of links — one snapped open and spilling,
+  // one welded shut, a sweep hand running the timer down (packet, batch 2).
+  const tpNodes = [
+    { id: "templar/crusader", name: "Crusader", verb: "RENEW", tag: "+3s", x: 73, y: 66 },
+    { id: "templar/zealot", name: "Zealot", verb: "TALLY", tag: "10", x: 347, y: 66 },
+    { id: "templar/oathkeeper", name: "Oathkeeper", verb: "KEEP", tag: "KEEP", x: 210, y: 206 },
+  ];
+  const TP_DEFS = `<defs>
+      <filter id="tpGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    </defs>`;
+  const tpNodeSvg = (s, ny, vy) => `<g class="cd-node tp-node" data-cd-spec="${s.id}" role="button" tabindex="0" transform="translate(${s.x} ${s.y})">
+      <circle class="node-ring" r="29"/><circle class="node-dot" r="4"/>
+      <text class="tp-tag" text-anchor="middle" y="18">${s.tag}</text>
+      <text class="node-name" text-anchor="middle" y="${ny}">${s.name}</text>
+      <text class="node-verb" text-anchor="middle" y="${vy}">${s.verb}</text></g>`;
+  const tpChain = (cx, cy, r, n) => Array.from({ length: n }, (_, i) => {
+    const a = (i * 2 * Math.PI) / n - Math.PI / 2;
+    const x = cx + r * Math.cos(a), y = cy + r * Math.sin(a);
+    const rot = (a * 180 / Math.PI + 90).toFixed(1);
+    if (i === 2) return `<g transform="translate(${x.toFixed(1)} ${y.toFixed(1)}) rotate(${rot})">
+      <path class="tp-link open" d="M-8 -3 A 8 6 0 0 1 8 -3"/><path class="tp-link open" d="M-8 3 A 8 6 0 0 0 8 3"/>
+      <line class="tp-spill" x1="0" y1="6" x2="0" y2="20"/></g>`;
+    if (i === 8) return `<g transform="translate(${x.toFixed(1)} ${y.toFixed(1)}) rotate(${rot})">
+      <ellipse class="tp-link weld" rx="8" ry="6"/><line class="tp-weldbar" x1="-5" y1="0" x2="5" y2="0"/></g>`;
+    return `<ellipse class="tp-link" transform="translate(${x.toFixed(1)} ${y.toFixed(1)}) rotate(${rot})" rx="8" ry="6"/>`;
+  }).join("");
+  const TP_DESKTOP = `<title id="tp-seal-title">The Oath Chain: a clock of sworn links — break them for payoff, or keep every one</title>
+    ${TP_DEFS}
+    ${tpChain(210, 112, 58, 12)}
+    <line class="tp-hand" x1="210" y1="112" x2="243" y2="74"/>
+    <circle class="tp-hub" cx="210" cy="112" r="5"/>
+    <text class="tp-threshold" x="118" y="34" text-anchor="middle">HOLD · BUFF</text>
+    <text class="tp-threshold" x="302" y="34" text-anchor="middle">BREAK · PAYOFF</text>
+    <path class="tp-linkline" d="M160 86 L102 72"/><path class="tp-linkline" d="M260 86 L318 72"/>
+    <path class="tp-linkline" d="M210 170 L210 177"/>
+    <text class="tp-center-label" x="210" y="132" text-anchor="middle">OATH CHAIN</text>
+    <text class="tp-center-sub" x="210" y="144" text-anchor="middle">THE TIMER RUNS · OATH FLOW +2 s</text>
+    <text class="tp-legend" x="16" y="22">EVERY LINK IS A BUFF YOU WEAR</text>
+    ${tpNodes.map(s => tpNodeSvg(s, s.y > 150 ? 38 : 42, s.y > 150 ? 50 : 54)).join("")}`;
+  const TP_PHONE_NODES = tpNodes.map(s => ({ ...s, y: s.y > 150 ? 178 : 58 }));
+  const TP_PHONE = `<title id="tp-seal-title">The Oath Chain: a clock of sworn links — break them for payoff, or keep every one</title>
+    ${TP_DEFS}
+    ${tpChain(210, 96, 46, 12)}
+    <line class="tp-hand" x1="210" y1="96" x2="237" y2="65"/>
+    <circle class="tp-hub" cx="210" cy="96" r="4"/>
+    <text class="tp-threshold" x="118" y="26" text-anchor="middle">HOLD · BUFF</text>
+    <text class="tp-threshold" x="302" y="26" text-anchor="middle">BREAK · PAYOFF</text>
+    <path class="tp-linkline" d="M170 76 L102 62"/><path class="tp-linkline" d="M250 76 L318 62"/>
+    <path class="tp-linkline" d="M210 142 L210 149"/>
+    <text class="tp-center-label" x="210" y="114" text-anchor="middle">OATH CHAIN</text>
+    <text class="tp-center-sub" x="210" y="125" text-anchor="middle">OATH FLOW +2 s</text>
+    <text class="tp-legend" x="14" y="20">EVERY LINK IS A BUFF YOU WEAR</text>
+    ${TP_PHONE_NODES.map(s => tpNodeSvg(s, 33, 44)).join("")}`;
+
   // Phone: the ruled 420×224 tightened arrangement — orbits 60/77, eye .66,
   // node rows raised. Nothing removed.
   const CULTIST_PHONE_NODES = [
@@ -626,6 +733,16 @@
     el("mast").insertAdjacentHTML("beforeend",
       `<div class="cd-stage cd-seal ry-reseal cd-wh-seal" aria-label="Witch Hunter class engine diagram">
         <svg viewBox="0 0 420 260" role="img" aria-labelledby="wh-seal-title">${WH_DESKTOP}</svg></div>`);
+  } else if (cSlug === "sun-cleric") {
+    el("mast").classList.add("cd-with-seal");
+    el("mast").insertAdjacentHTML("beforeend",
+      `<div class="cd-stage cd-seal ry-reseal cd-su-seal" aria-label="Sun Cleric class engine diagram">
+        <svg viewBox="0 0 420 260" role="img" aria-labelledby="su-seal-title">${SU_DESKTOP}</svg></div>`);
+  } else if (cSlug === "templar") {
+    el("mast").classList.add("cd-with-seal");
+    el("mast").insertAdjacentHTML("beforeend",
+      `<div class="cd-stage cd-seal ry-reseal cd-tp-seal" aria-label="Templar class engine diagram">
+        <svg viewBox="0 0 420 260" role="img" aria-labelledby="tp-seal-title">${TP_DESKTOP}</svg></div>`);
   } else if (cSlug === "starcaller") {
     el("mast").classList.add("cd-with-seal");
     el("mast").insertAdjacentHTML("beforeend",
@@ -674,6 +791,9 @@
     "chronomancer/infinite": "wave", "chronomancer/artificer": "bank", "chronomancer/time": "pips",
     "starcaller/moon-guard": "wheel", "starcaller/moon-priest": "bank",
     "starcaller/sentinel": "pips", "starcaller/warden": "wave",
+    "sun-cleric/piety": "wheel", "sun-cleric/blessings": "wheel",
+    "sun-cleric/seraphim": "stack", "sun-cleric/valkyrie": "wave",
+    "templar/crusader": "bank", "templar/oathkeeper": "bank", "templar/zealot": "pips",
   };
   function topoGlyph(kind) {
     const art = {
@@ -1225,6 +1345,145 @@
         "Epoch casts stack Endless Sands — each cuts 20% off your next Reverse Wound, up to five"],
       eyes: "which Aeon is active · your Endless Sands stacks",
     },
+    "sun-cleric/piety": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Piety rhythm: Sunrise and Sunset alternate, each swap resets the other state's signature cast, and Solar Concord rides the Dawn window">
+        <defs><marker id="suArrP" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+        <path class="su-half lit" d="M120 84 A40 40 0 0 1 200 84 Z"/>
+        <path class="su-half" d="M120 92 A40 40 0 0 0 200 92 Z"/>
+        <text class="ph" x="160" y="130" text-anchor="middle">ALTERNATE</text>
+        <text class="ph2" x="160" y="144" text-anchor="middle">Sunrise ↔ Sunset · each swap resets the other</text>
+        <path class="branch" d="M250 74 C 340 42, 440 40, 520 52" marker-end="url(#suArrP)"/>
+        <rect class="su-window" x="540" y="44" width="240" height="78" rx="2"/>
+        <text class="su-window-lab" x="660" y="72" text-anchor="middle">SOLAR CONCORD · 15 s</text>
+        <text class="ph2" x="660" y="90" text-anchor="middle" fill="#ffedbe">resets Horusath Blast in Sunrise, Rapture in Sunset</text>
+        <path class="branch" d="M660 126 C 560 160, 260 160, 176 112" marker-end="url(#suArrP)"/>
+        <text class="ph2" x="310" y="156" text-anchor="middle">SWAP AGAIN</text>
+      </svg>`,
+      bullets: ["The state you land in is chosen by the school of the spell you cast after Dawn, not by a button",
+        "You are never in both states; entering one locks out the other until the next swap",
+        "Scorch Marks arrives on a 40% chance and makes your next Radiant Flame cost no mana and tick 50% faster",
+        "Solar Concord runs 15 seconds and resets a different cooldown depending on which state you are standing in"],
+      eyes: "which state is lit, and your Scorch Marks proc",
+    },
+    "sun-cleric/blessings": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Blessings rhythm: Fulfillments route outward to five allies, and Solar Invigoration amplifies the healing they take">
+        <defs><marker id="suArrB" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+        <circle class="su-hub" cx="160" cy="84" r="12"/>
+        ${[0,1,2,3,4].map(i => {
+          const a = -Math.PI/2 + (i - 2) * 0.5;
+          const x = 160 + 62 * Math.cos(a), y = 84 + 62 * Math.sin(a);
+          return `<line class="su-relay" x1="160" y1="84" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}"/><circle class="su-ally" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="5"/>`;
+        }).join("")}
+        <text class="ph" x="160" y="130" text-anchor="middle">RELAY</text>
+        <text class="ph2" x="160" y="144" text-anchor="middle">each Fulfillment lands on the party</text>
+        <path class="branch" d="M250 74 C 340 42, 440 40, 520 52" marker-end="url(#suArrB)"/>
+        <rect class="su-window" x="540" y="44" width="250" height="78" rx="2"/>
+        <text class="su-window-lab" x="665" y="72" text-anchor="middle">SOLAR INVIGORATION · 15 s</text>
+        <text class="ph2" x="665" y="90" text-anchor="middle" fill="#ffedbe">allies take 20% more healing · their casts Shine</text>
+        <path class="branch" d="M665 126 C 560 160, 260 160, 176 108" marker-end="url(#suArrB)"/>
+        <text class="ph2" x="310" y="156" text-anchor="middle">BACK TO THE BUILD</text>
+      </svg>`,
+      bullets: ["Only one ally carries your Blessing at a time, and the Blessing talents act through that ally with either protection or a frontal hit",
+        "For 15 seconds your allies take 20% more healing, and their own direct damage casts Shine for you no more than once every 2 seconds",
+        "A talent chains that one step further, so an effective heal there fires Illumination at most once every 6 seconds",
+        "Every Vow Fulfillment also drops Sunlight on up to 5 allies within 40 yards, lowest health first"],
+      eyes: "your Blessed ally, and the Solar Invigoration timer",
+    },
+    "sun-cleric/seraphim": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Seraphim rhythm: Fulfillments stack block value, and Seraphic Bulwark doubles it for five blocks or ten seconds">
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        <rect class="brick" x="60" y="112" width="190" height="12" rx="1"/>
+        <rect class="brick" x="90" y="98" width="160" height="12" rx="1"/>
+        <rect class="brick" x="120" y="84" width="130" height="12" rx="1"/>
+        <rect class="brick" x="150" y="70" width="100" height="12" rx="1"/>
+        <rect class="brick" x="180" y="56" width="70" height="12" rx="1"/>
+        <text class="ph" x="160" y="146" text-anchor="middle">STACK</text>
+        <text class="ph2" x="160" y="160" text-anchor="middle">5 Fulfillments · 2% block value each</text>
+        <rect class="su-window" x="480" y="44" width="280" height="82" rx="2"/>
+        <text class="su-window-lab" x="620" y="72" text-anchor="middle">SERAPHIC BULWARK</text>
+        <text class="ph2" x="620" y="90" text-anchor="middle" fill="#ffedbe">+100% block value · 5 blocks or 10 s</text>
+        <text class="ph2" x="620" y="106" text-anchor="middle" fill="#ffedbe">2 charges · 25 s recharge</text>
+        <text class="ph" x="880" y="146" text-anchor="middle">RESTACK</text>
+      </svg>`,
+      bullets: ["Every Vow Fulfillment adds 2% block chance for 15 seconds, stacking up to five times",
+        "Dawnbreak scales with your block value, so raising block raises your damage and not only your safety",
+        "Seraphic Bulwark doubles block value for 5 blocks or 10 seconds, with 2 charges on a 25-second recharge",
+        "Avoiding an attack has a 20% chance to make your next Illumination instant and free, within 15 seconds"],
+      eyes: "your block-chance stacks, and Seraphic Bulwark charges",
+    },
+    "sun-cleric/valkyrie": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Valkyrie rhythm: Fulfillments stack Sunslam ten percent at a time, and the slam lands only inside Dawn">
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        ${[0,1,2,3,4].map(i => `<circle class="su-pip" cx="${100 + i * 60}" cy="${112 - i * 12}" r="6"/>`).join("")}
+        <text class="ph" x="220" y="146" text-anchor="middle">BUILD</text>
+        <text class="ph2" x="220" y="160" text-anchor="middle">+10% Sunslam per Fulfillment · 5 stacks</text>
+        <rect class="su-window" x="500" y="40" width="280" height="86" rx="2"/>
+        <text class="su-window-lab" x="640" y="66" text-anchor="middle">SUNSLAM · DAWN ONLY</text>
+        <path class="wave" d="M530 122 Q 570 62 610 122 Z"/>
+        <path class="wave" d="M620 122 Q 660 62 700 122 Z"/>
+        <text class="ph2" x="640" y="86" text-anchor="middle" fill="#ffedbe">hits every second for 4 s · 1 s stun</text>
+        <text class="ph" x="890" y="146" text-anchor="middle">WAIT FOR DAWN</text>
+      </svg>`,
+      bullets: ["Auto attacks generate 1 Solar Power each and hit 10% harder while your Vow is up",
+        "Valkyr's Grip lets you wield a two-handed weapon in each hand and adds 6% to your chance to hit",
+        "Inside the window, melee ability damage triggers an attack with each weapon",
+        "Each Vow Fulfillment raises Sunslam damage by 10% for 1 minute, stacking five times"],
+      eyes: "the Dawn count, and your Sunslam stacks",
+    },
+    "templar/crusader": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Crusader rhythm: hold Oaths on the running chain, Argent Blade renews it, Righteous Tempest spends every Oath at once">
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        ${[0,1,2].map(i => `<ellipse class="tp-slink" cx="${110 + i * 46}" cy="${92 - i * 8}" rx="12" ry="9"/>`).join("")}
+        <text class="ph" x="180" y="146" text-anchor="middle">HOLD THE CHAIN</text>
+        <text class="ph2" x="180" y="160" text-anchor="middle">each Oath held is a buff · Argent Blade +3 s</text>
+        <rect class="tp-window" x="500" y="44" width="280" height="82" rx="2"/>
+        <text class="tp-window-lab" x="640" y="72" text-anchor="middle">RIGHTEOUS TEMPEST</text>
+        <text class="ph2" x="640" y="90" text-anchor="middle" fill="#ffdcec">consumes every held Oath · a three-second whirl</text>
+        <text class="ph2" x="640" y="106" text-anchor="middle" fill="#ffdcec">Templar Rituals drags enemies in 15 yd</text>
+        <text class="ph" x="890" y="146" text-anchor="middle">SWEAR AGAIN</text>
+      </svg>`,
+      bullets: ["Basic strikes bank Oaths, and the finisher spends every one you are holding",
+        "Argent Blade buys time: it heals you for the damage it deals and adds three seconds to the Oath Chain",
+        "Melee damage has a 10% chance to reset Argent Blade and cut its Energy cost in half",
+        "Righteous Tempest whirls for three seconds and pulls enemies within 15 yards into it"],
+      eyes: "the Oath Chain timer and your Argent Blade reset",
+    },
+    "templar/oathkeeper": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Oathkeeper rhythm: Oaths are never spent, the Libram fills with delayed damage, and the wipe removes most of it">
+        <line class="thr" x1="14" y1="44" x2="500" y2="44"/><text class="thr-lab" x="14" y="38">the Libram fills</text>
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        <path class="tp-debt" d="M40 122 L440 60 L440 126 L40 126 Z"/>
+        <text class="ph" x="220" y="146" text-anchor="middle">KEEP</text>
+        <text class="ph2" x="220" y="160" text-anchor="middle">Oaths stay welded · damage arrives delayed</text>
+        <rect class="tp-window" x="540" y="48" width="240" height="78" rx="2"/>
+        <text class="tp-window-lab" x="660" y="76" text-anchor="middle">LIBRAM WIPE</text>
+        <text class="ph2" x="660" y="94" text-anchor="middle" fill="#ffdcec">removes 70% of the delayed damage</text>
+        <text class="ph" x="890" y="146" text-anchor="middle">IT FILLS AGAIN</text>
+      </svg>`,
+      bullets: ["Your Oath Breakers do not spend Oaths here — you keep every one and its buff stays up",
+        "40% of the direct damage you take is held back and dealt to you over the next eight seconds",
+        "Reading a Libram wipes 70% of that held damage, and each Oath Breaker cuts four seconds off the Libram cooldown",
+        "Sacred Swing unlocks only after you avoid an attack, so dodging and parrying feed your offence"],
+      eyes: "your delayed-damage bar and the Libram cooldown",
+    },
+    "templar/zealot": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Zealot rhythm: count Zealotry triggers to ten, and Chastise transforms into Divine Fury">
+        <line class="thr" x1="14" y1="44" x2="520" y2="44"/><text class="thr-lab" x="14" y="38">10 · the tally</text>
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        ${[0,1,2,3,4,5,6,7,8,9].map(i => `<circle class="tp-pip${i === 9 ? " lit" : ""}" cx="${70 + i * 44}" cy="${116 - i * 8}" r="6"/>`).join("")}
+        <text class="ph" x="240" y="146" text-anchor="middle">TALLY</text>
+        <text class="ph2" x="240" y="160" text-anchor="middle">Righteous Upheaval carries +3% per trigger</text>
+        <rect class="tp-window" x="580" y="48" width="220" height="78" rx="2"/>
+        <text class="tp-window-lab" x="690" y="76" text-anchor="middle">TEN TRIGGERS</text>
+        <text class="ph2" x="690" y="94" text-anchor="middle" fill="#ffdcec">Chastise becomes Divine Fury</text>
+        <text class="ph" x="900" y="146" text-anchor="middle">COUNT AGAIN</text>
+      </svg>`,
+      bullets: ["Your off-hand auto attacks do the counting — each one triggers Zealotry",
+        "Every trigger during the current Oath Chain adds 3% damage to Righteous Upheaval",
+        "At ten triggers, Chastise upgrades into a stronger area strike",
+        "Melee hits restore Energy, and a critical strike restores more"],
+      eyes: "your Zealotry count and the Oath Chain timer",
+    },
     "starcaller/moon-guard": {
       svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Moon Guard rhythm: Starburst marks the pack, spending stars pulls Starsweep back three seconds each, and bigger packs spin the loop faster">
         <defs><marker id="scArrG" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
@@ -1646,6 +1905,99 @@
       <path class="branch" d="M234 146 C 356 140, 374 56, 250 36" marker-end="url(#cmArrTp)"/>
       <text class="ph2" x="190" y="200" text-anchor="middle">retune, and the sands rebuild</text>
     </svg>`,
+    "sun-cleric/piety": `<svg viewBox="0 0 380 230" role="img" aria-label="Piety rhythm, phone ladder: alternate Sunrise and Sunset, Solar Concord rides the window">
+      <defs><marker id="suArrPp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <path class="su-half lit" d="M24 54 A22 22 0 0 1 68 54 Z"/>
+      <path class="su-half" d="M24 60 A22 22 0 0 0 68 60 Z"/>
+      <text class="ph" x="165" y="46" text-anchor="start">ALTERNATE</text>
+      <text class="ph2" x="165" y="60" text-anchor="start">each swap resets the other</text>
+      <path class="branch" d="M44 82 L44 106" marker-end="url(#suArrPp)"/>
+      <rect class="su-window" x="28" y="116" width="200" height="56" rx="2"/>
+      <text class="su-window-lab" x="128" y="140" text-anchor="middle">SOLAR CONCORD</text>
+      <text class="ph2" x="128" y="158" text-anchor="middle" fill="#ffedbe">15 s · signature casts reset</text>
+      <path class="branch" d="M234 144 C 356 138, 374 56, 250 36" marker-end="url(#suArrPp)"/>
+      <text class="ph2" x="190" y="196" text-anchor="middle">swap again</text>
+    </svg>`,
+    "sun-cleric/blessings": `<svg viewBox="0 0 380 230" role="img" aria-label="Blessings rhythm, phone ladder: Fulfillments route to five allies, Solar Invigoration amplifies them">
+      <defs><marker id="suArrBp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <circle class="su-hub" cx="44" cy="54" r="9"/>
+      ${[0,1,2].map(i => {
+        const a = -Math.PI/2 + (i - 1) * 0.6;
+        const x = 44 + 38 * Math.cos(a), y = 54 + 38 * Math.sin(a);
+        return `<line class="su-relay" x1="44" y1="54" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}"/><circle class="su-ally" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="4"/>`;
+      }).join("")}
+      <text class="ph" x="165" y="46" text-anchor="start">RELAY</text>
+      <text class="ph2" x="165" y="60" text-anchor="start">5 allies per Fulfillment</text>
+      <path class="branch" d="M44 96 L44 118" marker-end="url(#suArrBp)"/>
+      <rect class="su-window" x="28" y="128" width="200" height="56" rx="2"/>
+      <text class="su-window-lab" x="128" y="152" text-anchor="middle">SOLAR INVIGORATION</text>
+      <text class="ph2" x="128" y="170" text-anchor="middle" fill="#ffedbe">+20% healing taken · 15 s</text>
+      <path class="branch" d="M234 156 C 356 150, 374 58, 250 36" marker-end="url(#suArrBp)"/>
+      <text class="ph2" x="190" y="204" text-anchor="middle">back to the build</text>
+    </svg>`,
+    "sun-cleric/seraphim": `<svg viewBox="0 0 380 230" role="img" aria-label="Seraphim rhythm, phone ladder: stack block value, then Seraphic Bulwark doubles it">
+      <defs><marker id="suArrSp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <rect class="brick" x="20" y="58" width="90" height="9" rx="1"/>
+      <rect class="brick" x="32" y="46" width="66" height="9" rx="1"/>
+      <rect class="brick" x="44" y="34" width="42" height="9" rx="1"/>
+      <text class="ph" x="165" y="44" text-anchor="start">STACK</text>
+      <text class="ph2" x="165" y="58" text-anchor="start">2% block value each · ×5</text>
+      <path class="branch" d="M44 76 L44 100" marker-end="url(#suArrSp)"/>
+      <rect class="su-window" x="28" y="110" width="200" height="60" rx="2"/>
+      <text class="su-window-lab" x="128" y="132" text-anchor="middle">SERAPHIC BULWARK</text>
+      <text class="ph2" x="128" y="148" text-anchor="middle" fill="#ffedbe">+100% block · 5 blocks or 10 s</text>
+      <text class="ph2" x="128" y="162" text-anchor="middle" fill="#ffedbe">2 charges · 25 s recharge</text>
+      <path class="branch" d="M234 140 C 356 134, 374 54, 250 34" marker-end="url(#suArrSp)"/>
+      <text class="ph2" x="190" y="192" text-anchor="middle">restack</text>
+    </svg>`,
+    "sun-cleric/valkyrie": `<svg viewBox="0 0 380 230" role="img" aria-label="Valkyrie rhythm, phone ladder: stack Sunslam through Fulfillments, slam inside Dawn">
+      <defs><marker id="suArrVp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      ${[0,1,2,3,4].map(i => `<circle class="su-pip" cx="${32 + i * 26}" cy="${58 - i * 4}" r="5.5"/>`).join("")}
+      <text class="ph" x="185" y="44" text-anchor="start">BUILD</text>
+      <text class="ph2" x="185" y="58" text-anchor="start">+10% Sunslam each · ×5</text>
+      <path class="branch" d="M44 74 L44 98" marker-end="url(#suArrVp)"/>
+      <rect class="su-window" x="28" y="108" width="200" height="58" rx="2"/>
+      <text class="su-window-lab" x="128" y="130" text-anchor="middle">SUNSLAM · DAWN ONLY</text>
+      <text class="ph2" x="128" y="148" text-anchor="middle" fill="#ffedbe">every second for 4 s · 1 s stun</text>
+      <path class="branch" d="M234 137 C 356 130, 374 54, 250 34" marker-end="url(#suArrVp)"/>
+      <text class="ph2" x="190" y="190" text-anchor="middle">wait for the next Dawn</text>
+    </svg>`,
+    "templar/crusader": `<svg viewBox="0 0 380 230" role="img" aria-label="Crusader rhythm, phone ladder: hold the chain, renew it, then the whirl spends every Oath">
+      <defs><marker id="tpArrCp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      ${[0,1,2].map(i => `<ellipse class="tp-slink" cx="${38 + i * 32}" cy="${52 - i * 4}" rx="10" ry="7"/>`).join("")}
+      <text class="ph" x="165" y="44" text-anchor="start">HOLD</text>
+      <text class="ph2" x="165" y="58" text-anchor="start">Argent Blade adds 3 s</text>
+      <path class="branch" d="M44 74 L44 98" marker-end="url(#tpArrCp)"/>
+      <rect class="tp-window" x="28" y="108" width="200" height="58" rx="2"/>
+      <text class="tp-window-lab" x="128" y="130" text-anchor="middle">RIGHTEOUS TEMPEST</text>
+      <text class="ph2" x="128" y="148" text-anchor="middle" fill="#ffdcec">every Oath · a 3 s whirl</text>
+      <path class="branch" d="M234 137 C 356 130, 374 54, 250 34" marker-end="url(#tpArrCp)"/>
+      <text class="ph2" x="190" y="190" text-anchor="middle">swear again</text>
+    </svg>`,
+    "templar/oathkeeper": `<svg viewBox="0 0 380 230" role="img" aria-label="Oathkeeper rhythm, phone ladder: Oaths stay, the Libram fills, the wipe clears most of it">
+      <defs><marker id="tpArrOp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <path class="tp-debt" d="M20 64 L140 40 L140 66 L20 66 Z"/>
+      <text class="ph" x="165" y="44" text-anchor="start">KEEP</text>
+      <text class="ph2" x="165" y="58" text-anchor="start">damage arrives delayed</text>
+      <path class="branch" d="M44 80 L44 104" marker-end="url(#tpArrOp)"/>
+      <rect class="tp-window" x="28" y="114" width="200" height="56" rx="2"/>
+      <text class="tp-window-lab" x="128" y="138" text-anchor="middle">LIBRAM WIPE</text>
+      <text class="ph2" x="128" y="156" text-anchor="middle" fill="#ffdcec">removes 70% of the debt</text>
+      <path class="branch" d="M234 142 C 356 136, 374 54, 250 34" marker-end="url(#tpArrOp)"/>
+      <text class="ph2" x="190" y="194" text-anchor="middle">it fills again</text>
+    </svg>`,
+    "templar/zealot": `<svg viewBox="0 0 380 230" role="img" aria-label="Zealot rhythm, phone ladder: tally ten triggers, Chastise becomes Divine Fury">
+      <defs><marker id="tpArrZp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      ${[0,1,2,3,4,5,6,7,8,9].map(i => `<circle class="tp-pip${i === 9 ? " lit" : ""}" cx="${26 + i * 14}" cy="${56 - i * 1.5}" r="4.5"/>`).join("")}
+      <text class="ph" x="185" y="44" text-anchor="start">TALLY</text>
+      <text class="ph2" x="185" y="58" text-anchor="start">+3% per trigger counted</text>
+      <path class="branch" d="M44 72 L44 96" marker-end="url(#tpArrZp)"/>
+      <rect class="tp-window" x="28" y="106" width="200" height="56" rx="2"/>
+      <text class="tp-window-lab" x="128" y="130" text-anchor="middle">TEN TRIGGERS</text>
+      <text class="ph2" x="128" y="148" text-anchor="middle" fill="#ffdcec">Chastise → Divine Fury</text>
+      <path class="branch" d="M234 134 C 356 128, 374 52, 250 34" marker-end="url(#tpArrZp)"/>
+      <text class="ph2" x="190" y="188" text-anchor="middle">count again</text>
+    </svg>`,
     "starcaller/moon-guard": `<svg viewBox="0 0 380 230" role="img" aria-label="Moon Guard rhythm, phone ladder: mark the pack, spend stars, Starsweep returns sooner">
       <defs><marker id="scArrGp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
       ${[0,1,2].map(i => `<g class="sc-star" transform="translate(${36 + i * 28} 52)"><path d="M0 -6 L1.8 -1.8 L6 0 L1.8 1.8 L0 6 L-1.8 1.8 L-6 0 L-1.8 -1.8 Z"/></g>`).join("")}
@@ -1962,6 +2314,8 @@
     "reaper": { desktop: ["0 0 420 260", RP_DESKTOP], phone: ["0 0 420 224", RP_PHONE] },
     "chronomancer": { desktop: ["0 0 420 260", CM_DESKTOP], phone: ["0 0 420 224", CM_PHONE] },
     "starcaller": { desktop: ["0 0 420 260", SC_DESKTOP], phone: ["0 0 420 224", SC_PHONE] },
+    "sun-cleric": { desktop: ["0 0 420 260", SU_DESKTOP], phone: ["0 0 420 224", SU_PHONE] },
+    "templar": { desktop: ["0 0 420 260", TP_DESKTOP], phone: ["0 0 420 224", TP_PHONE] },
   };
   function applySeal() {
     const swap = SEAL_SWAP[cSlug];
