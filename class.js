@@ -495,6 +495,107 @@
     <text class="fs-legend" x="14" y="20">SPEND IN PAIRS · CRITS HOLD IT OPEN</text>
     ${FS_PHONE_NODES.map(s => fsNodeSvg(s, 33, 44)).join("")}`;
 
+
+  // Barbarian: a segmented iron Energy gauge with one wedge gap — Enrage — cut at
+  // its crown; every spec's line passes through the gap (packet, batch 3).
+  const baNodes = [
+    { id: "barbarian/brutality", name: "Brutality", verb: "HOARD", tag: "2× ENERGY", x: 73, y: 66 },
+    { id: "barbarian/headhunting", name: "Headhunting", verb: "RESET", tag: "3 AXES", x: 347, y: 66 },
+    { id: "barbarian/ancestry", name: "Ancestry", verb: "POUR", tag: "TANKARD", x: 210, y: 206 },
+  ];
+  const BA_DEFS = `<defs>
+      <filter id="baGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    </defs>`;
+  const baNodeSvg = (s, ny, vy) => `<g class="cd-node ba-node" data-cd-spec="${s.id}" role="button" tabindex="0" transform="translate(${s.x} ${s.y})">
+      <circle class="node-ring" r="29"/><circle class="node-dot" r="4"/>
+      <text class="ba-tag" text-anchor="middle" y="18">${s.tag}</text>
+      <text class="node-name" text-anchor="middle" y="${ny}">${s.name}</text>
+      <text class="node-verb" text-anchor="middle" y="${vy}">${s.verb}</text></g>`;
+  const baRing = (cx, cy, r) => Array.from({ length: 10 }, (_, i) => {
+    const a0 = -78 + i * 33.6, a1 = a0 + 26;
+    const p0 = [cx + r * Math.cos(a0 * Math.PI / 180), cy + r * Math.sin(a0 * Math.PI / 180)];
+    const p1 = [cx + r * Math.cos(a1 * Math.PI / 180), cy + r * Math.sin(a1 * Math.PI / 180)];
+    return `<path class="ba-seg" d="M${p0[0].toFixed(1)} ${p0[1].toFixed(1)} A${r} ${r} 0 0 1 ${p1[0].toFixed(1)} ${p1[1].toFixed(1)}"/>`;
+  }).join("");
+  const BA_DESKTOP = `<title id="ba-seal-title">The Energy gauge with one gap: Enrage, and everything worth having beyond it</title>
+    ${BA_DEFS}
+    ${baRing(210, 122, 56)}
+    <line class="ba-gapedge" x1="200" y1="68" x2="204" y2="82"/>
+    <line class="ba-gapedge" x1="220" y1="68" x2="216" y2="82"/>
+    <text class="ba-pct" x="210" y="92" text-anchor="middle">−30%</text>
+    <path class="ba-link" d="M206 64 L96 70"/><path class="ba-link" d="M214 64 L324 70"/>
+    <path class="ba-link" d="M210 64 C 260 40, 300 120, 210 177"/>
+    <text class="ba-threshold" x="118" y="34" text-anchor="middle">ONE BAR · ENERGY</text>
+    <text class="ba-threshold" x="300" y="34" text-anchor="middle">ONE SWITCH · ENRAGED</text>
+    <text class="ba-center-label" x="210" y="126" text-anchor="middle">ENERGY</text>
+    <text class="ba-center-sub" x="210" y="138" text-anchor="middle">ENRAGE OPENS THE GAP</text>
+    <text class="ba-legend" x="16" y="22">HODIR'S WRATH REFILLS THE BAR</text>
+    ${baNodes.map(s => baNodeSvg(s, s.y > 150 ? 38 : 42, s.y > 150 ? 50 : 54)).join("")}`;
+  const BA_PHONE_NODES = baNodes.map(s => ({ ...s, y: s.y > 150 ? 178 : 58 }));
+  const BA_PHONE = `<title id="ba-seal-title">The Energy gauge with one gap: Enrage, and everything worth having beyond it</title>
+    ${BA_DEFS}
+    ${baRing(210, 104, 44)}
+    <line class="ba-gapedge" x1="202" y1="62" x2="205" y2="73"/>
+    <line class="ba-gapedge" x1="218" y1="62" x2="215" y2="73"/>
+    <text class="ba-pct" x="210" y="83" text-anchor="middle">−30%</text>
+    <path class="ba-link" d="M206 58 L96 60"/><path class="ba-link" d="M214 58 L324 60"/>
+    <path class="ba-link" d="M210 58 C 254 38, 288 106, 210 149"/>
+    <text class="ba-threshold" x="118" y="28" text-anchor="middle">ONE BAR · ENERGY</text>
+    <text class="ba-threshold" x="300" y="28" text-anchor="middle">ONE SWITCH · ENRAGED</text>
+    <text class="ba-center-label" x="210" y="108" text-anchor="middle">ENERGY</text>
+    <text class="ba-center-sub" x="210" y="119" text-anchor="middle">ENRAGE OPENS THE GAP</text>
+    <text class="ba-legend" x="14" y="20">HODIR'S WRATH REFILLS THE BAR</text>
+    ${BA_PHONE_NODES.map(s => baNodeSvg(s, 33, 44)).join("")}`;
+
+  // Bloodmage: a two-chambered heart drawn in one vein — the Mortal chamber hollow,
+  // the Cursed chamber filled — with beaded vessels running to each spec (packet, batch 3).
+  const bmNodes = [
+    { id: "bloodmage/sanguine", name: "Sanguine", verb: "OVERDRAW", tag: "THIRST 10", x: 73, y: 64 },
+    { id: "bloodmage/accursed", name: "Accursed", verb: "PROLONG", tag: "SHARDS 8", x: 347, y: 64 },
+    { id: "bloodmage/fleshweaver", name: "Fleshweaver", verb: "LINK", tag: "POOL 10", x: 73, y: 196 },
+    { id: "bloodmage/eternal", name: "Eternal", verb: "TRADE", tag: "THREAT 80%", x: 347, y: 196 },
+  ];
+  const BM_DEFS = `<defs>
+      <filter id="bmGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    </defs>`;
+  const bmNodeSvg = (s, ny, vy) => `<g class="cd-node bm-node" data-cd-spec="${s.id}" role="button" tabindex="0" transform="translate(${s.x} ${s.y})">
+      <circle class="node-ring" r="29"/><circle class="node-dot" r="4"/>
+      <text class="bm-tag" text-anchor="middle" y="18">${s.tag}</text>
+      <text class="node-name" text-anchor="middle" y="${ny}">${s.name}</text>
+      <text class="node-verb" text-anchor="middle" y="${vy}">${s.verb}</text></g>`;
+  const bmVessel = (x1, y1, x2, y2) => {
+    const beads = [0.4, 0.6, 0.8].map(t => {
+      const x = x1 + (x2 - x1) * t, y = y1 + (y2 - y1) * t;
+      return `<circle class="bm-bead" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="3"/>`;
+    }).join("");
+    return `<path class="bm-vessel" d="M${x1} ${y1} L${x2} ${y2}"/>` + beads;
+  };
+  const BM_DESKTOP = `<title id="bm-seal-title">A two-chambered heart: the Mortal chamber hollow, the Cursed chamber filled, vessels beaded with each spec's counter</title>
+    ${BM_DEFS}
+    <path class="bm-heart mortal" d="M208 90 C 178 74 156 96 162 122 C 166 142 190 152 208 148 Z"/>
+    <path class="bm-heart cursed" d="M212 90 C 242 74 264 96 258 122 C 254 142 230 152 212 148 Z"/>
+    ${bmVessel(176, 96, 100, 72)}${bmVessel(244, 96, 320, 72)}
+    ${bmVessel(176, 138, 100, 180)}${bmVessel(244, 138, 320, 180)}
+    <text class="bm-threshold" x="118" y="34" text-anchor="middle">HEALTH · PAID</text>
+    <text class="bm-threshold" x="302" y="34" text-anchor="middle">RAGE · EARNED</text>
+    <text class="bm-center-label" x="210" y="170" text-anchor="middle">RAGE</text>
+    <text class="bm-center-sub" x="210" y="182" text-anchor="middle">HEALTH IS THE SECOND COST</text>
+    <text class="bm-legend" x="16" y="22">ONE CURSE · A FORM PER SPEC</text>
+    ${bmNodes.map(s => bmNodeSvg(s, 42, 54)).join("")}`;
+  const BM_PHONE_NODES = bmNodes.map(s => ({ ...s, y: s.y < 150 ? 56 : 167 }));
+  const BM_PHONE = `<title id="bm-seal-title">A two-chambered heart: the Mortal chamber hollow, the Cursed chamber filled, vessels beaded with each spec's counter</title>
+    ${BM_DEFS}
+    <path class="bm-heart mortal" d="M208 78 C 182 64 164 82 169 104 C 172 120 192 129 208 126 Z"/>
+    <path class="bm-heart cursed" d="M212 78 C 238 64 256 82 251 104 C 248 120 228 129 212 126 Z"/>
+    ${bmVessel(180, 84, 104, 64)}${bmVessel(240, 84, 316, 64)}
+    ${bmVessel(180, 118, 104, 152)}${bmVessel(240, 118, 316, 152)}
+    <text class="bm-threshold" x="118" y="26" text-anchor="middle">HEALTH · PAID</text>
+    <text class="bm-threshold" x="302" y="26" text-anchor="middle">RAGE · EARNED</text>
+    <text class="bm-center-label" x="210" y="146" text-anchor="middle">RAGE</text>
+    <text class="bm-center-sub" x="210" y="157" text-anchor="middle">HEALTH IS THE SECOND COST</text>
+    <text class="bm-legend" x="14" y="20">ONE CURSE · A FORM PER SPEC</text>
+    ${BM_PHONE_NODES.map(s => bmNodeSvg(s, 33, 44)).join("")}`;
+
   // Phone: the ruled 420×224 tightened arrangement — orbits 60/77, eye .66,
   // node rows raised. Nothing removed.
   const CULTIST_PHONE_NODES = [
@@ -841,6 +942,16 @@
     el("mast").insertAdjacentHTML("beforeend",
       `<div class="cd-stage cd-seal ry-reseal cd-wh-seal" aria-label="Witch Hunter class engine diagram">
         <svg viewBox="0 0 420 260" role="img" aria-labelledby="wh-seal-title">${WH_DESKTOP}</svg></div>`);
+  } else if (cSlug === "barbarian") {
+    el("mast").classList.add("cd-with-seal");
+    el("mast").insertAdjacentHTML("beforeend",
+      `<div class="cd-stage cd-seal ry-reseal cd-ba-seal" aria-label="Barbarian class engine diagram">
+        <svg viewBox="0 0 420 260" role="img" aria-labelledby="ba-seal-title">${BA_DESKTOP}</svg></div>`);
+  } else if (cSlug === "bloodmage") {
+    el("mast").classList.add("cd-with-seal");
+    el("mast").insertAdjacentHTML("beforeend",
+      `<div class="cd-stage cd-seal ry-reseal cd-bm-seal" aria-label="Bloodmage class engine diagram">
+        <svg viewBox="0 0 420 260" role="img" aria-labelledby="bm-seal-title">${BM_DESKTOP}</svg></div>`);
   } else if (cSlug === "ranger") {
     el("mast").classList.add("cd-with-seal");
     el("mast").insertAdjacentHTML("beforeend",
@@ -914,6 +1025,8 @@
     "templar/crusader": "bank", "templar/oathkeeper": "bank", "templar/zealot": "pips",
     "ranger/farstrider": "wheel", "ranger/archery": "pips", "ranger/brigand": "wave",
     "felsworn/slayer": "wheel", "felsworn/infernal": "spike", "felsworn/tyrant": "bank",
+    "barbarian/brutality": "bank", "barbarian/headhunting": "wheel", "barbarian/ancestry": "stack",
+    "bloodmage/sanguine": "bank", "bloodmage/accursed": "pips", "bloodmage/eternal": "wheel", "bloodmage/fleshweaver": "bank",
   };
   function topoGlyph(kind) {
     const art = {
@@ -1464,6 +1577,143 @@
         "Aeon of Protection is the slow one: 30% of the heal becomes a shield",
         "Epoch casts stack Endless Sands — each cuts 20% off your next Reverse Wound, up to five"],
       eyes: "which Aeon is active · your Endless Sands stacks",
+    },
+    "barbarian/brutality": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Brutality rhythm: hoard a doubled Energy pool, then below 35% health Decapitate spends up to one hundred of it">
+        <line class="thr" x1="14" y1="44" x2="480" y2="44"/><text class="thr-lab" x="14" y="38">the doubled pool</text>
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        <path class="kx-climb" d="M60 122 L400 58"/>
+        <text class="ph" x="230" y="146" text-anchor="middle">HOARD</text>
+        <text class="ph2" x="230" y="160" text-anchor="middle">Smash restores 25% of the pool</text>
+        <rect class="ba-window" x="520" y="44" width="270" height="82" rx="2"/>
+        <text class="ba-window-lab" x="655" y="72" text-anchor="middle">BELOW 35% HEALTH</text>
+        <text class="ph2" x="655" y="90" text-anchor="middle" fill="#ecd9be">Decapitate spends up to 100 Energy</text>
+        <text class="ph2" x="655" y="106" text-anchor="middle" fill="#ecd9be">a killing blow refunds the whole bar</text>
+        <text class="ph" x="890" y="146" text-anchor="middle">NEXT TARGET</text>
+      </svg>`,
+      bullets: ["The level 10 passive doubles your maximum Energy, so there is twice as much to hold onto",
+        "Smash pays you back hard — it restores 25% of your maximum Energy",
+        "Below 35% target health, Decapitate turns every leftover point of Energy into extra damage, up to 100 Energy",
+        "A kill blow with Decapitate refunds 100% of your maximum Energy, so a finished target funds the next one"],
+      eyes: "your Energy bar and the target's health as it nears 35%",
+    },
+    "barbarian/headhunting": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Headhunting rhythm: throws reset the spears, spears thrown while Enraged refill the axes, and the wheel turns">
+        <defs><marker id="baArrH" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+        <path class="wh-bolt" d="M120 84 l22 6 l-22 6 Z"/><path class="wh-bolt" d="M154 84 l22 6 l-22 6 Z"/>
+        <text class="ph" x="150" y="118" text-anchor="middle">THROW</text>
+        <text class="ph2" x="150" y="132" text-anchor="middle">30% chance to reset the Spears</text>
+        <path class="branch" d="M230 74 C 320 42, 420 40, 500 52" marker-end="url(#baArrH)"/>
+        <path class="refresh" d="M517 62 l13 -13 l13 13 l-13 13 Z"/>
+        <text class="ph" x="530" y="100" text-anchor="middle">SPEAR · ENRAGED</text>
+        <path class="branch" d="M558 56 C 620 44, 660 46, 706 58" marker-end="url(#baArrH)"/>
+        <rect class="ba-window" x="716" y="44" width="200" height="78" rx="2"/>
+        <text class="ba-window-lab" x="816" y="72" text-anchor="middle">3 AXES BACK</text>
+        <text class="ph2" x="816" y="90" text-anchor="middle" fill="#ecd9be">next 3 casts cost half · 12 s</text>
+        <path class="branch" d="M816 126 C 700 160, 260 160, 150 100" marker-end="url(#baArrH)"/>
+        <text class="ph2" x="310" y="156" text-anchor="middle">THROW AGAIN</text>
+      </svg>`,
+      bullets: ["Throw Weapon is the filler, and it has a 30% chance to reset your Spear cooldowns",
+        "Berserker Axe needs you Enraged, and it holds 3 charges on an 8-second recharge",
+        "Spears thrown while Enraged hand all 3 axe charges back and make your next 3 casts cost 50% less Energy, for 12 seconds",
+        "Gutspiller's bleed adds an extra Guts Spilled hit every 6 seconds, so it wants to stay on the target"],
+      eyes: "your Enrage timer and your Berserker Axe charges",
+    },
+    "barbarian/ancestry": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Ancestry rhythm: the Tankard fills on its own clock, and emptying it is the trigger that pays the party">
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        <path class="ba-tankard" d="M110 70 L110 118 L190 118 L190 70 M190 82 C 206 82 206 106 190 106"/>
+        <path class="ba-fill" d="M116 96 L184 96 L184 114 L116 114 Z"/>
+        <text class="ph" x="150" y="146" text-anchor="middle">FILL</text>
+        <text class="ph2" x="150" y="160" text-anchor="middle">1 stack every 2 seconds · on its own clock</text>
+        <rect class="ba-window" x="480" y="40" width="300" height="86" rx="2"/>
+        <text class="ba-window-lab" x="630" y="68" text-anchor="middle">TANKARD EMPTIED</text>
+        <text class="ph2" x="630" y="86" text-anchor="middle" fill="#ecd9be">a 12-yard frost cone opens</text>
+        <text class="ph2" x="630" y="102" text-anchor="middle" fill="#ecd9be">party +95 attack or spell power · 15 s</text>
+        <text class="ph" x="890" y="146" text-anchor="middle">IT FILLS AGAIN</text>
+      </svg>`,
+      bullets: ["The Tankard fills on its own clock — 1 stack every 2 seconds, whether or not you are swinging",
+        "Emptying it is the trigger, not the cost: Breath of The North is only usable after you empty the Tankard",
+        "Splash Zone turns that same empty into a party buff worth 95 attack or spell power for 15 seconds",
+        "Ale of The God-King eats stacks to empower your Honored Ancestor and comes back sooner the more it eats"],
+      eyes: "your Tankard's Fill Level and your Honored Ancestor",
+    },
+    "bloodmage/sanguine": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Sanguine rhythm: bank Thirst past its cap, and at ten Insatiable pays more per stack until the cash-out clears both">
+        <line class="thr" x1="14" y1="44" x2="480" y2="44"/><text class="thr-lab" x="14" y="38">10 · Thirst</text>
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        ${[0,1,2,3,4,5].map(i => `<circle class="bm-pip${i > 3 ? " over" : ""}" cx="${90 + i * 62}" cy="${112 - i * 13}" r="6"/>`).join("")}
+        <text class="ph" x="230" y="146" text-anchor="middle">OVERDRAW</text>
+        <text class="ph2" x="230" y="160" text-anchor="middle">the bank runs past its cap</text>
+        <rect class="bm-window" x="540" y="44" width="250" height="82" rx="2"/>
+        <text class="bm-window-lab" x="665" y="72" text-anchor="middle">10 THIRST · INSATIABLE</text>
+        <text class="ph2" x="665" y="90" text-anchor="middle" fill="#e2e2fb">+10% Vampiric Fang damage per stack</text>
+        <text class="ph2" x="665" y="106" text-anchor="middle" fill="#e2e2fb">the cash-out clears Thirst and Insatiable</text>
+        <text class="ph" x="890" y="146" text-anchor="middle">THIRST AGAIN</text>
+      </svg>`,
+      bullets: ["Spells that cost health add Thirst, and each stack shortens your casts and raises the health price",
+        "At ten stacks you turn Insatiable, which keeps draining 30% of your damage until Thirst ends",
+        "Vampiric Fang spends the whole stack for +10% damage per Thirst, then clears Thirst and Insatiable",
+        "Cash out at nine stacks or more and your Cursed Form lasts 5 seconds longer"],
+      eyes: "the Thirst counter and the Insatiable drain",
+    },
+    "bloodmage/accursed": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Accursed rhythm: the Cursed Form runs thirty seconds and every Assault stretches it, until Veinburst spends all eight Shards">
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        <rect class="bm-window" x="80" y="56" width="380" height="56" rx="2"/>
+        <text class="bm-window-lab" x="230" y="80" text-anchor="middle">CURSED FORM · 30 s</text>
+        <text class="ph2" x="230" y="98" text-anchor="middle" fill="#e2e2fb">every Assault adds 3 seconds</text>
+        ${[0,1,2].map(i => `<line class="bm-stretch" x1="${462 + i * 16}" y1="66" x2="${462 + i * 16}" y2="102"/>`).join("")}
+        <text class="ph" x="270" y="146" text-anchor="middle">STRETCH THE WINDOW</text>
+        <rect class="bm-window hot" x="620" y="48" width="200" height="78" rx="2"/>
+        <text class="bm-window-lab" x="720" y="76" text-anchor="middle">VEINBURST</text>
+        <text class="ph2" x="720" y="94" text-anchor="middle" fill="#e2e2fb">all eight Blood Shards at once</text>
+        <text class="ph" x="910" y="146" text-anchor="middle">RE-CURSE</text>
+      </svg>`,
+      bullets: ["The form gives you attack power from Agility and rewrites what your melee attacks do",
+        "Aortic Assault adds 3 seconds to the form you are already in, so spend it inside the window",
+        "Shadow damage builds Blood Shards up to eight, plus one more when it critically strikes",
+        "Veinburst expends every shard at once, so reach eight before you fire it"],
+      eyes: "the form timer and the shard count",
+    },
+    "bloodmage/eternal": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Eternal rhythm: the tank's bargain — less damage dealt for far more threat, held as long as the curse holds">
+        <defs><marker id="bmArrE" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+        <path class="refresh" d="M120 84 l13 -13 l13 13 l-13 13 Z"/>
+        <text class="ph" x="133" y="122" text-anchor="middle">TRADE</text>
+        <text class="ph2" x="133" y="136" text-anchor="middle">−10% damage dealt</text>
+        <path class="branch" d="M200 70 C 300 40, 420 38, 520 50" marker-end="url(#bmArrE)"/>
+        <rect class="bm-window" x="540" y="44" width="260" height="82" rx="2"/>
+        <text class="bm-window-lab" x="670" y="72" text-anchor="middle">+80% THREAT</text>
+        <text class="ph2" x="670" y="90" text-anchor="middle" fill="#e2e2fb">+50% more from blood spells</text>
+        <text class="ph2" x="670" y="106" text-anchor="middle" fill="#e2e2fb">held as long as Eternal Curse is up</text>
+        <path class="branch" d="M670 126 C 560 160, 240 160, 140 100" marker-end="url(#bmArrE)"/>
+        <text class="ph2" x="310" y="156" text-anchor="middle">THE BARGAIN HOLDS</text>
+      </svg>`,
+      bullets: ["The form trades 10% of your damage for 80% more threat, and health-cost spells add 50% more on top",
+        "Rotclaw holds two charges, hits everything nearby, generates Rage, and leaves a bleed behind",
+        "Critical strikes and Howl spells trigger Call of the Darkwing, which strikes the target and heals you",
+        "Auto-attack criticals shave a second off several of your defensive cooldowns, so keep swinging"],
+      eyes: "your 5-second taunt and the Darkwing triggers",
+    },
+    "bloodmage/fleshweaver": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Fleshweaver rhythm: pool Vitality to ten, then Rage-cost Mortal spells consume the whole pool, empowered">
+        <line class="thr" x1="14" y1="44" x2="480" y2="44"/><text class="thr-lab" x="14" y="38">10 · the pool</text>
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        <path class="kx-climb" d="M60 122 L400 58"/>
+        ${[0,1,2,3,4].map(i => `<circle class="bm-pip" cx="${100 + i * 75}" cy="${112 - i * 12}" r="6"/>`).join("")}
+        <text class="ph" x="230" y="146" text-anchor="middle">POOL</text>
+        <text class="ph2" x="230" y="160" text-anchor="middle">healing links feed the pool</text>
+        <rect class="bm-window" x="520" y="48" width="270" height="78" rx="2"/>
+        <text class="bm-window-lab" x="655" y="76" text-anchor="middle">10 POOLED · EMPOWERED</text>
+        <text class="ph2" x="655" y="94" text-anchor="middle" fill="#e2e2fb">Rage-cost Mortal spells consume all ten</text>
+        <text class="ph" x="890" y="146" text-anchor="middle">REPOOL</text>
+      </svg>`,
+      bullets: ["Dark Liturgy heals one ally and bounces its mark to as many as 10 more nearby",
+        "While the mark is up, Bloodbolt and your Cursed Form attacks heal everyone carrying it for 3 seconds",
+        "Spells that cost health bank Pooled Vitality, up to ten stacks",
+        "A Rage-cost Mortal Form spell eats all ten stacks at once to come out empowered"],
+      eyes: "who still carries the mark and your Pooled Vitality stacks",
     },
     "ranger/farstrider": {
       svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Farstrider rhythm: every fifth shot is a Falconstrike, a Horn calls it early, and the party keeps pace">
@@ -2144,6 +2394,97 @@
       <path class="branch" d="M234 146 C 356 140, 374 56, 250 36" marker-end="url(#cmArrTp)"/>
       <text class="ph2" x="190" y="200" text-anchor="middle">retune, and the sands rebuild</text>
     </svg>`,
+    "barbarian/brutality": `<svg viewBox="0 0 380 230" role="img" aria-label="Brutality rhythm, phone ladder: hoard the doubled pool, then Decapitate spends it below 35%">
+      <defs><marker id="baArrBp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <path class="kx-climb" d="M20 72 L140 46"/>
+      <text class="ph" x="165" y="44" text-anchor="start">HOARD</text>
+      <text class="ph2" x="165" y="58" text-anchor="start">Smash restores 25%</text>
+      <path class="branch" d="M44 84 L44 108" marker-end="url(#baArrBp)"/>
+      <rect class="ba-window" x="28" y="118" width="200" height="58" rx="2"/>
+      <text class="ba-window-lab" x="128" y="140" text-anchor="middle">BELOW 35% HEALTH</text>
+      <text class="ph2" x="128" y="158" text-anchor="middle" fill="#ecd9be">Decapitate · up to 100 Energy</text>
+      <path class="branch" d="M234 147 C 356 140, 374 54, 250 34" marker-end="url(#baArrBp)"/>
+      <text class="ph2" x="190" y="200" text-anchor="middle">a kill refunds the bar</text>
+    </svg>`,
+    "barbarian/headhunting": `<svg viewBox="0 0 380 250" role="img" aria-label="Headhunting rhythm, phone ladder: throw, spear while Enraged, three axes come back">
+      <defs><marker id="baArrHp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <path class="wh-bolt" d="M28 46 l20 6 l-20 6 Z"/><path class="wh-bolt" d="M58 46 l20 6 l-20 6 Z"/>
+      <text class="ph" x="165" y="44" text-anchor="start">THROW</text>
+      <text class="ph2" x="165" y="58" text-anchor="start">30% chance to reset Spears</text>
+      <path class="branch" d="M44 66 L44 90" marker-end="url(#baArrHp)"/>
+      <path class="refresh" d="M33 112 l11 -11 l11 11 l-11 11 Z"/>
+      <text class="ph" x="165" y="108" text-anchor="start">SPEAR · ENRAGED</text>
+      <path class="branch" d="M44 126 L44 150" marker-end="url(#baArrHp)"/>
+      <rect class="ba-window" x="28" y="160" width="200" height="56" rx="2"/>
+      <text class="ba-window-lab" x="128" y="184" text-anchor="middle">3 AXES BACK</text>
+      <text class="ph2" x="128" y="202" text-anchor="middle" fill="#ecd9be">next 3 casts half cost · 12 s</text>
+      <path class="branch" d="M234 188 C 356 182, 374 56, 250 36" marker-end="url(#baArrHp)"/>
+      <text class="ph2" x="190" y="240" text-anchor="middle">throw again</text>
+    </svg>`,
+    "barbarian/ancestry": `<svg viewBox="0 0 380 230" role="img" aria-label="Ancestry rhythm, phone ladder: the Tankard fills on its own clock, and the pour pays the party">
+      <defs><marker id="baArrAp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <path class="ba-tankard" d="M26 38 L26 70 L74 70 L74 38 M74 46 C 86 46 86 62 74 62"/>
+      <path class="ba-fill" d="M30 56 L70 56 L70 67 L30 67 Z"/>
+      <text class="ph" x="165" y="44" text-anchor="start">FILL</text>
+      <text class="ph2" x="165" y="58" text-anchor="start">1 stack every 2 s</text>
+      <path class="branch" d="M44 80 L44 104" marker-end="url(#baArrAp)"/>
+      <rect class="ba-window" x="28" y="114" width="200" height="60" rx="2"/>
+      <text class="ba-window-lab" x="128" y="136" text-anchor="middle">TANKARD EMPTIED</text>
+      <text class="ph2" x="128" y="152" text-anchor="middle" fill="#ecd9be">12-yd cone · party +95 power</text>
+      <text class="ph2" x="128" y="166" text-anchor="middle" fill="#ecd9be">for 15 seconds</text>
+      <path class="branch" d="M234 144 C 356 138, 374 54, 250 34" marker-end="url(#baArrAp)"/>
+      <text class="ph2" x="190" y="196" text-anchor="middle">it fills again</text>
+    </svg>`,
+    "bloodmage/sanguine": `<svg viewBox="0 0 380 230" role="img" aria-label="Sanguine rhythm, phone ladder: overdraw Thirst past its cap, Insatiable pays per stack">
+      <defs><marker id="bmArrSp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      ${[0,1,2,3,4].map(i => `<circle class="bm-pip${i > 2 ? " over" : ""}" cx="${34 + i * 26}" cy="${58 - i * 4}" r="5.5"/>`).join("")}
+      <text class="ph" x="185" y="44" text-anchor="start">OVERDRAW</text>
+      <text class="ph2" x="185" y="58" text-anchor="start">past the cap, on purpose</text>
+      <path class="branch" d="M44 74 L44 98" marker-end="url(#bmArrSp)"/>
+      <rect class="bm-window" x="28" y="108" width="200" height="58" rx="2"/>
+      <text class="bm-window-lab" x="128" y="130" text-anchor="middle">10 THIRST · INSATIABLE</text>
+      <text class="ph2" x="128" y="148" text-anchor="middle" fill="#e2e2fb">+10% Vampiric Fang per stack</text>
+      <path class="branch" d="M234 137 C 356 130, 374 54, 250 34" marker-end="url(#bmArrSp)"/>
+      <text class="ph2" x="190" y="190" text-anchor="middle">the cash-out clears both</text>
+    </svg>`,
+    "bloodmage/accursed": `<svg viewBox="0 0 380 230" role="img" aria-label="Accursed rhythm, phone ladder: stretch the Cursed Form with Assaults, then Veinburst spends all eight Shards">
+      <defs><marker id="bmArrAp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <rect class="bm-window" x="20" y="38" width="120" height="34" rx="2"/>
+      <line class="bm-stretch" x1="126" y1="42" x2="126" y2="68"/><line class="bm-stretch" x1="134" y1="42" x2="134" y2="68"/>
+      <text class="ph" x="165" y="46" text-anchor="start">STRETCH</text>
+      <text class="ph2" x="165" y="60" text-anchor="start">30 s + 3 per Assault</text>
+      <path class="branch" d="M44 80 L44 104" marker-end="url(#bmArrAp)"/>
+      <rect class="bm-window hot" x="28" y="114" width="200" height="56" rx="2"/>
+      <text class="bm-window-lab" x="128" y="138" text-anchor="middle">VEINBURST</text>
+      <text class="ph2" x="128" y="156" text-anchor="middle" fill="#e2e2fb">all eight Shards at once</text>
+      <path class="branch" d="M234 142 C 356 136, 374 54, 250 34" marker-end="url(#bmArrAp)"/>
+      <text class="ph2" x="190" y="194" text-anchor="middle">re-curse</text>
+    </svg>`,
+    "bloodmage/eternal": `<svg viewBox="0 0 380 230" role="img" aria-label="Eternal rhythm, phone ladder: trade damage for threat and hold the bargain">
+      <defs><marker id="bmArrEp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <path class="refresh" d="M33 52 l11 -11 l11 11 l-11 11 Z"/>
+      <text class="ph" x="165" y="44" text-anchor="start">TRADE</text>
+      <text class="ph2" x="165" y="58" text-anchor="start">−10% damage dealt</text>
+      <path class="branch" d="M44 72 L44 96" marker-end="url(#bmArrEp)"/>
+      <rect class="bm-window" x="28" y="106" width="200" height="60" rx="2"/>
+      <text class="bm-window-lab" x="128" y="128" text-anchor="middle">+80% THREAT</text>
+      <text class="ph2" x="128" y="144" text-anchor="middle" fill="#e2e2fb">+50% more from blood spells</text>
+      <text class="ph2" x="128" y="158" text-anchor="middle" fill="#e2e2fb">while the curse holds</text>
+      <path class="branch" d="M234 136 C 356 130, 374 52, 250 34" marker-end="url(#bmArrEp)"/>
+      <text class="ph2" x="190" y="188" text-anchor="middle">the bargain holds</text>
+    </svg>`,
+    "bloodmage/fleshweaver": `<svg viewBox="0 0 380 230" role="img" aria-label="Fleshweaver rhythm, phone ladder: pool Vitality to ten, then empowered Mortal spells consume it">
+      <defs><marker id="bmArrFp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      ${[0,1,2,3,4].map(i => `<circle class="bm-pip" cx="${34 + i * 26}" cy="${58 - i * 4}" r="5.5"/>`).join("")}
+      <text class="ph" x="185" y="44" text-anchor="start">POOL</text>
+      <text class="ph2" x="185" y="58" text-anchor="start">healing links feed it</text>
+      <path class="branch" d="M44 74 L44 98" marker-end="url(#bmArrFp)"/>
+      <rect class="bm-window" x="28" y="108" width="200" height="58" rx="2"/>
+      <text class="bm-window-lab" x="128" y="130" text-anchor="middle">10 POOLED · EMPOWERED</text>
+      <text class="ph2" x="128" y="148" text-anchor="middle" fill="#e2e2fb">Mortal spells consume all ten</text>
+      <path class="branch" d="M234 137 C 356 130, 374 54, 250 34" marker-end="url(#bmArrFp)"/>
+      <text class="ph2" x="190" y="190" text-anchor="middle">repool</text>
+    </svg>`,
     "ranger/farstrider": `<svg viewBox="0 0 380 230" role="img" aria-label="Farstrider rhythm, phone ladder: count to the fifth shot, or a Horn calls the Falconstrike early">
       <defs><marker id="rgArrFp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
       ${[0,1,2,3,4].map(i => `<circle class="rg-pip${i === 4 ? " lit" : ""}" cx="${34 + i * 26}" cy="52" r="6"/>`).join("")}
@@ -2635,6 +2976,8 @@
     "templar": { desktop: ["0 0 420 260", TP_DESKTOP], phone: ["0 0 420 224", TP_PHONE] },
     "ranger": { desktop: ["0 0 420 260", RG_DESKTOP], phone: ["0 0 420 224", RG_PHONE] },
     "felsworn": { desktop: ["0 0 420 260", FS_DESKTOP], phone: ["0 0 420 224", FS_PHONE] },
+    "barbarian": { desktop: ["0 0 420 260", BA_DESKTOP], phone: ["0 0 420 224", BA_PHONE] },
+    "bloodmage": { desktop: ["0 0 420 260", BM_DESKTOP], phone: ["0 0 420 224", BM_PHONE] },
   };
   function applySeal() {
     const swap = SEAL_SWAP[cSlug];
