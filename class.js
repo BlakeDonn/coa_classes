@@ -625,7 +625,7 @@
         <text class="kx-window-lab" x="795" y="68" text-anchor="middle">BOOST WINDOW</text>
         <text class="ph2" x="795" y="86" text-anchor="middle" fill="#f3cdd4">GORES +25% · 12 s</text>
         <path class="branch" d="M795 110 C 700 158, 300 160, 166 100" marker-end="url(#kxArrW)"/>
-        <text class="ph2" x="480" y="152" text-anchor="middle">FREE MEATSAW · THE BAR REFILLS</text>
+        <text class="ph2" x="310" y="156" text-anchor="middle">FREE MEATSAW · THE BAR REFILLS</text>
       </svg>`,
       bullets: ["Gore strikes fill the bar — you hold two charges of Gore",
         "spending the bar powers up your next two Gores for 12 seconds",
@@ -692,7 +692,7 @@
         <text class="gd-window-lab" x="790" y="70" text-anchor="middle">HERO'S MARCH</text>
         <text class="ph2" x="790" y="88" text-anchor="middle" fill="#ffe0c2">15 s · your autos keep it ringing</text>
         <path class="branch" d="M790 112 C 700 158, 260 160, 136 100" marker-end="url(#gdArrI)"/>
-        <text class="ph2" x="470" y="152" text-anchor="middle">THE COUNT RESTARTS</text>
+        <text class="ph2" x="310" y="156" text-anchor="middle">THE COUNT RESTARTS</text>
       </svg>`,
       bullets: ["your strikes become Ballads, and Ballads build Tempo",
         "three Tempo casts Sound of War — nearby allies' next hit gains magic damage",
@@ -714,7 +714,7 @@
         <text class="gd-window-lab" x="806" y="68" text-anchor="middle">BOOSTED RAM</text>
         <text class="ph2" x="806" y="86" text-anchor="middle" fill="#ffe0c2">at three Glory</text>
         <path class="branch" d="M806 110 C 710 158, 270 158, 146 98" marker-end="url(#gdArrG)"/>
-        <text class="ph2" x="470" y="152" text-anchor="middle">BUILD THREE · CASH · AGAIN</text>
+        <text class="ph2" x="310" y="156" text-anchor="middle">BUILD THREE · CASH · AGAIN</text>
       </svg>`,
       bullets: ["Ram builds Glory — at three, the next Ram hits harder",
         "a thrown net makes Centurion Strike crit",
@@ -736,7 +736,7 @@
         <text class="wh-window-lab" x="796" y="70" text-anchor="middle">TWILIGHT FRENZY</text>
         <text class="ph2" x="796" y="88" text-anchor="middle" fill="#e4f2cd">a firing channel you can move in</text>
         <path class="branch" d="M796 112 C 700 158, 260 160, 140 100" marker-end="url(#whArrB)"/>
-        <text class="ph2" x="470" y="152" text-anchor="middle">THE HUNT CONTINUES</text>
+        <text class="ph2" x="310" y="156" text-anchor="middle">THE HUNT CONTINUES</text>
       </svg>`,
       bullets: ["your shots can double-fire, and the extra bolts build Rage",
         "Damnation turns the whole bar into one hit",
@@ -758,7 +758,7 @@
         <text class="wh-window-lab" x="796" y="70" text-anchor="middle">DECIMATE</text>
         <text class="ph2" x="796" y="88" text-anchor="middle" fill="#e4f2cd">20 s · the pack turns loose</text>
         <path class="branch" d="M796 112 C 700 158, 260 160, 140 100" marker-end="url(#whArrH)"/>
-        <text class="ph2" x="470" y="152" text-anchor="middle">THE PACK REGROUPS</text>
+        <text class="ph2" x="310" y="156" text-anchor="middle">THE PACK REGROUPS</text>
       </svg>`,
       bullets: ["a Shadowhound fights beside you; more can join the pack",
         "Shadowblast feeds your hound Shadow Rage",
@@ -780,7 +780,7 @@
         <text class="wh-window-lab" x="796" y="70" text-anchor="middle">DESECRATE</text>
         <text class="ph2" x="796" y="88" text-anchor="middle" fill="#e4f2cd">area damage, unlocked by avoidance</text>
         <path class="branch" d="M796 112 C 700 158, 260 160, 140 108" marker-end="url(#whArrK)"/>
-        <text class="ph2" x="470" y="152" text-anchor="middle">THE BRANDS HOLD THREAT</text>
+        <text class="ph2" x="310" y="156" text-anchor="middle">THE BRANDS HOLD THREAT</text>
       </svg>`,
       bullets: ["parries hand you health and Rage back",
         "avoid a hit and Desecrate unlocks",
