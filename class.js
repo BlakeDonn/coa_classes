@@ -188,6 +188,43 @@
     ${cultistNodes.map(s => nodeSvg(s)).join("")}`;
 
 
+
+  // Chronomancer: three concentric clock faces, one per spec — ten ticks, four
+  // quadrant notches, scattered shards — hands deliberately unaligned. The center
+  // loop is Rewind, the only thing the clocks share (packet: seal_concept, batch 1).
+  const cmNodes = [
+    { id: "chronomancer/infinite", name: "Infinite", verb: "RAMP", tag: "10", x: 73, y: 66 },
+    { id: "chronomancer/artificer", name: "Artificer", verb: "INVEST", tag: "FRAGMENTS", x: 347, y: 66 },
+    { id: "chronomancer/time", name: "Time", verb: "TUNE", tag: "4 AEONS", x: 210, y: 206 },
+  ];
+  const CM_DEFS = `<defs>
+      <filter id="cmGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    </defs>`;
+  const cmNodeSvg = (s, ny, vy) => `<g class="cd-node cm-node" data-cd-spec="${s.id}" role="button" tabindex="0" transform="translate(${s.x} ${s.y})">
+      <circle class="node-ring" r="29"/><circle class="node-dot" r="4"/>
+      <text class="cm-tag" text-anchor="middle" y="18">${s.tag}</text>
+      <text class="node-name" text-anchor="middle" y="${ny}">${s.name}</text>
+      <text class="node-verb" text-anchor="middle" y="${vy}">${s.verb}</text></g>`;
+  const CM_DESKTOP = `<title id="cm-seal-title">Three clocks with unaligned hands, sharing only the Rewind at their center</title>
+    ${CM_DEFS}
+    <circle class="cm-ring" cx="210" cy="108" r="38"/><circle class="cm-ring" cx="210" cy="108" r="53"/><circle class="cm-ring" cx="210" cy="108" r="68"/><line class="cm-tick" x1="210.0" y1="75.0" x2="210.0" y2="70.0"/><line class="cm-tick" x1="229.4" y1="81.3" x2="232.3" y2="77.3"/><line class="cm-tick" x1="241.4" y1="97.8" x2="246.1" y2="96.3"/><line class="cm-tick" x1="241.4" y1="118.2" x2="246.1" y2="119.7"/><line class="cm-tick" x1="229.4" y1="134.7" x2="232.3" y2="138.7"/><line class="cm-tick" x1="210.0" y1="141.0" x2="210.0" y2="146.0"/><line class="cm-tick" x1="190.6" y1="134.7" x2="187.7" y2="138.7"/><line class="cm-tick" x1="178.6" y1="118.2" x2="173.9" y2="119.7"/><line class="cm-tick" x1="178.6" y1="97.8" x2="173.9" y2="96.3"/><line class="cm-tick" x1="190.6" y1="81.3" x2="187.7" y2="77.3"/><line class="cm-notch" x1="210.0" y1="63.0" x2="210.0" y2="55.0"/><line class="cm-notch" x1="255.0" y1="108.0" x2="263.0" y2="108.0"/><line class="cm-notch" x1="210.0" y1="153.0" x2="210.0" y2="161.0"/><line class="cm-notch" x1="165.0" y1="108.0" x2="157.0" y2="108.0"/><path class="cm-shard" d="M233.3 40.1 L236.5 44.1 L233.3 48.1 L230.10000000000002 44.1 Z"/><path class="cm-shard" d="M275.7 86.4 L278.9 90.4 L275.7 94.4 L272.5 90.4 Z"/><path class="cm-shard" d="M262.1 147.7 L265.3 151.7 L262.1 155.7 L258.90000000000003 151.7 Z"/><path class="cm-shard" d="M186.7 167.9 L189.89999999999998 171.9 L186.7 175.9 L183.5 171.9 Z"/><path class="cm-shard" d="M143.0 115.8 L146.2 119.8 L143.0 123.8 L139.8 119.8 Z"/><path class="cm-shard" d="M171.0 48.3 L174.2 52.3 L171.0 56.3 L167.8 52.3 Z"/><line class="cm-hand" x1="229.7" y1="94.2" x2="239.5" y2="87.4"/><line class="cm-hand" x1="184.9" y1="137.9" x2="177.2" y2="147.1"/><line class="cm-hand" x1="183.0" y1="61.2" x2="177.0" y2="50.8"/><circle class="cm-core" cx="210" cy="108" r="7"/>
+    <path class="cm-link" d="M162 82 L102 70"/><path class="cm-link" d="M258 82 L318 70"/>
+    <path class="cm-link" d="M210 176 L210 177"/>
+    <text class="cm-center-label" x="210" y="104" text-anchor="middle">THREE CLOCKS</text>
+    <text class="cm-center-sub" x="210" y="116" text-anchor="middle">REWIND · THE CLONE AT 40 s</text>
+    <text class="cm-legend" x="16" y="22">HANDS DISAGREE · NO SHARED BAR</text>
+    ${cmNodes.map(s => cmNodeSvg(s, s.y > 150 ? 38 : 42, s.y > 150 ? 50 : 54)).join("")}`;
+  const CM_PHONE_NODES = cmNodes.map(s => ({ ...s, y: s.y > 150 ? 178 : 58 }));
+  const CM_PHONE = `<title id="cm-seal-title">Three clocks with unaligned hands, sharing only the Rewind at their center</title>
+    ${CM_DEFS}
+    <circle class="cm-ring" cx="210" cy="94" r="32"/><circle class="cm-ring" cx="210" cy="94" r="45"/><circle class="cm-ring" cx="210" cy="94" r="58"/><line class="cm-tick" x1="210.0" y1="67.0" x2="210.0" y2="62.0"/><line class="cm-tick" x1="225.9" y1="72.2" x2="228.8" y2="68.1"/><line class="cm-tick" x1="235.7" y1="85.7" x2="240.4" y2="84.1"/><line class="cm-tick" x1="235.7" y1="102.3" x2="240.4" y2="103.9"/><line class="cm-tick" x1="225.9" y1="115.8" x2="228.8" y2="119.9"/><line class="cm-tick" x1="210.0" y1="121.0" x2="210.0" y2="126.0"/><line class="cm-tick" x1="194.1" y1="115.8" x2="191.2" y2="119.9"/><line class="cm-tick" x1="184.3" y1="102.3" x2="179.6" y2="103.9"/><line class="cm-tick" x1="184.3" y1="85.7" x2="179.6" y2="84.1"/><line class="cm-tick" x1="194.1" y1="72.2" x2="191.2" y2="68.1"/><line class="cm-notch" x1="210.0" y1="57.0" x2="210.0" y2="49.0"/><line class="cm-notch" x1="247.0" y1="94.0" x2="255.0" y2="94.0"/><line class="cm-notch" x1="210.0" y1="131.0" x2="210.0" y2="139.0"/><line class="cm-notch" x1="173.0" y1="94.0" x2="165.0" y2="94.0"/><path class="cm-shard" d="M229.8 35.5 L233.0 39.5 L229.8 43.5 L226.60000000000002 39.5 Z"/><path class="cm-shard" d="M266.0 75.0 L269.2 79.0 L266.0 83.0 L262.8 79.0 Z"/><path class="cm-shard" d="M254.4 127.30000000000001 L257.6 131.3 L254.4 135.3 L251.20000000000002 131.3 Z"/><path class="cm-shard" d="M190.2 144.5 L193.39999999999998 148.5 L190.2 152.5 L187.0 148.5 Z"/><path class="cm-shard" d="M152.9 100.1 L156.1 104.1 L152.9 108.1 L149.70000000000002 104.1 Z"/><path class="cm-shard" d="M176.7 42.5 L179.89999999999998 46.5 L176.7 50.5 L173.5 46.5 Z"/><line class="cm-hand" x1="224.7" y1="83.7" x2="234.6" y2="76.8"/><line class="cm-hand" x1="190.1" y1="117.7" x2="182.4" y2="126.9"/><line class="cm-hand" x1="188.0" y1="55.9" x2="182.0" y2="45.5"/><circle class="cm-core" cx="210" cy="94" r="7"/>
+    <path class="cm-link" d="M168 72 L102 62"/><path class="cm-link" d="M252 72 L318 62"/>
+    <path class="cm-link" d="M210 152 L210 149"/>
+    <text class="cm-center-label" x="210" y="90" text-anchor="middle">THREE CLOCKS</text>
+    <text class="cm-center-sub" x="210" y="102" text-anchor="middle">REWIND · THE CLONE AT 40 s</text>
+    <text class="cm-legend" x="14" y="218">HANDS DISAGREE · NO SHARED BAR</text>
+    ${CM_PHONE_NODES.map(s => cmNodeSvg(s, 33, 44)).join("")}`;
+
   // Phone: the ruled 420×224 tightened arrangement — orbits 60/77, eye .66,
   // node rows raised. Nothing removed.
   const CULTIST_PHONE_NODES = [
@@ -534,6 +571,11 @@
     el("mast").insertAdjacentHTML("beforeend",
       `<div class="cd-stage cd-seal ry-reseal cd-wh-seal" aria-label="Witch Hunter class engine diagram">
         <svg viewBox="0 0 420 260" role="img" aria-labelledby="wh-seal-title">${WH_DESKTOP}</svg></div>`);
+  } else if (cSlug === "chronomancer") {
+    el("mast").classList.add("cd-with-seal");
+    el("mast").insertAdjacentHTML("beforeend",
+      `<div class="cd-stage cd-seal ry-reseal cd-cm-seal" aria-label="Chronomancer class engine diagram">
+        <svg viewBox="0 0 420 260" role="img" aria-labelledby="cm-seal-title">${CM_DESKTOP}</svg></div>`);
   } else if (cSlug === "reaper") {
     el("mast").classList.add("cd-with-seal");
     el("mast").insertAdjacentHTML("beforeend",
@@ -569,6 +611,7 @@
     "witch-hunter/black-knight": "wheel", "witch-hunter/inquisition": "pips",
     "stormbringer/lightning": "spike", "stormbringer/maelstrom": "pips", "stormbringer/wind": "wheel",
     "reaper/domination": "bank", "reaper/harvest": "spike", "reaper/soul": "wave",
+    "chronomancer/infinite": "wave", "chronomancer/artificer": "bank", "chronomancer/time": "pips",
   };
   function topoGlyph(kind) {
     const art = {
@@ -1054,6 +1097,72 @@
         "a critical Murder tops the ladder with an extra Soul"],
       eyes: "the Endbringer timer · your Fragment count",
     },
+    "chronomancer/infinite": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Infinite rhythm: damage-over-time ticks launch spikes, each spike speeds the next Chromatic Shard, the spiral tightens toward ten stacks">
+        <defs><marker id="cmArrI" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+        <circle class="cm-coil" cx="200" cy="84" r="46"/>
+        <circle class="cm-coil" cx="212" cy="84" r="31"/>
+        <circle class="cm-coil hot" cx="222" cy="84" r="17"/>
+        <text class="ph" x="200" y="150" text-anchor="middle">THE SPIRAL</text>
+        <text class="ph2" x="200" y="164" text-anchor="middle">ticks launch spikes · each pass is faster</text>
+        <path class="branch" d="M270 70 C 350 40, 440 38, 520 50" marker-end="url(#cmArrI)"/>
+        <rect class="cm-window" x="540" y="44" width="250" height="78" rx="2"/>
+        <text class="cm-window-lab" x="665" y="72" text-anchor="middle">SHARD AT SPEED</text>
+        <text class="ph2" x="665" y="90" text-anchor="middle" fill="#d8f2fb">10 stacks · each cuts cast time 10% · 30 s</text>
+        <text class="ph2" x="665" y="106" text-anchor="middle" fill="#d8f2fb">Melt Reality ticks every 3 s for 30</text>
+        <text class="ph" x="880" y="150" text-anchor="middle">KEEP IT TURNING</text>
+      </svg>`,
+      bullets: ["your damage-over-time effects do the work; there is no big opener",
+        "Melt Reality ticks every 3 seconds for 30, spreading a fifth of each tick nearby",
+        "ticks launch spikes, and each spike shortens your next Chromatic Shard by 10% — ten deep",
+        "damaging casts pull your cooldowns forward"],
+      eyes: "your damage-over-time timers · your Shard stacks",
+    },
+    "chronomancer/artificer": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Artificer rhythm: wand attacks bank Echo Fragments, and every Fragment spent buys damage or seconds in the Continuum window">
+        <line class="ax" x1="14" y1="126" x2="986" y2="126"/>
+        <path class="cm-line" d="M40 124 L110 124 L110 110 L190 110 L190 96 L270 96 L270 82 L400 82"/>
+        <path class="cm-shard big" d="M150 100 L156 107 L150 114 L144 107 Z"/>
+        <path class="cm-shard big" d="M230 86 L236 93 L230 100 L224 93 Z"/>
+        <path class="cm-shard big" d="M310 72 L316 79 L310 86 L304 79 Z"/>
+        <text class="ph" x="200" y="146" text-anchor="middle">BANK</text>
+        <text class="ph2" x="200" y="160" text-anchor="middle">every wand attack banks a Fragment</text>
+        <rect class="cm-window" x="500" y="44" width="270" height="82" rx="2"/>
+        <text class="cm-window-lab" x="635" y="72" text-anchor="middle">CONTINUUM WINDOW</text>
+        <text class="ph2" x="635" y="90" text-anchor="middle" fill="#d8f2fb">3 s base + 5 s per Fragment spent</text>
+        <text class="ph2" x="635" y="106" text-anchor="middle" fill="#d8f2fb">or Shatter Echo: +40% per Fragment</text>
+        <path class="cm-line" d="M810 124 L890 124 L890 110 L960 110"/>
+        <text class="ph" x="885" y="146" text-anchor="middle">REBUILD</text>
+      </svg>`,
+      bullets: ["wand attacks are the generator — each one banks an Echo Fragment",
+        "spend them on Shatter Echo: 40% harder per Fragment consumed",
+        "or buy time: a Continuum spell runs 5 seconds longer per Fragment",
+        "only one Continuum runs at a time — the bank buys one window"],
+      eyes: "your Fragment count · the Continuum timer",
+    },
+    "chronomancer/time": {
+      svg: `<svg viewBox="0 0 1000 168" role="img" aria-label="Time rhythm: one Aeon is active at a time and rewrites Epoch, while casts stack Endless Sands toward five">
+        <defs><marker id="cmArrT" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+        <circle class="cm-dial" cx="180" cy="80" r="38"/>
+        <line class="cm-notch" x1="180" y1="42" x2="180" y2="52"/>
+        <line class="cm-notch" x1="218" y1="80" x2="208" y2="80"/>
+        <line class="cm-notch" x1="180" y1="118" x2="180" y2="108"/>
+        <line class="cm-notch lit" x1="142" y1="80" x2="152" y2="80"/>
+        <text class="ph" x="180" y="146" text-anchor="middle">THE DIAL</text>
+        <text class="ph2" x="180" y="160" text-anchor="middle">one Aeon active · it rewrites Epoch</text>
+        <path class="branch" d="M240 70 C 330 40, 430 38, 510 50" marker-end="url(#cmArrT)"/>
+        <rect class="cm-window" x="530" y="44" width="260" height="78" rx="2"/>
+        <text class="cm-window-lab" x="660" y="72" text-anchor="middle">ENDLESS SANDS</text>
+        <text class="ph2" x="660" y="90" text-anchor="middle" fill="#d8f2fb">5 stacks · each cuts 20% off Reverse Wound</text>
+        <text class="ph2" x="660" y="106" text-anchor="middle" fill="#d8f2fb">Resilience: fast · Protection: shields</text>
+        <text class="ph" x="880" y="150" text-anchor="middle">RETUNE</text>
+      </svg>`,
+      bullets: ["one Aeon is active at a time, and it rewrites what Epoch does",
+        "Aeon of Resilience is the fast one: 25% less cast time, 10% less mana",
+        "Aeon of Protection is the slow one: 30% of the heal becomes a shield",
+        "Epoch casts stack Endless Sands — each cuts 20% off your next Reverse Wound, up to five"],
+      eyes: "which Aeon is active · your Endless Sands stacks",
+    },
   };
 
   // Authored-to-fit phone redraws (S2): same topology, fewer labels, no scroll.
@@ -1354,6 +1463,51 @@
       <path class="branch" d="M234 135 C 356 128, 374 54, 250 34" marker-end="url(#rpArrSp)"/>
       <text class="ph2" x="190" y="190" text-anchor="middle">Shade slips away · reset</text>
     </svg>`,
+    "chronomancer/infinite": `<svg viewBox="0 0 380 230" role="img" aria-label="Infinite rhythm, phone ladder: the DoT spiral tightens, each spike speeds the next Shard toward ten stacks">
+      <defs><marker id="cmArrIp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <circle class="cm-coil" cx="60" cy="58" r="28"/>
+      <circle class="cm-coil" cx="67" cy="58" r="18"/>
+      <circle class="cm-coil hot" cx="73" cy="58" r="9"/>
+      <text class="ph" x="165" y="48" text-anchor="start">THE SPIRAL</text>
+      <text class="ph2" x="165" y="62" text-anchor="start">each pass is faster</text>
+      <path class="branch" d="M44 92 L44 116" marker-end="url(#cmArrIp)"/>
+      <rect class="cm-window" x="28" y="126" width="200" height="56" rx="2"/>
+      <text class="cm-window-lab" x="128" y="150" text-anchor="middle">SHARD AT SPEED</text>
+      <text class="ph2" x="128" y="168" text-anchor="middle" fill="#d8f2fb">10 stacks · -10% cast each</text>
+      <path class="branch" d="M234 154 C 356 148, 374 58, 250 36" marker-end="url(#cmArrIp)"/>
+      <text class="ph2" x="190" y="200" text-anchor="middle">keep the ticks turning</text>
+    </svg>`,
+    "chronomancer/artificer": `<svg viewBox="0 0 380 230" role="img" aria-label="Artificer rhythm, phone ladder: wand attacks bank Fragments, the Continuum window spends them for seconds">
+      <defs><marker id="cmArrAp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <path class="cm-shard big" d="M36 50 L43 58 L36 66 L29 58 Z"/>
+      <path class="cm-shard big" d="M66 50 L73 58 L66 66 L59 58 Z"/>
+      <path class="cm-shard big" d="M96 50 L103 58 L96 66 L89 58 Z"/>
+      <text class="ph" x="165" y="48" text-anchor="start">BANK</text>
+      <text class="ph2" x="165" y="62" text-anchor="start">a Fragment per wand attack</text>
+      <path class="branch" d="M44 80 L44 104" marker-end="url(#cmArrAp)"/>
+      <rect class="cm-window" x="28" y="114" width="200" height="60" rx="2"/>
+      <text class="cm-window-lab" x="128" y="136" text-anchor="middle">CONTINUUM WINDOW</text>
+      <text class="ph2" x="128" y="152" text-anchor="middle" fill="#d8f2fb">3 s + 5 s per Fragment</text>
+      <text class="ph2" x="128" y="166" text-anchor="middle" fill="#d8f2fb">or +40% Shatter Echo each</text>
+      <path class="branch" d="M234 144 C 356 138, 374 56, 250 36" marker-end="url(#cmArrAp)"/>
+      <text class="ph2" x="190" y="196" text-anchor="middle">the bank refills</text>
+    </svg>`,
+    "chronomancer/time": `<svg viewBox="0 0 380 230" role="img" aria-label="Time rhythm, phone ladder: the Aeon dial sets the mode, Endless Sands stacks toward five">
+      <defs><marker id="cmArrTp" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8d8678"/></marker></defs>
+      <circle class="cm-dial" cx="48" cy="54" r="22"/>
+      <line class="cm-notch" x1="48" y1="32" x2="48" y2="38"/>
+      <line class="cm-notch" x1="70" y1="54" x2="64" y2="54"/>
+      <line class="cm-notch" x1="48" y1="76" x2="48" y2="70"/>
+      <line class="cm-notch lit" x1="26" y1="54" x2="32" y2="54"/>
+      <text class="ph" x="165" y="48" text-anchor="start">THE DIAL</text>
+      <text class="ph2" x="165" y="62" text-anchor="start">one Aeon rewrites Epoch</text>
+      <path class="branch" d="M44 84 L44 108" marker-end="url(#cmArrTp)"/>
+      <rect class="cm-window" x="28" y="118" width="200" height="56" rx="2"/>
+      <text class="cm-window-lab" x="128" y="142" text-anchor="middle">ENDLESS SANDS</text>
+      <text class="ph2" x="128" y="160" text-anchor="middle" fill="#d8f2fb">5 stacks · -20% Reverse Wound</text>
+      <path class="branch" d="M234 146 C 356 140, 374 56, 250 36" marker-end="url(#cmArrTp)"/>
+      <text class="ph2" x="190" y="200" text-anchor="middle">retune, and the sands rebuild</text>
+    </svg>`,
   };
 
   // ---------- experimental screen cards ----------
@@ -1612,6 +1766,7 @@
     "witch-hunter": { desktop: ["0 0 420 260", WH_DESKTOP], phone: ["0 0 420 224", WH_PHONE] },
     "stormbringer": { desktop: ["0 0 420 260", SB_DESKTOP], phone: ["0 0 420 224", SB_PHONE] },
     "reaper": { desktop: ["0 0 420 260", RP_DESKTOP], phone: ["0 0 420 224", RP_PHONE] },
+    "chronomancer": { desktop: ["0 0 420 260", CM_DESKTOP], phone: ["0 0 420 224", CM_PHONE] },
   };
   function applySeal() {
     const swap = SEAL_SWAP[cSlug];

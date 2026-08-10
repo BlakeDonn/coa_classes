@@ -99,6 +99,11 @@ window.COA_COPY = (() => {
       lede: "Every Hunter runs on Rage; each spec layers its own marks and stacks on top.",
       text: "Build Rage from your own attacks and spend it on your spec's payoffs; Tonics restore it. The layer on top is the spec's own: Slinging Bolts, Shadowhounds, Shadow Brands, or Dawn and Dusk.",
     },
+    chronomancer: {
+      label: "The engine — three clocks",
+      lede: "Each spec runs its own clock — DoT ramps, Echo Fragments, or Aeons — and Rewind is just the safety net.",
+      text: "Build the spec's own meter, then spend it on time itself. A consumed Echo Fragment adds 5 seconds to a Continuum spell, and an Endless Sands stack cuts 20% from your next Reverse Wound.",
+    },
     reaper: {
       label: "The engine — the soul ladder",
       lede: "Every Reaper climbs the same ladder: three Fragments to a Soul, three Souls to an Infusion.",
@@ -140,6 +145,9 @@ window.COA_COPY = (() => {
     "witch-hunter/houndmaster": ["Loose", "Hounds fight beside you; Shadowblast feeds them Shadow Rage, and Decimate turns them loose."],
     "witch-hunter/black-knight": ["Riposte", "Defense pays: parries restore health and Rage, and an avoided hit unlocks Desecrate."],
     "witch-hunter/inquisition": ["Balance", "Fire builds Dawn and steel builds Dusk; at twenty of each, Cycle of Despair consumes both."],
+    "chronomancer/infinite": ["Ramp", "Damage-over-time ticks launch spikes, and each spike cuts Chromatic Shard's cast time — ten stacks deep."],
+    "chronomancer/artificer": ["Invest", "Wand attacks bank Echo Fragments; every Fragment spent buys more damage or more seconds."],
+    "chronomancer/time": ["Tune", "One Aeon is active at a time and rewrites what Epoch does; its casts stack Endless Sands."],
     "reaper/domination": ["Muster", "Bank Reaped Souls to three: the bank guards you while it stands, and Spectral Scythe spends it all."],
     "reaper/harvest": ["Execute", "Slaughter earns Souls only below 35% health; Extinction lifts that gate for ten seconds."],
     "reaper/soul": ["Flood", "Dirge feeds the ladder two Fragments a swing; inside Endbringer it pours whole Souls instead."],

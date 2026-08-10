@@ -269,6 +269,32 @@
 .rp-node.active .node-dot { fill: #e1b86d; }
 .rp-node.active .node-name { fill: #f1cb6e; }
 
+/* Chronomancer: the same slot and interaction, three unaligned clock faces */
+.cd-cm-seal { border-left-color: #2b586380;
+  background: radial-gradient(circle at 50% 46%, #54d5f71a, transparent 60%); }
+.cd-cm-seal::before { border-color: #3f7f9150; }
+.cm-ring { fill: none; stroke: #3f7f91; stroke-width: 1.1; opacity: .6; }
+.cm-tick { stroke: #54d5f7; stroke-width: 1.2; opacity: .7; }
+.cm-notch { stroke: #7fdff7; stroke-width: 2; opacity: .8; }
+.cm-notch.lit { stroke: #d8f2fb; filter: url(#cmGlow); }
+.cm-shard { fill: rgba(84,213,247,.5); stroke: #54d5f7; stroke-width: .8; }
+.cm-hand { stroke: #a8e8f9; stroke-width: 2; stroke-linecap: round; filter: url(#cmGlow); }
+.cm-core { fill: #0a1a20; stroke: #7fdff7; stroke-width: 1.4; filter: url(#cmGlow); }
+.cm-link { fill: none; stroke: #2b5863; stroke-width: 1.2; opacity: .6; }
+.cm-threshold { fill: #8fd2e6; font: 700 8px Arial, sans-serif; letter-spacing: .1em; }
+.cm-center-label { fill: #e2f6fc; font: 700 11px Georgia, serif; letter-spacing: .18em;
+  paint-order: stroke; stroke: #071216; stroke-width: 4px; stroke-linejoin: round; }
+.cm-center-sub { fill: #6fb4c9; font: 700 6px Arial, sans-serif; letter-spacing: .14em;
+  paint-order: stroke; stroke: #071216; stroke-width: 2.5px; stroke-linejoin: round; }
+.cm-legend { fill: #5f93a3; font: 700 6px Arial, sans-serif; letter-spacing: .13em; opacity: .75; }
+.cm-node .node-ring { fill: #0c181d; stroke: #2b5863; }
+.cm-node .node-dot { fill: #4aa2ba; }
+.cm-node .cm-tag { fill: #8fd2e6; font: 700 6.5px Arial, sans-serif; letter-spacing: .06em; }
+.cm-node:hover .node-ring, .cm-node:focus-visible .node-ring,
+.cm-node.active .node-ring { fill: #10242c; stroke: #98e5f9; stroke-width: 2; filter: url(#cmGlow); }
+.cm-node.active .node-dot { fill: #e1b86d; }
+.cm-node.active .node-name { fill: #f1cb6e; }
+
 /* the col engine: the seal claims the masthead's full height at its own aspect ratio.
    --seal-slot marks where the TEXT COLUMN ends; the T1 thumb anchors to it. */
 @media (min-width: 901px) {
@@ -442,6 +468,15 @@ body.ry-glow .rail-card.sel {
 .ry-block .rp-window-lab { fill: #dde4ea; font-size: 12.5px; font-weight: 700; letter-spacing: .1em; }
 .ry-block .rp-gate { stroke: #c96a5f; stroke-width: 1.4; stroke-dasharray: 5 4; }
 .ry-block .rp-wave { fill: rgba(147,162,178,.16); stroke: #93a2b2; stroke-width: 1.5; }
+.ry-block .cm-coil { fill: none; stroke: #4aa2ba; stroke-width: 1.5; opacity: .8; }
+.ry-block .cm-coil.hot { stroke: #98e5f9; stroke-width: 2; opacity: 1; }
+.ry-block .cm-line { fill: none; stroke: #4aa2ba; stroke-width: 1.3; }
+.ry-block .cm-shard.big { fill: rgba(84,213,247,.4); stroke: #54d5f7; stroke-width: 1.2; }
+.ry-block .cm-window { fill: rgba(84,213,247,.16); stroke: #54d5f7; stroke-width: 1.8; }
+.ry-block .cm-window-lab { fill: #d8f2fb; font-size: 12.5px; font-weight: 700; letter-spacing: .1em; }
+.ry-block .cm-dial { fill: none; stroke: #4aa2ba; stroke-width: 1.6; }
+.ry-block .cm-notch { stroke: #7fdff7; stroke-width: 2; }
+.ry-block .cm-notch.lit { stroke: #ffffff; }
 
 /* ================= 5 · phone (≤560px) ================= */
 
